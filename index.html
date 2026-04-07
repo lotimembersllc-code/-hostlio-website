@@ -1,0 +1,1104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hostlio Pro — AI-Powered Hotel Management</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --orange: #FF6B35;
+      --orange-dark: #e55a22;
+      --navy: #1B2B4B;
+      --navy-dark: #111e35;
+      --white: #FFFFFF;
+      --gray: #F8F9FA;
+      --gray-200: #e9ecef;
+      --gray-400: #adb5bd;
+      --gray-600: #6c757d;
+      --gray-800: #343a40;
+      --shadow-sm: 0 1px 3px rgba(0,0,0,.08), 0 1px 2px rgba(0,0,0,.04);
+      --shadow-md: 0 4px 16px rgba(0,0,0,.10);
+      --shadow-lg: 0 8px 32px rgba(0,0,0,.12);
+      --shadow-xl: 0 16px 48px rgba(0,0,0,.14);
+      --radius: 12px;
+      --radius-lg: 20px;
+      --transition: .22s cubic-bezier(.4,0,.2,1);
+    }
+
+    html { scroll-behavior: smooth; }
+
+    body {
+      font-family: 'Inter', sans-serif;
+      color: var(--navy);
+      background: var(--white);
+      line-height: 1.6;
+      overflow-x: hidden;
+    }
+
+    /* ─── HEADER ─── */
+    header {
+      position: fixed; top: 0; left: 0; right: 0; z-index: 1000;
+      background: rgba(255,255,255,.95);
+      backdrop-filter: blur(12px);
+      -webkit-backdrop-filter: blur(12px);
+      border-bottom: 1px solid transparent;
+      transition: border-color var(--transition), box-shadow var(--transition);
+    }
+    header.scrolled {
+      border-color: var(--gray-200);
+      box-shadow: 0 2px 20px rgba(0,0,0,.07);
+    }
+    .header-inner {
+      max-width: 1200px; margin: 0 auto;
+      padding: 0 24px;
+      height: 68px;
+      display: flex; align-items: center; justify-content: space-between;
+    }
+    .logo {
+      font-size: 22px; font-weight: 800; letter-spacing: -.5px;
+      text-decoration: none; color: var(--navy);
+      display: flex; align-items: center; gap: 2px;
+    }
+    .logo span { color: var(--orange); }
+
+    nav { display: flex; align-items: center; gap: 8px; }
+    nav a {
+      text-decoration: none; color: var(--gray-800);
+      font-size: 15px; font-weight: 500;
+      padding: 8px 14px; border-radius: 8px;
+      transition: background var(--transition), color var(--transition);
+    }
+    nav a:hover { background: var(--gray); color: var(--navy); }
+
+    .btn {
+      display: inline-flex; align-items: center; gap: 6px;
+      padding: 10px 22px; border-radius: 9px;
+      font-size: 15px; font-weight: 600;
+      text-decoration: none; cursor: pointer; border: none;
+      transition: all var(--transition); white-space: nowrap;
+    }
+    .btn-primary {
+      background: var(--orange); color: var(--white);
+      box-shadow: 0 2px 8px rgba(255,107,53,.3);
+    }
+    .btn-primary:hover {
+      background: var(--orange-dark);
+      box-shadow: 0 4px 16px rgba(255,107,53,.4);
+      transform: translateY(-1px);
+    }
+    .btn-outline {
+      background: transparent; color: var(--navy);
+      border: 2px solid var(--navy);
+    }
+    .btn-outline:hover {
+      background: var(--navy); color: var(--white);
+      transform: translateY(-1px);
+    }
+    .btn-outline-white {
+      background: transparent; color: var(--white);
+      border: 2px solid rgba(255,255,255,.5);
+    }
+    .btn-outline-white:hover {
+      background: rgba(255,255,255,.12);
+      border-color: var(--white);
+    }
+    .btn-lg { padding: 14px 30px; font-size: 16px; border-radius: 11px; }
+
+    .hamburger {
+      display: none; flex-direction: column; gap: 5px;
+      background: none; border: none; cursor: pointer; padding: 4px;
+    }
+    .hamburger span {
+      display: block; width: 24px; height: 2px;
+      background: var(--navy); border-radius: 2px;
+      transition: all var(--transition);
+    }
+
+    /* ─── MOBILE NAV ─── */
+    .mobile-nav {
+      display: none; position: fixed; inset: 0; z-index: 999;
+      background: var(--white); padding: 88px 24px 32px;
+      flex-direction: column; gap: 8px;
+    }
+    .mobile-nav.open { display: flex; }
+    .mobile-nav a {
+      text-decoration: none; color: var(--navy);
+      font-size: 18px; font-weight: 600;
+      padding: 14px 16px; border-radius: 10px;
+      transition: background var(--transition);
+    }
+    .mobile-nav a:hover { background: var(--gray); }
+    .mobile-nav .btn-primary { margin-top: 8px; justify-content: center; font-size: 16px; }
+
+    /* ─── SECTIONS ─── */
+    section { padding: 96px 24px; }
+    .container { max-width: 1200px; margin: 0 auto; }
+    .section-label {
+      display: inline-block;
+      font-size: 13px; font-weight: 600; letter-spacing: .08em; text-transform: uppercase;
+      color: var(--orange); background: rgba(255,107,53,.1);
+      padding: 4px 12px; border-radius: 20px; margin-bottom: 16px;
+    }
+    .section-title {
+      font-size: clamp(28px, 4vw, 44px); font-weight: 800;
+      letter-spacing: -.5px; line-height: 1.15;
+      color: var(--navy); margin-bottom: 16px;
+    }
+    .section-sub {
+      font-size: 18px; color: var(--gray-600); max-width: 580px; line-height: 1.7;
+    }
+    .text-center { text-align: center; }
+    .text-center .section-sub { margin: 0 auto; }
+
+    /* ─── HERO ─── */
+    #hero {
+      padding-top: 140px; padding-bottom: 80px;
+      position: relative; overflow: hidden;
+      background: linear-gradient(135deg, #fdf6f2 0%, #f8f9fa 50%, #eef2ff 100%);
+    }
+    .hero-bg-blob {
+      position: absolute; border-radius: 50%; filter: blur(80px); opacity: .45; pointer-events: none;
+    }
+    .hero-bg-blob.b1 {
+      width: 600px; height: 600px; top: -200px; right: -100px;
+      background: radial-gradient(circle, rgba(255,107,53,.25) 0%, transparent 70%);
+      animation: floatBlob 8s ease-in-out infinite alternate;
+    }
+    .hero-bg-blob.b2 {
+      width: 400px; height: 400px; bottom: -100px; left: -80px;
+      background: radial-gradient(circle, rgba(27,43,75,.15) 0%, transparent 70%);
+      animation: floatBlob 10s ease-in-out infinite alternate-reverse;
+    }
+    @keyframes floatBlob {
+      from { transform: translate(0,0) scale(1); }
+      to   { transform: translate(30px,20px) scale(1.07); }
+    }
+    .hero-grid {
+      display: grid; grid-template-columns: 1fr 1fr; gap: 64px; align-items: center;
+    }
+    .hero-badge {
+      display: inline-flex; align-items: center; gap: 8px;
+      background: rgba(255,107,53,.1); border: 1px solid rgba(255,107,53,.25);
+      color: var(--orange); font-size: 13px; font-weight: 600;
+      padding: 6px 14px; border-radius: 20px; margin-bottom: 24px;
+    }
+    .hero-badge::before { content: '●'; font-size: 10px; animation: pulse 2s ease infinite; }
+    @keyframes pulse { 0%,100%{opacity:1} 50%{opacity:.3} }
+    .hero-title {
+      font-size: clamp(32px, 5vw, 54px); font-weight: 900;
+      letter-spacing: -1px; line-height: 1.1;
+      color: var(--navy); margin-bottom: 20px;
+    }
+    .hero-title .highlight { color: var(--orange); }
+    .hero-sub {
+      font-size: 18px; color: var(--gray-600); line-height: 1.75; margin-bottom: 36px; max-width: 520px;
+    }
+    .hero-ctas { display: flex; gap: 12px; flex-wrap: wrap; }
+
+    /* ─── BROWSER MOCKUP ─── */
+    .browser-wrap {
+      position: relative;
+      filter: drop-shadow(0 32px 64px rgba(27,43,75,.2));
+    }
+    .browser {
+      background: #1e2433; border-radius: 16px; overflow: hidden;
+    }
+    .browser-bar {
+      background: #2a3147; padding: 12px 16px;
+      display: flex; align-items: center; gap: 8px;
+    }
+    .browser-dot {
+      width: 12px; height: 12px; border-radius: 50%;
+    }
+    .browser-dot.red { background: #ff5f57; }
+    .browser-dot.yellow { background: #febc2e; }
+    .browser-dot.green { background: #28c840; }
+    .browser-url {
+      flex: 1; background: #1e2433; border-radius: 6px;
+      padding: 4px 12px; font-size: 12px; color: #6b7280; font-family: monospace;
+      margin-left: 8px;
+    }
+    .browser-content { background: #f8f9fa; padding: 0; }
+
+    /* Dashboard inside browser */
+    .dash { font-size: 12px; }
+    .dash-header {
+      background: var(--navy); padding: 10px 16px;
+      display: flex; align-items: center; justify-content: space-between;
+      color: white; font-size: 11px; font-weight: 600;
+    }
+    .dash-logo { color: var(--orange); font-weight: 800; font-size: 13px; }
+    .dash-nav { display: flex; gap: 16px; opacity: .7; }
+    .dash-body { display: flex; height: 320px; }
+    .dash-sidebar {
+      width: 130px; background: white; border-right: 1px solid #e9ecef;
+      padding: 12px 0;
+    }
+    .dash-sidebar-item {
+      padding: 8px 14px; font-size: 11px; font-weight: 500; color: #6b7280; cursor: pointer;
+      display: flex; align-items: center; gap: 7px;
+      transition: all .15s;
+    }
+    .dash-sidebar-item.active { background: rgba(255,107,53,.08); color: var(--orange); border-right: 2px solid var(--orange); }
+    .dash-sidebar-item .icon { font-size: 13px; }
+    .dash-main { flex: 1; overflow: hidden; }
+    .dash-toolbar {
+      background: white; padding: 8px 12px;
+      display: flex; align-items: center; gap: 8px;
+      border-bottom: 1px solid #e9ecef; font-size: 10px; font-weight: 600; color: var(--navy);
+    }
+    .dash-toolbar-btn {
+      background: var(--orange); color: white; padding: 3px 9px; border-radius: 5px; font-size: 10px; font-weight: 600;
+    }
+    .room-rack { overflow: auto; }
+    .rack-header {
+      display: grid; font-size: 9px; font-weight: 700; color: #9ca3af;
+      background: #f9fafb; border-bottom: 1px solid #e9ecef; text-transform: uppercase;
+      letter-spacing: .05em;
+    }
+    .rack-row {
+      display: grid; border-bottom: 1px solid #f3f4f6; align-items: center;
+    }
+    .rack-room-label {
+      background: #f9fafb; padding: 5px 10px; font-size: 10px; font-weight: 700;
+      color: var(--navy); border-right: 1px solid #e9ecef; white-space: nowrap;
+    }
+    .rack-days { display: flex; flex: 1; }
+    .rack-day { flex: 1; height: 28px; position: relative; }
+    .res-block {
+      position: absolute; top: 3px; bottom: 3px;
+      border-radius: 4px; display: flex; align-items: center;
+      padding: 0 6px; font-size: 8px; font-weight: 700; color: white;
+      white-space: nowrap; overflow: hidden;
+    }
+    .res-airbnb { background: #FF5A5F; }
+    .res-booking { background: #003580; }
+    .res-expedia { background: #00355F; }
+    .res-direct  { background: #28a745; }
+    .res-agoda   { background: #e31c79; }
+
+    /* ─── TRUST BAR ─── */
+    #trust {
+      padding: 32px 24px; background: var(--white);
+      border-top: 1px solid var(--gray-200); border-bottom: 1px solid var(--gray-200);
+    }
+    .trust-inner {
+      max-width: 1200px; margin: 0 auto;
+      display: flex; flex-direction: column; align-items: center; gap: 20px;
+    }
+    .trust-label { font-size: 13px; color: var(--gray-600); font-weight: 500; }
+    .trust-badges { display: flex; gap: 10px; flex-wrap: wrap; justify-content: center; }
+    .trust-badge {
+      padding: 7px 18px; border-radius: 8px;
+      font-size: 13px; font-weight: 700; letter-spacing: -.2px;
+      border: 1.5px solid var(--gray-200); background: var(--white);
+      color: var(--gray-800); transition: all var(--transition);
+    }
+    .trust-badge:hover { border-color: var(--orange); color: var(--orange); transform: translateY(-1px); }
+
+    /* ─── PAIN POINTS ─── */
+    #pain { background: var(--gray); }
+    .pain-grid {
+      display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; margin-top: 48px;
+    }
+    .pain-card {
+      background: var(--white); border-radius: var(--radius-lg); padding: 32px 28px;
+      border: 1px solid var(--gray-200); box-shadow: var(--shadow-sm);
+      transition: all var(--transition); position: relative; overflow: hidden;
+    }
+    .pain-card::before {
+      content: ''; position: absolute; top: 0; left: 0; right: 0; height: 3px;
+      background: var(--orange); transform: scaleX(0); transform-origin: left;
+      transition: transform var(--transition);
+    }
+    .pain-card:hover { transform: translateY(-4px); box-shadow: var(--shadow-lg); }
+    .pain-card:hover::before { transform: scaleX(1); }
+    .pain-icon { font-size: 36px; margin-bottom: 16px; }
+    .pain-card h3 { font-size: 17px; font-weight: 700; line-height: 1.4; color: var(--navy); }
+
+    /* ─── FEATURES ─── */
+    #features { background: var(--white); }
+    .features-grid {
+      display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; margin-top: 56px;
+    }
+    .feature-card {
+      background: var(--gray); border-radius: var(--radius-lg); padding: 28px 24px;
+      border: 1px solid transparent; transition: all var(--transition);
+    }
+    .feature-card:hover {
+      background: var(--white); border-color: var(--orange);
+      box-shadow: var(--shadow-md); transform: translateY(-3px);
+    }
+    .feature-icon { font-size: 32px; margin-bottom: 14px; }
+    .feature-card h3 { font-size: 16px; font-weight: 700; margin-bottom: 8px; color: var(--navy); }
+    .feature-card p { font-size: 14px; color: var(--gray-600); line-height: 1.6; }
+
+    /* ─── HOW IT WORKS ─── */
+    #how { background: var(--gray); }
+    .steps { display: grid; grid-template-columns: repeat(3, 1fr); gap: 0; margin-top: 56px; position: relative; }
+    .steps::before {
+      content: ''; position: absolute; top: 36px; left: calc(16.67% + 24px); right: calc(16.67% + 24px);
+      height: 2px; background: linear-gradient(90deg, var(--orange), var(--orange));
+      background: repeating-linear-gradient(90deg, var(--orange) 0, var(--orange) 8px, transparent 8px, transparent 16px);
+    }
+    .step { text-align: center; padding: 0 24px; position: relative; }
+    .step-num {
+      width: 72px; height: 72px; border-radius: 50%;
+      background: var(--orange); color: white;
+      font-size: 24px; font-weight: 900;
+      display: flex; align-items: center; justify-content: center;
+      margin: 0 auto 24px; position: relative; z-index: 1;
+      box-shadow: 0 4px 20px rgba(255,107,53,.35);
+      transition: transform var(--transition);
+    }
+    .step:hover .step-num { transform: scale(1.1); }
+    .step h3 { font-size: 18px; font-weight: 700; margin-bottom: 10px; color: var(--navy); }
+    .step p { font-size: 14px; color: var(--gray-600); line-height: 1.65; }
+
+    /* ─── PRICING ─── */
+    #pricing { background: var(--white); }
+    .billing-toggle {
+      display: flex; align-items: center; gap: 12px; justify-content: center;
+      margin: 24px 0 56px; font-size: 14px; font-weight: 500; color: var(--gray-600);
+    }
+    .toggle {
+      width: 44px; height: 24px; background: var(--gray-200); border-radius: 12px;
+      position: relative; cursor: pointer; transition: background var(--transition);
+      border: none;
+    }
+    .toggle::after {
+      content: ''; position: absolute; top: 3px; left: 3px;
+      width: 18px; height: 18px; border-radius: 50%; background: white;
+      transition: transform var(--transition);
+      box-shadow: var(--shadow-sm);
+    }
+    .toggle.on { background: var(--orange); }
+    .toggle.on::after { transform: translateX(20px); }
+    .save-badge {
+      background: rgba(255,107,53,.1); color: var(--orange);
+      font-size: 11px; font-weight: 700; padding: 2px 8px; border-radius: 10px;
+    }
+    .pricing-grid {
+      display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px;
+    }
+    .pricing-card {
+      border-radius: var(--radius-lg); padding: 32px 28px;
+      border: 2px solid var(--gray-200); position: relative;
+      transition: all var(--transition);
+    }
+    .pricing-card:hover { transform: translateY(-4px); box-shadow: var(--shadow-xl); }
+    .pricing-card.popular {
+      border-color: var(--orange); box-shadow: 0 0 0 4px rgba(255,107,53,.08);
+      transform: scale(1.03);
+    }
+    .pricing-card.popular:hover { transform: scale(1.03) translateY(-4px); }
+    .popular-badge {
+      position: absolute; top: -14px; left: 50%; transform: translateX(-50%);
+      background: var(--orange); color: white; font-size: 11px; font-weight: 700;
+      padding: 4px 16px; border-radius: 20px; white-space: nowrap;
+      box-shadow: 0 2px 8px rgba(255,107,53,.4);
+    }
+    .plan-name { font-size: 13px; font-weight: 700; text-transform: uppercase; letter-spacing: .08em; color: var(--gray-600); margin-bottom: 8px; }
+    .plan-price { font-size: 44px; font-weight: 900; color: var(--navy); letter-spacing: -1px; line-height: 1; }
+    .plan-price sup { font-size: 20px; font-weight: 700; vertical-align: super; margin-right: 2px; }
+    .plan-price sub { font-size: 14px; font-weight: 500; color: var(--gray-600); vertical-align: baseline; }
+    .plan-desc { font-size: 14px; color: var(--gray-600); margin: 12px 0 24px; }
+    .plan-features { list-style: none; display: flex; flex-direction: column; gap: 12px; margin-bottom: 28px; }
+    .plan-features li { font-size: 14px; display: flex; align-items: flex-start; gap: 10px; color: var(--gray-800); }
+    .plan-features li::before {
+      content: '✓'; color: var(--orange); font-weight: 700; font-size: 14px;
+      flex-shrink: 0; margin-top: 1px;
+    }
+    .plan-cta { display: block; text-align: center; }
+    .plan-note { font-size: 12px; color: var(--gray-400); text-align: center; margin-top: 12px; }
+
+    /* ─── COMPARISON ─── */
+    #comparison { background: var(--gray); }
+    .table-wrap { margin-top: 48px; overflow-x: auto; border-radius: var(--radius-lg); box-shadow: var(--shadow-md); }
+    table { width: 100%; border-collapse: collapse; background: white; }
+    thead th {
+      padding: 18px 24px; text-align: center; font-size: 15px; font-weight: 700;
+      background: var(--navy); color: white;
+    }
+    thead th:first-child { text-align: left; border-radius: var(--radius-lg) 0 0 0; }
+    thead th:last-child { border-radius: 0 var(--radius-lg) 0 0; }
+    thead th.ours { background: var(--orange); }
+    tbody td {
+      padding: 16px 24px; border-bottom: 1px solid var(--gray-200);
+      font-size: 14px; text-align: center; color: var(--gray-800);
+    }
+    tbody td:first-child { text-align: left; font-weight: 600; color: var(--navy); }
+    tbody tr:last-child td { border-bottom: none; }
+    tbody tr:hover td { background: rgba(248,249,250,.7); }
+    .check { color: var(--orange); font-size: 18px; font-weight: 700; }
+    .cross { color: var(--gray-400); font-size: 18px; }
+    .price-cell { font-weight: 700; color: var(--navy); }
+    .price-cell.ours-price { color: var(--orange); }
+
+    /* ─── FINAL CTA ─── */
+    #cta {
+      background: var(--navy); padding: 96px 24px;
+      text-align: center; position: relative; overflow: hidden;
+    }
+    #cta::before {
+      content: ''; position: absolute; top: -200px; left: 50%; transform: translateX(-50%);
+      width: 800px; height: 800px; border-radius: 50%;
+      background: radial-gradient(circle, rgba(255,107,53,.15) 0%, transparent 65%);
+      pointer-events: none;
+    }
+    #cta h2 {
+      font-size: clamp(28px, 4vw, 48px); font-weight: 900;
+      color: white; margin-bottom: 16px; letter-spacing: -.5px;
+    }
+    #cta p { font-size: 18px; color: rgba(255,255,255,.7); margin-bottom: 40px; }
+    .cta-sub { font-size: 14px; color: rgba(255,255,255,.5); margin-top: 20px; }
+    .cta-sub span { margin: 0 8px; }
+
+    /* ─── FOOTER ─── */
+    footer {
+      background: var(--navy-dark); padding: 48px 24px 32px;
+      color: rgba(255,255,255,.6);
+    }
+    .footer-inner { max-width: 1200px; margin: 0 auto; }
+    .footer-top {
+      display: flex; justify-content: space-between; align-items: flex-start;
+      gap: 40px; margin-bottom: 40px; flex-wrap: wrap;
+    }
+    .footer-brand .logo { color: white; font-size: 20px; }
+    .footer-brand p { font-size: 14px; margin-top: 10px; max-width: 260px; line-height: 1.6; }
+    .footer-links { display: flex; gap: 48px; flex-wrap: wrap; }
+    .footer-col h4 { color: white; font-size: 13px; font-weight: 700; text-transform: uppercase; letter-spacing: .08em; margin-bottom: 16px; }
+    .footer-col a {
+      display: block; color: rgba(255,255,255,.55); text-decoration: none;
+      font-size: 14px; margin-bottom: 10px; transition: color var(--transition);
+    }
+    .footer-col a:hover { color: var(--orange); }
+    .footer-bottom {
+      border-top: 1px solid rgba(255,255,255,.08); padding-top: 24px;
+      display: flex; justify-content: space-between; align-items: center;
+      flex-wrap: wrap; gap: 12px; font-size: 13px;
+    }
+    .footer-bottom a { color: rgba(255,255,255,.55); text-decoration: none; }
+    .footer-bottom a:hover { color: var(--orange); }
+
+    /* ─── SCROLL ANIMATIONS ─── */
+    .fade-up {
+      opacity: 0; transform: translateY(32px);
+      transition: opacity .6s ease, transform .6s ease;
+    }
+    .fade-up.visible { opacity: 1; transform: none; }
+    .fade-up:nth-child(2) { transition-delay: .1s; }
+    .fade-up:nth-child(3) { transition-delay: .2s; }
+    .fade-up:nth-child(4) { transition-delay: .3s; }
+
+    /* ─── RESPONSIVE ─── */
+    @media (max-width: 1024px) {
+      .features-grid { grid-template-columns: repeat(2, 1fr); }
+      .pricing-card.popular { transform: none; }
+      .pricing-card.popular:hover { transform: translateY(-4px); }
+    }
+
+    @media (max-width: 768px) {
+      section { padding: 64px 20px; }
+      .hero-grid { grid-template-columns: 1fr; gap: 40px; }
+      .browser-wrap { order: -1; }
+      #hero { padding-top: 110px; }
+      .pain-grid, .features-grid, .pricing-grid { grid-template-columns: 1fr; }
+      .steps { grid-template-columns: 1fr; gap: 40px; }
+      .steps::before { display: none; }
+      nav { display: none; }
+      .hamburger { display: flex; }
+      .footer-top { flex-direction: column; }
+      .footer-links { gap: 32px; }
+      .dash-sidebar { display: none; }
+    }
+
+    @media (max-width: 480px) {
+      .hero-ctas { flex-direction: column; }
+      .hero-ctas .btn { text-align: center; justify-content: center; }
+      .trust-badges { gap: 8px; }
+    }
+  </style>
+</head>
+<body>
+
+<!-- ══════════════════════════════════════════
+     HEADER
+═══════════════════════════════════════════ -->
+<header id="site-header">
+  <div class="header-inner">
+    <a href="#" class="logo">Hostlio<span>Pro</span></a>
+    <nav>
+      <a href="#features">Features</a>
+      <a href="#pricing">Pricing</a>
+      <a href="#how">Demo</a>
+      <a href="#comparison">Blog</a>
+      <a href="#pricing" class="btn btn-primary" style="margin-left:8px">Start Free Trial</a>
+    </nav>
+    <button class="hamburger" id="hamburger" aria-label="Menu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<div class="mobile-nav" id="mobile-nav">
+  <a href="#features" onclick="closeMobileNav()">Features</a>
+  <a href="#pricing" onclick="closeMobileNav()">Pricing</a>
+  <a href="#how" onclick="closeMobileNav()">Demo</a>
+  <a href="#comparison" onclick="closeMobileNav()">Blog</a>
+  <a href="#pricing" class="btn btn-primary" onclick="closeMobileNav()">Start Free Trial</a>
+</div>
+
+<!-- ══════════════════════════════════════════
+     HERO
+═══════════════════════════════════════════ -->
+<section id="hero">
+  <div class="hero-bg-blob b1"></div>
+  <div class="hero-bg-blob b2"></div>
+  <div class="container hero-grid">
+    <div>
+      <div class="hero-badge">AI-Powered Hotel Management</div>
+      <h1 class="hero-title">
+        Your AI-Powered<br>Front Desk.<br>
+        <span class="highlight">24/7, in 7 Languages.</span>
+      </h1>
+      <p class="hero-sub">
+        Stop losing bookings to unanswered messages. Automate guest communication across WhatsApp, Booking.com, Airbnb and more — starting at <strong>$49/month.</strong>
+      </p>
+      <div class="hero-ctas">
+        <a href="#pricing" class="btn btn-primary btn-lg">Start Free Trial →</a>
+        <a href="#how" class="btn btn-outline btn-lg">Watch Demo</a>
+      </div>
+    </div>
+
+    <!-- Browser Mockup -->
+    <div class="browser-wrap">
+      <div class="browser">
+        <div class="browser-bar">
+          <div class="browser-dot red"></div>
+          <div class="browser-dot yellow"></div>
+          <div class="browser-dot green"></div>
+          <div class="browser-url">app.hostliopro.com/room-rack</div>
+        </div>
+        <div class="browser-content">
+          <div class="dash">
+            <div class="dash-header">
+              <div class="dash-logo">HostlioPro</div>
+              <div class="dash-nav">
+                <span>Dashboard</span>
+                <span>Messages</span>
+                <span>Reports</span>
+              </div>
+            </div>
+            <div class="dash-body">
+              <div class="dash-sidebar">
+                <div class="dash-sidebar-item active"><span class="icon">📅</span> Room Rack</div>
+                <div class="dash-sidebar-item"><span class="icon">💬</span> Messages</div>
+                <div class="dash-sidebar-item"><span class="icon">🔗</span> Channels</div>
+                <div class="dash-sidebar-item"><span class="icon">📄</span> Visa Forms</div>
+                <div class="dash-sidebar-item"><span class="icon">✈️</span> Transfers</div>
+                <div class="dash-sidebar-item"><span class="icon">⚙️</span> Settings</div>
+              </div>
+              <div class="dash-main">
+                <div class="dash-toolbar">
+                  <span>◀ Apr 2026 ▶</span>
+                  <div style="flex:1"></div>
+                  <div class="dash-toolbar-btn">+ New Booking</div>
+                </div>
+                <!-- Room Rack Calendar -->
+                <div class="room-rack" style="overflow-x:auto;">
+                  <div style="min-width:520px">
+                    <div class="rack-header" style="grid-template-columns:80px repeat(14,1fr)">
+                      <div style="padding:5px 10px;font-size:9px;font-weight:700;color:#9ca3af">ROOM</div>
+                      <div style="padding:5px 4px;font-size:9px;text-align:center;color:#9ca3af">7</div>
+                      <div style="padding:5px 4px;font-size:9px;text-align:center;color:#9ca3af">8</div>
+                      <div style="padding:5px 4px;font-size:9px;text-align:center;color:#9ca3af">9</div>
+                      <div style="padding:5px 4px;font-size:9px;text-align:center;color:#9ca3af">10</div>
+                      <div style="padding:5px 4px;font-size:9px;text-align:center;color:#1B2B4B;font-weight:800">11</div>
+                      <div style="padding:5px 4px;font-size:9px;text-align:center;color:#9ca3af">12</div>
+                      <div style="padding:5px 4px;font-size:9px;text-align:center;color:#9ca3af">13</div>
+                      <div style="padding:5px 4px;font-size:9px;text-align:center;color:#9ca3af">14</div>
+                      <div style="padding:5px 4px;font-size:9px;text-align:center;color:#9ca3af">15</div>
+                      <div style="padding:5px 4px;font-size:9px;text-align:center;color:#9ca3af">16</div>
+                      <div style="padding:5px 4px;font-size:9px;text-align:center;color:#9ca3af">17</div>
+                      <div style="padding:5px 4px;font-size:9px;text-align:center;color:#9ca3af">18</div>
+                      <div style="padding:5px 4px;font-size:9px;text-align:center;color:#9ca3af">19</div>
+                      <div style="padding:5px 4px;font-size:9px;text-align:center;color:#9ca3af">20</div>
+                    </div>
+                    <!-- Row 1 -->
+                    <div class="rack-row" style="grid-template-columns:80px 1fr;height:32px">
+                      <div class="rack-room-label">101 · Std</div>
+                      <div style="position:relative;flex:1">
+                        <div class="rack-days" style="height:100%">
+                          <div class="rack-day" style="position:relative;flex:14">
+                            <div class="res-block res-airbnb" style="left:0%;width:35.7%">Smith</div>
+                            <div class="res-block res-booking" style="left:42.8%;width:42.8%">Müller</div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- Row 2 -->
+                    <div class="rack-row" style="grid-template-columns:80px 1fr;height:32px">
+                      <div class="rack-room-label">102 · Std</div>
+                      <div style="position:relative;flex:1">
+                        <div class="rack-days" style="height:100%">
+                          <div class="rack-day" style="position:relative;flex:14">
+                            <div class="res-block res-direct" style="left:14.2%;width:28.5%">García</div>
+                            <div class="res-block res-agoda" style="left:57.1%;width:35.7%">Chen</div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- Row 3 -->
+                    <div class="rack-row" style="grid-template-columns:80px 1fr;height:32px">
+                      <div class="rack-room-label">201 · Dlx</div>
+                      <div style="position:relative;flex:1">
+                        <div class="rack-days" style="height:100%">
+                          <div class="rack-day" style="position:relative;flex:14">
+                            <div class="res-block res-expedia" style="left:0%;width:50%">Johnson</div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- Row 4 -->
+                    <div class="rack-row" style="grid-template-columns:80px 1fr;height:32px">
+                      <div class="rack-room-label">202 · Dlx</div>
+                      <div style="position:relative;flex:1">
+                        <div class="rack-days" style="height:100%">
+                          <div class="rack-day" style="position:relative;flex:14">
+                            <div class="res-block res-booking" style="left:21.4%;width:42.8%">Tanaka</div>
+                            <div class="res-block res-airbnb" style="left:71.4%;width:28.5%">Park</div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- Row 5 -->
+                    <div class="rack-row" style="grid-template-columns:80px 1fr;height:32px;border-bottom:none">
+                      <div class="rack-room-label">301 · Ste</div>
+                      <div style="position:relative;flex:1">
+                        <div class="rack-days" style="height:100%">
+                          <div class="rack-day" style="position:relative;flex:14">
+                            <div class="res-block res-direct" style="left:7.1%;width:64.2%">Williams Family</div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- AI Message popup -->
+                <div style="margin:8px 12px;background:white;border:1px solid #e9ecef;border-radius:8px;padding:10px 12px;display:flex;align-items:flex-start;gap:10px;box-shadow:0 2px 8px rgba(0,0,0,.06)">
+                  <div style="width:28px;height:28px;border-radius:50%;background:var(--orange);display:flex;align-items:center;justify-content:center;font-size:14px;flex-shrink:0">🤖</div>
+                  <div>
+                    <div style="font-size:10px;font-weight:700;color:var(--navy);margin-bottom:3px">AI · WhatsApp · Tanaka-san</div>
+                    <div style="font-size:10px;color:#4b5563;line-height:1.5">"チェックインは何時ですか？" → <span style="color:#28a745;font-weight:600">replied in Japanese ✓</span></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════════════════════════════════
+     TRUST BAR
+═══════════════════════════════════════════ -->
+<div id="trust">
+  <div class="trust-inner">
+    <p class="trust-label">Trusted by independent hotels in <strong>20+ countries</strong> — syncs with</p>
+    <div class="trust-badges">
+      <div class="trust-badge">Booking.com</div>
+      <div class="trust-badge">Airbnb</div>
+      <div class="trust-badge">Expedia</div>
+      <div class="trust-badge">Agoda</div>
+      <div class="trust-badge">Trip.com</div>
+    </div>
+  </div>
+</div>
+
+<!-- ══════════════════════════════════════════
+     PAIN POINTS
+═══════════════════════════════════════════ -->
+<section id="pain">
+  <div class="container">
+    <div class="text-center">
+      <div class="section-label">Pain Points</div>
+      <h2 class="section-title">Sound familiar?</h2>
+      <p class="section-sub">Every independent hotel owner knows these problems. We built Hostlio Pro to solve them all.</p>
+    </div>
+    <div class="pain-grid">
+      <div class="pain-card fade-up">
+        <div class="pain-icon">🌙</div>
+        <h3>"Guests message at 3am. You miss it. They book elsewhere."</h3>
+      </div>
+      <div class="pain-card fade-up">
+        <div class="pain-icon">🔄</div>
+        <h3>"5 platforms. 5 logins. Hours wasted every single day."</h3>
+      </div>
+      <div class="pain-card fade-up">
+        <div class="pain-icon">😱</div>
+        <h3>"One wrong click. Double booking. Angry guests."</h3>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════════════════════════════════
+     FEATURES
+═══════════════════════════════════════════ -->
+<section id="features">
+  <div class="container">
+    <div class="text-center">
+      <div class="section-label">Features</div>
+      <h2 class="section-title">Everything your hotel needs.<br>Nothing you don't.</h2>
+      <p class="section-sub">One beautifully simple platform that replaces five different tools.</p>
+    </div>
+    <div class="features-grid">
+      <div class="feature-card fade-up">
+        <div class="feature-icon">🤖</div>
+        <h3>AI Guest Messaging</h3>
+        <p>Replies in 7 languages. WhatsApp, email, Instagram. 24/7 — without lifting a finger.</p>
+      </div>
+      <div class="feature-card fade-up">
+        <div class="feature-icon">📅</div>
+        <h3>Room Rack Calendar</h3>
+        <p>Drag &amp; drop. AI room assignment. See every reservation at a glance.</p>
+      </div>
+      <div class="feature-card fade-up">
+        <div class="feature-icon">🔗</div>
+        <h3>5 OTA Integration</h3>
+        <p>Booking.com, Airbnb, Expedia, Agoda, Trip.com. Real-time sync. Zero overbooking.</p>
+      </div>
+      <div class="feature-card fade-up">
+        <div class="feature-icon">📄</div>
+        <h3>PDF Visa Forms</h3>
+        <p>Auto-generate with your hotel logo. Send via WhatsApp instantly upon check-in.</p>
+      </div>
+      <div class="feature-card fade-up">
+        <div class="feature-icon">✈️</div>
+        <h3>Transfer &amp; Tours</h3>
+        <p>Sell airport transfers to guests automatically. Extra revenue, zero effort.</p>
+      </div>
+      <div class="feature-card fade-up">
+        <div class="feature-icon">📱</div>
+        <h3>Mobile App</h3>
+        <p>Manage your hotel offline. Works without internet. Always in your pocket.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════════════════════════════════
+     HOW IT WORKS
+═══════════════════════════════════════════ -->
+<section id="how">
+  <div class="container">
+    <div class="text-center">
+      <div class="section-label">How It Works</div>
+      <h2 class="section-title">Up and running in 5 minutes</h2>
+      <p class="section-sub">No IT team required. No complex setup. Just three simple steps.</p>
+    </div>
+    <div class="steps">
+      <div class="step fade-up">
+        <div class="step-num">1</div>
+        <h3>Connect your channels</h3>
+        <p>Link Booking.com, Airbnb, WhatsApp and more with one click. Your reservations import automatically.</p>
+      </div>
+      <div class="step fade-up">
+        <div class="step-num">2</div>
+        <h3>AI handles messages</h3>
+        <p>Your AI assistant replies to every guest — in their language — day and night. You review, never repeat.</p>
+      </div>
+      <div class="step fade-up">
+        <div class="step-num">3</div>
+        <h3>Manage from one dashboard</h3>
+        <p>See all rooms, all channels, all messages in one beautiful place. Take back 3+ hours every day.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════════════════════════════════
+     PRICING
+═══════════════════════════════════════════ -->
+<section id="pricing">
+  <div class="container">
+    <div class="text-center">
+      <div class="section-label">Pricing</div>
+      <h2 class="section-title">Simple, transparent pricing</h2>
+      <p class="section-sub">No hidden fees. No long-term contracts. Cancel anytime.</p>
+    </div>
+    <div class="billing-toggle">
+      <span>Monthly</span>
+      <button class="toggle" id="billing-toggle" onclick="toggleBilling()" aria-label="Toggle annual billing"></button>
+      <span>Annual <span class="save-badge">Save 20%</span></span>
+    </div>
+    <div class="pricing-grid">
+      <!-- Starter -->
+      <div class="pricing-card fade-up">
+        <div class="plan-name">Starter</div>
+        <div class="plan-price" id="starter-price">
+          <sup>$</sup>49<sub>/mo</sub>
+        </div>
+        <p class="plan-desc">Perfect for small independent hotels getting started with automation.</p>
+        <ul class="plan-features">
+          <li>1 property</li>
+          <li>Up to 15 rooms</li>
+          <li>1,000 AI messages/month</li>
+          <li>WhatsApp + Email</li>
+          <li>Room Rack Calendar</li>
+          <li>PDF Visa Forms</li>
+        </ul>
+        <a href="#" class="btn btn-outline btn-lg plan-cta" style="width:100%">Start Free Trial</a>
+        <p class="plan-note">14-day free trial · No credit card required</p>
+      </div>
+      <!-- Pro -->
+      <div class="pricing-card popular fade-up">
+        <div class="popular-badge">MOST POPULAR</div>
+        <div class="plan-name">Pro</div>
+        <div class="plan-price" id="pro-price">
+          <sup>$</sup>99<sub>/mo</sub>
+        </div>
+        <p class="plan-desc">The complete solution for busy hotels on all channels.</p>
+        <ul class="plan-features">
+          <li>1 property</li>
+          <li>Unlimited rooms</li>
+          <li>3,000 AI messages/month</li>
+          <li>All channels (5 OTAs)</li>
+          <li>WhatsApp + Email + Instagram</li>
+          <li>Transfer &amp; Tour sales</li>
+          <li>Mobile App</li>
+        </ul>
+        <a href="#" class="btn btn-primary btn-lg plan-cta" style="width:100%">Start Free Trial →</a>
+        <p class="plan-note">14-day free trial · No credit card required</p>
+      </div>
+      <!-- Growth -->
+      <div class="pricing-card fade-up">
+        <div class="plan-name">Growth</div>
+        <div class="plan-price" id="growth-price">
+          <sup>$</sup>179<sub>/mo</sub>
+        </div>
+        <p class="plan-desc">Scale across multiple properties with concierge support.</p>
+        <ul class="plan-features">
+          <li>Multi-property</li>
+          <li>Unlimited rooms</li>
+          <li>Unlimited AI messages</li>
+          <li>All channels + priority sync</li>
+          <li>Priority support (2hr response)</li>
+          <li>Custom onboarding call</li>
+          <li>White-label options</li>
+        </ul>
+        <a href="#" class="btn btn-outline btn-lg plan-cta" style="width:100%">Start Free Trial</a>
+        <p class="plan-note">14-day free trial · No credit card required</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════════════════════════════════
+     COMPARISON TABLE
+═══════════════════════════════════════════ -->
+<section id="comparison">
+  <div class="container">
+    <div class="text-center">
+      <div class="section-label">Comparison</div>
+      <h2 class="section-title">Why hotels choose Hostlio Pro</h2>
+      <p class="section-sub">See how we stack up against legacy hotel software.</p>
+    </div>
+    <div class="table-wrap">
+      <table>
+        <thead>
+          <tr>
+            <th style="width:36%">Feature</th>
+            <th class="ours">Hostlio Pro</th>
+            <th>Cloudbeds</th>
+            <th>Little Hotelier</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>AI WhatsApp automation</td>
+            <td><span class="check">✓</span></td>
+            <td><span class="cross">✗</span></td>
+            <td><span class="cross">✗</span></td>
+          </tr>
+          <tr>
+            <td>7-language AI replies</td>
+            <td><span class="check">✓</span></td>
+            <td><span class="cross">✗</span></td>
+            <td><span class="cross">✗</span></td>
+          </tr>
+          <tr>
+            <td>5 OTA integration</td>
+            <td><span class="check">✓</span></td>
+            <td><span class="check" style="color:#28a745">✓</span></td>
+            <td><span class="check" style="color:#28a745">✓</span></td>
+          </tr>
+          <tr>
+            <td>Visual room rack calendar</td>
+            <td><span class="check">✓</span></td>
+            <td><span class="check" style="color:#28a745">✓</span></td>
+            <td><span class="check" style="color:#28a745">✓</span></td>
+          </tr>
+          <tr>
+            <td>Transfer &amp; tour sales</td>
+            <td><span class="check">✓</span></td>
+            <td><span class="cross">✗</span></td>
+            <td><span class="cross">✗</span></td>
+          </tr>
+          <tr>
+            <td>PDF visa forms (auto)</td>
+            <td><span class="check">✓</span></td>
+            <td><span class="cross">✗</span></td>
+            <td><span class="cross">✗</span></td>
+          </tr>
+          <tr>
+            <td>Offline mobile app</td>
+            <td><span class="check">✓</span></td>
+            <td><span class="cross">✗</span></td>
+            <td><span class="cross">✗</span></td>
+          </tr>
+          <tr>
+            <td style="font-weight:700">Starting price</td>
+            <td class="price-cell ours-price">$49/mo</td>
+            <td class="price-cell">$300+/mo</td>
+            <td class="price-cell">$109+/mo</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════════════════════════════════
+     FINAL CTA
+═══════════════════════════════════════════ -->
+<section id="cta">
+  <div class="container" style="position:relative;z-index:1">
+    <h2>Ready to automate your hotel?</h2>
+    <p>Join independent hotels saving 3+ hours every day with Hostlio Pro.</p>
+    <a href="#pricing" class="btn btn-primary btn-lg" style="font-size:18px;padding:16px 40px">
+      Start Free Trial →
+    </a>
+    <p class="cta-sub">
+      No credit card required
+      <span>·</span>
+      14-day free trial
+      <span>·</span>
+      Cancel anytime
+    </p>
+  </div>
+</section>
+
+<!-- ══════════════════════════════════════════
+     FOOTER
+═══════════════════════════════════════════ -->
+<footer>
+  <div class="footer-inner">
+    <div class="footer-top">
+      <div class="footer-brand">
+        <a href="#" class="logo">Hostlio<span>Pro</span></a>
+        <p>AI-powered hotel management for independent hotels worldwide.</p>
+      </div>
+      <div class="footer-links">
+        <div class="footer-col">
+          <h4>Product</h4>
+          <a href="#features">Features</a>
+          <a href="#pricing">Pricing</a>
+          <a href="#how">How it Works</a>
+          <a href="#comparison">Compare</a>
+        </div>
+        <div class="footer-col">
+          <h4>Company</h4>
+          <a href="#">Blog</a>
+          <a href="#">About</a>
+          <a href="#">Careers</a>
+          <a href="#">Contact</a>
+        </div>
+        <div class="footer-col">
+          <h4>Legal</h4>
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms of Service</a>
+          <a href="#">GDPR</a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 Hostlio Pro. All rights reserved.</span>
+      <a href="mailto:hello@hostliopro.com">hello@hostliopro.com</a>
+    </div>
+  </div>
+</footer>
+
+<!-- ══════════════════════════════════════════
+     JAVASCRIPT
+═══════════════════════════════════════════ -->
+<script>
+  // ── Header scroll shadow ──
+  const header = document.getElementById('site-header');
+  window.addEventListener('scroll', () => {
+    header.classList.toggle('scrolled', window.scrollY > 20);
+  }, { passive: true });
+
+  // ── Mobile nav ──
+  const hamburger = document.getElementById('hamburger');
+  const mobileNav = document.getElementById('mobile-nav');
+  hamburger.addEventListener('click', () => {
+    mobileNav.classList.toggle('open');
+    const isOpen = mobileNav.classList.contains('open');
+    document.body.style.overflow = isOpen ? 'hidden' : '';
+    hamburger.querySelectorAll('span')[0].style.transform = isOpen ? 'rotate(45deg) translate(5px,5px)' : '';
+    hamburger.querySelectorAll('span')[1].style.opacity = isOpen ? '0' : '1';
+    hamburger.querySelectorAll('span')[2].style.transform = isOpen ? 'rotate(-45deg) translate(5px,-5px)' : '';
+  });
+  function closeMobileNav() {
+    mobileNav.classList.remove('open');
+    document.body.style.overflow = '';
+    hamburger.querySelectorAll('span').forEach(s => { s.style.transform = ''; s.style.opacity = ''; });
+  }
+
+  // ── Billing toggle ──
+  const prices = { starter: [49, 39], pro: [99, 79], growth: [179, 143] };
+  let annual = false;
+  function toggleBilling() {
+    annual = !annual;
+    document.getElementById('billing-toggle').classList.toggle('on', annual);
+    document.getElementById('starter-price').innerHTML = `<sup>$</sup>${prices.starter[annual?1:0]}<sub>/mo</sub>`;
+    document.getElementById('pro-price').innerHTML     = `<sup>$</sup>${prices.pro[annual?1:0]}<sub>/mo</sub>`;
+    document.getElementById('growth-price').innerHTML  = `<sup>$</sup>${prices.growth[annual?1:0]}<sub>/mo</sub>`;
+  }
+
+  // ── Scroll fade-in animations ──
+  const fadeEls = document.querySelectorAll('.fade-up');
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('visible');
+        observer.unobserve(entry.target);
+      }
+    });
+  }, { threshold: 0.12, rootMargin: '0px 0px -40px 0px' });
+  fadeEls.forEach(el => observer.observe(el));
+
+  // ── Smooth anchor links ──
+  document.querySelectorAll('a[href^="#"]').forEach(a => {
+    a.addEventListener('click', e => {
+      const target = document.querySelector(a.getAttribute('href'));
+      if (target) {
+        e.preventDefault();
+        const offset = 76;
+        const top = target.getBoundingClientRect().top + window.scrollY - offset;
+        window.scrollTo({ top, behavior: 'smooth' });
+      }
+    });
+  });
+</script>
+</body>
+</html>
