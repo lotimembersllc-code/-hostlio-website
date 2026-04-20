@@ -255,6 +255,19 @@ function toggleBilling() {
   });
 }
 
+const stripeLinks = {
+  monthly: {
+    starter: 'https://buy.stripe.com/6oUcN7csN4kF6Dz3164Ni00',
+    pro: 'https://buy.stripe.com/14AcN750lcRb9PLaty4Ni02',
+    growth: 'https://buy.stripe.com/8x26oJdwR18t1jfgRW4Ni04'
+  },
+  annual: {
+    starter: 'https://buy.stripe.com/eVq9AV0K504pbXTcBG4Ni06',
+    pro: 'https://buy.stripe.com/bJecN71O904p4vraty4Ni08',
+    growth: 'https://buy.stripe.com/4gM9AV0K5dVfe61bxC4Ni0a'
+  }
+};
+
 async function submitForm() {
   const btn = document.getElementById('submit-btn');
   const errorMsg = document.getElementById('error-msg');
@@ -266,7 +279,7 @@ async function submitForm() {
   const hotelName = document.getElementById('hotelName').value.trim();
   const rooms = document.getElementById('rooms').value.trim();
   const phone = document.getElementById('phone').value.trim();
-  const plan = document.querySelector('input[name="plan"]:checked').value;
+  const planInput = document.querySelector('input[name="plan"]:checked').value;
 
   if (!firstName || !lastName || !email || !hotelName || !rooms) {
     errorMsg.textContent = 'Please fill in all required fields.';
@@ -281,18 +294,22 @@ async function submitForm() {
   }
 
   btn.disabled = true;
-  btn.textContent = 'Submitting...';
+  btn.textContent = 'Setting up your account...';
 
   try {
     await fetch('https://hook.eu1.make.com/20b5teacqjk8d330goof6adqly5vyuq2', {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify({ firstName, lastName, email, hotelName, rooms, phone, plan, signupDate: new Date().toISOString() })
+      body: JSON.stringify({ firstName, lastName, email, hotelName, rooms, phone, plan: planInput, signupDate: new Date().toISOString() })
     });
 
-    document.getElementById('form-wrap').style.display = 'none';
-    document.getElementById('success-email').textContent = email;
-    document.getElementById('success-screen').style.display = 'block';
+    // Determine Stripe link based on plan and billing
+    const billing = isAnnual ? 'annual' : 'monthly';
+    const planId = document.querySelector('input[name="plan"]:checked').id.replace('plan-', '');
+    const stripeUrl = stripeLinks[billing][planId];
+
+    // Redirect to Stripe
+    window.location.href = stripeUrl + '?prefilled_email=' + encodeURIComponent(email);
 
   } catch (err) {
     errorMsg.textContent = 'Something went wrong. Please try again.';
