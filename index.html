@@ -100,7 +100,7 @@
     .trust-badge { padding: 7px 18px; border-radius: 8px; font-size: 13px; font-weight: 700; letter-spacing: -.2px; border: 1.5px solid var(--gray-200); background: var(--white); color: var(--gray-800); transition: all var(--transition); }
     .trust-badge:hover { border-color: var(--orange); color: var(--orange); transform: translateY(-1px); }
     #pain { background: var(--gray); }
-    .pain-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; margin-top: 48px; }
+    .pain-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 24px; margin-top: 48px; }
     .pain-card { background: var(--white); border-radius: var(--radius-lg); padding: 32px 28px; border: 1px solid var(--gray-200); box-shadow: var(--shadow-sm); transition: all var(--transition); position: relative; overflow: hidden; }
     .pain-card::before { content: ''; position: absolute; top: 0; left: 0; right: 0; height: 3px; background: var(--orange); transform: scaleX(0); transform-origin: left; transition: transform var(--transition); }
     .pain-card:hover { transform: translateY(-4px); box-shadow: var(--shadow-lg); }
@@ -108,14 +108,14 @@
     .pain-icon { font-size: 36px; margin-bottom: 16px; }
     .pain-card h3 { font-size: 17px; font-weight: 700; line-height: 1.4; color: var(--navy); }
     #features { background: var(--white); }
-    .features-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; margin-top: 56px; }
+    .features-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 24px; margin-top: 56px; }
     .feature-card { background: var(--gray); border-radius: var(--radius-lg); padding: 28px 24px; border: 1px solid transparent; transition: all var(--transition); }
     .feature-card:hover { background: var(--white); border-color: var(--orange); box-shadow: var(--shadow-md); transform: translateY(-3px); }
     .feature-icon { font-size: 32px; margin-bottom: 14px; }
     .feature-card h3 { font-size: 16px; font-weight: 700; margin-bottom: 8px; color: var(--navy); }
     .feature-card p { font-size: 14px; color: var(--gray-600); line-height: 1.6; }
     #how { background: var(--gray); }
-    .steps { display: grid; grid-template-columns: repeat(3, 1fr); gap: 0; margin-top: 56px; position: relative; }
+    .steps { display: grid; grid-template-columns: repeat(4, 1fr); gap: 0; margin-top: 56px; position: relative; }
     .steps::before { content: ''; position: absolute; top: 36px; left: calc(16.67% + 24px); right: calc(16.67% + 24px); height: 2px; background: repeating-linear-gradient(90deg, var(--orange) 0, var(--orange) 8px, transparent 8px, transparent 16px); }
     .step { text-align: center; padding: 0 24px; position: relative; }
     .step-num { width: 72px; height: 72px; border-radius: 50%; background: var(--orange); color: white; font-size: 24px; font-weight: 900; display: flex; align-items: center; justify-content: center; margin: 0 auto 24px; position: relative; z-index: 1; box-shadow: 0 4px 20px rgba(255,107,53,.35); transition: transform var(--transition); }
@@ -129,7 +129,7 @@
     .toggle.on { background: var(--orange); }
     .toggle.on::after { transform: translateX(20px); }
     .save-badge { background: rgba(255,107,53,.1); color: var(--orange); font-size: 11px; font-weight: 700; padding: 2px 8px; border-radius: 10px; }
-    .pricing-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; }
+    .pricing-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 24px; }
     .pricing-card { border-radius: var(--radius-lg); padding: 32px 28px; border: 2px solid var(--gray-200); position: relative; transition: all var(--transition); }
     .pricing-card:hover { transform: translateY(-4px); box-shadow: var(--shadow-xl); }
     .pricing-card.popular { border-color: var(--orange); box-shadow: 0 0 0 4px rgba(255,107,53,.08); transform: scale(1.03); }
