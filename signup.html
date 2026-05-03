@@ -37,6 +37,8 @@
     .early-bird-badge { background: rgba(255,107,53,.15); border: 1px solid rgba(255,107,53,.3); border-radius: 10px; padding: 14px 18px; }
     .early-bird-badge p { font-size: 13px; color: var(--orange); font-weight: 600; margin-bottom: 4px; }
     .early-bird-badge span { font-size: 12px; color: rgba(255,255,255,.6); }
+    .trust-badges { display: flex; flex-direction: column; gap: 8px; }
+    .trust-badges .badge { display: inline-flex; align-items: center; gap: 8px; background: rgba(255,255,255,.08); color: rgba(255,255,255,.85); font-size: 13px; padding: 8px 14px; border-radius: 20px; border: 1px solid rgba(255,255,255,.12); }
 
     /* Right panel */
     .right { background: white; padding: 48px 40px; }
@@ -121,6 +123,11 @@
         <div class="feature-item"><div class="feature-icon">📄</div> PDF visa form generation</div>
         <div class="feature-item"><div class="feature-icon">📱</div> Mobile app included</div>
       </div>
+      <div class="trust-badges">
+        <div class="badge">🌍 Trusted by hotels in 20+ countries</div>
+        <div class="badge">⚡ Setup in under 5 minutes</div>
+        <div class="badge">🔒 Cancel anytime, no questions asked</div>
+      </div>
       <div class="early-bird-badge">
         <p>🔥 Early Bird Deal</p>
         <span>Limited to the next 50 customers — 20% off all plans, forever.</span>
@@ -200,7 +207,8 @@
         <div class="form-row">
           <div class="form-group">
             <label for="rooms">Number of Rooms *</label>
-            <input type="number" id="rooms" placeholder="20" min="1" max="500" required>
+            <input type="number" id="rooms" placeholder="20" min="1" max="500" required oninput="clearRoomError()">
+            <span id="rooms-error" style="display:none;color:#dc3545;font-size:12px;margin-top:4px"></span>
           </div>
           <div class="form-group">
             <label for="phone">Phone (optional)</label>
@@ -208,10 +216,10 @@
           </div>
         </div>
 
+        <p class="terms">By signing up you agree to our <a href="https://hostliopro.com/terms" style="color:var(--orange)" target="_blank" rel="noopener noreferrer">Terms of Service</a> and <a href="https://hostliopro.com/privacy" style="color:var(--orange)" target="_blank" rel="noopener noreferrer">Privacy Policy</a>.</p>
         <button class="btn-submit" id="submit-btn" onclick="submitForm()">
           Start Free Trial →
         </button>
-        <p class="terms">By signing up you agree to our <a href="https://hostliopro.com/terms" style="color:var(--orange)">Terms of Service</a> and <a href="https://hostliopro.com/privacy" style="color:var(--orange)">Privacy Policy</a>.</p>
       </div>
 
       <!-- Success screen -->
@@ -268,18 +276,40 @@ const stripeLinks = {
   }
 };
 
-async function submitForm() {
+function clearRoomError() {
+  document.getElementById('rooms').style.borderColor = '';
+  const e = document.getElementById('rooms-error');
+  if (e) e.style.display = 'none';
+}
+
+function validateRooms(planId, rooms) {
+  const limits = { starter: 15, pro: 50, growth: 150 };
+  const messages = {
+    starter: 'Starter supports up to 15 rooms. Please choose Pro or Growth.',
+    pro: 'Pro supports up to 50 rooms. Please choose Growth.',
+    growth: 'Growth supports up to 150 rooms. Contact us for Enterprise.'
+  };
+  if (limits[planId] && parseInt(rooms) > limits[planId]) return messages[planId];
+  return null;
+}
+
+function submitForm() {
   const btn = document.getElementById('submit-btn');
   const errorMsg = document.getElementById('error-msg');
+  const roomsInput = document.getElementById('rooms');
+  const roomsError = document.getElementById('rooms-error');
   errorMsg.style.display = 'none';
+  clearRoomError();
 
   const firstName = document.getElementById('firstName').value.trim();
   const lastName = document.getElementById('lastName').value.trim();
   const email = document.getElementById('email').value.trim();
   const hotelName = document.getElementById('hotelName').value.trim();
-  const rooms = document.getElementById('rooms').value.trim();
+  const rooms = roomsInput.value.trim();
   const phone = document.getElementById('phone').value.trim();
-  const planInput = document.querySelector('input[name="plan"]:checked').value;
+  const planChecked = document.querySelector('input[name="plan"]:checked');
+  const planId = planChecked.id.replace('plan-', '');
+  const planInput = planChecked.value;
 
   if (!firstName || !lastName || !email || !hotelName || !rooms) {
     errorMsg.textContent = 'Please fill in all required fields.';
@@ -293,30 +323,33 @@ async function submitForm() {
     return;
   }
 
-  btn.disabled = true;
-  btn.textContent = 'Setting up your account...';
-
-  try {
-    await fetch('https://hook.eu1.make.com/20b5teacqjk8d330goof6adqly5vyuq2', {
-      method: 'POST',
-      headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify({ firstName, lastName, email, hotelName, rooms, phone, plan: planInput, signupDate: new Date().toISOString() })
-    });
-
-    // Determine Stripe link based on plan and billing
-    const billing = isAnnual ? 'annual' : 'monthly';
-    const planId = document.querySelector('input[name="plan"]:checked').id.replace('plan-', '');
-    const stripeUrl = stripeLinks[billing][planId];
-
-    // Redirect to Stripe
-    window.location.href = stripeUrl + '?prefilled_email=' + encodeURIComponent(email);
-
-  } catch (err) {
-    errorMsg.textContent = 'Something went wrong. Please try again.';
-    errorMsg.style.display = 'block';
-    btn.disabled = false;
-    btn.textContent = 'Start Free Trial →';
+  const roomError = validateRooms(planId, rooms);
+  if (roomError) {
+    roomsInput.style.borderColor = '#dc3545';
+    roomsError.textContent = roomError;
+    roomsError.style.display = 'block';
+    roomsInput.scrollIntoView({ behavior: 'smooth', block: 'center' });
+    return;
   }
+
+  btn.disabled = true;
+  btn.textContent = 'Redirecting to payment...';
+
+  const billing = isAnnual ? 'annual' : 'monthly';
+  const stripeBase = stripeLinks[billing][planId];
+
+  const params = new URLSearchParams({
+    prefilled_email: email,
+    client_reference_id: hotelName,
+    'metadata[plan]': planInput,
+    'metadata[rooms]': rooms,
+    'metadata[firstName]': firstName,
+    'metadata[lastName]': lastName,
+    'metadata[phone]': phone,
+    'metadata[billing]': billing
+  });
+
+  window.location.href = stripeBase + '?' + params.toString();
 }
 </script>
 
