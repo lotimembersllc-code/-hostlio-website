@@ -1082,6 +1082,8 @@ const AIRTABLE_BASE_ID = 'appPFfJ4ljiG0qjTq';
 const AIRTABLE_TABLE_ID = 'tbllyzYyAtA6bfD65'; // Hotels tablosu
 const TOKEN_STORAGE_KEY = 'hostliopro_admin_token';
 const EARLY_BIRD_LIMIT = 50;
+// Vercel proxy endpoint — CORS sorununu çözer
+const API_ENDPOINT = '/api/hotels';
 
 // Plan definitions matching your Stripe products
 const PLAN_DEFINITIONS = {
@@ -1184,20 +1186,17 @@ function showLogin() {
 }
 
 // =========================================================
-// AIRTABLE API
+// AIRTABLE API — Vercel Proxy üzerinden
 // =========================================================
-async function fetchAirtable(token, maxRecords = 100, offset = null) {
-  let url = `https://api.airtable.com/v0/${AIRTABLE_BASE_ID}/${AIRTABLE_TABLE_ID}?pageSize=${Math.min(maxRecords, 100)}`;
-  if (offset) url += `&offset=${offset}`;
-
-  const response = await fetch(url, {
+async function fetchAirtable(token, maxRecords = 1) {
+  const response = await fetch(`${API_ENDPOINT}?maxRecords=${maxRecords}`, {
     headers: { 'Authorization': `Bearer ${token}` }
   });
 
   if (!response.ok) {
     if (response.status === 401) throw new Error('Token geçersiz veya süresi dolmuş');
     if (response.status === 403) throw new Error('Token izinleri yetersiz (data.records:read gerekli)');
-    if (response.status === 404) throw new Error('Base veya tablo bulunamadı');
+    if (response.status === 404) throw new Error('API endpoint bulunamadı');
     const text = await response.text();
     throw new Error(`HTTP ${response.status}: ${text.substring(0, 100)}`);
   }
@@ -1209,16 +1208,19 @@ async function fetchAllRecords() {
   const token = getToken();
   if (!token) throw new Error('Token yok');
 
-  let records = [];
-  let offset = null;
+  const response = await fetch(API_ENDPOINT, {
+    headers: { 'Authorization': `Bearer ${token}` }
+  });
 
-  do {
-    const data = await fetchAirtable(token, 100, offset);
-    records = records.concat(data.records || []);
-    offset = data.offset;
-  } while (offset);
+  if (!response.ok) {
+    if (response.status === 401) throw new Error('Token geçersiz veya süresi dolmuş');
+    if (response.status === 403) throw new Error('Token izinleri yetersiz (data.records:read gerekli)');
+    const text = await response.text();
+    throw new Error(`HTTP ${response.status}: ${text.substring(0, 150)}`);
+  }
 
-  return records;
+  const data = await response.json();
+  return data.records || [];
 }
 
 // =========================================================
