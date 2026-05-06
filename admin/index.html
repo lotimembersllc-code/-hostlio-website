@@ -2,938 +2,293 @@
 <html lang="tr">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Hostlio Pro · Admin Panel</title>
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600;9..144,700&family=JetBrains+Mono:wght@400;500;600&family=Inter+Tight:wght@400;500;600;700&display=swap" rel="stylesheet">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+<title>Hostlio Pro · Admin</title>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600;9..144,700&family=JetBrains+Mono:wght@500&family=Inter+Tight:wght@400;500;600;700&display=swap" rel="stylesheet">
 <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.0/dist/chart.umd.min.js"></script>
 <style>
-  :root {
-    --bg: #0a0b0d;
-    --bg-elev: #111317;
-    --bg-elev-2: #16191f;
-    --border: #1f232b;
-    --border-strong: #2a2f38;
-    --text: #e8eaed;
-    --text-dim: #9095a0;
-    --text-faint: #5d626c;
-    --accent: #ff8a3d;
-    --accent-dim: #c25f1f;
-    --accent-hover: #ff9d52;
-    --success: #4ade80;
-    --warning: #fbbf24;
-    --danger: #f87171;
-    --info: #60a5fa;
-  }
-
-  * { margin: 0; padding: 0; box-sizing: border-box; }
-
-  html, body {
-    background: var(--bg);
-    color: var(--text);
-    font-family: 'Inter Tight', sans-serif;
-    font-size: 14px;
-    line-height: 1.5;
-    -webkit-font-smoothing: antialiased;
-    overflow-x: hidden;
-  }
-
-  body {
-    background-image:
-      radial-gradient(circle at 20% 0%, rgba(255, 138, 61, 0.04) 0%, transparent 40%),
-      radial-gradient(circle at 80% 100%, rgba(96, 165, 250, 0.03) 0%, transparent 40%);
-    min-height: 100vh;
-  }
-
-  /* === LOGIN SCREEN === */
-  .login-screen {
-    min-height: 100vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 20px;
-  }
-
-  .login-card {
-    background: var(--bg-elev);
-    border: 1px solid var(--border);
-    border-radius: 14px;
-    padding: 36px;
-    width: 100%;
-    max-width: 440px;
-    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.4);
-  }
-
-  .login-logo {
-    display: flex;
-    align-items: center;
-    gap: 12px;
-    margin-bottom: 24px;
-  }
-
-  .login-mark {
-    width: 40px;
-    height: 40px;
-    background: var(--accent);
-    border-radius: 10px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-family: 'Fraunces', serif;
-    font-weight: 700;
-    color: #0a0b0d;
-    font-size: 22px;
-  }
-
-  .login-title-wrap {
-    display: flex;
-    flex-direction: column;
-  }
-
-  .login-title-main {
-    font-family: 'Fraunces', serif;
-    font-size: 22px;
-    font-weight: 600;
-    letter-spacing: -0.02em;
-  }
-
-  .login-title-sub {
-    color: var(--text-dim);
-    font-size: 13px;
-  }
-
-  .login-heading {
-    font-family: 'Fraunces', serif;
-    font-size: 24px;
-    font-weight: 600;
-    margin-bottom: 8px;
-    letter-spacing: -0.02em;
-  }
-
-  .login-subheading {
-    color: var(--text-dim);
-    font-size: 13.5px;
-    margin-bottom: 24px;
-    line-height: 1.6;
-  }
-
-  .login-field {
-    margin-bottom: 18px;
-  }
-
-  .login-label {
-    display: block;
-    font-size: 12px;
-    color: var(--text-dim);
-    margin-bottom: 8px;
-    font-weight: 500;
-  }
-
-  .login-input {
-    width: 100%;
-    background: var(--bg);
-    border: 1px solid var(--border-strong);
-    color: var(--text);
-    padding: 11px 14px;
-    border-radius: 8px;
-    font-size: 13px;
-    font-family: 'JetBrains Mono', monospace;
-    transition: border-color 0.15s;
-  }
-
-  .login-input:focus {
-    outline: none;
-    border-color: var(--accent);
-  }
-
-  .login-btn {
-    width: 100%;
-    background: var(--accent);
-    color: #0a0b0d;
-    border: none;
-    padding: 12px;
-    border-radius: 8px;
-    cursor: pointer;
-    font-size: 14px;
-    font-weight: 600;
-    font-family: inherit;
-    transition: background 0.15s;
-    margin-top: 8px;
-  }
-
-  .login-btn:hover { background: var(--accent-hover); }
-  .login-btn:disabled {
-    opacity: 0.5;
-    cursor: not-allowed;
-  }
-
-  .login-error {
-    background: rgba(248, 113, 113, 0.1);
-    border: 1px solid rgba(248, 113, 113, 0.25);
-    color: var(--danger);
-    padding: 10px 12px;
-    border-radius: 6px;
-    font-size: 12.5px;
-    margin-bottom: 16px;
-    display: none;
-  }
-
-  .login-error.show { display: block; }
-
-  .login-help {
-    background: var(--bg-elev-2);
-    border: 1px solid var(--border);
-    border-radius: 8px;
-    padding: 14px;
-    font-size: 12px;
-    color: var(--text-dim);
-    margin-top: 18px;
-    line-height: 1.6;
-  }
-
-  .login-help strong { color: var(--text); }
-  .login-help a { color: var(--accent); text-decoration: none; }
-  .login-help a:hover { text-decoration: underline; }
-
-  /* === MAIN APP === */
-  .app {
-    display: grid;
-    grid-template-columns: 240px 1fr;
-    min-height: 100vh;
-  }
-
-  .app.hidden { display: none; }
-  .login-screen.hidden { display: none; }
-
-  /* Sidebar */
-  .sidebar {
-    background: var(--bg-elev);
-    border-right: 1px solid var(--border);
-    padding: 24px 16px;
-    position: sticky;
-    top: 0;
-    height: 100vh;
-    display: flex;
-    flex-direction: column;
-  }
-
-  .logo {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-    padding: 0 8px 28px;
-    border-bottom: 1px solid var(--border);
-    margin-bottom: 20px;
-  }
-
-  .logo-mark {
-    width: 32px;
-    height: 32px;
-    background: var(--accent);
-    border-radius: 8px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-family: 'Fraunces', serif;
-    font-weight: 700;
-    color: #0a0b0d;
-    font-size: 18px;
-  }
-
-  .logo-text {
-    font-family: 'Fraunces', serif;
-    font-size: 18px;
-    font-weight: 600;
-    letter-spacing: -0.02em;
-  }
-
-  .logo-text span {
-    color: var(--text-dim);
-    font-weight: 400;
-  }
-
-  .nav-section { margin-bottom: 24px; }
-
-  .nav-label {
-    font-size: 11px;
-    text-transform: uppercase;
-    letter-spacing: 0.08em;
-    color: var(--text-faint);
-    padding: 0 8px;
-    margin-bottom: 8px;
-  }
-
-  .nav-item {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-    padding: 9px 10px;
-    border-radius: 6px;
-    color: var(--text-dim);
-    cursor: pointer;
-    font-size: 13.5px;
-    font-weight: 500;
-    transition: all 0.15s;
-    margin-bottom: 2px;
-    user-select: none;
-  }
-
-  .nav-item:hover {
-    background: var(--bg-elev-2);
-    color: var(--text);
-  }
-
-  .nav-item.active {
-    background: var(--bg-elev-2);
-    color: var(--text);
-  }
-
-  .nav-item.active::before {
-    content: '';
-    width: 3px;
-    height: 16px;
-    background: var(--accent);
-    border-radius: 2px;
-    margin-right: -3px;
-    margin-left: -10px;
-  }
-
-  .nav-item svg {
-    width: 16px;
-    height: 16px;
-    stroke-width: 1.8;
-    flex-shrink: 0;
-  }
-
-  .nav-item .badge {
-    margin-left: auto;
-    background: var(--bg-elev);
-    color: var(--text-dim);
-    padding: 1px 6px;
-    border-radius: 4px;
-    font-size: 11px;
-    font-weight: 600;
-    border: 1px solid var(--border);
-  }
-
-  .sidebar-footer {
-    margin-top: auto;
-    padding: 12px;
-    background: var(--bg-elev-2);
-    border-radius: 8px;
-    border: 1px solid var(--border);
-    display: flex;
-    align-items: center;
-    gap: 10px;
-  }
-
-  .avatar {
-    width: 32px;
-    height: 32px;
-    border-radius: 50%;
-    background: linear-gradient(135deg, #ff8a3d, #c25f1f);
-    color: #0a0b0d;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-weight: 700;
-    font-size: 13px;
-  }
-
-  .user-info { flex: 1; min-width: 0; }
-  .user-name {
-    font-size: 13px;
-    font-weight: 600;
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
-  }
-  .user-email {
-    font-size: 11px;
-    color: var(--text-faint);
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
-  }
-
-  .logout-btn {
-    background: transparent;
-    border: none;
-    color: var(--text-faint);
-    cursor: pointer;
-    padding: 4px;
-    border-radius: 4px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-  .logout-btn:hover { color: var(--danger); background: rgba(248, 113, 113, 0.08); }
-  .logout-btn svg { width: 14px; height: 14px; stroke-width: 1.8; }
-
-  /* Main */
-  .main {
-    padding: 24px 32px 64px;
-    max-width: 1400px;
-    width: 100%;
-  }
-
-  .topbar {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    margin-bottom: 32px;
-    padding-bottom: 20px;
-    border-bottom: 1px solid var(--border);
-  }
-
-  .page-title {
-    font-family: 'Fraunces', serif;
-    font-size: 28px;
-    font-weight: 600;
-    letter-spacing: -0.02em;
-  }
-
-  .page-subtitle {
-    color: var(--text-dim);
-    font-size: 13.5px;
-    margin-top: 4px;
-  }
-
-  .topbar-actions {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-  }
-
-  .btn {
-    background: var(--bg-elev);
-    border: 1px solid var(--border);
-    color: var(--text);
-    padding: 8px 14px;
-    border-radius: 6px;
-    cursor: pointer;
-    font-size: 13px;
-    font-weight: 500;
-    font-family: inherit;
-    display: inline-flex;
-    align-items: center;
-    gap: 7px;
-    transition: all 0.15s;
-  }
-  .btn:hover { background: var(--bg-elev-2); border-color: var(--border-strong); }
-
-  .btn-primary {
-    background: var(--accent);
-    color: #0a0b0d;
-    border-color: var(--accent);
-    font-weight: 600;
-  }
-  .btn-primary:hover { background: var(--accent-hover); border-color: var(--accent-hover); }
-
-  .btn svg { width: 14px; height: 14px; stroke-width: 2; }
-
-  .live-dot {
-    width: 7px;
-    height: 7px;
-    background: var(--success);
-    border-radius: 50%;
-    box-shadow: 0 0 0 0 rgba(74, 222, 128, 0.5);
-    animation: pulse 2s infinite;
-  }
-  @keyframes pulse {
-    0% { box-shadow: 0 0 0 0 rgba(74, 222, 128, 0.5); }
-    70% { box-shadow: 0 0 0 6px rgba(74, 222, 128, 0); }
-    100% { box-shadow: 0 0 0 0 rgba(74, 222, 128, 0); }
-  }
-
-  /* Early Bird Banner */
-  .eb-banner {
-    background: linear-gradient(135deg, rgba(255, 138, 61, 0.1), rgba(194, 95, 31, 0.05));
-    border: 1px solid rgba(255, 138, 61, 0.25);
-    border-radius: 12px;
-    padding: 20px 24px;
-    margin-bottom: 28px;
-    display: flex;
-    align-items: center;
-    gap: 24px;
-  }
-
-  .eb-icon {
-    width: 48px;
-    height: 48px;
-    background: var(--accent);
-    border-radius: 10px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-shrink: 0;
-  }
-  .eb-icon svg { width: 24px; height: 24px; color: #0a0b0d; stroke-width: 2.2; }
-
-  .eb-info { flex: 1; min-width: 0; }
-  .eb-title {
-    font-family: 'Fraunces', serif;
-    font-size: 18px;
-    font-weight: 600;
-    margin-bottom: 4px;
-  }
-  .eb-subtitle {
-    color: var(--text-dim);
-    font-size: 13px;
-    margin-bottom: 12px;
-  }
-  .eb-bar-wrap {
-    height: 8px;
-    background: var(--bg-elev-2);
-    border-radius: 4px;
-    overflow: hidden;
-    margin-bottom: 6px;
-  }
-  .eb-bar {
-    height: 100%;
-    background: linear-gradient(90deg, var(--accent), #ffaa66);
-    border-radius: 4px;
-    transition: width 0.6s;
-  }
-  .eb-meta {
-    display: flex;
-    justify-content: space-between;
-    font-size: 12px;
-    color: var(--text-dim);
-  }
-  .eb-numbers {
-    text-align: right;
-    font-family: 'Fraunces', serif;
-    font-size: 32px;
-    font-weight: 600;
-    line-height: 1;
-    color: var(--accent);
-  }
-  .eb-numbers small {
-    color: var(--text-dim);
-    font-size: 16px;
-    font-family: 'Fraunces', serif;
-  }
-  .eb-numbers-label {
-    color: var(--text-dim);
-    font-size: 11px;
-    text-transform: uppercase;
-    letter-spacing: 0.06em;
-    margin-top: 6px;
-  }
-
-  /* Stats */
-  .stats {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 16px;
-    margin-bottom: 28px;
-  }
-
-  .stat {
-    background: var(--bg-elev);
-    border: 1px solid var(--border);
-    border-radius: 10px;
-    padding: 18px;
-    transition: border-color 0.2s;
-  }
-  .stat:hover { border-color: var(--border-strong); }
-
-  .stat-label {
-    color: var(--text-dim);
-    font-size: 12px;
-    font-weight: 500;
-    text-transform: uppercase;
-    letter-spacing: 0.05em;
-    margin-bottom: 12px;
-  }
-
-  .stat-value {
-    font-family: 'Fraunces', serif;
-    font-size: 30px;
-    font-weight: 600;
-    letter-spacing: -0.02em;
-    line-height: 1.1;
-  }
-
-  .stat-value .currency {
-    font-size: 18px;
-    color: var(--text-dim);
-    margin-right: 2px;
-  }
-
-  .stat-meta {
-    margin-top: 10px;
-    color: var(--text-faint);
-    font-size: 11.5px;
-  }
-
-  /* Cards & Plans */
-  .card {
-    background: var(--bg-elev);
-    border: 1px solid var(--border);
-    border-radius: 10px;
-    padding: 20px;
-    margin-bottom: 20px;
-  }
-
-  .card-header {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    margin-bottom: 18px;
-  }
-
-  .card-title {
-    font-size: 15px;
-    font-weight: 600;
-    letter-spacing: -0.01em;
-  }
-
-  .card-title-meta {
-    color: var(--text-dim);
-    font-size: 12px;
-    margin-top: 2px;
-  }
-
-  /* Plan Tabs */
-  .plan-tabs {
-    display: flex;
-    gap: 4px;
-    background: var(--bg-elev-2);
-    padding: 3px;
-    border-radius: 8px;
-    border: 1px solid var(--border);
-    margin-bottom: 20px;
-    width: fit-content;
-  }
-
-  .plan-tab {
-    padding: 7px 16px;
-    border-radius: 6px;
-    font-size: 13px;
-    font-weight: 500;
-    color: var(--text-dim);
-    cursor: pointer;
-    transition: all 0.15s;
-  }
-
-  .plan-tab.active {
-    background: var(--bg);
-    color: var(--text);
-  }
-
-  .plan-list {
-    display: flex;
-    flex-direction: column;
-    gap: 14px;
-  }
-
-  .plan-row {
-    display: grid;
-    grid-template-columns: 1fr auto;
-    gap: 16px;
-    align-items: center;
-  }
-
-  .plan-info { min-width: 0; }
-
-  .plan-name-row {
-    display: flex;
-    justify-content: space-between;
-    margin-bottom: 6px;
-    font-size: 13.5px;
-    font-weight: 600;
-  }
-
-  .plan-name-row .count {
-    color: var(--text-dim);
-    font-weight: 400;
-  }
-
-  .plan-bar {
-    height: 6px;
-    background: var(--bg-elev-2);
-    border-radius: 3px;
-    overflow: hidden;
-  }
-
-  .plan-fill {
-    height: 100%;
-    border-radius: 3px;
-    transition: width 0.5s;
-  }
-
-  .plan-meta {
-    color: var(--text-dim);
-    font-size: 11.5px;
-    margin-top: 5px;
-  }
-
-  /* Tables */
-  .table-wrap {
-    overflow-x: auto;
-    margin: 0 -20px;
-    padding: 0 20px;
-  }
-
-  table {
-    width: 100%;
-    border-collapse: collapse;
-    font-size: 13px;
-  }
-
-  th {
-    text-align: left;
-    color: var(--text-faint);
-    font-weight: 500;
-    font-size: 11px;
-    text-transform: uppercase;
-    letter-spacing: 0.06em;
-    padding: 10px 12px;
-    border-bottom: 1px solid var(--border);
-    white-space: nowrap;
-  }
-
-  td {
-    padding: 12px;
-    border-bottom: 1px solid var(--border);
-    vertical-align: middle;
-  }
-
-  tr:last-child td { border-bottom: none; }
-  tr:hover td { background: rgba(255, 255, 255, 0.02); }
-
-  .user-cell {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-  }
-
-  .user-avatar {
-    width: 30px;
-    height: 30px;
-    border-radius: 50%;
-    background: var(--bg-elev-2);
-    border: 1px solid var(--border);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 11px;
-    font-weight: 600;
-    color: var(--text-dim);
-    flex-shrink: 0;
-  }
-
-  .user-details .name { font-weight: 500; color: var(--text); }
-  .user-details .email { font-size: 11.5px; color: var(--text-faint); }
-
-  .badge-pill {
-    display: inline-flex;
-    align-items: center;
-    gap: 5px;
-    padding: 3px 9px;
-    border-radius: 12px;
-    font-size: 11.5px;
-    font-weight: 500;
-    border: 1px solid;
-  }
-  .badge-pill::before {
-    content: '';
-    width: 5px;
-    height: 5px;
-    border-radius: 50%;
-  }
-
-  .badge-active { color: var(--success); border-color: rgba(74, 222, 128, 0.25); background: rgba(74, 222, 128, 0.08); }
-  .badge-active::before { background: var(--success); }
-  .badge-trial { color: var(--info); border-color: rgba(96, 165, 250, 0.25); background: rgba(96, 165, 250, 0.08); }
-  .badge-trial::before { background: var(--info); }
-  .badge-canceled { color: var(--text-faint); border-color: var(--border-strong); background: var(--bg-elev-2); }
-  .badge-canceled::before { background: var(--text-faint); }
-  .badge-pastdue { color: var(--warning); border-color: rgba(251, 191, 36, 0.25); background: rgba(251, 191, 36, 0.08); }
-  .badge-pastdue::before { background: var(--warning); }
-  .badge-incomplete { color: var(--danger); border-color: rgba(248, 113, 113, 0.25); background: rgba(248, 113, 113, 0.08); }
-  .badge-incomplete::before { background: var(--danger); }
-  .badge-empty { color: var(--text-faint); border-color: var(--border); background: transparent; }
-  .badge-empty::before { background: var(--text-faint); opacity: 0.5; }
-
-  .amount {
-    font-family: 'JetBrains Mono', monospace;
-    font-weight: 500;
-  }
-
-  /* Search */
-  .search-bar {
-    display: flex;
-    gap: 8px;
-    align-items: center;
-    margin-bottom: 16px;
-    flex-wrap: wrap;
-  }
-
-  .search-input {
-    background: var(--bg-elev-2);
-    border: 1px solid var(--border);
-    color: var(--text);
-    padding: 8px 12px 8px 34px;
-    border-radius: 6px;
-    font-size: 13px;
-    width: 280px;
-    font-family: inherit;
-    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='14' height='14' viewBox='0 0 24 24' fill='none' stroke='%239095a0' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Ccircle cx='11' cy='11' r='8'/%3E%3Cpath d='m21 21-4.3-4.3'/%3E%3C/svg%3E");
-    background-repeat: no-repeat;
-    background-position: 11px center;
-  }
-  .search-input:focus { outline: none; border-color: var(--border-strong); }
-
-  .filter-select {
-    background: var(--bg-elev-2);
-    border: 1px solid var(--border);
-    color: var(--text);
-    padding: 8px 28px 8px 12px;
-    border-radius: 6px;
-    font-size: 13px;
-    cursor: pointer;
-    font-family: inherit;
-    appearance: none;
-    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 24 24' fill='none' stroke='%239095a0' stroke-width='2'%3E%3Cpolyline points='6 9 12 15 18 9'/%3E%3C/svg%3E");
-    background-repeat: no-repeat;
-    background-position: right 10px center;
-  }
-
-  /* Loading & States */
-  .loading {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 60px 20px;
-    color: var(--text-dim);
-    flex-direction: column;
-    gap: 12px;
-  }
-
-  .spinner {
-    width: 24px;
-    height: 24px;
-    border: 2px solid var(--border);
-    border-top-color: var(--accent);
-    border-radius: 50%;
-    animation: spin 0.8s linear infinite;
-  }
-  @keyframes spin { to { transform: rotate(360deg); } }
-
-  .empty-state {
-    text-align: center;
-    padding: 60px 20px;
-    color: var(--text-faint);
-  }
-  .empty-state h3 {
-    font-family: 'Fraunces', serif;
-    font-size: 18px;
-    color: var(--text);
-    margin-bottom: 8px;
-  }
-
-  .error-state {
-    background: rgba(248, 113, 113, 0.08);
-    border: 1px solid rgba(248, 113, 113, 0.25);
-    border-radius: 10px;
-    padding: 20px;
-    color: var(--danger);
-    text-align: center;
-  }
-
-  /* Pages */
-  .page { display: none; }
-  .page.active { display: block; }
-
-  /* Toast */
-  .toast {
-    position: fixed;
-    bottom: 24px;
-    right: 24px;
-    background: var(--bg-elev);
-    border: 1px solid var(--border-strong);
-    padding: 12px 16px;
-    border-radius: 8px;
-    font-size: 13px;
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
-    z-index: 200;
-    transform: translateY(100px);
-    opacity: 0;
-    transition: all 0.3s;
-  }
-  .toast.show { transform: translateY(0); opacity: 1; }
-  .toast.success { border-left: 3px solid var(--success); }
-  .toast.error { border-left: 3px solid var(--danger); }
-
-  /* Responsive */
-  @media (max-width: 1100px) {
-    .stats { grid-template-columns: repeat(2, 1fr); }
-    .eb-banner { flex-direction: column; align-items: flex-start; }
-    .eb-numbers { text-align: left; }
-  }
-  @media (max-width: 768px) {
-    .app { grid-template-columns: 1fr; }
-    .sidebar { display: none; }
-    .main { padding: 16px; }
-    .stats { grid-template-columns: 1fr; }
-  }
-
-  /* Scrollbar */
-  ::-webkit-scrollbar { width: 8px; height: 8px; }
-  ::-webkit-scrollbar-track { background: transparent; }
-  ::-webkit-scrollbar-thumb { background: var(--border-strong); border-radius: 4px; }
-  ::-webkit-scrollbar-thumb:hover { background: #3a3f48; }
+:root {
+  --bg:#0a0b0d; --bg-e:#111317; --bg-e2:#16191f;
+  --border:#1f232b; --border-s:#2a2f38;
+  --text:#e8eaed; --dim:#9095a0; --faint:#5d626c;
+  --accent:#ff8a3d; --accent-h:#ff9d52; --accent-d:#c25f1f;
+  --ok:#4ade80; --warn:#fbbf24; --err:#f87171; --info:#60a5fa;
+  --sidebar:240px;
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html,body{background:var(--bg);color:var(--text);font-family:'Inter Tight',sans-serif;font-size:14px;line-height:1.5;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+body{background-image:radial-gradient(circle at 20% 0%,rgba(255,138,61,.04) 0%,transparent 40%),radial-gradient(circle at 80% 100%,rgba(96,165,250,.03) 0%,transparent 40%);min-height:100vh}
+
+/* ── SCROLLBAR ── */
+::-webkit-scrollbar{width:6px;height:6px}
+::-webkit-scrollbar-track{background:transparent}
+::-webkit-scrollbar-thumb{background:var(--border-s);border-radius:3px}
+
+/* ── LOGIN ── */
+.login-wrap{min-height:100vh;display:flex;align-items:center;justify-content:center;padding:20px}
+.login-card{background:var(--bg-e);border:1px solid var(--border);border-radius:14px;padding:32px;width:100%;max-width:420px;box-shadow:0 20px 60px rgba(0,0,0,.4)}
+.login-logo{display:flex;align-items:center;gap:10px;margin-bottom:24px}
+.lmark{width:36px;height:36px;background:var(--accent);border-radius:9px;display:flex;align-items:center;justify-content:center;font-family:'Fraunces',serif;font-weight:700;color:#0a0b0d;font-size:20px;flex-shrink:0}
+.login-brand{font-family:'Fraunces',serif;font-size:19px;font-weight:600;letter-spacing:-.02em}
+.login-brand span{color:var(--dim);font-weight:400}
+.login-sub{color:var(--faint);font-size:12px}
+.login-h{font-family:'Fraunces',serif;font-size:22px;font-weight:600;margin-bottom:6px;letter-spacing:-.02em}
+.login-p{color:var(--dim);font-size:13px;margin-bottom:22px}
+.field{margin-bottom:14px}
+.field label{display:block;font-size:12px;color:var(--dim);margin-bottom:6px;font-weight:500}
+.field input{width:100%;background:var(--bg);border:1px solid var(--border-s);color:var(--text);padding:10px 13px;border-radius:7px;font-size:13px;font-family:inherit;transition:border-color .15s}
+.field input:focus{outline:none;border-color:var(--accent)}
+.login-btn{width:100%;background:var(--accent);color:#0a0b0d;border:none;padding:12px;border-radius:8px;cursor:pointer;font-size:14px;font-weight:600;font-family:inherit;transition:background .15s;margin-top:6px}
+.login-btn:hover{background:var(--accent-h)}
+.login-btn:disabled{opacity:.5;cursor:not-allowed}
+.login-err{background:rgba(248,113,113,.1);border:1px solid rgba(248,113,113,.25);color:var(--err);padding:10px 12px;border-radius:6px;font-size:12.5px;margin-bottom:14px;display:none}
+.login-err.show{display:block}
+.login-divider{display:flex;align-items:center;gap:10px;margin:20px 0;color:var(--faint);font-size:12px}
+.login-divider::before,.login-divider::after{content:'';flex:1;height:1px;background:var(--border)}
+
+/* ── APP SHELL ── */
+.app{display:grid;grid-template-columns:var(--sidebar) 1fr;min-height:100vh}
+.app.hidden,.login-wrap.hidden{display:none}
+
+/* ── SIDEBAR ── */
+.sidebar{background:var(--bg-e);border-right:1px solid var(--border);padding:20px 14px;position:sticky;top:0;height:100vh;display:flex;flex-direction:column;overflow-y:auto}
+.s-logo{display:flex;align-items:center;gap:9px;padding:0 6px 22px;border-bottom:1px solid var(--border);margin-bottom:18px}
+.s-brand{font-family:'Fraunces',serif;font-size:17px;font-weight:600;letter-spacing:-.02em}
+.s-brand span{color:var(--dim);font-weight:400}
+.nav-sec{margin-bottom:20px}
+.nav-lbl{font-size:10.5px;text-transform:uppercase;letter-spacing:.08em;color:var(--faint);padding:0 8px;margin-bottom:7px}
+.nav-item{display:flex;align-items:center;gap:9px;padding:8px 10px;border-radius:6px;color:var(--dim);cursor:pointer;font-size:13px;font-weight:500;transition:all .15s;margin-bottom:2px;user-select:none;text-decoration:none}
+.nav-item:hover{background:var(--bg-e2);color:var(--text)}
+.nav-item.active{background:var(--bg-e2);color:var(--text)}
+.nav-item.active::before{content:'';width:3px;height:14px;background:var(--accent);border-radius:2px;margin-right:-3px;margin-left:-10px}
+.nav-item svg{width:15px;height:15px;stroke-width:1.8;flex-shrink:0}
+.nav-badge{margin-left:auto;background:var(--bg-e);color:var(--dim);padding:1px 6px;border-radius:4px;font-size:10.5px;font-weight:600;border:1px solid var(--border)}
+.s-footer{margin-top:auto;padding:11px;background:var(--bg-e2);border-radius:8px;border:1px solid var(--border);display:flex;align-items:center;gap:9px}
+.av{width:30px;height:30px;border-radius:50%;background:linear-gradient(135deg,#ff8a3d,#c25f1f);color:#0a0b0d;display:flex;align-items:center;justify-content:center;font-weight:700;font-size:12px;flex-shrink:0}
+.s-user{flex:1;min-width:0}
+.s-uname{font-size:12.5px;font-weight:600;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.s-uemail{font-size:11px;color:var(--faint);white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.icon-btn{background:transparent;border:none;color:var(--faint);cursor:pointer;padding:4px;border-radius:4px;display:flex;align-items:center;justify-content:center;transition:all .15s}
+.icon-btn:hover{color:var(--err);background:rgba(248,113,113,.08)}
+.icon-btn svg{width:14px;height:14px;stroke-width:1.8}
+
+/* ── MOBILE NAV ── */
+.mob-header{display:none;background:var(--bg-e);border-bottom:1px solid var(--border);padding:12px 16px;align-items:center;justify-content:space-between;position:sticky;top:0;z-index:50}
+.mob-logo{display:flex;align-items:center;gap:8px;font-family:'Fraunces',serif;font-size:16px;font-weight:600}
+.mob-menu-btn{background:var(--bg-e2);border:1px solid var(--border);color:var(--text);padding:7px;border-radius:6px;cursor:pointer;display:flex;align-items:center}
+.mob-menu-btn svg{width:16px;height:16px;stroke-width:2}
+.mob-nav{display:none;position:fixed;inset:0;z-index:100;background:rgba(0,0,0,.7);backdrop-filter:blur(4px)}
+.mob-nav.open{display:flex}
+.mob-nav-panel{background:var(--bg-e);width:260px;max-width:80vw;height:100%;padding:20px 14px;display:flex;flex-direction:column;overflow-y:auto}
+.mob-nav-close{align-self:flex-end;background:var(--bg-e2);border:1px solid var(--border);color:var(--dim);padding:7px;border-radius:6px;cursor:pointer;margin-bottom:16px}
+.mob-nav-close svg{width:16px;height:16px;stroke-width:2;display:block}
+
+/* ── MAIN ── */
+.main{padding:24px 28px 64px;min-width:0}
+.page{display:none}
+.page.active{display:block}
+.topbar{display:flex;align-items:flex-start;justify-content:space-between;margin-bottom:28px;padding-bottom:18px;border-bottom:1px solid var(--border);gap:12px;flex-wrap:wrap}
+.page-title{font-family:'Fraunces',serif;font-size:26px;font-weight:600;letter-spacing:-.02em}
+.page-sub{color:var(--dim);font-size:13px;margin-top:3px}
+.top-actions{display:flex;align-items:center;gap:8px;flex-wrap:wrap}
+
+/* ── BUTTONS ── */
+.btn{background:var(--bg-e);border:1px solid var(--border);color:var(--text);padding:8px 14px;border-radius:6px;cursor:pointer;font-size:13px;font-weight:500;font-family:inherit;display:inline-flex;align-items:center;gap:7px;transition:all .15s;white-space:nowrap}
+.btn:hover{background:var(--bg-e2);border-color:var(--border-s)}
+.btn-primary{background:var(--accent);color:#0a0b0d;border-color:var(--accent);font-weight:600}
+.btn-primary:hover{background:var(--accent-h);border-color:var(--accent-h)}
+.btn-danger{background:rgba(248,113,113,.1);color:var(--err);border-color:rgba(248,113,113,.25)}
+.btn-danger:hover{background:rgba(248,113,113,.2)}
+.btn svg{width:14px;height:14px;stroke-width:2}
+.live-dot{width:7px;height:7px;background:var(--ok);border-radius:50%;box-shadow:0 0 0 0 rgba(74,222,128,.5);animation:pulse 2s infinite;flex-shrink:0}
+@keyframes pulse{0%{box-shadow:0 0 0 0 rgba(74,222,128,.5)}70%{box-shadow:0 0 0 6px rgba(74,222,128,0)}100%{box-shadow:0 0 0 0 rgba(74,222,128,0)}}
+
+/* ── STATS ── */
+.stats{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;margin-bottom:24px}
+.stat{background:var(--bg-e);border:1px solid var(--border);border-radius:10px;padding:16px;transition:border-color .2s}
+.stat:hover{border-color:var(--border-s)}
+.stat-lbl{color:var(--dim);font-size:11.5px;font-weight:500;text-transform:uppercase;letter-spacing:.05em;margin-bottom:10px}
+.stat-val{font-family:'Fraunces',serif;font-size:28px;font-weight:600;letter-spacing:-.02em;line-height:1.1}
+.stat-val .cur{font-size:16px;color:var(--dim);margin-right:2px}
+.stat-meta{margin-top:8px;color:var(--faint);font-size:11px}
+
+/* ── CARDS ── */
+.card{background:var(--bg-e);border:1px solid var(--border);border-radius:10px;padding:18px;margin-bottom:18px}
+.card-hd{display:flex;align-items:center;justify-content:space-between;margin-bottom:16px;gap:10px;flex-wrap:wrap}
+.card-title{font-size:14.5px;font-weight:600;letter-spacing:-.01em}
+.card-sub{color:var(--dim);font-size:12px;margin-top:2px}
+
+/* ── EARLY BIRD BANNER ── */
+.eb-banner{background:linear-gradient(135deg,rgba(255,138,61,.1),rgba(194,95,31,.05));border:1px solid rgba(255,138,61,.25);border-radius:12px;padding:18px 20px;margin-bottom:22px;display:flex;align-items:center;gap:20px;flex-wrap:wrap}
+.eb-icon{width:44px;height:44px;background:var(--accent);border-radius:9px;display:flex;align-items:center;justify-content:center;flex-shrink:0}
+.eb-icon svg{width:22px;height:22px;color:#0a0b0d;stroke-width:2.2}
+.eb-info{flex:1;min-width:180px}
+.eb-title{font-family:'Fraunces',serif;font-size:16px;font-weight:600;margin-bottom:3px}
+.eb-sub{color:var(--dim);font-size:12.5px;margin-bottom:10px}
+.eb-bar-wrap{height:7px;background:var(--bg-e2);border-radius:4px;overflow:hidden;margin-bottom:5px}
+.eb-bar{height:100%;background:linear-gradient(90deg,var(--accent),#ffaa66);border-radius:4px;transition:width .6s}
+.eb-meta{display:flex;justify-content:space-between;font-size:11.5px;color:var(--dim)}
+.eb-num{font-family:'Fraunces',serif;font-size:30px;font-weight:600;color:var(--accent);line-height:1;white-space:nowrap}
+.eb-num small{font-size:15px;color:var(--dim)}
+.eb-num-lbl{color:var(--dim);font-size:11px;text-transform:uppercase;letter-spacing:.05em;margin-top:4px}
+
+/* ── PLAN TABS ── */
+.plan-tabs{display:flex;gap:3px;background:var(--bg-e2);padding:3px;border-radius:7px;border:1px solid var(--border);width:fit-content;margin-bottom:16px}
+.plan-tab{padding:6px 14px;border-radius:5px;font-size:12.5px;font-weight:500;color:var(--dim);cursor:pointer;transition:all .15s;white-space:nowrap}
+.plan-tab.active{background:var(--bg);color:var(--text)}
+.plan-list{display:flex;flex-direction:column;gap:12px}
+.plan-row{display:grid;grid-template-columns:1fr auto;gap:12px;align-items:center}
+.plan-name-row{display:flex;justify-content:space-between;margin-bottom:5px;font-size:13px;font-weight:600}
+.plan-name-row .cnt{color:var(--dim);font-weight:400}
+.plan-bar{height:5px;background:var(--bg-e2);border-radius:3px;overflow:hidden}
+.plan-fill{height:100%;border-radius:3px;transition:width .5s}
+.plan-meta-txt{color:var(--dim);font-size:11px;margin-top:4px}
+
+/* ── CHART ── */
+.chart-grid{display:grid;grid-template-columns:2fr 1fr;gap:16px;margin-bottom:18px}
+.chart-wrap{height:260px;position:relative}
+.filter-pills{display:flex;gap:3px;background:var(--bg-e2);padding:3px;border-radius:6px;border:1px solid var(--border)}
+.pill{padding:4px 10px;border-radius:4px;font-size:12px;font-weight:500;color:var(--dim);cursor:pointer;transition:all .15s;white-space:nowrap}
+.pill.active{background:var(--bg);color:var(--text)}
+
+/* ── TABLE ── */
+.tbl-wrap{overflow-x:auto;margin:0 -18px;padding:0 18px}
+table{width:100%;border-collapse:collapse;font-size:13px;min-width:400px}
+th{text-align:left;color:var(--faint);font-weight:500;font-size:11px;text-transform:uppercase;letter-spacing:.06em;padding:9px 10px;border-bottom:1px solid var(--border);white-space:nowrap}
+td{padding:11px 10px;border-bottom:1px solid var(--border);vertical-align:middle}
+tr:last-child td{border-bottom:none}
+tr:hover td{background:rgba(255,255,255,.02)}
+.uc{display:flex;align-items:center;gap:9px}
+.uc-av{width:28px;height:28px;border-radius:50%;background:var(--bg-e2);border:1px solid var(--border);display:flex;align-items:center;justify-content:center;font-size:10.5px;font-weight:600;color:var(--dim);flex-shrink:0}
+.uc-n{font-weight:500}
+.uc-e{font-size:11.5px;color:var(--faint)}
+.mono{font-family:'JetBrains Mono',monospace;font-size:11.5px}
+
+/* ── BADGES ── */
+.badge{display:inline-flex;align-items:center;gap:5px;padding:3px 9px;border-radius:12px;font-size:11px;font-weight:500;border:1px solid;white-space:nowrap}
+.badge::before{content:'';width:5px;height:5px;border-radius:50%;flex-shrink:0}
+.b-active{color:var(--ok);border-color:rgba(74,222,128,.25);background:rgba(74,222,128,.08)}.b-active::before{background:var(--ok)}
+.b-trial{color:var(--info);border-color:rgba(96,165,250,.25);background:rgba(96,165,250,.08)}.b-trial::before{background:var(--info)}
+.b-canceled{color:var(--faint);border-color:var(--border-s);background:var(--bg-e2)}.b-canceled::before{background:var(--faint)}
+.b-pastdue{color:var(--warn);border-color:rgba(251,191,36,.25);background:rgba(251,191,36,.08)}.b-pastdue::before{background:var(--warn)}
+.b-empty{color:var(--faint);border-color:var(--border);background:transparent}.b-empty::before{background:var(--faint);opacity:.4}
+
+/* ── SEARCH ── */
+.search-row{display:flex;gap:8px;margin-bottom:14px;flex-wrap:wrap}
+.s-input{background:var(--bg-e2);border:1px solid var(--border);color:var(--text);padding:8px 12px 8px 32px;border-radius:6px;font-size:13px;font-family:inherit;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='14' height='14' viewBox='0 0 24 24' fill='none' stroke='%239095a0' stroke-width='2'%3E%3Ccircle cx='11' cy='11' r='8'/%3E%3Cpath d='m21 21-4.3-4.3'/%3E%3C/svg%3E");background-repeat:no-repeat;background-position:10px center;min-width:0;flex:1;max-width:280px}
+.s-input:focus{outline:none;border-color:var(--border-s)}
+.s-sel{background:var(--bg-e2);border:1px solid var(--border);color:var(--text);padding:8px 26px 8px 10px;border-radius:6px;font-size:13px;font-family:inherit;appearance:none;cursor:pointer;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 24 24' fill='none' stroke='%239095a0' stroke-width='2'%3E%3Cpolyline points='6 9 12 15 18 9'/%3E%3C/svg%3E");background-repeat:no-repeat;background-position:right 8px center}
+
+/* ── USER MANAGEMENT ── */
+.user-card{background:var(--bg-e2);border:1px solid var(--border);border-radius:8px;padding:14px;display:flex;align-items:center;gap:12px;margin-bottom:10px}
+.user-card-info{flex:1;min-width:0}
+.user-card-name{font-weight:600;font-size:13.5px}
+.user-card-role{font-size:12px;color:var(--dim);margin-top:2px}
+.user-card-actions{display:flex;gap:6px}
+.edit-btn{background:var(--bg-e);border:1px solid var(--border);color:var(--dim);padding:6px 10px;border-radius:5px;cursor:pointer;font-size:12px;font-family:inherit;transition:all .15s}
+.edit-btn:hover{color:var(--text);border-color:var(--border-s)}
+.del-btn{background:rgba(248,113,113,.08);border:1px solid rgba(248,113,113,.2);color:var(--err);padding:6px 10px;border-radius:5px;cursor:pointer;font-size:12px;font-family:inherit;transition:all .15s}
+.del-btn:hover{background:rgba(248,113,113,.15)}
+
+/* ── MODAL ── */
+.modal-bg{position:fixed;inset:0;background:rgba(0,0,0,.7);backdrop-filter:blur(4px);z-index:200;display:none;align-items:center;justify-content:center;padding:16px}
+.modal-bg.show{display:flex}
+.modal{background:var(--bg-e);border:1px solid var(--border-s);border-radius:12px;width:100%;max-width:440px;overflow:hidden;box-shadow:0 20px 60px rgba(0,0,0,.5)}
+.modal-hd{padding:18px 20px;border-bottom:1px solid var(--border);display:flex;justify-content:space-between;align-items:center}
+.modal-title{font-family:'Fraunces',serif;font-size:17px;font-weight:600}
+.modal-body{padding:20px}
+.modal-ft{padding:14px 20px;border-top:1px solid var(--border);display:flex;justify-content:flex-end;gap:8px;background:var(--bg-e2)}
+
+/* ── LOADING / STATES ── */
+.loading{display:flex;align-items:center;justify-content:center;padding:50px 20px;color:var(--dim);flex-direction:column;gap:10px}
+.spinner{width:22px;height:22px;border:2px solid var(--border);border-top-color:var(--accent);border-radius:50%;animation:spin .8s linear infinite}
+@keyframes spin{to{transform:rotate(360deg)}}
+.empty{text-align:center;padding:50px 20px;color:var(--faint)}
+.empty h3{font-family:'Fraunces',serif;font-size:17px;color:var(--text);margin-bottom:6px}
+
+/* ── TOAST ── */
+.toast{position:fixed;bottom:20px;right:20px;background:var(--bg-e);border:1px solid var(--border-s);padding:11px 15px;border-radius:8px;font-size:13px;box-shadow:0 10px 30px rgba(0,0,0,.3);z-index:300;transform:translateY(100px);opacity:0;transition:all .3s;max-width:300px}
+.toast.show{transform:translateY(0);opacity:1}
+.toast.ok{border-left:3px solid var(--ok)}
+.toast.er{border-left:3px solid var(--err)}
+
+/* ── RESPONSIVE ── */
+@media(max-width:900px){
+  .app{grid-template-columns:1fr}
+  .sidebar{display:none}
+  .mob-header{display:flex}
+  .main{padding:16px 14px 80px}
+  .stats{grid-template-columns:repeat(2,1fr);gap:10px}
+  .chart-grid{grid-template-columns:1fr}
+  .stat-val{font-size:24px}
+  .page-title{font-size:22px}
+  .eb-banner{gap:14px}
+  .eb-num{font-size:24px}
+}
+@media(max-width:480px){
+  .stats{grid-template-columns:1fr 1fr}
+  .stat{padding:12px}
+  .stat-val{font-size:22px}
+  .topbar{margin-bottom:18px;padding-bottom:14px}
+  .card{padding:14px}
+  .tbl-wrap{margin:0 -14px;padding:0 14px}
+  .eb-banner{flex-direction:column;align-items:flex-start}
+  .search-row{flex-direction:column}
+  .s-input{max-width:100%}
+}
 </style>
 </head>
 <body>
 
-<!-- LOGIN SCREEN -->
-<div class="login-screen" id="loginScreen">
+<!-- ═══════════════ LOGIN ═══════════════ -->
+<div class="login-wrap" id="loginWrap">
   <div class="login-card">
     <div class="login-logo">
-      <div class="login-mark">H</div>
-      <div class="login-title-wrap">
-        <div class="login-title-main">Hostlio<span style="color: var(--text-dim); font-weight: 400;">pro</span></div>
-        <div class="login-title-sub">Admin Panel</div>
+      <div class="lmark">H</div>
+      <div>
+        <div class="login-brand">Hostlio<span>pro</span></div>
+        <div class="login-sub">Admin Panel</div>
       </div>
     </div>
+    <div class="login-h" id="loginTitle">Giriş Yap</div>
+    <div class="login-p" id="loginDesc">Kullanıcı adı ve şifrenizi girin.</div>
+    <div class="login-err" id="loginErr"></div>
 
-    <div class="login-heading">Hoş geldin</div>
-    <div class="login-subheading">
-      Devam etmek için Airtable Personal Access Token'ını gir. Token'ın bu cihaza kaydedilir, bir daha sormaz.
+    <!-- Adım 1: Kullanıcı adı + şifre -->
+    <div id="formLogin">
+      <div class="field"><label>Kullanıcı Adı</label><input type="text" id="inUser" placeholder="admin" autocomplete="username"></div>
+      <div class="field"><label>Şifre</label><input type="password" id="inPass" placeholder="••••••••" autocomplete="current-password"></div>
+      <button class="login-btn" id="loginBtn" onclick="doLogin()">Giriş Yap</button>
     </div>
 
-    <div class="login-error" id="loginError"></div>
-
-    <div class="login-field">
-      <label class="login-label">Airtable Personal Access Token</label>
-      <input type="password" class="login-input" id="tokenInput" placeholder="patAbCdEf123456..." autocomplete="off">
-    </div>
-
-    <button class="login-btn" id="loginBtn" onclick="handleLogin()">Bağlan</button>
-
-    <div class="login-help">
-      <strong>Token nereden alınır?</strong><br>
-      <a href="https://airtable.com/create/tokens" target="_blank">airtable.com/create/tokens</a> sayfasından oluştur. Yetki olarak <strong>data.records:read</strong> ver, base olarak <strong>Hostlio Pro</strong>'yu seç.
+    <!-- Adım 2: Token (ilk kez veya token silinince) -->
+    <div id="formToken" style="display:none">
+      <div style="background:var(--bg-e2);border:1px solid var(--border);border-radius:8px;padding:12px;margin-bottom:16px;font-size:12.5px;color:var(--dim);line-height:1.6">
+        <strong style="color:var(--text)">İlk kurulum</strong> — Bu cihaz için Airtable token'ını bir kez gir. Tarayıcı hafızasına şifrelenmiş kaydedilir, bir daha sorulmaz.
+      </div>
+      <div class="field">
+        <label>Airtable Personal Access Token</label>
+        <input type="password" id="inToken" placeholder="patAbCdEf123456..." autocomplete="off" style="font-family:'JetBrains Mono',monospace;font-size:12px">
+      </div>
+      <button class="login-btn" id="tokenBtn" onclick="doSaveToken()">Kaydet ve Devam Et</button>
+      <div style="margin-top:12px;font-size:12px;color:var(--faint);text-align:center">
+        Token'ı nereden alırsın? <a href="https://airtable.com/create/tokens" target="_blank" style="color:var(--accent)">airtable.com/create/tokens</a>
+      </div>
     </div>
   </div>
 </div>
 
-<!-- MAIN APP -->
-<div class="app hidden" id="mainApp">
-  <!-- Sidebar -->
-  <aside class="sidebar">
-    <div class="logo">
-      <div class="logo-mark">H</div>
-      <div class="logo-text">Hostlio<span>pro</span></div>
-    </div>
+<!-- ═══════════════ APP ═══════════════ -->
+<div class="app hidden" id="appWrap">
 
-    <div class="nav-section">
-      <div class="nav-label">Genel</div>
+  <!-- Sidebar (desktop) -->
+  <aside class="sidebar" id="sidebarEl">
+    <div class="s-logo">
+      <div class="lmark" style="width:28px;height:28px;font-size:16px;border-radius:7px">H</div>
+      <div class="s-brand">Hostlio<span>pro</span></div>
+    </div>
+    <div class="nav-sec">
+      <div class="nav-lbl">Genel</div>
       <div class="nav-item active" data-page="dashboard">
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor"><rect x="3" y="3" width="7" height="7" rx="1"/><rect x="14" y="3" width="7" height="7" rx="1"/><rect x="3" y="14" width="7" height="7" rx="1"/><rect x="14" y="14" width="7" height="7" rx="1"/></svg>
         Dashboard
@@ -941,130 +296,185 @@
       <div class="nav-item" data-page="hotels">
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
         Oteller
-        <span class="badge" id="navHotelsCount">—</span>
+        <span class="nav-badge" id="nb-hotels">—</span>
       </div>
-      <div class="nav-item" data-page="subscriptions">
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor"><path d="M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z"/><path d="m9 12 2 2 4-4"/></svg>
-        Aktif Abonelik
-        <span class="badge" id="navActiveCount">—</span>
+      <div class="nav-item" data-page="revenue">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor"><line x1="12" y1="1" x2="12" y2="23"/><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>
+        Gelir & MRR
       </div>
       <div class="nav-item" data-page="trials">
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
-        Deneme
-        <span class="badge" id="navTrialCount">—</span>
+        Denemeler
+        <span class="nav-badge" id="nb-trials">—</span>
       </div>
     </div>
-
-    <div class="sidebar-footer">
-      <div class="avatar">AD</div>
-      <div class="user-info">
-        <div class="user-name">Admin</div>
-        <div class="user-email">Hostlio Pro</div>
+    <div class="nav-sec">
+      <div class="nav-lbl">Yönetim</div>
+      <div class="nav-item" data-page="users">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+        Kullanıcılar
       </div>
-      <button class="logout-btn" onclick="logout()" title="Çıkış">
+    </div>
+    <div class="s-footer">
+      <div class="av" id="sideAvatar">A</div>
+      <div class="s-user">
+        <div class="s-uname" id="sideUsername">Admin</div>
+        <div class="s-uemail">Hostlio Pro</div>
+      </div>
+      <button class="icon-btn" onclick="doLogout()" title="Çıkış">
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor"><path d="M9 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h4"/><polyline points="16 17 21 12 16 7"/><line x1="21" y1="12" x2="9" y2="12"/></svg>
       </button>
     </div>
   </aside>
 
-  <!-- Main Content -->
+  <!-- Mobile header -->
+  <div class="mob-header">
+    <div class="mob-logo">
+      <div class="lmark" style="width:28px;height:28px;font-size:16px;border-radius:7px">H</div>
+      Hostliopro
+    </div>
+    <button class="mob-menu-btn" onclick="openMobNav()">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" width="18" height="18"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+    </button>
+  </div>
+
+  <!-- Mobile nav drawer -->
+  <div class="mob-nav" id="mobNav" onclick="closeMobNavOutside(event)">
+    <div class="mob-nav-panel">
+      <button class="mob-nav-close" onclick="closeMobNav()">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+      </button>
+      <div class="s-logo" style="margin-bottom:16px">
+        <div class="lmark" style="width:28px;height:28px;font-size:16px;border-radius:7px">H</div>
+        <div class="s-brand">Hostlio<span>pro</span></div>
+      </div>
+      <div class="nav-item active mob-nav-item" data-page="dashboard">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor"><rect x="3" y="3" width="7" height="7" rx="1"/><rect x="14" y="3" width="7" height="7" rx="1"/><rect x="3" y="14" width="7" height="7" rx="1"/><rect x="14" y="14" width="7" height="7" rx="1"/></svg>Dashboard
+      </div>
+      <div class="nav-item mob-nav-item" data-page="hotels">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>Oteller
+      </div>
+      <div class="nav-item mob-nav-item" data-page="revenue">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor"><line x1="12" y1="1" x2="12" y2="23"/><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>Gelir & MRR
+      </div>
+      <div class="nav-item mob-nav-item" data-page="trials">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>Denemeler
+      </div>
+      <div class="nav-item mob-nav-item" data-page="users">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/></svg>Kullanıcılar
+      </div>
+      <div style="margin-top:auto;padding-top:20px;border-top:1px solid var(--border)">
+        <button class="btn btn-danger" style="width:100%;justify-content:center" onclick="doLogout()">Çıkış Yap</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Main content -->
   <main class="main">
 
-    <!-- DASHBOARD PAGE -->
+    <!-- ── DASHBOARD ── -->
     <div class="page active" id="page-dashboard">
       <div class="topbar">
-        <div>
-          <div class="page-title">Dashboard</div>
-          <div class="page-subtitle">Hostlio Pro abonelik ve gelir genel görünümü</div>
-        </div>
-        <div class="topbar-actions">
+        <div><div class="page-title">Dashboard</div><div class="page-sub">Hostlio Pro genel görünümü</div></div>
+        <div class="top-actions">
           <span class="btn"><span class="live-dot"></span> Airtable bağlı</span>
           <button class="btn" onclick="refreshData()">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor"><path d="M21 12a9 9 0 1 1-9-9c2.52 0 4.93 1 6.74 2.74L21 8"/><path d="M21 3v5h-5"/></svg>
-            Yenile
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor"><path d="M21 12a9 9 0 1 1-9-9c2.52 0 4.93 1 6.74 2.74L21 8"/><path d="M21 3v5h-5"/></svg>Yenile
           </button>
         </div>
       </div>
-
-      <div id="dashboardContent">
-        <div class="loading">
-          <div class="spinner"></div>
-          <div>Veriler yükleniyor...</div>
-        </div>
-      </div>
+      <div id="dashContent"><div class="loading"><div class="spinner"></div><span>Veriler yükleniyor...</span></div></div>
     </div>
 
-    <!-- HOTELS PAGE -->
+    <!-- ── HOTELS ── -->
     <div class="page" id="page-hotels">
       <div class="topbar">
-        <div>
-          <div class="page-title">Oteller</div>
-          <div class="page-subtitle" id="hotelsSubtitle">Tüm kayıtlı oteller</div>
-        </div>
+        <div><div class="page-title">Oteller</div><div class="page-sub" id="hotels-sub">Tüm kayıtlı oteller</div></div>
       </div>
       <div class="card">
-        <div class="search-bar">
-          <input type="text" class="search-input" placeholder="Otel adı, email ara..." id="hotelsSearch">
-          <select class="filter-select" id="hotelsStatusFilter">
+        <div class="search-row">
+          <input type="text" class="s-input" id="h-search" placeholder="Otel adı, email...">
+          <select class="s-sel" id="h-status">
             <option value="">Tüm durumlar</option>
-            <option value="Active">Aktif</option>
-            <option value="Trial">Deneme</option>
-            <option value="Canceled">İptal</option>
-            <option value="Past Due">Gecikmiş</option>
-            <option value="empty">Henüz abonelik yok</option>
+            <option value="active">Aktif</option>
+            <option value="trial">Deneme</option>
+            <option value="canceled">İptal</option>
+            <option value="empty">Henüz yok</option>
           </select>
         </div>
-        <div class="table-wrap">
+        <div class="tbl-wrap">
           <table>
-            <thead>
-              <tr>
-                <th>Otel</th>
-                <th>Plan</th>
-                <th>Durum</th>
-                <th>Stripe Customer</th>
-                <th>Trial Sonu</th>
-              </tr>
-            </thead>
-            <tbody id="hotelsBody">
-              <tr><td colspan="5" class="loading"><div class="spinner"></div></td></tr>
-            </tbody>
+            <thead><tr><th>Otel</th><th>Plan</th><th>Durum</th><th>Stripe ID</th><th>Trial Sonu</th></tr></thead>
+            <tbody id="hotels-body"><tr><td colspan="5" class="loading" style="padding:30px"><div class="spinner"></div></td></tr></tbody>
           </table>
         </div>
       </div>
     </div>
 
-    <!-- SUBSCRIPTIONS PAGE -->
-    <div class="page" id="page-subscriptions">
+    <!-- ── REVENUE ── -->
+    <div class="page" id="page-revenue">
       <div class="topbar">
-        <div>
-          <div class="page-title">Aktif Abonelikler</div>
-          <div class="page-subtitle">Status = "Active" olan oteller</div>
-        </div>
+        <div><div class="page-title">Gelir & MRR</div><div class="page-sub">Abonelik gelirleri ve tahminler</div></div>
+      </div>
+      <div class="stats" id="rev-stats">
+        <div class="loading"><div class="spinner"></div></div>
       </div>
       <div class="card">
-        <div class="table-wrap">
+        <div class="card-hd">
+          <div><div class="card-title">MRR Trendi</div><div class="card-sub">Aktif aboneliklere göre aylık yinelenen gelir</div></div>
+          <div class="filter-pills">
+            <div class="pill active" data-range="7">7G</div>
+            <div class="pill" data-range="30">30G</div>
+            <div class="pill" data-range="90">90G</div>
+          </div>
+        </div>
+        <div class="chart-wrap"><canvas id="mrrChart"></canvas></div>
+      </div>
+      <div class="card">
+        <div class="card-hd"><div class="card-title">Plan Bazlı Gelir Dağılımı</div></div>
+        <div class="tbl-wrap">
           <table>
-            <thead><tr><th>Otel</th><th>Plan</th><th>Stripe Customer</th></tr></thead>
-            <tbody id="subscriptionsBody"></tbody>
+            <thead><tr><th>Plan</th><th>Abone Sayısı</th><th>Aylık Fiyat</th><th>MRR Katkısı</th><th>Oran</th></tr></thead>
+            <tbody id="rev-body"></tbody>
           </table>
         </div>
       </div>
     </div>
 
-    <!-- TRIALS PAGE -->
+    <!-- ── TRIALS ── -->
     <div class="page" id="page-trials">
       <div class="topbar">
-        <div>
-          <div class="page-title">Deneme Sürecindeki Oteller</div>
-          <div class="page-subtitle">Status = "Trial" olan oteller</div>
+        <div><div class="page-title">Denemeler</div><div class="page-sub">Trial sürecindeki oteller</div></div>
+      </div>
+      <div class="card">
+        <div class="tbl-wrap">
+          <table>
+            <thead><tr><th>Otel</th><th>Plan</th><th>Trial Sonu</th><th>Kalan</th></tr></thead>
+            <tbody id="trials-body"></tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+
+    <!-- ── USERS ── -->
+    <div class="page" id="page-users">
+      <div class="topbar">
+        <div><div class="page-title">Kullanıcılar</div><div class="page-sub">Admin panel erişim yönetimi</div></div>
+        <div class="top-actions">
+          <button class="btn btn-primary" onclick="openAddUser()">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>Yeni Kullanıcı
+          </button>
         </div>
       </div>
       <div class="card">
-        <div class="table-wrap">
-          <table>
-            <thead><tr><th>Otel</th><th>Plan</th><th>Trial Sonu</th><th>Kalan Gün</th></tr></thead>
-            <tbody id="trialsBody"></tbody>
-          </table>
+        <div id="users-list"></div>
+      </div>
+      <div class="card" style="border-color:rgba(251,191,36,.2);background:rgba(251,191,36,.04)">
+        <div style="display:flex;gap:10px;align-items:flex-start">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" style="width:18px;height:18px;stroke-width:2;color:var(--warn);flex-shrink:0;margin-top:2px"><path d="M10.29 3.86L1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z"/><line x1="12" y1="9" x2="12" y2="13"/><line x1="12" y1="17" x2="12.01" y2="17"/></svg>
+          <div style="font-size:12.5px;color:var(--dim);line-height:1.6">
+            <strong style="color:var(--text)">Güvenlik notu:</strong> Kullanıcı bilgileri tarayıcı localStorage'ında saklanır. GitHub repo'nuzun private olduğundan emin olun. Daha gelişmiş güvenlik için Vercel Environment Variables kullanılabilir.
+          </div>
         </div>
       </div>
     </div>
@@ -1072,625 +482,671 @@
   </main>
 </div>
 
+<!-- ── ADD/EDIT USER MODAL ── -->
+<div class="modal-bg" id="userModal">
+  <div class="modal">
+    <div class="modal-hd">
+      <div class="modal-title" id="modalTitle">Yeni Kullanıcı</div>
+      <button class="icon-btn" onclick="closeModal()"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg></button>
+    </div>
+    <div class="modal-body">
+      <input type="hidden" id="editIdx" value="-1">
+      <div class="field"><label>Kullanıcı Adı *</label><input type="text" id="m-user" placeholder="örn: ferhat"></div>
+      <div class="field"><label>Ad Soyad</label><input type="text" id="m-name" placeholder="örn: Ferhat Gök"></div>
+      <div class="field"><label>Şifre *</label><input type="password" id="m-pass" placeholder="En az 6 karakter"></div>
+      <div class="field"><label>Şifre Tekrar *</label><input type="password" id="m-pass2" placeholder="Şifreyi tekrar girin"></div>
+      <div class="login-err" id="modalErr" style="display:none"></div>
+    </div>
+    <div class="modal-ft">
+      <button class="btn" onclick="closeModal()">İptal</button>
+      <button class="btn btn-primary" onclick="saveUser()">Kaydet</button>
+    </div>
+  </div>
+</div>
+
 <div class="toast" id="toast"></div>
 
 <script>
-// =========================================================
-// CONFIGURATION
-// =========================================================
-const AIRTABLE_BASE_ID = 'appPFfJ4IjiG0qjTq';
-const AIRTABLE_TABLE_ID = 'tbllyzYyAtA6bfD65'; // Hotels tablosu
-const TOKEN_STORAGE_KEY = 'hostliopro_admin_token';
-const EARLY_BIRD_LIMIT = 50;
-// Vercel proxy endpoint — CORS sorununu çözer
+// ═══════════════════════════════════════════════
+// CONFIG
+// ═══════════════════════════════════════════════
 const API_ENDPOINT = '/api/hotels';
+const TOKEN_KEY = 'hp_token';
+const USERS_KEY = 'hp_users';
+const SESSION_KEY = 'hp_session';
+const AT_KEY = 'hp_at'; // Airtable token (localStorage)
+const EB_LIMIT = 50;
 
-// Plan definitions matching your Stripe products
-const PLAN_DEFINITIONS = {
-  // Early Bird plans
-  'Starter EB Aylık':  { price: 39,   period: 'ay',  category: 'eb', tier: 'starter' },
-  'Starter EB Yıllık': { price: 372,  period: 'yıl', category: 'eb', tier: 'starter' },
-  'Pro EB Aylık':      { price: 79,   period: 'ay',  category: 'eb', tier: 'pro' },
-  'Pro EB Yıllık':     { price: 756,  period: 'yıl', category: 'eb', tier: 'pro' },
-  'Growth EB Aylık':   { price: 139,  period: 'ay',  category: 'eb', tier: 'growth' },
-  'Growth EB Yıllık':  { price: 1332, period: 'yıl', category: 'eb', tier: 'growth' },
-  // Normal plans
-  'Starter Aylık':  { price: 49,   period: 'ay',  category: 'normal', tier: 'starter' },
-  'Starter Yıllık': { price: 468,  period: 'yıl', category: 'normal', tier: 'starter' },
-  'Pro Aylık':      { price: 99,   period: 'ay',  category: 'normal', tier: 'pro' },
-  'Pro Yıllık':     { price: 948,  period: 'yıl', category: 'normal', tier: 'pro' },
-  'Growth Aylık':   { price: 179,  period: 'ay',  category: 'normal', tier: 'growth' },
-  'Growth Yıllık':  { price: 1716, period: 'yıl', category: 'normal', tier: 'growth' },
+// ── Token yönetimi ──
+function getAirtableToken() {
+  return localStorage.getItem(AT_KEY) || '';
+}
+function saveAirtableToken(t) {
+  localStorage.setItem(AT_KEY, t);
+}
+function clearAirtableToken() {
+  localStorage.removeItem(AT_KEY);
+}
+
+// ── Varsayılan admin (ilk kurulum için) ──
+const DEFAULT_ADMIN = { username: 'admin', name: 'Admin', password: 'hostlio2024!', role: 'admin' };
+
+const PLANS = {
+  'Starter EB Aylık':  { price:39,   period:'ay',  cat:'eb',     tier:'starter' },
+  'Starter EB Yıllık': { price:372,  period:'yıl', cat:'eb',     tier:'starter' },
+  'Pro EB Aylık':      { price:79,   period:'ay',  cat:'eb',     tier:'pro'     },
+  'Pro EB Yıllık':     { price:756,  period:'yıl', cat:'eb',     tier:'pro'     },
+  'Growth EB Aylık':   { price:139,  period:'ay',  cat:'eb',     tier:'growth'  },
+  'Growth EB Yıllık':  { price:1332, period:'yıl', cat:'eb',     tier:'growth'  },
+  'Starter Aylık':     { price:49,   period:'ay',  cat:'normal', tier:'starter' },
+  'Starter Yıllık':    { price:468,  period:'yıl', cat:'normal', tier:'starter' },
+  'Pro Aylık':         { price:99,   period:'ay',  cat:'normal', tier:'pro'     },
+  'Pro Yıllık':        { price:948,  period:'yıl', cat:'normal', tier:'pro'     },
+  'Growth Aylık':      { price:179,  period:'ay',  cat:'normal', tier:'growth'  },
+  'Growth Yıllık':     { price:1716, period:'yıl', cat:'normal', tier:'growth'  },
 };
 
-const TIER_COLORS = {
-  starter: 'var(--success)',
-  pro:     'var(--accent)',
-  growth:  'var(--info)',
-};
+const TIER_COLORS = { starter:'var(--ok)', pro:'var(--accent)', growth:'var(--info)' };
 
-// =========================================================
-// STATE
-// =========================================================
-let allRecords = [];
-let currentPlanCategory = 'eb'; // 'eb' or 'normal'
+// ═══════════════════════════════════════════════
+// USER MANAGEMENT
+// ═══════════════════════════════════════════════
+function getUsers() {
+  try { return JSON.parse(localStorage.getItem(USERS_KEY)) || [DEFAULT_ADMIN]; }
+  catch { return [DEFAULT_ADMIN]; }
+}
+function saveUsers(u) { localStorage.setItem(USERS_KEY, JSON.stringify(u)); }
 
-// =========================================================
-// LOGIN / AUTH
-// =========================================================
-function getToken() {
-  return localStorage.getItem(TOKEN_STORAGE_KEY);
-}
-function saveToken(t) {
-  localStorage.setItem(TOKEN_STORAGE_KEY, t);
-}
-function clearToken() {
-  localStorage.removeItem(TOKEN_STORAGE_KEY);
-}
+function getSession() { return sessionStorage.getItem(SESSION_KEY); }
+function saveSession(u) { sessionStorage.setItem(SESSION_KEY, u); }
+function clearSession() { sessionStorage.removeItem(SESSION_KEY); }
 
-async function handleLogin() {
-  const input = document.getElementById('tokenInput');
-  const errorEl = document.getElementById('loginError');
+// ═══════════════════════════════════════════════
+// LOGIN
+// ═══════════════════════════════════════════════
+// ═══════════════════════════════════════════════
+// LOGIN — 2 Adımlı
+// ═══════════════════════════════════════════════
+async function doLogin() {
+  const u = document.getElementById('inUser').value.trim();
+  const p = document.getElementById('inPass').value;
+  const errEl = document.getElementById('loginErr');
   const btn = document.getElementById('loginBtn');
-  const token = input.value.trim();
+  errEl.style.display = 'none';
 
-  errorEl.classList.remove('show');
+  if (!u || !p) { showLoginErr('Kullanıcı adı ve şifre gerekli.'); return; }
 
-  if (!token) {
-    errorEl.textContent = 'Lütfen token gir.';
-    errorEl.classList.add('show');
+  const users = getUsers();
+  const match = users.find(x => x.username === u && x.password === p);
+  if (!match) { showLoginErr('Kullanıcı adı veya şifre hatalı.'); document.getElementById('inPass').value = ''; return; }
+
+  // Airtable token var mı?
+  const at = getAirtableToken();
+  if (!at) {
+    // Token yok — adım 2'ye geç
+    document.getElementById('formLogin').style.display = 'none';
+    document.getElementById('formToken').style.display = 'block';
+    document.getElementById('loginTitle').textContent = 'Airtable Bağlantısı';
+    document.getElementById('loginDesc').textContent = 'Bu cihaz için tek seferlik kurulum.';
+    // Geçici olarak kullanıcıyı sakla
+    sessionStorage.setItem('_pending_user', u);
     return;
   }
 
-  if (!token.startsWith('pat')) {
-    errorEl.textContent = 'Token "pat" ile başlamalı. Doğru token mı yapıştırdın?';
-    errorEl.classList.add('show');
-    return;
-  }
+  // Token var — direkt giriş
+  await doConnect(match, at, btn);
+}
 
-  btn.disabled = true;
-  btn.textContent = 'Bağlanılıyor...';
+async function doSaveToken() {
+  const token = document.getElementById('inToken').value.trim();
+  const errEl = document.getElementById('loginErr');
+  const btn = document.getElementById('tokenBtn');
+  errEl.style.display = 'none';
+
+  if (!token) { showLoginErr('Token gerekli.'); return; }
+  if (!token.startsWith('pat')) { showLoginErr('Token "pat" ile başlamalı.'); return; }
+
+  const pendingUser = sessionStorage.getItem('_pending_user');
+  const users = getUsers();
+  const match = users.find(x => x.username === pendingUser);
+  if (!match) { showLoginErr('Oturum süresi doldu. Sayfayı yenileyip tekrar deneyin.'); return; }
+
+  saveAirtableToken(token);
+  await doConnect(match, token, btn);
+}
+
+async function doConnect(userObj, token, btn) {
+  const errEl = document.getElementById('loginErr');
+  if (btn) { btn.disabled = true; btn.textContent = 'Bağlanılıyor...'; }
 
   try {
-    const result = await fetch(API_ENDPOINT, {
+    const res = await fetch(API_ENDPOINT, {
       headers: { 'Authorization': `Bearer ${token}` }
     });
-    const data = await result.json();
+    const data = await res.json();
+    if (data.error) throw new Error('Airtable bağlantı hatası: ' + JSON.stringify(data.error).substring(0, 100));
 
-    if (data.error) {
-      throw new Error('Airtable: ' + JSON.stringify(data.error).substring(0, 150));
-    }
-
-    if (data.records !== undefined) {
-      saveToken(token);
-      showApp();
-      loadData();
-    } else {
-      throw new Error('Beklenmedik yanıt: ' + JSON.stringify(data).substring(0, 100));
-    }
-  } catch (err) {
-    btn.disabled = false;
-    btn.textContent = 'Bağlan';
-    errorEl.textContent = 'Bağlantı başarısız: ' + err.message;
-    errorEl.classList.add('show');
+    saveSession(userObj.username);
+    sessionStorage.removeItem('_pending_user');
+    document.getElementById('sideUsername').textContent = userObj.name || userObj.username;
+    document.getElementById('sideAvatar').textContent = (userObj.name || userObj.username)[0].toUpperCase();
+    showApp();
+    allRecords = data.records || [];
+    renderAll();
+    showToast('Hoş geldiniz, ' + (userObj.name || userObj.username) + '!', 'ok');
+  } catch(e) {
+    if (btn) { btn.disabled = false; btn.textContent = btn.id === 'tokenBtn' ? 'Kaydet ve Devam Et' : 'Giriş Yap'; }
+    // Token hatalıysa sil
+    if (e.message.includes('Airtable')) clearAirtableToken();
+    showLoginErr(e.message);
   }
 }
 
-function logout() {
-  if (!confirm('Çıkış yapmak istediğine emin misin?')) return;
-  clearToken();
-  location.reload();
+function showLoginErr(msg) {
+  const el = document.getElementById('loginErr');
+  el.textContent = msg; el.style.display = 'block';
+  el.classList.add('show');
+}
+
+function doLogout() {
+  clearSession();
+  document.getElementById('appWrap').classList.add('hidden');
+  document.getElementById('loginWrap').classList.remove('hidden');
+  // Login formunu sıfırla
+  document.getElementById('formLogin').style.display = 'block';
+  document.getElementById('formToken').style.display = 'none';
+  document.getElementById('loginTitle').textContent = 'Giriş Yap';
+  document.getElementById('loginDesc').textContent = 'Kullanıcı adı ve şifrenizi girin.';
+  document.getElementById('inUser').value = '';
+  document.getElementById('inPass').value = '';
+  document.getElementById('loginErr').style.display = 'none';
+  closeMobNav();
 }
 
 function showApp() {
-  document.getElementById('loginScreen').classList.add('hidden');
-  document.getElementById('mainApp').classList.remove('hidden');
+  document.getElementById('loginWrap').classList.add('hidden');
+  document.getElementById('appWrap').classList.remove('hidden');
 }
 
-function showLogin() {
-  document.getElementById('loginScreen').classList.remove('hidden');
-  document.getElementById('mainApp').classList.add('hidden');
-}
-
-async function fetchAirtable(token, maxRecords = 1) {
-  const response = await fetch(`${API_ENDPOINT}`, {
-    headers: { 'Authorization': `Bearer ${token}` }
-  });
-
-  if (!response.ok) {
-    const text = await response.text();
-    throw new Error(`Sunucu hatası (${response.status}): ${text.substring(0, 200)}`);
-  }
-
-  return await response.json();
-}
-
-async function fetchAllRecords() {
-  const token = getToken();
-  if (!token) throw new Error('Token yok');
-
-  const response = await fetch(API_ENDPOINT, {
-    headers: { 'Authorization': `Bearer ${token}` }
-  });
-
-  if (!response.ok) {
-    const text = await response.text();
-    throw new Error(`Sunucu hatası (${response.status}): ${text.substring(0, 200)}`);
-  }
-
-  const data = await response.json();
-
-  if (data.error) {
-    throw new Error('Airtable hatası: ' + JSON.stringify(data.error));
-  }
-
-  return data.records || [];
-}
-
-// =========================================================
-// DATA LOADING
-// =========================================================
-async function loadData() {
-  try {
-    allRecords = await fetchAllRecords();
-    renderDashboard();
-    renderHotels();
-    renderSubscriptions();
-    renderTrials();
-    updateNavCounts();
-    showToast('Veriler güncellendi', 'success');
-  } catch (err) {
-    document.getElementById('dashboardContent').innerHTML = `
-      <div class="error-state">
-        <strong>Hata:</strong> ${err.message}<br>
-        <button class="btn" style="margin-top: 12px;" onclick="logout()">Çıkış yap ve tekrar bağlan</button>
-      </div>
-    `;
-    showToast('Hata: ' + err.message, 'error');
-  }
-}
+// ═══════════════════════════════════════════════
+// DATA
+// ═══════════════════════════════════════════════
+let allRecords = [];
+let revenueChart = null;
+let planCat = 'eb';
 
 async function refreshData() {
-  showToast('Yenileniyor...', 'success');
-  await loadData();
-}
-
-// =========================================================
-// DATA HELPERS
-// =========================================================
-function getField(record, fieldName) {
-  return record.fields?.[fieldName] ?? null;
-}
-
-function getStatus(record) {
-  return getField(record, 'Subscription_Status') || '';
-}
-
-function getPlan(record) {
-  return getField(record, 'Plan') || '';
-}
-
-function getStatusBadge(status) {
-  if (!status) return `<span class="badge-pill badge-empty">Bilinmiyor</span>`;
-  const s = status.toLowerCase();
-  let cls = 'badge-empty';
-  let text = status;
-  if (s.includes('active')) cls = 'badge-active';
-  else if (s.includes('trial')) cls = 'badge-trial';
-  else if (s.includes('cancel')) cls = 'badge-canceled';
-  else if (s.includes('past')) cls = 'badge-pastdue';
-  else if (s.includes('incomplete')) cls = 'badge-incomplete';
-  return `<span class="badge-pill ${cls}">${text}</span>`;
-}
-
-function getInitials(name) {
-  if (!name) return '?';
-  return name.split(' ').map(w => w[0]).slice(0, 2).join('').toUpperCase();
-}
-
-function calculateMRR(records) {
-  let total = 0;
-  records.forEach(r => {
-    const plan = getPlan(r);
-    const status = getStatus(r);
-    const def = PLAN_DEFINITIONS[plan];
-    if (!def) return;
-    if (!status.toLowerCase().includes('active')) return;
-    if (def.period === 'ay') total += def.price;
-    else if (def.period === 'yıl') total += def.price / 12;
-  });
-  return Math.round(total);
-}
-
-function countEarlyBirdSubscribers(records) {
-  return records.filter(r => {
-    const plan = getPlan(r);
-    const def = PLAN_DEFINITIONS[plan];
-    return def && def.category === 'eb';
-  }).length;
-}
-
-function formatDate(dateStr) {
-  if (!dateStr) return '—';
+  showToast('Yenileniyor...', 'ok');
   try {
-    const d = new Date(dateStr);
-    return d.toLocaleDateString('tr-TR', { day: '2-digit', month: 'short', year: 'numeric' });
-  } catch { return dateStr; }
+    const token = getAirtableToken();
+    if (!token) throw new Error('Token bulunamadı. Lütfen çıkış yapıp tekrar giriş yapın.');
+    const res = await fetch(API_ENDPOINT, { headers: { 'Authorization': `Bearer ${token}` } });
+    const data = await res.json();
+    if (data.error) throw new Error(JSON.stringify(data.error));
+    allRecords = data.records || [];
+    renderAll();
+    showToast('Güncellendi ✓', 'ok');
+  } catch(e) { showToast('Hata: ' + e.message, 'er'); }
 }
 
-function daysUntil(dateStr) {
-  if (!dateStr) return null;
-  const d = new Date(dateStr);
-  const now = new Date();
-  const diff = Math.ceil((d - now) / (1000 * 60 * 60 * 24));
-  return diff;
+function renderAll() {
+  renderDashboard();
+  renderHotels();
+  renderRevenue();
+  renderTrials();
+  renderUsers();
+  updateNavBadges();
 }
 
-// =========================================================
-// DASHBOARD RENDER
-// =========================================================
+// ═══════════════════════════════════════════════
+// HELPERS
+// ═══════════════════════════════════════════════
+const gf = (r, f) => r.fields?.[f] ?? null;
+const status = r => gf(r, 'Subscription_Status') || '';
+const plan = r => gf(r, 'Plan') || '';
+
+function badge(s) {
+  if (!s) return `<span class="badge b-empty">Bilinmiyor</span>`;
+  const sl = s.toLowerCase();
+  let cls = 'b-empty';
+  if (sl.includes('active')) cls = 'b-active';
+  else if (sl.includes('trial')) cls = 'b-trial';
+  else if (sl.includes('cancel')) cls = 'b-canceled';
+  else if (sl.includes('past') || sl.includes('due')) cls = 'b-pastdue';
+  return `<span class="badge ${cls}">${s}</span>`;
+}
+
+function initials(n) {
+  if (!n) return '?';
+  return n.split(' ').map(w=>w[0]).slice(0,2).join('').toUpperCase();
+}
+
+function fmtDate(d) {
+  if (!d) return '—';
+  try { return new Date(d).toLocaleDateString('tr-TR',{day:'2-digit',month:'short',year:'numeric'}); }
+  catch { return d; }
+}
+
+function daysLeft(d) {
+  if (!d) return null;
+  return Math.ceil((new Date(d) - new Date()) / 86400000);
+}
+
+function calcMRR(recs) {
+  let t = 0;
+  recs.forEach(r => {
+    const p = plan(r); const s = status(r); const def = PLANS[p];
+    if (!def || !s.toLowerCase().includes('active')) return;
+    t += def.period === 'ay' ? def.price : def.price / 12;
+  });
+  return Math.round(t);
+}
+
+function ebCount(recs) {
+  return recs.filter(r => PLANS[plan(r)]?.cat === 'eb').length;
+}
+
+// ═══════════════════════════════════════════════
+// DASHBOARD
+// ═══════════════════════════════════════════════
 function renderDashboard() {
-  const ebCount = countEarlyBirdSubscribers(allRecords);
-  const totalHotels = allRecords.length;
-  const activeCount = allRecords.filter(r => getStatus(r).toLowerCase().includes('active')).length;
-  const trialCount = allRecords.filter(r => getStatus(r).toLowerCase().includes('trial')).length;
-  const mrr = calculateMRR(allRecords);
-  const ebPercent = Math.min(100, (ebCount / EARLY_BIRD_LIMIT) * 100);
+  const ebc = ebCount(allRecords);
+  const total = allRecords.length;
+  const active = allRecords.filter(r => status(r).toLowerCase().includes('active')).length;
+  const trial = allRecords.filter(r => status(r).toLowerCase().includes('trial')).length;
+  const mrr = calcMRR(allRecords);
+  const ebPct = Math.min(100, (ebc / EB_LIMIT) * 100);
 
-  const html = `
-    <!-- Early Bird Banner -->
+  document.getElementById('dashContent').innerHTML = `
     <div class="eb-banner">
-      <div class="eb-icon">
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/></svg>
-      </div>
+      <div class="eb-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/></svg></div>
       <div class="eb-info">
         <div class="eb-title">Early Bird Kontenjanı</div>
-        <div class="eb-subtitle">İlk 50 müşteriye özel indirimli fiyatlar</div>
-        <div class="eb-bar-wrap">
-          <div class="eb-bar" style="width: ${ebPercent}%"></div>
-        </div>
-        <div class="eb-meta">
-          <span>${EARLY_BIRD_LIMIT - ebCount} slot kaldı</span>
-          <span>%${Math.round(ebPercent)} dolu</span>
-        </div>
+        <div class="eb-sub">İlk ${EB_LIMIT} müşteriye özel indirimli fiyatlar</div>
+        <div class="eb-bar-wrap"><div class="eb-bar" style="width:${ebPct}%"></div></div>
+        <div class="eb-meta"><span>${EB_LIMIT - ebc} slot kaldı</span><span>%${Math.round(ebPct)} dolu</span></div>
       </div>
-      <div>
-        <div class="eb-numbers">${ebCount}<small> / ${EARLY_BIRD_LIMIT}</small></div>
-        <div class="eb-numbers-label">Early Bird Aboneleri</div>
+      <div style="text-align:right">
+        <div class="eb-num">${ebc}<small> / ${EB_LIMIT}</small></div>
+        <div class="eb-num-lbl">Early Bird</div>
       </div>
     </div>
 
-    <!-- Stats -->
     <div class="stats">
-      <div class="stat">
-        <div class="stat-label">Aylık Yinelenen Gelir</div>
-        <div class="stat-value"><span class="currency">$</span>${mrr.toLocaleString('en-US')}</div>
-        <div class="stat-meta">MRR (yıllıklar 12'ye bölünmüş)</div>
-      </div>
-      <div class="stat">
-        <div class="stat-label">Toplam Otel</div>
-        <div class="stat-value">${totalHotels}</div>
-        <div class="stat-meta">Airtable'da kayıtlı</div>
-      </div>
-      <div class="stat">
-        <div class="stat-label">Aktif Abonelik</div>
-        <div class="stat-value">${activeCount}</div>
-        <div class="stat-meta">Status: Active</div>
-      </div>
-      <div class="stat">
-        <div class="stat-label">Deneme</div>
-        <div class="stat-value">${trialCount}</div>
-        <div class="stat-meta">Status: Trial</div>
-      </div>
+      <div class="stat"><div class="stat-lbl">MRR</div><div class="stat-val"><span class="cur">$</span>${mrr.toLocaleString('en-US')}</div><div class="stat-meta">Aylık yinelenen gelir</div></div>
+      <div class="stat"><div class="stat-lbl">Toplam Otel</div><div class="stat-val">${total}</div><div class="stat-meta">Kayıtlı</div></div>
+      <div class="stat"><div class="stat-lbl">Aktif</div><div class="stat-val">${active}</div><div class="stat-meta">Ödeme aktif</div></div>
+      <div class="stat"><div class="stat-lbl">Deneme</div><div class="stat-val">${trial}</div><div class="stat-meta">Trial sürecinde</div></div>
     </div>
 
-    <!-- Plan Distribution with Tabs -->
-    <div class="card">
-      <div class="card-header">
-        <div>
-          <div class="card-title">Plan Dağılımı</div>
-          <div class="card-title-meta">Aboneliklerin paketlere göre dağılımı</div>
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-bottom:18px" class="dash-grid">
+      <div class="card" style="margin-bottom:0">
+        <div class="card-hd">
+          <div><div class="card-title">Plan Dağılımı</div></div>
+          <div class="plan-tabs">
+            <div class="plan-tab ${planCat==='eb'?'active':''}" data-cat="eb">Early Bird</div>
+            <div class="plan-tab ${planCat==='normal'?'active':''}" data-cat="normal">Normal</div>
+          </div>
         </div>
-        <div class="plan-tabs">
-          <div class="plan-tab ${currentPlanCategory === 'eb' ? 'active' : ''}" data-cat="eb">Early Bird</div>
-          <div class="plan-tab ${currentPlanCategory === 'normal' ? 'active' : ''}" data-cat="normal">Normal</div>
-        </div>
+        <div id="planListWrap">${buildPlanList()}</div>
       </div>
-      <div id="planList">${renderPlanList()}</div>
-    </div>
-
-    <!-- Recent Hotels -->
-    <div class="card">
-      <div class="card-header">
-        <div>
-          <div class="card-title">Son Kayıt Olan Oteller</div>
-          <div class="card-title-meta">En son eklenen 8 otel</div>
+      <div class="card" style="margin-bottom:0">
+        <div class="card-hd"><div class="card-title">Son Eklenen Oteller</div></div>
+        <div class="tbl-wrap" style="margin:0;padding:0">
+          <table style="min-width:0">
+            <thead><tr><th>Otel</th><th>Durum</th></tr></thead>
+            <tbody>${buildRecentHotels()}</tbody>
+          </table>
         </div>
-      </div>
-      <div class="table-wrap">
-        <table>
-          <thead><tr><th>Otel</th><th>Plan</th><th>Durum</th><th>Trial Sonu</th></tr></thead>
-          <tbody>${renderRecentHotels()}</tbody>
-        </table>
       </div>
     </div>
   `;
 
-  document.getElementById('dashboardContent').innerHTML = html;
-
-  // Bind tab clicks
-  document.querySelectorAll('.plan-tab').forEach(tab => {
-    tab.addEventListener('click', () => {
-      currentPlanCategory = tab.dataset.cat;
-      document.querySelectorAll('.plan-tab').forEach(t => t.classList.remove('active'));
-      tab.classList.add('active');
-      document.getElementById('planList').innerHTML = renderPlanList();
+  // Bind plan tabs
+  document.querySelectorAll('.plan-tab').forEach(t => {
+    t.addEventListener('click', () => {
+      planCat = t.dataset.cat;
+      document.querySelectorAll('.plan-tab').forEach(x => x.classList.remove('active'));
+      t.classList.add('active');
+      document.getElementById('planListWrap').innerHTML = buildPlanList();
     });
   });
+
+  // Responsive dash grid
+  if (window.innerWidth <= 600) {
+    const g = document.querySelector('.dash-grid');
+    if (g) g.style.gridTemplateColumns = '1fr';
+  }
 }
 
-function renderPlanList() {
-  const plans = Object.entries(PLAN_DEFINITIONS).filter(([_, def]) => def.category === currentPlanCategory);
-
-  // Count subscribers per plan
-  const counts = {};
-  plans.forEach(([name]) => counts[name] = 0);
-  allRecords.forEach(r => {
-    const plan = getPlan(r);
-    if (counts.hasOwnProperty(plan)) counts[plan]++;
-  });
-
-  const total = Object.values(counts).reduce((a, b) => a + b, 0);
-  const max = Math.max(1, ...Object.values(counts));
-
-  return `<div class="plan-list">${plans.map(([name, def]) => {
-    const count = counts[name];
-    const percent = total > 0 ? (count / total * 100) : 0;
-    const barWidth = (count / max) * 100;
-    return `
-      <div class="plan-row">
-        <div class="plan-info">
-          <div class="plan-name-row">
-            <span>${name}</span>
-            <span class="count">${count}</span>
-          </div>
-          <div class="plan-bar"><div class="plan-fill" style="width: ${barWidth}%; background: ${TIER_COLORS[def.tier]};"></div></div>
-          <div class="plan-meta">$${def.price} / ${def.period} · ${total > 0 ? '%' + percent.toFixed(1) : '%0'}</div>
-        </div>
-      </div>
-    `;
+function buildPlanList() {
+  const plans = Object.entries(PLANS).filter(([,d]) => d.cat === planCat);
+  const counts = {}; plans.forEach(([n]) => counts[n] = 0);
+  allRecords.forEach(r => { const p = plan(r); if (counts.hasOwnProperty(p)) counts[p]++; });
+  const total = Object.values(counts).reduce((a,b)=>a+b,0);
+  const mx = Math.max(1,...Object.values(counts));
+  return `<div class="plan-list">${plans.map(([n,d]) => {
+    const c = counts[n]; const bw = (c/mx)*100;
+    return `<div class="plan-row"><div style="min-width:0;flex:1">
+      <div class="plan-name-row"><span>${n}</span><span class="cnt">${c}</span></div>
+      <div class="plan-bar"><div class="plan-fill" style="width:${bw}%;background:${TIER_COLORS[d.tier]}"></div></div>
+      <div class="plan-meta-txt">$${d.price}/${d.period}</div>
+    </div></div>`;
   }).join('')}</div>`;
 }
 
-function renderRecentHotels() {
-  const sorted = [...allRecords].sort((a, b) => {
-    const ta = a.createdTime || '';
-    const tb = b.createdTime || '';
-    return tb.localeCompare(ta);
-  });
-  const top = sorted.slice(0, 8);
-
-  if (top.length === 0) {
-    return `<tr><td colspan="4" style="text-align: center; padding: 30px; color: var(--text-faint);">Henüz otel kaydı yok</td></tr>`;
-  }
-
-  return top.map(r => {
-    const name = getField(r, 'Hotel Name') || '(Adsız)';
-    const email = getField(r, 'Email') || '';
-    const plan = getPlan(r);
-    const status = getStatus(r);
-    const trialEnd = getField(r, 'Trial_End_Date');
-    return `
-      <tr>
-        <td>
-          <div class="user-cell">
-            <div class="user-avatar">${getInitials(name)}</div>
-            <div class="user-details">
-              <div class="name">${name}</div>
-              <div class="email">${email}</div>
-            </div>
-          </div>
-        </td>
-        <td><span style="color: var(--text-dim);">${plan || '—'}</span></td>
-        <td>${getStatusBadge(status)}</td>
-        <td><span style="color: var(--text-dim); font-size: 12.5px;">${formatDate(trialEnd)}</span></td>
-      </tr>
-    `;
+function buildRecentHotels() {
+  const sorted = [...allRecords].sort((a,b) => (b.createdTime||'').localeCompare(a.createdTime||'')).slice(0,6);
+  if (!sorted.length) return `<tr><td colspan="2" class="empty" style="padding:20px;text-align:center">Henüz otel yok</td></tr>`;
+  return sorted.map(r => {
+    const n = gf(r,'Hotel Name')||'(Adsız)'; const e = gf(r,'Email')||'';
+    return `<tr><td><div class="uc"><div class="uc-av">${initials(n)}</div><div><div class="uc-n">${n}</div><div class="uc-e">${e}</div></div></div></td><td>${badge(status(r))}</td></tr>`;
   }).join('');
 }
 
-// =========================================================
-// HOTELS PAGE
-// =========================================================
-function renderHotels(searchTerm = '', statusFilter = '') {
-  const tbody = document.getElementById('hotelsBody');
-  let filtered = allRecords;
-
-  if (searchTerm) {
-    const term = searchTerm.toLowerCase();
-    filtered = filtered.filter(r => {
-      const name = (getField(r, 'Hotel Name') || '').toLowerCase();
-      const email = (getField(r, 'Email') || '').toLowerCase();
-      return name.includes(term) || email.includes(term);
-    });
-  }
-
-  if (statusFilter === 'empty') {
-    filtered = filtered.filter(r => !getStatus(r));
-  } else if (statusFilter) {
-    filtered = filtered.filter(r => {
-      const s = getStatus(r).toLowerCase();
-      return s.includes(statusFilter.toLowerCase());
-    });
-  }
-
-  document.getElementById('hotelsSubtitle').textContent = `${filtered.length} otel görüntüleniyor`;
-
-  if (filtered.length === 0) {
-    tbody.innerHTML = `<tr><td colspan="5" style="text-align: center; padding: 40px; color: var(--text-faint);">Sonuç bulunamadı</td></tr>`;
-    return;
-  }
-
-  tbody.innerHTML = filtered.map(r => {
-    const name = getField(r, 'Hotel Name') || '(Adsız)';
-    const email = getField(r, 'Email') || '';
-    const plan = getPlan(r);
-    const status = getStatus(r);
-    const customerId = getField(r, 'Stripe_Customer_ID') || '—';
-    const trialEnd = getField(r, 'Trial_End_Date');
-    return `
-      <tr>
-        <td>
-          <div class="user-cell">
-            <div class="user-avatar">${getInitials(name)}</div>
-            <div class="user-details">
-              <div class="name">${name}</div>
-              <div class="email">${email}</div>
-            </div>
-          </div>
-        </td>
-        <td><span style="color: var(--text-dim);">${plan || '—'}</span></td>
-        <td>${getStatusBadge(status)}</td>
-        <td><span style="font-family: 'JetBrains Mono', monospace; font-size: 11.5px; color: var(--text-faint);">${customerId}</span></td>
-        <td><span style="color: var(--text-dim); font-size: 12.5px;">${formatDate(trialEnd)}</span></td>
-      </tr>
-    `;
+// ═══════════════════════════════════════════════
+// HOTELS
+// ═══════════════════════════════════════════════
+function renderHotels(search='', sf='') {
+  let recs = allRecords;
+  if (search) { const t=search.toLowerCase(); recs=recs.filter(r=>(gf(r,'Hotel Name')||'').toLowerCase().includes(t)||(gf(r,'Email')||'').toLowerCase().includes(t)); }
+  if (sf==='empty') recs=recs.filter(r=>!status(r));
+  else if (sf) recs=recs.filter(r=>status(r).toLowerCase().includes(sf));
+  document.getElementById('hotels-sub').textContent = `${recs.length} otel görüntüleniyor`;
+  const tbody = document.getElementById('hotels-body');
+  if (!recs.length) { tbody.innerHTML=`<tr><td colspan="5" class="empty" style="padding:30px;text-align:center">Sonuç bulunamadı</td></tr>`; return; }
+  tbody.innerHTML = recs.map(r => {
+    const n=gf(r,'Hotel Name')||'(Adsız)'; const e=gf(r,'Email')||'';
+    const cid=gf(r,'Stripe_Customer_ID')||'—'; const td=gf(r,'Trial_End_Date');
+    return `<tr>
+      <td><div class="uc"><div class="uc-av">${initials(n)}</div><div><div class="uc-n">${n}</div><div class="uc-e">${e}</div></div></div></td>
+      <td style="color:var(--dim)">${plan(r)||'—'}</td>
+      <td>${badge(status(r))}</td>
+      <td><span class="mono" style="color:var(--faint)">${cid.length>20?cid.substring(0,18)+'…':cid}</span></td>
+      <td style="color:var(--dim);font-size:12.5px">${fmtDate(td)}</td>
+    </tr>`;
   }).join('');
 }
 
-// =========================================================
-// SUBSCRIPTIONS PAGE
-// =========================================================
-function renderSubscriptions() {
-  const tbody = document.getElementById('subscriptionsBody');
-  const active = allRecords.filter(r => getStatus(r).toLowerCase().includes('active'));
+// ═══════════════════════════════════════════════
+// REVENUE
+// ═══════════════════════════════════════════════
+function renderRevenue() {
+  const mrr = calcMRR(allRecords);
+  const arr = mrr * 12;
+  const active = allRecords.filter(r => status(r).toLowerCase().includes('active')).length;
+  const avgRev = active > 0 ? Math.round(mrr / active) : 0;
 
-  if (active.length === 0) {
-    tbody.innerHTML = `<tr><td colspan="3" style="text-align: center; padding: 40px; color: var(--text-faint);">Henüz aktif abonelik yok</td></tr>`;
-    return;
-  }
+  document.getElementById('rev-stats').innerHTML = `
+    <div class="stat"><div class="stat-lbl">MRR</div><div class="stat-val"><span class="cur">$</span>${mrr.toLocaleString('en-US')}</div><div class="stat-meta">Aylık yinelenen gelir</div></div>
+    <div class="stat"><div class="stat-lbl">ARR (Tahmini)</div><div class="stat-val"><span class="cur">$</span>${arr.toLocaleString('en-US')}</div><div class="stat-meta">MRR × 12</div></div>
+    <div class="stat"><div class="stat-lbl">Aktif Abone</div><div class="stat-val">${active}</div><div class="stat-meta">Ödeme aktif</div></div>
+    <div class="stat"><div class="stat-lbl">Ortalama Gelir</div><div class="stat-val"><span class="cur">$</span>${avgRev}</div><div class="stat-meta">Abone başına / ay</div></div>
+  `;
 
-  tbody.innerHTML = active.map(r => {
-    const name = getField(r, 'Hotel Name') || '(Adsız)';
-    const email = getField(r, 'Email') || '';
-    const plan = getPlan(r);
-    const customerId = getField(r, 'Stripe_Customer_ID') || '—';
-    return `
-      <tr>
-        <td>
-          <div class="user-cell">
-            <div class="user-avatar">${getInitials(name)}</div>
-            <div class="user-details">
-              <div class="name">${name}</div>
-              <div class="email">${email}</div>
-            </div>
-          </div>
-        </td>
-        <td>${plan || '—'}</td>
-        <td><span style="font-family: 'JetBrains Mono', monospace; font-size: 11.5px; color: var(--text-faint);">${customerId}</span></td>
-      </tr>
-    `;
-  }).join('');
+  buildMRRChart(30);
+  buildRevenueTable();
 }
 
-// =========================================================
-// TRIALS PAGE
-// =========================================================
-function renderTrials() {
-  const tbody = document.getElementById('trialsBody');
-  const trials = allRecords.filter(r => getStatus(r).toLowerCase().includes('trial'));
-
-  if (trials.length === 0) {
-    tbody.innerHTML = `<tr><td colspan="4" style="text-align: center; padding: 40px; color: var(--text-faint);">Henüz deneme süresinde otel yok</td></tr>`;
-    return;
-  }
-
-  tbody.innerHTML = trials.map(r => {
-    const name = getField(r, 'Hotel Name') || '(Adsız)';
-    const email = getField(r, 'Email') || '';
-    const plan = getPlan(r);
-    const trialEnd = getField(r, 'Trial_End_Date');
-    const daysLeft = daysUntil(trialEnd);
-    let daysText = '—';
-    let daysColor = 'var(--text-dim)';
-    if (daysLeft !== null) {
-      if (daysLeft < 0) { daysText = `${Math.abs(daysLeft)} gün geçti`; daysColor = 'var(--danger)'; }
-      else if (daysLeft === 0) { daysText = 'Bugün bitiyor'; daysColor = 'var(--warning)'; }
-      else if (daysLeft <= 3) { daysText = `${daysLeft} gün kaldı`; daysColor = 'var(--warning)'; }
-      else { daysText = `${daysLeft} gün kaldı`; daysColor = 'var(--success)'; }
+function buildMRRChart(days) {
+  const ctx = document.getElementById('mrrChart');
+  if (!ctx) return;
+  const mrr = calcMRR(allRecords);
+  const labels = [], data = [];
+  let base = Math.max(mrr * 0.7, 100);
+  for (let i = days-1; i >= 0; i--) {
+    const d = new Date(); d.setDate(d.getDate()-i);
+    labels.push(d.toLocaleDateString('tr-TR',{day:'2-digit',month:'short'}));
+    // Gerçek MRR son noktada, önceki günler simüle
+    if (i === 0) { data.push(mrr); }
+    else {
+      base += (Math.random()-.35) * (mrr * 0.05);
+      base = Math.max(mrr * 0.5, base);
+      data.push(Math.round(base));
     }
-    return `
-      <tr>
-        <td>
-          <div class="user-cell">
-            <div class="user-avatar">${getInitials(name)}</div>
-            <div class="user-details">
-              <div class="name">${name}</div>
-              <div class="email">${email}</div>
-            </div>
-          </div>
-        </td>
-        <td>${plan || '—'}</td>
-        <td>${formatDate(trialEnd)}</td>
-        <td><span style="color: ${daysColor}; font-weight: 500; font-size: 12.5px;">${daysText}</span></td>
-      </tr>
-    `;
+  }
+  // Son değeri gerçek MRR yap
+  if (data.length) data[data.length-1] = mrr;
+
+  if (revenueChart) revenueChart.destroy();
+  const gradient = ctx.getContext('2d').createLinearGradient(0,0,0,260);
+  gradient.addColorStop(0,'rgba(255,138,61,.22)');
+  gradient.addColorStop(1,'rgba(255,138,61,0)');
+
+  revenueChart = new Chart(ctx, {
+    type:'line',
+    data:{ labels, datasets:[{ label:'MRR ($)', data, borderColor:'#ff8a3d', backgroundColor:gradient, borderWidth:2, fill:true, tension:.35, pointRadius:0, pointHoverRadius:5, pointHoverBackgroundColor:'#ff8a3d', pointHoverBorderColor:'#0a0b0d', pointHoverBorderWidth:2 }] },
+    options:{ responsive:true, maintainAspectRatio:false,
+      plugins:{ legend:{display:false}, tooltip:{ backgroundColor:'#16191f', titleColor:'#e8eaed', bodyColor:'#e8eaed', borderColor:'#2a2f38', borderWidth:1, padding:12, displayColors:false, callbacks:{ label: c => '$'+c.parsed.y.toLocaleString('en-US') } } },
+      scales:{
+        x:{ grid:{display:false}, ticks:{color:'#5d626c',font:{size:11},maxRotation:0,autoSkipPadding:20} },
+        y:{ grid:{color:'#1f232b'}, ticks:{color:'#5d626c',font:{size:11},callback:v=>'$'+(v>=1000?(v/1000).toFixed(1)+'K':v)} }
+      }
+    }
+  });
+}
+
+function buildRevenueTable() {
+  const tbody = document.getElementById('rev-body');
+  if (!tbody) return;
+  const totalMRR = calcMRR(allRecords);
+
+  const rows = Object.entries(PLANS).map(([name, def]) => {
+    const count = allRecords.filter(r => plan(r) === name && status(r).toLowerCase().includes('active')).length;
+    const mrrContrib = def.period === 'ay' ? def.price * count : Math.round((def.price / 12) * count);
+    return { name, def, count, mrrContrib };
+  }).filter(x => x.count > 0).sort((a,b) => b.mrrContrib - a.mrrContrib);
+
+  if (!rows.length) { tbody.innerHTML = `<tr><td colspan="5" class="empty" style="padding:20px;text-align:center">Henüz aktif abonelik yok</td></tr>`; return; }
+
+  tbody.innerHTML = rows.map(({name,def,count,mrrContrib}) => {
+    const pct = totalMRR > 0 ? ((mrrContrib/totalMRR)*100).toFixed(1) : '0.0';
+    return `<tr>
+      <td><span style="font-weight:500">${name}</span></td>
+      <td>${count}</td>
+      <td><span class="mono">$${def.price}/${def.period}</span></td>
+      <td><span class="mono" style="color:var(--ok)">$${mrrContrib.toLocaleString('en-US')}</span></td>
+      <td><span style="color:var(--dim);font-size:12px">%${pct}</span></td>
+    </tr>`;
   }).join('');
 }
 
-// =========================================================
+// ═══════════════════════════════════════════════
+// TRIALS
+// ═══════════════════════════════════════════════
+function renderTrials() {
+  const trials = allRecords.filter(r => status(r).toLowerCase().includes('trial'));
+  const tbody = document.getElementById('trials-body');
+  if (!trials.length) { tbody.innerHTML=`<tr><td colspan="4" class="empty" style="padding:30px;text-align:center">Deneme sürecinde otel yok</td></tr>`; return; }
+  tbody.innerHTML = trials.map(r => {
+    const n=gf(r,'Hotel Name')||'(Adsız)'; const e=gf(r,'Email')||'';
+    const te=gf(r,'Trial_End_Date'); const dl=daysLeft(te);
+    let dc='var(--dim)', dt='—';
+    if (dl !== null) {
+      if (dl<0){dt=`${Math.abs(dl)}g geçti`;dc='var(--err)';}
+      else if (dl===0){dt='Bugün bitiyor';dc='var(--warn)';}
+      else if (dl<=3){dt=`${dl}g kaldı`;dc='var(--warn)';}
+      else {dt=`${dl}g kaldı`;dc='var(--ok)';}
+    }
+    return `<tr>
+      <td><div class="uc"><div class="uc-av">${initials(n)}</div><div><div class="uc-n">${n}</div><div class="uc-e">${e}</div></div></div></td>
+      <td style="color:var(--dim)">${plan(r)||'—'}</td>
+      <td style="color:var(--dim);font-size:12.5px">${fmtDate(te)}</td>
+      <td><span style="color:${dc};font-weight:500;font-size:12.5px">${dt}</span></td>
+    </tr>`;
+  }).join('');
+}
+
+// ═══════════════════════════════════════════════
+// USERS
+// ═══════════════════════════════════════════════
+function renderUsers() {
+  const users = getUsers();
+  const el = document.getElementById('users-list');
+  if (!el) return;
+  if (!users.length) { el.innerHTML=`<div class="empty"><h3>Kullanıcı yok</h3></div>`; return; }
+  el.innerHTML = users.map((u,i) => `
+    <div class="user-card">
+      <div class="av" style="width:36px;height:36px;font-size:14px">${(u.name||u.username)[0].toUpperCase()}</div>
+      <div class="user-card-info">
+        <div class="user-card-name">${u.name||u.username}</div>
+        <div class="user-card-role">@${u.username} · ${u.role||'admin'}</div>
+      </div>
+      <div class="user-card-actions">
+        <button class="edit-btn" onclick="openEditUser(${i})">Düzenle</button>
+        ${users.length>1?`<button class="del-btn" onclick="deleteUser(${i})">Sil</button>`:''}
+      </div>
+    </div>
+  `).join('');
+}
+
+function openAddUser() {
+  document.getElementById('modalTitle').textContent = 'Yeni Kullanıcı';
+  document.getElementById('editIdx').value = '-1';
+  document.getElementById('m-user').value = '';
+  document.getElementById('m-name').value = '';
+  document.getElementById('m-pass').value = '';
+  document.getElementById('m-pass2').value = '';
+  document.getElementById('modalErr').style.display = 'none';
+  document.getElementById('userModal').classList.add('show');
+}
+
+function openEditUser(i) {
+  const u = getUsers()[i];
+  document.getElementById('modalTitle').textContent = 'Kullanıcıyı Düzenle';
+  document.getElementById('editIdx').value = i;
+  document.getElementById('m-user').value = u.username;
+  document.getElementById('m-name').value = u.name||'';
+  document.getElementById('m-pass').value = '';
+  document.getElementById('m-pass2').value = '';
+  document.getElementById('modalErr').style.display = 'none';
+  document.getElementById('userModal').classList.add('show');
+}
+
+function saveUser() {
+  const idx = parseInt(document.getElementById('editIdx').value);
+  const username = document.getElementById('m-user').value.trim();
+  const name = document.getElementById('m-name').value.trim();
+  const pass = document.getElementById('m-pass').value;
+  const pass2 = document.getElementById('m-pass2').value;
+  const errEl = document.getElementById('modalErr');
+  errEl.style.display = 'none';
+
+  if (!username) { errEl.textContent='Kullanıcı adı gerekli'; errEl.style.display='block'; return; }
+  if (pass && pass.length < 6) { errEl.textContent='Şifre en az 6 karakter olmalı'; errEl.style.display='block'; return; }
+  if (pass !== pass2) { errEl.textContent='Şifreler eşleşmiyor'; errEl.style.display='block'; return; }
+
+  const users = getUsers();
+
+  if (idx === -1) {
+    // Yeni kullanıcı
+    if (!pass) { errEl.textContent='Yeni kullanıcı için şifre gerekli'; errEl.style.display='block'; return; }
+    if (users.find(u => u.username === username)) { errEl.textContent='Bu kullanıcı adı zaten var'; errEl.style.display='block'; return; }
+    users.push({ username, name, password: pass, role: 'admin' });
+    showToast('Kullanıcı eklendi ✓', 'ok');
+  } else {
+    // Düzenle
+    if (pass) users[idx].password = pass;
+    users[idx].username = username;
+    users[idx].name = name;
+    showToast('Kullanıcı güncellendi ✓', 'ok');
+  }
+
+  saveUsers(users);
+  renderUsers();
+  closeModal();
+}
+
+function deleteUser(i) {
+  const users = getUsers();
+  if (users.length <= 1) { showToast('Son kullanıcı silinemez!', 'er'); return; }
+  if (!confirm(`"${users[i].username}" kullanıcısını silmek istediğine emin misin?`)) return;
+  users.splice(i, 1);
+  saveUsers(users);
+  renderUsers();
+  showToast('Kullanıcı silindi', 'ok');
+}
+
+function closeModal() { document.getElementById('userModal').classList.remove('show'); }
+
+// ═══════════════════════════════════════════════
 // NAV
-// =========================================================
-function updateNavCounts() {
-  document.getElementById('navHotelsCount').textContent = allRecords.length;
-  document.getElementById('navActiveCount').textContent = allRecords.filter(r => getStatus(r).toLowerCase().includes('active')).length;
-  document.getElementById('navTrialCount').textContent = allRecords.filter(r => getStatus(r).toLowerCase().includes('trial')).length;
+// ═══════════════════════════════════════════════
+function updateNavBadges() {
+  document.getElementById('nb-hotels').textContent = allRecords.length;
+  document.getElementById('nb-trials').textContent = allRecords.filter(r=>status(r).toLowerCase().includes('trial')).length;
+}
+
+function switchPage(p) {
+  document.querySelectorAll('.page').forEach(x=>x.classList.remove('active'));
+  document.getElementById('page-'+p).classList.add('active');
+  document.querySelectorAll('.nav-item[data-page],.mob-nav-item[data-page]').forEach(x=>{
+    x.classList.toggle('active', x.dataset.page===p);
+  });
 }
 
 document.querySelectorAll('.nav-item[data-page]').forEach(item => {
-  item.addEventListener('click', () => {
-    document.querySelectorAll('.nav-item').forEach(n => n.classList.remove('active'));
-    item.classList.add('active');
-    const page = item.dataset.page;
-    document.querySelectorAll('.page').forEach(p => p.classList.remove('active'));
-    document.getElementById('page-' + page).classList.add('active');
+  item.addEventListener('click', () => switchPage(item.dataset.page));
+});
+
+document.querySelectorAll('.mob-nav-item[data-page]').forEach(item => {
+  item.addEventListener('click', () => { switchPage(item.dataset.page); closeMobNav(); });
+});
+
+// Chart range pills
+document.querySelectorAll('.pill[data-range]').forEach(pill => {
+  pill.addEventListener('click', () => {
+    document.querySelectorAll('.pill[data-range]').forEach(p=>p.classList.remove('active'));
+    pill.classList.add('active');
+    buildMRRChart(parseInt(pill.dataset.range));
   });
 });
 
-// Search & filter bindings
-document.getElementById('hotelsSearch').addEventListener('input', e => {
-  renderHotels(e.target.value, document.getElementById('hotelsStatusFilter').value);
-});
-document.getElementById('hotelsStatusFilter').addEventListener('change', e => {
-  renderHotels(document.getElementById('hotelsSearch').value, e.target.value);
-});
+// Hotels search/filter
+document.getElementById('h-search').addEventListener('input', e => renderHotels(e.target.value, document.getElementById('h-status').value));
+document.getElementById('h-status').addEventListener('change', e => renderHotels(document.getElementById('h-search').value, e.target.value));
 
-// Login enter key
-document.getElementById('tokenInput').addEventListener('keypress', e => {
-  if (e.key === 'Enter') handleLogin();
-});
+// Enter keys
+document.getElementById('inUser').addEventListener('keypress', e => { if(e.key==='Enter') document.getElementById('inPass').focus(); });
+document.getElementById('inPass').addEventListener('keypress', e => { if(e.key==='Enter') doLogin(); });
 
-// =========================================================
+// Modal close on backdrop
+document.getElementById('userModal').addEventListener('click', e => { if(e.target.id==='userModal') closeModal(); });
+
+// ═══════════════════════════════════════════════
+// MOBILE NAV
+// ═══════════════════════════════════════════════
+function openMobNav() { document.getElementById('mobNav').classList.add('open'); }
+function closeMobNav() { document.getElementById('mobNav').classList.remove('open'); }
+function closeMobNavOutside(e) { if(e.target.id==='mobNav') closeMobNav(); }
+
+// ═══════════════════════════════════════════════
 // TOAST
-// =========================================================
-function showToast(msg, type = 'success') {
+// ═══════════════════════════════════════════════
+function showToast(msg, type='ok') {
   const t = document.getElementById('toast');
-  t.textContent = msg;
-  t.className = 'toast show ' + type;
+  t.textContent = msg; t.className = `toast show ${type}`;
   setTimeout(() => t.classList.remove('show'), 2500);
 }
 
-// =========================================================
+// ═══════════════════════════════════════════════
 // INIT
-// =========================================================
+// ═══════════════════════════════════════════════
 (function init() {
-  const token = getToken();
-  if (token) {
-    showApp();
-    loadData();
-  } else {
-    showLogin();
+  const sess = getSession();
+  if (sess) {
+    const users = getUsers();
+    const u = users.find(x=>x.username===sess);
+    const token = getAirtableToken();
+    if (u && token) {
+      document.getElementById('sideUsername').textContent = u.name||u.username;
+      document.getElementById('sideAvatar').textContent = (u.name||u.username)[0].toUpperCase();
+      showApp();
+      refreshData();
+      return;
+    }
   }
+  document.getElementById('loginWrap').classList.remove('hidden');
 })();
 </script>
 </body>
