@@ -21,7 +21,7 @@ export default async function handler(req, res) {
   // Token "Bearer " ile başlıyorsa aynen gönder, başlamıyorsa ekle
   const authHeader = token.startsWith('Bearer ') ? token : `Bearer ${token}`;
 
-  const BASE_ID = 'appPFfJ4ljiG0qjTq';
+  const BASE_ID = 'appPFfJ4IjiG0qjTq';
   const TABLE_ID = 'tbllyzYyAtA6bfD65';
 
   try {
