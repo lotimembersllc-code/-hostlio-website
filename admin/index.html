@@ -293,6 +293,25 @@ tr:hover td{background:rgba(255,255,255,.02)}
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor"><rect x="3" y="3" width="7" height="7" rx="1"/><rect x="14" y="3" width="7" height="7" rx="1"/><rect x="3" y="14" width="7" height="7" rx="1"/><rect x="14" y="14" width="7" height="7" rx="1"/></svg>
         Dashboard
       </div>
+      <div class="nav-item" data-page="subscriptions">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor"><path d="M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z"/><path d="m9 12 2 2 4-4"/></svg>
+        Abonelikler
+        <span class="nav-badge" id="nb-subs">—</span>
+      </div>
+      <div class="nav-item" data-page="payments">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor"><rect x="2" y="5" width="20" height="14" rx="2"/><line x1="2" y1="10" x2="22" y2="10"/></svg>
+        Ödemeler
+      </div>
+      <div class="nav-item" data-page="customers">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+        Müşteriler
+        <span class="nav-badge" id="nb-customers">—</span>
+      </div>
+      <div class="nav-item" data-page="refunds">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor"><path d="M3 12a9 9 0 1 0 3-6.7L3 8"/><path d="M3 3v5h5"/></svg>
+        İptal & İade
+        <span class="nav-badge" id="nb-refunds">—</span>
+      </div>
       <div class="nav-item" data-page="hotels">
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
         Oteller
@@ -351,7 +370,18 @@ tr:hover td{background:rgba(255,255,255,.02)}
       <div class="nav-item active mob-nav-item" data-page="dashboard">
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor"><rect x="3" y="3" width="7" height="7" rx="1"/><rect x="14" y="3" width="7" height="7" rx="1"/><rect x="3" y="14" width="7" height="7" rx="1"/><rect x="14" y="14" width="7" height="7" rx="1"/></svg>Dashboard
       </div>
-      <div class="nav-item mob-nav-item" data-page="hotels">
+      <div class="nav-item mob-nav-item" data-page="subscriptions">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor"><path d="M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z"/><path d="m9 12 2 2 4-4"/></svg>Abonelikler
+      </div>
+      <div class="nav-item mob-nav-item" data-page="payments">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor"><rect x="2" y="5" width="20" height="14" rx="2"/><line x1="2" y1="10" x2="22" y2="10"/></svg>Ödemeler
+      </div>
+      <div class="nav-item mob-nav-item" data-page="customers">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/></svg>Müşteriler
+      </div>
+      <div class="nav-item mob-nav-item" data-page="refunds">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor"><path d="M3 12a9 9 0 1 0 3-6.7L3 8"/><path d="M3 3v5h5"/></svg>İptal & İade
+      </div>
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>Oteller
       </div>
       <div class="nav-item mob-nav-item" data-page="revenue">
@@ -384,6 +414,196 @@ tr:hover td{background:rgba(255,255,255,.02)}
         </div>
       </div>
       <div id="dashContent"><div class="loading"><div class="spinner"></div><span>Veriler yükleniyor...</span></div></div>
+    </div>
+
+    <!-- ── ABONELİKLER ── -->
+    <div class="page" id="page-subscriptions">
+      <div class="topbar">
+        <div><div class="page-title">Abonelikler</div><div class="page-sub" id="subs-sub">Aktif ve pasif tüm abonelikler</div></div>
+        <div class="top-actions">
+          <button class="btn" onclick="exportCSV('subscriptions')">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>CSV İndir
+          </button>
+        </div>
+      </div>
+      <!-- Özet kartları -->
+      <div class="stats" style="grid-template-columns:repeat(3,1fr)" id="subs-stats"></div>
+      <div class="card">
+        <div class="search-row">
+          <input type="text" class="s-input" id="subs-search" placeholder="Otel adı, email, plan...">
+          <select class="s-sel" id="subs-plan">
+            <option value="">Tüm planlar</option>
+            <option value="Starter EB Aylık">Starter EB Aylık</option>
+            <option value="Starter EB Yıllık">Starter EB Yıllık</option>
+            <option value="Pro EB Aylık">Pro EB Aylık</option>
+            <option value="Pro EB Yıllık">Pro EB Yıllık</option>
+            <option value="Growth EB Aylık">Growth EB Aylık</option>
+            <option value="Growth EB Yıllık">Growth EB Yıllık</option>
+            <option value="Starter Aylık">Starter Aylık</option>
+            <option value="Starter Yıllık">Starter Yıllık</option>
+            <option value="Pro Aylık">Pro Aylık</option>
+            <option value="Pro Yıllık">Pro Yıllık</option>
+            <option value="Growth Aylık">Growth Aylık</option>
+            <option value="Growth Yıllık">Growth Yıllık</option>
+          </select>
+          <select class="s-sel" id="subs-status">
+            <option value="">Tüm durumlar</option>
+            <option value="active">Aktif</option>
+            <option value="trial">Deneme</option>
+            <option value="canceled">İptal</option>
+            <option value="past">Gecikmiş</option>
+          </select>
+        </div>
+        <div class="tbl-wrap">
+          <table>
+            <thead>
+              <tr>
+                <th>Müşteri</th>
+                <th>Plan</th>
+                <th>Aylık Değer</th>
+                <th>Durum</th>
+                <th>Stripe ID</th>
+                <th>Trial Sonu</th>
+                <th>Kayıt</th>
+              </tr>
+            </thead>
+            <tbody id="subs-body"></tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+
+    <!-- ── ÖDEMELER ── -->
+    <div class="page" id="page-payments">
+      <div class="topbar">
+        <div><div class="page-title">Ödemeler</div><div class="page-sub">Plan fiyatlarına göre tahmini ödeme akışı</div></div>
+        <div class="top-actions">
+          <button class="btn" onclick="exportCSV('payments')">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>CSV İndir
+          </button>
+        </div>
+      </div>
+      <div class="stats" style="grid-template-columns:repeat(4,1fr)" id="pay-stats"></div>
+      <div class="card">
+        <div class="card-hd">
+          <div><div class="card-title">Ödeme Özeti</div><div class="card-sub">Aktif aboneliklerin plan bazlı ödeme durumu</div></div>
+        </div>
+        <div class="tbl-wrap">
+          <table>
+            <thead>
+              <tr>
+                <th>Müşteri</th>
+                <th>Plan</th>
+                <th>Tutar</th>
+                <th>Dönem</th>
+                <th>Durum</th>
+                <th>Stripe Customer ID</th>
+              </tr>
+            </thead>
+            <tbody id="pay-body"></tbody>
+          </table>
+        </div>
+      </div>
+      <div class="card" style="border-color:rgba(96,165,250,.2);background:rgba(96,165,250,.04)">
+        <div style="display:flex;gap:10px;align-items:flex-start">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" style="width:18px;height:18px;stroke-width:2;color:var(--info);flex-shrink:0;margin-top:2px"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg>
+          <div style="font-size:12.5px;color:var(--dim);line-height:1.6">
+            <strong style="color:var(--text)">Not:</strong> Gerçek ödeme geçmişi (tarih, fatura ID, kart bilgisi) için Stripe Dashboard'u kullanabilirsiniz → <a href="https://dashboard.stripe.com/payments" target="_blank" style="color:var(--info)">dashboard.stripe.com/payments</a>. Make.com senaryosu tamamlandığında bu veriler Airtable'a otomatik yazılacak.
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ── MÜŞTERİLER ── -->
+    <div class="page" id="page-customers">
+      <div class="topbar">
+        <div><div class="page-title">Müşteriler</div><div class="page-sub" id="cust-sub">Tüm kayıtlı müşteriler</div></div>
+        <div class="top-actions">
+          <button class="btn" onclick="exportCSV('customers')">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>CSV İndir
+          </button>
+        </div>
+      </div>
+      <div class="stats" style="grid-template-columns:repeat(4,1fr)" id="cust-stats"></div>
+      <div class="card">
+        <div class="search-row">
+          <input type="text" class="s-input" id="cust-search" placeholder="İsim, email, şehir, ülke...">
+          <select class="s-sel" id="cust-plan">
+            <option value="">Tüm planlar</option>
+            <option value="eb">Early Bird</option>
+            <option value="normal">Normal</option>
+          </select>
+        </div>
+        <div class="tbl-wrap">
+          <table>
+            <thead>
+              <tr>
+                <th>Müşteri</th>
+                <th>İletişim</th>
+                <th>Plan</th>
+                <th>Toplam Değer</th>
+                <th>Durum</th>
+                <th>Ülke / Şehir</th>
+                <th>Kayıt</th>
+              </tr>
+            </thead>
+            <tbody id="cust-body"></tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+
+    <!-- ── İPTAL & İADE ── -->
+    <div class="page" id="page-refunds">
+      <div class="topbar">
+        <div><div class="page-title">İptal & İade</div><div class="page-sub">İptal edilen ve gecikmiş abonelikler</div></div>
+      </div>
+      <div class="stats" style="grid-template-columns:repeat(3,1fr)" id="ref-stats"></div>
+      <!-- İptal edilenler -->
+      <div class="card">
+        <div class="card-hd">
+          <div><div class="card-title">İptal Edilen Abonelikler</div><div class="card-sub">Status = "Canceled" olan oteller</div></div>
+          <span id="ref-canceled-count" style="background:rgba(248,113,113,.1);color:var(--err);border:1px solid rgba(248,113,113,.25);padding:4px 10px;border-radius:12px;font-size:12px;font-weight:600">0</span>
+        </div>
+        <div class="tbl-wrap">
+          <table>
+            <thead>
+              <tr><th>Müşteri</th><th>Plan</th><th>Kayıp Gelir / Ay</th><th>Stripe ID</th><th>Kayıt Tarihi</th></tr>
+            </thead>
+            <tbody id="ref-canceled-body"></tbody>
+          </table>
+        </div>
+      </div>
+      <!-- Gecikmiş ödemeler -->
+      <div class="card">
+        <div class="card-hd">
+          <div><div class="card-title">Gecikmiş / Sorunlu Ödemeler</div><div class="card-sub">Status = "Past Due" olan oteller</div></div>
+          <span id="ref-pastdue-count" style="background:rgba(251,191,36,.1);color:var(--warn);border:1px solid rgba(251,191,36,.25);padding:4px 10px;border-radius:12px;font-size:12px;font-weight:600">0</span>
+        </div>
+        <div class="tbl-wrap">
+          <table>
+            <thead>
+              <tr><th>Müşteri</th><th>Plan</th><th>Tutar</th><th>Stripe ID</th><th>İletişim</th></tr>
+            </thead>
+            <tbody id="ref-pastdue-body"></tbody>
+          </table>
+        </div>
+      </div>
+      <!-- Trial süresi dolanlar -->
+      <div class="card">
+        <div class="card-hd">
+          <div><div class="card-title">Trial Süresi Dolanlar</div><div class="card-sub">Deneme süresi bitmiş, henüz aktif aboneliğe geçmemiş oteller</div></div>
+          <span id="ref-expired-count" style="background:rgba(96,165,250,.1);color:var(--info);border:1px solid rgba(96,165,250,.25);padding:4px 10px;border-radius:12px;font-size:12px;font-weight:600">0</span>
+        </div>
+        <div class="tbl-wrap">
+          <table>
+            <thead>
+              <tr><th>Müşteri</th><th>Plan</th><th>Trial Bitti</th><th>Ne Kadar Önce</th><th>İletişim</th></tr>
+            </thead>
+            <tbody id="ref-expired-body"></tbody>
+          </table>
+        </div>
+      </div>
     </div>
 
     <!-- ── HOTELS ── -->
@@ -694,6 +914,10 @@ function renderAll() {
   renderHotels();
   renderRevenue();
   renderTrials();
+  renderSubscriptions();
+  renderPayments();
+  renderCustomers();
+  renderRefunds();
   renderUsers();
   updateNavBadges();
 }
@@ -989,8 +1213,242 @@ function buildPlanList() {
 
 
 // ═══════════════════════════════════════════════
-// HOTELS
+// ABONELİKLER
 // ═══════════════════════════════════════════════
+function renderSubscriptions(search='', planF='', statusF='') {
+  let recs = allRecords;
+  if (search) { const t=search.toLowerCase(); recs=recs.filter(r=>(gf(r,'Hotel Name')||'').toLowerCase().includes(t)||(gf(r,'Email')||'').toLowerCase().includes(t)||(plan(r)||'').toLowerCase().includes(t)); }
+  if (planF) recs=recs.filter(r=>plan(r)===planF);
+  if (statusF) recs=recs.filter(r=>status(r).toLowerCase().includes(statusF));
+
+  const active = recs.filter(r=>status(r).toLowerCase().includes('active')).length;
+  const trial  = recs.filter(r=>status(r).toLowerCase().includes('trial')).length;
+  const other  = recs.length - active - trial;
+
+  document.getElementById('subs-sub').textContent = `${recs.length} abonelik görüntüleniyor`;
+  document.getElementById('subs-stats').innerHTML = `
+    <div class="stat"><div class="stat-lbl">Aktif</div><div class="stat-val" style="color:var(--ok)">${active}</div><div class="stat-meta">Ödeme aktif</div></div>
+    <div class="stat"><div class="stat-lbl">Deneme</div><div class="stat-val" style="color:var(--info)">${trial}</div><div class="stat-meta">Trial sürecinde</div></div>
+    <div class="stat"><div class="stat-lbl">Diğer</div><div class="stat-val" style="color:var(--dim)">${other}</div><div class="stat-meta">İptal / gecikmiş</div></div>
+  `;
+
+  const tbody = document.getElementById('subs-body');
+  if (!recs.length) { tbody.innerHTML=`<tr><td colspan="7" class="empty" style="padding:30px;text-align:center">Sonuç bulunamadı</td></tr>`; return; }
+  tbody.innerHTML = recs.map(r => {
+    const n=gf(r,'Hotel Name')||'(Adsız)'; const e=gf(r,'Email')||'';
+    const p=plan(r); const def=PLANS[p];
+    const monthlyVal = def ? (def.period==='ay'?def.price:Math.round(def.price/12)) : 0;
+    const cid=gf(r,'Stripe_Customer_ID')||'—';
+    const td=gf(r,'Trial_End_Date');
+    const created=r.createdTime?new Date(r.createdTime).toLocaleDateString('tr-TR',{day:'2-digit',month:'short',year:'numeric'}):'—';
+    return `<tr>
+      <td><div class="uc"><div class="uc-av">${initials(n)}</div><div><div class="uc-n">${n}</div><div class="uc-e">${e}</div></div></div></td>
+      <td style="color:var(--dim);font-size:12.5px">${p||'—'}</td>
+      <td><span class="mono" style="color:var(--ok)">${monthlyVal?'$'+monthlyVal+'/ay':'—'}</span></td>
+      <td>${badge(status(r))}</td>
+      <td><span class="mono" style="color:var(--faint);font-size:11px">${cid.length>18?cid.substring(0,16)+'…':cid}</span></td>
+      <td style="color:var(--dim);font-size:12px">${fmtDate(td)}</td>
+      <td style="color:var(--faint);font-size:12px">${created}</td>
+    </tr>`;
+  }).join('');
+}
+
+// ═══════════════════════════════════════════════
+// ÖDEMELER
+// ═══════════════════════════════════════════════
+function renderPayments() {
+  const active = allRecords.filter(r=>status(r).toLowerCase().includes('active'));
+  const mrr = calcMRR(allRecords);
+  const arr = mrr * 12;
+  const avgRev = active.length > 0 ? Math.round(mrr / active.length) : 0;
+  const monthly = active.filter(r=>PLANS[plan(r)]?.period==='ay');
+  const yearly  = active.filter(r=>PLANS[plan(r)]?.period==='yıl');
+
+  document.getElementById('pay-stats').innerHTML = `
+    <div class="stat"><div class="stat-lbl">Aylık Gelir (MRR)</div><div class="stat-val"><span class="cur">$</span>${mrr.toLocaleString('en-US')}</div><div class="stat-meta">Aktif aboneliklerden</div></div>
+    <div class="stat"><div class="stat-lbl">Yıllık Gelir (ARR)</div><div class="stat-val"><span class="cur">$</span>${arr.toLocaleString('en-US')}</div><div class="stat-meta">MRR × 12</div></div>
+    <div class="stat"><div class="stat-lbl">Aylık Abonelik</div><div class="stat-val">${monthly.length}</div><div class="stat-meta">Aylık ödeme yapan</div></div>
+    <div class="stat"><div class="stat-lbl">Yıllık Abonelik</div><div class="stat-val">${yearly.length}</div><div class="stat-meta">Yıllık ödeme yapan</div></div>
+  `;
+
+  const tbody = document.getElementById('pay-body');
+  const activeRecs = allRecords.filter(r => {
+    const s = status(r).toLowerCase();
+    return s.includes('active') || s.includes('trial') || s.includes('past');
+  });
+
+  if (!activeRecs.length) { tbody.innerHTML=`<tr><td colspan="6" class="empty" style="padding:30px;text-align:center">Henüz ödeme verisi yok</td></tr>`; return; }
+
+  tbody.innerHTML = activeRecs.map(r => {
+    const n=gf(r,'Hotel Name')||'(Adsız)'; const e=gf(r,'Email')||'';
+    const p=plan(r); const def=PLANS[p];
+    const amount = def ? `$${def.price}` : '—';
+    const period = def ? (def.period==='ay'?'Aylık':'Yıllık') : '—';
+    const cid=gf(r,'Stripe_Customer_ID')||'—';
+    return `<tr>
+      <td><div class="uc"><div class="uc-av">${initials(n)}</div><div><div class="uc-n">${n}</div><div class="uc-e">${e}</div></div></div></td>
+      <td style="color:var(--dim);font-size:12.5px">${p||'—'}</td>
+      <td><span class="mono" style="color:var(--ok)">${amount}</span></td>
+      <td><span style="color:var(--dim);font-size:12px">${period}</span></td>
+      <td>${badge(status(r))}</td>
+      <td><span class="mono" style="color:var(--faint);font-size:11px">${cid.length>20?cid.substring(0,18)+'…':cid}</span></td>
+    </tr>`;
+  }).join('');
+}
+
+// ═══════════════════════════════════════════════
+// MÜŞTERİLER
+// ═══════════════════════════════════════════════
+function renderCustomers(search='', catF='') {
+  let recs = allRecords;
+  if (search) { const t=search.toLowerCase(); recs=recs.filter(r=>(gf(r,'Hotel Name')||'').toLowerCase().includes(t)||(gf(r,'Email')||'').toLowerCase().includes(t)||(gf(r,'Country')||'').toLowerCase().includes(t)||(gf(r,'City')||'').toLowerCase().includes(t)); }
+  if (catF) recs=recs.filter(r=>PLANS[plan(r)]?.cat===catF);
+
+  const total = recs.length;
+  const withPlan = recs.filter(r=>plan(r)).length;
+  const withStripe = recs.filter(r=>gf(r,'Stripe_Customer_ID')).length;
+  const totalVal = recs.reduce((acc,r)=>{const def=PLANS[plan(r)];if(!def)return acc;return acc+(def.period==='ay'?def.price*12:def.price);},0);
+
+  document.getElementById('cust-sub').textContent = `${total} müşteri görüntüleniyor`;
+  document.getElementById('cust-stats').innerHTML = `
+    <div class="stat"><div class="stat-lbl">Toplam Müşteri</div><div class="stat-val">${total}</div><div class="stat-meta">Kayıtlı</div></div>
+    <div class="stat"><div class="stat-lbl">Planı Olanlar</div><div class="stat-val">${withPlan}</div><div class="stat-meta">Plan seçmiş</div></div>
+    <div class="stat"><div class="stat-lbl">Stripe'ta Olanlar</div><div class="stat-val">${withStripe}</div><div class="stat-meta">Stripe Customer ID var</div></div>
+    <div class="stat"><div class="stat-lbl">Toplam Yıllık Değer</div><div class="stat-val"><span class="cur">$</span>${totalVal.toLocaleString('en-US')}</div><div class="stat-meta">Tüm müşteriler</div></div>
+  `;
+
+  const tbody = document.getElementById('cust-body');
+  if (!recs.length) { tbody.innerHTML=`<tr><td colspan="7" class="empty" style="padding:30px;text-align:center">Sonuç bulunamadı</td></tr>`; return; }
+
+  tbody.innerHTML = recs.map(r => {
+    const n=gf(r,'Hotel Name')||'(Adsız)'; const e=gf(r,'Email')||'';
+    const phone=gf(r,'Phone')||gf(r,'WhatsApp')||'—';
+    const p=plan(r); const def=PLANS[p];
+    const yearlyVal = def ? (def.period==='yıl'?def.price:def.price*12) : 0;
+    const country=gf(r,'Country')||''; const city=gf(r,'City')||'';
+    const location = [city,country].filter(Boolean).join(', ')||'—';
+    const created=r.createdTime?new Date(r.createdTime).toLocaleDateString('tr-TR',{day:'2-digit',month:'short',year:'numeric'}):'—';
+    return `<tr>
+      <td><div class="uc"><div class="uc-av">${initials(n)}</div><div><div class="uc-n">${n}</div><div class="uc-e">${e}</div></div></div></td>
+      <td style="color:var(--dim);font-size:12px">${phone}</td>
+      <td style="color:var(--dim);font-size:12.5px">${p||'—'}</td>
+      <td><span class="mono" style="color:var(--ok)">${yearlyVal?'$'+yearlyVal.toLocaleString('en-US')+'/yıl':'—'}</span></td>
+      <td>${badge(status(r))}</td>
+      <td style="color:var(--dim);font-size:12px">${location}</td>
+      <td style="color:var(--faint);font-size:12px">${created}</td>
+    </tr>`;
+  }).join('');
+}
+
+// ═══════════════════════════════════════════════
+// İPTAL & İADE
+// ═══════════════════════════════════════════════
+function renderRefunds() {
+  const canceled = allRecords.filter(r=>status(r).toLowerCase().includes('cancel'));
+  const pastdue  = allRecords.filter(r=>{const s=status(r).toLowerCase();return s.includes('past')||s.includes('due');});
+  const now = new Date();
+  const expiredTrials = allRecords.filter(r=>{
+    const s=status(r).toLowerCase();
+    const te=gf(r,'Trial_End_Date');
+    if(!te) return false;
+    const expired=new Date(te)<now;
+    return expired && !s.includes('active') && !s.includes('cancel');
+  });
+
+  // Özet kartları
+  const lostMRR = canceled.reduce((acc,r)=>{const def=PLANS[plan(r)];if(!def)return acc;return acc+(def.period==='ay'?def.price:Math.round(def.price/12));},0);
+  document.getElementById('ref-stats').innerHTML = `
+    <div class="stat"><div class="stat-lbl">İptal Edilen</div><div class="stat-val" style="color:var(--err)">${canceled.length}</div><div class="stat-meta">Toplam abonelik iptali</div></div>
+    <div class="stat"><div class="stat-lbl">Kayıp MRR</div><div class="stat-val"><span class="cur" style="font-size:16px;color:var(--err)">$</span><span style="color:var(--err)">${lostMRR.toLocaleString('en-US')}</span></div><div class="stat-meta">İptal edilen planlardan</div></div>
+    <div class="stat"><div class="stat-lbl">Gecikmiş Ödeme</div><div class="stat-val" style="color:var(--warn)">${pastdue.length}</div><div class="stat-meta">Past due statüsünde</div></div>
+  `;
+
+  document.getElementById('ref-canceled-count').textContent = canceled.length;
+  document.getElementById('ref-pastdue-count').textContent = pastdue.length;
+  document.getElementById('ref-expired-count').textContent = expiredTrials.length;
+
+  // İptal edilenler tablosu
+  const cb = document.getElementById('ref-canceled-body');
+  if (!canceled.length) { cb.innerHTML=`<tr><td colspan="5" class="empty" style="padding:20px;text-align:center;color:var(--faint)">İptal edilen abonelik yok</td></tr>`; }
+  else cb.innerHTML = canceled.map(r=>{
+    const n=gf(r,'Hotel Name')||'(Adsız)'; const e=gf(r,'Email')||'';
+    const p=plan(r); const def=PLANS[p];
+    const lost=def?(def.period==='ay'?def.price:Math.round(def.price/12)):0;
+    const cid=gf(r,'Stripe_Customer_ID')||'—';
+    const created=r.createdTime?new Date(r.createdTime).toLocaleDateString('tr-TR',{day:'2-digit',month:'short',year:'numeric'}):'—';
+    return `<tr>
+      <td><div class="uc"><div class="uc-av">${initials(n)}</div><div><div class="uc-n">${n}</div><div class="uc-e">${e}</div></div></div></td>
+      <td style="color:var(--dim);font-size:12.5px">${p||'—'}</td>
+      <td><span class="mono" style="color:var(--err)">${lost?'-$'+lost+'/ay':'—'}</span></td>
+      <td><span class="mono" style="color:var(--faint);font-size:11px">${cid.length>18?cid.substring(0,16)+'…':cid}</span></td>
+      <td style="color:var(--faint);font-size:12px">${created}</td>
+    </tr>`;
+  }).join('');
+
+  // Gecikmiş ödemeler tablosu
+  const pb = document.getElementById('ref-pastdue-body');
+  if (!pastdue.length) { pb.innerHTML=`<tr><td colspan="5" class="empty" style="padding:20px;text-align:center;color:var(--faint)">Gecikmiş ödeme yok</td></tr>`; }
+  else pb.innerHTML = pastdue.map(r=>{
+    const n=gf(r,'Hotel Name')||'(Adsız)'; const e=gf(r,'Email')||'';
+    const p=plan(r); const def=PLANS[p];
+    const amount=def?'$'+def.price+(def.period==='ay'?'/ay':'/yıl'):'—';
+    const cid=gf(r,'Stripe_Customer_ID')||'—';
+    const phone=gf(r,'Phone')||gf(r,'WhatsApp')||e;
+    return `<tr>
+      <td><div class="uc"><div class="uc-av">${initials(n)}</div><div><div class="uc-n">${n}</div><div class="uc-e">${e}</div></div></div></td>
+      <td style="color:var(--dim);font-size:12.5px">${p||'—'}</td>
+      <td><span class="mono" style="color:var(--warn)">${amount}</span></td>
+      <td><span class="mono" style="color:var(--faint);font-size:11px">${cid.length>18?cid.substring(0,16)+'…':cid}</span></td>
+      <td style="color:var(--dim);font-size:12px">${phone}</td>
+    </tr>`;
+  }).join('');
+
+  // Trial süresi dolanlar tablosu
+  const eb = document.getElementById('ref-expired-body');
+  if (!expiredTrials.length) { eb.innerHTML=`<tr><td colspan="5" class="empty" style="padding:20px;text-align:center;color:var(--faint)">Süresi dolan deneme yok</td></tr>`; }
+  else eb.innerHTML = expiredTrials.map(r=>{
+    const n=gf(r,'Hotel Name')||'(Adsız)'; const e=gf(r,'Email')||'';
+    const p=plan(r);
+    const te=gf(r,'Trial_End_Date');
+    const dl=daysLeft(te);
+    const ago=dl!==null?`${Math.abs(dl)} gün önce`:'—';
+    const phone=gf(r,'Phone')||gf(r,'WhatsApp')||e;
+    return `<tr>
+      <td><div class="uc"><div class="uc-av">${initials(n)}</div><div><div class="uc-n">${n}</div><div class="uc-e">${e}</div></div></div></td>
+      <td style="color:var(--dim);font-size:12.5px">${p||'—'}</td>
+      <td style="color:var(--dim);font-size:12px">${fmtDate(te)}</td>
+      <td><span style="color:var(--err);font-weight:500;font-size:12.5px">${ago}</span></td>
+      <td style="color:var(--dim);font-size:12px">${phone}</td>
+    </tr>`;
+  }).join('');
+}
+
+// ═══════════════════════════════════════════════
+// CSV EXPORT
+// ═══════════════════════════════════════════════
+function exportCSV(type) {
+  let rows = [], headers = [];
+  if (type === 'subscriptions' || type === 'customers' || type === 'payments') {
+    headers = ['Otel Adı', 'Email', 'Telefon', 'Plan', 'Durum', 'Stripe Customer ID', 'Trial Bitiş', 'Kayıt Tarihi'];
+    rows = allRecords.map(r => [
+      gf(r,'Hotel Name')||'',
+      gf(r,'Email')||'',
+      gf(r,'Phone')||gf(r,'WhatsApp')||'',
+      plan(r)||'',
+      status(r)||'',
+      gf(r,'Stripe_Customer_ID')||'',
+      gf(r,'Trial_End_Date')||'',
+      r.createdTime?new Date(r.createdTime).toLocaleDateString('tr-TR'):''
+    ]);
+  }
+  const csv = [headers, ...rows].map(row => row.map(v => `"${String(v).replace(/"/g,'""')}"`).join(',')).join('\n');
+  const blob = new Blob(['\ufeff'+csv], {type:'text/csv;charset=utf-8;'});
+  const a = document.createElement('a');
+  a.href = URL.createObjectURL(blob);
+  a.download = `hostliopro_${type}_${new Date().toISOString().split('T')[0]}.csv`;
+  a.click();
+  showToast('CSV indirildi ✓', 'ok');
+}
 function renderHotels(search='', sf='') {
   let recs = allRecords;
   if (search) { const t=search.toLowerCase(); recs=recs.filter(r=>(gf(r,'Hotel Name')||'').toLowerCase().includes(t)||(gf(r,'Email')||'').toLowerCase().includes(t)); }
@@ -1221,6 +1679,12 @@ function closeModal() { document.getElementById('userModal').classList.remove('s
 function updateNavBadges() {
   document.getElementById('nb-hotels').textContent = allRecords.length;
   document.getElementById('nb-trials').textContent = allRecords.filter(r=>status(r).toLowerCase().includes('trial')).length;
+  const subsEl = document.getElementById('nb-subs');
+  if (subsEl) subsEl.textContent = allRecords.filter(r=>status(r).toLowerCase().includes('active')).length;
+  const custEl = document.getElementById('nb-customers');
+  if (custEl) custEl.textContent = allRecords.length;
+  const refEl = document.getElementById('nb-refunds');
+  if (refEl) refEl.textContent = allRecords.filter(r=>status(r).toLowerCase().includes('cancel')||status(r).toLowerCase().includes('past')).length;
 }
 
 function switchPage(p) {
@@ -1251,6 +1715,15 @@ document.querySelectorAll('.pill[data-range]').forEach(pill => {
 // Hotels search/filter
 document.getElementById('h-search').addEventListener('input', e => renderHotels(e.target.value, document.getElementById('h-status').value));
 document.getElementById('h-status').addEventListener('change', e => renderHotels(document.getElementById('h-search').value, e.target.value));
+
+// Subscriptions search & filter
+document.getElementById('subs-search').addEventListener('input', e => renderSubscriptions(e.target.value, document.getElementById('subs-plan').value, document.getElementById('subs-status').value));
+document.getElementById('subs-plan').addEventListener('change', e => renderSubscriptions(document.getElementById('subs-search').value, e.target.value, document.getElementById('subs-status').value));
+document.getElementById('subs-status').addEventListener('change', e => renderSubscriptions(document.getElementById('subs-search').value, document.getElementById('subs-plan').value, e.target.value));
+
+// Customers search & filter
+document.getElementById('cust-search').addEventListener('input', e => renderCustomers(e.target.value, document.getElementById('cust-plan').value));
+document.getElementById('cust-plan').addEventListener('change', e => renderCustomers(document.getElementById('cust-search').value, e.target.value));
 
 // Enter keys
 document.getElementById('inUser').addEventListener('keypress', e => { if(e.key==='Enter') document.getElementById('inPass').focus(); });
