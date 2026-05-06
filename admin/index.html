@@ -1078,7 +1078,7 @@
 // =========================================================
 // CONFIGURATION
 // =========================================================
-const AIRTABLE_BASE_ID = 'appPFfJ4ljiG0qjTq';
+const AIRTABLE_BASE_ID = 'appPFfJ4IjiG0qjTq';
 const AIRTABLE_TABLE_ID = 'tbllyzYyAtA6bfD65'; // Hotels tablosu
 const TOKEN_STORAGE_KEY = 'hostliopro_admin_token';
 const EARLY_BIRD_LIMIT = 50;
@@ -1152,14 +1152,21 @@ async function handleLogin() {
   btn.textContent = 'Bağlanılıyor...';
 
   try {
-    // Test the token
-    const result = await fetchAirtable(token, 1);
-    if (result.records !== undefined) {
+    const result = await fetch(API_ENDPOINT, {
+      headers: { 'Authorization': `Bearer ${token}` }
+    });
+    const data = await result.json();
+
+    if (data.error) {
+      throw new Error('Airtable: ' + JSON.stringify(data.error).substring(0, 150));
+    }
+
+    if (data.records !== undefined) {
       saveToken(token);
       showApp();
       loadData();
     } else {
-      throw new Error('Beklenmedik yanıt formatı');
+      throw new Error('Beklenmedik yanıt: ' + JSON.stringify(data).substring(0, 100));
     }
   } catch (err) {
     btn.disabled = false;
@@ -1185,20 +1192,14 @@ function showLogin() {
   document.getElementById('mainApp').classList.add('hidden');
 }
 
-// =========================================================
-// AIRTABLE API — Vercel Proxy üzerinden
-// =========================================================
 async function fetchAirtable(token, maxRecords = 1) {
-  const response = await fetch(`${API_ENDPOINT}?maxRecords=${maxRecords}`, {
+  const response = await fetch(`${API_ENDPOINT}`, {
     headers: { 'Authorization': `Bearer ${token}` }
   });
 
   if (!response.ok) {
-    if (response.status === 401) throw new Error('Token geçersiz veya süresi dolmuş');
-    if (response.status === 403) throw new Error('Token izinleri yetersiz (data.records:read gerekli)');
-    if (response.status === 404) throw new Error('API endpoint bulunamadı');
     const text = await response.text();
-    throw new Error(`HTTP ${response.status}: ${text.substring(0, 100)}`);
+    throw new Error(`Sunucu hatası (${response.status}): ${text.substring(0, 200)}`);
   }
 
   return await response.json();
@@ -1213,13 +1214,16 @@ async function fetchAllRecords() {
   });
 
   if (!response.ok) {
-    if (response.status === 401) throw new Error('Token geçersiz veya süresi dolmuş');
-    if (response.status === 403) throw new Error('Token izinleri yetersiz (data.records:read gerekli)');
     const text = await response.text();
-    throw new Error(`HTTP ${response.status}: ${text.substring(0, 150)}`);
+    throw new Error(`Sunucu hatası (${response.status}): ${text.substring(0, 200)}`);
   }
 
   const data = await response.json();
+
+  if (data.error) {
+    throw new Error('Airtable hatası: ' + JSON.stringify(data.error));
+  }
+
   return data.records || [];
 }
 
