@@ -19,12 +19,12 @@
 html,body{background:var(--bg);color:var(--text);font-family:'Inter Tight',sans-serif;font-size:14px;line-height:1.5;-webkit-font-smoothing:antialiased;overflow-x:hidden}
 body{background-image:radial-gradient(circle at 20% 0%,rgba(255,138,61,.04) 0%,transparent 40%),radial-gradient(circle at 80% 100%,rgba(96,165,250,.03) 0%,transparent 40%);min-height:100vh}
 
-/* ── SCROLLBAR ── */
+/* -- SCROLLBAR -- */
 ::-webkit-scrollbar{width:6px;height:6px}
 ::-webkit-scrollbar-track{background:transparent}
 ::-webkit-scrollbar-thumb{background:var(--border-s);border-radius:3px}
 
-/* ── LOGIN ── */
+/* -- LOGIN -- */
 .login-wrap{min-height:100vh;display:flex;align-items:center;justify-content:center;padding:20px}
 .login-card{background:var(--bg-e);border:1px solid var(--border);border-radius:14px;padding:32px;width:100%;max-width:420px;box-shadow:0 20px 60px rgba(0,0,0,.4)}
 .login-logo{display:flex;align-items:center;gap:10px;margin-bottom:24px}
@@ -46,11 +46,11 @@ body{background-image:radial-gradient(circle at 20% 0%,rgba(255,138,61,.04) 0%,t
 .login-divider{display:flex;align-items:center;gap:10px;margin:20px 0;color:var(--faint);font-size:12px}
 .login-divider::before,.login-divider::after{content:'';flex:1;height:1px;background:var(--border)}
 
-/* ── APP SHELL ── */
+/* -- APP SHELL -- */
 .app{display:grid;grid-template-columns:var(--sidebar) 1fr;min-height:100vh}
 .app.hidden,.login-wrap.hidden{display:none}
 
-/* ── SIDEBAR ── */
+/* -- SIDEBAR -- */
 .sidebar{background:var(--bg-e);border-right:1px solid var(--border);padding:20px 14px;position:sticky;top:0;height:100vh;display:flex;flex-direction:column;overflow-y:auto}
 .s-logo{display:flex;align-items:center;gap:9px;padding:0 6px 22px;border-bottom:1px solid var(--border);margin-bottom:18px}
 .s-brand{font-family:'Fraunces',serif;font-size:17px;font-weight:600;letter-spacing:-.02em}
@@ -72,7 +72,7 @@ body{background-image:radial-gradient(circle at 20% 0%,rgba(255,138,61,.04) 0%,t
 .icon-btn:hover{color:var(--err);background:rgba(248,113,113,.08)}
 .icon-btn svg{width:14px;height:14px;stroke-width:1.8}
 
-/* ── MOBILE NAV ── */
+/* -- MOBILE NAV -- */
 .mob-header{display:none;background:var(--bg-e);border-bottom:1px solid var(--border);padding:12px 16px;align-items:center;justify-content:space-between;position:sticky;top:0;z-index:50}
 .mob-logo{display:flex;align-items:center;gap:8px;font-family:'Fraunces',serif;font-size:16px;font-weight:600}
 .mob-menu-btn{background:var(--bg-e2);border:1px solid var(--border);color:var(--text);padding:7px;border-radius:6px;cursor:pointer;display:flex;align-items:center}
@@ -83,7 +83,7 @@ body{background-image:radial-gradient(circle at 20% 0%,rgba(255,138,61,.04) 0%,t
 .mob-nav-close{align-self:flex-end;background:var(--bg-e2);border:1px solid var(--border);color:var(--dim);padding:7px;border-radius:6px;cursor:pointer;margin-bottom:16px}
 .mob-nav-close svg{width:16px;height:16px;stroke-width:2;display:block}
 
-/* ── MAIN ── */
+/* -- MAIN -- */
 .main{padding:24px 28px 64px;min-width:0}
 .page{display:none}
 .page.active{display:block}
@@ -92,7 +92,7 @@ body{background-image:radial-gradient(circle at 20% 0%,rgba(255,138,61,.04) 0%,t
 .page-sub{color:var(--dim);font-size:13px;margin-top:3px}
 .top-actions{display:flex;align-items:center;gap:8px;flex-wrap:wrap}
 
-/* ── BUTTONS ── */
+/* -- BUTTONS -- */
 .btn{background:var(--bg-e);border:1px solid var(--border);color:var(--text);padding:8px 14px;border-radius:6px;cursor:pointer;font-size:13px;font-weight:500;font-family:inherit;display:inline-flex;align-items:center;gap:7px;transition:all .15s;white-space:nowrap}
 .btn:hover{background:var(--bg-e2);border-color:var(--border-s)}
 .btn-primary{background:var(--accent);color:#0a0b0d;border-color:var(--accent);font-weight:600}
@@ -103,7 +103,7 @@ body{background-image:radial-gradient(circle at 20% 0%,rgba(255,138,61,.04) 0%,t
 .live-dot{width:7px;height:7px;background:var(--ok);border-radius:50%;box-shadow:0 0 0 0 rgba(74,222,128,.5);animation:pulse 2s infinite;flex-shrink:0}
 @keyframes pulse{0%{box-shadow:0 0 0 0 rgba(74,222,128,.5)}70%{box-shadow:0 0 0 6px rgba(74,222,128,0)}100%{box-shadow:0 0 0 0 rgba(74,222,128,0)}}
 
-/* ── STATS ── */
+/* -- STATS -- */
 .stats{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;margin-bottom:24px}
 .stat{background:var(--bg-e);border:1px solid var(--border);border-radius:10px;padding:16px;transition:border-color .2s}
 .stat:hover{border-color:var(--border-s)}
@@ -112,13 +112,13 @@ body{background-image:radial-gradient(circle at 20% 0%,rgba(255,138,61,.04) 0%,t
 .stat-val .cur{font-size:16px;color:var(--dim);margin-right:2px}
 .stat-meta{margin-top:8px;color:var(--faint);font-size:11px}
 
-/* ── CARDS ── */
+/* -- CARDS -- */
 .card{background:var(--bg-e);border:1px solid var(--border);border-radius:10px;padding:18px;margin-bottom:18px}
 .card-hd{display:flex;align-items:center;justify-content:space-between;margin-bottom:16px;gap:10px;flex-wrap:wrap}
 .card-title{font-size:14.5px;font-weight:600;letter-spacing:-.01em}
 .card-sub{color:var(--dim);font-size:12px;margin-top:2px}
 
-/* ── EARLY BIRD BANNER ── */
+/* -- EARLY BIRD BANNER -- */
 .eb-banner{background:linear-gradient(135deg,rgba(255,138,61,.1),rgba(194,95,31,.05));border:1px solid rgba(255,138,61,.25);border-radius:12px;padding:18px 20px;margin-bottom:22px;display:flex;align-items:center;gap:20px;flex-wrap:wrap}
 .eb-icon{width:44px;height:44px;background:var(--accent);border-radius:9px;display:flex;align-items:center;justify-content:center;flex-shrink:0}
 .eb-icon svg{width:22px;height:22px;color:#0a0b0d;stroke-width:2.2}
@@ -132,7 +132,7 @@ body{background-image:radial-gradient(circle at 20% 0%,rgba(255,138,61,.04) 0%,t
 .eb-num small{font-size:15px;color:var(--dim)}
 .eb-num-lbl{color:var(--dim);font-size:11px;text-transform:uppercase;letter-spacing:.05em;margin-top:4px}
 
-/* ── PLAN TABS ── */
+/* -- PLAN TABS -- */
 .plan-tabs{display:flex;gap:3px;background:var(--bg-e2);padding:3px;border-radius:7px;border:1px solid var(--border);width:fit-content;margin-bottom:16px}
 .plan-tab{padding:6px 14px;border-radius:5px;font-size:12.5px;font-weight:500;color:var(--dim);cursor:pointer;transition:all .15s;white-space:nowrap}
 .plan-tab.active{background:var(--bg);color:var(--text)}
@@ -144,14 +144,14 @@ body{background-image:radial-gradient(circle at 20% 0%,rgba(255,138,61,.04) 0%,t
 .plan-fill{height:100%;border-radius:3px;transition:width .5s}
 .plan-meta-txt{color:var(--dim);font-size:11px;margin-top:4px}
 
-/* ── CHART ── */
+/* -- CHART -- */
 .chart-grid{display:grid;grid-template-columns:2fr 1fr;gap:16px;margin-bottom:18px}
 .chart-wrap{height:260px;position:relative}
 .filter-pills{display:flex;gap:3px;background:var(--bg-e2);padding:3px;border-radius:6px;border:1px solid var(--border)}
 .pill{padding:4px 10px;border-radius:4px;font-size:12px;font-weight:500;color:var(--dim);cursor:pointer;transition:all .15s;white-space:nowrap}
 .pill.active{background:var(--bg);color:var(--text)}
 
-/* ── TABLE ── */
+/* -- TABLE -- */
 .tbl-wrap{overflow-x:auto;margin:0 -18px;padding:0 18px}
 table{width:100%;border-collapse:collapse;font-size:13px;min-width:400px}
 th{text-align:left;color:var(--faint);font-weight:500;font-size:11px;text-transform:uppercase;letter-spacing:.06em;padding:9px 10px;border-bottom:1px solid var(--border);white-space:nowrap}
@@ -164,7 +164,7 @@ tr:hover td{background:rgba(255,255,255,.02)}
 .uc-e{font-size:11.5px;color:var(--faint)}
 .mono{font-family:'JetBrains Mono',monospace;font-size:11.5px}
 
-/* ── BADGES ── */
+/* -- BADGES -- */
 .badge{display:inline-flex;align-items:center;gap:5px;padding:3px 9px;border-radius:12px;font-size:11px;font-weight:500;border:1px solid;white-space:nowrap}
 .badge::before{content:'';width:5px;height:5px;border-radius:50%;flex-shrink:0}
 .b-active{color:var(--ok);border-color:rgba(74,222,128,.25);background:rgba(74,222,128,.08)}.b-active::before{background:var(--ok)}
@@ -173,13 +173,13 @@ tr:hover td{background:rgba(255,255,255,.02)}
 .b-pastdue{color:var(--warn);border-color:rgba(251,191,36,.25);background:rgba(251,191,36,.08)}.b-pastdue::before{background:var(--warn)}
 .b-empty{color:var(--faint);border-color:var(--border);background:transparent}.b-empty::before{background:var(--faint);opacity:.4}
 
-/* ── SEARCH ── */
+/* -- SEARCH -- */
 .search-row{display:flex;gap:8px;margin-bottom:14px;flex-wrap:wrap}
 .s-input{background:var(--bg-e2);border:1px solid var(--border);color:var(--text);padding:8px 12px 8px 32px;border-radius:6px;font-size:13px;font-family:inherit;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='14' height='14' viewBox='0 0 24 24' fill='none' stroke='%239095a0' stroke-width='2'%3E%3Ccircle cx='11' cy='11' r='8'/%3E%3Cpath d='m21 21-4.3-4.3'/%3E%3C/svg%3E");background-repeat:no-repeat;background-position:10px center;min-width:0;flex:1;max-width:280px}
 .s-input:focus{outline:none;border-color:var(--border-s)}
 .s-sel{background:var(--bg-e2);border:1px solid var(--border);color:var(--text);padding:8px 26px 8px 10px;border-radius:6px;font-size:13px;font-family:inherit;appearance:none;cursor:pointer;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 24 24' fill='none' stroke='%239095a0' stroke-width='2'%3E%3Cpolyline points='6 9 12 15 18 9'/%3E%3C/svg%3E");background-repeat:no-repeat;background-position:right 8px center}
 
-/* ── USER MANAGEMENT ── */
+/* -- USER MANAGEMENT -- */
 .user-card{background:var(--bg-e2);border:1px solid var(--border);border-radius:8px;padding:14px;display:flex;align-items:center;gap:12px;margin-bottom:10px}
 .user-card-info{flex:1;min-width:0}
 .user-card-name{font-weight:600;font-size:13.5px}
@@ -190,7 +190,7 @@ tr:hover td{background:rgba(255,255,255,.02)}
 .del-btn{background:rgba(248,113,113,.08);border:1px solid rgba(248,113,113,.2);color:var(--err);padding:6px 10px;border-radius:5px;cursor:pointer;font-size:12px;font-family:inherit;transition:all .15s}
 .del-btn:hover{background:rgba(248,113,113,.15)}
 
-/* ── MODAL ── */
+/* -- MODAL -- */
 .modal-bg{position:fixed;inset:0;background:rgba(0,0,0,.7);backdrop-filter:blur(4px);z-index:200;display:none;align-items:center;justify-content:center;padding:16px}
 .modal-bg.show{display:flex}
 .modal{background:var(--bg-e);border:1px solid var(--border-s);border-radius:12px;width:100%;max-width:440px;overflow:hidden;box-shadow:0 20px 60px rgba(0,0,0,.5)}
@@ -199,20 +199,20 @@ tr:hover td{background:rgba(255,255,255,.02)}
 .modal-body{padding:20px}
 .modal-ft{padding:14px 20px;border-top:1px solid var(--border);display:flex;justify-content:flex-end;gap:8px;background:var(--bg-e2)}
 
-/* ── LOADING / STATES ── */
+/* -- LOADING / STATES -- */
 .loading{display:flex;align-items:center;justify-content:center;padding:50px 20px;color:var(--dim);flex-direction:column;gap:10px}
 .spinner{width:22px;height:22px;border:2px solid var(--border);border-top-color:var(--accent);border-radius:50%;animation:spin .8s linear infinite}
 @keyframes spin{to{transform:rotate(360deg)}}
 .empty{text-align:center;padding:50px 20px;color:var(--faint)}
 .empty h3{font-family:'Fraunces',serif;font-size:17px;color:var(--text);margin-bottom:6px}
 
-/* ── TOAST ── */
+/* -- TOAST -- */
 .toast{position:fixed;bottom:20px;right:20px;background:var(--bg-e);border:1px solid var(--border-s);padding:11px 15px;border-radius:8px;font-size:13px;box-shadow:0 10px 30px rgba(0,0,0,.3);z-index:300;transform:translateY(100px);opacity:0;transition:all .3s;max-width:300px}
 .toast.show{transform:translateY(0);opacity:1}
 .toast.ok{border-left:3px solid var(--ok)}
 .toast.er{border-left:3px solid var(--err)}
 
-/* ── RESPONSIVE ── */
+/* -- RESPONSIVE -- */
 @media(max-width:900px){
   .app{grid-template-columns:1fr}
   .sidebar{display:none}
@@ -240,7 +240,7 @@ tr:hover td{background:rgba(255,255,255,.02)}
 </head>
 <body>
 
-<!-- ═══════════════ LOGIN ═══════════════ -->
+<!-- =============== LOGIN =============== -->
 <div class="login-wrap" id="loginWrap">
   <div class="login-card">
     <div class="login-logo">
@@ -278,7 +278,7 @@ tr:hover td{background:rgba(255,255,255,.02)}
   </div>
 </div>
 
-<!-- ═══════════════ APP ═══════════════ -->
+<!-- =============== APP =============== -->
 <div class="app hidden" id="appWrap">
 
   <!-- Sidebar (desktop) -->
@@ -402,7 +402,7 @@ tr:hover td{background:rgba(255,255,255,.02)}
   <!-- Main content -->
   <main class="main">
 
-    <!-- ── DASHBOARD ── -->
+    <!-- -- DASHBOARD -- -->
     <div class="page active" id="page-dashboard">
       <div class="topbar">
         <div><div class="page-title">Dashboard</div><div class="page-sub">Hostlio Pro genel görünümü</div></div>
@@ -416,7 +416,7 @@ tr:hover td{background:rgba(255,255,255,.02)}
       <div id="dashContent"><div class="loading"><div class="spinner"></div><span>Veriler yükleniyor...</span></div></div>
     </div>
 
-    <!-- ── ABONELİKLER ── -->
+    <!-- -- ABONELİKLER -- -->
     <div class="page" id="page-subscriptions">
       <div class="topbar">
         <div><div class="page-title">Abonelikler</div><div class="page-sub" id="subs-sub">Aktif ve pasif tüm abonelikler</div></div>
@@ -473,7 +473,7 @@ tr:hover td{background:rgba(255,255,255,.02)}
       </div>
     </div>
 
-    <!-- ── ÖDEMELER ── -->
+    <!-- -- ÖDEMELER -- -->
     <div class="page" id="page-payments">
       <div class="topbar">
         <div><div class="page-title">Ödemeler</div><div class="page-sub">Plan fiyatlarına göre tahmini ödeme akışı</div></div>
@@ -514,7 +514,7 @@ tr:hover td{background:rgba(255,255,255,.02)}
       </div>
     </div>
 
-    <!-- ── MÜŞTERİLER ── -->
+    <!-- -- MÜŞTERİLER -- -->
     <div class="page" id="page-customers">
       <div class="topbar">
         <div><div class="page-title">Müşteriler</div><div class="page-sub" id="cust-sub">Tüm kayıtlı müşteriler</div></div>
@@ -530,8 +530,18 @@ tr:hover td{background:rgba(255,255,255,.02)}
           <input type="text" class="s-input" id="cust-search" placeholder="İsim, email, şehir, ülke...">
           <select class="s-sel" id="cust-plan">
             <option value="">Tüm planlar</option>
-            <option value="eb">Early Bird</option>
-            <option value="normal">Normal</option>
+            <option value="Starter EB Aylık">Starter EB Aylık</option>
+            <option value="Starter EB Yıllık">Starter EB Yıllık</option>
+            <option value="Pro EB Aylık">Pro EB Aylık</option>
+            <option value="Pro EB Yıllık">Pro EB Yıllık</option>
+            <option value="Growth EB Aylık">Growth EB Aylık</option>
+            <option value="Growth EB Yıllık">Growth EB Yıllık</option>
+            <option value="Starter Aylık">Starter Aylık</option>
+            <option value="Starter Yıllık">Starter Yıllık</option>
+            <option value="Pro Aylık">Pro Aylık</option>
+            <option value="Pro Yıllık">Pro Yıllık</option>
+            <option value="Growth Aylık">Growth Aylık</option>
+            <option value="Growth Yıllık">Growth Yıllık</option>
           </select>
         </div>
         <div class="tbl-wrap">
@@ -539,11 +549,10 @@ tr:hover td{background:rgba(255,255,255,.02)}
             <thead>
               <tr>
                 <th>Müşteri</th>
-                <th>İletişim</th>
+                <th>Konum</th>
+                <th>Telefon</th>
                 <th>Plan</th>
-                <th>Toplam Değer</th>
                 <th>Durum</th>
-                <th>Ülke / Şehir</th>
                 <th>Kayıt</th>
               </tr>
             </thead>
@@ -553,7 +562,7 @@ tr:hover td{background:rgba(255,255,255,.02)}
       </div>
     </div>
 
-    <!-- ── İPTAL & İADE ── -->
+    <!-- -- İPTAL & İADE -- -->
     <div class="page" id="page-refunds">
       <div class="topbar">
         <div><div class="page-title">İptal & İade</div><div class="page-sub">İptal edilen ve gecikmiş abonelikler</div></div>
@@ -606,7 +615,7 @@ tr:hover td{background:rgba(255,255,255,.02)}
       </div>
     </div>
 
-    <!-- ── HOTELS ── -->
+    <!-- -- HOTELS -- -->
     <div class="page" id="page-hotels">
       <div class="topbar">
         <div><div class="page-title">Oteller</div><div class="page-sub" id="hotels-sub">Tüm kayıtlı oteller</div></div>
@@ -631,7 +640,7 @@ tr:hover td{background:rgba(255,255,255,.02)}
       </div>
     </div>
 
-    <!-- ── REVENUE ── -->
+    <!-- -- REVENUE -- -->
     <div class="page" id="page-revenue">
       <div class="topbar">
         <div><div class="page-title">Gelir & MRR</div><div class="page-sub">Abonelik gelirleri ve tahminler</div></div>
@@ -661,7 +670,7 @@ tr:hover td{background:rgba(255,255,255,.02)}
       </div>
     </div>
 
-    <!-- ── TRIALS ── -->
+    <!-- -- TRIALS -- -->
     <div class="page" id="page-trials">
       <div class="topbar">
         <div><div class="page-title">Denemeler</div><div class="page-sub">Trial sürecindeki oteller</div></div>
@@ -676,7 +685,7 @@ tr:hover td{background:rgba(255,255,255,.02)}
       </div>
     </div>
 
-    <!-- ── USERS ── -->
+    <!-- -- USERS -- -->
     <div class="page" id="page-users">
       <div class="topbar">
         <div><div class="page-title">Kullanıcılar</div><div class="page-sub">Admin panel erişim yönetimi</div></div>
@@ -702,7 +711,7 @@ tr:hover td{background:rgba(255,255,255,.02)}
   </main>
 </div>
 
-<!-- ── ADD/EDIT USER MODAL ── -->
+<!-- -- ADD/EDIT USER MODAL -- -->
 <div class="modal-bg" id="userModal">
   <div class="modal">
     <div class="modal-hd">
@@ -727,9 +736,9 @@ tr:hover td{background:rgba(255,255,255,.02)}
 <div class="toast" id="toast"></div>
 
 <script>
-// ═══════════════════════════════════════════════
+// ===============================================
 // CONFIG
-// ═══════════════════════════════════════════════
+// ===============================================
 const API_ENDPOINT = '/api/hotels';
 const TOKEN_KEY = 'hp_token';
 const USERS_KEY = 'hp_users';
@@ -737,7 +746,7 @@ const SESSION_KEY = 'hp_session';
 const AT_KEY = 'hp_at'; // Airtable token (localStorage)
 const EB_LIMIT = 50;
 
-// ── Token yönetimi ──
+// -- Token yönetimi --
 function getAirtableToken() {
   return localStorage.getItem(AT_KEY) || '';
 }
@@ -748,32 +757,32 @@ function clearAirtableToken() {
   localStorage.removeItem(AT_KEY);
 }
 
-// ── Varsayılan admin (ilk kurulum için) ──
+// -- Varsayılan admin (ilk kurulum için) --
 const DEFAULT_ADMIN = { username: 'admin', name: 'Admin', password: 'hostlio2024!', role: 'admin' };
 
 const PLANS = {
-  'Starter EB Aylık':  { price:39,   period:'ay',  cat:'eb',     tier:'starter' },
-  'Starter EB Yıllık': { price:372,  period:'yıl', cat:'eb',     tier:'starter' },
-  'Pro EB Aylık':      { price:79,   period:'ay',  cat:'eb',     tier:'pro'     },
-  'Pro EB Yıllık':     { price:756,  period:'yıl', cat:'eb',     tier:'pro'     },
-  'Growth EB Aylık':   { price:139,  period:'ay',  cat:'eb',     tier:'growth'  },
-  'Growth EB Yıllık':  { price:1332, period:'yıl', cat:'eb',     tier:'growth'  },
-  'Starter Aylık':     { price:49,   period:'ay',  cat:'normal', tier:'starter' },
-  'Starter Yıllık':    { price:468,  period:'yıl', cat:'normal', tier:'starter' },
-  'Pro Aylık':         { price:99,   period:'ay',  cat:'normal', tier:'pro'     },
-  'Pro Yıllık':        { price:948,  period:'yıl', cat:'normal', tier:'pro'     },
-  'Growth Aylık':      { price:179,  period:'ay',  cat:'normal', tier:'growth'  },
-  'Growth Yıllık':     { price:1716, period:'yıl', cat:'normal', tier:'growth'  },
+  'Starter EB Aylik':  { price:39,   period:'aylik',  cat:'eb',     tier:'starter' },
+  'Starter EB Yillik': { price:372,  period:'yillik', cat:'eb',     tier:'starter' },
+  'Pro EB Aylik':      { price:79,   period:'aylik',  cat:'eb',     tier:'pro'     },
+  'Pro EB Yillik':     { price:756,  period:'yillik', cat:'eb',     tier:'pro'     },
+  'Growth EB Aylik':   { price:139,  period:'aylik',  cat:'eb',     tier:'growth'  },
+  'Growth EB Yillik':  { price:1332, period:'yillik', cat:'eb',     tier:'growth'  },
+  'Starter Aylik':     { price:49,   period:'aylik',  cat:'normal', tier:'starter' },
+  'Starter Yillik':    { price:468,  period:'yillik', cat:'normal', tier:'starter' },
+  'Pro Aylik':         { price:99,   period:'aylik',  cat:'normal', tier:'pro'     },
+  'Pro Yillik':        { price:948,  period:'yillik', cat:'normal', tier:'pro'     },
+  'Growth Aylik':      { price:179,  period:'aylik',  cat:'normal', tier:'growth'  },
+  'Growth Yillik':     { price:1716, period:'yillik', cat:'normal', tier:'growth'  },
 };
 
 const TIER_COLORS = { starter:'var(--ok)', pro:'var(--accent)', growth:'var(--info)' };
 
-// ═══════════════════════════════════════════════
+// ===============================================
 // USER MANAGEMENT
-// ═══════════════════════════════════════════════
+// ===============================================
 function getUsers() {
   try { return JSON.parse(localStorage.getItem(USERS_KEY)) || [DEFAULT_ADMIN]; }
-  catch { return [DEFAULT_ADMIN]; }
+  catch(e) { return [DEFAULT_ADMIN]; }
 }
 function saveUsers(u) { localStorage.setItem(USERS_KEY, JSON.stringify(u)); }
 
@@ -781,12 +790,12 @@ function getSession() { return sessionStorage.getItem(SESSION_KEY); }
 function saveSession(u) { sessionStorage.setItem(SESSION_KEY, u); }
 function clearSession() { sessionStorage.removeItem(SESSION_KEY); }
 
-// ═══════════════════════════════════════════════
+// ===============================================
 // LOGIN
-// ═══════════════════════════════════════════════
-// ═══════════════════════════════════════════════
+// ===============================================
+// ===============================================
 // LOGIN — 2 Adımlı
-// ═══════════════════════════════════════════════
+// ===============================================
 async function doLogin() {
   const u = document.getElementById('inUser').value.trim();
   const p = document.getElementById('inPass').value;
@@ -888,9 +897,9 @@ function showApp() {
   document.getElementById('appWrap').classList.remove('hidden');
 }
 
-// ═══════════════════════════════════════════════
+// ===============================================
 // DATA
-// ═══════════════════════════════════════════════
+// ===============================================
 let allRecords = [];
 let revenueChart = null;
 let planCat = 'eb';
@@ -922,9 +931,9 @@ function renderAll() {
   updateNavBadges();
 }
 
-// ═══════════════════════════════════════════════
+// ===============================================
 // HELPERS
-// ═══════════════════════════════════════════════
+// ===============================================
 const gf = (r, f) => r.fields?.[f] ?? null;
 const status = r => gf(r, 'Subscription_Status') || '';
 const plan = r => gf(r, 'Plan') || '';
@@ -970,9 +979,9 @@ function ebCount(recs) {
   return recs.filter(r => PLANS[plan(r)]?.cat === 'eb').length;
 }
 
-// ═══════════════════════════════════════════════
+// ===============================================
 // DASHBOARD
-// ═══════════════════════════════════════════════
+// ===============================================
 let dashChart = null;
 
 function renderDashboard() {
@@ -1181,7 +1190,7 @@ function buildDashTransactions(search='', sf='') {
   return top.map(r => {
     const n = gf(r,'Hotel Name')||'(Adsız)'; const e = gf(r,'Email')||'';
     const p = plan(r); const def = PLANS[p];
-    const amount = def ? (def.period==='ay' ? `$${def.price}/ay` : `$${def.price}/yıl`) : '—';
+    const amount = def ? (def.period==='aylik' ? `$${def.price}/ay` : `$${def.price}/yıl`) : '—';
     const td = gf(r,'Trial_End_Date');
     const created = r.createdTime ? new Date(r.createdTime).toLocaleDateString('tr-TR',{day:'2-digit',month:'short',year:'numeric'}) : '—';
     return `<tr>
@@ -1212,9 +1221,9 @@ function buildPlanList() {
 }
 
 
-// ═══════════════════════════════════════════════
+// ===============================================
 // ABONELİKLER
-// ═══════════════════════════════════════════════
+// ===============================================
 function renderSubscriptions(search='', planF='', statusF='') {
   let recs = allRecords;
   if (search) { const t=search.toLowerCase(); recs=recs.filter(r=>(gf(r,'Hotel Name')||'').toLowerCase().includes(t)||(gf(r,'Email')||'').toLowerCase().includes(t)||(plan(r)||'').toLowerCase().includes(t)); }
@@ -1237,7 +1246,7 @@ function renderSubscriptions(search='', planF='', statusF='') {
   tbody.innerHTML = recs.map(r => {
     const n=gf(r,'Hotel Name')||'(Adsız)'; const e=gf(r,'Email')||'';
     const p=plan(r); const def=PLANS[p];
-    const monthlyVal = def ? (def.period==='ay'?def.price:Math.round(def.price/12)) : 0;
+    const monthlyVal = def ? (def.period==='aylik'?def.price:Math.round(def.price/12)) : 0;
     const cid=gf(r,'Stripe_Customer_ID')||'—';
     const td=gf(r,'Trial_End_Date');
     const created=r.createdTime?new Date(r.createdTime).toLocaleDateString('tr-TR',{day:'2-digit',month:'short',year:'numeric'}):'—';
@@ -1253,16 +1262,16 @@ function renderSubscriptions(search='', planF='', statusF='') {
   }).join('');
 }
 
-// ═══════════════════════════════════════════════
+// ===============================================
 // ÖDEMELER
-// ═══════════════════════════════════════════════
+// ===============================================
 function renderPayments() {
   const active = allRecords.filter(r=>status(r).toLowerCase().includes('active'));
   const mrr = calcMRR(allRecords);
   const arr = mrr * 12;
   const avgRev = active.length > 0 ? Math.round(mrr / active.length) : 0;
-  const monthly = active.filter(r=>PLANS[plan(r)]?.period==='ay');
-  const yearly  = active.filter(r=>PLANS[plan(r)]?.period==='yıl');
+  const monthly = active.filter(r=>PLANS[plan(r)]?.period==='aylik');
+  const yearly  = active.filter(r=>PLANS[plan(r)]?.period==='yillik');
 
   document.getElementById('pay-stats').innerHTML = `
     <div class="stat"><div class="stat-lbl">Aylık Gelir (MRR)</div><div class="stat-val"><span class="cur">$</span>${mrr.toLocaleString('en-US')}</div><div class="stat-meta">Aktif aboneliklerden</div></div>
@@ -1283,7 +1292,7 @@ function renderPayments() {
     const n=gf(r,'Hotel Name')||'(Adsız)'; const e=gf(r,'Email')||'';
     const p=plan(r); const def=PLANS[p];
     const amount = def ? `$${def.price}` : '—';
-    const period = def ? (def.period==='ay'?'Aylık':'Yıllık') : '—';
+    const period = def ? (def.period==='aylik'?'Aylık':'Yıllık') : '—';
     const cid=gf(r,'Stripe_Customer_ID')||'—';
     return `<tr>
       <td><div class="uc"><div class="uc-av">${initials(n)}</div><div><div class="uc-n">${n}</div><div class="uc-e">${e}</div></div></div></td>
@@ -1296,9 +1305,9 @@ function renderPayments() {
   }).join('');
 }
 
-// ═══════════════════════════════════════════════
+// ===============================================
 // MÜŞTERİLER
-// ═══════════════════════════════════════════════
+// ===============================================
 function renderCustomers(search='', catF='') {
   let recs = allRecords;
   if (search) { const t=search.toLowerCase(); recs=recs.filter(r=>(gf(r,'Hotel Name')||'').toLowerCase().includes(t)||(gf(r,'Email')||'').toLowerCase().includes(t)||(gf(r,'Country')||'').toLowerCase().includes(t)||(gf(r,'City')||'').toLowerCase().includes(t)); }
@@ -1307,7 +1316,7 @@ function renderCustomers(search='', catF='') {
   const total = recs.length;
   const withPlan = recs.filter(r=>plan(r)).length;
   const withStripe = recs.filter(r=>gf(r,'Stripe_Customer_ID')).length;
-  const totalVal = recs.reduce((acc,r)=>{const def=PLANS[plan(r)];if(!def)return acc;return acc+(def.period==='ay'?def.price*12:def.price);},0);
+  const totalVal = recs.reduce((acc,r)=>{const def=PLANS[plan(r)];if(!def)return acc;return acc+(def.period==='aylik'?def.price*12:def.price);},0);
 
   document.getElementById('cust-sub').textContent = `${total} müşteri görüntüleniyor`;
   document.getElementById('cust-stats').innerHTML = `
@@ -1324,7 +1333,7 @@ function renderCustomers(search='', catF='') {
     const n=gf(r,'Hotel Name')||'(Adsız)'; const e=gf(r,'Email')||'';
     const phone=gf(r,'Phone')||gf(r,'WhatsApp')||'—';
     const p=plan(r); const def=PLANS[p];
-    const yearlyVal = def ? (def.period==='yıl'?def.price:def.price*12) : 0;
+    const yearlyVal = def ? (def.period==='yillik'?def.price:def.price*12) : 0;
     const country=gf(r,'Country')||''; const city=gf(r,'City')||'';
     const location = [city,country].filter(Boolean).join(', ')||'—';
     const created=r.createdTime?new Date(r.createdTime).toLocaleDateString('tr-TR',{day:'2-digit',month:'short',year:'numeric'}):'—';
@@ -1340,9 +1349,9 @@ function renderCustomers(search='', catF='') {
   }).join('');
 }
 
-// ═══════════════════════════════════════════════
+// ===============================================
 // İPTAL & İADE
-// ═══════════════════════════════════════════════
+// ===============================================
 function renderRefunds() {
   const canceled = allRecords.filter(r=>status(r).toLowerCase().includes('cancel'));
   const pastdue  = allRecords.filter(r=>{const s=status(r).toLowerCase();return s.includes('past')||s.includes('due');});
@@ -1356,7 +1365,7 @@ function renderRefunds() {
   });
 
   // Özet kartları
-  const lostMRR = canceled.reduce((acc,r)=>{const def=PLANS[plan(r)];if(!def)return acc;return acc+(def.period==='ay'?def.price:Math.round(def.price/12));},0);
+  const lostMRR = canceled.reduce((acc,r)=>{const def=PLANS[plan(r)];if(!def)return acc;return acc+(def.period==='aylik'?def.price:Math.round(def.price/12));},0);
   document.getElementById('ref-stats').innerHTML = `
     <div class="stat"><div class="stat-lbl">İptal Edilen</div><div class="stat-val" style="color:var(--err)">${canceled.length}</div><div class="stat-meta">Toplam abonelik iptali</div></div>
     <div class="stat"><div class="stat-lbl">Kayıp MRR</div><div class="stat-val"><span class="cur" style="font-size:16px;color:var(--err)">$</span><span style="color:var(--err)">${lostMRR.toLocaleString('en-US')}</span></div><div class="stat-meta">İptal edilen planlardan</div></div>
@@ -1373,7 +1382,7 @@ function renderRefunds() {
   else cb.innerHTML = canceled.map(r=>{
     const n=gf(r,'Hotel Name')||'(Adsız)'; const e=gf(r,'Email')||'';
     const p=plan(r); const def=PLANS[p];
-    const lost=def?(def.period==='ay'?def.price:Math.round(def.price/12)):0;
+    const lost=def?(def.period==='aylik'?def.price:Math.round(def.price/12)):0;
     const cid=gf(r,'Stripe_Customer_ID')||'—';
     const created=r.createdTime?new Date(r.createdTime).toLocaleDateString('tr-TR',{day:'2-digit',month:'short',year:'numeric'}):'—';
     return `<tr>
@@ -1391,7 +1400,7 @@ function renderRefunds() {
   else pb.innerHTML = pastdue.map(r=>{
     const n=gf(r,'Hotel Name')||'(Adsız)'; const e=gf(r,'Email')||'';
     const p=plan(r); const def=PLANS[p];
-    const amount=def?'$'+def.price+(def.period==='ay'?'/ay':'/yıl'):'—';
+    const amount=def?'$'+def.price+(def.period==='aylik'?'/ay':'/yıl'):'—';
     const cid=gf(r,'Stripe_Customer_ID')||'—';
     const phone=gf(r,'Phone')||gf(r,'WhatsApp')||e;
     return `<tr>
@@ -1423,9 +1432,9 @@ function renderRefunds() {
   }).join('');
 }
 
-// ═══════════════════════════════════════════════
+// ===============================================
 // CSV EXPORT
-// ═══════════════════════════════════════════════
+// ===============================================
 function exportCSV(type) {
   let rows = [], headers = [];
   if (type === 'subscriptions' || type === 'customers' || type === 'payments') {
@@ -1449,6 +1458,23 @@ function exportCSV(type) {
   a.click();
   showToast('CSV indirildi ✓', 'ok');
 }
+
+// ===============================================
+// ABONELİKLER
+// ===============================================
+
+// ===============================================
+// ÖDEMELER
+// ===============================================
+
+// ===============================================
+// MÜŞTERİLER
+// ===============================================
+
+// ===============================================
+// İPTAL & İADE
+// ===============================================
+
 function renderHotels(search='', sf='') {
   let recs = allRecords;
   if (search) { const t=search.toLowerCase(); recs=recs.filter(r=>(gf(r,'Hotel Name')||'').toLowerCase().includes(t)||(gf(r,'Email')||'').toLowerCase().includes(t)); }
@@ -1470,9 +1496,9 @@ function renderHotels(search='', sf='') {
   }).join('');
 }
 
-// ═══════════════════════════════════════════════
+// ===============================================
 // REVENUE
-// ═══════════════════════════════════════════════
+// ===============================================
 function renderRevenue() {
   const mrr = calcMRR(allRecords);
   const arr = mrr * 12;
@@ -1555,9 +1581,9 @@ function buildRevenueTable() {
   }).join('');
 }
 
-// ═══════════════════════════════════════════════
+// ===============================================
 // TRIALS
-// ═══════════════════════════════════════════════
+// ===============================================
 function renderTrials() {
   const trials = allRecords.filter(r => status(r).toLowerCase().includes('trial'));
   const tbody = document.getElementById('trials-body');
@@ -1581,9 +1607,9 @@ function renderTrials() {
   }).join('');
 }
 
-// ═══════════════════════════════════════════════
+// ===============================================
 // USERS
-// ═══════════════════════════════════════════════
+// ===============================================
 function renderUsers() {
   const users = getUsers();
   const el = document.getElementById('users-list');
@@ -1673,9 +1699,9 @@ function deleteUser(i) {
 
 function closeModal() { document.getElementById('userModal').classList.remove('show'); }
 
-// ═══════════════════════════════════════════════
+// ===============================================
 // NAV
-// ═══════════════════════════════════════════════
+// ===============================================
 function updateNavBadges() {
   document.getElementById('nb-hotels').textContent = allRecords.length;
   document.getElementById('nb-trials').textContent = allRecords.filter(r=>status(r).toLowerCase().includes('trial')).length;
@@ -1732,25 +1758,25 @@ document.getElementById('inPass').addEventListener('keypress', e => { if(e.key==
 // Modal close on backdrop
 document.getElementById('userModal').addEventListener('click', e => { if(e.target.id==='userModal') closeModal(); });
 
-// ═══════════════════════════════════════════════
+// ===============================================
 // MOBILE NAV
-// ═══════════════════════════════════════════════
+// ===============================================
 function openMobNav() { document.getElementById('mobNav').classList.add('open'); }
 function closeMobNav() { document.getElementById('mobNav').classList.remove('open'); }
 function closeMobNavOutside(e) { if(e.target.id==='mobNav') closeMobNav(); }
 
-// ═══════════════════════════════════════════════
+// ===============================================
 // TOAST
-// ═══════════════════════════════════════════════
+// ===============================================
 function showToast(msg, type='ok') {
   const t = document.getElementById('toast');
   t.textContent = msg; t.className = `toast show ${type}`;
   setTimeout(() => t.classList.remove('show'), 2500);
 }
 
-// ═══════════════════════════════════════════════
+// ===============================================
 // INIT
-// ═══════════════════════════════════════════════
+// ===============================================
 (function init() {
   const sess = getSession();
   if (sess) {
