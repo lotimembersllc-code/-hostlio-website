@@ -48,12 +48,12 @@ body{background-image:radial-gradient(circle at 20% 0%,rgba(255,138,61,.04) 0%,t
 
 /* -- APP SHELL -- */
 .app{display:grid;grid-template-columns:var(--sidebar) 1fr;min-height:100vh}
-.app{display:grid;grid-template-columns:var(--sidebar) 1fr;min-height:100vh}
+.app{display:grid;grid-template-columns:var(--sidebar) 1fr;min-height:100vh;align-items:start}
 .app.hidden{display:none!important}
 .login-wrap.hidden{display:none!important}
 
 /* -- SIDEBAR -- */
-.sidebar{background:var(--bg-e);border-right:1px solid var(--border);padding:20px 14px;position:sticky;top:0;height:100vh;display:flex;flex-direction:column;overflow-y:auto}
+.sidebar{background:var(--bg-e);border-right:1px solid var(--border);padding:20px 14px;position:sticky;top:0;height:100vh;display:flex;flex-direction:column;overflow-y:auto;flex-shrink:0}
 .s-logo{display:flex;align-items:center;gap:9px;padding:0 6px 22px;border-bottom:1px solid var(--border);margin-bottom:18px}
 .s-brand{font-family:'Fraunces',serif;font-size:17px;font-weight:600;letter-spacing:-.02em}
 .s-brand span{color:var(--dim);font-weight:400}
@@ -86,7 +86,7 @@ body{background-image:radial-gradient(circle at 20% 0%,rgba(255,138,61,.04) 0%,t
 .mob-nav-close svg{width:16px;height:16px;stroke-width:2;display:block}
 
 /* -- MAIN -- */
-.main{padding:24px 28px 64px;min-width:0}
+.main{padding:24px 28px 64px;min-width:0;overflow-x:hidden;min-height:100vh}
 .page{display:none}
 .page.active{display:block}
 .topbar{display:flex;align-items:flex-start;justify-content:space-between;margin-bottom:28px;padding-bottom:18px;border-bottom:1px solid var(--border);gap:12px;flex-wrap:wrap}
@@ -347,6 +347,9 @@ tr:hover td{background:rgba(255,255,255,.02)}
       </button>
     </div>
   </aside>
+
+  <!-- Mobile header + Main wrapper -->
+  <div style="display:flex;flex-direction:column;min-width:0;min-height:100vh">
 
   <!-- Mobile header -->
   <div class="mob-header">
@@ -711,7 +714,8 @@ tr:hover td{background:rgba(255,255,255,.02)}
     </div>
 
   </main>
-</div>
+  </div><!-- end mob-header + main wrapper -->
+</div><!-- end appWrap -->
 
 <!-- -- ADD/EDIT USER MODAL -- -->
 <div class="modal-bg" id="userModal">
