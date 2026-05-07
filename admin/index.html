@@ -48,12 +48,12 @@ body{background-image:radial-gradient(circle at 20% 0%,rgba(255,138,61,.04) 0%,t
 
 /* -- APP SHELL -- */
 .app{display:grid;grid-template-columns:var(--sidebar) 1fr;min-height:100vh}
-.app{display:grid;grid-template-columns:var(--sidebar) 1fr;min-height:100vh;align-items:start}
+.app{display:flex;min-height:100vh;align-items:stretch}
 .app.hidden{display:none!important}
 .login-wrap.hidden{display:none!important}
 
 /* -- SIDEBAR -- */
-.sidebar{background:var(--bg-e);border-right:1px solid var(--border);padding:20px 14px;position:sticky;top:0;height:100vh;display:flex;flex-direction:column;overflow-y:auto;flex-shrink:0}
+.sidebar{background:var(--bg-e);border-right:1px solid var(--border);padding:20px 14px;position:sticky;top:0;height:100vh;display:flex;flex-direction:column;overflow-y:auto;flex-shrink:0;width:var(--sidebar)}
 .s-logo{display:flex;align-items:center;gap:9px;padding:0 6px 22px;border-bottom:1px solid var(--border);margin-bottom:18px}
 .s-brand{font-family:'Fraunces',serif;font-size:17px;font-weight:600;letter-spacing:-.02em}
 .s-brand span{color:var(--dim);font-weight:400}
@@ -75,7 +75,7 @@ body{background-image:radial-gradient(circle at 20% 0%,rgba(255,138,61,.04) 0%,t
 .icon-btn svg{width:14px;height:14px;stroke-width:1.8}
 
 /* -- MOBILE NAV -- */
-.mob-header{display:none;background:var(--bg-e);border-bottom:1px solid var(--border);padding:12px 16px;align-items:center;justify-content:space-between;position:sticky;top:0;z-index:50}
+.mob-header{display:none;background:var(--bg-e);border-bottom:1px solid var(--border);padding:12px 16px;align-items:center;justify-content:space-between;top:0;z-index:50;position:sticky}
 .mob-logo{display:flex;align-items:center;gap:8px;font-family:'Fraunces',serif;font-size:16px;font-weight:600}
 .mob-menu-btn{background:var(--bg-e2);border:1px solid var(--border);color:var(--text);padding:7px;border-radius:6px;cursor:pointer;display:flex;align-items:center}
 .mob-menu-btn svg{width:16px;height:16px;stroke-width:2}
@@ -86,7 +86,7 @@ body{background-image:radial-gradient(circle at 20% 0%,rgba(255,138,61,.04) 0%,t
 .mob-nav-close svg{width:16px;height:16px;stroke-width:2;display:block}
 
 /* -- MAIN -- */
-.main{padding:24px 28px 64px;min-width:0;overflow-x:hidden;min-height:100vh}
+.main{padding:24px 28px 64px;min-width:0;overflow-x:hidden;flex:1}
 .page{display:none}
 .page.active{display:block}
 .topbar{display:flex;align-items:flex-start;justify-content:space-between;margin-bottom:28px;padding-bottom:18px;border-bottom:1px solid var(--border);gap:12px;flex-wrap:wrap}
@@ -216,7 +216,7 @@ tr:hover td{background:rgba(255,255,255,.02)}
 
 /* -- RESPONSIVE -- */
 @media(max-width:768px){
-  .app{grid-template-columns:1fr}
+  .app{flex-direction:column}
   .sidebar{display:none}
   .mob-header{display:flex}
   .main{padding:16px 14px 80px}
@@ -349,7 +349,7 @@ tr:hover td{background:rgba(255,255,255,.02)}
   </aside>
 
   <!-- Mobile header + Main wrapper -->
-  <div style="display:flex;flex-direction:column;min-width:0;min-height:100vh">
+  <div style="min-width:0;grid-column:2;display:flex;flex-direction:column">
 
   <!-- Mobile header -->
   <div class="mob-header">
