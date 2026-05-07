@@ -241,7 +241,7 @@ tr:hover td{background:rgba(255,255,255,.02)}
 <body>
 
 <!-- =============== LOGIN =============== -->
-<div class="login-wrap" id="loginWrap">
+<div class="login-wrap hidden" id="loginWrap">
   <div class="login-card">
     <div class="login-logo">
       <div class="lmark">H</div>
@@ -1515,8 +1515,6 @@ function renderRevenue() {
   buildMRRChart(30);
   buildRevenueTable();
 }
-
-let revenueChart = null;
 
 function buildMRRChart(days) {
   const ctx = document.getElementById('mrrChart');
