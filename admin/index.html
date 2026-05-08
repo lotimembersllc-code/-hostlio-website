@@ -47,19 +47,21 @@ body{background-image:radial-gradient(circle at 20% 0%,rgba(255,138,61,.04) 0%,t
 .login-divider::before,.login-divider::after{content:'';flex:1;height:1px;background:var(--border)}
 
 /* -- APP SHELL -- */
-.app{display:grid;grid-template-columns:var(--sidebar) 1fr;min-height:100vh}
-.app{display:flex;min-height:100vh;align-items:stretch}
+.app{display:flex;flex-direction:row;min-height:100vh}
 .app.hidden{display:none!important}
 .login-wrap.hidden{display:none!important}
+
+/* -- CONTENT WRAPPER (mob-header + main) -- */
+.content-wrap{flex:1;display:flex;flex-direction:column;min-width:0;overflow-x:hidden}
 
 /* -- SIDEBAR -- */
 .sidebar{background:var(--bg-e);border-right:1px solid var(--border);padding:20px 14px;position:sticky;top:0;height:100vh;display:flex;flex-direction:column;overflow-y:auto;flex-shrink:0;width:var(--sidebar)}
 .s-logo{display:flex;align-items:center;gap:9px;padding:0 6px 22px;border-bottom:1px solid var(--border);margin-bottom:18px}
 .s-brand{font-family:'Fraunces',serif;font-size:17px;font-weight:600;letter-spacing:-.02em}
 .s-brand span{color:var(--dim);font-weight:400}
-.nav-sec{margin-bottom:20px}
-.nav-lbl{font-size:10.5px;text-transform:uppercase;letter-spacing:.08em;color:var(--faint);padding:0 8px;margin-bottom:7px}
-.nav-item{display:flex;align-items:center;gap:9px;padding:8px 10px;border-radius:6px;color:var(--dim);cursor:pointer;font-size:13px;font-weight:500;transition:all .15s;margin-bottom:2px;user-select:none;text-decoration:none}
+.nav-sec{margin-bottom:20px;display:flex;flex-direction:column}
+.nav-lbl{font-size:10.5px;text-transform:uppercase;letter-spacing:.08em;color:var(--faint);padding:0 8px;margin-bottom:7px;white-space:nowrap}
+.nav-item{display:flex;align-items:center;gap:9px;padding:8px 10px;border-radius:6px;color:var(--dim);cursor:pointer;font-size:13px;font-weight:500;transition:all .15s;margin-bottom:2px;user-select:none;text-decoration:none;white-space:nowrap}
 .nav-item:hover{background:var(--bg-e2);color:var(--text)}
 .nav-item.active{background:var(--bg-e2);color:var(--text)}
 .nav-item.active::before{content:'';width:3px;height:14px;background:var(--accent);border-radius:2px;margin-right:-3px;margin-left:-10px}
@@ -86,7 +88,7 @@ body{background-image:radial-gradient(circle at 20% 0%,rgba(255,138,61,.04) 0%,t
 .mob-nav-close svg{width:16px;height:16px;stroke-width:2;display:block}
 
 /* -- MAIN -- */
-.main{padding:24px 28px 64px;min-width:0;overflow-x:hidden;flex:1}
+.main{padding:24px 28px 64px;flex:1;min-width:0}
 .page{display:none}
 .page.active{display:block}
 .topbar{display:flex;align-items:flex-start;justify-content:space-between;margin-bottom:28px;padding-bottom:18px;border-bottom:1px solid var(--border);gap:12px;flex-wrap:wrap}
@@ -217,15 +219,17 @@ tr:hover td{background:rgba(255,255,255,.02)}
 /* -- RESPONSIVE -- */
 @media(max-width:768px){
   .app{flex-direction:column}
-  .sidebar{display:none}
-  .mob-header{display:flex}
+  .sidebar{display:none!important}
+  .mob-header{display:flex!important}
   .main{padding:16px 14px 80px}
   .stats{grid-template-columns:repeat(2,1fr);gap:10px}
   .chart-grid{grid-template-columns:1fr}
+  .chart-grid-dash{grid-template-columns:1fr!important}
   .stat-val{font-size:24px}
   .page-title{font-size:22px}
   .eb-banner{gap:14px}
   .eb-num{font-size:24px}
+  .dash-grid{grid-template-columns:1fr!important}
 }
 @media(max-width:480px){
   .stats{grid-template-columns:1fr 1fr}
@@ -348,8 +352,8 @@ tr:hover td{background:rgba(255,255,255,.02)}
     </div>
   </aside>
 
-  <!-- Mobile header + Main wrapper -->
-  <div style="min-width:0;grid-column:2;display:flex;flex-direction:column">
+  <!-- Content wrapper (mob-header + main) -->
+  <div class="content-wrap">
 
   <!-- Mobile header -->
   <div class="mob-header">
@@ -714,7 +718,7 @@ tr:hover td{background:rgba(255,255,255,.02)}
     </div>
 
   </main>
-  </div><!-- end mob-header + main wrapper -->
+  </div><!-- end content-wrap -->
 </div><!-- end appWrap -->
 
 <!-- -- ADD/EDIT USER MODAL -- -->
