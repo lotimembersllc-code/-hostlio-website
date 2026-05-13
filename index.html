@@ -36,6 +36,8 @@
     .btn-primary:hover { background: var(--orange-dark); box-shadow: 0 4px 16px rgba(255,107,53,.4); transform: translateY(-1px); }
     .btn-outline { background: transparent; color: var(--navy); border: 2px solid var(--navy); }
     .btn-outline:hover { background: var(--navy); color: var(--white); transform: translateY(-1px); }
+    .btn-outline-orange { background: transparent; color: var(--orange); border: 2px solid var(--orange); }
+    .btn-outline-orange:hover { background: var(--orange); color: var(--white); transform: translateY(-1px); }
     .btn-outline-white { background: transparent; color: var(--white); border: 2px solid rgba(255,255,255,.5); }
     .btn-outline-white:hover { background: rgba(255,255,255,.12); border-color: var(--white); }
     .btn-lg { padding: 14px 30px; font-size: 16px; border-radius: 11px; }
@@ -234,7 +236,8 @@
       <a href="#pricing">Pricing</a>
       <a href="#how-it-works">Demo</a>
       <a href="/blog/">Blog</a>
-      <a href="/signup" class="btn btn-primary" style="margin-left:8px">Start Free Trial</a>
+      <a href="https://dashboard.hostliopro.com/login" class="btn btn-outline-orange" style="padding:8px 18px;font-size:14px">Login</a>
+      <a href="/signup" class="btn btn-primary" style="margin-left:4px;padding:8px 18px;font-size:14px">Get Started</a>
     </nav>
     <button class="hamburger" id="hamburger" aria-label="Menu">
       <span></span><span></span><span></span>
@@ -247,7 +250,8 @@
   <a href="#pricing" onclick="closeMobileNav()">Pricing</a>
   <a href="#how-it-works" onclick="closeMobileNav()">Demo</a>
   <a href="/blog/" onclick="closeMobileNav()">Blog</a>
-  <a href="/signup" class="btn btn-primary" onclick="closeMobileNav()">Start Free Trial</a>
+  <a href="https://dashboard.hostliopro.com/login" onclick="closeMobileNav()" style="color:var(--orange)">Login</a>
+  <a href="/signup" class="btn btn-primary" onclick="closeMobileNav()">Get Started</a>
 </div>
 
 <section id="hero">
