@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FAQ — Hostlio Pro</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    :root { --orange: #FF6B35; --navy: #1B2B4B; --gray-600: #6c757d; --gray-200: #e9ecef; }
+    body { font-family: 'Inter', sans-serif; color: var(--navy); background: #f8f9fa; line-height: 1.7; }
+    header { background: white; border-bottom: 1px solid var(--gray-200); padding: 16px 24px; display: flex; align-items: center; justify-content: space-between; }
+    header .logo { font-size: 22px; font-weight: 800; color: var(--navy); text-decoration: none; }
+    header a.back { color: var(--gray-600); text-decoration: none; font-size: 14px; }
+    header a.back:hover { color: var(--orange); }
+    main { max-width: 800px; margin: 48px auto; padding: 0 24px 80px; }
+    h1 { font-size: 32px; font-weight: 800; color: var(--navy); margin-bottom: 8px; }
+    .sub { color: var(--gray-600); font-size: 15px; margin-bottom: 32px; }
+    .faq-item { background: white; border-radius: 14px; padding: 0; box-shadow: 0 2px 12px rgba(0,0,0,.05); margin-bottom: 14px; overflow: hidden; }
+    .faq-q { padding: 20px 24px; font-size: 16px; font-weight: 700; color: var(--navy); cursor: pointer; display: flex; justify-content: space-between; align-items: center; user-select: none; }
+    .faq-q:hover { color: var(--orange); }
+    .faq-q .icon { font-size: 20px; color: var(--orange); transition: transform .2s; }
+    .faq-item.open .faq-q .icon { transform: rotate(45deg); }
+    .faq-a { max-height: 0; overflow: hidden; transition: max-height .25s ease; }
+    .faq-a-inner { padding: 0 24px 20px; font-size: 15px; color: #444; }
+    .faq-item.open .faq-a { max-height: 400px; }
+    .cta { text-align: center; margin-top: 40px; }
+    .cta a { display: inline-block; background: var(--orange); color: white; text-decoration: none; padding: 14px 32px; border-radius: 11px; font-weight: 600; font-size: 16px; }
+    .cta a:hover { background: #e55a22; }
+  </style>
+</head>
+<body>
+<header>
+  <a href="/" class="logo">Hostlio<span style="color:var(--orange)">Pro</span></a>
+  <a href="/" class="back">← Back to home</a>
+</header>
+
+<main>
+  <h1>Frequently Asked Questions</h1>
+  <p class="sub">Everything you need to know about Hostlio Pro. Can't find an answer? <a href="/contact.html" style="color:var(--orange);font-weight:600">Contact us</a>.</p>
+
+  <div class="faq-item">
+    <div class="faq-q">What is Hostlio Pro?<span class="icon">+</span></div>
+    <div class="faq-a"><div class="faq-a-inner">Hostlio Pro is an AI-powered hotel management platform for independent hotels, boutique B&Bs, and hostels. It automates guest messaging in 30+ languages, syncs your availability across 100+ OTA channels via Channex, and gives you a single dashboard to run your property.</div></div>
+  </div>
+
+  <div class="faq-item">
+    <div class="faq-q">How long does setup take?<span class="icon">+</span></div>
+    <div class="faq-a"><div class="faq-a-inner">Most hotels are up and running in about 30 minutes. You connect your channels, import your rooms and reservations, and configure your AI assistant — no IT team required.</div></div>
+  </div>
+
+  <div class="faq-item">
+    <div class="faq-q">Which booking channels do you support?<span class="icon">+</span></div>
+    <div class="faq-a"><div class="faq-a-inner">Through our Channex integration, Hostlio Pro connects to 100+ OTAs including Booking.com, Airbnb, Expedia, Agoda, and Trip.com. Availability and rates sync in real time to prevent overbookings. See our <a href="/channels.html" style="color:var(--orange);font-weight:600">full channel list</a>.</div></div>
+  </div>
+
+  <div class="faq-item">
+    <div class="faq-q">What languages does the AI support?<span class="icon">+</span></div>
+    <div class="faq-a"><div class="faq-a-inner">The AI assistant replies to guests in 30+ languages automatically — it detects the guest's language and responds naturally, 24/7, with no extra effort from you.</div></div>
+  </div>
+
+  <div class="faq-item">
+    <div class="faq-q">Which messaging channels are supported?<span class="icon">+</span></div>
+    <div class="faq-a"><div class="faq-a-inner">Hostlio Pro handles guest messages across OTA inboxes (Booking.com, Airbnb), Email, your website chat widget, and Telegram. More channels are added regularly.</div></div>
+  </div>
+
+  <div class="faq-item">
+    <div class="faq-q">How much does it cost?<span class="icon">+</span></div>
+    <div class="faq-a"><div class="faq-a-inner">Plans start at $49/month (Starter, early bird $39) for up to 10 rooms. Pro ($109/mo) adds all channels plus transfer & tour upsells for up to 50 rooms. Growth ($189/mo) covers up to 150 rooms with priority support.</div></div>
+  </div>
+
+  <div class="faq-item">
+    <div class="faq-q">Is there a free trial?<span class="icon">+</span></div>
+    <div class="faq-a"><div class="faq-a-inner">Yes — you can start a free trial and explore the full platform before committing. No credit card pressure, cancel anytime.</div></div>
+  </div>
+
+  <div class="faq-item">
+    <div class="faq-q">Do you offer online check-in?<span class="icon">+</span></div>
+    <div class="faq-a"><div class="faq-a-inner">Yes. Guests can complete check-in online before arrival — providing their details and ID/passport documents through a secure form. You can review and export this information from your dashboard.</div></div>
+  </div>
+
+  <div class="faq-item">
+    <div class="faq-q">Is there a mobile app?<span class="icon">+</span></div>
+    <div class="faq-a"><div class="faq-a-inner">Yes, Hostlio Pro includes a mobile app so you can manage reservations, guests, pricing, and messages on the go — even offline.</div></div>
+  </div>
+
+  <div class="faq-item">
+    <div class="faq-q">Can I cancel anytime?<span class="icon">+</span></div>
+    <div class="faq-a"><div class="faq-a-inner">Absolutely. There are no long-term contracts. You can manage or cancel your subscription anytime from the billing portal.</div></div>
+  </div>
+
+  <div class="cta">
+    <a href="/signup">Start Free Trial →</a>
+  </div>
+</main>
+
+<script>
+  document.querySelectorAll('.faq-q').forEach(q => {
+    q.addEventListener('click', () => {
+      q.parentElement.classList.toggle('open');
+    });
+  });
+</script>
+</body>
+</html>

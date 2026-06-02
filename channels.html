@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Channel Integrations — Hostlio Pro</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    :root { --orange: #FF6B35; --navy: #1B2B4B; --gray-600: #6c757d; --gray-200: #e9ecef; }
+    body { font-family: 'Inter', sans-serif; color: var(--navy); background: #f8f9fa; line-height: 1.7; }
+    header { background: white; border-bottom: 1px solid var(--gray-200); padding: 16px 24px; display: flex; align-items: center; justify-content: space-between; }
+    header .logo { font-size: 22px; font-weight: 800; color: var(--navy); text-decoration: none; }
+    header a.back { color: var(--gray-600); text-decoration: none; font-size: 14px; }
+    header a.back:hover { color: var(--orange); }
+    main { max-width: 1000px; margin: 48px auto; padding: 0 24px 80px; }
+    h1 { font-size: 32px; font-weight: 800; color: var(--navy); margin-bottom: 8px; text-align: center; }
+    .sub { color: var(--gray-600); font-size: 16px; margin-bottom: 8px; text-align: center; }
+    .powered { text-align: center; font-size: 13px; color: var(--gray-600); margin-bottom: 40px; }
+    .powered strong { color: var(--orange); }
+    h2 { font-size: 20px; font-weight: 700; margin: 40px 0 20px; }
+    .featured { display: grid; grid-template-columns: repeat(auto-fit, minmax(160px, 1fr)); gap: 16px; margin-bottom: 24px; }
+    .ch-card { background: white; border-radius: 14px; padding: 28px 20px; text-align: center; box-shadow: 0 2px 12px rgba(0,0,0,.05); border: 2px solid transparent; transition: all .2s; }
+    .ch-card:hover { border-color: var(--orange); transform: translateY(-2px); }
+    .ch-card .name { font-size: 16px; font-weight: 700; color: var(--navy); }
+    .ch-card .tag { font-size: 12px; color: var(--orange); font-weight: 600; margin-top: 4px; }
+    .grid-more { display: grid; grid-template-columns: repeat(auto-fill, minmax(140px, 1fr)); gap: 12px; }
+    .chip { background: white; border-radius: 10px; padding: 14px 16px; font-size: 14px; font-weight: 500; color: #444; box-shadow: 0 1px 6px rgba(0,0,0,.04); text-align: center; }
+    .note { background: #FFF3EE; border-radius: 12px; padding: 20px 24px; margin-top: 32px; font-size: 14px; color: #444; }
+    .note strong { color: var(--orange); }
+    .cta { text-align: center; margin-top: 40px; }
+    .cta a { display: inline-block; background: var(--orange); color: white; text-decoration: none; padding: 14px 32px; border-radius: 11px; font-weight: 600; font-size: 16px; }
+    .cta a:hover { background: #e55a22; }
+  </style>
+</head>
+<body>
+<header>
+  <a href="/" class="logo">Hostlio<span style="color:var(--orange)">Pro</span></a>
+  <a href="/" class="back">← Back to home</a>
+</header>
+
+<main>
+  <h1>Channel Integrations</h1>
+  <p class="sub">Connect to 100+ booking channels and sync in real time.</p>
+  <p class="powered">Powered by <strong>Channex</strong> — enterprise-grade channel management</p>
+
+  <h2>Most Popular Channels</h2>
+  <div class="featured">
+    <div class="ch-card"><div class="name">Booking.com</div><div class="tag">OTA</div></div>
+    <div class="ch-card"><div class="name">Airbnb</div><div class="tag">OTA</div></div>
+    <div class="ch-card"><div class="name">Expedia</div><div class="tag">OTA</div></div>
+    <div class="ch-card"><div class="name">Agoda</div><div class="tag">OTA</div></div>
+    <div class="ch-card"><div class="name">Trip.com</div><div class="tag">OTA</div></div>
+  </div>
+
+  <h2>And 100+ More</h2>
+  <div class="grid-more">
+    <div class="chip">VRBO</div>
+    <div class="chip">Hotels.com</div>
+    <div class="chip">Hotelbeds</div>
+    <div class="chip">Hostelworld</div>
+    <div class="chip">Google Hotels</div>
+    <div class="chip">Despegar</div>
+    <div class="chip">Hopper</div>
+    <div class="chip">MakeMyTrip</div>
+    <div class="chip">Ctrip</div>
+    <div class="chip">Traveloka</div>
+    <div class="chip">eDreams</div>
+    <div class="chip">lastminute.com</div>
+    <div class="chip">Tiket.com</div>
+    <div class="chip">Webbeds</div>
+    <div class="chip">Goibibo</div>
+    <div class="chip">Ostrovok</div>
+  </div>
+
+  <div class="note">
+    <strong>Don't see your channel?</strong> Through Channex, Hostlio Pro connects to over 100 OTAs and channel partners worldwide. If you work with a specific channel, just ask — chances are we support it.
+  </div>
+
+  <div class="cta">
+    <a href="/signup">Start Free Trial →</a>
+  </div>
+</main>
+</body>
+</html>
