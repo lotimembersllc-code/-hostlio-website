@@ -234,6 +234,10 @@
 </main>
 
 <script>
+// Sunucu tarafı Checkout Session üreten edge function. Fiyat/plan doğrulaması
+// SUNUCUDA yapılır; buradaki istemci kontrolleri yalnız ilk savunma katmanı.
+const SIGNUP_CHECKOUT_URL = 'https://brzetctpyaxognnvjrnd.supabase.co/functions/v1/signup-checkout';
+let submitting = false;
 let isAnnual = false;
 const monthlyPrices = { starter: 49, pro: 89, growth: 149 };
 const annualPrices = { starter: 39, pro: 71, growth: 119 };
@@ -263,18 +267,8 @@ function toggleBilling() {
   });
 }
 
-const stripeLinks = {
-  monthly: {
-    starter: 'https://buy.stripe.com/6oUcN7csN4kF6Dz3164Ni00',
-    pro: 'https://buy.stripe.com/14AcN750lcRb9PLaty4Ni02',
-    growth: 'https://buy.stripe.com/8x26oJdwR18t1jfgRW4Ni04'
-  },
-  annual: {
-    starter: 'https://buy.stripe.com/eVq9AV0K504pbXTcBG4Ni06',
-    pro: 'https://buy.stripe.com/bJecN71O904p4vraty4Ni08',
-    growth: 'https://buy.stripe.com/4gM9AV0K5dVfe61bxC4Ni0a'
-  }
-};
+// (6 hard-coded Payment Link SİLİNDİ — checkout artık signup-checkout üzerinden
+//  sunucu tarafında oluşturuluyor.)
 
 function clearRoomError() {
   document.getElementById('rooms').style.borderColor = '';
@@ -283,7 +277,9 @@ function clearRoomError() {
 }
 
 function validateRooms(planId, rooms) {
-  const limits = { starter: 15, pro: 50, growth: 150 };
+  // starter 15 → 10 (2026-08-10): aşağıdaki mesaj zaten "up to 10 rooms" diyordu,
+  // limit 15'ti. Sunucu tarafı kopyası: signup-checkout/index.ts ROOM_LIMITS.
+  const limits = { starter: 10, pro: 50, growth: 150 };
   const messages = {
     starter: 'Starter supports up to 10 rooms. Please choose Pro or Growth.',
     pro: 'Pro supports up to 50 rooms. Please choose Growth.',
@@ -293,7 +289,8 @@ function validateRooms(planId, rooms) {
   return null;
 }
 
-function submitForm() {
+async function submitForm() {
+  if (submitting) return;            // çift tıklama koruması
   const btn = document.getElementById('submit-btn');
   const errorMsg = document.getElementById('error-msg');
   const roomsInput = document.getElementById('rooms');
@@ -309,7 +306,6 @@ function submitForm() {
   const phone = document.getElementById('phone').value.trim();
   const planChecked = document.querySelector('input[name="plan"]:checked');
   const planId = planChecked.id.replace('plan-', '');
-  const planInput = planChecked.value;
 
   if (!firstName || !lastName || !email || !hotelName || !rooms) {
     errorMsg.textContent = 'Please fill in all required fields.';
@@ -332,25 +328,70 @@ function submitForm() {
     return;
   }
 
-  btn.disabled = true;
-  btn.textContent = 'Redirecting to payment...';
-
   const billing = isAnnual ? 'annual' : 'monthly';
-  const stripeBase = stripeLinks[billing][planId];
 
-  const params = new URLSearchParams({
-    prefilled_email: email,
-    client_reference_id: hotelName,
-    'metadata[plan]': planInput,
-    'metadata[rooms]': rooms,
-    'metadata[firstName]': firstName,
-    'metadata[lastName]': lastName,
-    'metadata[phone]': phone,
-    'metadata[billing]': billing
-  });
+  submitting = true;
+  btn.disabled = true;
+  const originalLabel = btn.textContent;
+  btn.textContent = 'Starting checkout...';
+  let redirected = false;
 
-  window.location.href = stripeBase + '?' + params.toString();
+  // Sunucu tarafı Checkout Session — plan ADI değil, temiz planId gönderilir.
+  // client_reference_id GÖNDERİLMEZ (hesap henüz yok).
+  try {
+    const res = await fetch(SIGNUP_CHECKOUT_URL, {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({
+        firstName, lastName, email, hotelName,
+        rooms: parseInt(rooms, 10),
+        phone, plan: planId, billing
+      })
+    });
+
+    let data = null;
+    try { data = await res.json(); } catch (_) { /* gövde yok/parse edilemedi */ }
+
+    if (res.ok && data && data.url) {
+      redirected = true;
+      window.location.href = data.url;   // Stripe Checkout'a git — buton kilitli kalır
+      return;
+    }
+
+    // 🔴 Sessiz başarısızlık BIRAKMA: sunucu 400/500 döndü ya da url gelmedi.
+    errorMsg.textContent = (data && data.message)
+      ? data.message
+      : 'Sorry, we couldn’t start checkout. Please try again.';
+    errorMsg.style.display = 'block';
+  } catch (_e) {
+    // Ağ hatası / fonksiyona ulaşılamadı.
+    errorMsg.textContent = 'Network error. Please check your connection and try again.';
+    errorMsg.style.display = 'block';
+  } finally {
+    // Yalnız yönlendirme OLMADIYSA butonu geri aç (aksi hâlde sayfa değişiyor).
+    if (!redirected) {
+      submitting = false;
+      btn.disabled = false;
+      btn.textContent = originalLabel;
+    }
+  }
 }
+
+// Checkout dönüşü: success_url/cancel_url ?checkout=... ile bu sayfaya döner.
+document.addEventListener('DOMContentLoaded', function () {
+  const status = new URLSearchParams(window.location.search).get('checkout');
+  if (!status) return;
+  const errorMsg = document.getElementById('error-msg');
+  if (!errorMsg) return;
+  if (status === 'success') {
+    errorMsg.style.color = '#198754';
+    errorMsg.textContent = 'Payment received. Check your email to set your password and finish setup.';
+    errorMsg.style.display = 'block';
+  } else if (status === 'cancelled') {
+    errorMsg.textContent = 'Checkout cancelled. You can try again whenever you’re ready.';
+    errorMsg.style.display = 'block';
+  }
+});
 </script>
 
 </body>
