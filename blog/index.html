@@ -4,6 +4,15 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Blog — Hostlio Pro | Hotel Management Tips & Insights</title>
+  <!-- 2026-09-06: `canonical` + `og:url` eklendi. Yazılarda `description` ve
+       og:title/og:description ZATEN VARDI — eksik olan yalnız adres etiketleri.
+       ⛔ `cleanUrls: true` (vercel.json) ⇒ kanonik adres `.html`SİZ yazılır;
+       aksi hâlde aynı içerik iki adresle indekslenir. -->
+  <link rel="canonical" href="https://hostliopro.com/blog">
+  <meta property="og:url" content="https://hostliopro.com/blog">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Hostlio Pro">
+  <meta property="og:locale" content="en_US">
   <meta name="description" content="Expert tips for independent hotel owners on automation, guest communication, no-show prevention, and competing with large hotel chains.">
   <meta property="og:title" content="Blog — Hostlio Pro | Hotel Management Tips & Insights">
   <meta property="og:description" content="Expert tips for independent hotel owners on automation, guest communication, and more.">

@@ -71,4 +71,40 @@ if (eksikK.length) {
   console.log(`✓ ${toplam} data-i18n kullanımının hepsinin karşılığı var`)
 }
 
+// ④ ARAMA VE PAYLAŞIM ÜSTVERİSİ
+//
+// 🔴 2026-09-06 ölçümü: dokuz sayfanın DOKUZUNDA da `description`, Open Graph
+// ve `canonical` YOKTU. Her paylaşım (WhatsApp · LinkedIn · Slack) çıplak bir
+// URL olarak çıkıyordu — başlıksız, açıklamasız. B2B'de bağlantıyı çoğunlukla
+// kurucunun kendisi paylaşır; bedeli doğrudan dönüşümdür.
+//
+// ⛔ Bu kapı `data-i18n`'e BAKMAZ ve bakmamalı: sosyal kazıyıcılar JavaScript
+// çalıştırmaz, ham HTML'de ne varsa onu okur. Meta STATİK olmak zorunda.
+const gerekli = [
+  ['description', /<meta\s+name="description"\s+content="[^"]{40,}"/],
+  ['canonical', /<link\s+rel="canonical"\s+href="https:\/\/[^"]+"/],
+  ['og:title', /<meta\s+property="og:title"/],
+  ['og:description', /<meta\s+property="og:description"/],
+  ['og:url', /<meta\s+property="og:url"/],
+]
+// Google site doğrulama dosyası bir sayfa değildir — ölçüm dışı.
+const ATLA = /^google[0-9a-f]+\.html$/
+const eksikMeta = []
+for (const f of walk('.')) {
+  const ad = f.split('/').pop()
+  if (ATLA.test(ad)) continue
+  const s = readFileSync(f, 'utf8')
+  if (!/<title>/i.test(s)) continue // parça/şablon değilse başlığı olur
+  for (const [etiket, desen] of gerekli) {
+    if (!desen.test(s)) eksikMeta.push(`${ad} → ${etiket}`)
+  }
+}
+if (eksikMeta.length) {
+  fail++
+  console.error(`✗ eksik üstveri (${eksikMeta.length}):`)
+  eksikMeta.slice(0, 20).forEach((x) => console.error(`    ${x}`))
+} else {
+  console.log('✓ her sayfada description · canonical · Open Graph var')
+}
+
 process.exit(fail)
