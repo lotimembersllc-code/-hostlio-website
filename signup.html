@@ -594,12 +594,15 @@ async function submitForm() {
     const res = await fetch(SIGNUP_CHECKOUT_URL, {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify({
+      body: JSON.stringify(Object.assign({
         firstName, lastName, email, hotelName,
         rooms: parseInt(rooms, 10),
         phone, plan: planId, billing,
         country, currency, timezone
-      })
+      // A2 — pazarlama kaynağı (ilk temas). attribution.js yüklenmediyse ya da
+      // depolama engelliyse `null` döner ve gövde ESKİSİ GİBİ gider: ölçüm
+      // kaybolur, kayıt akışı bozulmaz.
+      }, (typeof window.hostlioAcq === 'function' && window.hostlioAcq()) || {}))
     });
 
     let data = null;
@@ -649,5 +652,6 @@ document.addEventListener('DOMContentLoaded', function () {
 });
 </script>
 
+<script src="/attribution.js"></script>
 </body>
 </html>
