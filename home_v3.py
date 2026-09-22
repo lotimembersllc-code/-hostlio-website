@@ -43,9 +43,9 @@ T = {
   b_mob=("Mobil uygulama","iOS'ta rezervasyon, mesaj ve check-in; internet yokken de."),
   types_h='Her <em class="hl">tesis tipine</em> uygun', types_p="10 ila 150 odalı bağımsız tesisler için tasarlandı.",
   types=[("brand-courtyard","Havuzlu, bugenvilli butik otel avlusu","Butik otel","10–50 oda","Yabancı misafiri çok, her mesaj kişisel."),
-         ("hostlio-lobby","Ahşap panelli, ortak alanlı konaklama lobisi","Hostel","Yatak ve oda","Çok dilli gezginler, yoğun mesaj trafiği."),
-         ("hostlio-phone","Masa lambalı sıcak pansiyon odası","Pansiyon","1–10 oda","Tek kişilik ekip için gece vardiyası."),
-         ("hostlio-room","Aydınlık beyaz nevresimli apart daire","Apart otel","10–40 daire","Online check-in ile anahtarsız giriş akışı.")],
+         ("gen-hostel","Ahşap panelli, ortak alanlı konaklama lobisi","Hostel","Yatak ve oda","Çok dilli gezginler, yoğun mesaj trafiği."),
+         ("gen-guesthouse","Masa lambalı sıcak pansiyon odası","Pansiyon","1–10 oda","Tek kişilik ekip için gece vardiyası."),
+         ("gen-apart","Aydınlık beyaz nevresimli apart daire","Apart otel","10–40 daire","Online check-in ile anahtarsız giriş akışı.")],
   plans_h="Otelinizin büyüklüğüne göre plan", plans_p="Sabit aylık ücret, uzun süreli sözleşme yok. Tüm planlar 7 gün ücretsiz.",
   early="İlk 50 müşteriye %20 indirim, abonelik boyunca sabit", tax='Fiyatlara vergi dahil değildir. <a href="{p}">Planları detaylı karşılaştırın</a>.',
   ai_h='Lio: resepsiyonunuzun <em class="hl">gece vardiyası</em>', ai_p="Otelinizin bilgileriyle çalışan yapay zekâ asistanı. Misafire cevap verir, satış yapar, gerekeni size bırakır.",
@@ -59,7 +59,7 @@ T = {
   sup=[("rocket-launch","t-peach","Aynı gün kurulum","Oda tiplerini girin, kanalları bağlayın. Growth planında birebir kurulum görüşmesi dahil."),
        ("lifebuoy","t-lilac","Türkçe ve İngilizce destek",'Takıldığınız yerde ekibe <a href="mailto:{e}">{e}</a> adresinden ulaşın.'),
        ("book-open-text","t-sand","Rehberler",'Otel yönetimi ve dağıtım üzerine <a href="{b}">blog yazıları</a> ve <a href="{f}">sık sorulan sorular</a>.')],
-  sup_img=("hostlio-owner","Dizüstü bilgisayarında rezervasyonlara bakan otel işletmecisi"),
+  sup_img=("gen-support-call","Dizüstü bilgisayarında rezervasyonlara bakan otel işletmecisi"),
 ),
 "en": dict(
   title="Hostlio Pro | AI Hotel Management Software for Independent Hotels",
@@ -98,9 +98,9 @@ T = {
   b_mob=("Mobile app","Bookings, messages and check-ins on iOS, even offline."),
   types_h='Built for <em class="hl">every kind of property</em>', types_p="Designed for independent properties with 10 to 150 rooms.",
   types=[("brand-courtyard","Boutique hotel courtyard with a pool and bougainvillea","Boutique hotel","10–50 rooms","Many international guests, every message personal."),
-         ("hostlio-lobby","Lobby with wood panelling and shared seating","Hostel","Beds and rooms","Multilingual travellers, busy inboxes."),
-         ("hostlio-phone","Warm guesthouse room with a desk lamp","Guesthouse","1–10 rooms","A night shift for a one-person team."),
-         ("hostlio-room","Bright apartment with white bedding","Aparthotel","10–40 units","Online check-in for a keyless arrival flow.")],
+         ("gen-hostel","Lobby with wood panelling and shared seating","Hostel","Beds and rooms","Multilingual travellers, busy inboxes."),
+         ("gen-guesthouse","Warm guesthouse room with a desk lamp","Guesthouse","1–10 rooms","A night shift for a one-person team."),
+         ("gen-apart","Bright apartment with white bedding","Aparthotel","10–40 units","Online check-in for a keyless arrival flow.")],
   plans_h="A plan for your hotel's size", plans_p="A flat monthly fee, no long-term contract. Every plan is free for 7 days.",
   early="20% off for the first 50 customers, locked in for life", tax='Prices exclude taxes. <a href="{p}">Compare plans in detail</a>.',
   ai_h='Lio, your front desk\'s <em class="hl">night shift</em>', ai_p="An AI assistant that works from your hotel's information. It answers guests, sells extras and leaves the rest to you.",
@@ -114,7 +114,7 @@ T = {
   sup=[("rocket-launch","t-peach","Same-day setup","Add room types and connect channels. Growth includes a one-to-one onboarding call."),
        ("lifebuoy","t-lilac","Support in English and Turkish",'Stuck on something? Reach the team at <a href="mailto:{e}">{e}</a>.'),
        ("book-open-text","t-sand","Guides",'<a href="{b}">Blog posts</a> on hotel management and distribution, plus <a href="{f}">frequently asked questions</a>.')],
-  sup_img=("hostlio-owner","Hotel owner checking bookings on a laptop"),
+  sup_img=("gen-support-call","Hotel owner checking bookings on a laptop"),
 ),
 }
 
@@ -123,6 +123,15 @@ def img(name, alt, w=720, h=900, lazy=True):
     return f'<img src="{IMG}{name}.webp" alt="{alt}" width="{w}" height="{h}"{lz} decoding="async">'
 
 for _l, _m in LANGMOD.items(): T[_l] = _m.HOME
+
+SUPCARD = {
+ "tr": dict(h="Hostlio Pro destek", sub="Genellikle 24 saat içinde yanıt", q="Booking.com'u nasıl bağlarım?", a="Kanallar bölümünden Booking.com'u seçip bir kez yetkilendirin. Rezervasyonlar otomatik senkronize olur.", chip="Kanal bağlandı"),
+ "en": dict(h="Hostlio Pro support", sub="Usually replies within 24 hours", q="How do I connect Booking.com?", a="Pick Booking.com under Channels and authorise it once. Reservations then sync automatically.", chip="Channel connected"),
+ "es": dict(h="Soporte de Hostlio Pro", sub="Suele responder en 24 horas", q="¿Cómo conecto Booking.com?", a="Elige Booking.com en Canales y autorízalo una vez. Las reservas se sincronizan automáticamente.", chip="Canal conectado"),
+ "it": dict(h="Supporto Hostlio Pro", sub="Di solito risponde entro 24 ore", q="Come collego Booking.com?", a="Scegli Booking.com in Canali e autorizzalo una volta. Le prenotazioni si sincronizzano in automatico.", chip="Canale collegato"),
+ "pt": dict(h="Suporte Hostlio Pro", sub="Costuma responder em até 24 horas", q="Como conecto o Booking.com?", a="Escolha o Booking.com em Canais e autorize uma vez. As reservas são sincronizadas automaticamente.", chip="Canal conectado"),
+ "fr": dict(h="Support Hostlio Pro", sub="Répond généralement sous 24 heures", q="Comment connecter Booking.com ?", a="Choisissez Booking.com dans Canaux et autorisez-le une seule fois. Les réservations se synchronisent ensuite automatiquement.", chip="Canal connecté"),
+}
 
 def home(L, plans_html, FAQ_CORE):
     t = T[L]; U = lambda k: url(k, L)
@@ -210,9 +219,13 @@ def home(L, plans_html, FAQ_CORE):
     stats = "".join(f'<div><b class="num">{a}</b><span>{b}</span></div>' for a,b in t["stats"])
     stats_sec = f'''<section><div class="wrap"><div class="answer rv" style="margin-bottom:48px"><p>{t["answer"]}</p></div><div class="stats">{stats}</div></div></section>'''
 
+    sc = SUPCARD[L]
     sup = "".join(f'<article><span class="ai {c}">{icon(ic)}</span><h3>{h}</h3><p>{p.format(e=EMAIL, b=U("blog"), f=U("faq"))}</p></article>' for ic,c,h,p in t["sup"])
     support = f'''<section class="white rule"><div class="wrap split" style="align-items:stretch"><div><div class="section-head rv"><h2>{t["sup_h"]}</h2></div><div class="support" style="grid-template-columns:1fr">{sup}</div></div>
-<div class="hero-img" style="aspect-ratio:auto;min-height:420px">{img(t["sup_img"][0], t["sup_img"][1], 720, 900)}</div></div></section>'''
+<div class="sup-media"><div class="hero-img" style="aspect-ratio:auto;min-height:420px;height:100%">{img(t["sup_img"][0], t["sup_img"][1], 1080, 1350)}</div>
+<span class="chip sup-chip" aria-hidden="true">{icon("check")}{sc["chip"]}</span>
+<div class="bubble sup-bubble" aria-hidden="true"><div class="bh"><i>H</i><span>{sc["h"]}<small>{sc["sub"]}</small></span></div>
+<div class="msg in">{sc["q"]}</div><div class="msg out">{sc["a"]}</div></div></div></div></section>'''
 
     body = hero + picker + story + tour + bento + types_sec + plans + ai + stats_sec + support
     return {"key":"home","title":t["title"],"desc":t["desc"],"body":body,"preload_img":"/assets/img/brand-courtyard.webp","faq":FAQ_CORE,"schema":[software_schema(L)]}

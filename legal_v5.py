@@ -111,8 +111,8 @@ def legal_page(key, L):
 LEGACY = json.loads((Path(__file__).parent / "legacy_posts.json").read_text())
 LEGACY_KEYS = {"hotel-ai-front-desk-guide": "post-aifrontdesk", "how-to-reduce-hotel-no-shows": "post-noshows",
                "independent-hotel-vs-chain-technology": "post-chains", "whatsapp-hotel-guest-communication": "post-whatsapp"}
-LEGACY_COVER = {"post-aifrontdesk": ("brand-guest-phone", 720, 900), "post-noshows": ("brand-night", 720, 900),
-                "post-chains": ("brand-courtyard", 880, 804), "post-whatsapp": ("brand-phone", 720, 900)}
+LEGACY_COVER = {"post-aifrontdesk": ("gen-arrival", 1080, 1350), "post-noshows": ("gen-room-dusk", 1080, 1350),
+                "post-chains": ("gen-facade", 1080, 1350), "post-whatsapp": ("gen-terrace-phone", 1080, 1350)}
 
 def legacy_meta():
     return [{"key": LEGACY_KEYS[p["slug"]], "title": p["title"], "date": p["date"], "desc": p["desc"]} for p in LEGACY]

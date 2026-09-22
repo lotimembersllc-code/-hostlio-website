@@ -288,6 +288,12 @@ Takıldığınız yerde ekibe hello@hostliopro.com adresinden ulaşın.
 ## Rehberler
 Otel yönetimi ve dağıtım üzerine blog yazıları ve sık sorulan sorular .
 
+Kanal bağlandı
+H Hostlio Pro destek Genellikle 24 saat içinde yanıt
+
+Booking.com'u nasıl bağlarım?
+Kanallar bölümünden Booking.com'u seçip bir kez yetkilendirin. Rezervasyonlar otomatik senkronize olur.
+
 Q: Otel programı nedir?
 A: Otel programı (otel yönetim yazılımı, PMS), bir konaklama tesisinin rezervasyonlarını, oda müsaitliğini, satış kanallarını ve misafir bilgilerini tek yerden yönetmesini sağlayan yazılımdır. Hostlio Pro bu işlevlere misafir mesajlarını 30+ dilde yanıtlayan yapay zekâ asistanı Lio'yu ekler.
 
@@ -1622,6 +1628,12 @@ Stuck on something? Reach the team at hello@hostliopro.com .
 
 ## Guides
 Blog posts on hotel management and distribution, plus frequently asked questions .
+
+Channel connected
+H Hostlio Pro support Usually replies within 24 hours
+
+How do I connect Booking.com?
+Pick Booking.com under Channels and authorise it once. Reservations then sync automatically.
 
 Q: What is Hostlio Pro?
 A: Hostlio Pro is AI-powered hotel management software (PMS) built for independent hotels, boutique hotels and guesthouses. It combines Lio, an AI assistant that answers guest messages 24/7 in 30+ languages, a channel manager connected to 100+ OTAs, a drag-and-drop reservation calendar and online check-in in one platform.
@@ -3279,6 +3291,12 @@ Añade los tipos de habitación y conecta los canales. El plan Growth incluye un
 ## Guías
 Artículos del blog sobre gestión hotelera y distribución, además de preguntas frecuentes .
 
+Canal conectado
+H Soporte de Hostlio Pro Suele responder en 24 horas
+
+¿Cómo conecto Booking.com?
+Elige Booking.com en Canales y autorízalo una vez. Las reservas se sincronizan automáticamente.
+
 Q: ¿Qué es Hostlio Pro?
 A: Hostlio Pro es un software de gestión hotelera (PMS hotelero) con inteligencia artificial, creado para hoteles independientes, hoteles boutique y hostales. Reúne en una sola plataforma a Lio, un asistente de IA que responde a los huéspedes 24/7 en más de 30 idiomas, un channel manager conectado a más de 100 OTAs, un calendario de reservas con arrastrar y soltar y el check-in online.
 
@@ -4603,6 +4621,12 @@ Hai un problema? Scrivi al team a hello@hostliopro.com .
 ## Guide
 Articoli del blog sulla gestione alberghiera e la distribuzione, più le domande frequenti .
 
+Canale collegato
+H Supporto Hostlio Pro Di solito risponde entro 24 ore
+
+Come collego Booking.com?
+Scegli Booking.com in Canali e autorizzalo una volta. Le prenotazioni si sincronizzano in automatico.
+
 Q: Che cos'è Hostlio Pro?
 A: Hostlio Pro è un gestionale per hotel (PMS) basato sull'intelligenza artificiale, pensato per hotel indipendenti, boutique hotel e B&B. Riunisce in un'unica piattaforma Lio, un assistente AI che risponde ai messaggi degli ospiti 24 ore su 24 in oltre 30 lingue, un channel manager collegato a oltre 100 OTA, un calendario delle prenotazioni drag-and-drop e il check-in online.
 
@@ -5895,7 +5919,7 @@ Uma pergunta em japonês recebe resposta em japonês; uma em árabe, resposta em
 هل الإفطار مشمول في الحجز؟
 نعم، الإفطار مشمول ويُقدَّم من 7:30 حتى 10:30.
 
-## Em todos os canais
+## No WhatsApp e nas OTAs
 WhatsApp, Booking.com, Airbnb e Expedia.
 
 ## Vende por você
@@ -5926,6 +5950,12 @@ Travou em algo? Fale com a equipe em hello@hostliopro.com .
 
 ## Guias
 Artigos no blog sobre gestão hoteleira e distribuição, além de perguntas frequentes .
+
+Canal conectado
+H Suporte Hostlio Pro Costuma responder em até 24 horas
+
+Como conecto o Booking.com?
+Escolha o Booking.com em Canais e autorize uma vez. As reservas são sincronizadas automaticamente.
 
 Q: O que é o Hostlio Pro?
 A: O Hostlio Pro é um sistema para hotel (PMS hoteleiro) com inteligência artificial, feito para hotéis independentes, hotéis boutique e pousadas. Ele reúne em uma só plataforma a Lio, uma assistente de IA que responde às mensagens dos hóspedes 24 horas por dia em mais de 30 idiomas, um channel manager conectado a mais de 100 OTAs, um calendário de reservas com arrastar e soltar e o check-in online.
@@ -7250,6 +7280,12 @@ Un blocage ? Contactez l’équipe à hello@hostliopro.com .
 
 ## Guides
 Des articles de blog sur la gestion hôtelière et la distribution, ainsi que des questions fréquentes .
+
+Canal connecté
+H Support Hostlio Pro Répond généralement sous 24 heures
+
+Comment connecter Booking.com ?
+Choisissez Booking.com dans Canaux et autorisez-le une seule fois. Les réservations se synchronisent ensuite automatiquement.
 
 Q: Qu'est-ce que Hostlio Pro ?
 A: Hostlio Pro est un logiciel de gestion hôtelière (PMS) propulsé par l'IA, conçu pour les hôtels indépendants, les hôtels boutique et les chambres d'hôtes. Il réunit sur une seule plateforme Lio, un assistant IA qui répond aux messages des clients 24 h/24 et 7 j/7 dans plus de 30 langues, un channel manager connecté à plus de 100 OTA, un calendrier de réservations en glisser-déposer et le check-in en ligne.

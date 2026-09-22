@@ -195,7 +195,8 @@ def faq_block(faq, lang, heading=True, wrap=True):
 def final_cta(lang):
     u = UI[lang]
     return f'''<section><div class="wrap"><div class="final on-dark">
-<img src="/assets/img/brand-night.webp" alt="" loading="lazy" width="720" height="900">
+<img src="/assets/img/gen-night-desk.webp" alt="" loading="lazy" width="1080" height="1350">
+<video class="final-video" muted loop playsinline preload="none" aria-hidden="true" tabindex="-1" data-webm="/assets/video/night-desk.webm" data-mp4="/assets/video/night-desk.mp4"></video>
 <div><h2>{u["final_h"]}</h2><p>{u["final_p"]}</p></div>
 <div class="cta-row">{btn(u["trial"], SIGNUP_URL)}{btn(u["demo"], url("contact",lang), "ghost")}</div>
 </div></div></section>'''
@@ -271,6 +272,15 @@ ANNUAL = {
  "fr": dict(annual_line="Annuel : {am}/mois, {at} facturés par an", tbl_h="Tarifs mensuels et annuels", tbl_cols=("Forfait","Mensuel","Annuel (par mois)","Total annuel","Prix mensuel normal"), tbl_note="Tarifs early bird en USD. La facturation annuelle permet d’économiser 20 % par rapport au paiement mensuel."),
 }
 for _l in EXTRA: UI[_l].update(EXTRA[_l]); UI[_l].update(ANNUAL[_l])
+GEN_ALT = {
+ "gen-support-call": {"tr":"Dizüstü bilgisayarında görüntülü kurulum görüşmesi yaparken not alan otel işletmecisi","en":"A hotel owner taking notes during a video onboarding call on her laptop","es":"Una propietaria de hotel toma notas durante una videollamada de puesta en marcha en su portátil","it":"Una titolare di hotel prende appunti durante una videochiamata di onboarding sul portatile","pt":"Uma dona de hotel fazendo anotações durante uma videochamada de implantação no notebook","fr":"Une propriétaire d’hôtel prend des notes pendant un appel vidéo de prise en main sur son ordinateur"},
+ "gen-team-desk": {"tr":"Küçük bir otelin resepsiyonunda tablete birlikte bakan resepsiyonist ve kat görevlisi","en":"A receptionist and a housekeeper checking a tablet together at a small hotel's front desk","es":"Una recepcionista y una camarera de pisos revisan juntas una tableta en la recepción de un hotel pequeño","it":"Una receptionist e una governante controllano insieme un tablet alla reception di un piccolo hotel","pt":"Uma recepcionista e uma camareira olhando juntas um tablet na recepção de um pequeno hotel","fr":"Une réceptionniste et une femme de chambre consultent ensemble une tablette à la réception d’un petit hôtel"},
+ "gen-shutters": {"tr":"Gün doğarken oda panjurlarını denize bakan eski şehre açan otel işletmecisi","en":"A hotel owner opening a room's shutters at sunrise over an old town by the sea","es":"Una propietaria de hotel abre las contraventanas de una habitación al amanecer sobre un casco antiguo junto al mar","it":"Una titolare di hotel apre gli scuri di una camera all’alba sul centro storico affacciato sul mare","pt":"Uma dona de hotel abrindo as venezianas de um quarto ao nascer do sol sobre uma cidade antiga à beira-mar","fr":"Une propriétaire d’hôtel ouvre les volets d’une chambre au lever du soleil sur une vieille ville en bord de mer"},
+ "gen-hostel": {"tr":"Akdeniz tarzı bir hostelin ortak alanında sohbet eden iki gezgin, arkada ranzalar","en":"Two travellers chatting in a Mediterranean-style hostel common room, bunk beds in the background","es":"Dos viajeros charlando en la zona común de un hostel mediterráneo, con literas al fondo","it":"Due viaggiatori chiacchierano nell’area comune di un ostello mediterraneo, con i letti a castello sullo sfondo","pt":"Dois viajantes conversando na área comum de um hostel mediterrâneo, com beliches ao fundo","fr":"Deux voyageurs discutent dans l’espace commun d’une auberge méditerranéenne, lits superposés en arrière-plan"},
+ "gen-apart": {"tr":"Mutfaklı, deniz manzaralı aydınlık bir apart daire","en":"Bright aparthotel apartment with a kitchenette and a sea view","es":"Apartamento luminoso de apartahotel con cocina y vistas al mar","it":"Appartamento luminoso con angolo cottura e vista mare","pt":"Apartamento claro de apart-hotel com cozinha e vista para o mar","fr":"Appartement lumineux de résidence hôtelière avec kitchenette et vue sur la mer"},
+ "gen-guesthouse": {"tr":"Asma altında kurulan pansiyon kahvaltısı, masayı hazırlayan ev sahibi","en":"Guesthouse breakfast under a vine pergola, the host setting the table","es":"Desayuno de hostal bajo una pérgola de parra, con la anfitriona poniendo la mesa","it":"Colazione di un B&B sotto un pergolato, con la padrona di casa che apparecchia","pt":"Café da manhã de pousada sob um caramanchão, com a anfitriã arrumando a mesa","fr":"Petit-déjeuner de chambres d’hôtes sous une treille, l’hôtesse dresse la table"},
+ "gen-boutique-room": {"tr":"Taş duvarlı, panjurlu penceresi eski şehre bakan butik otel odası","en":"Boutique hotel room with a stone wall and shuttered window over the old town","es":"Habitación de hotel boutique con pared de piedra y ventana con contraventanas al casco antiguo","it":"Camera di un boutique hotel con muro in pietra e finestra con scuri sul centro storico","pt":"Quarto de hotel boutique com parede de pedra e janela com venezianas para o centro histórico","fr":"Chambre d’hôtel boutique avec mur de pierre et fenêtre à volets sur la vieille ville"},
+}
 def money(n): return "$" + f"{n:,}"
 def annual_table(lang):
     u = UI[lang]; c = u["tbl_cols"]
@@ -355,6 +365,8 @@ def layout(page, lang):
     if PLAUSIBLE_DOMAIN: head_extra += f'<script defer data-domain="{PLAUSIBLE_DOMAIN}" src="https://plausible.io/js/script.js"></script>\n'
     if GA4_ID: head_extra += f'<script async src="https://www.googletagmanager.com/gtag/js?id={GA4_ID}"></script><script>window.dataLayer=window.dataLayer||[];function gtag(){{dataLayer.push(arguments)}}gtag("js",new Date());gtag("config","{GA4_ID}");</script>\n'
     year = datetime.date.fromisoformat(UPDATED).year
+    for _n, _a in GEN_ALT.items():
+        body = re.sub(r'(<img src="/assets/img/' + _n + r'\.webp" alt=")[^"]*"', lambda m: m.group(1) + html.escape(_a[lang]) + '"', body)
     return f'''<!doctype html>
 <html class="nojs" lang="{"pt-BR" if lang=="pt" else lang}">
 <head>

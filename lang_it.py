@@ -77,9 +77,9 @@ HOME = dict(
   b_mob=("App mobile","Prenotazioni, messaggi e check-in su iOS, anche offline."),
   types_h='Pensato per <em class="hl">ogni tipo di struttura</em>', types_p="Progettato per strutture indipendenti da 10 a 150 camere.",
   types=[("brand-courtyard","Cortile di un boutique hotel con piscina e bouganville","Boutique hotel","10–50 camere","Tanti ospiti internazionali, ogni messaggio è personale."),
-         ("hostlio-lobby","Hall con pareti rivestite in legno e sedute condivise","Ostello","Posti letto e camere","Viaggiatori multilingue, caselle di posta affollate."),
-         ("hostlio-phone","Camera accogliente di un B&B con lampada da scrivania","B&B e affittacamere","1–10 camere","Un turno di notte per chi gestisce tutto da solo."),
-         ("hostlio-room","Appartamento luminoso con biancheria bianca","Residence e aparthotel","10–40 unità","Check-in online per un arrivo senza consegna delle chiavi.")],
+         ("gen-hostel","Hall con pareti rivestite in legno e sedute condivise","Ostello","Posti letto e camere","Viaggiatori multilingue, caselle di posta affollate."),
+         ("gen-guesthouse","Camera accogliente di un B&B con lampada da scrivania","B&B e affittacamere","1–10 camere","Un turno di notte per chi gestisce tutto da solo."),
+         ("gen-apart","Appartamento luminoso con biancheria bianca","Residence e aparthotel","10–40 unità","Check-in online per un arrivo senza consegna delle chiavi.")],
   plans_h="Un piano per le dimensioni del tuo hotel", plans_p="Un canone mensile fisso, nessun contratto a lungo termine. Ogni piano è gratuito per 7 giorni.",
   early="20% di sconto per i primi 50 clienti, bloccato per sempre", tax='I prezzi non includono le imposte. <a href="{p}">Confronta i piani nel dettaglio</a>.',
   ai_h='Lio, il <em class="hl">turno di notte</em> della tua reception', ai_p="Un assistente AI che lavora con le informazioni del tuo hotel. Risponde agli ospiti, vende servizi extra e lascia a te il resto.",
@@ -93,7 +93,7 @@ HOME = dict(
   sup=[("rocket-launch","t-peach","Configurazione in giornata","Aggiungi le tipologie di camera e collega i canali. Il piano Growth include una call di onboarding individuale."),
        ("lifebuoy","t-lilac","Assistenza in inglese e turco",'Hai un problema? Scrivi al team a <a href="mailto:{e}">{e}</a>.'),
        ("book-open-text","t-sand","Guide",'<a href="{b}">Articoli del blog</a> sulla gestione alberghiera e la distribuzione, più le <a href="{f}">domande frequenti</a>.')],
-  sup_img=("hostlio-owner","Albergatore che controlla le prenotazioni sul portatile"),
+  sup_img=("gen-support-call","Albergatore che controlla le prenotazioni sul portatile"),
 )
 
 # ---------------------------------------------------------------- pages_v4 strings
@@ -104,7 +104,7 @@ PV4 = dict(trial="Prova gratis per 7 giorni", demo="Richiedi una demo", plan_h="
 # ---------------------------------------------------------------- pages_v4.TYPES
 def types(U):
     return [
- dict(key="t-guesthouse", img=("hostlio-phone","Una camera accogliente di un B&B con lampada da scrivania"),
+ dict(key="t-guesthouse", img=("gen-guesthouse", "Una camera accogliente di un B&B con lampada da scrivania", 1080, 1350),
   title="Gestionale per B&B e affittacamere con AI | Hostlio Pro",
   desc="Gestionale per B&B e affittacamere: risposte automatiche agli ospiti in 30+ lingue, sincronizzazione Booking.com e Airbnb, check-in online. Da $49/mese.",
   crumb="Gestionale per B&B e affittacamere", h1='Il <em class="hl">gestionale per B&amp;B</em> che risponde agli ospiti al posto tuo',
@@ -120,7 +120,7 @@ def types(U):
   faq=[("Esiste un gestionale per B&B gratuito?","Puoi provare Hostlio Pro gratis per 7 giorni. Dopo, il piano Starter costa $49 al mese (prezzo early-bird riservato ai primi 50 clienti)."),
        ("È adatto a un B&B con 3 camere?","Sì. Starter è pensato per una struttura fino a 10 camere; il prezzo è lo stesso anche con meno camere."),
        ("Posso usare Airbnb e Booking.com insieme?","Sì. Hostlio Pro sincronizza entrambi, più oltre 100 altri canali, in un unico calendario tramite Channex.")]),
- dict(key="t-boutique", img=("brand-courtyard","Cortile di un boutique hotel con piscina e bouganville", 880, 804),
+ dict(key="t-boutique", img=("gen-boutique-room", "Cortile di un boutique hotel con piscina e bouganville", 1080, 1350),
   title="Gestionale per boutique hotel con messaggi AI | Hostlio Pro",
   desc="Gestionale per boutique hotel: risposte personali agli ospiti internazionali in 30+ lingue, sincronizzazione con 100+ OTA, check-in online e vendita di transfer.",
   crumb="Gestionale per boutique hotel", h1='Il <em class="hl">gestionale per boutique hotel</em> costruito attorno all\'ospite',
@@ -136,7 +136,7 @@ def types(U):
   faq=[("Qual è il miglior gestionale per un boutique hotel?","Dipende dal numero di camere, dal profilo degli ospiti e dal budget. Per hotel da 10–50 camere con molti ospiti internazionali che vogliono un prezzo fisso, la messaggistica AI e il channel manager di Hostlio Pro sono una buona scelta. Consulta la nostra pagina di confronto per altre opzioni."),
        ("Posso usare Hostlio Pro con il mio sito web attuale?","Sì. Hostlio Pro non sostituisce il tuo sito: gli ospiti che ti contattano su WhatsApp ricevono risposta da Lio nella stessa casella dei messaggi delle OTA."),
        ("Quanti utenti posso aggiungere?","Consulta la pagina dei prezzi per i dettagli dei piani, oppure chiedi al nostro team durante la demo.")]),
- dict(key="t-apart", img=("hostlio-room","Appartamento luminoso con biancheria bianca"),
+ dict(key="t-apart", img=("gen-apart", "Appartamento luminoso con biancheria bianca", 1080, 1350),
   title="Gestionale per residence: check-in online e OTA | Hostlio Pro",
   desc="Gestionale per residence, aparthotel e appartamenti: sincronizzazione Airbnb e Booking.com, check-in online con firma digitale e messaggi AI in 30+ lingue.",
   crumb="Gestionale per residence e aparthotel", h1='Il <em class="hl">gestionale per residence e aparthotel</em> pensato per la gestione a distanza',
@@ -152,7 +152,7 @@ def types(U):
   faq=[("Hostlio Pro funziona per un residence senza reception?","Sì. Il check-in online e la messaggistica AI svolgono a distanza la raccolta delle informazioni e le risposte alle domande che farebbe una reception."),
        ("Risponde anche ai messaggi di Airbnb?","Con i piani Pro e Growth, i messaggi delle OTA, Airbnb compreso, arrivano nella casella di Lio."),
        ("C'è un limite di unità?","Starter supporta fino a 10 camere o unità, Pro fino a 50 e Growth fino a 150.")]),
- dict(key="t-hostel", img=("hostlio-lobby","Hall con pareti rivestite in legno e sedute condivise"),
+ dict(key="t-hostel", img=("gen-hostel", "Hall con pareti rivestite in legno e sedute condivise", 1080, 1350),
   title="Gestionale per ostelli: messaggi multilingue | Hostlio Pro",
   desc="Gestionale per ostelli: sincronizzazione con Hostelworld, Booking.com e 100+ canali, messaggi AI agli ospiti in 30+ lingue e check-in online. 7 giorni gratis.",
   crumb="Gestionale per ostelli", h1='Il <em class="hl">gestionale per ostelli</em> per caselle di posta affollate e multilingue',

@@ -113,3 +113,21 @@ Eski sitede olmayan, benim varsaydığım bilgiler — yanlışsa `content_*.py`
 
 ## v9 — yıllık fiyatlar
 - Her plan kartında yıllık fiyat satırı (Starter $39/ay – $470/yıl, Pro $71/ay – $854/yıl, Growth $119/ay – $1.430/yıl), fiyat sayfasında 6 dilde aylık/yıllık fiyat tablosu, yapılandırılmış veride yıllık teklifler, llms.txt. Canlı fiyat gelirse satırlar da güncellenir.
+
+## v10 — yeni görseller (Higgsfield, GPT Image 2.5, 2K)
+- 12 yeni görsel `src/assets/img/gen-*.webp` (1080×1350, 480w varyantlarıyla):
+  hostel, apart, pansiyon, butik oda → tesis tipi sayfaları + ana sayfa kartları;
+  blog kapakları: owner-laptop (PMS), reception (overbooking), night-desk (otomatik cevap), checkin-phone (AI),
+  eski EN yazılar: arrival, room-dusk, facade, terrace-phone.
+- 6 dilde alt metinler: build.py → GEN_ALT.
+- Kullanılmayan hostlio-lobby/phone/room görselleri unused_img/ klasörüne taşındı.
+- Görseller yapay zekâ ile üretildi: gerçek müşteri, gerçek otel ya da referans olarak sunulmamalı.
+
+## v11 — ek görseller ve döngü video
+- Özellikler sayfası: gen-team-desk (resepsiyonda tablete bakan ekip). Hakkımızda: gen-shutters (gün doğarken panjur açan işletmeci). Alt metinler 6 dilde (GEN_ALT).
+- Sayfa sonu CTA'sı (neredeyse her sayfada): gece resepsiyon sahnesinin 10 sn'lik ileri-geri döngü videosu (Grok Video 1.5, sessiz). src/assets/video/night-desk.webm (≈195 KB) + .mp4 (≈395 KB).
+  Görünür olunca yüklenir; "hareketi azalt" ve veri tasarrufu modunda yüklenmez, poster görseli gösterilir. Masaüstünde sağda, metnin arkasında değil.
+
+## v12 — "Yanınızda bir ekip var" bölümü
+- Stok fotoğraf yerine gen-support-call (görüntülü kurulum görüşmesindeki otelci) + üstünde kodla çizilmiş destek sohbeti kartı ve "Kanal bağlandı" etiketi (6 dil, home_v3.SUPCARD).
+- Gerçek ekip fotoğrafı gelirse sadece sup_img değiştirilir. hostlio-owner unused_img/ klasörüne taşındı.

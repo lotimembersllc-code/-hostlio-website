@@ -17,11 +17,13 @@ for f in sorted(glob.glob(D+'/**/index.html',recursive=True)):
     body=re.sub(r'href="(/(?!assets)[^"#]*)"',lambda m:f'href="#{m.group(1)}"' if not m.group(1).endswith('.txt') else 'href="#/"',body)
     body=body.replace('href="#main"','href="#main" data-skip')
     body=re.sub(r' data-endpoint="[^"]*"','',body)
+    body=body.replace('/assets/video/','IMG_')
     for fn in os.listdir('src/assets/img'):
         body=body.replace('/assets/img/'+fn, 'IMG_'+fn)
     pages[path]={'b':body,'t':title,'l':lang}
 js=open('src/assets/site.js').read()
 imgs={fn:'data:image/webp;base64,'+base64.b64encode(open('src/assets/img/'+fn,'rb').read()).decode() for fn in os.listdir('src/assets/img')}
+imgs.update({fn:('data:video/webm;base64,' if fn.endswith('webm') else 'data:video/mp4;base64,')+base64.b64encode(open('src/assets/video/'+fn,'rb').read()).decode() for fn in os.listdir('src/assets/video')})
 data=json.dumps(pages,ensure_ascii=False).replace('</','<\\/')
 imgjson=json.dumps(imgs)
 out=f'''<title>Hostlio Site Preview</title>
@@ -35,7 +37,7 @@ function render(){{
   if(!P[p])p='/';
   const pg=P[p];document.title=pg.t;document.documentElement.lang=pg.l;
   const note=pg.l==='tr'?'Önizleme: yeni Hostlio Pro sitesi, tüm sayfalar gezilebilir. Kayıt formu ve panel girişi canlı sitede çalışır.':'Preview: new Hostlio Pro site, every page is browsable. Sign-up and dashboard login work on the live site.';
-  document.getElementById('app').innerHTML='<div class="preview-bar">'+note+'</div>'+pg.b.replace(/IMG_([\\w.-]+\\.webp)/g,(m,f)=>IM[f]||'');
+  document.getElementById('app').innerHTML='<div class="preview-bar">'+note+'</div>'+pg.b.replace(/IMG_([\\w.-]+\\.(?:webp|webm|mp4))/g,(m,f)=>IM[f]||'');
   document.querySelectorAll('[data-skip]').forEach(a=>a.addEventListener('click',e=>{{e.preventDefault();document.getElementById('main').focus();document.getElementById('main').scrollIntoView()}}));
   document.getElementById('main').tabIndex=-1;
   window.scrollTo(0,0);

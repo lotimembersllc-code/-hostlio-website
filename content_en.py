@@ -151,7 +151,7 @@ def checkin():
 def features():
     body = f'''
 <section class="page-hero"><div class="wrap split"><div><h1>Everything in Hostlio Pro</h1>
-<p class="lead">The modules an independent hotel needs day to day: guest communication, distribution, reservations, check-in and extra revenue.</p></div><div class="hero-img"><img src="/assets/img/brand-hotelier.webp" alt="Hotel owner walking through the lobby with a morning coffee" width="720" height="900"></div></div></section>
+<p class="lead">The modules an independent hotel needs day to day: guest communication, distribution, reservations, check-in and extra revenue.</p></div><div class="hero-img"><img src="/assets/img/gen-team-desk.webp" alt="" width="1080" height="1350"></div></div></section>
 <section class="white rule"><div class="wrap"><h2 class="sr-only">Modules</h2><div class="rows">
 <div class="row"><h3>Lio AI assistant</h3><div><p>24/7 guest replies in 30+ languages. WhatsApp and OTA inbox messages (Booking.com, Airbnb, Expedia) in one inbox.</p><a href="{U("ai")}">More about Lio</a></div></div>
 <div class="row"><h3>Channel manager</h3><div><p>Availability, rate and booking sync with 100+ OTAs through Channex.</p><a href="{U("channel")}">Channel manager</a></div></div>
@@ -228,7 +228,7 @@ def faq_page():
 
 def about():
     body = f'''<section class="page-hero"><div class="wrap split"><div><h1>Why we built Hostlio Pro</h1>
-<p class="lead">In small hotels, reception, sales and guest communication often sit on one person's shoulders. Hostlio Pro exists so that person isn't buried in messages at night and channel screens by day.</p></div><div class="hero-img"><img src="/assets/img/brand-courtyard.webp" alt="Boutique hotel courtyard with a pool and bougainvillea" width="880" height="804"></div></div></section>
+<p class="lead">In small hotels, reception, sales and guest communication often sit on one person's shoulders. Hostlio Pro exists so that person isn't buried in messages at night and channel screens by day.</p></div><div class="hero-img"><img src="/assets/img/gen-shutters.webp" alt="" width="1080" height="1350"></div></div></section>
 <section class="white rule"><div class="wrap split">
 <div class="prose"><h2>What we do</h2>
 <p>Hostlio Pro is AI-powered hotel management software for independent hotels. We hand guest communication to our AI assistant Lio, bring OTA distribution onto one calendar through Channex, and move check-in to the guest's phone.</p>
@@ -278,7 +278,7 @@ def blog():
     return {"key":"blog","title":"Blog: Guides for Independent Hotels | Hostlio Pro","desc":"Practical guides for independent hoteliers on hotel management, channel management, OTA distribution and AI guest communication.",
             "trail":[("Blog", U("blog"))],"body":body,"page_type":"CollectionPage"}
 
-COVERS={"post-ai":("brand-guest-bed",1200,675),"post-pms":("hostlio-lobby",720,900),"post-overbooking":("brand-hotelier",720,900),"post-autoreply":("brand-phone",720,900)}
+COVERS={"post-ai":("gen-checkin-phone",1080,1350),"post-pms":("gen-owner-laptop",1080,1350),"post-overbooking":("gen-reception",1080,1350),"post-autoreply":("gen-night-desk",1080,1350)}
 import legal_v5 as _lg
 COVERS.update(_lg.LEGACY_COVER)
 def article(meta, content, faq=None):

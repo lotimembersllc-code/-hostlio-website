@@ -82,6 +82,15 @@
       if(typeof j.early_bird==='boolean')eb=j.early_bird;render()}).catch(function(){});
   });
 
+  // ambient loop video in the final CTA: loads only when visible, never with reduced motion
+  var fv=[].slice.call(d.querySelectorAll('video.final-video'));
+  if(fv.length&&'IntersectionObserver' in window&&!matchMedia('(prefers-reduced-motion: reduce)').matches&&!(navigator.connection&&navigator.connection.saveData)){
+    var vo=new IntersectionObserver(function(es){es.forEach(function(en){var v=en.target;
+      if(en.isIntersecting){if(!v.src&&!v.firstChild){[['webm','video/webm'],['mp4','video/mp4']].forEach(function(x){var s=d.createElement('source');s.src=v.dataset[x[0]];s.type=x[1];v.appendChild(s)});v.load();v.addEventListener('playing',function(){v.classList.add('on')},{once:true})}
+        var pr=v.play();if(pr&&pr.catch)pr.catch(function(){})}else if(!v.paused)v.pause()})},{rootMargin:'200px 0px'});
+    fv.forEach(function(v){vo.observe(v)});
+  }
+
   // gentle reveal for below-the-fold blocks only (content is visible at rest)
   if('IntersectionObserver' in window && !matchMedia('(prefers-reduced-motion: reduce)').matches){
     var io=new IntersectionObserver(function(es){es.forEach(function(en){if(en.isIntersecting){en.target.classList.remove('pre');io.unobserve(en.target)}})},{rootMargin:'0px 0px -8% 0px'});

@@ -156,7 +156,7 @@ def checkin():
 def features():
     body = f'''
 <section class="page-hero"><div class="wrap split"><div><h1>Tudo o que o Hostlio Pro oferece</h1>
-<p class="lead">Os módulos de que um hotel independente precisa no dia a dia: comunicação com hóspedes, distribuição, reservas, check-in e receita extra.</p></div><div class="hero-img"><img src="/assets/img/brand-hotelier.webp" alt="Dono de hotel caminhando pelo lobby com um café pela manhã" width="720" height="900"></div></div></section>
+<p class="lead">Os módulos de que um hotel independente precisa no dia a dia: comunicação com hóspedes, distribuição, reservas, check-in e receita extra.</p></div><div class="hero-img"><img src="/assets/img/gen-team-desk.webp" alt="" width="1080" height="1350"></div></div></section>
 <section class="white rule"><div class="wrap"><h2 class="sr-only">Módulos</h2><div class="rows">
 <div class="row"><h3>Assistente de IA Lio</h3><div><p>Respostas aos hóspedes 24 horas por dia em mais de 30 idiomas. Mensagens do WhatsApp e das OTAs (Booking.com, Airbnb, Expedia) em uma só caixa de entrada.</p><a href="{U("ai")}">Saiba mais sobre a Lio</a></div></div>
 <div class="row"><h3>Channel manager</h3><div><p>Sincronização de disponibilidade, tarifas e reservas com mais de 100 OTAs por meio da Channex.</p><a href="{U("channel")}">Channel manager</a></div></div>
@@ -233,7 +233,7 @@ def faq_page():
 
 def about():
     body = f'''<section class="page-hero"><div class="wrap split"><div><h1>Por que criamos o Hostlio Pro</h1>
-<p class="lead">Em hotéis pequenos, a recepção, as vendas e a comunicação com os hóspedes muitas vezes ficam nas costas de uma só pessoa. O Hostlio Pro existe para que essa pessoa não fique soterrada por mensagens à noite e por telas de canais durante o dia.</p></div><div class="hero-img"><img src="/assets/img/brand-courtyard.webp" alt="Pátio de um hotel boutique com piscina e buganvílias" width="880" height="804"></div></div></section>
+<p class="lead">Em hotéis pequenos, a recepção, as vendas e a comunicação com os hóspedes muitas vezes ficam nas costas de uma só pessoa. O Hostlio Pro existe para que essa pessoa não fique soterrada por mensagens à noite e por telas de canais durante o dia.</p></div><div class="hero-img"><img src="/assets/img/gen-shutters.webp" alt="" width="1080" height="1350"></div></div></section>
 <section class="white rule"><div class="wrap split">
 <div class="prose"><h2>O que fazemos</h2>
 <p>O Hostlio Pro é um software de gestão hoteleira com inteligência artificial para hotéis independentes. Entregamos a comunicação com os hóspedes à nossa assistente de IA Lio, reunimos a distribuição nas OTAs em um único calendário por meio da Channex e levamos o check-in para o celular do hóspede.</p>
@@ -282,7 +282,7 @@ def blog():
     return {"key":"blog","title":"Blog: Guias para Hotéis Independentes | Hostlio Pro","desc":"Guias práticos para hoteleiros independentes sobre gestão hoteleira, channel manager, distribuição nas OTAs e comunicação com hóspedes usando IA.",
             "trail":[("Blog", U("blog"))],"body":body,"page_type":"CollectionPage"}
 
-COVERS={"post-ai":("brand-guest-bed",1200,675),"post-pms":("hostlio-lobby",720,900),"post-overbooking":("brand-hotelier",720,900),"post-autoreply":("brand-phone",720,900)}
+COVERS={"post-ai":("gen-checkin-phone",1080,1350),"post-pms":("gen-owner-laptop",1080,1350),"post-overbooking":("gen-reception",1080,1350),"post-autoreply":("gen-night-desk",1080,1350)}
 def article(meta, content, faq=None):
     art = {"@type":"BlogPosting","headline":meta["title"],"description":meta["desc"],"datePublished":meta["date"],"inLanguage":L,"author":{"@type":"Organization","name":"Equipe de produto do Hostlio Pro","url":SITE+U("about")},"dateModified":UPDATED,"publisher":{"@id":SITE+"/#org"},
            "mainEntityOfPage":SITE+U(meta["key"]),"image":SITE+"/assets/img/"+COVERS[meta["key"]][0]+".webp"}

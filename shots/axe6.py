@@ -2,7 +2,7 @@ import asyncio, pathlib
 from playwright.async_api import async_playwright
 AXE=open('/tmp/axe/package/axe.min.js').read()
 D=pathlib.Path("dist")
-PAGES=["/fiyatlandirma/","/en/pricing/","/fr/tarifs/","/","/es/"]
+PAGES=["/","/en/","/fr/","/pt/"]
 async def main():
     async with async_playwright() as p:
         b=await p.chromium.launch(); pg=await b.new_page()

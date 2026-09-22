@@ -154,7 +154,7 @@ def checkin():
 def features():
     body = f'''
 <section class="page-hero"><div class="wrap split"><div><h1>Hostlio Pro'nun tüm özellikleri</h1>
-<p class="lead">Bağımsız bir otelin günlük işleri için gereken modüller: misafir iletişimi, dağıtım, rezervasyon, check-in ve ek gelir.</p></div><div class="hero-img"><img src="/assets/img/brand-hotelier.webp" alt="Sabah lobide kahvesiyle yürüyen otel işletmecisi" width="720" height="900"></div></div></section>
+<p class="lead">Bağımsız bir otelin günlük işleri için gereken modüller: misafir iletişimi, dağıtım, rezervasyon, check-in ve ek gelir.</p></div><div class="hero-img"><img src="/assets/img/gen-team-desk.webp" alt="" width="1080" height="1350"></div></div></section>
 <section class="white rule"><div class="wrap"><h2 class="sr-only">Modüller</h2><div class="rows">
 <div class="row"><h3>AI asistan Lio</h3><div><p>30+ dilde, 7/24 misafir yanıtı. WhatsApp ve OTA gelen kutusu mesajları (Booking.com, Airbnb, Expedia) tek gelen kutusunda.</p><a href="{U("ai")}">Lio hakkında daha fazlası</a></div></div>
 <div class="row"><h3>Kanal yöneticisi</h3><div><p>Channex altyapısıyla 100+ OTA'da müsaitlik, fiyat ve rezervasyon senkronizasyonu.</p><a href="{U("channel")}">Kanal yöneticisi</a></div></div>
@@ -231,7 +231,7 @@ def faq_page():
 
 def about():
     body = f'''<section class="page-hero"><div class="wrap split"><div><h1>Hostlio Pro'yu neden yaptık</h1>
-<p class="lead">Küçük otellerde resepsiyon, satış ve misafir iletişimi çoğu zaman aynı kişinin omzundadır. Hostlio Pro, bu kişinin gece mesajlara, gündüz kanal ekranlarına gömülmemesi için var.</p></div><div class="hero-img"><img src="/assets/img/brand-courtyard.webp" alt="Havuzlu, bugenvilli butik otel avlusu" width="880" height="804"></div></div></section>
+<p class="lead">Küçük otellerde resepsiyon, satış ve misafir iletişimi çoğu zaman aynı kişinin omzundadır. Hostlio Pro, bu kişinin gece mesajlara, gündüz kanal ekranlarına gömülmemesi için var.</p></div><div class="hero-img"><img src="/assets/img/gen-shutters.webp" alt="" width="1080" height="1350"></div></div></section>
 <section class="white rule"><div class="wrap split">
 <div class="prose"><h2>Ne yapıyoruz</h2>
 <p>Hostlio Pro, bağımsız oteller için yapay zekâ destekli bir otel yönetim yazılımıdır. Misafir iletişimini AI asistanımız Lio'ya devrediyor, OTA dağıtımını Channex altyapısıyla tek takvimde topluyor ve check-in'i misafirin telefonuna taşıyoruz.</p>
@@ -280,7 +280,7 @@ def blog():
     return {"key":"blog","title":"Blog: Bağımsız Oteller için Rehberler | Hostlio Pro","desc":"Otel yönetimi, kanal yönetimi, OTA dağıtımı ve AI ile misafir iletişimi üzerine bağımsız otelcilere yönelik pratik rehberler.",
             "trail":[("Blog", U("blog"))],"body":body,"page_type":"CollectionPage"}
 
-COVERS={"post-ai":("brand-guest-bed",1200,675),"post-pms":("hostlio-lobby",720,900),"post-overbooking":("brand-hotelier",720,900),"post-autoreply":("brand-phone",720,900)}
+COVERS={"post-ai":("gen-checkin-phone",1080,1350),"post-pms":("gen-owner-laptop",1080,1350),"post-overbooking":("gen-reception",1080,1350),"post-autoreply":("gen-night-desk",1080,1350)}
 def article(meta, content, faq=None):
     art = {"@type":"BlogPosting","headline":meta["title"],"description":meta["desc"],"datePublished":meta["date"],"inLanguage":"tr-TR","author":{"@type":"Organization","name":"Hostlio Pro ürün ekibi","url":SITE+"/hakkimizda/"},"dateModified":UPDATED,"publisher":{"@id":SITE+"/#org"},
            "mainEntityOfPage":SITE+U(meta["key"]),"image":SITE+"/assets/img/"+COVERS[meta["key"]][0]+".webp"}
