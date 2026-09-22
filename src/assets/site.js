@@ -68,11 +68,11 @@
     var tg=box.previousElementSibling&&box.previousElementSibling.classList.contains('billing')?box.previousElementSibling:null;
     var data={starter:{m:49,a:470},pro:{m:89,a:854},growth:{m:149,a:1430}},eb=true,annual=false;
     var cards=[].slice.call(box.querySelectorAll('.plan'));
-    cards.forEach(function(c){var h=c.querySelector('h3');c._id=h?h.id.replace('plan-',''):'';var p=c.querySelector('.price');if(p&&!c.querySelector('.billed')){var n=d.createElement('span');n.className='billed small muted';n.hidden=true;p.appendChild(n)}});
-    function render(){cards.forEach(function(c){var v=data[c._id];if(!v)return;var b=c.querySelector('.price b');if(b)b.textContent=b.textContent.replace(/\d[\d.,\s  ]*/,String(annual?Math.round(v.a/12):v.m)+(/\d\s*[$€]/.test(b.textContent)?' ':''));
-      var n=c.querySelector('.billed');if(n){n.hidden=!annual;n.textContent=' '+box.dataset.billed+' ($'+v.a+')'}
-      var e=c.querySelector('p.small.muted.num');if(e)e.hidden=!eb||annual;
-      var am=c.querySelector('[data-am]'),at=c.querySelector('[data-at]');if(am)am.textContent='$'+Math.round(v.a/12);if(at)at.textContent='$'+v.a.toLocaleString('en-US');var al=c.querySelector('.annual-line');if(al)al.hidden=annual})}
+    cards.forEach(function(c){var h=c.querySelector('h3');c._id=h?h.id.replace('plan-',''):''});
+    function render(){cards.forEach(function(c){var v=data[c._id];if(!v)return;var b=c.querySelector('.price b');if(b)b.textContent=b.textContent.replace(/\d[\d.,\s  ]*/,String(annual?Math.round(v.a/12):v.m)+(/\d\s*[$€]/.test(b.textContent)?' ':''));
+      var bm=c.querySelector('[data-bm]'),ba=c.querySelector('[data-ba]');if(bm)bm.hidden=annual;if(ba)ba.hidden=!annual;
+      var e=c.querySelector('p.small.muted.num');if(e)e.hidden=!eb;
+      var at=c.querySelector('[data-at]');if(at)at.textContent='$'+v.a.toLocaleString('en-US')})}
     if(tg)tg.addEventListener('click',function(ev){var t=ev.target.closest('[data-bill]');if(!t)return;annual=t.dataset.bill==='a';
       [].forEach.call(tg.querySelectorAll('[data-bill]'),function(x){var on=x===t;x.classList.toggle('on',on);x.setAttribute('aria-pressed',on)});
       render();[].forEach.call(box.querySelectorAll('a.btn'),function(a){a.href=a.href.replace(/([?&])billing=\w+&?/,'$1').replace(/[?&]$/,'')+(a.href.indexOf('?')>-1?'&':'?')+'billing='+(annual?'annual':'monthly')})});

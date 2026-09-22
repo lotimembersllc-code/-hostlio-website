@@ -22,11 +22,20 @@ SITE = "https://hostliopro.com"          # canonical host used by the current si
 SIGNUP_URL = "/signup"                           # existing sign-up page (src/signup.html, from the current site)
 LOGIN_URL = "https://dashboard.hostliopro.com"   # dashboard login
 FORM_ENDPOINT = "https://hook.eu1.make.com/20b5teacqjk8d330goof6adqly5vyuq2"  # Make.com webhook used by the current contact form
-WHATSAPP = "13413414479"; WHATSAPP_TXT = "+1 341 341 4479"
+WHATSAPP = "12792682488"; WHATSAPP_TXT = "+1 279-268-2488"
 PLANS_ENDPOINT = "https://brzetctpyaxognnvjrnd.supabase.co/functions/v1/plans"  # live prices (Supabase edge function)
 PLANS_ANON = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImJyemV0Y3RweWF4b2dubnZqcm5kIiwicm9sZSI6ImFub24iLCJpYXQiOjE3Nzk2NDk3MzksImV4cCI6MjA5NTIyNTczOX0.3AKfW8oBvcXmpkwMGh972ko22nJmw0rO28fongc-S3U"  # public anon key (already public on the current site)
 EMAIL = "hello@hostliopro.com"
-UPDATED = "2026-09-21"
+# Y5: "Demo iste / Book a demo" düğmeleri. Cal.com veya Calendly linki (20 dk slot) yazılınca tüm düğmeler
+# doğrudan takvime gider; boşken iletişim sayfasına gider. Örn. "https://cal.com/hostliopro/demo"
+DEMO_URL = ""
+UPDATED = "2026-09-23"
+# O3: Hakkımızda — kurucu notu ve ekip. Doldurulunca 6 dilde Hakkımızda sayfasına eklenir (boşken hiç görünmez).
+# FOUNDER_NOTE = {"name": "Ad Soyad", "role": "Kurucu", "photo": "/assets/img/team-xxx.webp",
+#                 "text": {"en": "...", "tr": "...", "es": "...", "it": "...", "pt": "...", "fr": "..."}}
+# TEAM = [{"name": "Ad Soyad", "role": {"en": "Product & engineering", "tr": "Ürün ve yazılım", ...}, "photo": "/assets/img/team-yyy.webp"}]
+FOUNDER_NOTE = None
+TEAM = []
 # ---- measurement & entity config (fill in before launch; empty = not rendered)
 GA4_ID = ""            # e.g. "G-XXXXXXX"
 PLAUSIBLE_DOMAIN = ""  # e.g. "hostliopro.com"
@@ -35,7 +44,7 @@ BING_VERIFY = ""       # Bing Webmaster msvalidate.01 token
 INDEXNOW_KEY = "7f3c9a1e5b2d4c8f9e0a6b1d2c3e4f50"
 SAME_AS = []           # official profiles: LinkedIn, Instagram, YouTube, X, Hotel Tech Report, G2, Capterra...
 APP_STORE_URL = ""     # iOS app link
-UPDATED_TXT = {"tr": "21 Eylül 2026", "en": "September 21, 2026"}
+UPDATED_TXT = {"tr": "23 Eylül 2026", "en": "September 23, 2026"}
 LANGS = ["tr", "en", "es", "it", "pt", "fr"]
 NEW_LANGS = ["es", "it", "pt", "fr"]
 LANG_NAME = {"tr": "Türkçe", "en": "English", "es": "Español", "it": "Italiano", "pt": "Português", "fr": "Français"}
@@ -81,7 +90,21 @@ ROUTES = {
 }
 for _k, _v in {'home': ('/es/', '/it/', '/pt/', '/fr/'), 'ai': ('/es/asistente-ia-para-huespedes/', '/it/assistente-ai-ospiti/', '/pt/assistente-ia-para-hospedes/', '/fr/assistant-ia-clients/'), 'channel': ('/es/channel-manager/', '/it/channel-manager/', '/pt/channel-manager/', '/fr/channel-manager/'), 'checkin': ('/es/check-in-online/', '/it/check-in-online/', '/pt/check-in-online/', '/fr/check-in-en-ligne/'), 'features': ('/es/funcionalidades/', '/it/funzionalita/', '/pt/funcionalidades/', '/fr/fonctionnalites/'), 'pricing': ('/es/precios/', '/it/prezzi/', '/pt/precos/', '/fr/tarifs/'), 'faq': ('/es/preguntas-frecuentes/', '/it/domande-frequenti/', '/pt/perguntas-frequentes/', '/fr/faq/'), 'about': ('/es/sobre-nosotros/', '/it/chi-siamo/', '/pt/sobre-nos/', '/fr/a-propos/'), 'contact': ('/es/contacto/', '/it/contatti/', '/pt/contato/', '/fr/contact/'), 'blog': ('/es/blog/', '/it/blog/', '/pt/blog/', '/fr/blog/'), 'post-pms': ('/es/blog/como-elegir-software-de-gestion-hotelera-hotel-pequeno/', '/it/blog/come-scegliere-gestionale-per-hotel-piccolo/', '/pt/blog/como-escolher-sistema-para-hotel-pequeno/', '/fr/blog/choisir-logiciel-gestion-hoteliere-petit-hotel/'), 'post-ai': ('/es/blog/responder-mensajes-de-huespedes-con-ia/', '/it/blog/rispondere-ai-messaggi-degli-ospiti-con-ai/', '/pt/blog/responder-mensagens-de-hospedes-com-ia/', '/fr/blog/repondre-aux-messages-clients-avec-ia/'), 'post-overbooking': ('/es/blog/como-evitar-el-overbooking/', '/it/blog/come-evitare-overbooking/', '/pt/blog/como-evitar-overbooking/', '/fr/blog/comment-eviter-le-surbooking/'), 'post-autoreply': ('/es/blog/respuesta-automatica-mensajes-booking-com/', '/it/blog/risposta-automatica-messaggi-booking-com/', '/pt/blog/resposta-automatica-mensagens-booking-com/', '/fr/blog/reponse-automatique-messages-booking-com/'), 't-guesthouse': ('/es/software-para-hostales/', '/it/gestionale-b-and-b/', '/pt/sistema-para-pousadas/', '/fr/logiciel-chambres-d-hotes/'), 't-boutique': ('/es/software-hotel-boutique/', '/it/gestionale-boutique-hotel/', '/pt/sistema-hotel-boutique/', '/fr/logiciel-hotel-boutique/'), 't-apart': ('/es/software-apartahotel/', '/it/gestionale-residence-aparthotel/', '/pt/sistema-apart-hotel/', '/fr/logiciel-residence-hoteliere/'), 't-hostel': ('/es/software-para-hostels/', '/it/gestionale-ostelli/', '/pt/sistema-para-hostels/', '/fr/logiciel-auberge-de-jeunesse/'), 'compare': ('/es/comparativa-software-hotelero/', '/it/confronto-gestionali-hotel/', '/pt/comparativo-sistemas-para-hotel/', '/fr/comparatif-logiciels-hoteliers/'), 'privacy': ('/es/privacidad/', '/it/privacy/', '/pt/privacidade/', '/fr/confidentialite/'), 'terms': ('/es/terminos/', '/it/termini/', '/pt/termos/', '/fr/conditions/'), 'delacc': ('/es/eliminar-cuenta/', '/it/elimina-account/', '/pt/excluir-conta/', '/fr/supprimer-compte/')}.items():
     ROUTES[_k].update(dict(zip(NEW_LANGS, _v)))
+# K4 (Eylül 2026): kök adres artık dil seçmiyor — Türkçe /tr/ altına taşındı; "/" Accept-Language'a göre
+# /tr/, /es/, /it/, /pt/, /fr/ ya da /en/'e yönlenir (vercel.json). Eski Türkçe adresler 301 ile /tr/... adresine gider.
+# O2: gizlilik, şartlar ve hesap silme İngilizcede de /en/ altında.
+OLD_TR = {k: v["tr"] for k, v in ROUTES.items() if "tr" in v}
+OLD_EN_ROOT = {k: ROUTES[k]["en"] for k in ("privacy", "terms", "delacc")}
+for _k, _v in ROUTES.items():
+    if "tr" in _v: _v["tr"] = "/tr" + _v["tr"]
+ROUTES["privacy"]["en"] = "/en/privacy/"; ROUTES["terms"]["en"] = "/en/terms/"; ROUTES["delacc"]["en"] = "/en/delete-account/"
+# K5 + güçlendirme: Güvenlik ve veri sayfası (6 dil) ve DPA (yalnız İngilizce, esas metin)
+ROUTES["security"] = {"tr": "/tr/guvenlik-ve-veri/", "en": "/en/security/", "es": "/es/seguridad/", "it": "/it/sicurezza/", "pt": "/pt/seguranca/", "fr": "/fr/securite/"}
+ROUTES["dpa"] = {"en": "/en/dpa/"}
+ROUTES["roi"] = {"tr": "/tr/roi-hesaplayici/", "en": "/en/roi-calculator/", "es": "/es/calculadora-roi/", "it": "/it/calcolatore-roi/", "pt": "/pt/calculadora-roi/", "fr": "/fr/calculateur-roi/"}
+ROI_LABEL = {"tr": "Tasarruf hesaplayıcı", "en": "ROI calculator", "es": "Calculadora de ROI", "it": "Calcolatore ROI", "pt": "Calculadora de ROI", "fr": "Calculateur de ROI"}
 def url(key, lang): return ROUTES[key].get(lang) or ROUTES["blog"][lang]
+def demo_url(lang): return DEMO_URL or url("contact", lang)
 def langs(key): return [l for l in LANGS if l in ROUTES[key]]
 def abs_url(key, lang): return SITE + url(key, lang)
 
@@ -128,8 +151,8 @@ def org_schema():
         "address": {"@type": "PostalAddress", "streetAddress": "2108 N ST STE N",
                     "addressLocality": "Sacramento", "addressRegion": "CA",
                     "postalCode": "95816", "addressCountry": "US"},
-        "telephone": "+1-341-341-4479",
-        "contactPoint": {"@type": "ContactPoint", "email": EMAIL, "telephone": "+1-341-341-4479", "contactType": "sales",
+        "telephone": "+1-279-268-2488",
+        "contactPoint": {"@type": "ContactPoint", "email": EMAIL, "telephone": "+1-279-268-2488", "contactType": "sales",
                          "availableLanguage": ["English", "Turkish"]},
         **({"sameAs": SAME_AS} if SAME_AS else {}),
     }
@@ -153,8 +176,8 @@ def software_schema(lang, detailed=False):
          "applicationSubCategory": "Hotel management software (PMS)",
          "operatingSystem": "Web, iOS", "description": desc, "url": abs_url("home", lang),
          "publisher": {"@id": SITE + "/#org"},
-         "featureList": {"tr": ["AI misafir asistanı Lio (WhatsApp ve OTA gelen kutuları, 30+ dil)", "Kanal yöneticisi (100+ OTA, Channex)", "Sürükle-bırak rezervasyon takvimi", "Online check-in ve dijital imza", "Otomatik PDF vize formları", "Transfer ve tur satışı", "Çevrimdışı çalışan mobil uygulama"],
-                         "en": ["Lio AI guest assistant (WhatsApp and OTA inboxes, 30+ languages)", "Channel manager (100+ OTAs via Channex)", "Drag-and-drop reservation calendar", "Online check-in with digital signature", "Automatic PDF visa forms", "Transfer and tour sales", "Offline-capable mobile app"], **{l: m.SOFT_FEATURES for l, m in LANGMOD.items()}}[lang],
+         "featureList": {"tr": ["AI misafir asistanı Lio (WhatsApp ve OTA gelen kutuları, 30+ dil)", "Kanal yöneticisi (100+ OTA'ya sertifikalı bağlantı)", "Sürükle-bırak rezervasyon takvimi", "Online check-in ve dijital imza", "Otomatik PDF vize formları", "Transfer ve tur satışı", "Çevrimdışı çalışan mobil uygulama"],
+                         "en": ["Lio AI guest assistant (WhatsApp and OTA inboxes, 30+ languages)", "Channel manager (certified connections to 100+ OTAs)", "Drag-and-drop reservation calendar", "Online check-in with digital signature", "Automatic PDF visa forms", "Transfer and tour sales", "Offline-capable mobile app"], **{l: m.SOFT_FEATURES for l, m in LANGMOD.items()}}[lang],
          "offers": {"@type": "AggregateOffer", "priceCurrency": "USD", "lowPrice": "49", "highPrice": "149", "offerCount": "3"},
          **({"downloadUrl": APP_STORE_URL, "installUrl": APP_STORE_URL} if APP_STORE_URL else {})}
     if detailed:
@@ -214,7 +237,7 @@ def final_cta(lang):
 <img src="/assets/img/gen-night-desk.webp" alt="" loading="lazy" width="1080" height="1350">
 <video class="final-video" muted loop playsinline preload="none" aria-hidden="true" tabindex="-1" data-webm="/assets/video/night-desk.webm" data-mp4="/assets/video/night-desk.mp4"></video>
 <div><h2>{u["final_h"]}</h2><p>{u["final_p"]}</p></div>
-<div class="cta-row">{btn(u["trial"], SIGNUP_URL)}{btn(u["demo"], url("contact",lang), "ghost")}</div>
+<div class="cta-row">{btn(u["trial"], SIGNUP_URL)}{btn(u["demo"], demo_url(lang), "ghost")}</div>
 </div></div></section>'''
 
 def crumbs_html(trail, lang):
@@ -280,15 +303,24 @@ EXTRA = {
  "fr": dict(bill_m="Mensuel", bill_a="Annuel", save="Économisez 20 %", billed_a="facturé annuellement", form_ok="Merci, votre message nous est bien parvenu. Nous répondons généralement sous 24 heures les jours ouvrés.", form_err="L’envoi a échoué. Écrivez-nous par e-mail ou sur WhatsApp.", resp="Nous répondons généralement sous 24 heures les jours ouvrés.", sending="Envoi…"),
 }
 ANNUAL = {
- "tr": dict(annual_line="Yıllık: aylık {am}, yılda {at} tek ödeme", tbl_h="Aylık ve yıllık fiyatlar", tbl_cols=("Plan","Aylık","Yıllık (aylık karşılığı)","Yıllık toplam","Normal aylık fiyat"), tbl_note="Early Bird fiyatları, ABD doları. Yıllık ödemede aylık ödemeye göre %20 tasarruf edersiniz."),
- "en": dict(annual_line="Annual: {am}/mo, {at} billed yearly", tbl_h="Monthly and annual prices", tbl_cols=("Plan","Monthly","Annual (per month)","Annual total","Regular monthly price"), tbl_note="Early-bird prices in USD. Annual billing saves 20% compared with paying monthly."),
- "es": dict(annual_line="Anual: {am}/mes, {at} facturados al año", tbl_h="Precios mensuales y anuales", tbl_cols=("Plan","Mensual","Anual (por mes)","Total anual","Precio mensual habitual"), tbl_note="Precios de lanzamiento en USD. La facturación anual ahorra un 20 % frente al pago mensual."),
- "it": dict(annual_line="Annuale: {am}/mese, {at} fatturati all’anno", tbl_h="Prezzi mensili e annuali", tbl_cols=("Piano","Mensile","Annuale (al mese)","Totale annuo","Prezzo mensile standard"), tbl_note="Prezzi early bird in USD. Con la fatturazione annuale risparmi il 20% rispetto al pagamento mensile."),
- "pt": dict(annual_line="Anual: {am}/mês, {at} cobrados por ano", tbl_h="Preços mensais e anuais", tbl_cols=("Plano","Mensal","Anual (por mês)","Total anual","Preço mensal normal"), tbl_note="Preços early bird em USD. O plano anual economiza 20% em relação ao pagamento mensal."),
- "fr": dict(annual_line="Annuel : {am}/mois, {at} facturés par an", tbl_h="Tarifs mensuels et annuels", tbl_cols=("Forfait","Mensuel","Annuel (par mois)","Total annuel","Prix mensuel normal"), tbl_note="Tarifs early bird en USD. La facturation annuelle permet d’économiser 20 % par rapport au paiement mensuel."),
+ "tr": dict(billed_line_m="aylık faturalandırılır", billed_line_a="yılda {at} tek ödeme", annual_line="Yıllık: aylık {am}, yılda {at} tek ödeme", tbl_h="Aylık ve yıllık fiyatlar", tbl_cols=("Plan","Aylık","Yıllık (aylık karşılığı)","Yıllık toplam","Normal aylık fiyat"), tbl_note="Early Bird fiyatları, ABD doları. Yıllık ödemede aylık ödemeye göre %20 tasarruf edersiniz."),
+ "en": dict(billed_line_m="billed monthly", billed_line_a="{at} billed yearly", annual_line="Annual: {am}/mo, {at} billed yearly", tbl_h="Monthly and annual prices", tbl_cols=("Plan","Monthly","Annual (per month)","Annual total","Regular monthly price"), tbl_note="Early-bird prices in USD. Annual billing saves 20% compared with paying monthly."),
+ "es": dict(billed_line_m="facturado mensualmente", billed_line_a="{at} facturados al año", annual_line="Anual: {am}/mes, {at} facturados al año", tbl_h="Precios mensuales y anuales", tbl_cols=("Plan","Mensual","Anual (por mes)","Total anual","Precio mensual habitual"), tbl_note="Precios de lanzamiento en USD. La facturación anual ahorra un 20 % frente al pago mensual."),
+ "it": dict(billed_line_m="fatturato mensilmente", billed_line_a="{at} fatturati all’anno", annual_line="Annuale: {am}/mese, {at} fatturati all’anno", tbl_h="Prezzi mensili e annuali", tbl_cols=("Piano","Mensile","Annuale (al mese)","Totale annuo","Prezzo mensile standard"), tbl_note="Prezzi early bird in USD. Con la fatturazione annuale risparmi il 20% rispetto al pagamento mensile."),
+ "pt": dict(billed_line_m="cobrado mensalmente", billed_line_a="{at} cobrados por ano", annual_line="Anual: {am}/mês, {at} cobrados por ano", tbl_h="Preços mensais e anuais", tbl_cols=("Plano","Mensal","Anual (por mês)","Total anual","Preço mensal normal"), tbl_note="Preços early bird em USD. O plano anual economiza 20% em relação ao pagamento mensal."),
+ "fr": dict(billed_line_m="facturé mensuellement", billed_line_a="{at} facturés par an", annual_line="Annuel : {am}/mois, {at} facturés par an", tbl_h="Tarifs mensuels et annuels", tbl_cols=("Forfait","Mensuel","Annuel (par mois)","Total annuel","Prix mensuel normal"), tbl_note="Tarifs early bird en USD. La facturation annuelle permet d’économiser 20 % par rapport au paiement mensuel."),
 }
 for _l in EXTRA: UI[_l].update(EXTRA[_l]); UI[_l].update(ANNUAL[_l])
 GEN_ALT = {
+ "gen-checkin-phone": {'tr': 'Misafirin telefonunda açık online check-in formu', 'en': 'A guest filling in the online check-in form on a phone', 'es': 'Un huésped completa el check-in online en el móvil', 'it': 'Un ospite compila il check-in online sullo smartphone', 'pt': 'Um hóspede preenchendo o check-in online no celular', 'fr': 'Un client remplit le check-in en ligne sur son téléphone'},
+ "gen-owner-laptop": {'tr': 'Dizüstü bilgisayarında otel yazılımlarını karşılaştıran otel sahibi', 'en': 'A hotel owner comparing hotel software on a laptop', 'es': 'Una propietaria compara software hotelero en su portátil', 'it': 'Una titolare confronta gestionali per hotel sul portatile', 'pt': 'Uma dona de hotel comparando sistemas no notebook', 'fr': 'Une propriétaire compare des logiciels hôteliers sur son ordinateur'},
+ "gen-reception": {'tr': 'Küçük bir otelin resepsiyon masası ve oda anahtarları', 'en': 'The front desk of a small hotel with room keys', 'es': 'La recepción de un hotel pequeño con las llaves de las habitaciones', 'it': 'La reception di un piccolo hotel con le chiavi delle camere', 'pt': 'A recepção de um pequeno hotel com as chaves dos quartos', 'fr': 'La réception d’un petit hôtel avec les clés des chambres'},
+ "brand-phone": {'tr': "Lio'nun cevap ekranını gösteren telefonu tutan el", 'en': "Hand holding a phone showing Lio's reply screen", 'es': 'Mano sosteniendo un móvil con la pantalla de respuesta de Lio', 'it': 'Mano che tiene uno smartphone con la schermata di risposta di Lio', 'pt': 'Mão segurando um celular com a tela de resposta da Lio', 'fr': 'Main tenant un téléphone affichant l’écran de réponse de Lio'},
+ "brand-guest-bed": {'tr': 'Otel odasında yatağında telefonundan mesaj yazan misafir', 'en': 'A guest in a hotel bed writing a message on a phone', 'es': 'Un huésped en la cama del hotel escribe un mensaje en el móvil', 'it': 'Un ospite a letto in hotel scrive un messaggio sullo smartphone', 'pt': 'Um hóspede na cama do hotel escrevendo uma mensagem no celular', 'fr': 'Un client allongé dans sa chambre écrit un message sur son téléphone'},
+ "gen-terrace-phone": {'tr': 'Otel terasında telefonuna bakan misafir', 'en': 'A guest checking a phone on a hotel terrace', 'es': 'Un huésped mira el móvil en la terraza del hotel', 'it': 'Un ospite guarda lo smartphone sulla terrazza dell’hotel', 'pt': 'Um hóspede olhando o celular no terraço do hotel', 'fr': 'Un client consulte son téléphone sur la terrasse de l’hôtel'},
+ "gen-room-dusk": {'tr': 'Akşam ışığında boş bir otel odası', 'en': 'An empty hotel room at dusk', 'es': 'Una habitación de hotel vacía al atardecer', 'it': 'Una camera d’hotel vuota al tramonto', 'pt': 'Um quarto de hotel vazio ao entardecer', 'fr': 'Une chambre d’hôtel vide au crépuscule'},
+ "gen-facade": {'tr': 'Bağımsız bir otelin sokak cephesi', 'en': 'The street façade of an independent hotel', 'es': 'La fachada de un hotel independiente', 'it': 'La facciata di un hotel indipendente', 'pt': 'A fachada de um hotel independente', 'fr': 'La façade d’un hôtel indépendant'},
+ "gen-arrival": {'tr': 'Valiziyle otele gelen misafir', 'en': 'A guest arriving at a hotel with a suitcase', 'es': 'Un huésped llega al hotel con su maleta', 'it': 'Un ospite arriva in hotel con la valigia', 'pt': 'Um hóspede chegando ao hotel com a mala', 'fr': 'Un client arrive à l’hôtel avec sa valise'},
  "gen-support-call": {"tr":"Dizüstü bilgisayarında görüntülü kurulum görüşmesi yaparken not alan otel işletmecisi","en":"A hotel owner taking notes during a video onboarding call on her laptop","es":"Una propietaria de hotel toma notas durante una videollamada de puesta en marcha en su portátil","it":"Una titolare di hotel prende appunti durante una videochiamata di onboarding sul portatile","pt":"Uma dona de hotel fazendo anotações durante uma videochamada de implantação no notebook","fr":"Une propriétaire d’hôtel prend des notes pendant un appel vidéo de prise en main sur son ordinateur"},
  "gen-team-desk": {"tr":"Küçük bir otelin resepsiyonunda tablete birlikte bakan resepsiyonist ve kat görevlisi","en":"A receptionist and a housekeeper checking a tablet together at a small hotel's front desk","es":"Una recepcionista y una camarera de pisos revisan juntas una tableta en la recepción de un hotel pequeño","it":"Una receptionist e una governante controllano insieme un tablet alla reception di un piccolo hotel","pt":"Uma recepcionista e uma camareira olhando juntas um tablet na recepção de um pequeno hotel","fr":"Une réceptionniste et une femme de chambre consultent ensemble une tablette à la réception d’un petit hôtel"},
  "gen-shutters": {"tr":"Gün doğarken oda panjurlarını denize bakan eski şehre açan otel işletmecisi","en":"A hotel owner opening a room's shutters at sunrise over an old town by the sea","es":"Una propietaria de hotel abre las contraventanas de una habitación al amanecer sobre un casco antiguo junto al mar","it":"Una titolare di hotel apre gli scuri di una camera all’alba sul centro storico affacciato sul mare","pt":"Uma dona de hotel abrindo as venezianas de um quarto ao nascer do sol sobre uma cidade antiga à beira-mar","fr":"Une propriétaire d’hôtel ouvre les volets d’une chambre au lever du soleil sur une vieille ville en bord de mer"},
@@ -323,6 +355,22 @@ def lang_menu(key, lang):
     return (f'<div class="lang-wrap"><button type="button" class="lang" aria-expanded="false" aria-controls="lang-menu" aria-label="{UI[lang]["lang_label"]}: {LANG_NAME[lang]}">'
             f'{icon("globe-simple")}{lang.upper()}{icon("caret-down","caret")}</button><ul class="lang-menu" id="lang-menu" hidden>{items}</ul></div>')
 
+SEC_LABEL = {"tr": "Güvenlik ve veri", "en": "Security", "es": "Seguridad", "it": "Sicurezza", "pt": "Segurança", "fr": "Sécurité"}
+ABOUT_H = {"tr": ("Kurucudan", "Ekip"), "en": ("A note from the founder", "The team"), "es": ("Una nota del fundador", "El equipo"),
+           "it": ("Una nota dal fondatore", "Il team"), "pt": ("Uma nota do fundador", "A equipe"), "fr": ("Le mot du fondateur", "L’équipe")}
+def about_people(lang):
+    h_note, h_team = ABOUT_H[lang]; out = ""
+    if FOUNDER_NOTE:
+        f = FOUNDER_NOTE; ph = f'<img src="{f["photo"]}" alt="{html.escape(f["name"])}" width="160" height="160" loading="lazy" style="border-radius:50%;width:96px;height:96px;object-fit:cover">' if f.get("photo") else ""
+        out += (f'<section class="rule"><div class="wrap prose"><h2>{h_note}</h2>{ph}<blockquote><p>{f["text"].get(lang) or f["text"]["en"]}</p></blockquote>'
+                f'<p><strong>{html.escape(f["name"])}</strong>, {html.escape(f["role"])}</p></div></section>')
+    if TEAM:
+        def _m(m):
+            im = '<img src="%s" alt="%s" width="160" height="160" loading="lazy">' % (m["photo"], html.escape(m["name"])) if m.get("photo") else ""
+            return "<li>%s<b>%s</b><span>%s</span></li>" % (im, html.escape(m["name"]), html.escape(m["role"].get(lang) or m["role"]["en"]))
+        cards = "".join(_m(m) for m in TEAM)
+        out += f'<section class="rule"><div class="wrap"><h2>{h_team}</h2><ul class="team">{cards}</ul></div></section>'
+    return out
 CUR = ' aria-current="page"'
 def layout(page, lang):
     u = UI[lang]
@@ -362,11 +410,15 @@ def layout(page, lang):
                   f'<button type="button" aria-pressed="false" data-bill="a">{u["bill_a"]} <span class="save">{u["save"]}</span></button></div>')
         body = body.replace('<div class="plans">', toggle + f'<div class="plans" data-plans-endpoint="{PLANS_ENDPOINT}" data-anon="{PLANS_ANON}" data-billed="{html.escape(u["billed_a"])}">')
         for p_ in PLANS:
-            line = u["annual_line"].format(am=f'<b data-am>{money(round(p_["annual"]/12))}</b>', at=f'<span data-at>{money(p_["annual"])}</span>')
-            body = re.sub(r'(<h3 id="plan-' + p_["id"] + r'">.*?<div class="price num">.*?</div>)', lambda m: m.group(1) + f'<p class="annual-line num">{line}</p>', body, count=1, flags=re.S)
+            # K2: monthly shows only "billed monthly"; annual shows only "$470 billed yearly" (JS swaps them)
+            ya = u["billed_line_a"].format(at=f'<span data-at>{money(p_["annual"])}</span>')
+            line = f'<span data-bm>{u["billed_line_m"]}</span><span data-ba hidden>{ya}</span>'
+            body = re.sub(r'(<h3 id="plan-' + p_["id"] + r'">.*?<div class="price num">.*?</div>)', lambda m: m.group(1) + f'<p class="billed-line num">{line}</p>', body, count=1, flags=re.S)
         if key == "pricing":
             i = body.find('<div class="plans"'); j = body.find('</article></div>', i)
             if j > 0: body = body[:j + 16] + annual_table(lang) + body[j + 16:]
+    if key == "about" and (FOUNDER_NOTE or TEAM):
+        body += about_people(lang)
     if page.get("faq") and not page.get("faq_inline"):
         body += faq_block(page["faq"], lang)
     upd = u["updated"]
@@ -445,12 +497,14 @@ def layout(page, lang):
 <div><h2>{u["foot_res"]}</h2><ul>
 <li><a href="{url("blog",lang)}">Blog</a></li>
 <li><a href="{url("faq",lang)}">{u["foot_faq"]}</a></li>
+<li><a href="{url("roi",lang)}">{ROI_LABEL[lang]}</a></li>
 <li><a href="/llms.txt">llms.txt</a></li></ul></div>
 <div><h2>{u["foot_company"]}</h2><ul>
 <li><a href="{url("about",lang)}">{u["foot_about"]}</a></li>
-<li><a href="{url("contact",lang)}">{u["foot_contact"]}</a></li></ul></div>
+<li><a href="{url("contact",lang)}">{u["foot_contact"]}</a></li>
+<li><a href="{url("security",lang)}">{SEC_LABEL[lang]}</a></li></ul></div>
 </div>
-<div class="foot-bottom"><span>© {year} Hostlio Pro, Loti Members LLC. {u["rights"]}</span><span class="legal"><a href="{url("privacy",lang)}">{u["privacy"]}</a><a href="{url("terms",lang)}">{u["terms"]}</a><a href="{url("delacc",lang)}">{u["delacc"]}</a></span><span>2108 N ST STE N, Sacramento, CA 95816</span></div>
+<div class="foot-bottom"><span>© {year} Hostlio Pro, Loti Members LLC. {u["rights"]}</span><span class="legal"><a href="{url("privacy",lang)}">{u["privacy"]}</a><a href="{url("terms",lang)}">{u["terms"]}</a><a href="{url("delacc",lang)}">{u["delacc"]}</a><a href="{url("dpa","en")}" hreflang="en">DPA</a></span><span>2108 N ST STE N, Sacramento, CA 95816</span></div>
 </div></footer>
 <script src="{asset('/assets/site.js')}" defer></script>
 <script src="{asset('/attribution.js')}" defer></script>
@@ -492,13 +546,40 @@ def write(path, content):
     p.parent.mkdir(parents=True, exist_ok=True)
     p.write_text(content, encoding="utf-8")
 
+def lang_redirects():
+    """K4/O2: kök dil yönlendirmesi + eski Türkçe ve kök İngilizce adreslerden 301."""
+    r = []
+    def both(src, dst, perm=True):
+        base = src.rstrip("/")
+        for s_ in ([base, base + "/"] if base else ["/"]):
+            r.append({"source": s_, "destination": dst, "permanent": perm})
+    # "/" — tarayıcı diline göre (geçici yönlendirme, dile göre değiştiği için). Varsayılan İngilizce.
+    for l in ["tr", "es", "it", "pt", "fr"]:
+        r.append({"source": "/", "has": [{"type": "header", "key": "accept-language", "value": f"^{l}([-_,;].*)?$"}],
+                  "destination": url("home", l), "permanent": False})
+    r.append({"source": "/", "destination": url("home", "en"), "permanent": False})
+    for k, old in OLD_TR.items():
+        if old != "/": both(old, url(k, "tr"))
+    for k, old in OLD_EN_ROOT.items():
+        both(old, url(k, "en"))
+    # O1: /es/pricing/ gibi İngilizce adres tahminleri yerelleştirilmiş sayfaya gitsin
+    for l in ["tr", "es", "it", "pt", "fr"]:
+        for k, slug in [("pricing", "pricing"), ("faq", "faq"), ("features", "features"), ("contact", "contact"), ("about", "about"), ("security", "security")]:
+            if url(k, l) != f"/{l}/{slug}/": both(f"/{l}/{slug}", url(k, l))
+    # kayıt sayfası tek adreste (/signup) ve çok dilli; dil klasörlü adresler oraya dili taşır
+    for l in LANGS:
+        both(f"/{l}/signup", f"/signup?lang={l}")
+    return r
+
 def main():
     import importlib
     if DIST.exists(): shutil.rmtree(DIST)
     shutil.copytree(ROOT / "src", DIST)
     # root vercel.json (used when the repo itself is deployed on Vercel): same headers/redirects + build settings
     vc = json.loads((ROOT / "src/vercel.json").read_text())
-    vc = {"buildCommand": "python3 build.py || (echo \"python yok, depodaki dist kullanılıyor\" && test -f dist/index.html)", "outputDirectory": "dist", **vc}
+    vc["redirects"] = vc.get("redirects", []) + lang_redirects()
+    (DIST / "vercel.json").write_text(json.dumps(vc, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
+    vc = {"buildCommand": "python3 build.py || (echo \"python yok, depodaki dist kullanılıyor\" && test -f dist/en/index.html)", "outputDirectory": "dist", **vc}
     (ROOT / "vercel.json").write_text(json.dumps(vc, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
     pages = {l: importlib.import_module("content_" + l).pages() for l in LANGS}
     make_variants()
@@ -537,7 +618,7 @@ def main():
     def line(k, lang, src): return f'- [{src[k]["title"].split(" | ")[0]}]({abs_url(k,lang)}): {src[k]["desc"]}'
     llms = f"""# Hostlio Pro
 
-> Hostlio Pro (also called "Hostlio") is AI-powered hotel management software (PMS) for independent hotels, boutique hotels, guesthouses, aparthotels and hostels with roughly 10–150 rooms. It combines Lio, an AI guest-messaging assistant that replies 24/7 in 30+ languages on WhatsApp and OTA inboxes (Booking.com, Airbnb, Expedia), a channel manager connected to 100+ OTAs via Channex, a drag-and-drop room rack calendar, online check-in with digital signature, automatic PDF visa forms, transfer and tour sales, and an offline-capable iOS app. Operated by Loti Members LLC (Sacramento, CA, USA). Used by independent hotels in 20+ countries.
+> Hostlio Pro (also called "Hostlio") is AI-powered hotel management software (PMS) for independent hotels, boutique hotels, guesthouses, aparthotels and hostels with roughly 1–150 rooms. It combines Lio, an AI guest-messaging assistant that replies 24/7 in 30+ languages on WhatsApp and OTA inboxes (Booking.com, Airbnb, Expedia), a channel manager with certified connections to 100+ OTAs, a drag-and-drop room rack calendar, online check-in with digital signature, automatic PDF visa forms, transfer and tour sales, and an offline-capable iOS app. Operated by Loti Members LLC (Sacramento, CA, USA). Used by independent hotels in 20+ countries.
 
 ## Key facts
 - Pricing (USD/month, early-bird for first 50 customers, locked in while subscribed): Starter $49 (regular $59), Pro $89 (regular $109), Growth $149 (regular $189).
@@ -546,7 +627,7 @@ def main():
 - Growth: up to 2 properties, 150 rooms, 12,000 AI messages/month, priority sync, priority support, onboarding call, white-label.
 - Free trial: 7 days; a payment card is collected at signup, no charge until the trial ends, cancel anytime.
 - Annual billing: 20% off — Starter $39/mo ($470/year), Pro $71/mo ($854/year), Growth $119/mo ($1,430/year), early-bird.
-- Setup: most hotels are running in about 30 minutes (connect channels, import rooms, configure the AI assistant).
+- Setup: the account is ready in minutes; channels are usually connected the same day (add rooms, authorise the connection in each OTA extranet, map rooms).
 - Starter syncs OTA reservations but does not reply to OTA guest messages; OTA inbox messaging starts from Pro.
 - Channels include Booking.com, Airbnb, Expedia, Agoda, Trip.com, Hotels.com, Hotelbeds, Hostelworld, Google Hotels.
 - Languages: website in English, Turkish, Spanish, Italian, Portuguese and French; support in English and Turkish; guest replies in 30+ languages.
@@ -559,9 +640,9 @@ def main():
     import signup_page, sys as _sys
     (DIST / "signup.html").write_text(signup_page.render(_sys.modules[__name__]), encoding="utf-8")
     # 404
-    nf = {"key":"home","title":"Sayfa bulunamadı | Hostlio Pro","desc":"Aradığınız sayfa taşınmış ya da kaldırılmış olabilir.","no_final":True,
-          "body":f'<section class="page-hero"><div class="wrap"><h1>Bu sayfa bulunamadı</h1><p class="lead">Adres değişmiş olabilir. <a href="/">Ana sayfaya dönün</a>.</p><p>'+" · ".join(f'<a href="{url("home",l)}" lang="{l}">{LANG_NAME[l]}</a>' for l in LANGS)+'</p></div></section>'}
-    (DIST / "404.html").write_text(re.sub(r'<link rel="(alternate|canonical)"[^>]*>\n?', '', layout(nf, "tr")).replace('<meta name="robots" content="index,follow,max-image-preview:large">','<meta name="robots" content="noindex">'), encoding="utf-8")
+    nf = {"key":"home","title":"Page not found | Hostlio Pro","desc":"The page you are looking for may have moved or been removed.","no_final":True,
+          "body":f'<section class="page-hero"><div class="wrap"><h1>Page not found</h1><p class="lead">The address may have changed. <a href="{url("home","en")}">Go to the home page</a>.</p><p>'+" · ".join(f'<a href="{url("home",l)}" lang="{l}">{LANG_NAME[l]}</a>' for l in LANGS)+'</p></div></section>'}
+    (DIST / "404.html").write_text(re.sub(r'<link rel="(alternate|canonical)"[^>]*>\n?', '', layout(nf, "en")).replace('<meta name="robots" content="index,follow,max-image-preview:large">','<meta name="robots" content="noindex">'), encoding="utf-8")
     print("built", sum(len(v) for v in pages.values()), "pages")
 
 if __name__ == "__main__":

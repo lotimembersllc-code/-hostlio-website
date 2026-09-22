@@ -84,7 +84,7 @@ def channel():
     body = f'''
 <section class="page-hero"><div class="wrap split">
 <div><h1>100+ OTA için kanal yöneticisi</h1>
-<p class="lead">Booking.com, Airbnb, Expedia, Agoda ve 100'den fazla kanaldaki müsaitlik, fiyat ve rezervasyonlarınızı tek takvimden yönetin. Hostlio Pro, Channex altyapısıyla çift yönlü, anlık senkronizasyon yapar.</p>
+<p class="lead">Booking.com, Airbnb, Expedia, Agoda ve 100'den fazla kanaldaki müsaitlik, fiyat ve rezervasyonlarınızı tek takvimden yönetin. Hostlio Pro sertifikalı bağlantılarla çift yönlü, anlık senkronizasyon yapar.</p>
 <div class="cta-row">{btn("7 gün ücretsiz dene", SIGNUP_URL)}</div></div>
 <div class="panel"><p class="panel-title">Bağlı kanallar</p><div class="chan-list">
 <div><span>Booking.com</span><span class="pill">Senkron</span></div>
@@ -102,7 +102,7 @@ def channel():
 <div class="row"><h3>Kanal renkleriyle oda rafı</h3><div><p>Hangi rezervasyonun hangi kanaldan geldiğini renkten anlarsınız. Oda değişikliği sürükle-bırak ile yapılır.</p></div></div>
 <div class="row"><h3>Mesajlarla entegre</h3><div><p>OTA'dan gelen rezervasyonun misafir mesajları da Lio'nun gelen kutusuna bağlanır; kim, hangi oda, hangi tarih bilgisi her yazışmanın yanındadır.</p></div></div>
 </div></div></section>
-<section><div class="wrap"><div class="section-head"><h2>Desteklenen başlıca kanallar</h2><p>Liste Channex'in bağlantı ağına göre güncellenir; burada olmayan bir kanal için bize yazın.</p></div>
+<section><div class="wrap"><div class="section-head"><h2>Desteklenen başlıca kanallar</h2><p>Liste sertifikalı bağlantı ağımıza göre güncellenir; burada olmayan bir kanal için bize yazın.</p></div>
 <div class="table-wrap"><table><thead><tr><th>Kanal</th><th>Tür</th></tr></thead><tbody>
 <tr><th>Booking.com</th><td>OTA</td></tr><tr><th>Airbnb</th><td>Kısa dönem kiralama</td></tr><tr><th>Expedia, Hotels.com</th><td>OTA</td></tr>
 <tr><th>Agoda, Trip.com</th><td>OTA (Asya ağırlıklı)</td></tr><tr><th>Hotelbeds</th><td>Toptancı (bedbank)</td></tr><tr><th>Hostelworld</th><td>Hostel pazaryeri</td></tr><tr><th>Google Hotels</th><td>Metasearch</td></tr>
@@ -157,11 +157,11 @@ def features():
 <p class="lead">Bağımsız bir otelin günlük işleri için gereken modüller: misafir iletişimi, dağıtım, rezervasyon, check-in ve ek gelir.</p></div><div class="hero-img"><img src="/assets/img/gen-team-desk.webp" alt="" width="1080" height="1350"></div></div></section>
 <section class="white rule"><div class="wrap"><h2 class="sr-only">Modüller</h2><div class="rows">
 <div class="row"><h3>AI asistan Lio</h3><div><p>30+ dilde, 7/24 misafir yanıtı. WhatsApp ve OTA gelen kutusu mesajları (Booking.com, Airbnb, Expedia) tek gelen kutusunda.</p><a href="{U("ai")}">Lio hakkında daha fazlası</a></div></div>
-<div class="row"><h3>Kanal yöneticisi</h3><div><p>Channex altyapısıyla 100+ OTA'da müsaitlik, fiyat ve rezervasyon senkronizasyonu.</p><a href="{U("channel")}">Kanal yöneticisi</a></div></div>
+<div class="row"><h3>Kanal yöneticisi</h3><div><p>100+ OTA'da sertifikalı bağlantılarla müsaitlik, fiyat ve rezervasyon senkronizasyonu.</p><a href="{U("channel")}">Kanal yöneticisi</a></div></div>
 <div class="row"><h3>Oda rafı (room rack)</h3><div><p>Sürükle-bırak rezervasyon takvimi. Oda değişikliği, konaklama uzatma ve blokaj tek hareketle.</p></div></div>
 <div class="row"><h3>Online check-in</h3><div><p>Güvenli bağlantı, refakatçi misafirler, kimlik fotoğrafı ve dijital imza.</p><a href="{U("checkin")}">Online check-in</a></div></div>
 <div class="row"><h3>Otomatik PDF vize formları</h3><div><p>Vize başvurusu için otel davet ve konaklama belgelerini rezervasyon bilgilerinden tek tıkla PDF olarak üretin.</p></div></div>
-<div class="row"><h3>Transfer ve tur satışı</h3><div><p>Havalimanı transferi ve turları misafire mesajlaşma sırasında sunun; Lio talebi rezervasyona bağlar.</p></div></div>
+<div class="row"><h3>Transfer ve tur satışı</h3><div><p>Lio mesajlaşma sırasında havalimanı transferi ve tur önerir, talebi ekibinize iletir.</p></div></div>
 <div class="row"><h3>Mobil uygulama</h3><div><p>iOS uygulamasıyla rezervasyonları, mesajları ve check-in'leri otelin dışından yönetin. İnternet kesildiğinde de çalışır, bağlantı gelince senkronize olur.</p></div></div>
 </div></div></section>
 <section><div class="wrap"><div class="section-head"><h2>Planlara göre özellikler</h2></div>
@@ -212,12 +212,12 @@ def pricing():
             "trail":[("Fiyatlandırma", U("pricing"))],"body":body,"faq":faq,"schema":[software_schema(L, detailed=True)]}
 
 FAQ_ALL = FAQ_CORE + [
- ("Hostlio Pro hangi otel tiplerine uygun?", "Butik oteller, şehir otelleri, pansiyonlar, apart oteller ve hosteller gibi 10 ila 150 odalı bağımsız tesisler için tasarlandı."),
+ ("Hostlio Pro hangi otel tiplerine uygun?", "Butik oteller, şehir otelleri, pansiyonlar, apart oteller ve hosteller gibi 1 ila 150 odalı bağımsız tesisler için tasarlandı."),
  ("Mobil uygulama var mı?", "Evet. Pro ve Growth planlarında iOS uygulaması bulunur. Uygulama internet bağlantısı olmadan da çalışır ve bağlantı geldiğinde verileri senkronize eder."),
  ("Online check-in nasıl çalışıyor?", "Misafire kişiye özel güvenli bir bağlantı gönderilir. Misafir kimlik bilgilerini, refakatçilerini ve dijital imzasını varıştan önce telefonundan gönderir. Pro ve Growth planlarında vardır."),
  ("PDF vize formu özelliği ne işe yarar?", "Vizeye ihtiyaç duyan misafirler için otel konaklama ve davet belgelerini rezervasyon bilgilerinden otomatik olarak PDF'e dönüştürür."),
  ("Verilerim güvende mi?", "Veriler şifreli bağlantı üzerinden iletilir ve her otelin verisi satır düzeyinde erişim kurallarıyla diğer tesislerden ayrılır. Misafir verileri talep üzerine silinebilir."),
- ("Kurulum ne kadar sürer?", "Çoğu otel oda tiplerini girip kanallarını bağlayarak aynı gün kullanmaya başlar. Growth planında birebir kurulum görüşmesi dahildir."),
+ ("Kurulum ne kadar sürer?", "Hesabınız dakikalar içinde hazır olur. Çoğu otel kanallarını aynı gün bağlar: oda tiplerini ve odaları girin, her OTA'nın extranet'inde bağlantıyı yetkilendirin ve odaları eşleyin. Growth planında birebir kurulum görüşmesi dahildir."),
  ("Türkçe destek veriyor musunuz?", "Evet. Panel ve destek Türkçe ve İngilizce sunulur. Bize " + EMAIL + " adresinden ulaşabilirsiniz."),
 ]
 
@@ -234,7 +234,7 @@ def about():
 <p class="lead">Küçük otellerde resepsiyon, satış ve misafir iletişimi çoğu zaman aynı kişinin omzundadır. Hostlio Pro, bu kişinin gece mesajlara, gündüz kanal ekranlarına gömülmemesi için var.</p></div><div class="hero-img"><img src="/assets/img/gen-shutters.webp" alt="" width="1080" height="1350"></div></div></section>
 <section class="white rule"><div class="wrap split">
 <div class="prose"><h2>Ne yapıyoruz</h2>
-<p>Hostlio Pro, bağımsız oteller için yapay zekâ destekli bir otel yönetim yazılımıdır. Misafir iletişimini AI asistanımız Lio'ya devrediyor, OTA dağıtımını Channex altyapısıyla tek takvimde topluyor ve check-in'i misafirin telefonuna taşıyoruz.</p>
+<p>Hostlio Pro, bağımsız oteller için yapay zekâ destekli bir otel yönetim yazılımıdır. Misafir iletişimini AI asistanımız Lio'ya devrediyor, OTA dağıtımını tek takvimde topluyor ve check-in'i misafirin telefonuna taşıyoruz.</p>
 <h2>Nasıl çalışıyoruz</h2>
 <ul><li>Fiyatlarımızı açıkça yayınlıyoruz, komisyon almıyoruz.</li><li>Yazılımı otelcilerin gerçek günlük işlerinden yola çıkarak geliştiriyoruz.</li><li>Uzun sözleşme istemiyoruz; müşterimiz, memnun kaldığı için kalır.</li></ul></div>
 <div class="panel"><p class="panel-title">Şirket bilgileri</p><dl class="list-kv">
@@ -284,7 +284,7 @@ COVERS={"post-ai":("gen-checkin-phone",1080,1350),"post-pms":("gen-owner-laptop"
 def article(meta, content, faq=None):
     art = {"@type":"BlogPosting","headline":meta["title"],"description":meta["desc"],"datePublished":meta["date"],"inLanguage":"tr-TR","author":{"@type":"Organization","name":"Hostlio Pro ürün ekibi","url":SITE+"/hakkimizda/"},"dateModified":UPDATED,"publisher":{"@id":SITE+"/#org"},
            "mainEntityOfPage":SITE+U(meta["key"]),"image":SITE+"/assets/img/"+COVERS[meta["key"]][0]+".webp"}
-    body = f'<article><section class="page-hero"><div class="wrap"><h1 style="max-width:22ch">{meta["title"]}</h1><p class="meta">Yazan: <a href="/hakkimizda/">Hostlio Pro ürün ekibi</a>, otel yazılımı geliştiren ekip. Yayın: <time datetime="{meta["date"]}">{meta["date"]}</time>, güncelleme: <time datetime="{UPDATED}">{UPDATED}</time></p></div></section><section style="padding-top:0"><div class="wrap"><figure class="post-cover"><img src="/assets/img/{COVERS[meta["key"]][0]}.webp" alt="" width="{COVERS[meta["key"]][1]}" height="{COVERS[meta["key"]][2]}"></figure><div class="prose">{content}</div></div></section></article>'
+    body = f'<article><section class="page-hero"><div class="wrap"><h1 style="max-width:22ch">{meta["title"]}</h1><p class="meta">Yazan: <a href="/tr/hakkimizda/">Hostlio Pro ürün ekibi</a>, otel yazılımı geliştiren ekip. Yayın: <time datetime="{meta["date"]}">{meta["date"]}</time>, güncelleme: <time datetime="{UPDATED}">{UPDATED}</time></p></div></section><section style="padding-top:0"><div class="wrap"><figure class="post-cover"><img src="/assets/img/{COVERS[meta["key"]][0]}.webp" alt="" width="{COVERS[meta["key"]][1]}" height="{COVERS[meta["key"]][2]}"></figure><div class="prose">{content}</div></div></section></article>'
     return {"key":meta["key"],"title":meta["title"],"desc":meta["desc"],"og_type":"article",
             "trail":[("Blog",U("blog")),(meta["title"],U(meta["key"]))],"body":body,"schema":[art],"faq":faq or []}
 

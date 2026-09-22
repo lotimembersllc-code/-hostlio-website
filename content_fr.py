@@ -87,7 +87,7 @@ def channel():
     body = f'''
 <section class="page-hero"><div class="wrap split">
 <div><h1>Un channel manager pour plus de 100 OTA</h1>
-<p class="lead">Gérez disponibilités, tarifs et réservations sur Booking.com, Airbnb, Expedia, Agoda et plus de 100 autres canaux depuis un seul calendrier. Hostlio Pro synchronise tout en temps réel, dans les deux sens, via Channex.</p>
+<p class="lead">Gérez disponibilités, tarifs et réservations sur Booking.com, Airbnb, Expedia, Agoda et plus de 100 autres canaux depuis un seul calendrier. Hostlio Pro synchronise tout en temps réel et dans les deux sens.</p>
 <div class="cta-row">{btn("Commencer l'essai gratuit de 7 jours", SIGNUP_URL)}</div></div>
 <div class="panel"><p class="panel-title">Canaux connectés</p><div class="chan-list">
 <div><span>Booking.com</span><span class="pill">Synchronisé</span></div>
@@ -105,7 +105,7 @@ def channel():
 <div class="row"><h3>Planning des chambres en couleurs</h3><div><p>Voyez d'un coup d'œil de quel canal provient chaque réservation. Réattribuez les chambres par glisser-déposer.</p></div></div>
 <div class="row"><h3>Relié à la messagerie</h3><div><p>Les messages des clients ayant réservé via une OTA arrivent dans la boîte de réception de Lio, avec le client, la chambre et les dates à côté de chaque conversation.</p></div></div>
 </div></div></section>
-<section><div class="wrap"><div class="section-head"><h2>Principaux canaux pris en charge</h2><p>La liste suit le réseau de connexions de Channex. Un canal manque ? Contactez-nous.</p></div>
+<section><div class="wrap"><div class="section-head"><h2>Principaux canaux pris en charge</h2><p>La liste suit notre réseau de connexions certifiées. Un canal manque ? Contactez-nous.</p></div>
 <div class="table-wrap"><table><thead><tr><th>Canal</th><th>Type</th></tr></thead><tbody>
 <tr><th>Booking.com</th><td>OTA</td></tr><tr><th>Airbnb</th><td>Location courte durée</td></tr><tr><th>Expedia, Hotels.com</th><td>OTA</td></tr>
 <tr><th>Agoda, Trip.com</th><td>OTA (orientée Asie)</td></tr><tr><th>Hotelbeds</th><td>Grossiste (bedbank)</td></tr><tr><th>Hostelworld</th><td>Plateforme d'auberges de jeunesse</td></tr><tr><th>Google Hotels</th><td>Métamoteur</td></tr>
@@ -160,11 +160,11 @@ def features():
 <p class="lead">Les modules dont un hôtel indépendant a besoin au quotidien : communication client, distribution, réservations, check-in et revenus complémentaires.</p></div><div class="hero-img"><img src="/assets/img/gen-team-desk.webp" alt="" width="1080" height="1350"></div></div></section>
 <section class="white rule"><div class="wrap"><h2 class="sr-only">Modules</h2><div class="rows">
 <div class="row"><h3>Assistant IA Lio</h3><div><p>Réponses aux clients 24 h/24, 7 j/7, dans plus de 30 langues. Messages WhatsApp et OTA (Booking.com, Airbnb, Expedia) dans une seule boîte de réception.</p><a href="{U("ai")}">En savoir plus sur Lio</a></div></div>
-<div class="row"><h3>Channel manager</h3><div><p>Synchronisation des disponibilités, tarifs et réservations avec plus de 100 OTA via Channex.</p><a href="{U("channel")}">Channel manager</a></div></div>
+<div class="row"><h3>Channel manager</h3><div><p>Synchronisation des disponibilités, tarifs et réservations avec plus de 100 OTA par connexions certifiées.</p><a href="{U("channel")}">Channel manager</a></div></div>
 <div class="row"><h3>Planning des chambres</h3><div><p>Calendrier de réservations en glisser-déposer. Changements de chambre, prolongations et blocages en un seul geste.</p></div></div>
 <div class="row"><h3>Check-in en ligne</h3><div><p>Lien sécurisé, accompagnants, photo de la pièce d'identité et signature électronique.</p><a href="{U("checkin")}">Check-in en ligne</a></div></div>
 <div class="row"><h3>Formulaires de visa PDF automatiques</h3><div><p>Générez en un clic, à partir des données de réservation, les lettres d'invitation et attestations d'hébergement nécessaires aux demandes de visa.</p></div></div>
-<div class="row"><h3>Vente de transferts et d'excursions</h3><div><p>Proposez transferts aéroport et excursions pendant la conversation ; Lio rattache la demande à la réservation.</p></div></div>
+<div class="row"><h3>Vente de transferts et d'excursions</h3><div><p>Lio propose transferts aéroport et excursions pendant la conversation et transmet la demande à votre équipe.</p></div></div>
 <div class="row"><h3>Application mobile</h3><div><p>Gérez réservations, messages et check-ins hors de l'hôtel avec l'application iOS. Elle fonctionne hors ligne et se synchronise dès que vous êtes de nouveau connecté.</p></div></div>
 </div></div></section>
 <section><div class="wrap"><div class="section-head"><h2>Fonctionnalités par forfait</h2></div>
@@ -215,12 +215,12 @@ def pricing():
             "trail":[("Tarifs", U("pricing"))],"body":body,"faq":faq,"schema":[software_schema(L, detailed=True)]}
 
 FAQ_ALL = FAQ_CORE + [
- ("À quels types d'hôtels s'adresse Hostlio Pro ?", "Aux établissements indépendants de 10 à 150 chambres : hôtels boutique, hôtels urbains, chambres d'hôtes, résidences hôtelières et auberges de jeunesse."),
+ ("À quels types d'hôtels s'adresse Hostlio Pro ?", "Aux établissements indépendants de 1 à 150 chambres : hôtels boutique, hôtels urbains, chambres d'hôtes, résidences hôtelières et auberges de jeunesse."),
  ("Existe-t-il une application mobile ?", "Oui. Les forfaits Pro et Growth incluent une application iOS. Elle fonctionne sans connexion Internet et synchronise les données dès que vous êtes de nouveau en ligne."),
  ("Comment fonctionne le check-in en ligne ?", "Les clients reçoivent un lien sécurisé personnel et envoient depuis leur téléphone, avant leur arrivée, leurs données d'identité, leurs accompagnants et leur signature électronique. Disponible avec Pro et Growth."),
  ("À quoi sert la fonction de formulaires de visa PDF ?", "Elle transforme automatiquement les données de réservation en attestations d'hébergement et lettres d'invitation au format PDF pour les clients qui ont besoin d'un visa."),
  ("Mes données sont-elles sécurisées ?", "Les données transitent par des connexions chiffrées, et les données de chaque hôtel sont isolées de celles des autres établissements grâce à des règles d'accès au niveau des lignes. Les données des clients peuvent être supprimées sur demande."),
- ("Combien de temps prend la mise en place ?", "La plupart des hôtels démarrent le jour même en ajoutant leurs types de chambres et en connectant leurs canaux. Le forfait Growth inclut un appel de prise en main personnalisé."),
+ ("Combien de temps prend la mise en place ?", "Votre compte est prêt en quelques minutes. La plupart des hôtels connectent leurs canaux le jour même : ajoutez types de chambres et chambres, autorisez la connexion dans l’extranet de chaque OTA et associez les chambres. Le forfait Growth inclut un appel de prise en main personnalisé."),
  ("Dans quelles langues le support est-il proposé ?", "Le tableau de bord et le support sont disponibles en anglais et en turc. Écrivez-nous à " + EMAIL + "."),
 ]
 
@@ -237,7 +237,7 @@ def about():
 <p class="lead">Dans les petits hôtels, la réception, la vente et la communication avec les clients reposent souvent sur les épaules d'une seule personne. Hostlio Pro existe pour que cette personne ne soit plus submergée par les messages la nuit et par les extranets des canaux le jour.</p></div><div class="hero-img"><img src="/assets/img/gen-shutters.webp" alt="" width="1080" height="1350"></div></div></section>
 <section class="white rule"><div class="wrap split">
 <div class="prose"><h2>Ce que nous faisons</h2>
-<p>Hostlio Pro est un logiciel de gestion hôtelière propulsé par l'IA pour les hôtels indépendants. Nous confions la communication client à notre assistant IA Lio, réunissons la distribution sur les OTA dans un seul calendrier grâce à Channex et transférons le check-in sur le téléphone du client.</p>
+<p>Hostlio Pro est un logiciel de gestion hôtelière propulsé par l'IA pour les hôtels indépendants. Nous confions la communication client à notre assistant IA Lio, réunissons la distribution sur les OTA dans un seul calendrier et transférons le check-in sur le téléphone du client.</p>
 <h2>Notre façon de travailler</h2>
 <ul><li>Nous publions nos prix ouvertement et ne prenons aucune commission.</li><li>Nous partons du travail quotidien réel des hôteliers.</li><li>Pas de contrats longs : nos clients restent parce qu'ils sont satisfaits.</li></ul></div>
 <div class="panel"><p class="panel-title">Informations sur l'entreprise</p><dl class="list-kv">

@@ -140,3 +140,29 @@ Eski sitede olmayan, benim varsaydığım bilgiler — yanlışsa `content_*.py`
 - `/delete-account` (ve 6 dildeki karşılıkları) artık normal site şablonunda; eski `delete-account.html` kaldırıldı, /delete-account.html → /delete-account/ 301.
 - Eski dosyalar `src_legacy/` klasöründe duruyor (yayına kopyalanmaz).
 - Uzun dillerde başlık menüsü taşması düzeltildi.
+
+## v14 — web sitesi analiz raporu (22 Eylül 2026) düzeltmeleri
+Kritik
+- K1 WhatsApp numarası her yerde +1 279-268-2488 / wa.me/12792682488 (footer, iletişim, JSON-LD, llms.txt) — `build.py` → `WHATSAPP`.
+- K2 Fiyat kartı: Aylık'ta yalnız "billed monthly", Yıllık'ta yalnız "$470 billed yearly" (6 dil). Kök neden: `.plan .billed{display:block}` `hidden` özniteliğini eziyordu; style.css başına `[hidden]{display:none!important}` eklendi.
+- K3 Kayıt sayfası zaten v13'te yeni tasarımdaydı; `/en/signup/`, `/tr/signup/` … → `/signup?lang=..` yönlendirmesi eklendi, sol panel fiyat kartlarıyla aynı listeyi kullanıyor.
+- K4 Türkçe `/tr/` altına taşındı. `/` tarayıcı diline göre /tr/, /es/, /it/, /pt/, /fr/ ya da /en/'e (geçici) yönlenir; eski Türkçe adresler 301 ile /tr/… adresine gider. Yönlendirmeler build sırasında `lang_redirects()` ile üretilip vercel.json'a eklenir. 404 sayfası İngilizce.
+- K5 Gizlilik ve Şartlar yeniden yazıldı (`legal_v6.py`, `legal_v6_intl.py`; tarih 23 Eylül 2026): kart peşin + otomatik ücretlendirme ve yenileme, AI kotası ve %110'da durma, Early Bird kilidi, UTM/ilk temas kaydı, online check-in kimlik görseli ve imza, alt işleyici listesi (Twilio/SendGrid "planlanan"), saklama süreleri, CCPA ve KVKK, AI sorumluluk notu. Yeni `/en/dpa/` (DPA, İngilizce) + indirilebilir PDF `src/assets/legal/hostlio-pro-dpa.pdf`.
+  ⚠️ Yayından önce avukat okuması. `legal_v6.RETENTION` sürelerini sunucu tarafıyla teyit edin (mesaj 60 gün varsayılan — Setup1.jsx; misafir iletişim 90 gün — rapor).
+Yüksek
+- Y1 Kayıtta para birimi uyarısı ("Booking.com'daki para birimiyle aynı olmalı, sonradan değiştirilemez") 6 dilde; ülkeye göre varsayılan zaten vardı.
+- Y2 Kurulum sözü her yerde: "Hesap dakikalar içinde hazır, kanallar aynı gün bağlı" (30 dk / 5 dk ifadeleri kaldırıldı).
+- Y3 "rezervasyona ekler", "her cevap rezervasyon bilgisini kullanır", "anahtarsız giriş" ifadeleri 6 dilde yumuşatıldı.
+- Y4 "10–150 oda" → "1–150 oda" (llms.txt, meta, SSS dahil).
+- Y5 `build.py` → `DEMO_URL`: Cal.com/Calendly linki yazılınca tüm "Demo iste" düğmeleri takvime gider; boşken iletişim sayfası.
+- Y6 Pazarlama metinlerinde "Channex" yerine "sertifikalı kanal bağlantıları"; ad yalnız SSS ve hukuki metinlerde.
+Orta
+- O1 es/fr/it/pt'de fiyat ve SSS zaten çevriliydi (adresler yerel: /es/precios/). /es/pricing/ gibi tahminler için 301 eklendi.
+- O2 Gizlilik/Şartlar/Hesap silme İngilizcede /en/privacy/, /en/terms/, /en/delete-account/ (eski adreslerden 301).
+- O3 Hakkımızda: `build.py` → `FOUNDER_NOTE`, `TEAM` doldurulunca 6 dilde kurucu notu ve ekip bölümü çıkar.
+- O4 İçerik görsellerinin hepsinde alt metin (GEN_ALT). Yalnız dekoratif sayfa sonu görseli boş alt ile bırakıldı.
+- O5 Kayıt formunda örnek otel adı "Seaside Boutique Hotel".
+- O7 Karşılaştırma tablosunda her satıra kaynak linki ve "Eylül 2026'da kontrol edildi".
+Güçlendirme
+- Güvenlik ve veri sayfası (6 dil, footer → Şirket), ROI hesaplayıcı (6 dil, footer → Kaynaklar).
+- Kanal listesi sayfası YAPILMADI: katalog sunucuda dinamik (`channex_adapters`), statik liste yok; Channex de statik liste yayınlanmasını istemiyor (Evan, 16 Eylül).

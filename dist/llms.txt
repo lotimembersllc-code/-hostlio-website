@@ -1,6 +1,6 @@
 # Hostlio Pro
 
-> Hostlio Pro (also called "Hostlio") is AI-powered hotel management software (PMS) for independent hotels, boutique hotels, guesthouses, aparthotels and hostels with roughly 10–150 rooms. It combines Lio, an AI guest-messaging assistant that replies 24/7 in 30+ languages on WhatsApp and OTA inboxes (Booking.com, Airbnb, Expedia), a channel manager connected to 100+ OTAs via Channex, a drag-and-drop room rack calendar, online check-in with digital signature, automatic PDF visa forms, transfer and tour sales, and an offline-capable iOS app. Operated by Loti Members LLC (Sacramento, CA, USA). Used by independent hotels in 20+ countries.
+> Hostlio Pro (also called "Hostlio") is AI-powered hotel management software (PMS) for independent hotels, boutique hotels, guesthouses, aparthotels and hostels with roughly 1–150 rooms. It combines Lio, an AI guest-messaging assistant that replies 24/7 in 30+ languages on WhatsApp and OTA inboxes (Booking.com, Airbnb, Expedia), a channel manager with certified connections to 100+ OTAs, a drag-and-drop room rack calendar, online check-in with digital signature, automatic PDF visa forms, transfer and tour sales, and an offline-capable iOS app. Operated by Loti Members LLC (Sacramento, CA, USA). Used by independent hotels in 20+ countries.
 
 ## Key facts
 - Pricing (USD/month, early-bird for first 50 customers, locked in while subscribed): Starter $49 (regular $59), Pro $89 (regular $109), Growth $149 (regular $189).
@@ -9,12 +9,12 @@
 - Growth: up to 2 properties, 150 rooms, 12,000 AI messages/month, priority sync, priority support, onboarding call, white-label.
 - Free trial: 7 days; a payment card is collected at signup, no charge until the trial ends, cancel anytime.
 - Annual billing: 20% off — Starter $39/mo ($470/year), Pro $71/mo ($854/year), Growth $119/mo ($1,430/year), early-bird.
-- Setup: most hotels are running in about 30 minutes (connect channels, import rooms, configure the AI assistant).
+- Setup: the account is ready in minutes; channels are usually connected the same day (add rooms, authorise the connection in each OTA extranet, map rooms).
 - Starter syncs OTA reservations but does not reply to OTA guest messages; OTA inbox messaging starts from Pro.
 - Channels include Booking.com, Airbnb, Expedia, Agoda, Trip.com, Hotels.com, Hotelbeds, Hostelworld, Google Hotels.
 - Languages: website in English, Turkish, Spanish, Italian, Portuguese and French; support in English and Turkish; guest replies in 30+ languages.
-- Contact: hello@hostliopro.com, WhatsApp +1 341 341 4479
-- Last updated: 2026-09-21
+- Contact: hello@hostliopro.com, WhatsApp +1 279-268-2488
+- Last updated: 2026-09-23
 
 ## English pages
 - [Hostlio Pro](https://hostliopro.com/en/): Hostlio Pro hotel management software: the Lio AI assistant answers guest messages 24/7 in 30+ languages, and the channel manager syncs 100+ OTAs. Free 7-day trial.
@@ -36,37 +36,42 @@
 - [Aparthotel Software: Online Check-in and Channel Sync](https://hostliopro.com/en/aparthotel-software/): Aparthotel and serviced apartment software: Airbnb and Booking.com sync, online check-in with digital signature and AI guest messaging in 30+ languages.
 - [Hostel Software: Multilingual Messaging, OTA Sync](https://hostliopro.com/en/hostel-software/): Hostel management software: Hostelworld, Booking.com and 100+ channel sync, AI guest messaging in 30+ languages and online check-in. 7 days free.
 - [Hotel Software Comparison 2026: Pricing, Fees, AI](https://hostliopro.com/en/hotel-software-comparison/): Hostlio Pro, Cloudbeds, Mews, Little Hotelier and HotelRunner compared: published pricing, starting price, booking fees, free trial and AI guest messaging.
-- [Privacy Policy](https://hostliopro.com/privacy/): Hostlio Pro privacy policy: what data we collect, how we use and share it, data security, retention, cookies and your GDPR rights.
-- [Terms of Service](https://hostliopro.com/terms/): Hostlio Pro terms of service: service description, subscriptions and payments, cancellation and refunds, AI-generated content, OTA integrations and liability.
-- [Delete Your Account](https://hostliopro.com/delete-account/): How to request deletion of your Hostlio Pro account and the data associated with it.
+- [Privacy Policy](https://hostliopro.com/en/privacy/): Hostlio Pro privacy policy: what data we collect, how we use and share it, data security, retention, cookies and your GDPR rights.
+- [Terms of Service](https://hostliopro.com/en/terms/): Hostlio Pro terms of service: service description, subscriptions and payments, cancellation and refunds, AI-generated content, OTA integrations and liability.
+- [Delete Your Account](https://hostliopro.com/en/delete-account/): How to request deletion of your Hostlio Pro account and the data associated with it.
 - [The Complete Guide to AI Front Desk for Independent Hotels](https://hostliopro.com/en/blog/hotel-ai-front-desk-guide/): AI front-desk tools are no longer science fiction. This guide explains exactly what they do, what they don't, and how to deploy one at your independent hotel.
 - [5 Ways to Reduce No-Shows at Your Independent Hotel](https://hostliopro.com/en/blog/how-to-reduce-hotel-no-shows/): No-shows cost independent hotels thousands in lost revenue. Here are five proven strategies to cut your no-show rate and protect your bottom line.
 - [Independent Hotels vs. Chains: How to Compete with Technology in 2026](https://hostliopro.com/en/blog/independent-hotel-vs-chain-technology/): Chain hotels have billion-dollar tech budgets. Modern SaaS tools put the same capabilities within reach of a 20-room property. Here's how to compete.
 - [Why WhatsApp Is the #1 Guest Communication Channel for Hotels in 2026](https://hostliopro.com/en/blog/whatsapp-hotel-guest-communication/): With open rates above 90%, WhatsApp is the dominant channel for hotel guest communication. Learn how independent hotels are using it to save time and delight guests.
+- [Security and Data Protection](https://hostliopro.com/en/security/): How Hostlio Pro protects hotel and guest data: encryption, access control, subprocessors, data retention, GDPR, KVKK and our Data Processing Addendum.
+- [Data Processing Addendum (DPA)](https://hostliopro.com/en/dpa/): Hostlio Pro Data Processing Addendum for hotels: GDPR, UK GDPR, KVKK and CCPA terms, security measures, subprocessors and international transfers.
+- [Hotel AI Messaging ROI Calculator](https://hostliopro.com/en/roi-calculator/): Estimate how many staff hours and how much money AI guest messaging could save your hotel each month. Enter your rooms, daily messages and staff cost.
 
 ## Türkçe sayfalar
-- [Hostlio Pro](https://hostliopro.com/): Otel programı Hostlio Pro: AI asistan Lio misafir mesajlarını 30+ dilde 7/24 yanıtlar, kanal yöneticisi 100+ OTA'yı senkronize eder. 7 gün ücretsiz deneyin.
-- [AI Misafir Asistanı Lio: 30+ Dilde Otel Mesajları](https://hostliopro.com/ai-misafir-asistani/): Hostlio Pro'nun AI asistanı Lio, otel misafirlerinin WhatsApp ve OTA gelen kutusu mesajlarını 30+ dilde 7/24 yanıtlar, transfer ve tur satar. Nasıl çalıştığını görün.
-- [Otel Kanal Yöneticisi: 100+ OTA Tek Takvimde](https://hostliopro.com/kanal-yoneticisi/): Hostlio Pro kanal yöneticisi Booking.com, Airbnb, Expedia, Agoda dahil 100+ OTA'da müsaitlik ve fiyatı anlık senkronize eder, overbooking'i önler.
-- [Otel Online Check-in ve Dijital İmza Yazılımı](https://hostliopro.com/online-check-in/): Hostlio Pro online check-in ile misafirler varıştan önce kimlik bilgilerini, refakatçilerini ve dijital imzasını telefondan gönderir. Resepsiyonda kuyruk olmaz.
-- [Otel Programı Özellikleri: AI, Kanal Yöneticisi](https://hostliopro.com/ozellikler/): Hostlio Pro özellikleri: AI misafir asistanı, 100+ OTA kanal yöneticisi, sürükle-bırak oda rafı, online check-in, PDF vize formları, transfer satışı ve mobil uygulama.
-- [Otel Yazılımı Fiyatları: Aylık 49 $'dan Başlar](https://hostliopro.com/fiyatlandirma/): Hostlio Pro fiyatları: Starter 49 $, Pro 89 $, Growth 149 $/ay. Komisyon yok, kurulum ücreti yok, 7 gün ücretsiz deneme. Planları karşılaştırın.
-- [Hostlio Pro Hakkında Sık Sorulan Sorular (SSS)](https://hostliopro.com/sss/): Hostlio Pro otel yönetim yazılımı hakkında sık sorulan sorular: fiyatlar, ücretsiz deneme, OTA entegrasyonları, AI asistan Lio, online check-in ve güvenlik.
-- [Hakkımızda](https://hostliopro.com/hakkimizda/): Hostlio Pro, bağımsız oteller için yapay zekâ destekli otel yönetim yazılımı geliştirir. Loti Members LLC bünyesinde, 20+ ülkede kullanılıyor.
-- [İletişim ve Demo Talebi](https://hostliopro.com/iletisim/): Hostlio Pro ekibiyle iletişime geçin veya otelinize özel 30 dakikalık ücretsiz demo isteyin. Türkçe ve İngilizce destek, e-posta: hello@hostliopro.com
-- [Blog: Bağımsız Oteller için Rehberler](https://hostliopro.com/blog/): Otel yönetimi, kanal yönetimi, OTA dağıtımı ve AI ile misafir iletişimi üzerine bağımsız otelcilere yönelik pratik rehberler.
-- [Küçük otel için otel programı (PMS) nasıl seçilir?](https://hostliopro.com/blog/kucuk-otel-icin-otel-yonetim-yazilimi-secimi/): Küçük ve butik oteller için PMS seçerken bakılması gereken 7 kriter: kanal yöneticisi, fiyat modeli, misafir iletişimi, mobil erişim ve daha fazlası.
-- [Otel misafir mesajlarını yapay zekâ ile yanıtlamak: pratik rehber](https://hostliopro.com/blog/otel-misafir-mesajlarini-yapay-zeka-ile-yanitlamak/): Otel misafir mesajlarını yapay zekâ ile yanıtlamanın avantajları, riskleri ve kurulum adımları. Hangi sorular otomatikleşir, hangileri insanda kalmalı?
-- [Overbooking nasıl önlenir? Oteller için 6 adım](https://hostliopro.com/blog/overbooking-nasil-onlenir/): Otellerde overbooking (çift rezervasyon) neden olur ve nasıl önlenir? Kanal yöneticisi, stop-sell, müsaitlik tamponu ve kriz anında yapılacaklar.
-- [Booking.com mesajlarına otomatik cevap nasıl verilir?](https://hostliopro.com/blog/booking-com-mesajlarina-otomatik-cevap/): Booking.com misafir mesajlarını otomatik yanıtlamanın üç yolu: hazır şablonlar, planlı mesajlar ve yapay zekâ asistanı. Hangisi ne zaman işe yarar?
-- [Pansiyon Programı: AI Destekli, Aylık 49 $'dan](https://hostliopro.com/pansiyon-programi/): Pansiyonlar için otel programı: misafir mesajlarına 30+ dilde otomatik cevap, Booking.com ve Airbnb senkronu, online check-in. 7 gün ücretsiz deneyin.
-- [Butik Otel Programı: AI Asistan ve Kanal Yöneticisi](https://hostliopro.com/butik-otel-programi/): Butik oteller için otel programı: yabancı misafirlere 30+ dilde kişisel cevap, 100+ OTA senkronu, online check-in ve transfer satışı tek panelde.
-- [Apart Otel Programı: Online Check-in ve Kanal Yönetimi](https://hostliopro.com/apart-otel-programi/): Apart oteller ve kiralık daireler için otel programı: Airbnb ve Booking.com senkronu, online check-in ve dijital imza, 30+ dilde AI misafir mesajları.
-- [Hostel Programı: Çok Dilli Mesajlar, OTA Senkronu](https://hostliopro.com/hostel-programi/): Hosteller için otel programı: Hostelworld, Booking.com ve 100+ kanal senkronu, 30+ dilde AI misafir mesajları ve online check-in. 7 gün ücretsiz.
-- [Otel Programı Karşılaştırması 2026: Fiyat, Komisyon, AI](https://hostliopro.com/otel-programi-karsilastirma/): Hostlio Pro, Cloudbeds, Mews, Little Hotelier ve HotelRunner karşılaştırması: yayınlanan fiyatlar, başlangıç fiyatı, komisyon, deneme süresi ve AI mesajlaşma.
-- [Gizlilik Politikası](https://hostliopro.com/gizlilik-politikasi/): Hostlio Pro gizlilik politikası: hangi verileri topladığımız, nasıl kullandığımız, kimlerle paylaştığımız, veri güvenliği, saklama süreleri ve GDPR haklarınız.
-- [Kullanım Şartları](https://hostliopro.com/kullanim-sartlari/): Hostlio Pro kullanım şartları: hizmet tanımı, abonelik ve ödemeler, iptal ve iade, yapay zekâ içeriği, OTA entegrasyonları ve sorumluluk.
-- [Hesap Silme](https://hostliopro.com/hesap-silme/): Hostlio Pro hesabınızın ve ilişkili verilerin silinmesini nasıl talep edeceğiniz.
+- [Hostlio Pro](https://hostliopro.com/tr/): Otel programı Hostlio Pro: AI asistan Lio misafir mesajlarını 30+ dilde 7/24 yanıtlar, kanal yöneticisi 100+ OTA'yı senkronize eder. 7 gün ücretsiz deneyin.
+- [AI Misafir Asistanı Lio: 30+ Dilde Otel Mesajları](https://hostliopro.com/tr/ai-misafir-asistani/): Hostlio Pro'nun AI asistanı Lio, otel misafirlerinin WhatsApp ve OTA gelen kutusu mesajlarını 30+ dilde 7/24 yanıtlar, transfer ve tur satar. Nasıl çalıştığını görün.
+- [Otel Kanal Yöneticisi: 100+ OTA Tek Takvimde](https://hostliopro.com/tr/kanal-yoneticisi/): Hostlio Pro kanal yöneticisi Booking.com, Airbnb, Expedia, Agoda dahil 100+ OTA'da müsaitlik ve fiyatı anlık senkronize eder, overbooking'i önler.
+- [Otel Online Check-in ve Dijital İmza Yazılımı](https://hostliopro.com/tr/online-check-in/): Hostlio Pro online check-in ile misafirler varıştan önce kimlik bilgilerini, refakatçilerini ve dijital imzasını telefondan gönderir. Resepsiyonda kuyruk olmaz.
+- [Otel Programı Özellikleri: AI, Kanal Yöneticisi](https://hostliopro.com/tr/ozellikler/): Hostlio Pro özellikleri: AI misafir asistanı, 100+ OTA kanal yöneticisi, sürükle-bırak oda rafı, online check-in, PDF vize formları, transfer satışı ve mobil uygulama.
+- [Otel Yazılımı Fiyatları: Aylık 49 $'dan Başlar](https://hostliopro.com/tr/fiyatlandirma/): Hostlio Pro fiyatları: Starter 49 $, Pro 89 $, Growth 149 $/ay. Komisyon yok, kurulum ücreti yok, 7 gün ücretsiz deneme. Planları karşılaştırın.
+- [Hostlio Pro Hakkında Sık Sorulan Sorular (SSS)](https://hostliopro.com/tr/sss/): Hostlio Pro otel yönetim yazılımı hakkında sık sorulan sorular: fiyatlar, ücretsiz deneme, OTA entegrasyonları, AI asistan Lio, online check-in ve güvenlik.
+- [Hakkımızda](https://hostliopro.com/tr/hakkimizda/): Hostlio Pro, bağımsız oteller için yapay zekâ destekli otel yönetim yazılımı geliştirir. Loti Members LLC bünyesinde, 20+ ülkede kullanılıyor.
+- [İletişim ve Demo Talebi](https://hostliopro.com/tr/iletisim/): Hostlio Pro ekibiyle iletişime geçin veya otelinize özel 30 dakikalık ücretsiz demo isteyin. Türkçe ve İngilizce destek, e-posta: hello@hostliopro.com
+- [Blog: Bağımsız Oteller için Rehberler](https://hostliopro.com/tr/blog/): Otel yönetimi, kanal yönetimi, OTA dağıtımı ve AI ile misafir iletişimi üzerine bağımsız otelcilere yönelik pratik rehberler.
+- [Küçük otel için otel programı (PMS) nasıl seçilir?](https://hostliopro.com/tr/blog/kucuk-otel-icin-otel-yonetim-yazilimi-secimi/): Küçük ve butik oteller için PMS seçerken bakılması gereken 7 kriter: kanal yöneticisi, fiyat modeli, misafir iletişimi, mobil erişim ve daha fazlası.
+- [Otel misafir mesajlarını yapay zekâ ile yanıtlamak: pratik rehber](https://hostliopro.com/tr/blog/otel-misafir-mesajlarini-yapay-zeka-ile-yanitlamak/): Otel misafir mesajlarını yapay zekâ ile yanıtlamanın avantajları, riskleri ve kurulum adımları. Hangi sorular otomatikleşir, hangileri insanda kalmalı?
+- [Overbooking nasıl önlenir? Oteller için 6 adım](https://hostliopro.com/tr/blog/overbooking-nasil-onlenir/): Otellerde overbooking (çift rezervasyon) neden olur ve nasıl önlenir? Kanal yöneticisi, stop-sell, müsaitlik tamponu ve kriz anında yapılacaklar.
+- [Booking.com mesajlarına otomatik cevap nasıl verilir?](https://hostliopro.com/tr/blog/booking-com-mesajlarina-otomatik-cevap/): Booking.com misafir mesajlarını otomatik yanıtlamanın üç yolu: hazır şablonlar, planlı mesajlar ve yapay zekâ asistanı. Hangisi ne zaman işe yarar?
+- [Pansiyon Programı: AI Destekli, Aylık 49 $'dan](https://hostliopro.com/tr/pansiyon-programi/): Pansiyonlar için otel programı: misafir mesajlarına 30+ dilde otomatik cevap, Booking.com ve Airbnb senkronu, online check-in. 7 gün ücretsiz deneyin.
+- [Butik Otel Programı: AI Asistan ve Kanal Yöneticisi](https://hostliopro.com/tr/butik-otel-programi/): Butik oteller için otel programı: yabancı misafirlere 30+ dilde kişisel cevap, 100+ OTA senkronu, online check-in ve transfer satışı tek panelde.
+- [Apart Otel Programı: Online Check-in ve Kanal Yönetimi](https://hostliopro.com/tr/apart-otel-programi/): Apart oteller ve kiralık daireler için otel programı: Airbnb ve Booking.com senkronu, online check-in ve dijital imza, 30+ dilde AI misafir mesajları.
+- [Hostel Programı: Çok Dilli Mesajlar, OTA Senkronu](https://hostliopro.com/tr/hostel-programi/): Hosteller için otel programı: Hostelworld, Booking.com ve 100+ kanal senkronu, 30+ dilde AI misafir mesajları ve online check-in. 7 gün ücretsiz.
+- [Otel Programı Karşılaştırması 2026: Fiyat, Komisyon, AI](https://hostliopro.com/tr/otel-programi-karsilastirma/): Hostlio Pro, Cloudbeds, Mews, Little Hotelier ve HotelRunner karşılaştırması: yayınlanan fiyatlar, başlangıç fiyatı, komisyon, deneme süresi ve AI mesajlaşma.
+- [Gizlilik Politikası](https://hostliopro.com/tr/gizlilik-politikasi/): Hostlio Pro gizlilik politikası: hangi verileri topladığımız, nasıl kullandığımız, kimlerle paylaştığımız, veri güvenliği, saklama süreleri ve GDPR haklarınız.
+- [Kullanım Şartları](https://hostliopro.com/tr/kullanim-sartlari/): Hostlio Pro kullanım şartları: hizmet tanımı, abonelik ve ödemeler, iptal ve iade, yapay zekâ içeriği, OTA entegrasyonları ve sorumluluk.
+- [Hesap Silme](https://hostliopro.com/tr/hesap-silme/): Hostlio Pro hesabınızın ve ilişkili verilerin silinmesini nasıl talep edeceğiniz.
+- [Güvenlik ve Veri Koruma](https://hostliopro.com/tr/guvenlik-ve-veri/): Hostlio Pro otel ve misafir verilerini nasıl korur: şifreleme, erişim kontrolü, alt işleyiciler, saklama süreleri, GDPR, KVKK ve Veri İşleme Sözleşmesi (DPA).
+- [Otel AI Mesajlaşma Tasarruf Hesaplayıcı](https://hostliopro.com/tr/roi-hesaplayici/): Yapay zekâ ile misafir mesajlaşmasının otelinize ayda kaç personel saati ve ne kadar maliyet kazandırabileceğini hesaplayın. Oda sayınızı, günlük mesajınızı ve personel maliyetinizi girin.
 
 ## Páginas en español
 - [Hostlio Pro](https://hostliopro.com/es/): Software de gestión hotelera Hostlio Pro: el asistente IA Lio responde a huéspedes 24/7 en 30+ idiomas y el channel manager sincroniza 100+ OTAs. 7 días gratis.
@@ -91,6 +96,8 @@
 - [Política de privacidad](https://hostliopro.com/es/privacidad/): Política de privacidad de Hostlio Pro: qué datos recopilamos, cómo los usamos y compartimos, seguridad de los datos, conservación, cookies y tus derechos del RGPD.
 - [Términos del servicio](https://hostliopro.com/es/terminos/): Términos del servicio de Hostlio Pro: descripción del servicio, suscripciones y pagos, cancelación y reembolsos, contenido generado por IA, integraciones con OTAs y responsabilidad.
 - [Eliminar tu cuenta](https://hostliopro.com/es/eliminar-cuenta/): Cómo solicitar la eliminación de tu cuenta de Hostlio Pro y de los datos asociados.
+- [Seguridad y protección de datos](https://hostliopro.com/es/seguridad/): Cómo protege Hostlio Pro los datos de hoteles y huéspedes: cifrado, control de acceso, subencargados, conservación, RGPD y nuestro Acuerdo de tratamiento de datos (DPA).
+- [Calculadora de ROI de mensajería con IA para hoteles](https://hostliopro.com/es/calculadora-roi/): Calcula cuántas horas de personal y cuánto dinero podría ahorrar tu hotel cada mes con la mensajería con IA. Introduce habitaciones, mensajes diarios y coste del personal.
 
 ## Pagine in italiano
 - [Hostlio Pro](https://hostliopro.com/it/): Gestionale per hotel Hostlio Pro: l'assistente AI Lio risponde agli ospiti 24/7 in 30+ lingue e il channel manager sincronizza 100+ OTA. Prova gratis 7 giorni.
@@ -115,6 +122,8 @@
 - [Informativa sulla privacy](https://hostliopro.com/it/privacy/): Informativa sulla privacy di Hostlio Pro: quali dati raccogliamo, come li usiamo e condividiamo, sicurezza, conservazione, cookie e i tuoi diritti GDPR.
 - [Termini di servizio](https://hostliopro.com/it/termini/): Termini di servizio di Hostlio Pro: descrizione del servizio, abbonamenti e pagamenti, disdetta e rimborsi, contenuti generati dall'AI, integrazioni OTA e responsabilità.
 - [Elimina il tuo account](https://hostliopro.com/it/elimina-account/): Come richiedere l’eliminazione del tuo account Hostlio Pro e dei dati collegati.
+- [Sicurezza e protezione dei dati](https://hostliopro.com/it/sicurezza/): Come Hostlio Pro protegge i dati di hotel e ospiti: cifratura, controllo degli accessi, sub-responsabili, conservazione, GDPR e il nostro Accordo sul trattamento dei dati (DPA).
+- [Calcolatore ROI dei messaggi AI per hotel](https://hostliopro.com/it/calcolatore-roi/): Stima quante ore di personale e quanto denaro i messaggi AI con gli ospiti potrebbero far risparmiare al tuo hotel ogni mese. Inserisci camere, messaggi al giorno e costo del personale.
 
 ## Páginas em português
 - [Sistema para Hotel com IA e Channel Manager](https://hostliopro.com/pt/): Sistema para hotel Hostlio Pro: o assistente de IA Lio responde aos hóspedes 24/7 em 30+ idiomas e o channel manager sincroniza 100+ OTAs. Teste 7 dias grátis.
@@ -139,6 +148,8 @@
 - [Política de Privacidade](https://hostliopro.com/pt/privacidade/): Política de privacidade do Hostlio Pro: quais dados coletamos, como os usamos e compartilhamos, segurança e retenção de dados, cookies e seus direitos sob o GDPR.
 - [Termos de Serviço](https://hostliopro.com/pt/termos/): Termos de serviço do Hostlio Pro: descrição do serviço, assinaturas e pagamentos, cancelamento e reembolsos, conteúdo gerado por IA, integrações com OTAs e responsabilidade.
 - [Excluir sua conta](https://hostliopro.com/pt/excluir-conta/): Como solicitar a exclusão da sua conta do Hostlio Pro e dos dados associados.
+- [Segurança e proteção de dados](https://hostliopro.com/pt/seguranca/): Como o Hostlio Pro protege os dados de hotéis e hóspedes: criptografia, controle de acesso, suboperadores, retenção, LGPD, GDPR e nosso Acordo de Tratamento de Dados (DPA).
+- [Calculadora de ROI de mensagens com IA para hotéis](https://hostliopro.com/pt/calculadora-roi/): Estime quantas horas de equipe e quanto dinheiro as mensagens com IA podem economizar no seu hotel por mês. Informe quartos, mensagens por dia e custo da equipe.
 
 ## Pages en français
 - [Hostlio Pro](https://hostliopro.com/fr/): Logiciel de gestion hôtelière Hostlio Pro : l’assistant IA Lio répond aux clients 24h/24 en 30+ langues et le channel manager synchronise 100+ OTA. 7 jours offerts.
@@ -163,3 +174,5 @@
 - [Politique de confidentialité](https://hostliopro.com/fr/confidentialite/): Politique de confidentialité de Hostlio Pro : données collectées, utilisation et partage, sécurité, conservation des données, cookies et vos droits au titre du RGPD.
 - [Conditions d’utilisation](https://hostliopro.com/fr/conditions/): Conditions d’utilisation de Hostlio Pro : description du service, abonnements et paiements, résiliation et remboursements, contenu généré par l’IA, intégrations OTA et responsabilité.
 - [Supprimer votre compte](https://hostliopro.com/fr/supprimer-compte/): Comment demander la suppression de votre compte Hostlio Pro et des données associées.
+- [Sécurité et protection des données](https://hostliopro.com/fr/securite/): Comment Hostlio Pro protège les données des hôtels et des clients : chiffrement, contrôle d’accès, sous-traitants, conservation, RGPD et notre Accord de traitement des données (DPA).
+- [Calculateur de ROI de la messagerie IA pour hôtels](https://hostliopro.com/fr/calculateur-roi/): Estimez combien d’heures de personnel et d’argent la messagerie IA pourrait faire gagner à votre hôtel chaque mois. Saisissez vos chambres, vos messages par jour et le coût du personnel.

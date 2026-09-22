@@ -54,7 +54,7 @@ TYPES = {
   pains_h="Apart otellerde en çok zaman alan işler nelerdir?",
   pains=[("Uzaktan check-in","Online check-in formu kimlik, refakatçi ve imzayı varıştan önce toplar."),
          ("Giriş talimatları","Anahtar teslimi, Wi-Fi ve otopark soruları tekrar eder. Lio bunları otel bilgilerinizden yanıtlar."),
-         ("Kısa dönem kanallar","Airbnb ve Booking.com müsaitliği Channex üzerinden anında eşitlenir."),
+         ("Kısa dönem kanallar","Airbnb ve Booking.com müsaitliği anında eşitlenir."),
          ("Uzun konaklamalar","Oda rafında konaklamayı uzatmak ya da daire değiştirmek sürükle-bırak ile yapılır.")],
   plan="Online check-in Pro ve Growth planlarında vardır, bu yüzden apart oteller için <strong>Pro</strong> planı önerilir. İki tesis işletiyorsanız <strong>Growth</strong> planına bakın.",
   faq=[("Resepsiyonsuz apart otelde Hostlio Pro işe yarar mı?","Evet. Online check-in ve AI mesajlaşma, resepsiyonun yaptığı bilgi toplama ve soru yanıtlama işini uzaktan yapar."),
@@ -66,7 +66,7 @@ TYPES = {
   crumb="Hostel programı", h1='Hosteller için <em class="hl">otel programı</em>',
   lead="Hostellerde misafir profili uluslararası, mesaj trafiği yüksek, ekip küçüktür. Hostlio Pro çok dilli soruları üstlenir ve kanalları tek takvimde tutar.",
   q="Hostel programı nedir?",
-  a="Hostel programı, yatak ve oda bazlı satış yapan hostellerin rezervasyon, kanal ve misafir iletişimini yöneten yazılımdır. Hostlio Pro, Hostelworld dahil 100'den fazla kanala Channex üzerinden bağlanır ve misafir sorularını AI asistanı Lio ile 30+ dilde yanıtlar.",
+  a="Hostel programı, yatak ve oda bazlı satış yapan hostellerin rezervasyon, kanal ve misafir iletişimini yöneten yazılımdır. Hostlio Pro, Hostelworld dahil 100'den fazla kanala sertifikalı bağlantılarla bağlanır ve misafir sorularını AI asistanı Lio ile 30+ dilde yanıtlar.",
   pains_h="Hostellerde öne çıkan ihtiyaçlar nelerdir?",
   pains=[("Çok dilli trafik","Farklı ülkelerden gelen gezginler kendi dillerinde yazar. Lio her dilde cevap verir."),
          ("Hostelworld ve OTA'lar","Hostelworld, Booking.com ve diğer kanallar tek müsaitlikle yönetilir."),
@@ -120,7 +120,7 @@ TYPES = {
   pains_h="What takes the most time in an aparthotel?",
   pains=[("Remote check-in","The online check-in form collects ID, companions and a signature before arrival."),
          ("Access instructions","Key handover, Wi-Fi and parking questions repeat. Lio answers them from your property information."),
-         ("Short-stay channels","Airbnb and Booking.com availability syncs instantly through Channex."),
+         ("Short-stay channels","Airbnb and Booking.com availability syncs instantly over certified connections."),
          ("Longer stays","Extending a stay or moving apartments is drag and drop on the room rack.")],
   plan="Online check-in is included in Pro and Growth, so we recommend <strong>Pro</strong> for aparthotels. If you run two properties, look at <strong>Growth</strong>.",
   faq=[("Does Hostlio Pro work for an aparthotel without a front desk?","Yes. Online check-in and AI messaging handle the information gathering and question answering a front desk would do, remotely."),
@@ -132,7 +132,7 @@ TYPES = {
   crumb="Hostel software", h1='<em class="hl">Hostel software</em> for busy, multilingual inboxes',
   lead="Hostels have international guests, high message volume and small teams. Hostlio Pro handles multilingual questions and keeps channels on one calendar.",
   q="What is hostel software?",
-  a="Hostel software manages reservations, channels and guest communication for hostels that sell beds and rooms. Hostlio Pro connects to 100+ channels including Hostelworld through Channex and answers guest questions in 30+ languages with its AI assistant Lio.",
+  a="Hostel software manages reservations, channels and guest communication for hostels that sell beds and rooms. Hostlio Pro connects to 100+ channels including Hostelworld over certified connections and answers guest questions in 30+ languages with its AI assistant Lio.",
   pains_h="What do hostels need most?",
   pains=[("Multilingual traffic","Travellers write in their own languages. Lio replies in each of them."),
          ("Hostelworld and OTAs","Hostelworld, Booking.com and other channels share one availability."),
@@ -153,7 +153,7 @@ def type_page(L, d):
     pv = PV4[L]; trial, demo, plan_h = pv["trial"], pv["demo"], pv["plan_h"]
     cmp_t = pv["cmp_t"].format(c=U("compare"))
     body = f'''<section class="page-hero"><div class="wrap split"><div><h1>{d["h1"]}</h1><p class="lead">{d["lead"]}</p>
-<div class="cta-row">{btn(trial, SIGNUP_URL)}{btn(demo, U("contact"), "ghost")}</div></div>
+<div class="cta-row">{btn(trial, SIGNUP_URL)}{btn(demo, __import__("build").demo_url(L), "ghost")}</div></div>
 <div class="hero-img">{_img(im[0], im[1], w, h, eager=True)}</div></div></section>
 <section class="white rule"><div class="wrap">
 <div class="answer"><h2 style="font-size:var(--t-1);margin-bottom:.4em">{d["q"]}</h2><p>{d["a"]}</p></div>
@@ -172,6 +172,9 @@ CMP_SOURCES = [
  ("Little Hotelier", "https://www.littlehotelier.com/pricing/"),
  ("HotelRunner", "https://www.hotelrunner.com/tr/fiyatlandirma"),
 ]
+CMP_SRC_TXT = {"tr": ("Kaynak", "Fiyat sayfası", "Eylül 2026’da kontrol edildi"), "en": ("Source", "Pricing page", "Checked September 2026"),
+               "es": ("Fuente", "Página de precios", "Comprobado en septiembre de 2026"), "it": ("Fonte", "Pagina prezzi", "Verificato a settembre 2026"),
+               "pt": ("Fonte", "Página de preços", "Verificado em setembro de 2026"), "fr": ("Source", "Page tarifs", "Vérifié en septembre 2026")}
 CMP = {
 "tr": dict(
   title="Otel Programı Karşılaştırması 2026: Fiyat, Komisyon, AI | Hostlio Pro",
@@ -179,7 +182,7 @@ CMP = {
   crumb="Otel programı karşılaştırması", h1='Otel programı <em class="hl">karşılaştırması</em> (2026)',
   lead="Bağımsız oteller için beş popüler otel yönetim yazılımını, firmaların kendi fiyatlandırma sayfalarında yayınladığı bilgilere göre karşılaştırdık.",
   q="Hangi otel programı daha uygun?",
-  a="Kısa cevap: tek tesisli, 10–150 odalı ve yabancı misafiri çok olan oteller için sabit fiyatlı ve AI mesajlaşması dahil bir yazılım (Hostlio Pro gibi) bütçeyi öngörülebilir kılar. Çok tesisli ve kurumsal ihtiyaçları olan gruplar için Mews veya Cloudbeds gibi teklif bazlı platformlar, Türkiye'de B2B ağı ve yerel destek arayanlar için HotelRunner, SiteMinder ağıyla çalışmak isteyen küçük tesisler için Little Hotelier değerlendirilebilir.",
+  a="Kısa cevap: tek tesisli, 1–150 odalı ve yabancı misafiri çok olan oteller için sabit fiyatlı ve AI mesajlaşması dahil bir yazılım (Hostlio Pro gibi) bütçeyi öngörülebilir kılar. Çok tesisli ve kurumsal ihtiyaçları olan gruplar için Mews veya Cloudbeds gibi teklif bazlı platformlar, Türkiye'de B2B ağı ve yerel destek arayanlar için HotelRunner, SiteMinder ağıyla çalışmak isteyen küçük tesisler için Little Hotelier değerlendirilebilir.",
   cols=["Yazılım","Fiyatlar yayınlanıyor mu?","Başlangıç","Rezervasyon komisyonu","Ücretsiz deneme","AI misafir mesajlaşması"],
   rows=[("Hostlio Pro","Evet","49 $/ay (erken kayıt)","Yok, sabit aylık ücret","7 gün","Tüm planlarda (Lio, 30+ dil)"),
         ("Cloudbeds","Hayır, teklif usulü","Teklif","Booking Engine ve Channel Manager rezervasyonlarından ek komisyon almadığını belirtiyor","Fiyat sayfasında belirtilmiyor","Fiyat sayfasında ayrıca belirtilmiyor"),
@@ -187,7 +190,7 @@ CMP = {
         ("Little Hotelier","Oda sayısına göre hesaplanıyor","Fiyat hesaplayıcısıyla","Basics planında %1 rezervasyon ücreti","30 gün","Fiyat sayfasında belirtilmiyor"),
         ("HotelRunner","Evet (temel paketler)","19,95 $/ay + %0,75 (Manage)","%0,75 ile %1,25 arası (pakete göre)","Var","Advanced \"Automate\" paketinde")],
   when_h="Hangi durumda hangisi?",
-  when=[("Hostlio Pro","Tek tesis ya da iki tesis, 10–150 oda, yabancı misafir trafiği yüksek, sabit aylık bütçe isteyen oteller."),
+  when=[("Hostlio Pro","Tek tesis ya da iki tesis, 1–150 oda, yabancı misafir trafiği yüksek, sabit aylık bütçe isteyen oteller."),
         ("Cloudbeds ve Mews","Birden fazla tesis, gelir yönetimi ve geniş entegrasyon pazarı gibi kurumsal ihtiyaçları olan gruplar."),
         ("HotelRunner","Türkiye'de yerel destek, B2B satış ağı ve komisyonlu, düşük sabit ücretli model tercih eden tesisler."),
         ("Little Hotelier","SiteMinder altyapısıyla çalışmak isteyen, oda sayısına göre fiyatlandırmayı kabul eden küçük tesisler.")],
@@ -202,7 +205,7 @@ CMP = {
   crumb="Hotel software comparison", h1='Hotel software <em class="hl">comparison</em> (2026)',
   lead="We compared five popular hotel management systems for independent hotels, using only what each vendor publishes on its own pricing page.",
   q="Which hotel software is right for you?",
-  a="Short answer: for single-property hotels with 10–150 rooms and many international guests, flat-priced software with AI messaging included (like Hostlio Pro) keeps the budget predictable. Multi-property groups with enterprise needs may consider quote-based platforms such as Mews or Cloudbeds; properties in Turkey wanting local support and a B2B network may look at HotelRunner; small properties that want the SiteMinder network may consider Little Hotelier.",
+  a="Short answer: for single-property hotels with 1–150 rooms and many international guests, flat-priced software with AI messaging included (like Hostlio Pro) keeps the budget predictable. Multi-property groups with enterprise needs may consider quote-based platforms such as Mews or Cloudbeds; properties in Turkey wanting local support and a B2B network may look at HotelRunner; small properties that want the SiteMinder network may consider Little Hotelier.",
   cols=["Software","Published pricing?","Starting at","Booking fee","Free trial","AI guest messaging"],
   rows=[("Hostlio Pro","Yes","$49/month (early bird)","None, flat monthly fee","7 days","All plans (Lio, 30+ languages)"),
         ("Cloudbeds","No, quote-based","Quote","States no added commission on Booking Engine and Channel Manager reservations","Not stated on pricing page","Not separately stated on pricing page"),
@@ -210,7 +213,7 @@ CMP = {
         ("Little Hotelier","Calculated by room count","Via price calculator","1% booking fee on Basics","30 days","Not stated on pricing page"),
         ("HotelRunner","Yes (core plans)","$19.95/month + 0.75% (Manage)","0.75% to 1.25% depending on plan","Available","In the Advanced \"Automate\" tier")],
   when_h="Which one, when?",
-  when=[("Hostlio Pro","One or two properties, 10–150 rooms, heavy international guest traffic and a fixed monthly budget."),
+  when=[("Hostlio Pro","One or two properties, 1–150 rooms, heavy international guest traffic and a fixed monthly budget."),
         ("Cloudbeds and Mews","Multi-property groups with enterprise needs such as revenue management and a large integration marketplace."),
         ("HotelRunner","Properties in Turkey that want local support, a B2B sales network and a low fixed fee plus commission."),
         ("Little Hotelier","Small properties that want the SiteMinder infrastructure and accept room-count-based pricing.")],
@@ -225,10 +228,14 @@ for _l, _m in LANGMOD.items(): CMP[_l] = _m.cmp(lambda k, _l=_l: url(k, _l))
 
 def compare_page(L):
     d = CMP[L]; U = lambda k: url(k, L)
-    head = "".join(f"<th>{c}</th>" for c in d["cols"])
-    rows = "".join("<tr>" + f'<th scope="row">{r[0]}</th>' + "".join(f"<td>{c}</td>" for c in r[1:]) + "</tr>" for r in d["rows"])
+    # O7: her satırda kaynak bağlantısı ve kontrol tarihi
+    sh, sl, chk = CMP_SRC_TXT[L]
+    srcmap = dict(CMP_SOURCES); srcmap["Hostlio Pro"] = SITE + U("pricing")
+    head = "".join(f"<th>{c}</th>" for c in d["cols"]) + f"<th>{sh}</th>"
+    rows = "".join("<tr>" + f'<th scope="row">{r[0]}</th>' + "".join(f"<td>{c}</td>" for c in r[1:])
+                   + f'<td><a href="{srcmap.get(r[0], "#")}" rel="nofollow noopener">{sl}</a><br><span class="small muted">{chk}</span></td>' + "</tr>" for r in d["rows"])
     when = "".join(f'<div class="row"><h3>{h}</h3><div><p>{p}</p></div></div>' for h,p in d["when"])
-    src = "".join(f'<li><a href="{u}" rel="nofollow noopener">{n}</a></li>' for n,u in CMP_SOURCES)
+    src = "".join(f'<li><a href="{srcmap[n]}" rel="nofollow noopener">{n}</a></li>' for n,u in CMP_SOURCES)
     body = f'''<section class="page-hero"><div class="wrap"><h1>{d["h1"]}</h1><p class="lead">{d["lead"]}</p></div></section>
 <section style="padding-top:0"><div class="wrap">
 <div class="answer"><h2 style="font-size:var(--t-1);margin-bottom:.4em">{d["q"]}</h2><p>{d["a"]}</p></div>
@@ -257,7 +264,7 @@ GUIDES = {
 <h2>Overbooking olursa ne yapılır?</h2>
 <p>Misafire hemen ve dürüstçe bilgi verin, eşdeğer ya da daha iyi bir alternatif (yakın otel, oda yükseltme) sunun ve transfer gibi ek maliyetleri üstlenin. Olayın hangi kanaldan ve neden kaynaklandığını kaydedin.</p>
 <h2>Hostlio Pro'da nasıl çalışır?</h2>
-<p>Hostlio Pro'nun <a href="/kanal-yoneticisi/">kanal yöneticisi</a>, Channex altyapısıyla 100'den fazla kanalda müsaitliği çift yönlü ve anlık senkronize eder. Rezervasyonlar kanal renkleriyle tek oda rafında görünür.</p>''',
+<p>Hostlio Pro'nun <a href="/tr/kanal-yoneticisi/">kanal yöneticisi</a>, sertifikalı bağlantılarla 100'den fazla kanalda müsaitliği çift yönlü ve anlık senkronize eder. Rezervasyonlar kanal renkleriyle tek oda rafında görünür.</p>''',
   faq=[("Overbooking ne demek?","Overbooking, bir otelin aynı tarih ve oda için satabileceğinden fazla rezervasyon almasıdır; Türkçede çift rezervasyon olarak da bilinir."),
        ("Kanal yöneticisi overbooking'i tamamen önler mi?","Anlık, çift yönlü senkron riski büyük ölçüde azaltır; ancak elle girilmeyen direkt rezervasyonlar ve hatalı oda eşlemeleri yine sorun çıkarabilir.")]),
  dict(key="post-autoreply", date="2026-09-21", title="Booking.com mesajlarına otomatik cevap nasıl verilir?",
@@ -276,7 +283,7 @@ GUIDES = {
 <h2>Cevap süresi neden önemli?</h2>
 <p>Misafir rezervasyon öncesi sorusuna hızlı cevap aldığında karar vermesi kolaylaşır; konaklama sırasında hızlı cevap ise memnuniyeti ve yorumları etkiler.</p>
 <h2>Hostlio Pro'da nasıl çalışır?</h2>
-<p>Pro ve Growth planlarında Booking.com dahil OTA mesajları <a href="/ai-misafir-asistani/">AI asistanı Lio</a>'nun gelen kutusuna düşer. Lio otel bilgilerinizle, misafirin dilinde yanıtlar; emin olmadığı mesajları size bırakır.</p>''',
+<p>Pro ve Growth planlarında Booking.com dahil OTA mesajları <a href="/tr/ai-misafir-asistani/">AI asistanı Lio</a>'nun gelen kutusuna düşer. Lio otel bilgilerinizle, misafirin dilinde yanıtlar; emin olmadığı mesajları size bırakır.</p>''',
   faq=[("Booking.com mesajlarına otomatik cevap verilebilir mi?","Evet. Extranet şablonları ve planlı mesajlar Booking.com'un kendi araçlarıdır; soruya özel otomatik cevap için mesajları okuyan bir AI asistanı gerekir."),
        ("AI asistanı yanlış bilgi verir mi?","Yalnızca otelin girdiği bilgilerle çalışan ve emin olmadığında personele devreden bir asistanda risk düşüktür.")]),
 ],
@@ -296,7 +303,7 @@ GUIDES = {
 <h2>What if it happens anyway?</h2>
 <p>Tell the guest promptly and honestly, offer an equal or better alternative (a nearby hotel, an upgrade) and cover extra costs such as transfers. Log which channel caused it and why.</p>
 <h2>How it works in Hostlio Pro</h2>
-<p>Hostlio Pro's <a href="/en/channel-manager/">channel manager</a> syncs availability two-way and in real time across 100+ channels through Channex. Bookings appear on one room rack, colour-coded by channel.</p>''',
+<p>Hostlio Pro's <a href="/en/channel-manager/">channel manager</a> syncs availability two-way and in real time across 100+ channels over certified connections. Bookings appear on one room rack, colour-coded by channel.</p>''',
   faq=[("What does overbooking mean?","Overbooking is when a hotel accepts more reservations than it can host for the same room and dates, also called a double booking."),
        ("Does a channel manager fully prevent overbooking?","Real-time two-way sync removes most of the risk; direct bookings that aren't entered and wrong room mappings can still cause problems.")]),
  dict(key="post-autoreply", date="2026-09-21", title="How to auto-reply to Booking.com guest messages",

@@ -40,7 +40,7 @@
   "redirects": [
     {
       "source": "/delete-account.html",
-      "destination": "/delete-account/",
+      "destination": "/en/delete-account/",
       "permanent": true
     },
     {
@@ -176,6 +176,651 @@
     {
       "source": "/blog/overbooking-hotel-how-to-prevent.html",
       "destination": "/en/blog/how-to-prevent-overbooking/",
+      "permanent": true
+    },
+    {
+      "source": "/",
+      "has": [
+        {
+          "type": "header",
+          "key": "accept-language",
+          "value": "^tr([-_,;].*)?$"
+        }
+      ],
+      "destination": "/tr/",
+      "permanent": false
+    },
+    {
+      "source": "/",
+      "has": [
+        {
+          "type": "header",
+          "key": "accept-language",
+          "value": "^es([-_,;].*)?$"
+        }
+      ],
+      "destination": "/es/",
+      "permanent": false
+    },
+    {
+      "source": "/",
+      "has": [
+        {
+          "type": "header",
+          "key": "accept-language",
+          "value": "^it([-_,;].*)?$"
+        }
+      ],
+      "destination": "/it/",
+      "permanent": false
+    },
+    {
+      "source": "/",
+      "has": [
+        {
+          "type": "header",
+          "key": "accept-language",
+          "value": "^pt([-_,;].*)?$"
+        }
+      ],
+      "destination": "/pt/",
+      "permanent": false
+    },
+    {
+      "source": "/",
+      "has": [
+        {
+          "type": "header",
+          "key": "accept-language",
+          "value": "^fr([-_,;].*)?$"
+        }
+      ],
+      "destination": "/fr/",
+      "permanent": false
+    },
+    {
+      "source": "/",
+      "destination": "/en/",
+      "permanent": false
+    },
+    {
+      "source": "/ai-misafir-asistani",
+      "destination": "/tr/ai-misafir-asistani/",
+      "permanent": true
+    },
+    {
+      "source": "/ai-misafir-asistani/",
+      "destination": "/tr/ai-misafir-asistani/",
+      "permanent": true
+    },
+    {
+      "source": "/kanal-yoneticisi",
+      "destination": "/tr/kanal-yoneticisi/",
+      "permanent": true
+    },
+    {
+      "source": "/kanal-yoneticisi/",
+      "destination": "/tr/kanal-yoneticisi/",
+      "permanent": true
+    },
+    {
+      "source": "/online-check-in",
+      "destination": "/tr/online-check-in/",
+      "permanent": true
+    },
+    {
+      "source": "/online-check-in/",
+      "destination": "/tr/online-check-in/",
+      "permanent": true
+    },
+    {
+      "source": "/ozellikler",
+      "destination": "/tr/ozellikler/",
+      "permanent": true
+    },
+    {
+      "source": "/ozellikler/",
+      "destination": "/tr/ozellikler/",
+      "permanent": true
+    },
+    {
+      "source": "/fiyatlandirma",
+      "destination": "/tr/fiyatlandirma/",
+      "permanent": true
+    },
+    {
+      "source": "/fiyatlandirma/",
+      "destination": "/tr/fiyatlandirma/",
+      "permanent": true
+    },
+    {
+      "source": "/sss",
+      "destination": "/tr/sss/",
+      "permanent": true
+    },
+    {
+      "source": "/sss/",
+      "destination": "/tr/sss/",
+      "permanent": true
+    },
+    {
+      "source": "/hakkimizda",
+      "destination": "/tr/hakkimizda/",
+      "permanent": true
+    },
+    {
+      "source": "/hakkimizda/",
+      "destination": "/tr/hakkimizda/",
+      "permanent": true
+    },
+    {
+      "source": "/iletisim",
+      "destination": "/tr/iletisim/",
+      "permanent": true
+    },
+    {
+      "source": "/iletisim/",
+      "destination": "/tr/iletisim/",
+      "permanent": true
+    },
+    {
+      "source": "/blog",
+      "destination": "/tr/blog/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/",
+      "destination": "/tr/blog/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/kucuk-otel-icin-otel-yonetim-yazilimi-secimi",
+      "destination": "/tr/blog/kucuk-otel-icin-otel-yonetim-yazilimi-secimi/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/kucuk-otel-icin-otel-yonetim-yazilimi-secimi/",
+      "destination": "/tr/blog/kucuk-otel-icin-otel-yonetim-yazilimi-secimi/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/otel-misafir-mesajlarini-yapay-zeka-ile-yanitlamak",
+      "destination": "/tr/blog/otel-misafir-mesajlarini-yapay-zeka-ile-yanitlamak/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/otel-misafir-mesajlarini-yapay-zeka-ile-yanitlamak/",
+      "destination": "/tr/blog/otel-misafir-mesajlarini-yapay-zeka-ile-yanitlamak/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/overbooking-nasil-onlenir",
+      "destination": "/tr/blog/overbooking-nasil-onlenir/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/overbooking-nasil-onlenir/",
+      "destination": "/tr/blog/overbooking-nasil-onlenir/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/booking-com-mesajlarina-otomatik-cevap",
+      "destination": "/tr/blog/booking-com-mesajlarina-otomatik-cevap/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/booking-com-mesajlarina-otomatik-cevap/",
+      "destination": "/tr/blog/booking-com-mesajlarina-otomatik-cevap/",
+      "permanent": true
+    },
+    {
+      "source": "/pansiyon-programi",
+      "destination": "/tr/pansiyon-programi/",
+      "permanent": true
+    },
+    {
+      "source": "/pansiyon-programi/",
+      "destination": "/tr/pansiyon-programi/",
+      "permanent": true
+    },
+    {
+      "source": "/butik-otel-programi",
+      "destination": "/tr/butik-otel-programi/",
+      "permanent": true
+    },
+    {
+      "source": "/butik-otel-programi/",
+      "destination": "/tr/butik-otel-programi/",
+      "permanent": true
+    },
+    {
+      "source": "/apart-otel-programi",
+      "destination": "/tr/apart-otel-programi/",
+      "permanent": true
+    },
+    {
+      "source": "/apart-otel-programi/",
+      "destination": "/tr/apart-otel-programi/",
+      "permanent": true
+    },
+    {
+      "source": "/hostel-programi",
+      "destination": "/tr/hostel-programi/",
+      "permanent": true
+    },
+    {
+      "source": "/hostel-programi/",
+      "destination": "/tr/hostel-programi/",
+      "permanent": true
+    },
+    {
+      "source": "/otel-programi-karsilastirma",
+      "destination": "/tr/otel-programi-karsilastirma/",
+      "permanent": true
+    },
+    {
+      "source": "/otel-programi-karsilastirma/",
+      "destination": "/tr/otel-programi-karsilastirma/",
+      "permanent": true
+    },
+    {
+      "source": "/gizlilik-politikasi",
+      "destination": "/tr/gizlilik-politikasi/",
+      "permanent": true
+    },
+    {
+      "source": "/gizlilik-politikasi/",
+      "destination": "/tr/gizlilik-politikasi/",
+      "permanent": true
+    },
+    {
+      "source": "/kullanim-sartlari",
+      "destination": "/tr/kullanim-sartlari/",
+      "permanent": true
+    },
+    {
+      "source": "/kullanim-sartlari/",
+      "destination": "/tr/kullanim-sartlari/",
+      "permanent": true
+    },
+    {
+      "source": "/hesap-silme",
+      "destination": "/tr/hesap-silme/",
+      "permanent": true
+    },
+    {
+      "source": "/hesap-silme/",
+      "destination": "/tr/hesap-silme/",
+      "permanent": true
+    },
+    {
+      "source": "/privacy",
+      "destination": "/en/privacy/",
+      "permanent": true
+    },
+    {
+      "source": "/privacy/",
+      "destination": "/en/privacy/",
+      "permanent": true
+    },
+    {
+      "source": "/terms",
+      "destination": "/en/terms/",
+      "permanent": true
+    },
+    {
+      "source": "/terms/",
+      "destination": "/en/terms/",
+      "permanent": true
+    },
+    {
+      "source": "/delete-account",
+      "destination": "/en/delete-account/",
+      "permanent": true
+    },
+    {
+      "source": "/delete-account/",
+      "destination": "/en/delete-account/",
+      "permanent": true
+    },
+    {
+      "source": "/tr/pricing",
+      "destination": "/tr/fiyatlandirma/",
+      "permanent": true
+    },
+    {
+      "source": "/tr/pricing/",
+      "destination": "/tr/fiyatlandirma/",
+      "permanent": true
+    },
+    {
+      "source": "/tr/faq",
+      "destination": "/tr/sss/",
+      "permanent": true
+    },
+    {
+      "source": "/tr/faq/",
+      "destination": "/tr/sss/",
+      "permanent": true
+    },
+    {
+      "source": "/tr/features",
+      "destination": "/tr/ozellikler/",
+      "permanent": true
+    },
+    {
+      "source": "/tr/features/",
+      "destination": "/tr/ozellikler/",
+      "permanent": true
+    },
+    {
+      "source": "/tr/contact",
+      "destination": "/tr/iletisim/",
+      "permanent": true
+    },
+    {
+      "source": "/tr/contact/",
+      "destination": "/tr/iletisim/",
+      "permanent": true
+    },
+    {
+      "source": "/tr/about",
+      "destination": "/tr/hakkimizda/",
+      "permanent": true
+    },
+    {
+      "source": "/tr/about/",
+      "destination": "/tr/hakkimizda/",
+      "permanent": true
+    },
+    {
+      "source": "/tr/security",
+      "destination": "/tr/guvenlik-ve-veri/",
+      "permanent": true
+    },
+    {
+      "source": "/tr/security/",
+      "destination": "/tr/guvenlik-ve-veri/",
+      "permanent": true
+    },
+    {
+      "source": "/es/pricing",
+      "destination": "/es/precios/",
+      "permanent": true
+    },
+    {
+      "source": "/es/pricing/",
+      "destination": "/es/precios/",
+      "permanent": true
+    },
+    {
+      "source": "/es/faq",
+      "destination": "/es/preguntas-frecuentes/",
+      "permanent": true
+    },
+    {
+      "source": "/es/faq/",
+      "destination": "/es/preguntas-frecuentes/",
+      "permanent": true
+    },
+    {
+      "source": "/es/features",
+      "destination": "/es/funcionalidades/",
+      "permanent": true
+    },
+    {
+      "source": "/es/features/",
+      "destination": "/es/funcionalidades/",
+      "permanent": true
+    },
+    {
+      "source": "/es/contact",
+      "destination": "/es/contacto/",
+      "permanent": true
+    },
+    {
+      "source": "/es/contact/",
+      "destination": "/es/contacto/",
+      "permanent": true
+    },
+    {
+      "source": "/es/about",
+      "destination": "/es/sobre-nosotros/",
+      "permanent": true
+    },
+    {
+      "source": "/es/about/",
+      "destination": "/es/sobre-nosotros/",
+      "permanent": true
+    },
+    {
+      "source": "/es/security",
+      "destination": "/es/seguridad/",
+      "permanent": true
+    },
+    {
+      "source": "/es/security/",
+      "destination": "/es/seguridad/",
+      "permanent": true
+    },
+    {
+      "source": "/it/pricing",
+      "destination": "/it/prezzi/",
+      "permanent": true
+    },
+    {
+      "source": "/it/pricing/",
+      "destination": "/it/prezzi/",
+      "permanent": true
+    },
+    {
+      "source": "/it/faq",
+      "destination": "/it/domande-frequenti/",
+      "permanent": true
+    },
+    {
+      "source": "/it/faq/",
+      "destination": "/it/domande-frequenti/",
+      "permanent": true
+    },
+    {
+      "source": "/it/features",
+      "destination": "/it/funzionalita/",
+      "permanent": true
+    },
+    {
+      "source": "/it/features/",
+      "destination": "/it/funzionalita/",
+      "permanent": true
+    },
+    {
+      "source": "/it/contact",
+      "destination": "/it/contatti/",
+      "permanent": true
+    },
+    {
+      "source": "/it/contact/",
+      "destination": "/it/contatti/",
+      "permanent": true
+    },
+    {
+      "source": "/it/about",
+      "destination": "/it/chi-siamo/",
+      "permanent": true
+    },
+    {
+      "source": "/it/about/",
+      "destination": "/it/chi-siamo/",
+      "permanent": true
+    },
+    {
+      "source": "/it/security",
+      "destination": "/it/sicurezza/",
+      "permanent": true
+    },
+    {
+      "source": "/it/security/",
+      "destination": "/it/sicurezza/",
+      "permanent": true
+    },
+    {
+      "source": "/pt/pricing",
+      "destination": "/pt/precos/",
+      "permanent": true
+    },
+    {
+      "source": "/pt/pricing/",
+      "destination": "/pt/precos/",
+      "permanent": true
+    },
+    {
+      "source": "/pt/faq",
+      "destination": "/pt/perguntas-frequentes/",
+      "permanent": true
+    },
+    {
+      "source": "/pt/faq/",
+      "destination": "/pt/perguntas-frequentes/",
+      "permanent": true
+    },
+    {
+      "source": "/pt/features",
+      "destination": "/pt/funcionalidades/",
+      "permanent": true
+    },
+    {
+      "source": "/pt/features/",
+      "destination": "/pt/funcionalidades/",
+      "permanent": true
+    },
+    {
+      "source": "/pt/contact",
+      "destination": "/pt/contato/",
+      "permanent": true
+    },
+    {
+      "source": "/pt/contact/",
+      "destination": "/pt/contato/",
+      "permanent": true
+    },
+    {
+      "source": "/pt/about",
+      "destination": "/pt/sobre-nos/",
+      "permanent": true
+    },
+    {
+      "source": "/pt/about/",
+      "destination": "/pt/sobre-nos/",
+      "permanent": true
+    },
+    {
+      "source": "/pt/security",
+      "destination": "/pt/seguranca/",
+      "permanent": true
+    },
+    {
+      "source": "/pt/security/",
+      "destination": "/pt/seguranca/",
+      "permanent": true
+    },
+    {
+      "source": "/fr/pricing",
+      "destination": "/fr/tarifs/",
+      "permanent": true
+    },
+    {
+      "source": "/fr/pricing/",
+      "destination": "/fr/tarifs/",
+      "permanent": true
+    },
+    {
+      "source": "/fr/features",
+      "destination": "/fr/fonctionnalites/",
+      "permanent": true
+    },
+    {
+      "source": "/fr/features/",
+      "destination": "/fr/fonctionnalites/",
+      "permanent": true
+    },
+    {
+      "source": "/fr/about",
+      "destination": "/fr/a-propos/",
+      "permanent": true
+    },
+    {
+      "source": "/fr/about/",
+      "destination": "/fr/a-propos/",
+      "permanent": true
+    },
+    {
+      "source": "/fr/security",
+      "destination": "/fr/securite/",
+      "permanent": true
+    },
+    {
+      "source": "/fr/security/",
+      "destination": "/fr/securite/",
+      "permanent": true
+    },
+    {
+      "source": "/tr/signup",
+      "destination": "/signup?lang=tr",
+      "permanent": true
+    },
+    {
+      "source": "/tr/signup/",
+      "destination": "/signup?lang=tr",
+      "permanent": true
+    },
+    {
+      "source": "/en/signup",
+      "destination": "/signup?lang=en",
+      "permanent": true
+    },
+    {
+      "source": "/en/signup/",
+      "destination": "/signup?lang=en",
+      "permanent": true
+    },
+    {
+      "source": "/es/signup",
+      "destination": "/signup?lang=es",
+      "permanent": true
+    },
+    {
+      "source": "/es/signup/",
+      "destination": "/signup?lang=es",
+      "permanent": true
+    },
+    {
+      "source": "/it/signup",
+      "destination": "/signup?lang=it",
+      "permanent": true
+    },
+    {
+      "source": "/it/signup/",
+      "destination": "/signup?lang=it",
+      "permanent": true
+    },
+    {
+      "source": "/pt/signup",
+      "destination": "/signup?lang=pt",
+      "permanent": true
+    },
+    {
+      "source": "/pt/signup/",
+      "destination": "/signup?lang=pt",
+      "permanent": true
+    },
+    {
+      "source": "/fr/signup",
+      "destination": "/signup?lang=fr",
+      "permanent": true
+    },
+    {
+      "source": "/fr/signup/",
+      "destination": "/signup?lang=fr",
       "permanent": true
     }
   ]

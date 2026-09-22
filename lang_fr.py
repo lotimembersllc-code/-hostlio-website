@@ -2,7 +2,7 @@
 Pure data + functions; no project imports. Links come from the U callable passed in."""
 
 L = "fr"
-UPDATED_TXT = "21 septembre 2026"
+UPDATED_TXT = "23 septembre 2026"
 LEGAL_DATE_TXT = "20 avril 2026"
 
 # ------------------------------------------------------------------ build.UI
@@ -31,7 +31,7 @@ MEGA = {"btn":"Produit","cols":[
 
 # ------------------------------------------------------------------ build.software_schema / room_rack / 404
 SOFT_DESC = "Logiciel de gestion hôtelière propulsé par l’IA pour les hôtels indépendants : messagerie clients 24h/24 en 30+ langues, channel manager pour 100+ OTA, calendrier des réservations et check-in en ligne."
-SOFT_FEATURES = ["Assistant IA Lio pour les clients (30+ langues)", "Channel manager (100+ OTA via Channex)", "Calendrier des réservations en glisser-déposer", "Check-in en ligne avec signature électronique", "Formulaires de visa PDF automatiques", "Vente de transferts et d’excursions", "Application mobile utilisable hors connexion"]
+SOFT_FEATURES = ["Assistant IA Lio pour les clients (30+ langues)", "Channel manager (connexions certifiées à 100+ OTA)", "Calendrier des réservations en glisser-déposer", "Check-in en ligne avec signature électronique", "Formulaires de visa PDF automatiques", "Vente de transferts et d’excursions", "Application mobile utilisable hors connexion"]
 DAYS = ["Lun","Mar","Mer","Jeu","Ven","Sam","Dim"]
 RACK = ("Planning des chambres", "Septembre, semaine 3", "Réservations colorées par canal : Booking.com en bleu, Airbnb en pêche, Expedia en lilas, Agoda en sable, direct en vert")
 NOTFOUND = ("Page introuvable | Hostlio Pro", "La page que vous cherchez a peut-être été déplacée ou supprimée.", "Page introuvable",
@@ -43,7 +43,7 @@ HOME = dict(
   desc="Logiciel de gestion hôtelière Hostlio Pro : l’assistant IA Lio répond aux clients 24h/24 en 30+ langues et le channel manager synchronise 100+ OTA. 7 jours offerts.",
   h1='Pendant que votre hôtel dort, <em class="hl">Lio</em> répond',
   lead="Le logiciel de gestion hôtelière propulsé par l’IA pour les hôtels indépendants et les chambres d’hôtes. Réservations, 100+ canaux et messages clients au même endroit, en 30+ langues.",
-  try_="Essai gratuit", demo="Demander une démo", via="Connecté via Channex :", more="et 100+ autres",
+  try_="Essai gratuit", demo="Demander une démo", via="Connexions certifiées :", more="et 100+ autres",
   coll_alt1="Cour d’un hôtel boutique avec bougainvilliers et piscine au coucher du soleil", coll_alt2="Hôtelier souriant tenant une tasse de café",
   chip1=("Chambre 202 vendue","Booking.com, 21:40"), chip2="Fermée sur Airbnb et Expedia",
   bub_h=("Lio","Réceptionniste IA, en ligne"), bub_in="Hallo! Ist ein später Check-in möglich?", bub_out="Natürlich! Unsere Rezeption ist rund um die Uhr besetzt.", bub_note="Répondu en allemand, 4 s",
@@ -59,36 +59,36 @@ HOME = dict(
   tabs=["Messages","Calendrier","Canaux","Check-in"],
   st=[("Tous les messages clients dans une seule boîte","WhatsApp et messages des OTA (Booking.com, Airbnb, Expedia) réunis. Lio répond avec les informations de votre hôtel, et vous ne voyez que ce qui a besoin de vous.",["Réponses automatiques en 30+ langues","Détails de la réservation à côté de chaque message","Vous transmet ce dont il n’est pas sûr"],"ai","Comment fonctionne Lio"),
       ("Toute votre semaine sur le planning des chambres","Chaque réservation apparaît dans la couleur de son canal. Changer de chambre, prolonger un séjour ou bloquer des dates se fait d’un seul geste.",["Changements de chambre en glisser-déposer","Réservations colorées par canal","Le même calendrier sur le web et sur iOS"],"features","Toutes les fonctionnalités"),
-      ("100+ canaux, une seule disponibilité","Synchronisation bidirectionnelle via Channex. Une chambre vendue sur un canal se ferme instantanément sur les autres.",["Tarifs et restrictions depuis un seul écran","Nouvelles réservations et annulations intégrées automatiquement","Aucun risque de surréservation"],"channel","Channel manager"),
+      ("100+ canaux, une seule disponibilité","Synchronisation bidirectionnelle par connexions de canal certifiées. Une chambre vendue sur un canal se ferme instantanément sur les autres.",["Tarifs et restrictions depuis un seul écran","Nouvelles réservations et annulations intégrées automatiquement","Aucun risque de surréservation"],"channel","Channel manager"),
       ("Le check-in est fait avant l’arrivée","Les clients envoient leurs informations d’identité, leurs accompagnants et leur signature depuis leur téléphone, via un lien sécurisé.",["Dans le navigateur, sans application à télécharger","Accompagnants dans un seul formulaire","Signature électronique et consentement"],"checkin","Check-in en ligne")],
   inbox_top=("Boîte de réception","12 conversations ouvertes"), inbox_note="Traduction : le check-in est à partir de 14 h, nous pouvons garder vos bagages.",
   chan_top=("Canaux connectés","Dernière synchro : à l’instant"), sync="Synchronisé",
   ci_top=("Check-in en ligne","Chambre 202"), ci_f=[("Nom complet","Keiko Sato"),("Nationalité","Japon"),("Accompagnants","1 personne ajoutée")], ci_sig="Signature",
   bento_h='<em class="hl">Tout</em> ce dont un hôtel a besoin', bento_p="Chaque module est connecté : pas d’outils séparés, pas de mots de passe multiples.",
   b_lio=("Assistant IA Lio","Règle la plupart des questions des clients avant même que vous les voyiez et vous résume le reste.","Is breakfast included?","Yes, from 7:30 to 10:30 on the terrace."),
-  b_chan=("Channel manager","100+ canaux de vente via Channex, une seule disponibilité."),
+  b_chan=("Channel manager","100+ canaux de vente, une seule disponibilité."),
   b_rack=("Planning des chambres","Calendrier des réservations en glisser-déposer."),
   b_ci=("Check-in en ligne","Identité, accompagnants et signature électronique avant l’arrivée."),
   b_pdf=("Formulaires de visa PDF","Attestations d’hébergement et lettres d’invitation en un clic.","Attestation d’hébergement","PDF"),
   b_tr=("Vente de transferts et d’excursions","Lio les propose au bon moment ; vous gagnez plus.","Transfert aéroport","+35 €"),
   b_lang=("30+ langues","Dans la langue où le client écrit, dans cette langue il reçoit sa réponse."),
   b_mob=("Application mobile","Réservations, messages et check-ins sur iOS, même hors connexion."),
-  types_h='Conçu pour <em class="hl">tous les types d’établissements</em>', types_p="Pensé pour les établissements indépendants de 10 à 150 chambres.",
+  types_h='Conçu pour <em class="hl">tous les types d’établissements</em>', types_p="Pensé pour les établissements indépendants de 1 à 150 chambres.",
   types=[("brand-courtyard","Cour d’un hôtel boutique avec piscine et bougainvilliers","Hôtel boutique","10–50 chambres","Beaucoup de clients internationaux, chaque message est personnel."),
          ("gen-hostel","Hall aux boiseries avec espace commun","Auberge de jeunesse","Lits et chambres","Voyageurs multilingues, boîtes de réception chargées."),
          ("gen-guesthouse","Chambre d’hôtes chaleureuse avec une lampe de bureau","Chambres d’hôtes","1–10 chambres","Une équipe de nuit pour une équipe d’une seule personne."),
-         ("gen-apart","Appartement lumineux au linge de lit blanc","Résidence hôtelière","10–40 logements","Le check-in en ligne pour une arrivée sans clé.")],
+         ("gen-apart","Appartement lumineux au linge de lit blanc","Résidence hôtelière","10–40 logements","Le check-in en ligne avant l’arrivée.")],
   plans_h="Une formule adaptée à la taille de votre hôtel", plans_p="Un abonnement mensuel fixe, sans engagement de longue durée. Chaque formule est gratuite pendant 7 jours.",
   early="20 % de réduction pour les 50 premiers clients, garantie à vie", tax='Prix hors taxes. <a href="{p}">Comparer les formules en détail</a>.',
   ai_h='Lio, <em class="hl">l’équipe de nuit</em> de votre réception', ai_p="Un assistant IA qui s’appuie sur les informations de votre hôtel. Il répond aux clients, vend des services en plus et vous laisse le reste.",
   ai_wide=("Répond dans la langue du client","Une question en japonais reçoit une réponse en japonais, une question en arabe une réponse en arabe. Vous lisez la conversation dans votre propre langue."),
-  ai_cards=[("van","Vend pour vous","Propose transferts aéroport et excursions au bon moment et rattache la demande à la réservation."),("hand-arrow-up","Sait passer la main","Les messages qui demandent une décision, comme les remises, les réclamations ou les demandes particulières, vont à votre équipe."),("calendar-dots","Connaît la réservation","Quel client, quelle chambre, quelles dates : chaque réponse s’appuie sur les détails de la réservation.")],
+  ai_cards=[("van","Vend pour vous","Propose transferts aéroport et excursions au bon moment et vous transmet la demande."),("hand-arrow-up","Sait passer la main","Les messages qui demandent une décision, comme les remises, les réclamations ou les demandes particulières, vont à votre équipe."),("calendar-dots","Connaît la réservation","Quand le client est associé à une réservation, les réponses s’appuient sur la chambre, les dates et les détails de la réservation.")],
   ai_photo=("brand-guest-phone","Cliente près d’une fenêtre écrivant un message sur son téléphone","Sur WhatsApp et les OTA","WhatsApp, Booking.com, Airbnb et Expedia."),
   ai_btn="Découvrir Lio",
-  answer="<strong>Qu’est-ce que Hostlio Pro ?</strong> Hostlio Pro est un logiciel de gestion hôtelière dans le cloud (un PMS hôtelier) pour les hôtels indépendants et les chambres d’hôtes de 10 à 150 chambres. Il confie la communication avec les clients à l’IA, regroupe les réservations des OTA dans un seul calendrier et déplace le check-in sur le téléphone du client. Il se gère depuis le web et une application iOS, et il est utilisé dans plus de 20 pays.",
+  answer="<strong>Qu’est-ce que Hostlio Pro ?</strong> Hostlio Pro est un logiciel de gestion hôtelière dans le cloud (un PMS hôtelier) pour les hôtels indépendants et les chambres d’hôtes de 1 à 150 chambres. Il confie la communication avec les clients à l’IA, regroupe les réservations des OTA dans un seul calendrier et déplace le check-in sur le téléphone du client. Il se gère depuis le web et une application iOS, et il est utilisé dans plus de 20 pays.",
   stats=[("30+","langues prises en charge"),("100+","OTA et canaux de vente"),("20+","pays avec des hôtels Hostlio Pro"),("7 jours","d’essai gratuit, sans engagement")],
   sup_h="Une équipe à vos côtés",
-  sup=[("rocket-launch","t-peach","Mise en place le jour même","Ajoutez vos types de chambres et connectez vos canaux. La formule Growth inclut un appel d’intégration individuel."),
+  sup=[("rocket-launch","t-peach","Compte en minutes, canaux le jour même","Votre compte est prêt en quelques minutes ; ajoutez vos types de chambres et connectez vos canaux le jour même. La formule Growth inclut un appel d’intégration individuel."),
        ("lifebuoy","t-lilac","Assistance en anglais et en turc",'Un blocage ? Contactez l’équipe à <a href="mailto:{e}">{e}</a>.'),
        ("book-open-text","t-sand","Guides",'Des <a href="{b}">articles de blog</a> sur la gestion hôtelière et la distribution, ainsi que des <a href="{f}">questions fréquentes</a>.')],
   sup_img=("gen-support-call","Hôtelier consultant les réservations sur un ordinateur portable"),
@@ -143,7 +143,7 @@ def types(U):
   pains_h="Qu’est-ce qui prend le plus de temps dans une résidence hôtelière ?",
   pains=[("Check-in à distance","Le formulaire de check-in en ligne recueille l’identité, les accompagnants et la signature avant l’arrivée."),
          ("Instructions d’accès","Remise des clés, Wi-Fi, parking : les questions se répètent. Lio y répond à partir des informations de votre établissement."),
-         ("Canaux de courte durée","Les disponibilités Airbnb et Booking.com se synchronisent instantanément via Channex."),
+         ("Canaux de courte durée","Les disponibilités Airbnb et Booking.com se synchronisent instantanément par connexions certifiées."),
          ("Séjours plus longs","Prolonger un séjour ou changer d’appartement se fait par glisser-déposer sur le planning des chambres.")],
   plan="Le check-in en ligne est inclus dans Pro et Growth ; nous recommandons donc <strong>Pro</strong> pour les résidences hôtelières. Si vous gérez deux établissements, regardez <strong>Growth</strong>.",
   faq=[("Hostlio Pro fonctionne-t-il pour une résidence hôtelière sans réception ?","Oui. Le check-in en ligne et la messagerie IA prennent en charge, à distance, la collecte d’informations et les réponses aux questions qu’assurerait une réception."),
@@ -155,7 +155,7 @@ def types(U):
   crumb="Logiciel pour auberges de jeunesse", h1='Un <em class="hl">logiciel pour auberges de jeunesse</em> aux boîtes de réception chargées et multilingues',
   lead="Les auberges de jeunesse accueillent des clients du monde entier, reçoivent beaucoup de messages et fonctionnent avec de petites équipes. Hostlio Pro gère les questions multilingues et réunit les canaux sur un seul calendrier.",
   q="Qu’est-ce qu’un logiciel pour auberge de jeunesse ?",
-  a="Un logiciel pour auberge de jeunesse (hostel) gère les réservations, les canaux et la communication avec les clients des établissements qui vendent des lits et des chambres. Hostlio Pro se connecte à plus de 100 canaux, dont Hostelworld, via Channex et répond aux questions des clients en 30+ langues grâce à son assistant IA Lio.",
+  a="Un logiciel pour auberge de jeunesse (hostel) gère les réservations, les canaux et la communication avec les clients des établissements qui vendent des lits et des chambres. Hostlio Pro se connecte à plus de 100 canaux, dont Hostelworld, par connexions certifiées et répond aux questions des clients en 30+ langues grâce à son assistant IA Lio.",
   pains_h="De quoi les auberges de jeunesse ont-elles le plus besoin ?",
   pains=[("Trafic multilingue","Les voyageurs écrivent dans leur propre langue. Lio répond dans chacune d’elles."),
          ("Hostelworld et OTA","Hostelworld, Booking.com et les autres canaux partagent une seule disponibilité."),
@@ -174,7 +174,7 @@ def cmp(U):
   crumb="Comparatif des logiciels hôteliers", h1='<em class="hl">Comparatif</em> des logiciels hôteliers (2026)',
   lead="Nous avons comparé cinq logiciels de gestion hôtelière populaires auprès des hôtels indépendants, en nous appuyant uniquement sur ce que chaque éditeur publie sur sa propre page de tarifs.",
   q="Quel logiciel hôtelier vous convient ?",
-  a="Réponse courte : pour les hôtels à établissement unique de 10 à 150 chambres qui accueillent beaucoup de clients internationaux, un logiciel à prix fixe incluant la messagerie IA (comme Hostlio Pro) garde le budget prévisible. Les groupes multi-établissements aux besoins de grand compte peuvent envisager des plateformes sur devis comme Mews ou Cloudbeds ; les établissements en Turquie qui veulent un support local et un réseau B2B peuvent regarder HotelRunner ; les petits établissements qui souhaitent profiter du réseau SiteMinder peuvent envisager Little Hotelier.",
+  a="Réponse courte : pour les hôtels à établissement unique de 1 à 150 chambres qui accueillent beaucoup de clients internationaux, un logiciel à prix fixe incluant la messagerie IA (comme Hostlio Pro) garde le budget prévisible. Les groupes multi-établissements aux besoins de grand compte peuvent envisager des plateformes sur devis comme Mews ou Cloudbeds ; les établissements en Turquie qui veulent un support local et un réseau B2B peuvent regarder HotelRunner ; les petits établissements qui souhaitent profiter du réseau SiteMinder peuvent envisager Little Hotelier.",
   cols=["Logiciel","Tarifs publiés ?","À partir de","Commission sur les réservations","Essai gratuit","Messagerie IA pour les clients"],
   rows=[("Hostlio Pro","Oui","49 $/mois (prix de lancement)","Aucune, abonnement mensuel fixe","7 jours","Toutes les formules (Lio, 30+ langues)"),
         ("Cloudbeds","Non, sur devis","Devis","Indique ne prélever aucune commission supplémentaire sur les réservations du Booking Engine et du Channel Manager","Non indiqué sur la page de tarifs","Non indiqué séparément sur la page de tarifs"),
@@ -182,7 +182,7 @@ def cmp(U):
         ("Little Hotelier","Calculés selon le nombre de chambres","Via un simulateur de prix","Frais de réservation de 1 % dans Basics","30 jours","Non indiqué sur la page de tarifs"),
         ("HotelRunner","Oui (formules de base)","19,95 $/mois + 0,75 % (Manage)","De 0,75 % à 1,25 % selon la formule","Disponible","Dans le niveau Advanced « Automate »")],
   when_h="Lequel choisir, et quand ?",
-  when=[("Hostlio Pro","Un ou deux établissements, 10 à 150 chambres, beaucoup de clients internationaux et un budget mensuel fixe."),
+  when=[("Hostlio Pro","Un ou deux établissements, 1 à 150 chambres, beaucoup de clients internationaux et un budget mensuel fixe."),
         ("Cloudbeds et Mews","Groupes multi-établissements aux besoins de grand compte, comme le revenue management et une large place de marché d’intégrations."),
         ("HotelRunner","Établissements en Turquie qui veulent un support local, un réseau de vente B2B et un faible abonnement fixe plus commission."),
         ("Little Hotelier","Petits établissements qui souhaitent l’infrastructure SiteMinder et acceptent une tarification selon le nombre de chambres.")],
@@ -209,7 +209,7 @@ def guides(U):
 <h2>Et si cela arrive malgré tout ?</h2>
 <p>Prévenez le client rapidement et honnêtement, proposez une alternative équivalente ou meilleure (un hôtel voisin, un surclassement) et prenez en charge les frais supplémentaires comme les transferts. Notez quel canal en est à l’origine et pourquoi.</p>
 <h2>Comment cela fonctionne dans Hostlio Pro</h2>
-<p>Le <a href="{U("channel")}">channel manager</a> de Hostlio Pro synchronise les disponibilités de manière bidirectionnelle et en temps réel sur plus de 100 canaux via Channex. Les réservations apparaissent sur un seul planning des chambres, colorées par canal.</p>''',
+<p>Le <a href="{U("channel")}">channel manager</a> de Hostlio Pro synchronise les disponibilités de manière bidirectionnelle et en temps réel sur plus de 100 canaux par connexions certifiées. Les réservations apparaissent sur un seul planning des chambres, colorées par canal.</p>''',
   faq=[("Que signifie surréservation (overbooking) ?","La surréservation, c’est lorsqu’un hôtel accepte plus de réservations qu’il ne peut en accueillir pour la même chambre et les mêmes dates ; on parle aussi de double réservation."),
        ("Un channel manager empêche-t-il totalement la surréservation ?","Une synchronisation bidirectionnelle en temps réel élimine l’essentiel du risque ; les réservations directes non saisies et les erreurs de correspondance des chambres peuvent toutefois encore poser problème.")]),
  dict(key="post-autoreply", date="2026-09-21", title="Comment répondre automatiquement aux messages Booking.com",

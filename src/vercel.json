@@ -40,7 +40,7 @@
   "redirects": [
     {
       "source": "/delete-account.html",
-      "destination": "/delete-account/",
+      "destination": "/en/delete-account/",
       "permanent": true
     },
     {

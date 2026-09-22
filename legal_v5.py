@@ -4,11 +4,18 @@ from pathlib import Path
 from build import url, EMAIL, LANGMOD
 
 ADDR = "Loti Members LLC, 2108 N ST STE N, Sacramento, CA 95816"
-LEGAL_DATE = {"tr": "20 Nisan 2026", "en": "April 20, 2026", "iso": "2026-04-20", **{l: m.LEGAL_DATE_TXT for l, m in LANGMOD.items()}}
+# K5 (Eylül 2026): metinler legal_v6.py / legal_v6_intl.py'de güncellendi (eski 20 Nisan 2026 metni bu dosyanın git geçmişinde)
+import legal_v6 as _v6, legal_v6_intl as _v6i
+LEGAL_DATE = {**_v6.LEGAL_DATE, "iso": _v6.LEGAL_ISO}
+def _U(L): return lambda k: url(k, "en" if k == "dpa" else L)
 
 def _ul(items): return "<ul>" + "".join(f"<li>{i}</li>" for i in items) + "</ul>"
 
 def privacy_body(L):
+    if L in ("en", "tr"): return (_v6.privacy_en if L == "en" else _v6.privacy_tr)(_U(L), EMAIL, ADDR)
+    return _v6i.privacy(L, _U(L), EMAIL, ADDR, _v6.sp_table, _v6.RETENTION)
+
+def privacy_body_v5(L):
     if L in LANGMOD: return LANGMOD[L].privacy_body(lambda k: url(k, L), EMAIL, ADDR, _ul)
     if L == "en":
         return f'''<p>This Privacy Policy describes how Hostlio Pro, operated by Loti Members LLC ("we", "us", or "our"), collects, uses, and shares information when you use our hotel management platform at hostliopro.com.</p>
@@ -47,6 +54,10 @@ def privacy_body(L):
 <p>Hesabınızı silmek için <a href="{url("delacc", L)}">hesap silme</a> sayfasına bakın.</p>'''
 
 def terms_body(L):
+    if L in ("en", "tr"): return (_v6.terms_en if L == "en" else _v6.terms_tr)(_U(L), EMAIL, ADDR)
+    return _v6i.terms(L, _U(L), EMAIL, ADDR, _v6.QUOTA)
+
+def terms_body_v5(L):
     if L in LANGMOD: return LANGMOD[L].terms_body(lambda k: url(k, L), EMAIL, ADDR, _ul)
     pricing = url("pricing", L)
     if L == "en":
@@ -153,6 +164,8 @@ def delacc_page(L):
     return {"key": "delacc", "title": title, "desc": desc, "trail": [(h1, url("delacc", L))], "body": body, "no_final": True}
 
 def pages(L, article):
-    out = [legal_page("privacy", L), legal_page("terms", L), delacc_page(L)]
-    if L == "en": out += legacy_posts(article)
+    import build as _b, security_page as _sp
+    import roi_page as _roi
+    out = [legal_page("privacy", L), legal_page("terms", L), delacc_page(L), _sp.security_page(L, _b), _roi.roi_page(L, _b)]
+    if L == "en": out += legacy_posts(article) + [_sp.dpa_page(_b)]
     return out
