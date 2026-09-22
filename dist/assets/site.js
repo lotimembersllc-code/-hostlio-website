@@ -91,6 +91,10 @@
     fv.forEach(function(v){vo.observe(v)});
   }
 
+  // kayıt/ödeme bağlantılarına sayfa dilini ekle (ödeme sayfası aynı dilde açılsın)
+  var hl=(root.getAttribute('lang')||'en').slice(0,2);
+  d.querySelectorAll('a[href^="/signup"]').forEach(function(a){try{var u=new URL(a.getAttribute('href'),location.origin);if(!u.searchParams.get('lang'))u.searchParams.set('lang',hl);a.setAttribute('href',u.pathname+u.search)}catch(e){}});
+
   // gentle reveal for below-the-fold blocks only (content is visible at rest)
   if('IntersectionObserver' in window && !matchMedia('(prefers-reduced-motion: reduce)').matches){
     var io=new IntersectionObserver(function(es){es.forEach(function(en){if(en.isIntersecting){en.target.classList.remove('pre');io.unobserve(en.target)}})},{rootMargin:'0px 0px -8% 0px'});

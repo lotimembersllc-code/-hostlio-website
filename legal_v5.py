@@ -27,7 +27,7 @@ def privacy_body(L):
 <h2>10. Changes to This Policy</h2><p>We may update this Privacy Policy from time to time. We will notify you of any changes by posting the new policy on this page and updating the "Last updated" date.</p>
 <h2>11. Contact Us</h2><p>If you have any questions about this Privacy Policy, please contact us:</p>
 {_ul([f'Email: <a href="mailto:{EMAIL}">{EMAIL}</a>', f"Address: {ADDR}"])}
-<p>To delete your account, see <a href="/delete-account">Delete your account</a>.</p>'''
+<p>To delete your account, see <a href="{url("delacc", L)}">Delete your account</a>.</p>'''
     return f'''<p>Bu Gizlilik Politikası, Loti Members LLC ("biz") tarafından işletilen Hostlio Pro'nun, hostliopro.com adresindeki otel yönetim platformumuzu kullandığınızda bilgileri nasıl topladığını, kullandığını ve paylaştığını açıklar.</p>
 <h2>1. Topladığımız bilgiler</h2><p>Doğrudan bize verdiğiniz bilgileri toplarız:</p>
 {_ul(["Hesap bilgileri: ad, e-posta adresi, telefon numarası, otel adı, oda sayısı","Ödeme bilgileri: Stripe üzerinden güvenle işlenir (kart bilgilerini saklamayız)","Otel verileri: rezervasyonlar, misafir yazışmaları, oda yapılandırmaları","Kullanım verileri: platformumuzla nasıl etkileşim kurduğunuz"])}
@@ -44,7 +44,7 @@ def privacy_body(L):
 <h2>10. Bu politikadaki değişiklikler</h2><p>Bu Gizlilik Politikası'nı zaman zaman güncelleyebiliriz. Değişiklikleri yeni politikayı bu sayfada yayınlayarak ve "Son güncelleme" tarihini değiştirerek bildiririz.</p>
 <h2>11. İletişim</h2><p>Bu Gizlilik Politikası hakkında sorularınız için:</p>
 {_ul([f'E-posta: <a href="mailto:{EMAIL}">{EMAIL}</a>', f"Adres: {ADDR}"])}
-<p>Hesabınızı silmek için <a href="/delete-account">hesap silme</a> sayfasına bakın.</p>'''
+<p>Hesabınızı silmek için <a href="{url("delacc", L)}">hesap silme</a> sayfasına bakın.</p>'''
 
 def terms_body(L):
     if L in LANGMOD: return LANGMOD[L].terms_body(lambda k: url(k, L), EMAIL, ADDR, _ul)
@@ -120,7 +120,39 @@ def legacy_meta():
 def legacy_posts(article):
     return [article({"key": LEGACY_KEYS[p["slug"]], "title": p["title"], "date": p["date"], "desc": p["desc"]}, p["body"], []) for p in LEGACY]
 
+DELACC = {
+ "en": ("Delete Your Account | Hostlio Pro", "How to request deletion of your Hostlio Pro account and the data associated with it.", "Request account deletion",
+        "To request deletion of your Hostlio Pro account and all associated data, email {e} with the subject line <strong>“Account Deletion Request”</strong> and include your registered email address. We will process your request within 30 days.", "Send deletion request", "Account Deletion Request",
+        "Before you go: exporting your reservations and guest records from the dashboard is recommended, because deletion is permanent."),
+ "tr": ("Hesap Silme | Hostlio Pro", "Hostlio Pro hesabınızın ve ilişkili verilerin silinmesini nasıl talep edeceğiniz.", "Hesap silme talebi",
+        "Hostlio Pro hesabınızın ve ilişkili tüm verilerin silinmesini talep etmek için {e} adresine <strong>“Hesap Silme Talebi”</strong> konulu bir e-posta gönderin ve kayıtlı e-posta adresinizi ekleyin. Talebinizi 30 gün içinde işleme alırız.", "Silme talebi gönder", "Hesap Silme Talebi",
+        "Göndermeden önce: silme işlemi kalıcı olduğundan rezervasyon ve misafir kayıtlarınızı panelden dışa aktarmanızı öneririz."),
+ "es": ("Eliminar tu cuenta | Hostlio Pro", "Cómo solicitar la eliminación de tu cuenta de Hostlio Pro y de los datos asociados.", "Solicitar la eliminación de la cuenta",
+        "Para solicitar la eliminación de tu cuenta de Hostlio Pro y de todos los datos asociados, envía un correo a {e} con el asunto <strong>“Solicitud de eliminación de cuenta”</strong> e incluye el correo con el que te registraste. Tramitaremos tu solicitud en un plazo de 30 días.", "Enviar solicitud de eliminación", "Solicitud de eliminación de cuenta",
+        "Antes de enviarla: te recomendamos exportar tus reservas y fichas de huéspedes desde el panel, porque la eliminación es definitiva."),
+ "it": ("Elimina il tuo account | Hostlio Pro", "Come richiedere l’eliminazione del tuo account Hostlio Pro e dei dati collegati.", "Richiedi l’eliminazione dell’account",
+        "Per richiedere l’eliminazione del tuo account Hostlio Pro e di tutti i dati collegati, scrivi a {e} con oggetto <strong>“Richiesta di eliminazione account”</strong> indicando l’indirizzo email registrato. Gestiremo la richiesta entro 30 giorni.", "Invia la richiesta di eliminazione", "Richiesta di eliminazione account",
+        "Prima di inviarla: ti consigliamo di esportare prenotazioni e schede ospiti dal pannello, perché l’eliminazione è definitiva."),
+ "pt": ("Excluir sua conta | Hostlio Pro", "Como solicitar a exclusão da sua conta do Hostlio Pro e dos dados associados.", "Solicitar exclusão da conta",
+        "Para solicitar a exclusão da sua conta do Hostlio Pro e de todos os dados associados, envie um e-mail para {e} com o assunto <strong>“Solicitação de exclusão de conta”</strong> e informe o e-mail cadastrado. Processaremos sua solicitação em até 30 dias.", "Enviar solicitação de exclusão", "Solicitação de exclusão de conta",
+        "Antes de enviar: recomendamos exportar suas reservas e fichas de hóspedes pelo painel, pois a exclusão é definitiva."),
+ "fr": ("Supprimer votre compte | Hostlio Pro", "Comment demander la suppression de votre compte Hostlio Pro et des données associées.", "Demander la suppression du compte",
+        "Pour demander la suppression de votre compte Hostlio Pro et de toutes les données associées, écrivez à {e} avec l’objet <strong>« Demande de suppression de compte »</strong> en indiquant l’adresse e-mail utilisée à l’inscription. Nous traiterons votre demande sous 30 jours.", "Envoyer la demande de suppression", "Demande de suppression de compte",
+        "Avant l’envoi : nous vous conseillons d’exporter vos réservations et fiches clients depuis le tableau de bord, car la suppression est définitive."),
+}
+
+def delacc_page(L):
+    from build import btn, icon
+    from urllib.parse import quote
+    title, desc, h1, text, cta, subj, note = DELACC[L]
+    mail = f'<a href="mailto:{EMAIL}">{EMAIL}</a>'
+    body = f'''<section class="page-hero"><div class="wrap"><h1>{h1}</h1></div></section>
+<section style="padding-top:0"><div class="wrap prose"><div class="answer"><p>{text.format(e=mail)}</p></div>
+<p class="small muted">{note}</p>
+<div class="cta-row">{btn(cta, f"mailto:{EMAIL}?subject={quote(subj)}")}</div></div></section>'''
+    return {"key": "delacc", "title": title, "desc": desc, "trail": [(h1, url("delacc", L))], "body": body, "no_final": True}
+
 def pages(L, article):
-    out = [legal_page("privacy", L), legal_page("terms", L)]
+    out = [legal_page("privacy", L), legal_page("terms", L), delacc_page(L)]
     if L == "en": out += legacy_posts(article)
     return out

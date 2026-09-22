@@ -268,7 +268,7 @@ def privacy_body(U, EMAIL, ADDR, ul):
 <h2>10. Alterações nesta política</h2><p>Podemos atualizar esta Política de Privacidade periodicamente. Notificaremos você sobre quaisquer alterações publicando a nova política nesta página e atualizando a data de "Última atualização".</p>
 <h2>11. Fale conosco</h2><p>Se tiver dúvidas sobre esta Política de Privacidade, entre em contato conosco:</p>
 {ul([f'E-mail: <a href="mailto:{EMAIL}">{EMAIL}</a>', f"Endereço: {ADDR}"])}
-<p>Para excluir sua conta, consulte <a href="/delete-account">Excluir sua conta</a>.</p>'''
+<p>Para excluir sua conta, consulte <a href="{U("delacc")}">Excluir sua conta</a>.</p>'''
 
 def terms_body(U, EMAIL, ADDR, ul):
     pricing = U("pricing")

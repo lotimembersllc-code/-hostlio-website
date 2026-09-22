@@ -38,6 +38,7 @@
 - [Hotel Software Comparison 2026: Pricing, Fees, AI](https://hostliopro.com/en/hotel-software-comparison/): Hostlio Pro, Cloudbeds, Mews, Little Hotelier and HotelRunner compared: published pricing, starting price, booking fees, free trial and AI guest messaging.
 - [Privacy Policy](https://hostliopro.com/privacy/): Hostlio Pro privacy policy: what data we collect, how we use and share it, data security, retention, cookies and your GDPR rights.
 - [Terms of Service](https://hostliopro.com/terms/): Hostlio Pro terms of service: service description, subscriptions and payments, cancellation and refunds, AI-generated content, OTA integrations and liability.
+- [Delete Your Account](https://hostliopro.com/delete-account/): How to request deletion of your Hostlio Pro account and the data associated with it.
 - [The Complete Guide to AI Front Desk for Independent Hotels](https://hostliopro.com/en/blog/hotel-ai-front-desk-guide/): AI front-desk tools are no longer science fiction. This guide explains exactly what they do, what they don't, and how to deploy one at your independent hotel.
 - [5 Ways to Reduce No-Shows at Your Independent Hotel](https://hostliopro.com/en/blog/how-to-reduce-hotel-no-shows/): No-shows cost independent hotels thousands in lost revenue. Here are five proven strategies to cut your no-show rate and protect your bottom line.
 - [Independent Hotels vs. Chains: How to Compete with Technology in 2026](https://hostliopro.com/en/blog/independent-hotel-vs-chain-technology/): Chain hotels have billion-dollar tech budgets. Modern SaaS tools put the same capabilities within reach of a 20-room property. Here's how to compete.
@@ -65,6 +66,7 @@
 - [Otel Programı Karşılaştırması 2026: Fiyat, Komisyon, AI](https://hostliopro.com/otel-programi-karsilastirma/): Hostlio Pro, Cloudbeds, Mews, Little Hotelier ve HotelRunner karşılaştırması: yayınlanan fiyatlar, başlangıç fiyatı, komisyon, deneme süresi ve AI mesajlaşma.
 - [Gizlilik Politikası](https://hostliopro.com/gizlilik-politikasi/): Hostlio Pro gizlilik politikası: hangi verileri topladığımız, nasıl kullandığımız, kimlerle paylaştığımız, veri güvenliği, saklama süreleri ve GDPR haklarınız.
 - [Kullanım Şartları](https://hostliopro.com/kullanim-sartlari/): Hostlio Pro kullanım şartları: hizmet tanımı, abonelik ve ödemeler, iptal ve iade, yapay zekâ içeriği, OTA entegrasyonları ve sorumluluk.
+- [Hesap Silme](https://hostliopro.com/hesap-silme/): Hostlio Pro hesabınızın ve ilişkili verilerin silinmesini nasıl talep edeceğiniz.
 
 ## Páginas en español
 - [Hostlio Pro](https://hostliopro.com/es/): Software de gestión hotelera Hostlio Pro: el asistente IA Lio responde a huéspedes 24/7 en 30+ idiomas y el channel manager sincroniza 100+ OTAs. 7 días gratis.
@@ -88,6 +90,7 @@
 - [Comparativa de software hotelero 2026: precios e IA](https://hostliopro.com/es/comparativa-software-hotelero/): Hostlio Pro, Cloudbeds, Mews, Little Hotelier y HotelRunner comparados: precios publicados, precio inicial, comisiones, prueba gratuita y mensajería IA.
 - [Política de privacidad](https://hostliopro.com/es/privacidad/): Política de privacidad de Hostlio Pro: qué datos recopilamos, cómo los usamos y compartimos, seguridad de los datos, conservación, cookies y tus derechos del RGPD.
 - [Términos del servicio](https://hostliopro.com/es/terminos/): Términos del servicio de Hostlio Pro: descripción del servicio, suscripciones y pagos, cancelación y reembolsos, contenido generado por IA, integraciones con OTAs y responsabilidad.
+- [Eliminar tu cuenta](https://hostliopro.com/es/eliminar-cuenta/): Cómo solicitar la eliminación de tu cuenta de Hostlio Pro y de los datos asociados.
 
 ## Pagine in italiano
 - [Hostlio Pro](https://hostliopro.com/it/): Gestionale per hotel Hostlio Pro: l'assistente AI Lio risponde agli ospiti 24/7 in 30+ lingue e il channel manager sincronizza 100+ OTA. Prova gratis 7 giorni.
@@ -111,6 +114,7 @@
 - [Confronto gestionali per hotel 2026: prezzi e AI](https://hostliopro.com/it/confronto-gestionali-hotel/): Hostlio Pro, Cloudbeds, Mews, Little Hotelier e HotelRunner a confronto: prezzi pubblicati, prezzo di partenza, commissioni, prova gratuita e messaggi AI.
 - [Informativa sulla privacy](https://hostliopro.com/it/privacy/): Informativa sulla privacy di Hostlio Pro: quali dati raccogliamo, come li usiamo e condividiamo, sicurezza, conservazione, cookie e i tuoi diritti GDPR.
 - [Termini di servizio](https://hostliopro.com/it/termini/): Termini di servizio di Hostlio Pro: descrizione del servizio, abbonamenti e pagamenti, disdetta e rimborsi, contenuti generati dall'AI, integrazioni OTA e responsabilità.
+- [Elimina il tuo account](https://hostliopro.com/it/elimina-account/): Come richiedere l’eliminazione del tuo account Hostlio Pro e dei dati collegati.
 
 ## Páginas em português
 - [Sistema para Hotel com IA e Channel Manager](https://hostliopro.com/pt/): Sistema para hotel Hostlio Pro: o assistente de IA Lio responde aos hóspedes 24/7 em 30+ idiomas e o channel manager sincroniza 100+ OTAs. Teste 7 dias grátis.
@@ -134,6 +138,7 @@
 - [Comparativo de Sistemas para Hotel 2026: Preços](https://hostliopro.com/pt/comparativo-sistemas-para-hotel/): Hostlio Pro, Cloudbeds, Mews, Little Hotelier e HotelRunner comparados: preços publicados, preço inicial, taxas por reserva, teste grátis e mensagens por IA.
 - [Política de Privacidade](https://hostliopro.com/pt/privacidade/): Política de privacidade do Hostlio Pro: quais dados coletamos, como os usamos e compartilhamos, segurança e retenção de dados, cookies e seus direitos sob o GDPR.
 - [Termos de Serviço](https://hostliopro.com/pt/termos/): Termos de serviço do Hostlio Pro: descrição do serviço, assinaturas e pagamentos, cancelamento e reembolsos, conteúdo gerado por IA, integrações com OTAs e responsabilidade.
+- [Excluir sua conta](https://hostliopro.com/pt/excluir-conta/): Como solicitar a exclusão da sua conta do Hostlio Pro e dos dados associados.
 
 ## Pages en français
 - [Hostlio Pro](https://hostliopro.com/fr/): Logiciel de gestion hôtelière Hostlio Pro : l’assistant IA Lio répond aux clients 24h/24 en 30+ langues et le channel manager synchronise 100+ OTA. 7 jours offerts.
@@ -157,3 +162,4 @@
 - [Comparatif des logiciels hôteliers 2026](https://hostliopro.com/fr/comparatif-logiciels-hoteliers/): Hostlio Pro, Cloudbeds, Mews, Little Hotelier et HotelRunner comparés : tarifs publiés, prix de départ, commissions, essai gratuit et messagerie IA.
 - [Politique de confidentialité](https://hostliopro.com/fr/confidentialite/): Politique de confidentialité de Hostlio Pro : données collectées, utilisation et partage, sécurité, conservation des données, cookies et vos droits au titre du RGPD.
 - [Conditions d’utilisation](https://hostliopro.com/fr/conditions/): Conditions d’utilisation de Hostlio Pro : description du service, abonnements et paiements, résiliation et remboursements, contenu généré par l’IA, intégrations OTA et responsabilité.
+- [Supprimer votre compte](https://hostliopro.com/fr/supprimer-compte/): Comment demander la suppression de votre compte Hostlio Pro et des données associées.

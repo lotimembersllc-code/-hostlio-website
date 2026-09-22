@@ -10,7 +10,7 @@ pages={}
 for f in sorted(glob.glob(D+'/**/index.html',recursive=True)):
     path='/'+os.path.relpath(f,D).replace('index.html','')
     s=open(f).read()
-    body=re.search(r'<body>(.*?)<script src="/assets/site.js"',s,re.S).group(1)
+    body=re.search(r'<body>(.*?)<script src="/assets/site\.js',s,re.S).group(1)
     import html as H; title=H.unescape(re.search(r'<title>(.*?)</title>',s).group(1))
     lang=re.search(r'<html class="nojs" lang="([\w-]+)"',s).group(1)
     # internal links -> hash routes
@@ -21,6 +21,12 @@ for f in sorted(glob.glob(D+'/**/index.html',recursive=True)):
     for fn in os.listdir('src/assets/img'):
         body=body.replace('/assets/img/'+fn, 'IMG_'+fn)
     pages[path]={'b':body,'t':title,'l':lang}
+# ödeme sayfası: kendi betikleriyle (önizlemede checkout isteği gönderilmez — iş mantığı canlıda)
+sg=open(D+'/signup.html').read()
+sb=re.search(r'<body[^>]*>(.*?)<script>window\.CO',sg,re.S).group(1)
+sb=re.sub(r'href="(/(?!assets)[^"#]*)"',lambda m:f'href="#{m.group(1)}"',sb)
+scripts=re.findall(r'<script>(.*?)</script>',sg,re.S)
+pages['/signup']={'b':'<div class="co-body">'+sb+'</div>','t':'Start Your Free Trial | Hostlio Pro','l':'en','x':'\n;'.join(scripts)+'\n;'+open('src/assets/checkout.js').read().replace('window.CO','window.CO')}
 js=open('src/assets/site.js').read()
 imgs={fn:'data:image/webp;base64,'+base64.b64encode(open('src/assets/img/'+fn,'rb').read()).decode() for fn in os.listdir('src/assets/img')}
 imgs.update({fn:('data:video/webm;base64,' if fn.endswith('webm') else 'data:video/mp4;base64,')+base64.b64encode(open('src/assets/video/'+fn,'rb').read()).decode() for fn in os.listdir('src/assets/video')})
@@ -35,12 +41,13 @@ const P={data};const IM={imgjson};
 function render(){{
   let p=(location.hash.replace(/^#/,'')||'/').split('?')[0];
   if(!P[p])p='/';
-  const pg=P[p];document.title=pg.t;document.documentElement.lang=pg.l;
+  const pg=P[p];if(p!=='/signup'){{try{{localStorage.setItem('hostlio_lang',pg.l.slice(0,2))}}catch(e){{}}}}document.title=pg.t;document.documentElement.lang=pg.l;
   const note=pg.l==='tr'?'Önizleme: yeni Hostlio Pro sitesi, tüm sayfalar gezilebilir. Kayıt formu ve panel girişi canlı sitede çalışır.':'Preview: new Hostlio Pro site, every page is browsable. Sign-up and dashboard login work on the live site.';
   document.getElementById('app').innerHTML='<div class="preview-bar">'+note+'</div>'+pg.b.replace(/IMG_([\\w.-]+\\.(?:webp|webm|mp4))/g,(m,f)=>IM[f]||'');
   document.querySelectorAll('[data-skip]').forEach(a=>a.addEventListener('click',e=>{{e.preventDefault();document.getElementById('main').focus();document.getElementById('main').scrollIntoView()}}));
   document.getElementById('main').tabIndex=-1;
   window.scrollTo(0,0);
+  if(pg.x){{try{{(0,eval)(pg.x.replace(/const |let /g,'var '));document.dispatchEvent(new Event('DOMContentLoaded'))}}catch(e){{console.error(e)}}}}
   (function(){{ {js} }})();
 }}
 addEventListener('hashchange',render);render();

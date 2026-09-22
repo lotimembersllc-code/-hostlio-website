@@ -257,7 +257,7 @@ def privacy_body(U, EMAIL, ADDR, ul):
 <h2>10. Modifications de la présente politique</h2><p>Nous pouvons mettre à jour la présente Politique de confidentialité de temps à autre. Nous vous informerons de toute modification en publiant la nouvelle politique sur cette page et en actualisant la date de « Dernière mise à jour ».</p>
 <h2>11. Nous contacter</h2><p>Pour toute question concernant la présente Politique de confidentialité, veuillez nous contacter :</p>
 {ul([f'E-mail : <a href="mailto:{EMAIL}">{EMAIL}</a>', f"Adresse : {ADDR}"])}
-<p>Pour supprimer votre compte, consultez la page <a href="/delete-account">Supprimer votre compte</a>.</p>'''
+<p>Pour supprimer votre compte, consultez la page <a href="{U("delacc")}">Supprimer votre compte</a>.</p>'''
 
 def terms_body(U, EMAIL, ADDR, ul):
     return f'''<p>Les présentes Conditions d’utilisation (les « Conditions ») régissent votre utilisation de Hostlio Pro, exploité par Loti Members LLC (la « Société », « nous », « notre » ou « nos »). En accédant à notre service ou en l’utilisant, vous acceptez d’être lié par les présentes Conditions.</p>

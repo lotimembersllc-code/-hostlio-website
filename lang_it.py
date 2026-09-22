@@ -262,7 +262,7 @@ def privacy_body(U, EMAIL, ADDR, ul):
 <h2>10. Modifiche alla presente Informativa</h2><p>Potremmo aggiornare periodicamente la presente Informativa sulla privacy. Ti informeremo di eventuali modifiche pubblicando la nuova informativa su questa pagina e aggiornando la data di "Ultimo aggiornamento".</p>
 <h2>11. Contatti</h2><p>Per qualsiasi domanda sulla presente Informativa sulla privacy, contattaci:</p>
 {ul([f'Email: <a href="mailto:{EMAIL}">{EMAIL}</a>', f"Indirizzo: {ADDR}"])}
-<p>Per eliminare il tuo account, consulta la pagina <a href="/delete-account">Elimina il tuo account</a>.</p>'''
+<p>Per eliminare il tuo account, consulta la pagina <a href="{U("delacc")}">Elimina il tuo account</a>.</p>'''
 
 def terms_body(U, EMAIL, ADDR, ul):
     pricing = U("pricing")

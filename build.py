@@ -5,6 +5,19 @@ from pathlib import Path
 
 ROOT = Path(__file__).parent
 DIST = ROOT / "dist"
+
+# --- asset cache busting -------------------------------------------------
+# /assets/* is served with max-age=86400 + stale-while-revalidate=604800, so an
+# unversioned style.css can stay stale in a visitor's browser for days after a
+# deploy. Every CSS/JS reference therefore carries a content hash.
+import hashlib as _hashlib
+def asset(rel: str) -> str:
+    """Return the asset path with a ?v=<content hash> suffix."""
+    p = ROOT / "src" / rel.lstrip("/")
+    try:
+        return rel + "?v=" + _hashlib.md5(p.read_bytes()).hexdigest()[:8]
+    except OSError:
+        return rel
 SITE = "https://hostliopro.com"          # canonical host used by the current site
 SIGNUP_URL = "/signup"                           # existing sign-up page (src/signup.html, from the current site)
 LOGIN_URL = "https://dashboard.hostliopro.com"   # dashboard login
@@ -57,13 +70,16 @@ ROUTES = {
     "compare":      {"tr": "/otel-programi-karsilastirma/", "en": "/en/hotel-software-comparison/"},
     "privacy":      {"tr": "/gizlilik-politikasi/", "en": "/privacy/"},
     "terms":        {"tr": "/kullanim-sartlari/",   "en": "/terms/"},
+    # tasarim-v2: hesap silme sayfası yeni tasarıma alındı. EN adresi uygulama
+    # mağazalarında kayıtlı olabilir: /delete-account (vercel.json → /delete-account/).
+    "delacc":       {"tr": "/hesap-silme/", "en": "/delete-account/"},
     # legacy English posts from the previous site (EN only; old URLs 301 → these)
     "post-aifrontdesk": {"en": "/en/blog/hotel-ai-front-desk-guide/"},
     "post-noshows":     {"en": "/en/blog/how-to-reduce-hotel-no-shows/"},
     "post-chains":      {"en": "/en/blog/independent-hotel-vs-chain-technology/"},
     "post-whatsapp":    {"en": "/en/blog/whatsapp-hotel-guest-communication/"},
 }
-for _k, _v in {'home': ('/es/', '/it/', '/pt/', '/fr/'), 'ai': ('/es/asistente-ia-para-huespedes/', '/it/assistente-ai-ospiti/', '/pt/assistente-ia-para-hospedes/', '/fr/assistant-ia-clients/'), 'channel': ('/es/channel-manager/', '/it/channel-manager/', '/pt/channel-manager/', '/fr/channel-manager/'), 'checkin': ('/es/check-in-online/', '/it/check-in-online/', '/pt/check-in-online/', '/fr/check-in-en-ligne/'), 'features': ('/es/funcionalidades/', '/it/funzionalita/', '/pt/funcionalidades/', '/fr/fonctionnalites/'), 'pricing': ('/es/precios/', '/it/prezzi/', '/pt/precos/', '/fr/tarifs/'), 'faq': ('/es/preguntas-frecuentes/', '/it/domande-frequenti/', '/pt/perguntas-frequentes/', '/fr/faq/'), 'about': ('/es/sobre-nosotros/', '/it/chi-siamo/', '/pt/sobre-nos/', '/fr/a-propos/'), 'contact': ('/es/contacto/', '/it/contatti/', '/pt/contato/', '/fr/contact/'), 'blog': ('/es/blog/', '/it/blog/', '/pt/blog/', '/fr/blog/'), 'post-pms': ('/es/blog/como-elegir-software-de-gestion-hotelera-hotel-pequeno/', '/it/blog/come-scegliere-gestionale-per-hotel-piccolo/', '/pt/blog/como-escolher-sistema-para-hotel-pequeno/', '/fr/blog/choisir-logiciel-gestion-hoteliere-petit-hotel/'), 'post-ai': ('/es/blog/responder-mensajes-de-huespedes-con-ia/', '/it/blog/rispondere-ai-messaggi-degli-ospiti-con-ai/', '/pt/blog/responder-mensagens-de-hospedes-com-ia/', '/fr/blog/repondre-aux-messages-clients-avec-ia/'), 'post-overbooking': ('/es/blog/como-evitar-el-overbooking/', '/it/blog/come-evitare-overbooking/', '/pt/blog/como-evitar-overbooking/', '/fr/blog/comment-eviter-le-surbooking/'), 'post-autoreply': ('/es/blog/respuesta-automatica-mensajes-booking-com/', '/it/blog/risposta-automatica-messaggi-booking-com/', '/pt/blog/resposta-automatica-mensagens-booking-com/', '/fr/blog/reponse-automatique-messages-booking-com/'), 't-guesthouse': ('/es/software-para-hostales/', '/it/gestionale-b-and-b/', '/pt/sistema-para-pousadas/', '/fr/logiciel-chambres-d-hotes/'), 't-boutique': ('/es/software-hotel-boutique/', '/it/gestionale-boutique-hotel/', '/pt/sistema-hotel-boutique/', '/fr/logiciel-hotel-boutique/'), 't-apart': ('/es/software-apartahotel/', '/it/gestionale-residence-aparthotel/', '/pt/sistema-apart-hotel/', '/fr/logiciel-residence-hoteliere/'), 't-hostel': ('/es/software-para-hostels/', '/it/gestionale-ostelli/', '/pt/sistema-para-hostels/', '/fr/logiciel-auberge-de-jeunesse/'), 'compare': ('/es/comparativa-software-hotelero/', '/it/confronto-gestionali-hotel/', '/pt/comparativo-sistemas-para-hotel/', '/fr/comparatif-logiciels-hoteliers/'), 'privacy': ('/es/privacidad/', '/it/privacy/', '/pt/privacidade/', '/fr/confidentialite/'), 'terms': ('/es/terminos/', '/it/termini/', '/pt/termos/', '/fr/conditions/')}.items():
+for _k, _v in {'home': ('/es/', '/it/', '/pt/', '/fr/'), 'ai': ('/es/asistente-ia-para-huespedes/', '/it/assistente-ai-ospiti/', '/pt/assistente-ia-para-hospedes/', '/fr/assistant-ia-clients/'), 'channel': ('/es/channel-manager/', '/it/channel-manager/', '/pt/channel-manager/', '/fr/channel-manager/'), 'checkin': ('/es/check-in-online/', '/it/check-in-online/', '/pt/check-in-online/', '/fr/check-in-en-ligne/'), 'features': ('/es/funcionalidades/', '/it/funzionalita/', '/pt/funcionalidades/', '/fr/fonctionnalites/'), 'pricing': ('/es/precios/', '/it/prezzi/', '/pt/precos/', '/fr/tarifs/'), 'faq': ('/es/preguntas-frecuentes/', '/it/domande-frequenti/', '/pt/perguntas-frequentes/', '/fr/faq/'), 'about': ('/es/sobre-nosotros/', '/it/chi-siamo/', '/pt/sobre-nos/', '/fr/a-propos/'), 'contact': ('/es/contacto/', '/it/contatti/', '/pt/contato/', '/fr/contact/'), 'blog': ('/es/blog/', '/it/blog/', '/pt/blog/', '/fr/blog/'), 'post-pms': ('/es/blog/como-elegir-software-de-gestion-hotelera-hotel-pequeno/', '/it/blog/come-scegliere-gestionale-per-hotel-piccolo/', '/pt/blog/como-escolher-sistema-para-hotel-pequeno/', '/fr/blog/choisir-logiciel-gestion-hoteliere-petit-hotel/'), 'post-ai': ('/es/blog/responder-mensajes-de-huespedes-con-ia/', '/it/blog/rispondere-ai-messaggi-degli-ospiti-con-ai/', '/pt/blog/responder-mensagens-de-hospedes-com-ia/', '/fr/blog/repondre-aux-messages-clients-avec-ia/'), 'post-overbooking': ('/es/blog/como-evitar-el-overbooking/', '/it/blog/come-evitare-overbooking/', '/pt/blog/como-evitar-overbooking/', '/fr/blog/comment-eviter-le-surbooking/'), 'post-autoreply': ('/es/blog/respuesta-automatica-mensajes-booking-com/', '/it/blog/risposta-automatica-messaggi-booking-com/', '/pt/blog/resposta-automatica-mensagens-booking-com/', '/fr/blog/reponse-automatique-messages-booking-com/'), 't-guesthouse': ('/es/software-para-hostales/', '/it/gestionale-b-and-b/', '/pt/sistema-para-pousadas/', '/fr/logiciel-chambres-d-hotes/'), 't-boutique': ('/es/software-hotel-boutique/', '/it/gestionale-boutique-hotel/', '/pt/sistema-hotel-boutique/', '/fr/logiciel-hotel-boutique/'), 't-apart': ('/es/software-apartahotel/', '/it/gestionale-residence-aparthotel/', '/pt/sistema-apart-hotel/', '/fr/logiciel-residence-hoteliere/'), 't-hostel': ('/es/software-para-hostels/', '/it/gestionale-ostelli/', '/pt/sistema-para-hostels/', '/fr/logiciel-auberge-de-jeunesse/'), 'compare': ('/es/comparativa-software-hotelero/', '/it/confronto-gestionali-hotel/', '/pt/comparativo-sistemas-para-hotel/', '/fr/comparatif-logiciels-hoteliers/'), 'privacy': ('/es/privacidad/', '/it/privacy/', '/pt/privacidade/', '/fr/confidentialite/'), 'terms': ('/es/terminos/', '/it/termini/', '/pt/termos/', '/fr/conditions/'), 'delacc': ('/es/eliminar-cuenta/', '/it/elimina-account/', '/pt/excluir-conta/', '/fr/supprimer-compte/')}.items():
     ROUTES[_k].update(dict(zip(NEW_LANGS, _v)))
 def url(key, lang): return ROUTES[key].get(lang) or ROUTES["blog"][lang]
 def langs(key): return [l for l in LANGS if l in ROUTES[key]]
@@ -390,7 +406,7 @@ def layout(page, lang):
 <link rel="icon" href="/assets/favicon.svg" type="image/svg+xml">
 <link rel="apple-touch-icon" href="/assets/apple-touch-icon.png">
 <link rel="preload" href="/assets/fonts/instrument-sans-latin-wght-normal.woff2" as="font" type="font/woff2" crossorigin>
-<link rel="stylesheet" href="/assets/style.css">
+<link rel="stylesheet" href="{asset('/assets/style.css')}">
 {head_extra}<script type="application/ld+json">{ld}</script>
 </head>
 <body>
@@ -434,10 +450,10 @@ def layout(page, lang):
 <li><a href="{url("about",lang)}">{u["foot_about"]}</a></li>
 <li><a href="{url("contact",lang)}">{u["foot_contact"]}</a></li></ul></div>
 </div>
-<div class="foot-bottom"><span>© {year} Hostlio Pro, Loti Members LLC. {u["rights"]}</span><span class="legal"><a href="{url("privacy",lang)}">{u["privacy"]}</a><a href="{url("terms",lang)}">{u["terms"]}</a><a href="/delete-account">{u["delacc"]}</a></span><span>2108 N ST STE N, Sacramento, CA 95816</span></div>
+<div class="foot-bottom"><span>© {year} Hostlio Pro, Loti Members LLC. {u["rights"]}</span><span class="legal"><a href="{url("privacy",lang)}">{u["privacy"]}</a><a href="{url("terms",lang)}">{u["terms"]}</a><a href="{url("delacc",lang)}">{u["delacc"]}</a></span><span>2108 N ST STE N, Sacramento, CA 95816</span></div>
 </div></footer>
-<script src="/assets/site.js" defer></script>
-<script src="/attribution.js" defer></script>
+<script src="{asset('/assets/site.js')}" defer></script>
+<script src="{asset('/attribution.js')}" defer></script>
 </body>
 </html>'''
 
@@ -539,6 +555,9 @@ def main():
 
 """ + "\n\n".join(f"## {SEC[l]}\n" + "\n".join(line(k, l, bykey[l]) for k in ROUTES if l in ROUTES[k]) for l in ["en","tr","es","it","pt","fr"]) + "\n"
     (DIST / "llms.txt").write_text(llms, encoding="utf-8")
+    # ödeme/kayıt sayfası — kendi odaklı düzeniyle (signup_page.py)
+    import signup_page, sys as _sys
+    (DIST / "signup.html").write_text(signup_page.render(_sys.modules[__name__]), encoding="utf-8")
     # 404
     nf = {"key":"home","title":"Sayfa bulunamadı | Hostlio Pro","desc":"Aradığınız sayfa taşınmış ya da kaldırılmış olabilir.","no_final":True,
           "body":f'<section class="page-hero"><div class="wrap"><h1>Bu sayfa bulunamadı</h1><p class="lead">Adres değişmiş olabilir. <a href="/">Ana sayfaya dönün</a>.</p><p>'+" · ".join(f'<a href="{url("home",l)}" lang="{l}">{LANG_NAME[l]}</a>' for l in LANGS)+'</p></div></section>'}

@@ -131,3 +131,12 @@ Eski sitede olmayan, benim varsaydığım bilgiler — yanlışsa `content_*.py`
 ## v12 — "Yanınızda bir ekip var" bölümü
 - Stok fotoğraf yerine gen-support-call (görüntülü kurulum görüşmesindeki otelci) + üstünde kodla çizilmiş destek sohbeti kartı ve "Kanal bağlandı" etiketi (6 dil, home_v3.SUPCARD).
 - Gerçek ekip fotoğrafı gelirse sadece sup_img değiştirilir. hostlio-owner unused_img/ klasörüne taşındı.
+
+## v13 — ödeme (kayıt) ve hesap silme sayfaları yeni tasarıma alındı
+- `/signup` artık üretiliyor: `signup_page.py` + `src_legacy/signup_script.js` (eski betik, mantık birebir) + `src/assets/checkout.js` (dil, plan özeti, aylık/yıllık).
+  - 6 dil: ?lang= → localStorage → yönlendiren sayfanın dili → tarayıcı dili. Site içindeki "Ücretsiz dene" bağlantılarına dil parametresi site.js ekliyor.
+  - ?plan= ve ?billing= ön seçimi; sol tarafta seçili planın özeti ve "kart kayıtta alınır, deneme bitene kadar çekim yok" notu.
+  - Ödeme mantığı (signup-checkout edge function, ülke/para birimi/saat dilimi tablosu, oda limiti, attribution) DEĞİŞMEDİ. noindex.
+- `/delete-account` (ve 6 dildeki karşılıkları) artık normal site şablonunda; eski `delete-account.html` kaldırıldı, /delete-account.html → /delete-account/ 301.
+- Eski dosyalar `src_legacy/` klasöründe duruyor (yayına kopyalanmaz).
+- Uzun dillerde başlık menüsü taşması düzeltildi.

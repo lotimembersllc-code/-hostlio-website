@@ -1343,6 +1343,18 @@ Bu Şartlarla ilgili sorularınız için:
 - Adres: Loti Members LLC, 2108 N ST STE N, Sacramento, CA 95816
 
 ---
+# Hesap Silme | Hostlio Pro
+URL: https://hostliopro.com/hesap-silme/
+
+## Hesap silme talebi
+
+Hostlio Pro hesabınızın ve ilişkili tüm verilerin silinmesini talep etmek için hello@hostliopro.com adresine “Hesap Silme Talebi” konulu bir e-posta gönderin ve kayıtlı e-posta adresinizi ekleyin. Talebinizi 30 gün içinde işleme alırız.
+
+Göndermeden önce: silme işlemi kalıcı olduğundan rezervasyon ve misafir kayıtlarınızı panelden dışa aktarmanızı öneririz.
+
+Silme talebi gönder
+
+---
 # Hostlio Pro | AI Hotel Management Software for Independent Hotels
 URL: https://hostliopro.com/en/
 
@@ -2687,6 +2699,18 @@ For questions about these Terms, contact us:
 
 - Email: hello@hostliopro.com
 - Address: Loti Members LLC, 2108 N ST STE N, Sacramento, CA 95816
+
+---
+# Delete Your Account | Hostlio Pro
+URL: https://hostliopro.com/delete-account/
+
+## Request account deletion
+
+To request deletion of your Hostlio Pro account and all associated data, email hello@hostliopro.com with the subject line “Account Deletion Request” and include your registered email address. We will process your request within 30 days.
+
+Before you go: exporting your reservations and guest records from the dashboard is recommended, because deletion is permanent.
+
+Send deletion request
 
 ---
 # The Complete Guide to AI Front Desk for Independent Hotels
@@ -4335,6 +4359,18 @@ Para cualquier pregunta sobre estos Términos, póngase en contacto con nosotros
 - Dirección: Loti Members LLC, 2108 N ST STE N, Sacramento, CA 95816
 
 ---
+# Eliminar tu cuenta | Hostlio Pro
+URL: https://hostliopro.com/es/eliminar-cuenta/
+
+## Solicitar la eliminación de la cuenta
+
+Para solicitar la eliminación de tu cuenta de Hostlio Pro y de todos los datos asociados, envía un correo a hello@hostliopro.com con el asunto “Solicitud de eliminación de cuenta” e incluye el correo con el que te registraste. Tramitaremos tu solicitud en un plazo de 30 días.
+
+Antes de enviarla: te recomendamos exportar tus reservas y fichas de huéspedes desde el panel, porque la eliminación es definitiva.
+
+Enviar solicitud de eliminación
+
+---
 # Hostlio Pro | Gestionale per hotel con AI e channel manager
 URL: https://hostliopro.com/it/
 
@@ -5663,6 +5699,18 @@ Per domande sui presenti Termini, contattaci:
 
 - Email: hello@hostliopro.com
 - Indirizzo: Loti Members LLC, 2108 N ST STE N, Sacramento, CA 95816
+
+---
+# Elimina il tuo account | Hostlio Pro
+URL: https://hostliopro.com/it/elimina-account/
+
+## Richiedi l’eliminazione dell’account
+
+Per richiedere l’eliminazione del tuo account Hostlio Pro e di tutti i dati collegati, scrivi a hello@hostliopro.com con oggetto “Richiesta di eliminazione account” indicando l’indirizzo email registrato. Gestiremo la richiesta entro 30 giorni.
+
+Prima di inviarla: ti consigliamo di esportare prenotazioni e schede ospiti dal pannello, perché l’eliminazione è definitiva.
+
+Invia la richiesta di eliminazione
 
 ---
 # Sistema para Hotel com IA e Channel Manager | Hostlio Pro
@@ -6995,6 +7043,18 @@ Para dúvidas sobre estes Termos, entre em contato conosco:
 - Endereço: Loti Members LLC, 2108 N ST STE N, Sacramento, CA 95816
 
 ---
+# Excluir sua conta | Hostlio Pro
+URL: https://hostliopro.com/pt/excluir-conta/
+
+## Solicitar exclusão da conta
+
+Para solicitar a exclusão da sua conta do Hostlio Pro e de todos os dados associados, envie um e-mail para hello@hostliopro.com com o assunto “Solicitação de exclusão de conta” e informe o e-mail cadastrado. Processaremos sua solicitação em até 30 dias.
+
+Antes de enviar: recomendamos exportar suas reservas e fichas de hóspedes pelo painel, pois a exclusão é definitiva.
+
+Enviar solicitação de exclusão
+
+---
 # Hostlio Pro | Logiciel de gestion hôtelière avec IA
 URL: https://hostliopro.com/fr/
 
@@ -8323,3 +8383,15 @@ Pour toute question concernant les présentes Conditions, contactez-nous :
 
 - E-mail : hello@hostliopro.com
 - Adresse : Loti Members LLC, 2108 N ST STE N, Sacramento, CA 95816
+
+---
+# Supprimer votre compte | Hostlio Pro
+URL: https://hostliopro.com/fr/supprimer-compte/
+
+## Demander la suppression du compte
+
+Pour demander la suppression de votre compte Hostlio Pro et de toutes les données associées, écrivez à hello@hostliopro.com avec l’objet « Demande de suppression de compte » en indiquant l’adresse e-mail utilisée à l’inscription. Nous traiterons votre demande sous 30 jours.
+
+Avant l’envoi : nous vous conseillons d’exporter vos réservations et fiches clients depuis le tableau de bord, car la suppression est définitive.
+
+Envoyer la demande de suppression

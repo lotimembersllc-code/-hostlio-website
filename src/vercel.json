@@ -39,6 +39,11 @@
   ],
   "redirects": [
     {
+      "source": "/delete-account.html",
+      "destination": "/delete-account/",
+      "permanent": true
+    },
+    {
       "source": "/about",
       "destination": "/en/about/",
       "permanent": true
