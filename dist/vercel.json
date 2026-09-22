@@ -1,6 +1,4 @@
 {
-  "buildCommand": "python3 build.py || (echo \"python yok, depodaki dist kullanılıyor\" && test -f dist/index.html)",
-  "outputDirectory": "dist",
   "cleanUrls": true,
   "trailingSlash": true,
   "headers": [

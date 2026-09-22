@@ -1,3 +1,5 @@
+__pycache__/
+shots/*.png
 .vercel
 .env*
 .DS_Store
