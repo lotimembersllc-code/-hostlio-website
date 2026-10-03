@@ -6,7 +6,7 @@ def U(k): return url(k, L)
 PLAN_TXT = {
  "starter": ("Küçük pansiyon ve butik oteller için", ["1 tesis, 10 odaya kadar","Aylık ⟦quota:starter⟧ AI mesajı","100+ OTA ile kanal senkronizasyonu","WhatsApp AI mesajlaşma","Oda rafı (rezervasyon takvimi)","Otomatik PDF vize formları"]),
  "pro":     ("Tek tesisli, büyüyen oteller için", ["1 tesis, 50 odaya kadar","Aylık ⟦quota:pro⟧ AI mesajı","Starter'daki her şey","WhatsApp + OTA gelen kutusu mesajlaşması (Booking.com, Airbnb, Expedia)","Online check-in ve dijital imza","Transfer ve tur satışı","Mobil uygulama"]),
- "growth":  ("İki tesis işleten ekipler için", ["2 tesise kadar, 150 odaya kadar","Aylık ⟦quota:growth⟧ AI mesajı","Pro'daki her şey","Öncelikli kanal senkronizasyonu","Öncelikli destek (ertesi iş günü)","Birebir kurulum görüşmesi","White-label seçenekleri"]),
+ "growth":  ("İki tesis işleten ekipler için", ["2 tesise kadar, toplam 150 oda","Aylık ⟦quota:growth⟧ AI mesajı","Pro'daki her şey","Öncelikli kanal senkronizasyonu","Öncelikli destek (ertesi iş günü)","Birebir kurulum görüşmesi","White-label seçenekleri"]),
 }
 
 def plans_html():

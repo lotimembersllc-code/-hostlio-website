@@ -236,7 +236,7 @@ Pro ile başla
 
 Erken kayıt fiyatı (normali 189 $ )
 
-- 2 tesise kadar, 150 odaya kadar
+- 2 tesise kadar, toplam 150 oda
 - Aylık 12.000 AI mesajı
 - Pro'daki her şey
 - Öncelikli kanal senkronizasyonu
@@ -620,7 +620,7 @@ Pro ile başla
 
 Erken kayıt fiyatı (normali 189 $ )
 
-- 2 tesise kadar, 150 odaya kadar
+- 2 tesise kadar, toplam 150 oda
 - Aylık 12.000 AI mesajı
 - Pro'daki her şey
 - Öncelikli kanal senkronizasyonu
@@ -1710,7 +1710,7 @@ $149 / month
 
 Early-bird price (regularly $189 )
 
-- Up to 2 properties, 150 rooms
+- Up to 2 properties, 150 rooms in total
 - 12,000 AI messages / month
 - Everything in Pro
 - Priority channel sync
@@ -2088,7 +2088,7 @@ $149 / month
 
 Early-bird price (regularly $189 )
 
-- Up to 2 properties, 150 rooms
+- Up to 2 properties, 150 rooms in total
 - 12,000 AI messages / month
 - Everything in Pro
 - Priority channel sync
@@ -3595,7 +3595,7 @@ Para equipos que gestionan dos alojamientos
 
 Precio de lanzamiento (normalmente 189 $ )
 
-- Hasta 2 alojamientos, 150 habitaciones
+- Hasta 2 alojamientos, 150 habitaciones en total
 - 12.000 mensajes de IA / mes
 - Todo lo de Pro
 - Sincronización de canales prioritaria
@@ -3973,7 +3973,7 @@ Para equipos que gestionan dos alojamientos
 
 Precio de lanzamiento (normalmente 189 $ )
 
-- Hasta 2 alojamientos, 150 habitaciones
+- Hasta 2 alojamientos, 150 habitaciones en total
 - 12.000 mensajes de IA / mes
 - Todo lo de Pro
 - Sincronización de canales prioritaria
@@ -5047,7 +5047,7 @@ Per team che gestiscono due strutture
 
 Prezzo di lancio (normalmente 189 $ )
 
-- Fino a 2 strutture, 150 camere
+- Fino a 2 strutture, 150 camere in totale
 - 12.000 messaggi AI / mese
 - Tutto ciò che include Pro
 - Sincronizzazione dei canali prioritaria
@@ -5425,7 +5425,7 @@ Per team che gestiscono due strutture
 
 Prezzo di lancio (normalmente 189 $ )
 
-- Fino a 2 strutture, 150 camere
+- Fino a 2 strutture, 150 camere in totale
 - 12.000 messaggi AI / mese
 - Tutto ciò che include Pro
 - Sincronizzazione dei canali prioritaria
@@ -6499,7 +6499,7 @@ US$ 149 / mês
 
 Preço de lançamento (normalmente US$ 189 )
 
-- Até 2 propriedades, 150 quartos
+- Até 2 propriedades, 150 quartos no total
 - 12.000 mensagens de IA / mês
 - Tudo do Pro
 - Sincronização de canais prioritária
@@ -6877,7 +6877,7 @@ US$ 149 / mês
 
 Preço de lançamento (normalmente US$ 189 )
 
-- Até 2 propriedades, 150 quartos
+- Até 2 propriedades, 150 quartos no total
 - 12.000 mensagens de IA / mês
 - Tudo do Pro
 - Sincronização de canais prioritária
@@ -7951,7 +7951,7 @@ Pour les équipes qui gèrent deux établissements
 
 Prix de lancement (normalement 189 $ )
 
-- Jusqu'à 2 établissements, 150 chambres
+- Jusqu'à 2 établissements, 150 chambres au total
 - 12 000 messages IA / mois
 - Tout le forfait Pro
 - Synchronisation des canaux prioritaire
@@ -8329,7 +8329,7 @@ Pour les équipes qui gèrent deux établissements
 
 Prix de lancement (normalement 189 $ )
 
-- Jusqu'à 2 établissements, 150 chambres
+- Jusqu'à 2 établissements, 150 chambres au total
 - 12 000 messages IA / mois
 - Tout le forfait Pro
 - Synchronisation des canaux prioritaire

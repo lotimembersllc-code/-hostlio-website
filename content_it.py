@@ -10,7 +10,7 @@ def D(iso):
 PLAN_TXT = {
  "starter": ("Per piccoli B&B e boutique hotel", ["1 struttura, fino a 10 camere","⟦quota:starter⟧ messaggi AI / mese","Sincronizzazione con oltre 100 OTA","Messaggi AI su WhatsApp","Planning camere con calendario prenotazioni","Moduli per il visto in PDF automatici"]),
  "pro":     ("Per hotel in crescita con una sola struttura", ["1 struttura, fino a 50 camere","⟦quota:pro⟧ messaggi AI / mese","Tutto ciò che include Starter","WhatsApp + caselle OTA (Booking.com, Airbnb, Expedia)","Check-in online con firma digitale","Vendita di transfer e tour","App mobile iOS e Android"]),
- "growth":  ("Per team che gestiscono due strutture", ["Fino a 2 strutture, 150 camere","⟦quota:growth⟧ messaggi AI / mese","Tutto ciò che include Pro","Sincronizzazione dei canali prioritaria","Supporto prioritario (entro il giorno lavorativo successivo)","Chiamata di onboarding personalizzata","Opzioni white-label"]),
+ "growth":  ("Per team che gestiscono due strutture", ["Fino a 2 strutture, 150 camere in totale","⟦quota:growth⟧ messaggi AI / mese","Tutto ciò che include Pro","Sincronizzazione dei canali prioritaria","Supporto prioritario (entro il giorno lavorativo successivo)","Chiamata di onboarding personalizzata","Opzioni white-label"]),
 }
 
 def plans_html():

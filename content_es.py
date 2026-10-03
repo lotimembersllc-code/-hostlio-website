@@ -10,7 +10,7 @@ def D(iso):
 PLAN_TXT = {
  "starter": ("Para hostales, pensiones y hoteles boutique pequeños", ["1 alojamiento, hasta 10 habitaciones","⟦quota:starter⟧ mensajes de IA / mes","Sincronización de reservas de OTAs (más de 100 canales)","Mensajería IA por WhatsApp","Calendario de reservas (planning de habitaciones)","Formularios de visado en PDF automáticos"]),
  "pro":     ("Para hoteles en crecimiento con un solo alojamiento", ["1 alojamiento, hasta 50 habitaciones","⟦quota:pro⟧ mensajes de IA / mes","Todo lo de Starter","Mensajería por WhatsApp y bandejas de las OTAs (Booking.com, Airbnb, Expedia)","Check-in online con firma digital","Venta de traslados y excursiones","App móvil para iOS y Android"]),
- "growth":  ("Para equipos que gestionan dos alojamientos", ["Hasta 2 alojamientos, 150 habitaciones","⟦quota:growth⟧ mensajes de IA / mes","Todo lo de Pro","Sincronización de canales prioritaria","Soporte prioritario (siguiente día hábil)","Llamada de onboarding personalizada","Opciones de marca blanca"]),
+ "growth":  ("Para equipos que gestionan dos alojamientos", ["Hasta 2 alojamientos, 150 habitaciones en total","⟦quota:growth⟧ mensajes de IA / mes","Todo lo de Pro","Sincronización de canales prioritaria","Soporte prioritario (siguiente día hábil)","Llamada de onboarding personalizada","Opciones de marca blanca"]),
 }
 
 def plans_html():

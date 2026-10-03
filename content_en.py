@@ -5,7 +5,7 @@ def U(k): return url(k, L)
 PLAN_TXT = {
  "starter": ("For small guesthouses and boutique hotels", ["1 property, up to 10 rooms","⟦quota:starter⟧ AI messages / month","Channel sync with 100+ OTAs","WhatsApp AI messaging","Room rack reservation calendar","Automatic PDF visa forms"]),
  "pro":     ("For growing single-property hotels", ["1 property, up to 50 rooms","⟦quota:pro⟧ AI messages / month","Everything in Starter","WhatsApp + OTA inbox messaging (Booking.com, Airbnb, Expedia)","Online check-in with digital signature","Transfer and tour sales","Mobile app"]),
- "growth":  ("For teams running two properties", ["Up to 2 properties, 150 rooms","⟦quota:growth⟧ AI messages / month","Everything in Pro","Priority channel sync","Priority support (next business day)","Custom onboarding call","White-label options"]),
+ "growth":  ("For teams running two properties", ["Up to 2 properties, 150 rooms in total","⟦quota:growth⟧ AI messages / month","Everything in Pro","Priority channel sync","Priority support (next business day)","Custom onboarding call","White-label options"]),
 }
 
 def plans_html():
