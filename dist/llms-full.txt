@@ -77,7 +77,7 @@ Her rezervasyonu kanal rengiyle görün. Oda değiştirmek, konaklamayı uzatmak
 
 - Sürükle-bırak oda değişikliği
 - Kanal renkleriyle rezervasyonlar
-- Web ve iOS'ta aynı takvim Tüm özellikler
+- Web, iOS ve Android'de aynı takvim Tüm özellikler
 Oda rafı Eylül, 3. hafta
 
 Pzt 15
@@ -170,7 +170,7 @@ Misafir hangi dilde yazarsa o dilde cevap.
 Türkçe English Deutsch العربية Русский 日本語 中文 Français
 
 ## Mobil uygulama
-iOS'ta rezervasyon, mesaj ve check-in; internet yokken de.
+iOS ve Android'de rezervasyon, mesaj ve check-in; internet yokken de.
 
 ## Her tesis tipine uygun
 1 ila 150 odalı bağımsız tesisler için tasarlandı.
@@ -199,9 +199,9 @@ Sabit aylık ücret, uzun süreli sözleşme yok. Tüm planlar 7 gün ücretsiz.
 ## Starter
 Küçük pansiyon ve butik oteller için
 
-$49 / ay
+49 $ / ay
 
-Erken kayıt fiyatı (normali $59 )
+Erken kayıt fiyatı (normali 59 $ )
 
 - 1 tesis, 10 odaya kadar
 - Aylık 1.000 AI mesajı
@@ -216,9 +216,9 @@ En çok tercih edilen
 ## Pro
 Tek tesisli, büyüyen oteller için
 
-$89 / ay
+89 $ / ay
 
-Erken kayıt fiyatı (normali $109 )
+Erken kayıt fiyatı (normali 109 $ )
 
 - 1 tesis, 50 odaya kadar
 - Aylık 5.000 AI mesajı
@@ -232,9 +232,9 @@ Pro ile başla
 ## Growth
 İki tesis işleten ekipler için
 
-$149 / ay
+149 $ / ay
 
-Erken kayıt fiyatı (normali $189 )
+Erken kayıt fiyatı (normali 189 $ )
 
 - 2 tesise kadar, 150 odaya kadar
 - Aylık 12.000 AI mesajı
@@ -270,7 +270,7 @@ Misafir rezervasyonla eşleştiğinde oda, tarih ve rezervasyon bilgilerini ceva
 
 Lio'yu inceleyin
 
-Hostlio Pro nedir? Hostlio Pro, 1 ila 150 odalı bağımsız oteller ve pansiyonlar için bulut tabanlı bir otel programıdır (PMS). Misafir iletişimini yapay zekâya devreder, OTA rezervasyonlarını tek takvimde toplar, check-in'i misafirin telefonuna taşır. Web'den ve iOS uygulamasından yönetilir, 20'den fazla ülkede kullanılır.
+Hostlio Pro nedir? Hostlio Pro, 1 ila 150 odalı bağımsız oteller ve pansiyonlar için bulut tabanlı bir otel programıdır (PMS). Misafir iletişimini yapay zekâya devreder, OTA rezervasyonlarını tek takvimde toplar, check-in'i misafirin telefonuna taşır. Web'den ve iOS ile Android uygulamasından yönetilir, 20'den fazla ülkede kullanılır.
 
 30+ dilde misafir yanıtı
 100+ OTA ve satış kanalı
@@ -301,7 +301,7 @@ Q: Hostlio Pro nedir?
 A: Hostlio Pro, bağımsız oteller, butik oteller ve pansiyonlar için geliştirilmiş yapay zekâ destekli bir otel yönetim yazılımıdır (PMS). Misafir mesajlarını 30'dan fazla dilde 7/24 yanıtlayan AI asistanı Lio'yu, 100+ OTA'ya bağlanan kanal yöneticisini, sürükle-bırak rezervasyon takvimini ve online check-in'i tek panelde birleştirir.
 
 Q: Hostlio Pro'nun fiyatı ne kadar?
-A: Üç plan var: Starter aylık 49 $, Pro aylık 89 $, Growth aylık 149 $. Bu fiyatlar ilk 50 müşteriye özel %20 erken kayıt indirimini içerir ve abonelik sürdüğü sürece sabit kalır. Normal fiyatlar sırasıyla 59 $, 109 $ ve 189 $'dır.
+A: Üç plan var: Starter aylık 49 $, Pro aylık 89 $, Growth aylık 149 $. Bu fiyatlar ilk 50 müşteriye özel %20 erken kayıt indirimini içerir ve abonelik sürdüğü sürece sabit kalır. Normal fiyatlar sırasıyla 59 $, 109 $ ve 189 $'dır.
 
 Q: Ücretsiz deneme var mı?
 A: Evet. Tüm planlar 7 gün ücretsiz denenebilir. Kayıt sırasında ödeme kartı alınır, ancak deneme süresi bitene kadar hiçbir ücret çekilmez. Uzun süreli sözleşme yoktur, istediğiniz zaman iptal edebilirsiniz.
@@ -313,7 +313,7 @@ Q: AI asistan Lio hangi dillerde yanıt veriyor?
 A: Lio, Türkçe, İngilizce, Arapça, Rusça, Almanca, Japonca ve Çince dahil 30'dan fazla dilde yanıt verir. Misafir hangi dilde yazarsa o dilde cevaplar; siz panelde Türkçe çevirisini görürsünüz.
 
 ---
-# AI Misafir Asistanı Lio: 30+ Dilde Otel Mesajları | Hostlio Pro
+# AI Misafir Asistanı Lio: 30+ Dilde Mesajlar | Hostlio Pro
 URL: https://hostliopro.com/tr/ai-misafir-asistani/
 
 ## AI misafir asistanı Lio
@@ -496,7 +496,7 @@ Q: Misafir bağlantıyı doldurmazsa ne olur?
 A: Klasik check-in'e devam edebilirsiniz. Resepsiyonda bilgileri Hostlio Pro mobil uygulamasından da girebilirsiniz.
 
 ---
-# Otel Programı Özellikleri: AI, Kanal Yöneticisi | Hostlio Pro
+# Otel Programı Özellikleri: AI, Kanal Yönetimi | Hostlio Pro
 URL: https://hostliopro.com/tr/ozellikler/
 
 ## Hostlio Pro'nun tüm özellikleri
@@ -527,7 +527,7 @@ Vize başvurusu için otel davet ve konaklama belgelerini rezervasyon bilgilerin
 Lio mesajlaşma sırasında havalimanı transferi ve tur önerir, talebi ekibinize iletir.
 
 ## Mobil uygulama
-iOS uygulamasıyla rezervasyonları, mesajları ve check-in'leri otelin dışından yönetin. İnternet kesildiğinde de çalışır, bağlantı gelince senkronize olur.
+iOS ve Android uygulamasıyla rezervasyonları, mesajları ve check-in'leri otelin dışından yönetin. İnternet kesildiğinde de çalışır, bağlantı gelince senkronize olur.
 
 ## Planlara göre özellikler
 
@@ -553,7 +553,7 @@ Online check-in ve dijital imza Yok Var Var
 
 Transfer ve tur satışı Yok Var Var
 
-iOS mobil uygulama Yok Var Var
+iOS ve Android uygulaması Yok Var Var
 
 Öncelikli destek ve kurulum görüşmesi Yok Yok Var
 
@@ -569,7 +569,7 @@ Q: Hangi OTA'larla çalışıyor?
 A: Hostlio Pro, Channex altyapısı üzerinden Booking.com, Airbnb, Expedia, Agoda, Trip.com, Hotels.com, Hotelbeds, Hostelworld ve Google Hotels dahil 100'den fazla kanala bağlanır. Müsaitlik, fiyat ve rezervasyonlar tüm kanallarda eşzamanlı güncellenir.
 
 ---
-# Otel Yazılımı Fiyatları: Aylık 49 $'dan Başlar | Hostlio Pro
+# Otel Yazılımı Fiyatları: Aylık 49 $'dan Başlar | Hostlio Pro
 URL: https://hostliopro.com/tr/fiyatlandirma/
 
 ## Hostlio Pro fiyatları
@@ -583,9 +583,9 @@ Sabit aylık ücret. Rezervasyon başına komisyon yok, kurulum ücreti yok. Tü
 ## Starter
 Küçük pansiyon ve butik oteller için
 
-$49 / ay
+49 $ / ay
 
-Erken kayıt fiyatı (normali $59 )
+Erken kayıt fiyatı (normali 59 $ )
 
 - 1 tesis, 10 odaya kadar
 - Aylık 1.000 AI mesajı
@@ -600,9 +600,9 @@ En çok tercih edilen
 ## Pro
 Tek tesisli, büyüyen oteller için
 
-$89 / ay
+89 $ / ay
 
-Erken kayıt fiyatı (normali $109 )
+Erken kayıt fiyatı (normali 109 $ )
 
 - 1 tesis, 50 odaya kadar
 - Aylık 5.000 AI mesajı
@@ -616,9 +616,9 @@ Pro ile başla
 ## Growth
 İki tesis işleten ekipler için
 
-$149 / ay
+149 $ / ay
 
-Erken kayıt fiyatı (normali $189 )
+Erken kayıt fiyatı (normali 189 $ )
 
 - 2 tesise kadar, 150 odaya kadar
 - Aylık 12.000 AI mesajı
@@ -643,7 +643,7 @@ Fiyatlar ABD doları cinsindendir, vergiler hariçtir. Son güncelleme: 21 Eylü
 İki tesis veya 150 odaya kadar kapasite. Öncelikli destek, birebir kurulum ve kendi markanızla (white-label) kullanım gerektiğinde.
 
 Q: Hostlio Pro'nun fiyatı ne kadar?
-A: Üç plan var: Starter aylık 49 $, Pro aylık 89 $, Growth aylık 149 $. Bu fiyatlar ilk 50 müşteriye özel %20 erken kayıt indirimini içerir ve abonelik sürdüğü sürece sabit kalır. Normal fiyatlar sırasıyla 59 $, 109 $ ve 189 $'dır.
+A: Üç plan var: Starter aylık 49 $, Pro aylık 89 $, Growth aylık 149 $. Bu fiyatlar ilk 50 müşteriye özel %20 erken kayıt indirimini içerir ve abonelik sürdüğü sürece sabit kalır. Normal fiyatlar sırasıyla 59 $, 109 $ ve 189 $'dır.
 
 Q: Ücretsiz deneme var mı?
 A: Evet. Tüm planlar 7 gün ücretsiz denenebilir. Kayıt sırasında ödeme kartı alınır, ancak deneme süresi bitene kadar hiçbir ücret çekilmez. Uzun süreli sözleşme yoktur, istediğiniz zaman iptal edebilirsiniz.
@@ -672,7 +672,7 @@ Otel programı nedir? Otel programı (otel yönetim yazılımı, PMS), bir konak
 
 Hostlio Pro nedir? Hostlio Pro, bağımsız oteller, butik oteller ve pansiyonlar için geliştirilmiş yapay zekâ destekli bir otel yönetim yazılımıdır (PMS). Misafir mesajlarını 30'dan fazla dilde 7/24 yanıtlayan AI asistanı Lio'yu, 100+ OTA'ya bağlanan kanal yöneticisini, sürükle-bırak rezervasyon takvimini ve online check-in'i tek panelde birleştirir.
 
-Hostlio Pro'nun fiyatı ne kadar? Üç plan var: Starter aylık 49 $, Pro aylık 89 $, Growth aylık 149 $. Bu fiyatlar ilk 50 müşteriye özel %20 erken kayıt indirimini içerir ve abonelik sürdüğü sürece sabit kalır. Normal fiyatlar sırasıyla 59 $, 109 $ ve 189 $'dır.
+Hostlio Pro'nun fiyatı ne kadar? Üç plan var: Starter aylık 49 $, Pro aylık 89 $, Growth aylık 149 $. Bu fiyatlar ilk 50 müşteriye özel %20 erken kayıt indirimini içerir ve abonelik sürdüğü sürece sabit kalır. Normal fiyatlar sırasıyla 59 $, 109 $ ve 189 $'dır.
 
 Ücretsiz deneme var mı? Evet. Tüm planlar 7 gün ücretsiz denenebilir. Kayıt sırasında ödeme kartı alınır, ancak deneme süresi bitene kadar hiçbir ücret çekilmez. Uzun süreli sözleşme yoktur, istediğiniz zaman iptal edebilirsiniz.
 
@@ -682,7 +682,7 @@ AI asistan Lio hangi dillerde yanıt veriyor? Lio, Türkçe, İngilizce, Arapça
 
 Hostlio Pro hangi otel tiplerine uygun? Butik oteller, şehir otelleri, pansiyonlar, apart oteller ve hosteller gibi 1 ila 150 odalı bağımsız tesisler için tasarlandı.
 
-Mobil uygulama var mı? Evet. Pro ve Growth planlarında iOS uygulaması bulunur. Uygulama internet bağlantısı olmadan da çalışır ve bağlantı geldiğinde verileri senkronize eder.
+Mobil uygulama var mı? Evet. Pro ve Growth planlarında iOS ve Android uygulaması bulunur. Uygulama internet bağlantısı olmadan da çalışır ve bağlantı geldiğinde verileri senkronize eder.
 
 Online check-in nasıl çalışıyor? Misafire kişiye özel güvenli bir bağlantı gönderilir. Misafir kimlik bilgilerini, refakatçilerini ve dijital imzasını varıştan önce telefonundan gönderir. Pro ve Growth planlarında vardır.
 
@@ -701,7 +701,7 @@ Q: Hostlio Pro nedir?
 A: Hostlio Pro, bağımsız oteller, butik oteller ve pansiyonlar için geliştirilmiş yapay zekâ destekli bir otel yönetim yazılımıdır (PMS). Misafir mesajlarını 30'dan fazla dilde 7/24 yanıtlayan AI asistanı Lio'yu, 100+ OTA'ya bağlanan kanal yöneticisini, sürükle-bırak rezervasyon takvimini ve online check-in'i tek panelde birleştirir.
 
 Q: Hostlio Pro'nun fiyatı ne kadar?
-A: Üç plan var: Starter aylık 49 $, Pro aylık 89 $, Growth aylık 149 $. Bu fiyatlar ilk 50 müşteriye özel %20 erken kayıt indirimini içerir ve abonelik sürdüğü sürece sabit kalır. Normal fiyatlar sırasıyla 59 $, 109 $ ve 189 $'dır.
+A: Üç plan var: Starter aylık 49 $, Pro aylık 89 $, Growth aylık 149 $. Bu fiyatlar ilk 50 müşteriye özel %20 erken kayıt indirimini içerir ve abonelik sürdüğü sürece sabit kalır. Normal fiyatlar sırasıyla 59 $, 109 $ ve 189 $'dır.
 
 Q: Ücretsiz deneme var mı?
 A: Evet. Tüm planlar 7 gün ücretsiz denenebilir. Kayıt sırasında ödeme kartı alınır, ancak deneme süresi bitene kadar hiçbir ücret çekilmez. Uzun süreli sözleşme yoktur, istediğiniz zaman iptal edebilirsiniz.
@@ -716,7 +716,7 @@ Q: Hostlio Pro hangi otel tiplerine uygun?
 A: Butik oteller, şehir otelleri, pansiyonlar, apart oteller ve hosteller gibi 1 ila 150 odalı bağımsız tesisler için tasarlandı.
 
 Q: Mobil uygulama var mı?
-A: Evet. Pro ve Growth planlarında iOS uygulaması bulunur. Uygulama internet bağlantısı olmadan da çalışır ve bağlantı geldiğinde verileri senkronize eder.
+A: Evet. Pro ve Growth planlarında iOS ve Android uygulaması bulunur. Uygulama internet bağlantısı olmadan da çalışır ve bağlantı geldiğinde verileri senkronize eder.
 
 Q: Online check-in nasıl çalışıyor?
 A: Misafire kişiye özel güvenli bir bağlantı gönderilir. Misafir kimlik bilgilerini, refakatçilerini ve dijital imzasını varıştan önce telefonundan gönderir. Pro ve Growth planlarında vardır.
@@ -790,7 +790,7 @@ Otellerde overbooking (çift rezervasyon) neden olur ve nasıl önlenir? Kanal y
 2026-09-21
 Booking.com misafir mesajlarını otomatik yanıtlamanın üç yolu: hazır şablonlar, planlı mesajlar ve yapay zekâ asistanı.
 
-## Otel misafir mesajlarını yapay zekâ ile yanıtlamak: pratik rehber
+## Misafir mesajlarını yapay zekâ ile yanıtlamak: pratik rehber
 2026-09-18
 Otel misafir mesajlarını yapay zekâ ile yanıtlamanın avantajları, riskleri ve kurulum adımları. Hangi sorular otomatikleşir, hangileri insanda kalmalı?
 
@@ -799,10 +799,10 @@ Otel misafir mesajlarını yapay zekâ ile yanıtlamanın avantajları, riskleri
 Küçük ve butik oteller için PMS seçerken bakılması gereken 7 kriter: kanal yöneticisi, fiyat modeli, misafir iletişimi, mobil erişim ve daha fazlası.
 
 ---
-# Otel misafir mesajlarını yapay zekâ ile yanıtlamak: pratik rehber
+# Misafir mesajlarını yapay zekâ ile yanıtlamak: pratik rehber
 URL: https://hostliopro.com/tr/blog/otel-misafir-mesajlarini-yapay-zeka-ile-yanitlamak/
 
-## Otel misafir mesajlarını yapay zekâ ile yanıtlamak: pratik rehber
+## Misafir mesajlarını yapay zekâ ile yanıtlamak: pratik rehber
 Yazan: Hostlio Pro ürün ekibi , otel yazılımı geliştiren ekip. Yayın: 2026-09-18 , güncelleme: 2026-09-23
 
 Kısa cevap: Otel mesajlarının büyük kısmı tekrar eden sorulardır (check-in saati, otopark, transfer, kahvaltı). Bu soruları otelin kendi bilgileriyle eğitilmiş bir yapay zekâ asistanına bırakmak, misafire saniyeler içinde kendi dilinde cevap verir; indirim, şikâyet ve özel talepler ise personelde kalmalıdır.
@@ -914,7 +914,7 @@ Q: PMS ile kanal yöneticisi arasındaki fark nedir?
 A: PMS otelin iç operasyonunu (rezervasyon, oda, misafir) yönetir; kanal yöneticisi ise müsaitlik ve fiyatı OTA'lara dağıtır. Hostlio Pro gibi yazılımlar ikisini tek panelde birleştirir.
 
 ---
-# Pansiyon Programı: AI Destekli, Aylık 49 $'dan | Hostlio Pro
+# Pansiyon Programı: AI Destekli, Aylık 49 $'dan | Hostlio Pro
 URL: https://hostliopro.com/tr/pansiyon-programi/
 
 ## Pansiyonlar için otel programı
@@ -923,7 +923,7 @@ Tek kişilik ya da küçük bir ekiple işletilen pansiyonlarda gece gelen mesaj
 7 gün ücretsiz dene Demo iste
 
 ## Pansiyon programı nedir?
-Pansiyon programı, 1 ila 10 odalı küçük konaklama işletmelerinin rezervasyonlarını, müsaitliğini ve misafir iletişimini tek yerden yönetmesini sağlayan yazılımdır. Hostlio Pro bu işlevlere, misafir sorularını 30'dan fazla dilde 7/24 yanıtlayan AI asistanı Lio'yu ekler. Starter planı 10 odaya kadar tesisler için aylık 49 $'dır.
+Pansiyon programı, 1 ila 10 odalı küçük konaklama işletmelerinin rezervasyonlarını, müsaitliğini ve misafir iletişimini tek yerden yönetmesini sağlayan yazılımdır. Hostlio Pro bu işlevlere, misafir sorularını 30'dan fazla dilde 7/24 yanıtlayan AI asistanı Lio'yu ekler. Starter planı 10 odaya kadar tesisler için aylık 49 $'dır.
 
 ## Pansiyonlar en çok hangi sorunlarla uğraşır?
 
@@ -946,7 +946,7 @@ Diğer otel programlarıyla karşılaştırmak için otel programı karşılaşt
 Fiyatları gör
 
 Q: Pansiyon programı ücretsiz mi?
-A: Hostlio Pro'yu 7 gün ücretsiz deneyebilirsiniz. Sonrasında Starter planı aylık 49 $'dır (ilk 50 müşteriye özel erken kayıt fiyatı).
+A: Hostlio Pro'yu 7 gün ücretsiz deneyebilirsiniz. Sonrasında Starter planı aylık 49 $'dır (ilk 50 müşteriye özel erken kayıt fiyatı).
 
 Q: 3 odalı bir pansiyon için uygun mu?
 A: Evet. Starter planı 1 tesis ve 10 odaya kadar tesisler için tasarlandı; oda sayısı az olsa da fiyat aynıdır.
@@ -955,7 +955,7 @@ Q: Airbnb ve Booking.com'u birlikte kullanabilir miyim?
 A: Evet. Hostlio Pro, Channex üzerinden iki kanalı ve 100'den fazla başka kanalı aynı takvimde senkronize eder.
 
 ---
-# Butik Otel Programı: AI Asistan ve Kanal Yöneticisi | Hostlio Pro
+# Butik Otel Programı: AI ve Kanal Yöneticisi | Hostlio Pro
 URL: https://hostliopro.com/tr/butik-otel-programi/
 
 ## Butik oteller için otel programı
@@ -981,7 +981,7 @@ Booking.com, Expedia ve Airbnb'den gelen rezervasyonlar tek oda rafında, kanal 
 Online check-in ve dijital imza sayesinde misafir lobide form doldurmak yerine hoş geldin içeceğini alır.
 
 ## Hangi plan uygun?
-10 ila 50 odalı butik oteller için Pro planı önerilir: aylık 5.000 AI mesajı, WhatsApp ve OTA gelen kutusu mesajlaşması (Booking.com, Airbnb, Expedia), online check-in, transfer ve tur satışı ve iOS uygulaması.
+10 ila 50 odalı butik oteller için Pro planı önerilir: aylık 5.000 AI mesajı, WhatsApp ve OTA gelen kutusu mesajlaşması (Booking.com, Airbnb, Expedia), online check-in, transfer ve tur satışı ile iOS ve Android uygulaması.
 
 Diğer otel programlarıyla karşılaştırmak için otel programı karşılaştırması sayfamıza bakın.
 Fiyatları gör
@@ -996,7 +996,7 @@ Q: Kaç kullanıcı ekleyebilirim?
 A: Plan detayları için fiyatlandırma sayfasına bakın veya demo sırasında ekibimize sorun.
 
 ---
-# Apart Otel Programı: Online Check-in ve Kanal Yönetimi | Hostlio Pro
+# Apart Otel Programı ve Online Check-in | Hostlio Pro
 URL: https://hostliopro.com/tr/apart-otel-programi/
 
 ## Apart oteller için otel programı
@@ -1037,7 +1037,7 @@ Q: Daire sayısı sınırı var mı?
 A: Starter 10, Pro 50, Growth 150 oda veya daireye kadar destekler.
 
 ---
-# Hostel Programı: Çok Dilli Mesajlar, OTA Senkronu | Hostlio Pro
+# Hostel Programı: Çok Dilli Mesaj, OTA Senkronu | Hostlio Pro
 URL: https://hostliopro.com/tr/hostel-programi/
 
 ## Hosteller için otel programı
@@ -1078,7 +1078,7 @@ Q: Kaç AI mesajı yeterli olur?
 A: Günde ortalama 150 otomatik yanıt, aylık yaklaşık 4.500 mesaj eder; bu durumda Pro planı uygundur.
 
 ---
-# Otel Programı Karşılaştırması 2026: Fiyat, Komisyon, AI | Hostlio Pro
+# Otel Programı Karşılaştırması 2026: Fiyatlar | Hostlio Pro
 URL: https://hostliopro.com/tr/otel-programi-karsilastirma/
 
 ## Otel programı karşılaştırması (2026)
@@ -1088,7 +1088,7 @@ Bağımsız oteller için beş popüler otel yönetim yazılımını, firmaları
 Kısa cevap: tek tesisli, 1–150 odalı ve yabancı misafiri çok olan oteller için sabit fiyatlı ve AI mesajlaşması dahil bir yazılım (Hostlio Pro gibi) bütçeyi öngörülebilir kılar. Çok tesisli ve kurumsal ihtiyaçları olan gruplar için Mews veya Cloudbeds gibi teklif bazlı platformlar, Türkiye'de B2B ağı ve yerel destek arayanlar için HotelRunner, SiteMinder ağıyla çalışmak isteyen küçük tesisler için Little Hotelier değerlendirilebilir.
 
 Otel programı karşılaştırması (2026) Yazılım Fiyatlar yayınlanıyor mu? Başlangıç Rezervasyon komisyonu Ücretsiz deneme AI misafir mesajlaşması Kaynak
-Hostlio Pro Evet 49 $/ay (erken kayıt) Yok, sabit aylık ücret 7 gün Tüm planlarda (Lio, 30+ dil) Fiyat sayfası Eylül 2026’da kontrol edildi
+Hostlio Pro Evet 49 $/ay (erken kayıt) Yok, sabit aylık ücret 7 gün Tüm planlarda (Lio, 30+ dil) Fiyat sayfası Eylül 2026’da kontrol edildi
 Cloudbeds Hayır, teklif usulü Teklif Booking Engine ve Channel Manager rezervasyonlarından ek komisyon almadığını belirtiyor Fiyat sayfasında belirtilmiyor Fiyat sayfasında ayrıca belirtilmiyor Fiyat sayfası Eylül 2026’da kontrol edildi
 Mews Hayır, teklif usulü Teklif Fiyat sayfasında belirtilmiyor Fiyat sayfasında belirtilmiyor Advanced planda AI misafir tercih özetleri; mesajlaşma ayrıca belirtilmiyor Fiyat sayfası Eylül 2026’da kontrol edildi
 Little Hotelier Oda sayısına göre hesaplanıyor Fiyat hesaplayıcısıyla Basics planında %1 rezervasyon ücreti 30 gün Fiyat sayfasında belirtilmiyor Fiyat sayfası Eylül 2026’da kontrol edildi
@@ -1219,7 +1219,7 @@ A: Yalnızca otelin girdiği bilgilerle çalışan ve emin olmadığında person
 URL: https://hostliopro.com/tr/gizlilik-politikasi/
 
 ## Gizlilik Politikası
-Son güncelleme: 23 Eylül 2026 , Loti Members LLC, 2108 N ST STE N, Sacramento, CA 95816. Bu metin İngilizce aslının çevirisidir; farklılık halinde İngilizce metin esas alınır.
+Son güncelleme: 3 Ekim 2026 , Loti Members LLC, 2108 N ST STE N, Sacramento, CA 95816. Bu metin İngilizce aslının çevirisidir; farklılık halinde İngilizce metin esas alınır.
 
 Bu Gizlilik Politikası, Loti Members LLC (“biz”) tarafından işletilen Hostlio Pro’nun; hostliopro.com’u ziyaret ettiğinizde, kaydolduğunuzda ya da Hostlio Pro paneli, mobil uygulaması ve misafire dönük özelliklerini kullandığınızda kişisel verileri nasıl topladığını, kullandığını ve paylaştığını açıklar.
 
@@ -1234,8 +1234,8 @@ Müşterilerimize (otel sahipleri ve çalışanları) ve site ziyaretçilerine a
 - Oteller adına işlenen misafir verileri: misafir adı, iletişim bilgileri, rezervasyon bilgileri ve WhatsApp ile OTA gelen kutularına gelen mesajların içeriği
 - Online check-in verileri: otel online check-in kullanıyorsa kimlik belgesi bilgileri ve görseli, doğum tarihi, uyruk, refakatçiler ve dijital imza. Bu verileri hassas veri olarak ele alırız
 - Kayıt ve güvenlik verileri: IP adresi, e-postanın özetlenmiş (hash) hali ve kayıt denemelerinin sonucu; dolandırıcılık ve kötüye kullanımı önlemek için
-- Pazarlama kaynağı: sizi sitemize ilk getiren kampanya ya da sayfa (ör. UTM parametreleri ve yönlendiren site); tarayıcınızda saklanır ve kaydınızla birlikte gönderilir
-- Kullanım verileri: panel ve uygulamanın nasıl kullanıldığı ve teknik kayıtlar
+- Pazarlama kaynağı: yalnızca sitemize kampanya parametreleri (UTM parametreleri veya reklam tıklama kimliği) içeren bir bağlantıyla geldiyseniz bu parametreler, giriş sayfası ve ilk ziyaretinizin zamanı; tarayıcınızda saklanır ve bize yalnızca kayıt veya iletişim formuyla birlikte iletilir
+- Kullanım verileri: panel ve uygulamanın nasıl kullanıldığı, teknik kayıtlar ve mobil uygulamayı kullandığınızda cihazınızın bildirim jetonu (push token)
 
 ## 3. Verileri nasıl kullanırız
 
@@ -1262,6 +1262,7 @@ Anthropic, PBC USA Cevap taslağı için misafir mesajlarının yapay zekâ ile 
 Meta Platforms, Inc. (WhatsApp Business Platform) USA / Ireland WhatsApp mesajlarının gönderilmesi ve alınması
 Channex.io Ltd United Kingdom Müsaitlik, fiyat, rezervasyon ve OTA mesaj senkronizasyonu
 Make (Celonis) EU İletişim formu ve iç iş akışı otomasyonu
+Google LLC / Google Ireland Ltd. (Firebase Cloud Messaging) USA / global Hostlio Pro mobil uygulamasına (iOS ve Android) anlık bildirim gönderimi (cihaz bildirim jetonu, uygulama örneği kimlikleri, yeni mesaj veya rezervasyon uyarısı gibi bildirim içeriği)
 Twilio Inc.* USA Oteller için WhatsApp numarası ve mesaj faturalandırması
 Twilio SendGrid* USA İşlemsel e-posta
 
@@ -1295,7 +1296,7 @@ Kaliforniya (CCPA/CPRA): kişisel bilgilerinizi öğrenme, sildirme ve düzeltme
 Haklarınızı kullanmak için hello@hostliopro.com adresine yazın. Hesabınızı kapatmak için hesap silme sayfasına bakın.
 
 ## 10. Çerezler ve tarayıcı depolaması
-Panel, oturumunuzu açık tutmak için zorunlu çerez ve depolama kullanır. Sitemiz dil tercihinizi ve ilk pazarlama kaynağını tarayıcınızın yerel depolamasında (localStorage) tutar. Reklam çerezi kullanmayız. Site analitiği eklersek önce bu politikayı güncelleriz.
+Panel, oturumunuzu açık tutmak için zorunlu çerez ve depolama kullanır. Sitemiz dil tercihinizi tarayıcınızın yerel depolamasında (localStorage) tutar. Pazarlama ölçümü için olağan ziyaretlerde hiçbir şey saklanmaz: yalnızca kampanya parametreleri (utm_source, utm_medium, utm_campaign, utm_term, utm_content veya reklam tıklama kimliği: gclid, msclkid, ttclid, fbclid) içeren bir bağlantıyla geldiğinizde site bu parametreleri, giriş sayfasının yolunu ve o ilk ziyaretin zamanını hostlio_acq anahtarıyla yerel depolamaya kaydeder. Bunun için çerez kullanılmaz. Yönlendiren sitenin alan adı yalnızca o sayfa görüntülemesi sırasında okunur, saklanmaz. Bu kayıt birinci taraf verisidir: site onu reklam ağlarıyla asla paylaşmaz; yalnızca kayıt veya iletişim formunu gönderirseniz o gönderimle birlikte bize iletilir ve 90 gün sonra otomatik olarak silinir. Hangi pazarlama kanallarının müşteri getirdiğini ölçmekteki meşru menfaatimize dayanırız; tarayıcınızda hostliopro.com için site verilerini temizleyerek dilediğiniz an itiraz edebilir ve kaydı silebilirsiniz. Reklam çerezi kullanmayız. Site analitiği eklersek önce bu politikayı güncelleriz.
 
 ## 11. WhatsApp ve misafir mesajlaşması
 Hostlio Pro, oteller adına misafir mesajlarını göndermek ve almak için WhatsApp Business Platformu’na ve OTA gelen kutularına bağlanır. Misafir telefon numaraları yalnızca konaklamayla ilgili iletişim için kullanılır. Misafirler otele bildirerek mesaj almayı durdurabilir.
@@ -1316,7 +1317,7 @@ Değişiklikleri bu sayfada yayınlar ve yukarıdaki tarihi güncelleriz. Öneml
 URL: https://hostliopro.com/tr/kullanim-sartlari/
 
 ## Kullanım Şartları
-Son güncelleme: 23 Eylül 2026 , Loti Members LLC, 2108 N ST STE N, Sacramento, CA 95816. Bu metin İngilizce aslının çevirisidir; farklılık halinde İngilizce metin esas alınır.
+Son güncelleme: 3 Ekim 2026 , Loti Members LLC, 2108 N ST STE N, Sacramento, CA 95816. Bu metin İngilizce aslının çevirisidir; farklılık halinde İngilizce metin esas alınır.
 
 Bu Kullanım Şartları (“Şartlar”), Loti Members LLC (“biz”) tarafından işletilen Hostlio Pro’yu kullanımınızı düzenler. Hesap oluşturarak veya hizmeti kullanarak bu Şartları kabul edersiniz. Hostlio Pro’yu bir işletme adına kullanıyorsanız Şartları o işletme adına kabul etmiş olursunuz.
 
@@ -1439,6 +1440,7 @@ Anthropic, PBC USA Cevap taslağı için misafir mesajlarının yapay zekâ ile 
 Meta Platforms, Inc. (WhatsApp Business Platform) USA / Ireland WhatsApp mesajlarının gönderilmesi ve alınması
 Channex.io Ltd United Kingdom Müsaitlik, fiyat, rezervasyon ve OTA mesaj senkronizasyonu
 Make (Celonis) EU İletişim formu ve iç iş akışı otomasyonu
+Google LLC / Google Ireland Ltd. (Firebase Cloud Messaging) USA / global Hostlio Pro mobil uygulamasına (iOS ve Android) anlık bildirim gönderimi (cihaz bildirim jetonu, uygulama örneği kimlikleri, yeni mesaj veya rezervasyon uyarısı gibi bildirim içeriği)
 Twilio Inc.* USA Oteller için WhatsApp numarası ve mesaj faturalandırması
 Twilio SendGrid* USA İşlemsel e-posta
 
@@ -1463,14 +1465,16 @@ Oda sayısı Günlük misafir mesajı Bir mesajı cevaplama süresi (dakika) Lio
 Ayda kazanılan personel saati –
 Ayda tasarruf edilen personel maliyeti –
 Ayda cevaplanan gece mesajı –
+Ayda gereken AI yanıtı –
 Önerilen plan –
 Plan ücreti düşüldükten sonra kazanç –
+
 Hostlio Pro’yu 7 gün ücretsiz deneyin
 
 Yalnızca tahmindir; girdiğiniz rakamlara ve ayda 30 güne dayanır. Sonuçlar misafirlerinize, ayarlarınıza ve Lio’nun otomatik cevapladığı konulara göre değişir. Plan fiyatları ABD doları cinsinden erken kayıt aylık fiyatlarıdır.
 
 ---
-# Hostlio Pro | AI Hotel Management Software for Independent Hotels
+# Hostlio Pro | AI Hotel Management for Independent Hotels
 URL: https://hostliopro.com/en/
 
 ## While your hotel sleeps, Lio replies
@@ -1545,7 +1549,7 @@ See every booking in its channel colour. Moving rooms, extending stays or blocki
 
 - Drag-and-drop room moves
 - Bookings colour-coded by channel
-- The same calendar on web and iOS All features
+- The same calendar on web, iOS and Android All features
 Room rack September, week 3
 
 Mon 15
@@ -1638,7 +1642,7 @@ Whatever language the guest writes in, that's the reply.
 Türkçe English Deutsch العربية Русский 日本語 中文 Français
 
 ## Mobile app
-Bookings, messages and check-ins on iOS, even offline.
+Bookings, messages and check-ins on iOS and Android, even offline.
 
 ## Built for every kind of property
 Designed for independent properties with 1 to 150 rooms.
@@ -1738,7 +1742,7 @@ When the guest is matched to a reservation, replies use the room, dates and book
 
 Explore Lio
 
-What is Hostlio Pro? Hostlio Pro is cloud hotel management software (a PMS) for independent hotels and guesthouses with 1 to 150 rooms. It hands guest communication to AI, pulls OTA bookings into one calendar and moves check-in to the guest's phone. Managed from the web and an iOS app, used in 20+ countries.
+What is Hostlio Pro? Hostlio Pro is cloud hotel management software (a PMS) for independent hotels and guesthouses with 1 to 150 rooms. It hands guest communication to AI, pulls OTA bookings into one calendar and moves check-in to the guest's phone. Managed from the web and an iOS and Android app, used in 20+ countries.
 
 30+ languages answered
 100+ OTAs and sales channels
@@ -1992,7 +1996,7 @@ Generate hotel invitation and accommodation letters for visa applications from r
 Lio suggests airport transfers and tours during the conversation and passes the request to your team.
 
 ## Mobile app
-Manage bookings, messages and check-ins away from the hotel with the iOS app. It keeps working offline and syncs when you're back online.
+Manage bookings, messages and check-ins away from the hotel with the iOS and Android app. It keeps working offline and syncs when you're back online.
 
 ## Features by plan
 
@@ -2018,7 +2022,7 @@ Online check-in and digital signature No Yes Yes
 
 Transfer and tour sales No Yes Yes
 
-iOS mobile app No Yes Yes
+iOS and Android app No Yes Yes
 
 Priority support and onboarding call No No Yes
 
@@ -2142,7 +2146,7 @@ Which languages does Lio reply in? Lio replies in 30+ languages, including Engli
 
 What types of hotels is Hostlio Pro for? Independent properties with 1 to 150 rooms, such as boutique hotels, city hotels, guesthouses, aparthotels and hostels.
 
-Is there a mobile app? Yes. The Pro and Growth plans include an iOS app. It works without an internet connection and syncs data when you're back online.
+Is there a mobile app? Yes. The Pro and Growth plans include an iOS and Android app. It works without an internet connection and syncs data when you're back online.
 
 How does online check-in work? Guests receive a personal secure link and send ID details, accompanying guests and a digital signature from their phone before arrival. Available on Pro and Growth.
 
@@ -2173,7 +2177,7 @@ Q: What types of hotels is Hostlio Pro for?
 A: Independent properties with 1 to 150 rooms, such as boutique hotels, city hotels, guesthouses, aparthotels and hostels.
 
 Q: Is there a mobile app?
-A: Yes. The Pro and Growth plans include an iOS app. It works without an internet connection and syncs data when you're back online.
+A: Yes. The Pro and Growth plans include an iOS and Android app. It works without an internet connection and syncs data when you're back online.
 
 Q: How does online check-in work?
 A: Guests receive a personal secure link and send ID details, accompanying guests and a digital signature from their phone before arrival. Available on Pro and Growth.
@@ -2251,7 +2255,7 @@ Three ways to automate Booking.com guest messages: templates, scheduled messages
 2026-09-18
 The benefits, risks and setup steps of answering hotel guest messages with AI. Which questions to automate and which should stay with your team.
 
-## How to choose hotel management software (PMS) for a small hotel
+## Choosing hotel management software for a small hotel
 2026-09-10
 7 criteria for choosing a PMS for a small or boutique hotel: channel manager, pricing model, guest messaging, mobile access and more.
 
@@ -2263,13 +2267,13 @@ AI front-desk tools are no longer science fiction. This guide explains exactly w
 2026-05-01
 No-shows cost independent hotels thousands in lost revenue. Here are five proven strategies to cut your no-show rate and protect your bottom line.
 
-## Independent Hotels vs. Chains: How to Compete with Technology in 2026
+## Independent Hotels vs. Chains: Competing with Tech in 2026
 2026-05-01
 Chain hotels have billion-dollar tech budgets. Modern SaaS tools put the same capabilities within reach of a 20-room property. Here's how to compete.
 
-## Why WhatsApp Is the #1 Guest Communication Channel for Hotels in 2026
+## Why WhatsApp Is the #1 Hotel Guest Channel in 2026
 2026-05-01
-With open rates above 90%, WhatsApp is the dominant channel for hotel guest communication. Learn how independent hotels are using it to save time and delight guests.
+With open rates above 90%, WhatsApp leads hotel guest communication. See how independent hotels use it to save time and delight guests.
 
 ---
 # Answering hotel guest messages with AI: a practical guide
@@ -2329,10 +2333,10 @@ Q: Will guests know they're talking to AI?
 A: Replies are written in the hotel's name and tone. For transparency, hotels can mention in the welcome message that the assistant is AI.
 
 ---
-# How to choose hotel management software (PMS) for a small hotel
+# Choosing hotel management software for a small hotel
 URL: https://hostliopro.com/en/blog/choosing-hotel-management-software-small-hotel/
 
-## How to choose hotel management software (PMS) for a small hotel
+## Choosing hotel management software for a small hotel
 By the Hostlio Pro product team , the people who build Hostlio Pro. Published 2026-09-10 , updated 2026-09-23
 
 Short answer: The right PMS for a small hotel has a built-in channel manager, flat and transparent pricing, one inbox for guest messages, mobile access and same-day setup. Enterprise systems with hundreds of features tend to go unused by small teams.
@@ -2428,7 +2432,7 @@ Q: Can I use Airbnb and Booking.com together?
 A: Yes. Hostlio Pro syncs both, plus 100+ other channels, on one calendar through Channex.
 
 ---
-# Boutique Hotel Software with AI Guest Messaging | Hostlio Pro
+# Boutique Hotel Software with AI Messaging | Hostlio Pro
 URL: https://hostliopro.com/en/boutique-hotel-software/
 
 ## Boutique hotel software built around the guest
@@ -2454,7 +2458,7 @@ Bookings from Booking.com, Expedia and Airbnb appear on one room rack, colour-co
 With online check-in and a digital signature, guests get a welcome drink instead of a form.
 
 ## Which plan fits?
-For boutique hotels with 10 to 50 rooms we recommend Pro : 5,000 AI messages a month, WhatsApp + OTA inbox messaging (Booking.com, Airbnb, Expedia), online check-in, transfer and tour sales and the iOS app.
+For boutique hotels with 10 to 50 rooms we recommend Pro : 5,000 AI messages a month, WhatsApp + OTA inbox messaging (Booking.com, Airbnb, Expedia), online check-in, transfer and tour sales and the iOS and Android app.
 
 To compare with other hotel software, see our hotel software comparison .
 See pricing
@@ -2469,7 +2473,7 @@ Q: How many users can I add?
 A: See the pricing page for plan details, or ask our team during the demo.
 
 ---
-# Aparthotel Software: Online Check-in and Channel Sync | Hostlio Pro
+# Aparthotel Software: Online Check-in, OTA Sync | Hostlio Pro
 URL: https://hostliopro.com/en/aparthotel-software/
 
 ## Aparthotel software for remote-first operations
@@ -2510,7 +2514,7 @@ Q: Is there a unit limit?
 A: Starter supports up to 10, Pro 50 and Growth 150 rooms or units.
 
 ---
-# Hostel Software: Multilingual Messaging, OTA Sync | Hostlio Pro
+# Hostel Software: Multilingual Guest Messaging | Hostlio Pro
 URL: https://hostliopro.com/en/hostel-software/
 
 ## Hostel software for busy, multilingual inboxes
@@ -2551,7 +2555,7 @@ Q: How many AI messages do I need?
 A: About 150 automatic replies a day is roughly 4,500 a month, which fits the Pro plan.
 
 ---
-# Hotel Software Comparison 2026: Pricing, Fees, AI | Hostlio Pro
+# Hotel Software Comparison 2026: Pricing and AI | Hostlio Pro
 URL: https://hostliopro.com/en/hotel-software-comparison/
 
 ## Hotel software comparison (2026)
@@ -2692,7 +2696,7 @@ A: The risk is low when the assistant only uses information the hotel provides a
 URL: https://hostliopro.com/en/privacy/
 
 ## Privacy Policy
-Last updated: September 23, 2026 , Loti Members LLC, 2108 N ST STE N, Sacramento, CA 95816
+Last updated: October 3, 2026 , Loti Members LLC, 2108 N ST STE N, Sacramento, CA 95816
 
 This Privacy Policy explains how Hostlio Pro, operated by Loti Members LLC (“we”, “us”), collects, uses and shares personal data when you visit hostliopro.com, sign up, or use the Hostlio Pro dashboard, mobile app and guest-facing features.
 
@@ -2707,8 +2711,8 @@ For data about our customers (hotel owners and staff) and website visitors, we a
 - Guest data processed for hotels: guest names, contact details, booking details and the content of guest messages received on WhatsApp and OTA inboxes
 - Online check-in data: identity document details and images, date of birth, nationality, companions and a digital signature, when the hotel uses online check-in. We treat this as sensitive data
 - Signup and security data: IP address, a hashed email and the outcome of signup attempts, used to prevent fraud and abuse
-- Marketing source: the first campaign or page that brought you to our website (for example UTM parameters and the referring site), stored in your browser and sent with your signup
-- Usage data: how the dashboard and app are used, and technical logs
+- Marketing source: only if you arrive through a link with campaign parameters (UTM parameters or an ad click ID): those parameters, the landing page and the time of your first visit, stored in your browser and sent to us only with your signup or contact form
+- Usage data: how the dashboard and app are used, technical logs and, when you use the mobile app, your device’s push notification token
 
 ## 3. How we use data
 
@@ -2735,6 +2739,7 @@ Anthropic, PBC USA AI processing of guest messages to draft replies
 Meta Platforms, Inc. (WhatsApp Business Platform) USA / Ireland Sending and receiving WhatsApp messages
 Channex.io Ltd United Kingdom Availability, rate, booking and OTA message sync
 Make (Celonis) EU Contact form and internal workflow automation
+Google LLC / Google Ireland Ltd. (Firebase Cloud Messaging) USA / global Push notifications to the Hostlio Pro mobile app on iOS and Android (device push token, app instance identifiers, notification content such as new message or reservation alerts)
 Twilio Inc.* USA WhatsApp numbers and messaging billing for hotels
 Twilio SendGrid* USA Transactional email
 
@@ -2768,7 +2773,7 @@ Türkiye (KVKK): under Article 11 of Law No. 6698 you can learn whether your dat
 To exercise any right, email hello@hostliopro.com . To close your account, see Delete your account .
 
 ## 10. Cookies and browser storage
-The dashboard uses essential cookies and storage to keep you signed in. Our website stores your language choice and the first marketing source in your browser’s local storage. We do not use advertising cookies. If we add website analytics, we will update this policy first.
+The dashboard uses essential cookies and storage to keep you signed in. Our website stores your language choice in your browser’s local storage. For marketing measurement nothing is stored on ordinary visits: only when you arrive through a link that carries campaign parameters (utm_source, utm_medium, utm_campaign, utm_term, utm_content, or an ad click ID: gclid, msclkid, ttclid, fbclid) does the site save those parameters, the landing page path and the time of that first visit in local storage under the key hostlio_acq . No cookie is set for this. The referring website’s domain is read only for the current page view and is not stored. This record is first-party: the site never shares it with ad networks, it is sent to us only if you submit the signup or contact form (attached to that submission), and it is deleted automatically after 90 days. We rely on our legitimate interest in measuring which marketing channels bring customers; you can object and erase the record at any time by clearing the site data for hostliopro.com in your browser. We do not use advertising cookies. If we add website analytics, we will update this policy first.
 
 ## 11. WhatsApp and guest messaging
 Hostlio Pro connects to the WhatsApp Business Platform and to OTA inboxes to send and receive guest messages for hotels. Guest phone numbers are used only to communicate about the stay. Guests can stop receiving messages by telling the hotel.
@@ -2789,7 +2794,7 @@ We will post changes on this page and update the date above. For material change
 URL: https://hostliopro.com/en/terms/
 
 ## Terms of Service
-Last updated: September 23, 2026 , Loti Members LLC, 2108 N ST STE N, Sacramento, CA 95816
+Last updated: October 3, 2026 , Loti Members LLC, 2108 N ST STE N, Sacramento, CA 95816
 
 These Terms of Service (“Terms”) govern your use of Hostlio Pro, operated by Loti Members LLC (“we”, “us”). By creating an account or using the service you agree to these Terms. If you use Hostlio Pro for a business, you accept them on its behalf.
 
@@ -2912,6 +2917,7 @@ Anthropic, PBC USA AI processing of guest messages to draft replies
 Meta Platforms, Inc. (WhatsApp Business Platform) USA / Ireland Sending and receiving WhatsApp messages
 Channex.io Ltd United Kingdom Availability, rate, booking and OTA message sync
 Make (Celonis) EU Contact form and internal workflow automation
+Google LLC / Google Ireland Ltd. (Firebase Cloud Messaging) USA / global Push notifications to the Hostlio Pro mobile app on iOS and Android (device push token, app instance identifiers, notification content such as new message or reservation alerts)
 Twilio Inc.* USA WhatsApp numbers and messaging billing for hotels
 Twilio SendGrid* USA Transactional email
 
@@ -2936,8 +2942,10 @@ Rooms Guest messages per day Minutes to answer one message Share of messages you
 Staff hours saved per month –
 Staff cost saved per month –
 Night messages answered per month –
+AI replies needed per month –
 Suggested plan –
 Saving after the plan price –
+
 Try Hostlio Pro free for 7 days
 
 Estimates only, based on the numbers you enter and 30 days a month. Your results depend on your guests, your settings and how many topics you let Lio answer automatically. Plan prices are early-bird monthly prices in USD.
@@ -3109,10 +3117,10 @@ Hostlio Pro's room rack calendar shows real-time availability across all OTAs in
 No-shows are not an inevitable cost of running a hotel. They are a symptom of weak policies, poor communication, and fragmented tools. By combining a clear deposit or guarantee policy with automated WhatsApp reminders and a centralised availability view, most independent hotels can reduce their no-show rate to under 3% — and protect thousands in revenue every month.
 
 ---
-# Independent Hotels vs. Chains: How to Compete with Technology in 2026
+# Independent Hotels vs. Chains: Competing with Tech in 2026
 URL: https://hostliopro.com/en/blog/independent-hotel-vs-chain-technology/
 
-## Independent Hotels vs. Chains: How to Compete with Technology in 2026
+## Independent Hotels vs. Chains: Competing with Tech in 2026
 By the Hostlio Pro product team , the people who build Hostlio Pro. Published 2026-05-01 , updated 2026-09-23
 
 For decades, the technology gap between independent hotels and large chains felt insurmountable. Marriott, Hilton, and IHG had entire departments dedicated to building and maintaining proprietary property management systems, loyalty platforms, and guest-facing apps — investments worth hundreds of millions of dollars that a 25-room boutique hotel could never replicate.
@@ -3190,10 +3198,10 @@ The risk of inaction is real. As more independent hotels adopt channel managemen
 The good news is that the cost of adoption has never been lower. Hostlio Pro offers the full suite of channel management, AI messaging, and room management starting at $39 per month — less than the cost of a single slow night's lost revenue. The technology gap between independent hotels and chains no longer requires millions to close. It requires the right tools and the will to use them.
 
 ---
-# Why WhatsApp Is the #1 Guest Communication Channel for Hotels in 2026
+# Why WhatsApp Is the #1 Hotel Guest Channel in 2026
 URL: https://hostliopro.com/en/blog/whatsapp-hotel-guest-communication/
 
-## Why WhatsApp Is the #1 Guest Communication Channel for Hotels in 2026
+## Why WhatsApp Is the #1 Hotel Guest Channel in 2026
 By the Hostlio Pro product team , the people who build Hostlio Pro. Published 2026-05-01 , updated 2026-09-23
 
 If you still rely on email as your primary channel for communicating with hotel guests, you are losing ground to competitors who have moved on. Email open rates in the hospitality sector hover around 25–35%. WhatsApp messages, by contrast, are opened by more than 90% of recipients — usually within minutes of delivery. In a world where guests expect instant responses, that gap is the difference between a five-star review and a complaint.
@@ -3263,7 +3271,7 @@ Done right, WhatsApp guest communication is one of the highest-ROI changes an in
 URL: https://hostliopro.com/en/dpa/
 
 ## Data Processing Addendum
-Version 1.0 · Effective September 23, 2026 · Loti Members LLC, 2108 N ST STE N, Sacramento, CA 95816, USA
+Version 1.0 · Effective October 3, 2026 · Loti Members LLC, 2108 N ST STE N, Sacramento, CA 95816, USA
 
 Print or save as PDF
 
@@ -3311,9 +3319,9 @@ Each party’s liability under this DPA is subject to the limitations in the Ter
 ## Annex 1 — Details of processing
 
 - Subject matter and duration: providing Hostlio Pro for the term of your subscription and until deletion under section 9
-- Nature and purpose: hosting and storage; syncing availability, rates and reservations with sales channels; sending and receiving guest messages on WhatsApp and OTA inboxes; drafting replies with AI; online check-in; support
+- Nature and purpose: hosting and storage; syncing availability, rates and reservations with sales channels; sending and receiving guest messages on WhatsApp and OTA inboxes; drafting replies with AI; online check-in; push notifications to your staff’s Hostlio Pro mobile app (iOS and Android); support
 - Data subjects: your guests and their companions; your staff and users of the dashboard
-- Categories of data: names, contact details (phone, email), reservation details (dates, room, price, channel), message content, preferences and requests; for online check-in, identity document details and images, date of birth, nationality and digital signatures
+- Categories of data: names, contact details (phone, email), reservation details (dates, room, price, channel), message content, preferences and requests; for online check-in, identity document details and images, date of birth, nationality and digital signatures; for users of the mobile app, device push notification tokens and app instance identifiers
 - Special categories: none intended. Identity documents and signatures are handled as sensitive data. Please do not ask guests to send health or other special-category data through Hostlio Pro
 - Frequency: continuous
 
@@ -3340,6 +3348,7 @@ Anthropic, PBC USA AI processing of guest messages to draft replies
 Meta Platforms, Inc. (WhatsApp Business Platform) USA / Ireland Sending and receiving WhatsApp messages
 Channex.io Ltd United Kingdom Availability, rate, booking and OTA message sync
 Make (Celonis) EU Contact form and internal workflow automation
+Google LLC / Google Ireland Ltd. (Firebase Cloud Messaging) USA / global Push notifications to the Hostlio Pro mobile app on iOS and Android (device push token, app instance identifiers, notification content such as new message or reservation alerts)
 
 Planned: Twilio Inc. (WhatsApp numbers and messaging billing) and Twilio SendGrid (transactional email). They will be added with notice under section 5 before they process Customer Personal Data.
 
@@ -3422,7 +3431,7 @@ Ve cada reserva con el color de su canal. Cambiar de habitación, alargar una es
 
 - Cambios de habitación con arrastrar y soltar
 - Reservas con el color de cada canal
-- El mismo calendario en la web y en iOS Todas las funcionalidades
+- El mismo calendario en la web, iOS y Android Todas las funcionalidades
 Planning de habitaciones Septiembre, semana 3
 
 Lun 15
@@ -3515,7 +3524,7 @@ El huésped escribe en su idioma y recibe la respuesta en ese mismo idioma.
 Türkçe English Deutsch العربية Русский 日本語 中文 Français
 
 ## App móvil
-Reservas, mensajes y check-ins en iOS, incluso sin conexión.
+Reservas, mensajes y check-ins en iOS y Android, incluso sin conexión.
 
 ## Pensado para cada tipo de alojamiento
 Diseñado para alojamientos independientes de 1 a 150 habitaciones.
@@ -3544,9 +3553,9 @@ Una cuota mensual fija, sin contratos de permanencia. Todos los planes son grati
 ## Starter
 Para hostales, pensiones y hoteles boutique pequeños
 
-$49 / mes
+49 $ / mes
 
-Precio de lanzamiento (normalmente $59 )
+Precio de lanzamiento (normalmente 59 $ )
 
 - 1 alojamiento, hasta 10 habitaciones
 - 1.000 mensajes de IA / mes
@@ -3561,9 +3570,9 @@ El más elegido
 ## Pro
 Para hoteles en crecimiento con un solo alojamiento
 
-$89 / mes
+89 $ / mes
 
-Precio de lanzamiento (normalmente $109 )
+Precio de lanzamiento (normalmente 109 $ )
 
 - 1 alojamiento, hasta 50 habitaciones
 - 5.000 mensajes de IA / mes
@@ -3571,15 +3580,15 @@ Precio de lanzamiento (normalmente $109 )
 - Mensajería por WhatsApp y bandejas de las OTAs (Booking.com, Airbnb, Expedia)
 - Check-in online con firma digital
 - Venta de traslados y excursiones
-- App móvil para iOS
+- App móvil para iOS y Android
 Empieza con Pro
 
 ## Growth
 Para equipos que gestionan dos alojamientos
 
-$149 / mes
+149 $ / mes
 
-Precio de lanzamiento (normalmente $189 )
+Precio de lanzamiento (normalmente 189 $ )
 
 - Hasta 2 alojamientos, 150 habitaciones
 - 12.000 mensajes de IA / mes
@@ -3615,7 +3624,7 @@ Cuando el huésped se vincula a una reserva, las respuestas usan la habitación,
 
 Descubre Lio
 
-¿Qué es Hostlio Pro? Hostlio Pro es un software de gestión hotelera en la nube (un PMS hotelero) para hoteles independientes y hostales de 1 a 150 habitaciones. Delega la comunicación con los huéspedes en la IA, reúne las reservas de las OTAs en un solo calendario y lleva el check-in al móvil del huésped. Se gestiona desde la web y desde una app para iOS, y se usa en más de 20 países.
+¿Qué es Hostlio Pro? Hostlio Pro es un software de gestión hotelera en la nube (un PMS hotelero) para hoteles independientes y hostales de 1 a 150 habitaciones. Delega la comunicación con los huéspedes en la IA, reúne las reservas de las OTAs en un solo calendario y lleva el check-in al móvil del huésped. Se gestiona desde la web y desde una app para iOS y Android, y se usa en más de 20 países.
 
 30+ idiomas atendidos
 100+ OTAs y canales de venta
@@ -3643,7 +3652,7 @@ Q: ¿Qué es Hostlio Pro?
 A: Hostlio Pro es un software de gestión hotelera (PMS hotelero) con inteligencia artificial, creado para hoteles independientes, hoteles boutique y hostales. Reúne en una sola plataforma a Lio, un asistente de IA que responde a los huéspedes 24/7 en más de 30 idiomas, un channel manager conectado a más de 100 OTAs, un calendario de reservas con arrastrar y soltar y el check-in online.
 
 Q: ¿Cuánto cuesta Hostlio Pro?
-A: Hay tres planes: Starter a 49 $/mes, Pro a 89 $/mes y Growth a 149 $/mes. Estos precios incluyen un descuento de lanzamiento del 20 % para los primeros 50 clientes, que se mantiene mientras sigas suscrito. Los precios normales son 59 $, 109 $ y 189 $.
+A: Hay tres planes: Starter a 49 $/mes, Pro a 89 $/mes y Growth a 149 $/mes. Estos precios incluyen un descuento de lanzamiento del 20 % para los primeros 50 clientes, que se mantiene mientras sigas suscrito. Los precios normales son 59 $, 109 $ y 189 $.
 
 Q: ¿Hay una prueba gratuita?
 A: Sí. Todos los planes incluyen una prueba gratuita de 7 días. Introduces una tarjeta al registrarte, pero no se te cobra nada hasta que termine la prueba y puedes cancelar antes cuando quieras. No hay contratos de permanencia.
@@ -3838,7 +3847,7 @@ Q: ¿Y si un huésped no completa el enlace?
 A: Haz el check-in de la forma habitual. El personal también puede introducir los datos en recepción con la app móvil de Hostlio Pro.
 
 ---
-# Funcionalidades del software de gestión hotelera | Hostlio Pro
+# Funciones del software de gestión hotelera | Hostlio Pro
 URL: https://hostliopro.com/es/funcionalidades/
 
 ## Todo lo que incluye Hostlio Pro
@@ -3869,7 +3878,7 @@ Genera en un clic, a partir de los datos de la reserva, cartas de invitación y 
 Lio sugiere traslados al aeropuerto y excursiones durante la conversación y pasa la solicitud a tu equipo.
 
 ## App móvil
-Gestiona reservas, mensajes y check-ins fuera del hotel con la app para iOS. Sigue funcionando sin conexión y se sincroniza cuando vuelves a estar online.
+Gestiona reservas, mensajes y check-ins fuera del hotel con la app para iOS y Android. Sigue funcionando sin conexión y se sincroniza cuando vuelves a estar online.
 
 ## Funcionalidades por plan
 
@@ -3895,7 +3904,7 @@ Check-in online y firma digital No Sí Sí
 
 Venta de traslados y excursiones No Sí Sí
 
-App móvil para iOS No Sí Sí
+App móvil para iOS y Android No Sí Sí
 
 Soporte prioritario y llamada de onboarding No No Sí
 
@@ -3908,7 +3917,7 @@ Q: ¿Con qué OTAs se conecta Hostlio Pro?
 A: A través de Channex, Hostlio Pro se conecta con más de 100 canales, entre ellos Booking.com, Airbnb, Expedia, Agoda, Trip.com, Hotels.com, Hotelbeds, Hostelworld y Google Hotels. La disponibilidad, las tarifas y las reservas se mantienen sincronizadas en todos ellos.
 
 ---
-# Precios de software hotelero: desde 49 $/mes | Hostlio Pro
+# Precios de software hotelero: desde 49 $/mes | Hostlio Pro
 URL: https://hostliopro.com/es/precios/
 
 ## Precios de Hostlio Pro
@@ -3922,9 +3931,9 @@ Una cuota mensual fija. Sin comisiones por reserva ni costes de alta. Prueba cua
 ## Starter
 Para hostales, pensiones y hoteles boutique pequeños
 
-$49 / mes
+49 $ / mes
 
-Precio de lanzamiento (normalmente $59 )
+Precio de lanzamiento (normalmente 59 $ )
 
 - 1 alojamiento, hasta 10 habitaciones
 - 1.000 mensajes de IA / mes
@@ -3939,9 +3948,9 @@ El más elegido
 ## Pro
 Para hoteles en crecimiento con un solo alojamiento
 
-$89 / mes
+89 $ / mes
 
-Precio de lanzamiento (normalmente $109 )
+Precio de lanzamiento (normalmente 109 $ )
 
 - 1 alojamiento, hasta 50 habitaciones
 - 5.000 mensajes de IA / mes
@@ -3949,15 +3958,15 @@ Precio de lanzamiento (normalmente $109 )
 - Mensajería por WhatsApp y bandejas de las OTAs (Booking.com, Airbnb, Expedia)
 - Check-in online con firma digital
 - Venta de traslados y excursiones
-- App móvil para iOS
+- App móvil para iOS y Android
 Empieza con Pro
 
 ## Growth
 Para equipos que gestionan dos alojamientos
 
-$149 / mes
+149 $ / mes
 
-Precio de lanzamiento (normalmente $189 )
+Precio de lanzamiento (normalmente 189 $ )
 
 - Hasta 2 alojamientos, 150 habitaciones
 - 12.000 mensajes de IA / mes
@@ -3982,7 +3991,7 @@ Hoteles de 11 a 50 habitaciones que quieren que Lio gestione también los mensaj
 Dos alojamientos o hasta 150 habitaciones, cuando necesitas soporte prioritario, un onboarding personalizado y uso en marca blanca.
 
 Q: ¿Cuánto cuesta Hostlio Pro?
-A: Hay tres planes: Starter a 49 $/mes, Pro a 89 $/mes y Growth a 149 $/mes. Estos precios incluyen un descuento de lanzamiento del 20 % para los primeros 50 clientes, que se mantiene mientras sigas suscrito. Los precios normales son 59 $, 109 $ y 189 $.
+A: Hay tres planes: Starter a 49 $/mes, Pro a 89 $/mes y Growth a 149 $/mes. Estos precios incluyen un descuento de lanzamiento del 20 % para los primeros 50 clientes, que se mantiene mientras sigas suscrito. Los precios normales son 59 $, 109 $ y 189 $.
 
 Q: ¿Hay una prueba gratuita?
 A: Sí. Todos los planes incluyen una prueba gratuita de 7 días. Introduces una tarjeta al registrarte, pero no se te cobra nada hasta que termine la prueba y puedes cancelar antes cuando quieras. No hay contratos de permanencia.
@@ -4009,7 +4018,7 @@ Las preguntas más habituales sobre las funcionalidades, los precios y la config
 
 ¿Qué es Hostlio Pro? Hostlio Pro es un software de gestión hotelera (PMS hotelero) con inteligencia artificial, creado para hoteles independientes, hoteles boutique y hostales. Reúne en una sola plataforma a Lio, un asistente de IA que responde a los huéspedes 24/7 en más de 30 idiomas, un channel manager conectado a más de 100 OTAs, un calendario de reservas con arrastrar y soltar y el check-in online.
 
-¿Cuánto cuesta Hostlio Pro? Hay tres planes: Starter a 49 $/mes, Pro a 89 $/mes y Growth a 149 $/mes. Estos precios incluyen un descuento de lanzamiento del 20 % para los primeros 50 clientes, que se mantiene mientras sigas suscrito. Los precios normales son 59 $, 109 $ y 189 $.
+¿Cuánto cuesta Hostlio Pro? Hay tres planes: Starter a 49 $/mes, Pro a 89 $/mes y Growth a 149 $/mes. Estos precios incluyen un descuento de lanzamiento del 20 % para los primeros 50 clientes, que se mantiene mientras sigas suscrito. Los precios normales son 59 $, 109 $ y 189 $.
 
 ¿Hay una prueba gratuita? Sí. Todos los planes incluyen una prueba gratuita de 7 días. Introduces una tarjeta al registrarte, pero no se te cobra nada hasta que termine la prueba y puedes cancelar antes cuando quieras. No hay contratos de permanencia.
 
@@ -4019,7 +4028,7 @@ Las preguntas más habituales sobre las funcionalidades, los precios y la config
 
 ¿Para qué tipos de hotel es Hostlio Pro? Para alojamientos independientes de 1 a 150 habitaciones, como hoteles boutique, hoteles urbanos, hostales y pensiones, apartahoteles y hostels.
 
-¿Hay una app móvil? Sí. Los planes Pro y Growth incluyen una app para iOS. Funciona sin conexión a internet y sincroniza los datos cuando vuelves a estar online.
+¿Hay una app móvil? Sí. Los planes Pro y Growth incluyen una app para iOS y Android. Funciona sin conexión a internet y sincroniza los datos cuando vuelves a estar online.
 
 ¿Cómo funciona el check-in online? Los huéspedes reciben un enlace personal y seguro, y antes de llegar envían desde el móvil los datos de su documento, los acompañantes y una firma digital. Disponible en Pro y Growth.
 
@@ -4035,7 +4044,7 @@ Q: ¿Qué es Hostlio Pro?
 A: Hostlio Pro es un software de gestión hotelera (PMS hotelero) con inteligencia artificial, creado para hoteles independientes, hoteles boutique y hostales. Reúne en una sola plataforma a Lio, un asistente de IA que responde a los huéspedes 24/7 en más de 30 idiomas, un channel manager conectado a más de 100 OTAs, un calendario de reservas con arrastrar y soltar y el check-in online.
 
 Q: ¿Cuánto cuesta Hostlio Pro?
-A: Hay tres planes: Starter a 49 $/mes, Pro a 89 $/mes y Growth a 149 $/mes. Estos precios incluyen un descuento de lanzamiento del 20 % para los primeros 50 clientes, que se mantiene mientras sigas suscrito. Los precios normales son 59 $, 109 $ y 189 $.
+A: Hay tres planes: Starter a 49 $/mes, Pro a 89 $/mes y Growth a 149 $/mes. Estos precios incluyen un descuento de lanzamiento del 20 % para los primeros 50 clientes, que se mantiene mientras sigas suscrito. Los precios normales son 59 $, 109 $ y 189 $.
 
 Q: ¿Hay una prueba gratuita?
 A: Sí. Todos los planes incluyen una prueba gratuita de 7 días. Introduces una tarjeta al registrarte, pero no se te cobra nada hasta que termine la prueba y puedes cancelar antes cuando quieras. No hay contratos de permanencia.
@@ -4050,7 +4059,7 @@ Q: ¿Para qué tipos de hotel es Hostlio Pro?
 A: Para alojamientos independientes de 1 a 150 habitaciones, como hoteles boutique, hoteles urbanos, hostales y pensiones, apartahoteles y hostels.
 
 Q: ¿Hay una app móvil?
-A: Sí. Los planes Pro y Growth incluyen una app para iOS. Funciona sin conexión a internet y sincroniza los datos cuando vuelves a estar online.
+A: Sí. Los planes Pro y Growth incluyen una app para iOS y Android. Funciona sin conexión a internet y sincroniza los datos cuando vuelves a estar online.
 
 Q: ¿Cómo funciona el check-in online?
 A: Los huéspedes reciben un enlace personal y seguro, y antes de llegar envían desde el móvil los datos de su documento, los acompañantes y una firma digital. Disponible en Pro y Growth.
@@ -4126,9 +4135,9 @@ Tres formas de automatizar los mensajes de huéspedes de Booking.com: plantillas
 
 ## Responder a los huéspedes del hotel con IA: guía práctica
 18 de septiembre de 2026
-Ventajas, riesgos y pasos de configuración para responder con IA a los mensajes de los huéspedes. Qué preguntas automatizar y cuáles deben quedarse en manos de tu equipo.
+Ventajas, riesgos y pasos de configuración para responder con IA a los mensajes de los huéspedes. Qué preguntas automatizar y cuáles dejar a tu equipo.
 
-## Cómo elegir un software de gestión hotelera (PMS) para un hotel pequeño
+## Elegir software de gestión hotelera para un hotel pequeño
 10 de septiembre de 2026
 7 criterios para elegir un PMS para un hotel pequeño o boutique: channel manager, modelo de precios, mensajería con huéspedes, acceso móvil y más.
 
@@ -4190,10 +4199,10 @@ Q: ¿Sabrán los huéspedes que hablan con una IA?
 A: Las respuestas se redactan en nombre del hotel y con su tono. Por transparencia, el hotel puede indicar en el mensaje de bienvenida que el asistente es una IA.
 
 ---
-# Cómo elegir un software de gestión hotelera (PMS) para un hotel pequeño
+# Elegir software de gestión hotelera para un hotel pequeño
 URL: https://hostliopro.com/es/blog/como-elegir-software-de-gestion-hotelera-hotel-pequeno/
 
-## Cómo elegir un software de gestión hotelera (PMS) para un hotel pequeño
+## Elegir software de gestión hotelera para un hotel pequeño
 Por el equipo de producto de Hostlio Pro , las personas que desarrollan Hostlio Pro. Publicado el 10 de septiembre de 2026 , actualizado el 23 de septiembre de 2026
 
 Respuesta corta: El PMS adecuado para un hotel pequeño tiene channel manager integrado, precios fijos y transparentes, una sola bandeja para los mensajes de los huéspedes, acceso móvil y se configura en el mismo día. Los sistemas empresariales con cientos de funciones suelen quedarse sin usar en los equipos pequeños.
@@ -4257,7 +4266,7 @@ En un hostal o una pensión, una sola persona se encarga de los mensajes de madr
 Prueba gratis durante 7 días Solicitar demo
 
 ## ¿Qué es un software para hostales y pensiones?
-Un software para hostales y pensiones permite a los alojamientos pequeños de 1 a 10 habitaciones gestionar reservas, disponibilidad y comunicación con los huéspedes en un solo lugar. Hostlio Pro añade Lio, un asistente de IA que responde a las preguntas de los huéspedes 24/7 en más de 30 idiomas. El plan Starter cuesta $49 al mes para alojamientos de hasta 10 habitaciones.
+Un software para hostales y pensiones permite a los alojamientos pequeños de 1 a 10 habitaciones gestionar reservas, disponibilidad y comunicación con los huéspedes en un solo lugar. Hostlio Pro añade Lio, un asistente de IA que responde a las preguntas de los huéspedes 24/7 en más de 30 idiomas. El plan Starter cuesta 49 $ al mes para alojamientos de hasta 10 habitaciones.
 
 ## ¿Con qué problemas lidian más los hostales y pensiones?
 
@@ -4280,7 +4289,7 @@ Para compararlo con otros programas para hoteles, consulta nuestra comparativa d
 Ver precios
 
 Q: ¿Existe un software gratuito para hostales y pensiones?
-A: Puedes probar Hostlio Pro gratis durante 7 días. Después, Starter cuesta $49 al mes (precio de lanzamiento para los primeros 50 clientes).
+A: Puedes probar Hostlio Pro gratis durante 7 días. Después, Starter cuesta 49 $ al mes (precio de lanzamiento para los primeros 50 clientes).
 
 Q: ¿Sirve para una pensión de 3 habitaciones?
 A: Sí. Starter está pensado para un alojamiento de hasta 10 habitaciones; el precio es el mismo aunque tengas menos.
@@ -4289,7 +4298,7 @@ Q: ¿Puedo usar Airbnb y Booking.com a la vez?
 A: Sí. Hostlio Pro sincroniza ambos, y más de 100 canales más, en un solo calendario a través de Channex.
 
 ---
-# Software para hoteles boutique con mensajería IA | Hostlio Pro
+# Software para hotel boutique con mensajería IA | Hostlio Pro
 URL: https://hostliopro.com/es/software-hotel-boutique/
 
 ## Software para hoteles boutique centrado en el huésped
@@ -4315,7 +4324,7 @@ Las reservas de Booking.com, Expedia y Airbnb aparecen en un solo planning de ha
 Con el check-in online y la firma digital, el huésped recibe una bebida de bienvenida en lugar de un formulario.
 
 ## ¿Qué plan te conviene?
-Para hoteles boutique de 10 a 50 habitaciones recomendamos Pro : 5000 mensajes de IA al mes, mensajería por WhatsApp y en las bandejas de Booking.com, Airbnb y Expedia, check-in online, venta de traslados y excursiones y la app para iOS.
+Para hoteles boutique de 10 a 50 habitaciones recomendamos Pro : 5000 mensajes de IA al mes, mensajería por WhatsApp y en las bandejas de Booking.com, Airbnb y Expedia, check-in online, venta de traslados y excursiones y la app para iOS y Android.
 
 Para compararlo con otros programas para hoteles, consulta nuestra comparativa de software hotelero .
 Ver precios
@@ -4330,7 +4339,7 @@ Q: ¿Cuántos usuarios puedo añadir?
 A: Consulta la página de precios para ver los detalles de cada plan o pregunta a nuestro equipo durante la demo.
 
 ---
-# Software para apartahoteles con check-in online | Hostlio Pro
+# Software para apartahotel con check-in online | Hostlio Pro
 URL: https://hostliopro.com/es/software-apartahotel/
 
 ## Software para apartahoteles pensado para gestionar en remoto
@@ -4371,7 +4380,7 @@ Q: ¿Hay un límite de unidades?
 A: Starter admite hasta 10, Pro hasta 50 y Growth hasta 150 habitaciones o unidades.
 
 ---
-# Software para hostels: mensajes multilingües y OTAs | Hostlio Pro
+# Software para hostels: mensajes multilingües | Hostlio Pro
 URL: https://hostliopro.com/es/software-para-hostels/
 
 ## Software para hostels con bandejas llenas y multilingües
@@ -4412,7 +4421,7 @@ Q: ¿Cuántos mensajes de IA necesito?
 A: Unas 150 respuestas automáticas al día son aproximadamente 4500 al mes, lo que encaja con el plan Pro.
 
 ---
-# Comparativa de software hotelero 2026: precios e IA | Hostlio Pro
+# Comparativa de software hotelero 2026: precios | Hostlio Pro
 URL: https://hostliopro.com/es/comparativa-software-hotelero/
 
 ## Comparativa de software hotelero (2026)
@@ -4422,7 +4431,7 @@ Comparamos cinco programas para hoteles populares entre los hoteles independient
 Respuesta corta: para hoteles de un solo establecimiento con 1 a 150 habitaciones y muchos huéspedes internacionales, un software de precio fijo con mensajería IA incluida (como Hostlio Pro) mantiene el presupuesto previsible. Los grupos con varios establecimientos y necesidades corporativas pueden valorar plataformas con precio bajo presupuesto como Mews o Cloudbeds; los alojamientos en Turquía que buscan soporte local y una red B2B pueden mirar HotelRunner; y los alojamientos pequeños que quieren la red de SiteMinder pueden considerar Little Hotelier.
 
 Comparativa de software hotelero (2026) Software ¿Precios publicados? Desde Comisión por reserva Prueba gratuita Mensajería IA con huéspedes Fuente
-Hostlio Pro Sí $49/mes (precio de lanzamiento) Ninguna, cuota mensual fija 7 días Todos los planes (Lio, más de 30 idiomas) Página de precios Comprobado en septiembre de 2026
+Hostlio Pro Sí 49 $/mes (precio de lanzamiento) Ninguna, cuota mensual fija 7 días Todos los planes (Lio, más de 30 idiomas) Página de precios Comprobado en septiembre de 2026
 Cloudbeds No, bajo presupuesto Presupuesto Indica que no añade comisión a las reservas del Booking Engine y del Channel Manager No se indica en la página de precios No se indica por separado en la página de precios Página de precios Comprobado en septiembre de 2026
 Mews No, bajo presupuesto Presupuesto No se indica en la página de precios No se indica en la página de precios Resúmenes con IA de las preferencias del huésped en Advanced; la mensajería no se indica por separado Página de precios Comprobado en septiembre de 2026
 Little Hotelier Se calcula según el número de habitaciones Mediante calculadora de precios Comisión del 1 % por reserva en Basics 30 días No se indica en la página de precios Página de precios Comprobado en septiembre de 2026
@@ -4553,7 +4562,7 @@ A: El riesgo es bajo cuando el asistente solo usa la información que proporcion
 URL: https://hostliopro.com/es/privacidad/
 
 ## Política de privacidad
-Última actualización: 23 de septiembre de 2026 , Loti Members LLC, 2108 N ST STE N, Sacramento, CA 95816. Este texto es una traducción del original en inglés; en caso de discrepancia, prevalecerá la versión en inglés .
+Última actualización: 3 de octubre de 2026 , Loti Members LLC, 2108 N ST STE N, Sacramento, CA 95816. Este texto es una traducción del original en inglés; en caso de discrepancia, prevalecerá la versión en inglés .
 
 Esta Política de privacidad explica cómo Hostlio Pro, operado por Loti Members LLC («nosotros»), recoge, usa y comparte datos personales cuando visitas hostliopro.com, te registras o usas el panel, la app móvil y las funciones para huéspedes de Hostlio Pro.
 
@@ -4568,8 +4577,8 @@ Para los datos de nuestros clientes (propietarios y personal de hoteles) y de lo
 - Datos de huéspedes tratados para los hoteles: nombre, datos de contacto, datos de la reserva y contenido de los mensajes recibidos por WhatsApp y en las bandejas de las OTAs
 - Datos del check-in online: datos e imágenes del documento de identidad, fecha de nacimiento, nacionalidad, acompañantes y firma digital, cuando el hotel usa el check-in online. Los tratamos como datos sensibles
 - Datos de registro y seguridad: dirección IP, email cifrado (hash) y resultado de los intentos de registro, para prevenir fraudes y abusos
-- Origen de marketing: la primera campaña o página que te trajo a nuestro sitio (por ejemplo, parámetros UTM y sitio de referencia), guardada en tu navegador y enviada con tu registro
-- Datos de uso: cómo se usan el panel y la app, y registros técnicos
+- Origen de marketing: solo si llegas a través de un enlace con parámetros de campaña (parámetros UTM o un identificador de clic publicitario): esos parámetros, la página de entrada y la hora de tu primera visita, guardados en tu navegador y enviados a nosotros solo con el formulario de registro o de contacto
+- Datos de uso: cómo se usan el panel y la app, registros técnicos y, si usas la app móvil, el token de notificaciones push de tu dispositivo
 ## 3. Cómo usamos los datos
 
 - Prestar el servicio: sincronizar canales, mostrar reservas, enviar mensajes a huéspedes y gestionar el check-in online
@@ -4593,6 +4602,7 @@ Anthropic, PBC USA Procesamiento con IA de los mensajes de huéspedes para redac
 Meta Platforms, Inc. (WhatsApp Business Platform) USA / Ireland Envío y recepción de mensajes de WhatsApp
 Channex.io Ltd United Kingdom Sincronización de disponibilidad, tarifas, reservas y mensajes de OTAs
 Make (Celonis) EU Formulario de contacto y automatización interna
+Google LLC / Google Ireland Ltd. (Firebase Cloud Messaging) USA / global Notificaciones push a la app móvil de Hostlio Pro en iOS y Android (token push del dispositivo, identificadores de instancia de la app y contenido de la notificación, como avisos de nuevos mensajes o reservas)
 Twilio Inc.* USA Números de WhatsApp y facturación de mensajes para hoteles
 Twilio SendGrid* USA Correo transaccional
 
@@ -4620,7 +4630,7 @@ Turquía (KVKK): según el artículo 11 de la Ley n.º 6698 puedes saber si se t
 Para ejercer cualquier derecho, escribe a hello@hostliopro.com . Para cerrar tu cuenta, consulta Eliminar tu cuenta .
 
 ## 10. Cookies y almacenamiento del navegador
-El panel usa cookies y almacenamiento esenciales para mantener tu sesión. Nuestro sitio guarda tu idioma y el primer origen de marketing en el almacenamiento local del navegador. No usamos cookies publicitarias. Si añadimos analítica web, actualizaremos antes esta política.
+El panel usa cookies y almacenamiento esenciales para mantener tu sesión. Nuestro sitio guarda tu idioma en el almacenamiento local del navegador. Para medir el marketing no se guarda nada en las visitas normales: solo cuando llegas a través de un enlace con parámetros de campaña (utm_source, utm_medium, utm_campaign, utm_term, utm_content o un identificador de clic publicitario: gclid, msclkid, ttclid, fbclid) el sitio guarda esos parámetros, la ruta de la página de entrada y la hora de esa primera visita en el almacenamiento local, con la clave hostlio_acq . Para ello no se usa ninguna cookie. El dominio del sitio de referencia solo se lee durante la página vista actual y no se guarda. Este registro es propio (first-party): el sitio nunca lo comparte con redes publicitarias, solo nos llega si envías el formulario de registro o de contacto (adjunto a ese envío) y se elimina automáticamente a los 90 días. Nos basamos en nuestro interés legítimo en medir qué canales de marketing nos traen clientes; puedes oponerte y borrar el registro cuando quieras eliminando los datos del sitio hostliopro.com en tu navegador. No usamos cookies publicitarias. Si añadimos analítica web, actualizaremos antes esta política.
 
 ## 11. WhatsApp y mensajería con huéspedes
 Hostlio Pro se conecta a la plataforma WhatsApp Business y a las bandejas de las OTAs para enviar y recibir mensajes de huéspedes en nombre de los hoteles. Los teléfonos de los huéspedes solo se usan para comunicarse sobre la estancia. Los huéspedes pueden dejar de recibir mensajes pidiéndoselo al hotel.
@@ -4641,7 +4651,7 @@ Publicaremos los cambios en esta página y actualizaremos la fecha. Los cambios 
 URL: https://hostliopro.com/es/terminos/
 
 ## Términos del servicio
-Última actualización: 23 de septiembre de 2026 , Loti Members LLC, 2108 N ST STE N, Sacramento, CA 95816. Este texto es una traducción del original en inglés; en caso de discrepancia, prevalecerá la versión en inglés .
+Última actualización: 3 de octubre de 2026 , Loti Members LLC, 2108 N ST STE N, Sacramento, CA 95816. Este texto es una traducción del original en inglés; en caso de discrepancia, prevalecerá la versión en inglés .
 
 Estas Condiciones del servicio («Condiciones») regulan el uso de Hostlio Pro, operado por Loti Members LLC («nosotros»). Al crear una cuenta o usar el servicio aceptas estas Condiciones. Si usas Hostlio Pro para una empresa, las aceptas en su nombre.
 
@@ -4762,6 +4772,7 @@ Anthropic, PBC USA Procesamiento con IA de los mensajes de huéspedes para redac
 Meta Platforms, Inc. (WhatsApp Business Platform) USA / Ireland Envío y recepción de mensajes de WhatsApp
 Channex.io Ltd United Kingdom Sincronización de disponibilidad, tarifas, reservas y mensajes de OTAs
 Make (Celonis) EU Formulario de contacto y automatización interna
+Google LLC / Google Ireland Ltd. (Firebase Cloud Messaging) USA / global Notificaciones push a la app móvil de Hostlio Pro en iOS y Android (token push del dispositivo, identificadores de instancia de la app y contenido de la notificación, como avisos de nuevos mensajes o reservas)
 Twilio Inc.* USA Números de WhatsApp y facturación de mensajes para hoteles
 Twilio SendGrid* USA Correo transaccional
 
@@ -4776,7 +4787,7 @@ Si encuentras una vulnerabilidad, escribe a hello@hostliopro.com con los detalle
 Más detalles en la Política de privacidad y las Condiciones del servicio .
 
 ---
-# Calculadora de ROI de mensajería con IA para hoteles | Hostlio Pro
+# Calculadora de ROI de mensajería IA para hoteles | Hostlio Pro
 URL: https://hostliopro.com/es/calculadora-roi/
 
 ## ¿Cuánto tiempo podría ahorrarte Lio?
@@ -4786,8 +4797,10 @@ Habitaciones Mensajes de huéspedes al día Minutos para responder un mensaje Po
 Horas de personal ahorradas al mes –
 Coste de personal ahorrado al mes –
 Mensajes nocturnos respondidos al mes –
+Respuestas de IA necesarias al mes –
 Plan recomendado –
 Ahorro tras el precio del plan –
+
 Prueba Hostlio Pro gratis 7 días
 
 Solo son estimaciones, basadas en tus datos y en meses de 30 días. El resultado depende de tus huéspedes, tu configuración y los temas que dejes responder a Lio automáticamente. Los precios son mensuales de lanzamiento en USD.
@@ -4868,7 +4881,7 @@ Vedi ogni prenotazione con il colore del suo canale. Spostare camere, prolungare
 
 - Cambi camera con drag-and-drop
 - Prenotazioni colorate per canale
-- Lo stesso calendario su web e iOS Tutte le funzionalità
+- Lo stesso calendario su web, iOS e Android Tutte le funzionalità
 Planning camere Settembre, 3ª settimana
 
 Lun 15
@@ -4961,7 +4974,7 @@ In qualunque lingua scriva l'ospite, risponde in quella lingua.
 Türkçe English Deutsch العربية Русский 日本語 中文 Français
 
 ## App mobile
-Prenotazioni, messaggi e check-in su iOS, anche offline.
+Prenotazioni, messaggi e check-in su iOS e Android, anche offline.
 
 ## Pensato per ogni tipo di struttura
 Progettato per strutture indipendenti da 1 a 150 camere.
@@ -4990,9 +5003,9 @@ Un canone mensile fisso, nessun contratto a lungo termine. Ogni piano è gratuit
 ## Starter
 Per piccoli B&B e boutique hotel
 
-$49 / mese
+49 $ / mese
 
-Prezzo di lancio (normalmente $59 )
+Prezzo di lancio (normalmente 59 $ )
 
 - 1 struttura, fino a 10 camere
 - 1.000 messaggi AI / mese
@@ -5007,9 +5020,9 @@ Il più scelto
 ## Pro
 Per hotel in crescita con una sola struttura
 
-$89 / mese
+89 $ / mese
 
-Prezzo di lancio (normalmente $109 )
+Prezzo di lancio (normalmente 109 $ )
 
 - 1 struttura, fino a 50 camere
 - 5.000 messaggi AI / mese
@@ -5017,15 +5030,15 @@ Prezzo di lancio (normalmente $109 )
 - WhatsApp + caselle OTA (Booking.com, Airbnb, Expedia)
 - Check-in online con firma digitale
 - Vendita di transfer e tour
-- App mobile iOS
+- App mobile iOS e Android
 Inizia con Pro
 
 ## Growth
 Per team che gestiscono due strutture
 
-$149 / mese
+149 $ / mese
 
-Prezzo di lancio (normalmente $189 )
+Prezzo di lancio (normalmente 189 $ )
 
 - Fino a 2 strutture, 150 camere
 - 12.000 messaggi AI / mese
@@ -5061,7 +5074,7 @@ Quando l’ospite è abbinato a una prenotazione, le risposte usano camera, date
 
 Scopri Lio
 
-Che cos'è Hostlio Pro? Hostlio Pro è un gestionale per hotel in cloud (un PMS) per hotel indipendenti e B&B da 1 a 150 camere. Affida la comunicazione con gli ospiti all'intelligenza artificiale, riunisce le prenotazioni delle OTA in un unico calendario e sposta il check-in sul telefono dell'ospite. Si gestisce dal web e da un'app iOS ed è usato in oltre 20 paesi.
+Che cos'è Hostlio Pro? Hostlio Pro è un gestionale per hotel in cloud (un PMS) per hotel indipendenti e B&B da 1 a 150 camere. Affida la comunicazione con gli ospiti all'intelligenza artificiale, riunisce le prenotazioni delle OTA in un unico calendario e sposta il check-in sul telefono dell'ospite. Si gestisce dal web e da un'app iOS e Android ed è usato in oltre 20 paesi.
 
 30+ lingue in cui risponde
 100+ OTA e canali di vendita
@@ -5089,7 +5102,7 @@ Q: Che cos'è Hostlio Pro?
 A: Hostlio Pro è un gestionale per hotel (PMS) basato sull'intelligenza artificiale, pensato per hotel indipendenti, boutique hotel e B&B. Riunisce in un'unica piattaforma Lio, un assistente AI che risponde ai messaggi degli ospiti 24 ore su 24 in oltre 30 lingue, un channel manager collegato a oltre 100 OTA, un calendario delle prenotazioni drag-and-drop e il check-in online.
 
 Q: Quanto costa Hostlio Pro?
-A: Ci sono tre piani: Starter a $49/mese, Pro a $89/mese e Growth a $149/mese. Questi prezzi includono uno sconto di lancio del 20% riservato ai primi 50 clienti, bloccato per tutta la durata dell'abbonamento. I prezzi normali sono $59, $109 e $189.
+A: Ci sono tre piani: Starter a 49 $/mese, Pro a 89 $/mese e Growth a 149 $/mese. Questi prezzi includono uno sconto di lancio del 20% riservato ai primi 50 clienti, bloccato per tutta la durata dell'abbonamento. I prezzi normali sono 59 $, 109 $ e 189 $.
 
 Q: C'è una prova gratuita?
 A: Sì. Ogni piano include 7 giorni di prova gratuita. Inserisci un metodo di pagamento all'iscrizione, ma non viene addebitato nulla fino alla fine della prova e puoi disdire in qualsiasi momento prima. Nessun contratto a lungo termine.
@@ -5315,7 +5328,7 @@ Genera con un clic, dai dati della prenotazione, lettere di invito e di conferma
 Lio propone transfer dall'aeroporto e tour durante la conversazione e inoltra la richiesta al tuo team.
 
 ## App mobile
-Gestisci prenotazioni, messaggi e check-in anche lontano dall'hotel con l'app iOS. Funziona anche offline e sincronizza i dati quando torni online.
+Gestisci prenotazioni, messaggi e check-in anche lontano dall'hotel con l'app iOS e Android. Funziona anche offline e sincronizza i dati quando torni online.
 
 ## Funzionalità per piano
 
@@ -5341,7 +5354,7 @@ Check-in online e firma digitale No Sì Sì
 
 Vendita di transfer e tour No Sì Sì
 
-App mobile iOS No Sì Sì
+App mobile iOS e Android No Sì Sì
 
 Supporto prioritario e chiamata di onboarding No No Sì
 
@@ -5354,7 +5367,7 @@ Q: A quali OTA si collega Hostlio Pro?
 A: Tramite Channex, Hostlio Pro si collega a oltre 100 canali, tra cui Booking.com, Airbnb, Expedia, Agoda, Trip.com, Hotels.com, Hotelbeds, Hostelworld e Google Hotels. Disponibilità, tariffe e prenotazioni restano sincronizzate su tutti.
 
 ---
-# Prezzi del gestionale per hotel: da $49/mese | Hostlio Pro
+# Prezzi del gestionale per hotel: da 49 $/mese | Hostlio Pro
 URL: https://hostliopro.com/it/prezzi/
 
 ## Prezzi di Hostlio Pro
@@ -5368,9 +5381,9 @@ Un canone mensile fisso. Nessuna commissione sulle prenotazioni, nessun costo di
 ## Starter
 Per piccoli B&B e boutique hotel
 
-$49 / mese
+49 $ / mese
 
-Prezzo di lancio (normalmente $59 )
+Prezzo di lancio (normalmente 59 $ )
 
 - 1 struttura, fino a 10 camere
 - 1.000 messaggi AI / mese
@@ -5385,9 +5398,9 @@ Il più scelto
 ## Pro
 Per hotel in crescita con una sola struttura
 
-$89 / mese
+89 $ / mese
 
-Prezzo di lancio (normalmente $109 )
+Prezzo di lancio (normalmente 109 $ )
 
 - 1 struttura, fino a 50 camere
 - 5.000 messaggi AI / mese
@@ -5395,15 +5408,15 @@ Prezzo di lancio (normalmente $109 )
 - WhatsApp + caselle OTA (Booking.com, Airbnb, Expedia)
 - Check-in online con firma digitale
 - Vendita di transfer e tour
-- App mobile iOS
+- App mobile iOS e Android
 Inizia con Pro
 
 ## Growth
 Per team che gestiscono due strutture
 
-$149 / mese
+149 $ / mese
 
-Prezzo di lancio (normalmente $189 )
+Prezzo di lancio (normalmente 189 $ )
 
 - Fino a 2 strutture, 150 camere
 - 12.000 messaggi AI / mese
@@ -5428,7 +5441,7 @@ Hotel da 11 a 50 camere che vogliono affidare a Lio anche i messaggi delle OTA, 
 Due strutture o fino a 150 camere, quando servono supporto prioritario, un onboarding personalizzato e l'uso in white-label.
 
 Q: Quanto costa Hostlio Pro?
-A: Ci sono tre piani: Starter a $49/mese, Pro a $89/mese e Growth a $149/mese. Questi prezzi includono uno sconto di lancio del 20% riservato ai primi 50 clienti, bloccato per tutta la durata dell'abbonamento. I prezzi normali sono $59, $109 e $189.
+A: Ci sono tre piani: Starter a 49 $/mese, Pro a 89 $/mese e Growth a 149 $/mese. Questi prezzi includono uno sconto di lancio del 20% riservato ai primi 50 clienti, bloccato per tutta la durata dell'abbonamento. I prezzi normali sono 59 $, 109 $ e 189 $.
 
 Q: C'è una prova gratuita?
 A: Sì. Ogni piano include 7 giorni di prova gratuita. Inserisci un metodo di pagamento all'iscrizione, ma non viene addebitato nulla fino alla fine della prova e puoi disdire in qualsiasi momento prima. Nessun contratto a lungo termine.
@@ -5455,7 +5468,7 @@ Le domande più comuni su funzionalità, prezzi e configurazione di Hostlio Pro.
 
 Che cos'è Hostlio Pro? Hostlio Pro è un gestionale per hotel (PMS) basato sull'intelligenza artificiale, pensato per hotel indipendenti, boutique hotel e B&B. Riunisce in un'unica piattaforma Lio, un assistente AI che risponde ai messaggi degli ospiti 24 ore su 24 in oltre 30 lingue, un channel manager collegato a oltre 100 OTA, un calendario delle prenotazioni drag-and-drop e il check-in online.
 
-Quanto costa Hostlio Pro? Ci sono tre piani: Starter a $49/mese, Pro a $89/mese e Growth a $149/mese. Questi prezzi includono uno sconto di lancio del 20% riservato ai primi 50 clienti, bloccato per tutta la durata dell'abbonamento. I prezzi normali sono $59, $109 e $189.
+Quanto costa Hostlio Pro? Ci sono tre piani: Starter a 49 $/mese, Pro a 89 $/mese e Growth a 149 $/mese. Questi prezzi includono uno sconto di lancio del 20% riservato ai primi 50 clienti, bloccato per tutta la durata dell'abbonamento. I prezzi normali sono 59 $, 109 $ e 189 $.
 
 C'è una prova gratuita? Sì. Ogni piano include 7 giorni di prova gratuita. Inserisci un metodo di pagamento all'iscrizione, ma non viene addebitato nulla fino alla fine della prova e puoi disdire in qualsiasi momento prima. Nessun contratto a lungo termine.
 
@@ -5465,7 +5478,7 @@ In quali lingue risponde Lio? Lio risponde in oltre 30 lingue, tra cui inglese, 
 
 Per quali tipi di struttura è pensato Hostlio Pro? Per strutture indipendenti da 1 a 150 camere, come boutique hotel, hotel di città, B&B e affittacamere, residence e aparthotel e ostelli.
 
-Esiste un'app mobile? Sì. I piani Pro e Growth includono un'app iOS. Funziona senza connessione a internet e sincronizza i dati quando torni online.
+Esiste un'app mobile? Sì. I piani Pro e Growth includono un'app iOS e Android. Funziona senza connessione a internet e sincronizza i dati quando torni online.
 
 Come funziona il check-in online? Gli ospiti ricevono un link personale e sicuro e, prima dell'arrivo, inviano dal telefono i dati del documento, gli accompagnatori e una firma digitale. Disponibile nei piani Pro e Growth.
 
@@ -5481,7 +5494,7 @@ Q: Che cos'è Hostlio Pro?
 A: Hostlio Pro è un gestionale per hotel (PMS) basato sull'intelligenza artificiale, pensato per hotel indipendenti, boutique hotel e B&B. Riunisce in un'unica piattaforma Lio, un assistente AI che risponde ai messaggi degli ospiti 24 ore su 24 in oltre 30 lingue, un channel manager collegato a oltre 100 OTA, un calendario delle prenotazioni drag-and-drop e il check-in online.
 
 Q: Quanto costa Hostlio Pro?
-A: Ci sono tre piani: Starter a $49/mese, Pro a $89/mese e Growth a $149/mese. Questi prezzi includono uno sconto di lancio del 20% riservato ai primi 50 clienti, bloccato per tutta la durata dell'abbonamento. I prezzi normali sono $59, $109 e $189.
+A: Ci sono tre piani: Starter a 49 $/mese, Pro a 89 $/mese e Growth a 149 $/mese. Questi prezzi includono uno sconto di lancio del 20% riservato ai primi 50 clienti, bloccato per tutta la durata dell'abbonamento. I prezzi normali sono 59 $, 109 $ e 189 $.
 
 Q: C'è una prova gratuita?
 A: Sì. Ogni piano include 7 giorni di prova gratuita. Inserisci un metodo di pagamento all'iscrizione, ma non viene addebitato nulla fino alla fine della prova e puoi disdire in qualsiasi momento prima. Nessun contratto a lungo termine.
@@ -5496,7 +5509,7 @@ Q: Per quali tipi di struttura è pensato Hostlio Pro?
 A: Per strutture indipendenti da 1 a 150 camere, come boutique hotel, hotel di città, B&B e affittacamere, residence e aparthotel e ostelli.
 
 Q: Esiste un'app mobile?
-A: Sì. I piani Pro e Growth includono un'app iOS. Funziona senza connessione a internet e sincronizza i dati quando torni online.
+A: Sì. I piani Pro e Growth includono un'app iOS e Android. Funziona senza connessione a internet e sincronizza i dati quando torni online.
 
 Q: Come funziona il check-in online?
 A: Gli ospiti ricevono un link personale e sicuro e, prima dell'arrivo, inviano dal telefono i dati del documento, gli accompagnatori e una firma digitale. Disponibile nei piani Pro e Growth.
@@ -5570,19 +5583,19 @@ Perché gli hotel finiscono in overbooking e come evitarlo: channel manager, reg
 21 settembre 2026
 Tre modi per automatizzare i messaggi degli ospiti di Booking.com: modelli, messaggi programmati e un assistente AI.
 
-## Rispondere ai messaggi degli ospiti con l'AI: guida pratica per hotel
+## Rispondere ai messaggi degli ospiti con l'AI: guida pratica
 18 settembre 2026
-Vantaggi, rischi e passaggi di configurazione per rispondere con l'AI ai messaggi degli ospiti dell'hotel. Quali domande automatizzare e quali lasciare al tuo team.
+Vantaggi, rischi e come configurare l'AI per rispondere ai messaggi degli ospiti dell'hotel. Quali domande automatizzare e quali lasciare al tuo team.
 
-## Come scegliere il gestionale per hotel (PMS) per una piccola struttura
+## Come scegliere il gestionale per un piccolo hotel
 10 settembre 2026
-7 criteri per scegliere un PMS per un piccolo hotel o un boutique hotel: channel manager, modello di prezzo, messaggi degli ospiti, accesso da mobile e altro.
+7 criteri per scegliere un PMS per un piccolo hotel o boutique hotel: channel manager, modello di prezzo, messaggi degli ospiti, accesso da mobile e altro.
 
 ---
-# Rispondere ai messaggi degli ospiti con l'AI: guida pratica per hotel
+# Rispondere ai messaggi degli ospiti con l'AI: guida pratica
 URL: https://hostliopro.com/it/blog/rispondere-ai-messaggi-degli-ospiti-con-ai/
 
-## Rispondere ai messaggi degli ospiti con l'AI: guida pratica per hotel
+## Rispondere ai messaggi degli ospiti con l'AI: guida pratica
 A cura del team di prodotto Hostlio Pro , le persone che sviluppano Hostlio Pro. Pubblicato il 18 settembre 2026 , aggiornato il 23 settembre 2026
 
 In breve: la maggior parte dei messaggi che riceve un hotel sono domande ricorrenti (orario del check-in, parcheggio, transfer, colazione). Affidarle a un assistente AI addestrato sulle informazioni del tuo hotel permette agli ospiti di ricevere una risposta in pochi secondi, nella loro lingua. Sconti, reclami e richieste speciali dovrebbero restare al tuo staff.
@@ -5636,10 +5649,10 @@ Q: Gli ospiti sapranno che stanno parlando con un'AI?
 A: Le risposte sono scritte a nome dell'hotel e con il suo tono. Per trasparenza, l'hotel può indicare nel messaggio di benvenuto che l'assistente è un'AI.
 
 ---
-# Come scegliere il gestionale per hotel (PMS) per una piccola struttura
+# Come scegliere il gestionale per un piccolo hotel
 URL: https://hostliopro.com/it/blog/come-scegliere-gestionale-per-hotel-piccolo/
 
-## Come scegliere il gestionale per hotel (PMS) per una piccola struttura
+## Come scegliere il gestionale per un piccolo hotel
 A cura del team di prodotto Hostlio Pro , le persone che sviluppano Hostlio Pro. Pubblicato il 10 settembre 2026 , aggiornato il 23 settembre 2026
 
 In breve: il PMS giusto per un piccolo hotel ha un channel manager integrato, prezzi fissi e trasparenti, un'unica casella per i messaggi degli ospiti, accesso da mobile e si configura in giornata. I sistemi enterprise con centinaia di funzioni finiscono spesso inutilizzati dai piccoli team.
@@ -5703,7 +5716,7 @@ In un B&B o in un affittacamere è una sola persona a gestire i messaggi notturn
 Prova gratis per 7 giorni Richiedi una demo
 
 ## Che cos'è un gestionale per B&B?
-Un gestionale per B&B permette alle piccole strutture da 1 a 10 camere di gestire prenotazioni, disponibilità e comunicazione con gli ospiti in un unico posto. Hostlio Pro aggiunge Lio, un assistente AI che risponde alle domande degli ospiti 24/7 in oltre 30 lingue. Il piano Starter costa $49 al mese per strutture fino a 10 camere.
+Un gestionale per B&B permette alle piccole strutture da 1 a 10 camere di gestire prenotazioni, disponibilità e comunicazione con gli ospiti in un unico posto. Hostlio Pro aggiunge Lio, un assistente AI che risponde alle domande degli ospiti 24/7 in oltre 30 lingue. Il piano Starter costa 49 $ al mese per strutture fino a 10 camere.
 
 ## Quali sono le difficoltà più comuni di B&B e affittacamere?
 
@@ -5726,7 +5739,7 @@ Per confrontarlo con altri software alberghieri, consulta il nostro confronto ge
 Vedi i prezzi
 
 Q: Esiste un gestionale per B&B gratuito?
-A: Puoi provare Hostlio Pro gratis per 7 giorni. Dopo, il piano Starter costa $49 al mese (prezzo early-bird riservato ai primi 50 clienti).
+A: Puoi provare Hostlio Pro gratis per 7 giorni. Dopo, il piano Starter costa 49 $ al mese (prezzo early-bird riservato ai primi 50 clienti).
 
 Q: È adatto a un B&B con 3 camere?
 A: Sì. Starter è pensato per una struttura fino a 10 camere; il prezzo è lo stesso anche con meno camere.
@@ -5761,7 +5774,7 @@ Le prenotazioni da Booking.com, Expedia e Airbnb compaiono in un unico planning 
 Con il check-in online e la firma digitale, gli ospiti ricevono un drink di benvenuto invece di un modulo da compilare.
 
 ## Quale piano fa per te?
-Per i boutique hotel da 10 a 50 camere consigliamo Pro : 5.000 messaggi AI al mese, WhatsApp e caselle delle OTA (Booking.com, Airbnb, Expedia), check-in online, vendita di transfer e tour e l'app iOS.
+Per i boutique hotel da 10 a 50 camere consigliamo Pro : 5.000 messaggi AI al mese, WhatsApp e caselle delle OTA (Booking.com, Airbnb, Expedia), check-in online, vendita di transfer e tour e l'app iOS e Android.
 
 Per confrontarlo con altri software alberghieri, consulta il nostro confronto gestionali per hotel .
 Vedi i prezzi
@@ -5776,7 +5789,7 @@ Q: Quanti utenti posso aggiungere?
 A: Consulta la pagina dei prezzi per i dettagli dei piani, oppure chiedi al nostro team durante la demo.
 
 ---
-# Gestionale per residence: check-in online e OTA | Hostlio Pro
+# Gestionale per residence: check-in online, OTA | Hostlio Pro
 URL: https://hostliopro.com/it/gestionale-residence-aparthotel/
 
 ## Il gestionale per residence e aparthotel pensato per la gestione a distanza
@@ -5858,7 +5871,7 @@ Q: Quanti messaggi AI mi servono?
 A: Circa 150 risposte automatiche al giorno corrispondono a circa 4.500 al mese, una quantità adatta al piano Pro.
 
 ---
-# Confronto gestionali per hotel 2026: prezzi e AI | Hostlio Pro
+# Confronto gestionali hotel 2026: prezzi e AI | Hostlio Pro
 URL: https://hostliopro.com/it/confronto-gestionali-hotel/
 
 ## Confronto gestionali per hotel (2026)
@@ -5868,7 +5881,7 @@ Abbiamo confrontato cinque gestionali per hotel molto diffusi tra le strutture i
 In breve: per hotel con una sola struttura, 1–150 camere e molti ospiti internazionali, un software a prezzo fisso con la messaggistica AI inclusa (come Hostlio Pro) rende il budget prevedibile. I gruppi con più strutture ed esigenze enterprise possono valutare piattaforme su preventivo come Mews o Cloudbeds; le strutture in Turchia che cercano assistenza locale e una rete B2B possono guardare a HotelRunner; le piccole strutture che vogliono la rete SiteMinder possono considerare Little Hotelier.
 
 Confronto gestionali per hotel (2026) Software Prezzi pubblicati? A partire da Commissione sulle prenotazioni Prova gratuita Messaggi AI agli ospiti Fonte
-Hostlio Pro Sì $49/mese (early bird) Nessuna, canone mensile fisso 7 giorni In tutti i piani (Lio, 30+ lingue) Pagina prezzi Verificato a settembre 2026
+Hostlio Pro Sì 49 $/mese (early bird) Nessuna, canone mensile fisso 7 giorni In tutti i piani (Lio, 30+ lingue) Pagina prezzi Verificato a settembre 2026
 Cloudbeds No, su preventivo Preventivo Dichiara di non applicare commissioni aggiuntive sulle prenotazioni da Booking Engine e Channel Manager Non indicata nella pagina dei prezzi Non indicati separatamente nella pagina dei prezzi Pagina prezzi Verificato a settembre 2026
 Mews No, su preventivo Preventivo Non indicata nella pagina dei prezzi Non indicata nella pagina dei prezzi Riepiloghi AI delle preferenze degli ospiti nel piano Advanced; messaggistica non indicata separatamente Pagina prezzi Verificato a settembre 2026
 Little Hotelier Calcolati in base al numero di camere Tramite calcolatore dei prezzi Commissione dell'1% sulle prenotazioni nel piano Basics 30 giorni Non indicati nella pagina dei prezzi Pagina prezzi Verificato a settembre 2026
@@ -5999,7 +6012,7 @@ A: Il rischio è basso quando l'assistente usa solo le informazioni fornite dall
 URL: https://hostliopro.com/it/privacy/
 
 ## Informativa sulla privacy
-Ultimo aggiornamento: 23 settembre 2026 , Loti Members LLC, 2108 N ST STE N, Sacramento, CA 95816. Il presente testo è una traduzione dell'originale in inglese; in caso di discrepanze prevale la versione inglese .
+Ultimo aggiornamento: 3 ottobre 2026 , Loti Members LLC, 2108 N ST STE N, Sacramento, CA 95816. Il presente testo è una traduzione dell'originale in inglese; in caso di discrepanze prevale la versione inglese .
 
 La presente Informativa sulla privacy spiega come Hostlio Pro, gestito da Loti Members LLC («noi»), raccoglie, usa e condivide dati personali quando visiti hostliopro.com, ti registri o usi il pannello, l’app mobile e le funzioni per gli ospiti di Hostlio Pro.
 
@@ -6014,8 +6027,8 @@ Per i dati dei nostri clienti (titolari e personale degli hotel) e dei visitator
 - Dati degli ospiti trattati per gli hotel: nome, recapiti, dati della prenotazione e contenuto dei messaggi ricevuti su WhatsApp e nelle caselle OTA
 - Dati del check-in online: dati e immagini del documento d’identità, data di nascita, nazionalità, accompagnatori e firma digitale, se l’hotel usa il check-in online. Li trattiamo come dati sensibili
 - Dati di registrazione e sicurezza: indirizzo IP, email cifrata (hash) ed esito dei tentativi di registrazione, per prevenire frodi e abusi
-- Origine di marketing: la prima campagna o pagina che ti ha portato sul sito (ad esempio parametri UTM e sito di provenienza), salvata nel browser e inviata con la registrazione
-- Dati di utilizzo: come vengono usati il pannello e l’app, e log tecnici
+- Origine di marketing: solo se arrivi tramite un link con parametri di campagna (parametri UTM o un identificativo di clic pubblicitario): tali parametri, la pagina di arrivo e l’ora della prima visita, salvati nel browser e inviati a noi solo con il modulo di registrazione o di contatto
+- Dati di utilizzo: come vengono usati il pannello e l’app, log tecnici e, se usi l’app mobile, il token per le notifiche push del dispositivo
 ## 3. Come usiamo i dati
 
 - Erogare il servizio: sincronizzare i canali, mostrare le prenotazioni, inviare messaggi agli ospiti e gestire il check-in online
@@ -6039,6 +6052,7 @@ Anthropic, PBC USA Elaborazione AI dei messaggi degli ospiti per preparare le ri
 Meta Platforms, Inc. (WhatsApp Business Platform) USA / Ireland Invio e ricezione di messaggi WhatsApp
 Channex.io Ltd United Kingdom Sincronizzazione di disponibilità, tariffe, prenotazioni e messaggi OTA
 Make (Celonis) EU Modulo di contatto e automazioni interne
+Google LLC / Google Ireland Ltd. (Firebase Cloud Messaging) USA / global Notifiche push all’app mobile Hostlio Pro su iOS e Android (token push del dispositivo, identificativi dell’istanza dell’app e contenuto della notifica, come avvisi di nuovi messaggi o prenotazioni)
 Twilio Inc.* USA Numeri WhatsApp e fatturazione dei messaggi per gli hotel
 Twilio SendGrid* USA Email transazionali
 
@@ -6066,7 +6080,7 @@ Turchia (KVKK): ai sensi dell’articolo 11 della Legge n. 6698 puoi sapere se i
 Per esercitare i tuoi diritti scrivi a hello@hostliopro.com . Per chiudere l’account consulta Elimina il tuo account .
 
 ## 10. Cookie e archiviazione del browser
-Il pannello usa cookie e archiviazione essenziali per mantenere la sessione. Il sito salva la lingua scelta e la prima origine di marketing nell’archiviazione locale del browser. Non usiamo cookie pubblicitari. Se aggiungeremo strumenti di analisi, aggiorneremo prima questa informativa.
+Il pannello usa cookie e archiviazione essenziali per mantenere la sessione. Il sito salva la lingua scelta nell’archiviazione locale del browser. Per misurare il marketing non viene salvato nulla nelle visite normali: solo se arrivi tramite un link con parametri di campagna (utm_source, utm_medium, utm_campaign, utm_term, utm_content o un identificativo di clic pubblicitario: gclid, msclkid, ttclid, fbclid) il sito salva tali parametri, il percorso della pagina di arrivo e l’ora di quella prima visita nell’archiviazione locale, con la chiave hostlio_acq . Per questo non viene impostato alcun cookie. Il dominio del sito di provenienza viene letto solo per la pagina visualizzata e non viene salvato. Il dato è di prima parte (first-party): il sito non lo condivide mai con reti pubblicitarie, ci viene inviato solo se invii il modulo di registrazione o di contatto (insieme a quell’invio) e si cancella automaticamente dopo 90 giorni. Ci basiamo sul nostro legittimo interesse a misurare quali canali di marketing portano clienti; puoi opporti e cancellare il dato in qualsiasi momento eliminando i dati del sito hostliopro.com nel browser. Non usiamo cookie pubblicitari. Se aggiungeremo strumenti di analisi, aggiorneremo prima questa informativa.
 
 ## 11. WhatsApp e messaggi con gli ospiti
 Hostlio Pro si collega alla piattaforma WhatsApp Business e alle caselle OTA per inviare e ricevere i messaggi degli ospiti per conto degli hotel. I numeri di telefono degli ospiti sono usati solo per comunicare sul soggiorno. Gli ospiti possono smettere di ricevere messaggi chiedendolo all’hotel.
@@ -6087,7 +6101,7 @@ Pubblicheremo le modifiche in questa pagina aggiornando la data. Le modifiche ri
 URL: https://hostliopro.com/it/termini/
 
 ## Termini di servizio
-Ultimo aggiornamento: 23 settembre 2026 , Loti Members LLC, 2108 N ST STE N, Sacramento, CA 95816. Il presente testo è una traduzione dell'originale in inglese; in caso di discrepanze prevale la versione inglese .
+Ultimo aggiornamento: 3 ottobre 2026 , Loti Members LLC, 2108 N ST STE N, Sacramento, CA 95816. Il presente testo è una traduzione dell'originale in inglese; in caso di discrepanze prevale la versione inglese .
 
 I presenti Termini di servizio («Termini») disciplinano l’uso di Hostlio Pro, gestito da Loti Members LLC («noi»). Creando un account o usando il servizio accetti questi Termini. Se usi Hostlio Pro per un’azienda, li accetti per suo conto.
 
@@ -6208,6 +6222,7 @@ Anthropic, PBC USA Elaborazione AI dei messaggi degli ospiti per preparare le ri
 Meta Platforms, Inc. (WhatsApp Business Platform) USA / Ireland Invio e ricezione di messaggi WhatsApp
 Channex.io Ltd United Kingdom Sincronizzazione di disponibilità, tariffe, prenotazioni e messaggi OTA
 Make (Celonis) EU Modulo di contatto e automazioni interne
+Google LLC / Google Ireland Ltd. (Firebase Cloud Messaging) USA / global Notifiche push all’app mobile Hostlio Pro su iOS e Android (token push del dispositivo, identificativi dell’istanza dell’app e contenuto della notifica, come avvisi di nuovi messaggi o prenotazioni)
 Twilio Inc.* USA Numeri WhatsApp e fatturazione dei messaggi per gli hotel
 Twilio SendGrid* USA Email transazionali
 
@@ -6232,8 +6247,10 @@ Camere Messaggi degli ospiti al giorno Minuti per rispondere a un messaggio Quot
 Ore di personale risparmiate al mese –
 Costo del personale risparmiato al mese –
 Messaggi notturni gestiti al mese –
+Risposte AI necessarie al mese –
 Piano consigliato –
 Risparmio al netto del piano –
+
 Prova Hostlio Pro gratis per 7 giorni
 
 Solo stime, basate sui dati inseriti e su mesi di 30 giorni. I risultati dipendono dai tuoi ospiti, dalle impostazioni e dagli argomenti a cui lasci rispondere Lio in automatico. Prezzi mensili early bird in USD.
@@ -6314,7 +6331,7 @@ Veja cada reserva na cor do seu canal. Trocar de quarto, estender a estadia ou b
 
 - Troca de quarto com arrastar e soltar
 - Reservas com cores por canal
-- O mesmo calendário na web e no iOS Todas as funcionalidades
+- O mesmo calendário na web, no iOS e no Android Todas as funcionalidades
 Mapa de reservas Setembro, semana 3
 
 Seg 15
@@ -6407,7 +6424,7 @@ No idioma em que o hóspede escrever, nesse idioma vem a resposta.
 Türkçe English Deutsch العربية Русский 日本語 中文 Français
 
 ## App móvel
-Reservas, mensagens e check-ins no iOS, até off-line.
+Reservas, mensagens e check-ins no iOS e no Android, até off-line.
 
 ## Feito para todo tipo de hospedagem
 Pensado para hospedagens independentes de 1 a 150 quartos.
@@ -6436,9 +6453,9 @@ Mensalidade fixa, sem contrato de longo prazo. Todos os planos são grátis por 
 ## Starter
 Para pousadas pequenas e hotéis boutique
 
-$49 / mês
+US$ 49 / mês
 
-Preço de lançamento (normalmente $59 )
+Preço de lançamento (normalmente US$ 59 )
 
 - 1 propriedade, até 10 quartos
 - 1.000 mensagens de IA / mês
@@ -6453,9 +6470,9 @@ Mais popular
 ## Pro
 Para hotéis de uma propriedade em crescimento
 
-$89 / mês
+US$ 89 / mês
 
-Preço de lançamento (normalmente $109 )
+Preço de lançamento (normalmente US$ 109 )
 
 - 1 propriedade, até 50 quartos
 - 5.000 mensagens de IA / mês
@@ -6469,9 +6486,9 @@ Começar com o Pro
 ## Growth
 Para equipes que administram duas propriedades
 
-$149 / mês
+US$ 149 / mês
 
-Preço de lançamento (normalmente $189 )
+Preço de lançamento (normalmente US$ 189 )
 
 - Até 2 propriedades, 150 quartos
 - 12.000 mensagens de IA / mês
@@ -6507,7 +6524,7 @@ Quando o hóspede é vinculado a uma reserva, as respostas usam o quarto, as dat
 
 Conheça o Lio
 
-O que é o Hostlio Pro? O Hostlio Pro é um sistema para hotel na nuvem (um PMS hoteleiro) para hotéis independentes e pousadas de 1 a 150 quartos. Ele entrega a comunicação com os hóspedes à inteligência artificial, reúne as reservas das OTAs em um só calendário e leva o check-in para o celular do hóspede. É gerenciado pela web e por um app para iOS, e usado em mais de 20 países.
+O que é o Hostlio Pro? O Hostlio Pro é um sistema para hotel na nuvem (um PMS hoteleiro) para hotéis independentes e pousadas de 1 a 150 quartos. Ele entrega a comunicação com os hóspedes à inteligência artificial, reúne as reservas das OTAs em um só calendário e leva o check-in para o celular do hóspede. É gerenciado pela web e por um app para iOS e Android, e usado em mais de 20 países.
 
 30+ idiomas atendidos
 100+ OTAs e canais de venda
@@ -6535,7 +6552,7 @@ Q: O que é o Hostlio Pro?
 A: O Hostlio Pro é um sistema para hotel (PMS hoteleiro) com inteligência artificial, feito para hotéis independentes, hotéis boutique e pousadas. Ele reúne em uma só plataforma a Lio, uma assistente de IA que responde às mensagens dos hóspedes 24 horas por dia em mais de 30 idiomas, um channel manager conectado a mais de 100 OTAs, um calendário de reservas com arrastar e soltar e o check-in online.
 
 Q: Quanto custa o Hostlio Pro?
-A: São três planos: Starter por $49/mês, Pro por $89/mês e Growth por $149/mês. Esses preços incluem um desconto de lançamento de 20% para os primeiros 50 clientes, garantido enquanto a assinatura estiver ativa. Os preços normais são $59, $109 e $189.
+A: São três planos: Starter por US$ 49/mês, Pro por US$ 89/mês e Growth por US$ 149/mês. Esses preços incluem um desconto de lançamento de 20% para os primeiros 50 clientes, garantido enquanto a assinatura estiver ativa. Os preços normais são US$ 59, US$ 109 e US$ 189.
 
 Q: Existe um período de teste grátis?
 A: Sim. Todos os planos incluem 7 dias de teste grátis. O cartão é cadastrado na inscrição, mas nada é cobrado até o fim do teste, e você pode cancelar antes disso. Não há contratos de longo prazo e você pode cancelar quando quiser.
@@ -6668,7 +6685,7 @@ Q: É difícil trocar o meu channel manager atual?
 A: Não. Crie seus tipos de quarto no Hostlio Pro e mapeie suas contas das OTAs pela Channex. Nossa equipe de onboarding ajuda durante a migração.
 
 ---
-# Check-in Online para Hotel com Assinatura Digital | Hostlio Pro
+# Check-in Online com Assinatura Digital | Hostlio Pro
 URL: https://hostliopro.com/pt/check-in-online/
 
 ## Check‑in online com assinatura digital
@@ -6761,7 +6778,7 @@ Gere cartas-convite e declarações de hospedagem do hotel para pedidos de visto
 A Lio sugere transfers do aeroporto e passeios durante a conversa e repassa o pedido para a sua equipe.
 
 ## App para celular
-Gerencie reservas, mensagens e check-ins fora do hotel com o app para iOS. Ele continua funcionando offline e sincroniza quando você volta a ficar online.
+Gerencie reservas, mensagens e check-ins fora do hotel com o app para iOS e Android. Ele continua funcionando offline e sincroniza quando você volta a ficar online.
 
 ## Funcionalidades por plano
 
@@ -6787,7 +6804,7 @@ Check-in online e assinatura digital Não Sim Sim
 
 Venda de transfers e passeios Não Sim Sim
 
-App para iOS Não Sim Sim
+App para iOS e Android Não Sim Sim
 
 Suporte prioritário e chamada de onboarding Não Não Sim
 
@@ -6800,7 +6817,7 @@ Q: Com quais OTAs o Hostlio Pro se conecta?
 A: Por meio da Channex, o Hostlio Pro se conecta a mais de 100 canais, entre eles Booking.com, Airbnb, Expedia, Agoda, Trip.com, Hotels.com, Hotelbeds, Hostelworld e Google Hotels. Disponibilidade, tarifas e reservas ficam sincronizadas em todos eles.
 
 ---
-# Preços do Sistema para Hotel: a partir de $49/mês | Hostlio Pro
+# Preços do Sistema para Hotel: desde US$ 49/mês | Hostlio Pro
 URL: https://hostliopro.com/pt/precos/
 
 ## Preços do Hostlio Pro
@@ -6814,9 +6831,9 @@ Uma mensalidade fixa. Sem comissão por reserva, sem taxa de implantação. Test
 ## Starter
 Para pousadas pequenas e hotéis boutique
 
-$49 / mês
+US$ 49 / mês
 
-Preço de lançamento (normalmente $59 )
+Preço de lançamento (normalmente US$ 59 )
 
 - 1 propriedade, até 10 quartos
 - 1.000 mensagens de IA / mês
@@ -6831,9 +6848,9 @@ Mais popular
 ## Pro
 Para hotéis de uma propriedade em crescimento
 
-$89 / mês
+US$ 89 / mês
 
-Preço de lançamento (normalmente $109 )
+Preço de lançamento (normalmente US$ 109 )
 
 - 1 propriedade, até 50 quartos
 - 5.000 mensagens de IA / mês
@@ -6847,9 +6864,9 @@ Começar com o Pro
 ## Growth
 Para equipes que administram duas propriedades
 
-$149 / mês
+US$ 149 / mês
 
-Preço de lançamento (normalmente $189 )
+Preço de lançamento (normalmente US$ 189 )
 
 - Até 2 propriedades, 150 quartos
 - 12.000 mensagens de IA / mês
@@ -6874,7 +6891,7 @@ Hotéis de 11 a 50 quartos que querem que a Lio cuide também das mensagens das 
 Duas propriedades ou até 150 quartos, quando você precisa de suporte prioritário, onboarding personalizado e uso white-label.
 
 Q: Quanto custa o Hostlio Pro?
-A: São três planos: Starter por $49/mês, Pro por $89/mês e Growth por $149/mês. Esses preços incluem um desconto de lançamento de 20% para os primeiros 50 clientes, garantido enquanto a assinatura estiver ativa. Os preços normais são $59, $109 e $189.
+A: São três planos: Starter por US$ 49/mês, Pro por US$ 89/mês e Growth por US$ 149/mês. Esses preços incluem um desconto de lançamento de 20% para os primeiros 50 clientes, garantido enquanto a assinatura estiver ativa. Os preços normais são US$ 59, US$ 109 e US$ 189.
 
 Q: Existe um período de teste grátis?
 A: Sim. Todos os planos incluem 7 dias de teste grátis. O cartão é cadastrado na inscrição, mas nada é cobrado até o fim do teste, e você pode cancelar antes disso. Não há contratos de longo prazo e você pode cancelar quando quiser.
@@ -6901,7 +6918,7 @@ As dúvidas mais comuns sobre as funcionalidades, os preços e a implantação d
 
 O que é o Hostlio Pro? O Hostlio Pro é um sistema para hotel (PMS hoteleiro) com inteligência artificial, feito para hotéis independentes, hotéis boutique e pousadas. Ele reúne em uma só plataforma a Lio, uma assistente de IA que responde às mensagens dos hóspedes 24 horas por dia em mais de 30 idiomas, um channel manager conectado a mais de 100 OTAs, um calendário de reservas com arrastar e soltar e o check-in online.
 
-Quanto custa o Hostlio Pro? São três planos: Starter por $49/mês, Pro por $89/mês e Growth por $149/mês. Esses preços incluem um desconto de lançamento de 20% para os primeiros 50 clientes, garantido enquanto a assinatura estiver ativa. Os preços normais são $59, $109 e $189.
+Quanto custa o Hostlio Pro? São três planos: Starter por US$ 49/mês, Pro por US$ 89/mês e Growth por US$ 149/mês. Esses preços incluem um desconto de lançamento de 20% para os primeiros 50 clientes, garantido enquanto a assinatura estiver ativa. Os preços normais são US$ 59, US$ 109 e US$ 189.
 
 Existe um período de teste grátis? Sim. Todos os planos incluem 7 dias de teste grátis. O cartão é cadastrado na inscrição, mas nada é cobrado até o fim do teste, e você pode cancelar antes disso. Não há contratos de longo prazo e você pode cancelar quando quiser.
 
@@ -6911,7 +6928,7 @@ Em quais idiomas a Lio responde? A Lio responde em mais de 30 idiomas, incluindo
 
 Para que tipos de hotel o Hostlio Pro foi feito? Para propriedades independentes de 1 a 150 quartos, como hotéis boutique, hotéis urbanos, pousadas, apart-hotéis e hostels.
 
-Existe um app para celular? Sim. Os planos Pro e Growth incluem um app para iOS. Ele funciona sem conexão com a internet e sincroniza os dados quando você volta a ficar online.
+Existe um app para celular? Sim. Os planos Pro e Growth incluem um app para iOS e Android. Ele funciona sem conexão com a internet e sincroniza os dados quando você volta a ficar online.
 
 Como funciona o check-in online? Os hóspedes recebem um link pessoal e seguro e enviam pelo celular, antes da chegada, os dados do documento, os acompanhantes e a assinatura digital. Disponível nos planos Pro e Growth.
 
@@ -6927,7 +6944,7 @@ Q: O que é o Hostlio Pro?
 A: O Hostlio Pro é um sistema para hotel (PMS hoteleiro) com inteligência artificial, feito para hotéis independentes, hotéis boutique e pousadas. Ele reúne em uma só plataforma a Lio, uma assistente de IA que responde às mensagens dos hóspedes 24 horas por dia em mais de 30 idiomas, um channel manager conectado a mais de 100 OTAs, um calendário de reservas com arrastar e soltar e o check-in online.
 
 Q: Quanto custa o Hostlio Pro?
-A: São três planos: Starter por $49/mês, Pro por $89/mês e Growth por $149/mês. Esses preços incluem um desconto de lançamento de 20% para os primeiros 50 clientes, garantido enquanto a assinatura estiver ativa. Os preços normais são $59, $109 e $189.
+A: São três planos: Starter por US$ 49/mês, Pro por US$ 89/mês e Growth por US$ 149/mês. Esses preços incluem um desconto de lançamento de 20% para os primeiros 50 clientes, garantido enquanto a assinatura estiver ativa. Os preços normais são US$ 59, US$ 109 e US$ 189.
 
 Q: Existe um período de teste grátis?
 A: Sim. Todos os planos incluem 7 dias de teste grátis. O cartão é cadastrado na inscrição, mas nada é cobrado até o fim do teste, e você pode cancelar antes disso. Não há contratos de longo prazo e você pode cancelar quando quiser.
@@ -6942,7 +6959,7 @@ Q: Para que tipos de hotel o Hostlio Pro foi feito?
 A: Para propriedades independentes de 1 a 150 quartos, como hotéis boutique, hotéis urbanos, pousadas, apart-hotéis e hostels.
 
 Q: Existe um app para celular?
-A: Sim. Os planos Pro e Growth incluem um app para iOS. Ele funciona sem conexão com a internet e sincroniza os dados quando você volta a ficar online.
+A: Sim. Os planos Pro e Growth incluem um app para iOS e Android. Ele funciona sem conexão com a internet e sincroniza os dados quando você volta a ficar online.
 
 Q: Como funciona o check-in online?
 A: Os hóspedes recebem um link pessoal e seguro e enviam pelo celular, antes da chegada, os dados do documento, os acompanhantes e a assinatura digital. Disponível nos planos Pro e Growth.
@@ -7018,11 +7035,11 @@ Três formas de automatizar as mensagens dos hóspedes do Booking.com: modelos, 
 
 ## Como responder às mensagens de hóspedes com IA: guia prático
 18 de setembro de 2026
-Benefícios, riscos e passos de configuração para responder às mensagens dos hóspedes do hotel com IA. Quais perguntas automatizar e quais devem ficar com a sua equipe.
+Benefícios, riscos e como configurar a IA para responder às mensagens dos hóspedes do hotel. Quais perguntas automatizar e quais deixar com a sua equipe.
 
-## Como escolher um sistema para hotel (PMS) para um hotel pequeno
+## Como escolher um sistema para hotel pequeno
 10 de setembro de 2026
-7 critérios para escolher um PMS hoteleiro para um hotel pequeno ou boutique: channel manager, modelo de preços, mensagens com hóspedes, acesso pelo celular e mais.
+7 critérios para escolher o PMS de um hotel pequeno ou boutique: channel manager, modelo de preços, mensagens com hóspedes, acesso pelo celular e mais.
 
 ---
 # Como responder às mensagens de hóspedes com IA: guia prático
@@ -7082,10 +7099,10 @@ Q: Os hóspedes vão saber que estão falando com uma IA?
 A: As respostas são escritas em nome do hotel e no tom dele. Por transparência, o hotel pode informar na mensagem de boas-vindas que a assistente é uma IA.
 
 ---
-# Como escolher um sistema para hotel (PMS) para um hotel pequeno
+# Como escolher um sistema para hotel pequeno
 URL: https://hostliopro.com/pt/blog/como-escolher-sistema-para-hotel-pequeno/
 
-## Como escolher um sistema para hotel (PMS) para um hotel pequeno
+## Como escolher um sistema para hotel pequeno
 Pela equipe de produto do Hostlio Pro , as pessoas que desenvolvem o Hostlio Pro. Publicado em 10 de setembro de 2026 , atualizado em 23 de setembro de 2026
 
 Resposta curta: O sistema para hotel (PMS) certo para um hotel pequeno tem channel manager integrado, preço fixo e transparente, uma só caixa de entrada para as mensagens dos hóspedes, acesso pelo celular e implantação no mesmo dia. Sistemas corporativos com centenas de funções costumam ficar subutilizados por equipes pequenas.
@@ -7149,7 +7166,7 @@ Em uma pousada, uma só pessoa cuida das mensagens tarde da noite, das reservas 
 Teste grátis por 7 dias Agendar demonstração
 
 ## O que é um sistema para pousada?
-Um sistema para pousada permite que pequenas hospedagens de 1 a 10 quartos gerenciem reservas, disponibilidade e comunicação com hóspedes em um só lugar. O Hostlio Pro acrescenta o Lio, um assistente de IA que responde às perguntas dos hóspedes 24/7 em mais de 30 idiomas. O plano Starter custa US$ 49 por mês para hospedagens de até 10 quartos.
+Um sistema para pousada permite que pequenas hospedagens de 1 a 10 quartos gerenciem reservas, disponibilidade e comunicação com hóspedes em um só lugar. O Hostlio Pro acrescenta o Lio, um assistente de IA que responde às perguntas dos hóspedes 24/7 em mais de 30 idiomas. O plano Starter custa US$ 49 por mês para hospedagens de até 10 quartos.
 
 ## Quais são as maiores dificuldades das pousadas?
 
@@ -7172,7 +7189,7 @@ Para comparar com outros sistemas para hotel, veja nosso comparativo de sistemas
 Ver preços
 
 Q: Existe sistema para pousada grátis?
-A: Você pode testar o Hostlio Pro grátis por 7 dias. Depois disso, o Starter custa US$ 49 por mês (preço promocional de lançamento para os 50 primeiros clientes).
+A: Você pode testar o Hostlio Pro grátis por 7 dias. Depois disso, o Starter custa US$ 49 por mês (preço promocional de lançamento para os 50 primeiros clientes).
 
 Q: Serve para uma pousada de 3 quartos?
 A: Sim. O Starter foi pensado para uma hospedagem de até 10 quartos; o preço é o mesmo com menos quartos.
@@ -7181,7 +7198,7 @@ Q: Posso usar Airbnb e Booking.com juntos?
 A: Sim. O Hostlio Pro sincroniza os dois, além de mais de 100 outros canais, em um só calendário via Channex.
 
 ---
-# Sistema para Hotel Boutique com IA para Hóspedes | Hostlio Pro
+# Sistema para Hotel Boutique com IA | Hostlio Pro
 URL: https://hostliopro.com/pt/sistema-hotel-boutique/
 
 ## Sistema para hotel boutique pensado para o hóspede
@@ -7207,7 +7224,7 @@ Reservas do Booking.com, da Expedia e do Airbnb aparecem em um só mapa de reser
 Com check-in online e assinatura digital, o hóspede recebe um drinque de boas-vindas em vez de um formulário.
 
 ## Qual plano é o ideal?
-Para hotéis boutique de 10 a 50 quartos, recomendamos o Pro : 5.000 mensagens de IA por mês, WhatsApp e caixas de entrada das OTAs (Booking.com, Airbnb, Expedia), check-in online, venda de transfers e passeios e o app para iOS.
+Para hotéis boutique de 10 a 50 quartos, recomendamos o Pro : 5.000 mensagens de IA por mês, WhatsApp e caixas de entrada das OTAs (Booking.com, Airbnb, Expedia), check-in online, venda de transfers e passeios e o app para iOS e Android.
 
 Para comparar com outros sistemas para hotel, veja nosso comparativo de sistemas para hotel .
 Ver preços
@@ -7304,7 +7321,7 @@ Q: De quantas mensagens de IA eu preciso?
 A: Cerca de 150 respostas automáticas por dia dão aproximadamente 4.500 por mês, o que se encaixa no plano Pro.
 
 ---
-# Comparativo de Sistemas para Hotel 2026: Preços | Hostlio Pro
+# Comparativo de Sistemas para Hotel 2026 | Hostlio Pro
 URL: https://hostliopro.com/pt/comparativo-sistemas-para-hotel/
 
 ## Comparativo de sistemas para hotel (2026)
@@ -7314,7 +7331,7 @@ Comparamos cinco sistemas de gestão hoteleira populares entre hotéis independe
 Resposta curta: para hotéis com uma única propriedade, de 1 a 150 quartos e muitos hóspedes estrangeiros, um sistema de preço fixo com mensagens por IA incluídas (como o Hostlio Pro) mantém o orçamento previsível. Grupos com várias propriedades e necessidades corporativas podem considerar plataformas com preço sob consulta, como Mews ou Cloudbeds; propriedades na Turquia que buscam suporte local e uma rede B2B podem olhar o HotelRunner; pequenas propriedades que querem a rede da SiteMinder podem considerar o Little Hotelier.
 
 Comparativo de sistemas para hotel (2026) Sistema Preços publicados? A partir de Taxa por reserva Teste grátis Mensagens com hóspedes por IA Fonte
-Hostlio Pro Sim US$ 49/mês (preço de lançamento) Nenhuma, mensalidade fixa 7 dias Todos os planos (Lio, 30+ idiomas) Página de preços Verificado em setembro de 2026
+Hostlio Pro Sim US$ 49/mês (preço de lançamento) Nenhuma, mensalidade fixa 7 dias Todos os planos (Lio, 30+ idiomas) Página de preços Verificado em setembro de 2026
 Cloudbeds Não, sob consulta Sob consulta Informa que não cobra comissão adicional sobre reservas do Booking Engine e do Channel Manager Não informado na página de preços Não informado separadamente na página de preços Página de preços Verificado em setembro de 2026
 Mews Não, sob consulta Sob consulta Não informado na página de preços Não informado na página de preços Resumos de preferências dos hóspedes por IA no plano Advanced; mensagens não informadas separadamente Página de preços Verificado em setembro de 2026
 Little Hotelier Calculado pelo número de quartos Pela calculadora de preços Taxa de 1% por reserva no plano Basics 30 dias Não informado na página de preços Página de preços Verificado em setembro de 2026
@@ -7445,7 +7462,7 @@ A: O risco é baixo quando o assistente usa apenas as informações fornecidas p
 URL: https://hostliopro.com/pt/privacidade/
 
 ## Política de privacidade
-Última atualização: 23 de setembro de 2026 , Loti Members LLC, 2108 N ST STE N, Sacramento, CA 95816. Este texto é uma tradução do original em inglês; em caso de divergência, prevalece a versão em inglês .
+Última atualização: 3 de outubro de 2026 , Loti Members LLC, 2108 N ST STE N, Sacramento, CA 95816. Este texto é uma tradução do original em inglês; em caso de divergência, prevalece a versão em inglês .
 
 Esta Política de Privacidade explica como o Hostlio Pro, operado pela Loti Members LLC («nós»), coleta, usa e compartilha dados pessoais quando você visita hostliopro.com, se cadastra ou usa o painel, o app e os recursos para hóspedes do Hostlio Pro.
 
@@ -7460,8 +7477,8 @@ Para os dados dos nossos clientes (proprietários e equipes de hotéis) e visita
 - Dados de hóspedes tratados para os hotéis: nome, contatos, dados da reserva e conteúdo das mensagens recebidas no WhatsApp e nas caixas das OTAs
 - Dados do check-in online: dados e imagens do documento de identidade, data de nascimento, nacionalidade, acompanhantes e assinatura digital, quando o hotel usa o check-in online. Tratamos esses dados como sensíveis
 - Dados de cadastro e segurança: endereço IP, e-mail em hash e resultado das tentativas de cadastro, para prevenir fraudes e abusos
-- Origem de marketing: a primeira campanha ou página que trouxe você ao site (por exemplo, parâmetros UTM e site de origem), guardada no navegador e enviada com o cadastro
-- Dados de uso: como o painel e o app são usados, e registros técnicos
+- Origem de marketing: só se você chegar por um link com parâmetros de campanha (parâmetros UTM ou um identificador de clique de anúncio): esses parâmetros, a página de entrada e o horário da primeira visita, guardados no navegador e enviados a nós só com o formulário de cadastro ou de contato
+- Dados de uso: como o painel e o app são usados, registros técnicos e, se você usa o app, o token de notificações push do seu dispositivo
 ## 3. Como usamos os dados
 
 - Prestar o serviço: sincronizar canais, mostrar reservas, enviar mensagens a hóspedes e fazer o check-in online
@@ -7485,6 +7502,7 @@ Anthropic, PBC USA Processamento por IA das mensagens de hóspedes para redigir 
 Meta Platforms, Inc. (WhatsApp Business Platform) USA / Ireland Envio e recebimento de mensagens no WhatsApp
 Channex.io Ltd United Kingdom Sincronização de disponibilidade, tarifas, reservas e mensagens das OTAs
 Make (Celonis) EU Formulário de contato e automação interna
+Google LLC / Google Ireland Ltd. (Firebase Cloud Messaging) USA / global Notificações push no app do Hostlio Pro para iOS e Android (token push do dispositivo, identificadores da instância do app e conteúdo da notificação, como alertas de novas mensagens ou reservas)
 Twilio Inc.* USA Números de WhatsApp e cobrança de mensagens para hotéis
 Twilio SendGrid* USA E-mail transacional
 
@@ -7512,7 +7530,7 @@ Turquia (KVKK): nos termos do artigo 11 da Lei nº 6698, você pode saber se seu
 Para exercer qualquer direito, escreva para hello@hostliopro.com . Para encerrar sua conta, veja Excluir sua conta .
 
 ## 10. Cookies e armazenamento do navegador
-O painel usa cookies e armazenamento essenciais para manter sua sessão. O site guarda o idioma escolhido e a primeira origem de marketing no armazenamento local do navegador. Não usamos cookies de publicidade. Se adicionarmos análise de tráfego, atualizaremos esta política antes.
+O painel usa cookies e armazenamento essenciais para manter sua sessão. O site guarda o idioma escolhido no armazenamento local do navegador. Para medir o marketing, nada é guardado em visitas comuns: só quando você chega por um link com parâmetros de campanha (utm_source, utm_medium, utm_campaign, utm_term, utm_content ou um identificador de clique de anúncio: gclid, msclkid, ttclid, fbclid) o site guarda esses parâmetros, o caminho da página de entrada e o horário dessa primeira visita no armazenamento local, na chave hostlio_acq . Nenhum cookie é criado para isso. O domínio do site de origem é lido só durante a visualização da página atual e não é guardado. Esse registro é próprio (first-party): o site nunca o compartilha com redes de anúncios, ele só é enviado a nós se você enviar o formulário de cadastro ou de contato (junto com esse envio) e é apagado automaticamente após 90 dias. Nos baseamos em nosso legítimo interesse em medir quais canais de marketing trazem clientes; você pode se opor e apagar o registro a qualquer momento limpando os dados do site hostliopro.com no navegador. Não usamos cookies de publicidade. Se adicionarmos análise de tráfego, atualizaremos esta política antes.
 
 ## 11. WhatsApp e mensagens com hóspedes
 O Hostlio Pro se conecta à plataforma WhatsApp Business e às caixas das OTAs para enviar e receber mensagens de hóspedes em nome dos hotéis. Os telefones dos hóspedes são usados só para falar sobre a estadia. Os hóspedes podem deixar de receber mensagens pedindo ao hotel.
@@ -7533,7 +7551,7 @@ Publicaremos as alterações nesta página e atualizaremos a data. Alterações 
 URL: https://hostliopro.com/pt/termos/
 
 ## Termos de serviço
-Última atualização: 23 de setembro de 2026 , Loti Members LLC, 2108 N ST STE N, Sacramento, CA 95816. Este texto é uma tradução do original em inglês; em caso de divergência, prevalece a versão em inglês .
+Última atualização: 3 de outubro de 2026 , Loti Members LLC, 2108 N ST STE N, Sacramento, CA 95816. Este texto é uma tradução do original em inglês; em caso de divergência, prevalece a versão em inglês .
 
 Estes Termos de Serviço («Termos») regem o uso do Hostlio Pro, operado pela Loti Members LLC («nós»). Ao criar uma conta ou usar o serviço você aceita estes Termos. Se usar o Hostlio Pro para uma empresa, você os aceita em nome dela.
 
@@ -7654,6 +7672,7 @@ Anthropic, PBC USA Processamento por IA das mensagens de hóspedes para redigir 
 Meta Platforms, Inc. (WhatsApp Business Platform) USA / Ireland Envio e recebimento de mensagens no WhatsApp
 Channex.io Ltd United Kingdom Sincronização de disponibilidade, tarifas, reservas e mensagens das OTAs
 Make (Celonis) EU Formulário de contato e automação interna
+Google LLC / Google Ireland Ltd. (Firebase Cloud Messaging) USA / global Notificações push no app do Hostlio Pro para iOS e Android (token push do dispositivo, identificadores da instância do app e conteúdo da notificação, como alertas de novas mensagens ou reservas)
 Twilio Inc.* USA Números de WhatsApp e cobrança de mensagens para hotéis
 Twilio SendGrid* USA E-mail transacional
 
@@ -7668,7 +7687,7 @@ Se encontrar uma vulnerabilidade, escreva para hello@hostliopro.com com os detal
 Mais detalhes na Política de Privacidade e nos Termos de Serviço .
 
 ---
-# Calculadora de ROI de mensagens com IA para hotéis | Hostlio Pro
+# Calculadora de ROI de mensagens com IA | Hostlio Pro
 URL: https://hostliopro.com/pt/calculadora-roi/
 
 ## Quanto tempo a Lio pode economizar para você?
@@ -7678,8 +7697,10 @@ Quartos Mensagens de hóspedes por dia Minutos para responder uma mensagem Parce
 Horas de equipe economizadas por mês –
 Custo de equipe economizado por mês –
 Mensagens noturnas respondidas por mês –
+Respostas de IA necessárias por mês –
 Plano sugerido –
 Economia após o preço do plano –
+
 Teste o Hostlio Pro grátis por 7 dias
 
 São apenas estimativas, com base nos números informados e em meses de 30 dias. O resultado depende dos seus hóspedes, das configurações e dos assuntos que você deixa a Lio responder sozinha. Preços mensais early bird em USD.
@@ -7760,7 +7781,7 @@ Chaque réservation apparaît dans la couleur de son canal. Changer de chambre, 
 
 - Changements de chambre en glisser-déposer
 - Réservations colorées par canal
-- Le même calendrier sur le web et sur iOS Toutes les fonctionnalités
+- Le même calendrier sur le web, iOS et Android Toutes les fonctionnalités
 Planning des chambres Septembre, semaine 3
 
 Lun 15
@@ -7853,7 +7874,7 @@ Dans la langue où le client écrit, dans cette langue il reçoit sa réponse.
 Türkçe English Deutsch العربية Русский 日本語 中文 Français
 
 ## Application mobile
-Réservations, messages et check-ins sur iOS, même hors connexion.
+Réservations, messages et check-ins sur iOS et Android, même hors connexion.
 
 ## Conçu pour tous les types d’établissements
 Pensé pour les établissements indépendants de 1 à 150 chambres.
@@ -7882,12 +7903,12 @@ Un abonnement mensuel fixe, sans engagement de longue durée. Chaque formule est
 ## Starter
 Pour les chambres d'hôtes et les petits hôtels boutique
 
-$49 / mois
+49 $ / mois
 
-Prix de lancement (normalement $59 )
+Prix de lancement (normalement 59 $ )
 
 - 1 établissement, jusqu'à 10 chambres
-- 1 000 messages IA / mois
+- 1 000 messages IA / mois
 - Synchronisation des réservations OTA (100+ canaux)
 - Messagerie IA sur WhatsApp
 - Planning des chambres (calendrier des réservations)
@@ -7899,12 +7920,12 @@ Le plus populaire
 ## Pro
 Pour les hôtels indépendants en croissance
 
-$89 / mois
+89 $ / mois
 
-Prix de lancement (normalement $109 )
+Prix de lancement (normalement 109 $ )
 
 - 1 établissement, jusqu'à 50 chambres
-- 5 000 messages IA / mois
+- 5 000 messages IA / mois
 - Tout le forfait Starter
 - WhatsApp + messagerie des OTA (Booking.com, Airbnb, Expedia)
 - Check-in en ligne avec signature électronique
@@ -7915,12 +7936,12 @@ Commencer avec Pro
 ## Growth
 Pour les équipes qui gèrent deux établissements
 
-$149 / mois
+149 $ / mois
 
-Prix de lancement (normalement $189 )
+Prix de lancement (normalement 189 $ )
 
 - Jusqu'à 2 établissements, 150 chambres
-- 12 000 messages IA / mois
+- 12 000 messages IA / mois
 - Tout le forfait Pro
 - Synchronisation des canaux prioritaire
 - Support prioritaire (jour ouvré suivant)
@@ -7953,7 +7974,7 @@ Quand le client est associé à une réservation, les réponses s’appuient sur
 
 Découvrir Lio
 
-Qu’est-ce que Hostlio Pro ? Hostlio Pro est un logiciel de gestion hôtelière dans le cloud (un PMS hôtelier) pour les hôtels indépendants et les chambres d’hôtes de 1 à 150 chambres. Il confie la communication avec les clients à l’IA, regroupe les réservations des OTA dans un seul calendrier et déplace le check-in sur le téléphone du client. Il se gère depuis le web et une application iOS, et il est utilisé dans plus de 20 pays.
+Qu’est-ce que Hostlio Pro ? Hostlio Pro est un logiciel de gestion hôtelière dans le cloud (un PMS hôtelier) pour les hôtels indépendants et les chambres d’hôtes de 1 à 150 chambres. Il confie la communication avec les clients à l’IA, regroupe les réservations des OTA dans un seul calendrier et déplace le check-in sur le téléphone du client. Il se gère depuis le web et une application iOS et Android, et il est utilisé dans plus de 20 pays.
 
 30+ langues prises en charge
 100+ OTA et canaux de vente
@@ -7981,7 +8002,7 @@ Q: Qu'est-ce que Hostlio Pro ?
 A: Hostlio Pro est un logiciel de gestion hôtelière (PMS) propulsé par l'IA, conçu pour les hôtels indépendants, les hôtels boutique et les chambres d'hôtes. Il réunit sur une seule plateforme Lio, un assistant IA qui répond aux messages des clients 24 h/24 et 7 j/7 dans plus de 30 langues, un channel manager connecté à plus de 100 OTA, un calendrier de réservations en glisser-déposer et le check-in en ligne.
 
 Q: Combien coûte Hostlio Pro ?
-A: Il existe trois forfaits : Starter à 49 $/mois, Pro à 89 $/mois et Growth à 149 $/mois. Ces prix incluent une remise de lancement de 20 % réservée aux 50 premiers clients, garantie tant que vous restez abonné. Les prix normaux sont de 59 $, 109 $ et 189 $.
+A: Il existe trois forfaits : Starter à 49 $/mois, Pro à 89 $/mois et Growth à 149 $/mois. Ces prix incluent une remise de lancement de 20 % réservée aux 50 premiers clients, garantie tant que vous restez abonné. Les prix normaux sont de 59 $, 109 $ et 189 $.
 
 Q: Y a-t-il un essai gratuit ?
 A: Oui. Chaque forfait comprend un essai gratuit de 7 jours. Une carte bancaire est demandée à l'inscription, mais aucun prélèvement n'a lieu avant la fin de l'essai, et vous pouvez résilier à tout moment avant. Aucun engagement de longue durée.
@@ -7993,7 +8014,7 @@ Q: Dans quelles langues Lio répond-il ?
 A: Lio répond dans plus de 30 langues, dont l'anglais, le turc, l'arabe, le russe, l'allemand, le japonais et le chinois. Il répond dans la langue du client, et vous voyez une traduction dans votre tableau de bord.
 
 ---
-# Messagerie client IA pour hôtels en 30+ langues | Hostlio Pro
+# Messagerie client IA pour hôtel en 30+ langues | Hostlio Pro
 URL: https://hostliopro.com/fr/assistant-ia-clients/
 
 ## Lio, l'assistant IA de messagerie client pour hôtels
@@ -8034,11 +8055,11 @@ Un message correspond à une réponse envoyée par Lio à un client.
 
 Forfait Messages IA / mois Canaux de messagerie
 
-Starter 1 000 WhatsApp
+Starter 1 000 WhatsApp
 
-Pro 5 000 WhatsApp + messageries OTA (Booking.com, Airbnb, Expedia)
+Pro 5 000 WhatsApp + messageries OTA (Booking.com, Airbnb, Expedia)
 
-Growth 12 000 WhatsApp + messageries OTA (Booking.com, Airbnb, Expedia)
+Growth 12 000 WhatsApp + messageries OTA (Booking.com, Airbnb, Expedia)
 
 Q: Et si Lio donne une information erronée ?
 A: Lio utilise uniquement les informations de l'hôtel et les données de réservation que vous fournissez. Lorsqu'il n'est pas sûr, il vous transmet le message au lieu de deviner. Vous pouvez aussi valider chaque réponse avant son envoi.
@@ -8176,7 +8197,7 @@ Q: Et si un client ne remplit pas le formulaire ?
 A: Enregistrez-le de la manière habituelle. Votre équipe peut aussi saisir les informations à la réception avec l'application mobile Hostlio Pro.
 
 ---
-# Fonctionnalités du logiciel de gestion hôtelière | Hostlio Pro
+# Fonctions du logiciel de gestion hôtelière | Hostlio Pro
 URL: https://hostliopro.com/fr/fonctionnalites/
 
 ## Toutes les fonctionnalités du logiciel hôtelier Hostlio Pro
@@ -8207,7 +8228,7 @@ Générez en un clic, à partir des données de réservation, les lettres d'invi
 Lio propose transferts aéroport et excursions pendant la conversation et transmet la demande à votre équipe.
 
 ## Application mobile
-Gérez réservations, messages et check-ins hors de l'hôtel avec l'application iOS. Elle fonctionne hors ligne et se synchronise dès que vous êtes de nouveau connecté.
+Gérez réservations, messages et check-ins hors de l'hôtel avec l'application iOS et Android. Elle fonctionne hors ligne et se synchronise dès que vous êtes de nouveau connecté.
 
 ## Fonctionnalités par forfait
 
@@ -8217,7 +8238,7 @@ Fonctionnalité Starter Pro Growth
 
 Nombre de chambres max. 10 50 150
 
-Messages IA / mois 1 000 5 000 12 000
+Messages IA / mois 1 000 5 000 12 000
 
 Synchronisation avec plus de 100 OTA Oui Oui Prioritaire
 
@@ -8233,7 +8254,7 @@ Check-in en ligne et signature électronique Non Oui Oui
 
 Vente de transferts et d'excursions Non Oui Oui
 
-Application mobile iOS Non Oui Oui
+Application mobile iOS et Android Non Oui Oui
 
 Support prioritaire et appel de prise en main Non Non Oui
 
@@ -8246,7 +8267,7 @@ Q: À quelles OTA Hostlio Pro est-il connecté ?
 A: Via Channex, Hostlio Pro se connecte à plus de 100 canaux, dont Booking.com, Airbnb, Expedia, Agoda, Trip.com, Hotels.com, Hotelbeds, Hostelworld et Google Hotels. Disponibilités, tarifs et réservations restent synchronisés sur l'ensemble de ces canaux.
 
 ---
-# Tarifs du logiciel hôtelier : dès 49 $/mois | Hostlio Pro
+# Tarifs du logiciel hôtelier : dès 49 $/mois | Hostlio Pro
 URL: https://hostliopro.com/fr/tarifs/
 
 ## Tarifs de Hostlio Pro
@@ -8260,12 +8281,12 @@ Un abonnement mensuel fixe. Aucune commission sur les réservations, aucuns frai
 ## Starter
 Pour les chambres d'hôtes et les petits hôtels boutique
 
-$49 / mois
+49 $ / mois
 
-Prix de lancement (normalement $59 )
+Prix de lancement (normalement 59 $ )
 
 - 1 établissement, jusqu'à 10 chambres
-- 1 000 messages IA / mois
+- 1 000 messages IA / mois
 - Synchronisation des réservations OTA (100+ canaux)
 - Messagerie IA sur WhatsApp
 - Planning des chambres (calendrier des réservations)
@@ -8277,12 +8298,12 @@ Le plus populaire
 ## Pro
 Pour les hôtels indépendants en croissance
 
-$89 / mois
+89 $ / mois
 
-Prix de lancement (normalement $109 )
+Prix de lancement (normalement 109 $ )
 
 - 1 établissement, jusqu'à 50 chambres
-- 5 000 messages IA / mois
+- 5 000 messages IA / mois
 - Tout le forfait Starter
 - WhatsApp + messagerie des OTA (Booking.com, Airbnb, Expedia)
 - Check-in en ligne avec signature électronique
@@ -8293,12 +8314,12 @@ Commencer avec Pro
 ## Growth
 Pour les équipes qui gèrent deux établissements
 
-$149 / mois
+149 $ / mois
 
-Prix de lancement (normalement $189 )
+Prix de lancement (normalement 189 $ )
 
 - Jusqu'à 2 établissements, 150 chambres
-- 12 000 messages IA / mois
+- 12 000 messages IA / mois
 - Tout le forfait Pro
 - Synchronisation des canaux prioritaire
 - Support prioritaire (jour ouvré suivant)
@@ -8311,7 +8332,7 @@ Prix en dollars américains, hors taxes. Dernière mise à jour : 23 septembre 2
 ## Quel forfait vous convient ?
 
 ## Starter
-Chambres d'hôtes et hôtels boutique jusqu'à 10 chambres, qui envoient moins de 1 000 réponses par mois et veulent démarrer avec la synchronisation des canaux et les réponses IA.
+Chambres d'hôtes et hôtels boutique jusqu'à 10 chambres, qui envoient moins de 1 000 réponses par mois et veulent démarrer avec la synchronisation des canaux et les réponses IA.
 
 ## Pro
 Hôtels de 11 à 50 chambres qui veulent que Lio gère aussi les messages OTA, utiliser le check-in en ligne et vendre transferts et excursions.
@@ -8320,7 +8341,7 @@ Hôtels de 11 à 50 chambres qui veulent que Lio gère aussi les messages OTA, u
 Deux établissements ou jusqu'à 150 chambres, lorsque vous avez besoin d'un support prioritaire, d'une prise en main personnalisée et d'une utilisation en marque blanche.
 
 Q: Combien coûte Hostlio Pro ?
-A: Il existe trois forfaits : Starter à 49 $/mois, Pro à 89 $/mois et Growth à 149 $/mois. Ces prix incluent une remise de lancement de 20 % réservée aux 50 premiers clients, garantie tant que vous restez abonné. Les prix normaux sont de 59 $, 109 $ et 189 $.
+A: Il existe trois forfaits : Starter à 49 $/mois, Pro à 89 $/mois et Growth à 149 $/mois. Ces prix incluent une remise de lancement de 20 % réservée aux 50 premiers clients, garantie tant que vous restez abonné. Les prix normaux sont de 59 $, 109 $ et 189 $.
 
 Q: Y a-t-il un essai gratuit ?
 A: Oui. Chaque forfait comprend un essai gratuit de 7 jours. Une carte bancaire est demandée à l'inscription, mais aucun prélèvement n'a lieu avant la fin de l'essai, et vous pouvez résilier à tout moment avant. Aucun engagement de longue durée.
@@ -8347,7 +8368,7 @@ Les questions les plus courantes sur les fonctionnalités, les tarifs et la mise
 
 Qu'est-ce que Hostlio Pro ? Hostlio Pro est un logiciel de gestion hôtelière (PMS) propulsé par l'IA, conçu pour les hôtels indépendants, les hôtels boutique et les chambres d'hôtes. Il réunit sur une seule plateforme Lio, un assistant IA qui répond aux messages des clients 24 h/24 et 7 j/7 dans plus de 30 langues, un channel manager connecté à plus de 100 OTA, un calendrier de réservations en glisser-déposer et le check-in en ligne.
 
-Combien coûte Hostlio Pro ? Il existe trois forfaits : Starter à 49 $/mois, Pro à 89 $/mois et Growth à 149 $/mois. Ces prix incluent une remise de lancement de 20 % réservée aux 50 premiers clients, garantie tant que vous restez abonné. Les prix normaux sont de 59 $, 109 $ et 189 $.
+Combien coûte Hostlio Pro ? Il existe trois forfaits : Starter à 49 $/mois, Pro à 89 $/mois et Growth à 149 $/mois. Ces prix incluent une remise de lancement de 20 % réservée aux 50 premiers clients, garantie tant que vous restez abonné. Les prix normaux sont de 59 $, 109 $ et 189 $.
 
 Y a-t-il un essai gratuit ? Oui. Chaque forfait comprend un essai gratuit de 7 jours. Une carte bancaire est demandée à l'inscription, mais aucun prélèvement n'a lieu avant la fin de l'essai, et vous pouvez résilier à tout moment avant. Aucun engagement de longue durée.
 
@@ -8357,7 +8378,7 @@ Dans quelles langues Lio répond-il ? Lio répond dans plus de 30 langues, dont 
 
 À quels types d'hôtels s'adresse Hostlio Pro ? Aux établissements indépendants de 1 à 150 chambres : hôtels boutique, hôtels urbains, chambres d'hôtes, résidences hôtelières et auberges de jeunesse.
 
-Existe-t-il une application mobile ? Oui. Les forfaits Pro et Growth incluent une application iOS. Elle fonctionne sans connexion Internet et synchronise les données dès que vous êtes de nouveau en ligne.
+Existe-t-il une application mobile ? Oui. Les forfaits Pro et Growth incluent une application iOS et Android. Elle fonctionne sans connexion Internet et synchronise les données dès que vous êtes de nouveau en ligne.
 
 Comment fonctionne le check-in en ligne ? Les clients reçoivent un lien sécurisé personnel et envoient depuis leur téléphone, avant leur arrivée, leurs données d'identité, leurs accompagnants et leur signature électronique. Disponible avec Pro et Growth.
 
@@ -8373,7 +8394,7 @@ Q: Qu'est-ce que Hostlio Pro ?
 A: Hostlio Pro est un logiciel de gestion hôtelière (PMS) propulsé par l'IA, conçu pour les hôtels indépendants, les hôtels boutique et les chambres d'hôtes. Il réunit sur une seule plateforme Lio, un assistant IA qui répond aux messages des clients 24 h/24 et 7 j/7 dans plus de 30 langues, un channel manager connecté à plus de 100 OTA, un calendrier de réservations en glisser-déposer et le check-in en ligne.
 
 Q: Combien coûte Hostlio Pro ?
-A: Il existe trois forfaits : Starter à 49 $/mois, Pro à 89 $/mois et Growth à 149 $/mois. Ces prix incluent une remise de lancement de 20 % réservée aux 50 premiers clients, garantie tant que vous restez abonné. Les prix normaux sont de 59 $, 109 $ et 189 $.
+A: Il existe trois forfaits : Starter à 49 $/mois, Pro à 89 $/mois et Growth à 149 $/mois. Ces prix incluent une remise de lancement de 20 % réservée aux 50 premiers clients, garantie tant que vous restez abonné. Les prix normaux sont de 59 $, 109 $ et 189 $.
 
 Q: Y a-t-il un essai gratuit ?
 A: Oui. Chaque forfait comprend un essai gratuit de 7 jours. Une carte bancaire est demandée à l'inscription, mais aucun prélèvement n'a lieu avant la fin de l'essai, et vous pouvez résilier à tout moment avant. Aucun engagement de longue durée.
@@ -8388,7 +8409,7 @@ Q: À quels types d'hôtels s'adresse Hostlio Pro ?
 A: Aux établissements indépendants de 1 à 150 chambres : hôtels boutique, hôtels urbains, chambres d'hôtes, résidences hôtelières et auberges de jeunesse.
 
 Q: Existe-t-il une application mobile ?
-A: Oui. Les forfaits Pro et Growth incluent une application iOS. Elle fonctionne sans connexion Internet et synchronise les données dès que vous êtes de nouveau en ligne.
+A: Oui. Les forfaits Pro et Growth incluent une application iOS et Android. Elle fonctionne sans connexion Internet et synchronise les données dès que vous êtes de nouveau en ligne.
 
 Q: Comment fonctionne le check-in en ligne ?
 A: Les clients reçoivent un lien sécurisé personnel et envoient depuis leur téléphone, avant leur arrivée, leurs données d'identité, leurs accompagnants et leur signature électronique. Disponible avec Pro et Growth.
@@ -8462,19 +8483,19 @@ Pourquoi les hôtels se retrouvent en surbooking et comment l'éviter : channel 
 21 septembre 2026
 Trois façons d'automatiser les messages des clients Booking.com : modèles de réponse, messages programmés et assistant IA.
 
-## Répondre aux messages des clients de l'hôtel avec l'IA : guide pratique
+## Répondre aux clients de l'hôtel avec l'IA : guide pratique
 18 septembre 2026
-Avantages, risques et étapes de mise en place pour répondre aux messages des clients de votre hôtel avec l'IA. Quelles questions automatiser et lesquelles laisser à votre équipe.
+Avantages, risques et mise en place : répondre avec l'IA aux messages de vos clients. Quelles questions automatiser, lesquelles laisser à l'équipe.
 
-## Comment choisir un logiciel de gestion hôtelière (PMS) pour un petit hôtel
+## Choisir un logiciel de gestion hôtelière pour un petit hôtel
 10 septembre 2026
-7 critères pour choisir un PMS hôtelier pour un petit hôtel ou un hôtel boutique : channel manager, modèle tarifaire, messagerie client, accès mobile et plus encore.
+7 critères pour choisir le PMS d'un petit hôtel ou d'un hôtel boutique : channel manager, tarification, messagerie client, accès mobile et plus encore.
 
 ---
-# Répondre aux messages des clients de l'hôtel avec l'IA : guide pratique
+# Répondre aux clients de l'hôtel avec l'IA : guide pratique
 URL: https://hostliopro.com/fr/blog/repondre-aux-messages-clients-avec-ia/
 
-## Répondre aux messages des clients de l'hôtel avec l'IA : guide pratique
+## Répondre aux clients de l'hôtel avec l'IA : guide pratique
 Par l' équipe produit Hostlio Pro , celle qui conçoit Hostlio Pro. Publié le 18 septembre 2026 , mis à jour le 23 septembre 2026
 
 Réponse courte : la plupart des messages reçus par un hôtel sont des questions récurrentes (heure d'arrivée, parking, transferts, petit-déjeuner). Les confier à un assistant IA formé avec les informations de votre hôtel permet aux clients d'obtenir une réponse en quelques secondes, dans leur langue. Les remises, les réclamations et les demandes particulières doivent rester entre les mains de votre équipe.
@@ -8519,7 +8540,7 @@ Les clients qui écrivent dans leur propre langue donnent plus de détails et fo
 
 ## Comment cela fonctionne dans Hostlio Pro
 
-Lio , l'assistant IA de Hostlio Pro, utilise les informations de votre hôtel et les données de réservation pour répondre aux messages WhatsApp et OTA (Booking.com, Airbnb, Expedia) dans plus de 30 langues. Les forfaits incluent entre 1 000 et 12 000 messages IA par mois ; consultez la page Tarifs pour plus de détails.
+Lio , l'assistant IA de Hostlio Pro, utilise les informations de votre hôtel et les données de réservation pour répondre aux messages WhatsApp et OTA (Booking.com, Airbnb, Expedia) dans plus de 30 langues. Les forfaits incluent entre 1 000 et 12 000 messages IA par mois ; consultez la page Tarifs pour plus de détails.
 
 Q: L'IA peut-elle donner de fausses informations aux clients ?
 A: Le risque est minime lorsque l'assistant s'appuie uniquement sur les informations fournies par l'hôtel et transmet à l'équipe les questions dont il n'est pas sûr. Il est recommandé de commencer en mode validation.
@@ -8528,10 +8549,10 @@ Q: Les clients sauront-ils qu'ils parlent à une IA ?
 A: Les réponses sont rédigées au nom de l'hôtel et dans son ton. Par souci de transparence, l'hôtel peut indiquer dans le message d'accueil que l'assistant est une IA.
 
 ---
-# Comment choisir un logiciel de gestion hôtelière (PMS) pour un petit hôtel
+# Choisir un logiciel de gestion hôtelière pour un petit hôtel
 URL: https://hostliopro.com/fr/blog/choisir-logiciel-gestion-hoteliere-petit-hotel/
 
-## Comment choisir un logiciel de gestion hôtelière (PMS) pour un petit hôtel
+## Choisir un logiciel de gestion hôtelière pour un petit hôtel
 Par l' équipe produit Hostlio Pro , celle qui conçoit Hostlio Pro. Publié le 10 septembre 2026 , mis à jour le 23 septembre 2026
 
 Réponse courte : le bon logiciel de gestion hôtelière (PMS) pour un petit hôtel intègre un channel manager, propose un prix fixe et transparent, une boîte de réception unique pour les messages clients, un accès mobile et une mise en place le jour même. Les systèmes conçus pour les grands groupes, avec des centaines de fonctionnalités, restent souvent inexploités par les petites équipes.
@@ -8595,7 +8616,7 @@ Dans des chambres d’hôtes, une seule personne gère les messages tardifs, les
 Essayez gratuitement pendant 7 jours Demander une démo
 
 ## Qu’est-ce qu’un logiciel pour chambres d’hôtes ?
-Un logiciel pour chambres d’hôtes permet aux petits établissements de 1 à 10 chambres de gérer réservations, disponibilités et communication avec les clients au même endroit. Hostlio Pro y ajoute Lio, un assistant IA qui répond aux questions des clients 24h/24 dans plus de 30 langues. La formule Starter coûte 49 $ par mois pour les établissements jusqu’à 10 chambres.
+Un logiciel pour chambres d’hôtes permet aux petits établissements de 1 à 10 chambres de gérer réservations, disponibilités et communication avec les clients au même endroit. Hostlio Pro y ajoute Lio, un assistant IA qui répond aux questions des clients 24h/24 dans plus de 30 langues. La formule Starter coûte 49 $ par mois pour les établissements jusqu’à 10 chambres.
 
 ## Quelles sont les principales difficultés des chambres d’hôtes ?
 
@@ -8612,13 +8633,13 @@ Saisir les informations des clients à l’accueil prend du temps. Le check-in e
 Les logiciels à commission coûtent plus cher à mesure que le taux d’occupation augmente. Hostlio Pro est un abonnement mensuel fixe.
 
 ## Quelle formule choisir ?
-Pour la plupart des chambres d’hôtes, la formule Starter suffit : jusqu’à 10 chambres, 1 000 messages IA par mois et la messagerie IA sur WhatsApp. Choisissez Pro si vous voulez aussi le check-in en ligne et que Lio gère les messages des OTA.
+Pour la plupart des chambres d’hôtes, la formule Starter suffit : jusqu’à 10 chambres, 1 000 messages IA par mois et la messagerie IA sur WhatsApp. Choisissez Pro si vous voulez aussi le check-in en ligne et que Lio gère les messages des OTA.
 
 Pour comparer avec d’autres logiciels hôteliers, consultez notre comparatif des logiciels hôteliers .
 Voir les tarifs
 
 Q: Existe-t-il un logiciel gratuit pour chambres d’hôtes ?
-A: Vous pouvez essayer Hostlio Pro gratuitement pendant 7 jours. Ensuite, la formule Starter coûte 49 $ par mois (prix de lancement pour les 50 premiers clients).
+A: Vous pouvez essayer Hostlio Pro gratuitement pendant 7 jours. Ensuite, la formule Starter coûte 49 $ par mois (prix de lancement pour les 50 premiers clients).
 
 Q: Convient-il à des chambres d’hôtes de 3 chambres ?
 A: Oui. Starter est conçu pour un établissement jusqu’à 10 chambres ; le prix est le même avec moins de chambres.
@@ -8653,7 +8674,7 @@ Les réservations Booking.com, Expedia et Airbnb apparaissent sur un seul planni
 Grâce au check-in en ligne et à la signature électronique, les clients reçoivent une boisson de bienvenue au lieu d’un formulaire.
 
 ## Quelle formule choisir ?
-Pour les hôtels boutique de 10 à 50 chambres, nous recommandons Pro  : 5 000 messages IA par mois, WhatsApp et messagerie des OTA (Booking.com, Airbnb, Expedia), check-in en ligne, vente de transferts et d’excursions et application iOS.
+Pour les hôtels boutique de 10 à 50 chambres, nous recommandons Pro  : 5 000 messages IA par mois, WhatsApp et messagerie des OTA (Booking.com, Airbnb, Expedia), check-in en ligne, vente de transferts et d’excursions et application iOS et Android.
 
 Pour comparer avec d’autres logiciels hôteliers, consultez notre comparatif des logiciels hôteliers .
 Voir les tarifs
@@ -8668,7 +8689,7 @@ Q: Combien d’utilisateurs puis-je ajouter ?
 A: Consultez la page des tarifs pour le détail des formules, ou posez la question à notre équipe pendant la démo.
 
 ---
-# Logiciel pour résidence hôtelière et aparthotel | Hostlio Pro
+# Logiciel de résidence hôtelière et aparthotel | Hostlio Pro
 URL: https://hostliopro.com/fr/logiciel-residence-hoteliere/
 
 ## Un logiciel pour résidences hôtelières géré à distance
@@ -8735,7 +8756,7 @@ Visites de la ville et transferts aéroport sont des extras courants en auberge�
 Les questions nocturnes n’attendent pas le matin ; l’équipe ne traite que ce qui demande une décision.
 
 ## Quelle formule choisir ?
-Pour les auberges à fort volume de messages, nous recommandons Pro avec 5 000 messages IA par mois. Préparons ensemble votre configuration au lit pendant la démo.
+Pour les auberges à fort volume de messages, nous recommandons Pro avec 5 000 messages IA par mois. Préparons ensemble votre configuration au lit pendant la démo.
 
 Pour comparer avec d’autres logiciels hôteliers, consultez notre comparatif des logiciels hôteliers .
 Voir les tarifs
@@ -8760,7 +8781,7 @@ Nous avons comparé cinq logiciels de gestion hôtelière populaires auprès des
 Réponse courte : pour les hôtels à établissement unique de 1 à 150 chambres qui accueillent beaucoup de clients internationaux, un logiciel à prix fixe incluant la messagerie IA (comme Hostlio Pro) garde le budget prévisible. Les groupes multi-établissements aux besoins de grand compte peuvent envisager des plateformes sur devis comme Mews ou Cloudbeds ; les établissements en Turquie qui veulent un support local et un réseau B2B peuvent regarder HotelRunner ; les petits établissements qui souhaitent profiter du réseau SiteMinder peuvent envisager Little Hotelier.
 
 Comparatif des logiciels hôteliers (2026) Logiciel Tarifs publiés ? À partir de Commission sur les réservations Essai gratuit Messagerie IA pour les clients Source
-Hostlio Pro Oui 49 $/mois (prix de lancement) Aucune, abonnement mensuel fixe 7 jours Toutes les formules (Lio, 30+ langues) Page tarifs Vérifié en septembre 2026
+Hostlio Pro Oui 49 $/mois (prix de lancement) Aucune, abonnement mensuel fixe 7 jours Toutes les formules (Lio, 30+ langues) Page tarifs Vérifié en septembre 2026
 Cloudbeds Non, sur devis Devis Indique ne prélever aucune commission supplémentaire sur les réservations du Booking Engine et du Channel Manager Non indiqué sur la page de tarifs Non indiqué séparément sur la page de tarifs Page tarifs Vérifié en septembre 2026
 Mews Non, sur devis Devis Non indiqué sur la page de tarifs Non indiqué sur la page de tarifs Résumés IA des préférences des clients dans Advanced ; messagerie non indiquée séparément Page tarifs Vérifié en septembre 2026
 Little Hotelier Calculés selon le nombre de chambres Via un simulateur de prix Frais de réservation de 1 % dans Basics 30 jours Non indiqué sur la page de tarifs Page tarifs Vérifié en septembre 2026
@@ -8891,7 +8912,7 @@ A: Le risque est faible lorsque l’assistant n’utilise que les informations f
 URL: https://hostliopro.com/fr/confidentialite/
 
 ## Politique de confidentialité
-Dernière mise à jour : 23 septembre 2026 , Loti Members LLC, 2108 N ST STE N, Sacramento, CA 95816. Ce texte est une traduction de l’original anglais ; en cas de divergence, la version anglaise prévaut.
+Dernière mise à jour : 3 octobre 2026 , Loti Members LLC, 2108 N ST STE N, Sacramento, CA 95816. Ce texte est une traduction de l’original anglais ; en cas de divergence, la version anglaise prévaut.
 
 La présente Politique de confidentialité explique comment Hostlio Pro, exploité par Loti Members LLC (« nous »), collecte, utilise et partage des données personnelles lorsque vous visitez hostliopro.com, vous inscrivez ou utilisez le tableau de bord, l’application mobile et les fonctions destinées aux clients de Hostlio Pro.
 
@@ -8906,8 +8927,8 @@ Pour les données de nos clients (propriétaires et personnel d’hôtels) et de
 - Données clients traitées pour les hôtels : nom, coordonnées, détails de réservation et contenu des messages reçus sur WhatsApp et dans les messageries des OTA
 - Données du check-in en ligne : informations et images de la pièce d’identité, date de naissance, nationalité, accompagnants et signature électronique, lorsque l’hôtel utilise le check-in en ligne. Nous les traitons comme des données sensibles
 - Données d’inscription et de sécurité : adresse IP, e-mail haché et résultat des tentatives d’inscription, pour prévenir la fraude et les abus
-- Source marketing : la première campagne ou page qui vous a amené sur le site (par exemple paramètres UTM et site référent), conservée dans votre navigateur et transmise avec votre inscription
-- Données d’utilisation : utilisation du tableau de bord et de l’application, et journaux techniques
+- Source marketing : uniquement si vous arrivez par un lien contenant des paramètres de campagne (paramètres UTM ou identifiant de clic publicitaire) : ces paramètres, la page d’arrivée et l’heure de votre première visite, conservés dans votre navigateur et transmis uniquement avec le formulaire d’inscription ou de contact
+- Données d’utilisation : utilisation du tableau de bord et de l’application, journaux techniques et, si vous utilisez l’application mobile, le jeton de notifications push de votre appareil
 ## 3. Utilisation des données
 
 - Fournir le service : synchroniser les canaux, afficher les réservations, envoyer les messages clients et gérer le check-in en ligne
@@ -8931,6 +8952,7 @@ Anthropic, PBC USA Traitement par IA des messages clients pour préparer les ré
 Meta Platforms, Inc. (WhatsApp Business Platform) USA / Ireland Envoi et réception de messages WhatsApp
 Channex.io Ltd United Kingdom Synchronisation des disponibilités, tarifs, réservations et messages OTA
 Make (Celonis) EU Formulaire de contact et automatisation interne
+Google LLC / Google Ireland Ltd. (Firebase Cloud Messaging) USA / global Notifications push vers l’application mobile Hostlio Pro sur iOS et Android (jeton push de l’appareil, identifiants d’instance de l’application et contenu de la notification, par exemple alertes de nouveau message ou de réservation)
 Twilio Inc.* USA Numéros WhatsApp et facturation des messages pour les hôtels
 Twilio SendGrid* USA E-mails transactionnels
 
@@ -8958,7 +8980,7 @@ Turquie (KVKK) : en vertu de l’article 11 de la loi n° 6698, vous pouvez savo
 Pour exercer vos droits, écrivez à hello@hostliopro.com . Pour fermer votre compte, voir Supprimer votre compte .
 
 ## 10. Cookies et stockage du navigateur
-Le tableau de bord utilise des cookies et un stockage essentiels pour maintenir votre session. Le site conserve votre langue et la première source marketing dans le stockage local du navigateur. Nous n’utilisons pas de cookies publicitaires. Si nous ajoutons un outil d’analyse, nous mettrons d’abord cette politique à jour.
+Le tableau de bord utilise des cookies et un stockage essentiels pour maintenir votre session. Le site conserve votre langue dans le stockage local du navigateur. Pour la mesure marketing, rien n’est enregistré lors d’une visite ordinaire : c’est uniquement si vous arrivez par un lien contenant des paramètres de campagne (utm_source, utm_medium, utm_campaign, utm_term, utm_content ou un identifiant de clic publicitaire : gclid, msclkid, ttclid, fbclid) que le site enregistre ces paramètres, le chemin de la page d’arrivée et l’heure de cette première visite dans le stockage local, sous la clé hostlio_acq . Aucun cookie n’est déposé à cet effet. Le domaine du site référent n’est lu que pour la page consultée et n’est pas conservé. Cet enregistrement est interne (first-party) : le site ne le partage jamais avec des régies publicitaires, il ne nous est transmis que si vous envoyez le formulaire d’inscription ou de contact (joint à cet envoi) et il est supprimé automatiquement au bout de 90 jours. Nous nous fondons sur notre intérêt légitime à mesurer quels canaux marketing nous amènent des clients ; vous pouvez vous y opposer et effacer cet enregistrement à tout moment en supprimant les données du site hostliopro.com dans votre navigateur. Nous n’utilisons pas de cookies publicitaires. Si nous ajoutons un outil d’analyse, nous mettrons d’abord cette politique à jour.
 
 ## 11. WhatsApp et messages clients
 Hostlio Pro se connecte à la plateforme WhatsApp Business et aux messageries des OTA pour envoyer et recevoir les messages clients au nom des hôtels. Les numéros de téléphone des clients ne servent qu’à communiquer au sujet du séjour. Les clients peuvent ne plus recevoir de messages en le demandant à l’hôtel.
@@ -8979,7 +9001,7 @@ Nous publierons les modifications sur cette page et mettrons la date à jour. Le
 URL: https://hostliopro.com/fr/conditions/
 
 ## Conditions d’utilisation
-Dernière mise à jour : 23 septembre 2026 , Loti Members LLC, 2108 N ST STE N, Sacramento, CA 95816. Ce texte est une traduction de l’original anglais ; en cas de divergence, la version anglaise prévaut.
+Dernière mise à jour : 3 octobre 2026 , Loti Members LLC, 2108 N ST STE N, Sacramento, CA 95816. Ce texte est une traduction de l’original anglais ; en cas de divergence, la version anglaise prévaut.
 
 Les présentes Conditions d’utilisation (« Conditions ») régissent l’utilisation de Hostlio Pro, exploité par Loti Members LLC (« nous »). En créant un compte ou en utilisant le service, vous acceptez ces Conditions. Si vous utilisez Hostlio Pro pour une entreprise, vous les acceptez en son nom.
 
@@ -9100,6 +9122,7 @@ Anthropic, PBC USA Traitement par IA des messages clients pour préparer les ré
 Meta Platforms, Inc. (WhatsApp Business Platform) USA / Ireland Envoi et réception de messages WhatsApp
 Channex.io Ltd United Kingdom Synchronisation des disponibilités, tarifs, réservations et messages OTA
 Make (Celonis) EU Formulaire de contact et automatisation interne
+Google LLC / Google Ireland Ltd. (Firebase Cloud Messaging) USA / global Notifications push vers l’application mobile Hostlio Pro sur iOS et Android (jeton push de l’appareil, identifiants d’instance de l’application et contenu de la notification, par exemple alertes de nouveau message ou de réservation)
 Twilio Inc.* USA Numéros WhatsApp et facturation des messages pour les hôtels
 Twilio SendGrid* USA E-mails transactionnels
 
@@ -9114,7 +9137,7 @@ Si vous découvrez une vulnérabilité, écrivez à hello@hostliopro.com en dét
 Plus de détails dans la Politique de confidentialité et les Conditions d’utilisation .
 
 ---
-# Calculateur de ROI de la messagerie IA pour hôtels | Hostlio Pro
+# Calculateur de ROI de la messagerie IA | Hostlio Pro
 URL: https://hostliopro.com/fr/calculateur-roi/
 
 ## Combien de temps Lio peut-il vous faire gagner ?
@@ -9124,8 +9147,10 @@ Chambres Messages clients par jour Minutes pour répondre à un message Part des
 Heures de personnel gagnées par mois –
 Coût de personnel économisé par mois –
 Messages de nuit traités par mois –
+Réponses IA nécessaires par mois –
 Forfait conseillé –
 Économie après le prix du forfait –
+
 Essayez Hostlio Pro gratuitement pendant 7 jours
 
 Il s’agit d’estimations fondées sur vos chiffres et sur des mois de 30 jours. Le résultat dépend de vos clients, de vos réglages et des sujets auxquels vous laissez Lio répondre automatiquement. Prix mensuels early bird en USD.

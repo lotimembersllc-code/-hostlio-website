@@ -44,11 +44,15 @@
   });
 
   // contact form -> Make.com webhook (same JSON shape as the previous site), mailto fallback
-  function acq(){try{return JSON.parse(localStorage.getItem('hostlio_acq')||'null')}catch(_e){return null}}
+  // O6: attribution.js'in sunduğu yüzey (süresi dolmuş kayıt dönmez)
+  function acq(){try{return typeof window.hostlioAcq==='function'?window.hostlioAcq():null}catch(_e){return null}}
+  var t0=Date.now();
   d.querySelectorAll('[data-contact-form]').forEach(function(f){
     f.addEventListener('submit',function(e){
       e.preventDefault();
       var fd=new FormData(f),s=f.querySelector('.form-status'),b=f.querySelector('button[type=submit]');
+      // D9: bal küpü doluysa ya da form 3 sn'den kısa sürede gönderildiyse bot say — Make kotası harcanmaz
+      if((fd.get('website')||'').toString().trim()||Date.now()-t0<3000){f.reset();if(s)s.textContent=f.dataset.ok;return}
       var g=function(k){return (fd.get(k)||'').toString().trim()};
       var lines=['Hotel: '+g('hotel'),'Rooms: '+g('rooms'),'Country/city: '+g('country'),'Language: '+(f.dataset.lang||''),'',g('message')];
       function mailto(){window.location.href='mailto:'+f.dataset.mail+'?subject='+encodeURIComponent(f.dataset.subject+' - '+g('hotel'))+'&body='+encodeURIComponent(lines.join('\n')+'\nEmail: '+g('email'))}
@@ -63,37 +67,38 @@
     });
   });
 
-  // pricing: monthly/annual toggle + live prices from the Supabase `plans` endpoint (fallback = rendered prices)
-  d.querySelectorAll('.plans[data-plans-endpoint]').forEach(function(box){
+  // pricing: monthly/annual toggle + live prices (Y2: /assets/prices.js, tek kaynak pricing.py)
+  d.querySelectorAll('.plans[data-plans]').forEach(function(box){
     var tg=box.previousElementSibling&&box.previousElementSibling.classList.contains('billing')?box.previousElementSibling:null;
-    var data={starter:{m:49,a:470},pro:{m:89,a:854},growth:{m:149,a:1430}},eb=true,annual=false;
-    var cards=[].slice.call(box.querySelectorAll('.plan'));
-    cards.forEach(function(c){var h=c.querySelector('h3');c._id=h?h.id.replace('plan-',''):''});
-    function render(){cards.forEach(function(c){var v=data[c._id];if(!v)return;var b=c.querySelector('.price b');if(b)b.textContent=b.textContent.replace(/\d[\d.,\s  ]*/,String(annual?Math.round(v.a/12):v.m)+(/\d\s*[$€]/.test(b.textContent)?' ':''));
-      var bm=c.querySelector('[data-bm]'),ba=c.querySelector('[data-ba]');if(bm)bm.hidden=annual;if(ba)ba.hidden=!annual;
-      var e=c.querySelector('p.small.muted.num');if(e)e.hidden=!eb;
-      var at=c.querySelector('[data-at]');if(at)at.textContent='$'+v.a.toLocaleString('en-US')})}
+    var HP=window.HostlioPrices,annual=false;
+    function render(){
+      if(HP)HP.apply(box,annual);
+      [].forEach.call(box.querySelectorAll('[data-bm]'),function(x){x.hidden=annual});
+      [].forEach.call(box.querySelectorAll('[data-ba]'),function(x){x.hidden=!annual});
+      if(HP){var at=d.querySelector('.annual-table');if(at)HP.apply(at,false)}
+    }
     if(tg)tg.addEventListener('click',function(ev){var t=ev.target.closest('[data-bill]');if(!t)return;annual=t.dataset.bill==='a';
       [].forEach.call(tg.querySelectorAll('[data-bill]'),function(x){var on=x===t;x.classList.toggle('on',on);x.setAttribute('aria-pressed',on)});
-      render();[].forEach.call(box.querySelectorAll('a.btn'),function(a){a.href=a.href.replace(/([?&])billing=\w+&?/,'$1').replace(/[?&]$/,'')+(a.href.indexOf('?')>-1?'&':'?')+'billing='+(annual?'annual':'monthly')})});
-    if(window.fetch)fetch(box.dataset.plansEndpoint,{headers:{Authorization:'Bearer '+box.dataset.anon}}).then(function(r){return r.ok?r.json():null}).then(function(j){
-      if(!j||!Array.isArray(j.plans))return;
-      j.plans.forEach(function(p){if(!data[p.id])return;if(p.monthly&&p.monthly.amount!=null)data[p.id].m=p.monthly.amount;if(p.annual&&p.annual.amount!=null)data[p.id].a=p.annual.amount});
-      if(typeof j.early_bird==='boolean')eb=j.early_bird;render()}).catch(function(){});
+      render();[].forEach.call(box.querySelectorAll('a.btn'),function(a){try{var u=new URL(a.getAttribute('href'),location.origin);u.searchParams.set('billing',annual?'annual':'monthly');a.setAttribute('href',u.pathname+u.search)}catch(e){}})});
+    if(HP)HP.onUpdate(render);
   });
 
   // ambient loop video in the final CTA: loads only when visible, never with reduced motion
   var fv=[].slice.call(d.querySelectorAll('video.final-video'));
   if(fv.length&&'IntersectionObserver' in window&&!matchMedia('(prefers-reduced-motion: reduce)').matches&&!(navigator.connection&&navigator.connection.saveData)){
     var vo=new IntersectionObserver(function(es){es.forEach(function(en){var v=en.target;
-      if(en.isIntersecting){if(!v.src&&!v.firstChild){[['webm','video/webm'],['mp4','video/mp4']].forEach(function(x){var s=d.createElement('source');s.src=v.dataset[x[0]];s.type=x[1];v.appendChild(s)});v.load();v.addEventListener('playing',function(){v.classList.add('on')},{once:true})}
-        var pr=v.play();if(pr&&pr.catch)pr.catch(function(){})}else if(!v.paused)v.pause()})},{rootMargin:'200px 0px'});
-    fv.forEach(function(v){vo.observe(v)});
+      if(en.isIntersecting){if(!v.src&&!v.firstChild){[['webm','video/webm'],['mp4','video/mp4']].forEach(function(x){var s=d.createElement('source');s.src=v.dataset[x[0]];s.type=x[1];v.appendChild(s)});v.load();v.addEventListener('playing',function(){v.classList.add('on');var bt=v._btn;if(bt)bt.hidden=false},{once:true})}
+        if(!v._userPaused){var pr=v.play();if(pr&&pr.catch)pr.catch(function(){})}}else if(!v.paused)v.pause()})},{rootMargin:'200px 0px'});
+    fv.forEach(function(v){
+      // D6 (WCAG 2.2.2): kullanıcı döngüyü durdurabilir; durdurduysa görünür olunca kendiliğinden yeniden başlamaz
+      var bt=v.parentNode.querySelector('.vid-toggle');v._btn=bt;
+      if(bt)bt.addEventListener('click',function(){var stop=!v.paused;v._userPaused=stop;if(stop)v.pause();else{var pr=v.play();if(pr&&pr.catch)pr.catch(function(){})}
+        bt.setAttribute('aria-pressed',stop);bt.setAttribute('aria-label',stop?bt.dataset.play:bt.dataset.pause)});
+      vo.observe(v)});
   }
 
-  // kayıt/ödeme bağlantılarına sayfa dilini ekle (ödeme sayfası aynı dilde açılsın)
-  var hl=(root.getAttribute('lang')||'en').slice(0,2);
-  d.querySelectorAll('a[href^="/signup"]').forEach(function(a){try{var u=new URL(a.getAttribute('href'),location.origin);if(!u.searchParams.get('lang'))u.searchParams.set('lang',hl);a.setAttribute('href',u.pathname+u.search)}catch(e){}});
+  // "yazdır / PDF" düğmeleri (satır içi onclick yerine — O4 CSP)
+  d.querySelectorAll('[data-print]').forEach(function(b){b.addEventListener('click',function(){window.print()})});
 
   // gentle reveal for below-the-fold blocks only (content is visible at rest)
   if('IntersectionObserver' in window && !matchMedia('(prefers-reduced-motion: reduce)').matches){

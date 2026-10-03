@@ -18,6 +18,16 @@
 // kaynağı KAYBOLURDU — üstelik tam da ölçmek istediğimiz yol o. Betik bu
 // yüzden 15 sayfanın hepsinde; yeni sayfa eklerken de eklenmeli.
 //
+// ══ TASARIM KARARI 4: YALNIZ KAMPANYA PARAMETRESİ, 90 GÜN (denetim 3 Eki, O6) ══
+//
+// Rıza bandı YOK ⇒ cihaza yalnız birinci taraf kampanya bilgisi yazılır: URL'de
+// utm_* ya da reklam tıklama kimliği (gclid, msclkid, ttclid, fbclid) varsa o
+// parametreler + iniş sayfası + ilk görülme zamanı. Sıradan ziyarette (kampanya
+// parametresi yok) HİÇBİR ŞEY YAZILMAZ; yönlendiren alan adı yalnız o sayfa
+// görüntülemesi için bellekte tutulur (aynı sayfadan kayıt olursa gider).
+// Kayıt 90 gün sonra silinir. Gizlilik politikası bu davranışı anlatıyor
+// (legal_v6*.py) — davranış değişirse metin de değişmeli. Hukuki görüş önerildi.
+//
 // ══ TASARIM KARARI 3: ARIZASI SESSİZ VE ZARARSIZ ══
 //
 // localStorage özel pencerede / çerez engelliyken YAZARKEN DE OKURKEN DE
@@ -30,6 +40,7 @@
 
   var KEY = 'hostlio_acq';
   var MAX = 200;              // alan başına karakter tavanı (Stripe metadata 500)
+  var TTL_DAYS = 90;          // O6: kayıt ömrü
   var memory = null;          // localStorage yazılamıyorsa bu sayfa ömrü kadar yedek
 
   function trim(v) {
@@ -39,20 +50,34 @@
     return s.length > MAX ? s.slice(0, MAX) : s;
   }
 
+  function expired(rec) {
+    // `expires` yoksa (eski sürümün kaydı) first_seen + 90 gün sayılır.
+    var exp = Date.parse(rec.expires || '') ||
+      (Date.parse(rec.first_seen || '') + TTL_DAYS * 864e5);
+    return !(exp > Date.now());
+  }
+
   function read() {
     try {
       var raw = window.localStorage.getItem(KEY);
       if (raw) {
         var parsed = JSON.parse(raw);
         // Biçimi tanınmayan eski/bozuk kayıt ilk temas sayılmaz.
-        if (parsed && typeof parsed === 'object' && parsed.first_seen) return parsed;
+        if (parsed && typeof parsed === 'object' && parsed.first_seen) {
+          // Eski sürüm kampanyasız ziyaretleri de yazıyordu (direct/referral) ⇒ onları sil.
+          var legacyNoCampaign = !parsed.expires && !parsed.campaign && !parsed.term && !parsed.content &&
+            !parsed.click_id && (!parsed.source || parsed.source === 'direct' || parsed.source === parsed.referrer);
+          if (!legacyNoCampaign && !expired(parsed)) return parsed;
+          window.localStorage.removeItem(KEY);       // süresi doldu ⇒ sil
+        }
       }
     } catch (_e) { /* özel pencere / engelli depolama */ }
-    return memory;
+    return memory && !expired(memory) ? memory : null;
   }
 
-  function write(rec) {
+  function write(rec, persist) {
     memory = rec;
+    if (!persist) return;     // kampanya parametresi yoksa cihaza yazılmaz (O6)
     try { window.localStorage.setItem(KEY, JSON.stringify(rec)); } catch (_e) { /* yedek bellekte */ }
   }
 
@@ -81,7 +106,8 @@
       click_id:  null,
       referrer:  null,
       landing:   trim(window.location.pathname) || '/',
-      first_seen: new Date().toISOString()
+      first_seen: new Date().toISOString(),
+      expires:   new Date(Date.now() + TTL_DAYS * 864e5).toISOString()
     };
 
     // Tıklama kimliği: değeri sakla, kaynağı YALNIZ utm yoksa ondan türet.
@@ -95,11 +121,15 @@
       break;
     }
 
+    // Kampanya kaydı mı? Yalnız o zaman cihaza yazılır (TASARIM KARARI 4).
+    rec.campaign_params = !!(rec.source || rec.medium || rec.campaign || rec.term || rec.content || rec.click_id);
+
     // Dış yönlendiren. Kendi alan adımız yönlendiren SAYILMAZ (iç gezinme).
+    // Yalnız kampanyasız ziyarette okunur ve o zaman da cihaza yazılmaz (bellekte kalır).
     // 🔺 Yalnız HOST saklanıyor, tam URL değil: yönlendiren adresin sorgu
     //    dizesi kişisel veri taşıyabilir ve bize hiçbir şey katmıyor.
     try {
-      if (document.referrer) {
+      if (document.referrer && !rec.campaign_params) {
         var host = new URL(document.referrer).hostname;
         if (host && host !== window.location.hostname) {
           rec.referrer = trim(host);
@@ -114,8 +144,14 @@
   }
 
   // İlk temas yoksa yaz. VARSA DOKUNMA — modelin tamamı bu satırda.
+  // Saklanmış kampanya kaydı yoksa: bu ziyaretin kaydı (kampanyalıysa cihaza, değilse yalnız belleğe).
   var current = read();
-  if (!current) { current = capture(); write(current); }
+  if (!current) {
+    current = capture();
+    var persist = current.campaign_params;
+    delete current.campaign_params;
+    write(current, persist);
+  }
 
   // Kayıt formunun okuduğu yüzey. signup.html bunu `fetch` gövdesine ekliyor.
   // Betik yüklenmediyse `undefined` döner ve form eskisi gibi çalışır.

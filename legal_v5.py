@@ -55,7 +55,7 @@ def privacy_body_v5(L):
 
 def terms_body(L):
     if L in ("en", "tr"): return (_v6.terms_en if L == "en" else _v6.terms_tr)(_U(L), EMAIL, ADDR)
-    return _v6i.terms(L, _U(L), EMAIL, ADDR, _v6.QUOTA)
+    return _v6i.terms(L, _U(L), EMAIL, ADDR, _v6.quota(L))
 
 def terms_body_v5(L):
     if L in LANGMOD: return LANGMOD[L].terms_body(lambda k: url(k, L), EMAIL, ADDR, _ul)
@@ -99,10 +99,10 @@ def terms_body_v5(L):
 {_ul([f'E-posta: <a href="mailto:{EMAIL}">{EMAIL}</a>', f"Adres: {ADDR}"])}'''
 
 T = {
- "privacy": {"tr": ("Gizlilik Politikası | Hostlio Pro", "Hostlio Pro gizlilik politikası: hangi verileri topladığımız, nasıl kullandığımız, kimlerle paylaştığımız, veri güvenliği, saklama süreleri ve GDPR haklarınız.", "Gizlilik Politikası"),
+ "privacy": {"tr": ("Gizlilik Politikası | Hostlio Pro", "Hostlio Pro gizlilik politikası: hangi verileri topladığımız, nasıl kullanıp paylaştığımız, veri güvenliği, saklama süreleri ve KVKK/GDPR haklarınız.", "Gizlilik Politikası"),
              "en": ("Privacy Policy | Hostlio Pro", "Hostlio Pro privacy policy: what data we collect, how we use and share it, data security, retention, cookies and your GDPR rights.", "Privacy Policy")},
  "terms":   {"tr": ("Kullanım Şartları | Hostlio Pro", "Hostlio Pro kullanım şartları: hizmet tanımı, abonelik ve ödemeler, iptal ve iade, yapay zekâ içeriği, OTA entegrasyonları ve sorumluluk.", "Kullanım Şartları"),
-             "en": ("Terms of Service | Hostlio Pro", "Hostlio Pro terms of service: service description, subscriptions and payments, cancellation and refunds, AI-generated content, OTA integrations and liability.", "Terms of Service")},
+             "en": ("Terms of Service | Hostlio Pro", "Hostlio Pro terms of service: free trial, subscriptions and payments, cancellation and refunds, AI-generated replies, OTA integrations and liability.", "Terms of Service")},
 }
 
 for _l, _m in LANGMOD.items():

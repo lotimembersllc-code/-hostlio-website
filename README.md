@@ -1,4 +1,48 @@
-# Hostlio Pro — web sitesi v5 (TR + EN, statik)
+# Hostlio Pro — web sitesi (hostliopro.com)
+
+Python statik üretici, 6 dil (EN, TR, ES, IT, PT-BR, FR). Canlı alan adı **hostliopro.com** (www → apex).
+Aşağıdaki "v5 … v14" bölümleri sürüm geçmişidir; geçerli mimari bu bölümdedir (3 Ekim 2026).
+
+## Mimari (güncel)
+| Dosya | Görev |
+|---|---|
+| `build.py` | Giriş noktası: rotalar (`ROUTES`), ortak düzen (`layout`, `finish`), JSON-LD, sitemap, llms*.txt, `vercel.json` üretimi, CSP, yönlendirmeler. `python3 build.py` → `dist/` |
+| `pricing.py` | **Tek fiyat kaynağı**: aylık/yıllık/Early Bird fiyatları, AI mesaj kotası, oda limiti, deneme günü, dile göre para biçimi. Metinlerde rakam yerine `⟦price:starter⟧`, `⟦annual:pro⟧`, `⟦annual_mo:growth⟧`, `⟦regular:…⟧`, `⟦quota:…⟧`, `⟦rooms:…⟧` yazılır |
+| `content_<dil>.py` | Sayfa içerikleri (6 dil); `home_v3.py` ana sayfa, `pages_v4.py` tesis tipi/karşılaştırma sayfaları, `lang_<es/it/pt/fr>.py` dil sözlükleri |
+| `legal_v6.py`, `legal_v6_intl.py`, `legal_v5.py` | Gizlilik, şartlar, hesap silme (alt işleyici listesi `SUBPROCESSORS`) |
+| `security_page.py`, `roi_page.py`, `signup_page.py` | Güvenlik + DPA, ROI hesaplayıcı, kayıt/ödeme sayfaları |
+| `src/` | Olduğu gibi kopyalanan dosyalar: `assets/` (CSS, JS, görsel, font, video), `attribution.js`, Google doğrulama dosyası, `robots.txt`, `vercel.json` tabanı |
+| `page_dates.json` | Sayfa başına içerik özeti + tarih (dateModified / sitemap lastmod). Build günceller; commit edin |
+| `scripts/check.py` | Kapı: kırık link/asset, JSON-LD, hreflang, title/description tekrarı ve uzunluğu, satır içi betik (CSP), fiyat yer tutucusu, yönlendirme hedefleri. `--live-prices` canlı `plans` ucuyla karşılaştırır |
+| `scripts/attribution-check.mjs` | `src/attribution.js` ilk temas + 90 gün testi (kök `attribution.js` birebir kopya olmalı) |
+| `preview.py`, `shots/*.py` | Yerel önizleme ve ekran görüntüsü/erişilebilirlik betikleri (build'e bağlı değil) |
+
+Tarayıcı betikleri (`src/assets/`): `site.js` (menüler, fiyat düğmesi, iletişim formu, video), `prices.js`
+(sayfadaki `hostlio-pricing` JSON'u + canlı `plans` ucu, `early_bird=false` ⇒ Early Bird metinleri gizlenir),
+`signup.js` (kayıt formu → `signup-checkout`, sunucu hata kodlarının 6 dile çevirisi), `roi.js`, `ga-init.js`.
+Satır içi `<script>` ve `onclick=` **yasak** (CSP `script-src 'self'`; `check.py` yakalar). Veri gerekiyorsa
+`<script type="application/json">` bloğu kullanın.
+
+### Adresler
+- Kayıt: `/xx/signup/` (her dilde; CTA'lar `finish()` ile doğrudan buraya gider). `/signup/` dil algılayan giriş
+  noktası (Stripe dönüşü `?checkout=success|cancelled`, eski bağlantılar).
+- `trailingSlash: true`, `cleanUrls` KAPALI ⇒ `/google3ccd63ec6d0747db.html`, `/llms.txt` gibi dosyalar
+  yönlendirmesiz 200 döner. Eski `.html` adresleri `lang_redirects()` + `src/vercel.json` ile açıkça yönlenir.
+
+### Fiyat değişince / Early Bird bitince
+1. Stripe'ta fiyatı değiştirin, backend `planConfig.ts` `EARLY_BIRD` bayrağını çevirin.
+2. `pricing.py`'yi aynı değerlere getirin (`EARLY_BIRD=False` için `regular_annual` doldurulmalı, yoksa build durur).
+   Early Bird metinleri (SSS, plan kartı notları) "ilk 50 müşteri" der — kapanınca metinleri de güncelleyin.
+3. `python3 build.py && python3 scripts/check.py --live-prices` → `RESULT: OK`.
+Fiyat ve ödeme sayfaları canlı ucu zaten okuduğu için bu adımlar yapılana kadar da doğru tutarı gösterir.
+
+### Yayın
+- `vercel.json` build tarafından üretilir; `buildCommand` `build.py` içindeki `BUILD_COMMAND`'dır. Python varsa
+  build + check.py hatası deploy'u düşürür; yalnız python3 hiç yoksa commit'li `dist/` kullanılır.
+- CI: `.github/workflows/kapilar.yml` (build, check.py, attribution testi, `git diff --exit-code dist`).
+  Push için `workflow` yetkili token gerekir.
+
+## Sürüm geçmişi
 
 ## v5 değişiklikleri
 - Marka adı her yerde "Hostlio Pro" (logo: Hostlio + turuncu Pro). Schema'da alternateName "Hostlio".
@@ -10,7 +54,7 @@
 - "Kredi kartı gerekmez" ve yıllık planlarda %20 indirim bilgisi (Kullanım Şartları'na göre) SSS ve CTA'lara eklendi.
 - Not: Gizlilik Politikası "takip çerezi kullanmıyoruz" diyor. GA4 eklenirse politikanın güncellenmesi gerekir; çerezsiz Plausible bu metinle uyumludur.
 
-## v4: SEO/GEO değişiklikleri (claude-seo skill'i ile denetlendi)
+### v4: SEO/GEO değişiklikleri (claude-seo skill'i ile denetlendi)
 - Türkçe arama dili: "otel programı", "pansiyon programı" vb. başlık, açıklama, H1 ve SSS'lerde.
 - 7 yeni sayfa x 2 dil: pansiyon / butik otel / apart otel / hostel programı, otel programı karşılaştırması (kaynaklı, tarihli), 2 rehber (overbooking, Booking.com otomatik cevap). Toplam 38 sayfa.
 - Her sayfada görünür "Son güncelleme" tarihi; blog yazılarında yazar satırı ve dateModified.
@@ -19,7 +63,7 @@
 - Ölçüm ve varlık ayarları `build.py` başında: GA4_ID, PLAUSIBLE_DOMAIN, GSC_VERIFY, BING_VERIFY, SAME_AS, APP_STORE_URL. Boş bırakılanlar sayfaya yazılmaz.
 - IndexNow anahtar dosyası otomatik üretilir (`/<INDEXNOW_KEY>.txt`).
 
-## Yayından sonra yapılacaklar (sırayla)
+### Yayından sonra yapılacaklar (sırayla)
 1. Google Search Console ve Bing Webmaster Tools'ta siteyi doğrula (token'ları build.py'ye yaz), `sitemap.xml` gönder.
 2. Analytics'i aç (GA4 veya Plausible). AI trafiği için referrer'ları izle: chatgpt.com, perplexity.ai, claude.ai, gemini.google.com, copilot.microsoft.com.
 3. IndexNow ile tüm URL'leri bildir (Bing, Yandex; ChatGPT aramasının Bing sonuçlarını kullandığı biliniyor).
@@ -29,13 +73,13 @@
 7. Karşılaştırma sayfasını 3 ayda bir güncelle (rakip fiyatları değişir; güncel içerik AI'da daha çok alıntılanır).
 8. Gizlilik Politikası ve Kullanım Şartları sayfalarını ekle.
 
-## v3 değişiklikleri
+### v3 değişiklikleri
 - Marka renkleri (hostlio-dashboard-main/src/index.css): turuncu #FF6B35, lacivert #1B2B4B, koyu #0F1E36; zemin reklam görsellerindeki krem #FBF6F0. Turuncu butonlarda erişilebilirlik için lacivert yazı kullanıldı (kontrast 5.9:1).
 - Logo: uygulama ikonundaki işaret (lacivert kare, beyaz H, turuncu çizgi ve nokta).
 - Görseller: Hostlio'nun kendi reklam videoları ve afişinden kareler (brand-*.webp) + Unsplash fotoğrafları (hostlio-*.webp).
 - Yeni bölümler: hero kolajı, "Gece 02:14" hikâye kartları, 8 kartlı özellik bentosu, tesis tipi kartları, AI bölümünde fotoğraf kartı, kapak görselli blog yazıları, görselli Özellikler ve Hakkımızda sayfaları.
 
-## Tasarım (v2)
+### Tasarım (v2)
 - Referans: guesty.com'un yapısı (sıcak kırık beyaz zemin, ince ağırlıklı büyük başlıklar, italik vurgu kelimesi, hap butonlar, ilgi alanı seçici, sekmeli ürün turu, fotoğraf kartları üzerinde yüzen arayüz çipleri, "tek çatı altında" akordeon, koyu AI bölümü, iki kolonlu SSS). Guesty'nin logosu, rengi ve metni kullanılmadı.
 - Kullanılan skill'ler: Anthropic `frontend-design`, `ui-ux-pro-max`, `taste-skill` (soft-skill: double-bezel kartlar, buton içinde ikon, özel easing), Vercel web interface guidelines.
 - Font: Instrument Sans (self-host, normal + italik). İkonlar: Phosphor Light. OTA logoları: Simple Icons.
@@ -43,14 +87,14 @@
 
 Framework yok. `python3 build.py` → `dist/` klasörü (24 sayfa + sitemap, robots, llms.txt, 404).
 
-## Yayına alma (Vercel)
+### Yayına alma (Vercel)
 1. Bu klasörü bir GitHub reposuna koy.
 2. Vercel → New Project → Framework: **Other**, Build command: `python3 build.py`, Output: `dist`.
    (Ya da doğrudan `dist/` klasörünü sürükle-bırak ile yükle.)
 3. Domain: `www.hostliopro.com`. Eski URL'ler için `src/vercel.json` içine `redirects` ekle.
 4. Google Search Console + Bing Webmaster Tools'a `https://www.hostliopro.com/sitemap.xml` gönder.
 
-## Düzenleme
+### Düzenleme
 | Ne | Nerede |
 |---|---|
 | Kayıt/giriş linki, form endpoint, e-posta | `build.py` üstündeki sabitler (`APP_URL`, `FORM_ENDPOINT`, `EMAIL`) |
@@ -62,21 +106,21 @@ Framework yok. `python3 build.py` → `dist/` klasörü (24 sayfa + sitemap, rob
 
 Formu gerçek bir servise bağlamak için `FORM_ENDPOINT`'e Formspree/Basin/kendi Supabase edge function URL'ini yaz; boşsa mailto ile çalışır.
 
-## SEO katmanı
+### SEO katmanı
 - Her sayfada benzersiz title/description, canonical, `hreflang` (tr, en, x-default), Open Graph + Twitter kartı (`og-tr.png`, `og-en.png`)
 - JSON-LD `@graph`: Organization, WebSite, WebPage (About/Contact/FAQ/Collection tipleri), BreadcrumbList, SoftwareApplication (+ fiyat teklifleri), FAQPage, BlogPosting
 - `sitemap.xml` hreflang alternatifleriyle; semantik HTML, tek H1, sıralı başlıklar
 - Self-host variable font (preload), framework JS yok, görseller HTML/CSS ile → hızlı LCP, CLS≈0
 - axe-core WCAG 2 AA taraması: 0 ihlal
 
-## GEO (AI arama motorları: ChatGPT, Perplexity, Claude, Google AI Overviews)
+### GEO (AI arama motorları: ChatGPT, Perplexity, Claude, Google AI Overviews)
 - `robots.txt` GPTBot, OAI-SearchBot, ClaudeBot, PerplexityBot, Google-Extended vb. için açık
 - `/llms.txt`: ürünün tek dosyalık, gerçeklere dayalı özeti + tüm sayfa linkleri
 - Her ana sayfada "Kısaca…" / "…nedir?" cevap bloğu (AI'ın alıntılayacağı net tanım cümlesi)
 - Karşılaştırma tabloları (plan/özellik, kanal listesi), SSS'ler hem görünür hem schema'da
 - Tarihli içerik (`dateModified`, "Son güncelleme"), rakamlar tutarlı (30+ dil, 100+ OTA, 20+ ülke, 7 gün deneme)
 
-## Yayından önce doğrulanması gerekenler
+### Yayından önce doğrulanması gerekenler
 Eski sitede olmayan, benim varsaydığım bilgiler — yanlışsa `content_*.py` içinde düzelt:
 - Kayıt/giriş adresi `app.hostliopro.com/signup` ve `/login`
 - Online check-in'in Pro ve Growth planlarında olması
@@ -87,7 +131,7 @@ Eski sitede olmayan, benim varsaydığım bilgiler — yanlışsa `content_*.py`
 - Gizlilik Politikası ve Kullanım Şartları sayfaları eklenmedi (hukuki metin gerektirir) — eski sayfaların URL'lerini footer'a ekle
 - Müşteri yorumu/logo yok: gerçek, izinli yorumlar gelince eklenmeli (sosyal kanıt dönüşüm için önemli)
 
-## v6 — 6 dil (TR, EN, ES, IT, PT, FR)
+### v6 — 6 dil (TR, EN, ES, IT, PT, FR)
 - Yeni diller: `content_es/it/pt/fr.py` (sayfalar) + `lang_es/it/pt/fr.py` (arayüz, ana sayfa, tesis tipi sayfaları, karşılaştırma, rehberler, yasal metin çevirileri).
 - URL'ler: /es/, /it/, /pt/, /fr/ altında yerelleştirilmiş slug'lar (build.py → ROUTES).
 - Her sayfada 6 dilli hreflang + x-default (en), og:locale + alternate, dile özel OG görseli (og/make.py), sitemap alternates, llms.txt'de dil bölümleri.
@@ -95,7 +139,7 @@ Eski sitede olmayan, benim varsaydığım bilgiler — yanlışsa `content_*.py`
 - Yasal metin çevirilerinde "İngilizce metin esastır" notu var.
 - Kontrol: 130 sayfa, kırık link yok, JSON-LD geçerli, axe temiz, 360/390/768 px'te yatay kaydırma yok.
 
-## v7 — mevcut siteden entegrasyonlar (~/Developer/-hostlio-website-main)
+### v7 — mevcut siteden entegrasyonlar (~/Developer/-hostlio-website-main)
 - Plan bilgileri depodaki güncel haliyle hizalandı: Starter 3.000 / Pro 20.000 / Growth 50.000 AI mesajı; Growth çoklu tesis, 150 odaya kadar (6 dil, llms.txt dahil).
 - Fiyatlar: Aylık/Yıllık geçişi (%20) + Supabase `plans` fonksiyonundan canlı fiyat (mevcut sitedeki anon anahtarla; yanıt gelmezse sayfadaki fiyatlar kalır). Early Bird kapanırsa "early-bird" satırı otomatik gizlenir.
 - İletişim formu: Make.com webhook'una eski formla aynı JSON (type, name, email, subject, message, date) + hotel, rooms, country, lang, page, acquisition (attribution.js ilk temas kaydı). Hata olursa kullanıcıya e-posta/WhatsApp önerilir.
@@ -105,16 +149,16 @@ Eski sitede olmayan, benim varsaydığım bilgiler — yanlışsa `content_*.py`
 - Vercel: kök vercel.json (buildCommand `python3 build.py`, outputDirectory `dist`) build sırasında src/vercel.json'dan üretilir. Pillow yoksa görsel varyantları üretilmez, depodaki hazır dosyalar kullanılır.
 - CI: .github/workflows/kapilar.yml → build + scripts/check.py (kırık link, JSON-LD, hreflang karşılıklılığı, tekrar eden title).
 
-## v8 — güncel depo (21 Eylül) ile hizalama
+### v8 — güncel depo (21 Eylül) ile hizalama
 - Kotalar tekrar 1.000 / 5.000 / 12.000 AI mesajı; Growth 2 tesise kadar, 150 oda (patron kararı, commit d35b596).
 - E-posta / web chat / Telegram misafir mesajlaşması vaatleri 6 dilde kaldırıldı. Lio: WhatsApp (tüm planlar) + OTA gelen kutuları Booking.com, Airbnb, Expedia (Pro ve Growth). (commit 1f05feb)
 - "Kredi kartı gerekmez" ifadesi kaldırıldı: kart kayıtta alınır, deneme bitene kadar ücret çekilmez (CTA, SSS, kullanım şartları; commit 75db455).
 - src/signup.html depodaki son sürümle değiştirildi.
 
-## v9 — yıllık fiyatlar
+### v9 — yıllık fiyatlar
 - Her plan kartında yıllık fiyat satırı (Starter $39/ay – $470/yıl, Pro $71/ay – $854/yıl, Growth $119/ay – $1.430/yıl), fiyat sayfasında 6 dilde aylık/yıllık fiyat tablosu, yapılandırılmış veride yıllık teklifler, llms.txt. Canlı fiyat gelirse satırlar da güncellenir.
 
-## v10 — yeni görseller (Higgsfield, GPT Image 2.5, 2K)
+### v10 — yeni görseller (Higgsfield, GPT Image 2.5, 2K)
 - 12 yeni görsel `src/assets/img/gen-*.webp` (1080×1350, 480w varyantlarıyla):
   hostel, apart, pansiyon, butik oda → tesis tipi sayfaları + ana sayfa kartları;
   blog kapakları: owner-laptop (PMS), reception (overbooking), night-desk (otomatik cevap), checkin-phone (AI),
@@ -123,16 +167,16 @@ Eski sitede olmayan, benim varsaydığım bilgiler — yanlışsa `content_*.py`
 - Kullanılmayan hostlio-lobby/phone/room görselleri unused_img/ klasörüne taşındı.
 - Görseller yapay zekâ ile üretildi: gerçek müşteri, gerçek otel ya da referans olarak sunulmamalı.
 
-## v11 — ek görseller ve döngü video
+### v11 — ek görseller ve döngü video
 - Özellikler sayfası: gen-team-desk (resepsiyonda tablete bakan ekip). Hakkımızda: gen-shutters (gün doğarken panjur açan işletmeci). Alt metinler 6 dilde (GEN_ALT).
 - Sayfa sonu CTA'sı (neredeyse her sayfada): gece resepsiyon sahnesinin 10 sn'lik ileri-geri döngü videosu (Grok Video 1.5, sessiz). src/assets/video/night-desk.webm (≈195 KB) + .mp4 (≈395 KB).
   Görünür olunca yüklenir; "hareketi azalt" ve veri tasarrufu modunda yüklenmez, poster görseli gösterilir. Masaüstünde sağda, metnin arkasında değil.
 
-## v12 — "Yanınızda bir ekip var" bölümü
+### v12 — "Yanınızda bir ekip var" bölümü
 - Stok fotoğraf yerine gen-support-call (görüntülü kurulum görüşmesindeki otelci) + üstünde kodla çizilmiş destek sohbeti kartı ve "Kanal bağlandı" etiketi (6 dil, home_v3.SUPCARD).
 - Gerçek ekip fotoğrafı gelirse sadece sup_img değiştirilir. hostlio-owner unused_img/ klasörüne taşındı.
 
-## v13 — ödeme (kayıt) ve hesap silme sayfaları yeni tasarıma alındı
+### v13 — ödeme (kayıt) ve hesap silme sayfaları yeni tasarıma alındı
 - `/signup` artık üretiliyor: `signup_page.py` + `src_legacy/signup_script.js` (eski betik, mantık birebir) + `src/assets/checkout.js` (dil, plan özeti, aylık/yıllık).
   - 6 dil: ?lang= → localStorage → yönlendiren sayfanın dili → tarayıcı dili. Site içindeki "Ücretsiz dene" bağlantılarına dil parametresi site.js ekliyor.
   - ?plan= ve ?billing= ön seçimi; sol tarafta seçili planın özeti ve "kart kayıtta alınır, deneme bitene kadar çekim yok" notu.
@@ -141,7 +185,7 @@ Eski sitede olmayan, benim varsaydığım bilgiler — yanlışsa `content_*.py`
 - Eski dosyalar `src_legacy/` klasöründe duruyor (yayına kopyalanmaz).
 - Uzun dillerde başlık menüsü taşması düzeltildi.
 
-## v14 — web sitesi analiz raporu (22 Eylül 2026) düzeltmeleri
+### v14 — web sitesi analiz raporu (22 Eylül 2026) düzeltmeleri
 Kritik
 - K1 WhatsApp numarası her yerde +1 279-268-2488 / wa.me/12792682488 (footer, iletişim, JSON-LD, llms.txt) — `build.py` → `WHATSAPP`.
 - K2 Fiyat kartı: Aylık'ta yalnız "billed monthly", Yıllık'ta yalnız "$470 billed yearly" (6 dil). Kök neden: `.plan .billed{display:block}` `hidden` özniteliğini eziyordu; style.css başına `[hidden]{display:none!important}` eklendi.

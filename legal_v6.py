@@ -6,11 +6,15 @@ Güvenlik ve veri sayfası. İngilizce metin esastır; diğer diller çeviridir 
    - mesaj içeriği: panel Kurulum → "Message Retention (days)", varsayılan 60 gün (Setup1.jsx)
    - misafir iletişim bilgisi: 90 gün (analiz raporu, "kodda tanımlı")
 """
-LEGAL_ISO = "2026-09-23"
-LEGAL_DATE = {"en": "September 23, 2026", "tr": "23 Eylül 2026", "es": "23 de septiembre de 2026",
-              "it": "23 settembre 2026", "pt": "23 de setembro de 2026", "fr": "23 septembre 2026"}
+LEGAL_ISO = "2026-10-03"   # 3 Eki 2026: Firebase alt işleyicisi, hostlio_acq 90 gün (O5/O6)
+LEGAL_DATE = {"en": "October 3, 2026", "tr": "3 Ekim 2026", "es": "3 de octubre de 2026",
+              "it": "3 ottobre 2026", "pt": "3 de outubro de 2026", "fr": "3 octobre 2026"}
 RETENTION = {"msg_default_days": 60, "guest_contact_days": 90, "deletion_days": 30}
-QUOTA = {"starter": "1,000", "pro": "5,000", "growth": "12,000"}
+import pricing  # tek fiyat/kota kaynağı
+
+def quota(lang):
+    """Aylık AI mesaj kotası, dilin sayı biçimiyle (pricing.py'den)."""
+    return {pid: pricing.number(pricing.BY_ID[pid]["ai_messages"], lang) for pid in ("starter", "pro", "growth")}
 
 # Alt işleyiciler — gizlilik, DPA ve güvenlik sayfalarında aynı liste
 SUBPROCESSORS = [
@@ -22,15 +26,16 @@ SUBPROCESSORS = [
     ("Meta Platforms, Inc. (WhatsApp Business Platform)", "USA / Ireland", "wa"),
     ("Channex.io Ltd", "United Kingdom", "chx"),
     ("Make (Celonis)", "EU", "make"),
+    ("Google LLC / Google Ireland Ltd. (Firebase Cloud Messaging)", "USA / global", "push"),
 ]
 PLANNED = [("Twilio Inc.", "USA", "tw"), ("Twilio SendGrid", "USA", "sg")]
 SP_PURPOSE = {
  "en": {"db": "Database, authentication and server functions", "web": "Website and dashboard hosting", "pay": "Payments and subscription billing",
         "ai": "AI processing of guest messages to draft replies", "wa": "Sending and receiving WhatsApp messages", "chx": "Availability, rate, booking and OTA message sync",
-        "make": "Contact form and internal workflow automation", "tw": "WhatsApp numbers and messaging billing for hotels", "sg": "Transactional email"},
+        "make": "Contact form and internal workflow automation", "push": "Push notifications to the Hostlio Pro mobile app on iOS and Android (device push token, app instance identifiers, notification content such as new message or reservation alerts)", "tw": "WhatsApp numbers and messaging billing for hotels", "sg": "Transactional email"},
  "tr": {"db": "Veritabanı, kimlik doğrulama ve sunucu fonksiyonları", "web": "Web sitesi ve panel barındırma", "pay": "Ödemeler ve abonelik faturalandırması",
         "ai": "Cevap taslağı için misafir mesajlarının yapay zekâ ile işlenmesi", "wa": "WhatsApp mesajlarının gönderilmesi ve alınması", "chx": "Müsaitlik, fiyat, rezervasyon ve OTA mesaj senkronizasyonu",
-        "make": "İletişim formu ve iç iş akışı otomasyonu", "tw": "Oteller için WhatsApp numarası ve mesaj faturalandırması", "sg": "İşlemsel e-posta"},
+        "make": "İletişim formu ve iç iş akışı otomasyonu", "push": "Hostlio Pro mobil uygulamasına (iOS ve Android) anlık bildirim gönderimi (cihaz bildirim jetonu, uygulama örneği kimlikleri, yeni mesaj veya rezervasyon uyarısı gibi bildirim içeriği)", "tw": "Oteller için WhatsApp numarası ve mesaj faturalandırması", "sg": "İşlemsel e-posta"},
 }
 
 def _ul(items): return "<ul>" + "".join(f"<li>{i}</li>" for i in items) + "</ul>"
@@ -60,8 +65,8 @@ def privacy_en(U, EMAIL, ADDR):
       "<strong>Guest data processed for hotels:</strong> guest names, contact details, booking details and the content of guest messages received on WhatsApp and OTA inboxes",
       "<strong>Online check-in data:</strong> identity document details and images, date of birth, nationality, companions and a digital signature, when the hotel uses online check-in. We treat this as sensitive data",
       "<strong>Signup and security data:</strong> IP address, a hashed email and the outcome of signup attempts, used to prevent fraud and abuse",
-      "<strong>Marketing source:</strong> the first campaign or page that brought you to our website (for example UTM parameters and the referring site), stored in your browser and sent with your signup",
-      "<strong>Usage data:</strong> how the dashboard and app are used, and technical logs"])}
+      "<strong>Marketing source:</strong> only if you arrive through a link with campaign parameters (UTM parameters or an ad click ID): those parameters, the landing page and the time of your first visit, stored in your browser and sent to us only with your signup or contact form",
+      "<strong>Usage data:</strong> how the dashboard and app are used, technical logs and, when you use the mobile app, your device’s push notification token"])}
 <h2>3. How we use data</h2>
 {_ul(["To provide the service: syncing channels, showing reservations, sending guest messages and running online check-in",
       "To draft and send AI replies to guest messages on the hotel’s behalf",
@@ -89,7 +94,7 @@ def privacy_en(U, EMAIL, ADDR):
 <p><strong>California (CCPA/CPRA):</strong> you can ask to know, delete and correct your personal information. We do not sell or share personal information, and we will not discriminate against you for exercising your rights.</p>
 <p><strong>Türkiye (KVKK):</strong> under Article 11 of Law No. 6698 you can learn whether your data is processed, request information, correction or deletion, and object to results arising from automated processing.</p>
 <p>To exercise any right, email <a href="mailto:{EMAIL}">{EMAIL}</a>. To close your account, see <a href="{U("delacc")}">Delete your account</a>.</p>
-<h2>10. Cookies and browser storage</h2><p>The dashboard uses essential cookies and storage to keep you signed in. Our website stores your language choice and the first marketing source in your browser’s local storage. We do not use advertising cookies. If we add website analytics, we will update this policy first.</p>
+<h2>10. Cookies and browser storage</h2><p>The dashboard uses essential cookies and storage to keep you signed in. Our website stores your language choice in your browser’s local storage. For marketing measurement nothing is stored on ordinary visits: only when you arrive through a link that carries campaign parameters (utm_source, utm_medium, utm_campaign, utm_term, utm_content, or an ad click ID: gclid, msclkid, ttclid, fbclid) does the site save those parameters, the landing page path and the time of that first visit in local storage under the key <code>hostlio_acq</code>. No cookie is set for this. The referring website’s domain is read only for the current page view and is not stored. This record is first-party: the site never shares it with ad networks, it is sent to us only if you submit the signup or contact form (attached to that submission), and it is deleted automatically after 90 days. We rely on our legitimate interest in measuring which marketing channels bring customers; you can object and erase the record at any time by clearing the site data for hostliopro.com in your browser. We do not use advertising cookies. If we add website analytics, we will update this policy first.</p>
 <h2>11. WhatsApp and guest messaging</h2><p>Hostlio Pro connects to the WhatsApp Business Platform and to OTA inboxes to send and receive guest messages for hotels. Guest phone numbers are used only to communicate about the stay. Guests can stop receiving messages by telling the hotel.</p>
 <h2>12. Children</h2><p>Hostlio Pro is a business service and is not directed to children under 16.</p>
 <h2>13. Changes</h2><p>We will post changes on this page and update the date above. For material changes we will also notify customers by email or in the dashboard.</p>
@@ -106,8 +111,8 @@ def privacy_tr(U, EMAIL, ADDR):
       "<strong>Oteller adına işlenen misafir verileri:</strong> misafir adı, iletişim bilgileri, rezervasyon bilgileri ve WhatsApp ile OTA gelen kutularına gelen mesajların içeriği",
       "<strong>Online check-in verileri:</strong> otel online check-in kullanıyorsa kimlik belgesi bilgileri ve görseli, doğum tarihi, uyruk, refakatçiler ve dijital imza. Bu verileri hassas veri olarak ele alırız",
       "<strong>Kayıt ve güvenlik verileri:</strong> IP adresi, e-postanın özetlenmiş (hash) hali ve kayıt denemelerinin sonucu; dolandırıcılık ve kötüye kullanımı önlemek için",
-      "<strong>Pazarlama kaynağı:</strong> sizi sitemize ilk getiren kampanya ya da sayfa (ör. UTM parametreleri ve yönlendiren site); tarayıcınızda saklanır ve kaydınızla birlikte gönderilir",
-      "<strong>Kullanım verileri:</strong> panel ve uygulamanın nasıl kullanıldığı ve teknik kayıtlar"])}
+      "<strong>Pazarlama kaynağı:</strong> yalnızca sitemize kampanya parametreleri (UTM parametreleri veya reklam tıklama kimliği) içeren bir bağlantıyla geldiyseniz bu parametreler, giriş sayfası ve ilk ziyaretinizin zamanı; tarayıcınızda saklanır ve bize yalnızca kayıt veya iletişim formuyla birlikte iletilir",
+      "<strong>Kullanım verileri:</strong> panel ve uygulamanın nasıl kullanıldığı, teknik kayıtlar ve mobil uygulamayı kullandığınızda cihazınızın bildirim jetonu (push token)"])}
 <h2>3. Verileri nasıl kullanırız</h2>
 {_ul(["Hizmeti sunmak için: kanalları senkronize etmek, rezervasyonları göstermek, misafir mesajlarını göndermek ve online check-in’i yürütmek",
       "Otel adına misafir mesajlarına yapay zekâ ile cevap taslağı hazırlamak ve göndermek",
@@ -135,7 +140,7 @@ def privacy_tr(U, EMAIL, ADDR):
 <p><strong>AEA ve Birleşik Krallık:</strong> erişim, düzeltme, silme, kısıtlama ve taşınabilirlik talep edebilir, işlemeye itiraz edebilirsiniz. Yerel veri koruma otoritesine şikâyette de bulunabilirsiniz.</p>
 <p><strong>Kaliforniya (CCPA/CPRA):</strong> kişisel bilgilerinizi öğrenme, sildirme ve düzeltme talebinde bulunabilirsiniz. Kişisel bilgi satmayız veya paylaşmayız; haklarınızı kullandığınız için size farklı davranmayız.</p>
 <p>Haklarınızı kullanmak için <a href="mailto:{EMAIL}">{EMAIL}</a> adresine yazın. Hesabınızı kapatmak için <a href="{U("delacc")}">hesap silme</a> sayfasına bakın.</p>
-<h2>10. Çerezler ve tarayıcı depolaması</h2><p>Panel, oturumunuzu açık tutmak için zorunlu çerez ve depolama kullanır. Sitemiz dil tercihinizi ve ilk pazarlama kaynağını tarayıcınızın yerel depolamasında (localStorage) tutar. Reklam çerezi kullanmayız. Site analitiği eklersek önce bu politikayı güncelleriz.</p>
+<h2>10. Çerezler ve tarayıcı depolaması</h2><p>Panel, oturumunuzu açık tutmak için zorunlu çerez ve depolama kullanır. Sitemiz dil tercihinizi tarayıcınızın yerel depolamasında (localStorage) tutar. Pazarlama ölçümü için olağan ziyaretlerde hiçbir şey saklanmaz: yalnızca kampanya parametreleri (utm_source, utm_medium, utm_campaign, utm_term, utm_content veya reklam tıklama kimliği: gclid, msclkid, ttclid, fbclid) içeren bir bağlantıyla geldiğinizde site bu parametreleri, giriş sayfasının yolunu ve o ilk ziyaretin zamanını <code>hostlio_acq</code> anahtarıyla yerel depolamaya kaydeder. Bunun için çerez kullanılmaz. Yönlendiren sitenin alan adı yalnızca o sayfa görüntülemesi sırasında okunur, saklanmaz. Bu kayıt birinci taraf verisidir: site onu reklam ağlarıyla asla paylaşmaz; yalnızca kayıt veya iletişim formunu gönderirseniz o gönderimle birlikte bize iletilir ve 90 gün sonra otomatik olarak silinir. Hangi pazarlama kanallarının müşteri getirdiğini ölçmekteki meşru menfaatimize dayanırız; tarayıcınızda hostliopro.com için site verilerini temizleyerek dilediğiniz an itiraz edebilir ve kaydı silebilirsiniz. Reklam çerezi kullanmayız. Site analitiği eklersek önce bu politikayı güncelleriz.</p>
 <h2>11. WhatsApp ve misafir mesajlaşması</h2><p>Hostlio Pro, oteller adına misafir mesajlarını göndermek ve almak için WhatsApp Business Platformu’na ve OTA gelen kutularına bağlanır. Misafir telefon numaraları yalnızca konaklamayla ilgili iletişim için kullanılır. Misafirler otele bildirerek mesaj almayı durdurabilir.</p>
 <h2>12. Çocuklar</h2><p>Hostlio Pro bir işletme hizmetidir ve 16 yaşından küçüklere yönelik değildir.</p>
 <h2>13. Değişiklikler</h2><p>Değişiklikleri bu sayfada yayınlar ve yukarıdaki tarihi güncelleriz. Önemli değişiklikleri ayrıca e-posta veya panel üzerinden bildiririz.</p>
@@ -143,7 +148,7 @@ def privacy_tr(U, EMAIL, ADDR):
 
 # ------------------------------------------------------------------ terms
 def terms_en(U, EMAIL, ADDR):
-    Q = QUOTA
+    Q = quota("en")
     return f'''<p>These Terms of Service (“Terms”) govern your use of Hostlio Pro, operated by Loti Members LLC (“we”, “us”). By creating an account or using the service you agree to these Terms. If you use Hostlio Pro for a business, you accept them on its behalf.</p>
 <h2>1. The service</h2><p>Hostlio Pro is cloud software for hotels: AI guest messaging (Lio), a channel manager, a reservation calendar, online check-in and related tools, available by subscription through the website, the dashboard and the mobile app.</p>
 <h2>2. Your account</h2><p>You must give accurate information and keep your login details secure. You are responsible for everything done under your account, including by your staff.</p>
@@ -173,7 +178,7 @@ def terms_en(U, EMAIL, ADDR):
 <h2>16. Contact</h2>{_ul([f'Email: <a href="mailto:{EMAIL}">{EMAIL}</a>', f"Address: {ADDR}"])}'''
 
 def terms_tr(U, EMAIL, ADDR):
-    Q = {k: v.replace(",", ".") for k, v in QUOTA.items()}
+    Q = quota("tr")
     return f'''<p>Bu Kullanım Şartları (“Şartlar”), Loti Members LLC (“biz”) tarafından işletilen Hostlio Pro’yu kullanımınızı düzenler. Hesap oluşturarak veya hizmeti kullanarak bu Şartları kabul edersiniz. Hostlio Pro’yu bir işletme adına kullanıyorsanız Şartları o işletme adına kabul etmiş olursunuz.</p>
 <h2>1. Hizmet</h2><p>Hostlio Pro oteller için bulut yazılımıdır: yapay zekâ ile misafir mesajlaşması (Lio), kanal yöneticisi, rezervasyon takvimi, online check-in ve ilgili araçlar; web sitesi, panel ve mobil uygulama üzerinden abonelikle sunulur.</p>
 <h2>2. Hesabınız</h2><p>Doğru bilgi vermeli ve giriş bilgilerinizi güvende tutmalısınız. Çalışanlarınız dahil, hesabınız altında yapılan her işlemden siz sorumlusunuz.</p>

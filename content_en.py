@@ -3,9 +3,9 @@ L = "en"
 def U(k): return url(k, L)
 
 PLAN_TXT = {
- "starter": ("For small guesthouses and boutique hotels", ["1 property, up to 10 rooms","1,000 AI messages / month","Channel sync with 100+ OTAs","WhatsApp AI messaging","Room rack reservation calendar","Automatic PDF visa forms"]),
- "pro":     ("For growing single-property hotels", ["1 property, up to 50 rooms","5,000 AI messages / month","Everything in Starter","WhatsApp + OTA inbox messaging (Booking.com, Airbnb, Expedia)","Online check-in with digital signature","Transfer and tour sales","Mobile app"]),
- "growth":  ("For teams running two properties", ["Up to 2 properties, 150 rooms","12,000 AI messages / month","Everything in Pro","Priority channel sync","Priority support (next business day)","Custom onboarding call","White-label options"]),
+ "starter": ("For small guesthouses and boutique hotels", ["1 property, up to 10 rooms","⟦quota:starter⟧ AI messages / month","Channel sync with 100+ OTAs","WhatsApp AI messaging","Room rack reservation calendar","Automatic PDF visa forms"]),
+ "pro":     ("For growing single-property hotels", ["1 property, up to 50 rooms","⟦quota:pro⟧ AI messages / month","Everything in Starter","WhatsApp + OTA inbox messaging (Booking.com, Airbnb, Expedia)","Online check-in with digital signature","Transfer and tour sales","Mobile app"]),
+ "growth":  ("For teams running two properties", ["Up to 2 properties, 150 rooms","⟦quota:growth⟧ AI messages / month","Everything in Pro","Priority channel sync","Priority support (next business day)","Custom onboarding call","White-label options"]),
 }
 
 def plans_html():
@@ -17,8 +17,8 @@ def plans_html():
         out.append(f'''<article class="plan{" pop" if pop else ""}" aria-labelledby="plan-{p["id"]}">
 {'<span class="tag">Most popular</span>' if pop else ""}
 <h3 id="plan-{p["id"]}">{p["name"]}</h3><p class="for">{for_}</p>
-<div class="price num"><b>${p["price"]}</b><span class="muted">/ month</span></div>
-<p class="small muted num" style="margin:0">Early-bird price (regularly <s>${p["regular"]}</s>)</p>
+<div class="price num"><b data-price="{p["id"]}">⟦price:{p["id"]}⟧</b><span class="muted">/ month</span></div>
+<p class="small muted num" style="margin:0" data-eb>Early-bird price (regularly <s data-regular="{p["id"]}">⟦regular:{p["id"]}⟧</s>)</p>
 <ul>{lis}</ul>
 {btn("Start with "+p["name"], SIGNUP_URL+"?plan="+p["id"], "primary" if pop else "ghost")}
 </article>''')
@@ -26,7 +26,7 @@ def plans_html():
 
 FAQ_CORE = [
  ("What is Hostlio Pro?", "Hostlio Pro is AI-powered hotel management software (PMS) built for independent hotels, boutique hotels and guesthouses. It combines Lio, an AI assistant that answers guest messages 24/7 in 30+ languages, a channel manager connected to 100+ OTAs, a drag-and-drop reservation calendar and online check-in in one platform."),
- ("How much does Hostlio Pro cost?", "There are three plans: Starter at $49/month, Pro at $89/month and Growth at $149/month. These prices include a 20% early-bird discount for the first 50 customers, locked in for as long as you stay subscribed. Regular prices are $59, $109 and $189."),
+ ("How much does Hostlio Pro cost?", "There are three plans: Starter at ⟦price:starter⟧/month, Pro at ⟦price:pro⟧/month and Growth at ⟦price:growth⟧/month. These prices include a 20% early-bird discount for the first 50 customers, locked in for as long as you stay subscribed. Regular prices are ⟦regular:starter⟧, ⟦regular:pro⟧ and ⟦regular:growth⟧."),
  ("Is there a free trial?", "Yes. Every plan comes with a 7-day free trial. You enter a payment card at signup, but nothing is charged until the trial ends. There are no long-term contracts and you can cancel anytime."),
  ("Which OTAs does Hostlio Pro connect to?", "Through Channex, Hostlio Pro connects to 100+ channels including Booking.com, Airbnb, Expedia, Agoda, Trip.com, Hotels.com, Hotelbeds, Hostelworld and Google Hotels. Availability, rates and reservations stay in sync across all of them."),
  ("Which languages does Lio reply in?", "Lio replies in 30+ languages, including English, Turkish, Arabic, Russian, German, Japanese and Chinese. It answers in the guest's language, and you see a translation in your dashboard."),
@@ -61,9 +61,9 @@ def ai():
 <section><div class="wrap">
 <div class="section-head"><h2>AI message quota by plan</h2><p>One message is a single reply Lio sends to a guest.</p></div>
 <div class="table-wrap"><table><thead><tr><th>Plan</th><th class="c">AI messages / month</th><th>Messaging channels</th></tr></thead><tbody>
-<tr><th>Starter</th><td class="c num">1,000</td><td>WhatsApp</td></tr>
-<tr><th>Pro</th><td class="c num">5,000</td><td>WhatsApp + OTA inboxes (Booking.com, Airbnb, Expedia)</td></tr>
-<tr><th>Growth</th><td class="c num">12,000</td><td>WhatsApp + OTA inboxes (Booking.com, Airbnb, Expedia)</td></tr>
+<tr><th>Starter</th><td class="c num">⟦quota:starter⟧</td><td>WhatsApp</td></tr>
+<tr><th>Pro</th><td class="c num">⟦quota:pro⟧</td><td>WhatsApp + OTA inboxes (Booking.com, Airbnb, Expedia)</td></tr>
+<tr><th>Growth</th><td class="c num">⟦quota:growth⟧</td><td>WhatsApp + OTA inboxes (Booking.com, Airbnb, Expedia)</td></tr>
 </tbody></table></div>
 </div></section>
 '''
@@ -110,7 +110,7 @@ def channel():
      ("Is it hard to switch from my current channel manager?", "No. Create your room types in Hostlio Pro and map your OTA accounts through Channex. Our onboarding team helps during the switch."),
     ]
     return {"key":"channel","title":"Hotel Channel Manager for 100+ OTAs | Hostlio Pro",
-            "desc":"Hostlio Pro's channel manager syncs availability and rates across 100+ OTAs including Booking.com, Airbnb, Expedia and Agoda in real time and prevents overbooking.",
+            "desc":"Hostlio Pro's channel manager syncs rates and availability with 100+ OTAs like Booking.com, Airbnb, Expedia and Agoda in real time to prevent overbooking.",
             "trail":[("Channel manager", U("channel"))],"body":body,"faq":faq}
 
 def checkin():
@@ -145,7 +145,7 @@ def checkin():
            ("Does the guest need to download an app?", "No. The check-in form opens in the browser; no app download is required."),
            ("What if a guest doesn't complete the link?", "Check them in the usual way. Staff can also enter details at the desk using the Hostlio Pro mobile app.")]
     return {"key":"checkin","title":"Hotel Online Check-in with Digital Signature | Hostlio Pro",
-            "desc":"With Hostlio Pro online check-in, guests send ID details, accompanying guests and a digital signature from their phone before arrival. No queue at reception.",
+            "desc":"With Hostlio Pro online check-in, guests send ID details, companions and a digital signature from their phone before arrival. No queue at reception.",
             "trail":[("Online check-in", U("checkin"))],"body":body,"faq":faq}
 
 def features():
@@ -159,13 +159,13 @@ def features():
 <div class="row"><h3>Online check-in</h3><div><p>Secure link, accompanying guests, ID photo and digital signature.</p><a href="{U("checkin")}">Online check-in</a></div></div>
 <div class="row"><h3>Automatic PDF visa forms</h3><div><p>Generate hotel invitation and accommodation letters for visa applications from reservation data in one click.</p></div></div>
 <div class="row"><h3>Transfer and tour sales</h3><div><p>Lio suggests airport transfers and tours during the conversation and passes the request to your team.</p></div></div>
-<div class="row"><h3>Mobile app</h3><div><p>Manage bookings, messages and check-ins away from the hotel with the iOS app. It keeps working offline and syncs when you're back online.</p></div></div>
+<div class="row"><h3>Mobile app</h3><div><p>Manage bookings, messages and check-ins away from the hotel with the iOS and Android app. It keeps working offline and syncs when you're back online.</p></div></div>
 </div></div></section>
 <section><div class="wrap"><div class="section-head"><h2>Features by plan</h2></div>
 <div class="table-wrap"><table><thead><tr><th>Feature</th><th class="c">Starter</th><th class="c">Pro</th><th class="c">Growth</th></tr></thead><tbody>
 <tr><th>Properties</th><td class="c">1</td><td class="c">1</td><td class="c">2</td></tr>
 <tr><th>Room limit</th><td class="c num">10</td><td class="c num">50</td><td class="c num">150</td></tr>
-<tr><th>AI messages / month</th><td class="c num">1,000</td><td class="c num">5,000</td><td class="c num">12,000</td></tr>
+<tr><th>AI messages / month</th><td class="c num">⟦quota:starter⟧</td><td class="c num">⟦quota:pro⟧</td><td class="c num">⟦quota:growth⟧</td></tr>
 <tr><th>Channel sync with 100+ OTAs</th><td class="c">Yes</td><td class="c">Yes</td><td class="c">Priority</td></tr>
 <tr><th>WhatsApp AI messaging</th><td class="c">Yes</td><td class="c">Yes</td><td class="c">Yes</td></tr>
 <tr><th>OTA inbox messaging (Booking.com, Airbnb, Expedia)</th><td class="c">No</td><td class="c">Yes</td><td class="c">Yes</td></tr>
@@ -173,13 +173,13 @@ def features():
 <tr><th>PDF visa forms</th><td class="c">Yes</td><td class="c">Yes</td><td class="c">Yes</td></tr>
 <tr><th>Online check-in and digital signature</th><td class="c">No</td><td class="c">Yes</td><td class="c">Yes</td></tr>
 <tr><th>Transfer and tour sales</th><td class="c">No</td><td class="c">Yes</td><td class="c">Yes</td></tr>
-<tr><th>iOS mobile app</th><td class="c">No</td><td class="c">Yes</td><td class="c">Yes</td></tr>
+<tr><th>iOS and Android app</th><td class="c">No</td><td class="c">Yes</td><td class="c">Yes</td></tr>
 <tr><th>Priority support and onboarding call</th><td class="c">No</td><td class="c">No</td><td class="c">Yes</td></tr>
 <tr><th>White-label</th><td class="c">No</td><td class="c">No</td><td class="c">Yes</td></tr>
 </tbody></table></div></div></section>
 '''
     return {"key":"features","title":"Hotel Management Software Features | Hostlio Pro",
-            "desc":"Hostlio Pro features: AI guest assistant, channel manager for 100+ OTAs, drag-and-drop room rack, online check-in, PDF visa forms, transfer sales and a mobile app.",
+            "desc":"Hostlio Pro features: AI guest assistant, 100+ OTA channel manager, drag-and-drop room rack, online check-in, PDF visa forms, transfer sales, mobile app.",
             "trail":[("Features", U("features"))],"body":body,"faq":[FAQ_CORE[0], FAQ_CORE[3]]}
 
 def pricing():
@@ -194,7 +194,7 @@ def pricing():
 <section class="white rule"><div class="wrap">
 <div class="section-head"><h2>Which plan fits you?</h2></div>
 <div class="rows">
-<div class="row"><h3>Starter</h3><div><p>Guesthouses and boutique hotels with up to 10 rooms, sending fewer than 1,000 replies a month, who want to start with channel sync and AI replies.</p></div></div>
+<div class="row"><h3>Starter</h3><div><p>Guesthouses and boutique hotels with up to 10 rooms, sending fewer than ⟦quota:starter⟧ replies a month, who want to start with channel sync and AI replies.</p></div></div>
 <div class="row"><h3>Pro</h3><div><p>Hotels with 11–50 rooms that want Lio to handle OTA messages too, use online check-in and sell transfers and tours.</p></div></div>
 <div class="row"><h3>Growth</h3><div><p>Two properties or up to 150 rooms, when you need priority support, a custom onboarding and white-label use.</p></div></div>
 </div></div></section>
@@ -204,13 +204,13 @@ def pricing():
       ("Is there an annual billing option?", "Yes. Subscriptions are billed monthly or annually in advance, and annual plans get a 20% discount (Terms of Service, section 3)."),
       ("Can I change plans?", "Yes. Upgrade or downgrade anytime; the change applies from your next billing period."),
       ("How long does the early-bird discount last?", "It applies to the first 50 customers, and your price stays locked for as long as your subscription continues.")]
-    return {"key":"pricing","title":"Hotel Software Pricing: Plans from $49/month | Hostlio Pro",
-            "desc":"Hostlio Pro pricing: Starter $49, Pro $89, Growth $149 per month. No commission, no setup fee, 7-day free trial. Compare plans.",
+    return {"key":"pricing","title":"Hotel Software Pricing: Plans from ⟦price:starter⟧/month | Hostlio Pro",
+            "desc":"Hostlio Pro pricing: Starter ⟦price:starter⟧, Pro ⟦price:pro⟧, Growth ⟦price:growth⟧ per month. No commission, no setup fee, 7-day free trial. Compare plans.",
             "trail":[("Pricing", U("pricing"))],"body":body,"faq":faq,"schema":[software_schema(L, detailed=True)]}
 
 FAQ_ALL = FAQ_CORE + [
  ("What types of hotels is Hostlio Pro for?", "Independent properties with 1 to 150 rooms, such as boutique hotels, city hotels, guesthouses, aparthotels and hostels."),
- ("Is there a mobile app?", "Yes. The Pro and Growth plans include an iOS app. It works without an internet connection and syncs data when you're back online."),
+ ("Is there a mobile app?", "Yes. The Pro and Growth plans include an iOS and Android app. It works without an internet connection and syncs data when you're back online."),
  ("How does online check-in work?", "Guests receive a personal secure link and send ID details, accompanying guests and a digital signature from their phone before arrival. Available on Pro and Growth."),
  ("What is the PDF visa form feature for?", "It automatically turns reservation data into hotel accommodation and invitation letters as PDFs for guests who need a visa."),
  ("Is my data secure?", "Data is transmitted over encrypted connections, and each hotel's data is isolated from other properties with row-level access rules. Guest data can be deleted on request."),
@@ -223,7 +223,7 @@ def faq_page():
 <p class="lead">The most common questions about Hostlio Pro's features, pricing and setup. Can't find your answer? <a href="{U("contact")}">Write to us</a>.</p></div></section>
 <section style="padding-top:0"><div class="wrap">{faq_block(FAQ_ALL, L, heading=False, wrap=False)}</div></section>'''
     return {"key":"faq","title":"Hostlio Pro FAQ: Frequently Asked Questions",
-            "desc":"Frequently asked questions about Hostlio Pro hotel management software: pricing, free trial, OTA integrations, the Lio AI assistant, online check-in and security.",
+            "desc":"Common questions about Hostlio Pro hotel management software: pricing, free trial, OTA integrations, the Lio AI assistant, online check-in and security.",
             "trail":[("FAQ", U("faq"))],"body":body,"faq":FAQ_ALL,"faq_inline":True,"page_type":"FAQPage"}
 
 def about():
@@ -267,7 +267,7 @@ POSTS = [
  {"key":"post-autoreply","title":"How to auto-reply to Booking.com guest messages","date":"2026-09-21","desc":"Three ways to automate Booking.com guest messages: templates, scheduled messages and an AI assistant."},
  {"key":"post-ai","title":"Answering hotel guest messages with AI: a practical guide","date":"2026-09-18",
   "desc":"The benefits, risks and setup steps of answering hotel guest messages with AI. Which questions to automate and which should stay with your team."},
- {"key":"post-pms","title":"How to choose hotel management software (PMS) for a small hotel","date":"2026-09-10",
+ {"key":"post-pms","title":"Choosing hotel management software for a small hotel","date":"2026-09-10",
   "desc":"7 criteria for choosing a PMS for a small or boutique hotel: channel manager, pricing model, guest messaging, mobile access and more."},
 ]
 
@@ -308,7 +308,7 @@ def post_ai():
 <h2>Why multilingual replies matter</h2>
 <p>Guests who write in their own language share more detail and trust the answer more. An assistant that replies in 30+ languages builds that trust even when nobody at reception speaks the language, and you still read the conversation in yours.</p>
 <h2>How it works in Hostlio Pro</h2>
-<p>Hostlio Pro's AI assistant <a href="{U("ai")}">Lio</a> uses your hotel information and reservation data to answer WhatsApp and OTA inbox messages (Booking.com, Airbnb, Expedia) in 30+ languages. Plans include between 1,000 and 12,000 AI messages a month; see the <a href="{U("pricing")}">pricing page</a> for details.</p>'''
+<p>Hostlio Pro's AI assistant <a href="{U("ai")}">Lio</a> uses your hotel information and reservation data to answer WhatsApp and OTA inbox messages (Booking.com, Airbnb, Expedia) in 30+ languages. Plans include between ⟦quota:starter⟧ and ⟦quota:growth⟧ AI messages a month; see the <a href="{U("pricing")}">pricing page</a> for details.</p>'''
     faq = [("Can AI give guests wrong information?", "The risk is minimal when the assistant only works from information the hotel provides and hands uncertain questions to staff. Starting in approval mode is recommended."),
            ("Will guests know they're talking to AI?", "Replies are written in the hotel's name and tone. For transparency, hotels can mention in the welcome message that the assistant is AI.")]
     return article(next(p for p in POSTS if p["key"]=="post-ai"), c, faq)
