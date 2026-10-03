@@ -9,6 +9,7 @@ favicon=base64.b64encode(open('src/assets/favicon.svg','rb').read()).decode()
 pages={}
 for f in sorted(glob.glob(D+'/**/index.html',recursive=True)):
     path='/'+os.path.relpath(f,D).replace('index.html','')
+    if path.endswith('/signup/'): continue   # ödeme sayfaları önizlemede yok (betikleri dosyadan yükleniyor)
     s=open(f).read()
     body=re.search(r'<body>(.*?)<script src="/assets/site\.js',s,re.S).group(1)
     import html as H; title=H.unescape(re.search(r'<title>(.*?)</title>',s).group(1))
@@ -21,12 +22,6 @@ for f in sorted(glob.glob(D+'/**/index.html',recursive=True)):
     for fn in os.listdir('src/assets/img'):
         body=body.replace('/assets/img/'+fn, 'IMG_'+fn)
     pages[path]={'b':body,'t':title,'l':lang}
-# ödeme sayfası: kendi betikleriyle (önizlemede checkout isteği gönderilmez — iş mantığı canlıda)
-sg=open(D+'/signup.html').read()
-sb=re.search(r'<body[^>]*>(.*?)<script>window\.CO',sg,re.S).group(1)
-sb=re.sub(r'href="(/(?!assets)[^"#]*)"',lambda m:f'href="#{m.group(1)}"',sb)
-scripts=re.findall(r'<script>(.*?)</script>',sg,re.S)
-pages['/signup']={'b':'<div class="co-body">'+sb+'</div>','t':'Start Your Free Trial | Hostlio Pro','l':'en','x':'\n;'.join(scripts)+'\n;'+open('src/assets/checkout.js').read().replace('window.CO','window.CO')}
 js=open('src/assets/site.js').read()
 imgs={fn:'data:image/webp;base64,'+base64.b64encode(open('src/assets/img/'+fn,'rb').read()).decode() for fn in os.listdir('src/assets/img')}
 imgs.update({fn:('data:video/webm;base64,' if fn.endswith('webm') else 'data:video/mp4;base64,')+base64.b64encode(open('src/assets/video/'+fn,'rb').read()).decode() for fn in os.listdir('src/assets/video')})

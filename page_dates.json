@@ -1,0 +1,598 @@
+{
+"/en/": {
+"d": "2026-10-03",
+"h": "467d33a5e9a6"
+},
+"/en/about/": {
+"d": "2026-09-23",
+"h": "be79b6a1e778"
+},
+"/en/ai-guest-messaging/": {
+"d": "2026-09-23",
+"h": "735111cd0ae8"
+},
+"/en/aparthotel-software/": {
+"d": "2026-10-03",
+"h": "fa52d4a5eb6f"
+},
+"/en/blog/": {
+"d": "2026-10-03",
+"h": "67f247e8f079"
+},
+"/en/blog/answering-hotel-guest-messages-with-ai/": {
+"d": "2026-09-23",
+"h": "ab8d1f11aa70"
+},
+"/en/blog/auto-reply-booking-com-messages/": {
+"d": "2026-09-23",
+"h": "524145fb6524"
+},
+"/en/blog/choosing-hotel-management-software-small-hotel/": {
+"d": "2026-10-03",
+"h": "2904ced83a19"
+},
+"/en/blog/hotel-ai-front-desk-guide/": {
+"d": "2026-09-23",
+"h": "3210c2b7a908"
+},
+"/en/blog/how-to-prevent-overbooking/": {
+"d": "2026-09-23",
+"h": "64e8aa87b941"
+},
+"/en/blog/how-to-reduce-hotel-no-shows/": {
+"d": "2026-09-23",
+"h": "e72e47242e9d"
+},
+"/en/blog/independent-hotel-vs-chain-technology/": {
+"d": "2026-10-03",
+"h": "afc16cfc237d"
+},
+"/en/blog/whatsapp-hotel-guest-communication/": {
+"d": "2026-10-03",
+"h": "e587938fb79d"
+},
+"/en/boutique-hotel-software/": {
+"d": "2026-10-03",
+"h": "82d1d5ce620e"
+},
+"/en/channel-manager/": {
+"d": "2026-10-03",
+"h": "caf41a1e28cd"
+},
+"/en/contact/": {
+"d": "2026-09-23",
+"h": "9b2a6d6c0df9"
+},
+"/en/delete-account/": {
+"d": "2026-09-23",
+"h": "45a35218cfac"
+},
+"/en/dpa/": {
+"d": "2026-10-03",
+"h": "772f732d1c90"
+},
+"/en/faq/": {
+"d": "2026-10-03",
+"h": "11ac0aa54cd4"
+},
+"/en/features/": {
+"d": "2026-10-03",
+"h": "95191aa65bb3"
+},
+"/en/guesthouse-software/": {
+"d": "2026-09-23",
+"h": "c9d479f85e37"
+},
+"/en/hostel-software/": {
+"d": "2026-10-03",
+"h": "2c5a0d2b8373"
+},
+"/en/hotel-software-comparison/": {
+"d": "2026-10-03",
+"h": "fdb738feccf6"
+},
+"/en/online-check-in/": {
+"d": "2026-10-03",
+"h": "415931cc2954"
+},
+"/en/pricing/": {
+"d": "2026-10-03",
+"h": "83d81e2d6d9c"
+},
+"/en/privacy/": {
+"d": "2026-10-03",
+"h": "b7d5cd352eca"
+},
+"/en/roi-calculator/": {
+"d": "2026-10-03",
+"h": "6376decbccb9"
+},
+"/en/security/": {
+"d": "2026-10-03",
+"h": "5e26338c9033"
+},
+"/en/terms/": {
+"d": "2026-10-03",
+"h": "255bbb04c70a"
+},
+"/es/": {
+"d": "2026-10-03",
+"h": "3716d53687df"
+},
+"/es/asistente-ia-para-huespedes/": {
+"d": "2026-10-03",
+"h": "31c0338d26dc"
+},
+"/es/blog/": {
+"d": "2026-10-03",
+"h": "afb5f6decba0"
+},
+"/es/blog/como-elegir-software-de-gestion-hotelera-hotel-pequeno/": {
+"d": "2026-10-03",
+"h": "dc7688874c5a"
+},
+"/es/blog/como-evitar-el-overbooking/": {
+"d": "2026-10-03",
+"h": "d4c9ac3e0302"
+},
+"/es/blog/responder-mensajes-de-huespedes-con-ia/": {
+"d": "2026-10-03",
+"h": "6f99a323e40b"
+},
+"/es/blog/respuesta-automatica-mensajes-booking-com/": {
+"d": "2026-10-03",
+"h": "894f289d65e1"
+},
+"/es/calculadora-roi/": {
+"d": "2026-10-03",
+"h": "b162264f7e4e"
+},
+"/es/channel-manager/": {
+"d": "2026-10-03",
+"h": "53b721c566a8"
+},
+"/es/check-in-online/": {
+"d": "2026-10-03",
+"h": "fd43d37112f6"
+},
+"/es/comparativa-software-hotelero/": {
+"d": "2026-10-03",
+"h": "44233e974b86"
+},
+"/es/contacto/": {
+"d": "2026-10-03",
+"h": "1a52cd09700b"
+},
+"/es/eliminar-cuenta/": {
+"d": "2026-09-23",
+"h": "bbf5271e93ef"
+},
+"/es/funcionalidades/": {
+"d": "2026-10-03",
+"h": "7416a7486154"
+},
+"/es/precios/": {
+"d": "2026-10-03",
+"h": "f09413e2d0ca"
+},
+"/es/preguntas-frecuentes/": {
+"d": "2026-10-03",
+"h": "162c53de9dcb"
+},
+"/es/privacidad/": {
+"d": "2026-10-03",
+"h": "5c9bbb467446"
+},
+"/es/seguridad/": {
+"d": "2026-10-03",
+"h": "bda3e529a102"
+},
+"/es/sobre-nosotros/": {
+"d": "2026-09-23",
+"h": "b4d6cd41390a"
+},
+"/es/software-apartahotel/": {
+"d": "2026-10-03",
+"h": "f11bc4a4ca99"
+},
+"/es/software-hotel-boutique/": {
+"d": "2026-10-03",
+"h": "8ed676464326"
+},
+"/es/software-para-hostales/": {
+"d": "2026-10-03",
+"h": "71959fe5579c"
+},
+"/es/software-para-hostels/": {
+"d": "2026-10-03",
+"h": "0d505a895c53"
+},
+"/es/terminos/": {
+"d": "2026-10-03",
+"h": "24627cbe5288"
+},
+"/fr/": {
+"d": "2026-10-03",
+"h": "3717f38b4def"
+},
+"/fr/a-propos/": {
+"d": "2026-10-03",
+"h": "414e46034710"
+},
+"/fr/assistant-ia-clients/": {
+"d": "2026-10-03",
+"h": "e1be84095dd5"
+},
+"/fr/blog/": {
+"d": "2026-10-03",
+"h": "88b72be11cc2"
+},
+"/fr/blog/choisir-logiciel-gestion-hoteliere-petit-hotel/": {
+"d": "2026-10-03",
+"h": "99e74efc1266"
+},
+"/fr/blog/comment-eviter-le-surbooking/": {
+"d": "2026-09-23",
+"h": "1b90975c50a0"
+},
+"/fr/blog/repondre-aux-messages-clients-avec-ia/": {
+"d": "2026-10-03",
+"h": "7e5f8a92caad"
+},
+"/fr/blog/reponse-automatique-messages-booking-com/": {
+"d": "2026-10-03",
+"h": "309391eaf7f9"
+},
+"/fr/calculateur-roi/": {
+"d": "2026-10-03",
+"h": "5fdf99df84f4"
+},
+"/fr/channel-manager/": {
+"d": "2026-10-03",
+"h": "7a92e7fb6923"
+},
+"/fr/check-in-en-ligne/": {
+"d": "2026-10-03",
+"h": "aa25a38264d0"
+},
+"/fr/comparatif-logiciels-hoteliers/": {
+"d": "2026-10-03",
+"h": "9d775caa0c31"
+},
+"/fr/conditions/": {
+"d": "2026-10-03",
+"h": "9ee4618468cc"
+},
+"/fr/confidentialite/": {
+"d": "2026-10-03",
+"h": "210e8ee43ce7"
+},
+"/fr/contact/": {
+"d": "2026-10-03",
+"h": "32e67c0def76"
+},
+"/fr/faq/": {
+"d": "2026-10-03",
+"h": "5804b7811a41"
+},
+"/fr/fonctionnalites/": {
+"d": "2026-10-03",
+"h": "85e0971c2e52"
+},
+"/fr/logiciel-auberge-de-jeunesse/": {
+"d": "2026-10-03",
+"h": "8d5d402b1380"
+},
+"/fr/logiciel-chambres-d-hotes/": {
+"d": "2026-10-03",
+"h": "1156f74b9a05"
+},
+"/fr/logiciel-hotel-boutique/": {
+"d": "2026-10-03",
+"h": "8fc678c0cd43"
+},
+"/fr/logiciel-residence-hoteliere/": {
+"d": "2026-10-03",
+"h": "6fbb98202d0a"
+},
+"/fr/securite/": {
+"d": "2026-10-03",
+"h": "289c59ab363c"
+},
+"/fr/supprimer-compte/": {
+"d": "2026-09-23",
+"h": "f343376b61dc"
+},
+"/fr/tarifs/": {
+"d": "2026-10-03",
+"h": "a247aceb17b5"
+},
+"/it/": {
+"d": "2026-10-03",
+"h": "132f5f7d0db3"
+},
+"/it/assistente-ai-ospiti/": {
+"d": "2026-10-03",
+"h": "6f3cb620a07e"
+},
+"/it/blog/": {
+"d": "2026-10-03",
+"h": "1ad0239a5e88"
+},
+"/it/blog/come-evitare-overbooking/": {
+"d": "2026-09-23",
+"h": "3c036e6f6baf"
+},
+"/it/blog/come-scegliere-gestionale-per-hotel-piccolo/": {
+"d": "2026-10-03",
+"h": "9e4eeb6fca97"
+},
+"/it/blog/rispondere-ai-messaggi-degli-ospiti-con-ai/": {
+"d": "2026-10-03",
+"h": "b2e23d5b66c2"
+},
+"/it/blog/risposta-automatica-messaggi-booking-com/": {
+"d": "2026-10-03",
+"h": "627cd091fbbf"
+},
+"/it/calcolatore-roi/": {
+"d": "2026-10-03",
+"h": "4caf52d8e9df"
+},
+"/it/channel-manager/": {
+"d": "2026-10-03",
+"h": "f1321ea713be"
+},
+"/it/check-in-online/": {
+"d": "2026-10-03",
+"h": "7c93cd5c9799"
+},
+"/it/chi-siamo/": {
+"d": "2026-10-03",
+"h": "8757e0526433"
+},
+"/it/confronto-gestionali-hotel/": {
+"d": "2026-10-03",
+"h": "7320be74bd7a"
+},
+"/it/contatti/": {
+"d": "2026-10-03",
+"h": "d132e0ae8c4a"
+},
+"/it/domande-frequenti/": {
+"d": "2026-10-03",
+"h": "63b37c8ae7b6"
+},
+"/it/elimina-account/": {
+"d": "2026-09-23",
+"h": "b7a457e9f218"
+},
+"/it/funzionalita/": {
+"d": "2026-10-03",
+"h": "7056aa43a2d2"
+},
+"/it/gestionale-b-and-b/": {
+"d": "2026-10-03",
+"h": "2dbbcf4be133"
+},
+"/it/gestionale-boutique-hotel/": {
+"d": "2026-10-03",
+"h": "3ec3feea8161"
+},
+"/it/gestionale-ostelli/": {
+"d": "2026-10-03",
+"h": "92d8cb623398"
+},
+"/it/gestionale-residence-aparthotel/": {
+"d": "2026-10-03",
+"h": "e2ed3a9e45aa"
+},
+"/it/prezzi/": {
+"d": "2026-10-03",
+"h": "28003d131741"
+},
+"/it/privacy/": {
+"d": "2026-10-03",
+"h": "bc85b0324462"
+},
+"/it/sicurezza/": {
+"d": "2026-10-03",
+"h": "3c9410a2fc2e"
+},
+"/it/termini/": {
+"d": "2026-10-03",
+"h": "e74b228a2f6f"
+},
+"/pt/": {
+"d": "2026-10-03",
+"h": "a04061f3bcce"
+},
+"/pt/assistente-ia-para-hospedes/": {
+"d": "2026-10-03",
+"h": "7b5bbcdef2b3"
+},
+"/pt/blog/": {
+"d": "2026-10-03",
+"h": "a275ec11a548"
+},
+"/pt/blog/como-escolher-sistema-para-hotel-pequeno/": {
+"d": "2026-10-03",
+"h": "e3cdb13aa923"
+},
+"/pt/blog/como-evitar-overbooking/": {
+"d": "2026-10-03",
+"h": "c76a0bf22648"
+},
+"/pt/blog/responder-mensagens-de-hospedes-com-ia/": {
+"d": "2026-10-03",
+"h": "cb46d89f1381"
+},
+"/pt/blog/resposta-automatica-mensagens-booking-com/": {
+"d": "2026-10-03",
+"h": "6a0716c1a1dd"
+},
+"/pt/calculadora-roi/": {
+"d": "2026-10-03",
+"h": "2e9465c90bc0"
+},
+"/pt/channel-manager/": {
+"d": "2026-10-03",
+"h": "ea05f4c417f8"
+},
+"/pt/check-in-online/": {
+"d": "2026-10-03",
+"h": "126c7e8e10bc"
+},
+"/pt/comparativo-sistemas-para-hotel/": {
+"d": "2026-10-03",
+"h": "6d7852729429"
+},
+"/pt/contato/": {
+"d": "2026-10-03",
+"h": "33f4e76e082c"
+},
+"/pt/excluir-conta/": {
+"d": "2026-09-23",
+"h": "86a9ee297df6"
+},
+"/pt/funcionalidades/": {
+"d": "2026-10-03",
+"h": "ea48d7281e06"
+},
+"/pt/perguntas-frequentes/": {
+"d": "2026-10-03",
+"h": "8b6fd84c0b9c"
+},
+"/pt/precos/": {
+"d": "2026-10-03",
+"h": "f141dbb7167f"
+},
+"/pt/privacidade/": {
+"d": "2026-10-03",
+"h": "bfb304001170"
+},
+"/pt/seguranca/": {
+"d": "2026-10-03",
+"h": "b35f45263467"
+},
+"/pt/sistema-apart-hotel/": {
+"d": "2026-10-03",
+"h": "c4c23d3384ce"
+},
+"/pt/sistema-hotel-boutique/": {
+"d": "2026-10-03",
+"h": "2006f513350e"
+},
+"/pt/sistema-para-hostels/": {
+"d": "2026-10-03",
+"h": "3fb3f6cd8e74"
+},
+"/pt/sistema-para-pousadas/": {
+"d": "2026-10-03",
+"h": "b43962e3c726"
+},
+"/pt/sobre-nos/": {
+"d": "2026-09-23",
+"h": "83e48bbafb95"
+},
+"/pt/termos/": {
+"d": "2026-10-03",
+"h": "00a81623731d"
+},
+"/tr/": {
+"d": "2026-10-03",
+"h": "d6bb28aa2e4a"
+},
+"/tr/ai-misafir-asistani/": {
+"d": "2026-10-03",
+"h": "055605a66870"
+},
+"/tr/apart-otel-programi/": {
+"d": "2026-10-03",
+"h": "c66ff59f790b"
+},
+"/tr/blog/": {
+"d": "2026-10-03",
+"h": "02a65a3cb349"
+},
+"/tr/blog/booking-com-mesajlarina-otomatik-cevap/": {
+"d": "2026-09-23",
+"h": "dfa83724c419"
+},
+"/tr/blog/kucuk-otel-icin-otel-yonetim-yazilimi-secimi/": {
+"d": "2026-09-23",
+"h": "fec46f87a90d"
+},
+"/tr/blog/otel-misafir-mesajlarini-yapay-zeka-ile-yanitlamak/": {
+"d": "2026-10-03",
+"h": "cf8310f2327e"
+},
+"/tr/blog/overbooking-nasil-onlenir/": {
+"d": "2026-09-23",
+"h": "523ea0e4b503"
+},
+"/tr/butik-otel-programi/": {
+"d": "2026-10-03",
+"h": "a862da442b41"
+},
+"/tr/fiyatlandirma/": {
+"d": "2026-10-03",
+"h": "bb1d0c9f4bb4"
+},
+"/tr/gizlilik-politikasi/": {
+"d": "2026-10-03",
+"h": "952b1a65f8f7"
+},
+"/tr/guvenlik-ve-veri/": {
+"d": "2026-10-03",
+"h": "0173bd56bf79"
+},
+"/tr/hakkimizda/": {
+"d": "2026-09-23",
+"h": "d11b6783745a"
+},
+"/tr/hesap-silme/": {
+"d": "2026-09-23",
+"h": "2d970c88c753"
+},
+"/tr/hostel-programi/": {
+"d": "2026-10-03",
+"h": "f0bcb0ab05e0"
+},
+"/tr/iletisim/": {
+"d": "2026-09-23",
+"h": "1d530719cc69"
+},
+"/tr/kanal-yoneticisi/": {
+"d": "2026-09-23",
+"h": "94650a717fb6"
+},
+"/tr/kullanim-sartlari/": {
+"d": "2026-10-03",
+"h": "f859c15429e5"
+},
+"/tr/online-check-in/": {
+"d": "2026-10-03",
+"h": "4ca62b5fb769"
+},
+"/tr/otel-programi-karsilastirma/": {
+"d": "2026-10-03",
+"h": "f746a3111383"
+},
+"/tr/ozellikler/": {
+"d": "2026-10-03",
+"h": "e646171ab8ef"
+},
+"/tr/pansiyon-programi/": {
+"d": "2026-10-03",
+"h": "49b065c0d1b6"
+},
+"/tr/roi-hesaplayici/": {
+"d": "2026-10-03",
+"h": "18a242525ff4"
+},
+"/tr/sss/": {
+"d": "2026-10-03",
+"h": "13f2496d442f"
+}
+}

@@ -1,7 +1,6 @@
 {
-  "buildCommand": "python3 build.py || (echo \"python yok, depodaki dist kullanılıyor\" && test -f dist/en/index.html)",
+  "buildCommand": "if command -v python3 >/dev/null 2>&1; then python3 build.py && python3 scripts/check.py; else echo \"python3 yok, depodaki dist kullanılıyor\" && test -f dist/en/index.html && test -f dist/sitemap.xml; fi",
   "outputDirectory": "dist",
-  "cleanUrls": true,
   "trailingSlash": true,
   "headers": [
     {
@@ -18,7 +17,7 @@
       "headers": [
         {
           "key": "Strict-Transport-Security",
-          "value": "max-age=63072000; includeSubDomains; preload"
+          "value": "max-age=63072000; includeSubDomains"
         },
         {
           "key": "X-Content-Type-Options",
@@ -35,6 +34,10 @@
         {
           "key": "Permissions-Policy",
           "value": "camera=(), microphone=(), geolocation=()"
+        },
+        {
+          "key": "Content-Security-Policy",
+          "value": "default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline'; img-src 'self' data:; font-src 'self'; media-src 'self'; connect-src 'self' https://brzetctpyaxognnvjrnd.supabase.co https://hook.eu1.make.com; form-action 'self' mailto:; frame-ancestors 'self'; base-uri 'self'; object-src 'none'; upgrade-insecure-requests"
         }
       ]
     }
@@ -766,63 +769,28 @@
       "permanent": true
     },
     {
-      "source": "/tr/signup",
-      "destination": "/signup?lang=tr",
+      "source": "/signup.html",
+      "destination": "/signup/",
       "permanent": true
     },
     {
-      "source": "/tr/signup/",
-      "destination": "/signup?lang=tr",
+      "source": "/index.html",
+      "destination": "/",
       "permanent": true
     },
     {
-      "source": "/en/signup",
-      "destination": "/signup?lang=en",
+      "source": "/privacy.html",
+      "destination": "/en/privacy/",
       "permanent": true
     },
     {
-      "source": "/en/signup/",
-      "destination": "/signup?lang=en",
+      "source": "/terms.html",
+      "destination": "/en/terms/",
       "permanent": true
     },
     {
-      "source": "/es/signup",
-      "destination": "/signup?lang=es",
-      "permanent": true
-    },
-    {
-      "source": "/es/signup/",
-      "destination": "/signup?lang=es",
-      "permanent": true
-    },
-    {
-      "source": "/it/signup",
-      "destination": "/signup?lang=it",
-      "permanent": true
-    },
-    {
-      "source": "/it/signup/",
-      "destination": "/signup?lang=it",
-      "permanent": true
-    },
-    {
-      "source": "/pt/signup",
-      "destination": "/signup?lang=pt",
-      "permanent": true
-    },
-    {
-      "source": "/pt/signup/",
-      "destination": "/signup?lang=pt",
-      "permanent": true
-    },
-    {
-      "source": "/fr/signup",
-      "destination": "/signup?lang=fr",
-      "permanent": true
-    },
-    {
-      "source": "/fr/signup/",
-      "destination": "/signup?lang=fr",
+      "source": "/blog/index.html",
+      "destination": "/en/blog/",
       "permanent": true
     }
   ]

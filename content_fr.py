@@ -9,9 +9,9 @@ def D(iso):
     return ("1er" if d == 1 else str(d)) + " " + MOIS[int(m)-1] + " " + y
 
 PLAN_TXT = {
- "starter": ("Pour les chambres d'hôtes et les petits hôtels boutique", ["1 établissement, jusqu'à 10 chambres","1 000 messages IA / mois","Synchronisation des réservations OTA (100+ canaux)","Messagerie IA sur WhatsApp","Planning des chambres (calendrier des réservations)","Formulaires de visa PDF automatiques"]),
- "pro":     ("Pour les hôtels indépendants en croissance", ["1 établissement, jusqu'à 50 chambres","5 000 messages IA / mois","Tout le forfait Starter","WhatsApp + messagerie des OTA (Booking.com, Airbnb, Expedia)","Check-in en ligne avec signature électronique","Vente de transferts et d'excursions","Application mobile"]),
- "growth":  ("Pour les équipes qui gèrent deux établissements", ["Jusqu'à 2 établissements, 150 chambres","12 000 messages IA / mois","Tout le forfait Pro","Synchronisation des canaux prioritaire","Support prioritaire (jour ouvré suivant)","Appel de prise en main personnalisé","Options marque blanche"]),
+ "starter": ("Pour les chambres d'hôtes et les petits hôtels boutique", ["1 établissement, jusqu'à 10 chambres","⟦quota:starter⟧ messages IA / mois","Synchronisation des réservations OTA (100+ canaux)","Messagerie IA sur WhatsApp","Planning des chambres (calendrier des réservations)","Formulaires de visa PDF automatiques"]),
+ "pro":     ("Pour les hôtels indépendants en croissance", ["1 établissement, jusqu'à 50 chambres","⟦quota:pro⟧ messages IA / mois","Tout le forfait Starter","WhatsApp + messagerie des OTA (Booking.com, Airbnb, Expedia)","Check-in en ligne avec signature électronique","Vente de transferts et d'excursions","Application mobile"]),
+ "growth":  ("Pour les équipes qui gèrent deux établissements", ["Jusqu'à 2 établissements, 150 chambres","⟦quota:growth⟧ messages IA / mois","Tout le forfait Pro","Synchronisation des canaux prioritaire","Support prioritaire (jour ouvré suivant)","Appel de prise en main personnalisé","Options marque blanche"]),
 }
 
 def plans_html():
@@ -23,8 +23,8 @@ def plans_html():
         out.append(f'''<article class="plan{" pop" if pop else ""}" aria-labelledby="plan-{p["id"]}">
 {'<span class="tag">Le plus populaire</span>' if pop else ""}
 <h3 id="plan-{p["id"]}">{p["name"]}</h3><p class="for">{for_}</p>
-<div class="price num"><b>${p["price"]}</b><span class="muted">/ mois</span></div>
-<p class="small muted num" style="margin:0">Prix de lancement (normalement <s>${p["regular"]}</s>)</p>
+<div class="price num"><b data-price="{p["id"]}">⟦price:{p["id"]}⟧</b><span class="muted">/ mois</span></div>
+<p class="small muted num" style="margin:0" data-eb>Prix de lancement (normalement <s data-regular="{p["id"]}">⟦regular:{p["id"]}⟧</s>)</p>
 <ul>{lis}</ul>
 {btn("Commencer avec "+p["name"], SIGNUP_URL+"?plan="+p["id"], "primary" if pop else "ghost")}
 </article>''')
@@ -32,7 +32,7 @@ def plans_html():
 
 FAQ_CORE = [
  ("Qu'est-ce que Hostlio Pro ?", "Hostlio Pro est un logiciel de gestion hôtelière (PMS) propulsé par l'IA, conçu pour les hôtels indépendants, les hôtels boutique et les chambres d'hôtes. Il réunit sur une seule plateforme Lio, un assistant IA qui répond aux messages des clients 24 h/24 et 7 j/7 dans plus de 30 langues, un channel manager connecté à plus de 100 OTA, un calendrier de réservations en glisser-déposer et le check-in en ligne."),
- ("Combien coûte Hostlio Pro ?", "Il existe trois forfaits : Starter à 49 $/mois, Pro à 89 $/mois et Growth à 149 $/mois. Ces prix incluent une remise de lancement de 20 % réservée aux 50 premiers clients, garantie tant que vous restez abonné. Les prix normaux sont de 59 $, 109 $ et 189 $."),
+ ("Combien coûte Hostlio Pro ?", "Il existe trois forfaits : Starter à ⟦price:starter⟧/mois, Pro à ⟦price:pro⟧/mois et Growth à ⟦price:growth⟧/mois. Ces prix incluent une remise de lancement de 20 % réservée aux 50 premiers clients, garantie tant que vous restez abonné. Les prix normaux sont de ⟦regular:starter⟧, ⟦regular:pro⟧ et ⟦regular:growth⟧."),
  ("Y a-t-il un essai gratuit ?", "Oui. Chaque forfait comprend un essai gratuit de 7 jours. Une carte bancaire est demandée à l'inscription, mais aucun prélèvement n'a lieu avant la fin de l'essai, et vous pouvez résilier à tout moment avant. Aucun engagement de longue durée."),
  ("À quelles OTA Hostlio Pro est-il connecté ?", "Via Channex, Hostlio Pro se connecte à plus de 100 canaux, dont Booking.com, Airbnb, Expedia, Agoda, Trip.com, Hotels.com, Hotelbeds, Hostelworld et Google Hotels. Disponibilités, tarifs et réservations restent synchronisés sur l'ensemble de ces canaux."),
  ("Dans quelles langues Lio répond-il ?", "Lio répond dans plus de 30 langues, dont l'anglais, le turc, l'arabe, le russe, l'allemand, le japonais et le chinois. Il répond dans la langue du client, et vous voyez une traduction dans votre tableau de bord."),
@@ -67,9 +67,9 @@ def ai():
 <section><div class="wrap">
 <div class="section-head"><h2>Quota de messages IA par forfait</h2><p>Un message correspond à une réponse envoyée par Lio à un client.</p></div>
 <div class="table-wrap"><table><thead><tr><th>Forfait</th><th class="c">Messages IA / mois</th><th>Canaux de messagerie</th></tr></thead><tbody>
-<tr><th>Starter</th><td class="c num">1 000</td><td>WhatsApp</td></tr>
-<tr><th>Pro</th><td class="c num">5 000</td><td>WhatsApp + messageries OTA (Booking.com, Airbnb, Expedia)</td></tr>
-<tr><th>Growth</th><td class="c num">12 000</td><td>WhatsApp + messageries OTA (Booking.com, Airbnb, Expedia)</td></tr>
+<tr><th>Starter</th><td class="c num">⟦quota:starter⟧</td><td>WhatsApp</td></tr>
+<tr><th>Pro</th><td class="c num">⟦quota:pro⟧</td><td>WhatsApp + messageries OTA (Booking.com, Airbnb, Expedia)</td></tr>
+<tr><th>Growth</th><td class="c num">⟦quota:growth⟧</td><td>WhatsApp + messageries OTA (Booking.com, Airbnb, Expedia)</td></tr>
 </tbody></table></div>
 </div></section>
 '''
@@ -79,7 +79,7 @@ def ai():
      ("Que se passe-t-il quand le quota de messages est épuisé ?", "Les messages continuent d'arriver et s'affichent dans votre tableau de bord ; seules les réponses automatiques sont suspendues. Vous pouvez passer à un forfait supérieur pour augmenter votre quota."),
      FAQ_CORE[4],
     ]
-    return {"key":"ai","title":"Messagerie client IA pour hôtels en 30+ langues | Hostlio Pro",
+    return {"key":"ai","title":"Messagerie client IA pour hôtel en 30+ langues | Hostlio Pro",
             "desc":"Lio, l'assistant IA de Hostlio Pro, répond aux clients de votre hôtel sur WhatsApp et sur les OTA 24 h/24 en 30+ langues, et vend transferts et excursions.",
             "trail":[("Assistant IA Lio", U("ai"))],"body":body,"faq":faq}
 
@@ -116,7 +116,7 @@ def channel():
      ("Est-il difficile de quitter mon channel manager actuel ?", "Non. Créez vos types de chambres dans Hostlio Pro et associez vos comptes OTA via Channex. Notre équipe de prise en main vous accompagne pendant la transition."),
     ]
     return {"key":"channel","title":"Channel manager hôtelier pour 100+ OTA | Hostlio Pro",
-            "desc":"Le channel manager de Hostlio Pro synchronise en temps réel disponibilités et tarifs sur 100+ OTA, dont Booking.com, Airbnb, Expedia et Agoda, et évite le surbooking.",
+            "desc":"Le channel manager Hostlio Pro synchronise en temps réel disponibilités et tarifs sur 100+ OTA (Booking.com, Airbnb, Expedia, Agoda) sans surbooking.",
             "trail":[("Channel manager", U("channel"))],"body":body,"faq":faq}
 
 def checkin():
@@ -151,7 +151,7 @@ def checkin():
            ("Le client doit-il télécharger une application ?", "Non. Le formulaire de check-in s'ouvre dans le navigateur ; aucune application n'est à télécharger."),
            ("Et si un client ne remplit pas le formulaire ?", "Enregistrez-le de la manière habituelle. Votre équipe peut aussi saisir les informations à la réception avec l'application mobile Hostlio Pro.")]
     return {"key":"checkin","title":"Check-in en ligne avec signature électronique | Hostlio Pro",
-            "desc":"Avec le check-in en ligne de Hostlio Pro, vos clients envoient pièce d'identité, accompagnants et signature électronique depuis leur téléphone. Fini l'attente à la réception.",
+            "desc":"Avec le check-in en ligne, vos clients envoient pièce d'identité, accompagnants et signature électronique depuis leur mobile. Fini l'attente à l'accueil.",
             "trail":[("Check-in en ligne", U("checkin"))],"body":body,"faq":faq}
 
 def features():
@@ -165,13 +165,13 @@ def features():
 <div class="row"><h3>Check-in en ligne</h3><div><p>Lien sécurisé, accompagnants, photo de la pièce d'identité et signature électronique.</p><a href="{U("checkin")}">Check-in en ligne</a></div></div>
 <div class="row"><h3>Formulaires de visa PDF automatiques</h3><div><p>Générez en un clic, à partir des données de réservation, les lettres d'invitation et attestations d'hébergement nécessaires aux demandes de visa.</p></div></div>
 <div class="row"><h3>Vente de transferts et d'excursions</h3><div><p>Lio propose transferts aéroport et excursions pendant la conversation et transmet la demande à votre équipe.</p></div></div>
-<div class="row"><h3>Application mobile</h3><div><p>Gérez réservations, messages et check-ins hors de l'hôtel avec l'application iOS. Elle fonctionne hors ligne et se synchronise dès que vous êtes de nouveau connecté.</p></div></div>
+<div class="row"><h3>Application mobile</h3><div><p>Gérez réservations, messages et check-ins hors de l'hôtel avec l'application iOS et Android. Elle fonctionne hors ligne et se synchronise dès que vous êtes de nouveau connecté.</p></div></div>
 </div></div></section>
 <section><div class="wrap"><div class="section-head"><h2>Fonctionnalités par forfait</h2></div>
 <div class="table-wrap"><table><thead><tr><th>Fonctionnalité</th><th class="c">Starter</th><th class="c">Pro</th><th class="c">Growth</th></tr></thead><tbody>
 <tr><th>Établissements</th><td class="c">1</td><td class="c">1</td><td class="c">2</td></tr>
 <tr><th>Nombre de chambres max.</th><td class="c num">10</td><td class="c num">50</td><td class="c num">150</td></tr>
-<tr><th>Messages IA / mois</th><td class="c num">1 000</td><td class="c num">5 000</td><td class="c num">12 000</td></tr>
+<tr><th>Messages IA / mois</th><td class="c num">⟦quota:starter⟧</td><td class="c num">⟦quota:pro⟧</td><td class="c num">⟦quota:growth⟧</td></tr>
 <tr><th>Synchronisation avec plus de 100 OTA</th><td class="c">Oui</td><td class="c">Oui</td><td class="c">Prioritaire</td></tr>
 <tr><th>Messagerie IA sur WhatsApp</th><td class="c">Oui</td><td class="c">Oui</td><td class="c">Oui</td></tr>
 <tr><th>Messagerie des OTA (Booking.com, Airbnb, Expedia)</th><td class="c">Non</td><td class="c">Oui</td><td class="c">Oui</td></tr>
@@ -179,13 +179,13 @@ def features():
 <tr><th>Formulaires de visa PDF</th><td class="c">Oui</td><td class="c">Oui</td><td class="c">Oui</td></tr>
 <tr><th>Check-in en ligne et signature électronique</th><td class="c">Non</td><td class="c">Oui</td><td class="c">Oui</td></tr>
 <tr><th>Vente de transferts et d'excursions</th><td class="c">Non</td><td class="c">Oui</td><td class="c">Oui</td></tr>
-<tr><th>Application mobile iOS</th><td class="c">Non</td><td class="c">Oui</td><td class="c">Oui</td></tr>
+<tr><th>Application mobile iOS et Android</th><td class="c">Non</td><td class="c">Oui</td><td class="c">Oui</td></tr>
 <tr><th>Support prioritaire et appel de prise en main</th><td class="c">Non</td><td class="c">Non</td><td class="c">Oui</td></tr>
 <tr><th>Marque blanche</th><td class="c">Non</td><td class="c">Non</td><td class="c">Oui</td></tr>
 </tbody></table></div></div></section>
 '''
-    return {"key":"features","title":"Fonctionnalités du logiciel de gestion hôtelière | Hostlio Pro",
-            "desc":"Fonctionnalités de Hostlio Pro : assistant IA, channel manager pour 100+ OTA, planning des chambres en glisser-déposer, check-in en ligne, visas PDF et application mobile.",
+    return {"key":"features","title":"Fonctions du logiciel de gestion hôtelière | Hostlio Pro",
+            "desc":"Hostlio Pro inclut : assistant IA, channel manager 100+ OTA, planning des chambres en glisser-déposer, check-in en ligne, visas PDF et application mobile.",
             "trail":[("Fonctionnalités", U("features"))],"body":body,"faq":[FAQ_CORE[0], FAQ_CORE[3]]}
 
 def pricing():
@@ -200,7 +200,7 @@ def pricing():
 <section class="white rule"><div class="wrap">
 <div class="section-head"><h2>Quel forfait vous convient ?</h2></div>
 <div class="rows">
-<div class="row"><h3>Starter</h3><div><p>Chambres d'hôtes et hôtels boutique jusqu'à 10 chambres, qui envoient moins de 1 000 réponses par mois et veulent démarrer avec la synchronisation des canaux et les réponses IA.</p></div></div>
+<div class="row"><h3>Starter</h3><div><p>Chambres d'hôtes et hôtels boutique jusqu'à 10 chambres, qui envoient moins de ⟦quota:starter⟧ réponses par mois et veulent démarrer avec la synchronisation des canaux et les réponses IA.</p></div></div>
 <div class="row"><h3>Pro</h3><div><p>Hôtels de 11 à 50 chambres qui veulent que Lio gère aussi les messages OTA, utiliser le check-in en ligne et vendre transferts et excursions.</p></div></div>
 <div class="row"><h3>Growth</h3><div><p>Deux établissements ou jusqu'à 150 chambres, lorsque vous avez besoin d'un support prioritaire, d'une prise en main personnalisée et d'une utilisation en marque blanche.</p></div></div>
 </div></div></section>
@@ -210,13 +210,13 @@ def pricing():
       ("Existe-t-il une facturation annuelle ?", "Oui. Les abonnements sont facturés mensuellement ou annuellement, à l'avance, et les forfaits annuels bénéficient d'une remise de 20 % (Conditions d'utilisation, section 3)."),
       ("Puis-je changer de forfait ?", "Oui. Passez à un forfait supérieur ou inférieur à tout moment ; le changement s'applique à partir de la période de facturation suivante."),
       ("Combien de temps dure la remise de lancement ?", "Elle s'applique aux 50 premiers clients, et votre prix reste garanti tant que votre abonnement se poursuit.")]
-    return {"key":"pricing","title":"Tarifs du logiciel hôtelier : dès 49 $/mois | Hostlio Pro",
-            "desc":"Tarifs de Hostlio Pro : Starter 49 $, Pro 89 $, Growth 149 $ par mois. Sans commission, sans frais d'installation, essai gratuit de 7 jours. Comparez les forfaits.",
+    return {"key":"pricing","title":"Tarifs du logiciel hôtelier : dès ⟦price:starter⟧/mois | Hostlio Pro",
+            "desc":"Tarifs Hostlio Pro : Starter ⟦price:starter⟧, Pro ⟦price:pro⟧, Growth ⟦price:growth⟧ par mois. Sans commission ni frais d'installation, essai gratuit 7 jours. Comparez les offres.",
             "trail":[("Tarifs", U("pricing"))],"body":body,"faq":faq,"schema":[software_schema(L, detailed=True)]}
 
 FAQ_ALL = FAQ_CORE + [
  ("À quels types d'hôtels s'adresse Hostlio Pro ?", "Aux établissements indépendants de 1 à 150 chambres : hôtels boutique, hôtels urbains, chambres d'hôtes, résidences hôtelières et auberges de jeunesse."),
- ("Existe-t-il une application mobile ?", "Oui. Les forfaits Pro et Growth incluent une application iOS. Elle fonctionne sans connexion Internet et synchronise les données dès que vous êtes de nouveau en ligne."),
+ ("Existe-t-il une application mobile ?", "Oui. Les forfaits Pro et Growth incluent une application iOS et Android. Elle fonctionne sans connexion Internet et synchronise les données dès que vous êtes de nouveau en ligne."),
  ("Comment fonctionne le check-in en ligne ?", "Les clients reçoivent un lien sécurisé personnel et envoient depuis leur téléphone, avant leur arrivée, leurs données d'identité, leurs accompagnants et leur signature électronique. Disponible avec Pro et Growth."),
  ("À quoi sert la fonction de formulaires de visa PDF ?", "Elle transforme automatiquement les données de réservation en attestations d'hébergement et lettres d'invitation au format PDF pour les clients qui ont besoin d'un visa."),
  ("Mes données sont-elles sécurisées ?", "Les données transitent par des connexions chiffrées, et les données de chaque hôtel sont isolées de celles des autres établissements grâce à des règles d'accès au niveau des lignes. Les données des clients peuvent être supprimées sur demande."),
@@ -229,7 +229,7 @@ def faq_page():
 <p class="lead">Les questions les plus courantes sur les fonctionnalités, les tarifs et la mise en place de Hostlio Pro. Vous ne trouvez pas votre réponse ? <a href="{U("contact")}">Écrivez-nous</a>.</p></div></section>
 <section style="padding-top:0"><div class="wrap">{faq_block(FAQ_ALL, L, heading=False, wrap=False)}</div></section>'''
     return {"key":"faq","title":"FAQ Hostlio Pro : questions fréquentes",
-            "desc":"Questions fréquentes sur le logiciel de gestion hôtelière Hostlio Pro : tarifs, essai gratuit, intégrations OTA, assistant IA Lio, check-in en ligne et sécurité.",
+            "desc":"FAQ sur le logiciel de gestion hôtelière Hostlio Pro : tarifs, essai gratuit, intégrations OTA, assistant IA Lio, check-in en ligne et sécurité.",
             "trail":[("FAQ", U("faq"))],"body":body,"faq":FAQ_ALL,"faq_inline":True,"page_type":"FAQPage"}
 
 def about():
@@ -245,7 +245,7 @@ def about():
 <dt>Adresse</dt><dd>2108 N ST STE N, Sacramento, CA 95816, USA</dd><dt>E-mail</dt><dd><a href="mailto:{EMAIL}">{EMAIL}</a></dd>
 <dt>Clients</dt><dd>Hôtels indépendants dans plus de 20 pays</dd></dl></div>
 </div></section>'''
-    return {"key":"about","title":"À propos de Hostlio Pro","desc":"Hostlio Pro conçoit un logiciel de gestion hôtelière propulsé par l'IA pour les hôtels indépendants. Exploité par Loti Members LLC et utilisé dans plus de 20 pays.",
+    return {"key":"about","title":"À propos de Hostlio Pro","desc":"Hostlio Pro crée un logiciel de gestion hôtelière à base d'IA pour les hôtels indépendants. Exploité par Loti Members LLC et utilisé dans plus de 20 pays.",
             "trail":[("À propos", U("about"))],"body":body,"page_type":"AboutPage"}
 
 def contact():
@@ -265,16 +265,16 @@ def contact():
 <button class="btn btn-primary" type="submit">Envoyer la demande de démo</button>
 <p class="form-status" role="status" aria-live="polite"></p>
 </form></div></section>'''
-    return {"key":"contact","title":"Contact et demande de démo | Hostlio Pro","desc":"Contactez l'équipe Hostlio Pro ou réservez une démo gratuite de 30 minutes adaptée à votre hôtel. Support en anglais et en turc, e-mail : " + EMAIL,
+    return {"key":"contact","title":"Contact et demande de démo | Hostlio Pro","desc":"Contactez l'équipe Hostlio Pro ou réservez une démo gratuite de 30 minutes adaptée à votre hôtel. Support en anglais et turc, e-mail : " + EMAIL,
             "trail":[("Contact", U("contact"))],"body":body,"page_type":"ContactPage","no_final":True}
 
 POSTS = [
  {"key":"post-overbooking","title":"Comment éviter le surbooking : 6 étapes pour les hôtels","date":"2026-09-21","desc":"Pourquoi les hôtels se retrouvent en surbooking et comment l'éviter : channel manager, arrêts de vente, marges de disponibilité et que faire si cela arrive malgré tout."},
  {"key":"post-autoreply","title":"Répondre automatiquement aux messages clients Booking.com","date":"2026-09-21","desc":"Trois façons d'automatiser les messages des clients Booking.com : modèles de réponse, messages programmés et assistant IA."},
- {"key":"post-ai","title":"Répondre aux messages des clients de l'hôtel avec l'IA : guide pratique","date":"2026-09-18",
-  "desc":"Avantages, risques et étapes de mise en place pour répondre aux messages des clients de votre hôtel avec l'IA. Quelles questions automatiser et lesquelles laisser à votre équipe."},
- {"key":"post-pms","title":"Comment choisir un logiciel de gestion hôtelière (PMS) pour un petit hôtel","date":"2026-09-10",
-  "desc":"7 critères pour choisir un PMS hôtelier pour un petit hôtel ou un hôtel boutique : channel manager, modèle tarifaire, messagerie client, accès mobile et plus encore."},
+ {"key":"post-ai","title":"Répondre aux clients de l'hôtel avec l'IA : guide pratique","date":"2026-09-18",
+  "desc":"Avantages, risques et mise en place : répondre avec l'IA aux messages de vos clients. Quelles questions automatiser, lesquelles laisser à l'équipe."},
+ {"key":"post-pms","title":"Choisir un logiciel de gestion hôtelière pour un petit hôtel","date":"2026-09-10",
+  "desc":"7 critères pour choisir le PMS d'un petit hôtel ou d'un hôtel boutique : channel manager, tarification, messagerie client, accès mobile et plus encore."},
 ]
 
 def blog():
@@ -311,7 +311,7 @@ def post_ai():
 <h2>Pourquoi les réponses multilingues comptent</h2>
 <p>Les clients qui écrivent dans leur propre langue donnent plus de détails et font davantage confiance à la réponse. Un assistant qui répond dans plus de 30 langues crée cette confiance même quand personne à la réception ne parle la langue, et vous lisez toujours la conversation dans la vôtre.</p>
 <h2>Comment cela fonctionne dans Hostlio Pro</h2>
-<p><a href="{U("ai")}">Lio</a>, l'assistant IA de Hostlio Pro, utilise les informations de votre hôtel et les données de réservation pour répondre aux messages WhatsApp et OTA (Booking.com, Airbnb, Expedia) dans plus de 30 langues. Les forfaits incluent entre 1 000 et 12 000 messages IA par mois ; consultez la <a href="{U("pricing")}">page Tarifs</a> pour plus de détails.</p>'''
+<p><a href="{U("ai")}">Lio</a>, l'assistant IA de Hostlio Pro, utilise les informations de votre hôtel et les données de réservation pour répondre aux messages WhatsApp et OTA (Booking.com, Airbnb, Expedia) dans plus de 30 langues. Les forfaits incluent entre ⟦quota:starter⟧ et ⟦quota:growth⟧ messages IA par mois ; consultez la <a href="{U("pricing")}">page Tarifs</a> pour plus de détails.</p>'''
     faq = [("L'IA peut-elle donner de fausses informations aux clients ?", "Le risque est minime lorsque l'assistant s'appuie uniquement sur les informations fournies par l'hôtel et transmet à l'équipe les questions dont il n'est pas sûr. Il est recommandé de commencer en mode validation."),
            ("Les clients sauront-ils qu'ils parlent à une IA ?", "Les réponses sont rédigées au nom de l'hôtel et dans son ton. Par souci de transparence, l'hôtel peut indiquer dans le message d'accueil que l'assistant est une IA.")]
     return article(next(p for p in POSTS if p["key"]=="post-ai"), c, faq)

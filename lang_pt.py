@@ -26,9 +26,9 @@ UI = {
 MEGA = {"btn":"Produto","cols":[
    ("Hóspedes",[("ai","sparkle","Assistente de IA Lio","Respostas 24/7 aos hóspedes em 30+ idiomas"),("checkin","identification-card","Check-in online","Documento, acompanhantes e assinatura digital")]),
    ("Distribuição",[("channel","arrows-left-right","Channel manager","100+ OTAs em um só calendário"),("features","calendar-dots","Mapa de reservas","Calendário de reservas com arrastar e soltar")]),
-   ("Operação",[("features","van","Transfers e passeios","Receita extra enquanto você conversa"),("features","device-mobile","App móvel","iOS que funciona até off-line")]),
+   ("Operação",[("features","van","Transfers e passeios","Receita extra enquanto você conversa"),("features","device-mobile","App móvel","iOS e Android, até off-line")]),
    ("Por tipo de hospedagem",[("t-boutique","sparkle","Hotéis boutique","Hotéis de 10 a 50 quartos"),("t-guesthouse","users-three","Pousadas","Hospedagens de 1 a 10 quartos"),("t-apart","calendar-dots","Apart-hotéis","Apartamentos e suítes"),("t-hostel","globe-simple","Hostels","Venda por cama")]),
-  ],"feat":("pricing","Compare os planos","A partir de US$ 49 por mês, 7 dias grátis")}
+  ],"feat":("pricing","Compare os planos","A partir de ⟦price:starter⟧ por mês, 7 dias grátis")}
 
 # ------------------------------------------------------------------ build.software_schema / room_rack / 404
 SOFT_DESC = "Sistema para hotel com inteligência artificial para hotéis independentes: mensagens com hóspedes 24/7 em 30+ idiomas, channel manager com 100+ OTAs, calendário de reservas e check-in online."
@@ -43,7 +43,7 @@ NOTFOUND = ("Página não encontrada | Hostlio Pro",
 # ------------------------------------------------------------------ home_v3.T
 HOME = dict(
   title="Sistema para Hotel com IA e Channel Manager | Hostlio Pro",
-  desc="Sistema para hotel Hostlio Pro: o assistente de IA Lio responde aos hóspedes 24/7 em 30+ idiomas e o channel manager sincroniza 100+ OTAs. Teste 7 dias grátis.",
+  desc="Sistema para hotel Hostlio Pro: o assistente de IA Lio responde aos hóspedes 24/7 em 30+ idiomas e o channel manager sincroniza 100+ OTAs. 7 dias grátis.",
   h1='Enquanto seu hotel dorme, <em class="hl">Lio</em> responde',
   lead="Sistema para hotel com inteligência artificial para hotéis independentes e pousadas. Reservas, 100+ canais e mensagens de hóspedes em um só lugar, em 30+ idiomas.",
   try_="Teste grátis", demo="Agendar demonstração", via="Conexões certificadas com:", more="e mais 100+",
@@ -61,7 +61,7 @@ HOME = dict(
   tour_h='Gerencie o dia do seu hotel <em class="hl">em uma só tela</em>', tour_p="Mensagens de hóspedes, reservas, canais e check-in funcionam juntos.", tour_label="Tour pelo produto",
   tabs=["Mensagens","Calendário","Canais","Check-in"],
   st=[("Todas as mensagens de hóspedes em uma só caixa de entrada","WhatsApp e as caixas de entrada das OTAs (Booking.com, Airbnb, Expedia) juntos. Lio responde com as informações do seu hotel, e você só vê o que realmente precisa de você.",["Respostas automáticas em 30+ idiomas","Dados da reserva ao lado de cada mensagem","Repassa a você o que não tem certeza"],"ai","Como o Lio funciona"),
-      ("A semana inteira no mapa de reservas","Veja cada reserva na cor do seu canal. Trocar de quarto, estender a estadia ou bloquear datas exige um único gesto.",["Troca de quarto com arrastar e soltar","Reservas com cores por canal","O mesmo calendário na web e no iOS"],"features","Todas as funcionalidades"),
+      ("A semana inteira no mapa de reservas","Veja cada reserva na cor do seu canal. Trocar de quarto, estender a estadia ou bloquear datas exige um único gesto.",["Troca de quarto com arrastar e soltar","Reservas com cores por canal","O mesmo calendário na web, no iOS e no Android"],"features","Todas as funcionalidades"),
       ("100+ canais, uma só disponibilidade","Sincronização bidirecional com conexões de canal certificadas. Um quarto vendido em um canal fecha nos outros na hora.",["Tarifas e restrições em uma só tela","Novas reservas e cancelamentos entram sozinhos","Sem risco de overbooking"],"channel","Channel manager"),
       ("O check-in fica pronto antes da chegada","O hóspede envia os dados do documento, os acompanhantes e a assinatura pelo celular, por meio de um link seguro.",["No navegador, sem baixar app","Acompanhantes em um único formulário","Assinatura digital e consentimento"],"checkin","Check-in online")],
   inbox_top=("Caixa de entrada","12 conversas abertas"), inbox_note="Tradução: o check-in é a partir das 14h, podemos guardar sua bagagem.",
@@ -75,7 +75,7 @@ HOME = dict(
   b_pdf=("Formulários de visto em PDF","Cartas de hospedagem e de convite com um clique.","Carta de hospedagem","PDF"),
   b_tr=("Venda de transfers e passeios","Lio oferece no momento certo; você fatura mais.","Transfer do aeroporto","+35 €"),
   b_lang=("30+ idiomas","No idioma em que o hóspede escrever, nesse idioma vem a resposta."),
-  b_mob=("App móvel","Reservas, mensagens e check-ins no iOS, até off-line."),
+  b_mob=("App móvel","Reservas, mensagens e check-ins no iOS e no Android, até off-line."),
   types_h='Feito para <em class="hl">todo tipo de hospedagem</em>', types_p="Pensado para hospedagens independentes de 1 a 150 quartos.",
   types=[("brand-courtyard","Pátio de hotel boutique com piscina e buganvílias","Hotel boutique","10–50 quartos","Muitos hóspedes estrangeiros, cada mensagem pessoal."),
          ("gen-hostel","Lobby com painéis de madeira e área de convivência","Hostel","Camas e quartos","Viajantes de vários idiomas, caixas de entrada cheias."),
@@ -88,7 +88,7 @@ HOME = dict(
   ai_cards=[("van","Vende por você","Oferece transfers do aeroporto e passeios no momento certo e repassa o pedido para você."),("hand-arrow-up","Sabe quando repassar","Mensagens que exigem uma decisão, como descontos, reclamações ou pedidos especiais, vão para a sua equipe."),("calendar-dots","Conhece a reserva","Quando o hóspede é vinculado a uma reserva, as respostas usam o quarto, as datas e os dados da reserva.")],
   ai_photo=("brand-guest-phone","Hóspede junto à janela digitando uma mensagem no celular","No WhatsApp e nas OTAs","WhatsApp, Booking.com, Airbnb e Expedia."),
   ai_btn="Conheça o Lio",
-  answer="<strong>O que é o Hostlio Pro?</strong> O Hostlio Pro é um sistema para hotel na nuvem (um PMS hoteleiro) para hotéis independentes e pousadas de 1 a 150 quartos. Ele entrega a comunicação com os hóspedes à inteligência artificial, reúne as reservas das OTAs em um só calendário e leva o check-in para o celular do hóspede. É gerenciado pela web e por um app para iOS, e usado em mais de 20 países.",
+  answer="<strong>O que é o Hostlio Pro?</strong> O Hostlio Pro é um sistema para hotel na nuvem (um PMS hoteleiro) para hotéis independentes e pousadas de 1 a 150 quartos. Ele entrega a comunicação com os hóspedes à inteligência artificial, reúne as reservas das OTAs em um só calendário e leva o check-in para o celular do hóspede. É gerenciado pela web e por um app para iOS e Android, e usado em mais de 20 países.",
   stats=[("30+","idiomas atendidos"),("100+","OTAs e canais de venda"),("20+","países com hotéis usando Hostlio Pro"),("7 dias","de teste grátis, sem compromisso")],
   sup_h="Uma equipe ao seu lado",
   sup=[("rocket-launch","t-peach","Conta em minutos, canais no mesmo dia","Sua conta fica pronta em minutos; cadastre os tipos de quarto e conecte os canais no mesmo dia. O plano Growth inclui uma chamada individual de implantação."),
@@ -107,22 +107,22 @@ def types(U):
     return [
  dict(key="t-guesthouse", img=("gen-guesthouse", "Quarto aconchegante de pousada com luminária de mesa", 1080, 1350),
   title="Sistema para Pousada com Assistente de IA | Hostlio Pro",
-  desc="Sistema para pousada: respostas automáticas aos hóspedes em 30+ idiomas, sincronização com Booking.com e Airbnb e check-in online. A partir de US$ 49/mês.",
+  desc="Sistema para pousada: respostas automáticas aos hóspedes em 30+ idiomas, sincronização com Booking.com e Airbnb e check-in online. A partir de ⟦price:starter⟧/mês.",
   crumb="Sistema para pousadas", h1='<em class="hl">Sistema para pousada</em> que responde aos hóspedes por você',
   lead="Em uma pousada, uma só pessoa cuida das mensagens tarde da noite, das reservas em vários canais e do check-in. O Hostlio Pro tira esse peso das costas dela.",
   q="O que é um sistema para pousada?",
-  a="Um sistema para pousada permite que pequenas hospedagens de 1 a 10 quartos gerenciem reservas, disponibilidade e comunicação com hóspedes em um só lugar. O Hostlio Pro acrescenta o Lio, um assistente de IA que responde às perguntas dos hóspedes 24/7 em mais de 30 idiomas. O plano Starter custa US$ 49 por mês para hospedagens de até 10 quartos.",
+  a="Um sistema para pousada permite que pequenas hospedagens de 1 a 10 quartos gerenciem reservas, disponibilidade e comunicação com hóspedes em um só lugar. O Hostlio Pro acrescenta o Lio, um assistente de IA que responde às perguntas dos hóspedes 24/7 em mais de 30 idiomas. O plano Starter custa ⟦price:starter⟧ por mês para hospedagens de até 10 quartos.",
   pains_h="Quais são as maiores dificuldades das pousadas?",
   pains=[("Mensagens à noite","Perguntas sobre check-in tardio, estacionamento e café da manhã chegam à meia-noite. Lio responde no idioma do hóspede e você lê um resumo pela manhã."),
          ("Vários canais","Vender o mesmo quarto no Booking.com e no Airbnb gera reservas duplicadas. O channel manager sincroniza a disponibilidade na hora."),
          ("Documentos e registro","Digitar os dados dos hóspedes na recepção leva tempo. O check-in online coleta tudo antes da chegada."),
          ("Orçamento apertado","Sistemas cobrados por comissão ficam mais caros à medida que a ocupação cresce. O Hostlio Pro tem mensalidade fixa.")],
-  plan="Para a maioria das pousadas, o plano <strong>Starter</strong> é suficiente: até 10 quartos, 1.000 mensagens de IA por mês e respostas de IA no WhatsApp. Escolha o <strong>Pro</strong> se também quiser check-in online e o Lio cuidando das mensagens das OTAs.",
-  faq=[("Existe sistema para pousada grátis?","Você pode testar o Hostlio Pro grátis por 7 dias. Depois disso, o Starter custa US$ 49 por mês (preço promocional de lançamento para os 50 primeiros clientes)."),
+  plan="Para a maioria das pousadas, o plano <strong>Starter</strong> é suficiente: até 10 quartos, ⟦quota:starter⟧ mensagens de IA por mês e respostas de IA no WhatsApp. Escolha o <strong>Pro</strong> se também quiser check-in online e o Lio cuidando das mensagens das OTAs.",
+  faq=[("Existe sistema para pousada grátis?","Você pode testar o Hostlio Pro grátis por 7 dias. Depois disso, o Starter custa ⟦price:starter⟧ por mês (preço promocional de lançamento para os 50 primeiros clientes)."),
        ("Serve para uma pousada de 3 quartos?","Sim. O Starter foi pensado para uma hospedagem de até 10 quartos; o preço é o mesmo com menos quartos."),
        ("Posso usar Airbnb e Booking.com juntos?","Sim. O Hostlio Pro sincroniza os dois, além de mais de 100 outros canais, em um só calendário via Channex.")]),
  dict(key="t-boutique", img=("gen-boutique-room", "Pátio de hotel boutique com piscina e buganvílias", 1080, 1350),
-  title="Sistema para Hotel Boutique com IA para Hóspedes | Hostlio Pro",
+  title="Sistema para Hotel Boutique com IA | Hostlio Pro",
   desc="Sistema para hotel boutique: respostas pessoais a hóspedes estrangeiros em 30+ idiomas, sincronização com 100+ OTAs, check-in online e venda de transfers.",
   crumb="Sistema para hotel boutique", h1='<em class="hl">Sistema para hotel boutique</em> pensado para o hóspede',
   lead="O que diferencia um hotel boutique é a atenção pessoal. O Hostlio Pro assume as perguntas repetitivas para que sua equipe tenha mais tempo para os hóspedes.",
@@ -133,13 +133,13 @@ def types(U):
          ("Receita extra","Transfers do aeroporto e passeios fazem diferença para hotéis boutique. Lio oferece esses serviços no momento certo."),
          ("Muito tráfego das OTAs","Reservas do Booking.com, da Expedia e do Airbnb aparecem em um só mapa de reservas, com cores por canal."),
          ("Check-in rápido","Com check-in online e assinatura digital, o hóspede recebe um drinque de boas-vindas em vez de um formulário.")],
-  plan="Para hotéis boutique de 10 a 50 quartos, recomendamos o <strong>Pro</strong>: 5.000 mensagens de IA por mês, WhatsApp e caixas de entrada das OTAs (Booking.com, Airbnb, Expedia), check-in online, venda de transfers e passeios e o app para iOS.",
+  plan="Para hotéis boutique de 10 a 50 quartos, recomendamos o <strong>Pro</strong>: ⟦quota:pro⟧ mensagens de IA por mês, WhatsApp e caixas de entrada das OTAs (Booking.com, Airbnb, Expedia), check-in online, venda de transfers e passeios e o app para iOS e Android.",
   faq=[("Qual é o melhor sistema para hotel boutique?","Depende do número de quartos, do perfil dos hóspedes e do orçamento. Para hotéis de 10 a 50 quartos com muitos hóspedes estrangeiros e que querem preço fixo, as mensagens por IA e o channel manager do Hostlio Pro são uma boa escolha. Veja nossa página de comparativo para outras opções."),
        ("Posso usar o Hostlio Pro com o site que já tenho?","Sim. O Hostlio Pro funciona ao lado do seu site atual; as reservas das OTAs são sincronizadas e as mensagens de hóspedes do WhatsApp e das OTAs chegam a uma só caixa de entrada."),
        ("Quantos usuários posso adicionar?","Veja a página de preços para os detalhes de cada plano ou pergunte à nossa equipe durante a demonstração.")]),
  dict(key="t-apart", img=("gen-apart", "Apartamento claro com roupa de cama branca", 1080, 1350),
   title="Sistema para Apart-Hotel com Check-in Online | Hostlio Pro",
-  desc="Sistema para apart-hotel e flats: sincronização com Airbnb e Booking.com, check-in online com assinatura digital e mensagens com hóspedes por IA em 30+ idiomas.",
+  desc="Sistema para apart-hotel e flats: sincronização com Airbnb e Booking.com, check-in online com assinatura digital e mensagens por IA em 30+ idiomas.",
   crumb="Sistema para apart-hotel", h1='<em class="hl">Sistema para apart-hotel</em> com operação remota',
   lead="Apart-hotéis muitas vezes não têm recepção ou funcionam em horário reduzido, então a comunicação com o hóspede e o check-in acontecem a distância. O Hostlio Pro foi feito para isso.",
   q="O que é um sistema para apart-hotel?",
@@ -155,7 +155,7 @@ def types(U):
        ("Existe limite de unidades?","O Starter atende até 10, o Pro até 50 e o Growth até 150 quartos ou unidades.")]),
  dict(key="t-hostel", img=("gen-hostel", "Lobby com painéis de madeira e área de convivência", 1080, 1350),
   title="Sistema para Hostels: Mensagens em 30+ Idiomas | Hostlio Pro",
-  desc="Sistema para hostels: sincronização com Hostelworld, Booking.com e 100+ canais, mensagens com hóspedes por IA em 30+ idiomas e check-in online. 7 dias grátis.",
+  desc="Sistema para hostels: sincronização com Hostelworld, Booking.com e 100+ canais, mensagens por IA em 30+ idiomas e check-in online. 7 dias grátis.",
   crumb="Sistema para hostels", h1='<em class="hl">Sistema para hostels</em> com caixas de entrada cheias e multilíngues',
   lead="Hostels têm hóspedes internacionais, grande volume de mensagens e equipes pequenas. O Hostlio Pro cuida das perguntas em vários idiomas e mantém os canais em um só calendário.",
   q="O que é um sistema para hostels?",
@@ -165,7 +165,7 @@ def types(U):
          ("Hostelworld e OTAs","Hostelworld, Booking.com e outros canais compartilham uma só disponibilidade."),
          ("Passeios e transfers","City tours e transfers do aeroporto são extras comuns em hostels; Lio oferece no momento certo."),
          ("Turno da noite","Perguntas feitas à noite não esperam até de manhã; a equipe só cuida do que exige uma decisão.")],
-  plan="Para hostels com grande volume, recomendamos o <strong>Pro</strong>, com 5.000 mensagens de IA por mês. Vamos planejar juntos a sua configuração por cama durante a demonstração.",
+  plan="Para hostels com grande volume, recomendamos o <strong>Pro</strong>, com ⟦quota:pro⟧ mensagens de IA por mês. Vamos planejar juntos a sua configuração por cama durante a demonstração.",
   faq=[("Funciona com o Hostelworld?","Sim. O Hostelworld está entre os canais conectados ao Channex."),
        ("A venda por cama (dormitório) é suportada?","Depende da sua configuração; vamos planejar juntos a estrutura de quartos e camas durante a demonstração."),
        ("De quantas mensagens de IA eu preciso?","Cerca de 150 respostas automáticas por dia dão aproximadamente 4.500 por mês, o que se encaixa no plano Pro.")]),
@@ -174,14 +174,14 @@ def types(U):
 # ------------------------------------------------------------------ pages_v4.CMP
 def cmp(U):
     return dict(
-  title="Comparativo de Sistemas para Hotel 2026: Preços | Hostlio Pro",
-  desc="Hostlio Pro, Cloudbeds, Mews, Little Hotelier e HotelRunner comparados: preços publicados, preço inicial, taxas por reserva, teste grátis e mensagens por IA.",
+  title="Comparativo de Sistemas para Hotel 2026 | Hostlio Pro",
+  desc="Hostlio Pro, Cloudbeds, Mews, Little Hotelier e HotelRunner comparados: preços publicados, preço inicial, comissões, teste grátis e mensagens por IA.",
   crumb="Comparativo de sistemas para hotel", h1='<em class="hl">Comparativo</em> de sistemas para hotel (2026)',
   lead="Comparamos cinco sistemas de gestão hoteleira populares entre hotéis independentes, usando apenas o que cada fornecedor publica na sua própria página de preços.",
   q="Qual sistema para hotel é o ideal para você?",
   a="Resposta curta: para hotéis com uma única propriedade, de 1 a 150 quartos e muitos hóspedes estrangeiros, um sistema de preço fixo com mensagens por IA incluídas (como o Hostlio Pro) mantém o orçamento previsível. Grupos com várias propriedades e necessidades corporativas podem considerar plataformas com preço sob consulta, como Mews ou Cloudbeds; propriedades na Turquia que buscam suporte local e uma rede B2B podem olhar o HotelRunner; pequenas propriedades que querem a rede da SiteMinder podem considerar o Little Hotelier.",
   cols=["Sistema","Preços publicados?","A partir de","Taxa por reserva","Teste grátis","Mensagens com hóspedes por IA"],
-  rows=[("Hostlio Pro","Sim","US$ 49/mês (preço de lançamento)","Nenhuma, mensalidade fixa","7 dias","Todos os planos (Lio, 30+ idiomas)"),
+  rows=[("Hostlio Pro","Sim","⟦price:starter⟧/mês (preço de lançamento)","Nenhuma, mensalidade fixa","7 dias","Todos os planos (Lio, 30+ idiomas)"),
         ("Cloudbeds","Não, sob consulta","Sob consulta","Informa que não cobra comissão adicional sobre reservas do Booking Engine e do Channel Manager","Não informado na página de preços","Não informado separadamente na página de preços"),
         ("Mews","Não, sob consulta","Sob consulta","Não informado na página de preços","Não informado na página de preços","Resumos de preferências dos hóspedes por IA no plano Advanced; mensagens não informadas separadamente"),
         ("Little Hotelier","Calculado pelo número de quartos","Pela calculadora de preços","Taxa de 1% por reserva no plano Basics","30 dias","Não informado na página de preços"),
@@ -202,7 +202,7 @@ def cmp(U):
 def guides(U):
     return [
  dict(key="post-overbooking", date="2026-09-21", title="Como evitar overbooking: 6 passos para hotéis",
-  desc="Por que os hotéis sofrem com overbooking e como evitá-lo: channel manager, regras de stop-sell, margem de disponibilidade e o que fazer se acontecer mesmo assim.",
+  desc="Por que os hotéis têm overbooking e como evitá-lo: channel manager, regras de stop-sell, margem de disponibilidade e o que fazer se acontecer mesmo assim.",
   content=f'''<div class="answer"><p><strong>Resposta curta:</strong> Overbooking é aceitar mais reservas do que você consegue hospedar para o mesmo quarto e as mesmas datas. Em hotéis independentes, a causa mais comum é atualizar a disponibilidade à mão em várias OTAs. Um channel manager bidirecional e em tempo real elimina a maior parte do risco.</p></div>
 <h2>Por que o overbooking acontece?</h2>
 <ul><li>Atualizar a disponibilidade no Booking.com, no Airbnb e na Expedia separadamente, à mão</li><li>Lançar com atraso as reservas feitas por telefone ou no balcão</li><li>Cancelamentos e alterações que chegam a um canal, mas não a outro</li><li>Sincronização com atraso (de hora em hora) entre os canais</li></ul>
@@ -220,7 +220,7 @@ def guides(U):
   faq=[("O que significa overbooking?","Overbooking é quando um hotel aceita mais reservas do que consegue hospedar para o mesmo quarto e as mesmas datas, também chamado de reserva duplicada."),
        ("Um channel manager evita totalmente o overbooking?","A sincronização bidirecional em tempo real elimina a maior parte do risco; reservas diretas não lançadas e mapeamentos de quartos errados ainda podem causar problemas.")]),
  dict(key="post-autoreply", date="2026-09-21", title="Como responder automaticamente às mensagens do Booking.com",
-  desc="Três formas de automatizar as mensagens de hóspedes do Booking.com: modelos, mensagens programadas e um assistente de IA. Quando cada uma funciona e onde falha.",
+  desc="Três formas de automatizar mensagens de hóspedes do Booking.com: modelos, mensagens programadas e assistente de IA. Quando cada uma funciona e onde falha.",
   content=f'''<div class="answer"><p><strong>Resposta curta:</strong> Há três formas de automatizar as mensagens do Booking.com: modelos de mensagem salvos na extranet, mensagens programadas de acordo com a etapa da reserva e um assistente de IA que entende a pergunta do hóspede e responde com as informações do seu hotel. Os modelos servem para informações padrão; um assistente de IA serve para as perguntas que mudam a cada hóspede.</p></div>
 <h2>1. Modelos de mensagem</h2>
 <p>Salve respostas frequentes, como horário de check-in, como chegar e estacionamento, como modelos e envie-as com um clique. São simples, mas alguém ainda precisa ler a mensagem e escolher o modelo certo.</p>
@@ -243,10 +243,10 @@ def guides(U):
 # ------------------------------------------------------------------ legal_v5
 LEGAL_T = {
  "privacy": ("Política de Privacidade | Hostlio Pro",
-             "Política de privacidade do Hostlio Pro: quais dados coletamos, como os usamos e compartilhamos, segurança e retenção de dados, cookies e seus direitos sob o GDPR.",
+             "Política de privacidade do Hostlio Pro: quais dados coletamos, como os usamos e compartilhamos, segurança, retenção, cookies e seus direitos na LGPD.",
              "Política de privacidade"),
  "terms":   ("Termos de Serviço | Hostlio Pro",
-             "Termos de serviço do Hostlio Pro: descrição do serviço, assinaturas e pagamentos, cancelamento e reembolsos, conteúdo gerado por IA, integrações com OTAs e responsabilidade.",
+             "Termos de serviço do Hostlio Pro: assinaturas e pagamentos, cancelamento e reembolsos, respostas geradas por IA, integrações com OTAs e responsabilidade.",
              "Termos de serviço"),
 }
 LEGAL_NOTE = 'Última atualização: <time datetime="{iso}">{date}</time>, {addr}. Este texto é uma tradução do original em inglês; em caso de divergência, prevalece a <a href="{en_url}">versão em inglês</a>.'

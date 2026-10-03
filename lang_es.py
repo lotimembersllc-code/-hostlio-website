@@ -25,9 +25,9 @@ UI = {
 MEGA = {"btn":"Producto","cols":[
    ("Huéspedes",[("ai","sparkle","Asistente IA Lio","Respuestas 24/7 en más de 30 idiomas"),("checkin","identification-card","Check-in online","Documento, acompañantes y firma digital")]),
    ("Distribución",[("channel","arrows-left-right","Channel manager","Más de 100 OTAs en un solo calendario"),("features","calendar-dots","Planning de habitaciones","Calendario de reservas con arrastrar y soltar")]),
-   ("Operaciones",[("features","van","Traslados y excursiones","Ingresos extra mientras conversas"),("features","device-mobile","App móvil","iOS que también funciona sin conexión")]),
+   ("Operaciones",[("features","van","Traslados y excursiones","Ingresos extra mientras conversas"),("features","device-mobile","App móvil","iOS y Android, también sin conexión")]),
    ("Por tipo de alojamiento",[("t-boutique","sparkle","Hoteles boutique","Hoteles de 10 a 50 habitaciones"),("t-guesthouse","users-three","Hostales y pensiones","Alojamientos de 1 a 10 habitaciones"),("t-apart","calendar-dots","Apartahoteles","Apartamentos y suites"),("t-hostel","globe-simple","Hostels","Venta por camas")]),
-  ],"feat":("pricing","Comparar planes","Desde $49 al mes, 7 días gratis")}
+  ],"feat":("pricing","Comparar planes","Desde ⟦price:starter⟧ al mes, 7 días gratis")}
 
 # ------------------------------------------------------------------ build.software_schema / room_rack / 404
 SOFT_DESC = "Software de gestión hotelera con IA para hoteles independientes: mensajería con huéspedes 24/7 en más de 30 idiomas, channel manager para más de 100 OTAs, calendario de reservas y check-in online."
@@ -42,7 +42,7 @@ NOTFOUND = ("Página no encontrada | Hostlio Pro",
 # ------------------------------------------------------------------ home_v3.T
 HOME = dict(
   title="Hostlio Pro | Software de gestión hotelera con IA",
-  desc="Software de gestión hotelera Hostlio Pro: el asistente IA Lio responde a huéspedes 24/7 en 30+ idiomas y el channel manager sincroniza 100+ OTAs. 7 días gratis.",
+  desc="Software de gestión hotelera Hostlio Pro: la IA Lio atiende a huéspedes 24/7 en 30+ idiomas y el channel manager sincroniza 100+ OTAs. 7 días gratis.",
   h1='Mientras tu hotel duerme, <em class="hl">Lio</em> responde',
   lead="Software de gestión hotelera con IA para hoteles independientes y hostales. Reservas, más de 100 canales y mensajes de huéspedes en un solo lugar, en más de 30 idiomas.",
   try_="Prueba gratis", demo="Solicitar demo", via="Conexiones certificadas con:", more="y más de 100 canales",
@@ -60,7 +60,7 @@ HOME = dict(
   tour_h='Gestiona el día de tu hotel <em class="hl">desde una sola pantalla</em>', tour_p="Mensajes de huéspedes, reservas, canales y check-in funcionan conectados.", tour_label="Recorrido por el producto",
   tabs=["Mensajes","Calendario","Canales","Check-in"],
   st=[("Todos los mensajes de huéspedes en una sola bandeja","WhatsApp y los mensajes de Booking.com, Airbnb y Expedia, todo junto. Lio responde con la información de tu hotel y tú solo ves lo que te necesita.",["Respuestas automáticas en más de 30 idiomas","Los datos de la reserva junto a cada mensaje","Te deriva lo que no tiene claro"],"ai","Cómo funciona Lio"),
-      ("Toda tu semana en el planning de habitaciones","Ve cada reserva con el color de su canal. Cambiar de habitación, alargar una estancia o bloquear fechas es un solo gesto.",["Cambios de habitación con arrastrar y soltar","Reservas con el color de cada canal","El mismo calendario en la web y en iOS"],"features","Todas las funcionalidades"),
+      ("Toda tu semana en el planning de habitaciones","Ve cada reserva con el color de su canal. Cambiar de habitación, alargar una estancia o bloquear fechas es un solo gesto.",["Cambios de habitación con arrastrar y soltar","Reservas con el color de cada canal","El mismo calendario en la web, iOS y Android"],"features","Todas las funcionalidades"),
       ("Más de 100 canales, una sola disponibilidad","Sincronización bidireccional con conexiones de canal certificadas. Una habitación vendida en un canal se cierra al instante en los demás.",["Tarifas y restricciones desde una sola pantalla","Nuevas reservas y cancelaciones entran solas","Sin riesgo de overbooking"],"channel","Channel manager"),
       ("El check-in, hecho antes de la llegada","Los huéspedes envían los datos de su documento, sus acompañantes y su firma desde el móvil mediante un enlace seguro.",["En el navegador, sin descargar ninguna app","Acompañantes en un único formulario","Firma digital y consentimiento"],"checkin","Check-in online")],
   inbox_top=("Bandeja de entrada","12 conversaciones abiertas"), inbox_note="Traducción: el check-in es a partir de las 14:00, podemos guardarte el equipaje.",
@@ -74,7 +74,7 @@ HOME = dict(
   b_pdf=("Formularios de visado en PDF","Cartas de alojamiento e invitación en un clic.","Carta de alojamiento","PDF"),
   b_tr=("Venta de traslados y excursiones","Lio los ofrece en el momento justo; tú ganas más.","Traslado al aeropuerto","+35 €"),
   b_lang=("Más de 30 idiomas","El huésped escribe en su idioma y recibe la respuesta en ese mismo idioma."),
-  b_mob=("App móvil","Reservas, mensajes y check-ins en iOS, incluso sin conexión."),
+  b_mob=("App móvil","Reservas, mensajes y check-ins en iOS y Android, incluso sin conexión."),
   types_h='Pensado para <em class="hl">cada tipo de alojamiento</em>', types_p="Diseñado para alojamientos independientes de 1 a 150 habitaciones.",
   types=[("brand-courtyard","Patio de un hotel boutique con piscina y buganvillas","Hotel boutique","10–50 habitaciones","Muchos huéspedes internacionales, cada mensaje personal."),
          ("gen-hostel","Lobby con paneles de madera y zona común","Hostel","Camas y habitaciones","Viajeros de muchos idiomas, bandejas llenas."),
@@ -87,7 +87,7 @@ HOME = dict(
   ai_cards=[("van","Vende por ti","Ofrece traslados al aeropuerto y excursiones en el momento justo y te pasa la solicitud."),("hand-arrow-up","Sabe cuándo derivar","Los mensajes que requieren una decisión, como descuentos, quejas o peticiones especiales, pasan a tu equipo."),("calendar-dots","Conoce la reserva","Cuando el huésped se vincula a una reserva, las respuestas usan la habitación, las fechas y los datos de la reserva.")],
   ai_photo=("brand-guest-phone","Huésped junto a una ventana escribiendo un mensaje en su móvil","En WhatsApp y en las OTAs","WhatsApp, Booking.com, Airbnb y Expedia."),
   ai_btn="Descubre Lio",
-  answer="<strong>¿Qué es Hostlio Pro?</strong> Hostlio Pro es un software de gestión hotelera en la nube (un PMS hotelero) para hoteles independientes y hostales de 1 a 150 habitaciones. Delega la comunicación con los huéspedes en la IA, reúne las reservas de las OTAs en un solo calendario y lleva el check-in al móvil del huésped. Se gestiona desde la web y desde una app para iOS, y se usa en más de 20 países.",
+  answer="<strong>¿Qué es Hostlio Pro?</strong> Hostlio Pro es un software de gestión hotelera en la nube (un PMS hotelero) para hoteles independientes y hostales de 1 a 150 habitaciones. Delega la comunicación con los huéspedes en la IA, reúne las reservas de las OTAs en un solo calendario y lleva el check-in al móvil del huésped. Se gestiona desde la web y desde una app para iOS y Android, y se usa en más de 20 países.",
   stats=[("30+","idiomas atendidos"),("100+","OTAs y canales de venta"),("20+","países con hoteles en Hostlio Pro"),("7 días","de prueba gratis, sin compromiso")],
   sup_h="Un equipo que te respalda",
   sup=[("rocket-launch","t-peach","Cuenta en minutos, canales el mismo día","Tu cuenta está lista en minutos; añade los tipos de habitación y conecta los canales el mismo día. El plan Growth incluye una llamada de puesta en marcha personalizada."),
@@ -106,23 +106,23 @@ def types(U):
     return [
  dict(key="t-guesthouse", img=("gen-guesthouse", "Acogedora habitación de hostal con lámpara de escritorio", 1080, 1350),
   title="Software para hostales y pensiones con IA | Hostlio Pro",
-  desc="Software para hostales y pensiones: respuestas automáticas en más de 30 idiomas, sincronización con Booking.com y Airbnb, check-in online. Desde $49/mes.",
+  desc="Software para hostales y pensiones: respuestas automáticas en más de 30 idiomas, sincronización con Booking.com y Airbnb, check-in online. Desde ⟦price:starter⟧/mes.",
   crumb="Software para hostales y pensiones", h1='<em class="hl">Software para hostales</em> y pensiones que responde por ti',
   lead="En un hostal o una pensión, una sola persona se encarga de los mensajes de madrugada, las reservas de varios canales y el check-in. Hostlio Pro le quita carga de encima.",
   q="¿Qué es un software para hostales y pensiones?",
-  a="Un software para hostales y pensiones permite a los alojamientos pequeños de 1 a 10 habitaciones gestionar reservas, disponibilidad y comunicación con los huéspedes en un solo lugar. Hostlio Pro añade Lio, un asistente de IA que responde a las preguntas de los huéspedes 24/7 en más de 30 idiomas. El plan Starter cuesta $49 al mes para alojamientos de hasta 10 habitaciones.",
+  a="Un software para hostales y pensiones permite a los alojamientos pequeños de 1 a 10 habitaciones gestionar reservas, disponibilidad y comunicación con los huéspedes en un solo lugar. Hostlio Pro añade Lio, un asistente de IA que responde a las preguntas de los huéspedes 24/7 en más de 30 idiomas. El plan Starter cuesta ⟦price:starter⟧ al mes para alojamientos de hasta 10 habitaciones.",
   pains_h="¿Con qué problemas lidian más los hostales y pensiones?",
   pains=[("Mensajes de noche","Las preguntas sobre check-in tardío, aparcamiento y desayuno llegan a medianoche. Lio responde en el idioma del huésped y tú lees un resumen por la mañana."),
          ("Varios canales","Vender la misma habitación en Booking.com y Airbnb provoca dobles reservas. El channel manager sincroniza la disponibilidad al instante."),
          ("Documentos y registro","Anotar los datos de los huéspedes en recepción lleva tiempo. El check-in online los recoge antes de la llegada."),
          ("Presupuesto ajustado","El software con comisiones se encarece a medida que sube la ocupación. Hostlio Pro tiene una cuota mensual fija.")],
   plan="Para la mayoría de los hostales y pensiones basta con el plan <strong>Starter</strong>: hasta 10 habitaciones, 1000 mensajes de IA al mes y mensajería IA por WhatsApp. Elige <strong>Pro</strong> si además quieres check-in online y que Lio gestione los mensajes de las OTAs.",
-  faq=[("¿Existe un software gratuito para hostales y pensiones?","Puedes probar Hostlio Pro gratis durante 7 días. Después, Starter cuesta $49 al mes (precio de lanzamiento para los primeros 50 clientes)."),
+  faq=[("¿Existe un software gratuito para hostales y pensiones?","Puedes probar Hostlio Pro gratis durante 7 días. Después, Starter cuesta ⟦price:starter⟧ al mes (precio de lanzamiento para los primeros 50 clientes)."),
        ("¿Sirve para una pensión de 3 habitaciones?","Sí. Starter está pensado para un alojamiento de hasta 10 habitaciones; el precio es el mismo aunque tengas menos."),
        ("¿Puedo usar Airbnb y Booking.com a la vez?","Sí. Hostlio Pro sincroniza ambos, y más de 100 canales más, en un solo calendario a través de Channex.")]),
  dict(key="t-boutique", img=("gen-boutique-room", "Patio de un hotel boutique con piscina y buganvillas", 1080, 1350),
-  title="Software para hoteles boutique con mensajería IA | Hostlio Pro",
-  desc="Software para hoteles boutique: respuestas personales a huéspedes extranjeros en 30+ idiomas, sincronización con 100+ OTAs, check-in online y venta de traslados.",
+  title="Software para hotel boutique con mensajería IA | Hostlio Pro",
+  desc="Software para hoteles boutique: trato personal a huéspedes extranjeros en 30+ idiomas, sincronización con 100+ OTAs, check-in online y venta de traslados.",
   crumb="Software para hoteles boutique", h1='<em class="hl">Software para hoteles boutique</em> centrado en el huésped',
   lead="Lo que distingue a un hotel boutique es la atención personal. Hostlio Pro se encarga de las preguntas repetitivas para que tu equipo tenga más tiempo para los huéspedes.",
   q="¿Qué es un software para hoteles boutique?",
@@ -132,13 +132,13 @@ def types(U):
          ("Ingresos extra","Los traslados al aeropuerto y las excursiones son importantes para los hoteles boutique. Lio los ofrece en el momento justo."),
          ("Mucho tráfico de OTAs","Las reservas de Booking.com, Expedia y Airbnb aparecen en un solo planning de habitaciones, con el color de cada canal."),
          ("Check-in rápido","Con el check-in online y la firma digital, el huésped recibe una bebida de bienvenida en lugar de un formulario.")],
-  plan="Para hoteles boutique de 10 a 50 habitaciones recomendamos <strong>Pro</strong>: 5000 mensajes de IA al mes, mensajería por WhatsApp y en las bandejas de Booking.com, Airbnb y Expedia, check-in online, venta de traslados y excursiones y la app para iOS.",
+  plan="Para hoteles boutique de 10 a 50 habitaciones recomendamos <strong>Pro</strong>: 5000 mensajes de IA al mes, mensajería por WhatsApp y en las bandejas de Booking.com, Airbnb y Expedia, check-in online, venta de traslados y excursiones y la app para iOS y Android.",
   faq=[("¿Cuál es el mejor software para un hotel boutique?","Depende del número de habitaciones, del perfil de los huéspedes y del presupuesto. Para hoteles de 10 a 50 habitaciones con muchos huéspedes internacionales que buscan un precio fijo, la mensajería con IA y el channel manager de Hostlio Pro encajan bien. Consulta nuestra página comparativa para ver otras opciones."),
        ("¿Puedo usar Hostlio Pro con mi web actual?","Sí. Hostlio Pro funciona junto a tu web actual, no la sustituye. Lio responde a los huéspedes por WhatsApp y en las bandejas de las OTAs, y las reservas de todos los canales llegan al mismo calendario."),
        ("¿Cuántos usuarios puedo añadir?","Consulta la página de precios para ver los detalles de cada plan o pregunta a nuestro equipo durante la demo.")]),
  dict(key="t-apart", img=("gen-apart", "Apartamento luminoso con ropa de cama blanca", 1080, 1350),
-  title="Software para apartahoteles con check-in online | Hostlio Pro",
-  desc="Software para apartahoteles y apartamentos turísticos: sincronización con Airbnb y Booking.com, check-in online con firma digital y mensajería IA en 30+ idiomas.",
+  title="Software para apartahotel con check-in online | Hostlio Pro",
+  desc="Software para apartahoteles y apartamentos turísticos: sincroniza Airbnb y Booking.com, check-in online con firma digital y mensajería IA en 30+ idiomas.",
   crumb="Software para apartahoteles", h1='<em class="hl">Software para apartahoteles</em> pensado para gestionar en remoto',
   lead="Los apartahoteles a menudo no tienen recepción o la tienen con horario limitado, así que la comunicación con los huéspedes y el check-in se hacen en remoto. Hostlio Pro está hecho para eso.",
   q="¿Qué es un software para apartahoteles?",
@@ -153,7 +153,7 @@ def types(U):
        ("¿Responde también a los mensajes de Airbnb?","En Pro y Growth, los mensajes de las OTAs, incluido Airbnb, llegan a la bandeja de Lio."),
        ("¿Hay un límite de unidades?","Starter admite hasta 10, Pro hasta 50 y Growth hasta 150 habitaciones o unidades.")]),
  dict(key="t-hostel", img=("gen-hostel", "Lobby con paneles de madera y zona común", 1080, 1350),
-  title="Software para hostels: mensajes multilingües y OTAs | Hostlio Pro",
+  title="Software para hostels: mensajes multilingües | Hostlio Pro",
   desc="Software para hostels: sincronización con Hostelworld, Booking.com y 100+ canales, mensajería IA en más de 30 idiomas y check-in online. 7 días gratis.",
   crumb="Software para hostels", h1='<em class="hl">Software para hostels</em> con bandejas llenas y multilingües',
   lead="Los hostels tienen huéspedes internacionales, mucho volumen de mensajes y equipos pequeños. Hostlio Pro se encarga de las preguntas en varios idiomas y mantiene los canales en un solo calendario.",
@@ -173,14 +173,14 @@ def types(U):
 # ------------------------------------------------------------------ pages_v4.CMP
 def cmp(U):
     return dict(
-  title="Comparativa de software hotelero 2026: precios e IA | Hostlio Pro",
+  title="Comparativa de software hotelero 2026: precios | Hostlio Pro",
   desc="Hostlio Pro, Cloudbeds, Mews, Little Hotelier y HotelRunner comparados: precios publicados, precio inicial, comisiones, prueba gratuita y mensajería IA.",
   crumb="Comparativa de software hotelero", h1='<em class="hl">Comparativa</em> de software hotelero (2026)',
   lead="Comparamos cinco programas para hoteles populares entre los hoteles independientes, usando solo lo que cada proveedor publica en su propia página de precios.",
   q="¿Qué software de gestión hotelera te conviene?",
   a="Respuesta corta: para hoteles de un solo establecimiento con 1 a 150 habitaciones y muchos huéspedes internacionales, un software de precio fijo con mensajería IA incluida (como Hostlio Pro) mantiene el presupuesto previsible. Los grupos con varios establecimientos y necesidades corporativas pueden valorar plataformas con precio bajo presupuesto como Mews o Cloudbeds; los alojamientos en Turquía que buscan soporte local y una red B2B pueden mirar HotelRunner; y los alojamientos pequeños que quieren la red de SiteMinder pueden considerar Little Hotelier.",
   cols=["Software","¿Precios publicados?","Desde","Comisión por reserva","Prueba gratuita","Mensajería IA con huéspedes"],
-  rows=[("Hostlio Pro","Sí","$49/mes (precio de lanzamiento)","Ninguna, cuota mensual fija","7 días","Todos los planes (Lio, más de 30 idiomas)"),
+  rows=[("Hostlio Pro","Sí","⟦price:starter⟧/mes (precio de lanzamiento)","Ninguna, cuota mensual fija","7 días","Todos los planes (Lio, más de 30 idiomas)"),
         ("Cloudbeds","No, bajo presupuesto","Presupuesto","Indica que no añade comisión a las reservas del Booking Engine y del Channel Manager","No se indica en la página de precios","No se indica por separado en la página de precios"),
         ("Mews","No, bajo presupuesto","Presupuesto","No se indica en la página de precios","No se indica en la página de precios","Resúmenes con IA de las preferencias del huésped en Advanced; la mensajería no se indica por separado"),
         ("Little Hotelier","Se calcula según el número de habitaciones","Mediante calculadora de precios","Comisión del 1 % por reserva en Basics","30 días","No se indica en la página de precios"),
@@ -201,7 +201,7 @@ def cmp(U):
 def guides(U):
     return [
  dict(key="post-overbooking", date="2026-09-21", title="Cómo evitar el overbooking: 6 pasos para hoteles",
-  desc="Por qué se produce el overbooking en hoteles y cómo evitarlo: channel manager, cierres de venta, márgenes de disponibilidad y qué hacer si ocurre igualmente.",
+  desc="Por qué se produce el overbooking en hoteles y cómo evitarlo: channel manager, cierres de venta, márgenes de disponibilidad y qué hacer si aun así ocurre.",
   content=f'''<div class="answer"><p><strong>Respuesta corta:</strong> el overbooking consiste en aceptar más reservas de las que puedes alojar para la misma habitación y las mismas fechas. En los hoteles independientes, la causa más habitual es actualizar la disponibilidad a mano en varias OTAs. Un channel manager bidireccional y en tiempo real elimina la mayor parte del riesgo.</p></div>
 <h2>¿Por qué se produce el overbooking?</h2>
 <ul><li>Actualizar la disponibilidad en Booking.com, Airbnb y Expedia por separado y a mano</li><li>Registrar tarde las reservas por teléfono o de clientes sin reserva previa (walk-in)</li><li>Cancelaciones y cambios que llegan a un canal pero no a otro</li><li>Sincronización con retraso (cada hora) entre canales</li></ul>
@@ -219,7 +219,7 @@ def guides(U):
   faq=[("¿Qué significa overbooking?","El overbooking se produce cuando un hotel acepta más reservas de las que puede alojar para la misma habitación y las mismas fechas; también se conoce como doble reserva o sobreventa."),
        ("¿Un channel manager evita por completo el overbooking?","La sincronización bidireccional en tiempo real elimina la mayor parte del riesgo; aun así, las reservas directas que no se registran y los mapeos de habitaciones incorrectos pueden seguir causando problemas.")]),
  dict(key="post-autoreply", date="2026-09-21", title="Cómo responder automáticamente a los mensajes de Booking.com",
-  desc="Tres formas de automatizar los mensajes de Booking.com: plantillas, mensajes programados y un asistente de IA. Cuándo funciona cada una y dónde se queda corta.",
+  desc="Tres formas de automatizar los mensajes de Booking.com: plantillas, mensajes programados y un asistente de IA. Cuándo funciona cada una y dónde falla.",
   content=f'''<div class="answer"><p><strong>Respuesta corta:</strong> hay tres formas de automatizar los mensajes de Booking.com: las plantillas de mensajes guardadas en la extranet, los mensajes programados según la fase de la reserva y un asistente de IA que entiende la pregunta del huésped y responde con la información de tu hotel. Las plantillas sirven para la información estándar; un asistente de IA, para las preguntas que cambian con cada huésped.</p></div>
 <h2>1. Plantillas de mensajes</h2>
 <p>Guarda como plantillas las respuestas frecuentes, como la hora del check-in, cómo llegar o el aparcamiento, y envíalas con un clic. Son sencillas, pero alguien tiene que leer el mensaje y elegir la plantilla adecuada.</p>
@@ -242,10 +242,10 @@ def guides(U):
 # ------------------------------------------------------------------ legal_v5
 LEGAL_T = {
  "privacy": ("Política de privacidad | Hostlio Pro",
-             "Política de privacidad de Hostlio Pro: qué datos recopilamos, cómo los usamos y compartimos, seguridad de los datos, conservación, cookies y tus derechos del RGPD.",
+             "Política de privacidad de Hostlio Pro: qué datos recopilamos, cómo los usamos y compartimos, seguridad, conservación, cookies y tus derechos RGPD.",
              "Política de privacidad"),
  "terms":   ("Términos del servicio | Hostlio Pro",
-             "Términos del servicio de Hostlio Pro: descripción del servicio, suscripciones y pagos, cancelación y reembolsos, contenido generado por IA, integraciones con OTAs y responsabilidad.",
+             "Términos del servicio de Hostlio Pro: suscripciones y pagos, cancelación y reembolsos, respuestas de IA, integraciones con OTAs y responsabilidad.",
              "Términos del servicio"),
 }
 LEGAL_NOTE = 'Última actualización: <time datetime="{iso}">{date}</time>, {addr}. Este texto es una traducción del original en inglés; en caso de discrepancia, prevalecerá la <a href="{en_url}">versión en inglés</a>.'

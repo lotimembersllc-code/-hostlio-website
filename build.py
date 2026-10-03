@@ -19,7 +19,7 @@ def asset(rel: str) -> str:
     except OSError:
         return rel
 SITE = "https://hostliopro.com"          # canonical host used by the current site
-SIGNUP_URL = "/signup"                           # existing sign-up page (src/signup.html, from the current site)
+SIGNUP_URL = "/signup/"                          # kayıt sayfası; layout()/finish() bunu sayfa diline göre /xx/signup/ yapar (O3)
 LOGIN_URL = "https://dashboard.hostliopro.com"   # dashboard login
 FORM_ENDPOINT = "https://hook.eu1.make.com/20b5teacqjk8d330goof6adqly5vyuq2"  # Make.com webhook used by the current contact form
 WHATSAPP = "12792682488"; WHATSAPP_TXT = "+1 279-268-2488"
@@ -49,7 +49,9 @@ LANGS = ["tr", "en", "es", "it", "pt", "fr"]
 NEW_LANGS = ["es", "it", "pt", "fr"]
 LANG_NAME = {"tr": "Türkçe", "en": "English", "es": "Español", "it": "Italiano", "pt": "Português", "fr": "Français"}
 LOCALE = {"tr": "tr_TR", "en": "en_US", "es": "es_ES", "it": "it_IT", "pt": "pt_BR", "fr": "fr_FR"}
-IN_LANG = {"tr": "tr-TR", "en": "en", "es": "es", "it": "it", "pt": "pt", "fr": "fr"}
+IN_LANG = {"tr": "tr-TR", "en": "en", "es": "es", "it": "it", "pt": "pt-BR", "fr": "fr"}
+# D3: Portekizce içerik Brezilya Portekizcesi ("celular", "notebook") ⇒ hreflang pt-BR
+HREFLANG = {"tr": "tr", "en": "en", "es": "es", "it": "it", "pt": "pt-BR", "fr": "fr"}
 import importlib as _il
 LANGMOD = {l: _il.import_module("lang_" + l) for l in NEW_LANGS}
 for _l, _m in LANGMOD.items(): UPDATED_TXT[_l] = _m.UPDATED_TXT
@@ -161,11 +163,11 @@ def website_schema(lang):
     return {"@type": "WebSite", "@id": SITE + "/#website", "url": SITE + "/", "name": "Hostlio Pro",
             "inLanguage": [IN_LANG[l] for l in LANGS], "publisher": {"@id": SITE + "/#org"}}
 
-PLANS = [
-  {"id":"starter","name":"Starter","price":49,"regular":59,"annual":470},
-  {"id":"pro","name":"Pro","price":89,"regular":109,"annual":854},
-  {"id":"growth","name":"Growth","price":149,"regular":189,"annual":1430},
-]
+# Y2: fiyat/kota/oda limiti TEK KAYNAKTAN (pricing.py). Buradaki liste yalnız eski
+# çağıranlar (content_*.py, roi_page.py) için türetilmiş görünüm; rakam YAZMAYIN.
+import pricing
+PLANS = [{"id": p["id"], "name": p["name"], "price": pricing.monthly(p["id"]), "regular": p["regular_monthly"],
+          "annual": pricing.annual(p["id"]), "rooms": p["rooms"], "quota": p["ai_messages"]} for p in pricing.PLANS]
 
 def software_schema(lang, detailed=False):
     desc = {"tr": "Bağımsız oteller için yapay zekâ destekli otel yönetim yazılımı: WhatsApp ve OTA gelen kutularında 30+ dilde 7/24 misafir mesajlaşması, 100+ OTA kanal yöneticisi, rezervasyon takvimi ve online check-in.",
@@ -174,22 +176,22 @@ def software_schema(lang, detailed=False):
     s = {"@type": "SoftwareApplication", "@id": SITE + "/#software", "name": "Hostlio Pro",
          "applicationCategory": "BusinessApplication",
          "applicationSubCategory": "Hotel management software (PMS)",
-         "operatingSystem": "Web, iOS", "description": desc, "url": abs_url("home", lang),
+         "operatingSystem": "Web, iOS, Android", "description": desc, "url": abs_url("home", lang),
          "publisher": {"@id": SITE + "/#org"},
          "featureList": {"tr": ["AI misafir asistanı Lio (WhatsApp ve OTA gelen kutuları, 30+ dil)", "Kanal yöneticisi (100+ OTA'ya sertifikalı bağlantı)", "Sürükle-bırak rezervasyon takvimi", "Online check-in ve dijital imza", "Otomatik PDF vize formları", "Transfer ve tur satışı", "Çevrimdışı çalışan mobil uygulama"],
                          "en": ["Lio AI guest assistant (WhatsApp and OTA inboxes, 30+ languages)", "Channel manager (certified connections to 100+ OTAs)", "Drag-and-drop reservation calendar", "Online check-in with digital signature", "Automatic PDF visa forms", "Transfer and tour sales", "Offline-capable mobile app"], **{l: m.SOFT_FEATURES for l, m in LANGMOD.items()}}[lang],
-         "offers": {"@type": "AggregateOffer", "priceCurrency": "USD", "lowPrice": "49", "highPrice": "149", "offerCount": "3"},
+         "offers": {"@type": "AggregateOffer", "priceCurrency": pricing.CURRENCY, "lowPrice": str(min(p["price"] for p in PLANS)), "highPrice": str(max(p["price"] for p in PLANS)), "offerCount": str(len(PLANS))},
          **({"downloadUrl": APP_STORE_URL, "installUrl": APP_STORE_URL} if APP_STORE_URL else {})}
     if detailed:
-        s["offers"] = [{"@type": "Offer", "name": p["name"], "price": str(p["price"]), "priceCurrency": "USD",
+        s["offers"] = [{"@type": "Offer", "name": p["name"], "price": str(p["price"]), "priceCurrency": pricing.CURRENCY,
                         "url": abs_url("pricing", lang),
                         "priceSpecification": {"@type": "UnitPriceSpecification", "price": str(p["price"]),
-                                               "priceCurrency": "USD", "unitCode": "MON", "billingDuration": 1}}
+                                               "priceCurrency": pricing.CURRENCY, "unitCode": "MON", "billingDuration": 1}}
                        for p in PLANS] + [
-                      {"@type": "Offer", "name": p["name"] + " (annual)", "price": str(p["annual"]), "priceCurrency": "USD",
+                      {"@type": "Offer", "name": p["name"] + " (annual)", "price": str(p["annual"]), "priceCurrency": pricing.CURRENCY,
                         "url": abs_url("pricing", lang),
                         "priceSpecification": {"@type": "UnitPriceSpecification", "price": str(p["annual"]),
-                                               "priceCurrency": "USD", "unitCode": "ANN", "billingDuration": 1}}
+                                               "priceCurrency": pricing.CURRENCY, "unitCode": "ANN", "billingDuration": 1}}
                        for p in PLANS]
     return s
 
@@ -231,11 +233,15 @@ def faq_block(faq, lang, heading=True, wrap=True):
     return (f'<section class="rule" aria-labelledby="faq-h"><div class="wrap faq-wrap"><h2 id="faq-h">{UI[lang]["faq_h"]}</h2>'
             f'<div class="faq">{items}</div></div></section>')
 
+# D6 (WCAG 2.2.2): 10 sn'lik döngü videosu için duraklat/oynat düğmesi (video oynamaya başlayınca görünür)
+VIDEO_BTN = {"en": ("Pause video", "Play video"), "tr": ("Videoyu duraklat", "Videoyu oynat"), "es": ("Pausar vídeo", "Reproducir vídeo"),
+             "it": ("Metti in pausa il video", "Riproduci il video"), "pt": ("Pausar vídeo", "Reproduzir vídeo"), "fr": ("Mettre la vidéo en pause", "Lire la vidéo")}
 def final_cta(lang):
     u = UI[lang]
     return f'''<section><div class="wrap"><div class="final on-dark">
 <img src="/assets/img/gen-night-desk.webp" alt="" loading="lazy" width="1080" height="1350">
 <video class="final-video" muted loop playsinline preload="none" aria-hidden="true" tabindex="-1" data-webm="/assets/video/night-desk.webm" data-mp4="/assets/video/night-desk.mp4"></video>
+<button type="button" class="vid-toggle" hidden aria-pressed="false" data-pause="{VIDEO_BTN[lang][0]}" data-play="{VIDEO_BTN[lang][1]}" aria-label="{VIDEO_BTN[lang][0]}"><span class="vt-pause" aria-hidden="true"></span></button>
 <div><h2>{u["final_h"]}</h2><p>{u["final_p"]}</p></div>
 <div class="cta-row">{btn(u["trial"], SIGNUP_URL)}{btn(u["demo"], demo_url(lang), "ghost")}</div>
 </div></div></section>'''
@@ -282,15 +288,15 @@ MEGA = {
  "tr": {"btn":"Ürün","cols":[
    ("Misafir",[("ai","sparkle","AI asistan Lio","30+ dilde 7/24 misafir yanıtı"),("checkin","identification-card","Online check-in","Kimlik, refakatçi ve dijital imza")]),
    ("Dağıtım",[("channel","arrows-left-right","Kanal yöneticisi","100+ OTA tek takvimde"),("features","calendar-dots","Oda rafı","Sürükle-bırak rezervasyon takvimi")]),
-   ("İşletme",[("features","van","Transfer ve tur satışı","Mesajlaşırken ek gelir"),("features","device-mobile","Mobil uygulama","Çevrimdışı da çalışan iOS")]),
+   ("İşletme",[("features","van","Transfer ve tur satışı","Mesajlaşırken ek gelir"),("features","device-mobile","Mobil uygulama","iOS ve Android, çevrimdışı da çalışır")]),
    ("Tesis tipine göre",[("t-boutique","sparkle","Butik otel programı","10–50 odalı oteller"),("t-guesthouse","users-three","Pansiyon programı","1–10 odalı işletmeler"),("t-apart","calendar-dots","Apart otel programı","Daire ve suitler"),("t-hostel","globe-simple","Hostel programı","Yatak bazlı satış")]),
-  ],"feat":("pricing","Planları karşılaştır","Aylık 49 $'dan başlar, 7 gün ücretsiz")},
+  ],"feat":("pricing","Planları karşılaştır","Aylık ⟦price:starter⟧'dan başlar, 7 gün ücretsiz")},
  "en": {"btn":"Product","cols":[
    ("Guests",[("ai","sparkle","Lio AI assistant","24/7 guest replies in 30+ languages"),("checkin","identification-card","Online check-in","ID, companions and digital signature")]),
    ("Distribution",[("channel","arrows-left-right","Channel manager","100+ OTAs on one calendar"),("features","calendar-dots","Room rack","Drag-and-drop reservation calendar")]),
-   ("Operations",[("features","van","Transfers and tours","Extra revenue while you chat"),("features","device-mobile","Mobile app","iOS that works offline too")]),
+   ("Operations",[("features","van","Transfers and tours","Extra revenue while you chat"),("features","device-mobile","Mobile app","iOS and Android, works offline too")]),
    ("By property",[("t-boutique","sparkle","Boutique hotels","10–50 room hotels"),("t-guesthouse","users-three","Guesthouses","1–10 room properties"),("t-apart","calendar-dots","Aparthotels","Apartments and suites"),("t-hostel","globe-simple","Hostels","Bed-based selling")]),
-  ],"feat":("pricing","Compare plans","From $49 a month, 7 days free")},
+  ],"feat":("pricing","Compare plans","From ⟦price:starter⟧ a month, 7 days free")},
 }
 for _l, _m in LANGMOD.items():
     UI[_l] = _m.UI; MEGA[_l] = _m.MEGA
@@ -329,12 +335,13 @@ GEN_ALT = {
  "gen-guesthouse": {"tr":"Asma altında kurulan pansiyon kahvaltısı, masayı hazırlayan ev sahibi","en":"Guesthouse breakfast under a vine pergola, the host setting the table","es":"Desayuno de hostal bajo una pérgola de parra, con la anfitriona poniendo la mesa","it":"Colazione di un B&B sotto un pergolato, con la padrona di casa che apparecchia","pt":"Café da manhã de pousada sob um caramanchão, com a anfitriã arrumando a mesa","fr":"Petit-déjeuner de chambres d’hôtes sous une treille, l’hôtesse dresse la table"},
  "gen-boutique-room": {"tr":"Taş duvarlı, panjurlu penceresi eski şehre bakan butik otel odası","en":"Boutique hotel room with a stone wall and shuttered window over the old town","es":"Habitación de hotel boutique con pared de piedra y ventana con contraventanas al casco antiguo","it":"Camera di un boutique hotel con muro in pietra e finestra con scuri sul centro storico","pt":"Quarto de hotel boutique com parede de pedra e janela com venezianas para o centro histórico","fr":"Chambre d’hôtel boutique avec mur de pierre et fenêtre à volets sur la vieille ville"},
 }
-def money(n): return "$" + f"{n:,}"
+def money(n, lang): return pricing.money(n, lang)   # O9: dile göre tek biçim
 def annual_table(lang):
     u = UI[lang]; c = u["tbl_cols"]
-    rows = "".join(f'<tr><th scope="row">{p["name"]}</th><td class="num">{money(p["price"])}</td><td class="num">{money(round(p["annual"]/12))}</td><td class="num">{money(p["annual"])}</td><td class="num"><s>{money(p["regular"])}</s></td></tr>' for p in PLANS)
+    rows = "".join(f'<tr><th scope="row">{p["name"]}</th><td class="num" data-price-m="{p["id"]}">⟦price:{p["id"]}⟧</td><td class="num" data-price-am="{p["id"]}">⟦annual_mo:{p["id"]}⟧</td><td class="num" data-price-a="{p["id"]}">⟦annual:{p["id"]}⟧</td><td class="num" data-eb><s>⟦regular:{p["id"]}⟧</s></td></tr>' for p in PLANS)
+    head = "".join(f"<th{' data-eb' if i == len(c) - 1 else ''}>{x}</th>" for i, x in enumerate(c))
     return (f'<div class="annual-table"><h2 id="annual-h" style="font-size:var(--t-1);margin:48px 0 16px">{u["tbl_h"]}</h2><div class="table-wrap"><table aria-labelledby="annual-h"><thead><tr>'
-            + "".join(f"<th>{x}</th>" for x in c) + f'</tr></thead><tbody>{rows}</tbody></table></div><p class="small muted" style="margin-top:10px">{u["tbl_note"]}</p></div>')
+            + head + f'</tr></thead><tbody>{rows}</tbody></table></div><p class="small muted" style="margin-top:10px">{u["tbl_note"]}</p></div>')
 UI["tr"]["lang_label"] = "Dil"; UI["en"]["lang_label"] = "Language"
 UI["tr"]["crumb_label"] = "Sayfa konumu"; UI["en"]["crumb_label"] = "Breadcrumb"
 def mega_html(lang):
@@ -350,7 +357,7 @@ def mega_html(lang):
 # ---------------------------------------------------------------- layout
 def lang_menu(key, lang):
     items = "".join(
-        f'<li><a href="{url(key if l in ROUTES[key] else "home", l)}" hreflang="{l}" lang="{l}"{CUR if l == lang else ""}>{LANG_NAME[l]}</a></li>'
+        f'<li><a href="{url(key if l in ROUTES[key] else "home", l)}" hreflang="{HREFLANG[l]}" lang="{IN_LANG[l]}"{CUR if l == lang else ""}>{LANG_NAME[l]}</a></li>'
         for l in LANGS)
     return (f'<div class="lang-wrap"><button type="button" class="lang" aria-expanded="false" aria-controls="lang-menu" aria-label="{UI[lang]["lang_label"]}: {LANG_NAME[lang]}">'
             f'{icon("globe-simple")}{lang.upper()}{icon("caret-down","caret")}</button><ul class="lang-menu" id="lang-menu" hidden>{items}</ul></div>')
@@ -405,13 +412,14 @@ def layout(page, lang):
     if "data-contact-form" in body:
         body = body.replace("data-contact-form", f'data-contact-form data-endpoint="{FORM_ENDPOINT}" data-lang="{lang}" data-ok="{html.escape(u["form_ok"])}" data-err="{html.escape(u["form_err"])}" data-sending="{html.escape(u["sending"])}"', 1)
         body = body.replace('</div>\n<form class="contact"', f'<p><a href="https://wa.me/{WHATSAPP}" rel="noopener">WhatsApp: {WHATSAPP_TXT}</a></p><p class="small muted">{u["resp"]}</p></div>\n<form class="contact"', 1)
+        body = contact_form_extras(body, lang)
     if '<div class="plans">' in body:
         toggle = (f'<div class="billing" role="group" aria-label="{u["bill_m"]} / {u["bill_a"]}"><button type="button" class="on" aria-pressed="true" data-bill="m">{u["bill_m"]}</button>'
                   f'<button type="button" aria-pressed="false" data-bill="a">{u["bill_a"]} <span class="save">{u["save"]}</span></button></div>')
-        body = body.replace('<div class="plans">', toggle + f'<div class="plans" data-plans-endpoint="{PLANS_ENDPOINT}" data-anon="{PLANS_ANON}" data-billed="{html.escape(u["billed_a"])}">')
+        body = body.replace('<div class="plans">', toggle + '<div class="plans" data-plans>')
         for p_ in PLANS:
             # K2: monthly shows only "billed monthly"; annual shows only "$470 billed yearly" (JS swaps them)
-            ya = u["billed_line_a"].format(at=f'<span data-at>{money(p_["annual"])}</span>')
+            ya = u["billed_line_a"].format(at=f'<span data-at="{p_["id"]}">⟦annual:{p_["id"]}⟧</span>')
             line = f'<span data-bm>{u["billed_line_m"]}</span><span data-ba hidden>{ya}</span>'
             body = re.sub(r'(<h3 id="plan-' + p_["id"] + r'">.*?<div class="price num">.*?</div>)', lambda m: m.group(1) + f'<p class="billed-line num">{line}</p>', body, count=1, flags=re.S)
         if key == "pricing":
@@ -430,12 +438,11 @@ def layout(page, lang):
         head_extra += f'<link rel="preload" as="image" href="{page["preload_img"]}" fetchpriority="high">\n'
     if GSC_VERIFY: head_extra += f'<meta name="google-site-verification" content="{GSC_VERIFY}">\n'
     if BING_VERIFY: head_extra += f'<meta name="msvalidate.01" content="{BING_VERIFY}">\n'
-    if PLAUSIBLE_DOMAIN: head_extra += f'<script defer data-domain="{PLAUSIBLE_DOMAIN}" src="https://plausible.io/js/script.js"></script>\n'
-    if GA4_ID: head_extra += f'<script async src="https://www.googletagmanager.com/gtag/js?id={GA4_ID}"></script><script>window.dataLayer=window.dataLayer||[];function gtag(){{dataLayer.push(arguments)}}gtag("js",new Date());gtag("config","{GA4_ID}");</script>\n'
+    head_extra += analytics_head()
     year = datetime.date.fromisoformat(UPDATED).year
     for _n, _a in GEN_ALT.items():
         body = re.sub(r'(<img src="/assets/img/' + _n + r'\.webp" alt=")[^"]*"', lambda m: m.group(1) + html.escape(_a[lang]) + '"', body)
-    return f'''<!doctype html>
+    doc = f'''<!doctype html>
 <html class="nojs" lang="{"pt-BR" if lang=="pt" else lang}">
 <head>
 <meta charset="utf-8">
@@ -443,7 +450,7 @@ def layout(page, lang):
 <title>{html.escape(title)}</title>
 <meta name="description" content="{html.escape(desc)}">
 <link rel="canonical" href="{canonical}">
-{"".join(f'<link rel="alternate" hreflang="{l}" href="{abs_url(key,l)}">' + chr(10) for l in langs(key)) if len(langs(key))>1 else ""}{f'<link rel="alternate" hreflang="x-default" href="{abs_url(key,"en")}">' if len(langs(key))>1 else ""}
+{"".join(f'<link rel="alternate" hreflang="{HREFLANG[l]}" href="{abs_url(key,l)}">' + chr(10) for l in langs(key)) if len(langs(key))>1 else ""}{f'<link rel="alternate" hreflang="x-default" href="{abs_url(key,"en")}">' if len(langs(key))>1 else ""}
 <meta name="robots" content="index,follow,max-image-preview:large">
 <meta property="og:type" content="{page.get("og_type","website")}">
 <meta property="og:site_name" content="Hostlio Pro">
@@ -457,8 +464,7 @@ def layout(page, lang):
 <meta name="theme-color" content="#1B2B4B">
 <link rel="icon" href="/assets/favicon.svg" type="image/svg+xml">
 <link rel="apple-touch-icon" href="/assets/apple-touch-icon.png">
-<link rel="preload" href="/assets/fonts/instrument-sans-latin-wght-normal.woff2" as="font" type="font/woff2" crossorigin>
-<link rel="stylesheet" href="{asset('/assets/style.css')}">
+{font_preloads(lang)}<link rel="stylesheet" href="{asset('/assets/style.css')}">
 {head_extra}<script type="application/ld+json">{ld}</script>
 </head>
 <body>
@@ -506,10 +512,71 @@ def layout(page, lang):
 </div>
 <div class="foot-bottom"><span>© {year} Hostlio Pro, Loti Members LLC. {u["rights"]}</span><span class="legal"><a href="{url("privacy",lang)}">{u["privacy"]}</a><a href="{url("terms",lang)}">{u["terms"]}</a><a href="{url("delacc",lang)}">{u["delacc"]}</a><a href="{url("dpa","en")}" hreflang="en">DPA</a></span><span>2108 N ST STE N, Sacramento, CA 95816</span></div>
 </div></footer>
-<script src="{asset('/assets/site.js')}" defer></script>
+{pricing_block(lang) if needs_prices(body) else ""}<script src="{asset('/assets/site.js')}" defer></script>
+{"".join(f'<script src="{asset(x)}" defer></script>' + chr(10) for x in page.get("scripts", []))}
 <script src="{asset('/attribution.js')}" defer></script>
 </body>
 </html>'''
+    return finish(doc, lang)
+
+def font_preloads(lang):
+    """D7: Türkçe sayfalarda ğ/ş/İ latin-ext dosyasında ⇒ o dosya da önceden yüklenir."""
+    files = ["instrument-sans-latin-wght-normal.woff2"] + (["instrument-sans-latin-ext-wght-normal.woff2"] if lang == "tr" else [])
+    return "".join(f'<link rel="preload" href="/assets/fonts/{f}" as="font" type="font/woff2" crossorigin>\n' for f in files)
+
+def analytics_head():
+    """Ölçüm betikleri (boşken hiçbir şey basılmaz). Satır içi betik yok (O4): GA4 başlatması /assets/ga-init.js."""
+    out = ""
+    if PLAUSIBLE_DOMAIN: out += f'<script defer data-domain="{PLAUSIBLE_DOMAIN}" src="https://plausible.io/js/script.js"></script>\n'
+    if GA4_ID: out += (f'<script async src="https://www.googletagmanager.com/gtag/js?id={GA4_ID}"></script>'
+                       f'<script src="{asset("/assets/ga-init.js")}" data-ga="{GA4_ID}"></script>\n')
+    return out
+
+CONTACT_PRIVACY = {
+    "en": 'We use your details only to reply to your request. See our <a href="{p}">Privacy Policy</a>.',
+    "tr": 'Bilgilerinizi yalnızca talebinize yanıt vermek için kullanırız. Ayrıntılar: <a href="{p}">Gizlilik Politikası</a>.',
+    "es": 'Usamos tus datos solo para responder a tu solicitud. Más información en la <a href="{p}">Política de privacidad</a>.',
+    "it": 'Usiamo i tuoi dati solo per rispondere alla tua richiesta. Dettagli nell’<a href="{p}">Informativa sulla privacy</a>.',
+    "pt": 'Usamos seus dados apenas para responder à sua solicitação. Saiba mais na <a href="{p}">Política de privacidade</a>.',
+    "fr": 'Nous utilisons vos données uniquement pour répondre à votre demande. Voir notre <a href="{p}">Politique de confidentialité</a>.',
+}
+HONEYPOT = {"en": "Leave this field empty", "tr": "Bu alanı boş bırakın", "es": "Deja este campo vacío", "it": "Lascia vuoto questo campo",
+            "pt": "Deixe este campo em branco", "fr": "Laissez ce champ vide"}
+
+def contact_form_extras(body, lang):
+    """D9: iletişim formu — toplama noktasında gizlilik bilgilendirmesi, bal küpü (honeypot) alanı ve
+    JS'siz yedek. JS yokken form artık Make webhook'una çıplak POST atmıyor (kullanıcı "Accepted"
+    sayfasına düşüyordu); e-posta uygulamasını açan mailto: yedeğine gidiyor. JS'li gönderim
+    site.js'te (fetch → Make; bal küpü doluysa ya da 3 sn'den hızlı gönderildiyse gönderilmez)."""
+    subj = re.search(r'data-subject="([^"]*)"', body)
+    subj = subj.group(1) if subj else "Demo request"
+    body = body.replace(f' action="{FORM_ENDPOINT}" method="post"',
+                        f' action="mailto:{EMAIL}?subject={html.escape(subj)}" method="post" enctype="text/plain"', 1)
+    hp = (f'<div class="hp" aria-hidden="true"><label>{HONEYPOT[lang]}<input name="website" tabindex="-1" autocomplete="off"></label></div>\n'
+          f'<p class="small muted form-privacy">{CONTACT_PRIVACY[lang].format(p=url("privacy", lang))}</p>\n')
+    i = body.find("<form class=\"contact\"")
+    j = body.find('<button class="btn btn-primary" type="submit">', i)
+    return body[:j] + hp + body[j:] if i > -1 and j > -1 else body
+
+def needs_prices(body):
+    return 'data-plans' in body or 'data-price' in body or 'id="roi-form"' in body
+
+def pricing_block(lang):
+    """Y2: tarayıcı tarafı fiyat yapılandırması (pricing.py → prices.js). Satır içi JSON veri bloğu
+    çalıştırılmaz, dolayısıyla CSP script-src 'self' ile uyumludur."""
+    cfg = json.dumps(pricing.js_config(lang, PLANS_ENDPOINT, PLANS_ANON), ensure_ascii=False).replace("</", "<\\/")
+    return (f'<script type="application/json" id="hostlio-pricing">{cfg}</script>\n'
+            '<script src="' + asset('/assets/prices.js') + '" defer></script>\n')
+
+def signup_url(lang):
+    """O3: kayıt sayfasının yönlendirmesiz, dile özgü son adresi."""
+    return f"/{lang}/signup/"
+
+def finish(doc, lang):
+    """Son geçiş: ⟦fiyat⟧ yer tutucularını dile göre doldur (Y2/O9) ve /signup bağlantılarını
+    doğrudan /xx/signup/ adresine çevir (O3: 308 zinciri yok)."""
+    doc = re.sub(r'((?:href|action)=")/signup/?(?=[?"])', lambda m: m.group(1) + signup_url(lang), doc)
+    return pricing.fill(doc, lang)
 
 # ---------------------------------------------------------------- responsive images
 def make_variants():
@@ -530,13 +597,35 @@ def make_variants():
     import shutil as _sh
     _sh.copytree(src, DIST / "assets/img", dirs_exist_ok=True)
 
+IMG_SIZES = "(max-width: 640px) 92vw, (max-width: 1100px) 50vw, 600px"
+
+@functools.lru_cache(None)
+def webp_width(path):
+    """WebP dosyasının gerçek piksel genişliği (srcset 'w' tanımlayıcısı bunu ister; Pillow gerekmez)."""
+    b = Path(path).read_bytes()[:30]
+    fmt = b[12:16]
+    if fmt == b"VP8 ": return int.from_bytes(b[26:28], "little") & 0x3FFF
+    if fmt == b"VP8L": return (int.from_bytes(b[21:23], "little") & 0x3FFF) + 1
+    if fmt == b"VP8X": return int.from_bytes(b[24:27], "little") + 1
+    return None
+
+def srcset_for(name):
+    if not (ROOT / f"src/assets/img/{name}-480.webp").exists(): return None
+    w = webp_width(ROOT / f"src/assets/img/{name}.webp") or 880
+    return f"/assets/img/{name}-480.webp 480w, /assets/img/{name}.webp {w}w"
+
 def add_srcset(doc):
     import re as _re
     def rep(m):
         tag, name = m.group(0), m.group(1)
-        if "srcset=" in tag or not (ROOT / f"src/assets/img/{name}-480.webp").exists(): return tag
-        w = _re.search(r'width="(\d+)"', tag); w = w.group(1) if w else "720"
-        return tag.replace(f'src="/assets/img/{name}.webp"', f'src="/assets/img/{name}.webp" srcset="/assets/img/{name}-480.webp 480w, /assets/img/{name}.webp {w}w" sizes="(max-width: 640px) 92vw, (max-width: 1100px) 50vw, 600px"', 1)
+        ss = srcset_for(name)
+        if "srcset=" in tag or not ss: return tag
+        return tag.replace(f'src="/assets/img/{name}.webp"', f'src="/assets/img/{name}.webp" srcset="{ss}" sizes="{IMG_SIZES}"', 1)
+    def pre(m):
+        # O7: preload, <img> ile AYNI srcset/sizes'ı taşır ⇒ mobil tek dosya indirir
+        ss = srcset_for(m.group(1))
+        return m.group(0) if not ss else m.group(0).replace(' fetchpriority=', f' imagesrcset="{ss}" imagesizes="{IMG_SIZES}" fetchpriority=', 1)
+    doc = _re.sub(r'<link rel="preload" as="image" href="/assets/img/([\w-]+)\.webp" fetchpriority="high">', pre, doc)
     return _re.sub(r'<img [^>]*src="/assets/img/([\w-]+)\.webp"[^>]*>', rep, doc)
 
 # ---------------------------------------------------------------- build
@@ -545,6 +634,67 @@ def write(path, content):
     if path.endswith("/"): p = p / "index.html"
     p.parent.mkdir(parents=True, exist_ok=True)
     p.write_text(content, encoding="utf-8")
+
+# Y3: yedek yol YALNIZ python3 hiç yoksa devreye girer. python3 varsa build.py ya da check.py'nin
+# her hatası deploy'u düşürür (eskiden `python3 build.py || test -f dist/en/index.html` yarım
+# kalmış bir build'i başarılı sayabiliyordu).
+BUILD_COMMAND = ('if command -v python3 >/dev/null 2>&1; then python3 build.py && python3 scripts/check.py; '
+                 'else echo "python3 yok, depodaki dist kullanılıyor" && test -f dist/en/index.html && test -f dist/sitemap.xml; fi')
+
+def csp():
+    """O4: Content-Security-Policy — yalnız gerçekten kullanılan kökenler. Satır içi betik ve on*
+    özniteliği yok (scripts/check.py bunu denetler), bu yüzden script-src 'self' zorunlu modda.
+    style-src 'unsafe-inline': şablonlardaki style="" öznitelikleri için (betik çalıştırmaz)."""
+    supa = PLANS_ENDPOINT.split("/functions/")[0]           # plans + signup-checkout
+    make = "/".join(FORM_ENDPOINT.split("/")[:3])           # iletişim formu (fetch)
+    script, connect = ["'self'"], ["'self'", supa, make]
+    if PLAUSIBLE_DOMAIN: script.append("https://plausible.io"); connect.append("https://plausible.io")
+    if GA4_ID:
+        script.append("https://www.googletagmanager.com")
+        connect += ["https://www.google-analytics.com", "https://*.google-analytics.com", "https://*.analytics.google.com"]
+    return "; ".join([
+        "default-src 'self'", "script-src " + " ".join(script), "style-src 'self' 'unsafe-inline'",
+        "img-src 'self' data:" + (" https://www.googletagmanager.com https://*.google-analytics.com" if GA4_ID else ""),
+        "font-src 'self'", "media-src 'self'", "connect-src " + " ".join(connect),
+        "form-action 'self' mailto:", "frame-ancestors 'self'", "base-uri 'self'", "object-src 'none'",
+        "upgrade-insecure-requests"])
+
+# ---------------------------------------------------------------- D4: sayfa başına tarih
+# Her sayfanın dateModified / "Son güncelleme" / sitemap lastmod değeri kendi içeriğinin özetinden
+# gelir: page_dates.json (depoda) {url: {"h": özet, "d": tarih}}. İçerik değişmediyse tarih korunur,
+# değiştiyse build günü yazılır. Böylece global UPDATED değişince 149 sayfa birden "güncellenmiş" görünmez.
+DATES_FILE = ROOT / "page_dates.json"
+MONTHS = {
+    "en": "January February March April May June July August September October November December".split(),
+    "tr": "Ocak Şubat Mart Nisan Mayıs Haziran Temmuz Ağustos Eylül Ekim Kasım Aralık".split(),
+    "es": "enero febrero marzo abril mayo junio julio agosto septiembre octubre noviembre diciembre".split(),
+    "it": "gennaio febbraio marzo aprile maggio giugno luglio agosto settembre ottobre novembre dicembre".split(),
+    "pt": "janeiro fevereiro março abril maio junho julho agosto setembro outubro novembro dezembro".split(),
+    "fr": "janvier février mars avril mai juin juillet août septembre octobre novembre décembre".split(),
+}
+def fmt_date(iso, lang):
+    d = datetime.date.fromisoformat(iso); m = MONTHS[lang][d.month - 1]
+    return {"en": f"{m.capitalize()} {d.day}, {d.year}", "es": f"{d.day} de {m} de {d.year}", "pt": f"{d.day} de {m} de {d.year}"}.get(lang, f"{d.day} {m} {d.year}")
+
+def content_hash(p, lang):
+    """Sayfanın kendi içeriği (başlık, açıklama, gövde, SSS); kayıt bağlantısı biçimi normalize edilir."""
+    raw = json.dumps([p.get("title"), p.get("desc"), p.get("body"), p.get("faq")], ensure_ascii=False, sort_keys=True)
+    raw = re.sub(r"/signup/?", "/signup", pricing.fill(raw, lang))
+    return _hashlib.md5(raw.encode("utf-8")).hexdigest()[:12]
+
+def assign_dates(pages, today=None):
+    today = today or datetime.date.today().isoformat()
+    try: old = json.loads(DATES_FILE.read_text())
+    except (OSError, ValueError): old = {}
+    new = {}
+    for lang, plist in pages.items():
+        for p in plist:
+            u, h = url(p["key"], lang), content_hash(p, lang)
+            d = old[u]["d"] if u in old and old[u]["h"] == h else today
+            new[u] = {"h": h, "d": d}
+            if "modified" not in p: p["modified"] = d; p["updated_txt"] = fmt_date(d, lang)
+    DATES_FILE.write_text(json.dumps(new, ensure_ascii=False, indent=0, sort_keys=True) + "\n", encoding="utf-8")
+    return {u: v["d"] for u, v in new.items()}
 
 def lang_redirects():
     """K4/O2: kök dil yönlendirmesi + eski Türkçe ve kök İngilizce adreslerden 301."""
@@ -566,9 +716,11 @@ def lang_redirects():
     for l in ["tr", "es", "it", "pt", "fr"]:
         for k, slug in [("pricing", "pricing"), ("faq", "faq"), ("features", "features"), ("contact", "contact"), ("about", "about"), ("security", "security")]:
             if url(k, l) != f"/{l}/{slug}/": both(f"/{l}/{slug}", url(k, l))
-    # kayıt sayfası tek adreste (/signup) ve çok dilli; dil klasörlü adresler oraya dili taşır
-    for l in LANGS:
-        both(f"/{l}/signup", f"/signup?lang={l}")
+    # O3: kayıt sayfası her dilde kendi adresinde (/xx/signup/); /signup/ dil algılayan giriş noktası
+    # (Stripe dönüşü ve eski bağlantılar). D1: cleanUrls kapalı ⇒ eski .html adresleri açıkça yönlenir.
+    for old, new in [("/signup.html", "/signup/"), ("/index.html", "/"), ("/privacy.html", url("privacy", "en")),
+                     ("/terms.html", url("terms", "en")), ("/blog/index.html", url("blog", "en"))]:
+        r.append({"source": old, "destination": new, "permanent": True})
     return r
 
 def main():
@@ -578,10 +730,13 @@ def main():
     # root vercel.json (used when the repo itself is deployed on Vercel): same headers/redirects + build settings
     vc = json.loads((ROOT / "src/vercel.json").read_text())
     vc["redirects"] = vc.get("redirects", []) + lang_redirects()
+    for h in vc["headers"]:
+        if h["source"] == "/(.*)": h["headers"].append({"key": "Content-Security-Policy", "value": csp()})
     (DIST / "vercel.json").write_text(json.dumps(vc, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
-    vc = {"buildCommand": "python3 build.py || (echo \"python yok, depodaki dist kullanılıyor\" && test -f dist/en/index.html)", "outputDirectory": "dist", **vc}
+    vc = {"buildCommand": BUILD_COMMAND, "outputDirectory": "dist", **vc}
     (ROOT / "vercel.json").write_text(json.dumps(vc, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
     pages = {l: importlib.import_module("content_" + l).pages() for l in LANGS}
+    page_dates = assign_dates(pages)
     make_variants()
     for lang, plist in pages.items():
         for p in plist:
@@ -598,35 +753,38 @@ def main():
             txt = html.unescape(_re.sub(r"<[^>]+>", " ", txt))
             txt = "\n".join(_re.sub(r"[ \t]+", " ", l).strip() for l in txt.splitlines())
             txt = _re.sub(r"\n{3,}", "\n\n", txt).strip()
-            full.append(f"---\n# {p['title']}\nURL: {abs_url(p['key'], lang)}\n\n{txt}\n")
-            for q, a in p.get("faq", []): full.append(f"Q: {q}\nA: {strip_tags(a)}\n")
+            full.append(pricing.fill(f"---\n# {p['title']}\nURL: {abs_url(p['key'], lang)}\n\n{txt}\n", lang))
+            for q, a in p.get("faq", []): full.append(pricing.fill(f"Q: {q}\nA: {strip_tags(a)}\n", lang))
     (DIST / "llms-full.txt").write_text("\n".join(full), encoding="utf-8")
     if INDEXNOW_KEY: (DIST / f"{INDEXNOW_KEY}.txt").write_text(INDEXNOW_KEY, encoding="utf-8")
     # sitemap with hreflang alternates
     items = []
+    lastmod = {SITE + u: page_dates[u] for u in page_dates}
+    for lang, plist in pages.items():   # açık "modified" taşıyan sayfalar (hukuki metinler) kendi tarihleriyle
+        for p in plist: lastmod[abs_url(p["key"], lang)] = p.get("modified", lastmod.get(abs_url(p["key"], lang)))
     for key in ROUTES:
         for lang in langs(key):
-            alts = "".join(f'<xhtml:link rel="alternate" hreflang="{l}" href="{abs_url(key,l)}"/>' for l in langs(key)) if len(langs(key)) > 1 else ""
+            alts = "".join(f'<xhtml:link rel="alternate" hreflang="{HREFLANG[l]}" href="{abs_url(key,l)}"/>' for l in langs(key)) if len(langs(key)) > 1 else ""
             if alts: alts += f'<xhtml:link rel="alternate" hreflang="x-default" href="{abs_url(key,"en")}"/>'
-            items.append(f'<url><loc>{abs_url(key,lang)}</loc><lastmod>{UPDATED}</lastmod>{alts}</url>')
+            items.append(f'<url><loc>{abs_url(key,lang)}</loc><lastmod>{lastmod.get(abs_url(key,lang), UPDATED)}</lastmod>{alts}</url>')
     (DIST / "sitemap.xml").write_text(
         '<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">\n'
         + "\n".join(items) + "\n</urlset>\n", encoding="utf-8")
     # llms.txt (GEO: plain-language index for AI answer engines)
     bykey = {l: {p["key"]: p for p in pages[l]} for l in LANGS}
     SEC = {"en": "English pages", "tr": "Türkçe sayfalar", "es": "Páginas en español", "it": "Pagine in italiano", "pt": "Páginas em português", "fr": "Pages en français"}
-    def line(k, lang, src): return f'- [{src[k]["title"].split(" | ")[0]}]({abs_url(k,lang)}): {src[k]["desc"]}'
+    def line(k, lang, src): return pricing.fill(f'- [{src[k]["title"].split(" | ")[0]}]({abs_url(k,lang)}): {src[k]["desc"]}', lang)
     llms = f"""# Hostlio Pro
 
-> Hostlio Pro (also called "Hostlio") is AI-powered hotel management software (PMS) for independent hotels, boutique hotels, guesthouses, aparthotels and hostels with roughly 1–150 rooms. It combines Lio, an AI guest-messaging assistant that replies 24/7 in 30+ languages on WhatsApp and OTA inboxes (Booking.com, Airbnb, Expedia), a channel manager with certified connections to 100+ OTAs, a drag-and-drop room rack calendar, online check-in with digital signature, automatic PDF visa forms, transfer and tour sales, and an offline-capable iOS app. Operated by Loti Members LLC (Sacramento, CA, USA). Used by independent hotels in 20+ countries.
+> Hostlio Pro (also called "Hostlio") is AI-powered hotel management software (PMS) for independent hotels, boutique hotels, guesthouses, aparthotels and hostels with roughly 1–150 rooms. It combines Lio, an AI guest-messaging assistant that replies 24/7 in 30+ languages on WhatsApp and OTA inboxes (Booking.com, Airbnb, Expedia), a channel manager with certified connections to 100+ OTAs, a drag-and-drop room rack calendar, online check-in with digital signature, automatic PDF visa forms, transfer and tour sales, and an offline-capable mobile app for iOS and Android. Operated by Loti Members LLC (Sacramento, CA, USA). Used by independent hotels in 20+ countries.
 
 ## Key facts
-- Pricing (USD/month, early-bird for first 50 customers, locked in while subscribed): Starter $49 (regular $59), Pro $89 (regular $109), Growth $149 (regular $189).
-- Starter: 1 property, up to 10 rooms, 1,000 AI messages/month, 100+ OTA sync, WhatsApp AI messaging, room rack, PDF visa forms.
-- Pro: 1 property, up to 50 rooms, 5,000 AI messages/month, adds OTA inbox messaging (Booking.com, Airbnb, Expedia), online check-in, transfer & tour sales, mobile app.
-- Growth: up to 2 properties, 150 rooms, 12,000 AI messages/month, priority sync, priority support, onboarding call, white-label.
+- Pricing (USD/month, early-bird for first 50 customers, locked in while subscribed): Starter ⟦price:starter⟧ (regular ⟦regular:starter⟧), Pro ⟦price:pro⟧ (regular ⟦regular:pro⟧), Growth ⟦price:growth⟧ (regular ⟦regular:growth⟧).
+- Starter: 1 property, up to 10 rooms, ⟦quota:starter⟧ AI messages/month, 100+ OTA sync, WhatsApp AI messaging, room rack, PDF visa forms.
+- Pro: 1 property, up to 50 rooms, ⟦quota:pro⟧ AI messages/month, adds OTA inbox messaging (Booking.com, Airbnb, Expedia), online check-in, transfer & tour sales, mobile app.
+- Growth: up to 2 properties, 150 rooms, ⟦quota:growth⟧ AI messages/month, priority sync, priority support, onboarding call, white-label.
 - Free trial: 7 days; a payment card is collected at signup, no charge until the trial ends, cancel anytime.
-- Annual billing: 20% off — Starter $39/mo ($470/year), Pro $71/mo ($854/year), Growth $119/mo ($1,430/year), early-bird.
+- Annual billing: 20% off — Starter ⟦annual_mo:starter⟧/mo (⟦annual:starter⟧/year), Pro ⟦annual_mo:pro⟧/mo (⟦annual:pro⟧/year), Growth ⟦annual_mo:growth⟧/mo (⟦annual:growth⟧/year), early-bird.
 - Setup: the account is ready in minutes; channels are usually connected the same day (add rooms, authorise the connection in each OTA extranet, map rooms).
 - Starter syncs OTA reservations but does not reply to OTA guest messages; OTA inbox messaging starts from Pro.
 - Channels include Booking.com, Airbnb, Expedia, Agoda, Trip.com, Hotels.com, Hotelbeds, Hostelworld, Google Hotels.
@@ -635,14 +793,16 @@ def main():
 - Last updated: {UPDATED}
 
 """ + "\n\n".join(f"## {SEC[l]}\n" + "\n".join(line(k, l, bykey[l]) for k in ROUTES if l in ROUTES[k]) for l in ["en","tr","es","it","pt","fr"]) + "\n"
-    (DIST / "llms.txt").write_text(llms, encoding="utf-8")
+    (DIST / "llms.txt").write_text(pricing.fill(llms, "en"), encoding="utf-8")
     # ödeme/kayıt sayfası — kendi odaklı düzeniyle (signup_page.py)
     import signup_page, sys as _sys
-    (DIST / "signup.html").write_text(signup_page.render(_sys.modules[__name__]), encoding="utf-8")
+    write("/signup/", signup_page.render(_sys.modules[__name__]))
+    for l in LANGS:
+        write(signup_url(l), signup_page.render(_sys.modules[__name__], l))
     # 404
     nf = {"key":"home","title":"Page not found | Hostlio Pro","desc":"The page you are looking for may have moved or been removed.","no_final":True,
           "body":f'<section class="page-hero"><div class="wrap"><h1>Page not found</h1><p class="lead">The address may have changed. <a href="{url("home","en")}">Go to the home page</a>.</p><p>'+" · ".join(f'<a href="{url("home",l)}" lang="{l}">{LANG_NAME[l]}</a>' for l in LANGS)+'</p></div></section>'}
-    (DIST / "404.html").write_text(re.sub(r'<link rel="(alternate|canonical)"[^>]*>\n?', '', layout(nf, "en")).replace('<meta name="robots" content="index,follow,max-image-preview:large">','<meta name="robots" content="noindex">'), encoding="utf-8")
+    (DIST / "404.html").write_text(re.sub(r'<meta property="og:url"[^>]*>\n?', '', re.sub(r'<link rel="(alternate|canonical)"[^>]*>\n?', '', layout(nf, "en"))).replace('<meta name="robots" content="index,follow,max-image-preview:large">','<meta name="robots" content="noindex">'), encoding="utf-8")
     print("built", sum(len(v) for v in pages.values()), "pages")
 
 if __name__ == "__main__":

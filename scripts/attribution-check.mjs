@@ -7,19 +7,25 @@
 // hata mesajı çıkmaz — sayılar makul görünmeye devam eder.
 //
 // Koşturma:  node scripts/attribution-check.mjs
-// (kardeşi: scripts/i18n-check.mjs)
+// Test edilen kopya: src/attribution.js (yayına giden). Kökteki attribution.js onun birebir
+// kopyası olmalı (depoda tutuluyor) — ayrışırsa bu test düşer (L5).
+// O6 (3 Eki): yalnız kampanya parametreli ziyaret cihaza yazılır, kayıt 90 gün yaşar.
 
 import fs from 'node:fs';
 import vm from 'node:vm';
 import assert from 'node:assert';
 
-const SRC = fs.readFileSync(new URL('../attribution.js', import.meta.url), 'utf8');
+const SRC = fs.readFileSync(new URL('../src/attribution.js', import.meta.url), 'utf8');
+assert.equal(fs.readFileSync(new URL('../attribution.js', import.meta.url), 'utf8'), SRC,
+  'kök attribution.js, src/attribution.js ile aynı değil — cp src/attribution.js attribution.js');
 
 function makeStore(broken = false) {
   const m = new Map();
   return {
     getItem: k => { if (broken) throw new Error('blocked'); return m.has(k) ? m.get(k) : null; },
     setItem: (k, v) => { if (broken) throw new Error('blocked'); m.set(k, v); },
+    removeItem: k => { if (broken) throw new Error('blocked'); m.delete(k); },
+    _map: m,
   };
 }
 
@@ -94,4 +100,31 @@ r = visit(s6, { path: '/', search: '?utm_source=kurtarildi' });
 assert.equal(r.acq_source, 'kurtarildi');
 ok('bozuk localStorage kaydı ilk temas sayılmıyor, yeniden yakalanıyor');
 
-console.log(`\n${n}/8 geçti`);
+// 9 — O6: kampanyasız ziyaret cihaza YAZILMAZ (yalnız o sayfanın belleğinde)
+const s7 = makeStore();
+r = visit(s7, { path: '/', referrer: 'https://news.ycombinator.com/' });
+assert.equal(r.acq_source, 'news.ycombinator.com');
+assert.equal(s7._map.has('hostlio_acq'), false, 'kampanyasız ziyaret localStorage\'a yazıldı!');
+r = visit(s7, { path: '/en/signup/' });
+assert.equal(r.acq_source, 'direct');
+ok('kampanyasız ziyaret cihaza yazılmıyor');
+
+// 10 — O6: kampanya kaydı 90 gün sonra düşer, yenisi yakalanır
+const s8 = makeStore();
+const old = new Date(Date.now() - 91 * 864e5).toISOString();
+s8.setItem('hostlio_acq', JSON.stringify({ source: 'google', medium: 'cpc', campaign: 'eski', first_seen: old, expires: new Date(Date.now() - 864e5).toISOString() }));
+r = visit(s8, { path: '/', search: '?utm_source=bing&utm_campaign=yeni' });
+assert.equal(r.acq_campaign, 'yeni', 'süresi dolmuş kayıt hâlâ ilk temas sayılıyor!');
+const saved = JSON.parse(s8.getItem('hostlio_acq'));
+const days = (Date.parse(saved.expires) - Date.parse(saved.first_seen)) / 864e5;
+assert.ok(days > 89.9 && days < 90.1, 'kayıt ömrü 90 gün değil: ' + days);
+ok('90 günü geçen kayıt siliniyor, yeni kampanya kaydı 90 gün ömürlü');
+
+// 11 — eski sürümün kampanyasız (direct) kaydı siliniyor
+const s9 = makeStore();
+s9.setItem('hostlio_acq', JSON.stringify({ source: 'direct', medium: 'none', first_seen: new Date().toISOString(), landing: '/' }));
+r = visit(s9, { path: '/' });
+assert.equal(s9._map.has('hostlio_acq'), false);
+ok('eski sürümün kampanyasız kaydı temizleniyor');
+
+console.log(`\n${n}/11 geçti`);

@@ -1,17 +1,16 @@
-"""Ödeme / kayıt sayfası (/signup) — yeni site tasarımıyla (tasarim-v2).
+"""Ödeme / kayıt sayfası — /xx/signup/ (6 dil, statik metin o dilde) ve /signup/ (dil algılayan).
 
-🔺 İŞ MANTIĞI ESKİ SAYFADAN BİREBİR TAŞINDI (src/signup_legacy_script.js):
-   signup-checkout edge function çağrısı, ülke → para birimi → saat dilimi
-   tablosu, oda limiti doğrulaması, attribution (hostlioAcq), ?checkout= dönüşü.
-   Yalnız görünür metinler `tr()` ile 6 dile bağlandı ve iki eklenti var:
-   ?plan= / ?billing= ön seçimi (sitedeki plan düğmeleri bunları gönderiyor).
-⛔ Element id'leri (firstName, email, plan-starter …, error-msg, submit-btn)
-   DEĞİŞMEDİ: eski betik ve olası testler onlara bağlı.
-Dil: ?lang= → localStorage 'hostlio_lang' → yönlendiren sayfanın dili →
-tarayıcı dili → en. Statik HTML İngilizce (kazıyıcılar JS çalıştırmaz).
+Mantık: src/assets/signup.js (signup-checkout çağrısı, ülke → para birimi → saat dilimi
+tablosu, oda limiti, attribution, ?checkout= dönüşü, sunucu hata kodlarının çevirisi).
+Fiyatlar: pricing.py (tek kaynak) → prices.js; sayfa açılınca canlı `plans` ucundan tazelenir,
+early_bird=false gelirse Early Bird metni gizlenir ve normal fiyat gösterilir (Y2).
+Satır içi betik ve on* özniteliği YOK (O4 CSP). Alanlar gerçek bir <form> içinde (O8).
+⛔ Element id'leri (firstName, email, plan-starter …, error-msg, submit-btn) korunuyor.
+Dil (/signup/): ?lang= → localStorage 'hostlio_lang' → yönlendiren sayfanın dili → tarayıcı → en.
 """
 import json, html
 from pathlib import Path
+import pricing
 
 LANGS = ["en", "tr", "es", "it", "pt", "fr"]
 
@@ -132,61 +131,102 @@ S = {
   lang="Langue"),
 }
 
-PLANS = [("starter", "Starter", 49, 39, 59), ("pro", "Pro", 89, 71, 109), ("growth", "Growth", 149, 119, 189)]
+
+# Eklenen metinler: sunucu hata kodları (O1), deneme dönüşü (D12), yıllık toplam (Y2), sayfa başlıkları.
+MORE = {
+ "en": dict(title="Start Your Free Trial | Hostlio Pro", desc="Create your Hostlio Pro account in minutes and connect your channels the same day. 7-day free trial.",
+  srv_hotel="Please enter your hotel name (under 200 characters).", srv_plan="Please choose a valid plan.", srv_billing="Please choose monthly or annual billing.",
+  srv_rooms="Please enter a room count between 1 and 500.", srv_rate="Too many signup attempts. Please wait a few minutes and try again.",
+  ok_paid="Your card is saved and your 7-day free trial has started. Check your email to set your password and finish setup.",
+  nojs="Signup needs JavaScript. Please enable it, or email us and we’ll set up your account."),
+ "tr": dict(title="Ücretsiz Denemeyi Başlatın | Hostlio Pro", desc="Hostlio Pro hesabınızı dakikalar içinde oluşturun, kanallarınızı aynı gün bağlayın. 7 gün ücretsiz deneme.",
+  srv_hotel="Lütfen otel adınızı girin (200 karakterden kısa).", srv_plan="Lütfen geçerli bir plan seçin.", srv_billing="Lütfen aylık ya da yıllık ödemeyi seçin.",
+  srv_rooms="Lütfen 1 ile 500 arasında bir oda sayısı girin.", srv_rate="Çok fazla kayıt denemesi yapıldı. Lütfen birkaç dakika bekleyip tekrar deneyin.",
+  ok_paid="Kartınız kaydedildi ve 7 günlük ücretsiz denemeniz başladı. Şifrenizi belirleyip kurulumu tamamlamak için e-postanızı kontrol edin.",
+  nojs="Kayıt için JavaScript gerekiyor. Lütfen açın ya da bize e-posta gönderin, hesabınızı biz kuralım."),
+ "es": dict(title="Empieza tu prueba gratuita | Hostlio Pro", desc="Crea tu cuenta de Hostlio Pro en minutos y conecta tus canales el mismo día. Prueba gratuita de 7 días.",
+  srv_hotel="Introduce el nombre de tu hotel (menos de 200 caracteres).", srv_plan="Elige un plan válido.", srv_billing="Elige facturación mensual o anual.",
+  srv_rooms="Introduce un número de habitaciones entre 1 y 500.", srv_rate="Demasiados intentos de registro. Espera unos minutos e inténtalo de nuevo.",
+  ok_paid="Tu tarjeta se ha guardado y tu prueba gratuita de 7 días ha empezado. Revisa tu correo para crear tu contraseña y terminar la configuración.",
+  nojs="El registro necesita JavaScript. Actívalo o escríbenos por email y crearemos tu cuenta."),
+ "it": dict(title="Inizia la prova gratuita | Hostlio Pro", desc="Crea il tuo account Hostlio Pro in pochi minuti e collega i canali in giornata. Prova gratuita di 7 giorni.",
+  srv_hotel="Inserisci il nome dell’hotel (meno di 200 caratteri).", srv_plan="Scegli un piano valido.", srv_billing="Scegli la fatturazione mensile o annuale.",
+  srv_rooms="Inserisci un numero di camere tra 1 e 500.", srv_rate="Troppi tentativi di iscrizione. Attendi qualche minuto e riprova.",
+  ok_paid="La tua carta è stata registrata e la prova gratuita di 7 giorni è iniziata. Controlla la tua email per impostare la password e completare la configurazione.",
+  nojs="L’iscrizione richiede JavaScript. Attivalo oppure scrivici via email e creeremo noi il tuo account."),
+ "pt": dict(title="Comece seu teste grátis | Hostlio Pro", desc="Crie sua conta do Hostlio Pro em minutos e conecte seus canais no mesmo dia. Teste grátis de 7 dias.",
+  srv_hotel="Informe o nome do hotel (menos de 200 caracteres).", srv_plan="Escolha um plano válido.", srv_billing="Escolha a cobrança mensal ou anual.",
+  srv_rooms="Informe um número de quartos entre 1 e 500.", srv_rate="Muitas tentativas de cadastro. Aguarde alguns minutos e tente novamente.",
+  ok_paid="Seu cartão foi registrado e seu teste grátis de 7 dias começou. Confira seu e-mail para criar sua senha e concluir a configuração.",
+  nojs="O cadastro precisa de JavaScript. Ative-o ou envie um e-mail e nós criamos sua conta."),
+ "fr": dict(title="Démarrez votre essai gratuit | Hostlio Pro", desc="Créez votre compte Hostlio Pro en quelques minutes et connectez vos canaux le jour même. Essai gratuit de 7 jours.",
+  srv_hotel="Veuillez saisir le nom de votre hôtel (moins de 200 caractères).", srv_plan="Veuillez choisir un forfait valide.", srv_billing="Veuillez choisir une facturation mensuelle ou annuelle.",
+  srv_rooms="Veuillez saisir un nombre de chambres entre 1 et 500.", srv_rate="Trop de tentatives d’inscription. Patientez quelques minutes puis réessayez.",
+  ok_paid="Votre carte est enregistrée et votre essai gratuit de 7 jours a commencé. Consultez vos e-mails pour définir votre mot de passe et terminer la configuration.",
+  nojs="L’inscription nécessite JavaScript. Activez-le ou écrivez-nous par e-mail et nous créerons votre compte."),
+}
+for _l in LANGS: S[_l].update(MORE[_l])
+
 NATIVE = {"en": "English", "tr": "Türkçe", "es": "Español", "it": "Italiano", "pt": "Português", "fr": "Français"}
 
 
-def render(build):
-    """build = build modülü (url, icon, LOGO, SITE, LOGIN_URL, EMAIL, UPDATED, GA4/Plausible ayarları)."""
+def render(build, lang=None):
+    """lang=None → /signup/ (dil tarayıcıda seçilir, statik metin İngilizce); lang='xx' → /xx/signup/."""
     import importlib
-    plan_txt = {l: importlib.import_module("content_" + l).PLAN_TXT for l in LANGS}
-    s = S["en"]
-    legacy = (Path(__file__).parent / "src_legacy/signup_script.js").read_text(encoding="utf-8")
+    L = lang or "en"
+    s = S[L]
     I = build.icon
+    fill = pricing.fill
+    plan_txt = {l: json.loads(fill(json.dumps(importlib.import_module("content_" + l).PLAN_TXT, ensure_ascii=False), l)) for l in LANGS}
+    for l in LANGS:
+        S[l]["ann_total"] = build.UI[l]["billed_line_a"]
 
     plans = ""
-    for pid, name, m, a, reg in PLANS:
+    for p in pricing.PLANS:
+        pid = p["id"]
         checked = " checked" if pid == "starter" else ""
-        plans += (f'<div class="plan-option"><input type="radio" name="plan" id="plan-{pid}" value="{name} - Early Bird (${m}/mo)"{checked}>'
-                  f'<label for="plan-{pid}"><span class="plan-name">{name}</span>'
-                  f'<span class="plan-price num">${m}<small data-t="mo">{s["mo"]}</small></span>'
-                  f'<span class="plan-old num"><span data-t="regular">{s["regular"]}</span> <s>${reg}</s></span></label></div>')
+        plans += (f'<div class="plan-option"><input type="radio" name="plan" id="plan-{pid}" value="{pid}"{checked}>'
+                  f'<label for="plan-{pid}"><span class="plan-name">{p["name"]}</span>'
+                  f'<span class="plan-price num">⟦price:{pid}⟧<small>{s["mo"]}</small></span>'
+                  f'<span class="plan-old num"><span data-t="regular">{s["regular"]}</span> <s>⟦regular:{pid}⟧</s></span></label></div>')
 
-    feats = "".join(f"<li>{build.CHECK}<span>{f}</span></li>" for f in plan_txt["en"]["starter"][1])
-    tpath, ppath = build.url("terms", "en"), build.url("privacy", "en")
-    langopts = "".join(f'<option value="{l}">{NATIVE[l]}</option>' for l in LANGS)
+    feats = "".join(f"<li>{build.CHECK}<span>{f}</span></li>" for f in plan_txt[L]["starter"][1])
+    tpath, ppath = build.url("terms", L), build.url("privacy", L)
+    langopts = "".join(f'<option value="{l}"{" selected" if l == L else ""}>{NATIVE[l]}</option>' for l in LANGS)
+    self_url = build.SITE + (build.signup_url(lang) if lang else "/signup/")
 
-    data = {"S": S, "PLAN_TXT": {l: {k: v for k, v in plan_txt[l].items()} for l in LANGS},
+    data = {"S": S, "PLAN_TXT": plan_txt, "fixed": lang,
             "TERMS": {l: build.url("terms", l) for l in LANGS}, "PRIVACY": {l: build.url("privacy", l) for l in LANGS},
-            "HOME": {l: build.url("home", l) for l in LANGS}, "ANNUAL": {p[0]: p[3] for p in PLANS}, "MONTHLY": {p[0]: p[2] for p in PLANS}}
+            "HOME": {l: build.url("home", l) for l in LANGS}, "SIGNUP": {l: build.signup_url(l) for l in LANGS},
+            # prices.js yüklenemezse kullanılan statik kopya (aynı kaynak: pricing.py)
+            "PLANS": pricing.js_config(L, "", "")["plans"], "EARLY_BIRD": pricing.EARLY_BIRD}
+    co_json = json.dumps(data, ensure_ascii=False).replace("</", "<\\/")
 
-    head_extra = ""
-    if build.PLAUSIBLE_DOMAIN: head_extra += f'<script defer data-domain="{build.PLAUSIBLE_DOMAIN}" src="https://plausible.io/js/script.js"></script>\n'
-    if build.GA4_ID: head_extra += f'<script async src="https://www.googletagmanager.com/gtag/js?id={build.GA4_ID}"></script><script>window.dataLayer=window.dataLayer||[];function gtag(){{dataLayer.push(arguments)}}gtag("js",new Date());gtag("config","{build.GA4_ID}");</script>\n'
+    head_extra = build.analytics_head()
+    foot = {"en": ("Terms of Service", "Privacy Policy")}.get(L) or (build.UI[L]["terms"], build.UI[L]["privacy"])
 
-    return f'''<!doctype html>
-<html class="nojs" lang="en">
+    doc = f'''<!doctype html>
+<html class="nojs" lang="{"pt-BR" if L == "pt" else L}">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Start Your Free Trial | Hostlio Pro</title>
-<meta name="description" content="Create your Hostlio Pro account in minutes and connect your channels the same day. 7-day free trial.">
-<link rel="canonical" href="{build.SITE}/signup">
+<title>{html.escape(s["title"])}</title>
+<meta name="description" content="{html.escape(s["desc"])}">
+<link rel="canonical" href="{self_url}">
 <meta name="robots" content="noindex,follow">
-<meta property="og:type" content="website"><meta property="og:site_name" content="Hostlio Pro"><meta property="og:locale" content="en_US">
-<meta property="og:url" content="{build.SITE}/signup"><meta property="og:title" content="Start Your Free Trial | Hostlio Pro">
-<meta property="og:description" content="Create your Hostlio Pro account in minutes and connect your channels the same day. 7-day free trial.">
-<meta property="og:image" content="{build.SITE}/assets/og-en.png">
+<meta property="og:type" content="website"><meta property="og:site_name" content="Hostlio Pro"><meta property="og:locale" content="{build.LOCALE[L]}">
+<meta property="og:url" content="{self_url}"><meta property="og:title" content="{html.escape(s["title"])}">
+<meta property="og:description" content="{html.escape(s["desc"])}">
+<meta property="og:image" content="{build.SITE}/assets/og-{L}.png">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="theme-color" content="#1B2B4B">
 <link rel="icon" href="/assets/favicon.svg" type="image/svg+xml">
 <link rel="apple-touch-icon" href="/assets/apple-touch-icon.png">
-<link rel="preload" href="/assets/fonts/instrument-sans-latin-wght-normal.woff2" as="font" type="font/woff2" crossorigin>
-<link rel="stylesheet" href="{build.asset('/assets/style.css')}">
+{build.font_preloads(L)}<link rel="stylesheet" href="{build.asset('/assets/style.css')}">
 {head_extra}</head>
 <body class="co-body">
 <header class="co-head"><div class="wrap co-head-in">
-<a class="brand" href="/en/" data-home aria-label="Hostlio Pro">{build.LOGO}<span>Hostlio <span class="pro">Pro</span></span></a>
+<a class="brand" href="{build.url("home", L)}" data-home aria-label="Hostlio Pro">{build.LOGO}<span>Hostlio <span class="pro">Pro</span></span></a>
 <div class="co-head-end">
 <span class="co-secure">{I("lock-simple") if (build.ROOT / "icons/lock-simple.svg").exists() else I("check")}<span data-t="secure">{s["secure"]}</span></span>
 <label class="co-lang"><span class="sr-only" data-t="lang">{s["lang"]}</span>{I("globe-simple")}<select id="co-lang">{langopts}</select></label>
@@ -199,7 +239,8 @@ def render(build):
 <p class="co-sub" data-t="sub">{s["sub"]}</p>
 <div class="co-summary">
 <div class="co-sum-top"><span data-t="your_plan">{s["your_plan"]}</span><b id="sum-name">Starter</b></div>
-<div class="co-sum-price num"><b id="sum-price">$49</b><span id="sum-suffix">{s["mo"]}</span></div>
+<div class="co-sum-price num"><b id="sum-price">⟦price:starter⟧</b><span id="sum-suffix">{s["mo"]}</span></div>
+<p class="co-sum-total small num" id="sum-total" hidden></p>
 <ul class="co-feats" id="sum-feats">{feats}</ul>
 </div>
 <p class="co-note">{I("identification-card")}<span data-t="card_note">{s["card_note"]}</span></p>
@@ -208,68 +249,57 @@ def render(build):
 <li>{I("rocket-launch")}<span data-t="t2">{s["t2"]}</span></li>
 <li>{I("check")}<span data-t="t3">{s["t3"]}</span></li>
 </ul>
-<p class="co-eb">{I("sparkle")}<span data-t="eb">{s["eb"]}</span></p>
+<p class="co-eb" data-eb>{I("sparkle")}<span data-t="eb">{s["eb"]}</span></p>
 </aside>
 
 <section class="co-card" aria-labelledby="form-h">
 <h2 id="form-h" data-t="form_h">{s["form_h"]}</h2>
 <p class="co-form-p" data-t="form_p">{s["form_p"]}</p>
-<div class="error-msg co-alert" id="error-msg" role="alert" style="display:none"></div>
+<noscript><p class="co-alert">{s["nojs"]} <a href="mailto:{build.EMAIL}">{build.EMAIL}</a></p></noscript>
+<div class="error-msg co-alert" id="error-msg" role="alert" hidden></div>
 
-<div id="form-wrap">
+<form id="signup-form" action="#" method="post" aria-describedby="error-msg">
 <fieldset class="co-plans"><legend data-t="choose">{s["choose"]}</legend>
-<div class="billing co-billing" role="group"><button type="button" class="on" aria-pressed="true" data-bill="m" data-t="monthly">{s["monthly"]}</button><button type="button" aria-pressed="false" data-bill="a"><span data-t="annual">{s["annual"]}</span> <span class="save" data-t="save">{s["save"]}</span></button></div>
-<button type="button" id="billing-toggle" hidden aria-hidden="true" tabindex="-1"><span id="toggle-dot"></span></button><span id="label-monthly" hidden></span><span id="label-annual" hidden></span>
+<div class="billing co-billing" role="group" aria-labelledby="co-bill-l"><span id="co-bill-l" class="sr-only">{s["monthly"]} / {s["annual"]}</span><button type="button" class="on" aria-pressed="true" data-bill="m" data-t="monthly">{s["monthly"]}</button><button type="button" aria-pressed="false" data-bill="a"><span data-t="annual">{s["annual"]}</span> <span class="save" data-t="save">{s["save"]}</span></button></div>
 <div class="plan-grid">{plans}</div>
 </fieldset>
 
 <div class="co-row">
-<label class="co-field"><span data-t="first">{s["first"]}</span> <em>*</em><input type="text" id="firstName" autocomplete="given-name" required></label>
-<label class="co-field"><span data-t="last">{s["last"]}</span> <em>*</em><input type="text" id="lastName" autocomplete="family-name" required></label>
+<label class="co-field"><span data-t="first">{s["first"]}</span> <em aria-hidden="true">*</em><input type="text" id="firstName" name="firstName" autocomplete="given-name" required aria-describedby="error-msg"></label>
+<label class="co-field"><span data-t="last">{s["last"]}</span> <em aria-hidden="true">*</em><input type="text" id="lastName" name="lastName" autocomplete="family-name" required aria-describedby="error-msg"></label>
 </div>
-<label class="co-field"><span data-t="email">{s["email"]}</span> <em>*</em><input type="email" id="email" autocomplete="email" required></label>
-<label class="co-field"><span data-t="hotel">{s["hotel"]}</span> <em>*</em><input type="text" id="hotelName" autocomplete="organization" placeholder="Seaside Boutique Hotel" required></label>
+<label class="co-field"><span data-t="email">{s["email"]}</span> <em aria-hidden="true">*</em><input type="email" id="email" name="email" autocomplete="email" required aria-describedby="error-msg"></label>
+<label class="co-field"><span data-t="hotel">{s["hotel"]}</span> <em aria-hidden="true">*</em><input type="text" id="hotelName" name="hotelName" autocomplete="organization" maxlength="200" placeholder="Seaside Boutique Hotel" required aria-describedby="error-msg"></label>
 <div class="co-row">
-<label class="co-field"><span data-t="rooms">{s["rooms"]}</span> <em>*</em><input type="number" id="rooms" inputmode="numeric" min="1" max="500" required oninput="clearRoomError()">
-<span id="rooms-error" class="co-err" style="display:none"></span></label>
-<label class="co-field"><span data-t="phone">{s["phone"]}</span><input type="tel" id="phone" autocomplete="tel"></label>
+<label class="co-field"><span data-t="rooms">{s["rooms"]}</span> <em aria-hidden="true">*</em><input type="number" id="rooms" name="rooms" inputmode="numeric" min="1" max="500" required aria-describedby="rooms-error">
+<span id="rooms-error" class="co-err" role="alert" hidden></span></label>
+<label class="co-field"><span data-t="phone">{s["phone"]}</span><input type="tel" id="phone" name="phone" autocomplete="tel"></label>
 </div>
-<label class="co-field"><span data-t="country">{s["country"]}</span> <em>*</em>
-<select id="country" required onchange="onCountryChange()"><option value="" data-t="select_country">{s["select_country"]}</option></select>
-<input type="text" id="countryOther" maxlength="2" style="display:none;text-transform:uppercase" data-tph="other_ph" placeholder="{s["other_ph"]}"></label>
+<label class="co-field"><span data-t="country">{s["country"]}</span> <em aria-hidden="true">*</em>
+<select id="country" name="country" required aria-describedby="locale-error"><option value="" data-t="select_country">{s["select_country"]}</option></select>
+<input type="text" id="countryOther" name="countryOther" maxlength="2" pattern="[A-Za-z]{{2}}" hidden style="text-transform:uppercase" data-tph="other_ph" placeholder="{s["other_ph"]}" aria-label="{s["other_ph"]}" aria-describedby="locale-error"></label>
 <div class="co-row">
-<label class="co-field"><span data-t="currency">{s["currency"]}</span> <em>*</em><select id="currency" required></select><small class="co-warn" data-t="currency_hint">{s["currency_hint"]}</small></label>
-<label class="co-field"><span data-t="tz">{s["tz"]}</span> <em>*</em><select id="timezone" required></select><small data-t="tz_hint">{s["tz_hint"]}</small></label>
+<label class="co-field"><span data-t="currency">{s["currency"]}</span> <em aria-hidden="true">*</em><select id="currency" name="currency" required aria-describedby="currency-hint locale-error"></select><small class="co-warn" id="currency-hint" data-t="currency_hint">{s["currency_hint"]}</small></label>
+<label class="co-field"><span data-t="tz">{s["tz"]}</span> <em aria-hidden="true">*</em><select id="timezone" name="timezone" required aria-describedby="tz-hint locale-error"></select><small id="tz-hint" data-t="tz_hint">{s["tz_hint"]}</small></label>
 </div>
-<span id="locale-error" class="co-err" style="display:none"></span>
+<span id="locale-error" class="co-err" role="alert" hidden></span>
 
 <p class="terms co-terms" id="co-terms">{s["terms"].format(t=tpath, p=ppath)}</p>
-<button type="button" class="btn btn-primary co-submit" id="submit-btn" onclick="submitForm()">{s["submit"]}</button>
+<button type="submit" class="btn btn-primary co-submit" id="submit-btn">{s["submit"]}</button>
 <p class="co-login"><span data-t="login">{s["login"]}</span> <a href="{build.LOGIN_URL}" data-t="login_a">{s["login_a"]}</a></p>
-</div>
-
-<div class="success-screen" id="success-screen" hidden><h3>Hostlio Pro</h3><p><strong id="success-email"></strong></p></div>
+</form>
 </section>
 </div></main>
 
 <footer class="co-foot"><div class="wrap"><span>© {UPD_YEAR(build)} Hostlio Pro, Loti Members LLC</span>
-<a href="{tpath}" id="co-f-terms">Terms of Service</a><a href="{ppath}" id="co-f-privacy">Privacy Policy</a><a href="mailto:{build.EMAIL}">{build.EMAIL}</a></div></footer>
+<a href="{tpath}" id="co-f-terms">{foot[0]}</a><a href="{ppath}" id="co-f-privacy">{foot[1]}</a><a href="mailto:{build.EMAIL}">{build.EMAIL}</a></div></footer>
 
-<script>window.CO={json.dumps(data, ensure_ascii=False)};
-(function(){{var L=["en","tr","es","it","pt","fr"],q=new URLSearchParams(location.search).get("lang"),l=null;
-if(L.indexOf(q)>-1)l=q;if(!l){{try{{var v=localStorage.getItem("hostlio_lang");if(L.indexOf(v)>-1)l=v}}catch(e){{}}}}
-if(!l&&document.referrer){{try{{var r=new URL(document.referrer);if(r.host===location.host){{var m=r.pathname.match(/^\/(en|tr|es|it|pt|fr)\//);if(m)l=m[1]}}}}catch(e){{}}}}
-if(!l){{var n=(navigator.language||"en").slice(0,2).toLowerCase();l=L.indexOf(n)>-1?n:"en"}}
-window.CO.lang=l;}})();
-function tr(k){{var S=window.CO.S;return (S[window.CO.lang]&&S[window.CO.lang][k])||S.en[k]||k}}
-</script>
-<script>
-{legacy}
-</script>
-<script src="{build.asset('/assets/checkout.js')}" defer></script>
-<script src="{build.asset('/attribution.js')}"></script>
+<script type="application/json" id="co-data">{co_json}</script>
+{build.pricing_block(L)}<script src="{build.asset('/assets/signup.js')}" defer></script>
+<script src="{build.asset('/attribution.js')}" defer></script>
 </body>
 </html>'''
+    return pricing.fill(doc, L)
 
 
 def UPD_YEAR(build):

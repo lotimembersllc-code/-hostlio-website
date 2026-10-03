@@ -4,9 +4,9 @@ def U(k): return url(k, L)
 
 # ------------------------------------------------------------ shared facts
 PLAN_TXT = {
- "starter": ("Küçük pansiyon ve butik oteller için", ["1 tesis, 10 odaya kadar","Aylık 1.000 AI mesajı","100+ OTA ile kanal senkronizasyonu","WhatsApp AI mesajlaşma","Oda rafı (rezervasyon takvimi)","Otomatik PDF vize formları"]),
- "pro":     ("Tek tesisli, büyüyen oteller için", ["1 tesis, 50 odaya kadar","Aylık 5.000 AI mesajı","Starter'daki her şey","WhatsApp + OTA gelen kutusu mesajlaşması (Booking.com, Airbnb, Expedia)","Online check-in ve dijital imza","Transfer ve tur satışı","Mobil uygulama"]),
- "growth":  ("İki tesis işleten ekipler için", ["2 tesise kadar, 150 odaya kadar","Aylık 12.000 AI mesajı","Pro'daki her şey","Öncelikli kanal senkronizasyonu","Öncelikli destek (ertesi iş günü)","Birebir kurulum görüşmesi","White-label seçenekleri"]),
+ "starter": ("Küçük pansiyon ve butik oteller için", ["1 tesis, 10 odaya kadar","Aylık ⟦quota:starter⟧ AI mesajı","100+ OTA ile kanal senkronizasyonu","WhatsApp AI mesajlaşma","Oda rafı (rezervasyon takvimi)","Otomatik PDF vize formları"]),
+ "pro":     ("Tek tesisli, büyüyen oteller için", ["1 tesis, 50 odaya kadar","Aylık ⟦quota:pro⟧ AI mesajı","Starter'daki her şey","WhatsApp + OTA gelen kutusu mesajlaşması (Booking.com, Airbnb, Expedia)","Online check-in ve dijital imza","Transfer ve tur satışı","Mobil uygulama"]),
+ "growth":  ("İki tesis işleten ekipler için", ["2 tesise kadar, 150 odaya kadar","Aylık ⟦quota:growth⟧ AI mesajı","Pro'daki her şey","Öncelikli kanal senkronizasyonu","Öncelikli destek (ertesi iş günü)","Birebir kurulum görüşmesi","White-label seçenekleri"]),
 }
 
 def plans_html():
@@ -18,8 +18,8 @@ def plans_html():
         out.append(f'''<article class="plan{" pop" if pop else ""}" aria-labelledby="plan-{p["id"]}">
 {'<span class="tag">En çok tercih edilen</span>' if pop else ""}
 <h3 id="plan-{p["id"]}">{p["name"]}</h3><p class="for">{for_}</p>
-<div class="price num"><b>${p["price"]}</b><span class="muted">/ ay</span></div>
-<p class="small muted num" style="margin:0">Erken kayıt fiyatı (normali <s>${p["regular"]}</s>)</p>
+<div class="price num"><b data-price="{p["id"]}">⟦price:{p["id"]}⟧</b><span class="muted">/ ay</span></div>
+<p class="small muted num" style="margin:0" data-eb>Erken kayıt fiyatı (normali <s data-regular="{p["id"]}">⟦regular:{p["id"]}⟧</s>)</p>
 <ul>{lis}</ul>
 {btn(p["name"]+" ile başla", SIGNUP_URL+"?plan="+p["id"], "primary" if pop else "ghost")}
 </article>''')
@@ -28,7 +28,7 @@ def plans_html():
 FAQ_CORE = [
  ("Otel programı nedir?", "Otel programı (otel yönetim yazılımı, PMS), bir konaklama tesisinin rezervasyonlarını, oda müsaitliğini, satış kanallarını ve misafir bilgilerini tek yerden yönetmesini sağlayan yazılımdır. Hostlio Pro bu işlevlere misafir mesajlarını 30+ dilde yanıtlayan yapay zekâ asistanı Lio'yu ekler."),
  ("Hostlio Pro nedir?", "Hostlio Pro, bağımsız oteller, butik oteller ve pansiyonlar için geliştirilmiş yapay zekâ destekli bir otel yönetim yazılımıdır (PMS). Misafir mesajlarını 30'dan fazla dilde 7/24 yanıtlayan AI asistanı Lio'yu, 100+ OTA'ya bağlanan kanal yöneticisini, sürükle-bırak rezervasyon takvimini ve online check-in'i tek panelde birleştirir."),
- ("Hostlio Pro'nun fiyatı ne kadar?", "Üç plan var: Starter aylık 49 $, Pro aylık 89 $, Growth aylık 149 $. Bu fiyatlar ilk 50 müşteriye özel %20 erken kayıt indirimini içerir ve abonelik sürdüğü sürece sabit kalır. Normal fiyatlar sırasıyla 59 $, 109 $ ve 189 $'dır."),
+ ("Hostlio Pro'nun fiyatı ne kadar?", "Üç plan var: Starter aylık ⟦price:starter⟧, Pro aylık ⟦price:pro⟧, Growth aylık ⟦price:growth⟧. Bu fiyatlar ilk 50 müşteriye özel %20 erken kayıt indirimini içerir ve abonelik sürdüğü sürece sabit kalır. Normal fiyatlar sırasıyla ⟦regular:starter⟧, ⟦regular:pro⟧ ve ⟦regular:growth⟧'dır."),
  ("Ücretsiz deneme var mı?", "Evet. Tüm planlar 7 gün ücretsiz denenebilir. Kayıt sırasında ödeme kartı alınır, ancak deneme süresi bitene kadar hiçbir ücret çekilmez. Uzun süreli sözleşme yoktur, istediğiniz zaman iptal edebilirsiniz."),
  ("Hangi OTA'larla çalışıyor?", "Hostlio Pro, Channex altyapısı üzerinden Booking.com, Airbnb, Expedia, Agoda, Trip.com, Hotels.com, Hotelbeds, Hostelworld ve Google Hotels dahil 100'den fazla kanala bağlanır. Müsaitlik, fiyat ve rezervasyonlar tüm kanallarda eşzamanlı güncellenir."),
  ("AI asistan Lio hangi dillerde yanıt veriyor?", "Lio, Türkçe, İngilizce, Arapça, Rusça, Almanca, Japonca ve Çince dahil 30'dan fazla dilde yanıt verir. Misafir hangi dilde yazarsa o dilde cevaplar; siz panelde Türkçe çevirisini görürsünüz."),
@@ -64,9 +64,9 @@ def ai():
 <section><div class="wrap">
 <div class="section-head"><h2>Planlara göre AI mesaj kotası</h2><p>Bir mesaj, Lio'nun misafire gönderdiği tek bir yanıttır.</p></div>
 <div class="table-wrap"><table><thead><tr><th>Plan</th><th class="c">Aylık AI mesajı</th><th>Mesaj kanalları</th></tr></thead><tbody>
-<tr><th>Starter</th><td class="c num">1.000</td><td>WhatsApp</td></tr>
-<tr><th>Pro</th><td class="c num">5.000</td><td>WhatsApp + OTA gelen kutuları (Booking.com, Airbnb, Expedia)</td></tr>
-<tr><th>Growth</th><td class="c num">12.000</td><td>WhatsApp + OTA gelen kutuları (Booking.com, Airbnb, Expedia)</td></tr>
+<tr><th>Starter</th><td class="c num">⟦quota:starter⟧</td><td>WhatsApp</td></tr>
+<tr><th>Pro</th><td class="c num">⟦quota:pro⟧</td><td>WhatsApp + OTA gelen kutuları (Booking.com, Airbnb, Expedia)</td></tr>
+<tr><th>Growth</th><td class="c num">⟦quota:growth⟧</td><td>WhatsApp + OTA gelen kutuları (Booking.com, Airbnb, Expedia)</td></tr>
 </tbody></table></div>
 </div></section>
 '''
@@ -76,8 +76,8 @@ def ai():
      ("Mesaj kotası dolarsa ne olur?", "Kotanız dolduğunda mesajlar gelmeye devam eder ve panelde görünür; yalnızca otomatik yanıt durur. Üst plana geçerek kotanızı artırabilirsiniz."),
      FAQ_CORE[5],
     ]
-    return {"key":"ai","title":"AI Misafir Asistanı Lio: 30+ Dilde Otel Mesajları | Hostlio Pro",
-            "desc":"Hostlio Pro'nun AI asistanı Lio, otel misafirlerinin WhatsApp ve OTA gelen kutusu mesajlarını 30+ dilde 7/24 yanıtlar, transfer ve tur satar. Nasıl çalıştığını görün.",
+    return {"key":"ai","title":"AI Misafir Asistanı Lio: 30+ Dilde Mesajlar | Hostlio Pro",
+            "desc":"Hostlio Pro'nun AI asistanı Lio, otel misafirlerinin WhatsApp ve OTA gelen kutusu mesajlarını 30+ dilde 7/24 yanıtlar, transfer ve tur satar.",
             "trail":[("AI asistan Lio", U("ai"))],"body":body,"faq":faq}
 
 def channel():
@@ -148,7 +148,7 @@ def checkin():
            ("Misafirin uygulama indirmesi gerekiyor mu?", "Hayır. Check-in formu tarayıcıda açılır; herhangi bir uygulama indirmek gerekmez."),
            ("Misafir bağlantıyı doldurmazsa ne olur?", "Klasik check-in'e devam edebilirsiniz. Resepsiyonda bilgileri Hostlio Pro mobil uygulamasından da girebilirsiniz.")]
     return {"key":"checkin","title":"Otel Online Check-in ve Dijital İmza Yazılımı | Hostlio Pro",
-            "desc":"Hostlio Pro online check-in ile misafirler varıştan önce kimlik bilgilerini, refakatçilerini ve dijital imzasını telefondan gönderir. Resepsiyonda kuyruk olmaz.",
+            "desc":"Hostlio Pro online check-in ile misafirler varıştan önce kimliklerini, refakatçilerini ve dijital imzasını telefondan gönderir. Resepsiyonda kuyruk yok.",
             "trail":[("Online check-in", U("checkin"))],"body":body,"faq":faq}
 
 def features():
@@ -162,13 +162,13 @@ def features():
 <div class="row"><h3>Online check-in</h3><div><p>Güvenli bağlantı, refakatçi misafirler, kimlik fotoğrafı ve dijital imza.</p><a href="{U("checkin")}">Online check-in</a></div></div>
 <div class="row"><h3>Otomatik PDF vize formları</h3><div><p>Vize başvurusu için otel davet ve konaklama belgelerini rezervasyon bilgilerinden tek tıkla PDF olarak üretin.</p></div></div>
 <div class="row"><h3>Transfer ve tur satışı</h3><div><p>Lio mesajlaşma sırasında havalimanı transferi ve tur önerir, talebi ekibinize iletir.</p></div></div>
-<div class="row"><h3>Mobil uygulama</h3><div><p>iOS uygulamasıyla rezervasyonları, mesajları ve check-in'leri otelin dışından yönetin. İnternet kesildiğinde de çalışır, bağlantı gelince senkronize olur.</p></div></div>
+<div class="row"><h3>Mobil uygulama</h3><div><p>iOS ve Android uygulamasıyla rezervasyonları, mesajları ve check-in'leri otelin dışından yönetin. İnternet kesildiğinde de çalışır, bağlantı gelince senkronize olur.</p></div></div>
 </div></div></section>
 <section><div class="wrap"><div class="section-head"><h2>Planlara göre özellikler</h2></div>
 <div class="table-wrap"><table><thead><tr><th>Özellik</th><th class="c">Starter</th><th class="c">Pro</th><th class="c">Growth</th></tr></thead><tbody>
 <tr><th>Tesis sayısı</th><td class="c">1</td><td class="c">1</td><td class="c">2</td></tr>
 <tr><th>Oda limiti</th><td class="c num">10</td><td class="c num">50</td><td class="c num">150</td></tr>
-<tr><th>Aylık AI mesajı</th><td class="c num">1.000</td><td class="c num">5.000</td><td class="c num">12.000</td></tr>
+<tr><th>Aylık AI mesajı</th><td class="c num">⟦quota:starter⟧</td><td class="c num">⟦quota:pro⟧</td><td class="c num">⟦quota:growth⟧</td></tr>
 <tr><th>100+ OTA kanal senkronizasyonu</th><td class="c">Var</td><td class="c">Var</td><td class="c">Öncelikli</td></tr>
 <tr><th>WhatsApp AI mesajlaşma</th><td class="c">Var</td><td class="c">Var</td><td class="c">Var</td></tr>
 <tr><th>OTA gelen kutusu mesajlaşması (Booking.com, Airbnb, Expedia)</th><td class="c">Yok</td><td class="c">Var</td><td class="c">Var</td></tr>
@@ -176,13 +176,13 @@ def features():
 <tr><th>PDF vize formları</th><td class="c">Var</td><td class="c">Var</td><td class="c">Var</td></tr>
 <tr><th>Online check-in ve dijital imza</th><td class="c">Yok</td><td class="c">Var</td><td class="c">Var</td></tr>
 <tr><th>Transfer ve tur satışı</th><td class="c">Yok</td><td class="c">Var</td><td class="c">Var</td></tr>
-<tr><th>iOS mobil uygulama</th><td class="c">Yok</td><td class="c">Var</td><td class="c">Var</td></tr>
+<tr><th>iOS ve Android uygulaması</th><td class="c">Yok</td><td class="c">Var</td><td class="c">Var</td></tr>
 <tr><th>Öncelikli destek ve kurulum görüşmesi</th><td class="c">Yok</td><td class="c">Yok</td><td class="c">Var</td></tr>
 <tr><th>White-label</th><td class="c">Yok</td><td class="c">Yok</td><td class="c">Var</td></tr>
 </tbody></table></div></div></section>
 '''
-    return {"key":"features","title":"Otel Programı Özellikleri: AI, Kanal Yöneticisi | Hostlio Pro",
-            "desc":"Hostlio Pro özellikleri: AI misafir asistanı, 100+ OTA kanal yöneticisi, sürükle-bırak oda rafı, online check-in, PDF vize formları, transfer satışı ve mobil uygulama.",
+    return {"key":"features","title":"Otel Programı Özellikleri: AI, Kanal Yönetimi | Hostlio Pro",
+            "desc":"Hostlio Pro özellikleri: AI asistan, 100+ OTA kanal yönetimi, sürükle-bırak oda rafı, online check-in, PDF vize formu, transfer satışı ve mobil uygulama.",
             "trail":[("Özellikler", U("features"))],"body":body,"faq":[FAQ_CORE[0], FAQ_CORE[1], FAQ_CORE[4]]}
 
 def pricing():
@@ -197,7 +197,7 @@ def pricing():
 <section class="white rule"><div class="wrap">
 <div class="section-head"><h2>Hangi plan size uygun?</h2></div>
 <div class="rows">
-<div class="row"><h3>Starter</h3><div><p>10 odaya kadar pansiyon ve butik oteller. Mesaj trafiği ayda 1.000 yanıtı geçmeyen, kanal senkronizasyonu ve AI yanıtla başlamak isteyen işletmeler.</p></div></div>
+<div class="row"><h3>Starter</h3><div><p>10 odaya kadar pansiyon ve butik oteller. Mesaj trafiği ayda ⟦quota:starter⟧ yanıtı geçmeyen, kanal senkronizasyonu ve AI yanıtla başlamak isteyen işletmeler.</p></div></div>
 <div class="row"><h3>Pro</h3><div><p>11–50 odalı oteller. OTA mesajlarını da Lio'ya devretmek, online check-in kullanmak ve transfer/tur satmak isteyenler için.</p></div></div>
 <div class="row"><h3>Growth</h3><div><p>İki tesis veya 150 odaya kadar kapasite. Öncelikli destek, birebir kurulum ve kendi markanızla (white-label) kullanım gerektiğinde.</p></div></div>
 </div></div></section>
@@ -207,13 +207,13 @@ def pricing():
       ("Yıllık ödeme seçeneği var mı?", "Evet. Abonelikler aylık veya yıllık peşin faturalandırılır; yıllık planlarda %20 indirim uygulanır (Kullanım Şartları, 3. madde)."),
       ("Plan değiştirebilir miyim?", "Evet. İstediğiniz zaman üst veya alt plana geçebilirsiniz; değişiklik bir sonraki fatura döneminde yansır."),
       ("Erken kayıt indirimi ne kadar sürer?", "İndirim ilk 50 müşteri için geçerlidir ve aboneliğiniz devam ettiği sürece fiyatınız sabit kalır.")]
-    return {"key":"pricing","title":"Otel Yazılımı Fiyatları: Aylık 49 $'dan Başlar | Hostlio Pro",
-            "desc":"Hostlio Pro fiyatları: Starter 49 $, Pro 89 $, Growth 149 $/ay. Komisyon yok, kurulum ücreti yok, 7 gün ücretsiz deneme. Planları karşılaştırın.",
+    return {"key":"pricing","title":"Otel Yazılımı Fiyatları: Aylık ⟦price:starter⟧'dan Başlar | Hostlio Pro",
+            "desc":"Hostlio Pro fiyatları: Starter ⟦price:starter⟧, Pro ⟦price:pro⟧, Growth ⟦price:growth⟧/ay. Komisyon yok, kurulum ücreti yok, 7 gün ücretsiz deneme. Planları karşılaştırın.",
             "trail":[("Fiyatlandırma", U("pricing"))],"body":body,"faq":faq,"schema":[software_schema(L, detailed=True)]}
 
 FAQ_ALL = FAQ_CORE + [
  ("Hostlio Pro hangi otel tiplerine uygun?", "Butik oteller, şehir otelleri, pansiyonlar, apart oteller ve hosteller gibi 1 ila 150 odalı bağımsız tesisler için tasarlandı."),
- ("Mobil uygulama var mı?", "Evet. Pro ve Growth planlarında iOS uygulaması bulunur. Uygulama internet bağlantısı olmadan da çalışır ve bağlantı geldiğinde verileri senkronize eder."),
+ ("Mobil uygulama var mı?", "Evet. Pro ve Growth planlarında iOS ve Android uygulaması bulunur. Uygulama internet bağlantısı olmadan da çalışır ve bağlantı geldiğinde verileri senkronize eder."),
  ("Online check-in nasıl çalışıyor?", "Misafire kişiye özel güvenli bir bağlantı gönderilir. Misafir kimlik bilgilerini, refakatçilerini ve dijital imzasını varıştan önce telefonundan gönderir. Pro ve Growth planlarında vardır."),
  ("PDF vize formu özelliği ne işe yarar?", "Vizeye ihtiyaç duyan misafirler için otel konaklama ve davet belgelerini rezervasyon bilgilerinden otomatik olarak PDF'e dönüştürür."),
  ("Verilerim güvende mi?", "Veriler şifreli bağlantı üzerinden iletilir ve her otelin verisi satır düzeyinde erişim kurallarıyla diğer tesislerden ayrılır. Misafir verileri talep üzerine silinebilir."),
@@ -226,7 +226,7 @@ def faq_page():
 <p class="lead">Hostlio Pro'nun özellikleri, fiyatları ve kurulumu hakkında en çok sorulanlar. Cevabını bulamadığınız soru için <a href="{U("contact")}">bize yazın</a>.</p></div></section>
 <section style="padding-top:0"><div class="wrap">{faq_block(FAQ_ALL, L, heading=False, wrap=False)}</div></section>'''
     return {"key":"faq","title":"Hostlio Pro Hakkında Sık Sorulan Sorular (SSS)",
-            "desc":"Hostlio Pro otel yönetim yazılımı hakkında sık sorulan sorular: fiyatlar, ücretsiz deneme, OTA entegrasyonları, AI asistan Lio, online check-in ve güvenlik.",
+            "desc":"Hostlio Pro otel programı hakkında sık sorulan sorular: fiyatlar, ücretsiz deneme, OTA entegrasyonları, AI asistan Lio, online check-in ve güvenlik.",
             "trail":[("SSS", U("faq"))],"body":body,"faq":FAQ_ALL,"faq_inline":True,"page_type":"FAQPage"}
 
 def about():
@@ -268,7 +268,7 @@ def contact():
 POSTS = [
  {"key":"post-overbooking","title":"Overbooking nasıl önlenir? Oteller için 6 adım","date":"2026-09-21","desc":"Otellerde overbooking (çift rezervasyon) neden olur ve nasıl önlenir? Kanal yöneticisi, stop-sell, müsaitlik tamponu ve kriz anında yapılacaklar."},
  {"key":"post-autoreply","title":"Booking.com mesajlarına otomatik cevap nasıl verilir?","date":"2026-09-21","desc":"Booking.com misafir mesajlarını otomatik yanıtlamanın üç yolu: hazır şablonlar, planlı mesajlar ve yapay zekâ asistanı."},
- {"key":"post-ai","title":"Otel misafir mesajlarını yapay zekâ ile yanıtlamak: pratik rehber","date":"2026-09-18",
+ {"key":"post-ai","title":"Misafir mesajlarını yapay zekâ ile yanıtlamak: pratik rehber","date":"2026-09-18",
   "desc":"Otel misafir mesajlarını yapay zekâ ile yanıtlamanın avantajları, riskleri ve kurulum adımları. Hangi sorular otomatikleşir, hangileri insanda kalmalı?"},
  {"key":"post-pms","title":"Küçük otel için otel programı (PMS) nasıl seçilir?","date":"2026-09-10",
   "desc":"Küçük ve butik oteller için PMS seçerken bakılması gereken 7 kriter: kanal yöneticisi, fiyat modeli, misafir iletişimi, mobil erişim ve daha fazlası."},
@@ -308,7 +308,7 @@ def post_ai():
 <h2>Çok dilli iletişim neden önemli?</h2>
 <p>Misafir kendi dilinde yazdığında daha fazla detay verir ve cevaba daha çok güvenir. 30+ dilde yanıt veren bir asistan, resepsiyonda o dili bilen biri olmasa da bu güveni sağlar. Yazışmayı siz kendi dilinizde okursunuz.</p>
 <h2>Hostlio Pro'da nasıl çalışır?</h2>
-<p>Hostlio Pro'nun AI asistanı <a href="{U("ai")}">Lio</a>, otel bilgilerinizi ve rezervasyon verilerini kullanarak WhatsApp ve OTA gelen kutusu mesajlarını (Booking.com, Airbnb, Expedia) 30+ dilde yanıtlar. Planlara göre aylık 1.000 ile 12.000 AI mesajı arasında kota bulunur; detaylar <a href="{U("pricing")}">fiyatlandırma sayfasında</a>.</p>'''
+<p>Hostlio Pro'nun AI asistanı <a href="{U("ai")}">Lio</a>, otel bilgilerinizi ve rezervasyon verilerini kullanarak WhatsApp ve OTA gelen kutusu mesajlarını (Booking.com, Airbnb, Expedia) 30+ dilde yanıtlar. Planlara göre aylık ⟦quota:starter⟧ ile ⟦quota:growth⟧ AI mesajı arasında kota bulunur; detaylar <a href="{U("pricing")}">fiyatlandırma sayfasında</a>.</p>'''
     faq = [("Yapay zekâ misafire yanlış bilgi verebilir mi?", "Asistan yalnızca otelin girdiği bilgilerle çalıştığında ve emin olmadığı sorularda personele devrettiğinde bu risk en aza iner. İlk günlerde onay modunda kullanmak önerilir."),
            ("Misafirler yapay zekâyla konuştuğunu anlar mı?", "Cevaplar otelin adına ve tonunda yazılır. Şeffaflık için otel, asistanın bir AI olduğunu karşılama mesajında belirtebilir.")]
     return article(next(p for p in POSTS if p["key"]=="post-ai"), c, faq)
