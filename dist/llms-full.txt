@@ -194,7 +194,7 @@ Varıştan önce online check-in.
 ## Otelinizin büyüklüğüne göre plan
 Sabit aylık ücret, uzun süreli sözleşme yok. Tüm planlar 7 gün ücretsiz.
 
-İlk 50 müşteriye %20 indirim, abonelik boyunca sabit
+İlk 50 müşteriye %17–21 indirim, abonelik boyunca sabit
 
 ## Starter
 Küçük pansiyon ve butik oteller için
@@ -301,7 +301,7 @@ Q: Hostlio Pro nedir?
 A: Hostlio Pro, bağımsız oteller, butik oteller ve pansiyonlar için geliştirilmiş yapay zekâ destekli bir otel yönetim yazılımıdır (PMS). Misafir mesajlarını 30'dan fazla dilde 7/24 yanıtlayan AI asistanı Lio'yu, 100+ OTA'ya bağlanan kanal yöneticisini, sürükle-bırak rezervasyon takvimini ve online check-in'i tek panelde birleştirir.
 
 Q: Hostlio Pro'nun fiyatı ne kadar?
-A: Üç plan var: Starter aylık 49 $, Pro aylık 89 $, Growth aylık 149 $. Bu fiyatlar ilk 50 müşteriye özel %20 erken kayıt indirimini içerir ve abonelik sürdüğü sürece sabit kalır. Normal fiyatlar sırasıyla 59 $, 109 $ ve 189 $'dır.
+A: Üç plan var: Starter aylık 49 $, Pro aylık 89 $, Growth aylık 149 $. Bu fiyatlar ilk 50 müşteriye özel %17–21 erken kayıt indirimini içerir ve abonelik sürdüğü sürece sabit kalır. Normal fiyatlar sırasıyla 59 $, 109 $ ve 189 $'dır.
 
 Q: Ücretsiz deneme var mı?
 A: Evet. Tüm planlar 7 gün ücretsiz denenebilir. Kayıt sırasında ödeme kartı alınır, ancak deneme süresi bitene kadar hiçbir ücret çekilmez. Uzun süreli sözleşme yoktur, istediğiniz zaman iptal edebilirsiniz.
@@ -578,7 +578,7 @@ Sabit aylık ücret. Rezervasyon başına komisyon yok, kurulum ücreti yok. Tü
 
 ## Planlar
 
-İlk 50 müşteriye %20 indirim, abonelik boyunca sabit
+İlk 50 müşteriye %17–21 indirim, abonelik boyunca sabit
 
 ## Starter
 Küçük pansiyon ve butik oteller için
@@ -643,7 +643,7 @@ Fiyatlar ABD doları cinsindendir, vergiler hariçtir. Son güncelleme: 21 Eylü
 İki tesis veya 150 odaya kadar kapasite. Öncelikli destek, birebir kurulum ve kendi markanızla (white-label) kullanım gerektiğinde.
 
 Q: Hostlio Pro'nun fiyatı ne kadar?
-A: Üç plan var: Starter aylık 49 $, Pro aylık 89 $, Growth aylık 149 $. Bu fiyatlar ilk 50 müşteriye özel %20 erken kayıt indirimini içerir ve abonelik sürdüğü sürece sabit kalır. Normal fiyatlar sırasıyla 59 $, 109 $ ve 189 $'dır.
+A: Üç plan var: Starter aylık 49 $, Pro aylık 89 $, Growth aylık 149 $. Bu fiyatlar ilk 50 müşteriye özel %17–21 erken kayıt indirimini içerir ve abonelik sürdüğü sürece sabit kalır. Normal fiyatlar sırasıyla 59 $, 109 $ ve 189 $'dır.
 
 Q: Ücretsiz deneme var mı?
 A: Evet. Tüm planlar 7 gün ücretsiz denenebilir. Kayıt sırasında ödeme kartı alınır, ancak deneme süresi bitene kadar hiçbir ücret çekilmez. Uzun süreli sözleşme yoktur, istediğiniz zaman iptal edebilirsiniz.
@@ -672,7 +672,7 @@ Otel programı nedir? Otel programı (otel yönetim yazılımı, PMS), bir konak
 
 Hostlio Pro nedir? Hostlio Pro, bağımsız oteller, butik oteller ve pansiyonlar için geliştirilmiş yapay zekâ destekli bir otel yönetim yazılımıdır (PMS). Misafir mesajlarını 30'dan fazla dilde 7/24 yanıtlayan AI asistanı Lio'yu, 100+ OTA'ya bağlanan kanal yöneticisini, sürükle-bırak rezervasyon takvimini ve online check-in'i tek panelde birleştirir.
 
-Hostlio Pro'nun fiyatı ne kadar? Üç plan var: Starter aylık 49 $, Pro aylık 89 $, Growth aylık 149 $. Bu fiyatlar ilk 50 müşteriye özel %20 erken kayıt indirimini içerir ve abonelik sürdüğü sürece sabit kalır. Normal fiyatlar sırasıyla 59 $, 109 $ ve 189 $'dır.
+Hostlio Pro'nun fiyatı ne kadar? Üç plan var: Starter aylık 49 $, Pro aylık 89 $, Growth aylık 149 $. Bu fiyatlar ilk 50 müşteriye özel %17–21 erken kayıt indirimini içerir ve abonelik sürdüğü sürece sabit kalır. Normal fiyatlar sırasıyla 59 $, 109 $ ve 189 $'dır.
 
 Ücretsiz deneme var mı? Evet. Tüm planlar 7 gün ücretsiz denenebilir. Kayıt sırasında ödeme kartı alınır, ancak deneme süresi bitene kadar hiçbir ücret çekilmez. Uzun süreli sözleşme yoktur, istediğiniz zaman iptal edebilirsiniz.
 
@@ -701,7 +701,7 @@ Q: Hostlio Pro nedir?
 A: Hostlio Pro, bağımsız oteller, butik oteller ve pansiyonlar için geliştirilmiş yapay zekâ destekli bir otel yönetim yazılımıdır (PMS). Misafir mesajlarını 30'dan fazla dilde 7/24 yanıtlayan AI asistanı Lio'yu, 100+ OTA'ya bağlanan kanal yöneticisini, sürükle-bırak rezervasyon takvimini ve online check-in'i tek panelde birleştirir.
 
 Q: Hostlio Pro'nun fiyatı ne kadar?
-A: Üç plan var: Starter aylık 49 $, Pro aylık 89 $, Growth aylık 149 $. Bu fiyatlar ilk 50 müşteriye özel %20 erken kayıt indirimini içerir ve abonelik sürdüğü sürece sabit kalır. Normal fiyatlar sırasıyla 59 $, 109 $ ve 189 $'dır.
+A: Üç plan var: Starter aylık 49 $, Pro aylık 89 $, Growth aylık 149 $. Bu fiyatlar ilk 50 müşteriye özel %17–21 erken kayıt indirimini içerir ve abonelik sürdüğü sürece sabit kalır. Normal fiyatlar sırasıyla 59 $, 109 $ ve 189 $'dır.
 
 Q: Ücretsiz deneme var mı?
 A: Evet. Tüm planlar 7 gün ücretsiz denenebilir. Kayıt sırasında ödeme kartı alınır, ancak deneme süresi bitene kadar hiçbir ücret çekilmez. Uzun süreli sözleşme yoktur, istediğiniz zaman iptal edebilirsiniz.
@@ -1263,6 +1263,7 @@ Meta Platforms, Inc. (WhatsApp Business Platform) USA / Ireland WhatsApp mesajla
 Channex.io Ltd United Kingdom Müsaitlik, fiyat, rezervasyon ve OTA mesaj senkronizasyonu
 Make (Celonis) EU İletişim formu ve iç iş akışı otomasyonu
 Google LLC / Google Ireland Ltd. (Firebase Cloud Messaging) USA / global Hostlio Pro mobil uygulamasına (iOS ve Android) anlık bildirim gönderimi (cihaz bildirim jetonu, uygulama örneği kimlikleri, yeni mesaj veya rezervasyon uyarısı gibi bildirim içeriği)
+Apple Inc. (Apple Push Notification service) USA iPhone ve iPad cihazlara anlık bildirimin iletilmesi (Firebase Cloud Messaging üzerinden aktarılan cihaz jetonu ve bildirim içeriği)
 Twilio Inc.* USA Oteller için WhatsApp numarası ve mesaj faturalandırması
 Twilio SendGrid* USA İşlemsel e-posta
 
@@ -1441,6 +1442,7 @@ Meta Platforms, Inc. (WhatsApp Business Platform) USA / Ireland WhatsApp mesajla
 Channex.io Ltd United Kingdom Müsaitlik, fiyat, rezervasyon ve OTA mesaj senkronizasyonu
 Make (Celonis) EU İletişim formu ve iç iş akışı otomasyonu
 Google LLC / Google Ireland Ltd. (Firebase Cloud Messaging) USA / global Hostlio Pro mobil uygulamasına (iOS ve Android) anlık bildirim gönderimi (cihaz bildirim jetonu, uygulama örneği kimlikleri, yeni mesaj veya rezervasyon uyarısı gibi bildirim içeriği)
+Apple Inc. (Apple Push Notification service) USA iPhone ve iPad cihazlara anlık bildirimin iletilmesi (Firebase Cloud Messaging üzerinden aktarılan cihaz jetonu ve bildirim içeriği)
 Twilio Inc.* USA Oteller için WhatsApp numarası ve mesaj faturalandırması
 Twilio SendGrid* USA İşlemsel e-posta
 
@@ -1666,7 +1668,7 @@ Online check-in before arrival.
 ## A plan for your hotel's size
 A flat monthly fee, no long-term contract. Every plan is free for 7 days.
 
-20% off for the first 50 customers, locked in for life
+17–21% off for the first 50 customers, locked in for life
 
 ## Starter
 For small guesthouses and boutique hotels
@@ -1770,7 +1772,7 @@ Q: What is Hostlio Pro?
 A: Hostlio Pro is AI-powered hotel management software (PMS) built for independent hotels, boutique hotels and guesthouses. It combines Lio, an AI assistant that answers guest messages 24/7 in 30+ languages, a channel manager connected to 100+ OTAs, a drag-and-drop reservation calendar and online check-in in one platform.
 
 Q: How much does Hostlio Pro cost?
-A: There are three plans: Starter at $49/month, Pro at $89/month and Growth at $149/month. These prices include a 20% early-bird discount for the first 50 customers, locked in for as long as you stay subscribed. Regular prices are $59, $109 and $189.
+A: There are three plans: Starter at $49/month, Pro at $89/month and Growth at $149/month. These prices include a 17–21% early-bird discount for the first 50 customers, locked in for as long as you stay subscribed. Regular prices are $59, $109 and $189.
 
 Q: Is there a free trial?
 A: Yes. Every plan comes with a 7-day free trial. You enter a payment card at signup, but nothing is charged until the trial ends. There are no long-term contracts and you can cancel anytime.
@@ -2044,7 +2046,7 @@ A flat monthly fee. No per-booking commission, no setup fee. Try any plan free f
 
 ## Plans
 
-20% off for the first 50 customers, locked in for life
+17–21% off for the first 50 customers, locked in for life
 
 ## Starter
 For small guesthouses and boutique hotels
@@ -2109,7 +2111,7 @@ Hotels with 11–50 rooms that want Lio to handle OTA messages too, use online c
 Two properties or up to 150 rooms, when you need priority support, a custom onboarding and white-label use.
 
 Q: How much does Hostlio Pro cost?
-A: There are three plans: Starter at $49/month, Pro at $89/month and Growth at $149/month. These prices include a 20% early-bird discount for the first 50 customers, locked in for as long as you stay subscribed. Regular prices are $59, $109 and $189.
+A: There are three plans: Starter at $49/month, Pro at $89/month and Growth at $149/month. These prices include a 17–21% early-bird discount for the first 50 customers, locked in for as long as you stay subscribed. Regular prices are $59, $109 and $189.
 
 Q: Is there a free trial?
 A: Yes. Every plan comes with a 7-day free trial. You enter a payment card at signup, but nothing is charged until the trial ends. There are no long-term contracts and you can cancel anytime.
@@ -2136,7 +2138,7 @@ The most common questions about Hostlio Pro's features, pricing and setup. Can't
 
 What is Hostlio Pro? Hostlio Pro is AI-powered hotel management software (PMS) built for independent hotels, boutique hotels and guesthouses. It combines Lio, an AI assistant that answers guest messages 24/7 in 30+ languages, a channel manager connected to 100+ OTAs, a drag-and-drop reservation calendar and online check-in in one platform.
 
-How much does Hostlio Pro cost? There are three plans: Starter at $49/month, Pro at $89/month and Growth at $149/month. These prices include a 20% early-bird discount for the first 50 customers, locked in for as long as you stay subscribed. Regular prices are $59, $109 and $189.
+How much does Hostlio Pro cost? There are three plans: Starter at $49/month, Pro at $89/month and Growth at $149/month. These prices include a 17–21% early-bird discount for the first 50 customers, locked in for as long as you stay subscribed. Regular prices are $59, $109 and $189.
 
 Is there a free trial? Yes. Every plan comes with a 7-day free trial. You enter a payment card at signup, but nothing is charged until the trial ends. There are no long-term contracts and you can cancel anytime.
 
@@ -2162,7 +2164,7 @@ Q: What is Hostlio Pro?
 A: Hostlio Pro is AI-powered hotel management software (PMS) built for independent hotels, boutique hotels and guesthouses. It combines Lio, an AI assistant that answers guest messages 24/7 in 30+ languages, a channel manager connected to 100+ OTAs, a drag-and-drop reservation calendar and online check-in in one platform.
 
 Q: How much does Hostlio Pro cost?
-A: There are three plans: Starter at $49/month, Pro at $89/month and Growth at $149/month. These prices include a 20% early-bird discount for the first 50 customers, locked in for as long as you stay subscribed. Regular prices are $59, $109 and $189.
+A: There are three plans: Starter at $49/month, Pro at $89/month and Growth at $149/month. These prices include a 17–21% early-bird discount for the first 50 customers, locked in for as long as you stay subscribed. Regular prices are $59, $109 and $189.
 
 Q: Is there a free trial?
 A: Yes. Every plan comes with a 7-day free trial. You enter a payment card at signup, but nothing is charged until the trial ends. There are no long-term contracts and you can cancel anytime.
@@ -2740,6 +2742,7 @@ Meta Platforms, Inc. (WhatsApp Business Platform) USA / Ireland Sending and rece
 Channex.io Ltd United Kingdom Availability, rate, booking and OTA message sync
 Make (Celonis) EU Contact form and internal workflow automation
 Google LLC / Google Ireland Ltd. (Firebase Cloud Messaging) USA / global Push notifications to the Hostlio Pro mobile app on iOS and Android (device push token, app instance identifiers, notification content such as new message or reservation alerts)
+Apple Inc. (Apple Push Notification service) USA Delivery of push notifications to iPhone and iPad devices (device token and notification content, passed on by Firebase Cloud Messaging)
 Twilio Inc.* USA WhatsApp numbers and messaging billing for hotels
 Twilio SendGrid* USA Transactional email
 
@@ -2918,6 +2921,7 @@ Meta Platforms, Inc. (WhatsApp Business Platform) USA / Ireland Sending and rece
 Channex.io Ltd United Kingdom Availability, rate, booking and OTA message sync
 Make (Celonis) EU Contact form and internal workflow automation
 Google LLC / Google Ireland Ltd. (Firebase Cloud Messaging) USA / global Push notifications to the Hostlio Pro mobile app on iOS and Android (device push token, app instance identifiers, notification content such as new message or reservation alerts)
+Apple Inc. (Apple Push Notification service) USA Delivery of push notifications to iPhone and iPad devices (device token and notification content, passed on by Firebase Cloud Messaging)
 Twilio Inc.* USA WhatsApp numbers and messaging billing for hotels
 Twilio SendGrid* USA Transactional email
 
@@ -3349,6 +3353,7 @@ Meta Platforms, Inc. (WhatsApp Business Platform) USA / Ireland Sending and rece
 Channex.io Ltd United Kingdom Availability, rate, booking and OTA message sync
 Make (Celonis) EU Contact form and internal workflow automation
 Google LLC / Google Ireland Ltd. (Firebase Cloud Messaging) USA / global Push notifications to the Hostlio Pro mobile app on iOS and Android (device push token, app instance identifiers, notification content such as new message or reservation alerts)
+Apple Inc. (Apple Push Notification service) USA Delivery of push notifications to iPhone and iPad devices (device token and notification content, passed on by Firebase Cloud Messaging)
 
 Planned: Twilio Inc. (WhatsApp numbers and messaging billing) and Twilio SendGrid (transactional email). They will be added with notice under section 5 before they process Customer Personal Data.
 
@@ -3548,7 +3553,7 @@ Check-in online antes de la llegada.
 ## Un plan a la medida de tu hotel
 Una cuota mensual fija, sin contratos de permanencia. Todos los planes son gratis durante 7 días.
 
-20 % de descuento para los primeros 50 clientes, para siempre
+17–21 % de descuento para los primeros 50 clientes, para siempre
 
 ## Starter
 Para hostales, pensiones y hoteles boutique pequeños
@@ -3652,7 +3657,7 @@ Q: ¿Qué es Hostlio Pro?
 A: Hostlio Pro es un software de gestión hotelera (PMS hotelero) con inteligencia artificial, creado para hoteles independientes, hoteles boutique y hostales. Reúne en una sola plataforma a Lio, un asistente de IA que responde a los huéspedes 24/7 en más de 30 idiomas, un channel manager conectado a más de 100 OTAs, un calendario de reservas con arrastrar y soltar y el check-in online.
 
 Q: ¿Cuánto cuesta Hostlio Pro?
-A: Hay tres planes: Starter a 49 $/mes, Pro a 89 $/mes y Growth a 149 $/mes. Estos precios incluyen un descuento de lanzamiento del 20 % para los primeros 50 clientes, que se mantiene mientras sigas suscrito. Los precios normales son 59 $, 109 $ y 189 $.
+A: Hay tres planes: Starter a 49 $/mes, Pro a 89 $/mes y Growth a 149 $/mes. Estos precios incluyen un descuento de lanzamiento del 17–21 % para los primeros 50 clientes, que se mantiene mientras sigas suscrito. Los precios normales son 59 $, 109 $ y 189 $.
 
 Q: ¿Hay una prueba gratuita?
 A: Sí. Todos los planes incluyen una prueba gratuita de 7 días. Introduces una tarjeta al registrarte, pero no se te cobra nada hasta que termine la prueba y puedes cancelar antes cuando quieras. No hay contratos de permanencia.
@@ -3926,7 +3931,7 @@ Una cuota mensual fija. Sin comisiones por reserva ni costes de alta. Prueba cua
 
 ## Planes
 
-20 % de descuento para los primeros 50 clientes, de por vida
+17–21 % de descuento para los primeros 50 clientes, de por vida
 
 ## Starter
 Para hostales, pensiones y hoteles boutique pequeños
@@ -3991,7 +3996,7 @@ Hoteles de 11 a 50 habitaciones que quieren que Lio gestione también los mensaj
 Dos alojamientos o hasta 150 habitaciones, cuando necesitas soporte prioritario, un onboarding personalizado y uso en marca blanca.
 
 Q: ¿Cuánto cuesta Hostlio Pro?
-A: Hay tres planes: Starter a 49 $/mes, Pro a 89 $/mes y Growth a 149 $/mes. Estos precios incluyen un descuento de lanzamiento del 20 % para los primeros 50 clientes, que se mantiene mientras sigas suscrito. Los precios normales son 59 $, 109 $ y 189 $.
+A: Hay tres planes: Starter a 49 $/mes, Pro a 89 $/mes y Growth a 149 $/mes. Estos precios incluyen un descuento de lanzamiento del 17–21 % para los primeros 50 clientes, que se mantiene mientras sigas suscrito. Los precios normales son 59 $, 109 $ y 189 $.
 
 Q: ¿Hay una prueba gratuita?
 A: Sí. Todos los planes incluyen una prueba gratuita de 7 días. Introduces una tarjeta al registrarte, pero no se te cobra nada hasta que termine la prueba y puedes cancelar antes cuando quieras. No hay contratos de permanencia.
@@ -4018,7 +4023,7 @@ Las preguntas más habituales sobre las funcionalidades, los precios y la config
 
 ¿Qué es Hostlio Pro? Hostlio Pro es un software de gestión hotelera (PMS hotelero) con inteligencia artificial, creado para hoteles independientes, hoteles boutique y hostales. Reúne en una sola plataforma a Lio, un asistente de IA que responde a los huéspedes 24/7 en más de 30 idiomas, un channel manager conectado a más de 100 OTAs, un calendario de reservas con arrastrar y soltar y el check-in online.
 
-¿Cuánto cuesta Hostlio Pro? Hay tres planes: Starter a 49 $/mes, Pro a 89 $/mes y Growth a 149 $/mes. Estos precios incluyen un descuento de lanzamiento del 20 % para los primeros 50 clientes, que se mantiene mientras sigas suscrito. Los precios normales son 59 $, 109 $ y 189 $.
+¿Cuánto cuesta Hostlio Pro? Hay tres planes: Starter a 49 $/mes, Pro a 89 $/mes y Growth a 149 $/mes. Estos precios incluyen un descuento de lanzamiento del 17–21 % para los primeros 50 clientes, que se mantiene mientras sigas suscrito. Los precios normales son 59 $, 109 $ y 189 $.
 
 ¿Hay una prueba gratuita? Sí. Todos los planes incluyen una prueba gratuita de 7 días. Introduces una tarjeta al registrarte, pero no se te cobra nada hasta que termine la prueba y puedes cancelar antes cuando quieras. No hay contratos de permanencia.
 
@@ -4044,7 +4049,7 @@ Q: ¿Qué es Hostlio Pro?
 A: Hostlio Pro es un software de gestión hotelera (PMS hotelero) con inteligencia artificial, creado para hoteles independientes, hoteles boutique y hostales. Reúne en una sola plataforma a Lio, un asistente de IA que responde a los huéspedes 24/7 en más de 30 idiomas, un channel manager conectado a más de 100 OTAs, un calendario de reservas con arrastrar y soltar y el check-in online.
 
 Q: ¿Cuánto cuesta Hostlio Pro?
-A: Hay tres planes: Starter a 49 $/mes, Pro a 89 $/mes y Growth a 149 $/mes. Estos precios incluyen un descuento de lanzamiento del 20 % para los primeros 50 clientes, que se mantiene mientras sigas suscrito. Los precios normales son 59 $, 109 $ y 189 $.
+A: Hay tres planes: Starter a 49 $/mes, Pro a 89 $/mes y Growth a 149 $/mes. Estos precios incluyen un descuento de lanzamiento del 17–21 % para los primeros 50 clientes, que se mantiene mientras sigas suscrito. Los precios normales son 59 $, 109 $ y 189 $.
 
 Q: ¿Hay una prueba gratuita?
 A: Sí. Todos los planes incluyen una prueba gratuita de 7 días. Introduces una tarjeta al registrarte, pero no se te cobra nada hasta que termine la prueba y puedes cancelar antes cuando quieras. No hay contratos de permanencia.
@@ -4603,6 +4608,7 @@ Meta Platforms, Inc. (WhatsApp Business Platform) USA / Ireland Envío y recepci
 Channex.io Ltd United Kingdom Sincronización de disponibilidad, tarifas, reservas y mensajes de OTAs
 Make (Celonis) EU Formulario de contacto y automatización interna
 Google LLC / Google Ireland Ltd. (Firebase Cloud Messaging) USA / global Notificaciones push a la app móvil de Hostlio Pro en iOS y Android (token push del dispositivo, identificadores de instancia de la app y contenido de la notificación, como avisos de nuevos mensajes o reservas)
+Apple Inc. (Apple Push Notification service) USA Delivery of push notifications to iPhone and iPad devices (device token and notification content, passed on by Firebase Cloud Messaging)
 Twilio Inc.* USA Números de WhatsApp y facturación de mensajes para hoteles
 Twilio SendGrid* USA Correo transaccional
 
@@ -4773,6 +4779,7 @@ Meta Platforms, Inc. (WhatsApp Business Platform) USA / Ireland Envío y recepci
 Channex.io Ltd United Kingdom Sincronización de disponibilidad, tarifas, reservas y mensajes de OTAs
 Make (Celonis) EU Formulario de contacto y automatización interna
 Google LLC / Google Ireland Ltd. (Firebase Cloud Messaging) USA / global Notificaciones push a la app móvil de Hostlio Pro en iOS y Android (token push del dispositivo, identificadores de instancia de la app y contenido de la notificación, como avisos de nuevos mensajes o reservas)
+Apple Inc. (Apple Push Notification service) USA Delivery of push notifications to iPhone and iPad devices (device token and notification content, passed on by Firebase Cloud Messaging)
 Twilio Inc.* USA Números de WhatsApp y facturación de mensajes para hoteles
 Twilio SendGrid* USA Correo transaccional
 
@@ -4998,7 +5005,7 @@ Check-in online prima dell’arrivo.
 ## Un piano per le dimensioni del tuo hotel
 Un canone mensile fisso, nessun contratto a lungo termine. Ogni piano è gratuito per 7 giorni.
 
-20% di sconto per i primi 50 clienti, bloccato per sempre
+17–21% di sconto per i primi 50 clienti, bloccato per sempre
 
 ## Starter
 Per piccoli B&B e boutique hotel
@@ -5102,7 +5109,7 @@ Q: Che cos'è Hostlio Pro?
 A: Hostlio Pro è un gestionale per hotel (PMS) basato sull'intelligenza artificiale, pensato per hotel indipendenti, boutique hotel e B&B. Riunisce in un'unica piattaforma Lio, un assistente AI che risponde ai messaggi degli ospiti 24 ore su 24 in oltre 30 lingue, un channel manager collegato a oltre 100 OTA, un calendario delle prenotazioni drag-and-drop e il check-in online.
 
 Q: Quanto costa Hostlio Pro?
-A: Ci sono tre piani: Starter a 49 $/mese, Pro a 89 $/mese e Growth a 149 $/mese. Questi prezzi includono uno sconto di lancio del 20% riservato ai primi 50 clienti, bloccato per tutta la durata dell'abbonamento. I prezzi normali sono 59 $, 109 $ e 189 $.
+A: Ci sono tre piani: Starter a 49 $/mese, Pro a 89 $/mese e Growth a 149 $/mese. Questi prezzi includono uno sconto di lancio del 17–21% riservato ai primi 50 clienti, bloccato per tutta la durata dell'abbonamento. I prezzi normali sono 59 $, 109 $ e 189 $.
 
 Q: C'è una prova gratuita?
 A: Sì. Ogni piano include 7 giorni di prova gratuita. Inserisci un metodo di pagamento all'iscrizione, ma non viene addebitato nulla fino alla fine della prova e puoi disdire in qualsiasi momento prima. Nessun contratto a lungo termine.
@@ -5376,7 +5383,7 @@ Un canone mensile fisso. Nessuna commissione sulle prenotazioni, nessun costo di
 
 ## Piani
 
-20% di sconto per i primi 50 clienti, bloccato per sempre
+17–21% di sconto per i primi 50 clienti, bloccato per sempre
 
 ## Starter
 Per piccoli B&B e boutique hotel
@@ -5441,7 +5448,7 @@ Hotel da 11 a 50 camere che vogliono affidare a Lio anche i messaggi delle OTA, 
 Due strutture o fino a 150 camere, quando servono supporto prioritario, un onboarding personalizzato e l'uso in white-label.
 
 Q: Quanto costa Hostlio Pro?
-A: Ci sono tre piani: Starter a 49 $/mese, Pro a 89 $/mese e Growth a 149 $/mese. Questi prezzi includono uno sconto di lancio del 20% riservato ai primi 50 clienti, bloccato per tutta la durata dell'abbonamento. I prezzi normali sono 59 $, 109 $ e 189 $.
+A: Ci sono tre piani: Starter a 49 $/mese, Pro a 89 $/mese e Growth a 149 $/mese. Questi prezzi includono uno sconto di lancio del 17–21% riservato ai primi 50 clienti, bloccato per tutta la durata dell'abbonamento. I prezzi normali sono 59 $, 109 $ e 189 $.
 
 Q: C'è una prova gratuita?
 A: Sì. Ogni piano include 7 giorni di prova gratuita. Inserisci un metodo di pagamento all'iscrizione, ma non viene addebitato nulla fino alla fine della prova e puoi disdire in qualsiasi momento prima. Nessun contratto a lungo termine.
@@ -5468,7 +5475,7 @@ Le domande più comuni su funzionalità, prezzi e configurazione di Hostlio Pro.
 
 Che cos'è Hostlio Pro? Hostlio Pro è un gestionale per hotel (PMS) basato sull'intelligenza artificiale, pensato per hotel indipendenti, boutique hotel e B&B. Riunisce in un'unica piattaforma Lio, un assistente AI che risponde ai messaggi degli ospiti 24 ore su 24 in oltre 30 lingue, un channel manager collegato a oltre 100 OTA, un calendario delle prenotazioni drag-and-drop e il check-in online.
 
-Quanto costa Hostlio Pro? Ci sono tre piani: Starter a 49 $/mese, Pro a 89 $/mese e Growth a 149 $/mese. Questi prezzi includono uno sconto di lancio del 20% riservato ai primi 50 clienti, bloccato per tutta la durata dell'abbonamento. I prezzi normali sono 59 $, 109 $ e 189 $.
+Quanto costa Hostlio Pro? Ci sono tre piani: Starter a 49 $/mese, Pro a 89 $/mese e Growth a 149 $/mese. Questi prezzi includono uno sconto di lancio del 17–21% riservato ai primi 50 clienti, bloccato per tutta la durata dell'abbonamento. I prezzi normali sono 59 $, 109 $ e 189 $.
 
 C'è una prova gratuita? Sì. Ogni piano include 7 giorni di prova gratuita. Inserisci un metodo di pagamento all'iscrizione, ma non viene addebitato nulla fino alla fine della prova e puoi disdire in qualsiasi momento prima. Nessun contratto a lungo termine.
 
@@ -5494,7 +5501,7 @@ Q: Che cos'è Hostlio Pro?
 A: Hostlio Pro è un gestionale per hotel (PMS) basato sull'intelligenza artificiale, pensato per hotel indipendenti, boutique hotel e B&B. Riunisce in un'unica piattaforma Lio, un assistente AI che risponde ai messaggi degli ospiti 24 ore su 24 in oltre 30 lingue, un channel manager collegato a oltre 100 OTA, un calendario delle prenotazioni drag-and-drop e il check-in online.
 
 Q: Quanto costa Hostlio Pro?
-A: Ci sono tre piani: Starter a 49 $/mese, Pro a 89 $/mese e Growth a 149 $/mese. Questi prezzi includono uno sconto di lancio del 20% riservato ai primi 50 clienti, bloccato per tutta la durata dell'abbonamento. I prezzi normali sono 59 $, 109 $ e 189 $.
+A: Ci sono tre piani: Starter a 49 $/mese, Pro a 89 $/mese e Growth a 149 $/mese. Questi prezzi includono uno sconto di lancio del 17–21% riservato ai primi 50 clienti, bloccato per tutta la durata dell'abbonamento. I prezzi normali sono 59 $, 109 $ e 189 $.
 
 Q: C'è una prova gratuita?
 A: Sì. Ogni piano include 7 giorni di prova gratuita. Inserisci un metodo di pagamento all'iscrizione, ma non viene addebitato nulla fino alla fine della prova e puoi disdire in qualsiasi momento prima. Nessun contratto a lungo termine.
@@ -6053,6 +6060,7 @@ Meta Platforms, Inc. (WhatsApp Business Platform) USA / Ireland Invio e ricezion
 Channex.io Ltd United Kingdom Sincronizzazione di disponibilità, tariffe, prenotazioni e messaggi OTA
 Make (Celonis) EU Modulo di contatto e automazioni interne
 Google LLC / Google Ireland Ltd. (Firebase Cloud Messaging) USA / global Notifiche push all’app mobile Hostlio Pro su iOS e Android (token push del dispositivo, identificativi dell’istanza dell’app e contenuto della notifica, come avvisi di nuovi messaggi o prenotazioni)
+Apple Inc. (Apple Push Notification service) USA Delivery of push notifications to iPhone and iPad devices (device token and notification content, passed on by Firebase Cloud Messaging)
 Twilio Inc.* USA Numeri WhatsApp e fatturazione dei messaggi per gli hotel
 Twilio SendGrid* USA Email transazionali
 
@@ -6223,6 +6231,7 @@ Meta Platforms, Inc. (WhatsApp Business Platform) USA / Ireland Invio e ricezion
 Channex.io Ltd United Kingdom Sincronizzazione di disponibilità, tariffe, prenotazioni e messaggi OTA
 Make (Celonis) EU Modulo di contatto e automazioni interne
 Google LLC / Google Ireland Ltd. (Firebase Cloud Messaging) USA / global Notifiche push all’app mobile Hostlio Pro su iOS e Android (token push del dispositivo, identificativi dell’istanza dell’app e contenuto della notifica, come avvisi di nuovi messaggi o prenotazioni)
+Apple Inc. (Apple Push Notification service) USA Delivery of push notifications to iPhone and iPad devices (device token and notification content, passed on by Firebase Cloud Messaging)
 Twilio Inc.* USA Numeri WhatsApp e fatturazione dei messaggi per gli hotel
 Twilio SendGrid* USA Email transazionali
 
@@ -6448,7 +6457,7 @@ Check-in online antes da chegada.
 ## Um plano para o tamanho do seu hotel
 Mensalidade fixa, sem contrato de longo prazo. Todos os planos são grátis por 7 dias.
 
-20% de desconto para os 50 primeiros clientes, garantido para sempre
+17–21% de desconto para os 50 primeiros clientes, garantido para sempre
 
 ## Starter
 Para pousadas pequenas e hotéis boutique
@@ -6552,7 +6561,7 @@ Q: O que é o Hostlio Pro?
 A: O Hostlio Pro é um sistema para hotel (PMS hoteleiro) com inteligência artificial, feito para hotéis independentes, hotéis boutique e pousadas. Ele reúne em uma só plataforma a Lio, uma assistente de IA que responde às mensagens dos hóspedes 24 horas por dia em mais de 30 idiomas, um channel manager conectado a mais de 100 OTAs, um calendário de reservas com arrastar e soltar e o check-in online.
 
 Q: Quanto custa o Hostlio Pro?
-A: São três planos: Starter por US$ 49/mês, Pro por US$ 89/mês e Growth por US$ 149/mês. Esses preços incluem um desconto de lançamento de 20% para os primeiros 50 clientes, garantido enquanto a assinatura estiver ativa. Os preços normais são US$ 59, US$ 109 e US$ 189.
+A: São três planos: Starter por US$ 49/mês, Pro por US$ 89/mês e Growth por US$ 149/mês. Esses preços incluem um desconto de lançamento de 17–21% para os primeiros 50 clientes, garantido enquanto a assinatura estiver ativa. Os preços normais são US$ 59, US$ 109 e US$ 189.
 
 Q: Existe um período de teste grátis?
 A: Sim. Todos os planos incluem 7 dias de teste grátis. O cartão é cadastrado na inscrição, mas nada é cobrado até o fim do teste, e você pode cancelar antes disso. Não há contratos de longo prazo e você pode cancelar quando quiser.
@@ -6826,7 +6835,7 @@ Uma mensalidade fixa. Sem comissão por reserva, sem taxa de implantação. Test
 
 ## Planos
 
-20% de desconto para os primeiros 50 clientes, garantido para sempre
+17–21% de desconto para os primeiros 50 clientes, garantido para sempre
 
 ## Starter
 Para pousadas pequenas e hotéis boutique
@@ -6891,7 +6900,7 @@ Hotéis de 11 a 50 quartos que querem que a Lio cuide também das mensagens das 
 Duas propriedades ou até 150 quartos, quando você precisa de suporte prioritário, onboarding personalizado e uso white-label.
 
 Q: Quanto custa o Hostlio Pro?
-A: São três planos: Starter por US$ 49/mês, Pro por US$ 89/mês e Growth por US$ 149/mês. Esses preços incluem um desconto de lançamento de 20% para os primeiros 50 clientes, garantido enquanto a assinatura estiver ativa. Os preços normais são US$ 59, US$ 109 e US$ 189.
+A: São três planos: Starter por US$ 49/mês, Pro por US$ 89/mês e Growth por US$ 149/mês. Esses preços incluem um desconto de lançamento de 17–21% para os primeiros 50 clientes, garantido enquanto a assinatura estiver ativa. Os preços normais são US$ 59, US$ 109 e US$ 189.
 
 Q: Existe um período de teste grátis?
 A: Sim. Todos os planos incluem 7 dias de teste grátis. O cartão é cadastrado na inscrição, mas nada é cobrado até o fim do teste, e você pode cancelar antes disso. Não há contratos de longo prazo e você pode cancelar quando quiser.
@@ -6918,7 +6927,7 @@ As dúvidas mais comuns sobre as funcionalidades, os preços e a implantação d
 
 O que é o Hostlio Pro? O Hostlio Pro é um sistema para hotel (PMS hoteleiro) com inteligência artificial, feito para hotéis independentes, hotéis boutique e pousadas. Ele reúne em uma só plataforma a Lio, uma assistente de IA que responde às mensagens dos hóspedes 24 horas por dia em mais de 30 idiomas, um channel manager conectado a mais de 100 OTAs, um calendário de reservas com arrastar e soltar e o check-in online.
 
-Quanto custa o Hostlio Pro? São três planos: Starter por US$ 49/mês, Pro por US$ 89/mês e Growth por US$ 149/mês. Esses preços incluem um desconto de lançamento de 20% para os primeiros 50 clientes, garantido enquanto a assinatura estiver ativa. Os preços normais são US$ 59, US$ 109 e US$ 189.
+Quanto custa o Hostlio Pro? São três planos: Starter por US$ 49/mês, Pro por US$ 89/mês e Growth por US$ 149/mês. Esses preços incluem um desconto de lançamento de 17–21% para os primeiros 50 clientes, garantido enquanto a assinatura estiver ativa. Os preços normais são US$ 59, US$ 109 e US$ 189.
 
 Existe um período de teste grátis? Sim. Todos os planos incluem 7 dias de teste grátis. O cartão é cadastrado na inscrição, mas nada é cobrado até o fim do teste, e você pode cancelar antes disso. Não há contratos de longo prazo e você pode cancelar quando quiser.
 
@@ -6944,7 +6953,7 @@ Q: O que é o Hostlio Pro?
 A: O Hostlio Pro é um sistema para hotel (PMS hoteleiro) com inteligência artificial, feito para hotéis independentes, hotéis boutique e pousadas. Ele reúne em uma só plataforma a Lio, uma assistente de IA que responde às mensagens dos hóspedes 24 horas por dia em mais de 30 idiomas, um channel manager conectado a mais de 100 OTAs, um calendário de reservas com arrastar e soltar e o check-in online.
 
 Q: Quanto custa o Hostlio Pro?
-A: São três planos: Starter por US$ 49/mês, Pro por US$ 89/mês e Growth por US$ 149/mês. Esses preços incluem um desconto de lançamento de 20% para os primeiros 50 clientes, garantido enquanto a assinatura estiver ativa. Os preços normais são US$ 59, US$ 109 e US$ 189.
+A: São três planos: Starter por US$ 49/mês, Pro por US$ 89/mês e Growth por US$ 149/mês. Esses preços incluem um desconto de lançamento de 17–21% para os primeiros 50 clientes, garantido enquanto a assinatura estiver ativa. Os preços normais são US$ 59, US$ 109 e US$ 189.
 
 Q: Existe um período de teste grátis?
 A: Sim. Todos os planos incluem 7 dias de teste grátis. O cartão é cadastrado na inscrição, mas nada é cobrado até o fim do teste, e você pode cancelar antes disso. Não há contratos de longo prazo e você pode cancelar quando quiser.
@@ -7503,6 +7512,7 @@ Meta Platforms, Inc. (WhatsApp Business Platform) USA / Ireland Envio e recebime
 Channex.io Ltd United Kingdom Sincronização de disponibilidade, tarifas, reservas e mensagens das OTAs
 Make (Celonis) EU Formulário de contato e automação interna
 Google LLC / Google Ireland Ltd. (Firebase Cloud Messaging) USA / global Notificações push no app do Hostlio Pro para iOS e Android (token push do dispositivo, identificadores da instância do app e conteúdo da notificação, como alertas de novas mensagens ou reservas)
+Apple Inc. (Apple Push Notification service) USA Delivery of push notifications to iPhone and iPad devices (device token and notification content, passed on by Firebase Cloud Messaging)
 Twilio Inc.* USA Números de WhatsApp e cobrança de mensagens para hotéis
 Twilio SendGrid* USA E-mail transacional
 
@@ -7673,6 +7683,7 @@ Meta Platforms, Inc. (WhatsApp Business Platform) USA / Ireland Envio e recebime
 Channex.io Ltd United Kingdom Sincronização de disponibilidade, tarifas, reservas e mensagens das OTAs
 Make (Celonis) EU Formulário de contato e automação interna
 Google LLC / Google Ireland Ltd. (Firebase Cloud Messaging) USA / global Notificações push no app do Hostlio Pro para iOS e Android (token push do dispositivo, identificadores da instância do app e conteúdo da notificação, como alertas de novas mensagens ou reservas)
+Apple Inc. (Apple Push Notification service) USA Delivery of push notifications to iPhone and iPad devices (device token and notification content, passed on by Firebase Cloud Messaging)
 Twilio Inc.* USA Números de WhatsApp e cobrança de mensagens para hotéis
 Twilio SendGrid* USA E-mail transacional
 
@@ -7898,7 +7909,7 @@ Le check-in en ligne avant l’arrivée.
 ## Une formule adaptée à la taille de votre hôtel
 Un abonnement mensuel fixe, sans engagement de longue durée. Chaque formule est gratuite pendant 7 jours.
 
-20 % de réduction pour les 50 premiers clients, garantie à vie
+17–21 % de réduction pour les 50 premiers clients, garantie à vie
 
 ## Starter
 Pour les chambres d'hôtes et les petits hôtels boutique
@@ -8002,7 +8013,7 @@ Q: Qu'est-ce que Hostlio Pro ?
 A: Hostlio Pro est un logiciel de gestion hôtelière (PMS) propulsé par l'IA, conçu pour les hôtels indépendants, les hôtels boutique et les chambres d'hôtes. Il réunit sur une seule plateforme Lio, un assistant IA qui répond aux messages des clients 24 h/24 et 7 j/7 dans plus de 30 langues, un channel manager connecté à plus de 100 OTA, un calendrier de réservations en glisser-déposer et le check-in en ligne.
 
 Q: Combien coûte Hostlio Pro ?
-A: Il existe trois forfaits : Starter à 49 $/mois, Pro à 89 $/mois et Growth à 149 $/mois. Ces prix incluent une remise de lancement de 20 % réservée aux 50 premiers clients, garantie tant que vous restez abonné. Les prix normaux sont de 59 $, 109 $ et 189 $.
+A: Il existe trois forfaits : Starter à 49 $/mois, Pro à 89 $/mois et Growth à 149 $/mois. Ces prix incluent une remise de lancement de 17–21 % réservée aux 50 premiers clients, garantie tant que vous restez abonné. Les prix normaux sont de 59 $, 109 $ et 189 $.
 
 Q: Y a-t-il un essai gratuit ?
 A: Oui. Chaque forfait comprend un essai gratuit de 7 jours. Une carte bancaire est demandée à l'inscription, mais aucun prélèvement n'a lieu avant la fin de l'essai, et vous pouvez résilier à tout moment avant. Aucun engagement de longue durée.
@@ -8276,7 +8287,7 @@ Un abonnement mensuel fixe. Aucune commission sur les réservations, aucuns frai
 
 ## Forfaits
 
--20 % pour les 50 premiers clients, garanti à vie
+17–21 % de réduction pour les 50 premiers clients, garanti à vie
 
 ## Starter
 Pour les chambres d'hôtes et les petits hôtels boutique
@@ -8341,7 +8352,7 @@ Hôtels de 11 à 50 chambres qui veulent que Lio gère aussi les messages OTA, u
 Deux établissements ou jusqu'à 150 chambres, lorsque vous avez besoin d'un support prioritaire, d'une prise en main personnalisée et d'une utilisation en marque blanche.
 
 Q: Combien coûte Hostlio Pro ?
-A: Il existe trois forfaits : Starter à 49 $/mois, Pro à 89 $/mois et Growth à 149 $/mois. Ces prix incluent une remise de lancement de 20 % réservée aux 50 premiers clients, garantie tant que vous restez abonné. Les prix normaux sont de 59 $, 109 $ et 189 $.
+A: Il existe trois forfaits : Starter à 49 $/mois, Pro à 89 $/mois et Growth à 149 $/mois. Ces prix incluent une remise de lancement de 17–21 % réservée aux 50 premiers clients, garantie tant que vous restez abonné. Les prix normaux sont de 59 $, 109 $ et 189 $.
 
 Q: Y a-t-il un essai gratuit ?
 A: Oui. Chaque forfait comprend un essai gratuit de 7 jours. Une carte bancaire est demandée à l'inscription, mais aucun prélèvement n'a lieu avant la fin de l'essai, et vous pouvez résilier à tout moment avant. Aucun engagement de longue durée.
@@ -8368,7 +8379,7 @@ Les questions les plus courantes sur les fonctionnalités, les tarifs et la mise
 
 Qu'est-ce que Hostlio Pro ? Hostlio Pro est un logiciel de gestion hôtelière (PMS) propulsé par l'IA, conçu pour les hôtels indépendants, les hôtels boutique et les chambres d'hôtes. Il réunit sur une seule plateforme Lio, un assistant IA qui répond aux messages des clients 24 h/24 et 7 j/7 dans plus de 30 langues, un channel manager connecté à plus de 100 OTA, un calendrier de réservations en glisser-déposer et le check-in en ligne.
 
-Combien coûte Hostlio Pro ? Il existe trois forfaits : Starter à 49 $/mois, Pro à 89 $/mois et Growth à 149 $/mois. Ces prix incluent une remise de lancement de 20 % réservée aux 50 premiers clients, garantie tant que vous restez abonné. Les prix normaux sont de 59 $, 109 $ et 189 $.
+Combien coûte Hostlio Pro ? Il existe trois forfaits : Starter à 49 $/mois, Pro à 89 $/mois et Growth à 149 $/mois. Ces prix incluent une remise de lancement de 17–21 % réservée aux 50 premiers clients, garantie tant que vous restez abonné. Les prix normaux sont de 59 $, 109 $ et 189 $.
 
 Y a-t-il un essai gratuit ? Oui. Chaque forfait comprend un essai gratuit de 7 jours. Une carte bancaire est demandée à l'inscription, mais aucun prélèvement n'a lieu avant la fin de l'essai, et vous pouvez résilier à tout moment avant. Aucun engagement de longue durée.
 
@@ -8394,7 +8405,7 @@ Q: Qu'est-ce que Hostlio Pro ?
 A: Hostlio Pro est un logiciel de gestion hôtelière (PMS) propulsé par l'IA, conçu pour les hôtels indépendants, les hôtels boutique et les chambres d'hôtes. Il réunit sur une seule plateforme Lio, un assistant IA qui répond aux messages des clients 24 h/24 et 7 j/7 dans plus de 30 langues, un channel manager connecté à plus de 100 OTA, un calendrier de réservations en glisser-déposer et le check-in en ligne.
 
 Q: Combien coûte Hostlio Pro ?
-A: Il existe trois forfaits : Starter à 49 $/mois, Pro à 89 $/mois et Growth à 149 $/mois. Ces prix incluent une remise de lancement de 20 % réservée aux 50 premiers clients, garantie tant que vous restez abonné. Les prix normaux sont de 59 $, 109 $ et 189 $.
+A: Il existe trois forfaits : Starter à 49 $/mois, Pro à 89 $/mois et Growth à 149 $/mois. Ces prix incluent une remise de lancement de 17–21 % réservée aux 50 premiers clients, garantie tant que vous restez abonné. Les prix normaux sont de 59 $, 109 $ et 189 $.
 
 Q: Y a-t-il un essai gratuit ?
 A: Oui. Chaque forfait comprend un essai gratuit de 7 jours. Une carte bancaire est demandée à l'inscription, mais aucun prélèvement n'a lieu avant la fin de l'essai, et vous pouvez résilier à tout moment avant. Aucun engagement de longue durée.
@@ -8953,6 +8964,7 @@ Meta Platforms, Inc. (WhatsApp Business Platform) USA / Ireland Envoi et récept
 Channex.io Ltd United Kingdom Synchronisation des disponibilités, tarifs, réservations et messages OTA
 Make (Celonis) EU Formulaire de contact et automatisation interne
 Google LLC / Google Ireland Ltd. (Firebase Cloud Messaging) USA / global Notifications push vers l’application mobile Hostlio Pro sur iOS et Android (jeton push de l’appareil, identifiants d’instance de l’application et contenu de la notification, par exemple alertes de nouveau message ou de réservation)
+Apple Inc. (Apple Push Notification service) USA Delivery of push notifications to iPhone and iPad devices (device token and notification content, passed on by Firebase Cloud Messaging)
 Twilio Inc.* USA Numéros WhatsApp et facturation des messages pour les hôtels
 Twilio SendGrid* USA E-mails transactionnels
 
@@ -9123,6 +9135,7 @@ Meta Platforms, Inc. (WhatsApp Business Platform) USA / Ireland Envoi et récept
 Channex.io Ltd United Kingdom Synchronisation des disponibilités, tarifs, réservations et messages OTA
 Make (Celonis) EU Formulaire de contact et automatisation interne
 Google LLC / Google Ireland Ltd. (Firebase Cloud Messaging) USA / global Notifications push vers l’application mobile Hostlio Pro sur iOS et Android (jeton push de l’appareil, identifiants d’instance de l’application et contenu de la notification, par exemple alertes de nouveau message ou de réservation)
+Apple Inc. (Apple Push Notification service) USA Delivery of push notifications to iPhone and iPad devices (device token and notification content, passed on by Firebase Cloud Messaging)
 Twilio Inc.* USA Numéros WhatsApp et facturation des messages pour les hôtels
 Twilio SendGrid* USA E-mails transactionnels
 

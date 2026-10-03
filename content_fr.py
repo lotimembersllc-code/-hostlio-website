@@ -32,7 +32,7 @@ def plans_html():
 
 FAQ_CORE = [
  ("Qu'est-ce que Hostlio Pro ?", "Hostlio Pro est un logiciel de gestion hôtelière (PMS) propulsé par l'IA, conçu pour les hôtels indépendants, les hôtels boutique et les chambres d'hôtes. Il réunit sur une seule plateforme Lio, un assistant IA qui répond aux messages des clients 24 h/24 et 7 j/7 dans plus de 30 langues, un channel manager connecté à plus de 100 OTA, un calendrier de réservations en glisser-déposer et le check-in en ligne."),
- ("Combien coûte Hostlio Pro ?", "Il existe trois forfaits : Starter à ⟦price:starter⟧/mois, Pro à ⟦price:pro⟧/mois et Growth à ⟦price:growth⟧/mois. Ces prix incluent une remise de lancement de 20 % réservée aux 50 premiers clients, garantie tant que vous restez abonné. Les prix normaux sont de ⟦regular:starter⟧, ⟦regular:pro⟧ et ⟦regular:growth⟧."),
+ ("Combien coûte Hostlio Pro ?", "Il existe trois forfaits : Starter à ⟦price:starter⟧/mois, Pro à ⟦price:pro⟧/mois et Growth à ⟦price:growth⟧/mois. Ces prix incluent une remise de lancement de ⟦eb_pct⟧ réservée aux 50 premiers clients, garantie tant que vous restez abonné. Les prix normaux sont de ⟦regular:starter⟧, ⟦regular:pro⟧ et ⟦regular:growth⟧."),
  ("Y a-t-il un essai gratuit ?", "Oui. Chaque forfait comprend un essai gratuit de 7 jours. Une carte bancaire est demandée à l'inscription, mais aucun prélèvement n'a lieu avant la fin de l'essai, et vous pouvez résilier à tout moment avant. Aucun engagement de longue durée."),
  ("À quelles OTA Hostlio Pro est-il connecté ?", "Via Channex, Hostlio Pro se connecte à plus de 100 canaux, dont Booking.com, Airbnb, Expedia, Agoda, Trip.com, Hotels.com, Hotelbeds, Hostelworld et Google Hotels. Disponibilités, tarifs et réservations restent synchronisés sur l'ensemble de ces canaux."),
  ("Dans quelles langues Lio répond-il ?", "Lio répond dans plus de 30 langues, dont l'anglais, le turc, l'arabe, le russe, l'allemand, le japonais et le chinois. Il répond dans la langue du client, et vous voyez une traduction dans votre tableau de bord."),
@@ -193,7 +193,7 @@ def pricing():
 <section class="page-hero"><div class="wrap"><h1>Tarifs de Hostlio Pro</h1>
 <p class="lead">Un abonnement mensuel fixe. Aucune commission sur les réservations, aucuns frais d'installation. Essayez n'importe quel forfait gratuitement pendant 7 jours.</p></div></section>
 <section style="padding-top:0"><div class="wrap"><h2 class="sr-only">Forfaits</h2>
-<span class="billing-note">-20 % pour les 50 premiers clients, garanti à vie</span>
+<span class="billing-note">⟦eb_pct⟧ de réduction pour les 50 premiers clients, garanti à vie</span>
 {plans_html()}
 <p class="small muted" style="margin-top:18px">Prix en dollars américains, hors taxes. Dernière mise à jour : <time datetime="{UPDATED}">{D(UPDATED)}</time>.</p>
 </div></section>

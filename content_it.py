@@ -31,7 +31,7 @@ def plans_html():
 
 FAQ_CORE = [
  ("Che cos'è Hostlio Pro?", "Hostlio Pro è un gestionale per hotel (PMS) basato sull'intelligenza artificiale, pensato per hotel indipendenti, boutique hotel e B&B. Riunisce in un'unica piattaforma Lio, un assistente AI che risponde ai messaggi degli ospiti 24 ore su 24 in oltre 30 lingue, un channel manager collegato a oltre 100 OTA, un calendario delle prenotazioni drag-and-drop e il check-in online."),
- ("Quanto costa Hostlio Pro?", "Ci sono tre piani: Starter a ⟦price:starter⟧/mese, Pro a ⟦price:pro⟧/mese e Growth a ⟦price:growth⟧/mese. Questi prezzi includono uno sconto di lancio del 20% riservato ai primi 50 clienti, bloccato per tutta la durata dell'abbonamento. I prezzi normali sono ⟦regular:starter⟧, ⟦regular:pro⟧ e ⟦regular:growth⟧."),
+ ("Quanto costa Hostlio Pro?", "Ci sono tre piani: Starter a ⟦price:starter⟧/mese, Pro a ⟦price:pro⟧/mese e Growth a ⟦price:growth⟧/mese. Questi prezzi includono uno sconto di lancio del ⟦eb_pct⟧ riservato ai primi 50 clienti, bloccato per tutta la durata dell'abbonamento. I prezzi normali sono ⟦regular:starter⟧, ⟦regular:pro⟧ e ⟦regular:growth⟧."),
  ("C'è una prova gratuita?", "Sì. Ogni piano include 7 giorni di prova gratuita. Inserisci un metodo di pagamento all'iscrizione, ma non viene addebitato nulla fino alla fine della prova e puoi disdire in qualsiasi momento prima. Nessun contratto a lungo termine."),
  ("A quali OTA si collega Hostlio Pro?", "Tramite Channex, Hostlio Pro si collega a oltre 100 canali, tra cui Booking.com, Airbnb, Expedia, Agoda, Trip.com, Hotels.com, Hotelbeds, Hostelworld e Google Hotels. Disponibilità, tariffe e prenotazioni restano sincronizzate su tutti."),
  ("In quali lingue risponde Lio?", "Lio risponde in oltre 30 lingue, tra cui inglese, turco, arabo, russo, tedesco, giapponese e cinese. Risponde nella lingua dell'ospite e tu vedi la traduzione nella tua dashboard."),
@@ -192,7 +192,7 @@ def pricing():
 <section class="page-hero"><div class="wrap"><h1>Prezzi di Hostlio Pro</h1>
 <p class="lead">Un canone mensile fisso. Nessuna commissione sulle prenotazioni, nessun costo di attivazione. Prova qualsiasi piano gratis per 7 giorni.</p></div></section>
 <section style="padding-top:0"><div class="wrap"><h2 class="sr-only">Piani</h2>
-<span class="billing-note">20% di sconto per i primi 50 clienti, bloccato per sempre</span>
+<span class="billing-note">⟦eb_pct⟧ di sconto per i primi 50 clienti, bloccato per sempre</span>
 {plans_html()}
 <p class="small muted" style="margin-top:18px">Prezzi in dollari USA, tasse escluse. Ultimo aggiornamento: <time datetime="{UPDATED}">{D(UPDATED)}</time>.</p>
 </div></section>

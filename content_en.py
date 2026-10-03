@@ -26,7 +26,7 @@ def plans_html():
 
 FAQ_CORE = [
  ("What is Hostlio Pro?", "Hostlio Pro is AI-powered hotel management software (PMS) built for independent hotels, boutique hotels and guesthouses. It combines Lio, an AI assistant that answers guest messages 24/7 in 30+ languages, a channel manager connected to 100+ OTAs, a drag-and-drop reservation calendar and online check-in in one platform."),
- ("How much does Hostlio Pro cost?", "There are three plans: Starter at ⟦price:starter⟧/month, Pro at ⟦price:pro⟧/month and Growth at ⟦price:growth⟧/month. These prices include a 20% early-bird discount for the first 50 customers, locked in for as long as you stay subscribed. Regular prices are ⟦regular:starter⟧, ⟦regular:pro⟧ and ⟦regular:growth⟧."),
+ ("How much does Hostlio Pro cost?", "There are three plans: Starter at ⟦price:starter⟧/month, Pro at ⟦price:pro⟧/month and Growth at ⟦price:growth⟧/month. These prices include a ⟦eb_pct⟧ early-bird discount for the first 50 customers, locked in for as long as you stay subscribed. Regular prices are ⟦regular:starter⟧, ⟦regular:pro⟧ and ⟦regular:growth⟧."),
  ("Is there a free trial?", "Yes. Every plan comes with a 7-day free trial. You enter a payment card at signup, but nothing is charged until the trial ends. There are no long-term contracts and you can cancel anytime."),
  ("Which OTAs does Hostlio Pro connect to?", "Through Channex, Hostlio Pro connects to 100+ channels including Booking.com, Airbnb, Expedia, Agoda, Trip.com, Hotels.com, Hotelbeds, Hostelworld and Google Hotels. Availability, rates and reservations stay in sync across all of them."),
  ("Which languages does Lio reply in?", "Lio replies in 30+ languages, including English, Turkish, Arabic, Russian, German, Japanese and Chinese. It answers in the guest's language, and you see a translation in your dashboard."),
@@ -187,7 +187,7 @@ def pricing():
 <section class="page-hero"><div class="wrap"><h1>Hostlio Pro pricing</h1>
 <p class="lead">A flat monthly fee. No per-booking commission, no setup fee. Try any plan free for 7 days.</p></div></section>
 <section style="padding-top:0"><div class="wrap"><h2 class="sr-only">Plans</h2>
-<span class="billing-note">20% off for the first 50 customers, locked in for life</span>
+<span class="billing-note">⟦eb_pct⟧ off for the first 50 customers, locked in for life</span>
 {plans_html()}
 <p class="small muted" style="margin-top:18px">Prices in US dollars, excluding taxes. Last updated: <time datetime="{UPDATED}">September 21, 2026</time>.</p>
 </div></section>

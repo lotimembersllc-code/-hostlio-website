@@ -28,7 +28,7 @@ def plans_html():
 FAQ_CORE = [
  ("Otel programı nedir?", "Otel programı (otel yönetim yazılımı, PMS), bir konaklama tesisinin rezervasyonlarını, oda müsaitliğini, satış kanallarını ve misafir bilgilerini tek yerden yönetmesini sağlayan yazılımdır. Hostlio Pro bu işlevlere misafir mesajlarını 30+ dilde yanıtlayan yapay zekâ asistanı Lio'yu ekler."),
  ("Hostlio Pro nedir?", "Hostlio Pro, bağımsız oteller, butik oteller ve pansiyonlar için geliştirilmiş yapay zekâ destekli bir otel yönetim yazılımıdır (PMS). Misafir mesajlarını 30'dan fazla dilde 7/24 yanıtlayan AI asistanı Lio'yu, 100+ OTA'ya bağlanan kanal yöneticisini, sürükle-bırak rezervasyon takvimini ve online check-in'i tek panelde birleştirir."),
- ("Hostlio Pro'nun fiyatı ne kadar?", "Üç plan var: Starter aylık ⟦price:starter⟧, Pro aylık ⟦price:pro⟧, Growth aylık ⟦price:growth⟧. Bu fiyatlar ilk 50 müşteriye özel %20 erken kayıt indirimini içerir ve abonelik sürdüğü sürece sabit kalır. Normal fiyatlar sırasıyla ⟦regular:starter⟧, ⟦regular:pro⟧ ve ⟦regular:growth⟧'dır."),
+ ("Hostlio Pro'nun fiyatı ne kadar?", "Üç plan var: Starter aylık ⟦price:starter⟧, Pro aylık ⟦price:pro⟧, Growth aylık ⟦price:growth⟧. Bu fiyatlar ilk 50 müşteriye özel ⟦eb_pct⟧ erken kayıt indirimini içerir ve abonelik sürdüğü sürece sabit kalır. Normal fiyatlar sırasıyla ⟦regular:starter⟧, ⟦regular:pro⟧ ve ⟦regular:growth⟧'dır."),
  ("Ücretsiz deneme var mı?", "Evet. Tüm planlar 7 gün ücretsiz denenebilir. Kayıt sırasında ödeme kartı alınır, ancak deneme süresi bitene kadar hiçbir ücret çekilmez. Uzun süreli sözleşme yoktur, istediğiniz zaman iptal edebilirsiniz."),
  ("Hangi OTA'larla çalışıyor?", "Hostlio Pro, Channex altyapısı üzerinden Booking.com, Airbnb, Expedia, Agoda, Trip.com, Hotels.com, Hotelbeds, Hostelworld ve Google Hotels dahil 100'den fazla kanala bağlanır. Müsaitlik, fiyat ve rezervasyonlar tüm kanallarda eşzamanlı güncellenir."),
  ("AI asistan Lio hangi dillerde yanıt veriyor?", "Lio, Türkçe, İngilizce, Arapça, Rusça, Almanca, Japonca ve Çince dahil 30'dan fazla dilde yanıt verir. Misafir hangi dilde yazarsa o dilde cevaplar; siz panelde Türkçe çevirisini görürsünüz."),
@@ -190,7 +190,7 @@ def pricing():
 <section class="page-hero"><div class="wrap"><h1>Hostlio Pro fiyatları</h1>
 <p class="lead">Sabit aylık ücret. Rezervasyon başına komisyon yok, kurulum ücreti yok. Tüm planları 7 gün ücretsiz deneyebilirsiniz.</p></div></section>
 <section style="padding-top:0"><div class="wrap"><h2 class="sr-only">Planlar</h2>
-<span class="billing-note">İlk 50 müşteriye %20 indirim, abonelik boyunca sabit</span>
+<span class="billing-note">İlk 50 müşteriye ⟦eb_pct⟧ indirim, abonelik boyunca sabit</span>
 {plans_html()}
 <p class="small muted" style="margin-top:18px">Fiyatlar ABD doları cinsindendir, vergiler hariçtir. Son güncelleme: <time datetime="{UPDATED}">21 Eylül 2026</time>.</p>
 </div></section>
