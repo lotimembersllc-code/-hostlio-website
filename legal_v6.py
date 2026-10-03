@@ -27,15 +27,16 @@ SUBPROCESSORS = [
     ("Channex.io Ltd", "United Kingdom", "chx"),
     ("Make (Celonis)", "EU", "make"),
     ("Google LLC / Google Ireland Ltd. (Firebase Cloud Messaging)", "USA / global", "push"),
+    ("Apple Inc. (Apple Push Notification service)", "USA", "apns"),
 ]
 PLANNED = [("Twilio Inc.", "USA", "tw"), ("Twilio SendGrid", "USA", "sg")]
 SP_PURPOSE = {
  "en": {"db": "Database, authentication and server functions", "web": "Website and dashboard hosting", "pay": "Payments and subscription billing",
         "ai": "AI processing of guest messages to draft replies", "wa": "Sending and receiving WhatsApp messages", "chx": "Availability, rate, booking and OTA message sync",
-        "make": "Contact form and internal workflow automation", "push": "Push notifications to the Hostlio Pro mobile app on iOS and Android (device push token, app instance identifiers, notification content such as new message or reservation alerts)", "tw": "WhatsApp numbers and messaging billing for hotels", "sg": "Transactional email"},
+        "make": "Contact form and internal workflow automation", "push": "Push notifications to the Hostlio Pro mobile app on iOS and Android (device push token, app instance identifiers, notification content such as new message or reservation alerts)", "apns": "Delivery of push notifications to iPhone and iPad devices (device token and notification content, passed on by Firebase Cloud Messaging)", "tw": "WhatsApp numbers and messaging billing for hotels", "sg": "Transactional email"},
  "tr": {"db": "Veritabanı, kimlik doğrulama ve sunucu fonksiyonları", "web": "Web sitesi ve panel barındırma", "pay": "Ödemeler ve abonelik faturalandırması",
         "ai": "Cevap taslağı için misafir mesajlarının yapay zekâ ile işlenmesi", "wa": "WhatsApp mesajlarının gönderilmesi ve alınması", "chx": "Müsaitlik, fiyat, rezervasyon ve OTA mesaj senkronizasyonu",
-        "make": "İletişim formu ve iç iş akışı otomasyonu", "push": "Hostlio Pro mobil uygulamasına (iOS ve Android) anlık bildirim gönderimi (cihaz bildirim jetonu, uygulama örneği kimlikleri, yeni mesaj veya rezervasyon uyarısı gibi bildirim içeriği)", "tw": "Oteller için WhatsApp numarası ve mesaj faturalandırması", "sg": "İşlemsel e-posta"},
+        "make": "İletişim formu ve iç iş akışı otomasyonu", "push": "Hostlio Pro mobil uygulamasına (iOS ve Android) anlık bildirim gönderimi (cihaz bildirim jetonu, uygulama örneği kimlikleri, yeni mesaj veya rezervasyon uyarısı gibi bildirim içeriği)", "apns": "iPhone ve iPad cihazlara anlık bildirimin iletilmesi (Firebase Cloud Messaging üzerinden aktarılan cihaz jetonu ve bildirim içeriği)", "tw": "Oteller için WhatsApp numarası ve mesaj faturalandırması", "sg": "İşlemsel e-posta"},
 }
 
 def _ul(items): return "<ul>" + "".join(f"<li>{i}</li>" for i in items) + "</ul>"

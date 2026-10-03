@@ -31,7 +31,7 @@ def plans_html():
 
 FAQ_CORE = [
  ("O que é o Hostlio Pro?", "O Hostlio Pro é um sistema para hotel (PMS hoteleiro) com inteligência artificial, feito para hotéis independentes, hotéis boutique e pousadas. Ele reúne em uma só plataforma a Lio, uma assistente de IA que responde às mensagens dos hóspedes 24 horas por dia em mais de 30 idiomas, um channel manager conectado a mais de 100 OTAs, um calendário de reservas com arrastar e soltar e o check-in online."),
- ("Quanto custa o Hostlio Pro?", "São três planos: Starter por ⟦price:starter⟧/mês, Pro por ⟦price:pro⟧/mês e Growth por ⟦price:growth⟧/mês. Esses preços incluem um desconto de lançamento de 20% para os primeiros 50 clientes, garantido enquanto a assinatura estiver ativa. Os preços normais são ⟦regular:starter⟧, ⟦regular:pro⟧ e ⟦regular:growth⟧."),
+ ("Quanto custa o Hostlio Pro?", "São três planos: Starter por ⟦price:starter⟧/mês, Pro por ⟦price:pro⟧/mês e Growth por ⟦price:growth⟧/mês. Esses preços incluem um desconto de lançamento de ⟦eb_pct⟧ para os primeiros 50 clientes, garantido enquanto a assinatura estiver ativa. Os preços normais são ⟦regular:starter⟧, ⟦regular:pro⟧ e ⟦regular:growth⟧."),
  ("Existe um período de teste grátis?", "Sim. Todos os planos incluem 7 dias de teste grátis. O cartão é cadastrado na inscrição, mas nada é cobrado até o fim do teste, e você pode cancelar antes disso. Não há contratos de longo prazo e você pode cancelar quando quiser."),
  ("Com quais OTAs o Hostlio Pro se conecta?", "Por meio da Channex, o Hostlio Pro se conecta a mais de 100 canais, entre eles Booking.com, Airbnb, Expedia, Agoda, Trip.com, Hotels.com, Hotelbeds, Hostelworld e Google Hotels. Disponibilidade, tarifas e reservas ficam sincronizadas em todos eles."),
  ("Em quais idiomas a Lio responde?", "A Lio responde em mais de 30 idiomas, incluindo inglês, turco, árabe, russo, alemão, japonês e chinês. Ela responde no idioma do hóspede, e você vê a tradução no seu painel."),
@@ -192,7 +192,7 @@ def pricing():
 <section class="page-hero"><div class="wrap"><h1>Preços do Hostlio Pro</h1>
 <p class="lead">Uma mensalidade fixa. Sem comissão por reserva, sem taxa de implantação. Teste qualquer plano grátis por 7 dias.</p></div></section>
 <section style="padding-top:0"><div class="wrap"><h2 class="sr-only">Planos</h2>
-<span class="billing-note">20% de desconto para os primeiros 50 clientes, garantido para sempre</span>
+<span class="billing-note">⟦eb_pct⟧ de desconto para os primeiros 50 clientes, garantido para sempre</span>
 {plans_html()}
 <p class="small muted" style="margin-top:18px">Preços em dólares americanos, sem impostos. Última atualização: <time datetime="{UPDATED}">{D(UPDATED)}</time>.</p>
 </div></section>

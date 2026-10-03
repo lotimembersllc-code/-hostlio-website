@@ -88,7 +88,8 @@ def money(n, lang):
 # ---------------------------------------------------------------- yer tutucular
 # Metinlerde: ⟦price:starter⟧ aktif aylık · ⟦annual:pro⟧ yıllık toplam ·
 # ⟦annual_mo:growth⟧ yıllığın aylık karşılığı · ⟦regular:starter⟧ normal aylık ·
-# ⟦quota:pro⟧ aylık AI mesajı · ⟦rooms:growth⟧ oda limiti · ⟦trial⟧ deneme günü.
+# ⟦quota:pro⟧ aylık AI mesajı · ⟦rooms:growth⟧ oda limiti · ⟦trial⟧ deneme günü ·
+# ⟦eb_pct⟧ Early Bird indirim aralığı (normal fiyata göre).
 TOKEN = re.compile(r"⟦(\w+)(?::(\w+))?⟧")
 
 
@@ -100,7 +101,19 @@ def _tok(kind, pid, lang):
     if kind == "quota": return number(BY_ID[pid]["ai_messages"], lang)
     if kind == "rooms": return number(BY_ID[pid]["rooms"], lang)
     if kind == "trial": return str(TRIAL_DAYS)
+    if kind == "eb_pct": return eb_pct(lang)
     raise KeyError(kind)
+
+
+def eb_pct(lang):
+    """Early Bird indirim ARALIĞI (normal aylık fiyata göre), ör. "17–21%".
+    Eskiden metinlerde sabit "%20" yazıyordu; gerçek oran plana göre %17–21."""
+    oranlar = [round(100 * (1 - p["eb_monthly"] / p["regular_monthly"])) for p in PLANS]
+    lo, hi = min(oranlar), max(oranlar)
+    aralik = str(lo) if lo == hi else f"{lo}–{hi}"
+    if lang == "tr": return f"%{aralik}"
+    if lang in ("fr", "es"): return f"{aralik}\u00a0%"
+    return f"{aralik}%"
 
 
 def fill(text, lang):
