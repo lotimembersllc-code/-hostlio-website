@@ -1,0 +1,30 @@
+# KAPILAR — hostlio-website (statik üretici)
+# Her push/PR'da siteyi üretir ve kontrol eder: kırık iç link/asset, geçersiz JSON-LD, karşılıklı
+# olmayan hreflang, tekrarlanan/uzun <title>, satır içi betik (CSP), fiyat yer tutucusu, vercel.json
+# yönlendirme hedefleri; attribution.js ilk temas testi; commit'li dist/ kaynakla aynı mı.
+# Pillow BİLEREK kurulmuyor: -480.webp varyantları depoda; kurulursa yeniden kodlama farkı üretebilir.
+name: kapılar
+on:
+  push:
+    branches: [main]
+  pull_request:
+  workflow_dispatch:
+jobs:
+  build-check:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+      - name: build
+        run: python3 build.py
+      - name: links, assets, JSON-LD, hreflang, titles, CSP, redirects
+        run: python3 scripts/check.py
+      - name: attribution (first touch, 90-day expiry)
+        run: node scripts/attribution-check.mjs
+      - name: committed dist/ matches source
+        run: git diff --exit-code -- dist vercel.json page_dates.json
