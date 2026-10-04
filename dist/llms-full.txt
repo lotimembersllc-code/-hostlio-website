@@ -4637,7 +4637,7 @@ Meta Platforms, Inc. (WhatsApp Business Platform) USA / Ireland Envío y recepci
 Channex.io Ltd United Kingdom Sincronización de disponibilidad, tarifas, reservas y mensajes de OTAs
 Make (Celonis) EU Formulario de contacto y automatización interna
 Google LLC / Google Ireland Ltd. (Firebase Cloud Messaging) USA / global Notificaciones push a la app móvil de Hostlio Pro en iOS y Android (token push del dispositivo, identificadores de instancia de la app y contenido de la notificación, como avisos de nuevos mensajes o reservas)
-Apple Inc. (Apple Push Notification service) USA Delivery of push notifications to iPhone and iPad devices (device token and notification content, passed on by Firebase Cloud Messaging)
+Apple Inc. (Apple Push Notification service) USA Entrega de notificaciones push a dispositivos iPhone e iPad (token del dispositivo y contenido de la notificación, transmitidos a través de Firebase Cloud Messaging)
 Google LLC (ML Kit — on-device text recognition) On device (metrics: USA) Lectura de la zona de lectura mecánica del documento de identidad en el dispositivo del personal del hotel, en la app móvil; ninguna imagen ni texto sale del dispositivo y Google solo recibe métricas anónimas de uso y rendimiento de la API
 Twilio Inc.* USA Números de WhatsApp y facturación de mensajes para hoteles
 Twilio SendGrid* USA Correo transaccional
@@ -4809,7 +4809,7 @@ Meta Platforms, Inc. (WhatsApp Business Platform) USA / Ireland Envío y recepci
 Channex.io Ltd United Kingdom Sincronización de disponibilidad, tarifas, reservas y mensajes de OTAs
 Make (Celonis) EU Formulario de contacto y automatización interna
 Google LLC / Google Ireland Ltd. (Firebase Cloud Messaging) USA / global Notificaciones push a la app móvil de Hostlio Pro en iOS y Android (token push del dispositivo, identificadores de instancia de la app y contenido de la notificación, como avisos de nuevos mensajes o reservas)
-Apple Inc. (Apple Push Notification service) USA Delivery of push notifications to iPhone and iPad devices (device token and notification content, passed on by Firebase Cloud Messaging)
+Apple Inc. (Apple Push Notification service) USA Entrega de notificaciones push a dispositivos iPhone e iPad (token del dispositivo y contenido de la notificación, transmitidos a través de Firebase Cloud Messaging)
 Google LLC (ML Kit — on-device text recognition) On device (metrics: USA) Lectura de la zona de lectura mecánica del documento de identidad en el dispositivo del personal del hotel, en la app móvil; ninguna imagen ni texto sale del dispositivo y Google solo recibe métricas anónimas de uso y rendimiento de la API
 Twilio Inc.* USA Números de WhatsApp y facturación de mensajes para hoteles
 Twilio SendGrid* USA Correo transaccional
@@ -6099,7 +6099,7 @@ Meta Platforms, Inc. (WhatsApp Business Platform) USA / Ireland Invio e ricezion
 Channex.io Ltd United Kingdom Sincronizzazione di disponibilità, tariffe, prenotazioni e messaggi OTA
 Make (Celonis) EU Modulo di contatto e automazioni interne
 Google LLC / Google Ireland Ltd. (Firebase Cloud Messaging) USA / global Notifiche push all’app mobile Hostlio Pro su iOS e Android (token push del dispositivo, identificativi dell’istanza dell’app e contenuto della notifica, come avvisi di nuovi messaggi o prenotazioni)
-Apple Inc. (Apple Push Notification service) USA Delivery of push notifications to iPhone and iPad devices (device token and notification content, passed on by Firebase Cloud Messaging)
+Apple Inc. (Apple Push Notification service) USA Consegna delle notifiche push ai dispositivi iPhone e iPad (token del dispositivo e contenuto della notifica, inoltrati tramite Firebase Cloud Messaging)
 Google LLC (ML Kit — on-device text recognition) On device (metrics: USA) Lettura della zona a lettura ottica del documento d’identità sul dispositivo dello staff dell’hotel, nell’app mobile; nessuna immagine o testo lascia il dispositivo e Google riceve solo metriche anonime di utilizzo e prestazioni dell’API
 Twilio Inc.* USA Numeri WhatsApp e fatturazione dei messaggi per gli hotel
 Twilio SendGrid* USA Email transazionali
@@ -6271,7 +6271,7 @@ Meta Platforms, Inc. (WhatsApp Business Platform) USA / Ireland Invio e ricezion
 Channex.io Ltd United Kingdom Sincronizzazione di disponibilità, tariffe, prenotazioni e messaggi OTA
 Make (Celonis) EU Modulo di contatto e automazioni interne
 Google LLC / Google Ireland Ltd. (Firebase Cloud Messaging) USA / global Notifiche push all’app mobile Hostlio Pro su iOS e Android (token push del dispositivo, identificativi dell’istanza dell’app e contenuto della notifica, come avvisi di nuovi messaggi o prenotazioni)
-Apple Inc. (Apple Push Notification service) USA Delivery of push notifications to iPhone and iPad devices (device token and notification content, passed on by Firebase Cloud Messaging)
+Apple Inc. (Apple Push Notification service) USA Consegna delle notifiche push ai dispositivi iPhone e iPad (token del dispositivo e contenuto della notifica, inoltrati tramite Firebase Cloud Messaging)
 Google LLC (ML Kit — on-device text recognition) On device (metrics: USA) Lettura della zona a lettura ottica del documento d’identità sul dispositivo dello staff dell’hotel, nell’app mobile; nessuna immagine o testo lascia il dispositivo e Google riceve solo metriche anonime di utilizzo e prestazioni dell’API
 Twilio Inc.* USA Numeri WhatsApp e fatturazione dei messaggi per gli hotel
 Twilio SendGrid* USA Email transazionali
@@ -7561,7 +7561,7 @@ Meta Platforms, Inc. (WhatsApp Business Platform) USA / Ireland Envio e recebime
 Channex.io Ltd United Kingdom Sincronização de disponibilidade, tarifas, reservas e mensagens das OTAs
 Make (Celonis) EU Formulário de contato e automação interna
 Google LLC / Google Ireland Ltd. (Firebase Cloud Messaging) USA / global Notificações push no app do Hostlio Pro para iOS e Android (token push do dispositivo, identificadores da instância do app e conteúdo da notificação, como alertas de novas mensagens ou reservas)
-Apple Inc. (Apple Push Notification service) USA Delivery of push notifications to iPhone and iPad devices (device token and notification content, passed on by Firebase Cloud Messaging)
+Apple Inc. (Apple Push Notification service) USA Entrega de notificações push em iPhone e iPad (token do aparelho e conteúdo da notificação, repassados pelo Firebase Cloud Messaging)
 Google LLC (ML Kit — on-device text recognition) On device (metrics: USA) Leitura da zona de leitura mecânica do documento de identidade no aparelho da equipe do hotel, no app; nenhuma imagem ou texto sai do aparelho e o Google recebe apenas métricas anônimas de uso e desempenho da API
 Twilio Inc.* USA Números de WhatsApp e cobrança de mensagens para hotéis
 Twilio SendGrid* USA E-mail transacional
@@ -7733,7 +7733,7 @@ Meta Platforms, Inc. (WhatsApp Business Platform) USA / Ireland Envio e recebime
 Channex.io Ltd United Kingdom Sincronização de disponibilidade, tarifas, reservas e mensagens das OTAs
 Make (Celonis) EU Formulário de contato e automação interna
 Google LLC / Google Ireland Ltd. (Firebase Cloud Messaging) USA / global Notificações push no app do Hostlio Pro para iOS e Android (token push do dispositivo, identificadores da instância do app e conteúdo da notificação, como alertas de novas mensagens ou reservas)
-Apple Inc. (Apple Push Notification service) USA Delivery of push notifications to iPhone and iPad devices (device token and notification content, passed on by Firebase Cloud Messaging)
+Apple Inc. (Apple Push Notification service) USA Entrega de notificações push em iPhone e iPad (token do aparelho e conteúdo da notificação, repassados pelo Firebase Cloud Messaging)
 Google LLC (ML Kit — on-device text recognition) On device (metrics: USA) Leitura da zona de leitura mecânica do documento de identidade no aparelho da equipe do hotel, no app; nenhuma imagem ou texto sai do aparelho e o Google recebe apenas métricas anônimas de uso e desempenho da API
 Twilio Inc.* USA Números de WhatsApp e cobrança de mensagens para hotéis
 Twilio SendGrid* USA E-mail transacional
@@ -9023,7 +9023,7 @@ Meta Platforms, Inc. (WhatsApp Business Platform) USA / Ireland Envoi et récept
 Channex.io Ltd United Kingdom Synchronisation des disponibilités, tarifs, réservations et messages OTA
 Make (Celonis) EU Formulaire de contact et automatisation interne
 Google LLC / Google Ireland Ltd. (Firebase Cloud Messaging) USA / global Notifications push vers l’application mobile Hostlio Pro sur iOS et Android (jeton push de l’appareil, identifiants d’instance de l’application et contenu de la notification, par exemple alertes de nouveau message ou de réservation)
-Apple Inc. (Apple Push Notification service) USA Delivery of push notifications to iPhone and iPad devices (device token and notification content, passed on by Firebase Cloud Messaging)
+Apple Inc. (Apple Push Notification service) USA Distribution des notifications push sur iPhone et iPad (jeton de l’appareil et contenu de la notification, transmis via Firebase Cloud Messaging)
 Google LLC (ML Kit — on-device text recognition) On device (metrics: USA) Lecture de la bande de lecture automatique de la pièce d’identité sur l’appareil du personnel de l’hôtel, dans l’application mobile ; aucune image ni aucun texte ne quitte l’appareil et Google ne reçoit que des mesures anonymes d’utilisation et de performance de l’API
 Twilio Inc.* USA Numéros WhatsApp et facturation des messages pour les hôtels
 Twilio SendGrid* USA E-mails transactionnels
@@ -9195,7 +9195,7 @@ Meta Platforms, Inc. (WhatsApp Business Platform) USA / Ireland Envoi et récept
 Channex.io Ltd United Kingdom Synchronisation des disponibilités, tarifs, réservations et messages OTA
 Make (Celonis) EU Formulaire de contact et automatisation interne
 Google LLC / Google Ireland Ltd. (Firebase Cloud Messaging) USA / global Notifications push vers l’application mobile Hostlio Pro sur iOS et Android (jeton push de l’appareil, identifiants d’instance de l’application et contenu de la notification, par exemple alertes de nouveau message ou de réservation)
-Apple Inc. (Apple Push Notification service) USA Delivery of push notifications to iPhone and iPad devices (device token and notification content, passed on by Firebase Cloud Messaging)
+Apple Inc. (Apple Push Notification service) USA Distribution des notifications push sur iPhone et iPad (jeton de l’appareil et contenu de la notification, transmis via Firebase Cloud Messaging)
 Google LLC (ML Kit — on-device text recognition) On device (metrics: USA) Lecture de la bande de lecture automatique de la pièce d’identité sur l’appareil du personnel de l’hôtel, dans l’application mobile ; aucune image ni aucun texte ne quitte l’appareil et Google ne reçoit que des mesures anonymes d’utilisation et de performance de l’API
 Twilio Inc.* USA Numéros WhatsApp et facturation des messages pour les hôtels
 Twilio SendGrid* USA E-mails transactionnels
