@@ -122,19 +122,21 @@ def checkin():
     body = f'''
 <section class="page-hero"><div class="wrap split">
 <div><h1>Check&#8209;in online con firma digitale</h1>
-<p class="lead">Prima dell'arrivo, gli ospiti inviano dal telefono i dati del documento, gli accompagnatori e la firma. La consegna delle chiavi richiede pochi minuti.</p>
+<p class="lead">Prima dell'arrivo, gli ospiti scansionano il documento con il telefono, aggiungono gli accompagnatori e firmano. Nessuna immagine del documento viene conservata. La consegna delle chiavi richiede pochi minuti.</p>
 <div class="cta-row">{btn("Prova Pro gratis per 7 giorni", SIGNUP_URL+"?plan=pro")}</div></div>
 <div class="panel"><p class="panel-title">Check-in online, camera 202</p>
 <div class="field"><span>Nome e cognome</span><div>Keiko Sato</div></div>
 <div class="field"><span>Nazionalità</span><div>Giappone</div></div>
+<div class="field"><span>Documento</span><div>Passaporto scansionato, nessuna immagine salvata</div></div>
 <div class="field"><span>Accompagnatori</span><div>1 ospite aggiunto</div></div>
 <div class="field"><span>Firma</span><div class="sig">Firma digitale ricevuta</div></div>
 </div>
 </div></section>
 <section class="white rule"><div class="wrap">
-<div class="answer"><p><strong>Come funziona il check-in online?</strong> Hostlio Pro invia a chi ha prenotato un link personale, sicuro e con scadenza. Da quel link l'ospite inserisce i dati del documento, aggiunge una foto del documento e gli eventuali accompagnatori e firma il modulo digitalmente. Tutto viene salvato direttamente nella prenotazione.</p></div>
+<div class="answer"><p><strong>Come funziona il check-in online?</strong> Hostlio Pro invia a chi ha prenotato un link personale, sicuro e con scadenza. Da quel link l'ospite inquadra con la fotocamera del telefono la zona a lettura ottica (MRZ) del passaporto o della carta d'identità. La lettura avviene nel suo browser e i dati si compilano da soli. Poi aggiunge gli eventuali accompagnatori e firma il modulo digitalmente. Nella prenotazione vengono salvati solo i dati estratti e la firma; nessuna immagine del documento viene caricata o conservata.</p></div>
 <h2 style="margin-top:64px">Funzionalità del check-in online</h2><div class="rows">
 <div class="row"><h3>Link sicuro</h3><div><p>Un link basato su token, unico per ogni prenotazione. Apre solo il modulo di quella prenotazione.</p></div></div>
+<div class="row"><h3>Scansione del documento senza immagini</h3><div><p>La zona a lettura ottica del passaporto o della carta d'identità viene letta sul dispositivo dell'ospite. Vengono salvati solo nome, numero del documento, nazionalità, data di nascita e data di scadenza, mai una foto del documento. I documenti senza zona a lettura ottica si inseriscono a mano.</p></div></div>
 <div class="row"><h3>Accompagnatori</h3><div><p>Tutte le persone che soggiornano in camera vengono aggiunte in un unico modulo, così nessuno deve inserire dati al banco.</p></div></div>
 <div class="row"><h3>Firma digitale e consenso</h3><div><p>Gli ospiti accettano il regolamento della struttura e il consenso al trattamento dei dati firmando sullo schermo. Il documento firmato viene conservato con la prenotazione.</p></div></div>
 <div class="row"><h3>Privacy by design</h3><div><p>I dati degli ospiti possono essere cancellati su richiesta e il testo del consenso fa parte del modulo.</p></div></div>
@@ -142,15 +144,16 @@ def checkin():
 </div></div></section>
 <section class="dark on-dark"><div class="wrap"><div class="section-head"><h2>Tre passaggi per l'ospite</h2></div>
 <ol class="steps"><li><h3>Apre il link</h3><p>Apre il link personale ricevuto dopo la conferma della prenotazione (inviato automaticamente via email o condiviso dall'hotel).</p></li>
-<li><h3>Compila i dati</h3><p>Aggiunge i dati e la foto del documento e indica gli accompagnatori.</p></li>
+<li><h3>Scansiona il documento</h3><p>Scansiona il passaporto o la carta d'identità con il telefono: i dati si compilano da soli e nessuna immagine viene conservata. Poi indica gli accompagnatori.</p></li>
 <li><h3>Firma</h3><p>Accetta il regolamento della struttura e firma sullo schermo. Alla reception deve solo ritirare la chiave.</p></li></ol>
 </div></section>
 '''
     faq = [("Quali piani includono il check-in online?", "Il check-in online con firma digitale è incluso nei piani Pro e Growth."),
            ("L'ospite deve scaricare un'app?", "No. Il modulo di check-in si apre nel browser; non serve scaricare nessuna app."),
-           ("E se un ospite non completa il check-in dal link?", "Fai il check-in nel modo consueto. Lo staff può anche inserire i dati al banco con l'app mobile di Hostlio Pro.")]
+           ("E se un ospite non completa il check-in dal link?", "Fai il check-in nel modo consueto. Lo staff può anche scansionare il documento al banco con l'app mobile di Hostlio Pro; la lettura avviene sul dispositivo e nessuna immagine viene conservata."),
+           ("Le foto dei documenti vengono conservate?", "No. La zona a lettura ottica (MRZ) del documento viene letta sul telefono dell'ospite, o sul dispositivo dell'hotel con l'app mobile di Hostlio Pro, e vengono salvati solo i dati estratti e la firma. Si possono scansionare passaporti e carte d'identità con MRZ; gli altri documenti si inseriscono a mano.")]
     return {"key":"checkin","title":"Check-in online per hotel con firma digitale | Hostlio Pro",
-            "desc":"Con il check-in online Hostlio Pro gli ospiti inviano dal telefono documento, accompagnatori e firma digitale prima dell'arrivo. Niente code in reception.",
+            "desc":"Check-in online Hostlio Pro: l'ospite scansiona il documento (nessuna immagine conservata), aggiunge accompagnatori e firma dal telefono. Niente code.",
             "trail":[("Check-in online", U("checkin"))],"body":body,"faq":faq}
 
 def features():
@@ -161,7 +164,7 @@ def features():
 <div class="row"><h3>Assistente AI Lio</h3><div><p>Risposte agli ospiti 24/7 in oltre 30 lingue. Messaggi di WhatsApp e delle OTA (Booking.com, Airbnb, Expedia) in un'unica casella.</p><a href="{U("ai")}">Scopri di più su Lio</a></div></div>
 <div class="row"><h3>Channel manager</h3><div><p>Sincronizzazione di disponibilità, tariffe e prenotazioni con oltre 100 OTA con connessioni certificate.</p><a href="{U("channel")}">Channel manager</a></div></div>
 <div class="row"><h3>Planning camere</h3><div><p>Calendario delle prenotazioni drag-and-drop. Cambi camera, prolungamenti e blocchi con un solo gesto.</p></div></div>
-<div class="row"><h3>Check-in online</h3><div><p>Link sicuro, accompagnatori, foto del documento e firma digitale.</p><a href="{U("checkin")}">Check-in online</a></div></div>
+<div class="row"><h3>Check-in online</h3><div><p>Link sicuro, accompagnatori, scansione del documento (nessuna immagine conservata) e firma digitale.</p><a href="{U("checkin")}">Check-in online</a></div></div>
 <div class="row"><h3>Moduli per il visto in PDF automatici</h3><div><p>Genera con un clic, dai dati della prenotazione, lettere di invito e di conferma dell'alloggio per le richieste di visto.</p></div></div>
 <div class="row"><h3>Vendita di transfer e tour</h3><div><p>Lio propone transfer dall'aeroporto e tour durante la conversazione e inoltra la richiesta al tuo team.</p></div></div>
 <div class="row"><h3>App mobile</h3><div><p>Gestisci prenotazioni, messaggi e check-in anche lontano dall'hotel con l'app iOS e Android. Funziona anche offline e sincronizza i dati quando torni online.</p></div></div>
@@ -216,7 +219,7 @@ def pricing():
 FAQ_ALL = FAQ_CORE + [
  ("Per quali tipi di struttura è pensato Hostlio Pro?", "Per strutture indipendenti da 1 a 150 camere, come boutique hotel, hotel di città, B&B e affittacamere, residence e aparthotel e ostelli."),
  ("Esiste un'app mobile?", "Sì. I piani Pro e Growth includono un'app iOS e Android. Funziona senza connessione a internet e sincronizza i dati quando torni online."),
- ("Come funziona il check-in online?", "Gli ospiti ricevono un link personale e sicuro e, prima dell'arrivo, inviano dal telefono i dati del documento, gli accompagnatori e una firma digitale. Disponibile nei piani Pro e Growth."),
+ ("Come funziona il check-in online?", "Gli ospiti ricevono un link personale e sicuro, scansionano il documento con il telefono (nessuna immagine viene conservata) e, prima dell'arrivo, inviano accompagnatori e firma digitale. Disponibile nei piani Pro e Growth."),
  ("A cosa serve la funzione dei moduli per il visto in PDF?", "Trasforma automaticamente i dati della prenotazione in lettere di conferma dell'alloggio e di invito in PDF per gli ospiti che hanno bisogno di un visto."),
  ("I miei dati sono al sicuro?", "I dati vengono trasmessi tramite connessioni crittografate e i dati di ogni hotel sono isolati da quelli delle altre strutture con regole di accesso a livello di riga. I dati degli ospiti possono essere cancellati su richiesta."),
  ("Quanto tempo richiede la configurazione?", "Il tuo account è pronto in pochi minuti. La maggior parte degli hotel collega i canali in giornata: aggiungi tipologie di camera e camere, autorizza la connessione nell’extranet di ogni OTA e abbina le camere. Il piano Growth include una chiamata di onboarding personalizzata."),

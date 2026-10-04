@@ -126,7 +126,7 @@ Google Hotels Senkron
 Misafir güvenli bağlantıdan kimlik bilgilerini, refakatçilerini ve imzasını telefonundan gönderir.
 
 - Uygulama indirmeden, tarayıcıda
-- Refakatçi misafirler tek formda
+- Belge tarama, görüntü saklanmaz
 - Dijital imza ve açık rıza Online check-in
 Online check-in Oda 202
 Ad soyad Keiko Sato
@@ -439,7 +439,7 @@ URL: https://hostliopro.com/tr/online-check-in/
 
 ## Online check‑in ve dijital imza
 
-Misafir, varıştan önce telefonundan kimlik bilgilerini, refakatçilerini ve imzasını gönderir. Resepsiyonda anahtar teslimi birkaç dakikaya iner.
+Misafir, varıştan önce kimliğini telefonuyla tarar, refakatçilerini ekler ve imzalar. Belge görüntüsü saklanmaz. Resepsiyonda anahtar teslimi birkaç dakikaya iner.
 
 Pro ile 7 gün ücretsiz dene
 
@@ -449,16 +449,21 @@ Ad soyad Keiko Sato
 
 Uyruk Japonya
 
+Belge Pasaport tarandı, görüntü saklanmadı
+
 Refakatçi 1 misafir eklendi
 
 İmza Dijital imza alındı
 
-Online check-in nasıl çalışır? Hostlio Pro, rezervasyon sahibine kişiye özel, süreli ve güvenli bir bağlantı gönderir. Misafir bu bağlantıdan kimlik bilgilerini girer, kimlik fotoğrafını ekler, varsa refakatçileri ekler ve formu dijital olarak imzalar. Bilgiler doğrudan rezervasyona kaydedilir.
+Online check-in nasıl çalışır? Hostlio Pro, rezervasyon sahibine kişiye özel, süreli ve güvenli bir bağlantı gönderir. Misafir bu bağlantıdan pasaportunun ya da kimlik kartının makine okunabilir alanını (MRZ) telefon kamerasıyla tarar; okuma misafirin kendi tarayıcısında yapılır ve bilgiler otomatik dolar. Ardından varsa refakatçileri ekler ve formu dijital olarak imzalar. Rezervasyona yalnızca okunan bilgiler ve imza kaydedilir; belgenin görüntüsü gönderilmez, saklanmaz.
 
 ## Online check-in özellikleri
 
 ## Güvenli bağlantı
 Her rezervasyona özel, token tabanlı bağlantı. Bağlantı yalnızca o rezervasyonun formunu açar.
+
+## KVKK uyumlu belge tarama
+Pasaportun veya kimlik kartının makine okunabilir alanı misafirin kendi cihazında okunur. Yalnızca ad soyad, belge numarası (T.C. kimlik kartlarında T.C. kimlik no), uyruk, doğum tarihi ve geçerlilik tarihi kaydedilir; kimliğin fotokopisi ya da fotoğrafı saklanmaz. Bu, konaklama işletmelerinin kimlik fotokopisi saklamamasını öngören KVKK İlke Kararı 2025/2120 ile uyumludur. Makine okunabilir alanı olmayan belgeler elle girilir.
 
 ## Refakatçi misafirler
 Aynı odada kalan tüm misafirler tek formda eklenir. Resepsiyonda tek tek bilgi yazmaya gerek kalmaz.
@@ -479,8 +484,8 @@ Toplanan misafir bilgileri, yasal konaklama bildirimlerinizde kullanabileceğini
 Rezervasyon onayından sonra gelen kişisel bağlantıyı açar (otomatik e-postayla gönderilir ya da otel paylaşır).
 
 -
-## Bilgileri doldurur
-Kimlik bilgilerini ve fotoğrafını ekler, refakatçileri girer.
+## Belgesini tarar
+Pasaportunu ya da kimliğini telefonuyla tarar; bilgiler otomatik dolar, görüntü saklanmaz. Ardından refakatçileri girer.
 
 -
 ## İmzalar
@@ -493,7 +498,10 @@ Q: Misafirin uygulama indirmesi gerekiyor mu?
 A: Hayır. Check-in formu tarayıcıda açılır; herhangi bir uygulama indirmek gerekmez.
 
 Q: Misafir bağlantıyı doldurmazsa ne olur?
-A: Klasik check-in'e devam edebilirsiniz. Resepsiyonda bilgileri Hostlio Pro mobil uygulamasından da girebilirsiniz.
+A: Klasik check-in'e devam edebilirsiniz. Resepsiyonda misafirin belgesini Hostlio Pro mobil uygulamasıyla da tarayabilirsiniz; okuma cihazda yapılır, görüntü saklanmaz.
+
+Q: Kimlik fotoğrafı saklanıyor mu?
+A: Hayır. Belgenin makine okunabilir alanı (MRZ) misafirin telefonunda ya da Hostlio Pro mobil uygulamasıyla otelin cihazında okunur; yalnızca okunan bilgiler ve imza kaydedilir. MRZ'li pasaport ve kimlik kartları taranabilir; diğer belgeler elle girilir.
 
 ---
 # Otel Programı Özellikleri: AI, Kanal Yönetimi | Hostlio Pro
@@ -517,7 +525,7 @@ Kanal yöneticisi
 Sürükle-bırak rezervasyon takvimi. Oda değişikliği, konaklama uzatma ve blokaj tek hareketle.
 
 ## Online check-in
-Güvenli bağlantı, refakatçi misafirler, kimlik fotoğrafı ve dijital imza.
+Güvenli bağlantı, refakatçi misafirler, belge tarama (görüntü saklanmaz) ve dijital imza.
 Online check-in
 
 ## Otomatik PDF vize formları
@@ -684,7 +692,7 @@ Hostlio Pro hangi otel tiplerine uygun? Butik oteller, şehir otelleri, pansiyon
 
 Mobil uygulama var mı? Evet. Pro ve Growth planlarında iOS ve Android uygulaması bulunur. Uygulama internet bağlantısı olmadan da çalışır ve bağlantı geldiğinde verileri senkronize eder.
 
-Online check-in nasıl çalışıyor? Misafire kişiye özel güvenli bir bağlantı gönderilir. Misafir kimlik bilgilerini, refakatçilerini ve dijital imzasını varıştan önce telefonundan gönderir. Pro ve Growth planlarında vardır.
+Online check-in nasıl çalışıyor? Misafire kişiye özel güvenli bir bağlantı gönderilir. Misafir kimliğini telefonuyla tarar (görüntü saklanmaz), refakatçilerini ve dijital imzasını varıştan önce gönderir. Pro ve Growth planlarında vardır.
 
 PDF vize formu özelliği ne işe yarar? Vizeye ihtiyaç duyan misafirler için otel konaklama ve davet belgelerini rezervasyon bilgilerinden otomatik olarak PDF'e dönüştürür.
 
@@ -719,7 +727,7 @@ Q: Mobil uygulama var mı?
 A: Evet. Pro ve Growth planlarında iOS ve Android uygulaması bulunur. Uygulama internet bağlantısı olmadan da çalışır ve bağlantı geldiğinde verileri senkronize eder.
 
 Q: Online check-in nasıl çalışıyor?
-A: Misafire kişiye özel güvenli bir bağlantı gönderilir. Misafir kimlik bilgilerini, refakatçilerini ve dijital imzasını varıştan önce telefonundan gönderir. Pro ve Growth planlarında vardır.
+A: Misafire kişiye özel güvenli bir bağlantı gönderilir. Misafir kimliğini telefonuyla tarar (görüntü saklanmaz), refakatçilerini ve dijital imzasını varıştan önce gönderir. Pro ve Growth planlarında vardır.
 
 Q: PDF vize formu özelliği ne işe yarar?
 A: Vizeye ihtiyaç duyan misafirler için otel konaklama ve davet belgelerini rezervasyon bilgilerinden otomatik olarak PDF'e dönüştürür.
@@ -934,7 +942,7 @@ Geç check-in, otopark, kahvaltı soruları gece yarısı gelir. Lio bu sorular�
 Booking.com ve Airbnb'de aynı oda satılınca çift rezervasyon olur. Kanal yöneticisi müsaitliği anında eşitler.
 
 ## Kimlik ve kayıt
-Misafir bilgilerini resepsiyonda tek tek yazmak zaman alır. Online check-in bilgileri varıştan önce toplar.
+Misafir bilgilerini resepsiyonda tek tek yazmak zaman alır. Online check-in'de misafir belgesini varıştan önce telefonuyla tarar; bilgiler otomatik dolar, görüntü saklanmaz.
 
 ## Sınırlı bütçe
 Komisyonlu yazılımlar doluluk arttıkça pahalanır. Hostlio Pro sabit aylık ücretle çalışır.
@@ -1219,7 +1227,7 @@ A: Yalnızca otelin girdiği bilgilerle çalışan ve emin olmadığında person
 URL: https://hostliopro.com/tr/gizlilik-politikasi/
 
 ## Gizlilik Politikası
-Son güncelleme: 3 Ekim 2026 , Loti Members LLC, 2108 N ST STE N, Sacramento, CA 95816. Bu metin İngilizce aslının çevirisidir; farklılık halinde İngilizce metin esas alınır.
+Son güncelleme: 4 Ekim 2026 , Loti Members LLC, 2108 N ST STE N, Sacramento, CA 95816. Bu metin İngilizce aslının çevirisidir; farklılık halinde İngilizce metin esas alınır.
 
 Bu Gizlilik Politikası, Loti Members LLC (“biz”) tarafından işletilen Hostlio Pro’nun; hostliopro.com’u ziyaret ettiğinizde, kaydolduğunuzda ya da Hostlio Pro paneli, mobil uygulaması ve misafire dönük özelliklerini kullandığınızda kişisel verileri nasıl topladığını, kullandığını ve paylaştığını açıklar.
 
@@ -1232,7 +1240,7 @@ Müşterilerimize (otel sahipleri ve çalışanları) ve site ziyaretçilerine a
 - Fatura verileri: plan, fatura dönemi ve ödeme durumu. Kart bilgileri bizde değil, Stripe’ta toplanır ve saklanır
 - Otel verileri: oda tipleri, odalar, fiyatlar, müsaitlik, rezervasyonlar ve ayarlar
 - Oteller adına işlenen misafir verileri: misafir adı, iletişim bilgileri, rezervasyon bilgileri ve WhatsApp ile OTA gelen kutularına gelen mesajların içeriği
-- Online check-in verileri: otel online check-in kullanıyorsa kimlik belgesi bilgileri ve görseli, doğum tarihi, uyruk, refakatçiler ve dijital imza. Bu verileri hassas veri olarak ele alırız
+- Online check-in verileri: otel online check-in kullanıyorsa kimlik belgesi bilgileri (ad soyad, belge numarası ya da T.C. kimlik kartlarında T.C. kimlik no, uyruk, doğum tarihi ve geçerlilik tarihi), refakatçiler ve dijital imza. Belgenin makine okunabilir alanı misafirin ya da otel personelinin kendi cihazında okunur; kimlik belgesi görüntüsü toplamaz ve saklamayız. Bu verileri hassas veri olarak ele alırız
 - Kayıt ve güvenlik verileri: IP adresi, e-postanın özetlenmiş (hash) hali ve kayıt denemelerinin sonucu; dolandırıcılık ve kötüye kullanımı önlemek için
 - Pazarlama kaynağı: yalnızca sitemize kampanya parametreleri (UTM parametreleri veya reklam tıklama kimliği) içeren bir bağlantıyla geldiyseniz bu parametreler, giriş sayfası ve ilk ziyaretinizin zamanı; tarayıcınızda saklanır ve bize yalnızca kayıt veya iletişim formuyla birlikte iletilir
 - Kullanım verileri: panel ve uygulamanın nasıl kullanıldığı, teknik kayıtlar ve mobil uygulamayı kullandığınızda cihazınızın bildirim jetonu (push token)
@@ -1264,6 +1272,7 @@ Channex.io Ltd United Kingdom Müsaitlik, fiyat, rezervasyon ve OTA mesaj senkro
 Make (Celonis) EU İletişim formu ve iç iş akışı otomasyonu
 Google LLC / Google Ireland Ltd. (Firebase Cloud Messaging) USA / global Hostlio Pro mobil uygulamasına (iOS ve Android) anlık bildirim gönderimi (cihaz bildirim jetonu, uygulama örneği kimlikleri, yeni mesaj veya rezervasyon uyarısı gibi bildirim içeriği)
 Apple Inc. (Apple Push Notification service) USA iPhone ve iPad cihazlara anlık bildirimin iletilmesi (Firebase Cloud Messaging üzerinden aktarılan cihaz jetonu ve bildirim içeriği)
+Google LLC (ML Kit — on-device text recognition) On device (metrics: USA) Mobil uygulamada kimlik belgesinin makine okunabilir alanının otel personelinin cihazında okunması; görüntü veya metin cihazdan çıkmaz, Google yalnızca anonim API kullanım ve performans ölçümlerini alır
 Twilio Inc.* USA Oteller için WhatsApp numarası ve mesaj faturalandırması
 Twilio SendGrid* USA İşlemsel e-posta
 
@@ -1318,7 +1327,7 @@ Değişiklikleri bu sayfada yayınlar ve yukarıdaki tarihi güncelleriz. Öneml
 URL: https://hostliopro.com/tr/kullanim-sartlari/
 
 ## Kullanım Şartları
-Son güncelleme: 3 Ekim 2026 , Loti Members LLC, 2108 N ST STE N, Sacramento, CA 95816. Bu metin İngilizce aslının çevirisidir; farklılık halinde İngilizce metin esas alınır.
+Son güncelleme: 4 Ekim 2026 , Loti Members LLC, 2108 N ST STE N, Sacramento, CA 95816. Bu metin İngilizce aslının çevirisidir; farklılık halinde İngilizce metin esas alınır.
 
 Bu Kullanım Şartları (“Şartlar”), Loti Members LLC (“biz”) tarafından işletilen Hostlio Pro’yu kullanımınızı düzenler. Hesap oluşturarak veya hizmeti kullanarak bu Şartları kabul edersiniz. Hostlio Pro’yu bir işletme adına kullanıyorsanız Şartları o işletme adına kabul etmiş olursunuz.
 
@@ -1400,7 +1409,7 @@ Silme talebi gönder
 URL: https://hostliopro.com/tr/guvenlik-ve-veri/
 
 ## Güvenlik ve veri koruma
-Oteller rezervasyonlarını, misafir mesajlarını ve kimlik belgelerini bize emanet ediyor. Bu sayfa onları nasıl koruduğumuzu, kimlerin işlediğini ve Veri İşleme Sözleşmemizi (DPA) nasıl imzalayabileceğinizi anlatır.
+Oteller rezervasyonlarını, misafir mesajlarını ve kimlik bilgilerini bize emanet ediyor. Bu sayfa onları nasıl koruduğumuzu, kimlerin işlediğini ve Veri İşleme Sözleşmemizi (DPA) nasıl imzalayabileceğinizi anlatır.
 
 ## Her yerde şifreli
 Aktarımda TLS; veritabanı ve dosya depolamada şifreleme.
@@ -1424,7 +1433,7 @@ Kart bilgileri Stripe’a girilir ve sunucularımıza hiç ulaşmaz. Biz yalnız
 Lio, misafir mesajının içeriğini yalnızca cevap taslağı hazırlamak için yapay zekâ sağlayıcımıza gönderir. Sağlayıcı, ticari şartları gereği bu içeriği modellerini eğitmekte kullanmaz. Lio’nun hangi konulara otomatik cevap vereceğine ve hangilerinin onay gerektireceğine siz karar verirsiniz.
 
 ## Online check-in verileri
-Kimlik belgesi görselleri ve dijital imzalar hassas veri olarak ele alınır, yalnız otelinizin personeline görünür ve en geç hesabınızla birlikte silinir.
+Kimlik belgesi bilgileri ve dijital imzalar hassas veri olarak ele alınır, yalnız otelinizin personeline görünür ve en geç hesabınızla birlikte silinir. Kimlik ve pasaport görüntüsü saklamayız: makine okunabilir alan misafirin ya da personelinizin kendi cihazında okunur, yalnızca okunan alanlar gönderilir (KVKK İlke Kararı 2025/2120).
 
 ## Saklama
 Misafir mesaj içerikleri belirlediğiniz sürenin sonunda anonimleştirilir (varsayılan 60 gün); misafir iletişim bilgileri ayrılıştan sonra 90 gün saklanır; hesap verileri doğrulanmış silme talebinden sonra 30 gün içinde silinir.
@@ -1443,6 +1452,7 @@ Channex.io Ltd United Kingdom Müsaitlik, fiyat, rezervasyon ve OTA mesaj senkro
 Make (Celonis) EU İletişim formu ve iç iş akışı otomasyonu
 Google LLC / Google Ireland Ltd. (Firebase Cloud Messaging) USA / global Hostlio Pro mobil uygulamasına (iOS ve Android) anlık bildirim gönderimi (cihaz bildirim jetonu, uygulama örneği kimlikleri, yeni mesaj veya rezervasyon uyarısı gibi bildirim içeriği)
 Apple Inc. (Apple Push Notification service) USA iPhone ve iPad cihazlara anlık bildirimin iletilmesi (Firebase Cloud Messaging üzerinden aktarılan cihaz jetonu ve bildirim içeriği)
+Google LLC (ML Kit — on-device text recognition) On device (metrics: USA) Mobil uygulamada kimlik belgesinin makine okunabilir alanının otel personelinin cihazında okunması; görüntü veya metin cihazdan çıkmaz, Google yalnızca anonim API kullanım ve performans ölçümlerini alır
 Twilio Inc.* USA Oteller için WhatsApp numarası ve mesaj faturalandırması
 Twilio SendGrid* USA İşlemsel e-posta
 
@@ -1600,7 +1610,7 @@ Google Hotels In sync
 Guests send ID details, companions and a signature from their phone through a secure link.
 
 - In the browser, no app download
-- Companions in a single form
+- ID scan, no images stored
 - Digital signature and consent Online check-in
 Online check-in Room 202
 Full name Keiko Sato
@@ -1910,7 +1920,7 @@ URL: https://hostliopro.com/en/online-check-in/
 
 ## Online check‑in with digital signature
 
-Before arrival, guests send their ID details, accompanying guests and signature from their phone. Handing over the key takes minutes.
+Before arrival, guests scan their ID with their phone, add accompanying guests and sign. No document images are stored. Handing over the key takes minutes.
 
 Try Pro free for 7 days
 
@@ -1920,16 +1930,21 @@ Full name Keiko Sato
 
 Nationality Japan
 
+Document Passport scanned, no image stored
+
 Accompanying guests 1 guest added
 
 Signature Digital signature received
 
-How does online check-in work? Hostlio Pro sends the booker a personal, time-limited, secure link. From that link the guest enters ID details, adds an ID photo and any accompanying guests, and signs the form digitally. Everything is saved straight to the reservation.
+How does online check-in work? Hostlio Pro sends the booker a personal, time-limited, secure link. From that link the guest scans the machine-readable zone (MRZ) of their passport or ID card with the phone camera. The reading happens in the guest's own browser and the details fill in automatically. The guest then adds any accompanying guests and signs the form digitally. Only the extracted details and the signature are saved to the reservation; no image of the document is uploaded or stored.
 
 ## Online check-in features
 
 ## Secure link
 A token-based link unique to each reservation. It only opens that reservation's form.
+
+## Document scan, no images stored
+The machine-readable zone of the passport or ID card is read on the guest's own device. Only the name, document number (the T.C. identity number on Turkish ID cards), nationality, date of birth and expiry date are saved, never a picture of the document. This is in line with KVKK principle decision 2025/2120, under which accommodation businesses in Türkiye must not keep copies of ID documents. Documents without a machine-readable zone are entered by hand.
 
 ## Accompanying guests
 Everyone staying in the room is added in one form, so nobody has to type details at the desk.
@@ -1950,8 +1965,8 @@ Collected guest details can be exported in a format you can use for local guest 
 Open the personal link received after the booking is confirmed (sent by email automatically, or shared by the hotel).
 
 -
-## Fill in details
-Add ID details and a photo, and list accompanying guests.
+## Scan the document
+Scan the passport or ID card with the phone: the details fill in automatically and no image is stored. Then list accompanying guests.
 
 -
 ## Sign
@@ -1964,7 +1979,10 @@ Q: Does the guest need to download an app?
 A: No. The check-in form opens in the browser; no app download is required.
 
 Q: What if a guest doesn't complete the link?
-A: Check them in the usual way. Staff can also enter details at the desk using the Hostlio Pro mobile app.
+A: Check them in the usual way. Staff can also scan the guest's document at the desk with the Hostlio Pro mobile app; it is read on the device and no image is stored.
+
+Q: Are photos of ID documents stored?
+A: No. The document's machine-readable zone (MRZ) is read on the guest's phone, or on the hotel's device with the Hostlio Pro mobile app, and only the extracted details and the signature are saved. Passports and ID cards with an MRZ can be scanned; other documents are entered by hand.
 
 ---
 # Hotel Management Software Features | Hostlio Pro
@@ -1988,7 +2006,7 @@ Channel manager
 Drag-and-drop reservation calendar. Room moves, extensions and blocks in one gesture.
 
 ## Online check-in
-Secure link, accompanying guests, ID photo and digital signature.
+Secure link, accompanying guests, document scan (no images stored) and digital signature.
 Online check-in
 
 ## Automatic PDF visa forms
@@ -2150,7 +2168,7 @@ What types of hotels is Hostlio Pro for? Independent properties with 1 to 150 ro
 
 Is there a mobile app? Yes. The Pro and Growth plans include an iOS and Android app. It works without an internet connection and syncs data when you're back online.
 
-How does online check-in work? Guests receive a personal secure link and send ID details, accompanying guests and a digital signature from their phone before arrival. Available on Pro and Growth.
+How does online check-in work? Guests receive a personal secure link, scan their ID document on their phone (no image is stored) and send accompanying guests and a digital signature before arrival. Available on Pro and Growth.
 
 What is the PDF visa form feature for? It automatically turns reservation data into hotel accommodation and invitation letters as PDFs for guests who need a visa.
 
@@ -2182,7 +2200,7 @@ Q: Is there a mobile app?
 A: Yes. The Pro and Growth plans include an iOS and Android app. It works without an internet connection and syncs data when you're back online.
 
 Q: How does online check-in work?
-A: Guests receive a personal secure link and send ID details, accompanying guests and a digital signature from their phone before arrival. Available on Pro and Growth.
+A: Guests receive a personal secure link, scan their ID document on their phone (no image is stored) and send accompanying guests and a digital signature before arrival. Available on Pro and Growth.
 
 Q: What is the PDF visa form feature for?
 A: It automatically turns reservation data into hotel accommodation and invitation letters as PDFs for guests who need a visa.
@@ -2413,7 +2431,7 @@ Late check-in, parking and breakfast questions arrive at midnight. Lio answers i
 Selling the same room on Booking.com and Airbnb causes double bookings. The channel manager syncs availability instantly.
 
 ## ID and registration
-Typing guest details at the desk takes time. Online check-in collects them before arrival.
+Typing guest details at the desk takes time. With online check-in, guests scan their ID on their phone before arrival; the details fill in automatically and no image is stored.
 
 ## Tight budget
 Commission-based software gets pricier as occupancy grows. Hostlio Pro is a flat monthly fee.
@@ -2698,7 +2716,7 @@ A: The risk is low when the assistant only uses information the hotel provides a
 URL: https://hostliopro.com/en/privacy/
 
 ## Privacy Policy
-Last updated: October 3, 2026 , Loti Members LLC, 2108 N ST STE N, Sacramento, CA 95816
+Last updated: October 4, 2026 , Loti Members LLC, 2108 N ST STE N, Sacramento, CA 95816
 
 This Privacy Policy explains how Hostlio Pro, operated by Loti Members LLC (“we”, “us”), collects, uses and shares personal data when you visit hostliopro.com, sign up, or use the Hostlio Pro dashboard, mobile app and guest-facing features.
 
@@ -2711,7 +2729,7 @@ For data about our customers (hotel owners and staff) and website visitors, we a
 - Billing data: plan, billing period and payment status. Card details are collected and stored by Stripe, never by us
 - Hotel data: room types, rooms, rates, availability, reservations and settings
 - Guest data processed for hotels: guest names, contact details, booking details and the content of guest messages received on WhatsApp and OTA inboxes
-- Online check-in data: identity document details and images, date of birth, nationality, companions and a digital signature, when the hotel uses online check-in. We treat this as sensitive data
+- Online check-in data: identity document details (name, document number or, for Turkish ID cards, the T.C. identity number, nationality, date of birth and expiry date), companions and a digital signature, when the hotel uses online check-in. The document’s machine-readable zone is read on the guest’s or the hotel staff’s own device; we do not collect or store images of identity documents. We treat this data as sensitive
 - Signup and security data: IP address, a hashed email and the outcome of signup attempts, used to prevent fraud and abuse
 - Marketing source: only if you arrive through a link with campaign parameters (UTM parameters or an ad click ID): those parameters, the landing page and the time of your first visit, stored in your browser and sent to us only with your signup or contact form
 - Usage data: how the dashboard and app are used, technical logs and, when you use the mobile app, your device’s push notification token
@@ -2743,6 +2761,7 @@ Channex.io Ltd United Kingdom Availability, rate, booking and OTA message sync
 Make (Celonis) EU Contact form and internal workflow automation
 Google LLC / Google Ireland Ltd. (Firebase Cloud Messaging) USA / global Push notifications to the Hostlio Pro mobile app on iOS and Android (device push token, app instance identifiers, notification content such as new message or reservation alerts)
 Apple Inc. (Apple Push Notification service) USA Delivery of push notifications to iPhone and iPad devices (device token and notification content, passed on by Firebase Cloud Messaging)
+Google LLC (ML Kit — on-device text recognition) On device (metrics: USA) Reading the ID document’s machine-readable zone on the hotel staff’s device in the mobile app; no images or text leave the device; Google receives only anonymous API usage and performance metrics
 Twilio Inc.* USA WhatsApp numbers and messaging billing for hotels
 Twilio SendGrid* USA Transactional email
 
@@ -2797,7 +2816,7 @@ We will post changes on this page and update the date above. For material change
 URL: https://hostliopro.com/en/terms/
 
 ## Terms of Service
-Last updated: October 3, 2026 , Loti Members LLC, 2108 N ST STE N, Sacramento, CA 95816
+Last updated: October 4, 2026 , Loti Members LLC, 2108 N ST STE N, Sacramento, CA 95816
 
 These Terms of Service (“Terms”) govern your use of Hostlio Pro, operated by Loti Members LLC (“we”, “us”). By creating an account or using the service you agree to these Terms. If you use Hostlio Pro for a business, you accept them on its behalf.
 
@@ -2879,7 +2898,7 @@ Send deletion request
 URL: https://hostliopro.com/en/security/
 
 ## Security and data protection
-Hotels trust us with reservations, guest messages and identity documents. This page explains how we protect them, who processes them, and how you can sign our Data Processing Addendum.
+Hotels trust us with reservations, guest messages and identity document details. This page explains how we protect them, who processes them, and how you can sign our Data Processing Addendum.
 
 ## Encrypted everywhere
 TLS in transit and encryption at rest for the database and file storage.
@@ -2903,7 +2922,7 @@ Card details are entered into Stripe and never reach our servers. We only see th
 Lio sends guest message content to our AI provider only to draft a reply. Under its commercial terms, the provider does not use this content to train its models. You decide which topics Lio answers automatically and which need your approval.
 
 ## Online check-in data
-Identity document images and digital signatures are treated as sensitive data, visible only to your hotel’s staff, and deleted with your account at the latest.
+Identity document details and digital signatures are treated as sensitive data, visible only to your hotel’s staff, and deleted with your account at the latest. We do not store images of ID documents or passports: the machine-readable zone is read on the guest’s or your staff’s own device and only the extracted fields are sent.
 
 ## Retention
 Guest message content is anonymised after the period you set (default 60 days); guest contact details are kept 90 days after departure; account data is deleted within 30 days of a verified deletion request.
@@ -2922,6 +2941,7 @@ Channex.io Ltd United Kingdom Availability, rate, booking and OTA message sync
 Make (Celonis) EU Contact form and internal workflow automation
 Google LLC / Google Ireland Ltd. (Firebase Cloud Messaging) USA / global Push notifications to the Hostlio Pro mobile app on iOS and Android (device push token, app instance identifiers, notification content such as new message or reservation alerts)
 Apple Inc. (Apple Push Notification service) USA Delivery of push notifications to iPhone and iPad devices (device token and notification content, passed on by Firebase Cloud Messaging)
+Google LLC (ML Kit — on-device text recognition) On device (metrics: USA) Reading the ID document’s machine-readable zone on the hotel staff’s device in the mobile app; no images or text leave the device; Google receives only anonymous API usage and performance metrics
 Twilio Inc.* USA WhatsApp numbers and messaging billing for hotels
 Twilio SendGrid* USA Transactional email
 
@@ -3275,7 +3295,7 @@ Done right, WhatsApp guest communication is one of the highest-ROI changes an in
 URL: https://hostliopro.com/en/dpa/
 
 ## Data Processing Addendum
-Version 1.0 · Effective October 3, 2026 · Loti Members LLC, 2108 N ST STE N, Sacramento, CA 95816, USA
+Version 1.0 · Effective October 4, 2026 · Loti Members LLC, 2108 N ST STE N, Sacramento, CA 95816, USA
 
 Print or save as PDF
 
@@ -3323,10 +3343,10 @@ Each party’s liability under this DPA is subject to the limitations in the Ter
 ## Annex 1 — Details of processing
 
 - Subject matter and duration: providing Hostlio Pro for the term of your subscription and until deletion under section 9
-- Nature and purpose: hosting and storage; syncing availability, rates and reservations with sales channels; sending and receiving guest messages on WhatsApp and OTA inboxes; drafting replies with AI; online check-in; push notifications to your staff’s Hostlio Pro mobile app (iOS and Android); support
+- Nature and purpose: hosting and storage; syncing availability, rates and reservations with sales channels; sending and receiving guest messages on WhatsApp and OTA inboxes; drafting replies with AI; online check-in, including reading the identity document’s machine-readable zone on the guest’s or your staff’s device; push notifications to your staff’s Hostlio Pro mobile app (iOS and Android); support
 - Data subjects: your guests and their companions; your staff and users of the dashboard
-- Categories of data: names, contact details (phone, email), reservation details (dates, room, price, channel), message content, preferences and requests; for online check-in, identity document details and images, date of birth, nationality and digital signatures; for users of the mobile app, device push notification tokens and app instance identifiers
-- Special categories: none intended. Identity documents and signatures are handled as sensitive data. Please do not ask guests to send health or other special-category data through Hostlio Pro
+- Categories of data: names, contact details (phone, email), reservation details (dates, room, price, channel), message content, preferences and requests; for online check-in, identity document details (name, document number or, for Turkish ID cards, the T.C. identity number, nationality, date of birth and expiry date) and digital signatures, with no images of identity documents collected or stored; for users of the mobile app, device push notification tokens and app instance identifiers
+- Special categories: none intended. Identity document details and signatures are handled as sensitive data. Please do not ask guests to send health or other special-category data through Hostlio Pro
 - Frequency: continuous
 
 ## Annex 2 — Technical and organisational measures
@@ -3354,6 +3374,7 @@ Channex.io Ltd United Kingdom Availability, rate, booking and OTA message sync
 Make (Celonis) EU Contact form and internal workflow automation
 Google LLC / Google Ireland Ltd. (Firebase Cloud Messaging) USA / global Push notifications to the Hostlio Pro mobile app on iOS and Android (device push token, app instance identifiers, notification content such as new message or reservation alerts)
 Apple Inc. (Apple Push Notification service) USA Delivery of push notifications to iPhone and iPad devices (device token and notification content, passed on by Firebase Cloud Messaging)
+Google LLC (ML Kit — on-device text recognition) On device (metrics: USA) Reading the ID document’s machine-readable zone on the hotel staff’s device in the mobile app; no images or text leave the device; Google receives only anonymous API usage and performance metrics
 
 Planned: Twilio Inc. (WhatsApp numbers and messaging billing) and Twilio SendGrid (transactional email). They will be added with notice under section 5 before they process Customer Personal Data.
 
@@ -3485,7 +3506,7 @@ Google Hotels Sincronizado
 Los huéspedes envían los datos de su documento, sus acompañantes y su firma desde el móvil mediante un enlace seguro.
 
 - En el navegador, sin descargar ninguna app
-- Acompañantes en un único formulario
+- Escaneo del documento, sin guardar imágenes
 - Firma digital y consentimiento Check-in online
 Check-in online Habitación 202
 Nombre completo Keiko Sato
@@ -3795,7 +3816,7 @@ URL: https://hostliopro.com/es/check-in-online/
 
 ## Check‑in online con firma digital
 
-Antes de llegar, los huéspedes envían desde el móvil los datos de su documento de identidad, los acompañantes y su firma. Entregar la llave lleva solo unos minutos.
+Antes de llegar, los huéspedes escanean su documento de identidad con el móvil, añaden a sus acompañantes y firman. No se guarda ninguna imagen del documento. Entregar la llave lleva solo unos minutos.
 
 Prueba Pro gratis durante 7 días
 
@@ -3805,16 +3826,21 @@ Nombre completo Keiko Sato
 
 Nacionalidad Japón
 
+Documento Pasaporte escaneado, sin imagen guardada
+
 Acompañantes 1 huésped añadido
 
 Firma Firma digital recibida
 
-¿Cómo funciona el check-in online? Hostlio Pro envía a quien hizo la reserva un enlace personal, seguro y con caducidad. Desde ese enlace, el huésped introduce los datos de su documento, añade una foto del documento y a sus acompañantes, y firma el formulario digitalmente. Todo se guarda directamente en la reserva.
+¿Cómo funciona el check-in online? Hostlio Pro envía a quien hizo la reserva un enlace personal, seguro y con caducidad. Desde ese enlace, el huésped escanea con la cámara del móvil la zona de lectura mecánica (MRZ) de su pasaporte o documento de identidad. La lectura se hace en su propio navegador y los datos se rellenan solos. Después añade a sus acompañantes y firma el formulario digitalmente. En la reserva solo se guardan los datos extraídos y la firma; ninguna imagen del documento se sube ni se almacena.
 
 ## Funcionalidades del check-in online
 
 ## Enlace seguro
 Un enlace basado en token, único para cada reserva. Solo abre el formulario de esa reserva.
+
+## Escaneo del documento sin guardar imágenes
+La zona de lectura mecánica del pasaporte o del documento de identidad se lee en el propio dispositivo del huésped. Solo se guardan el nombre, el número de documento, la nacionalidad, la fecha de nacimiento y la fecha de caducidad, nunca una foto del documento. Los documentos sin zona de lectura mecánica se introducen a mano.
 
 ## Acompañantes
 Todas las personas que se alojan en la habitación se añaden en un solo formulario, así nadie tiene que escribir datos en recepción.
@@ -3835,8 +3861,8 @@ Los datos recogidos de los huéspedes pueden exportarse en un formato útil para
 Toca el enlace personal que recibes una vez confirmada la reserva.
 
 -
-## Completar los datos
-Añade los datos y una foto del documento, e indica los acompañantes.
+## Escanear el documento
+Escanea el pasaporte o el documento de identidad con el móvil: los datos se rellenan solos y no se guarda ninguna imagen. Después indica los acompañantes.
 
 -
 ## Firmar
@@ -3849,7 +3875,10 @@ Q: ¿El huésped tiene que descargar una app?
 A: No. El formulario de check-in se abre en el navegador; no hace falta descargar ninguna app.
 
 Q: ¿Y si un huésped no completa el enlace?
-A: Haz el check-in de la forma habitual. El personal también puede introducir los datos en recepción con la app móvil de Hostlio Pro.
+A: Haz el check-in de la forma habitual. El personal también puede escanear el documento en recepción con la app móvil de Hostlio Pro; se lee en el dispositivo y no se guarda ninguna imagen.
+
+Q: ¿Se guardan fotos de los documentos de identidad?
+A: No. La zona de lectura mecánica (MRZ) del documento se lee en el móvil del huésped, o en el dispositivo del hotel con la app móvil de Hostlio Pro, y solo se guardan los datos extraídos y la firma. Se pueden escanear pasaportes y documentos de identidad con MRZ; los demás se introducen a mano.
 
 ---
 # Funciones del software de gestión hotelera | Hostlio Pro
@@ -3873,7 +3902,7 @@ Channel manager
 Calendario de reservas con arrastrar y soltar. Cambios de habitación, ampliaciones de estancia y bloqueos con un solo gesto.
 
 ## Check-in online
-Enlace seguro, acompañantes, foto del documento y firma digital.
+Enlace seguro, acompañantes, escaneo del documento (sin guardar imágenes) y firma digital.
 Check-in online
 
 ## Formularios de visado en PDF automáticos
@@ -4035,7 +4064,7 @@ Las preguntas más habituales sobre las funcionalidades, los precios y la config
 
 ¿Hay una app móvil? Sí. Los planes Pro y Growth incluyen una app para iOS y Android. Funciona sin conexión a internet y sincroniza los datos cuando vuelves a estar online.
 
-¿Cómo funciona el check-in online? Los huéspedes reciben un enlace personal y seguro, y antes de llegar envían desde el móvil los datos de su documento, los acompañantes y una firma digital. Disponible en Pro y Growth.
+¿Cómo funciona el check-in online? Los huéspedes reciben un enlace personal y seguro, escanean su documento con el móvil (no se guarda ninguna imagen) y, antes de llegar, envían sus acompañantes y una firma digital. Disponible en Pro y Growth.
 
 ¿Para qué sirve la función de formularios de visado en PDF? Convierte automáticamente los datos de la reserva en cartas de alojamiento e invitación del hotel en PDF para los huéspedes que necesitan visado.
 
@@ -4067,7 +4096,7 @@ Q: ¿Hay una app móvil?
 A: Sí. Los planes Pro y Growth incluyen una app para iOS y Android. Funciona sin conexión a internet y sincroniza los datos cuando vuelves a estar online.
 
 Q: ¿Cómo funciona el check-in online?
-A: Los huéspedes reciben un enlace personal y seguro, y antes de llegar envían desde el móvil los datos de su documento, los acompañantes y una firma digital. Disponible en Pro y Growth.
+A: Los huéspedes reciben un enlace personal y seguro, escanean su documento con el móvil (no se guarda ninguna imagen) y, antes de llegar, envían sus acompañantes y una firma digital. Disponible en Pro y Growth.
 
 Q: ¿Para qué sirve la función de formularios de visado en PDF?
 A: Convierte automáticamente los datos de la reserva en cartas de alojamiento e invitación del hotel en PDF para los huéspedes que necesitan visado.
@@ -4282,7 +4311,7 @@ Las preguntas sobre check-in tardío, aparcamiento y desayuno llegan a medianoch
 Vender la misma habitación en Booking.com y Airbnb provoca dobles reservas. El channel manager sincroniza la disponibilidad al instante.
 
 ## Documentos y registro
-Anotar los datos de los huéspedes en recepción lleva tiempo. El check-in online los recoge antes de la llegada.
+Anotar los datos de los huéspedes en recepción lleva tiempo. Con el check-in online, el huésped escanea su documento con el móvil antes de llegar: los datos se rellenan solos y no se guarda ninguna imagen.
 
 ## Presupuesto ajustado
 El software con comisiones se encarece a medida que sube la ocupación. Hostlio Pro tiene una cuota mensual fija.
@@ -4567,7 +4596,7 @@ A: El riesgo es bajo cuando el asistente solo usa la información que proporcion
 URL: https://hostliopro.com/es/privacidad/
 
 ## Política de privacidad
-Última actualización: 3 de octubre de 2026 , Loti Members LLC, 2108 N ST STE N, Sacramento, CA 95816. Este texto es una traducción del original en inglés; en caso de discrepancia, prevalecerá la versión en inglés .
+Última actualización: 4 de octubre de 2026 , Loti Members LLC, 2108 N ST STE N, Sacramento, CA 95816. Este texto es una traducción del original en inglés; en caso de discrepancia, prevalecerá la versión en inglés .
 
 Esta Política de privacidad explica cómo Hostlio Pro, operado por Loti Members LLC («nosotros»), recoge, usa y comparte datos personales cuando visitas hostliopro.com, te registras o usas el panel, la app móvil y las funciones para huéspedes de Hostlio Pro.
 
@@ -4580,7 +4609,7 @@ Para los datos de nuestros clientes (propietarios y personal de hoteles) y de lo
 - Datos de facturación: plan, periodo de facturación y estado del pago. Los datos de la tarjeta los recoge y guarda Stripe, nunca nosotros
 - Datos del hotel: tipos de habitación, habitaciones, tarifas, disponibilidad, reservas y ajustes
 - Datos de huéspedes tratados para los hoteles: nombre, datos de contacto, datos de la reserva y contenido de los mensajes recibidos por WhatsApp y en las bandejas de las OTAs
-- Datos del check-in online: datos e imágenes del documento de identidad, fecha de nacimiento, nacionalidad, acompañantes y firma digital, cuando el hotel usa el check-in online. Los tratamos como datos sensibles
+- Datos del check-in online: datos del documento de identidad (nombre, número de documento, nacionalidad, fecha de nacimiento y fecha de caducidad), acompañantes y firma digital, cuando el hotel usa el check-in online. La zona de lectura mecánica del documento se lee en el propio dispositivo del huésped o del personal del hotel; no recogemos ni guardamos imágenes de documentos de identidad. Los tratamos como datos sensibles
 - Datos de registro y seguridad: dirección IP, email cifrado (hash) y resultado de los intentos de registro, para prevenir fraudes y abusos
 - Origen de marketing: solo si llegas a través de un enlace con parámetros de campaña (parámetros UTM o un identificador de clic publicitario): esos parámetros, la página de entrada y la hora de tu primera visita, guardados en tu navegador y enviados a nosotros solo con el formulario de registro o de contacto
 - Datos de uso: cómo se usan el panel y la app, registros técnicos y, si usas la app móvil, el token de notificaciones push de tu dispositivo
@@ -4609,6 +4638,7 @@ Channex.io Ltd United Kingdom Sincronización de disponibilidad, tarifas, reserv
 Make (Celonis) EU Formulario de contacto y automatización interna
 Google LLC / Google Ireland Ltd. (Firebase Cloud Messaging) USA / global Notificaciones push a la app móvil de Hostlio Pro en iOS y Android (token push del dispositivo, identificadores de instancia de la app y contenido de la notificación, como avisos de nuevos mensajes o reservas)
 Apple Inc. (Apple Push Notification service) USA Delivery of push notifications to iPhone and iPad devices (device token and notification content, passed on by Firebase Cloud Messaging)
+Google LLC (ML Kit — on-device text recognition) On device (metrics: USA) Lectura de la zona de lectura mecánica del documento de identidad en el dispositivo del personal del hotel, en la app móvil; ninguna imagen ni texto sale del dispositivo y Google solo recibe métricas anónimas de uso y rendimiento de la API
 Twilio Inc.* USA Números de WhatsApp y facturación de mensajes para hoteles
 Twilio SendGrid* USA Correo transaccional
 
@@ -4657,7 +4687,7 @@ Publicaremos los cambios en esta página y actualizaremos la fecha. Los cambios 
 URL: https://hostliopro.com/es/terminos/
 
 ## Términos del servicio
-Última actualización: 3 de octubre de 2026 , Loti Members LLC, 2108 N ST STE N, Sacramento, CA 95816. Este texto es una traducción del original en inglés; en caso de discrepancia, prevalecerá la versión en inglés .
+Última actualización: 4 de octubre de 2026 , Loti Members LLC, 2108 N ST STE N, Sacramento, CA 95816. Este texto es una traducción del original en inglés; en caso de discrepancia, prevalecerá la versión en inglés .
 
 Estas Condiciones del servicio («Condiciones») regulan el uso de Hostlio Pro, operado por Loti Members LLC («nosotros»). Al crear una cuenta o usar el servicio aceptas estas Condiciones. Si usas Hostlio Pro para una empresa, las aceptas en su nombre.
 
@@ -4737,7 +4767,7 @@ Enviar solicitud de eliminación
 URL: https://hostliopro.com/es/seguridad/
 
 ## Seguridad y protección de datos
-Los hoteles nos confían reservas, mensajes de huéspedes y documentos de identidad. Aquí explicamos cómo los protegemos, quién los trata y cómo firmar nuestro Acuerdo de tratamiento de datos (DPA).
+Los hoteles nos confían reservas, mensajes de huéspedes y datos de documentos de identidad. Aquí explicamos cómo los protegemos, quién los trata y cómo firmar nuestro Acuerdo de tratamiento de datos (DPA).
 
 ## Cifrado en todo momento
 TLS en tránsito y cifrado en reposo de la base de datos y los archivos.
@@ -4761,7 +4791,7 @@ Los datos de la tarjeta se introducen en Stripe y nunca llegan a nuestros servid
 Lio envía el contenido del mensaje a nuestro proveedor de IA solo para redactar una respuesta. Según sus condiciones comerciales, el proveedor no lo usa para entrenar sus modelos. Tú decides qué temas responde Lio automáticamente y cuáles requieren tu aprobación.
 
 ## Datos del check-in online
-Las imágenes de documentos de identidad y las firmas digitales se tratan como datos sensibles, solo las ve el personal de tu hotel y, como tarde, se eliminan con tu cuenta.
+Los datos de documentos de identidad y las firmas digitales se tratan como datos sensibles, solo los ve el personal de tu hotel y, como tarde, se eliminan con tu cuenta. No guardamos imágenes de documentos ni pasaportes: la zona de lectura mecánica se lee en el dispositivo del huésped o de tu personal y solo se envían los datos extraídos.
 
 ## Conservación
 El contenido de los mensajes se anonimiza al final del plazo que fijes (por defecto 60 días); los datos de contacto de huéspedes se guardan 90 días tras la salida; los datos de la cuenta se eliminan en 30 días tras una solicitud verificada.
@@ -4780,6 +4810,7 @@ Channex.io Ltd United Kingdom Sincronización de disponibilidad, tarifas, reserv
 Make (Celonis) EU Formulario de contacto y automatización interna
 Google LLC / Google Ireland Ltd. (Firebase Cloud Messaging) USA / global Notificaciones push a la app móvil de Hostlio Pro en iOS y Android (token push del dispositivo, identificadores de instancia de la app y contenido de la notificación, como avisos de nuevos mensajes o reservas)
 Apple Inc. (Apple Push Notification service) USA Delivery of push notifications to iPhone and iPad devices (device token and notification content, passed on by Firebase Cloud Messaging)
+Google LLC (ML Kit — on-device text recognition) On device (metrics: USA) Lectura de la zona de lectura mecánica del documento de identidad en el dispositivo del personal del hotel, en la app móvil; ninguna imagen ni texto sale del dispositivo y Google solo recibe métricas anónimas de uso y rendimiento de la API
 Twilio Inc.* USA Números de WhatsApp y facturación de mensajes para hoteles
 Twilio SendGrid* USA Correo transaccional
 
@@ -4937,7 +4968,7 @@ Google Hotels Sincronizzato
 Gli ospiti inviano dal telefono dati del documento, accompagnatori e firma tramite un link sicuro.
 
 - Dal browser, senza scaricare app
-- Accompagnatori in un unico modulo
+- Scansione del documento, nessuna immagine salvata
 - Firma digitale e consenso Check-in online
 Check-in online Camera 202
 Nome e cognome Keiko Sato
@@ -5247,7 +5278,7 @@ URL: https://hostliopro.com/it/check-in-online/
 
 ## Check‑in online con firma digitale
 
-Prima dell'arrivo, gli ospiti inviano dal telefono i dati del documento, gli accompagnatori e la firma. La consegna delle chiavi richiede pochi minuti.
+Prima dell'arrivo, gli ospiti scansionano il documento con il telefono, aggiungono gli accompagnatori e firmano. Nessuna immagine del documento viene conservata. La consegna delle chiavi richiede pochi minuti.
 
 Prova Pro gratis per 7 giorni
 
@@ -5257,16 +5288,21 @@ Nome e cognome Keiko Sato
 
 Nazionalità Giappone
 
+Documento Passaporto scansionato, nessuna immagine salvata
+
 Accompagnatori 1 ospite aggiunto
 
 Firma Firma digitale ricevuta
 
-Come funziona il check-in online? Hostlio Pro invia a chi ha prenotato un link personale, sicuro e con scadenza. Da quel link l'ospite inserisce i dati del documento, aggiunge una foto del documento e gli eventuali accompagnatori e firma il modulo digitalmente. Tutto viene salvato direttamente nella prenotazione.
+Come funziona il check-in online? Hostlio Pro invia a chi ha prenotato un link personale, sicuro e con scadenza. Da quel link l'ospite inquadra con la fotocamera del telefono la zona a lettura ottica (MRZ) del passaporto o della carta d'identità. La lettura avviene nel suo browser e i dati si compilano da soli. Poi aggiunge gli eventuali accompagnatori e firma il modulo digitalmente. Nella prenotazione vengono salvati solo i dati estratti e la firma; nessuna immagine del documento viene caricata o conservata.
 
 ## Funzionalità del check-in online
 
 ## Link sicuro
 Un link basato su token, unico per ogni prenotazione. Apre solo il modulo di quella prenotazione.
+
+## Scansione del documento senza immagini
+La zona a lettura ottica del passaporto o della carta d'identità viene letta sul dispositivo dell'ospite. Vengono salvati solo nome, numero del documento, nazionalità, data di nascita e data di scadenza, mai una foto del documento. I documenti senza zona a lettura ottica si inseriscono a mano.
 
 ## Accompagnatori
 Tutte le persone che soggiornano in camera vengono aggiunte in un unico modulo, così nessuno deve inserire dati al banco.
@@ -5287,8 +5323,8 @@ I dati raccolti possono essere esportati in un formato utilizzabile per gli obbl
 Apre il link personale ricevuto dopo la conferma della prenotazione (inviato automaticamente via email o condiviso dall'hotel).
 
 -
-## Compila i dati
-Aggiunge i dati e la foto del documento e indica gli accompagnatori.
+## Scansiona il documento
+Scansiona il passaporto o la carta d'identità con il telefono: i dati si compilano da soli e nessuna immagine viene conservata. Poi indica gli accompagnatori.
 
 -
 ## Firma
@@ -5301,7 +5337,10 @@ Q: L'ospite deve scaricare un'app?
 A: No. Il modulo di check-in si apre nel browser; non serve scaricare nessuna app.
 
 Q: E se un ospite non completa il check-in dal link?
-A: Fai il check-in nel modo consueto. Lo staff può anche inserire i dati al banco con l'app mobile di Hostlio Pro.
+A: Fai il check-in nel modo consueto. Lo staff può anche scansionare il documento al banco con l'app mobile di Hostlio Pro; la lettura avviene sul dispositivo e nessuna immagine viene conservata.
+
+Q: Le foto dei documenti vengono conservate?
+A: No. La zona a lettura ottica (MRZ) del documento viene letta sul telefono dell'ospite, o sul dispositivo dell'hotel con l'app mobile di Hostlio Pro, e vengono salvati solo i dati estratti e la firma. Si possono scansionare passaporti e carte d'identità con MRZ; gli altri documenti si inseriscono a mano.
 
 ---
 # Funzionalità del gestionale per hotel | Hostlio Pro
@@ -5325,7 +5364,7 @@ Channel manager
 Calendario delle prenotazioni drag-and-drop. Cambi camera, prolungamenti e blocchi con un solo gesto.
 
 ## Check-in online
-Link sicuro, accompagnatori, foto del documento e firma digitale.
+Link sicuro, accompagnatori, scansione del documento (nessuna immagine conservata) e firma digitale.
 Check-in online
 
 ## Moduli per il visto in PDF automatici
@@ -5487,7 +5526,7 @@ Per quali tipi di struttura è pensato Hostlio Pro? Per strutture indipendenti d
 
 Esiste un'app mobile? Sì. I piani Pro e Growth includono un'app iOS e Android. Funziona senza connessione a internet e sincronizza i dati quando torni online.
 
-Come funziona il check-in online? Gli ospiti ricevono un link personale e sicuro e, prima dell'arrivo, inviano dal telefono i dati del documento, gli accompagnatori e una firma digitale. Disponibile nei piani Pro e Growth.
+Come funziona il check-in online? Gli ospiti ricevono un link personale e sicuro, scansionano il documento con il telefono (nessuna immagine viene conservata) e, prima dell'arrivo, inviano accompagnatori e firma digitale. Disponibile nei piani Pro e Growth.
 
 A cosa serve la funzione dei moduli per il visto in PDF? Trasforma automaticamente i dati della prenotazione in lettere di conferma dell'alloggio e di invito in PDF per gli ospiti che hanno bisogno di un visto.
 
@@ -5519,7 +5558,7 @@ Q: Esiste un'app mobile?
 A: Sì. I piani Pro e Growth includono un'app iOS e Android. Funziona senza connessione a internet e sincronizza i dati quando torni online.
 
 Q: Come funziona il check-in online?
-A: Gli ospiti ricevono un link personale e sicuro e, prima dell'arrivo, inviano dal telefono i dati del documento, gli accompagnatori e una firma digitale. Disponibile nei piani Pro e Growth.
+A: Gli ospiti ricevono un link personale e sicuro, scansionano il documento con il telefono (nessuna immagine viene conservata) e, prima dell'arrivo, inviano accompagnatori e firma digitale. Disponibile nei piani Pro e Growth.
 
 Q: A cosa serve la funzione dei moduli per il visto in PDF?
 A: Trasforma automaticamente i dati della prenotazione in lettere di conferma dell'alloggio e di invito in PDF per gli ospiti che hanno bisogno di un visto.
@@ -5734,7 +5773,7 @@ Domande su check-in in tarda serata, parcheggio e colazione arrivano a mezzanott
 Vendere la stessa camera su Booking.com e Airbnb causa doppie prenotazioni. Il channel manager sincronizza la disponibilità all'istante.
 
 ## Documenti e registrazione
-Trascrivere i dati degli ospiti alla reception richiede tempo. Il check-in online li raccoglie prima dell'arrivo.
+Trascrivere i dati degli ospiti alla reception richiede tempo. Con il check-in online l'ospite scansiona il documento con il telefono prima dell'arrivo: i dati si compilano da soli e nessuna immagine viene conservata.
 
 ## Budget limitato
 I software a commissione costano di più man mano che l'occupazione cresce. Hostlio Pro ha un canone mensile fisso.
@@ -6019,7 +6058,7 @@ A: Il rischio è basso quando l'assistente usa solo le informazioni fornite dall
 URL: https://hostliopro.com/it/privacy/
 
 ## Informativa sulla privacy
-Ultimo aggiornamento: 3 ottobre 2026 , Loti Members LLC, 2108 N ST STE N, Sacramento, CA 95816. Il presente testo è una traduzione dell'originale in inglese; in caso di discrepanze prevale la versione inglese .
+Ultimo aggiornamento: 4 ottobre 2026 , Loti Members LLC, 2108 N ST STE N, Sacramento, CA 95816. Il presente testo è una traduzione dell'originale in inglese; in caso di discrepanze prevale la versione inglese .
 
 La presente Informativa sulla privacy spiega come Hostlio Pro, gestito da Loti Members LLC («noi»), raccoglie, usa e condivide dati personali quando visiti hostliopro.com, ti registri o usi il pannello, l’app mobile e le funzioni per gli ospiti di Hostlio Pro.
 
@@ -6032,7 +6071,7 @@ Per i dati dei nostri clienti (titolari e personale degli hotel) e dei visitator
 - Dati di fatturazione: piano, periodo di fatturazione e stato del pagamento. I dati della carta sono raccolti e conservati da Stripe, mai da noi
 - Dati dell’hotel: tipologie di camera, camere, tariffe, disponibilità, prenotazioni e impostazioni
 - Dati degli ospiti trattati per gli hotel: nome, recapiti, dati della prenotazione e contenuto dei messaggi ricevuti su WhatsApp e nelle caselle OTA
-- Dati del check-in online: dati e immagini del documento d’identità, data di nascita, nazionalità, accompagnatori e firma digitale, se l’hotel usa il check-in online. Li trattiamo come dati sensibili
+- Dati del check-in online: dati del documento d’identità (nome, numero del documento, nazionalità, data di nascita e data di scadenza), accompagnatori e firma digitale, se l’hotel usa il check-in online. La zona a lettura ottica del documento viene letta sul dispositivo dell’ospite o dello staff dell’hotel; non raccogliamo né conserviamo immagini dei documenti d’identità. Li trattiamo come dati sensibili
 - Dati di registrazione e sicurezza: indirizzo IP, email cifrata (hash) ed esito dei tentativi di registrazione, per prevenire frodi e abusi
 - Origine di marketing: solo se arrivi tramite un link con parametri di campagna (parametri UTM o un identificativo di clic pubblicitario): tali parametri, la pagina di arrivo e l’ora della prima visita, salvati nel browser e inviati a noi solo con il modulo di registrazione o di contatto
 - Dati di utilizzo: come vengono usati il pannello e l’app, log tecnici e, se usi l’app mobile, il token per le notifiche push del dispositivo
@@ -6061,6 +6100,7 @@ Channex.io Ltd United Kingdom Sincronizzazione di disponibilità, tariffe, preno
 Make (Celonis) EU Modulo di contatto e automazioni interne
 Google LLC / Google Ireland Ltd. (Firebase Cloud Messaging) USA / global Notifiche push all’app mobile Hostlio Pro su iOS e Android (token push del dispositivo, identificativi dell’istanza dell’app e contenuto della notifica, come avvisi di nuovi messaggi o prenotazioni)
 Apple Inc. (Apple Push Notification service) USA Delivery of push notifications to iPhone and iPad devices (device token and notification content, passed on by Firebase Cloud Messaging)
+Google LLC (ML Kit — on-device text recognition) On device (metrics: USA) Lettura della zona a lettura ottica del documento d’identità sul dispositivo dello staff dell’hotel, nell’app mobile; nessuna immagine o testo lascia il dispositivo e Google riceve solo metriche anonime di utilizzo e prestazioni dell’API
 Twilio Inc.* USA Numeri WhatsApp e fatturazione dei messaggi per gli hotel
 Twilio SendGrid* USA Email transazionali
 
@@ -6109,7 +6149,7 @@ Pubblicheremo le modifiche in questa pagina aggiornando la data. Le modifiche ri
 URL: https://hostliopro.com/it/termini/
 
 ## Termini di servizio
-Ultimo aggiornamento: 3 ottobre 2026 , Loti Members LLC, 2108 N ST STE N, Sacramento, CA 95816. Il presente testo è una traduzione dell'originale in inglese; in caso di discrepanze prevale la versione inglese .
+Ultimo aggiornamento: 4 ottobre 2026 , Loti Members LLC, 2108 N ST STE N, Sacramento, CA 95816. Il presente testo è una traduzione dell'originale in inglese; in caso di discrepanze prevale la versione inglese .
 
 I presenti Termini di servizio («Termini») disciplinano l’uso di Hostlio Pro, gestito da Loti Members LLC («noi»). Creando un account o usando il servizio accetti questi Termini. Se usi Hostlio Pro per un’azienda, li accetti per suo conto.
 
@@ -6189,7 +6229,7 @@ Invia la richiesta di eliminazione
 URL: https://hostliopro.com/it/sicurezza/
 
 ## Sicurezza e protezione dei dati
-Gli hotel ci affidano prenotazioni, messaggi degli ospiti e documenti d’identità. Qui spieghiamo come li proteggiamo, chi li tratta e come firmare il nostro Accordo sul trattamento dei dati (DPA).
+Gli hotel ci affidano prenotazioni, messaggi degli ospiti e dati dei documenti d’identità. Qui spieghiamo come li proteggiamo, chi li tratta e come firmare il nostro Accordo sul trattamento dei dati (DPA).
 
 ## Cifratura ovunque
 TLS in transito e cifratura a riposo di database e file.
@@ -6213,7 +6253,7 @@ I dati della carta vengono inseriti in Stripe e non arrivano mai ai nostri serve
 Lio invia il contenuto del messaggio al nostro fornitore di AI solo per preparare una risposta. Secondo le sue condizioni commerciali, il fornitore non lo usa per addestrare i modelli. Sei tu a decidere a quali argomenti Lio risponde da solo e quali richiedono la tua approvazione.
 
 ## Dati del check-in online
-Immagini dei documenti e firme digitali sono trattate come dati sensibili, visibili solo allo staff del tuo hotel e cancellate al più tardi con il tuo account.
+Dati dei documenti e firme digitali sono trattati come dati sensibili, visibili solo allo staff del tuo hotel e cancellati al più tardi con il tuo account. Non conserviamo immagini di documenti o passaporti: la zona a lettura ottica viene letta sul dispositivo dell’ospite o del tuo staff e vengono inviati solo i dati estratti.
 
 ## Conservazione
 Il contenuto dei messaggi è anonimizzato alla scadenza del periodo impostato (predefinito 60 giorni); i recapiti degli ospiti sono conservati 90 giorni dopo la partenza; i dati dell’account sono cancellati entro 30 giorni da una richiesta verificata.
@@ -6232,6 +6272,7 @@ Channex.io Ltd United Kingdom Sincronizzazione di disponibilità, tariffe, preno
 Make (Celonis) EU Modulo di contatto e automazioni interne
 Google LLC / Google Ireland Ltd. (Firebase Cloud Messaging) USA / global Notifiche push all’app mobile Hostlio Pro su iOS e Android (token push del dispositivo, identificativi dell’istanza dell’app e contenuto della notifica, come avvisi di nuovi messaggi o prenotazioni)
 Apple Inc. (Apple Push Notification service) USA Delivery of push notifications to iPhone and iPad devices (device token and notification content, passed on by Firebase Cloud Messaging)
+Google LLC (ML Kit — on-device text recognition) On device (metrics: USA) Lettura della zona a lettura ottica del documento d’identità sul dispositivo dello staff dell’hotel, nell’app mobile; nessuna immagine o testo lascia il dispositivo e Google riceve solo metriche anonime di utilizzo e prestazioni dell’API
 Twilio Inc.* USA Numeri WhatsApp e fatturazione dei messaggi per gli hotel
 Twilio SendGrid* USA Email transazionali
 
@@ -6389,7 +6430,7 @@ Google Hotels Sincronizado
 O hóspede envia os dados do documento, os acompanhantes e a assinatura pelo celular, por meio de um link seguro.
 
 - No navegador, sem baixar app
-- Acompanhantes em um único formulário
+- Leitura do documento, sem guardar imagens
 - Assinatura digital e consentimento Check-in online
 Check-in online Quarto 202
 Nome completo Keiko Sato
@@ -6699,7 +6740,7 @@ URL: https://hostliopro.com/pt/check-in-online/
 
 ## Check‑in online com assinatura digital
 
-Antes da chegada, os hóspedes enviam os dados do documento, os acompanhantes e a assinatura pelo celular. A entrega da chave leva poucos minutos.
+Antes da chegada, os hóspedes escaneiam o documento com o celular, adicionam os acompanhantes e assinam. Nenhuma imagem do documento é armazenada. A entrega da chave leva poucos minutos.
 
 Teste o Pro grátis por 7 dias
 
@@ -6709,16 +6750,21 @@ Nome completo Keiko Sato
 
 Nacionalidade Japão
 
+Documento Passaporte escaneado, sem imagem salva
+
 Acompanhantes 1 hóspede adicionado
 
 Assinatura Assinatura digital recebida
 
-Como funciona o check-in online? O Hostlio Pro envia a quem fez a reserva um link pessoal, seguro e com prazo de validade. Por esse link, o hóspede preenche os dados do documento, adiciona uma foto do documento e os acompanhantes e assina o formulário digitalmente. Tudo fica salvo diretamente na reserva.
+Como funciona o check-in online? O Hostlio Pro envia a quem fez a reserva um link pessoal, seguro e com prazo de validade. Por esse link, o hóspede escaneia com a câmera do celular a zona de leitura mecânica (MRZ) do passaporte ou da carteira de identidade. A leitura acontece no próprio navegador do hóspede e os dados são preenchidos automaticamente. Depois ele adiciona os acompanhantes e assina o formulário digitalmente. Na reserva ficam salvos apenas os dados extraídos e a assinatura; nenhuma imagem do documento é enviada ou armazenada.
 
 ## Recursos do check-in online
 
 ## Link seguro
 Um link baseado em token, exclusivo de cada reserva. Ele abre apenas o formulário daquela reserva.
+
+## Leitura do documento sem guardar imagens
+A zona de leitura mecânica do passaporte ou da carteira de identidade é lida no próprio aparelho do hóspede. Só ficam salvos nome, número do documento, nacionalidade, data de nascimento e validade, nunca uma foto do documento. Documentos sem zona de leitura mecânica são preenchidos à mão.
 
 ## Acompanhantes
 Todos que vão ficar no quarto são adicionados em um único formulário, e ninguém precisa digitar dados na recepção.
@@ -6739,8 +6785,8 @@ Os dados coletados dos hóspedes podem ser exportados em um formato que você po
 Abrir o link pessoal recebido após a confirmação da reserva (enviado automaticamente por e-mail ou compartilhado pelo hotel).
 
 -
-## Preencher os dados
-Adicionar os dados e a foto do documento e informar os acompanhantes.
+## Escanear o documento
+Escanear o passaporte ou a identidade com o celular: os dados são preenchidos automaticamente e nenhuma imagem é guardada. Depois, informar os acompanhantes.
 
 -
 ## Assinar
@@ -6753,7 +6799,10 @@ Q: O hóspede precisa baixar um aplicativo?
 A: Não. O formulário de check-in abre no navegador; não é preciso baixar nenhum aplicativo.
 
 Q: E se o hóspede não preencher o link?
-A: Faça o check-in da forma habitual. A equipe também pode inserir os dados na recepção usando o app do Hostlio Pro.
+A: Faça o check-in da forma habitual. A equipe também pode escanear o documento na recepção com o app do Hostlio Pro; a leitura é feita no aparelho e nenhuma imagem é guardada.
+
+Q: As fotos dos documentos ficam armazenadas?
+A: Não. A zona de leitura mecânica (MRZ) do documento é lida no celular do hóspede, ou no aparelho do hotel com o app do Hostlio Pro, e só ficam salvos os dados extraídos e a assinatura. Passaportes e documentos de identidade com MRZ podem ser escaneados; os demais são preenchidos à mão.
 
 ---
 # Funcionalidades do Sistema para Hotel | Hostlio Pro
@@ -6777,7 +6826,7 @@ Channel manager
 Calendário de reservas com arrastar e soltar. Trocas de quarto, prorrogações e bloqueios em um só gesto.
 
 ## Check-in online
-Link seguro, acompanhantes, foto do documento e assinatura digital.
+Link seguro, acompanhantes, leitura do documento (sem guardar imagens) e assinatura digital.
 Check-in online
 
 ## Formulários de visto em PDF automáticos
@@ -6939,7 +6988,7 @@ Para que tipos de hotel o Hostlio Pro foi feito? Para propriedades independentes
 
 Existe um app para celular? Sim. Os planos Pro e Growth incluem um app para iOS e Android. Ele funciona sem conexão com a internet e sincroniza os dados quando você volta a ficar online.
 
-Como funciona o check-in online? Os hóspedes recebem um link pessoal e seguro e enviam pelo celular, antes da chegada, os dados do documento, os acompanhantes e a assinatura digital. Disponível nos planos Pro e Growth.
+Como funciona o check-in online? Os hóspedes recebem um link pessoal e seguro, escaneiam o documento pelo celular (nenhuma imagem é guardada) e enviam, antes da chegada, os acompanhantes e a assinatura digital. Disponível nos planos Pro e Growth.
 
 Para que serve o recurso de formulários de visto em PDF? Ele transforma automaticamente os dados da reserva em declarações de hospedagem e cartas-convite do hotel em PDF para hóspedes que precisam de visto.
 
@@ -6971,7 +7020,7 @@ Q: Existe um app para celular?
 A: Sim. Os planos Pro e Growth incluem um app para iOS e Android. Ele funciona sem conexão com a internet e sincroniza os dados quando você volta a ficar online.
 
 Q: Como funciona o check-in online?
-A: Os hóspedes recebem um link pessoal e seguro e enviam pelo celular, antes da chegada, os dados do documento, os acompanhantes e a assinatura digital. Disponível nos planos Pro e Growth.
+A: Os hóspedes recebem um link pessoal e seguro, escaneiam o documento pelo celular (nenhuma imagem é guardada) e enviam, antes da chegada, os acompanhantes e a assinatura digital. Disponível nos planos Pro e Growth.
 
 Q: Para que serve o recurso de formulários de visto em PDF?
 A: Ele transforma automaticamente os dados da reserva em declarações de hospedagem e cartas-convite do hotel em PDF para hóspedes que precisam de visto.
@@ -7186,7 +7235,7 @@ Perguntas sobre check-in tardio, estacionamento e café da manhã chegam à meia
 Vender o mesmo quarto no Booking.com e no Airbnb gera reservas duplicadas. O channel manager sincroniza a disponibilidade na hora.
 
 ## Documentos e registro
-Digitar os dados dos hóspedes na recepção leva tempo. O check-in online coleta tudo antes da chegada.
+Digitar os dados dos hóspedes na recepção leva tempo. Com o check-in online, o hóspede escaneia o documento pelo celular antes da chegada: os dados são preenchidos automaticamente e nenhuma imagem é guardada.
 
 ## Orçamento apertado
 Sistemas cobrados por comissão ficam mais caros à medida que a ocupação cresce. O Hostlio Pro tem mensalidade fixa.
@@ -7471,7 +7520,7 @@ A: O risco é baixo quando o assistente usa apenas as informações fornecidas p
 URL: https://hostliopro.com/pt/privacidade/
 
 ## Política de privacidade
-Última atualização: 3 de outubro de 2026 , Loti Members LLC, 2108 N ST STE N, Sacramento, CA 95816. Este texto é uma tradução do original em inglês; em caso de divergência, prevalece a versão em inglês .
+Última atualização: 4 de outubro de 2026 , Loti Members LLC, 2108 N ST STE N, Sacramento, CA 95816. Este texto é uma tradução do original em inglês; em caso de divergência, prevalece a versão em inglês .
 
 Esta Política de Privacidade explica como o Hostlio Pro, operado pela Loti Members LLC («nós»), coleta, usa e compartilha dados pessoais quando você visita hostliopro.com, se cadastra ou usa o painel, o app e os recursos para hóspedes do Hostlio Pro.
 
@@ -7484,7 +7533,7 @@ Para os dados dos nossos clientes (proprietários e equipes de hotéis) e visita
 - Dados de cobrança: plano, período de cobrança e status do pagamento. Os dados do cartão são coletados e guardados pela Stripe, nunca por nós
 - Dados do hotel: tipos de quarto, quartos, tarifas, disponibilidade, reservas e configurações
 - Dados de hóspedes tratados para os hotéis: nome, contatos, dados da reserva e conteúdo das mensagens recebidas no WhatsApp e nas caixas das OTAs
-- Dados do check-in online: dados e imagens do documento de identidade, data de nascimento, nacionalidade, acompanhantes e assinatura digital, quando o hotel usa o check-in online. Tratamos esses dados como sensíveis
+- Dados do check-in online: dados do documento de identidade (nome, número do documento, nacionalidade, data de nascimento e validade), acompanhantes e assinatura digital, quando o hotel usa o check-in online. A zona de leitura mecânica do documento é lida no próprio aparelho do hóspede ou da equipe do hotel; não coletamos nem armazenamos imagens de documentos de identidade. Tratamos esses dados como sensíveis
 - Dados de cadastro e segurança: endereço IP, e-mail em hash e resultado das tentativas de cadastro, para prevenir fraudes e abusos
 - Origem de marketing: só se você chegar por um link com parâmetros de campanha (parâmetros UTM ou um identificador de clique de anúncio): esses parâmetros, a página de entrada e o horário da primeira visita, guardados no navegador e enviados a nós só com o formulário de cadastro ou de contato
 - Dados de uso: como o painel e o app são usados, registros técnicos e, se você usa o app, o token de notificações push do seu dispositivo
@@ -7513,6 +7562,7 @@ Channex.io Ltd United Kingdom Sincronização de disponibilidade, tarifas, reser
 Make (Celonis) EU Formulário de contato e automação interna
 Google LLC / Google Ireland Ltd. (Firebase Cloud Messaging) USA / global Notificações push no app do Hostlio Pro para iOS e Android (token push do dispositivo, identificadores da instância do app e conteúdo da notificação, como alertas de novas mensagens ou reservas)
 Apple Inc. (Apple Push Notification service) USA Delivery of push notifications to iPhone and iPad devices (device token and notification content, passed on by Firebase Cloud Messaging)
+Google LLC (ML Kit — on-device text recognition) On device (metrics: USA) Leitura da zona de leitura mecânica do documento de identidade no aparelho da equipe do hotel, no app; nenhuma imagem ou texto sai do aparelho e o Google recebe apenas métricas anônimas de uso e desempenho da API
 Twilio Inc.* USA Números de WhatsApp e cobrança de mensagens para hotéis
 Twilio SendGrid* USA E-mail transacional
 
@@ -7561,7 +7611,7 @@ Publicaremos as alterações nesta página e atualizaremos a data. Alterações 
 URL: https://hostliopro.com/pt/termos/
 
 ## Termos de serviço
-Última atualização: 3 de outubro de 2026 , Loti Members LLC, 2108 N ST STE N, Sacramento, CA 95816. Este texto é uma tradução do original em inglês; em caso de divergência, prevalece a versão em inglês .
+Última atualização: 4 de outubro de 2026 , Loti Members LLC, 2108 N ST STE N, Sacramento, CA 95816. Este texto é uma tradução do original em inglês; em caso de divergência, prevalece a versão em inglês .
 
 Estes Termos de Serviço («Termos») regem o uso do Hostlio Pro, operado pela Loti Members LLC («nós»). Ao criar uma conta ou usar o serviço você aceita estes Termos. Se usar o Hostlio Pro para uma empresa, você os aceita em nome dela.
 
@@ -7641,7 +7691,7 @@ Enviar solicitação de exclusão
 URL: https://hostliopro.com/pt/seguranca/
 
 ## Segurança e proteção de dados
-Os hotéis nos confiam reservas, mensagens de hóspedes e documentos de identidade. Aqui explicamos como protegemos esses dados, quem os trata e como assinar nosso Acordo de Tratamento de Dados (DPA).
+Os hotéis nos confiam reservas, mensagens de hóspedes e dados de documentos de identidade. Aqui explicamos como protegemos esses dados, quem os trata e como assinar nosso Acordo de Tratamento de Dados (DPA).
 
 ## Criptografia em tudo
 TLS em trânsito e criptografia em repouso do banco de dados e dos arquivos.
@@ -7665,7 +7715,7 @@ Os dados do cartão são digitados na Stripe e nunca chegam aos nossos servidore
 A Lio envia o conteúdo da mensagem ao nosso fornecedor de IA apenas para redigir uma resposta. Pelos termos comerciais, o fornecedor não usa esse conteúdo para treinar modelos. Você decide quais assuntos a Lio responde sozinha e quais precisam da sua aprovação.
 
 ## Dados do check-in online
-Imagens de documentos e assinaturas digitais são tratadas como dados sensíveis, visíveis só para a equipe do seu hotel e apagadas, no máximo, junto com a sua conta.
+Dados de documentos e assinaturas digitais são tratados como dados sensíveis, visíveis só para a equipe do seu hotel e apagados, no máximo, junto com a sua conta. Não armazenamos imagens de documentos ou passaportes: a zona de leitura mecânica é lida no aparelho do hóspede ou da sua equipe e só os dados extraídos são enviados.
 
 ## Retenção
 O conteúdo das mensagens é anonimizado ao fim do prazo que você definir (padrão 60 dias); os contatos dos hóspedes ficam guardados 90 dias após a saída; os dados da conta são apagados em até 30 dias após um pedido verificado.
@@ -7684,6 +7734,7 @@ Channex.io Ltd United Kingdom Sincronização de disponibilidade, tarifas, reser
 Make (Celonis) EU Formulário de contato e automação interna
 Google LLC / Google Ireland Ltd. (Firebase Cloud Messaging) USA / global Notificações push no app do Hostlio Pro para iOS e Android (token push do dispositivo, identificadores da instância do app e conteúdo da notificação, como alertas de novas mensagens ou reservas)
 Apple Inc. (Apple Push Notification service) USA Delivery of push notifications to iPhone and iPad devices (device token and notification content, passed on by Firebase Cloud Messaging)
+Google LLC (ML Kit — on-device text recognition) On device (metrics: USA) Leitura da zona de leitura mecânica do documento de identidade no aparelho da equipe do hotel, no app; nenhuma imagem ou texto sai do aparelho e o Google recebe apenas métricas anônimas de uso e desempenho da API
 Twilio Inc.* USA Números de WhatsApp e cobrança de mensagens para hotéis
 Twilio SendGrid* USA E-mail transacional
 
@@ -7841,7 +7892,7 @@ Google Hotels Synchronisé
 Les clients envoient leurs informations d’identité, leurs accompagnants et leur signature depuis leur téléphone, via un lien sécurisé.
 
 - Dans le navigateur, sans application à télécharger
-- Accompagnants dans un seul formulaire
+- Scan de la pièce d’identité, aucune image conservée
 - Signature électronique et consentement Check-in en ligne
 Check-in en ligne Chambre 202
 Nom complet Keiko Sato
@@ -8151,7 +8202,7 @@ URL: https://hostliopro.com/fr/check-in-en-ligne/
 
 ## Check‑in en ligne avec signature électronique
 
-Avant leur arrivée, les clients envoient depuis leur téléphone leurs données d'identité, les personnes qui les accompagnent et leur signature. La remise des clés ne prend que quelques minutes.
+Avant leur arrivée, les clients scannent leur pièce d'identité avec leur téléphone, ajoutent leurs accompagnants et signent. Aucune image du document n'est conservée. La remise des clés ne prend que quelques minutes.
 
 Essayez Pro gratuitement pendant 7 jours
 
@@ -8161,16 +8212,21 @@ Nom complet Keiko Sato
 
 Nationalité Japon
 
+Document Passeport scanné, aucune image conservée
+
 Accompagnants 1 accompagnant ajouté
 
 Signature Signature électronique reçue
 
-Comment fonctionne le check-in en ligne ? Hostlio Pro envoie à la personne qui a réservé un lien sécurisé, personnel et à durée limitée. Depuis ce lien, le client saisit ses données d'identité, ajoute une photo de sa pièce d'identité et d'éventuels accompagnants, puis signe le formulaire électroniquement. Tout est enregistré directement dans la réservation.
+Comment fonctionne le check-in en ligne ? Hostlio Pro envoie à la personne qui a réservé un lien sécurisé, personnel et à durée limitée. Depuis ce lien, le client scanne avec l'appareil photo de son téléphone la bande de lecture automatique (MRZ) de son passeport ou de sa carte d'identité. La lecture se fait dans son propre navigateur et les champs se remplissent automatiquement. Il ajoute ensuite d'éventuels accompagnants, puis signe le formulaire électroniquement. Seules les données extraites et la signature sont enregistrées dans la réservation ; aucune image du document n'est envoyée ni conservée.
 
 ## Fonctionnalités du check-in en ligne
 
 ## Lien sécurisé
 Un lien à jeton, propre à chaque réservation. Il n'ouvre que le formulaire de cette réservation.
+
+## Scan du document sans conserver d'image
+La bande de lecture automatique du passeport ou de la carte d'identité est lue sur l'appareil du client. Seuls le nom, le numéro du document, la nationalité, la date de naissance et la date d'expiration sont enregistrés, jamais une photo du document. Les documents sans bande de lecture automatique sont saisis à la main.
 
 ## Accompagnants
 Toutes les personnes séjournant dans la chambre sont ajoutées dans un seul formulaire : plus personne n'a à saisir ses données à la réception.
@@ -8191,8 +8247,8 @@ Les données collectées peuvent être exportées dans un format utilisable pour
 Touchez le lien envoyé après la confirmation de la réservation.
 
 -
-## Remplir les informations
-Ajoutez vos données d'identité et une photo, puis indiquez vos accompagnants.
+## Scanner le document
+Scannez votre passeport ou votre carte d'identité avec votre téléphone : les champs se remplissent automatiquement et aucune image n'est conservée. Indiquez ensuite vos accompagnants.
 
 -
 ## Signer
@@ -8205,7 +8261,10 @@ Q: Le client doit-il télécharger une application ?
 A: Non. Le formulaire de check-in s'ouvre dans le navigateur ; aucune application n'est à télécharger.
 
 Q: Et si un client ne remplit pas le formulaire ?
-A: Enregistrez-le de la manière habituelle. Votre équipe peut aussi saisir les informations à la réception avec l'application mobile Hostlio Pro.
+A: Enregistrez-le de la manière habituelle. Votre équipe peut aussi scanner le document à la réception avec l'application mobile Hostlio Pro ; la lecture se fait sur l'appareil et aucune image n'est conservée.
+
+Q: Les photos des pièces d'identité sont-elles conservées ?
+A: Non. La bande de lecture automatique (MRZ) du document est lue sur le téléphone du client, ou sur l'appareil de l'hôtel avec l'application mobile Hostlio Pro, et seules les données extraites et la signature sont enregistrées. Les passeports et cartes d'identité dotés d'une MRZ peuvent être scannés ; les autres documents sont saisis à la main.
 
 ---
 # Fonctions du logiciel de gestion hôtelière | Hostlio Pro
@@ -8229,7 +8288,7 @@ Channel manager
 Calendrier de réservations en glisser-déposer. Changements de chambre, prolongations et blocages en un seul geste.
 
 ## Check-in en ligne
-Lien sécurisé, accompagnants, photo de la pièce d'identité et signature électronique.
+Lien sécurisé, accompagnants, scan de la pièce d'identité (aucune image conservée) et signature électronique.
 Check-in en ligne
 
 ## Formulaires de visa PDF automatiques
@@ -8391,7 +8450,7 @@ Dans quelles langues Lio répond-il ? Lio répond dans plus de 30 langues, dont 
 
 Existe-t-il une application mobile ? Oui. Les forfaits Pro et Growth incluent une application iOS et Android. Elle fonctionne sans connexion Internet et synchronise les données dès que vous êtes de nouveau en ligne.
 
-Comment fonctionne le check-in en ligne ? Les clients reçoivent un lien sécurisé personnel et envoient depuis leur téléphone, avant leur arrivée, leurs données d'identité, leurs accompagnants et leur signature électronique. Disponible avec Pro et Growth.
+Comment fonctionne le check-in en ligne ? Les clients reçoivent un lien sécurisé personnel, scannent leur pièce d'identité avec leur téléphone (aucune image n'est conservée) et envoient avant leur arrivée leurs accompagnants et leur signature électronique. Disponible avec Pro et Growth.
 
 À quoi sert la fonction de formulaires de visa PDF ? Elle transforme automatiquement les données de réservation en attestations d'hébergement et lettres d'invitation au format PDF pour les clients qui ont besoin d'un visa.
 
@@ -8423,7 +8482,7 @@ Q: Existe-t-il une application mobile ?
 A: Oui. Les forfaits Pro et Growth incluent une application iOS et Android. Elle fonctionne sans connexion Internet et synchronise les données dès que vous êtes de nouveau en ligne.
 
 Q: Comment fonctionne le check-in en ligne ?
-A: Les clients reçoivent un lien sécurisé personnel et envoient depuis leur téléphone, avant leur arrivée, leurs données d'identité, leurs accompagnants et leur signature électronique. Disponible avec Pro et Growth.
+A: Les clients reçoivent un lien sécurisé personnel, scannent leur pièce d'identité avec leur téléphone (aucune image n'est conservée) et envoient avant leur arrivée leurs accompagnants et leur signature électronique. Disponible avec Pro et Growth.
 
 Q: À quoi sert la fonction de formulaires de visa PDF ?
 A: Elle transforme automatiquement les données de réservation en attestations d'hébergement et lettres d'invitation au format PDF pour les clients qui ont besoin d'un visa.
@@ -8638,7 +8697,7 @@ Arrivée tardive, parking, petit-déjeuner : les questions tombent à minuit. L
 Vendre la même chambre sur Booking.com et Airbnb provoque des doubles réservations. Le channel manager synchronise les disponibilités instantanément.
 
 ## Identité et enregistrement
-Saisir les informations des clients à l’accueil prend du temps. Le check-in en ligne les recueille avant l’arrivée.
+Saisir les informations des clients à l’accueil prend du temps. Avec le check-in en ligne, le client scanne sa pièce d’identité avec son téléphone avant l’arrivée : les champs se remplissent automatiquement et aucune image n’est conservée.
 
 ## Budget serré
 Les logiciels à commission coûtent plus cher à mesure que le taux d’occupation augmente. Hostlio Pro est un abonnement mensuel fixe.
@@ -8923,7 +8982,7 @@ A: Le risque est faible lorsque l’assistant n’utilise que les informations f
 URL: https://hostliopro.com/fr/confidentialite/
 
 ## Politique de confidentialité
-Dernière mise à jour : 3 octobre 2026 , Loti Members LLC, 2108 N ST STE N, Sacramento, CA 95816. Ce texte est une traduction de l’original anglais ; en cas de divergence, la version anglaise prévaut.
+Dernière mise à jour : 4 octobre 2026 , Loti Members LLC, 2108 N ST STE N, Sacramento, CA 95816. Ce texte est une traduction de l’original anglais ; en cas de divergence, la version anglaise prévaut.
 
 La présente Politique de confidentialité explique comment Hostlio Pro, exploité par Loti Members LLC (« nous »), collecte, utilise et partage des données personnelles lorsque vous visitez hostliopro.com, vous inscrivez ou utilisez le tableau de bord, l’application mobile et les fonctions destinées aux clients de Hostlio Pro.
 
@@ -8936,7 +8995,7 @@ Pour les données de nos clients (propriétaires et personnel d’hôtels) et de
 - Données de facturation : forfait, période de facturation et statut du paiement. Les données de carte sont collectées et conservées par Stripe, jamais par nous
 - Données de l’hôtel : types de chambres, chambres, tarifs, disponibilités, réservations et réglages
 - Données clients traitées pour les hôtels : nom, coordonnées, détails de réservation et contenu des messages reçus sur WhatsApp et dans les messageries des OTA
-- Données du check-in en ligne : informations et images de la pièce d’identité, date de naissance, nationalité, accompagnants et signature électronique, lorsque l’hôtel utilise le check-in en ligne. Nous les traitons comme des données sensibles
+- Données du check-in en ligne : informations de la pièce d’identité (nom, numéro du document, nationalité, date de naissance et date d’expiration), accompagnants et signature électronique, lorsque l’hôtel utilise le check-in en ligne. La bande de lecture automatique du document est lue sur l’appareil du client ou du personnel de l’hôtel ; nous ne collectons ni ne conservons d’images de pièces d’identité. Nous les traitons comme des données sensibles
 - Données d’inscription et de sécurité : adresse IP, e-mail haché et résultat des tentatives d’inscription, pour prévenir la fraude et les abus
 - Source marketing : uniquement si vous arrivez par un lien contenant des paramètres de campagne (paramètres UTM ou identifiant de clic publicitaire) : ces paramètres, la page d’arrivée et l’heure de votre première visite, conservés dans votre navigateur et transmis uniquement avec le formulaire d’inscription ou de contact
 - Données d’utilisation : utilisation du tableau de bord et de l’application, journaux techniques et, si vous utilisez l’application mobile, le jeton de notifications push de votre appareil
@@ -8965,6 +9024,7 @@ Channex.io Ltd United Kingdom Synchronisation des disponibilités, tarifs, rése
 Make (Celonis) EU Formulaire de contact et automatisation interne
 Google LLC / Google Ireland Ltd. (Firebase Cloud Messaging) USA / global Notifications push vers l’application mobile Hostlio Pro sur iOS et Android (jeton push de l’appareil, identifiants d’instance de l’application et contenu de la notification, par exemple alertes de nouveau message ou de réservation)
 Apple Inc. (Apple Push Notification service) USA Delivery of push notifications to iPhone and iPad devices (device token and notification content, passed on by Firebase Cloud Messaging)
+Google LLC (ML Kit — on-device text recognition) On device (metrics: USA) Lecture de la bande de lecture automatique de la pièce d’identité sur l’appareil du personnel de l’hôtel, dans l’application mobile ; aucune image ni aucun texte ne quitte l’appareil et Google ne reçoit que des mesures anonymes d’utilisation et de performance de l’API
 Twilio Inc.* USA Numéros WhatsApp et facturation des messages pour les hôtels
 Twilio SendGrid* USA E-mails transactionnels
 
@@ -9013,7 +9073,7 @@ Nous publierons les modifications sur cette page et mettrons la date à jour. Le
 URL: https://hostliopro.com/fr/conditions/
 
 ## Conditions d’utilisation
-Dernière mise à jour : 3 octobre 2026 , Loti Members LLC, 2108 N ST STE N, Sacramento, CA 95816. Ce texte est une traduction de l’original anglais ; en cas de divergence, la version anglaise prévaut.
+Dernière mise à jour : 4 octobre 2026 , Loti Members LLC, 2108 N ST STE N, Sacramento, CA 95816. Ce texte est une traduction de l’original anglais ; en cas de divergence, la version anglaise prévaut.
 
 Les présentes Conditions d’utilisation (« Conditions ») régissent l’utilisation de Hostlio Pro, exploité par Loti Members LLC (« nous »). En créant un compte ou en utilisant le service, vous acceptez ces Conditions. Si vous utilisez Hostlio Pro pour une entreprise, vous les acceptez en son nom.
 
@@ -9093,7 +9153,7 @@ Envoyer la demande de suppression
 URL: https://hostliopro.com/fr/securite/
 
 ## Sécurité et protection des données
-Les hôtels nous confient leurs réservations, les messages de leurs clients et des pièces d’identité. Cette page explique comment nous les protégeons, qui les traite et comment signer notre Accord de traitement des données (DPA).
+Les hôtels nous confient leurs réservations, les messages de leurs clients et des données de pièces d’identité. Cette page explique comment nous les protégeons, qui les traite et comment signer notre Accord de traitement des données (DPA).
 
 ## Chiffré partout
 TLS en transit et chiffrement au repos de la base de données et des fichiers.
@@ -9117,7 +9177,7 @@ Les données de carte sont saisies chez Stripe et n’atteignent jamais nos serv
 Lio transmet le contenu du message à notre fournisseur d’IA uniquement pour préparer une réponse. Selon ses conditions commerciales, le fournisseur ne l’utilise pas pour entraîner ses modèles. Vous choisissez les sujets auxquels Lio répond seul et ceux qui nécessitent votre validation.
 
 ## Données du check-in en ligne
-Les images de pièces d’identité et les signatures électroniques sont traitées comme des données sensibles, visibles uniquement par le personnel de votre hôtel et supprimées au plus tard avec votre compte.
+Les données des pièces d’identité et les signatures électroniques sont traitées comme des données sensibles, visibles uniquement par le personnel de votre hôtel et supprimées au plus tard avec votre compte. Nous ne conservons aucune image de pièce d’identité ni de passeport : la bande de lecture automatique est lue sur l’appareil du client ou de votre personnel et seules les données extraites sont envoyées.
 
 ## Conservation
 Le contenu des messages est anonymisé à la fin de la durée que vous fixez (par défaut 60 jours) ; les coordonnées des clients sont conservées 90 jours après le départ ; les données du compte sont supprimées dans les 30 jours suivant une demande vérifiée.
@@ -9136,6 +9196,7 @@ Channex.io Ltd United Kingdom Synchronisation des disponibilités, tarifs, rése
 Make (Celonis) EU Formulaire de contact et automatisation interne
 Google LLC / Google Ireland Ltd. (Firebase Cloud Messaging) USA / global Notifications push vers l’application mobile Hostlio Pro sur iOS et Android (jeton push de l’appareil, identifiants d’instance de l’application et contenu de la notification, par exemple alertes de nouveau message ou de réservation)
 Apple Inc. (Apple Push Notification service) USA Delivery of push notifications to iPhone and iPad devices (device token and notification content, passed on by Firebase Cloud Messaging)
+Google LLC (ML Kit — on-device text recognition) On device (metrics: USA) Lecture de la bande de lecture automatique de la pièce d’identité sur l’appareil du personnel de l’hôtel, dans l’application mobile ; aucune image ni aucun texte ne quitte l’appareil et Google ne reçoit que des mesures anonymes d’utilisation et de performance de l’API
 Twilio Inc.* USA Numéros WhatsApp et facturation des messages pour les hôtels
 Twilio SendGrid* USA E-mails transactionnels
 

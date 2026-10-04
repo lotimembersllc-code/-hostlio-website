@@ -32,7 +32,7 @@ MEGA = {"btn":"Produto","cols":[
 
 # ------------------------------------------------------------------ build.software_schema / room_rack / 404
 SOFT_DESC = "Sistema para hotel com inteligência artificial para hotéis independentes: mensagens com hóspedes 24/7 em 30+ idiomas, channel manager com 100+ OTAs, calendário de reservas e check-in online."
-SOFT_FEATURES = ["Assistente de IA Lio para hóspedes (30+ idiomas)", "Channel manager (conexões certificadas com 100+ OTAs)", "Calendário de reservas com arrastar e soltar", "Check-in online com assinatura digital", "Formulários de visto em PDF automáticos", "Venda de transfers e passeios", "App móvel que funciona off-line"]
+SOFT_FEATURES = ["Assistente de IA Lio para hóspedes (30+ idiomas)", "Channel manager (conexões certificadas com 100+ OTAs)", "Calendário de reservas com arrastar e soltar", "Check-in online com leitura do documento (sem guardar imagens) e assinatura digital", "Formulários de visto em PDF automáticos", "Venda de transfers e passeios", "App móvel que funciona off-line"]
 DAYS = ["Seg","Ter","Qua","Qui","Sex","Sáb","Dom"]
 RACK = ("Mapa de reservas", "Setembro, semana 3", "Reservas com cores por canal: Booking.com em azul, Airbnb em pêssego, Expedia em lilás, Agoda em areia, diretas em verde")
 NOTFOUND = ("Página não encontrada | Hostlio Pro",
@@ -63,7 +63,7 @@ HOME = dict(
   st=[("Todas as mensagens de hóspedes em uma só caixa de entrada","WhatsApp e as caixas de entrada das OTAs (Booking.com, Airbnb, Expedia) juntos. Lio responde com as informações do seu hotel, e você só vê o que realmente precisa de você.",["Respostas automáticas em 30+ idiomas","Dados da reserva ao lado de cada mensagem","Repassa a você o que não tem certeza"],"ai","Como o Lio funciona"),
       ("A semana inteira no mapa de reservas","Veja cada reserva na cor do seu canal. Trocar de quarto, estender a estadia ou bloquear datas exige um único gesto.",["Troca de quarto com arrastar e soltar","Reservas com cores por canal","O mesmo calendário na web, no iOS e no Android"],"features","Todas as funcionalidades"),
       ("100+ canais, uma só disponibilidade","Sincronização bidirecional com conexões de canal certificadas. Um quarto vendido em um canal fecha nos outros na hora.",["Tarifas e restrições em uma só tela","Novas reservas e cancelamentos entram sozinhos","Sem risco de overbooking"],"channel","Channel manager"),
-      ("O check-in fica pronto antes da chegada","O hóspede envia os dados do documento, os acompanhantes e a assinatura pelo celular, por meio de um link seguro.",["No navegador, sem baixar app","Acompanhantes em um único formulário","Assinatura digital e consentimento"],"checkin","Check-in online")],
+      ("O check-in fica pronto antes da chegada","O hóspede envia os dados do documento, os acompanhantes e a assinatura pelo celular, por meio de um link seguro.",["No navegador, sem baixar app","Leitura do documento, sem guardar imagens","Assinatura digital e consentimento"],"checkin","Check-in online")],
   inbox_top=("Caixa de entrada","12 conversas abertas"), inbox_note="Tradução: o check-in é a partir das 14h, podemos guardar sua bagagem.",
   chan_top=("Canais conectados","Última sincronização: agora mesmo"), sync="Sincronizado",
   ci_top=("Check-in online","Quarto 202"), ci_f=[("Nome completo","Keiko Sato"),("Nacionalidade","Japão"),("Acompanhantes","1 hóspede adicionado")], ci_sig="Assinatura",
@@ -115,7 +115,7 @@ def types(U):
   pains_h="Quais são as maiores dificuldades das pousadas?",
   pains=[("Mensagens à noite","Perguntas sobre check-in tardio, estacionamento e café da manhã chegam à meia-noite. Lio responde no idioma do hóspede e você lê um resumo pela manhã."),
          ("Vários canais","Vender o mesmo quarto no Booking.com e no Airbnb gera reservas duplicadas. O channel manager sincroniza a disponibilidade na hora."),
-         ("Documentos e registro","Digitar os dados dos hóspedes na recepção leva tempo. O check-in online coleta tudo antes da chegada."),
+         ("Documentos e registro","Digitar os dados dos hóspedes na recepção leva tempo. Com o check-in online, o hóspede escaneia o documento pelo celular antes da chegada: os dados são preenchidos automaticamente e nenhuma imagem é guardada."),
          ("Orçamento apertado","Sistemas cobrados por comissão ficam mais caros à medida que a ocupação cresce. O Hostlio Pro tem mensalidade fixa.")],
   plan="Para a maioria das pousadas, o plano <strong>Starter</strong> é suficiente: até 10 quartos, ⟦quota:starter⟧ mensagens de IA por mês e respostas de IA no WhatsApp. Escolha o <strong>Pro</strong> se também quiser check-in online e o Lio cuidando das mensagens das OTAs.",
   faq=[("Existe sistema para pousada grátis?","Você pode testar o Hostlio Pro grátis por 7 dias. Depois disso, o Starter custa ⟦price:starter⟧ por mês (preço promocional de lançamento para os 50 primeiros clientes)."),

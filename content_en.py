@@ -117,19 +117,21 @@ def checkin():
     body = f'''
 <section class="page-hero"><div class="wrap split">
 <div><h1>Online check&#8209;in with digital signature</h1>
-<p class="lead">Before arrival, guests send their ID details, accompanying guests and signature from their phone. Handing over the key takes minutes.</p>
+<p class="lead">Before arrival, guests scan their ID with their phone, add accompanying guests and sign. No document images are stored. Handing over the key takes minutes.</p>
 <div class="cta-row">{btn("Try Pro free for 7 days", SIGNUP_URL+"?plan=pro")}</div></div>
 <div class="panel"><p class="panel-title">Online check-in, Room 202</p>
 <div class="field"><span>Full name</span><div>Keiko Sato</div></div>
 <div class="field"><span>Nationality</span><div>Japan</div></div>
+<div class="field"><span>Document</span><div>Passport scanned, no image stored</div></div>
 <div class="field"><span>Accompanying guests</span><div>1 guest added</div></div>
 <div class="field"><span>Signature</span><div class="sig">Digital signature received</div></div>
 </div>
 </div></section>
 <section class="white rule"><div class="wrap">
-<div class="answer"><p><strong>How does online check-in work?</strong> Hostlio Pro sends the booker a personal, time-limited, secure link. From that link the guest enters ID details, adds an ID photo and any accompanying guests, and signs the form digitally. Everything is saved straight to the reservation.</p></div>
+<div class="answer"><p><strong>How does online check-in work?</strong> Hostlio Pro sends the booker a personal, time-limited, secure link. From that link the guest scans the machine-readable zone (MRZ) of their passport or ID card with the phone camera. The reading happens in the guest's own browser and the details fill in automatically. The guest then adds any accompanying guests and signs the form digitally. Only the extracted details and the signature are saved to the reservation; no image of the document is uploaded or stored.</p></div>
 <h2 style="margin-top:64px">Online check-in features</h2><div class="rows">
 <div class="row"><h3>Secure link</h3><div><p>A token-based link unique to each reservation. It only opens that reservation's form.</p></div></div>
+<div class="row"><h3>Document scan, no images stored</h3><div><p>The machine-readable zone of the passport or ID card is read on the guest's own device. Only the name, document number (the T.C. identity number on Turkish ID cards), nationality, date of birth and expiry date are saved, never a picture of the document. This is in line with KVKK principle decision 2025/2120, under which accommodation businesses in Türkiye must not keep copies of ID documents. Documents without a machine-readable zone are entered by hand.</p></div></div>
 <div class="row"><h3>Accompanying guests</h3><div><p>Everyone staying in the room is added in one form, so nobody has to type details at the desk.</p></div></div>
 <div class="row"><h3>Digital signature and consent</h3><div><p>Guests accept house rules and data consent by signing on screen. The signed record is stored with the reservation.</p></div></div>
 <div class="row"><h3>Privacy by design</h3><div><p>Guest data can be deleted on request, and the consent text is part of the form.</p></div></div>
@@ -137,15 +139,16 @@ def checkin():
 </div></div></section>
 <section class="dark on-dark"><div class="wrap"><div class="section-head"><h2>Three steps for the guest</h2></div>
 <ol class="steps"><li><h3>Open the link</h3><p>Open the personal link received after the booking is confirmed (sent by email automatically, or shared by the hotel).</p></li>
-<li><h3>Fill in details</h3><p>Add ID details and a photo, and list accompanying guests.</p></li>
+<li><h3>Scan the document</h3><p>Scan the passport or ID card with the phone: the details fill in automatically and no image is stored. Then list accompanying guests.</p></li>
 <li><h3>Sign</h3><p>Accept house rules and sign on screen. At reception, just pick up the key.</p></li></ol>
 </div></section>
 '''
     faq = [("Which plans include online check-in?", "Online check-in with digital signature is included in the Pro and Growth plans."),
            ("Does the guest need to download an app?", "No. The check-in form opens in the browser; no app download is required."),
-           ("What if a guest doesn't complete the link?", "Check them in the usual way. Staff can also enter details at the desk using the Hostlio Pro mobile app.")]
+           ("What if a guest doesn't complete the link?", "Check them in the usual way. Staff can also scan the guest's document at the desk with the Hostlio Pro mobile app; it is read on the device and no image is stored."),
+           ("Are photos of ID documents stored?", "No. The document's machine-readable zone (MRZ) is read on the guest's phone, or on the hotel's device with the Hostlio Pro mobile app, and only the extracted details and the signature are saved. Passports and ID cards with an MRZ can be scanned; other documents are entered by hand.")]
     return {"key":"checkin","title":"Hotel Online Check-in with Digital Signature | Hostlio Pro",
-            "desc":"With Hostlio Pro online check-in, guests send ID details, companions and a digital signature from their phone before arrival. No queue at reception.",
+            "desc":"With Hostlio Pro online check-in, guests scan their ID on their phone (no image stored), add companions and sign before arrival. No queue at reception.",
             "trail":[("Online check-in", U("checkin"))],"body":body,"faq":faq}
 
 def features():
@@ -156,7 +159,7 @@ def features():
 <div class="row"><h3>Lio AI assistant</h3><div><p>24/7 guest replies in 30+ languages. WhatsApp and OTA inbox messages (Booking.com, Airbnb, Expedia) in one inbox.</p><a href="{U("ai")}">More about Lio</a></div></div>
 <div class="row"><h3>Channel manager</h3><div><p>Availability, rate and booking sync with 100+ OTAs over certified connections.</p><a href="{U("channel")}">Channel manager</a></div></div>
 <div class="row"><h3>Room rack</h3><div><p>Drag-and-drop reservation calendar. Room moves, extensions and blocks in one gesture.</p></div></div>
-<div class="row"><h3>Online check-in</h3><div><p>Secure link, accompanying guests, ID photo and digital signature.</p><a href="{U("checkin")}">Online check-in</a></div></div>
+<div class="row"><h3>Online check-in</h3><div><p>Secure link, accompanying guests, document scan (no images stored) and digital signature.</p><a href="{U("checkin")}">Online check-in</a></div></div>
 <div class="row"><h3>Automatic PDF visa forms</h3><div><p>Generate hotel invitation and accommodation letters for visa applications from reservation data in one click.</p></div></div>
 <div class="row"><h3>Transfer and tour sales</h3><div><p>Lio suggests airport transfers and tours during the conversation and passes the request to your team.</p></div></div>
 <div class="row"><h3>Mobile app</h3><div><p>Manage bookings, messages and check-ins away from the hotel with the iOS and Android app. It keeps working offline and syncs when you're back online.</p></div></div>
@@ -211,7 +214,7 @@ def pricing():
 FAQ_ALL = FAQ_CORE + [
  ("What types of hotels is Hostlio Pro for?", "Independent properties with 1 to 150 rooms, such as boutique hotels, city hotels, guesthouses, aparthotels and hostels."),
  ("Is there a mobile app?", "Yes. The Pro and Growth plans include an iOS and Android app. It works without an internet connection and syncs data when you're back online."),
- ("How does online check-in work?", "Guests receive a personal secure link and send ID details, accompanying guests and a digital signature from their phone before arrival. Available on Pro and Growth."),
+ ("How does online check-in work?", "Guests receive a personal secure link, scan their ID document on their phone (no image is stored) and send accompanying guests and a digital signature before arrival. Available on Pro and Growth."),
  ("What is the PDF visa form feature for?", "It automatically turns reservation data into hotel accommodation and invitation letters as PDFs for guests who need a visa."),
  ("Is my data secure?", "Data is transmitted over encrypted connections, and each hotel's data is isolated from other properties with row-level access rules. Guest data can be deleted on request."),
  ("How long does setup take?", "Your account is ready in minutes. Most hotels connect their channels the same day: add room types and rooms, authorise the connection in each OTA's extranet and map your rooms. The Growth plan includes a custom onboarding call."),

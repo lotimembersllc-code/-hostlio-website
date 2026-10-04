@@ -31,7 +31,7 @@ MEGA = {"btn":"Prodotto","cols":[
 
 # ---------------------------------------------------------------- build.software_schema / room_rack / 404
 SOFT_DESC = "Gestionale per hotel indipendenti con intelligenza artificiale: messaggi agli ospiti 24/7 in oltre 30 lingue, channel manager per oltre 100 OTA, calendario delle prenotazioni e check-in online."
-SOFT_FEATURES = ["Assistente AI Lio per gli ospiti (30+ lingue)", "Channel manager (connessioni certificate con 100+ OTA)", "Calendario prenotazioni drag-and-drop", "Check-in online con firma digitale", "Moduli PDF automatici per il visto", "Vendita di transfer e tour", "App mobile che funziona anche offline"]
+SOFT_FEATURES = ["Assistente AI Lio per gli ospiti (30+ lingue)", "Channel manager (connessioni certificate con 100+ OTA)", "Calendario prenotazioni drag-and-drop", "Check-in online con scansione del documento (nessuna immagine conservata) e firma digitale", "Moduli PDF automatici per il visto", "Vendita di transfer e tour", "App mobile che funziona anche offline"]
 DAYS = ["Lun","Mar","Mer","Gio","Ven","Sab","Dom"]
 RACK = ("Planning camere", "Settembre, 3ª settimana", "Prenotazioni colorate per canale: Booking.com blu, Airbnb pesca, Expedia lilla, Agoda sabbia, dirette verde")
 NOTFOUND = ("Pagina non trovata | Hostlio Pro",
@@ -62,7 +62,7 @@ HOME = dict(
   st=[("Tutti i messaggi degli ospiti in un'unica casella","WhatsApp e messaggi delle OTA (Booking.com, Airbnb, Expedia) tutti insieme. Lio risponde con le informazioni del tuo hotel e tu vedi solo ciò che richiede il tuo intervento.",["Risposte automatiche in 30+ lingue","Dettagli della prenotazione accanto a ogni messaggio","Ti passa ciò di cui non è sicuro"],"ai","Come funziona Lio"),
       ("Tutta la settimana sul planning camere","Vedi ogni prenotazione con il colore del suo canale. Spostare camere, prolungare soggiorni o bloccare date richiede un solo gesto.",["Cambi camera con drag-and-drop","Prenotazioni colorate per canale","Lo stesso calendario su web, iOS e Android"],"features","Tutte le funzionalità"),
       ("100+ canali, un'unica disponibilità","Sincronizzazione bidirezionale con connessioni di canale certificate. Una camera venduta su un canale si chiude subito sugli altri.",["Tariffe e restrizioni da un'unica schermata","Nuove prenotazioni e cancellazioni arrivano in automatico","Nessun rischio di overbooking"],"channel","Channel manager"),
-      ("Il check-in è fatto prima dell'arrivo","Gli ospiti inviano dal telefono dati del documento, accompagnatori e firma tramite un link sicuro.",["Dal browser, senza scaricare app","Accompagnatori in un unico modulo","Firma digitale e consenso"],"checkin","Check-in online")],
+      ("Il check-in è fatto prima dell'arrivo","Gli ospiti inviano dal telefono dati del documento, accompagnatori e firma tramite un link sicuro.",["Dal browser, senza scaricare app","Scansione del documento, nessuna immagine salvata","Firma digitale e consenso"],"checkin","Check-in online")],
   inbox_top=("Posta in arrivo","12 conversazioni aperte"), inbox_note="Traduzione: il check-in è dalle 14:00, possiamo tenere i tuoi bagagli.",
   chan_top=("Canali collegati","Ultima sincronizzazione: adesso"), sync="Sincronizzato",
   ci_top=("Check-in online","Camera 202"), ci_f=[("Nome e cognome","Keiko Sato"),("Nazionalità","Giappone"),("Accompagnatori","1 ospite aggiunto")], ci_sig="Firma",
@@ -114,7 +114,7 @@ def types(U):
   pains_h="Quali sono le difficoltà più comuni di B&B e affittacamere?",
   pains=[("Messaggi notturni","Domande su check-in in tarda serata, parcheggio e colazione arrivano a mezzanotte. Lio risponde nella lingua dell'ospite e tu leggi un riepilogo al mattino."),
          ("Più canali","Vendere la stessa camera su Booking.com e Airbnb causa doppie prenotazioni. Il channel manager sincronizza la disponibilità all'istante."),
-         ("Documenti e registrazione","Trascrivere i dati degli ospiti alla reception richiede tempo. Il check-in online li raccoglie prima dell'arrivo."),
+         ("Documenti e registrazione","Trascrivere i dati degli ospiti alla reception richiede tempo. Con il check-in online l'ospite scansiona il documento con il telefono prima dell'arrivo: i dati si compilano da soli e nessuna immagine viene conservata."),
          ("Budget limitato","I software a commissione costano di più man mano che l'occupazione cresce. Hostlio Pro ha un canone mensile fisso.")],
   plan="Per la maggior parte dei B&B basta il piano <strong>Starter</strong>: fino a 10 camere, ⟦quota:starter⟧ messaggi AI al mese e messaggistica AI su WhatsApp. Scegli <strong>Pro</strong> se vuoi anche il check-in online e che Lio gestisca i messaggi delle OTA.",
   faq=[("Esiste un gestionale per B&B gratuito?","Puoi provare Hostlio Pro gratis per 7 giorni. Dopo, il piano Starter costa ⟦price:starter⟧ al mese (prezzo early-bird riservato ai primi 50 clienti)."),

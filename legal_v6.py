@@ -6,9 +6,10 @@ Güvenlik ve veri sayfası. İngilizce metin esastır; diğer diller çeviridir 
    - mesaj içeriği: panel Kurulum → "Message Retention (days)", varsayılan 60 gün (Setup1.jsx)
    - misafir iletişim bilgisi: 90 gün (analiz raporu, "kodda tanımlı")
 """
-LEGAL_ISO = "2026-10-03"   # 3 Eki 2026: Firebase alt işleyicisi, hostlio_acq 90 gün (O5/O6)
-LEGAL_DATE = {"en": "October 3, 2026", "tr": "3 Ekim 2026", "es": "3 de octubre de 2026",
-              "it": "3 ottobre 2026", "pt": "3 de outubro de 2026", "fr": "3 octobre 2026"}
+LEGAL_ISO = "2026-10-04"   # 4 Eki 2026: P1 — kimlik görüntüsü saklanmaz (MRZ cihazda okunur), Google ML Kit eklendi
+# 3 Eki 2026: Firebase alt işleyicisi, hostlio_acq 90 gün (O5/O6)
+LEGAL_DATE = {"en": "October 4, 2026", "tr": "4 Ekim 2026", "es": "4 de octubre de 2026",
+              "it": "4 ottobre 2026", "pt": "4 de outubro de 2026", "fr": "4 octobre 2026"}
 RETENTION = {"msg_default_days": 60, "guest_contact_days": 90, "deletion_days": 30}
 import pricing  # tek fiyat/kota kaynağı
 
@@ -28,15 +29,16 @@ SUBPROCESSORS = [
     ("Make (Celonis)", "EU", "make"),
     ("Google LLC / Google Ireland Ltd. (Firebase Cloud Messaging)", "USA / global", "push"),
     ("Apple Inc. (Apple Push Notification service)", "USA", "apns"),
+    ("Google LLC (ML Kit — on-device text recognition)", "On device (metrics: USA)", "mlkit"),
 ]
 PLANNED = [("Twilio Inc.", "USA", "tw"), ("Twilio SendGrid", "USA", "sg")]
 SP_PURPOSE = {
  "en": {"db": "Database, authentication and server functions", "web": "Website and dashboard hosting", "pay": "Payments and subscription billing",
         "ai": "AI processing of guest messages to draft replies", "wa": "Sending and receiving WhatsApp messages", "chx": "Availability, rate, booking and OTA message sync",
-        "make": "Contact form and internal workflow automation", "push": "Push notifications to the Hostlio Pro mobile app on iOS and Android (device push token, app instance identifiers, notification content such as new message or reservation alerts)", "apns": "Delivery of push notifications to iPhone and iPad devices (device token and notification content, passed on by Firebase Cloud Messaging)", "tw": "WhatsApp numbers and messaging billing for hotels", "sg": "Transactional email"},
+        "make": "Contact form and internal workflow automation", "push": "Push notifications to the Hostlio Pro mobile app on iOS and Android (device push token, app instance identifiers, notification content such as new message or reservation alerts)", "apns": "Delivery of push notifications to iPhone and iPad devices (device token and notification content, passed on by Firebase Cloud Messaging)", "mlkit": "Reading the ID document’s machine-readable zone on the hotel staff’s device in the mobile app; no images or text leave the device; Google receives only anonymous API usage and performance metrics", "tw": "WhatsApp numbers and messaging billing for hotels", "sg": "Transactional email"},
  "tr": {"db": "Veritabanı, kimlik doğrulama ve sunucu fonksiyonları", "web": "Web sitesi ve panel barındırma", "pay": "Ödemeler ve abonelik faturalandırması",
         "ai": "Cevap taslağı için misafir mesajlarının yapay zekâ ile işlenmesi", "wa": "WhatsApp mesajlarının gönderilmesi ve alınması", "chx": "Müsaitlik, fiyat, rezervasyon ve OTA mesaj senkronizasyonu",
-        "make": "İletişim formu ve iç iş akışı otomasyonu", "push": "Hostlio Pro mobil uygulamasına (iOS ve Android) anlık bildirim gönderimi (cihaz bildirim jetonu, uygulama örneği kimlikleri, yeni mesaj veya rezervasyon uyarısı gibi bildirim içeriği)", "apns": "iPhone ve iPad cihazlara anlık bildirimin iletilmesi (Firebase Cloud Messaging üzerinden aktarılan cihaz jetonu ve bildirim içeriği)", "tw": "Oteller için WhatsApp numarası ve mesaj faturalandırması", "sg": "İşlemsel e-posta"},
+        "make": "İletişim formu ve iç iş akışı otomasyonu", "push": "Hostlio Pro mobil uygulamasına (iOS ve Android) anlık bildirim gönderimi (cihaz bildirim jetonu, uygulama örneği kimlikleri, yeni mesaj veya rezervasyon uyarısı gibi bildirim içeriği)", "apns": "iPhone ve iPad cihazlara anlık bildirimin iletilmesi (Firebase Cloud Messaging üzerinden aktarılan cihaz jetonu ve bildirim içeriği)", "mlkit": "Mobil uygulamada kimlik belgesinin makine okunabilir alanının otel personelinin cihazında okunması; görüntü veya metin cihazdan çıkmaz, Google yalnızca anonim API kullanım ve performans ölçümlerini alır", "tw": "Oteller için WhatsApp numarası ve mesaj faturalandırması", "sg": "İşlemsel e-posta"},
 }
 
 def _ul(items): return "<ul>" + "".join(f"<li>{i}</li>" for i in items) + "</ul>"
@@ -64,7 +66,7 @@ def privacy_en(U, EMAIL, ADDR):
       "<strong>Billing data:</strong> plan, billing period and payment status. Card details are collected and stored by Stripe, never by us",
       "<strong>Hotel data:</strong> room types, rooms, rates, availability, reservations and settings",
       "<strong>Guest data processed for hotels:</strong> guest names, contact details, booking details and the content of guest messages received on WhatsApp and OTA inboxes",
-      "<strong>Online check-in data:</strong> identity document details and images, date of birth, nationality, companions and a digital signature, when the hotel uses online check-in. We treat this as sensitive data",
+      "<strong>Online check-in data:</strong> identity document details (name, document number or, for Turkish ID cards, the T.C. identity number, nationality, date of birth and expiry date), companions and a digital signature, when the hotel uses online check-in. The document’s machine-readable zone is read on the guest’s or the hotel staff’s own device; we do not collect or store images of identity documents. We treat this data as sensitive",
       "<strong>Signup and security data:</strong> IP address, a hashed email and the outcome of signup attempts, used to prevent fraud and abuse",
       "<strong>Marketing source:</strong> only if you arrive through a link with campaign parameters (UTM parameters or an ad click ID): those parameters, the landing page and the time of your first visit, stored in your browser and sent to us only with your signup or contact form",
       "<strong>Usage data:</strong> how the dashboard and app are used, technical logs and, when you use the mobile app, your device’s push notification token"])}
@@ -110,7 +112,7 @@ def privacy_tr(U, EMAIL, ADDR):
       "<strong>Fatura verileri:</strong> plan, fatura dönemi ve ödeme durumu. Kart bilgileri bizde değil, Stripe’ta toplanır ve saklanır",
       "<strong>Otel verileri:</strong> oda tipleri, odalar, fiyatlar, müsaitlik, rezervasyonlar ve ayarlar",
       "<strong>Oteller adına işlenen misafir verileri:</strong> misafir adı, iletişim bilgileri, rezervasyon bilgileri ve WhatsApp ile OTA gelen kutularına gelen mesajların içeriği",
-      "<strong>Online check-in verileri:</strong> otel online check-in kullanıyorsa kimlik belgesi bilgileri ve görseli, doğum tarihi, uyruk, refakatçiler ve dijital imza. Bu verileri hassas veri olarak ele alırız",
+      "<strong>Online check-in verileri:</strong> otel online check-in kullanıyorsa kimlik belgesi bilgileri (ad soyad, belge numarası ya da T.C. kimlik kartlarında T.C. kimlik no, uyruk, doğum tarihi ve geçerlilik tarihi), refakatçiler ve dijital imza. Belgenin makine okunabilir alanı misafirin ya da otel personelinin kendi cihazında okunur; kimlik belgesi görüntüsü toplamaz ve saklamayız. Bu verileri hassas veri olarak ele alırız",
       "<strong>Kayıt ve güvenlik verileri:</strong> IP adresi, e-postanın özetlenmiş (hash) hali ve kayıt denemelerinin sonucu; dolandırıcılık ve kötüye kullanımı önlemek için",
       "<strong>Pazarlama kaynağı:</strong> yalnızca sitemize kampanya parametreleri (UTM parametreleri veya reklam tıklama kimliği) içeren bir bağlantıyla geldiyseniz bu parametreler, giriş sayfası ve ilk ziyaretinizin zamanı; tarayıcınızda saklanır ve bize yalnızca kayıt veya iletişim formuyla birlikte iletilir",
       "<strong>Kullanım verileri:</strong> panel ve uygulamanın nasıl kullanıldığı, teknik kayıtlar ve mobil uygulamayı kullandığınızda cihazınızın bildirim jetonu (push token)"])}

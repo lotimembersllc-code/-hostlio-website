@@ -120,19 +120,21 @@ def checkin():
     body = f'''
 <section class="page-hero"><div class="wrap split">
 <div><h1>Online check&#8209;in ve dijital imza</h1>
-<p class="lead">Misafir, varıştan önce telefonundan kimlik bilgilerini, refakatçilerini ve imzasını gönderir. Resepsiyonda anahtar teslimi birkaç dakikaya iner.</p>
+<p class="lead">Misafir, varıştan önce kimliğini telefonuyla tarar, refakatçilerini ekler ve imzalar. Belge görüntüsü saklanmaz. Resepsiyonda anahtar teslimi birkaç dakikaya iner.</p>
 <div class="cta-row">{btn("Pro ile 7 gün ücretsiz dene", SIGNUP_URL+"?plan=pro")}</div></div>
 <div class="panel"><p class="panel-title">Online check-in, Oda 202</p>
 <div class="field"><span>Ad soyad</span><div>Keiko Sato</div></div>
 <div class="field"><span>Uyruk</span><div>Japonya</div></div>
+<div class="field"><span>Belge</span><div>Pasaport tarandı, görüntü saklanmadı</div></div>
 <div class="field"><span>Refakatçi</span><div>1 misafir eklendi</div></div>
 <div class="field"><span>İmza</span><div class="sig">Dijital imza alındı</div></div>
 </div>
 </div></section>
 <section class="white rule"><div class="wrap">
-<div class="answer"><p><strong>Online check-in nasıl çalışır?</strong> Hostlio Pro, rezervasyon sahibine kişiye özel, süreli ve güvenli bir bağlantı gönderir. Misafir bu bağlantıdan kimlik bilgilerini girer, kimlik fotoğrafını ekler, varsa refakatçileri ekler ve formu dijital olarak imzalar. Bilgiler doğrudan rezervasyona kaydedilir.</p></div>
+<div class="answer"><p><strong>Online check-in nasıl çalışır?</strong> Hostlio Pro, rezervasyon sahibine kişiye özel, süreli ve güvenli bir bağlantı gönderir. Misafir bu bağlantıdan pasaportunun ya da kimlik kartının makine okunabilir alanını (MRZ) telefon kamerasıyla tarar; okuma misafirin kendi tarayıcısında yapılır ve bilgiler otomatik dolar. Ardından varsa refakatçileri ekler ve formu dijital olarak imzalar. Rezervasyona yalnızca okunan bilgiler ve imza kaydedilir; belgenin görüntüsü gönderilmez, saklanmaz.</p></div>
 <h2 style="margin-top:64px">Online check-in özellikleri</h2><div class="rows">
 <div class="row"><h3>Güvenli bağlantı</h3><div><p>Her rezervasyona özel, token tabanlı bağlantı. Bağlantı yalnızca o rezervasyonun formunu açar.</p></div></div>
+<div class="row"><h3>KVKK uyumlu belge tarama</h3><div><p>Pasaportun veya kimlik kartının makine okunabilir alanı misafirin kendi cihazında okunur. Yalnızca ad soyad, belge numarası (T.C. kimlik kartlarında T.C. kimlik no), uyruk, doğum tarihi ve geçerlilik tarihi kaydedilir; kimliğin fotokopisi ya da fotoğrafı saklanmaz. Bu, konaklama işletmelerinin kimlik fotokopisi saklamamasını öngören KVKK İlke Kararı 2025/2120 ile uyumludur. Makine okunabilir alanı olmayan belgeler elle girilir.</p></div></div>
 <div class="row"><h3>Refakatçi misafirler</h3><div><p>Aynı odada kalan tüm misafirler tek formda eklenir. Resepsiyonda tek tek bilgi yazmaya gerek kalmaz.</p></div></div>
 <div class="row"><h3>Dijital imza ve onay</h3><div><p>Misafir otel kurallarını ve kişisel veri onayını ekranda imzalar. İmzalı kayıt rezervasyonda saklanır.</p></div></div>
 <div class="row"><h3>Kişisel verilere saygı</h3><div><p>Misafir verileri talep üzerine silinebilir. Açık rıza metni formun parçasıdır.</p></div></div>
@@ -140,15 +142,16 @@ def checkin():
 </div></div></section>
 <section class="dark on-dark"><div class="wrap"><div class="section-head"><h2>Misafir tarafında üç adım</h2></div>
 <ol class="steps"><li><h3>Bağlantıyı açar</h3><p>Rezervasyon onayından sonra gelen kişisel bağlantıyı açar (otomatik e-postayla gönderilir ya da otel paylaşır).</p></li>
-<li><h3>Bilgileri doldurur</h3><p>Kimlik bilgilerini ve fotoğrafını ekler, refakatçileri girer.</p></li>
+<li><h3>Belgesini tarar</h3><p>Pasaportunu ya da kimliğini telefonuyla tarar; bilgiler otomatik dolar, görüntü saklanmaz. Ardından refakatçileri girer.</p></li>
 <li><h3>İmzalar</h3><p>Otel kurallarını onaylayıp ekranda imzalar. Resepsiyona sadece anahtar almaya gelir.</p></li></ol>
 </div></section>
 '''
     faq = [("Online check-in hangi planda var?", "Online check-in ve dijital imza Pro ve Growth planlarına dahildir."),
            ("Misafirin uygulama indirmesi gerekiyor mu?", "Hayır. Check-in formu tarayıcıda açılır; herhangi bir uygulama indirmek gerekmez."),
-           ("Misafir bağlantıyı doldurmazsa ne olur?", "Klasik check-in'e devam edebilirsiniz. Resepsiyonda bilgileri Hostlio Pro mobil uygulamasından da girebilirsiniz.")]
+           ("Misafir bağlantıyı doldurmazsa ne olur?", "Klasik check-in'e devam edebilirsiniz. Resepsiyonda misafirin belgesini Hostlio Pro mobil uygulamasıyla da tarayabilirsiniz; okuma cihazda yapılır, görüntü saklanmaz."),
+           ("Kimlik fotoğrafı saklanıyor mu?", "Hayır. Belgenin makine okunabilir alanı (MRZ) misafirin telefonunda ya da Hostlio Pro mobil uygulamasıyla otelin cihazında okunur; yalnızca okunan bilgiler ve imza kaydedilir. MRZ'li pasaport ve kimlik kartları taranabilir; diğer belgeler elle girilir.")]
     return {"key":"checkin","title":"Otel Online Check-in ve Dijital İmza Yazılımı | Hostlio Pro",
-            "desc":"Hostlio Pro online check-in ile misafirler varıştan önce kimliklerini, refakatçilerini ve dijital imzasını telefondan gönderir. Resepsiyonda kuyruk yok.",
+            "desc":"Hostlio Pro online check-in: misafir kimliğini telefonuyla tarar (görüntü saklanmaz), refakatçilerini ve dijital imzasını varıştan önce gönderir.",
             "trail":[("Online check-in", U("checkin"))],"body":body,"faq":faq}
 
 def features():
@@ -159,7 +162,7 @@ def features():
 <div class="row"><h3>AI asistan Lio</h3><div><p>30+ dilde, 7/24 misafir yanıtı. WhatsApp ve OTA gelen kutusu mesajları (Booking.com, Airbnb, Expedia) tek gelen kutusunda.</p><a href="{U("ai")}">Lio hakkında daha fazlası</a></div></div>
 <div class="row"><h3>Kanal yöneticisi</h3><div><p>100+ OTA'da sertifikalı bağlantılarla müsaitlik, fiyat ve rezervasyon senkronizasyonu.</p><a href="{U("channel")}">Kanal yöneticisi</a></div></div>
 <div class="row"><h3>Oda rafı (room rack)</h3><div><p>Sürükle-bırak rezervasyon takvimi. Oda değişikliği, konaklama uzatma ve blokaj tek hareketle.</p></div></div>
-<div class="row"><h3>Online check-in</h3><div><p>Güvenli bağlantı, refakatçi misafirler, kimlik fotoğrafı ve dijital imza.</p><a href="{U("checkin")}">Online check-in</a></div></div>
+<div class="row"><h3>Online check-in</h3><div><p>Güvenli bağlantı, refakatçi misafirler, belge tarama (görüntü saklanmaz) ve dijital imza.</p><a href="{U("checkin")}">Online check-in</a></div></div>
 <div class="row"><h3>Otomatik PDF vize formları</h3><div><p>Vize başvurusu için otel davet ve konaklama belgelerini rezervasyon bilgilerinden tek tıkla PDF olarak üretin.</p></div></div>
 <div class="row"><h3>Transfer ve tur satışı</h3><div><p>Lio mesajlaşma sırasında havalimanı transferi ve tur önerir, talebi ekibinize iletir.</p></div></div>
 <div class="row"><h3>Mobil uygulama</h3><div><p>iOS ve Android uygulamasıyla rezervasyonları, mesajları ve check-in'leri otelin dışından yönetin. İnternet kesildiğinde de çalışır, bağlantı gelince senkronize olur.</p></div></div>
@@ -214,7 +217,7 @@ def pricing():
 FAQ_ALL = FAQ_CORE + [
  ("Hostlio Pro hangi otel tiplerine uygun?", "Butik oteller, şehir otelleri, pansiyonlar, apart oteller ve hosteller gibi 1 ila 150 odalı bağımsız tesisler için tasarlandı."),
  ("Mobil uygulama var mı?", "Evet. Pro ve Growth planlarında iOS ve Android uygulaması bulunur. Uygulama internet bağlantısı olmadan da çalışır ve bağlantı geldiğinde verileri senkronize eder."),
- ("Online check-in nasıl çalışıyor?", "Misafire kişiye özel güvenli bir bağlantı gönderilir. Misafir kimlik bilgilerini, refakatçilerini ve dijital imzasını varıştan önce telefonundan gönderir. Pro ve Growth planlarında vardır."),
+ ("Online check-in nasıl çalışıyor?", "Misafire kişiye özel güvenli bir bağlantı gönderilir. Misafir kimliğini telefonuyla tarar (görüntü saklanmaz), refakatçilerini ve dijital imzasını varıştan önce gönderir. Pro ve Growth planlarında vardır."),
  ("PDF vize formu özelliği ne işe yarar?", "Vizeye ihtiyaç duyan misafirler için otel konaklama ve davet belgelerini rezervasyon bilgilerinden otomatik olarak PDF'e dönüştürür."),
  ("Verilerim güvende mi?", "Veriler şifreli bağlantı üzerinden iletilir ve her otelin verisi satır düzeyinde erişim kurallarıyla diğer tesislerden ayrılır. Misafir verileri talep üzerine silinebilir."),
  ("Kurulum ne kadar sürer?", "Hesabınız dakikalar içinde hazır olur. Çoğu otel kanallarını aynı gün bağlar: oda tiplerini ve odaları girin, her OTA'nın extranet'inde bağlantıyı yetkilendirin ve odaları eşleyin. Growth planında birebir kurulum görüşmesi dahildir."),

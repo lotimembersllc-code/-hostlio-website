@@ -123,19 +123,21 @@ def checkin():
     body = f'''
 <section class="page-hero"><div class="wrap split">
 <div><h1>Check&#8209;in en ligne avec signature électronique</h1>
-<p class="lead">Avant leur arrivée, les clients envoient depuis leur téléphone leurs données d'identité, les personnes qui les accompagnent et leur signature. La remise des clés ne prend que quelques minutes.</p>
+<p class="lead">Avant leur arrivée, les clients scannent leur pièce d'identité avec leur téléphone, ajoutent leurs accompagnants et signent. Aucune image du document n'est conservée. La remise des clés ne prend que quelques minutes.</p>
 <div class="cta-row">{btn("Essayez Pro gratuitement pendant 7 jours", SIGNUP_URL+"?plan=pro")}</div></div>
 <div class="panel"><p class="panel-title">Check-in en ligne, chambre 202</p>
 <div class="field"><span>Nom complet</span><div>Keiko Sato</div></div>
 <div class="field"><span>Nationalité</span><div>Japon</div></div>
+<div class="field"><span>Document</span><div>Passeport scanné, aucune image conservée</div></div>
 <div class="field"><span>Accompagnants</span><div>1 accompagnant ajouté</div></div>
 <div class="field"><span>Signature</span><div class="sig">Signature électronique reçue</div></div>
 </div>
 </div></section>
 <section class="white rule"><div class="wrap">
-<div class="answer"><p><strong>Comment fonctionne le check-in en ligne ?</strong> Hostlio Pro envoie à la personne qui a réservé un lien sécurisé, personnel et à durée limitée. Depuis ce lien, le client saisit ses données d'identité, ajoute une photo de sa pièce d'identité et d'éventuels accompagnants, puis signe le formulaire électroniquement. Tout est enregistré directement dans la réservation.</p></div>
+<div class="answer"><p><strong>Comment fonctionne le check-in en ligne ?</strong> Hostlio Pro envoie à la personne qui a réservé un lien sécurisé, personnel et à durée limitée. Depuis ce lien, le client scanne avec l'appareil photo de son téléphone la bande de lecture automatique (MRZ) de son passeport ou de sa carte d'identité. La lecture se fait dans son propre navigateur et les champs se remplissent automatiquement. Il ajoute ensuite d'éventuels accompagnants, puis signe le formulaire électroniquement. Seules les données extraites et la signature sont enregistrées dans la réservation ; aucune image du document n'est envoyée ni conservée.</p></div>
 <h2 style="margin-top:64px">Fonctionnalités du check-in en ligne</h2><div class="rows">
 <div class="row"><h3>Lien sécurisé</h3><div><p>Un lien à jeton, propre à chaque réservation. Il n'ouvre que le formulaire de cette réservation.</p></div></div>
+<div class="row"><h3>Scan du document sans conserver d'image</h3><div><p>La bande de lecture automatique du passeport ou de la carte d'identité est lue sur l'appareil du client. Seuls le nom, le numéro du document, la nationalité, la date de naissance et la date d'expiration sont enregistrés, jamais une photo du document. Les documents sans bande de lecture automatique sont saisis à la main.</p></div></div>
 <div class="row"><h3>Accompagnants</h3><div><p>Toutes les personnes séjournant dans la chambre sont ajoutées dans un seul formulaire : plus personne n'a à saisir ses données à la réception.</p></div></div>
 <div class="row"><h3>Signature électronique et consentement</h3><div><p>Les clients acceptent le règlement intérieur et le consentement au traitement des données en signant à l'écran. L'enregistrement signé est conservé avec la réservation.</p></div></div>
 <div class="row"><h3>Confidentialité dès la conception</h3><div><p>Les données des clients peuvent être supprimées sur demande, et le texte de consentement fait partie du formulaire.</p></div></div>
@@ -143,15 +145,16 @@ def checkin():
 </div></div></section>
 <section class="dark on-dark"><div class="wrap"><div class="section-head"><h2>Trois étapes pour le client</h2></div>
 <ol class="steps"><li><h3>Ouvrir le lien</h3><p>Touchez le lien envoyé après la confirmation de la réservation.</p></li>
-<li><h3>Remplir les informations</h3><p>Ajoutez vos données d'identité et une photo, puis indiquez vos accompagnants.</p></li>
+<li><h3>Scanner le document</h3><p>Scannez votre passeport ou votre carte d'identité avec votre téléphone : les champs se remplissent automatiquement et aucune image n'est conservée. Indiquez ensuite vos accompagnants.</p></li>
 <li><h3>Signer</h3><p>Acceptez le règlement intérieur et signez à l'écran. À la réception, il ne reste qu'à récupérer la clé.</p></li></ol>
 </div></section>
 '''
     faq = [("Quels forfaits incluent le check-in en ligne ?", "Le check-in en ligne avec signature électronique est inclus dans les forfaits Pro et Growth."),
            ("Le client doit-il télécharger une application ?", "Non. Le formulaire de check-in s'ouvre dans le navigateur ; aucune application n'est à télécharger."),
-           ("Et si un client ne remplit pas le formulaire ?", "Enregistrez-le de la manière habituelle. Votre équipe peut aussi saisir les informations à la réception avec l'application mobile Hostlio Pro.")]
+           ("Et si un client ne remplit pas le formulaire ?", "Enregistrez-le de la manière habituelle. Votre équipe peut aussi scanner le document à la réception avec l'application mobile Hostlio Pro ; la lecture se fait sur l'appareil et aucune image n'est conservée."),
+           ("Les photos des pièces d'identité sont-elles conservées ?", "Non. La bande de lecture automatique (MRZ) du document est lue sur le téléphone du client, ou sur l'appareil de l'hôtel avec l'application mobile Hostlio Pro, et seules les données extraites et la signature sont enregistrées. Les passeports et cartes d'identité dotés d'une MRZ peuvent être scannés ; les autres documents sont saisis à la main.")]
     return {"key":"checkin","title":"Check-in en ligne avec signature électronique | Hostlio Pro",
-            "desc":"Avec le check-in en ligne, vos clients envoient pièce d'identité, accompagnants et signature électronique depuis leur mobile. Fini l'attente à l'accueil.",
+            "desc":"Check-in en ligne : vos clients scannent leur pièce d'identité (aucune image conservée), ajoutent leurs accompagnants et signent depuis leur mobile.",
             "trail":[("Check-in en ligne", U("checkin"))],"body":body,"faq":faq}
 
 def features():
@@ -162,7 +165,7 @@ def features():
 <div class="row"><h3>Assistant IA Lio</h3><div><p>Réponses aux clients 24 h/24, 7 j/7, dans plus de 30 langues. Messages WhatsApp et OTA (Booking.com, Airbnb, Expedia) dans une seule boîte de réception.</p><a href="{U("ai")}">En savoir plus sur Lio</a></div></div>
 <div class="row"><h3>Channel manager</h3><div><p>Synchronisation des disponibilités, tarifs et réservations avec plus de 100 OTA par connexions certifiées.</p><a href="{U("channel")}">Channel manager</a></div></div>
 <div class="row"><h3>Planning des chambres</h3><div><p>Calendrier de réservations en glisser-déposer. Changements de chambre, prolongations et blocages en un seul geste.</p></div></div>
-<div class="row"><h3>Check-in en ligne</h3><div><p>Lien sécurisé, accompagnants, photo de la pièce d'identité et signature électronique.</p><a href="{U("checkin")}">Check-in en ligne</a></div></div>
+<div class="row"><h3>Check-in en ligne</h3><div><p>Lien sécurisé, accompagnants, scan de la pièce d'identité (aucune image conservée) et signature électronique.</p><a href="{U("checkin")}">Check-in en ligne</a></div></div>
 <div class="row"><h3>Formulaires de visa PDF automatiques</h3><div><p>Générez en un clic, à partir des données de réservation, les lettres d'invitation et attestations d'hébergement nécessaires aux demandes de visa.</p></div></div>
 <div class="row"><h3>Vente de transferts et d'excursions</h3><div><p>Lio propose transferts aéroport et excursions pendant la conversation et transmet la demande à votre équipe.</p></div></div>
 <div class="row"><h3>Application mobile</h3><div><p>Gérez réservations, messages et check-ins hors de l'hôtel avec l'application iOS et Android. Elle fonctionne hors ligne et se synchronise dès que vous êtes de nouveau connecté.</p></div></div>
@@ -217,7 +220,7 @@ def pricing():
 FAQ_ALL = FAQ_CORE + [
  ("À quels types d'hôtels s'adresse Hostlio Pro ?", "Aux établissements indépendants de 1 à 150 chambres : hôtels boutique, hôtels urbains, chambres d'hôtes, résidences hôtelières et auberges de jeunesse."),
  ("Existe-t-il une application mobile ?", "Oui. Les forfaits Pro et Growth incluent une application iOS et Android. Elle fonctionne sans connexion Internet et synchronise les données dès que vous êtes de nouveau en ligne."),
- ("Comment fonctionne le check-in en ligne ?", "Les clients reçoivent un lien sécurisé personnel et envoient depuis leur téléphone, avant leur arrivée, leurs données d'identité, leurs accompagnants et leur signature électronique. Disponible avec Pro et Growth."),
+ ("Comment fonctionne le check-in en ligne ?", "Les clients reçoivent un lien sécurisé personnel, scannent leur pièce d'identité avec leur téléphone (aucune image n'est conservée) et envoient avant leur arrivée leurs accompagnants et leur signature électronique. Disponible avec Pro et Growth."),
  ("À quoi sert la fonction de formulaires de visa PDF ?", "Elle transforme automatiquement les données de réservation en attestations d'hébergement et lettres d'invitation au format PDF pour les clients qui ont besoin d'un visa."),
  ("Mes données sont-elles sécurisées ?", "Les données transitent par des connexions chiffrées, et les données de chaque hôtel sont isolées de celles des autres établissements grâce à des règles d'accès au niveau des lignes. Les données des clients peuvent être supprimées sur demande."),
  ("Combien de temps prend la mise en place ?", "Votre compte est prêt en quelques minutes. La plupart des hôtels connectent leurs canaux le jour même : ajoutez types de chambres et chambres, autorisez la connexion dans l’extranet de chaque OTA et associez les chambres. Le forfait Growth inclut un appel de prise en main personnalisé."),
