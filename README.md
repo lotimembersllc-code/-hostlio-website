@@ -24,9 +24,37 @@ Aşağıdaki "v5 … v14" bölümleri sürüm geçmişidir; geçerli mimari bu b
 
 Tarayıcı betikleri (`src/assets/`): `site.js` (menüler, fiyat düğmesi, iletişim formu, video), `prices.js`
 (sayfadaki `hostlio-pricing` JSON'u + canlı `plans` ucu, `early_bird=false` ⇒ Early Bird metinleri gizlenir),
-`signup.js` (kayıt formu → `signup-checkout`, sunucu hata kodlarının 6 dile çevirisi), `roi.js`, `ga-init.js`.
+`signup.js` (kayıt formu → `signup-checkout`, sunucu hata kodlarının 6 dile çevirisi), `roi.js`, `consent.js` (GA4 + çerez izni).
 Satır içi `<script>` ve `onclick=` **yasak** (CSP `script-src 'self'`; `check.py` yakalar). Veri gerekiyorsa
 `<script type="application/json">` bloğu kullanın.
+
+### Analitik (GA4 + çerez izni, 8 Ekim 2026)
+- Kimlik `build.py` → `GA4_ID` (şu an `G-W74GFJQYJ4`). `""` yapılırsa hiçbir analitik yüklenmez: `consent.js` yok, bant yok,
+  altbilgi düğmesi yok, CSP'de Google kökeni yok, gizlilik politikası eski metninde kalır.
+- `src/assets/consent.js` (`<head>`'de, senkron): Consent Mode v2 varsayılanı dördü de `denied`; bant 6 dilde; **gtag.js yalnız
+  "Kabul et"ten sonra** yüklenir (izinden önce Google'a istek yok). `ad_*` sinyalleri hep `denied`, Google sinyalleri kapalı.
+  Seçim `localStorage.hostlio_consent` (6 ay). Altbilgide ve gizlilik politikasında "Çerez tercihleri" düğmesi bandı açar.
+  "Reddet" `_ga*` çerezlerini siler. CSP eklemeleri `csp()`'de (Google'ın GA4 listesi).
+- Gizlilik politikası çerez paragrafı: `analytics_consent.py` (`GA4_TEXT`, 6 dil; build çerez h2'sini bulup ekler, `id="cookies"`).
+- Olaylar (parametrelerde kişisel veri yok; `window.hostlioTrack`):
+
+| Olay | Nerede | Parametreler |
+|---|---|---|
+| `page_view` | her sayfa (otomatik) | — |
+| `signup_cta_click` | `/xx/signup/` bağlantısı tıklanınca; **kayıt sayfası açılınca gönderilir** | `cta_location` (header/footer/hero/pricing_plans/final_cta/content), `cta_page`, `plan`, `billing` |
+| `signup_form_start` | kayıt formuna ilk odak | `plan`, `billing` |
+| `signup_plan_select` | kayıt sayfasında plan değişimi | `plan` |
+| `signup_submit` | geçerli form gönderimi (başarılıysa Stripe dönüşünde gönderilir) | `plan`, `billing` |
+| `begin_checkout` | Stripe'a yönlendirme (Stripe dönüşünde gönderilir) | `plan`, `billing` |
+| `signup_error` | sunucu/ağ hatası | `plan`, `error_field` |
+| `sign_up` | `?checkout=success` dönüşü | `method=stripe_checkout` |
+| `checkout_cancelled` | `?checkout=cancelled` dönüşü | — |
+| `generate_lead` | iletişim formu başarılı | `form=contact` |
+| `pricing_billing_toggle` | aylık/yıllık düğmesi | `billing`, `context` (pricing/signup) |
+
+  Ayrılmadan hemen önceki olaylar (`signup_cta_click`, `signup_submit`+`begin_checkout`) sekmenin sessionStorage'ına yazılıp
+  sonraki sayfada gönderilir: gtag olayları ~5 sn toplu gönderir, hemen gezinince kayboluyordu (test edildi).
+  GA4'te anahtar olay (key event) önerisi: `sign_up`, `generate_lead`, `begin_checkout`.
 
 ### Adresler
 - Kayıt: `/xx/signup/` (her dilde; CTA'lar `finish()` ile doğrudan buraya gider). `/signup/` dil algılayan giriş

@@ -292,7 +292,7 @@ def render(build, lang=None):
 </div></main>
 
 <footer class="co-foot"><div class="wrap"><span>© {UPD_YEAR(build)} Hostlio Pro, Loti Members LLC</span>
-<a href="{tpath}" id="co-f-terms">{foot[0]}</a><a href="{ppath}" id="co-f-privacy">{foot[1]}</a><a href="mailto:{build.EMAIL}">{build.EMAIL}</a></div></footer>
+<a href="{tpath}" id="co-f-terms">{foot[0]}</a><a href="{ppath}" id="co-f-privacy">{foot[1]}</a><a href="mailto:{build.EMAIL}">{build.EMAIL}</a>{build.consent_foot(L)}</div></footer>
 
 <script type="application/json" id="co-data">{co_json}</script>
 {build.pricing_block(L)}<script src="{build.asset('/assets/signup.js')}" defer></script>

@@ -203,6 +203,16 @@ function validateRooms(planId, rooms) {
   return null;
 }
 
+// GA4 olayları (consent.js; yalnız GA4_ID doluyken ve izin verildiyse). Parametrelerde kişisel veri YOK:
+// yalnız plan, faturalama dönemi, hata alanı adı. cb verilirse gönderim bitince (en geç ~0,9 sn) çağrılır.
+function track(n, p) {
+  if (typeof window.hostlioTrack === 'function') { try { window.hostlioTrack(n, p); } catch (e) {} }
+}
+// Stripe'a yönlendirmeden hemen önceki olaylar: dönüş sayfasında gönderilir (consent.js, hostlioTrack.defer)
+function trackLater(n, p) {
+  if (window.hostlioTrack && typeof window.hostlioTrack.defer === 'function') { try { window.hostlioTrack.defer(n, p); } catch (e) {} }
+}
+
 var submitting = false;
 function submitForm(ev) {
   if (ev) ev.preventDefault();
@@ -233,6 +243,7 @@ function submitForm(ev) {
   if (form && form.checkValidity && !form.checkValidity()) { form.reportValidity(); return; }
 
   submitting = true;
+  var ev = { plan: planId, billing: isAnnual ? 'annual' : 'monthly' };
   btn.disabled = true;
   var originalLabel = btn.textContent;
   btn.textContent = tr('starting');
@@ -247,14 +258,20 @@ function submitForm(ev) {
   fetch(SIGNUP_CHECKOUT_URL, { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify(body) })
     .then(function (res) {
       return res.json().catch(function () { return null; }).then(function (data) {
-        if (res.ok && data && data.url) { redirected = true; window.location.href = data.url; return; }
+        if (res.ok && data && data.url) {
+          redirected = true;
+          trackLater('signup_submit', ev); trackLater('begin_checkout', ev);
+          window.location.href = data.url;
+          return;
+        }
         // Sessiz başarısızlık BIRAKMA: sunucu 4xx/5xx döndü ya da url gelmedi.
         var e = serverMessage(data, planId);
+        track('signup_submit', ev); track('signup_error', { plan: planId, error_field: e.field || 'general' });
         if (e.field === 'rooms') showError('rooms-error', e.msg, ['rooms']);
         else showError('error-msg', e.msg, e.field ? [e.field] : []);
       });
     })
-    .catch(function () { showError('error-msg', tr('e_network')); })
+    .catch(function () { showError('error-msg', tr('e_network')); track('signup_submit', ev); track('signup_error', { plan: planId, error_field: 'network' }); })
     .then(function () {
       if (!redirected) { submitting = false; btn.disabled = false; btn.textContent = originalLabel; }
     });
@@ -317,8 +334,11 @@ d.addEventListener('DOMContentLoaded', function () {
   if (p && d.getElementById('plan-' + p)) d.getElementById('plan-' + p).checked = true;
   apply();
   if (q.get('billing') === 'annual') setBill(true);
-  d.querySelectorAll('input[name="plan"]').forEach(function (r) { r.addEventListener('change', function () { summary(); clearError('rooms-error', ['rooms']); }); });
-  d.querySelectorAll('.co-billing [data-bill]').forEach(function (x) { x.addEventListener('click', function () { setBill(x.dataset.bill === 'a'); }); });
+  d.querySelectorAll('input[name="plan"]').forEach(function (r) { r.addEventListener('change', function () { summary(); clearError('rooms-error', ['rooms']); track('signup_plan_select', { plan: r.value }); }); });
+  d.querySelectorAll('.co-billing [data-bill]').forEach(function (x) { x.addEventListener('click', function () { setBill(x.dataset.bill === 'a'); track('pricing_billing_toggle', { billing: isAnnual ? 'annual' : 'monthly', context: 'signup' }); }); });
+  // kayıt adımı 1: forma ilk dokunuş (alan içeriği gönderilmez)
+  var sf = d.getElementById('signup-form'), started = false;
+  sf.addEventListener('focusin', function () { if (started) return; started = true; track('signup_form_start', { plan: planId(), billing: isAnnual ? 'annual' : 'monthly' }); });
   d.getElementById('signup-form').addEventListener('submit', submitForm);
   d.getElementById('rooms').addEventListener('input', function () { clearError('rooms-error', ['rooms']); });
   d.getElementById('country').addEventListener('change', onCountryChange);
@@ -338,9 +358,11 @@ d.addEventListener('DOMContentLoaded', function () {
   // Stripe dönüşü: ?checkout=success|cancelled
   var status = q.get('checkout'), msg = d.getElementById('error-msg');
   if (status === 'success') {
+    track('sign_up', { method: 'stripe_checkout' });
     var fw = d.getElementById('signup-form'); if (fw) fw.hidden = true;
     msg.classList.add('co-ok'); msg.textContent = tr('ok_paid'); msg.hidden = false;
   } else if (status === 'cancelled') {
+    track('checkout_cancelled', {});
     msg.textContent = tr('cancelled'); msg.hidden = false;
   }
   d.documentElement.classList.remove('nojs'); d.documentElement.classList.add('js');

@@ -37,7 +37,9 @@ UPDATED = "2026-09-23"
 FOUNDER_NOTE = None
 TEAM = []
 # ---- measurement & entity config (fill in before launch; empty = not rendered)
-GA4_ID = ""            # e.g. "G-XXXXXXX"
+# GA4 (8 Eki 2026): ölçüm kimliği. "" yapılırsa hiçbir analitik yüklenmez (gtag yok, izin bandı yok, CSP değişmez,
+# gizlilik politikası eski metninde kalır). Doluyken analytics_consent.py'deki çerez/analitik metni politikaya eklenir.
+GA4_ID = "G-W74GFJQYJ4"  # hostliopro.com GA4 mülkü (8 Eki 2026, sahip oluşturdu; herkese açık kimlik, sır değil)
 PLAUSIBLE_DOMAIN = ""  # e.g. "hostliopro.com"
 GSC_VERIFY = ""        # Google Search Console HTML-tag token
 BING_VERIFY = ""       # Bing Webmaster msvalidate.01 token
@@ -57,6 +59,7 @@ IN_LANG = {"tr": "tr-TR", "en": "en", "es": "es", "it": "it", "pt": "pt-BR", "fr
 # SEO 4.4 (8 Ekim): hreflang bölgesiz "pt" — Google tek Portekizce sürümü hem Brezilya hem Portekiz için kullanır.
 HREFLANG = {"tr": "tr", "en": "en", "es": "es", "it": "it", "pt": "pt", "fr": "fr"}
 import importlib as _il
+import analytics_consent
 LANGMOD = {l: _il.import_module("lang_" + l) for l in NEW_LANGS}
 for _l, _m in LANGMOD.items(): UPDATED_TXT[_l] = _m.UPDATED_TXT
 
@@ -631,7 +634,7 @@ def layout(page, lang):
 <li><a href="{url("security",lang)}">{SEC_LABEL[lang]}</a></li>
 <li><a href="{LOGIN_URL}">{FOOT_LOGIN[lang]}</a></li></ul></div>
 </div>
-<div class="foot-bottom"><span>© {year} Hostlio Pro, Loti Members LLC. {u["rights"]}</span><span class="legal"><a href="{url("privacy",lang)}">{u["privacy"]}</a><a href="{url("terms",lang)}">{u["terms"]}</a><a href="{url("delacc",lang)}">{u["delacc"]}</a><a href="{url("dpa","en")}" hreflang="en">DPA</a></span><span>2108 N ST STE N, Sacramento, CA 95816</span></div>
+<div class="foot-bottom"><span>© {year} Hostlio Pro, Loti Members LLC. {u["rights"]}</span><span class="legal"><a href="{url("privacy",lang)}">{u["privacy"]}</a><a href="{url("terms",lang)}">{u["terms"]}</a><a href="{url("delacc",lang)}">{u["delacc"]}</a><a href="{url("dpa","en")}" hreflang="en">DPA</a>{consent_foot(lang)}</span><span>2108 N ST STE N, Sacramento, CA 95816</span></div>
 </div></footer>
 {pricing_block(lang) if needs_prices(body) else ""}<script src="{asset('/assets/site.js')}" defer></script>
 {"".join(f'<script src="{asset(x)}" defer></script>' + chr(10) for x in page.get("scripts", []))}
@@ -656,12 +659,20 @@ def font_preloads(lang, body=None):
     return "".join(f'<link rel="preload" href="/assets/fonts/{f}" as="font" type="font/woff2" crossorigin>\n' for f in files)
 
 def analytics_head():
-    """Ölçüm betikleri (boşken hiçbir şey basılmaz). Satır içi betik yok (O4): GA4 başlatması /assets/ga-init.js."""
+    """Ölçüm betikleri (boşken hiçbir şey basılmaz). Satır içi betik yok (O4).
+    GA4 (8 Eki 2026): yalnız /assets/consent.js basılır — senkron, <head>'de; Consent Mode v2 varsayılanlarını
+    (dördü de denied) kurar, izin bandını gösterir ve gtag.js'i YALNIZ "Kabul et"ten sonra yükler.
+    Olay adları README "Analitik (GA4)" bölümünde."""
     out = ""
     if PLAUSIBLE_DOMAIN: out += f'<script defer data-domain="{PLAUSIBLE_DOMAIN}" src="https://plausible.io/js/script.js"></script>\n'
-    if GA4_ID: out += (f'<script async src="https://www.googletagmanager.com/gtag/js?id={GA4_ID}"></script>'
-                       f'<script src="{asset("/assets/ga-init.js")}" data-ga="{GA4_ID}"></script>\n')
+    if GA4_ID:
+        priv = html.escape(json.dumps({l: url("privacy", l) for l in LANGS}, separators=(",", ":")))
+        out += f'<script src="{asset("/assets/consent.js")}" data-ga="{GA4_ID}" data-privacy="{priv}"></script>\n'
     return out
+
+def consent_foot(lang, cls="linkbtn"):
+    """Altbilgide "Çerez tercihleri" düğmesi — yalnız GA4_ID doluyken."""
+    return analytics_consent.foot_button(lang, cls) if GA4_ID else ""
 
 CONTACT_PRIVACY = {
     "en": 'We use your details only to reply to your request. See our <a href="{p}">Privacy Policy</a>.',
@@ -780,12 +791,13 @@ def csp():
     make = "/".join(FORM_ENDPOINT.split("/")[:3])           # iletişim formu (fetch)
     script, connect = ["'self'"], ["'self'", supa, make]
     if PLAUSIBLE_DOMAIN: script.append("https://plausible.io"); connect.append("https://plausible.io")
-    if GA4_ID:
-        script.append("https://www.googletagmanager.com")
-        connect += ["https://www.google-analytics.com", "https://*.google-analytics.com", "https://*.analytics.google.com"]
+    img = ["'self'", "data:"]
+    if GA4_ID:   # Google'ın GA4 için belgelediği kökenler (developers.google.com/tag-platform/security/guides/csp)
+        ga = ["https://*.google-analytics.com", "https://*.analytics.google.com", "https://*.googletagmanager.com"]
+        script.append("https://*.googletagmanager.com"); connect += ga; img += ga
     return "; ".join([
         "default-src 'self'", "script-src " + " ".join(script), "style-src 'self' 'unsafe-inline'",
-        "img-src 'self' data:" + (" https://www.googletagmanager.com https://*.google-analytics.com" if GA4_ID else ""),
+        "img-src " + " ".join(img),
         "font-src 'self'", "media-src 'self'", "connect-src " + " ".join(connect),
         "form-action 'self' mailto:", "frame-ancestors 'self'", "base-uri 'self'", "object-src 'none'",
         "upgrade-insecure-requests"])
@@ -867,6 +879,10 @@ def main():
     vc = {"buildCommand": BUILD_COMMAND, "outputDirectory": "dist", **vc}
     (ROOT / "vercel.json").write_text(json.dumps(vc, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
     pages = {l: importlib.import_module("content_" + l).pages() for l in LANGS}
+    if GA4_ID:   # GA4 açıkken gizlilik politikasının çerez bölümüne analitik paragrafı (analytics_consent.py)
+        for l, plist in pages.items():
+            for p in plist:
+                if p["key"] == "privacy": p["body"] = analytics_consent.privacy_patch(p["body"], l)
     page_dates = assign_dates(pages)
     for lang, plist in pages.items():
         POST_INDEX[lang] = {p["key"]: (pricing.fill(p["title"], lang), pricing.fill(p["desc"], lang)) for p in plist if p["key"].startswith("post")}
