@@ -9,7 +9,7 @@
 },
 "/en/ai-guest-messaging/": {
 "d": "2026-10-08",
-"h": "62bfe5348637"
+"h": "658d379bc1d2"
 },
 "/en/aparthotel-software/": {
 "d": "2026-10-08",
@@ -17,7 +17,7 @@
 },
 "/en/blog/": {
 "d": "2026-10-08",
-"h": "98c47d4a25f4"
+"h": "8d376b98edce"
 },
 "/en/blog/answering-hotel-guest-messages-with-ai/": {
 "d": "2026-09-23",
@@ -36,8 +36,8 @@
 "h": "3210c2b7a908"
 },
 "/en/blog/how-to-prevent-overbooking/": {
-"d": "2026-09-23",
-"h": "64e8aa87b941"
+"d": "2026-10-08",
+"h": "1b9fefdbeded"
 },
 "/en/blog/how-to-reduce-hotel-no-shows/": {
 "d": "2026-09-23",
@@ -47,9 +47,13 @@
 "d": "2026-10-08",
 "h": "b98a187d8d27"
 },
+"/en/blog/pms-vs-channel-manager/": {
+"d": "2026-10-08",
+"h": "68767ab76661"
+},
 "/en/blog/whatsapp-hotel-guest-communication/": {
-"d": "2026-10-03",
-"h": "e587938fb79d"
+"d": "2026-10-08",
+"h": "88e6371a1f27"
 },
 "/en/boutique-hotel-software/": {
 "d": "2026-10-08",
@@ -57,7 +61,7 @@
 },
 "/en/channel-manager/": {
 "d": "2026-10-08",
-"h": "bb70d8a4751c"
+"h": "788bc0217f7c"
 },
 "/en/compare/": {
 "d": "2026-10-08",
@@ -97,11 +101,11 @@
 },
 "/en/faq/": {
 "d": "2026-10-08",
-"h": "2d8333dd8a39"
+"h": "0c6b584f26db"
 },
 "/en/features/": {
 "d": "2026-10-08",
-"h": "8bb3b42cfe39"
+"h": "7f438e305c21"
 },
 "/en/guesthouse-software/": {
 "d": "2026-10-04",
@@ -157,19 +161,19 @@
 },
 "/es/asistente-ia-para-huespedes/": {
 "d": "2026-10-08",
-"h": "8cf7aab5fc16"
+"h": "45fde16edcd8"
 },
 "/es/blog/": {
 "d": "2026-10-08",
-"h": "478914671d2a"
+"h": "21d0b9c9cfea"
 },
 "/es/blog/como-elegir-software-de-gestion-hotelera-hotel-pequeno/": {
 "d": "2026-10-08",
 "h": "431cfff3ea43"
 },
 "/es/blog/como-evitar-el-overbooking/": {
-"d": "2026-10-03",
-"h": "d4c9ac3e0302"
+"d": "2026-10-08",
+"h": "b4539bdda9bf"
 },
 "/es/blog/responder-mensajes-de-huespedes-con-ia/": {
 "d": "2026-10-03",
@@ -179,13 +183,17 @@
 "d": "2026-10-08",
 "h": "59ebf308b429"
 },
+"/es/blog/whatsapp-para-hoteles/": {
+"d": "2026-10-08",
+"h": "56bf0597ca96"
+},
 "/es/calculadora-roi/": {
 "d": "2026-10-03",
 "h": "b162264f7e4e"
 },
 "/es/channel-manager/": {
 "d": "2026-10-08",
-"h": "ac110e928b80"
+"h": "5446cd433df6"
 },
 "/es/check-in-online/": {
 "d": "2026-10-08",
@@ -217,7 +225,7 @@
 },
 "/es/funcionalidades/": {
 "d": "2026-10-08",
-"h": "78691fe6a409"
+"h": "15168335db3c"
 },
 "/es/herramientas/": {
 "d": "2026-10-08",
@@ -237,7 +245,7 @@
 },
 "/es/preguntas-frecuentes/": {
 "d": "2026-10-08",
-"h": "586a20d0e0e9"
+"h": "7c3f8796b478"
 },
 "/es/privacidad/": {
 "d": "2026-10-08",
@@ -281,19 +289,23 @@
 },
 "/fr/assistant-ia-clients/": {
 "d": "2026-10-08",
-"h": "c5d69a4024de"
+"h": "ebc885046c77"
 },
 "/fr/blog/": {
 "d": "2026-10-08",
-"h": "0f933ca18475"
+"h": "b3c9f4f947f7"
 },
 "/fr/blog/choisir-logiciel-gestion-hoteliere-petit-hotel/": {
 "d": "2026-10-08",
 "h": "be0f59f34d4c"
 },
 "/fr/blog/comment-eviter-le-surbooking/": {
-"d": "2026-09-23",
-"h": "1b90975c50a0"
+"d": "2026-10-08",
+"h": "6a1a6e33f296"
+},
+"/fr/blog/pms-ou-channel-manager-difference/": {
+"d": "2026-10-08",
+"h": "afe48f5a6d20"
 },
 "/fr/blog/repondre-aux-messages-clients-avec-ia/": {
 "d": "2026-10-03",
@@ -303,13 +315,17 @@
 "d": "2026-10-08",
 "h": "390dca87bda2"
 },
+"/fr/blog/whatsapp-pour-hotels/": {
+"d": "2026-10-08",
+"h": "8225ed8c70f2"
+},
 "/fr/calculateur-roi/": {
 "d": "2026-10-03",
 "h": "5fdf99df84f4"
 },
 "/fr/channel-manager/": {
 "d": "2026-10-08",
-"h": "f50e67ba8534"
+"h": "5a085b793a1b"
 },
 "/fr/check-in-en-ligne/": {
 "d": "2026-10-08",
@@ -341,11 +357,11 @@
 },
 "/fr/faq/": {
 "d": "2026-10-08",
-"h": "178cf8a9e7cb"
+"h": "75b20d804b08"
 },
 "/fr/fonctionnalites/": {
 "d": "2026-10-08",
-"h": "5978edb4528f"
+"h": "d1134931c945"
 },
 "/fr/logiciel-auberge-de-jeunesse/": {
 "d": "2026-10-08",
@@ -393,15 +409,19 @@
 },
 "/it/assistente-ai-ospiti/": {
 "d": "2026-10-08",
-"h": "ba98904a04ec"
+"h": "0e6dff517041"
 },
 "/it/blog/": {
 "d": "2026-10-08",
-"h": "a11107026b85"
+"h": "1ea9e6558c89"
+},
+"/it/blog/channel-manager-cos-e-differenza-pms/": {
+"d": "2026-10-08",
+"h": "857a83fd9de9"
 },
 "/it/blog/come-evitare-overbooking/": {
-"d": "2026-09-23",
-"h": "3c036e6f6baf"
+"d": "2026-10-08",
+"h": "333d145ed98e"
 },
 "/it/blog/come-scegliere-gestionale-per-hotel-piccolo/": {
 "d": "2026-10-08",
@@ -415,13 +435,17 @@
 "d": "2026-10-08",
 "h": "20db89e172c8"
 },
+"/it/blog/whatsapp-per-hotel/": {
+"d": "2026-10-08",
+"h": "bca7e799b648"
+},
 "/it/calcolatore-roi/": {
 "d": "2026-10-03",
 "h": "4caf52d8e9df"
 },
 "/it/channel-manager/": {
 "d": "2026-10-08",
-"h": "2469dfcf1a0e"
+"h": "f4beb1042af4"
 },
 "/it/check-in-online/": {
 "d": "2026-10-08",
@@ -441,7 +465,7 @@
 },
 "/it/domande-frequenti/": {
 "d": "2026-10-08",
-"h": "42c06ae3e28d"
+"h": "1bc7f68e3eab"
 },
 "/it/elimina-account/": {
 "d": "2026-09-23",
@@ -449,7 +473,7 @@
 },
 "/it/funzionalita/": {
 "d": "2026-10-08",
-"h": "510aa4da46a5"
+"h": "ee2587d7e15b"
 },
 "/it/gestionale-b-and-b/": {
 "d": "2026-10-04",
@@ -501,19 +525,23 @@
 },
 "/pt/assistente-ia-para-hospedes/": {
 "d": "2026-10-08",
-"h": "bc8ab66f7f53"
+"h": "e1330090eb25"
 },
 "/pt/blog/": {
 "d": "2026-10-08",
-"h": "9093ba820c5f"
+"h": "da6897302a76"
 },
 "/pt/blog/como-escolher-sistema-para-hotel-pequeno/": {
 "d": "2026-10-03",
 "h": "e3cdb13aa923"
 },
 "/pt/blog/como-evitar-overbooking/": {
-"d": "2026-10-03",
-"h": "c76a0bf22648"
+"d": "2026-10-08",
+"h": "aa978b5c7b54"
+},
+"/pt/blog/o-que-e-channel-manager-diferenca-pms/": {
+"d": "2026-10-08",
+"h": "255ea0a32ba1"
 },
 "/pt/blog/responder-mensagens-de-hospedes-com-ia/": {
 "d": "2026-10-08",
@@ -529,7 +557,7 @@
 },
 "/pt/channel-manager/": {
 "d": "2026-10-08",
-"h": "69323c991467"
+"h": "ccef6dad69d8"
 },
 "/pt/check-in-online/": {
 "d": "2026-10-08",
@@ -577,11 +605,11 @@
 },
 "/pt/funcionalidades/": {
 "d": "2026-10-08",
-"h": "239469332362"
+"h": "01c39c24d42c"
 },
 "/pt/perguntas-frequentes/": {
 "d": "2026-10-08",
-"h": "2394e1c185e9"
+"h": "5a592d062f74"
 },
 "/pt/precos/": {
 "d": "2026-10-08",
@@ -625,7 +653,7 @@
 },
 "/tr/ai-misafir-asistani/": {
 "d": "2026-10-08",
-"h": "5f7085eda4c3"
+"h": "41bb8b442b0c"
 },
 "/tr/apart-otel-programi/": {
 "d": "2026-10-08",
@@ -645,7 +673,7 @@
 },
 "/tr/blog/": {
 "d": "2026-10-08",
-"h": "8fae7d9c85d0"
+"h": "b30e1801b215"
 },
 "/tr/blog/booking-com-mesajlarina-otomatik-cevap/": {
 "d": "2026-10-08",
@@ -672,8 +700,8 @@
 "h": "905c3d5a54cf"
 },
 "/tr/blog/overbooking-nasil-onlenir/": {
-"d": "2026-09-23",
-"h": "523ea0e4b503"
+"d": "2026-10-08",
+"h": "9b683c9d6837"
 },
 "/tr/butik-otel-programi/": {
 "d": "2026-10-08",
@@ -709,7 +737,7 @@
 },
 "/tr/kanal-yoneticisi/": {
 "d": "2026-10-08",
-"h": "a73da7d4ce5a"
+"h": "dc6e4c65355a"
 },
 "/tr/karsilastirmalar/": {
 "d": "2026-10-08",
@@ -733,11 +761,11 @@
 },
 "/tr/otel-whatsapp-asistani/": {
 "d": "2026-10-08",
-"h": "7836799c8928"
+"h": "5f48a689f8d9"
 },
 "/tr/ozellikler/": {
 "d": "2026-10-08",
-"h": "70a5325ef5a4"
+"h": "a674f6ec126d"
 },
 "/tr/pansiyon-programi/": {
 "d": "2026-10-04",
@@ -749,6 +777,6 @@
 },
 "/tr/sss/": {
 "d": "2026-10-08",
-"h": "3b29f7a7464e"
+"h": "c5c8b142c542"
 }
 }

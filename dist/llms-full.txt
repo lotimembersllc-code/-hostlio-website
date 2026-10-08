@@ -424,7 +424,7 @@ Q: Lio rezervasyon alabiliyor mu?
 A: Pro ve Growth planlarında evet, onayınızla. Misafir WhatsApp'tan yazdığında Lio tarih, kişi sayısı ve oda tercihini sorar, sizin fiyat ve müsaitlik bilgilerinize göre fiyat verir ve talebi size iletir. Talep ancak siz onayladığınızda rezervasyona dönüşür; Lio kendi başına rezervasyon kesinleştirmez. Transfer ve tur gibi ek hizmet taleplerini de aynı şekilde alır.
 
 Q: Mesaj kotası dolarsa ne olur?
-A: Kotanız dolduğunda mesajlar gelmeye devam eder ve panelde görünür; yalnızca otomatik yanıt durur. Üst plana geçerek kotanızı artırabilirsiniz.
+A: Sürpriz olmaz: paneldeki kullanım sayacı %80'de turuncuya döner, %100'de hesap sahibine e-posta ve anlık bildirim gider. Lio sınırı biraz aşana kadar cevap vermeye devam eder; otomatik yanıt yaklaşık %110'da durur. Mesajlar gelmeye ve panelde görünmeye devam eder, ekibiniz elle cevaplayabilir. Üst plana geçerek kotanızı artırabilirsiniz.
 
 Q: AI asistan Lio hangi dillerde yanıt veriyor?
 A: Lio, Türkçe, İngilizce, Arapça, Rusça, Almanca, Japonca ve Çince dahil 30'dan fazla dilde yanıt verir. Misafir hangi dilde yazarsa o dilde cevaplar; siz panelde Türkçe çevirisini görürsünüz.
@@ -471,7 +471,7 @@ OTA'dan gelen rezervasyonun misafir mesajları da Lio'nun gelen kutusuna bağlan
 Tarih aralığını, oda tiplerini ve fiyat planlarını seçin; fiyatı, en az ve en çok konaklamayı, varışa kapalı, çıkışa kapalı ya da satışa kapatma kuralını girin. Cuma ve cumartesi gecelerini ayrı fiyatlamak için “yalnız hafta sonu”nu işaretleyin. Bir kanal geride kalırsa “kanallara yeniden gönder” güncel fiyat ve müsaitliği tekrar iletir.
 
 ## Servis dışı oda otomatik kapanır
-Arıza nedeniyle oda servis dışı yapılınca bağlı tüm kanallarda müsaitlik düşer ve oda yeniden hizmete girene kadar rezervasyona atanamaz.
+Arıza nedeniyle oda servis dışı yapılınca bağlı tüm kanallarda müsaitlik düşer ve oda yeniden hizmete girene kadar rezervasyona atanamaz. Bir oda tipini pasifleştirdiğinizde de aynısı olur: siz yeniden açana kadar tüm bağlı kanallara 0 müsaitlik gider.
 
 ## Mevcut rezervasyonlarınızı getirin
 Eski programınızdaki rezervasyonları CSV ya da Excel dosyasıyla yükleyin. Sütunlar otomatik eşlenir, mükerrerler atlanır, sorunlu satırlar nedeniyle listelenir.
@@ -760,8 +760,8 @@ Sürükle-bırak rezervasyon takvimi. Rezervasyonu sürükleyerek odasını değ
 Güvenli bağlantı, refakatçi misafirler, belge tarama (görüntü saklanmaz) ve dijital imza.
 Online check-in
 
-## Vize için konaklama onayı
-Vize ya da davet başvurusunda istenen konaklama onayını rezervasyon bilgilerinden tek tıkla hazırlayın; PDF olarak kaydedin ya da yazdırın.
+## Misafir belgeleri
+Rezervasyondan, vize ya da davet başvurusunda istenen konaklama onayını veya tarihleri, gecelik fiyatı ve toplamı gösteren konaklama makbuzunu hazırlayın. Türkçe, İngilizce, İspanyolca, İtalyanca, Portekizce ya da Fransızca seçin (misafirin dili önerilir), yazdırın ya da PDF olarak kaydedin. Misafir kayıt formu da PDF olarak indirilebilir.
 
 ## Transfer ve tur satışı
 Lio mesajlaşma sırasında havalimanı transferi ve tur önerir, talebi ekibinize iletir.
@@ -786,12 +786,16 @@ Büyüyen otele uygun oda rafı Büyük tesisler için üç yoğunluk seviyesi, 
 
 Bildirimler ve sabah özeti Yeni, değişen ve iptal edilen rezervasyonlar, cevap bekleyen mesajlar, onaylanacak taslaklar, kanal sorunları ve arıza kayıtları tek bildirim kutusunda toplanır, 90 gün saklanır. Mobil uygulama her sabah 08:00'de (otelin saatiyle) günün özetini de gönderir (bugün Android'de, iOS'ta yakında gelecek uygulama güncellemesiyle).
 
+Misafir kartı Hatırlamak istediğiniz misafirler için kart tutun: iletişim bilgileri, uyruk ve notlarınız. Düzenli misafirleri VIP işaretleyin, listeyi onlara göre süzün; konaklama sayısı ve son konaklama rezervasyonlarından hesaplanır.
+
 ## Gelir, fiyat ve raporlar
 Analiz Doluluk, ADR, RevPAR, gelir, ortalama konaklama süresi, iptal ve no-show; önceki dönemle karşılaştırmalı. 30, 60 ve 90 günlük ileriye bakış ve pickup, takvimde neyin dolu olduğunu gösterir; kanal görünümü her OTA için brüt gelir, komisyon ve neti verir, hangi kanalın gerçekten kazandırdığını görürsünüz. Oda tipleri, misafirler, ek hizmetler ve Lio'nun işi için ayrı sekmeler var.
 
 Excel, PDF ve e-posta raporları Analizin tüm sekmelerini tek tıkla Excel'e aktarın ya da açık görünümü PDF olarak yazdırın; muhasebeciniz ayrıca bir şey istemez. Her pazartesi haftanın özeti, her ayın 1'inde CSV ekli aylık rapor otel sahibinin e-postasına gelir.
 
 Fiyat ve kısıtlamalar Her oda tipi ve fiyat planı için tek ızgara: fiyat, en az ve en çok konaklama, varışa kapalı (CTA), çıkışa kapalı (CTD), satışa kapatma ve müsaitlik. Bir sezonu tek seferde girin: tarih aralığını, oda tiplerini ve planları seçin, cuma ve cumartesi gecelerini ayrı fiyatlamak için “yalnız hafta sonu” kutusunu işaretleyin. Bir kanal geride kalırsa “kanallara yeniden gönder” düğmesi her şeyi tekrar iletir.
+
+Doğrudan rezervasyon indirimleri Uzun konaklama, erken rezervasyon, son dakika ve tekrar gelen misafir için yüzde indirim kuralları tanımlayın; isterseniz tarihe ya da oda tipine sınırlayın. Elle doğrudan rezervasyon girerken en uygun indirim önerilir ve tek tıkla uygulanır; tekrar gelen misafir telefon ya da e-postasından tanınır. İndirimler OTA'lara gönderilmez.
 
 Rezervasyon içe aktarma Başka bir programdan mı geliyorsunuz? Rezervasyonlarınızı .csv, .xlsx ya da .xls dosyasıyla yükleyin. Sütunlar otomatik eşlenir ve değiştirebilirsiniz, tarih biçimi algılanır ya da siz seçersiniz, mükerrer kayıtlar atlanır, aktarılamayan her satır nedeniyle listelenir.
 
@@ -1002,6 +1006,8 @@ Personelin neyi göreceğini sınırlayabilir miyim? Evet. Her kişiye bir rol v
 
 Hangi raporları alırım? Tüm planlarda doluluk, ADR, RevPAR, gelir, iptaller, 30/60/90 günlük ileriye bakış ve komisyon sonrası kanal geliri analizleri vardır. Excel'e ya da PDF'e aktarabilirsiniz; otel sahibine her pazartesi haftalık özet, her ay da CSV ekli aylık rapor e-postayla gelir.
 
+Hesabı yeni bir sahibe devredebilir miyim? Evet. Hesap sahibi, parolasını onaylayarak sahipliği yönetici rolündeki bir ekip üyesine devredebilir. Yeni sahibin kabul etmek için 48 saati vardır; önceki sahip ekipte yönetici olarak kalır ve devir tamamlanınca ikisine de e-posta gider.
+
 Q: Otel programı nedir?
 A: Otel programı (otel yönetim yazılımı, PMS), bir konaklama tesisinin rezervasyonlarını, oda müsaitliğini, satış kanallarını ve misafir bilgilerini tek yerden yönetmesini sağlayan yazılımdır. Hostlio Pro bu işlevlere misafir mesajlarını 30+ dilde yanıtlayan yapay zekâ asistanı Lio'yu ekler.
 
@@ -1049,6 +1055,9 @@ A: Evet. Her kişiye bir rol verirsiniz: sahip, yönetici, resepsiyon, kat hizme
 
 Q: Hangi raporları alırım?
 A: Tüm planlarda doluluk, ADR, RevPAR, gelir, iptaller, 30/60/90 günlük ileriye bakış ve komisyon sonrası kanal geliri analizleri vardır. Excel'e ya da PDF'e aktarabilirsiniz; otel sahibine her pazartesi haftalık özet, her ay da CSV ekli aylık rapor e-postayla gelir.
+
+Q: Hesabı yeni bir sahibe devredebilir miyim?
+A: Evet. Hesap sahibi, parolasını onaylayarak sahipliği yönetici rolündeki bir ekip üyesine devredebilir. Yeni sahibin kabul etmek için 48 saati vardır; önceki sahip ekipte yönetici olarak kalır ve devir tamamlanınca ikisine de e-posta gider.
 
 ---
 # Hakkımızda | Hostlio Pro
@@ -1111,9 +1120,9 @@ KBS (Kimlik Bildirim Sistemi) bildirimi adım adım: Emniyet ve Jandarma KBS far
 2026-10-08
 Channel manager (kanal yöneticisi) nedir, nasıl çalışır, PMS'ten farkı ne? Fiyat modelleri, seçim için 7 soru ve kurulum adımları.
 
-## Overbooking nasıl önlenir? Oteller için 6 adım
+## Overbooking nasıl önlenir? OTA kanallarında 6 adım
 2026-09-21
-Otellerde overbooking (çift rezervasyon) neden olur ve nasıl önlenir? Kanal yöneticisi, stop-sell, müsaitlik tamponu ve kriz anında yapılacaklar.
+Booking.com, Airbnb ve Expedia arasında overbooking nasıl önlenir: tek müsaitlik kaynağı, anlık senkron, eşleme kontrolü ve kriz anında yapılacaklar.
 
 ## Booking.com Mesajlarına Otomatik Cevap: 12 Ücretsiz Şablon (2026)
 2026-09-21
@@ -1626,10 +1635,10 @@ Q: Komisyonlu mu sabit fiyatlı mı daha avantajlı?
 A: Doluluk ve ortalama oda fiyatı arttıkça komisyonlu modelin maliyeti büyür. Bütçesini sabitlemek isteyen oteller için sabit aylık ücret daha öngörülebilirdir.
 
 ---
-# Overbooking nasıl önlenir? Oteller için 6 adım
+# Overbooking nasıl önlenir? OTA kanallarında 6 adım
 URL: https://hostliopro.com/tr/blog/overbooking-nasil-onlenir/
 
-## Overbooking nasıl önlenir? Oteller için 6 adım
+## Overbooking nasıl önlenir? OTA kanallarında 6 adım
 Yazan: Hostlio Pro ürün ekibi , otel yazılımı geliştiren ekip. Yayın: 2026-09-21 , güncelleme: 2026-09-23
 
 Kısa cevap: Overbooking, aynı oda için satılabilecek olandan fazla rezervasyon alınmasıdır. Bağımsız otellerde en sık sebebi, birden fazla OTA'da müsaitliğin elle güncellenmesidir. Çift yönlü, anlık çalışan bir kanal yöneticisi kullanmak riski büyük ölçüde ortadan kaldırır.
@@ -1659,15 +1668,68 @@ Kısa cevap: Overbooking, aynı oda için satılabilecek olandan fazla rezervasy
 
 Misafire hemen ve dürüstçe bilgi verin, eşdeğer ya da daha iyi bir alternatif (yakın otel, oda yükseltme) sunun ve transfer gibi ek maliyetleri üstlenin. Olayın hangi kanaldan ve neden kaynaklandığını kaydedin.
 
+## OTA kanalları arasında overbooking: açıklar nerede?
+
+Bağımsız otellerdeki çift rezervasyonların çoğu tek bir kanaldan değil, kanalların arasındaki boşluklardan çıkar:
+
+- Bağlantı yerine takvim linki. Airbnb'yi ya da küçük bir siteyi iCal takvim linkiyle senkronize etmek, müsaitliğin rezervasyon geldiği an değil belli aralıklarla güncellenmesi demektir. Bu arada iki misafir aynı geceyi alabilir.
+
+- Eşlenmemiş ya da yanlış eşlenmiş odalar. Booking.com'a eklenen ama kanal yöneticisinde eşlenmeyen yeni oda tipi kendi kontenjanıyla satmaya devam eder.
+
+- Extranet'te elle yapılan değişiklikler. Bir extranet'te elle oda açmak, kanal yöneticisinin gönderdiğini ezer; diğer kanalların bundan haberi olmaz.
+
+- Değişiklik ve iptaller. PMS'e geç ulaşan bir tarih değişikliği eski geceleri kapalı, yeni geceleri her yerde açık bırakır.
+
+- Aslında satılamayan odalar. Kliması bozuk bir oda, her yerde satıştan çıkarılmadıkça müsait sayılır.
+Çözüm hepsinde aynı: her kanal müsaitliği tek takvimden, doğrudan ve iki yönlü bir bağlantıyla okur; o takvimin dışında hiçbir şey müsaitliği değiştirmez. Takvim ile bağlantı arasındaki fark için channel manager nedir rehberine bakın.
+
+## Günlük 5 dakikalık overbooking kontrolü
+
+- Bugün ve yarın gelenlerde iki rezervasyonu olan oda ya da odası atanmamış rezervasyon var mı, bakın.
+
+- Dünkü iptal ve değişikliklerin takvime yansıdığını kontrol edin.
+
+- Kanal bağlantısında senkron hatası olmadığını doğrulayın.
+
+- Yeni sezonu açmadan önce arızalı odaları satıştan çıkarın.
+
+- Yeni oda tipi ya da fiyat planı ekledikten sonra her kanaldaki eşlemesini kontrol edin.
+
+## Yine de olursa: misafiri başka otele yönlendirmek
+
+Sektörde overbooking olan misafiri başka bir tesise taşımaya “walk the guest” denir. İyi yönetilirse yine iyi bir yorumla bitebilir:
+
+- Erken karar verin. Çakışmayı fark ettiğiniz anda hangi rezervasyonu karşılayacağınıza karar verin; misafirin gelmesini beklemeyin.
+
+- Yakında eşdeğer ya da daha iyi bir oda bulun ve misafire ulaşmadan önce kesinleştirin.
+
+- Farkı siz karşılayın: fiyat farkı, transfer ve mümkünse ilk gece.
+
+- Misafire kendi dilinde haber verin; yeni adres, oraya nasıl gideceği ve kimi arayacağı belli olsun.
+
+- Geri dönmeyi teklif edin: ertesi geceden odanız varsa konaklamanın kalanı için.
+
+- Nedeni kaydedin (kanal, oda, eşleme, elle değişiklik), tekrar etmesin.
+Uyarlayabileceğiniz bir mesaj:
+
+Sayın [ad], çok özür dileriz: bizden kaynaklanan bir rezervasyon hatası nedeniyle [tarihler] için ayırttığınız odayı size veremiyoruz. Size [mesafe] uzaklıktaki [otel]'de eşdeğer bir oda ayırdık; fiyat farkını ve oraya taksi ücretinizi biz karşılıyoruz. Yeni onayınız ektedir. Konaklamanızın kalanında bize dönmek isterseniz odanız [tarih] itibarıyla hazır olacak. Her sorunuz için [telefon] numarasından bize ulaşabilirsiniz. [Adınız], [Otel]
+
 ## Hostlio Pro'da nasıl çalışır?
 
 Hostlio Pro'nun kanal yöneticisi , sertifikalı bağlantılarla 100'den fazla kanalda müsaitliği çift yönlü ve anlık senkronize eder. Rezervasyonlar kanal renkleriyle tek oda rafında görünür.
+Arka planda oda rafı çakışma kontrolü yapar: çift ya da odası atanmamış rezervasyonları listeler ve uygun tipte boş oda önerir. Odayı servis dışı yaptığınızda müsaitliği tüm bağlı kanallarda düşer; Bugün ekranı kanalların senkron olup olmadığını “yeniden dene” düğmesiyle gösterir; bir kanal geride kalırsa “kanallara yeniden gönder” güncel fiyat ve müsaitliği tekrar iletir.
 
 Q: Overbooking ne demek?
 A: Overbooking, bir otelin aynı tarih ve oda için satabileceğinden fazla rezervasyon almasıdır; Türkçede çift rezervasyon olarak da bilinir.
 
 Q: Kanal yöneticisi overbooking'i tamamen önler mi?
 A: Anlık, çift yönlü senkron riski büyük ölçüde azaltır; ancak elle girilmeyen direkt rezervasyonlar ve hatalı oda eşlemeleri yine sorun çıkarabilir.
+
+Q: Oteller OTA kanalları arasında overbooking'i nasıl önler?
+A: Extranet'leri elle güncellemek ya da takvim (iCal) linklerine güvenmek yerine tüm OTA'ları iki yönlü, anlık çalışan bir kanal yöneticisiyle tek takvime bağlar. Ardından her oda tipinin eşlendiğinden emin olur, direkt rezervasyonları hemen girer ve hiçbir extranet'te elle oda açmaz.
+
+Q: “Walk the guest” ne demek?
+A: Overbooking nedeniyle konaklatılamayan misafiri, genellikle fiyat farkı ve ulaşımı otel karşılayarak, yakındaki eşdeğer bir otele yönlendirmek.
 
 ---
 # Booking.com Mesajlarına Otomatik Cevap: 12 Ücretsiz Şablon (2026)
@@ -2664,7 +2726,7 @@ Starter 49 $ 1.000 WhatsApp
 Pro 89 $ 5.000 WhatsApp + Booking.com, Airbnb, Expedia gelen kutuları
 Growth 149 $ 12.000 WhatsApp + Booking.com, Airbnb, Expedia gelen kutuları
 
-Fiyatlar ABD doları, erken kayıt aylık fiyatlarıdır. Kotanız %80'e ve %100'e geldiğinde e-postayla haber veririz. Ayrıntılar: fiyatlandırma .
+Fiyatlar ABD doları, erken kayıt aylık fiyatlarıdır. Kullanım sayacı %80'de panelde uyarı verir, %100'de e-posta gönderilir. Ayrıntılar: fiyatlandırma .
 
 ## Kimler için uygun?
 
@@ -2688,7 +2750,7 @@ Q: Lio WhatsApp'tan rezervasyon alabiliyor mu?
 A: Pro ve Growth planlarında rezervasyon talebi alır: tarih, kişi sayısı ve oda tercihini toplar, sizin fiyatlarınıza göre fiyat verir ve talebi size iletir. Talep ancak siz onayladığınızda rezervasyona dönüşür.
 
 Q: Mesaj kotası dolarsa ne olur?
-A: Kotanız %80'e ve %100'e geldiğinde e-postayla haber veririz. Kota aşıldığında mesajlar gelmeye ve panelde görünmeye devam eder, yalnızca otomatik yanıt durur. Üst plana geçerek kotanızı artırabilirsiniz.
+A: Paneldeki kullanım sayacı %80'de turuncuya döner, %100'de hesap sahibine e-posta ve anlık bildirim gider. Otomatik yanıt yaklaşık %110'da durur; mesajlar gelmeye ve panelde görünmeye devam eder, ekibiniz elle cevaplayabilir. Üst plana geçerek kotanızı artırabilirsiniz.
 
 ---
 # Hostlio Pro | AI Hotel Management for Independent Hotels
@@ -3110,7 +3172,7 @@ Q: Can Lio take bookings?
 A: Yes, on the Pro and Growth plans, with your approval. When a guest writes on WhatsApp, Lio asks for the dates, number of guests and room preference, quotes a price from your rates and availability, and passes the request to you. It only becomes a reservation once you approve it; Lio never confirms a booking on its own. Extra-service requests such as transfers and tours work the same way.
 
 Q: What happens when the message quota runs out?
-A: Messages keep arriving and appear in your dashboard; only automatic replies pause. You can upgrade to a higher plan to increase your quota.
+A: You won’t be surprised: the usage counter in the dashboard turns amber at 80%, and at 100% the account owner gets an email and a push notification. Lio keeps replying a little past the limit; automatic replies pause at about 110%. Messages keep arriving and appear in your dashboard, and your team can still answer them by hand. Upgrade to a higher plan to increase your quota.
 
 Q: Which languages does Lio reply in?
 A: Lio replies in 30+ languages, including English, Turkish, Arabic, Russian, German, Japanese and Chinese. It answers in the guest's language, and you see a translation in your dashboard.
@@ -3157,7 +3219,7 @@ Guest messages for OTA bookings land in Lio's inbox with the guest, room and dat
 Pick a date range, the room types and rate plans, then set price, minimum and maximum stay, closed to arrival, closed to departure or stop sell. Tick “weekends only” to price Friday and Saturday nights separately. A “resend to channels” button pushes the current rates and availability again if a channel ever falls out of step.
 
 ## Out-of-order rooms close automatically
-When a room is taken out of order because of a fault, availability drops on every connected channel and the room can’t be assigned until it is back in service.
+When a room is taken out of order because of a fault, availability drops on every connected channel and the room can’t be assigned until it is back in service. Deactivating a room type works the same way: availability 0 goes to every connected channel until you switch it back on.
 
 ## Bring your existing bookings
 Upload the reservations from your old system as CSV or Excel. Columns are matched automatically, duplicates are skipped and problem rows are listed with the reason.
@@ -3427,8 +3489,8 @@ Drag-and-drop reservation calendar. Drag a booking to move it to another room; s
 Secure link, accompanying guests, document scan (no images stored) and digital signature.
 Online check-in
 
-## Accommodation confirmation for visas
-Create the accommodation confirmation guests need for a visa or invitation application from the reservation in one click, then save it as a PDF or print it.
+## Guest documents
+From the reservation, create the accommodation confirmation guests need for a visa or invitation application, or a stay receipt with dates, nightly rate and total. Choose English, Turkish, Spanish, Italian, Portuguese or French (the guest’s language is suggested), then print or save as PDF. A guest registration form can be downloaded as a PDF too.
 
 ## Transfer and tour sales
 Lio suggests airport transfers and tours during the conversation and passes the request to your team.
@@ -3453,12 +3515,16 @@ A room rack that scales For larger properties: three density levels, rooms group
 
 Notifications and morning summary New, changed and cancelled bookings, messages waiting for a reply, drafts to approve, channel issues and maintenance reports land in one notification centre, kept for 90 days. The mobile app also sends a summary of the day at 08:00 hotel time (Android today, iOS with the upcoming app update).
 
+Guest cards Keep a card for the guests you want to remember: contact details, nationality and your notes. Mark regulars as VIP and filter the list by them; the number of stays and the last stay are counted from their reservations.
+
 ## Revenue, rates and reports
 Analytics Occupancy, ADR, RevPAR, revenue, length of stay, cancellations and no-shows, compared with the previous period. A 30, 60 and 90-day forward view with pickup shows what is already on the books, and the channel view shows gross revenue, commission and net for each OTA, so you know which one really pays. Room types, guests, extras and Lio’s work have their own tabs.
 
 Excel, PDF and email reports Export every analytics tab to Excel in one click or print the open view as a PDF; your accountant gets the numbers without extra work. Every Monday a weekly summary reaches the owner’s inbox, and on the 1st of each month a monthly report with CSV attachments.
 
 Rates and restrictions One grid for every room type and rate plan: price, minimum and maximum stay, closed to arrival, closed to departure, stop sell and availability. Enter a whole season at once: pick a date range, room types and plans, and tick “weekends only” to price Friday and Saturday nights separately. A “resend to channels” button pushes everything again if a channel ever falls out of step.
+
+Direct-booking discounts Set percentage rules for long stays, early booking, last-minute booking and returning guests, limited to dates or room types if you like. When you enter a direct booking by hand, the best matching discount is suggested and applied in one click; returning guests are recognised by phone or email. Discounts are never sent to the OTAs.
 
 Reservation import Moving from another system? Upload your reservations as a .csv, .xlsx or .xls file. Columns are matched automatically and you can adjust them, the date format is detected or chosen by you, duplicates are skipped, and any row that can’t be imported is listed with the reason.
 
@@ -3664,6 +3730,8 @@ Can I limit what each staff member sees? Yes. Each person gets a role: owner, ma
 
 Which reports do I get? Every plan includes analytics for occupancy, ADR, RevPAR, revenue, cancellations, a 30/60/90-day forward view and revenue per channel after commission. You can export to Excel or PDF, and the owner receives a weekly summary every Monday and a monthly report with CSV attachments.
 
+Can I hand the account over to a new owner? Yes. The account owner can transfer ownership to a team member with the manager role after confirming their password. The new owner has 48 hours to accept; the previous owner stays on the team as a manager, and both receive an email when the transfer is complete.
+
 Q: What is Hostlio Pro?
 A: Hostlio Pro is AI-powered hotel management software (PMS) built for independent hotels, boutique hotels and guesthouses. It combines Lio, an AI assistant that answers guest messages 24/7 in 30+ languages, a channel manager connected to 100+ OTAs, a drag-and-drop reservation calendar and online check-in in one platform.
 
@@ -3708,6 +3776,9 @@ A: Yes. Each person gets a role: owner, manager, front desk, housekeeping, accou
 
 Q: Which reports do I get?
 A: Every plan includes analytics for occupancy, ADR, RevPAR, revenue, cancellations, a 30/60/90-day forward view and revenue per channel after commission. You can export to Excel or PDF, and the owner receives a weekly summary every Monday and a monthly report with CSV attachments.
+
+Q: Can I hand the account over to a new owner?
+A: Yes. The account owner can transfer ownership to a team member with the manager role after confirming their password. The new owner has 48 hours to accept; the previous owner stays on the team as a manager, and both receive an email when the transfer is complete.
 
 ---
 # About Hostlio Pro
@@ -3758,9 +3829,17 @@ URL: https://hostliopro.com/en/blog/
 ## Blog for hoteliers
 Practical writing on running an independent hotel, distribution and guest communication.
 
-## How to prevent overbooking: 6 steps for hotels
+## PMS vs channel manager: what's the difference?
+2026-10-08
+PMS vs channel manager: what each one does, how they work together, what they cost and whether a small hotel needs both. With a comparison table and FAQ.
+
+## WhatsApp for hotels: setup, Meta's rules and AI replies (2026)
+2026-05-01
+WhatsApp for hotels in 2026: Business app or API, the 24-hour window, templates, opt-in, Meta's pricing, and what an AI assistant can and can't do.
+
+## How to prevent overbooking across OTA channels: 6 steps
 2026-09-21
-Why hotels get overbooked and how to prevent it: channel manager, stop-sell rules, availability buffers and what to do when it happens anyway.
+How hotels avoid overbooking across Booking.com, Airbnb and Expedia: one availability source, real-time sync, mapping checks, and what to do if it happens.
 
 ## Booking.com Auto-Reply: 3 Methods + 12 Free Templates (2026)
 2026-09-21
@@ -3785,10 +3864,6 @@ No-shows cost independent hotels thousands in lost revenue. Here are five proven
 ## Independent Hotels vs. Chains: Competing with Tech in 2026
 2026-05-01
 Chain hotels have billion-dollar tech budgets. Modern SaaS tools put the same capabilities within reach of a 20-room property. Here's how to compete.
-
-## Why WhatsApp Is the #1 Hotel Guest Channel in 2026
-2026-05-01
-With open rates above 90%, WhatsApp leads hotel guest communication. See how independent hotels use it to save time and delight guests.
 
 ---
 # Answering hotel guest messages with AI: a practical guide
@@ -4269,10 +4344,10 @@ Q: Is a commission or a flat fee better?
 A: As occupancy and average rates rise, commission-based costs grow. A flat monthly fee is more predictable for hotels that want a fixed budget.
 
 ---
-# How to prevent overbooking: 6 steps for hotels
+# How to prevent overbooking across OTA channels: 6 steps
 URL: https://hostliopro.com/en/blog/how-to-prevent-overbooking/
 
-## How to prevent overbooking: 6 steps for hotels
+## How to prevent overbooking across OTA channels: 6 steps
 By the Hostlio Pro product team , the people who build Hostlio Pro. Published 2026-09-21 , updated 2026-09-23
 
 Short answer: Overbooking means accepting more reservations than you can host for the same room and dates. In independent hotels the most common cause is updating availability by hand on several OTAs. A two-way, real-time channel manager removes most of the risk.
@@ -4302,15 +4377,68 @@ Short answer: Overbooking means accepting more reservations than you can host fo
 
 Tell the guest promptly and honestly, offer an equal or better alternative (a nearby hotel, an upgrade) and cover extra costs such as transfers. Log which channel caused it and why.
 
+## Overbooking across OTA channels: where the gaps are
+
+Most double bookings at independent hotels don't come from one channel. They come from the gaps between channels:
+
+- Calendar links instead of a connection. Syncing Airbnb or a smaller site through an iCal calendar link means availability is refreshed on a schedule, not the moment a booking arrives. Two guests can book the same night in that gap.
+
+- Unmapped or wrongly mapped rooms. A new room type added on Booking.com but not mapped in the channel manager keeps selling on its own allotment.
+
+- Changes made directly in an extranet. Opening rooms in one extranet by hand overrides what the channel manager sent, and the other channels never hear about it.
+
+- Modifications and cancellations. A date change that reaches the PMS late leaves the old nights blocked and the new nights open everywhere.
+
+- Rooms that can't actually be sold. A room with a broken air conditioner is still counted as available unless it is taken out of sale everywhere.
+The fix is the same in every case: every channel reads availability from one calendar, over a direct two-way connection, and nothing changes availability outside that calendar. For the difference between the calendar and the connection, see PMS vs channel manager .
+
+## A daily 5-minute overbooking check
+
+- Look at today's and tomorrow's arrivals for any room with two bookings or a booking with no room.
+
+- Check that yesterday's cancellations and modifications are on the calendar.
+
+- Confirm the channel connection shows no sync errors.
+
+- Take any room with a fault out of sale before you open the next season.
+
+- After adding a room type or rate plan, check its mapping on every channel.
+
+## If it happens anyway: walking the guest
+
+Hotels call moving an overbooked guest to another property “walking the guest”. Done well, it can still end with a good review:
+
+- Decide early. As soon as you spot the conflict, decide which booking you can honour. Don't wait for the guest to arrive.
+
+- Find an equal or better room nearby and confirm it before you contact the guest.
+
+- Cover the difference: the price gap, the transfer and, if possible, the first night.
+
+- Tell the guest in their language, with the new address, how they'll get there and who to call.
+
+- Offer to bring them back for the rest of the stay if you have a room from the next night.
+
+- Log the cause (channel, room, mapping, manual change) so it doesn't repeat.
+A message you can adapt:
+
+Dear [name], we're very sorry: because of a booking error on our side we can't offer you the room you reserved for [dates]. We have booked you an equal room at [hotel], [distance] from us, and we will cover the price difference and your taxi there. Your new confirmation is attached. If you'd like to come back to us for the rest of your stay, we'll have your room ready from [date]. Please call us on [phone] with any question. [Your name], [Hotel]
+
 ## How it works in Hostlio Pro
 
 Hostlio Pro's channel manager syncs availability two-way and in real time across 100+ channels over certified connections. Bookings appear on one room rack, colour-coded by channel.
+Behind the scenes, the room rack runs a conflict check that lists double-booked and unassigned reservations and suggests a free room of the right type. Taking a room out of order drops its availability on every connected channel, the Today screen shows whether channels are in sync with a retry button, and “resend to channels” pushes current rates and availability again if a channel ever falls out of step.
 
 Q: What does overbooking mean?
 A: Overbooking is when a hotel accepts more reservations than it can host for the same room and dates, also called a double booking.
 
 Q: Does a channel manager fully prevent overbooking?
 A: Real-time two-way sync removes most of the risk; direct bookings that aren't entered and wrong room mappings can still cause problems.
+
+Q: How can hotels avoid overbookings across OTA channels?
+A: Connect every OTA to one calendar through a two-way, real-time channel manager instead of updating extranets by hand or relying on calendar (iCal) links. Then make sure every room type is mapped, enter direct bookings immediately and never open rooms directly in an extranet.
+
+Q: What does “walking the guest” mean?
+A: Moving a guest who can't be accommodated because of an overbooking to a comparable hotel nearby, usually with the hotel paying the price difference and transport.
 
 ---
 # Booking.com Auto-Reply: 3 Methods + 12 Free Templates (2026)
@@ -4937,75 +5065,6 @@ The practical response is two-fold: first, build direct relationships through Wh
 The risk of inaction is real. As more independent hotels adopt channel management, AI messaging, and real-time room management tools, the guests they attract will increasingly expect fast responses, seamless booking experiences, and digital communication. Hotels that still rely on manual processes and email-only communication will feel the gap not just in efficiency — but in review scores, which directly affect OTA ranking and future bookings.
 
 The good news is that the cost of adoption has never been lower. Hostlio Pro offers the full suite of channel management, AI messaging, and room management starting at $39 per month — less than the cost of a single slow night's lost revenue. The technology gap between independent hotels and chains no longer requires millions to close. It requires the right tools and the will to use them.
-
----
-# Why WhatsApp Is the #1 Hotel Guest Channel in 2026
-URL: https://hostliopro.com/en/blog/whatsapp-hotel-guest-communication/
-
-## Why WhatsApp Is the #1 Hotel Guest Channel in 2026
-By the Hostlio Pro product team , the people who build Hostlio Pro. Published 2026-05-01 , updated 2026-09-23
-
-If you still rely on email as your primary channel for communicating with hotel guests, you are losing ground to competitors who have moved on. Email open rates in the hospitality sector hover around 25–35%. WhatsApp messages, by contrast, are opened by more than 90% of recipients — usually within minutes of delivery. In a world where guests expect instant responses, that gap is the difference between a five-star review and a complaint.
-
-In 2026, WhatsApp has cemented its position as the dominant guest communication channel across Europe, the Middle East, Asia, and Latin America. Even in North America, where SMS was long the default, WhatsApp adoption has surged as cross-border travel recovered post-pandemic. For independent hotels, learning to use it effectively is no longer optional.
-
-90%+
-
-WhatsApp open rate vs. 25–35% for email
-
-3 min
-
-Average time to open a WhatsApp message
-
-2B+
-
-Active WhatsApp users worldwide
-
-## Why Guests Prefer WhatsApp for Hotel Communication
-
-The reason is simple: WhatsApp is where guests already spend time. They don't need to open a separate app, log into a portal, or dig through a cluttered inbox. A message from your hotel appears alongside conversations with their family and friends — which sounds intrusive, but in practice guests find it natural and convenient, especially when the messages are helpful rather than promotional.
-
-Guests also appreciate the two-way nature of WhatsApp. They can ask a question ("Is there parking nearby?"), get a reply within minutes, and carry on with their day. Compare this to submitting a web form and waiting hours for an email response — the contrast in guest experience is dramatic.
-
-## The Five Highest-Value WhatsApp Use Cases for Hotels
-
-Not all WhatsApp messages are created equal. Here are the use cases where independent hotels see the greatest impact:
-
-- Pre-arrival confirmation and information: Send check-in time, address, parking details, and WiFi password before the guest even asks. This alone eliminates the most common front-desk questions.
-
-- Check-in instructions: For properties with key lockboxes or digital entry, a WhatsApp message with a code and photo guide replaces the need for a staffed reception at odd hours.
-
-- During-stay requests: When a guest messages "Can I get extra towels?", that request is instantly visible and actionable — no front-desk phone, no hold music.
-
-- No-show prevention reminders: A friendly "Looking forward to welcoming you tomorrow" message the day before arrival cuts no-show rates significantly (see our no-shows article).
-
-- Post-stay review requests: A personal-feeling WhatsApp message asking for a review outperforms a generic email review request by a wide margin.
-
-## The Challenge: Managing WhatsApp at Scale
-
-The problem independent hoteliers face is that WhatsApp, used manually, is a time sink. If you're managing 30 rooms across Booking.com, Airbnb, and direct channels, manually sending pre-arrival messages to every guest becomes a part-time job. And if a guest messages at midnight, someone has to respond — or they wake up to a bad review.
-
-The solution is not to avoid WhatsApp — it's to automate the routine parts so your team can focus on interactions that actually require a human touch.
-
-This is exactly what Hostlio Pro is built for. It connects to your OTA channels, automatically pulls guest booking data, and sends pre-configured WhatsApp messages at the right moments: booking confirmation, pre-arrival reminder, check-in instructions, during-stay check-in, and post-stay review request. When a guest replies with a question, Hostlio Pro's AI handles common queries in 20+ languages and flags anything complex for your team to pick up.
-
-## What About WhatsApp Business API?
-
-There's an important distinction between the free WhatsApp Business app and the WhatsApp Business API. The free app works fine for a handful of messages per day, but it requires a human to be actively using it and doesn't support automation. The API — which is what Hostlio Pro uses — allows programmatic sending, template messages, and integration with your booking data.
-
-Getting access to the API used to be complex and expensive, requiring a direct relationship with Meta or a costly third-party provider. Platforms like Hostlio Pro now include API access as part of the subscription, meaning you get full automation without the technical overhead.
-
-## Multilingual Messaging: A Hidden Advantage
-
-Independent hotels in tourist destinations often serve guests from a dozen different countries in a single month. Responding to every guest in their native language used to require hiring multilingual staff — an unrealistic cost for most properties. WhatsApp, combined with AI translation, changes this completely.
-
-Hostlio Pro's AI messaging layer handles replies in over 20 languages, including Spanish, French, German, Arabic, Chinese, Japanese, and Portuguese. When a guest writes in German, the system responds in German. Your team sees the original message and the AI-generated response, and can intervene if needed. For most common queries — directions, breakfast hours, late check-out availability — the AI handles it without any human involvement.
-
-## Getting Started Without Overwhelming Your Guests
-
-A word of caution: WhatsApp's power comes with responsibility. Guests who receive too many messages, or messages that feel spammy, will block your number — and a blocked number cannot send WhatsApp Business messages to that guest again. Keep messages relevant, timely, and brief. A three-message pre-arrival sequence (7 days out, 48 hours out, day of arrival) is the ceiling for most guests. Beyond that, only message when there is genuine value to deliver.
-
-Done right, WhatsApp guest communication is one of the highest-ROI changes an independent hotel can make. It reduces front-desk workload, increases review scores, and creates a guest experience that feels personal and attentive — even when the messages are largely automated.
 
 ---
 # Data Processing Addendum (DPA) | Hostlio Pro
@@ -5669,6 +5728,273 @@ Q: Is Hostlio Pro only a chatbot?
 A: No. Hostlio Pro is a PMS and channel manager with an AI assistant built in, so it also handles reservations, availability on 100+ OTAs and online check-in.
 
 ---
+# PMS vs channel manager: what's the difference?
+URL: https://hostliopro.com/en/blog/pms-vs-channel-manager/
+
+## PMS vs channel manager: what's the difference?
+By the Hostlio Pro product team , the people who build Hostlio Pro. Published 2026-10-08 , updated 2026-09-23
+
+Short answer: A PMS (property management system) runs the inside of your hotel: the reservation calendar, rooms, guests, housekeeping and reports. A channel manager runs the connection to the outside: it sends your availability, rates and restrictions to Booking.com, Airbnb, Expedia and other channels, and brings their bookings back. If you sell on more than one online channel, you need both functions. For a small hotel the simplest setup is usually a PMS with a built-in channel manager, so there is only one calendar and nothing to keep in sync between two systems.
+
+## What a PMS does
+
+The PMS is the system your front desk lives in. It is the single record of who is staying, in which room, on which dates and at what price. Typical PMS jobs:
+
+- Reservation calendar (room rack): every booking on a timeline by room, with room moves, date changes and conflict checks.
+
+- Rooms and housekeeping: clean, dirty or out-of-order status and the day's cleaning list.
+
+- Guests: contact details, check-in data, notes and stay history.
+
+- Direct bookings: phone, email, walk-in and repeat guests entered by staff.
+
+- Reports: occupancy, ADR, RevPAR, revenue and cancellations.
+
+## What a channel manager does
+
+A channel manager is a data link between your inventory and the places that sell it. It works in two directions:
+
+- From the hotel to the channels: availability (how many rooms of each type can be sold), rates and restrictions such as minimum stay, closed to arrival, closed to departure and stop sell. The industry calls this ARI: availability, rates and inventory.
+
+- From the channels to the hotel: new bookings, modifications and cancellations.
+When the last free room sells on Airbnb, the channel manager receives the booking and sends “0 rooms” for those dates to Booking.com and Expedia, usually within seconds. That is what prevents most double bookings; see our guide on how to prevent overbooking .
+
+## PMS vs channel manager at a glance
+
+PMS Channel manager
+Main job Runs daily operations: calendar, rooms, guests, reports Distributes availability and rates to channels and imports their bookings
+Who uses it Front desk, housekeeping, management, accounting Mostly runs in the background; set up by the owner or revenue manager
+Talks to Your team (and, through integrations, other tools) OTAs, metasearch and other sales channels
+Without it Bookings live in spreadsheets, extranets and paper Availability must be updated by hand in every extranet
+Key risk if it fails Lost or duplicated reservations, no overview Overbooking and rates that differ between channels
+
+## How the two work together
+
+Think of the PMS as the source of truth and the channel manager as the messenger. A typical flow:
+
+- A guest books a double room on Booking.com for 12–14 May.
+
+- The channel manager receives the reservation and passes it to the PMS, where it appears on the room rack.
+
+- The PMS recalculates availability for double rooms on those dates.
+
+- The channel manager sends the new availability to every other connected channel.
+
+- When you later change a rate or close a date in the PMS, the same path runs in reverse.
+The weak points are the hand-offs. If the PMS and the channel manager come from different vendors, they need an interface between them, and every room type and rate plan must be mapped twice: once between the channel and the channel manager, and once between the channel manager and the PMS.
+
+## Three ways to set it up
+
+Setup How it works Good for Watch out for
+PMS only, no channel manager You update each OTA extranet by hand One channel, very few rooms Overbooking risk grows with every extra channel
+Standalone channel manager + separate PMS Two systems linked by an interface Hotels tied to an existing PMS they want to keep Two bills, two support desks, double mapping, sync gaps between systems
+PMS with a built-in channel manager One system, one calendar Most small and independent hotels Check which channels are certified and how fast sync is
+
+## Do you need both?
+
+- You sell only direct and on one OTA: a PMS is enough to start; closing dates by hand in one extranet is manageable.
+
+- You sell on two or more online channels: you need channel manager functionality. Updating several extranets by hand is the most common cause of overbooking at independent hotels.
+
+- You already use a PMS you like: check whether it has its own channel manager or a certified integration with one before adding a second vendor.
+
+- You are choosing from scratch: a PMS with a built-in channel manager avoids the integration layer entirely. Our guide on choosing hotel management software for a small hotel lists the other criteria.
+
+## What it costs
+
+Channel managers are priced in several ways, and some PMS vendors only include one in their higher plans. Two examples from vendors' own pricing pages (8 October 2026):
+
+- Per room and per connection: Beds24 charges a base fee, a fee per room and a fee per room type for each channel connection; its pricing page says “from €15.50” a month.
+
+- Only in a higher plan: Sirvoy offers a free plan for one room and a Starter plan, but the channel manager is listed only in its Pro plan (€79 a month for up to 10 rooms, paid monthly).
+Other models charge a percentage of booking revenue or a fee per reservation, which grows in high season. When you compare, add up the PMS, the channel manager and any per-booking fees, then check what each channel really leaves you after commission with our OTA commission calculator .
+
+## Questions to ask before you decide
+
+- Which channels are connected, and are the connections certified by the channels themselves?
+
+- Is sync real-time or on a schedule? What happens if a channel is down?
+
+- Do rates and restrictions (minimum stay, closed to arrival or departure, stop sell) go to every channel, or only availability?
+
+- Do modifications and cancellations come back automatically?
+
+- When a room is out of order, does availability drop on the channels too?
+
+- Who maps room types and rate plans at setup, and is that help included?
+
+- Is the price flat, or does it depend on rooms, channels or bookings?
+
+## How it works in Hostlio Pro
+
+Hostlio Pro is a PMS with the channel manager built in, on every plan. Connections to 100+ channels, including Booking.com, Airbnb, Expedia, Agoda, Trip.com and Google Hotels, run over certified links through Channex, so bookings, modifications and cancellations land on the same room rack you work in. One grid holds price, minimum and maximum stay, closed to arrival, closed to departure and stop sell for every room type and rate plan, and you can enter a whole season by date range. When a room is taken out of order, availability drops on the channels automatically. The analytics show gross revenue, commission and net for each channel.
+
+There is no per-booking fee or revenue percentage: Starter costs $49 a month, Pro $89 and Growth $149, with a 7-day free trial. See pricing for room limits and what each plan includes.
+
+## Sources
+Accessed 8 October 2026.
+
+- Sirvoy: Pricing
+- Beds24: Pricing
+
+Q: Is a channel manager part of a PMS?
+A: Sometimes. Many PMS products include a channel manager, others integrate with a separate one, and some include it only in higher plans. Check the plan details rather than the feature list.
+
+Q: Can I use a channel manager without a PMS?
+A: Yes, many standalone channel managers have a basic calendar. You will still need somewhere to manage rooms, guests, housekeeping and reports, which is the job of a PMS.
+
+Q: Does a channel manager stop all overbookings?
+A: Real-time two-way sync removes most of the risk. Direct bookings entered late, wrong room mappings and channels that are temporarily unreachable can still cause problems.
+
+Q: Is the channel manager included in every Hostlio Pro plan?
+A: Yes. Starter, Pro and Growth all include the channel manager with 100+ channels. There are no per-booking fees.
+
+---
+# WhatsApp for hotels: setup, Meta's rules and AI replies (2026)
+URL: https://hostliopro.com/en/blog/whatsapp-hotel-guest-communication/
+
+## WhatsApp for hotels: setup, Meta's rules and AI replies (2026)
+By the Hostlio Pro product team , the people who build Hostlio Pro. Published 2026-05-01 , updated 2026-09-23
+
+Short answer: WhatsApp works well for hotels because guests already use it and reply quickly. A small property can start with the free WhatsApp Business app on one phone. Once several people need to answer, or you want automatic replies and a link to your reservations, you need the WhatsApp Business Platform (Meta's Cloud API), usually through your PMS or a messaging provider. Three rules shape everything: guests must opt in, free-form replies are only possible within 24 hours of the guest's last message, and anything you send outside that window must be a template Meta has approved.
+
+## Why hotels use WhatsApp
+
+For many travellers WhatsApp is the default way to message a business, especially across Europe, Latin America, the Middle East and Türkiye. A question on WhatsApp gets read; an email often doesn't. For a hotel that means fewer phone calls at reception, fewer “we never got your email” moments and an easy channel for the practical questions every stay produces:
+
+- Before arrival: check-in time, parking, directions, early arrival, airport transfer
+
+- During the stay: towels, breakfast hours, a restaurant tip, a late check-out request
+
+- After departure: a forgotten charger, an invoice, a question about the next visit
+The catch is staffing. Guests write at 2 a.m., in languages your team doesn't speak, and expect an answer in minutes. That is where setup choices and automation matter.
+
+## WhatsApp Business app or WhatsApp Business Platform?
+
+Meta offers two products. The app is free to download and is designed for small businesses talking to customers from a single device. The Platform is accessed through an API, either directly through the Cloud API that Meta hosts or through a business solution provider, and is built for automation and integration with your other systems.
+
+WhatsApp Business app WhatsApp Business Platform (Cloud API)
+Cost to start Free app No app fee; Meta charges per message (see below)
+Who answers Staff on the phone and linked devices Any number of team members through your software
+Automation Greeting and away messages, quick replies Full automation, AI replies, integration with your PMS
+Messages outside 24 hours Not restricted the same way Only approved templates
+Good for A few rooms, one person answering Hotels with a team, several channels or automation needs
+
+Meta's older self-hosted option, the On-Premises API, was retired in October 2025; new integrations use the Cloud API. When you register a number on the Platform, it must be a number you own that can receive a call or SMS for verification, and your display name is reviewed against Meta's guidelines.
+
+## The 24-hour customer service window
+
+This is the rule that surprises most hotels. Whenever a guest messages you, a 24-hour customer service window opens, and it resets each time the guest writes again. Inside the window you can send any normal reply, without approval. Once the window closes, you can only send pre-approved message templates.
+
+In practice: a guest who asked about parking yesterday morning and hasn't written since can't receive a free-form “Your room is ready” message today. Either you use an approved template, or you reach them another way (email, phone, the OTA inbox).
+
+## Message templates
+
+Templates are fixed messages with placeholders, such as a booking confirmation or a check-in reminder, that Meta reviews before you can use them. Each template must be categorised as marketing , utility (related to a specific transaction, like a booking) or authentication (one-time codes). Review is automated and can take up to 24 hours; only approved templates can be sent.
+
+Keep utility templates genuinely transactional. A “Your booking is confirmed” message with a promotion bolted on will be treated as marketing.
+
+## What Meta charges
+
+Since 1 July 2025 the Platform uses per-message pricing instead of the older per-conversation model. Meta's current pricing page states that, from 1 October 2026, it also charges per message for service messages and for utility messages sent in reply to users inside the 24-hour window. Messages sent within a 72-hour free entry point window, which opens when someone starts a chat from a Click-to-WhatsApp ad or a Facebook call-to-action button, remain free. Rates depend on the recipient's country and the message category, so check Meta's rate card and ask your provider how these fees are billed. The free Business app is not affected.
+
+## Opt-in and opt-out: what the policy requires
+
+The WhatsApp Business Messaging Policy allows you to contact people only if they have given you their phone number and have opted in to receive messages from you. You must respect any request to stop, made on WhatsApp or elsewhere. For a hotel this usually means:
+
+- Ask for consent where you collect the number: the booking form, online check-in or at the desk. Say what kind of messages to expect.
+
+- Keep a record of the consent with the reservation.
+
+- Don't add OTA guests to promotional lists just because a phone number came with the booking.
+
+- Answer “stop” requests immediately and remove the number.
+When a guest writes to you first, you can reply within the window. The opt-in question matters mostly for messages you start yourself, such as reminders and offers.
+
+## Messaging limits
+
+Messaging limits cap how many different people you can reach with messages you start (outside a customer service window) in a rolling 24 hours. New accounts start at 250 recipients; the next tiers are 2,000, 10,000, 100,000 and unlimited. Since October 2025 the limit applies to your whole Meta business portfolio, shared by all its numbers. Business verification, or sending good-quality templates, moves you up. Replies to guests who wrote to you don't count against this limit, and most small hotels never reach it.
+
+## Answering in every guest's language
+
+A hotel in Lisbon or Antalya can receive messages in a dozen languages in one week. Guests who can write in their own language ask clearer questions and are less likely to misunderstand the answer. Translation tools help, but copying text in and out of a translator at night is exactly the kind of work that slips. An AI assistant that detects the language and answers in it closes that gap, provided your team can still read the conversation in its own language.
+
+## What an AI assistant can and can't do on WhatsApp
+
+Meta's terms bar companies whose main product is a general-purpose AI assistant from using the WhatsApp Business Platform. A hotel using automation to answer its own guests is a different case, and the messaging policy allows automated replies inside the 24-hour window as long as you also offer a prompt, clear way to reach a human: an in-chat handover, a phone number, an email address or the front desk.
+
+A good AI assistant can It shouldn't, or can't
+Answer routine questions 24/7 from your own hotel information Invent an answer to something you never told it
+Reply in the guest's language Message guests outside the 24-hour window with free text
+Collect dates and guests for a booking request and pass it on Confirm a booking, take payment or grant a discount on its own
+Recognise complaints, refunds and special requests and hand them over Handle a complaint that needs judgement or compensation
+Tell you which questions it couldn't answer Replace the opt-in your guests gave you
+
+Start in approval mode for the first days, read every draft, and switch topics to automatic once the answers are consistent. Our guide on answering hotel guest messages with AI covers that rollout in more detail.
+
+## Setting up WhatsApp for your hotel: a checklist
+
+- Choose the number. A dedicated business number that your team, not one person, controls.
+
+- Decide app or Platform. One person answering a handful of messages: the app may be enough. A team, automation or a PMS link: the Platform.
+
+- Prepare your hotel information. Check-in and check-out times, parking, breakfast, pets, transfers, house rules. Automatic replies are only as good as this.
+
+- Set handover rules. Which topics always go to a person: discounts, refunds, complaints, group requests.
+
+- Add the number where guests look. Confirmation emails, your website, the Google Business Profile, the OTA listing where allowed.
+
+- Collect consent if you plan to send messages first, and keep the record.
+
+- Plan the templates you will need outside the 24-hour window and submit them for review.
+
+## How Hostlio Pro's Lio fits in
+
+In Hostlio Pro you connect your hotel's own WhatsApp number from the dashboard through Meta's official signup flow, on every plan. WhatsApp messages then arrive in one inbox, where Lio, the AI assistant , answers from your hotel information and reservation data in the guest's language. You read Lio's reply translated into your language; messages you write yourself are sent as you wrote them. You choose how much Lio does on its own: fully automatic, automatic for routine questions with drafts for the rest (the default), or drafts only. Discounts, refunds, complaints and booking requests come to you for approval by default.
+
+- Inside the window, by design. Lio replies to guests who write to you. If a guest's 24-hour window has closed, a free-form reply can't be delivered, and the dashboard tells you so you can reach the guest another way. Hostlio Pro doesn't send WhatsApp marketing campaigns.
+
+- Booking requests (Pro and Growth). Lio collects dates, guests and room preference, quotes from your own rates and availability, and sends you the request. It becomes a reservation only when you approve it.
+
+- One inbox for OTAs too (Pro and Growth). Booking.com, Airbnb and Expedia messages land next to WhatsApp, with the reservation alongside each conversation.
+
+- Gaps flagged, not guessed. When guests ask something your setup doesn't cover, Lio marks the missing field so you can fill it once.
+
+- Predictable quota. Starter includes 1,000 AI messages a month, Pro 5,000 and Growth 12,000. The counter turns amber at 80%, you get an email at 100%, and automatic replies pause at about 110% while messages keep arriving for your team.
+Plans start at $49 a month with a 7-day free trial; see pricing . To estimate the time Lio could save, try the ROI calculator , and for OTA messages read how to auto-reply to Booking.com guest messages .
+
+## Sources
+All sources accessed 8 October 2026. Meta changes its rules and prices regularly; check the linked pages before you rely on a detail.
+
+- WhatsApp Business: FAQ (app vs Platform)
+- WhatsApp Business Platform overview
+- Meta for Developers: Cloud API overview
+- Meta for Developers: On-Premises API sunset
+- Meta for Developers: Sending messages (customer service window)
+- Meta for Developers: Message templates
+- Meta for Developers: Pricing for non-template messages
+- Meta for Developers: WhatsApp changelog
+- Meta for Developers: Messaging limits
+- Meta for Developers: Business phone numbers
+- WhatsApp Business Messaging Policy
+- Meta Terms for WhatsApp Business Platform
+
+Q: Is WhatsApp Business free for hotels?
+A: The WhatsApp Business app is free. The WhatsApp Business Platform (API) has no app fee, but Meta charges per message; from 1 October 2026 that includes service replies inside the 24-hour window, while messages within a 72-hour free entry point window from Click-to-WhatsApp ads stay free. Your software provider may charge separately.
+
+Q: Can a hotel message a guest who hasn't written for days?
+A: Only with a message template that Meta has approved, and only if the guest opted in to receive messages from you. Free-form replies are possible only within 24 hours of the guest's last message.
+
+Q: Do I need the WhatsApp Business API for automatic replies?
+A: For anything beyond the app's greeting, away messages and quick replies, yes. AI replies and integration with a PMS run on the WhatsApp Business Platform.
+
+Q: Is an AI chatbot allowed on WhatsApp?
+A: Meta's terms prohibit companies whose primary product is a general-purpose AI assistant from using the Platform. Businesses may automate replies to their own customers inside the 24-hour window, as long as they offer a clear way to reach a human.
+
+Q: Can Lio send WhatsApp reminders before arrival?
+A: Not today. Lio answers guests who write to you, within WhatsApp's 24-hour window. The online check-in link can be sent automatically by email on Pro and Growth.
+
+---
 # Hostlio Pro | Software de gestión hotelera con IA
 URL: https://hostliopro.com/es/
 
@@ -6088,7 +6414,7 @@ Q: ¿Lio puede recibir reservas?
 A: Sí, en los planes Pro y Growth y siempre con tu aprobación. Cuando un huésped escribe por WhatsApp, Lio le pregunta las fechas, el número de personas y la habitación que prefiere, le da un precio según tus tarifas y tu disponibilidad y te pasa la solicitud. Solo se convierte en reserva cuando tú la apruebas; Lio nunca confirma una reserva por su cuenta. Las solicitudes de servicios extra, como traslados o excursiones, funcionan igual.
 
 Q: ¿Qué pasa cuando se agota la cuota de mensajes?
-A: Los mensajes siguen llegando y aparecen en tu panel; solo se pausan las respuestas automáticas. Puedes pasarte a un plan superior para ampliar tu cuota.
+A: Sin sorpresas: el contador de uso del panel se pone en ámbar al 80 % y, al 100 %, el titular de la cuenta recibe un correo y una notificación push. Lio sigue respondiendo un poco más allá del límite; las respuestas automáticas se pausan hacia el 110 %. Los mensajes siguen llegando y aparecen en tu panel, y tu equipo puede responderlos a mano. Puedes pasarte a un plan superior para ampliar tu cuota.
 
 Q: ¿En qué idiomas responde Lio?
 A: Lio responde en más de 30 idiomas, entre ellos inglés, turco, árabe, ruso, alemán, japonés y chino. Contesta en el idioma del huésped y tú ves la traducción en tu panel.
@@ -6135,7 +6461,7 @@ Los mensajes de los huéspedes de reservas de OTAs llegan a la bandeja de Lio co
 Elige un rango de fechas, los tipos de habitación y los planes tarifarios, y define precio, estancia mínima y máxima, cerrado a la llegada, cerrado a la salida o cierre de ventas. Marca «solo fines de semana» para dar otro precio a las noches de viernes y sábado. Si un canal se desincroniza, «reenviar a los canales» envía de nuevo las tarifas y la disponibilidad actuales.
 
 ## Las habitaciones fuera de servicio se cierran solas
-Cuando una habitación queda fuera de servicio por una avería, la disponibilidad baja en todos los canales conectados y la habitación no se puede asignar hasta que vuelve a estar operativa.
+Cuando una habitación queda fuera de servicio por una avería, la disponibilidad baja en todos los canales conectados y la habitación no se puede asignar hasta que vuelve a estar operativa. Desactivar un tipo de habitación funciona igual: se envía disponibilidad 0 a todos los canales conectados hasta que lo vuelvas a activar.
 
 ## Trae tus reservas actuales
 Sube las reservas de tu sistema anterior en CSV o Excel. Las columnas se asignan automáticamente, los duplicados se omiten y las filas con problemas aparecen con el motivo.
@@ -6405,8 +6731,8 @@ Calendario de reservas con arrastrar y soltar. Arrastra una reserva para cambiar
 Enlace seguro, acompañantes, escaneo del documento (sin guardar imágenes) y firma digital.
 Check-in online
 
-## Confirmación de alojamiento para visados
-Prepara en un clic, a partir de la reserva, la confirmación de alojamiento que el huésped necesita para su visado o carta de invitación. Guárdala en PDF o imprímela.
+## Documentos para el huésped
+A partir de la reserva, prepara la confirmación de alojamiento que el huésped necesita para su visado o carta de invitación, o un recibo de estancia con fechas, precio por noche y total. Elige español, inglés, turco, italiano, portugués o francés (se sugiere el idioma del huésped) e imprímelo o guárdalo en PDF. La ficha de registro del huésped también se descarga en PDF.
 
 ## Venta de traslados y excursiones
 Lio sugiere traslados al aeropuerto y excursiones durante la conversación y pasa la solicitud a tu equipo.
@@ -6431,12 +6757,16 @@ Un planning que crece contigo Para alojamientos más grandes: tres niveles de de
 
 Notificaciones y resumen matinal Reservas nuevas, modificadas y canceladas, mensajes sin responder, borradores por aprobar, incidencias de canal y averías llegan a un único centro de notificaciones, que las guarda 90 días. La app móvil también te envía un resumen del día a las 08:00, hora del hotel (hoy en Android; en iOS con la próxima actualización de la app).
 
+Ficha del huésped Guarda una ficha de los huéspedes que quieres recordar: datos de contacto, nacionalidad y tus notas. Marca a los habituales como VIP y filtra la lista por ellos; el número de estancias y la última estancia se calculan a partir de sus reservas.
+
 ## Ingresos, tarifas e informes
 Análisis Ocupación, ADR, RevPAR, ingresos, estancia media, cancelaciones y no-shows, comparados con el periodo anterior. La vista a 30, 60 y 90 días con pickup muestra lo que ya tienes reservado, y la vista por canal te da ingresos brutos, comisión y neto de cada OTA, para que sepas cuál te deja más. Tipos de habitación, huéspedes, extras y el trabajo de Lio tienen sus propias pestañas.
 
 Informes en Excel, PDF y por email Exporta todas las pestañas del análisis a Excel en un clic o imprime la vista abierta en PDF; tu gestor tiene los números sin trabajo extra. Cada lunes llega un resumen semanal al email del propietario y el día 1 de cada mes, un informe mensual con archivos CSV adjuntos.
 
 Tarifas y restricciones Una sola cuadrícula para cada tipo de habitación y plan tarifario: precio, estancia mínima y máxima, cerrado a la llegada (CTA), cerrado a la salida (CTD), cierre de ventas y disponibilidad. Carga una temporada entera de una vez: elige el rango de fechas, los tipos de habitación y los planes, y marca «solo fines de semana» para dar otro precio a las noches de viernes y sábado. Si un canal se desincroniza, el botón «reenviar a los canales» lo envía todo de nuevo.
+
+Descuentos para reserva directa Define reglas en porcentaje para estancias largas, reserva anticipada, última hora y huéspedes que repiten, limitadas a fechas o tipos de habitación si quieres. Al registrar a mano una reserva directa, se sugiere el descuento que mejor encaja y se aplica con un clic; el huésped que repite se reconoce por su teléfono o email. Los descuentos nunca se envían a las OTA.
 
 Importación de reservas ¿Vienes de otro sistema? Sube tus reservas en un archivo .csv, .xlsx o .xls. Las columnas se asignan automáticamente y puedes ajustarlas, el formato de fecha se detecta o lo eliges tú, los duplicados se omiten y cada fila que no se puede importar aparece con el motivo.
 
@@ -6642,6 +6972,8 @@ Las preguntas más habituales sobre las funcionalidades, los precios y la config
 
 ¿Qué informes obtengo? Todos los planes incluyen análisis de ocupación, ADR, RevPAR, ingresos, cancelaciones, una vista a 30/60/90 días e ingresos por canal después de comisión. Puedes exportarlos a Excel o PDF, y el propietario recibe un resumen semanal cada lunes y un informe mensual con CSV adjuntos.
 
+¿Puedo traspasar la cuenta a un nuevo propietario? Sí. El titular de la cuenta puede transferir la propiedad a un miembro del equipo con rol de gerente, tras confirmar su contraseña. El nuevo titular tiene 48 horas para aceptar; el anterior sigue en el equipo como gerente y ambos reciben un email cuando se completa el traspaso.
+
 Q: ¿Qué es Hostlio Pro?
 A: Hostlio Pro es un software de gestión hotelera (PMS hotelero) con inteligencia artificial, creado para hoteles independientes, hoteles boutique y hostales. Reúne en una sola plataforma a Lio, un asistente de IA que responde a los huéspedes 24/7 en más de 30 idiomas, un channel manager conectado a más de 100 OTAs, un calendario de reservas con arrastrar y soltar y el check-in online.
 
@@ -6686,6 +7018,9 @@ A: Sí. Cada persona tiene un rol: propietario, gerente, recepción, housekeepin
 
 Q: ¿Qué informes obtengo?
 A: Todos los planes incluyen análisis de ocupación, ADR, RevPAR, ingresos, cancelaciones, una vista a 30/60/90 días e ingresos por canal después de comisión. Puedes exportarlos a Excel o PDF, y el propietario recibe un resumen semanal cada lunes y un informe mensual con CSV adjuntos.
+
+Q: ¿Puedo traspasar la cuenta a un nuevo propietario?
+A: Sí. El titular de la cuenta puede transferir la propiedad a un miembro del equipo con rol de gerente, tras confirmar su contraseña. El nuevo titular tiene 48 horas para aceptar; el anterior sigue en el equipo como gerente y ambos reciben un email cuando se completa el traspaso.
 
 ---
 # Sobre nosotros | Hostlio Pro
@@ -6736,9 +7071,13 @@ URL: https://hostliopro.com/es/blog/
 ## Blog para hoteleros
 Artículos prácticos sobre la gestión de un hotel independiente, la distribución y la comunicación con los huéspedes.
 
-## Cómo evitar el overbooking: 6 pasos para hoteles
+## WhatsApp para hoteles: configuración, normas de Meta e IA (2026)
+8 de octubre de 2026
+WhatsApp para hoteles en 2026: app Business o API, la ventana de 24 horas, plantillas, consentimiento, precios de Meta y lo que puede hacer un asistente de IA.
+
+## Cómo evitar el overbooking entre canales OTA: 6 pasos
 21 de septiembre de 2026
-Por qué se produce el overbooking en hoteles y cómo evitarlo: channel manager, cierres de venta, márgenes de disponibilidad y qué hacer si aun así ocurre.
+Cómo evitar el overbooking entre Booking.com, Airbnb y Expedia: una sola fuente de disponibilidad, sincronización en tiempo real y qué hacer si ocurre.
 
 ## Respuesta automática Booking.com: 12 plantillas gratis (2026)
 21 de septiembre de 2026
@@ -7327,10 +7666,10 @@ Q: ¿Qué es mejor, comisión o cuota fija?
 A: A medida que suben la ocupación y la tarifa media, el coste basado en comisiones crece. Una cuota mensual fija es más previsible para los hoteles que quieren un presupuesto fijo.
 
 ---
-# Cómo evitar el overbooking: 6 pasos para hoteles
+# Cómo evitar el overbooking entre canales OTA: 6 pasos
 URL: https://hostliopro.com/es/blog/como-evitar-el-overbooking/
 
-## Cómo evitar el overbooking: 6 pasos para hoteles
+## Cómo evitar el overbooking entre canales OTA: 6 pasos
 Por el equipo de producto de Hostlio Pro , las personas que desarrollan Hostlio Pro. Publicado el 21 de septiembre de 2026 , actualizado el 23 de septiembre de 2026
 
 Respuesta corta: el overbooking consiste en aceptar más reservas de las que puedes alojar para la misma habitación y las mismas fechas. En los hoteles independientes, la causa más habitual es actualizar la disponibilidad a mano en varias OTAs. Un channel manager bidireccional y en tiempo real elimina la mayor parte del riesgo.
@@ -7360,15 +7699,68 @@ Respuesta corta: el overbooking consiste en aceptar más reservas de las que pue
 
 Informa al huésped de inmediato y con honestidad, ofrécele una alternativa igual o mejor (un hotel cercano, una mejora de habitación) y asume los costes adicionales, como los traslados. Registra qué canal lo provocó y por qué.
 
+## Overbooking entre canales OTA: dónde están los huecos
+
+La mayoría de las dobles reservas en hoteles independientes no nacen en un solo canal, sino en los huecos entre canales:
+
+- Enlaces de calendario en lugar de conexión. Sincronizar Airbnb o un portal pequeño con un enlace iCal significa que la disponibilidad se actualiza cada cierto tiempo, no en el momento de la reserva. En ese intervalo dos huéspedes pueden reservar la misma noche.
+
+- Habitaciones sin mapear o mal mapeadas. Un tipo de habitación nuevo creado en Booking.com y no mapeado en el channel manager sigue vendiendo con su propio cupo.
+
+- Cambios hechos directamente en una extranet. Abrir habitaciones a mano en una extranet sobrescribe lo que envió el channel manager, y los demás canales no se enteran.
+
+- Modificaciones y cancelaciones. Un cambio de fechas que llega tarde al PMS deja bloqueadas las noches antiguas y abiertas las nuevas en todas partes.
+
+- Habitaciones que en realidad no se pueden vender. Una habitación con el aire acondicionado averiado sigue contando como disponible si no se retira de la venta en todos los canales.
+La solución es siempre la misma: todos los canales leen la disponibilidad de un único calendario, mediante una conexión directa y bidireccional, y nada cambia la disponibilidad fuera de ese calendario. Para ver cómo encaja el channel manager con el resto, consulta cómo elegir software de gestión hotelera .
+
+## Control diario de 5 minutos
+
+- Revisa las llegadas de hoy y mañana: ninguna habitación con dos reservas ni reservas sin habitación.
+
+- Comprueba que las cancelaciones y modificaciones de ayer están en el calendario.
+
+- Confirma que la conexión con los canales no muestra errores de sincronización.
+
+- Retira de la venta las habitaciones averiadas antes de abrir la próxima temporada.
+
+- Tras añadir un tipo de habitación o un plan tarifario, revisa su mapeo en cada canal.
+
+## Si ocurre igualmente: reubicar al huésped
+
+En hotelería, trasladar a otro alojamiento a un huésped afectado por overbooking se llama reubicar (en inglés, “walking the guest”). Bien gestionado, todavía puede terminar en una buena reseña:
+
+- Decide pronto. En cuanto detectes el conflicto, decide qué reserva puedes atender. No esperes a que llegue el huésped.
+
+- Busca una habitación igual o mejor cerca y confírmala antes de contactar al huésped.
+
+- Asume la diferencia: el precio, el traslado y, si puedes, la primera noche.
+
+- Avisa al huésped en su idioma, con la nueva dirección, cómo llegar y a quién llamar.
+
+- Ofrece que vuelva para el resto de la estancia si tienes habitación a partir de la noche siguiente.
+
+- Anota la causa (canal, habitación, mapeo, cambio manual) para que no se repita.
+Un mensaje que puedes adaptar:
+
+Estimado/a [nombre]: lo sentimos mucho. Por un error de reserva por nuestra parte no podemos ofrecerle la habitación que reservó para [fechas]. Le hemos reservado una habitación equivalente en [hotel], a [distancia] de nosotros, y nos hacemos cargo de la diferencia de precio y del taxi. Adjuntamos su nueva confirmación. Si desea volver con nosotros el resto de su estancia, tendremos su habitación lista a partir del [fecha]. Para cualquier duda, llámenos al [teléfono]. [Su nombre], [Hotel]
+
 ## Cómo funciona en Hostlio Pro
 
 El channel manager de Hostlio Pro sincroniza la disponibilidad de forma bidireccional y en tiempo real en más de 100 canales mediante conexiones certificadas. Las reservas aparecen en un solo planning de habitaciones, con el color de cada canal.
+Además, el planning ejecuta un control de conflictos que lista las reservas duplicadas o sin habitación asignada y sugiere una habitación libre del tipo adecuado. Al poner una habitación fuera de servicio, su disponibilidad baja en todos los canales conectados; la pantalla Hoy muestra si los canales están sincronizados, con un botón para reintentar, y “reenviar a los canales” vuelve a enviar tarifas y disponibilidad si un canal se desfasa.
 
 Q: ¿Qué significa overbooking?
 A: El overbooking se produce cuando un hotel acepta más reservas de las que puede alojar para la misma habitación y las mismas fechas; también se conoce como doble reserva o sobreventa.
 
 Q: ¿Un channel manager evita por completo el overbooking?
 A: La sincronización bidireccional en tiempo real elimina la mayor parte del riesgo; aun así, las reservas directas que no se registran y los mapeos de habitaciones incorrectos pueden seguir causando problemas.
+
+Q: ¿Cómo evitan los hoteles el overbooking entre canales OTA?
+A: Conectando todas las OTA a un único calendario mediante un channel manager bidireccional y en tiempo real, en lugar de actualizar extranets a mano o depender de enlaces iCal. Después, comprobando que cada tipo de habitación está mapeado, registrando las reservas directas al momento y sin abrir nunca habitaciones directamente en una extranet.
+
+Q: ¿Qué significa reubicar a un huésped por overbooking?
+A: Alojar en un hotel cercano y comparable a un huésped que no se puede atender por overbooking; normalmente el hotel paga la diferencia de precio y el traslado.
 
 ---
 # Respuesta automática Booking.com: 12 plantillas gratis (2026)
@@ -8035,6 +8427,151 @@ Q: ¿Puedo llevarme mis datos de Cloudbeds?
 A: La mayoría de sistemas permite exportar reservas. Hostlio Pro importa reservas desde archivos CSV o Excel con asignación de columnas y control de duplicados.
 
 ---
+# WhatsApp para hoteles: configuración, normas de Meta e IA (2026)
+URL: https://hostliopro.com/es/blog/whatsapp-para-hoteles/
+
+## WhatsApp para hoteles: configuración, normas de Meta e IA (2026)
+Por el equipo de producto de Hostlio Pro , las personas que desarrollan Hostlio Pro. Publicado el 8 de octubre de 2026 , actualizado el 23 de septiembre de 2026
+
+Respuesta corta: WhatsApp funciona bien en hotelería porque los huéspedes ya lo usan y responden rápido. Un alojamiento pequeño puede empezar con la app gratuita WhatsApp Business en un solo teléfono. Cuando varias personas tienen que responder, o quieres respuestas automáticas y conexión con tus reservas, necesitas la WhatsApp Business Platform (la Cloud API de Meta), normalmente a través de tu PMS o de un proveedor de mensajería. Tres reglas lo condicionan todo: el huésped debe dar su consentimiento, las respuestas libres solo son posibles dentro de las 24 horas siguientes a su último mensaje y lo que envíes fuera de esa ventana tiene que ser una plantilla aprobada por Meta.
+
+## Por qué los hoteles usan WhatsApp
+
+Para muchos viajeros WhatsApp es la forma normal de escribir a un negocio, sobre todo en España, Latinoamérica, Europa y Oriente Medio. Un mensaje de WhatsApp se lee; un email, muchas veces no. Para un hotel eso significa menos llamadas a recepción, menos “no recibí su correo” y un canal cómodo para las preguntas prácticas de cada estancia:
+
+- Antes de llegar: hora de check-in, parking, cómo llegar, llegada temprana, traslado desde el aeropuerto
+
+- Durante la estancia: toallas, horario del desayuno, una recomendación de restaurante, salida tardía
+
+- Después de la salida: un cargador olvidado, una factura, una pregunta sobre la próxima visita
+El problema es el personal. Los huéspedes escriben a las 2 de la madrugada, en idiomas que tu equipo no habla, y esperan respuesta en minutos. Ahí es donde importan la configuración y la automatización.
+
+## ¿App WhatsApp Business o WhatsApp Business Platform?
+
+Meta ofrece dos productos. La app se descarga gratis y está pensada para pequeños negocios que atienden a sus clientes desde un solo dispositivo. La Platform se usa mediante una API, directamente con la Cloud API alojada por Meta o a través de un proveedor de soluciones, y está hecha para automatizar e integrarse con tus otros sistemas.
+
+App WhatsApp Business WhatsApp Business Platform (Cloud API)
+Coste para empezar App gratuita Sin cuota de app; Meta cobra por mensaje (ver abajo)
+Quién responde Personal en el teléfono y dispositivos vinculados Todo el equipo que quieras, desde tu software
+Automatización Mensajes de bienvenida y ausencia, respuestas rápidas Automatización completa, respuestas con IA, integración con el PMS
+Mensajes pasadas 24 horas Sin la misma restricción Solo plantillas aprobadas
+Ideal para Pocas habitaciones, una persona respondiendo Hoteles con equipo, varios canales o necesidad de automatizar
+
+La antigua opción autoalojada de Meta, la On-Premises API, se retiró en octubre de 2025; las integraciones nuevas usan la Cloud API. Para registrar un número en la Platform debe ser un número tuyo capaz de recibir una llamada o un SMS de verificación, y Meta revisa el nombre visible según sus directrices.
+
+## La ventana de atención de 24 horas
+
+Es la regla que más sorprende. Cada vez que un huésped te escribe se abre una ventana de atención al cliente de 24 horas, que se reinicia con cada nuevo mensaje suyo. Dentro de la ventana puedes enviar cualquier respuesta normal, sin aprobación. Cuando se cierra, solo puedes enviar plantillas de mensaje aprobadas previamente.
+
+En la práctica: a un huésped que preguntó por el parking ayer por la mañana y no ha vuelto a escribir no le puedes mandar hoy un mensaje libre de “Su habitación está lista”. O usas una plantilla aprobada, o le contactas por otra vía (email, teléfono, el chat de la OTA).
+
+## Plantillas de mensaje
+
+Las plantillas son mensajes fijos con campos variables, como una confirmación de reserva o un recordatorio de check-in, que Meta revisa antes de que puedas usarlas. Cada plantilla debe clasificarse como marketing , utilidad (ligada a una transacción concreta, como una reserva) o autenticación (códigos de un solo uso). La revisión es automática y puede tardar hasta 24 horas; solo se pueden enviar plantillas aprobadas.
+
+Mantén las plantillas de utilidad realmente transaccionales. Un “Su reserva está confirmada” con una promoción añadida se tratará como marketing.
+
+## Lo que cobra Meta
+
+Desde el 1 de julio de 2025 la Platform cobra por mensaje en lugar de por conversación. La página de precios actual de Meta indica que, desde el 1 de octubre de 2026, también cobra por mensaje los mensajes de servicio y los de utilidad enviados como respuesta dentro de la ventana de 24 horas. Siguen siendo gratuitos los mensajes enviados dentro de una ventana de punto de entrada gratuito de 72 horas, que se abre cuando alguien inicia el chat desde un anuncio de clic a WhatsApp o un botón de llamada a la acción de Facebook. Las tarifas dependen del país del destinatario y de la categoría, así que consulta la tabla de precios de Meta y pregunta a tu proveedor cómo se facturan. La app gratuita no se ve afectada.
+
+## Consentimiento y baja: lo que exige la política
+
+La política de mensajería de WhatsApp Business solo permite contactar con personas que te han dado su número y han aceptado recibir mensajes tuyos. Debes respetar cualquier petición de dejar de recibirlos, hecha por WhatsApp o por otra vía. En un hotel suele significar:
+
+- Pedir el consentimiento donde recoges el número: el formulario de reserva, el check-in online o la recepción, explicando qué mensajes recibirá.
+
+- Guardar constancia del consentimiento con la reserva.
+
+- No añadir huéspedes de OTA a listas promocionales solo porque la reserva traía un teléfono.
+
+- Atender las peticiones de baja de inmediato y eliminar el número.
+Cuando el huésped te escribe primero, puedes responder dentro de la ventana. El consentimiento importa sobre todo para los mensajes que inicias tú, como recordatorios y ofertas. En la UE recuerda además las obligaciones del RGPD sobre los datos de tus huéspedes.
+
+## Límites de mensajería
+
+Los límites de mensajería fijan a cuántas personas distintas puedes enviar mensajes iniciados por ti (fuera de una ventana de atención) en 24 horas móviles. Las cuentas nuevas empiezan en 250 destinatarios; los siguientes niveles son 2.000, 10.000, 100.000 e ilimitado. Desde octubre de 2025 el límite se aplica a todo tu portfolio empresarial de Meta y lo comparten todos sus números. La verificación del negocio, o enviar plantillas de buena calidad, te hace subir de nivel. Las respuestas a huéspedes que te escribieron no cuentan, y la mayoría de hoteles pequeños nunca llega al límite.
+
+## Responder en el idioma de cada huésped
+
+Un hotel en Barcelona o Málaga puede recibir mensajes en una docena de idiomas en una semana. El huésped que escribe en su idioma pregunta con más claridad y entiende mejor la respuesta. Los traductores ayudan, pero copiar y pegar textos a medianoche es justo el tipo de tarea que se escapa. Un asistente de IA que detecta el idioma y responde en él cierra ese hueco, siempre que tu equipo pueda leer la conversación en el suyo.
+
+## Lo que un asistente de IA puede y no puede hacer en WhatsApp
+
+Los términos de Meta impiden usar la WhatsApp Business Platform a las empresas cuyo producto principal es un asistente de IA de uso general. Un hotel que automatiza las respuestas a sus propios huéspedes es otro caso: la política permite respuestas automáticas dentro de la ventana de 24 horas siempre que ofrezcas una vía rápida y clara para hablar con una persona, como el traspaso a un agente en el chat, un teléfono, un email o la recepción.
+
+Un buen asistente de IA puede No debe o no puede
+Responder preguntas habituales 24/7 con la información de tu hotel Inventarse una respuesta sobre algo que nunca le contaste
+Contestar en el idioma del huésped Escribir texto libre fuera de la ventana de 24 horas
+Recoger fechas y personas para una solicitud de reserva y pasártela Confirmar una reserva, cobrar o conceder un descuento por su cuenta
+Detectar quejas, reembolsos y peticiones especiales y derivarlas Gestionar una queja que exige criterio o compensación
+Decirte qué preguntas no ha sabido responder Sustituir el consentimiento que te dieron tus huéspedes
+
+Empieza en modo aprobación los primeros días, revisa cada borrador y pasa los temas a automático cuando las respuestas sean coherentes. Nuestra guía para responder mensajes de huéspedes con IA explica ese despliegue con más detalle.
+
+## Configurar WhatsApp en tu hotel: lista de control
+
+- Elige el número. Un número de empresa dedicado que controle el equipo, no una sola persona.
+
+- Decide app o Platform. Una persona y pocos mensajes: la app puede bastar. Un equipo, automatización o conexión con el PMS: la Platform.
+
+- Prepara la información del hotel. Horarios de entrada y salida, parking, desayuno, mascotas, traslados, normas. Las respuestas automáticas valen lo que vale esta información.
+
+- Define qué pasa a una persona. Descuentos, reembolsos, quejas, grupos.
+
+- Muestra el número donde miran los huéspedes. Emails de confirmación, tu web, el perfil de empresa de Google y la ficha de la OTA cuando esté permitido.
+
+- Recoge el consentimiento si vas a escribir tú primero, y guarda la constancia.
+
+- Prepara las plantillas que necesitarás fuera de la ventana de 24 horas y envíalas a revisión.
+
+## Cómo encaja Lio, el asistente de Hostlio Pro
+
+En Hostlio Pro conectas el número de WhatsApp de tu hotel desde el panel, con el proceso de alta oficial de Meta, en todos los planes. Los mensajes de WhatsApp llegan a una sola bandeja, donde Lio, el asistente de IA , responde con la información de tu hotel y los datos de la reserva en el idioma del huésped. Tú lees la respuesta de Lio traducida a tu idioma; lo que escribes tú se envía tal cual. Decides cuánto hace Lio solo: todo automático, automático para preguntas habituales con borradores para el resto (la opción por defecto) o solo borradores. Descuentos, reembolsos, quejas y solicitudes de reserva llegan por defecto para tu aprobación.
+
+- Dentro de la ventana, por diseño. Lio responde a los huéspedes que te escriben. Si la ventana de 24 horas de un huésped se ha cerrado, una respuesta libre no se puede entregar y el panel te lo indica para que le contactes por otra vía. Hostlio Pro no envía campañas de marketing por WhatsApp.
+
+- Solicitudes de reserva (Pro y Growth). Lio recoge fechas, personas y preferencia de habitación, da precio con tus tarifas y disponibilidad y te envía la solicitud. Solo se convierte en reserva cuando la apruebas.
+
+- Una bandeja también para las OTA (Pro y Growth). Los mensajes de Booking.com, Airbnb y Expedia llegan junto a WhatsApp, con la reserva al lado de cada conversación.
+
+- Señala lo que falta en lugar de adivinar. Si los huéspedes preguntan algo que tu configuración no cubre, Lio marca el campo que falta para que lo rellenes una vez.
+
+- Cuota previsible. Starter incluye 1.000 mensajes de IA al mes, Pro 5.000 y Growth 12.000. El contador se pone en ámbar al 80 %, recibes un email al 100 % y las respuestas automáticas se pausan hacia el 110 %, mientras los mensajes siguen llegando para tu equipo.
+Los planes empiezan en 49 $ al mes, con 7 días de prueba gratis; consulta los precios . Para estimar el tiempo que Lio puede ahorrarte, prueba la calculadora de ROI , y para los mensajes de las OTA lee cómo responder automáticamente a los mensajes de Booking.com .
+
+## Fuentes
+Consultadas el 8 de octubre de 2026. Meta cambia sus normas y precios con frecuencia; revisa las páginas enlazadas antes de basarte en un detalle.
+
+- WhatsApp Business: FAQ (app vs Platform)
+- WhatsApp Business Platform overview
+- Meta for Developers: Cloud API overview
+- Meta for Developers: On-Premises API sunset
+- Meta for Developers: Sending messages (customer service window)
+- Meta for Developers: Message templates
+- Meta for Developers: Pricing for non-template messages
+- Meta for Developers: WhatsApp changelog
+- Meta for Developers: Messaging limits
+- Meta for Developers: Business phone numbers
+- WhatsApp Business Messaging Policy
+- Meta Terms for WhatsApp Business Platform
+
+Q: ¿WhatsApp Business es gratis para hoteles?
+A: La app WhatsApp Business es gratuita. La WhatsApp Business Platform (API) no tiene cuota de app, pero Meta cobra por mensaje; desde el 1 de octubre de 2026 eso incluye las respuestas de servicio dentro de la ventana de 24 horas, mientras que los mensajes dentro de una ventana de punto de entrada gratuito de 72 horas, abierta desde anuncios de clic a WhatsApp, siguen siendo gratis. Tu proveedor de software puede cobrar aparte.
+
+Q: ¿Puede un hotel escribir a un huésped que lleva días sin escribir?
+A: Solo con una plantilla aprobada por Meta y si el huésped aceptó recibir mensajes tuyos. Las respuestas libres solo son posibles dentro de las 24 horas siguientes a su último mensaje.
+
+Q: ¿Necesito la API de WhatsApp Business para respuestas automáticas?
+A: Para todo lo que vaya más allá de los mensajes de bienvenida, ausencia y respuestas rápidas de la app, sí. Las respuestas con IA y la integración con un PMS funcionan sobre la WhatsApp Business Platform.
+
+Q: ¿Está permitido un chatbot de IA en WhatsApp?
+A: Los términos de Meta prohíben usar la Platform a empresas cuyo producto principal es un asistente de IA de uso general. Los negocios pueden automatizar las respuestas a sus propios clientes dentro de la ventana de 24 horas, siempre que ofrezcan una vía clara para hablar con una persona.
+
+Q: ¿Puede Lio enviar recordatorios por WhatsApp antes de la llegada?
+A: Hoy no. Lio responde a los huéspedes que te escriben, dentro de la ventana de 24 horas de WhatsApp. En Pro y Growth el enlace de check-in online puede enviarse automáticamente por email.
+
+---
 # Hostlio Pro | Gestionale per hotel con AI e channel manager
 URL: https://hostliopro.com/it/
 
@@ -8454,7 +8991,7 @@ Q: Lio può ricevere prenotazioni?
 A: Sì, con i piani Pro e Growth e sempre con la tua approvazione. Quando un ospite scrive su WhatsApp, Lio chiede date, numero di ospiti e camera preferita, indica un prezzo in base alle tue tariffe e disponibilità e ti passa la richiesta. Diventa una prenotazione solo dopo la tua approvazione: Lio non conferma mai una prenotazione da solo. Allo stesso modo raccoglie le richieste di servizi extra come transfer e tour.
 
 Q: Cosa succede quando i messaggi inclusi finiscono?
-A: I messaggi continuano ad arrivare e compaiono nella tua dashboard; si sospendono solo le risposte automatiche. Puoi passare a un piano superiore per aumentare i messaggi disponibili.
+A: Nessuna sorpresa: il contatore di utilizzo nella dashboard diventa ambra all’80% e al 100% il titolare dell’account riceve un’email e una notifica push. Lio continua a rispondere ancora per poco oltre il limite; le risposte automatiche si sospendono intorno al 110%. I messaggi continuano ad arrivare e compaiono nella dashboard, e il tuo staff può rispondere a mano. Puoi passare a un piano superiore per aumentare i messaggi disponibili.
 
 Q: In quali lingue risponde Lio?
 A: Lio risponde in oltre 30 lingue, tra cui inglese, turco, arabo, russo, tedesco, giapponese e cinese. Risponde nella lingua dell'ospite e tu vedi la traduzione nella tua dashboard.
@@ -8501,7 +9038,7 @@ I messaggi degli ospiti delle prenotazioni OTA arrivano nella casella di Lio, co
 Scegli un intervallo di date, le tipologie di camera e i piani tariffari, poi imposta prezzo, soggiorno minimo e massimo, chiuso all’arrivo, chiuso alla partenza o stop vendite. Spunta «solo weekend» per prezzare a parte le notti di venerdì e sabato. Se un canale resta indietro, «reinvia ai canali» invia di nuovo tariffe e disponibilità attuali.
 
 ## Le camere fuori servizio si chiudono da sole
-Quando una camera va fuori servizio per un guasto, la disponibilità scende su tutti i canali collegati e la camera non può essere assegnata finché non torna operativa.
+Quando una camera va fuori servizio per un guasto, la disponibilità scende su tutti i canali collegati e la camera non può essere assegnata finché non torna operativa. Lo stesso accade se disattivi una tipologia di camera: a tutti i canali collegati va disponibilità 0 finché non la riattivi.
 
 ## Porta le prenotazioni esistenti
 Carica le prenotazioni del vecchio gestionale in CSV o Excel. Le colonne vengono abbinate automaticamente, i duplicati saltati e le righe con problemi elencate con il motivo.
@@ -8771,8 +9308,8 @@ Calendario delle prenotazioni drag-and-drop. Trascina una prenotazione per cambi
 Link sicuro, accompagnatori, scansione del documento (nessuna immagine conservata) e firma digitale.
 Check-in online
 
-## Conferma di alloggio per il visto
-Prepara con un clic, dai dati della prenotazione, la conferma di alloggio richiesta per il visto o la lettera d'invito; salvala in PDF o stampala.
+## Documenti per l'ospite
+Dalla prenotazione prepari la conferma di alloggio richiesta per il visto o la lettera d'invito, oppure una ricevuta del soggiorno con date, prezzo a notte e totale. Scegli italiano, inglese, turco, spagnolo, portoghese o francese (viene proposta la lingua dell'ospite), poi stampa o salva in PDF. Anche la scheda di registrazione dell'ospite si scarica in PDF.
 
 ## Vendita di transfer e tour
 Lio propone transfer dall'aeroporto e tour durante la conversazione e inoltra la richiesta al tuo team.
@@ -8797,12 +9334,16 @@ Un planning che cresce con te Per le strutture più grandi: tre livelli di densi
 
 Notifiche e riepilogo del mattino Prenotazioni nuove, modificate e cancellate, messaggi senza risposta, bozze da approvare, problemi dei canali e guasti arrivano in un unico centro notifiche, conservato per 90 giorni. L’app mobile ti invia anche un riepilogo della giornata alle 08:00, ora dell’hotel (oggi su Android; su iOS con il prossimo aggiornamento dell’app).
 
+Scheda ospite Tieni una scheda per gli ospiti che vuoi ricordare: contatti, nazionalità e le tue note. Segna gli abituali come VIP e filtra l'elenco; numero di soggiorni e ultimo soggiorno sono calcolati dalle loro prenotazioni.
+
 ## Ricavi, tariffe e report
 Analisi Occupazione, ADR, RevPAR, ricavi, durata media del soggiorno, cancellazioni e no-show, a confronto con il periodo precedente. La vista a 30, 60 e 90 giorni con pickup mostra cosa è già prenotato, e la vista per canale riporta ricavo lordo, commissione e netto di ogni OTA, così sai quale ti rende davvero. Tipologie di camera, ospiti, extra e il lavoro di Lio hanno schede proprie.
 
 Report in Excel, PDF e via email Esporta in Excel tutte le schede dell’analisi con un clic o stampa in PDF la vista aperta; il commercialista ha i numeri senza lavoro in più. Ogni lunedì un riepilogo settimanale arriva all’email del titolare e il 1° di ogni mese un report mensile con allegati CSV.
 
 Tariffe e restrizioni Un’unica griglia per ogni tipologia di camera e piano tariffario: prezzo, soggiorno minimo e massimo, chiuso all’arrivo (CTA), chiuso alla partenza (CTD), stop vendite e disponibilità. Inserisci un’intera stagione in una volta: scegli l’intervallo di date, le tipologie e i piani e spunta «solo weekend» per prezzare a parte le notti di venerdì e sabato. Se un canale resta indietro, il pulsante «reinvia ai canali» invia di nuovo tutto.
+
+Sconti per le prenotazioni dirette Imposta regole in percentuale per soggiorni lunghi, prenotazione anticipata, last minute e ospiti che tornano, limitate a date o tipologie se vuoi. Quando inserisci a mano una prenotazione diretta, lo sconto più adatto viene suggerito e applicato con un clic; l'ospite che torna è riconosciuto da telefono o email. Gli sconti non vengono mai inviati alle OTA.
 
 Importazione delle prenotazioni Arrivi da un altro gestionale? Carica le prenotazioni in un file .csv, .xlsx o .xls. Le colonne vengono abbinate automaticamente e puoi modificarle, il formato della data viene riconosciuto o lo scegli tu, i duplicati vengono saltati e ogni riga non importabile è elencata con il motivo.
 
@@ -9008,6 +9549,8 @@ Posso limitare ciò che vede ogni membro dello staff? Sì. Ogni persona ha un ru
 
 Quali report ottengo? Tutti i piani includono l’analisi di occupazione, ADR, RevPAR, ricavi, cancellazioni, una vista a 30/60/90 giorni e i ricavi per canale al netto delle commissioni. Puoi esportare in Excel o PDF, e il titolare riceve un riepilogo settimanale ogni lunedì e un report mensile con allegati CSV.
 
+Posso cedere l'account a un nuovo titolare? Sì. Il titolare dell'account può trasferire la proprietà a un membro del team con ruolo di manager, dopo aver confermato la propria password. Il nuovo titolare ha 48 ore per accettare; il precedente resta nel team come manager ed entrambi ricevono un'email a trasferimento completato.
+
 Q: Che cos'è Hostlio Pro?
 A: Hostlio Pro è un gestionale per hotel (PMS) basato sull'intelligenza artificiale, pensato per hotel indipendenti, boutique hotel e B&B. Riunisce in un'unica piattaforma Lio, un assistente AI che risponde ai messaggi degli ospiti 24 ore su 24 in oltre 30 lingue, un channel manager collegato a oltre 100 OTA, un calendario delle prenotazioni drag-and-drop e il check-in online.
 
@@ -9052,6 +9595,9 @@ A: Sì. Ogni persona ha un ruolo: titolare, manager, reception, housekeeping, co
 
 Q: Quali report ottengo?
 A: Tutti i piani includono l’analisi di occupazione, ADR, RevPAR, ricavi, cancellazioni, una vista a 30/60/90 giorni e i ricavi per canale al netto delle commissioni. Puoi esportare in Excel o PDF, e il titolare riceve un riepilogo settimanale ogni lunedì e un report mensile con allegati CSV.
+
+Q: Posso cedere l'account a un nuovo titolare?
+A: Sì. Il titolare dell'account può trasferire la proprietà a un membro del team con ruolo di manager, dopo aver confermato la propria password. Il nuovo titolare ha 48 ore per accettare; il precedente resta nel team come manager ed entrambi ricevono un'email a trasferimento completato.
 
 ---
 # Chi siamo | Hostlio Pro
@@ -9102,9 +9648,17 @@ URL: https://hostliopro.com/it/blog/
 ## Blog per albergatori
 Articoli pratici sulla gestione di un hotel indipendente, sulla distribuzione e sulla comunicazione con gli ospiti.
 
-## Come evitare l'overbooking: 6 passi per gli hotel
+## Channel manager cos'è e che differenza c'è con un PMS
+8 ottobre 2026
+Channel manager e PMS: cosa fa ciascuno, come lavorano insieme, quanto costano e se una piccola struttura ha bisogno di entrambi. Con tabella e FAQ.
+
+## WhatsApp per hotel: configurazione, regole di Meta e AI (2026)
+8 ottobre 2026
+WhatsApp per hotel nel 2026: app Business o API, finestra di 24 ore, modelli, consenso, prezzi di Meta e cosa può (e non può) fare un assistente AI.
+
+## Come evitare l'overbooking tra i canali OTA: 6 passi
 21 settembre 2026
-Perché gli hotel finiscono in overbooking e come evitarlo: channel manager, regole di stop-sell, margini di disponibilità e cosa fare se succede comunque.
+Come evitare l'overbooking tra Booking.com, Airbnb ed Expedia: un'unica fonte di disponibilità, sincronizzazione in tempo reale e cosa fare se succede.
 
 ## Risposta automatica Booking.com: 12 modelli gratuiti (2026)
 21 settembre 2026
@@ -9686,10 +10240,10 @@ Q: Meglio una commissione o un canone fisso?
 A: Con l'aumentare dell'occupazione e delle tariffe medie, i costi a commissione crescono. Un canone mensile fisso è più prevedibile per gli hotel che vogliono un budget stabile.
 
 ---
-# Come evitare l'overbooking: 6 passi per gli hotel
+# Come evitare l'overbooking tra i canali OTA: 6 passi
 URL: https://hostliopro.com/it/blog/come-evitare-overbooking/
 
-## Come evitare l'overbooking: 6 passi per gli hotel
+## Come evitare l'overbooking tra i canali OTA: 6 passi
 A cura del team di prodotto Hostlio Pro , le persone che sviluppano Hostlio Pro. Pubblicato il 21 settembre 2026 , aggiornato il 23 settembre 2026
 
 In breve: l'overbooking consiste nell'accettare più prenotazioni di quelle che puoi ospitare per la stessa camera e le stesse date. Negli hotel indipendenti la causa più comune è l'aggiornamento manuale della disponibilità su più OTA. Un channel manager bidirezionale e in tempo reale elimina gran parte del rischio.
@@ -9719,15 +10273,68 @@ In breve: l'overbooking consiste nell'accettare più prenotazioni di quelle che 
 
 Avvisa l'ospite subito e con onestà, offri un'alternativa equivalente o migliore (un hotel vicino, un upgrade) e copri i costi extra, come i transfer. Annota quale canale ha causato il problema e perché.
 
+## Overbooking tra i canali OTA: dove sono i buchi
+
+La maggior parte delle doppie prenotazioni nelle strutture indipendenti non nasce da un solo canale, ma dagli spazi tra i canali:
+
+- Link di calendario invece di una connessione. Sincronizzare Airbnb o un portale minore con un link iCal significa aggiornare la disponibilità a intervalli, non nel momento della prenotazione. In quell'intervallo due ospiti possono prenotare la stessa notte.
+
+- Camere non mappate o mappate male. Una nuova tipologia creata su Booking.com e non mappata nel channel manager continua a vendere con il proprio allotment.
+
+- Modifiche fatte direttamente in extranet. Aprire camere a mano in un'extranet sovrascrive ciò che ha inviato il channel manager, e gli altri canali non lo sanno.
+
+- Modifiche e cancellazioni. Un cambio di date che arriva tardi al PMS lascia bloccate le vecchie notti e aperte le nuove ovunque.
+
+- Camere che in realtà non si possono vendere. Una camera con il condizionatore guasto resta disponibile finché non viene tolta dalla vendita ovunque.
+La soluzione è sempre la stessa: tutti i canali leggono la disponibilità da un unico planning, con una connessione diretta e bidirezionale, e niente modifica la disponibilità al di fuori di quel planning. Per la differenza tra planning e connessione vedi channel manager e PMS: le differenze .
+
+## Controllo quotidiano di 5 minuti
+
+- Guarda gli arrivi di oggi e domani: nessuna camera con due prenotazioni, nessuna prenotazione senza camera.
+
+- Verifica che le cancellazioni e le modifiche di ieri siano sul planning.
+
+- Controlla che la connessione con i canali non segnali errori di sincronizzazione.
+
+- Togli dalla vendita le camere guaste prima di aprire la stagione successiva.
+
+- Dopo aver aggiunto una tipologia o un piano tariffario, controllane la mappatura su ogni canale.
+
+## Se succede comunque: riproteggere l'ospite
+
+Spostare in un'altra struttura un ospite rimasto senza camera per overbooking si chiama riprotezione (in inglese “walking the guest”). Gestita bene, può ancora chiudersi con una buona recensione:
+
+- Decidi presto. Appena vedi il conflitto, decidi quale prenotazione puoi onorare. Non aspettare l'arrivo dell'ospite.
+
+- Trova una camera uguale o migliore nelle vicinanze e confermala prima di contattare l'ospite.
+
+- Copri la differenza: prezzo, trasferimento e, se possibile, la prima notte.
+
+- Avvisa l'ospite nella sua lingua, con il nuovo indirizzo, come arrivarci e chi chiamare.
+
+- Proponi il rientro per il resto del soggiorno se hai una camera dalla notte successiva.
+
+- Registra la causa (canale, camera, mappatura, modifica manuale) perché non si ripeta.
+Un messaggio da adattare:
+
+Gentile [nome], ci scusiamo molto: a causa di un errore di prenotazione da parte nostra non possiamo offrirle la camera prenotata per [date]. Le abbiamo riservato una camera equivalente presso [hotel], a [distanza] da noi, e ci facciamo carico della differenza di prezzo e del taxi. In allegato la nuova conferma. Se desidera tornare da noi per il resto del soggiorno, la sua camera sarà pronta dal [data]. Per qualsiasi domanda ci chiami al [telefono]. [Il suo nome], [Hotel]
+
 ## Come funziona in Hostlio Pro
 
 Il channel manager di Hostlio Pro sincronizza la disponibilità in modo bidirezionale e in tempo reale su oltre 100 canali con connessioni certificate. Le prenotazioni compaiono in un unico planning camere, colorate per canale.
+Dietro le quinte il planning esegue un controllo dei conflitti che elenca le prenotazioni doppie o senza camera assegnata e suggerisce una camera libera della tipologia giusta. Mettendo una camera fuori servizio la sua disponibilità scende su tutti i canali collegati; la schermata Oggi mostra se i canali sono sincronizzati, con un pulsante per riprovare, e “reinvia ai canali” invia di nuovo tariffe e disponibilità se un canale resta indietro.
 
 Q: Che cosa significa overbooking?
 A: Si parla di overbooking quando un hotel accetta più prenotazioni di quante ne possa ospitare per la stessa camera e le stesse date; è detto anche doppia prenotazione.
 
 Q: Un channel manager evita del tutto l'overbooking?
 A: La sincronizzazione bidirezionale in tempo reale elimina gran parte del rischio; le prenotazioni dirette non inserite e le mappature errate delle camere possono comunque causare problemi.
+
+Q: Come evitano gli hotel l'overbooking tra i canali OTA?
+A: Collegando tutte le OTA a un unico planning con un channel manager bidirezionale e in tempo reale, invece di aggiornare le extranet a mano o affidarsi ai link iCal. Poi verificando che ogni tipologia sia mappata, inserendo subito le prenotazioni dirette e non aprendo mai camere direttamente in extranet.
+
+Q: Cosa vuol dire riproteggere un ospite?
+A: Sistemare in un hotel vicino e comparabile un ospite che non si può accogliere per overbooking; di solito l'hotel paga la differenza di prezzo e il trasferimento.
 
 ---
 # Risposta automatica Booking.com: 12 modelli gratuiti (2026)
@@ -10230,6 +10837,273 @@ Q: I miei numeri vengono salvati?
 A: No. Il calcolo avviene nel browser e non viene inviato nulla.
 
 ---
+# Channel manager cos'è e che differenza c'è con un PMS
+URL: https://hostliopro.com/it/blog/channel-manager-cos-e-differenza-pms/
+
+## Channel manager cos'è e che differenza c'è con un PMS
+A cura del team di prodotto Hostlio Pro , le persone che sviluppano Hostlio Pro. Pubblicato il 8 ottobre 2026 , aggiornato il 23 settembre 2026
+
+In breve: il PMS (property management system, il gestionale) gestisce l'interno della struttura: planning delle prenotazioni, camere, ospiti, pulizie e report. Il channel manager gestisce il collegamento con l'esterno: invia disponibilità, tariffe e restrizioni a Booking.com, Airbnb, Expedia e agli altri canali e riporta indietro le loro prenotazioni. Se vendi su più di un canale online ti servono entrambe le funzioni. Per una piccola struttura la soluzione più semplice di solito è un PMS con channel manager integrato: un solo planning e nessuna sincronizzazione da tenere allineata tra due sistemi.
+
+## Cosa fa un PMS
+
+Il PMS è il sistema in cui lavora la reception. È l'unico registro di chi alloggia, in quale camera, in quali date e a che prezzo. Compiti tipici:
+
+- Planning delle prenotazioni (tableau): ogni prenotazione su una linea del tempo per camera, con spostamenti, modifiche di date e controllo dei conflitti.
+
+- Camere e pulizie: stato pulita, sporca o fuori servizio e la lista delle pulizie del giorno.
+
+- Ospiti: contatti, dati del check-in, note e storico dei soggiorni.
+
+- Prenotazioni dirette: telefono, email, clienti al banco e ospiti abituali inseriti dallo staff.
+
+- Report: occupazione, ADR, RevPAR, ricavi e cancellazioni.
+
+## Channel manager: cos'è e cosa fa
+
+Il channel manager è un collegamento dati tra il tuo inventario e i canali che lo vendono. Lavora in due direzioni:
+
+- Dalla struttura ai canali: disponibilità (quante camere di ogni tipo si possono vendere), tariffe e restrizioni come soggiorno minimo, chiusura all'arrivo, chiusura alla partenza e stop sell. Nel settore si chiama ARI: availability, rates and inventory.
+
+- Dai canali alla struttura: nuove prenotazioni, modifiche e cancellazioni.
+Quando l'ultima camera libera viene venduta su Airbnb, il channel manager riceve la prenotazione e invia “0 camere” per quelle date a Booking.com ed Expedia, di solito in pochi secondi. È questo che evita la maggior parte delle doppie prenotazioni: vedi la guida su come evitare l'overbooking .
+
+## PMS e channel manager a confronto
+
+PMS Channel manager
+Compito principale Gestisce l'operatività: planning, camere, ospiti, report Distribuisce disponibilità e tariffe ai canali e importa le loro prenotazioni
+Chi lo usa Reception, housekeeping, direzione, amministrazione Lavora soprattutto in background; lo configura il titolare o il revenue manager
+Con chi parla Con il tuo staff (e, tramite integrazioni, con altri strumenti) Con OTA, metamotori e altri canali di vendita
+Senza Le prenotazioni vivono tra fogli Excel, extranet e carta La disponibilità va aggiornata a mano in ogni extranet
+Rischio principale se non funziona Prenotazioni perse o duplicate, nessuna visione d'insieme Overbooking e tariffe diverse tra i canali
+
+## Come lavorano insieme
+
+Il PMS è la fonte di verità, il channel manager è il messaggero. Un flusso tipico:
+
+- Un ospite prenota una doppia su Booking.com dal 12 al 14 maggio.
+
+- Il channel manager riceve la prenotazione e la passa al PMS, dove compare sul planning.
+
+- Il PMS ricalcola la disponibilità delle doppie per quelle date.
+
+- Il channel manager invia la nuova disponibilità a tutti gli altri canali collegati.
+
+- Quando poi cambi una tariffa o chiudi una data nel PMS, lo stesso percorso si ripete al contrario.
+I punti deboli sono i passaggi. Se PMS e channel manager sono di fornitori diversi serve un'interfaccia tra i due, e ogni tipologia di camera e piano tariffario va mappato due volte: tra canale e channel manager, e tra channel manager e PMS.
+
+## Tre configurazioni possibili
+
+Configurazione Come funziona Adatta a Attenzione a
+Solo PMS, senza channel manager Aggiorni a mano ogni extranet Un solo canale, pochissime camere Il rischio di overbooking cresce con ogni canale in più
+Channel manager separato + PMS Due sistemi collegati da un'interfaccia Strutture legate a un PMS che vogliono tenere Due canoni, due assistenze, doppia mappatura, ritardi tra i sistemi
+PMS con channel manager integrato Un solo sistema, un solo planning La maggior parte delle piccole strutture indipendenti Verifica quali canali sono certificati e quanto è rapida la sincronizzazione
+
+## Servono davvero entrambi?
+
+- Vendi solo in diretta e su una OTA: per iniziare basta un PMS; chiudere le date a mano in un'unica extranet è gestibile.
+
+- Vendi su due o più canali online: ti serve la funzione di channel manager. Aggiornare a mano più extranet è la causa più comune di overbooking nelle strutture indipendenti.
+
+- Usi già un gestionale che ti piace: controlla se ha un channel manager proprio o un'integrazione certificata prima di aggiungere un secondo fornitore.
+
+- Scegli da zero: un PMS con channel manager integrato elimina lo strato di integrazione. La guida su come scegliere un gestionale per piccoli hotel elenca gli altri criteri.
+
+## Quanto costa
+
+I channel manager hanno modelli di prezzo diversi e alcuni gestionali lo includono solo nei piani più alti. Due esempi dalle pagine prezzi ufficiali (8 ottobre 2026):
+
+- Per camera e per collegamento: Beds24 applica un canone base, un importo per camera e uno per tipologia di camera per ogni canale collegato; la pagina prezzi indica “da 15,50 €” al mese.
+
+- Solo nel piano superiore: Sirvoy ha un piano gratuito per una camera e un piano Starter, ma il channel manager è previsto solo nel piano Pro (79 € al mese fino a 10 camere, pagamento mensile).
+Altri modelli prendono una percentuale sul fatturato delle prenotazioni o una quota per prenotazione, che cresce in alta stagione. Nel confronto somma PMS, channel manager ed eventuali costi a prenotazione, poi verifica quanto ti lascia davvero ogni canale dopo la commissione con il calcolatore delle commissioni OTA .
+
+## Domande da fare prima di scegliere
+
+- Quali canali sono collegati e i collegamenti sono certificati dai canali stessi?
+
+- La sincronizzazione è in tempo reale o a intervalli? Cosa succede se un canale non risponde?
+
+- Tariffe e restrizioni (soggiorno minimo, chiusura all'arrivo o alla partenza, stop sell) arrivano a tutti i canali, o solo la disponibilità?
+
+- Modifiche e cancellazioni rientrano in automatico?
+
+- Se una camera è fuori servizio, la disponibilità scende anche sui canali?
+
+- Chi mappa tipologie e piani tariffari all'attivazione, ed è incluso?
+
+- Il prezzo è fisso o dipende da camere, canali o prenotazioni?
+
+## Come funziona in Hostlio Pro
+
+Hostlio Pro è un PMS con il channel manager integrato in tutti i piani. I collegamenti con oltre 100 canali, tra cui Booking.com, Airbnb, Expedia, Agoda, Trip.com e Google Hotels, passano da connessioni certificate tramite Channex: prenotazioni, modifiche e cancellazioni arrivano sullo stesso planning in cui lavori. Un'unica griglia contiene prezzo, soggiorno minimo e massimo, chiusura all'arrivo, chiusura alla partenza e stop sell per ogni tipologia e piano tariffario, e puoi inserire un'intera stagione per intervallo di date. Quando metti una camera fuori servizio, la disponibilità scende in automatico sui canali. Le analisi mostrano per ogni canale ricavo lordo, commissione e netto.
+
+Nessuna commissione per prenotazione né percentuale sul fatturato: Starter costa 49 $ al mese, Pro 89 $ e Growth 149 $, con 7 giorni di prova gratuita. Limiti di camere e contenuto dei piani nella pagina prezzi .
+
+## Fonti
+Consultate l'8 ottobre 2026.
+
+- Sirvoy: Pricing
+- Beds24: Pricing
+
+Q: Il channel manager fa parte del PMS?
+A: Dipende. Molti gestionali includono un channel manager, altri si integrano con uno esterno, altri ancora lo offrono solo nei piani più alti. Controlla il contenuto del piano, non solo l'elenco delle funzioni.
+
+Q: Posso usare un channel manager senza PMS?
+A: Sì, molti channel manager hanno un calendario di base. Ti servirà comunque uno strumento per camere, ospiti, pulizie e report, che è il compito del PMS.
+
+Q: Il channel manager elimina ogni overbooking?
+A: La sincronizzazione bidirezionale in tempo reale elimina la maggior parte del rischio. Prenotazioni dirette inserite in ritardo, mappature sbagliate e canali temporaneamente irraggiungibili possono ancora creare problemi.
+
+Q: Il channel manager è incluso in tutti i piani di Hostlio Pro?
+A: Sì. Starter, Pro e Growth includono il channel manager con oltre 100 canali, senza costi per prenotazione.
+
+---
+# WhatsApp per hotel: configurazione, regole di Meta e AI (2026)
+URL: https://hostliopro.com/it/blog/whatsapp-per-hotel/
+
+## WhatsApp per hotel: configurazione, regole di Meta e AI (2026)
+A cura del team di prodotto Hostlio Pro , le persone che sviluppano Hostlio Pro. Pubblicato il 8 ottobre 2026 , aggiornato il 23 settembre 2026
+
+In breve: WhatsApp funziona bene per gli hotel perché gli ospiti lo usano già e rispondono in fretta. Una piccola struttura può iniziare con l'app gratuita WhatsApp Business su un solo telefono. Quando devono rispondere più persone, o vuoi risposte automatiche e un collegamento con le prenotazioni, ti serve la WhatsApp Business Platform (la Cloud API di Meta), di solito tramite il gestionale o un fornitore di messaggistica. Tre regole condizionano tutto: l'ospite deve dare il consenso, le risposte libere sono possibili solo entro 24 ore dal suo ultimo messaggio e ciò che invii fuori da quella finestra deve essere un modello approvato da Meta.
+
+## Perché gli hotel usano WhatsApp
+
+Per molti viaggiatori WhatsApp è il modo normale di scrivere a un'attività, in Italia come nel resto d'Europa, in America Latina e in Medio Oriente. Un messaggio WhatsApp viene letto; un'email spesso no. Per un hotel significa meno telefonate alla reception, meno “non ho ricevuto la sua email” e un canale comodo per le domande pratiche di ogni soggiorno:
+
+- Prima dell'arrivo: orario del check-in, parcheggio, indicazioni, arrivo anticipato, transfer dall'aeroporto
+
+- Durante il soggiorno: asciugamani, orario della colazione, un consiglio per cena, late check-out
+
+- Dopo la partenza: un caricatore dimenticato, una fattura, una domanda per il prossimo soggiorno
+Il problema è il personale. Gli ospiti scrivono alle 2 di notte, in lingue che il tuo staff non parla, e si aspettano una risposta in pochi minuti. È qui che contano configurazione e automazione.
+
+## App WhatsApp Business o WhatsApp Business Platform?
+
+Meta offre due prodotti. L'app si scarica gratis ed è pensata per piccole attività che parlano con i clienti da un solo dispositivo. La Platform si usa tramite API, direttamente con la Cloud API ospitata da Meta o attraverso un fornitore di soluzioni, ed è fatta per automatizzare e integrarsi con gli altri sistemi.
+
+App WhatsApp Business WhatsApp Business Platform (Cloud API)
+Costo per iniziare App gratuita Nessun canone per l'app; Meta addebita per messaggio (vedi sotto)
+Chi risponde Lo staff sul telefono e sui dispositivi collegati Tutto il team che vuoi, dal tuo software
+Automazione Messaggi di benvenuto e di assenza, risposte rapide Automazione completa, risposte con AI, integrazione con il PMS
+Messaggi dopo 24 ore Senza la stessa restrizione Solo modelli approvati
+Adatta a Poche camere, una persona che risponde Hotel con un team, più canali o bisogno di automatizzare
+
+La vecchia opzione self-hosted di Meta, la On-Premises API, è stata dismessa a ottobre 2025; le nuove integrazioni usano la Cloud API. Per registrare un numero sulla Platform deve essere un numero tuo, in grado di ricevere una chiamata o un SMS di verifica, e il nome visualizzato viene controllato secondo le linee guida di Meta.
+
+## La finestra di assistenza di 24 ore
+
+È la regola che sorprende di più. Ogni volta che un ospite ti scrive si apre una finestra di assistenza clienti di 24 ore, che riparte a ogni suo nuovo messaggio. Dentro la finestra puoi inviare qualsiasi risposta normale, senza approvazione. Quando si chiude, puoi inviare solo modelli di messaggio approvati in anticipo.
+
+In pratica: a un ospite che ieri mattina ha chiesto del parcheggio e non ha più scritto non puoi mandare oggi un messaggio libero “La sua camera è pronta”. O usi un modello approvato, o lo contatti in un altro modo (email, telefono, la chat della OTA).
+
+## Modelli di messaggio
+
+I modelli sono messaggi fissi con campi variabili, come una conferma di prenotazione o un promemoria di check-in, che Meta esamina prima che tu possa usarli. Ogni modello va classificato come marketing , utilità (legato a una transazione precisa, come una prenotazione) o autenticazione (codici monouso). La revisione è automatica e può richiedere fino a 24 ore; si possono inviare solo modelli approvati.
+
+Mantieni i modelli di utilità davvero transazionali. Un “La sua prenotazione è confermata” con una promozione aggiunta verrà trattato come marketing.
+
+## Quanto fa pagare Meta
+
+Dal 1° luglio 2025 la Platform applica un prezzo per messaggio invece che per conversazione. La pagina prezzi attuale di Meta indica che dal 1° ottobre 2026 addebita per messaggio anche i messaggi di servizio e i messaggi di utilità inviati in risposta all'utente dentro la finestra di 24 ore. Restano gratuiti i messaggi inviati in una finestra di ingresso gratuita di 72 ore, che si apre quando qualcuno avvia la chat da un annuncio click-to-WhatsApp o da un pulsante di invito all'azione di Facebook. Le tariffe dipendono dal paese del destinatario e dalla categoria: controlla il listino di Meta e chiedi al tuo fornitore come vengono fatturate. L'app gratuita non è interessata.
+
+## Consenso e disiscrizione: cosa chiede la policy
+
+La policy di messaggistica di WhatsApp Business consente di contattare solo chi ti ha dato il proprio numero e ha accettato di ricevere messaggi da te. Devi rispettare ogni richiesta di non essere più contattato, fatta su WhatsApp o altrove. Per un hotel di solito vuol dire:
+
+- Chiedere il consenso dove raccogli il numero: modulo di prenotazione, check-in online o reception, spiegando che tipo di messaggi arriveranno.
+
+- Conservare traccia del consenso con la prenotazione.
+
+- Non inserire gli ospiti delle OTA in liste promozionali solo perché la prenotazione conteneva un telefono.
+
+- Gestire subito le richieste di stop e cancellare il numero.
+Quando è l'ospite a scrivere per primo, puoi rispondere dentro la finestra. Il consenso conta soprattutto per i messaggi che avvii tu, come promemoria e offerte. Nell'UE valgono anche gli obblighi del GDPR sui dati degli ospiti.
+
+## Limiti di messaggistica
+
+I limiti di messaggistica stabiliscono a quante persone diverse puoi inviare messaggi avviati da te (fuori da una finestra di assistenza) in 24 ore mobili. I nuovi account partono da 250 destinatari; i livelli successivi sono 2.000, 10.000, 100.000 e illimitato. Da ottobre 2025 il limite vale per l'intero portafoglio business di Meta ed è condiviso da tutti i suoi numeri. La verifica dell'attività, o l'invio di modelli di buona qualità, ti fa salire di livello. Le risposte agli ospiti che ti hanno scritto non contano, e quasi nessun piccolo hotel arriva al limite.
+
+## Rispondere nella lingua di ogni ospite
+
+Un hotel a Roma o sul lago di Garda può ricevere messaggi in una dozzina di lingue in una settimana. L'ospite che scrive nella propria lingua fa domande più chiare e capisce meglio la risposta. I traduttori aiutano, ma copiare e incollare testi a mezzanotte è proprio il lavoro che salta. Un assistente AI che riconosce la lingua e risponde in quella lingua chiude il buco, a patto che il tuo staff possa leggere la conversazione nella propria.
+
+## Cosa può e non può fare un assistente AI su WhatsApp
+
+I termini di Meta vietano l'uso della WhatsApp Business Platform alle aziende il cui prodotto principale è un assistente AI generico. Un hotel che automatizza le risposte ai propri ospiti è un caso diverso: la policy consente risposte automatiche dentro la finestra di 24 ore purché tu offra un modo rapido e chiaro per parlare con una persona, come il passaggio a un operatore in chat, un numero di telefono, un'email o la reception.
+
+Un buon assistente AI può Non deve o non può
+Rispondere alle domande ricorrenti 24/7 con le informazioni del tuo hotel Inventare una risposta su qualcosa che non gli hai mai detto
+Rispondere nella lingua dell'ospite Scrivere testo libero fuori dalla finestra di 24 ore
+Raccogliere date e persone per una richiesta di prenotazione e passartela Confermare una prenotazione, incassare o concedere uno sconto da solo
+Riconoscere reclami, rimborsi e richieste speciali e passarli a te Gestire un reclamo che richiede giudizio o un risarcimento
+Dirti a quali domande non ha saputo rispondere Sostituire il consenso che ti hanno dato gli ospiti
+
+Parti in modalità approvazione nei primi giorni, leggi ogni bozza e passa gli argomenti in automatico quando le risposte sono coerenti. La guida su come rispondere ai messaggi degli ospiti con l'AI spiega questo avvio nel dettaglio.
+
+## Configurare WhatsApp per il tuo hotel: checklist
+
+- Scegli il numero. Un numero aziendale dedicato, controllato dal team e non da una sola persona.
+
+- Decidi app o Platform. Una persona e pochi messaggi: l'app può bastare. Un team, automazione o collegamento con il gestionale: la Platform.
+
+- Prepara le informazioni dell'hotel. Orari di arrivo e partenza, parcheggio, colazione, animali, transfer, regole della casa. Le risposte automatiche valgono quanto queste informazioni.
+
+- Decidi cosa passa a una persona. Sconti, rimborsi, reclami, gruppi.
+
+- Metti il numero dove guardano gli ospiti. Email di conferma, sito web, profilo dell'attività su Google e scheda OTA dove consentito.
+
+- Raccogli il consenso se scriverai tu per primo, e conservane traccia.
+
+- Prepara i modelli che ti serviranno fuori dalla finestra di 24 ore e inviali in revisione.
+
+## Come si inserisce Lio, l'assistente di Hostlio Pro
+
+In Hostlio Pro colleghi il numero WhatsApp del tuo hotel dalla dashboard, con la procedura di registrazione ufficiale di Meta, in tutti i piani. I messaggi WhatsApp arrivano in un'unica casella, dove Lio, l'assistente AI , risponde con le informazioni del tuo hotel e i dati della prenotazione nella lingua dell'ospite. Tu leggi la risposta di Lio tradotta nella tua lingua; quello che scrivi tu viene inviato così com'è. Decidi quanto fa Lio da solo: tutto automatico, automatico per le domande ricorrenti con bozze per il resto (l'impostazione predefinita) o solo bozze. Sconti, rimborsi, reclami e richieste di prenotazione arrivano di norma per la tua approvazione.
+
+- Dentro la finestra, per scelta. Lio risponde agli ospiti che ti scrivono. Se la finestra di 24 ore di un ospite è chiusa, una risposta libera non può essere consegnata e la dashboard te lo segnala, così puoi contattarlo in altro modo. Hostlio Pro non invia campagne di marketing su WhatsApp.
+
+- Richieste di prenotazione (Pro e Growth). Lio raccoglie date, persone e preferenza di camera, fa il preventivo con le tue tariffe e disponibilità e ti invia la richiesta. Diventa una prenotazione solo quando la approvi.
+
+- Una casella anche per le OTA (Pro e Growth). I messaggi di Booking.com, Airbnb ed Expedia arrivano accanto a WhatsApp, con la prenotazione vicino a ogni conversazione.
+
+- Segnala le lacune invece di indovinare. Se gli ospiti chiedono qualcosa che la configurazione non copre, Lio indica il campo mancante così lo compili una volta.
+
+- Quota prevedibile. Starter include 1.000 messaggi AI al mese, Pro 5.000 e Growth 12.000. Il contatore diventa ambra all'80%, ricevi un'email al 100% e le risposte automatiche si sospendono intorno al 110%, mentre i messaggi continuano ad arrivare al tuo staff.
+I piani partono da 49 $ al mese, con 7 giorni di prova gratuita; vedi i prezzi . Per stimare il tempo che Lio può farti risparmiare prova il calcolatore ROI , e per i messaggi delle OTA leggi come rispondere in automatico ai messaggi di Booking.com .
+
+## Fonti
+Consultate l'8 ottobre 2026. Meta cambia spesso regole e prezzi: verifica le pagine collegate prima di basarti su un dettaglio.
+
+- WhatsApp Business: FAQ (app vs Platform)
+- WhatsApp Business Platform overview
+- Meta for Developers: Cloud API overview
+- Meta for Developers: On-Premises API sunset
+- Meta for Developers: Sending messages (customer service window)
+- Meta for Developers: Message templates
+- Meta for Developers: Pricing for non-template messages
+- Meta for Developers: WhatsApp changelog
+- Meta for Developers: Messaging limits
+- Meta for Developers: Business phone numbers
+- WhatsApp Business Messaging Policy
+- Meta Terms for WhatsApp Business Platform
+
+Q: WhatsApp Business è gratis per gli hotel?
+A: L'app WhatsApp Business è gratuita. La WhatsApp Business Platform (API) non ha canone per l'app, ma Meta addebita per messaggio; dal 1° ottobre 2026 questo include le risposte di servizio dentro la finestra di 24 ore, mentre i messaggi in una finestra di ingresso gratuita di 72 ore, aperta da annunci click-to-WhatsApp, restano gratuiti. Il fornitore del software può fatturare a parte.
+
+Q: Un hotel può scrivere a un ospite che non scrive da giorni?
+A: Solo con un modello approvato da Meta e se l'ospite ha accettato di ricevere messaggi da te. Le risposte libere sono possibili solo entro 24 ore dal suo ultimo messaggio.
+
+Q: Serve l'API di WhatsApp Business per le risposte automatiche?
+A: Per tutto ciò che va oltre i messaggi di benvenuto, di assenza e le risposte rapide dell'app, sì. Le risposte con AI e l'integrazione con un gestionale funzionano sulla WhatsApp Business Platform.
+
+Q: Un chatbot AI è consentito su WhatsApp?
+A: I termini di Meta vietano la Platform alle aziende il cui prodotto principale è un assistente AI generico. Le attività possono automatizzare le risposte ai propri clienti dentro la finestra di 24 ore, purché offrano un modo chiaro per parlare con una persona.
+
+Q: Lio può inviare promemoria WhatsApp prima dell'arrivo?
+A: Oggi no. Lio risponde agli ospiti che ti scrivono, dentro la finestra di 24 ore di WhatsApp. Su Pro e Growth il link per il check-in online può essere inviato automaticamente via email.
+
+---
 # Sistema para Hotel com IA e Channel Manager | Hostlio Pro
 URL: https://hostliopro.com/pt/
 
@@ -10649,7 +11523,7 @@ Q: O Lio consegue receber reservas?
 A: Sim, nos planos Pro e Growth e sempre com a sua aprovação. Quando um hóspede escreve no WhatsApp, o Lio pergunta as datas, o número de hóspedes e o quarto preferido, informa o preço com base nas suas tarifas e disponibilidade e repassa o pedido para você. Ele só vira reserva depois que você aprova; o Lio nunca confirma uma reserva sozinho. Pedidos de serviços extras, como transfers e passeios, funcionam do mesmo jeito.
 
 Q: O que acontece quando a cota de mensagens acaba?
-A: As mensagens continuam chegando e aparecem no seu painel; apenas as respostas automáticas ficam pausadas. Você pode migrar para um plano superior para aumentar a cota.
+A: Sem surpresas: o contador de uso no painel fica âmbar em 80% e, em 100%, o titular da conta recebe um e-mail e uma notificação push. O Lio continua respondendo um pouco além do limite; as respostas automáticas pausam por volta de 110%. As mensagens continuam chegando e aparecem no seu painel, e a equipe pode responder manualmente. Você pode migrar para um plano superior para aumentar a cota.
 
 Q: Em quais idiomas o Lio responde?
 A: O Lio responde em mais de 30 idiomas, incluindo inglês, turco, árabe, russo, alemão, japonês e chinês. Ele responde no idioma do hóspede, e você vê a tradução no seu painel.
@@ -10696,7 +11570,7 @@ As mensagens dos hóspedes de reservas das OTAs chegam à caixa de entrada do Li
 Escolha um período, os tipos de quarto e os planos tarifários e defina preço, estadia mínima e máxima, fechado para chegada, fechado para saída ou stop sell. Marque «só fins de semana» para dar outro preço às noites de sexta e sábado. Se um canal ficar para trás, «reenviar aos canais» envia de novo as tarifas e a disponibilidade atuais.
 
 ## Quartos fora de serviço fecham sozinhos
-Quando um quarto fica fora de serviço por um problema, a disponibilidade cai em todos os canais conectados e o quarto não pode ser atribuído até voltar a funcionar.
+Quando um quarto fica fora de serviço por um problema, a disponibilidade cai em todos os canais conectados e o quarto não pode ser atribuído até voltar a funcionar. Desativar um tipo de quarto funciona do mesmo jeito: disponibilidade 0 vai para todos os canais conectados até você reativá-lo.
 
 ## Traga suas reservas atuais
 Envie as reservas do sistema antigo em CSV ou Excel. As colunas são associadas automaticamente, duplicatas são ignoradas e linhas com problema aparecem com o motivo.
@@ -10960,8 +11834,8 @@ Calendário de reservas com arrastar e soltar. Arraste uma reserva para trocar d
 Link seguro, acompanhantes, leitura do documento (sem guardar imagens) e assinatura digital.
 Check-in online
 
-## Declaração de hospedagem para visto
-Gere com um clique, a partir da reserva, a declaração de hospedagem pedida no visto ou na carta-convite; salve em PDF ou imprima.
+## Documentos do hóspede
+A partir da reserva, gere a declaração de hospedagem pedida no visto ou na carta-convite, ou um recibo da estadia com datas, diária e total. Escolha português, inglês, turco, espanhol, italiano ou francês (o idioma do hóspede é sugerido) e imprima ou salve em PDF. A ficha de registro do hóspede também pode ser baixada em PDF.
 
 ## Venda de transfers e passeios
 O Lio sugere transfers do aeroporto e passeios durante a conversa e repassa o pedido para a sua equipe.
@@ -10986,12 +11860,16 @@ Um mapa de quartos que acompanha o crescimento Para propriedades maiores: três 
 
 Notificações e resumo da manhã Reservas novas, alteradas e canceladas, mensagens sem resposta, rascunhos para aprovar, problemas de canal e registros de manutenção chegam a uma única central de notificações, guardada por 90 dias. O app também envia um resumo do dia às 08:00, horário do hotel (hoje no Android; no iOS com a próxima atualização do app).
 
+Ficha do hóspede Mantenha uma ficha dos hóspedes que você quer lembrar: contatos, nacionalidade e suas observações. Marque os habituais como VIP e filtre a lista por eles; o número de estadias e a última estadia são calculados a partir das reservas.
+
 ## Receita, tarifas e relatórios
 Análises Ocupação, ADR, RevPAR, receita, estadia média, cancelamentos e no-shows, comparados com o período anterior. A visão de 30, 60 e 90 dias com pickup mostra o que já está reservado, e a visão por canal traz receita bruta, comissão e líquido de cada OTA, para você saber qual realmente compensa. Tipos de quarto, hóspedes, extras e o trabalho do Lio têm abas próprias.
 
 Relatórios em Excel, PDF e por e-mail Exporte todas as abas de análise para Excel com um clique ou imprima a visão aberta em PDF; seu contador recebe os números sem trabalho extra. Toda segunda-feira um resumo semanal chega ao e-mail do proprietário e, no dia 1º de cada mês, um relatório mensal com anexos CSV.
 
 Tarifas e restrições Uma única grade para cada tipo de quarto e plano tarifário: preço, estadia mínima e máxima, fechado para chegada (CTA), fechado para saída (CTD), stop sell e disponibilidade. Lance uma temporada inteira de uma vez: escolha o período, os tipos de quarto e os planos e marque «só fins de semana» para dar outro preço às noites de sexta e sábado. Se um canal ficar dessincronizado, o botão «reenviar aos canais» envia tudo de novo.
+
+Descontos para reserva direta Crie regras em porcentagem para estadias longas, reserva antecipada, última hora e hóspedes que voltam, limitadas a datas ou tipos de quarto se quiser. Ao lançar uma reserva direta à mão, o desconto mais adequado é sugerido e aplicado com um clique; o hóspede que volta é reconhecido pelo telefone ou e-mail. Os descontos nunca são enviados às OTAs.
 
 Importação de reservas Vindo de outro sistema? Envie suas reservas em um arquivo .csv, .xlsx ou .xls. As colunas são associadas automaticamente e você pode ajustá-las, o formato de data é detectado ou escolhido por você, duplicatas são ignoradas e cada linha que não pode ser importada aparece com o motivo.
 
@@ -11197,6 +12075,8 @@ Posso limitar o que cada pessoa da equipe vê? Sim. Cada pessoa recebe uma funç
 
 Quais relatórios eu recebo? Todos os planos incluem análises de ocupação, ADR, RevPAR, receita, cancelamentos, uma visão de 30/60/90 dias e receita por canal depois da comissão. Você pode exportar para Excel ou PDF, e o proprietário recebe um resumo semanal toda segunda-feira e um relatório mensal com anexos CSV.
 
+Posso transferir a conta para um novo dono? Sim. O titular da conta pode transferir a titularidade para um membro da equipe com papel de gerente, depois de confirmar a senha. O novo titular tem 48 horas para aceitar; o anterior continua na equipe como gerente e os dois recebem um e-mail quando a transferência termina.
+
 Q: O que é o Hostlio Pro?
 A: O Hostlio Pro é um sistema para hotel (PMS hoteleiro) com inteligência artificial, feito para hotéis independentes, hotéis boutique e pousadas. Ele reúne em uma só plataforma o Lio, um assistente de IA que responde às mensagens dos hóspedes 24 horas por dia em mais de 30 idiomas, um channel manager conectado a mais de 100 OTAs, um calendário de reservas com arrastar e soltar e o check-in online.
 
@@ -11241,6 +12121,9 @@ A: Sim. Cada pessoa recebe uma função: proprietário, gerente, recepção, gov
 
 Q: Quais relatórios eu recebo?
 A: Todos os planos incluem análises de ocupação, ADR, RevPAR, receita, cancelamentos, uma visão de 30/60/90 dias e receita por canal depois da comissão. Você pode exportar para Excel ou PDF, e o proprietário recebe um resumo semanal toda segunda-feira e um relatório mensal com anexos CSV.
+
+Q: Posso transferir a conta para um novo dono?
+A: Sim. O titular da conta pode transferir a titularidade para um membro da equipe com papel de gerente, depois de confirmar a senha. O novo titular tem 48 horas para aceitar; o anterior continua na equipe como gerente e os dois recebem um e-mail quando a transferência termina.
 
 ---
 # Sobre o Hostlio Pro | Sistema para Hotel com IA
@@ -11291,9 +12174,13 @@ URL: https://hostliopro.com/pt/blog/
 ## Blog para hoteleiros
 Conteúdo prático sobre a gestão de um hotel independente, distribuição e comunicação com hóspedes.
 
-## Como evitar overbooking: 6 passos para hotéis
+## O que é channel manager e qual a diferença para o PMS
+8 de outubro de 2026
+Channel manager e PMS: o que cada um faz, como funcionam juntos, quanto custam e se um hotel pequeno precisa dos dois. Com tabela comparativa e FAQ.
+
+## Como evitar overbooking entre canais OTA: 6 passos
 21 de setembro de 2026
-Por que os hotéis têm overbooking e como evitá-lo: channel manager, regras de stop-sell, margem de disponibilidade e o que fazer se acontecer mesmo assim.
+Como hotéis evitam overbooking entre Booking.com, Airbnb e Expedia: uma só fonte de disponibilidade, sincronização em tempo real e o que fazer se acontecer.
 
 ## Resposta automática Booking.com: 12 modelos grátis (2026)
 21 de setembro de 2026
@@ -11786,10 +12673,10 @@ Q: É melhor pagar comissão ou mensalidade fixa?
 A: À medida que a ocupação e a diária média sobem, o custo baseado em comissão cresce. Uma mensalidade fixa é mais previsível para hotéis que querem um orçamento fixo.
 
 ---
-# Como evitar overbooking: 6 passos para hotéis
+# Como evitar overbooking entre canais OTA: 6 passos
 URL: https://hostliopro.com/pt/blog/como-evitar-overbooking/
 
-## Como evitar overbooking: 6 passos para hotéis
+## Como evitar overbooking entre canais OTA: 6 passos
 Pela equipe de produto do Hostlio Pro , as pessoas que desenvolvem o Hostlio Pro. Publicado em 21 de setembro de 2026 , atualizado em 23 de setembro de 2026
 
 Resposta curta: Overbooking é aceitar mais reservas do que você consegue hospedar para o mesmo quarto e as mesmas datas. Em hotéis independentes, a causa mais comum é atualizar a disponibilidade à mão em várias OTAs. Um channel manager bidirecional e em tempo real elimina a maior parte do risco.
@@ -11819,15 +12706,68 @@ Resposta curta: Overbooking é aceitar mais reservas do que você consegue hospe
 
 Avise o hóspede logo e com sinceridade, ofereça uma alternativa equivalente ou melhor (um hotel próximo, um upgrade) e cubra os custos extras, como transfers. Registre qual canal causou o problema e por quê.
 
+## Overbooking entre canais OTA: onde ficam as brechas
+
+A maior parte das reservas duplicadas em hotéis independentes não nasce em um canal só, e sim nas brechas entre os canais:
+
+- Link de calendário em vez de conexão. Sincronizar o Airbnb ou um site menor por link iCal significa que a disponibilidade é atualizada de tempos em tempos, não no momento da reserva. Nesse intervalo dois hóspedes podem reservar a mesma noite.
+
+- Quartos sem mapeamento ou mal mapeados. Um tipo de quarto novo criado no Booking.com e não mapeado no channel manager continua vendendo com a própria cota.
+
+- Mudanças feitas direto na extranet. Abrir quartos à mão em uma extranet sobrescreve o que o channel manager enviou, e os outros canais não ficam sabendo.
+
+- Alterações e cancelamentos. Uma mudança de datas que chega atrasada ao PMS deixa as noites antigas bloqueadas e as novas abertas em todo lugar.
+
+- Quartos que na prática não podem ser vendidos. Um quarto com o ar-condicionado quebrado continua contando como disponível se não for tirado de venda em todos os canais.
+A solução é sempre a mesma: todos os canais leem a disponibilidade de um único calendário, por uma conexão direta e bidirecional, e nada muda a disponibilidade fora desse calendário. Para entender a diferença entre calendário e conexão, veja o que é channel manager e a diferença para o PMS .
+
+## Checagem diária de 5 minutos
+
+- Veja as chegadas de hoje e de amanhã: nenhum quarto com duas reservas, nenhuma reserva sem quarto.
+
+- Confira se os cancelamentos e alterações de ontem estão no calendário.
+
+- Confirme que a conexão com os canais não mostra erros de sincronização.
+
+- Tire de venda os quartos com defeito antes de abrir a próxima temporada.
+
+- Depois de criar um tipo de quarto ou plano tarifário, confira o mapeamento em cada canal.
+
+## Se acontecer mesmo assim: realocar o hóspede
+
+Na hotelaria, transferir para outro hotel um hóspede afetado por overbooking se chama realocar (em inglês, “walking the guest”). Bem conduzido, ainda pode terminar em uma boa avaliação:
+
+- Decida cedo. Assim que perceber o conflito, decida qual reserva você consegue honrar. Não espere o hóspede chegar.
+
+- Encontre um quarto igual ou melhor por perto e confirme antes de falar com o hóspede.
+
+- Cubra a diferença: preço, transporte e, se possível, a primeira noite.
+
+- Avise o hóspede no idioma dele, com o novo endereço, como chegar e para quem ligar.
+
+- Ofereça a volta para o resto da estadia se tiver quarto a partir da noite seguinte.
+
+- Registre a causa (canal, quarto, mapeamento, mudança manual) para não repetir.
+Uma mensagem para adaptar:
+
+Prezado(a) [nome], pedimos muitas desculpas: por um erro de reserva da nossa parte, não conseguimos oferecer o quarto reservado para [datas]. Reservamos um quarto equivalente no [hotel], a [distância] daqui, e vamos pagar a diferença de preço e o táxi até lá. Sua nova confirmação segue em anexo. Se quiser voltar para cá no restante da estadia, seu quarto estará pronto a partir de [data]. Qualquer dúvida, ligue para [telefone]. [Seu nome], [Hotel]
+
 ## Como funciona no Hostlio Pro
 
 O channel manager do Hostlio Pro sincroniza a disponibilidade de forma bidirecional e em tempo real em mais de 100 canais com conexões certificadas. As reservas aparecem em um só mapa de reservas, com cores por canal.
+Por trás disso, o mapa de reservas faz uma verificação de conflitos que lista reservas duplicadas ou sem quarto atribuído e sugere um quarto livre do tipo certo. Ao colocar um quarto fora de serviço, a disponibilidade dele cai em todos os canais conectados; a tela Hoje mostra se os canais estão sincronizados, com um botão para tentar de novo, e “reenviar aos canais” manda de novo tarifas e disponibilidade se um canal ficar para trás.
 
 Q: O que significa overbooking?
 A: Overbooking é quando um hotel aceita mais reservas do que consegue hospedar para o mesmo quarto e as mesmas datas, também chamado de reserva duplicada.
 
 Q: Um channel manager evita totalmente o overbooking?
 A: A sincronização bidirecional em tempo real elimina a maior parte do risco; reservas diretas não lançadas e mapeamentos de quartos errados ainda podem causar problemas.
+
+Q: Como os hotéis evitam overbooking entre canais OTA?
+A: Conectando todas as OTAs a um único calendário com um channel manager bidirecional e em tempo real, em vez de atualizar extranets à mão ou depender de links iCal. Depois, garantindo que cada tipo de quarto está mapeado, lançando reservas diretas na hora e nunca abrindo quartos direto em uma extranet.
+
+Q: O que significa realocar um hóspede?
+A: Hospedar em um hotel próximo e equivalente um hóspede que não pode ser atendido por overbooking; normalmente o hotel paga a diferença de preço e o transporte.
 
 ---
 # Resposta automática Booking.com: 12 modelos grátis (2026)
@@ -12572,6 +13512,128 @@ Q: O Hostlio Pro é só um chatbot?
 A: Não. O Hostlio Pro é um PMS e channel manager com assistente de IA embutido; também cuida das reservas, da disponibilidade em mais de 100 OTAs e do check-in online.
 
 ---
+# O que é channel manager e qual a diferença para o PMS
+URL: https://hostliopro.com/pt/blog/o-que-e-channel-manager-diferenca-pms/
+
+## O que é channel manager e qual a diferença para o PMS
+Pela equipe de produto do Hostlio Pro , as pessoas que desenvolvem o Hostlio Pro. Publicado em 8 de outubro de 2026 , atualizado em 23 de setembro de 2026
+
+Resposta curta: o PMS (property management system, o sistema de gestão do hotel) cuida da parte de dentro: mapa de reservas, quartos, hóspedes, governança e relatórios. O channel manager cuida da conexão com fora: envia disponibilidade, tarifas e restrições para Booking.com, Airbnb, Expedia e outros canais e traz as reservas de volta. Se você vende em mais de um canal online, precisa das duas funções. Para um hotel pequeno, o mais simples costuma ser um PMS com channel manager integrado: um só calendário e nada para manter sincronizado entre dois sistemas.
+
+## O que um PMS faz
+
+O PMS é o sistema em que a recepção trabalha. É o registro único de quem está hospedado, em qual quarto, em quais datas e por qual preço. Funções típicas:
+
+- Mapa de reservas: cada reserva em uma linha do tempo por quarto, com troca de quarto, mudança de datas e verificação de conflitos.
+
+- Quartos e governança: status limpo, sujo ou fora de serviço e a lista de limpeza do dia.
+
+- Hóspedes: contatos, dados do check-in, observações e histórico de estadias.
+
+- Reservas diretas: telefone, e-mail, balcão e hóspedes que voltam, lançados pela equipe.
+
+- Relatórios: ocupação, ADR, RevPAR, receita e cancelamentos.
+
+## O que é channel manager e o que ele faz
+
+O channel manager é uma ponte de dados entre o seu inventário e os canais que o vendem. Funciona nos dois sentidos:
+
+- Do hotel para os canais: disponibilidade (quantos quartos de cada tipo podem ser vendidos), tarifas e restrições como estadia mínima, fechado para chegada, fechado para saída e stop sell. No setor isso se chama ARI: availability, rates and inventory.
+
+- Dos canais para o hotel: novas reservas, alterações e cancelamentos.
+Quando o último quarto livre é vendido no Airbnb, o channel manager recebe a reserva e envia “0 quartos” para essas datas ao Booking.com e à Expedia, normalmente em segundos. É isso que evita a maior parte das reservas duplicadas; veja o guia sobre como evitar overbooking .
+
+## PMS x channel manager
+
+PMS Channel manager
+Função principal Opera o dia a dia: mapa, quartos, hóspedes, relatórios Distribui disponibilidade e tarifas aos canais e importa as reservas deles
+Quem usa Recepção, governança, gerência, financeiro Roda quase sempre em segundo plano; quem configura é o dono ou o revenue manager
+Conversa com A sua equipe (e, por integrações, outras ferramentas) OTAs, metabuscadores e outros canais de venda
+Sem ele As reservas ficam em planilhas, extranets e papel A disponibilidade precisa ser atualizada à mão em cada extranet
+Principal risco se falhar Reservas perdidas ou duplicadas, sem visão do todo Overbooking e tarifas diferentes entre canais
+
+## Como os dois trabalham juntos
+
+O PMS é a fonte da verdade e o channel manager é o mensageiro. Um fluxo típico:
+
+- Um hóspede reserva um quarto duplo no Booking.com de 12 a 14 de maio.
+
+- O channel manager recebe a reserva e a passa ao PMS, onde ela aparece no mapa.
+
+- O PMS recalcula a disponibilidade de duplos nessas datas.
+
+- O channel manager envia a nova disponibilidade a todos os outros canais conectados.
+
+- Quando você muda uma tarifa ou fecha uma data no PMS, o mesmo caminho é feito no sentido contrário.
+Os pontos fracos são as passagens. Se PMS e channel manager são de fornecedores diferentes, é preciso uma interface entre eles, e cada tipo de quarto e plano tarifário tem de ser mapeado duas vezes: entre o canal e o channel manager, e entre o channel manager e o PMS.
+
+## Três formas de montar
+
+Formato Como funciona Bom para Cuidado com
+Só PMS, sem channel manager Você atualiza cada extranet à mão Um canal só, pouquíssimos quartos O risco de overbooking cresce a cada canal a mais
+Channel manager separado + PMS Dois sistemas ligados por uma interface Hotéis presos a um PMS que querem manter Duas mensalidades, dois suportes, mapeamento duplo, atrasos entre sistemas
+PMS com channel manager integrado Um sistema, um calendário A maioria dos hotéis pequenos e independentes Confira quais canais são certificados e a velocidade da sincronização
+
+## Preciso dos dois?
+
+- Você vende só direto e em uma OTA: um PMS basta para começar; fechar datas à mão em uma única extranet é administrável.
+
+- Você vende em dois ou mais canais online: precisa da função de channel manager. Atualizar várias extranets à mão é a causa mais comum de overbooking em hotéis independentes.
+
+- Você já usa um PMS de que gosta: veja se ele tem channel manager próprio ou integração certificada antes de contratar um segundo fornecedor.
+
+- Você está escolhendo do zero: um PMS com channel manager integrado elimina a camada de integração. O guia sobre como escolher um sistema para hotel pequeno traz os outros critérios.
+
+## Quanto custa
+
+Channel managers são cobrados de formas diferentes, e alguns PMS só o incluem nos planos mais altos. Dois exemplos das páginas de preços oficiais (8 de outubro de 2026):
+
+- Por quarto e por conexão: o Beds24 cobra uma taxa base, um valor por quarto e um valor por tipo de quarto para cada canal conectado; a página de preços fala em “a partir de 15,50 €” por mês.
+
+- Só no plano superior: o Sirvoy tem um plano gratuito para um quarto e um plano Starter, mas o channel manager aparece apenas no plano Pro (79 € por mês para até 10 quartos, pagamento mensal).
+Outros modelos cobram uma porcentagem da receita de reservas ou uma taxa por reserva, que cresce na alta temporada. Na comparação, some PMS, channel manager e taxas por reserva e veja quanto cada canal realmente deixa depois da comissão com a calculadora de comissão de OTA .
+
+## Perguntas para fazer antes de decidir
+
+- Quais canais estão conectados e as conexões são certificadas pelos próprios canais?
+
+- A sincronização é em tempo real ou em intervalos? O que acontece se um canal cair?
+
+- Tarifas e restrições (estadia mínima, fechado para chegada ou saída, stop sell) vão para todos os canais, ou só a disponibilidade?
+
+- Alterações e cancelamentos voltam automaticamente?
+
+- Quando um quarto fica fora de serviço, a disponibilidade cai também nos canais?
+
+- Quem mapeia tipos de quarto e planos tarifários na implantação, e isso está incluído?
+
+- O preço é fixo ou depende de quartos, canais ou reservas?
+
+## Como funciona no Hostlio Pro
+
+O Hostlio Pro é um PMS com o channel manager integrado em todos os planos. As conexões com mais de 100 canais, entre eles Booking.com, Airbnb, Expedia, Agoda, Trip.com e Google Hotels, usam ligações certificadas via Channex: reservas, alterações e cancelamentos chegam ao mesmo mapa em que você trabalha. Uma única grade reúne preço, estadia mínima e máxima, fechado para chegada, fechado para saída e stop sell para cada tipo de quarto e plano tarifário, e dá para lançar uma temporada inteira por intervalo de datas. Quando um quarto fica fora de serviço, a disponibilidade cai nos canais automaticamente. As análises mostram receita bruta, comissão e valor líquido por canal.
+
+Sem taxa por reserva nem porcentagem da receita: o Starter custa US$ 49 por mês, o Pro US$ 89 e o Growth US$ 149, com 7 dias de teste grátis. Limites de quartos e o que cada plano inclui estão em preços .
+
+## Fontes
+Acessadas em 8 de outubro de 2026.
+
+- Sirvoy: Pricing
+- Beds24: Pricing
+
+Q: O channel manager faz parte do PMS?
+A: Depende. Muitos PMS incluem channel manager, outros se integram a um externo e alguns só o oferecem nos planos mais altos. Confira o que o plano inclui, não só a lista de funções.
+
+Q: Posso usar um channel manager sem PMS?
+A: Sim, muitos channel managers têm um calendário básico. Mesmo assim você vai precisar de um lugar para quartos, hóspedes, governança e relatórios, que é o papel do PMS.
+
+Q: O channel manager acaba com todo overbooking?
+A: A sincronização bidirecional em tempo real elimina a maior parte do risco. Reservas diretas lançadas com atraso, mapeamentos errados e canais fora do ar ainda podem causar problemas.
+
+Q: O channel manager está em todos os planos do Hostlio Pro?
+A: Sim. Starter, Pro e Growth incluem o channel manager com mais de 100 canais, sem taxa por reserva.
+
+---
 # Logiciel de gestion hôtelière avec IA | Hostlio Pro
 URL: https://hostliopro.com/fr/
 
@@ -12991,7 +14053,7 @@ Q: Lio peut-il prendre des réservations ?
 A: Oui, avec les forfaits Pro et Growth, et toujours avec votre accord. Quand un client écrit sur WhatsApp, Lio lui demande les dates, le nombre de personnes et la chambre souhaitée, annonce un prix calculé à partir de vos tarifs et disponibilités, puis vous transmet la demande. Elle ne devient une réservation qu'après votre validation : Lio ne confirme jamais une réservation seul. Les demandes de services comme les transferts ou les excursions suivent le même principe.
 
 Q: Que se passe-t-il quand le quota de messages est épuisé ?
-A: Les messages continuent d'arriver et s'affichent dans votre tableau de bord ; seules les réponses automatiques sont suspendues. Vous pouvez passer à un forfait supérieur pour augmenter votre quota.
+A: Pas de surprise : le compteur d'utilisation du tableau de bord passe à l'orange à 80 % et, à 100 %, le titulaire du compte reçoit un e-mail et une notification push. Lio continue de répondre un peu au-delà de la limite ; les réponses automatiques sont suspendues vers 110 %. Les messages continuent d'arriver et s'affichent dans votre tableau de bord, et votre équipe peut y répondre à la main. Vous pouvez passer à un forfait supérieur pour augmenter votre quota.
 
 Q: Dans quelles langues Lio répond-il ?
 A: Lio répond dans plus de 30 langues, dont l'anglais, le turc, l'arabe, le russe, l'allemand, le japonais et le chinois. Il répond dans la langue du client, et vous voyez une traduction dans votre tableau de bord.
@@ -13038,7 +14100,7 @@ Les messages des clients ayant réservé via une OTA arrivent dans la boîte de 
 Choisissez une période, les types de chambre et les plans tarifaires, puis fixez le prix, le séjour minimum et maximum, la fermeture à l’arrivée, au départ ou l’arrêt des ventes. Cochez « week-ends uniquement » pour tarifer à part les nuits du vendredi et du samedi. Si un canal prend du retard, « renvoyer aux canaux » renvoie les tarifs et la disponibilité actuels.
 
 ## Les chambres hors service se ferment seules
-Quand une chambre passe hors service à cause d’une panne, la disponibilité baisse sur tous les canaux connectés et la chambre ne peut plus être attribuée tant qu’elle n’est pas remise en service.
+Quand une chambre passe hors service à cause d’une panne, la disponibilité baisse sur tous les canaux connectés et la chambre ne peut plus être attribuée tant qu’elle n’est pas remise en service. Désactiver un type de chambre a le même effet : une disponibilité de 0 part vers tous les canaux connectés jusqu'à sa réactivation.
 
 ## Reprenez vos réservations existantes
 Importez les réservations de votre ancien logiciel en CSV ou Excel. Les colonnes sont associées automatiquement, les doublons ignorés et les lignes posant problème listées avec la raison.
@@ -13304,8 +14366,8 @@ Calendrier de réservations en glisser-déposer. Faites glisser une réservation
 Lien sécurisé, accompagnants, scan de la pièce d'identité (aucune image conservée) et signature électronique.
 Check-in en ligne
 
-## Attestation d'hébergement pour visa
-Préparez en un clic, à partir de la réservation, l'attestation d'hébergement demandée pour un visa ou une invitation ; enregistrez-la en PDF ou imprimez-la.
+## Documents pour le client
+À partir de la réservation, préparez l'attestation d'hébergement demandée pour un visa ou une invitation, ou un reçu de séjour avec dates, prix par nuit et total. Choisissez le français, l'anglais, le turc, l'espagnol, l'italien ou le portugais (la langue du client est proposée), puis imprimez ou enregistrez en PDF. La fiche d'enregistrement du client se télécharge aussi en PDF.
 
 ## Vente de transferts et d'excursions
 Lio propose transferts aéroport et excursions pendant la conversation et transmet la demande à votre équipe.
@@ -13330,12 +14392,16 @@ Un planning qui suit votre croissance Pour les établissements plus grands : tr
 
 Notifications et résumé du matin Réservations nouvelles, modifiées ou annulées, messages sans réponse, brouillons à valider, incidents de canal et pannes arrivent dans un seul centre de notifications, conservé 90 jours. L’application mobile envoie aussi un résumé de la journée à 08:00, heure de l’hôtel (sur Android aujourd’hui, sur iOS avec la prochaine mise à jour de l’application).
 
+Fiche client Gardez une fiche pour les clients dont vous voulez vous souvenir : coordonnées, nationalité et vos notes. Marquez les habitués comme VIP et filtrez la liste ; le nombre de séjours et le dernier séjour sont calculés à partir de leurs réservations.
+
 ## Revenus, tarifs et rapports
 Analyses Taux d’occupation, ADR, RevPAR, chiffre d’affaires, durée moyenne de séjour, annulations et no-shows, comparés à la période précédente. La vue à 30, 60 et 90 jours avec pickup montre ce qui est déjà réservé, et la vue par canal donne le revenu brut, la commission et le net de chaque OTA : vous savez lequel rapporte vraiment. Types de chambre, clients, extras et travail de Lio ont leurs propres onglets.
 
 Rapports Excel, PDF et par e-mail Exportez tous les onglets d’analyse vers Excel en un clic ou imprimez la vue ouverte en PDF ; votre comptable a les chiffres sans travail supplémentaire. Chaque lundi, un résumé hebdomadaire arrive dans la boîte du propriétaire, et le 1er de chaque mois un rapport mensuel avec pièces jointes CSV.
 
 Tarifs et restrictions Une seule grille pour chaque type de chambre et plan tarifaire : prix, séjour minimum et maximum, fermé à l’arrivée (CTA), fermé au départ (CTD), arrêt des ventes et disponibilité. Saisissez toute une saison d’un coup : choisissez la période, les types de chambre et les plans, et cochez « week-ends uniquement » pour tarifer à part les nuits du vendredi et du samedi. Si un canal se désynchronise, le bouton « renvoyer aux canaux » renvoie tout.
+
+Remises pour la réservation directe Créez des règles en pourcentage pour les longs séjours, la réservation anticipée, la dernière minute et les clients fidèles, limitées à des dates ou types de chambre si vous le souhaitez. Quand vous saisissez une réservation directe, la remise la plus adaptée est proposée et appliquée en un clic ; le client fidèle est reconnu par son téléphone ou son e-mail. Les remises ne sont jamais envoyées aux OTA.
 
 Import de réservations Vous venez d’un autre logiciel ? Importez vos réservations depuis un fichier .csv, .xlsx ou .xls. Les colonnes sont associées automatiquement et vous pouvez les ajuster, le format de date est détecté ou choisi par vous, les doublons sont ignorés et chaque ligne non importée est listée avec la raison.
 
@@ -13541,6 +14607,8 @@ Puis-je limiter ce que voit chaque membre du personnel ? Oui. Chaque personne r
 
 Quels rapports vais-je recevoir ? Tous les forfaits incluent des analyses d’occupation, d’ADR, de RevPAR, de chiffre d’affaires et d’annulations, une vue à 30/60/90 jours et le revenu par canal après commission. Vous pouvez exporter en Excel ou en PDF, et le propriétaire reçoit un résumé hebdomadaire chaque lundi et un rapport mensuel avec pièces jointes CSV.
 
+Puis-je transférer le compte à un nouveau propriétaire ? Oui. Le titulaire du compte peut transférer la propriété à un membre de l'équipe ayant le rôle de manager, après avoir confirmé son mot de passe. Le nouveau titulaire a 48 heures pour accepter ; l'ancien reste dans l'équipe en tant que manager et tous deux reçoivent un e-mail une fois le transfert terminé.
+
 Q: Qu'est-ce que Hostlio Pro ?
 A: Hostlio Pro est un logiciel de gestion hôtelière (PMS) propulsé par l'IA, conçu pour les hôtels indépendants, les hôtels boutique et les chambres d'hôtes. Il réunit sur une seule plateforme Lio, un assistant IA qui répond aux messages des clients 24 h/24 et 7 j/7 dans plus de 30 langues, un channel manager connecté à plus de 100 OTA, un calendrier de réservations en glisser-déposer et le check-in en ligne.
 
@@ -13585,6 +14653,9 @@ A: Oui. Chaque personne reçoit un rôle : propriétaire, manager, réception, 
 
 Q: Quels rapports vais-je recevoir ?
 A: Tous les forfaits incluent des analyses d’occupation, d’ADR, de RevPAR, de chiffre d’affaires et d’annulations, une vue à 30/60/90 jours et le revenu par canal après commission. Vous pouvez exporter en Excel ou en PDF, et le propriétaire reçoit un résumé hebdomadaire chaque lundi et un rapport mensuel avec pièces jointes CSV.
+
+Q: Puis-je transférer le compte à un nouveau propriétaire ?
+A: Oui. Le titulaire du compte peut transférer la propriété à un membre de l'équipe ayant le rôle de manager, après avoir confirmé son mot de passe. Le nouveau titulaire a 48 heures pour accepter ; l'ancien reste dans l'équipe en tant que manager et tous deux reçoivent un e-mail une fois le transfert terminé.
 
 ---
 # À propos de Hostlio Pro
@@ -13635,9 +14706,17 @@ URL: https://hostliopro.com/fr/blog/
 ## Le blog des hôteliers
 Des articles pratiques sur la gestion d'un hôtel indépendant, la distribution et la communication avec les clients.
 
-## Comment éviter la surréservation : 6 étapes pour les hôtels
+## PMS ou channel manager : quelle différence ?
+8 octobre 2026
+PMS et channel manager : rôle de chacun, fonctionnement ensemble, coûts et faut-il les deux pour un petit hôtel ? Tableau comparatif et FAQ.
+
+## WhatsApp pour hôtels : mise en place, règles de Meta et IA (2026)
+8 octobre 2026
+WhatsApp pour les hôtels en 2026 : app Business ou API, fenêtre de 24 heures, modèles, consentement, tarifs de Meta et ce que peut faire un assistant IA.
+
+## Éviter la surréservation entre canaux OTA : 6 étapes
 21 septembre 2026
-Pourquoi les hôtels subissent la surréservation et comment l’éviter : channel manager, stop-sell, marges de disponibilité et que faire si elle survient.
+Éviter la surréservation entre Booking.com, Airbnb et Expedia : un seul planning, synchronisation en temps réel et que faire si elle survient.
 
 ## Réponse automatique Booking.com : 12 modèles gratuits (2026)
 21 septembre 2026
@@ -14128,10 +15207,10 @@ Q: Vaut-il mieux une commission ou un abonnement fixe ?
 A: Quand le taux d’occupation et le prix moyen augmentent, le coût d’un modèle à commission augmente aussi. Un abonnement mensuel fixe est plus prévisible pour les hôtels qui veulent maîtriser leur budget.
 
 ---
-# Comment éviter la surréservation : 6 étapes pour les hôtels
+# Éviter la surréservation entre canaux OTA : 6 étapes
 URL: https://hostliopro.com/fr/blog/comment-eviter-le-surbooking/
 
-## Comment éviter la surréservation : 6 étapes pour les hôtels
+## Éviter la surréservation entre canaux OTA : 6 étapes
 Par l' équipe produit Hostlio Pro , celle qui conçoit Hostlio Pro. Publié le 21 septembre 2026 , mis à jour le 23 septembre 2026
 
 Réponse courte : la surréservation (overbooking) consiste à accepter plus de réservations que vous ne pouvez en accueillir pour la même chambre et les mêmes dates. Dans les hôtels indépendants, la cause la plus fréquente est la mise à jour manuelle des disponibilités sur plusieurs OTA. Un channel manager bidirectionnel en temps réel élimine l’essentiel du risque.
@@ -14161,15 +15240,68 @@ Réponse courte : la surréservation (overbooking) consiste à accepter plus de
 
 Prévenez le client rapidement et honnêtement, proposez une alternative équivalente ou meilleure (un hôtel voisin, un surclassement) et prenez en charge les frais supplémentaires comme les transferts. Notez quel canal en est à l’origine et pourquoi.
 
+## Surréservation entre canaux OTA : où sont les failles
+
+La plupart des doubles réservations dans les hôtels indépendants ne viennent pas d'un seul canal, mais des failles entre les canaux :
+
+- Un lien de calendrier au lieu d'une connexion. Synchroniser Airbnb ou un petit site via un lien iCal signifie que les disponibilités se mettent à jour par intervalles, pas au moment de la réservation. Entre-temps, deux clients peuvent réserver la même nuit.
+
+- Chambres non mappées ou mal mappées. Un nouveau type de chambre créé sur Booking.com mais pas mappé dans le channel manager continue de se vendre sur son propre stock.
+
+- Modifications faites directement dans un extranet. Ouvrir des chambres à la main dans un extranet écrase ce qu'a envoyé le channel manager, et les autres canaux n'en savent rien.
+
+- Modifications et annulations. Un changement de dates qui arrive en retard dans le PMS laisse les anciennes nuits bloquées et les nouvelles ouvertes partout.
+
+- Des chambres qui ne sont pas vraiment vendables. Une chambre dont la climatisation est en panne reste disponible tant qu'elle n'est pas retirée de la vente partout.
+La solution est toujours la même : tous les canaux lisent les disponibilités dans un seul planning, via une connexion directe et bidirectionnelle, et rien ne modifie les disponibilités en dehors de ce planning. Pour la différence entre planning et connexion, voir PMS ou channel manager : quelle différence .
+
+## Le contrôle quotidien de 5 minutes
+
+- Regardez les arrivées du jour et du lendemain : aucune chambre avec deux réservations, aucune réservation sans chambre.
+
+- Vérifiez que les annulations et modifications de la veille figurent au planning.
+
+- Confirmez que la connexion aux canaux n'affiche pas d'erreur de synchronisation.
+
+- Retirez de la vente les chambres en panne avant d'ouvrir la saison suivante.
+
+- Après l'ajout d'un type de chambre ou d'un plan tarifaire, vérifiez son mapping sur chaque canal.
+
+## Si elle survient quand même : délogement du client
+
+Reloger dans un autre établissement un client victime d'une surréservation s'appelle le délogement (en anglais « walking the guest »). Bien mené, il peut encore se terminer par un bon avis :
+
+- Décidez tôt. Dès que vous voyez le conflit, choisissez la réservation que vous pouvez honorer. N'attendez pas l'arrivée du client.
+
+- Trouvez une chambre équivalente ou meilleure à proximité et confirmez-la avant de contacter le client.
+
+- Prenez la différence à votre charge : l'écart de prix, le transfert et, si possible, la première nuit.
+
+- Prévenez le client dans sa langue, avec la nouvelle adresse, le moyen d'y aller et la personne à appeler.
+
+- Proposez-lui de revenir pour la suite du séjour si une chambre se libère le lendemain.
+
+- Notez la cause (canal, chambre, mapping, modification manuelle) pour qu'elle ne se reproduise pas.
+Un message à adapter :
+
+Madame, Monsieur [nom], nous sommes sincèrement désolés : en raison d'une erreur de réservation de notre part, nous ne pouvons pas vous proposer la chambre réservée pour [dates]. Nous vous avons réservé une chambre équivalente à l'hôtel [hôtel], à [distance] de chez nous, et prenons en charge la différence de prix ainsi que votre taxi. Vous trouverez votre nouvelle confirmation en pièce jointe. Si vous souhaitez revenir chez nous pour la suite de votre séjour, votre chambre sera prête à partir du [date]. Pour toute question, appelez-nous au [téléphone]. [Votre nom], [Hôtel]
+
 ## Comment cela fonctionne dans Hostlio Pro
 
 Le channel manager de Hostlio Pro synchronise les disponibilités de manière bidirectionnelle et en temps réel sur plus de 100 canaux par connexions certifiées. Les réservations apparaissent sur un seul planning des chambres, colorées par canal.
+En coulisses, le planning effectue un contrôle des conflits qui liste les réservations en double ou sans chambre attribuée et suggère une chambre libre du bon type. Une chambre mise hors service voit sa disponibilité baisser sur tous les canaux connectés ; l'écran Aujourd'hui indique si les canaux sont synchronisés, avec un bouton pour réessayer, et « renvoyer aux canaux » renvoie tarifs et disponibilités si un canal se désynchronise.
 
 Q: Que signifie surréservation (overbooking) ?
 A: La surréservation, c’est lorsqu’un hôtel accepte plus de réservations qu’il ne peut en accueillir pour la même chambre et les mêmes dates ; on parle aussi de double réservation.
 
 Q: Un channel manager empêche-t-il totalement la surréservation ?
 A: Une synchronisation bidirectionnelle en temps réel élimine l’essentiel du risque ; les réservations directes non saisies et les erreurs de correspondance des chambres peuvent toutefois encore poser problème.
+
+Q: Comment les hôtels évitent-ils la surréservation entre canaux OTA ?
+A: En reliant toutes les OTA à un seul planning via un channel manager bidirectionnel et en temps réel, plutôt qu'en mettant à jour les extranets à la main ou en comptant sur des liens iCal. Ensuite en vérifiant que chaque type de chambre est mappé, en saisissant tout de suite les réservations directes et en n'ouvrant jamais de chambres directement dans un extranet.
+
+Q: Que signifie déloger un client ?
+A: Reloger dans un hôtel proche et comparable un client qu'on ne peut pas accueillir à cause d'une surréservation ; l'hôtel paie en général la différence de prix et le transport.
 
 ---
 # Réponse automatique Booking.com : 12 modèles gratuits (2026)
@@ -14764,3 +15896,270 @@ A: Sur la page tarifs d’Amenitiz, « Messagerie client + WhatsApp » figure da
 
 Q: Hostlio Pro est-il disponible en français ?
 A: Oui : le tableau de bord, l’application mobile et le formulaire de check-in client existent en français (ainsi qu’en anglais, turc, espagnol, italien et portugais). Le support est en anglais et en turc.
+
+---
+# PMS ou channel manager : quelle différence ?
+URL: https://hostliopro.com/fr/blog/pms-ou-channel-manager-difference/
+
+## PMS ou channel manager : quelle différence ?
+Par l' équipe produit Hostlio Pro , celle qui conçoit Hostlio Pro. Publié le 8 octobre 2026 , mis à jour le 23 septembre 2026
+
+En bref : le PMS (property management system, le logiciel de gestion hôtelière) gère l'intérieur de l'établissement : planning des réservations, chambres, clients, ménage et rapports. Le channel manager gère le lien avec l'extérieur : il envoie disponibilités, tarifs et restrictions à Booking.com, Airbnb, Expedia et aux autres canaux, et rapatrie leurs réservations. Si vous vendez sur plus d'un canal en ligne, vous avez besoin des deux fonctions. Pour un petit hôtel, le plus simple est souvent un PMS avec channel manager intégré : un seul planning et aucune synchronisation à maintenir entre deux systèmes.
+
+## Ce que fait un PMS
+
+Le PMS est l'outil de la réception. C'est le registre unique de qui séjourne, dans quelle chambre, à quelles dates et à quel prix. Ses tâches habituelles :
+
+- Planning des réservations : chaque réservation sur une frise par chambre, avec changements de chambre, modifications de dates et contrôle des conflits.
+
+- Chambres et ménage : statut propre, sale ou hors service et la liste du ménage du jour.
+
+- Clients : coordonnées, données de check-in, notes et historique des séjours.
+
+- Réservations directes : téléphone, e-mail, clients de passage et habitués, saisis par l'équipe.
+
+- Rapports : taux d'occupation, ADR, RevPAR, chiffre d'affaires et annulations.
+
+## Ce que fait un channel manager
+
+Le channel manager est une passerelle de données entre votre inventaire et les canaux qui le vendent. Il fonctionne dans les deux sens :
+
+- De l'hôtel vers les canaux : disponibilités (combien de chambres de chaque type peuvent être vendues), tarifs et restrictions comme la durée minimale de séjour, la fermeture à l'arrivée, la fermeture au départ et le stop sell. Le secteur parle d'ARI : availability, rates and inventory.
+
+- Des canaux vers l'hôtel : nouvelles réservations, modifications et annulations.
+Quand la dernière chambre libre est vendue sur Airbnb, le channel manager reçoit la réservation et envoie « 0 chambre » pour ces dates à Booking.com et Expedia, en général en quelques secondes. C'est ce qui évite la plupart des doubles réservations ; voir notre guide pour éviter la surréservation .
+
+## PMS et channel manager en un coup d'œil
+
+PMS Channel manager
+Rôle principal Fait tourner l'exploitation : planning, chambres, clients, rapports Distribue disponibilités et tarifs aux canaux et importe leurs réservations
+Qui l'utilise Réception, gouvernante, direction, comptabilité Tourne surtout en arrière-plan ; paramétré par le gérant ou le revenue manager
+Parle avec Votre équipe (et, via des intégrations, d'autres outils) Les OTA, les métamoteurs et les autres canaux de vente
+Sans lui Les réservations vivent dans des tableurs, des extranets et sur papier Les disponibilités se mettent à jour à la main dans chaque extranet
+Risque principal en cas de panne Réservations perdues ou en double, pas de vue d'ensemble Surréservation et tarifs différents selon les canaux
+
+## Comment ils fonctionnent ensemble
+
+Le PMS est la source de vérité, le channel manager le messager. Un parcours type :
+
+- Un client réserve une chambre double sur Booking.com du 12 au 14 mai.
+
+- Le channel manager reçoit la réservation et la transmet au PMS, où elle apparaît sur le planning.
+
+- Le PMS recalcule la disponibilité des doubles à ces dates.
+
+- Le channel manager envoie la nouvelle disponibilité à tous les autres canaux connectés.
+
+- Quand vous modifiez ensuite un tarif ou fermez une date dans le PMS, le même chemin se fait en sens inverse.
+Les points faibles sont les passages de relais. Si le PMS et le channel manager viennent de deux éditeurs différents, il faut une interface entre eux, et chaque type de chambre et plan tarifaire doit être mappé deux fois : entre le canal et le channel manager, puis entre le channel manager et le PMS.
+
+## Trois façons de s'organiser
+
+Organisation Fonctionnement Convient à Points de vigilance
+PMS seul, sans channel manager Vous mettez à jour chaque extranet à la main Un seul canal, très peu de chambres Le risque de surréservation augmente avec chaque canal ajouté
+Channel manager séparé + PMS Deux systèmes reliés par une interface Hôtels attachés à un PMS qu'ils veulent garder Deux abonnements, deux supports, double mapping, décalages entre systèmes
+PMS avec channel manager intégré Un seul système, un seul planning La plupart des petits hôtels indépendants Vérifiez quels canaux sont certifiés et la rapidité de synchronisation
+
+## Faut-il les deux ?
+
+- Vous vendez en direct et sur une seule OTA : un PMS suffit pour commencer ; fermer des dates à la main dans un extranet reste gérable.
+
+- Vous vendez sur deux canaux en ligne ou plus : il vous faut la fonction channel manager. Mettre à jour plusieurs extranets à la main est la cause de surréservation la plus fréquente dans les hôtels indépendants.
+
+- Vous utilisez déjà un PMS qui vous convient : vérifiez s'il a son propre channel manager ou une intégration certifiée avant d'ajouter un second éditeur.
+
+- Vous partez de zéro : un PMS avec channel manager intégré supprime la couche d'intégration. Notre guide pour choisir un logiciel de gestion hôtelière pour un petit hôtel détaille les autres critères.
+
+## Combien ça coûte
+
+Les channel managers sont facturés de plusieurs façons, et certains PMS ne l'incluent que dans leurs offres supérieures. Deux exemples tirés des pages tarifs officielles (8 octobre 2026) :
+
+- Par chambre et par connexion : Beds24 facture un forfait de base, un montant par chambre et un montant par type de chambre pour chaque canal connecté ; sa page tarifs annonce « à partir de 15,50 € » par mois.
+
+- Seulement dans l'offre supérieure : Sirvoy propose une offre gratuite pour une chambre et une offre Starter, mais le channel manager ne figure que dans l'offre Pro (79 € par mois jusqu'à 10 chambres, paiement mensuel).
+D'autres modèles prennent un pourcentage du chiffre d'affaires des réservations ou des frais par réservation, qui augmentent en haute saison. Pour comparer, additionnez PMS, channel manager et frais par réservation, puis vérifiez ce que chaque canal vous laisse vraiment après commission avec notre calculateur de commission OTA .
+
+## Les questions à poser avant de choisir
+
+- Quels canaux sont connectés, et les connexions sont-elles certifiées par les canaux eux-mêmes ?
+
+- La synchronisation est-elle en temps réel ou par intervalles ? Que se passe-t-il si un canal ne répond pas ?
+
+- Les tarifs et restrictions (durée minimale, fermeture à l'arrivée ou au départ, stop sell) partent-ils vers tous les canaux, ou seulement les disponibilités ?
+
+- Les modifications et annulations reviennent-elles automatiquement ?
+
+- Quand une chambre est hors service, la disponibilité baisse-t-elle aussi sur les canaux ?
+
+- Qui mappe types de chambres et plans tarifaires à la mise en place, et est-ce inclus ?
+
+- Le prix est-il fixe, ou dépend-il des chambres, des canaux ou des réservations ?
+
+## Comment ça marche dans Hostlio Pro
+
+Hostlio Pro est un PMS avec le channel manager intégré dans toutes les offres. Les connexions à plus de 100 canaux, dont Booking.com, Airbnb, Expedia, Agoda, Trip.com et Google Hotels, passent par des liaisons certifiées via Channex : réservations, modifications et annulations arrivent sur le planning où vous travaillez. Une seule grille réunit prix, durée minimale et maximale, fermeture à l'arrivée, fermeture au départ et stop sell pour chaque type de chambre et plan tarifaire, et vous saisissez une saison entière par plage de dates. Quand une chambre passe hors service, la disponibilité baisse automatiquement sur les canaux. Les analyses affichent pour chaque canal le chiffre d'affaires brut, la commission et le net.
+
+Pas de frais par réservation ni de pourcentage du chiffre d'affaires : Starter coûte 49 $ par mois, Pro 89 $ et Growth 149 $, avec 7 jours d'essai gratuit. Limites de chambres et contenu des offres sur la page tarifs .
+
+## Sources
+Consultées le 8 octobre 2026.
+
+- Sirvoy: Pricing
+- Beds24: Pricing
+
+Q: Le channel manager fait-il partie du PMS ?
+A: Cela dépend. Beaucoup de PMS incluent un channel manager, d'autres s'intègrent à un outil externe, certains ne l'offrent que dans leurs offres supérieures. Vérifiez le contenu de l'offre, pas seulement la liste des fonctions.
+
+Q: Peut-on utiliser un channel manager sans PMS ?
+A: Oui, beaucoup de channel managers ont un calendrier de base. Il vous faudra quand même un outil pour les chambres, les clients, le ménage et les rapports : c'est le rôle du PMS.
+
+Q: Un channel manager évite-t-il toute surréservation ?
+A: La synchronisation bidirectionnelle en temps réel supprime l'essentiel du risque. Des réservations directes saisies en retard, un mapping erroné ou un canal momentanément injoignable peuvent encore poser problème.
+
+Q: Le channel manager est-il inclus dans toutes les offres Hostlio Pro ?
+A: Oui. Starter, Pro et Growth incluent le channel manager avec plus de 100 canaux, sans frais par réservation.
+
+---
+# WhatsApp pour hôtels : mise en place, règles de Meta et IA (2026)
+URL: https://hostliopro.com/fr/blog/whatsapp-pour-hotels/
+
+## WhatsApp pour hôtels : mise en place, règles de Meta et IA (2026)
+Par l' équipe produit Hostlio Pro , celle qui conçoit Hostlio Pro. Publié le 8 octobre 2026 , mis à jour le 23 septembre 2026
+
+En bref : WhatsApp fonctionne bien pour les hôtels parce que les clients l'utilisent déjà et répondent vite. Un petit établissement peut commencer avec l'application gratuite WhatsApp Business sur un seul téléphone. Dès que plusieurs personnes doivent répondre, ou que vous voulez des réponses automatiques reliées à vos réservations, il vous faut la WhatsApp Business Platform (la Cloud API de Meta), en général via votre PMS ou un prestataire de messagerie. Trois règles encadrent tout : le client doit avoir donné son accord, les réponses libres ne sont possibles que dans les 24 heures suivant son dernier message, et tout envoi en dehors de cette fenêtre doit être un modèle approuvé par Meta.
+
+## Pourquoi les hôtels utilisent WhatsApp
+
+Pour beaucoup de voyageurs, WhatsApp est le moyen naturel d'écrire à une entreprise, en Europe comme en Amérique latine, au Moyen-Orient ou au Maghreb. Un message WhatsApp est lu ; un e-mail, souvent pas. Pour un hôtel, cela veut dire moins d'appels à la réception, moins de « je n'ai pas reçu votre e-mail » et un canal pratique pour les questions de chaque séjour :
+
+- Avant l'arrivée : heure d'arrivée, parking, itinéraire, arrivée anticipée, transfert depuis l'aéroport
+
+- Pendant le séjour : serviettes, horaires du petit-déjeuner, une adresse pour dîner, départ tardif
+
+- Après le départ : un chargeur oublié, une facture, une question pour le prochain séjour
+Le problème, c'est le personnel. Les clients écrivent à 2 heures du matin, dans des langues que votre équipe ne parle pas, et attendent une réponse en quelques minutes. C'est là que la mise en place et l'automatisation comptent.
+
+## Application WhatsApp Business ou WhatsApp Business Platform ?
+
+Meta propose deux produits. L'application se télécharge gratuitement et vise les petites entreprises qui échangent avec leurs clients depuis un seul appareil. La Platform s'utilise via une API, directement avec la Cloud API hébergée par Meta ou par un prestataire de solutions, et sert à automatiser et à se connecter à vos autres outils.
+
+Application WhatsApp Business WhatsApp Business Platform (Cloud API)
+Coût de départ Application gratuite Pas d'abonnement à l'application ; Meta facture par message (voir plus bas)
+Qui répond L'équipe sur le téléphone et les appareils associés Autant de membres de l'équipe que vous voulez, depuis votre logiciel
+Automatisation Messages d'accueil et d'absence, réponses rapides Automatisation complète, réponses par IA, lien avec le PMS
+Messages après 24 heures Pas la même restriction Uniquement des modèles approuvés
+Adapté à Quelques chambres, une personne qui répond Hôtels avec une équipe, plusieurs canaux ou un besoin d'automatiser
+
+L'ancienne option auto-hébergée de Meta, l'API On-Premises, a été arrêtée en octobre 2025 ; les nouvelles intégrations passent par la Cloud API. Pour enregistrer un numéro sur la Platform, il doit vous appartenir et pouvoir recevoir un appel ou un SMS de vérification, et le nom affiché est vérifié selon les règles de Meta.
+
+## La fenêtre de service client de 24 heures
+
+C'est la règle qui surprend le plus. Chaque fois qu'un client vous écrit, une fenêtre de service client de 24 heures s'ouvre, et elle repart à zéro à chaque nouveau message de sa part. Dans la fenêtre, vous pouvez envoyer n'importe quelle réponse normale, sans approbation. Une fois fermée, vous ne pouvez plus envoyer que des modèles de message approuvés.
+
+Concrètement : à un client qui a demandé hier matin s'il y avait un parking et n'a plus écrit depuis, vous ne pouvez pas envoyer aujourd'hui un message libre « Votre chambre est prête ». Soit vous utilisez un modèle approuvé, soit vous le joignez autrement (e-mail, téléphone, messagerie de l'OTA).
+
+## Les modèles de message
+
+Les modèles sont des messages fixes avec des champs variables, comme une confirmation de réservation ou un rappel avant l'arrivée, que Meta examine avant que vous puissiez les utiliser. Chaque modèle doit être classé en marketing , utilitaire (lié à une transaction précise, comme une réservation) ou authentification (codes à usage unique). L'examen est automatique et peut prendre jusqu'à 24 heures ; seuls les modèles approuvés peuvent être envoyés.
+
+Gardez les modèles utilitaires vraiment transactionnels. Un « Votre réservation est confirmée » accompagné d'une promotion sera traité comme du marketing.
+
+## Ce que facture Meta
+
+Depuis le 1er juillet 2025, la Platform facture par message et non plus par conversation. La page tarifaire actuelle de Meta indique qu'à partir du 1er octobre 2026, elle facture aussi par message les messages de service et les messages utilitaires envoyés en réponse dans la fenêtre de 24 heures. Restent gratuits les messages envoyés dans une fenêtre de point d'entrée gratuit de 72 heures, ouverte quand quelqu'un lance la conversation depuis une publicité « Click to WhatsApp » ou un bouton d'appel à l'action Facebook. Les tarifs dépendent du pays du destinataire et de la catégorie : consultez la grille de Meta et demandez à votre prestataire comment ces frais sont facturés. L'application gratuite n'est pas concernée.
+
+## Consentement et désinscription : ce qu'exige la politique
+
+La politique de messagerie de WhatsApp Business n'autorise à contacter que les personnes qui vous ont donné leur numéro et ont accepté de recevoir vos messages. Vous devez respecter toute demande d'arrêt, faite sur WhatsApp ou ailleurs. Pour un hôtel, cela veut généralement dire :
+
+- Demander l'accord là où vous collectez le numéro : formulaire de réservation, check-in en ligne ou réception, en précisant quels messages seront envoyés.
+
+- Conserver la trace de l'accord avec la réservation.
+
+- Ne pas ajouter les clients des OTA à des listes promotionnelles au seul motif que la réservation contenait un téléphone.
+
+- Traiter immédiatement les demandes d'arrêt et supprimer le numéro.
+Quand le client vous écrit en premier, vous pouvez répondre dans la fenêtre. L'accord compte surtout pour les messages que vous envoyez de vous-même, comme les rappels et les offres. Dans l'UE, le RGPD s'applique aussi aux données de vos clients.
+
+## Limites d'envoi
+
+Les limites d'envoi fixent à combien de personnes différentes vous pouvez écrire de votre propre initiative (hors fenêtre de service) sur 24 heures glissantes. Les nouveaux comptes commencent à 250 destinataires ; les paliers suivants sont 2 000, 10 000, 100 000 et illimité. Depuis octobre 2025, la limite s'applique à l'ensemble de votre portefeuille d'entreprise Meta et elle est partagée par tous ses numéros. La vérification de l'entreprise, ou l'envoi de modèles de bonne qualité, fait monter de palier. Les réponses aux clients qui vous ont écrit ne comptent pas, et la plupart des petits hôtels n'atteignent jamais la limite.
+
+## Répondre dans la langue de chaque client
+
+Un hôtel à Nice ou à Paris peut recevoir des messages dans une douzaine de langues en une semaine. Le client qui écrit dans sa langue pose des questions plus claires et comprend mieux la réponse. Les traducteurs aident, mais copier-coller des textes à minuit est exactement le genre de tâche qui saute. Un assistant IA qui détecte la langue et répond dans cette langue comble ce manque, à condition que votre équipe puisse lire l'échange dans la sienne.
+
+## Ce qu'un assistant IA peut et ne peut pas faire sur WhatsApp
+
+Les conditions de Meta interdisent la WhatsApp Business Platform aux entreprises dont le produit principal est un assistant IA généraliste. Un hôtel qui automatise les réponses à ses propres clients est un autre cas : la politique autorise les réponses automatiques dans la fenêtre de 24 heures, à condition d'offrir un moyen rapide et clair de joindre un humain, comme un transfert à un conseiller dans la conversation, un numéro de téléphone, une adresse e-mail ou la réception.
+
+Un bon assistant IA peut Il ne doit pas ou ne peut pas
+Répondre aux questions courantes 24h/24 avec les informations de votre hôtel Inventer une réponse sur un sujet que vous ne lui avez jamais donné
+Répondre dans la langue du client Écrire un message libre en dehors de la fenêtre de 24 heures
+Recueillir dates et nombre de personnes pour une demande de réservation et vous la transmettre Confirmer une réservation, encaisser ou accorder une remise seul
+Repérer réclamations, remboursements et demandes spéciales et vous les transmettre Traiter une réclamation qui demande du jugement ou un geste commercial
+Vous dire à quelles questions il n'a pas su répondre Remplacer l'accord que vos clients vous ont donné
+
+Commencez en mode validation les premiers jours, relisez chaque brouillon et passez les sujets en automatique quand les réponses sont fiables. Notre guide pour répondre aux messages clients avec l'IA détaille ce démarrage.
+
+## Mettre en place WhatsApp dans votre hôtel : check-list
+
+- Choisissez le numéro. Un numéro professionnel dédié, contrôlé par l'équipe et non par une seule personne.
+
+- Choisissez l'application ou la Platform. Une personne et peu de messages : l'application peut suffire. Une équipe, de l'automatisation ou un lien avec le PMS : la Platform.
+
+- Préparez les informations de l'hôtel. Heures d'arrivée et de départ, parking, petit-déjeuner, animaux, transferts, règlement intérieur. Les réponses automatiques ne valent que ce que valent ces informations.
+
+- Définissez ce qui revient à un humain. Remises, remboursements, réclamations, groupes.
+
+- Affichez le numéro là où les clients regardent. E-mails de confirmation, site web, fiche d'établissement Google et annonce OTA quand c'est autorisé.
+
+- Recueillez l'accord si vous comptez écrire en premier, et gardez-en la trace.
+
+- Préparez les modèles nécessaires hors fenêtre de 24 heures et soumettez-les à l'examen.
+
+## La place de Lio, l'assistant de Hostlio Pro
+
+Dans Hostlio Pro, vous connectez le numéro WhatsApp de votre hôtel depuis le tableau de bord, via la procédure d'inscription officielle de Meta, dans toutes les offres. Les messages WhatsApp arrivent dans une seule boîte de réception, où Lio, l'assistant IA , répond avec les informations de votre hôtel et les données de réservation dans la langue du client. Vous lisez la réponse de Lio traduite dans votre langue ; ce que vous écrivez vous-même part tel quel. Vous choisissez ce que Lio fait seul : tout en automatique, automatique pour les questions courantes avec des brouillons pour le reste (le réglage par défaut), ou brouillons uniquement. Remises, remboursements, réclamations et demandes de réservation vous sont soumis pour validation par défaut.
+
+- Dans la fenêtre, par principe. Lio répond aux clients qui vous écrivent. Si la fenêtre de 24 heures d'un client est fermée, une réponse libre ne peut pas être remise et le tableau de bord vous le signale pour que vous le joigniez autrement. Hostlio Pro n'envoie pas de campagnes marketing sur WhatsApp.
+
+- Demandes de réservation (Pro et Growth). Lio recueille dates, nombre de personnes et préférence de chambre, fait un devis avec vos tarifs et disponibilités et vous transmet la demande. Elle ne devient une réservation qu'après votre validation.
+
+- Une boîte aussi pour les OTA (Pro et Growth). Les messages Booking.com, Airbnb et Expedia arrivent à côté de WhatsApp, avec la réservation à côté de chaque conversation.
+
+- Il signale les manques au lieu de deviner. Quand les clients demandent une information absente de votre configuration, Lio indique le champ manquant pour que vous le remplissiez une fois.
+
+- Un quota prévisible. Starter inclut 1 000 messages IA par mois, Pro 5 000 et Growth 12 000. Le compteur passe à l'orange à 80 %, vous recevez un e-mail à 100 % et les réponses automatiques sont suspendues vers 110 %, tandis que les messages continuent d'arriver pour votre équipe.
+Les offres commencent à 49 $ par mois, avec 7 jours d'essai gratuit ; voir les tarifs . Pour estimer le temps que Lio peut vous faire gagner, essayez le calculateur de ROI , et pour les messages des OTA lisez comment répondre automatiquement aux messages Booking.com .
+
+## Sources
+Consultées le 8 octobre 2026. Meta modifie régulièrement ses règles et ses prix : vérifiez les pages citées avant de vous appuyer sur un détail.
+
+- WhatsApp Business: FAQ (app vs Platform)
+- WhatsApp Business Platform overview
+- Meta for Developers: Cloud API overview
+- Meta for Developers: On-Premises API sunset
+- Meta for Developers: Sending messages (customer service window)
+- Meta for Developers: Message templates
+- Meta for Developers: Pricing for non-template messages
+- Meta for Developers: WhatsApp changelog
+- Meta for Developers: Messaging limits
+- Meta for Developers: Business phone numbers
+- WhatsApp Business Messaging Policy
+- Meta Terms for WhatsApp Business Platform
+
+Q: WhatsApp Business est-il gratuit pour les hôtels ?
+A: L'application WhatsApp Business est gratuite. La WhatsApp Business Platform (API) n'a pas d'abonnement d'application, mais Meta facture par message ; depuis le 1er octobre 2026, cela inclut les réponses de service dans la fenêtre de 24 heures, tandis que les messages envoyés dans une fenêtre de point d'entrée gratuit de 72 heures, ouverte depuis une publicité « Click to WhatsApp », restent gratuits. Votre éditeur de logiciel peut facturer à part.
+
+Q: Un hôtel peut-il écrire à un client qui n'a pas écrit depuis plusieurs jours ?
+A: Uniquement avec un modèle approuvé par Meta, et si le client a accepté de recevoir vos messages. Les réponses libres ne sont possibles que dans les 24 heures suivant son dernier message.
+
+Q: Faut-il l'API WhatsApp Business pour des réponses automatiques ?
+A: Pour tout ce qui dépasse les messages d'accueil, d'absence et les réponses rapides de l'application, oui. Les réponses par IA et le lien avec un PMS fonctionnent sur la WhatsApp Business Platform.
+
+Q: Un chatbot IA est-il autorisé sur WhatsApp ?
+A: Les conditions de Meta interdisent la Platform aux entreprises dont le produit principal est un assistant IA généraliste. Une entreprise peut automatiser les réponses à ses propres clients dans la fenêtre de 24 heures, à condition d'offrir un moyen clair de joindre un humain.
+
+Q: Lio peut-il envoyer des rappels WhatsApp avant l'arrivée ?
+A: Pas aujourd'hui. Lio répond aux clients qui vous écrivent, dans la fenêtre de 24 heures de WhatsApp. Avec Pro et Growth, le lien de check-in en ligne peut être envoyé automatiquement par e-mail.
