@@ -297,7 +297,7 @@ POSTS = [
  {"key":"post-autoreply","title":"Come rispondere in automatico ai messaggi degli ospiti su Booking.com","date":"2026-09-21","desc":"Tre modi per automatizzare i messaggi degli ospiti di Booking.com: modelli, messaggi programmati e un assistente AI."},
  {"key":"post-ai","title":"Rispondere ai messaggi degli ospiti con l'AI: guida pratica","date":"2026-09-18",
   "desc":"Vantaggi, rischi e come configurare l'AI per rispondere ai messaggi degli ospiti dell'hotel. Quali domande automatizzare e quali lasciare al tuo team."},
- {"key":"post-pms","title":"Gestionale per piccoli hotel: come sceglierlo (prezzi 2026)","date":"2026-09-10",
+ {"key":"post-pms","title":"Gestionale per piccoli hotel (PMS): come sceglierlo, prezzi 2026","date":"2026-09-10",
   "desc":"Come scegliere un gestionale per piccoli hotel: modelli di prezzo, costi per 8, 20 e 45 camere, Alloggiati Web e checklist. PMS da ⟦price:starter⟧/mese."},
 ]
 

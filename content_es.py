@@ -297,7 +297,7 @@ POSTS = [
  {"key":"post-autoreply","title":"Cómo responder automáticamente a los mensajes de Booking.com","date":"2026-09-21","desc":"Tres formas de automatizar los mensajes de huéspedes de Booking.com: plantillas, mensajes programados y un asistente de IA."},
  {"key":"post-ai","title":"Responder a los huéspedes del hotel con IA: guía práctica","date":"2026-09-18",
   "desc":"Ventajas, riesgos y pasos de configuración para responder con IA a los mensajes de los huéspedes. Qué preguntas automatizar y cuáles dejar a tu equipo."},
- {"key":"post-pms","title":"Software para hoteles pequeños: cómo elegirlo y precios 2026","date":"2026-09-10",
+ {"key":"post-pms","title":"Software para hoteles pequeños (PMS): cómo elegir y precios 2026","date":"2026-09-10",
   "desc":"Cómo elegir software de gestión hotelera para un hotel pequeño: cuánto cuesta, qué calcular para 8, 20 y 45 habitaciones y SES.Hospedajes. Desde ⟦price:starter⟧/mes."},
 ]
 

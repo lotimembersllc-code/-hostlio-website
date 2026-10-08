@@ -111,7 +111,7 @@ TYPES = {
        ("Can I use Hostlio Pro with my existing website?","Yes. Hostlio Pro works alongside your existing website rather than replacing it. Guest messages from WhatsApp and OTA inboxes (Booking.com, Airbnb, Expedia) come together in one dashboard."),
        ("How many users can I add?","Starter includes 3 users, Pro 8 and Growth 20. Each person gets a role with matching permissions (for example front desk, housekeeping or accounting).")]),
  dict(key="t-apart", img=("gen-apart", "Bright apartment with white bedding", 1080, 1350),
-  title="Aparthotel Software: Online Check-in, OTA Sync | Hostlio Pro",
+  title="Aparthotel Software: AI Messaging & Self Check-in | Hostlio Pro",
   desc="Aparthotel and serviced apartment software: Airbnb and Booking.com sync, online check-in with digital signature and AI guest messaging in 30+ languages.",
   crumb="Aparthotel software", h1='<em class="hl">Aparthotel software</em> for remote-first operations',
   lead="Aparthotels often have no front desk or limited hours, so guest communication and check-in happen remotely. Hostlio Pro is built for that.",

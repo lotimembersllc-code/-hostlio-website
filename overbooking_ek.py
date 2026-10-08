@@ -7,8 +7,8 @@ Bugün ekranındaki kanal senk şeridi). pages_v4._with_templates() bu modülü 
 
 OB = {
 "en": dict(
- title="How to prevent overbooking across OTA channels: 6 steps",
- desc="How hotels avoid overbooking across Booking.com, Airbnb and Expedia: one availability source, real-time sync, mapping checks, and what to do if it happens.",
+ title="How to avoid overbooking in a hotel: 6 steps across OTAs",
+ desc="Hotels avoid overbooking by syncing one availability calendar to Booking.com, Airbnb and Expedia in real time. 6 steps, plus what to do if it happens.",
  sec='''<h2>Overbooking across OTA channels: where the gaps are</h2>
 <p>Most double bookings at independent hotels don't come from one channel. They come from the gaps between channels:</p>
 <ul><li><strong>Calendar links instead of a connection.</strong> Syncing Airbnb or a smaller site through an iCal calendar link means availability is refreshed on a schedule, not the moment a booking arrives. Two guests can book the same night in that gap.</li>
@@ -71,8 +71,8 @@ OB = {
       ("“Walk the guest” ne demek?", "Overbooking nedeniyle konaklatılamayan misafiri, genellikle fiyat farkı ve ulaşımı otel karşılayarak, yakındaki eşdeğer bir otele yönlendirmek.")]),
 
 "es": dict(
- title="Cómo evitar el overbooking entre canales OTA: 6 pasos",
- desc="Cómo evitar el overbooking entre Booking.com, Airbnb y Expedia: una sola fuente de disponibilidad, sincronización en tiempo real y qué hacer si ocurre.",
+ title="Overbooking hotelero: qué es y cómo evitarlo en 6 pasos",
+ desc="Qué es el overbooking hotelero y cómo evitarlo entre Booking.com, Airbnb y Expedia: un solo calendario, sincronización en tiempo real y qué hacer si ocurre.",
  sec='''<h2>Overbooking entre canales OTA: dónde están los huecos</h2>
 <p>La mayoría de las dobles reservas en hoteles independientes no nacen en un solo canal, sino en los huecos entre canales:</p>
 <ul><li><strong>Enlaces de calendario en lugar de conexión.</strong> Sincronizar Airbnb o un portal pequeño con un enlace iCal significa que la disponibilidad se actualiza cada cierto tiempo, no en el momento de la reserva. En ese intervalo dos huéspedes pueden reservar la misma noche.</li>
@@ -103,8 +103,8 @@ OB = {
       ("¿Qué significa reubicar a un huésped por overbooking?", "Alojar en un hotel cercano y comparable a un huésped que no se puede atender por overbooking; normalmente el hotel paga la diferencia de precio y el traslado.")]),
 
 "it": dict(
- title="Come evitare l'overbooking tra i canali OTA: 6 passi",
- desc="Come evitare l'overbooking tra Booking.com, Airbnb ed Expedia: un'unica fonte di disponibilità, sincronizzazione in tempo reale e cosa fare se succede.",
+ title="Overbooking in hotel: cos'è e come evitarlo in 6 passi",
+ desc="Cos'è l'overbooking in hotel e come evitarlo tra Booking.com, Airbnb ed Expedia: un solo calendario, sync in tempo reale e cosa fare se succede.",
  sec='''<h2>Overbooking tra i canali OTA: dove sono i buchi</h2>
 <p>La maggior parte delle doppie prenotazioni nelle strutture indipendenti non nasce da un solo canale, ma dagli spazi tra i canali:</p>
 <ul><li><strong>Link di calendario invece di una connessione.</strong> Sincronizzare Airbnb o un portale minore con un link iCal significa aggiornare la disponibilità a intervalli, non nel momento della prenotazione. In quell'intervallo due ospiti possono prenotare la stessa notte.</li>
@@ -135,8 +135,8 @@ OB = {
       ("Cosa vuol dire riproteggere un ospite?", "Sistemare in un hotel vicino e comparabile un ospite che non si può accogliere per overbooking; di solito l'hotel paga la differenza di prezzo e il trasferimento.")]),
 
 "pt": dict(
- title="Como evitar overbooking entre canais OTA: 6 passos",
- desc="Como hotéis evitam overbooking entre Booking.com, Airbnb e Expedia: uma só fonte de disponibilidade, sincronização em tempo real e o que fazer se acontecer.",
+ title="Overbooking em hotel: o que é e como evitar em 6 passos",
+ desc="O que é overbooking em hotel e como evitar entre Booking.com, Airbnb e Expedia: um só calendário, sincronização em tempo real e o que fazer se acontecer.",
  sec='''<h2>Overbooking entre canais OTA: onde ficam as brechas</h2>
 <p>A maior parte das reservas duplicadas em hotéis independentes não nasce em um canal só, e sim nas brechas entre os canais:</p>
 <ul><li><strong>Link de calendário em vez de conexão.</strong> Sincronizar o Airbnb ou um site menor por link iCal significa que a disponibilidade é atualizada de tempos em tempos, não no momento da reserva. Nesse intervalo dois hóspedes podem reservar a mesma noite.</li>

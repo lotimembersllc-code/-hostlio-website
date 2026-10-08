@@ -4,8 +4,8 @@
 
 TEMPLATES = {
  "en": {
-  "title": "Booking.com Auto-Reply: 3 Methods + 12 Free Templates (2026)",
-  "desc": "Auto-reply to Booking.com messages in 2026: 3 methods (templates, scheduled messages, AI) plus 12 free copy-paste templates for common guest questions.",
+  "title": "Booking.com Auto-Reply: 12 Free Message Templates (2026)",
+  "desc": "Copy-paste replies for Booking.com guest messages: check-in time, parking, late arrival, breakfast and more. 12 free templates + 3 ways to automate them.",
   "answer_add": "Below you'll find 12 free reply templates you can copy straight into the extranet.",
   "h2": "12 free Booking.com reply templates to copy",
   "intro": "Save each one as a message template in the Booking.com extranet inbox, replace the parts in [brackets] with your hotel's details, and keep replies short and specific.",
@@ -28,7 +28,7 @@ TEMPLATES = {
  },
  "tr": {
   "title": "Booking.com Mesajlarına Otomatik Cevap: 12 Ücretsiz Şablon (2026)",
-  "desc": "Booking.com mesajlarına otomatik cevap için 3 yöntem: şablon, planlı mesaj ve AI asistanı. Kopyalayıp kullanabileceğiniz 12 ücretsiz şablon (2026).",
+  "desc": "Booking.com misafir mesajlarına hazır cevaplar: check-in saati, otopark, geç varış, kahvaltı. Kopyala-yapıştır 12 ücretsiz şablon ve otomatikleştirmenin 3 yolu.",
   "answer_add": "Aşağıda extranet'e doğrudan kopyalayabileceğiniz 12 ücretsiz cevap şablonu bulabilirsiniz.",
   "h2": "Kopyalayıp kullanabileceğiniz 12 ücretsiz Booking.com cevap şablonu",
   "intro": "Her birini Booking.com extranet'indeki mesaj kutusunda şablon olarak kaydedin, [köşeli parantez] içindeki yerleri kendi otel bilgilerinizle değiştirin ve cevapları kısa tutun.",
@@ -50,8 +50,8 @@ TEMPLATES = {
   "faq": ("Booking.com cevap şablonları nereye kaydedilir?", "Booking.com extranet'inde misafir mesajları kutusunu açıp her metni mesaj şablonu olarak kaydedin. Cevap yazarken şablonu seçip köşeli parantez içindeki yerleri doldurmanız yeterli."),
  },
  "es": {
-  "title": "Respuesta automática Booking.com: 12 plantillas gratis (2026)",
-  "desc": "Cómo automatizar los mensajes de Booking.com en 2026: 3 métodos (plantillas, mensajes programados e IA) y 12 plantillas gratis para copiar y pegar.",
+  "title": "Mensajes de Booking.com: 12 respuestas automáticas gratis (2026)",
+  "desc": "Respuestas listas para los mensajes de huéspedes en Booking.com: check-in, parking, llegada tarde, desayuno. 12 plantillas gratis y 3 formas de automatizar.",
   "answer_add": "Más abajo tienes 12 plantillas de respuesta gratuitas para copiar en la extranet.",
   "h2": "12 plantillas gratis para responder mensajes de Booking.com",
   "intro": "Guárdalas como plantillas de mensaje en la bandeja de entrada de la extranet de Booking.com, sustituye las partes entre [corchetes] por los datos de tu hotel y mantén las respuestas breves.",
@@ -73,8 +73,8 @@ TEMPLATES = {
   "faq": ("¿Dónde se guardan las plantillas de respuesta en Booking.com?", "En la extranet de Booking.com, abre la bandeja de mensajes de los huéspedes y guarda cada texto como plantilla de mensaje. Al responder, elige la plantilla y completa las partes entre corchetes."),
  },
  "it": {
-  "title": "Risposta automatica Booking.com: 12 modelli gratuiti (2026)",
-  "desc": "Rispondere in automatico ai messaggi di Booking.com nel 2026: 3 metodi (modelli, messaggi programmati, AI) e 12 modelli gratuiti da copiare e incollare.",
+  "title": "Messaggi Booking.com: 12 risposte automatiche gratuite (2026)",
+  "desc": "Risposte pronte per i messaggi degli ospiti su Booking.com: check-in, parcheggio, arrivo tardi, colazione. 12 modelli gratuiti e 3 modi per automatizzarle.",
   "answer_add": "Qui sotto trovi 12 modelli di risposta gratuiti da copiare nell'extranet.",
   "h2": "12 modelli di risposta Booking.com gratuiti da copiare",
   "intro": "Salvali come modelli di messaggio nella casella dell'extranet di Booking.com, sostituisci le parti tra [parentesi quadre] con i dati della tua struttura e mantieni le risposte brevi.",
@@ -96,8 +96,8 @@ TEMPLATES = {
   "faq": ("Dove si salvano i modelli di risposta su Booking.com?", "Nell'extranet di Booking.com apri la casella dei messaggi degli ospiti e salva ogni testo come modello di messaggio. Quando rispondi, scegli il modello e completa le parti tra parentesi quadre."),
  },
  "pt": {
-  "title": "Resposta automática Booking.com: 12 modelos grátis (2026)",
-  "desc": "Como responder automaticamente às mensagens do Booking.com em 2026: 3 métodos (modelos, mensagens programadas e IA) e 12 modelos grátis para copiar.",
+  "title": "Mensagens do Booking.com: 12 respostas automáticas grátis (2026)",
+  "desc": "Respostas prontas para mensagens de hóspedes no Booking.com: check-in, estacionamento, chegada tarde, café. 12 modelos grátis e 3 formas de automatizar.",
   "answer_add": "Logo abaixo você encontra 12 modelos de resposta grátis para copiar na extranet.",
   "h2": "12 modelos grátis de resposta para o Booking.com",
   "intro": "Salve cada um como modelo de mensagem na caixa de entrada da extranet do Booking.com, troque as partes entre [colchetes] pelos dados do seu hotel e mantenha as respostas curtas.",
@@ -119,8 +119,8 @@ TEMPLATES = {
   "faq": ("Onde salvar modelos de resposta no Booking.com?", "Na extranet do Booking.com, abra a caixa de mensagens dos hóspedes e salve cada texto como modelo de mensagem. Na hora de responder, escolha o modelo e preencha as partes entre colchetes."),
  },
  "fr": {
-  "title": "Réponse automatique Booking.com : 12 modèles gratuits (2026)",
-  "desc": "Répondre automatiquement aux messages Booking.com en 2026 : 3 méthodes (modèles, messages programmés, IA) et 12 modèles gratuits à copier-coller.",
+  "title": "Messagerie Booking.com : 12 réponses automatiques (2026)",
+  "desc": "Réponses prêtes pour la messagerie Booking.com : heure d’arrivée, parking, arrivée tardive, petit-déjeuner. 12 modèles gratuits et 3 façons d’automatiser.",
   "answer_add": "Vous trouverez ci-dessous 12 modèles de réponse gratuits à copier dans l’extranet.",
   "h2": "12 modèles de réponse Booking.com gratuits à copier",
   "intro": "Enregistrez-les comme modèles de message dans la boîte de réception de l’extranet Booking.com, remplacez les parties entre [crochets] par les informations de votre établissement et gardez des réponses courtes.",

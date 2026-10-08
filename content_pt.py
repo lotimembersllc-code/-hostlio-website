@@ -297,8 +297,8 @@ POSTS = [
  {"key":"post-autoreply","title":"Como responder automaticamente às mensagens do Booking.com","date":"2026-09-21","desc":"Três formas de automatizar as mensagens dos hóspedes do Booking.com: modelos, mensagens programadas e uma assistente de IA."},
  {"key":"post-ai","title":"Como responder às mensagens de hóspedes com IA: guia prático","date":"2026-09-18",
   "desc":"Benefícios, riscos e como configurar a IA para responder às mensagens dos hóspedes do hotel. Quais perguntas automatizar e quais deixar com a sua equipe."},
- {"key":"post-pms","title":"Como escolher um sistema para hotel pequeno","date":"2026-09-10",
-  "desc":"7 critérios para escolher o PMS de um hotel pequeno ou boutique: channel manager, modelo de preços, mensagens com hóspedes, acesso pelo celular e mais."},
+ {"key":"post-pms","title":"Sistema para hotel pequeno e pousada: como escolher (2026)","date":"2026-09-10",
+  "desc":"Como escolher o sistema (PMS) de um hotel pequeno ou pousada: 7 critérios, quanto deve custar, channel manager integrado e mensagens com hóspedes."},
 ]
 
 import guides_intl as _gi

@@ -292,8 +292,8 @@ POSTS = [
  {"key":"post-autoreply","title":"How to auto-reply to Booking.com guest messages","date":"2026-09-21","desc":"Three ways to automate Booking.com guest messages: templates, scheduled messages and an AI assistant."},
  {"key":"post-ai","title":"Answering hotel guest messages with AI: a practical guide","date":"2026-09-18",
   "desc":"The benefits, risks and setup steps of answering hotel guest messages with AI. Which questions to automate and which should stay with your team."},
- {"key":"post-pms","title":"Choosing hotel management software for a small hotel","date":"2026-09-10",
-  "desc":"7 criteria for choosing a PMS for a small or boutique hotel: channel manager, pricing model, guest messaging, mobile access and more."},
+ {"key":"post-pms","title":"PMS for small hotels: how to choose (7 criteria, 2026)","date":"2026-09-10",
+  "desc":"How to choose a PMS for a small or boutique hotel: 7 criteria, what it should cost, and why a built-in channel manager and guest messaging matter."},
 ]
 
 POSTS += __import__("legal_v5").legacy_meta()
