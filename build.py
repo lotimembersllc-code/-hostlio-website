@@ -42,7 +42,10 @@ PLAUSIBLE_DOMAIN = ""  # e.g. "hostliopro.com"
 GSC_VERIFY = ""        # Google Search Console HTML-tag token
 BING_VERIFY = ""       # Bing Webmaster msvalidate.01 token
 INDEXNOW_KEY = "7f3c9a1e5b2d4c8f9e0a6b1d2c3e4f50"
-SAME_AS = []           # official profiles: LinkedIn, Instagram, YouTube, X, Hotel Tech Report, G2, Capterra...
+SAME_AS = [           # SEO: yalnız gerçekten yayında olan resmî profiller (8 Ekim 2026'da doğrulandı; geliştirici Loti Members LLC)
+    "https://apps.apple.com/us/app/hostlio-pro-hotel-management/id6765888744",
+    "https://play.google.com/store/apps/details?id=com.hostlio.hostliopro",
+]  # official profiles: LinkedIn, Instagram, YouTube, X, Hotel Tech Report, G2, Capterra...
 APP_STORE_URL = ""     # iOS app link
 UPDATED_TXT = {"tr": "23 Eylül 2026", "en": "September 23, 2026"}
 LANGS = ["tr", "en", "es", "it", "pt", "fr"]
@@ -50,8 +53,9 @@ NEW_LANGS = ["es", "it", "pt", "fr"]
 LANG_NAME = {"tr": "Türkçe", "en": "English", "es": "Español", "it": "Italiano", "pt": "Português", "fr": "Français"}
 LOCALE = {"tr": "tr_TR", "en": "en_US", "es": "es_ES", "it": "it_IT", "pt": "pt_BR", "fr": "fr_FR"}
 IN_LANG = {"tr": "tr-TR", "en": "en", "es": "es", "it": "it", "pt": "pt-BR", "fr": "fr"}
-# D3: Portekizce içerik Brezilya Portekizcesi ("celular", "notebook") ⇒ hreflang pt-BR
-HREFLANG = {"tr": "tr", "en": "en", "es": "es", "it": "it", "pt": "pt-BR", "fr": "fr"}
+# D3: Portekizce içerik Brezilya Portekizcesi ("celular", "notebook"); html lang pt-BR kalır.
+# SEO 4.4 (8 Ekim): hreflang bölgesiz "pt" — Google tek Portekizce sürümü hem Brezilya hem Portekiz için kullanır.
+HREFLANG = {"tr": "tr", "en": "en", "es": "es", "it": "it", "pt": "pt", "fr": "fr"}
 import importlib as _il
 LANGMOD = {l: _il.import_module("lang_" + l) for l in NEW_LANGS}
 for _l, _m in LANGMOD.items(): UPDATED_TXT[_l] = _m.UPDATED_TXT
@@ -362,7 +366,7 @@ def mega_html(lang):
     cols = ""
     for h, items in m["cols"]:
         lis = "".join(f'<li><a href="{url(k,lang)}"><span class="mi">{icon(ic)}</span><span><b>{t}</b><span>{d}</span></span></a></li>' for k,ic,t,d in items)
-        cols += f'<div><h2>{h}</h2><ul>{lis}</ul></div>'
+        cols += f'<div><p class="fh">{h}</p><ul>{lis}</ul></div>'
     fk, ft, fd = m["feat"]
     cols += f'<a class="feature" href="{url(fk,lang)}"><b>{ft}</b><span>{fd}</span><span class="bi" style="width:36px;height:36px;border-radius:50%;display:grid;place-items:center;background:rgba(255,255,255,.1)">{icon("arrow-up-right")}</span></a>'
     return f'<div class="mega" id="mega" hidden><div class="wrap mega-grid">{cols}</div></div>'
@@ -413,6 +417,57 @@ def label_regions(body, lang):
     out.append(body[pos:])
     return "".join(out)
 
+# S4: iç link — yazılar arasında "İlgili yazılar", ürün/segment sayfalarında "İlgili rehberler".
+# Listeler öncelik sırasıdır; o dilde olmayan yazı (eski EN yazıları) atlanır, ilk 3 gösterilir.
+RELATED_POSTS = {
+    "post-autoreply": ["post-ai", "post-overbooking", "post-pms", "post-whatsapp"],
+    "post-ai": ["post-autoreply", "post-pms", "post-whatsapp", "post-overbooking"],
+    "post-overbooking": ["post-pms", "post-autoreply", "post-noshows", "post-ai"],
+    "post-pms": ["post-overbooking", "post-ai", "post-autoreply"],
+    "post-aifrontdesk": ["post-ai", "post-autoreply", "post-whatsapp"],
+    "post-noshows": ["post-overbooking", "post-pms", "post-autoreply"],
+    "post-chains": ["post-pms", "post-aifrontdesk", "post-overbooking"],
+    "post-whatsapp": ["post-autoreply", "post-ai", "post-aifrontdesk"],
+}
+RELATED_PRODUCT = {"post-autoreply": "ai", "post-ai": "ai", "post-overbooking": "channel", "post-pms": "pricing",
+                   "post-aifrontdesk": "ai", "post-noshows": "channel", "post-chains": "features", "post-whatsapp": "ai"}
+_SEG = ["post-pms", "post-autoreply", "post-overbooking"]
+PAGE_GUIDES = {"channel": ["post-overbooking", "post-pms", "post-noshows"], "ai": ["post-autoreply", "post-ai", "post-whatsapp"],
+               "checkin": ["post-pms", "post-ai", "post-noshows"], "pricing": ["post-pms", "post-overbooking", "post-autoreply"],
+               "features": _SEG, "compare": ["post-pms", "post-overbooking", "post-autoreply"],
+               "t-guesthouse": _SEG, "t-boutique": _SEG, "t-apart": _SEG, "t-hostel": _SEG}
+RELATED_H = {"tr": ("İlgili yazılar", "İlgili rehberler", "Hostlio Pro'da"), "en": ("Related articles", "Related guides", "In Hostlio Pro"),
+             "es": ("Artículos relacionados", "Guías relacionadas", "En Hostlio Pro"), "it": ("Articoli correlati", "Guide correlate", "In Hostlio Pro"),
+             "pt": ("Artigos relacionados", "Guias relacionados", "No Hostlio Pro"), "fr": ("Articles connexes", "Guides associés", "Dans Hostlio Pro")}
+POST_INDEX = {}   # main() doldurur: {dil: {anahtar: (başlık, açıklama)}}
+def related_html(key, lang):
+    idx = POST_INDEX.get(lang, {})
+    if key.startswith("post"): keys, h = RELATED_POSTS.get(key, []), RELATED_H[lang][0]
+    elif key in PAGE_GUIDES: keys, h = PAGE_GUIDES[key], RELATED_H[lang][1]
+    else: return ""
+    keys = [k for k in keys if k in idx and k != key][:3]
+    if not keys: return ""
+    items = "".join(f'<li><a href="{url(k, lang)}">{html.escape(idx[k][0])}</a><p>{html.escape(idx[k][1])}</p></li>' for k in keys)
+    more = ""
+    prod = RELATED_PRODUCT.get(key)
+    if prod:
+        lbl = dict(UI[lang]["nav"]).get(prod) or CHECKIN_LABEL[lang]
+        more = f'<p class="more">{RELATED_H[lang][2]}: <a href="{url(prod, lang)}">{lbl}</a></p>'
+    return (f'<section class="rule related" aria-labelledby="rel-h"><div class="wrap"><h2 id="rel-h">{h}</h2>'
+            f'<ul class="related-list">{items}</ul>{more}</div></section>')
+
+def post_dates(page, lang, body):
+    """Yazının görünen "güncelleme" tarihi ve BlogPosting.dateModified sabit UPDATED yerine sayfanın kendi
+    tarihini (page_dates.json) gösterir; içerik değişen yazı (ör. S1) gerçekten güncel görünür."""
+    mod = page.get("modified", UPDATED)
+    for s_ in page.get("schema", []):
+        if s_.get("@type") == "BlogPosting": s_["dateModified"] = mod
+    mod_mod = __import__("content_" + lang)
+    fmt = getattr(mod_mod, "D", None)
+    def sub(m):
+        return f'<time datetime="{mod}">{mod if m.group(1) == UPDATED else (fmt(mod) if fmt else fmt_date(mod, lang))}</time>'
+    return re.sub(r'<time datetime="' + UPDATED + r'">([^<]*)</time>', sub, body)
+
 NOT_FOUND = {"en": ("Page not found | Hostlio Pro", "Page not found", 'The address may have changed. <a href="{home}">Go to the home page</a>.'),
              "tr": ("Sayfa bulunamadı | Hostlio Pro", "Sayfa bulunamadı", 'Adres değişmiş olabilir. <a href="{home}">Ana sayfaya dönün</a>.')}
 def layout(page, lang):
@@ -424,6 +479,7 @@ def layout(page, lang):
     nav = "".join(
         f'<li><a href="{url(k,lang)}"{CUR if k==key or (k=="blog" and key.startswith("post")) else ""}>{n}</a></li>'
         for k, n in u["top"])
+    if page.get("og_type") == "article": page = dict(page, body=post_dates(page, lang, page["body"]))
     graph = [org_schema(), website_schema(lang)]
     webpage = {"@type": "WebPage" if page.get("og_type") != "article" else "WebPage", "@id": canonical + "#webpage",
                "url": canonical, "name": title, "description": desc,
@@ -465,6 +521,7 @@ def layout(page, lang):
         body += about_people(lang)
     if page.get("faq") and not page.get("faq_inline"):
         body += faq_block(page["faq"], lang)
+    body += related_html(key, lang)
     body = label_regions(body, lang)
     upd = u["updated"]
     if key != "home" and not page.get("no_updated"):
@@ -527,24 +584,24 @@ def layout(page, lang):
 <footer class="site-footer"><div class="wrap">
 <div class="foot-grid">
 <div><a class="brand" href="{url("home",lang)}">{LOGO}<span>Hostlio <span class="pro">Pro</span></span></a><p class="muted small" style="margin-top:12px">{u["foot_tag"]}</p><p class="small"><a href="mailto:{EMAIL}">{EMAIL}</a><br><a href="https://wa.me/{WHATSAPP}" rel="noopener">WhatsApp {WHATSAPP_TXT}</a></p></div>
-<div><h2>{u["foot_product"]}</h2><ul>
+<div><p class="fh">{u["foot_product"]}</p><ul>
 <li><a href="{url("features",lang)}">{dict(u["nav"])["features"]}</a></li>
 <li><a href="{url("ai",lang)}">{dict(u["nav"])["ai"]}</a></li>
 <li><a href="{url("channel",lang)}">{dict(u["nav"])["channel"]}</a></li>
 <li><a href="{url("checkin",lang)}">{CHECKIN_LABEL[lang]}</a></li>
 <li><a href="{url("pricing",lang)}">{dict(u["nav"])["pricing"]}</a></li></ul></div>
-<div><h2>{u["foot_sol"]}</h2><ul>
+<div><p class="fh">{u["foot_sol"]}</p><ul>
 <li><a href="{url("t-boutique",lang)}">{u["sol"][0]}</a></li>
 <li><a href="{url("t-guesthouse",lang)}">{u["sol"][1]}</a></li>
 <li><a href="{url("t-apart",lang)}">{u["sol"][2]}</a></li>
 <li><a href="{url("t-hostel",lang)}">{u["sol"][3]}</a></li>
 <li><a href="{url("compare",lang)}">{u["sol"][4]}</a></li></ul></div>
-<div><h2>{u["foot_res"]}</h2><ul>
+<div><p class="fh">{u["foot_res"]}</p><ul>
 <li><a href="{url("blog",lang)}">Blog</a></li>
 <li><a href="{url("faq",lang)}">{u["foot_faq"]}</a></li>
 <li><a href="{url("roi",lang)}">{ROI_LABEL[lang]}</a></li>
 <li><a href="/llms.txt">llms.txt</a></li></ul></div>
-<div><h2>{u["foot_company"]}</h2><ul>
+<div><p class="fh">{u["foot_company"]}</p><ul>
 <li><a href="{url("about",lang)}">{u["foot_about"]}</a></li>
 <li><a href="{url("contact",lang)}">{u["foot_contact"]}</a></li>
 <li><a href="{url("security",lang)}">{SEC_LABEL[lang]}</a></li>
@@ -787,6 +844,8 @@ def main():
     (ROOT / "vercel.json").write_text(json.dumps(vc, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
     pages = {l: importlib.import_module("content_" + l).pages() for l in LANGS}
     page_dates = assign_dates(pages)
+    for lang, plist in pages.items():
+        POST_INDEX[lang] = {p["key"]: (pricing.fill(p["title"], lang), pricing.fill(p["desc"], lang)) for p in plist if p["key"].startswith("post")}
     make_variants()
     for lang, plist in pages.items():
         for p in plist:

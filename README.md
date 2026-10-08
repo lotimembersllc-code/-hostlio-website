@@ -9,6 +9,7 @@ Aşağıdaki "v5 … v14" bölümleri sürüm geçmişidir; geçerli mimari bu b
 | `build.py` | Giriş noktası: rotalar (`ROUTES`), ortak düzen (`layout`, `finish`), JSON-LD, sitemap, llms*.txt, `vercel.json` üretimi, CSP, yönlendirmeler. `python3 build.py` → `dist/` |
 | `pricing.py` | **Tek fiyat kaynağı**: aylık/yıllık/Early Bird fiyatları, AI mesaj kotası, oda limiti, deneme günü, dile göre para biçimi. Metinlerde rakam yerine `⟦price:starter⟧`, `⟦annual:pro⟧`, `⟦annual_mo:growth⟧`, `⟦regular:…⟧`, `⟦quota:…⟧`, `⟦rooms:…⟧` yazılır |
 | `content_<dil>.py` | Sayfa içerikleri (6 dil); `home_v3.py` ana sayfa, `pages_v4.py` tesis tipi/karşılaştırma sayfaları, `lang_<es/it/pt/fr>.py` dil sözlükleri |
+| `booking_templates.py` | Booking.com otomatik cevap yazısının (6 dil) başlık/açıklaması ve 12 kopyalanabilir mesaj şablonu; `pages_v4.guides()` yazıya ekler, blog listesi başlığı `post_meta()` ile aynı kaynaktan |
 | `legal_v6.py`, `legal_v6_intl.py`, `legal_v5.py` | Gizlilik, şartlar, hesap silme (alt işleyici listesi `SUBPROCESSORS`) |
 | `security_page.py`, `roi_page.py`, `signup_page.py` | Güvenlik + DPA, ROI hesaplayıcı, kayıt/ödeme sayfaları |
 | `src/` | Olduğu gibi kopyalanan dosyalar: `assets/` (CSS, JS, görsel, font, video), `attribution.js`, Google doğrulama dosyası, `robots.txt`, `vercel.json` tabanı |
@@ -16,6 +17,10 @@ Aşağıdaki "v5 … v14" bölümleri sürüm geçmişidir; geçerli mimari bu b
 | `scripts/check.py` | Kapı: kırık link/asset, JSON-LD, hreflang, title/description tekrarı ve uzunluğu, satır içi betik (CSP), fiyat yer tutucusu, yönlendirme hedefleri. `--live-prices` canlı `plans` ucuyla karşılaştırır |
 | `scripts/attribution-check.mjs` | `src/attribution.js` ilk temas + 90 gün testi (kök `attribution.js` birebir kopya olmalı) |
 | `preview.py`, `shots/*.py` | Yerel önizleme ve ekran görüntüsü/erişilebilirlik betikleri (build'e bağlı değil) |
+
+İç link (S4, 8 Ekim 2026): yazılarda "İlgili yazılar", ürün/segment sayfalarında "İlgili rehberler" bloğu `build.py`
+`RELATED_POSTS` / `PAGE_GUIDES` eşlemesinden üretilir; yeni yazı eklerken bu iki tabloya da ekleyin.
+404: Vercel tek `/404.html` verir; sayfa 6 dilin metnini taşır, `site.js` dil önekine göre gösterir.
 
 Tarayıcı betikleri (`src/assets/`): `site.js` (menüler, fiyat düğmesi, iletişim formu, video), `prices.js`
 (sayfadaki `hostlio-pricing` JSON'u + canlı `plans` ucu, `early_bird=false` ⇒ Early Bird metinleri gizlenir),

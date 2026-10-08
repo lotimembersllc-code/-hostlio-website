@@ -138,6 +138,11 @@
       vo.observe(v)});
   }
 
+  // S1: mesaj şablonlarını kopyala (yalnız Clipboard API varken görünür)
+  if(navigator.clipboard&&window.isSecureContext)d.querySelectorAll('[data-copy]').forEach(function(b){b.hidden=false;var lbl=b.textContent;
+    b.addEventListener('click',function(){var q=b.parentNode.querySelector('.tpl-text');if(!q)return;
+      navigator.clipboard.writeText(q.innerText.trim()).then(function(){b.textContent=b.dataset.done;setTimeout(function(){b.textContent=lbl},1800)},function(){})})});
+
   // "yazdır / PDF" düğmeleri (satır içi onclick yerine — O4 CSP)
   d.querySelectorAll('[data-print]').forEach(function(b){b.addEventListener('click',function(){window.print()})});
 

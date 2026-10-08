@@ -123,7 +123,7 @@ button.lang{border:0;background:transparent;color:inherit;font:inherit;font-weig
 .mega{position:absolute;left:0;right:0;top:100%;background:var(--surface);border-bottom:1px solid var(--line);box-shadow:0 30px 60px -40px rgba(44,36,20,.45);padding:28px 0 32px}
 .mega[hidden]{display:none}
 .mega-grid{display:grid;grid-template-columns:repeat(4,1fr) 1fr;gap:12px 20px}
-.mega h2{font-size:.82rem;font-weight:600;color:var(--muted);letter-spacing:.02em;margin:0 0 8px}
+.mega .fh{font-size:.82rem;font-weight:600;color:var(--muted);letter-spacing:.02em;margin:0 0 8px}
 .mega ul{list-style:none;margin:0;padding:0;display:grid;gap:2px}
 .mega a{display:grid;grid-template-columns:36px 1fr;gap:12px;align-items:start;padding:10px;border-radius:var(--r-m);text-decoration:none}
 .mega a:hover{background:var(--bg)}
@@ -450,7 +450,7 @@ input:focus,select:focus,textarea:focus{border-color:var(--brand);outline:none;b
 /* Footer */
 .site-footer{background:var(--surface);border-top:1px solid var(--line);padding:64px 0 28px;font-size:.95rem}
 .foot-grid{display:grid;grid-template-columns:1.5fr repeat(4,1fr);gap:28px}
-.site-footer h2{font-size:.9rem;font-weight:600;color:var(--muted);letter-spacing:0;margin-bottom:.9em}
+.site-footer .fh{font-size:.9rem;font-weight:600;color:var(--muted);letter-spacing:0;margin-bottom:.9em}
 .site-footer ul{list-style:none;padding:0;margin:0;display:grid;gap:10px}
 .site-footer a{text-decoration:none;color:var(--ink-2)}
 .site-footer a:hover{text-decoration:underline;color:var(--ink)}
@@ -597,7 +597,7 @@ a.card:hover{transform:translateY(-3px);box-shadow:var(--shadow)}
 
 /* dark brand footer */
 .site-footer{background:var(--navy);color:var(--night-ink);border-top:0}
-.site-footer h2{color:#FF8A5C}
+.site-footer .fh{color:#FF8A5C}
 .site-footer a{color:#DCE2EE}
 .site-footer a:hover{color:#fff}
 .site-footer .muted{color:var(--night-muted)}
@@ -764,3 +764,19 @@ h1,h2,h3{overflow-wrap:break-word;hyphens:auto;-webkit-hyphens:auto}
 .nf-langs{margin-top:20px}
 /* SEO: menü ve footer sütun başlıkları artık başlık etiketi değil */
 .fh{font-weight:600;margin:0 0 .9em}
+/* S4: ilgili yazılar / rehberler bloğu */
+.related h2{font-size:var(--t-1);margin-bottom:16px}
+.related-list{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:12px}
+.related-list li{background:var(--surface);border:1px solid var(--line);border-radius:var(--r-l);padding:18px 20px}
+.related-list a{font-weight:600;color:var(--ink);text-decoration:none}
+.related-list a:hover{text-decoration:underline}
+.related-list p{margin:6px 0 0;font-size:var(--t-sm);color:var(--muted)}
+.related .more{margin-top:14px}
+/* S1: kopyalanabilir mesaj şablonları */
+.tpl-list{display:grid;gap:14px;margin:18px 0}
+.tpl{background:var(--surface);border:1px solid var(--line);border-radius:var(--r-l);padding:16px 18px}
+.prose .tpl h3{font-size:1rem;margin:0 0 8px}
+.tpl blockquote{margin:0;padding:0;border:0;font-style:normal}
+.tpl blockquote p{margin:0;white-space:pre-line}
+.tpl-copy{margin-top:10px;font:inherit;font-size:.85rem;font-weight:600;background:var(--sand);color:var(--ink);border:1px solid var(--line);border-radius:999px;padding:.35em .9em;min-height:32px;cursor:pointer}
+.tpl-copy:hover{background:var(--line)}
