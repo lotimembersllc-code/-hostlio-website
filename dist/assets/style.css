@@ -536,6 +536,32 @@ a.card:hover{transform:translateY(-3px);box-shadow:var(--shadow)}
 @media (max-width:980px){.card,.card.span8{grid-column:span 6}}
 @media (max-width:640px){.card,.card.span8{grid-column:span 12}}
 
+/* Lio capability strip (home, right under the hero) */
+.lio-do{padding-top:clamp(40px,5vw,72px)}
+.card.ld{min-height:0}
+.ld-h{display:flex;flex-wrap:wrap;align-items:center;gap:6px 10px}
+.ld-h .pill{background:var(--lilac);color:var(--lilac-ink)}
+.ld-chat{border:1px solid var(--line);border-radius:16px;padding:12px;font-size:.86rem}
+.ld-chat .msg{max-width:92%}
+.ld-wa{display:flex;align-items:center;gap:6px;font-size:.74rem;font-weight:700;color:var(--muted)}
+.ld-wa svg{width:15px;height:15px;fill:#1FA855}
+.msg.note.wait{background:var(--peach);color:var(--peach-ink)}
+.ld-chat .price-chip{font-size:.86rem;padding:10px 12px}
+.sugg{border:1px solid var(--line);border-radius:16px;padding:12px;display:grid;gap:8px;font-size:.86rem;background:var(--bg)}
+.sg-h{display:flex;justify-content:space-between;align-items:center;font-weight:700}
+.sg-h span{display:flex;align-items:center;gap:8px}
+.sg-h i{width:24px;height:24px;border-radius:7px;background:var(--orange);color:var(--ink);display:grid;place-items:center;font-style:normal;font-weight:800;font-size:.75rem}
+.sg-h small{color:var(--muted);font-weight:600}
+.sg-item{background:var(--surface);border:1px solid var(--line-2);border-radius:12px;padding:10px 12px;display:grid;gap:2px}
+.sg-item span{color:var(--muted)}
+.sg-act{display:flex;gap:6px;margin-top:8px}
+.sg-act span{border-radius:999px;padding:4px 12px;font-size:.78rem;font-weight:700;border:1px solid var(--line);color:var(--ink)}
+.sg-act .ok{background:var(--orange);border-color:var(--orange)}
+.card .sg-f{display:flex;align-items:center;gap:6px;margin:0;font-size:.76rem;color:var(--muted)}
+.sg-f svg{width:14px;height:14px;flex:none}
+@media (max-width:980px){.lio-do .card.ld:last-child{grid-column:span 12}}
+@media (max-width:640px){.lio-do .card.ld{grid-column:span 12}}
+
 /* property types */
 .types{display:grid;grid-template-columns:repeat(4,1fr);gap:14px}
 .type{position:relative;border-radius:var(--r-xl);overflow:hidden;aspect-ratio:3/4;color:#fff;display:flex;flex-direction:column;justify-content:flex-end;isolation:isolate;background:var(--night)}

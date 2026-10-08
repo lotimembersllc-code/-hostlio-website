@@ -8,9 +8,9 @@ def D(iso):
     return f"{int(d)} {_MESI[int(m)-1]} {y}"
 
 PLAN_TXT = {
- "starter": ("Per piccoli B&B e boutique hotel", ["1 struttura, fino a 10 camere","⟦quota:starter⟧ messaggi AI / mese","Sincronizzazione con oltre 100 OTA","Messaggi AI su WhatsApp","Planning camere con calendario prenotazioni","Moduli per il visto in PDF automatici"]),
- "pro":     ("Per hotel in crescita con una sola struttura", ["1 struttura, fino a 50 camere","⟦quota:pro⟧ messaggi AI / mese","Tutto ciò che include Starter","WhatsApp + caselle OTA (Booking.com, Airbnb, Expedia)","Check-in online con firma digitale","Vendita di transfer e tour","App mobile iOS e Android"]),
- "growth":  ("Per team che gestiscono due strutture", ["Fino a 2 strutture, 150 camere in totale","⟦quota:growth⟧ messaggi AI / mese","Tutto ciò che include Pro","Sincronizzazione dei canali prioritaria","Supporto prioritario (entro il giorno lavorativo successivo)","Chiamata di onboarding personalizzata","Opzioni white-label"]),
+ "starter": ("Per piccoli B&B e boutique hotel", ["1 struttura, fino a 10 camere","⟦quota:starter⟧ messaggi AI / mese","Sincronizzazione con oltre 100 OTA","Messaggi AI su WhatsApp","Suggerimenti di Lio ogni mattina","Planning camere con calendario prenotazioni","Moduli per il visto in PDF automatici"]),
+ "pro":     ("Per hotel in crescita con una sola struttura", ["1 struttura, fino a 50 camere","⟦quota:pro⟧ messaggi AI / mese","Tutto ciò che include Starter","WhatsApp + caselle OTA (Booking.com, Airbnb, Expedia)","Lio raccoglie richieste di prenotazione su WhatsApp (con la tua approvazione)","Insight AI da recensioni e messaggi","Check-in online con firma digitale","Vendita di transfer, tour ed extra","App mobile iOS e Android"]),
+ "growth":  ("Per team che gestiscono due strutture", ["Fino a 2 strutture, 150 camere in totale","⟦quota:growth⟧ messaggi AI / mese","Tutto ciò che include Pro","Riepilogo AI settimanale","Sincronizzazione dei canali prioritaria","Supporto prioritario (entro il giorno lavorativo successivo)","Chiamata di onboarding personalizzata","Opzioni white-label"]),
 }
 
 def plans_html():
@@ -50,7 +50,7 @@ def ai():
 <div class="panel typing"><p class="panel-title">WhatsApp, 02:47</p>
 <div class="msg in" style="background:var(--bg)" lang="de">Hallo! Unser Flug landet um 1 Uhr. Können Sie uns abholen, und ist ein später Check-in möglich?</div>
 <div class="msg out" lang="de">Natürlich! Unser Flughafentransfer kostet 35 € für bis zu 3 Gäste. Soll ich ihn für Ihre Ankunft um 1 Uhr buchen? Später Check-in ist kein Problem.<small lang="it">Lio, tedesco</small></div>
-<p class="small muted" style="margin:10px 0 0">Transfer prenotato, link di pagamento inviato.</p></div>
+<p class="small muted" style="margin:10px 0 0">Richiesta di transfer creata e inoltrata al tuo team.</p></div>
 </div></section>
 
 <section class="white rule"><div class="wrap">
@@ -59,7 +59,10 @@ def ai():
 <div class="row"><h3>Un'unica casella di posta</h3><div><p>I messaggi di WhatsApp e delle OTA (Booking.com, Airbnb, Expedia) arrivano in un'unica schermata. Lio abbina automaticamente ogni ospite alla sua prenotazione.</p></div></div>
 <div class="row"><h3>Oltre 30 lingue, con traduzione automatica</h3><div><p>L'ospite scrive in giapponese, Lio risponde in giapponese e tu leggi la conversazione nella tua lingua. Anche le risposte manuali vengono tradotte nella lingua dell'ospite.</p></div></div>
 <div class="row"><h3>Conosce il tuo hotel</h3><div><p>Orari di check-in e check-out, parcheggio, animali, orari della colazione, trasporti e caratteristiche delle camere. Li inserisci una volta e Lio li usa in modo coerente in ogni risposta.</p></div></div>
-<div class="row"><h3>Un assistente che vende</h3><div><p>Lio non si limita a rispondere: propone transfer dall'aeroporto, tour della città ed extra al momento giusto e crea la prenotazione.</p></div></div>
+<div class="row"><h3>Un assistente che vende</h3><div><p>Lio non si limita a rispondere: propone transfer dall'aeroporto, tour della città ed extra al momento giusto e inoltra la richiesta al tuo team.</p></div></div>
+<div class="row"><h3>Raccoglie richieste di prenotazione</h3><div><p>Con i piani Pro e Growth, quando un ospite chiede una camera su WhatsApp, Lio raccoglie date, numero di ospiti e camera preferita e indica un prezzo in base alle tue tariffe e disponibilità. La richiesta arriva a te e diventa una prenotazione quando la approvi.</p></div></div>
+<div class="row"><h3>Suggerimenti ogni mattina</h3><div><p>Ogni mattina i Suggerimenti di Lio segnalano interventi su prezzi, operatività (camere da pulire, richieste in sospeso), impostazioni mancanti e opportunità di ricavo. Nulla cambia senza la tua approvazione e i suggerimenti sui prezzi restano nei limiti che imposti tu. Inclusi in tutti i piani.</p></div></div>
+<div class="row"><h3>Insight da recensioni e messaggi</h3><div><p>Con Pro e Growth, Lio riassume i temi di lamentela e di apprezzamento che ricorrono nelle recensioni e nei messaggi degli ospiti. Il riepilogo AI settimanale è incluso in Growth e opzionale in Pro.</p></div></div>
 <div class="row"><h3>Il controllo resta a te</h3><div><p>Nei primi giorni puoi approvare le risposte di Lio prima che vengano inviate. Decidi tu quali argomenti Lio chiude da solo e quali passa a te.</p></div></div>
 </div></div></section>
 
@@ -75,11 +78,12 @@ def ai():
     faq = [
      ("E se Lio fornisce informazioni sbagliate?", "Lio usa solo le informazioni sull'hotel e i dati delle prenotazioni che fornisci tu. Quando non è sicuro, invece di tirare a indovinare ti passa il messaggio. Puoi anche approvare ogni risposta prima che venga inviata."),
      ("Risponde anche ai messaggi di Booking.com e Airbnb?", "Sì, anche a quelli di Expedia. Con i piani Pro e Growth i messaggi delle OTA arrivano nella casella di Lio e ricevono risposta allo stesso modo."),
+     ("Lio può ricevere prenotazioni?", "Sì, con i piani Pro e Growth e sempre con la tua approvazione. Quando un ospite scrive su WhatsApp, Lio chiede date, numero di ospiti e camera preferita, indica un prezzo in base alle tue tariffe e disponibilità e ti passa la richiesta. Diventa una prenotazione solo dopo la tua approvazione: Lio non conferma mai una prenotazione da solo. Allo stesso modo raccoglie le richieste di servizi extra come transfer e tour."),
      ("Cosa succede quando i messaggi inclusi finiscono?", "I messaggi continuano ad arrivare e compaiono nella tua dashboard; si sospendono solo le risposte automatiche. Puoi passare a un piano superiore per aumentare i messaggi disponibili."),
      FAQ_CORE[4],
     ]
     return {"key":"ai","title":"Assistente AI per hotel in oltre 30 lingue | Hostlio Pro",
-            "desc":"Lio, l'assistente AI di Hostlio Pro, risponde agli ospiti dell'hotel su WhatsApp e nelle caselle delle OTA 24/7 in oltre 30 lingue e vende transfer e tour.",
+            "desc":"Lio, l'assistente AI di Hostlio Pro, risponde agli ospiti su WhatsApp e nelle OTA 24/7 in oltre 30 lingue e raccoglie richieste di prenotazione.",
             "trail":[("Assistente AI Lio", U("ai"))],"body":body,"faq":faq}
 
 def channel():
@@ -167,6 +171,8 @@ def features():
 <div class="row"><h3>Check-in online</h3><div><p>Link sicuro, accompagnatori, scansione del documento (nessuna immagine conservata) e firma digitale.</p><a href="{U("checkin")}">Check-in online</a></div></div>
 <div class="row"><h3>Moduli per il visto in PDF automatici</h3><div><p>Genera con un clic, dai dati della prenotazione, lettere di invito e di conferma dell'alloggio per le richieste di visto.</p></div></div>
 <div class="row"><h3>Vendita di transfer e tour</h3><div><p>Lio propone transfer dall'aeroporto e tour durante la conversazione e inoltra la richiesta al tuo team.</p></div></div>
+<div class="row"><h3>Suggerimenti di Lio e insight AI</h3><div><p>Ogni mattina Lio prepara suggerimenti su prezzi, operatività (camere da pulire, richieste in sospeso), impostazioni mancanti e opportunità di ricavo. Nulla cambia senza la tua approvazione e i suggerimenti sui prezzi restano nei limiti che imposti tu. Con Pro e Growth riassume anche lamentele ed elogi ricorrenti in recensioni e messaggi.</p></div></div>
+<div class="row"><h3>Report e team</h3><div><p>Report su occupazione, ADR, RevPAR e rendimento dei canali, con un report settimanale e mensile via email. Sei ruoli per il personale, ognuno con i propri permessi, e tutte le notifiche in un unico posto.</p></div></div>
 <div class="row"><h3>App mobile</h3><div><p>Gestisci prenotazioni, messaggi e check-in anche lontano dall'hotel con l'app iOS e Android. Funziona anche offline e sincronizza i dati quando torni online.</p></div></div>
 </div></div></section>
 <section><div class="wrap"><div class="section-head"><h2>Funzionalità per piano</h2></div>
@@ -176,6 +182,10 @@ def features():
 <tr><th>Messaggi AI / mese</th><td class="c num">⟦quota:starter⟧</td><td class="c num">⟦quota:pro⟧</td><td class="c num">⟦quota:growth⟧</td></tr>
 <tr><th>Sincronizzazione con oltre 100 OTA</th><td class="c">Sì</td><td class="c">Sì</td><td class="c">Prioritaria</td></tr>
 <tr><th>Messaggi AI su WhatsApp</th><td class="c">Sì</td><td class="c">Sì</td><td class="c">Sì</td></tr>
+<tr><th>Suggerimenti di Lio ogni mattina (nulla cambia senza la tua approvazione)</th><td class="c">Sì</td><td class="c">Sì</td><td class="c">Sì</td></tr>
+<tr><th>Richieste di prenotazione e servizi extra con Lio su WhatsApp</th><td class="c">No</td><td class="c">Sì</td><td class="c">Sì</td></tr>
+<tr><th>Insight AI da recensioni e messaggi degli ospiti</th><td class="c">No</td><td class="c">Sì</td><td class="c">Sì</td></tr>
+<tr><th>Riepilogo AI settimanale</th><td class="c">No</td><td class="c">Opzionale</td><td class="c">Sì</td></tr>
 <tr><th>Caselle OTA (Booking.com, Airbnb, Expedia)</th><td class="c">No</td><td class="c">Sì</td><td class="c">Sì</td></tr>
 <tr><th>Calendario planning camere</th><td class="c">Sì</td><td class="c">Sì</td><td class="c">Sì</td></tr>
 <tr><th>Moduli per il visto in PDF</th><td class="c">Sì</td><td class="c">Sì</td><td class="c">Sì</td></tr>

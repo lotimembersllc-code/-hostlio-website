@@ -178,8 +178,8 @@ def software_schema(lang, detailed=False):
          "applicationSubCategory": "Hotel management software (PMS)",
          "operatingSystem": "Web, iOS, Android", "description": desc, "url": abs_url("home", lang),
          "publisher": {"@id": SITE + "/#org"},
-         "featureList": {"tr": ["AI misafir asistanı Lio (WhatsApp ve OTA gelen kutuları, 30+ dil)", "Kanal yöneticisi (100+ OTA'ya sertifikalı bağlantı)", "Sürükle-bırak rezervasyon takvimi", "Online check-in: KVKK uyumlu belge tarama (görüntü saklanmaz) ve dijital imza", "Otomatik PDF vize formları", "Transfer ve tur satışı", "Çevrimdışı çalışan mobil uygulama"],
-                         "en": ["Lio AI guest assistant (WhatsApp and OTA inboxes, 30+ languages)", "Channel manager (certified connections to 100+ OTAs)", "Drag-and-drop reservation calendar", "Online check-in with ID document scanning (no images stored) and digital signature", "Automatic PDF visa forms", "Transfer and tour sales", "Offline-capable mobile app"], **{l: m.SOFT_FEATURES for l, m in LANGMOD.items()}}[lang],
+         "featureList": {"tr": ["AI misafir asistanı Lio (WhatsApp ve OTA gelen kutuları, 30+ dil)", "Kanal yöneticisi (100+ OTA'ya sertifikalı bağlantı)", "Sürükle-bırak rezervasyon takvimi", "Online check-in: KVKK uyumlu belge tarama (görüntü saklanmaz) ve dijital imza", "Otomatik PDF vize formları", "Transfer ve tur satışı", "Lio Önerileri: her sabah fiyat ve operasyon önerileri (onayınızla)", "Lio ile WhatsApp'ta rezervasyon ve ek hizmet talebi (onaylı)", "Yorum ve misafir mesajlarından AI içgörüleri", "Doluluk, ADR, RevPAR ve kanal performansı raporları", "Çevrimdışı çalışan mobil uygulama"],
+                         "en": ["Lio AI guest assistant (WhatsApp and OTA inboxes, 30+ languages)", "Channel manager (certified connections to 100+ OTAs)", "Drag-and-drop reservation calendar", "Online check-in with ID document scanning (no images stored) and digital signature", "Automatic PDF visa forms", "Transfer and tour sales", "Lio Suggestions: daily pricing and operations suggestions (approval-based)", "Booking and extra-service requests via Lio on WhatsApp (approval-based)", "AI insights from reviews and guest messages", "Occupancy, ADR, RevPAR and channel performance reports", "Offline-capable mobile app"], **{l: m.SOFT_FEATURES for l, m in LANGMOD.items()}}[lang],
          "offers": {"@type": "AggregateOffer", "priceCurrency": pricing.CURRENCY, "lowPrice": str(min(p["price"] for p in PLANS)), "highPrice": str(max(p["price"] for p in PLANS)), "offerCount": str(len(PLANS))},
          **({"downloadUrl": APP_STORE_URL, "installUrl": APP_STORE_URL} if APP_STORE_URL else {})}
     if detailed:
@@ -780,14 +780,17 @@ def main():
 
 ## Key facts
 - Pricing (USD/month, early-bird for first 50 customers, locked in while subscribed): Starter ⟦price:starter⟧ (regular ⟦regular:starter⟧), Pro ⟦price:pro⟧ (regular ⟦regular:pro⟧), Growth ⟦price:growth⟧ (regular ⟦regular:growth⟧).
-- Starter: 1 property, up to 10 rooms, ⟦quota:starter⟧ AI messages/month, 100+ OTA sync, WhatsApp AI messaging, room rack, PDF visa forms.
-- Pro: 1 property, up to 50 rooms, ⟦quota:pro⟧ AI messages/month, adds OTA inbox messaging (Booking.com, Airbnb, Expedia), online check-in, transfer & tour sales, mobile app.
+- Starter: 1 property, up to 10 rooms, ⟦quota:starter⟧ AI messages/month, 100+ OTA sync, WhatsApp AI messaging, Lio Suggestions, room rack, PDF visa forms.
+- Pro: 1 property, up to 50 rooms, ⟦quota:pro⟧ AI messages/month, adds OTA inbox messaging (Booking.com, Airbnb, Expedia), booking and extra-service requests via Lio on WhatsApp, AI insights from reviews and guest messages, optional weekly AI summary, online check-in, transfer & tour sales, mobile app.
 - Online check-in (Pro and Growth): the guest scans the machine-readable zone (MRZ) of a passport or ID card with their own phone; reading happens entirely in the browser and only the extracted fields (name, document number or Turkish T.C. identity number, nationality, date of birth, expiry date) and the digital signature are saved. No ID or passport images are uploaded or stored, in line with KVKK principle decision 2025/2120. Staff can scan at the desk with the mobile app (on-device Google ML Kit text recognition). Documents without an MRZ are entered manually.
-- Growth: up to 2 properties, 150 rooms, ⟦quota:growth⟧ AI messages/month, priority sync, priority support, onboarding call, white-label.
+- Growth: up to 2 properties, 150 rooms, ⟦quota:growth⟧ AI messages/month, weekly AI summary, priority sync, priority support, onboarding call, white-label.
 - Free trial: 7 days; a payment card is collected at signup, no charge until the trial ends, cancel anytime.
 - Annual billing: 20% off — Starter ⟦annual_mo:starter⟧/mo (⟦annual:starter⟧/year), Pro ⟦annual_mo:pro⟧/mo (⟦annual:pro⟧/year), Growth ⟦annual_mo:growth⟧/mo (⟦annual:growth⟧/year), early-bird.
 - Setup: the account is ready in minutes; channels are usually connected the same day (add rooms, authorise the connection in each OTA extranet, map rooms).
 - Starter syncs OTA reservations but does not reply to OTA guest messages; OTA inbox messaging starts from Pro.
+- Lio Suggestions (all plans): every morning Lio suggests actions on pricing, operations (e.g. rooms waiting to be cleaned, pending requests), setup gaps and revenue opportunities. Nothing changes without the hotelier's approval; rate changes stay within limits the hotelier sets.
+- Booking requests (Pro and Growth): on WhatsApp Lio collects dates, guests and room preference and quotes a price from the hotel's own rates and availability; the request becomes a reservation only after the hotelier approves it. Lio does not confirm bookings on its own.
+- Also available: analytics (occupancy, ADR, RevPAR, channel performance, weekly/monthly email report), staff roles and permissions (6 roles), notification center.
 - Channels include Booking.com, Airbnb, Expedia, Agoda, Trip.com, Hotels.com, Hotelbeds, Hostelworld, Google Hotels.
 - Languages: website in English, Turkish, Spanish, Italian, Portuguese and French; support in English and Turkish; guest replies in 30+ languages.
 - Contact: {EMAIL}, WhatsApp {WHATSAPP_TXT}

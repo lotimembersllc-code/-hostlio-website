@@ -4,9 +4,9 @@ def U(k): return url(k, L)
 
 # ------------------------------------------------------------ shared facts
 PLAN_TXT = {
- "starter": ("Küçük pansiyon ve butik oteller için", ["1 tesis, 10 odaya kadar","Aylık ⟦quota:starter⟧ AI mesajı","100+ OTA ile kanal senkronizasyonu","WhatsApp AI mesajlaşma","Oda rafı (rezervasyon takvimi)","Otomatik PDF vize formları"]),
- "pro":     ("Tek tesisli, büyüyen oteller için", ["1 tesis, 50 odaya kadar","Aylık ⟦quota:pro⟧ AI mesajı","Starter'daki her şey","WhatsApp + OTA gelen kutusu mesajlaşması (Booking.com, Airbnb, Expedia)","Online check-in ve dijital imza","Transfer ve tur satışı","Mobil uygulama"]),
- "growth":  ("İki tesis işleten ekipler için", ["2 tesise kadar, toplam 150 oda","Aylık ⟦quota:growth⟧ AI mesajı","Pro'daki her şey","Öncelikli kanal senkronizasyonu","Öncelikli destek (ertesi iş günü)","Birebir kurulum görüşmesi","White-label seçenekleri"]),
+ "starter": ("Küçük pansiyon ve butik oteller için", ["1 tesis, 10 odaya kadar","Aylık ⟦quota:starter⟧ AI mesajı","100+ OTA ile kanal senkronizasyonu","WhatsApp AI mesajlaşma","Lio Önerileri: her sabah öneriler","Oda rafı (rezervasyon takvimi)","Otomatik PDF vize formları"]),
+ "pro":     ("Tek tesisli, büyüyen oteller için", ["1 tesis, 50 odaya kadar","Aylık ⟦quota:pro⟧ AI mesajı","Starter'daki her şey","WhatsApp + OTA gelen kutusu mesajlaşması (Booking.com, Airbnb, Expedia)","Lio WhatsApp'ta rezervasyon talebi alır (onayınızla)","AI yorum ve mesaj içgörüleri","Online check-in ve dijital imza","Transfer, tur ve ek hizmet satışı","Mobil uygulama"]),
+ "growth":  ("İki tesis işleten ekipler için", ["2 tesise kadar, toplam 150 oda","Aylık ⟦quota:growth⟧ AI mesajı","Pro'daki her şey","Haftalık AI özeti","Öncelikli kanal senkronizasyonu","Öncelikli destek (ertesi iş günü)","Birebir kurulum görüşmesi","White-label seçenekleri"]),
 }
 
 def plans_html():
@@ -48,7 +48,7 @@ def ai():
 <div class="panel typing"><p class="panel-title">WhatsApp, 02:47</p>
 <div class="msg in" style="background:var(--bg)" lang="en">Hi! Our flight lands at 1 am. Can someone pick us up and is late check-in ok?</div>
 <div class="msg out">Of course! Our airport transfer is €35 for up to 3 guests. Shall I book it for your 1 am arrival? Late check-in is no problem, the night desk will be waiting.<small>Lio, İngilizce</small></div>
-<p class="small muted" style="margin:10px 0 0">Transfer rezervasyonu oluşturuldu, ödeme bağlantısı gönderildi.</p></div>
+<p class="small muted" style="margin:10px 0 0">Transfer talebi oluşturuldu ve ekibinize iletildi.</p></div>
 </div></section>
 
 <section class="white rule"><div class="wrap">
@@ -57,7 +57,10 @@ def ai():
 <div class="row"><h3>Tek gelen kutusu</h3><div><p>WhatsApp ve OTA gelen kutusu mesajları (Booking.com, Airbnb, Expedia) tek ekranda toplanır. Hangi misafirin hangi rezervasyona ait olduğunu Lio otomatik eşler.</p></div></div>
 <div class="row"><h3>30+ dil, otomatik çeviri</h3><div><p>Misafir Japonca yazar, Lio Japonca cevaplar; siz yazışmayı Türkçe görürsünüz. Manuel cevap yazarken de mesajınız misafirin diline çevrilir.</p></div></div>
 <div class="row"><h3>Otelinize özel bilgi</h3><div><p>Check-in/check-out saatleri, otopark, evcil hayvan kuralları, kahvaltı saatleri, yakın ulaşım, oda özellikleri. Bu bilgileri bir kez girersiniz, Lio her cevapta tutarlı kullanır.</p></div></div>
-<div class="row"><h3>Satış yapan asistan</h3><div><p>Lio sadece soru yanıtlamaz: havalimanı transferi, şehir turu ve ek hizmet tekliflerini uygun anda sunar, rezervasyonu oluşturur.</p></div></div>
+<div class="row"><h3>Satış yapan asistan</h3><div><p>Lio sadece soru yanıtlamaz: havalimanı transferi, şehir turu ve ek hizmet tekliflerini uygun anda sunar, talebi oluşturup ekibinize iletir.</p></div></div>
+<div class="row"><h3>Rezervasyon talebi alır</h3><div><p>Pro ve Growth planlarında misafir WhatsApp'tan oda sorduğunda Lio tarihleri, kişi sayısını ve oda tercihini toplar, sizin fiyat ve müsaitlik bilgilerinize göre fiyat verir. Talep onayınıza gelir; siz onayladığınızda rezervasyona dönüşür.</p></div></div>
+<div class="row"><h3>Her sabah öneriler</h3><div><p>Lio Önerileri her sabah fiyat, operasyon (kirli odalar, bekleyen talepler), kurulum eksikleri ve gelir fırsatları için öneri getirir. Onayınız olmadan hiçbir şey değişmez; fiyat önerileri belirlediğiniz sınırlar içinde kalır. Tüm planlarda.</p></div></div>
+<div class="row"><h3>Yorum ve mesajlardan içgörü</h3><div><p>Pro ve Growth'ta Lio, misafir yorumlarında ve mesajlarında tekrar eden şikâyet ve övgü temalarını özetler. Haftalık AI özeti Growth'ta dahildir, Pro'da isteğe bağlıdır.</p></div></div>
 <div class="row"><h3>Kontrol sizde</h3><div><p>İlk günlerde Lio'nun cevaplarını göndermeden önce onaylayabilirsiniz. Hangi konuları kendisi kapatacağını, hangilerini size devredeceğini siz belirlersiniz.</p></div></div>
 </div></div></section>
 
@@ -73,11 +76,12 @@ def ai():
     faq = [
      ("Lio yanlış bilgi verirse ne olur?", "Lio yalnızca sizin girdiğiniz otel bilgilerini ve rezervasyon verilerini kullanır. Emin olmadığı sorularda tahmin yürütmek yerine mesajı size iletir. Dilerseniz tüm cevapları gönderilmeden önce onaylayabilirsiniz."),
      ("Booking.com ve Airbnb mesajlarını da yanıtlıyor mu?", "Evet. Pro ve Growth planlarında OTA mesajları da Lio'nun gelen kutusuna düşer ve aynı şekilde yanıtlanır."),
+     ("Lio rezervasyon alabiliyor mu?", "Pro ve Growth planlarında evet, onayınızla. Misafir WhatsApp'tan yazdığında Lio tarih, kişi sayısı ve oda tercihini sorar, sizin fiyat ve müsaitlik bilgilerinize göre fiyat verir ve talebi size iletir. Talep ancak siz onayladığınızda rezervasyona dönüşür; Lio kendi başına rezervasyon kesinleştirmez. Transfer ve tur gibi ek hizmet taleplerini de aynı şekilde alır."),
      ("Mesaj kotası dolarsa ne olur?", "Kotanız dolduğunda mesajlar gelmeye devam eder ve panelde görünür; yalnızca otomatik yanıt durur. Üst plana geçerek kotanızı artırabilirsiniz."),
      FAQ_CORE[5],
     ]
     return {"key":"ai","title":"AI Misafir Asistanı Lio: 30+ Dilde Mesajlar | Hostlio Pro",
-            "desc":"Hostlio Pro'nun AI asistanı Lio, otel misafirlerinin WhatsApp ve OTA gelen kutusu mesajlarını 30+ dilde 7/24 yanıtlar, transfer ve tur satar.",
+            "desc":"AI asistan Lio, otel misafirlerinin WhatsApp ve OTA mesajlarını 30+ dilde 7/24 yanıtlar, rezervasyon talebi alır, her sabah size öneri sunar.",
             "trail":[("AI asistan Lio", U("ai"))],"body":body,"faq":faq}
 
 def channel():
@@ -165,6 +169,8 @@ def features():
 <div class="row"><h3>Online check-in</h3><div><p>Güvenli bağlantı, refakatçi misafirler, belge tarama (görüntü saklanmaz) ve dijital imza.</p><a href="{U("checkin")}">Online check-in</a></div></div>
 <div class="row"><h3>Otomatik PDF vize formları</h3><div><p>Vize başvurusu için otel davet ve konaklama belgelerini rezervasyon bilgilerinden tek tıkla PDF olarak üretin.</p></div></div>
 <div class="row"><h3>Transfer ve tur satışı</h3><div><p>Lio mesajlaşma sırasında havalimanı transferi ve tur önerir, talebi ekibinize iletir.</p></div></div>
+<div class="row"><h3>Lio Önerileri ve AI içgörüleri</h3><div><p>Lio her sabah fiyat, operasyon (kirli odalar, bekleyen talepler), kurulum eksikleri ve gelir fırsatları için öneriler hazırlar. Onayınız olmadan hiçbir şey değişmez; fiyat önerileri belirlediğiniz sınırların dışına çıkmaz. Pro ve Growth'ta yorum ve mesajlardaki tekrar eden şikâyet ve övgüler de özetlenir.</p></div></div>
+<div class="row"><h3>Raporlar ve ekip</h3><div><p>Doluluk, ADR, RevPAR ve kanal performansı raporları; haftalık ve aylık e-posta raporu. 6 personel rolüyle yetkilendirme ve tek yerde toplanan bildirimler.</p></div></div>
 <div class="row"><h3>Mobil uygulama</h3><div><p>iOS ve Android uygulamasıyla rezervasyonları, mesajları ve check-in'leri otelin dışından yönetin. İnternet kesildiğinde de çalışır, bağlantı gelince senkronize olur.</p></div></div>
 </div></div></section>
 <section><div class="wrap"><div class="section-head"><h2>Planlara göre özellikler</h2></div>
@@ -174,6 +180,10 @@ def features():
 <tr><th>Aylık AI mesajı</th><td class="c num">⟦quota:starter⟧</td><td class="c num">⟦quota:pro⟧</td><td class="c num">⟦quota:growth⟧</td></tr>
 <tr><th>100+ OTA kanal senkronizasyonu</th><td class="c">Var</td><td class="c">Var</td><td class="c">Öncelikli</td></tr>
 <tr><th>WhatsApp AI mesajlaşma</th><td class="c">Var</td><td class="c">Var</td><td class="c">Var</td></tr>
+<tr><th>Lio Önerileri: her sabah öneriler (onayınız olmadan hiçbir şey değişmez)</th><td class="c">Var</td><td class="c">Var</td><td class="c">Var</td></tr>
+<tr><th>Lio ile WhatsApp'ta rezervasyon ve ek hizmet talebi</th><td class="c">Yok</td><td class="c">Var</td><td class="c">Var</td></tr>
+<tr><th>Yorum ve misafir mesajlarından AI içgörüleri</th><td class="c">Yok</td><td class="c">Var</td><td class="c">Var</td></tr>
+<tr><th>Haftalık AI özeti</th><td class="c">Yok</td><td class="c">İsteğe bağlı</td><td class="c">Var</td></tr>
 <tr><th>OTA gelen kutusu mesajlaşması (Booking.com, Airbnb, Expedia)</th><td class="c">Yok</td><td class="c">Var</td><td class="c">Var</td></tr>
 <tr><th>Oda rafı takvimi</th><td class="c">Var</td><td class="c">Var</td><td class="c">Var</td></tr>
 <tr><th>PDF vize formları</th><td class="c">Var</td><td class="c">Var</td><td class="c">Var</td></tr>

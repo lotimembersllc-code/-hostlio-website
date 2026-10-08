@@ -4,14 +4,17 @@
 
 ## Key facts
 - Pricing (USD/month, early-bird for first 50 customers, locked in while subscribed): Starter $49 (regular $59), Pro $89 (regular $109), Growth $149 (regular $189).
-- Starter: 1 property, up to 10 rooms, 1,000 AI messages/month, 100+ OTA sync, WhatsApp AI messaging, room rack, PDF visa forms.
-- Pro: 1 property, up to 50 rooms, 5,000 AI messages/month, adds OTA inbox messaging (Booking.com, Airbnb, Expedia), online check-in, transfer & tour sales, mobile app.
+- Starter: 1 property, up to 10 rooms, 1,000 AI messages/month, 100+ OTA sync, WhatsApp AI messaging, Lio Suggestions, room rack, PDF visa forms.
+- Pro: 1 property, up to 50 rooms, 5,000 AI messages/month, adds OTA inbox messaging (Booking.com, Airbnb, Expedia), booking and extra-service requests via Lio on WhatsApp, AI insights from reviews and guest messages, optional weekly AI summary, online check-in, transfer & tour sales, mobile app.
 - Online check-in (Pro and Growth): the guest scans the machine-readable zone (MRZ) of a passport or ID card with their own phone; reading happens entirely in the browser and only the extracted fields (name, document number or Turkish T.C. identity number, nationality, date of birth, expiry date) and the digital signature are saved. No ID or passport images are uploaded or stored, in line with KVKK principle decision 2025/2120. Staff can scan at the desk with the mobile app (on-device Google ML Kit text recognition). Documents without an MRZ are entered manually.
-- Growth: up to 2 properties, 150 rooms, 12,000 AI messages/month, priority sync, priority support, onboarding call, white-label.
+- Growth: up to 2 properties, 150 rooms, 12,000 AI messages/month, weekly AI summary, priority sync, priority support, onboarding call, white-label.
 - Free trial: 7 days; a payment card is collected at signup, no charge until the trial ends, cancel anytime.
 - Annual billing: 20% off — Starter $39/mo ($470/year), Pro $71/mo ($854/year), Growth $119/mo ($1,430/year), early-bird.
 - Setup: the account is ready in minutes; channels are usually connected the same day (add rooms, authorise the connection in each OTA extranet, map rooms).
 - Starter syncs OTA reservations but does not reply to OTA guest messages; OTA inbox messaging starts from Pro.
+- Lio Suggestions (all plans): every morning Lio suggests actions on pricing, operations (e.g. rooms waiting to be cleaned, pending requests), setup gaps and revenue opportunities. Nothing changes without the hotelier's approval; rate changes stay within limits the hotelier sets.
+- Booking requests (Pro and Growth): on WhatsApp Lio collects dates, guests and room preference and quotes a price from the hotel's own rates and availability; the request becomes a reservation only after the hotelier approves it. Lio does not confirm bookings on its own.
+- Also available: analytics (occupancy, ADR, RevPAR, channel performance, weekly/monthly email report), staff roles and permissions (6 roles), notification center.
 - Channels include Booking.com, Airbnb, Expedia, Agoda, Trip.com, Hotels.com, Hotelbeds, Hostelworld, Google Hotels.
 - Languages: website in English, Turkish, Spanish, Italian, Portuguese and French; support in English and Turkish; guest replies in 30+ languages.
 - Contact: hello@hostliopro.com, WhatsApp +1 279-268-2488
@@ -19,7 +22,7 @@
 
 ## English pages
 - [Hostlio Pro](https://hostliopro.com/en/): Hostlio Pro hotel management software: the Lio AI assistant answers guests 24/7 in 30+ languages and the channel manager syncs 100+ OTAs. Free 7-day trial.
-- [AI Guest Messaging for Hotels in 30+ Languages](https://hostliopro.com/en/ai-guest-messaging/): Hostlio Pro's AI assistant Lio answers hotel guests on WhatsApp and OTA inboxes 24/7 in 30+ languages, and sells transfers and tours. See how it works.
+- [AI Guest Messaging for Hotels in 30+ Languages](https://hostliopro.com/en/ai-guest-messaging/): Lio, Hostlio Pro's AI assistant, answers hotel guests on WhatsApp and OTA inboxes 24/7 in 30+ languages, takes booking requests and sends daily suggestions.
 - [Hotel Channel Manager for 100+ OTAs](https://hostliopro.com/en/channel-manager/): Hostlio Pro's channel manager syncs rates and availability with 100+ OTAs like Booking.com, Airbnb, Expedia and Agoda in real time to prevent overbooking.
 - [Hotel Online Check-in with Digital Signature](https://hostliopro.com/en/online-check-in/): With Hostlio Pro online check-in, guests scan their ID on their phone (no image stored), add companions and sign before arrival. No queue at reception.
 - [Hotel Management Software Features](https://hostliopro.com/en/features/): Hostlio Pro features: AI guest assistant, 100+ OTA channel manager, drag-and-drop room rack, online check-in, PDF visa forms, transfer sales, mobile app.
@@ -50,7 +53,7 @@
 
 ## Türkçe sayfalar
 - [Hostlio Pro](https://hostliopro.com/tr/): Otel programı Hostlio Pro: AI asistan Lio misafir mesajlarını 30+ dilde 7/24 yanıtlar, kanal yöneticisi 100+ OTA'yı senkronlar. 7 gün ücretsiz deneyin.
-- [AI Misafir Asistanı Lio: 30+ Dilde Mesajlar](https://hostliopro.com/tr/ai-misafir-asistani/): Hostlio Pro'nun AI asistanı Lio, otel misafirlerinin WhatsApp ve OTA gelen kutusu mesajlarını 30+ dilde 7/24 yanıtlar, transfer ve tur satar.
+- [AI Misafir Asistanı Lio: 30+ Dilde Mesajlar](https://hostliopro.com/tr/ai-misafir-asistani/): AI asistan Lio, otel misafirlerinin WhatsApp ve OTA mesajlarını 30+ dilde 7/24 yanıtlar, rezervasyon talebi alır, her sabah size öneri sunar.
 - [Otel Kanal Yöneticisi: 100+ OTA Tek Takvimde](https://hostliopro.com/tr/kanal-yoneticisi/): Hostlio Pro kanal yöneticisi Booking.com, Airbnb, Expedia, Agoda dahil 100+ OTA'da müsaitlik ve fiyatı anlık senkronize eder, overbooking'i önler.
 - [Otel Online Check-in ve Dijital İmza Yazılımı](https://hostliopro.com/tr/online-check-in/): Hostlio Pro online check-in: misafir kimliğini telefonuyla tarar (görüntü saklanmaz), refakatçilerini ve dijital imzasını varıştan önce gönderir.
 - [Otel Programı Özellikleri: AI, Kanal Yönetimi](https://hostliopro.com/tr/ozellikler/): Hostlio Pro özellikleri: AI asistan, 100+ OTA kanal yönetimi, sürükle-bırak oda rafı, online check-in, PDF vize formu, transfer satışı ve mobil uygulama.
@@ -76,7 +79,7 @@
 
 ## Páginas en español
 - [Hostlio Pro](https://hostliopro.com/es/): Software de gestión hotelera Hostlio Pro: la IA Lio atiende a huéspedes 24/7 en 30+ idiomas y el channel manager sincroniza 100+ OTAs. 7 días gratis.
-- [Mensajería con IA para hoteles en 30+ idiomas](https://hostliopro.com/es/asistente-ia-para-huespedes/): Lio, la IA de Hostlio Pro, responde a tus huéspedes 24/7 por WhatsApp, Booking.com, Airbnb y Expedia en 30+ idiomas y vende traslados y excursiones.
+- [Mensajería con IA para hoteles en 30+ idiomas](https://hostliopro.com/es/asistente-ia-para-huespedes/): Lio, la IA de Hostlio Pro, responde a tus huéspedes 24/7 por WhatsApp y en las OTAs en 30+ idiomas, recibe solicitudes de reserva y te sugiere mejoras.
 - [Channel manager hotelero para 100+ OTAs](https://hostliopro.com/es/channel-manager/): El channel manager de Hostlio Pro sincroniza en tiempo real disponibilidad y tarifas con 100+ OTAs (Booking.com, Airbnb, Expedia, Agoda) sin overbooking.
 - [Check-in online para hoteles con firma digital](https://hostliopro.com/es/check-in-online/): Check-in online de Hostlio Pro: el huésped escanea su documento (sin guardar imágenes), añade acompañantes y firma desde el móvil. Sin colas en recepción.
 - [Funciones del software de gestión hotelera](https://hostliopro.com/es/funcionalidades/): Hostlio Pro incluye asistente IA, channel manager con 100+ OTAs, planning de habitaciones, check-in online, visados en PDF, traslados y app móvil.
@@ -102,7 +105,7 @@
 
 ## Pagine in italiano
 - [Hostlio Pro](https://hostliopro.com/it/): Gestionale per hotel Hostlio Pro: l'assistente AI Lio risponde agli ospiti 24/7 in 30+ lingue e il channel manager sincronizza 100+ OTA. 7 giorni gratis.
-- [Assistente AI per hotel in oltre 30 lingue](https://hostliopro.com/it/assistente-ai-ospiti/): Lio, l'assistente AI di Hostlio Pro, risponde agli ospiti dell'hotel su WhatsApp e nelle caselle delle OTA 24/7 in oltre 30 lingue e vende transfer e tour.
+- [Assistente AI per hotel in oltre 30 lingue](https://hostliopro.com/it/assistente-ai-ospiti/): Lio, l'assistente AI di Hostlio Pro, risponde agli ospiti su WhatsApp e nelle OTA 24/7 in oltre 30 lingue e raccoglie richieste di prenotazione.
 - [Channel manager per hotel con oltre 100 OTA](https://hostliopro.com/it/channel-manager/): Il channel manager Hostlio Pro sincronizza in tempo reale disponibilità e tariffe su 100+ OTA come Booking.com, Airbnb, Expedia e Agoda, senza overbooking.
 - [Check-in online per hotel con firma digitale](https://hostliopro.com/it/check-in-online/): Check-in online Hostlio Pro: l'ospite scansiona il documento (nessuna immagine conservata), aggiunge accompagnatori e firma dal telefono. Niente code.
 - [Funzionalità del gestionale per hotel](https://hostliopro.com/it/funzionalita/): Funzionalità di Hostlio Pro: assistente AI, channel manager per 100+ OTA, planning camere drag-and-drop, check-in online, moduli visto PDF, transfer e app.
@@ -128,7 +131,7 @@
 
 ## Páginas em português
 - [Sistema para Hotel com IA e Channel Manager](https://hostliopro.com/pt/): Sistema para hotel Hostlio Pro: o assistente de IA Lio responde aos hóspedes 24/7 em 30+ idiomas e o channel manager sincroniza 100+ OTAs. 7 dias grátis.
-- [IA para Mensagens de Hóspedes em 30+ Idiomas](https://hostliopro.com/pt/assistente-ia-para-hospedes/): A Lio, assistente de IA do Hostlio Pro, responde aos hóspedes 24h no WhatsApp, Booking.com, Airbnb e Expedia em 30+ idiomas e vende transfers e passeios.
+- [IA para Mensagens de Hóspedes em 30+ Idiomas](https://hostliopro.com/pt/assistente-ia-para-hospedes/): A Lio, assistente de IA do Hostlio Pro, responde aos hóspedes 24h no WhatsApp, Booking.com, Airbnb e Expedia em 30+ idiomas e recebe pedidos de reserva.
 - [Channel Manager para Hotel com 100+ OTAs](https://hostliopro.com/pt/channel-manager/): O channel manager do Hostlio Pro sincroniza disponibilidade e tarifas em tempo real com 100+ OTAs (Booking.com, Airbnb, Expedia, Agoda) sem overbooking.
 - [Check-in Online com Assinatura Digital](https://hostliopro.com/pt/check-in-online/): Check-in online do Hostlio Pro: o hóspede escaneia o documento (sem guardar imagens), adiciona acompanhantes e assina pelo celular. Sem fila na recepção.
 - [Funcionalidades do Sistema para Hotel](https://hostliopro.com/pt/funcionalidades/): Recursos do Hostlio Pro: assistente de IA, channel manager com 100+ OTAs, mapa de reservas, check-in online, vistos em PDF, venda de transfers e app.
@@ -154,7 +157,7 @@
 
 ## Pages en français
 - [Hostlio Pro](https://hostliopro.com/fr/): Logiciel de gestion hôtelière Hostlio Pro : l’IA Lio répond aux clients 24/7 en 30+ langues et le channel manager synchronise 100+ OTA. 7 jours offerts.
-- [Messagerie client IA pour hôtel en 30+ langues](https://hostliopro.com/fr/assistant-ia-clients/): Lio, l'assistant IA de Hostlio Pro, répond aux clients de votre hôtel sur WhatsApp et sur les OTA 24 h/24 en 30+ langues, et vend transferts et excursions.
+- [Messagerie client IA pour hôtel en 30+ langues](https://hostliopro.com/fr/assistant-ia-clients/): Lio, l'assistant IA de Hostlio Pro, répond aux clients de votre hôtel sur WhatsApp et sur les OTA 24 h/24 en 30+ langues et prend les demandes de réservation.
 - [Channel manager hôtelier pour 100+ OTA](https://hostliopro.com/fr/channel-manager/): Le channel manager Hostlio Pro synchronise en temps réel disponibilités et tarifs sur 100+ OTA (Booking.com, Airbnb, Expedia, Agoda) sans surbooking.
 - [Check-in en ligne avec signature électronique](https://hostliopro.com/fr/check-in-en-ligne/): Check-in en ligne : vos clients scannent leur pièce d'identité (aucune image conservée), ajoutent leurs accompagnants et signent depuis leur mobile.
 - [Fonctions du logiciel de gestion hôtelière](https://hostliopro.com/fr/fonctionnalites/): Hostlio Pro inclut : assistant IA, channel manager 100+ OTA, planning des chambres en glisser-déposer, check-in en ligne, visas PDF et application mobile.

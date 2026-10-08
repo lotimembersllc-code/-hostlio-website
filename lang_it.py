@@ -31,7 +31,7 @@ MEGA = {"btn":"Prodotto","cols":[
 
 # ---------------------------------------------------------------- build.software_schema / room_rack / 404
 SOFT_DESC = "Gestionale per hotel indipendenti con intelligenza artificiale: messaggi agli ospiti 24/7 in oltre 30 lingue, channel manager per oltre 100 OTA, calendario delle prenotazioni e check-in online."
-SOFT_FEATURES = ["Assistente AI Lio per gli ospiti (30+ lingue)", "Channel manager (connessioni certificate con 100+ OTA)", "Calendario prenotazioni drag-and-drop", "Check-in online con scansione del documento (nessuna immagine conservata) e firma digitale", "Moduli PDF automatici per il visto", "Vendita di transfer e tour", "App mobile che funziona anche offline"]
+SOFT_FEATURES = ["Assistente AI Lio per gli ospiti (30+ lingue)", "Channel manager (connessioni certificate con 100+ OTA)", "Calendario prenotazioni drag-and-drop", "Check-in online con scansione del documento (nessuna immagine conservata) e firma digitale", "Moduli PDF automatici per il visto", "Vendita di transfer e tour", "Suggerimenti di Lio: indicazioni quotidiane su prezzi e operatività (con approvazione)", "Richieste di prenotazione e servizi extra con Lio su WhatsApp (con approvazione)", "Insight AI da recensioni e messaggi degli ospiti", "Report su occupazione, ADR, RevPAR e rendimento dei canali", "App mobile che funziona anche offline"]
 DAYS = ["Lun","Mar","Mer","Gio","Ven","Sab","Dom"]
 RACK = ("Planning camere", "Settembre, 3ª settimana", "Prenotazioni colorate per canale: Booking.com blu, Airbnb pesca, Expedia lilla, Agoda sabbia, dirette verde")
 NOTFOUND = ("Pagina non trovata | Hostlio Pro",

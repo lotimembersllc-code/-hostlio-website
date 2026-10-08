@@ -133,6 +133,70 @@ SUPCARD = {
  "fr": dict(h="Support Hostlio Pro", sub="Répond généralement sous 24 heures", q="Comment connecter Booking.com ?", a="Choisissez Booking.com dans Canaux et autorisez-le une seule fois. Les réservations se synchronisent ensuite automatiquement.", chip="Canal connecté"),
 }
 
+# Lio yetenek şeridi (hero'nun hemen altı). Mesaj örnekleri sayfa dilinde; plan etiketi kartta (dürüstlük).
+LIO_DO = {
+ "tr": dict(h='Lio sadece <em class="hl">cevap vermez</em>', p="Misafirle yazışırken rezervasyon talebi alır, ek hizmet satar; her sabah da size öneri getirir. Son karar her zaman sizde.",
+   book=("Rezervasyon alır","WhatsApp'ta tarih, kişi sayısı ve odayı sorar, fiyatınızı söyler. Siz onaylayınca rezervasyona dönüşür.","Pro ve Growth",
+         "Merhaba, 17–19 Ekim için 2 kişilik odanız var mı?","Var! Deniz manzaralı çift kişilik oda, 2 gece toplam 240 €. Talebinizi otele iletiyorum.","Rezervasyon talebi · onayınızı bekliyor"),
+   sell=("Ek satış yapar","Transfer, tur ve ek hizmetleri doğru anda önerir, talebi ekibinize iletir.","Pro ve Growth",
+         "Havalimanından alabilir misiniz? Gece 1'de iniyoruz.","Elbette, 3 kişiye kadar özel transfer 35 €. Ekleyeyim mi?","Havalimanı transferi","+35 €"),
+   sug=("Her sabah öneri sunar","Fiyat, operasyon ve gelir fırsatları için günlük öneriler. Onayınız olmadan hiçbir şey değişmez.","Tüm planlarda",
+        "Lio Önerileri","Cumartesi %85 dolu","Fiyatı %10 artırın","Onayla","Geç","2 oda temizlik bekliyor","14:00 girişlerinden önce hazır olmalı","Fiyat önerileri belirlediğiniz sınırlar içinde kalır.")),
+ "en": dict(h='Lio doesn’t just <em class="hl">reply</em>', p="While chatting with guests, Lio takes booking requests and sells extras, and every morning it brings you suggestions. You always have the final say.",
+   book=("Takes booking requests","Asks for dates, guests and room on WhatsApp and quotes your rate. It becomes a booking once you approve.","Pro and Growth",
+         "Hi! Do you have a room for 2 from Oct 17 to 19?","Yes! A sea-view double, €240 in total for 2 nights. I’m passing your request to the hotel.","Booking request · awaiting your approval"),
+   sell=("Sells extras","Offers transfers, tours and extras at the right moment and passes the request to your team.","Pro and Growth",
+         "Can you pick us up at the airport? We land at 1 am.","Of course, a private transfer for up to 3 guests is €35. Shall I add it?","Airport transfer","+€35"),
+   sug=("Suggests every morning","Daily suggestions on pricing, operations and revenue opportunities. Nothing changes without your approval.","All plans",
+        "Lio Suggestions","Saturday is 85% booked","Raise the rate by 10%","Approve","Skip","2 rooms still need cleaning","Due before 2 pm check-ins","Rate suggestions stay within your limits.")),
+ "es": dict(h='Lio no solo <em class="hl">responde</em>', p="Mientras conversa con tus huéspedes, Lio recibe solicitudes de reserva y vende extras, y cada mañana te trae sugerencias. La última palabra siempre es tuya.",
+   book=("Recibe reservas","Pregunta fechas, personas y habitación por WhatsApp y da el precio según tus tarifas. Se convierte en reserva cuando la apruebas.","Pro y Growth",
+         "¡Hola! ¿Tienen habitación para 2 del 17 al 19 de octubre?","¡Sí! Doble con vistas al mar, 240 € en total por 2 noches. Paso su solicitud al hotel.","Solicitud de reserva · pendiente de tu aprobación"),
+   sell=("Vende extras","Ofrece traslados, excursiones y extras en el momento justo y pasa la solicitud a tu equipo.","Pro y Growth",
+         "¿Pueden recogernos en el aeropuerto? Aterrizamos a la 1.","Claro, el traslado privado para hasta 3 personas cuesta 35 €. ¿Lo añado?","Traslado al aeropuerto","+35 €"),
+   sug=("Te sugiere cada mañana","Sugerencias diarias sobre precios, operaciones y oportunidades de ingresos. Nada cambia sin tu aprobación.","Todos los planes",
+        "Sugerencias de Lio","Sábado al 85 %","Sube la tarifa un 10 %","Aprobar","Omitir","2 habitaciones sin limpiar","Listas antes de las llegadas de las 14:00","Las sugerencias de precio respetan tus límites.")),
+ "fr": dict(h='Lio ne fait pas que <em class="hl">répondre</em>', p="En échangeant avec vos clients, Lio prend les demandes de réservation et vend vos extras ; chaque matin, il vous apporte des suggestions. Le dernier mot vous revient toujours.",
+   book=("Prend les réservations","Sur WhatsApp, il demande dates, nombre de personnes et chambre, puis annonce votre tarif. La réservation est créée une fois validée par vous.","Pro et Growth",
+         "Bonjour ! Avez-vous une chambre pour 2 du 17 au 19 octobre ?","Oui ! Une double vue mer, 240 € au total pour 2 nuits. Je transmets votre demande à l’hôtel.","Demande de réservation · en attente de validation"),
+   sell=("Vend vos extras","Propose transferts, excursions et services au bon moment et transmet la demande à votre équipe.","Pro et Growth",
+         "Pouvez-vous venir nous chercher à l’aéroport ? Nous atterrissons à 1 h.","Bien sûr, le transfert privé jusqu’à 3 personnes coûte 35 €. Je l’ajoute ?","Transfert aéroport","+35 €"),
+   sug=("Vous suggère chaque matin","Des suggestions quotidiennes sur les prix, l’exploitation et les revenus. Rien ne change sans votre accord.","Tous les forfaits",
+        "Suggestions de Lio","Samedi rempli à 85 %","Augmentez le tarif de 10 %","Valider","Ignorer","2 chambres à nettoyer","Prêtes avant les arrivées de 14 h","Les suggestions de prix restent dans vos limites.")),
+ "it": dict(h='Lio non si limita a <em class="hl">rispondere</em>', p="Mentre parla con gli ospiti, Lio raccoglie richieste di prenotazione e vende extra, e ogni mattina ti porta dei suggerimenti. L’ultima parola è sempre tua.",
+   book=("Raccoglie prenotazioni","Su WhatsApp chiede date, ospiti e camera e indica il prezzo in base alle tue tariffe. Diventa una prenotazione quando la approvi.","Pro e Growth",
+         "Buongiorno! Avete una camera per 2 dal 17 al 19 ottobre?","Sì! Una doppia vista mare, 240 € in totale per 2 notti. Inoltro la richiesta all’hotel.","Richiesta di prenotazione · in attesa di approvazione"),
+   sell=("Vende extra","Propone transfer, tour e servizi extra al momento giusto e passa la richiesta al tuo team.","Pro e Growth",
+         "Potete venirci a prendere in aeroporto? Atterriamo all’una.","Certo, il transfer privato fino a 3 persone costa 35 €. Lo aggiungo?","Transfer aeroporto","+35 €"),
+   sug=("Ogni mattina ti suggerisce","Suggerimenti quotidiani su prezzi, operatività e opportunità di ricavo. Nulla cambia senza la tua approvazione.","Tutti i piani",
+        "Suggerimenti di Lio","Sabato all’85%","Alza la tariffa del 10%","Approva","Salta","2 camere da pulire","Pronte prima degli arrivi delle 14:00","I suggerimenti sui prezzi restano nei tuoi limiti.")),
+ "pt": dict(h='A Lio não só <em class="hl">responde</em>', p="Enquanto conversa com os hóspedes, a Lio recebe pedidos de reserva e vende extras, e toda manhã traz sugestões para você. A palavra final é sempre sua.",
+   book=("Recebe reservas","No WhatsApp, pergunta datas, hóspedes e quarto e informa o preço com base nas suas tarifas. Vira reserva quando você aprova.","Pro e Growth",
+         "Oi! Tem quarto para 2 de 17 a 19 de outubro?","Tem sim! Duplo com vista para o mar, 240 € no total por 2 noites. Vou passar seu pedido para o hotel.","Pedido de reserva · aguardando sua aprovação"),
+   sell=("Vende extras","Oferece transfers, passeios e serviços extras na hora certa e repassa o pedido para a sua equipe.","Pro e Growth",
+         "Vocês podem nos buscar no aeroporto? Chegamos à 1h.","Claro, o transfer privativo para até 3 pessoas custa 35 €. Posso incluir?","Transfer do aeroporto","+35 €"),
+   sug=("Sugere toda manhã","Sugestões diárias sobre preços, operação e oportunidades de receita. Nada muda sem sua aprovação.","Todos os planos",
+        "Sugestões da Lio","Sábado com 85% de ocupação","Aumente a tarifa em 10%","Aprovar","Pular","2 quartos para limpar","Prontos antes dos check-ins das 14h","As sugestões de preço respeitam seus limites.")),
+}
+
+def lio_strip(L):
+    d = LIO_DO[L]; b, sl, sg = d["book"], d["sell"], d["sug"]
+    def head(ic, h, p, tag):
+        return f'<span class="ci">{icon(ic)}</span><div class="ld-h"><h3>{h}</h3><span class="pill">{tag}</span></div><p>{p}</p>'
+    book = (f'<article class="card ld">{head("calendar-dots", b[0], b[1], b[2])}'
+            f'<div class="vis thread ld-chat" aria-hidden="true"><div class="ld-wa">{logo("whatsapp")}WhatsApp</div>'
+            f'<div class="msg in">{b[3]}</div><div class="msg out">{b[4]}</div><div class="msg note wait">{b[5]}</div></div></article>')
+    sell = (f'<article class="card ld">{head("van", sl[0], sl[1], sl[2])}'
+            f'<div class="vis thread ld-chat" aria-hidden="true"><div class="msg in">{sl[3]}</div><div class="msg out">{sl[4]}</div>'
+            f'<div class="price-chip">{sl[5]}<b>{sl[6]}</b></div></div></article>')
+    sug = (f'<article class="card ld">{head("sparkle", sg[0], sg[1], sg[2])}'
+           f'<div class="vis sugg" aria-hidden="true"><div class="sg-h"><span><i>L</i>{sg[3]}</span><small>08:00</small></div>'
+           f'<div class="sg-item"><b>{sg[4]}</b><span>{sg[5]}</span><div class="sg-act"><span class="ok">{sg[6]}</span><span>{sg[7]}</span></div></div>'
+           f'<div class="sg-item"><b>{sg[8]}</b><span>{sg[9]}</span></div><p class="sg-f">{icon("lock-simple")}{sg[10]}</p></div></article>')
+    return (f'<section class="lio-do"><div class="wrap"><div class="section-head rv"><h2>{d["h"]}</h2><p>{d["p"]}</p></div>'
+            f'<div class="bento">{book}{sell}{sug}</div></div></section>')
+
+
 def home(L, plans_html, FAQ_CORE):
     t = T[L]; U = lambda k: url(k, L)
     chk = lambda items: "<ul>" + "".join(f"<li>{icon('check')}<span>{x}</span></li>" for x in items) + "</ul>"
@@ -227,5 +291,5 @@ def home(L, plans_html, FAQ_CORE):
 <div class="bubble sup-bubble" aria-hidden="true"><div class="bh"><i>H</i><span>{sc["h"]}<small>{sc["sub"]}</small></span></div>
 <div class="msg in">{sc["q"]}</div><div class="msg out">{sc["a"]}</div></div></div></div></section>'''
 
-    body = hero + picker + story + tour + bento + types_sec + plans + ai + stats_sec + support
+    body = hero + lio_strip(L) + picker + story + tour + bento + types_sec + plans + ai + stats_sec + support
     return {"key":"home","title":t["title"],"desc":t["desc"],"body":body,"preload_img":"/assets/img/brand-courtyard.webp","faq":FAQ_CORE,"schema":[software_schema(L)]}

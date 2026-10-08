@@ -19,6 +19,34 @@ L Lio AI resepsiyonist, çevrimiçi
 Hallo! Ist ein später Check-in möglich?
 Natürlich! Unsere Rezeption ist rund um die Uhr besetzt. Almanca yanıtlandı, 4 sn
 
+## Lio sadece cevap vermez
+Misafirle yazışırken rezervasyon talebi alır, ek hizmet satar; her sabah da size öneri getirir. Son karar her zaman sizde.
+
+## Rezervasyon alır
+Pro ve Growth
+WhatsApp'ta tarih, kişi sayısı ve odayı sorar, fiyatınızı söyler. Siz onaylayınca rezervasyona dönüşür.
+WhatsApp
+Merhaba, 17–19 Ekim için 2 kişilik odanız var mı?
+Var! Deniz manzaralı çift kişilik oda, 2 gece toplam 240 €. Talebinizi otele iletiyorum.
+Rezervasyon talebi · onayınızı bekliyor
+
+## Ek satış yapar
+Pro ve Growth
+Transfer, tur ve ek hizmetleri doğru anda önerir, talebi ekibinize iletir.
+Havalimanından alabilir misiniz? Gece 1'de iniyoruz.
+Elbette, 3 kişiye kadar özel transfer 35 €. Ekleyeyim mi?
+Havalimanı transferi +35 €
+
+## Her sabah öneri sunar
+Tüm planlarda
+Fiyat, operasyon ve gelir fırsatları için günlük öneriler. Onayınız olmadan hiçbir şey değişmez.
+L Lio Önerileri 08:00
+Cumartesi %85 dolu Fiyatı %10 artırın Onayla Geç
+
+2 oda temizlik bekliyor 14:00 girişlerinden önce hazır olmalı
+
+Fiyat önerileri belirlediğiniz sınırlar içinde kalır.
+
 ## Neyle başlamak istersiniz?
 Seçimlerinize göre hesabınızı hazırlayalım.
 
@@ -207,6 +235,7 @@ Erken kayıt fiyatı (normali 59 $ )
 - Aylık 1.000 AI mesajı
 - 100+ OTA ile kanal senkronizasyonu
 - WhatsApp AI mesajlaşma
+- Lio Önerileri: her sabah öneriler
 - Oda rafı (rezervasyon takvimi)
 - Otomatik PDF vize formları
 Starter ile başla
@@ -224,8 +253,10 @@ Erken kayıt fiyatı (normali 109 $ )
 - Aylık 5.000 AI mesajı
 - Starter'daki her şey
 - WhatsApp + OTA gelen kutusu mesajlaşması (Booking.com, Airbnb, Expedia)
+- Lio WhatsApp'ta rezervasyon talebi alır (onayınızla)
+- AI yorum ve mesaj içgörüleri
 - Online check-in ve dijital imza
-- Transfer ve tur satışı
+- Transfer, tur ve ek hizmet satışı
 - Mobil uygulama
 Pro ile başla
 
@@ -239,6 +270,7 @@ Erken kayıt fiyatı (normali 189 $ )
 - 2 tesise kadar, toplam 150 oda
 - Aylık 12.000 AI mesajı
 - Pro'daki her şey
+- Haftalık AI özeti
 - Öncelikli kanal senkronizasyonu
 - Öncelikli destek (ertesi iş günü)
 - Birebir kurulum görüşmesi
@@ -328,7 +360,7 @@ Hi! Our flight lands at 1 am. Can someone pick us up and is late check-in ok?
 
 Of course! Our airport transfer is €35 for up to 3 guests. Shall I book it for your 1 am arrival? Late check-in is no problem, the night desk will be waiting. Lio, İngilizce
 
-Transfer rezervasyonu oluşturuldu, ödeme bağlantısı gönderildi.
+Transfer talebi oluşturuldu ve ekibinize iletildi.
 
 Otelde AI misafir asistanı nedir? Misafirlerin rezervasyon öncesi ve sonrası sorduğu soruları, otelin kendi bilgilerini kullanarak otomatik yanıtlayan yazılımdır. Lio, cevaplayamadığı ya da insan kararı gereken mesajları (indirim talebi, şikâyet, özel istek) personele iletir.
 
@@ -344,7 +376,16 @@ Misafir Japonca yazar, Lio Japonca cevaplar; siz yazışmayı Türkçe görürs�
 Check-in/check-out saatleri, otopark, evcil hayvan kuralları, kahvaltı saatleri, yakın ulaşım, oda özellikleri. Bu bilgileri bir kez girersiniz, Lio her cevapta tutarlı kullanır.
 
 ## Satış yapan asistan
-Lio sadece soru yanıtlamaz: havalimanı transferi, şehir turu ve ek hizmet tekliflerini uygun anda sunar, rezervasyonu oluşturur.
+Lio sadece soru yanıtlamaz: havalimanı transferi, şehir turu ve ek hizmet tekliflerini uygun anda sunar, talebi oluşturup ekibinize iletir.
+
+## Rezervasyon talebi alır
+Pro ve Growth planlarında misafir WhatsApp'tan oda sorduğunda Lio tarihleri, kişi sayısını ve oda tercihini toplar, sizin fiyat ve müsaitlik bilgilerinize göre fiyat verir. Talep onayınıza gelir; siz onayladığınızda rezervasyona dönüşür.
+
+## Her sabah öneriler
+Lio Önerileri her sabah fiyat, operasyon (kirli odalar, bekleyen talepler), kurulum eksikleri ve gelir fırsatları için öneri getirir. Onayınız olmadan hiçbir şey değişmez; fiyat önerileri belirlediğiniz sınırlar içinde kalır. Tüm planlarda.
+
+## Yorum ve mesajlardan içgörü
+Pro ve Growth'ta Lio, misafir yorumlarında ve mesajlarında tekrar eden şikâyet ve övgü temalarını özetler. Haftalık AI özeti Growth'ta dahildir, Pro'da isteğe bağlıdır.
 
 ## Kontrol sizde
 İlk günlerde Lio'nun cevaplarını göndermeden önce onaylayabilirsiniz. Hangi konuları kendisi kapatacağını, hangilerini size devredeceğini siz belirlersiniz.
@@ -365,6 +406,9 @@ A: Lio yalnızca sizin girdiğiniz otel bilgilerini ve rezervasyon verilerini ku
 
 Q: Booking.com ve Airbnb mesajlarını da yanıtlıyor mu?
 A: Evet. Pro ve Growth planlarında OTA mesajları da Lio'nun gelen kutusuna düşer ve aynı şekilde yanıtlanır.
+
+Q: Lio rezervasyon alabiliyor mu?
+A: Pro ve Growth planlarında evet, onayınızla. Misafir WhatsApp'tan yazdığında Lio tarih, kişi sayısı ve oda tercihini sorar, sizin fiyat ve müsaitlik bilgilerinize göre fiyat verir ve talebi size iletir. Talep ancak siz onayladığınızda rezervasyona dönüşür; Lio kendi başına rezervasyon kesinleştirmez. Transfer ve tur gibi ek hizmet taleplerini de aynı şekilde alır.
 
 Q: Mesaj kotası dolarsa ne olur?
 A: Kotanız dolduğunda mesajlar gelmeye devam eder ve panelde görünür; yalnızca otomatik yanıt durur. Üst plana geçerek kotanızı artırabilirsiniz.
@@ -534,6 +578,12 @@ Vize başvurusu için otel davet ve konaklama belgelerini rezervasyon bilgilerin
 ## Transfer ve tur satışı
 Lio mesajlaşma sırasında havalimanı transferi ve tur önerir, talebi ekibinize iletir.
 
+## Lio Önerileri ve AI içgörüleri
+Lio her sabah fiyat, operasyon (kirli odalar, bekleyen talepler), kurulum eksikleri ve gelir fırsatları için öneriler hazırlar. Onayınız olmadan hiçbir şey değişmez; fiyat önerileri belirlediğiniz sınırların dışına çıkmaz. Pro ve Growth'ta yorum ve mesajlardaki tekrar eden şikâyet ve övgüler de özetlenir.
+
+## Raporlar ve ekip
+Doluluk, ADR, RevPAR ve kanal performansı raporları; haftalık ve aylık e-posta raporu. 6 personel rolüyle yetkilendirme ve tek yerde toplanan bildirimler.
+
 ## Mobil uygulama
 iOS ve Android uygulamasıyla rezervasyonları, mesajları ve check-in'leri otelin dışından yönetin. İnternet kesildiğinde de çalışır, bağlantı gelince senkronize olur.
 
@@ -550,6 +600,14 @@ Aylık AI mesajı 1.000 5.000 12.000
 100+ OTA kanal senkronizasyonu Var Var Öncelikli
 
 WhatsApp AI mesajlaşma Var Var Var
+
+Lio Önerileri: her sabah öneriler (onayınız olmadan hiçbir şey değişmez) Var Var Var
+
+Lio ile WhatsApp'ta rezervasyon ve ek hizmet talebi Yok Var Var
+
+Yorum ve misafir mesajlarından AI içgörüleri Yok Var Var
+
+Haftalık AI özeti Yok İsteğe bağlı Var
 
 OTA gelen kutusu mesajlaşması (Booking.com, Airbnb, Expedia) Yok Var Var
 
@@ -599,6 +657,7 @@ Erken kayıt fiyatı (normali 59 $ )
 - Aylık 1.000 AI mesajı
 - 100+ OTA ile kanal senkronizasyonu
 - WhatsApp AI mesajlaşma
+- Lio Önerileri: her sabah öneriler
 - Oda rafı (rezervasyon takvimi)
 - Otomatik PDF vize formları
 Starter ile başla
@@ -616,8 +675,10 @@ Erken kayıt fiyatı (normali 109 $ )
 - Aylık 5.000 AI mesajı
 - Starter'daki her şey
 - WhatsApp + OTA gelen kutusu mesajlaşması (Booking.com, Airbnb, Expedia)
+- Lio WhatsApp'ta rezervasyon talebi alır (onayınızla)
+- AI yorum ve mesaj içgörüleri
 - Online check-in ve dijital imza
-- Transfer ve tur satışı
+- Transfer, tur ve ek hizmet satışı
 - Mobil uygulama
 Pro ile başla
 
@@ -631,6 +692,7 @@ Erken kayıt fiyatı (normali 189 $ )
 - 2 tesise kadar, toplam 150 oda
 - Aylık 12.000 AI mesajı
 - Pro'daki her şey
+- Haftalık AI özeti
 - Öncelikli kanal senkronizasyonu
 - Öncelikli destek (ertesi iş günü)
 - Birebir kurulum görüşmesi
@@ -1503,6 +1565,34 @@ L Lio AI receptionist, online
 Hallo! Ist ein später Check-in möglich?
 Natürlich! Unsere Rezeption ist rund um die Uhr besetzt. Answered in German, 4 sec
 
+## Lio doesn’t just reply
+While chatting with guests, Lio takes booking requests and sells extras, and every morning it brings you suggestions. You always have the final say.
+
+## Takes booking requests
+Pro and Growth
+Asks for dates, guests and room on WhatsApp and quotes your rate. It becomes a booking once you approve.
+WhatsApp
+Hi! Do you have a room for 2 from Oct 17 to 19?
+Yes! A sea-view double, €240 in total for 2 nights. I’m passing your request to the hotel.
+Booking request · awaiting your approval
+
+## Sells extras
+Pro and Growth
+Offers transfers, tours and extras at the right moment and passes the request to your team.
+Can you pick us up at the airport? We land at 1 am.
+Of course, a private transfer for up to 3 guests is €35. Shall I add it?
+Airport transfer +€35
+
+## Suggests every morning
+All plans
+Daily suggestions on pricing, operations and revenue opportunities. Nothing changes without your approval.
+L Lio Suggestions 08:00
+Saturday is 85% booked Raise the rate by 10% Approve Skip
+
+2 rooms still need cleaning Due before 2 pm check-ins
+
+Rate suggestions stay within your limits.
+
 ## What would you like to start with?
 Pick what matters and we set up your account around it.
 
@@ -1691,6 +1781,7 @@ Early-bird price (regularly $59 )
 - 1,000 AI messages / month
 - Channel sync with 100+ OTAs
 - WhatsApp AI messaging
+- Lio Suggestions every morning
 - Room rack reservation calendar
 - Automatic PDF visa forms
 Start with Starter
@@ -1708,8 +1799,10 @@ Early-bird price (regularly $109 )
 - 5,000 AI messages / month
 - Everything in Starter
 - WhatsApp + OTA inbox messaging (Booking.com, Airbnb, Expedia)
+- Lio takes booking requests on WhatsApp (you approve)
+- AI insights from reviews and messages
 - Online check-in with digital signature
-- Transfer and tour sales
+- Transfer, tour and extras sales
 - Mobile app
 Start with Pro
 
@@ -1723,6 +1816,7 @@ Early-bird price (regularly $189 )
 - Up to 2 properties, 150 rooms in total
 - 12,000 AI messages / month
 - Everything in Pro
+- Weekly AI summary
 - Priority channel sync
 - Priority support (next business day)
 - Custom onboarding call
@@ -1809,7 +1903,7 @@ Hallo! Unser Flug landet um 1 Uhr. Können Sie uns abholen, und ist ein später 
 
 Natürlich! Unser Flughafentransfer kostet 35 € für bis zu 3 Gäste. Soll ich ihn für Ihre Ankunft um 1 Uhr buchen? Später Check-in ist kein Problem. Lio, German
 
-Transfer booked, payment link sent.
+Transfer request created and passed to your team.
 
 What is an AI guest messaging assistant for hotels? Software that automatically answers the questions guests ask before and after booking, using the hotel's own information. Lio hands over messages it can't answer, or that need a human decision (discount requests, complaints, special requests), to your staff.
 
@@ -1825,7 +1919,16 @@ The guest writes in Japanese, Lio replies in Japanese, and you read the conversa
 Check-in and check-out times, parking, pet policy, breakfast hours, transport and room features. Enter them once and Lio uses them consistently in every reply.
 
 ## An assistant that sells
-Lio doesn't just answer questions: it offers airport transfers, city tours and extras at the right moment and creates the booking.
+Lio doesn't just answer questions: it offers airport transfers, city tours and extras at the right moment, then creates the request and passes it to your team.
+
+## Takes booking requests
+On the Pro and Growth plans, when a guest asks about a room on WhatsApp, Lio collects the dates, number of guests and room preference and quotes a price from your own rates and availability. The request comes to you, and it becomes a reservation once you approve it.
+
+## Suggestions every morning
+Every morning, Lio Suggestions flag pricing, operations (rooms waiting to be cleaned, pending requests), setup gaps and revenue opportunities. Nothing changes without your approval, and rate suggestions stay within the limits you set. Included in every plan.
+
+## Insights from reviews and messages
+On Pro and Growth, Lio summarises recurring complaint and praise themes from guest reviews and messages. A weekly AI summary is included with Growth and optional on Pro.
 
 ## You stay in control
 During the first days you can approve Lio's replies before they're sent. You decide which topics Lio closes on its own and which it hands to you.
@@ -1846,6 +1949,9 @@ A: Lio only uses the hotel information and reservation data you provide. When it
 
 Q: Does it answer Booking.com and Airbnb messages too?
 A: Yes. On the Pro and Growth plans, OTA messages arrive in Lio's inbox and are answered the same way.
+
+Q: Can Lio take bookings?
+A: Yes, on the Pro and Growth plans, with your approval. When a guest writes on WhatsApp, Lio asks for the dates, number of guests and room preference, quotes a price from your rates and availability, and passes the request to you. It only becomes a reservation once you approve it; Lio never confirms a booking on its own. Extra-service requests such as transfers and tours work the same way.
 
 Q: What happens when the message quota runs out?
 A: Messages keep arriving and appear in your dashboard; only automatic replies pause. You can upgrade to a higher plan to increase your quota.
@@ -2015,6 +2121,12 @@ Generate hotel invitation and accommodation letters for visa applications from r
 ## Transfer and tour sales
 Lio suggests airport transfers and tours during the conversation and passes the request to your team.
 
+## Lio Suggestions and AI insights
+Every morning Lio prepares suggestions on pricing, operations (rooms waiting to be cleaned, pending requests), setup gaps and revenue opportunities. Nothing changes without your approval, and rate suggestions stay within limits you set. On Pro and Growth, recurring complaints and praise in reviews and messages are summarised too.
+
+## Reports and team
+Occupancy, ADR, RevPAR and channel performance reports, plus a weekly and monthly email report. Six staff roles with their own permissions, and all notifications in one place.
+
 ## Mobile app
 Manage bookings, messages and check-ins away from the hotel with the iOS and Android app. It keeps working offline and syncs when you're back online.
 
@@ -2031,6 +2143,14 @@ AI messages / month 1,000 5,000 12,000
 Channel sync with 100+ OTAs Yes Yes Priority
 
 WhatsApp AI messaging Yes Yes Yes
+
+Lio Suggestions every morning (nothing changes without your approval) Yes Yes Yes
+
+Booking and extra-service requests via Lio on WhatsApp No Yes Yes
+
+AI insights from reviews and guest messages No Yes Yes
+
+Weekly AI summary No Optional Yes
 
 OTA inbox messaging (Booking.com, Airbnb, Expedia) No Yes Yes
 
@@ -2077,6 +2197,7 @@ Early-bird price (regularly $59 )
 - 1,000 AI messages / month
 - Channel sync with 100+ OTAs
 - WhatsApp AI messaging
+- Lio Suggestions every morning
 - Room rack reservation calendar
 - Automatic PDF visa forms
 Start with Starter
@@ -2094,8 +2215,10 @@ Early-bird price (regularly $109 )
 - 5,000 AI messages / month
 - Everything in Starter
 - WhatsApp + OTA inbox messaging (Booking.com, Airbnb, Expedia)
+- Lio takes booking requests on WhatsApp (you approve)
+- AI insights from reviews and messages
 - Online check-in with digital signature
-- Transfer and tour sales
+- Transfer, tour and extras sales
 - Mobile app
 Start with Pro
 
@@ -2109,6 +2232,7 @@ Early-bird price (regularly $189 )
 - Up to 2 properties, 150 rooms in total
 - 12,000 AI messages / month
 - Everything in Pro
+- Weekly AI summary
 - Priority channel sync
 - Priority support (next business day)
 - Custom onboarding call
@@ -3399,6 +3523,34 @@ L Lio Recepcionista IA, en línea
 Hallo! Ist ein später Check-in möglich?
 Natürlich! Unsere Rezeption ist rund um die Uhr besetzt. Respondido en alemán, 4 s
 
+## Lio no solo responde
+Mientras conversa con tus huéspedes, Lio recibe solicitudes de reserva y vende extras, y cada mañana te trae sugerencias. La última palabra siempre es tuya.
+
+## Recibe reservas
+Pro y Growth
+Pregunta fechas, personas y habitación por WhatsApp y da el precio según tus tarifas. Se convierte en reserva cuando la apruebas.
+WhatsApp
+¡Hola! ¿Tienen habitación para 2 del 17 al 19 de octubre?
+¡Sí! Doble con vistas al mar, 240 € en total por 2 noches. Paso su solicitud al hotel.
+Solicitud de reserva · pendiente de tu aprobación
+
+## Vende extras
+Pro y Growth
+Ofrece traslados, excursiones y extras en el momento justo y pasa la solicitud a tu equipo.
+¿Pueden recogernos en el aeropuerto? Aterrizamos a la 1.
+Claro, el traslado privado para hasta 3 personas cuesta 35 €. ¿Lo añado?
+Traslado al aeropuerto +35 €
+
+## Te sugiere cada mañana
+Todos los planes
+Sugerencias diarias sobre precios, operaciones y oportunidades de ingresos. Nada cambia sin tu aprobación.
+L Sugerencias de Lio 08:00
+Sábado al 85 % Sube la tarifa un 10 % Aprobar Omitir
+
+2 habitaciones sin limpiar Listas antes de las llegadas de las 14:00
+
+Las sugerencias de precio respetan tus límites.
+
 ## ¿Por dónde quieres empezar?
 Elige lo que te importa y preparamos tu cuenta en torno a ello.
 
@@ -3587,6 +3739,7 @@ Precio de lanzamiento (normalmente 59 $ )
 - 1.000 mensajes de IA / mes
 - Sincronización de reservas de OTAs (más de 100 canales)
 - Mensajería IA por WhatsApp
+- Sugerencias de Lio cada mañana
 - Calendario de reservas (planning de habitaciones)
 - Formularios de visado en PDF automáticos
 Empieza con Starter
@@ -3604,8 +3757,10 @@ Precio de lanzamiento (normalmente 109 $ )
 - 5.000 mensajes de IA / mes
 - Todo lo de Starter
 - Mensajería por WhatsApp y bandejas de las OTAs (Booking.com, Airbnb, Expedia)
+- Lio recibe solicitudes de reserva por WhatsApp (con tu aprobación)
+- Análisis con IA de reseñas y mensajes
 - Check-in online con firma digital
-- Venta de traslados y excursiones
+- Venta de traslados, excursiones y extras
 - App móvil para iOS y Android
 Empieza con Pro
 
@@ -3619,6 +3774,7 @@ Precio de lanzamiento (normalmente 189 $ )
 - Hasta 2 alojamientos, 150 habitaciones en total
 - 12.000 mensajes de IA / mes
 - Todo lo de Pro
+- Resumen semanal con IA
 - Sincronización de canales prioritaria
 - Soporte prioritario (siguiente día hábil)
 - Llamada de onboarding personalizada
@@ -3705,7 +3861,7 @@ Hallo! Unser Flug landet um 1 Uhr. Können Sie uns abholen, und ist ein später 
 
 Natürlich! Unser Flughafentransfer kostet 35 € für bis zu 3 Gäste. Soll ich ihn für Ihre Ankunft um 1 Uhr buchen? Später Check-in ist kein Problem. Lio, alemán
 
-Traslado reservado, enlace de pago enviado.
+Solicitud de traslado creada y enviada a tu equipo.
 
 ¿Qué es un asistente de IA para mensajes de huéspedes de hotel? Un software que responde automáticamente a las preguntas que hacen los huéspedes antes y después de reservar, usando la información del propio hotel. Lio pasa a tu equipo los mensajes que no sabe responder o que requieren una decisión humana (peticiones de descuento, quejas, solicitudes especiales).
 
@@ -3721,7 +3877,16 @@ El huésped escribe en japonés, Lio responde en japonés y tú lees la conversa
 Horarios de check-in y check-out, aparcamiento, política de mascotas, horario del desayuno, transporte y características de las habitaciones. Los introduces una vez y Lio los usa de forma coherente en cada respuesta.
 
 ## Un asistente que vende
-Lio no solo responde preguntas: ofrece traslados al aeropuerto, visitas por la ciudad y extras en el momento adecuado, y crea la reserva.
+Lio no solo responde preguntas: ofrece traslados al aeropuerto, visitas por la ciudad y extras en el momento adecuado, y pasa la solicitud a tu equipo.
+
+## Recibe solicitudes de reserva
+En los planes Pro y Growth, cuando un huésped pregunta por una habitación en WhatsApp, Lio recoge las fechas, el número de personas y la habitación que prefiere, y le da un precio según tus tarifas y tu disponibilidad. La solicitud te llega a ti y se convierte en reserva cuando la apruebas.
+
+## Sugerencias cada mañana
+Cada mañana, las Sugerencias de Lio señalan oportunidades de precio, tareas operativas (habitaciones por limpiar, solicitudes pendientes), ajustes de configuración que faltan y oportunidades de ingresos. Nada cambia sin tu aprobación y las sugerencias de precio no salen de los límites que tú fijas. Incluidas en todos los planes.
+
+## Análisis de reseñas y mensajes
+En Pro y Growth, Lio resume los temas de queja y de elogio que se repiten en las reseñas y los mensajes de tus huéspedes. El resumen semanal con IA viene incluido en Growth y es opcional en Pro.
 
 ## Tú mantienes el control
 Durante los primeros días puedes aprobar las respuestas de Lio antes de que se envíen. Tú decides qué temas cierra Lio por su cuenta y cuáles te pasa a ti.
@@ -3742,6 +3907,9 @@ A: Lio solo usa la información del hotel y los datos de reserva que tú le prop
 
 Q: ¿Responde también a los mensajes de Booking.com y Airbnb?
 A: Sí. En los planes Pro y Growth, los mensajes de las OTAs llegan a la bandeja de Lio y se responden de la misma manera.
+
+Q: ¿Lio puede recibir reservas?
+A: Sí, en los planes Pro y Growth y siempre con tu aprobación. Cuando un huésped escribe por WhatsApp, Lio le pregunta las fechas, el número de personas y la habitación que prefiere, le da un precio según tus tarifas y tu disponibilidad y te pasa la solicitud. Solo se convierte en reserva cuando tú la apruebas; Lio nunca confirma una reserva por su cuenta. Las solicitudes de servicios extra, como traslados o excursiones, funcionan igual.
 
 Q: ¿Qué pasa cuando se agota la cuota de mensajes?
 A: Los mensajes siguen llegando y aparecen en tu panel; solo se pausan las respuestas automáticas. Puedes pasarte a un plan superior para ampliar tu cuota.
@@ -3911,6 +4079,12 @@ Genera en un clic, a partir de los datos de la reserva, cartas de invitación y 
 ## Venta de traslados y excursiones
 Lio sugiere traslados al aeropuerto y excursiones durante la conversación y pasa la solicitud a tu equipo.
 
+## Sugerencias de Lio y análisis con IA
+Cada mañana Lio prepara sugerencias sobre precios, operaciones (habitaciones pendientes de limpieza, solicitudes sin atender), configuración incompleta y oportunidades de ingresos. Nada cambia sin tu aprobación y las sugerencias de precio respetan los límites que tú fijas. En Pro y Growth también resume las quejas y los elogios que se repiten en reseñas y mensajes.
+
+## Informes y equipo
+Informes de ocupación, ADR, RevPAR y rendimiento por canal, con un informe semanal y mensual por email. Seis roles de personal con sus propios permisos y todas las notificaciones en un solo lugar.
+
 ## App móvil
 Gestiona reservas, mensajes y check-ins fuera del hotel con la app para iOS y Android. Sigue funcionando sin conexión y se sincroniza cuando vuelves a estar online.
 
@@ -3927,6 +4101,14 @@ Mensajes de IA / mes 1.000 5.000 12.000
 Sincronización con más de 100 OTAs Sí Sí Prioritaria
 
 Mensajería IA por WhatsApp Sí Sí Sí
+
+Sugerencias de Lio cada mañana (nada cambia sin tu aprobación) Sí Sí Sí
+
+Solicitudes de reserva y de servicios extra con Lio por WhatsApp No Sí Sí
+
+Análisis con IA de reseñas y mensajes de huéspedes No Sí Sí
+
+Resumen semanal con IA No Opcional Sí
 
 Bandejas de OTAs (Booking.com, Airbnb, Expedia) No Sí Sí
 
@@ -3973,6 +4155,7 @@ Precio de lanzamiento (normalmente 59 $ )
 - 1.000 mensajes de IA / mes
 - Sincronización de reservas de OTAs (más de 100 canales)
 - Mensajería IA por WhatsApp
+- Sugerencias de Lio cada mañana
 - Calendario de reservas (planning de habitaciones)
 - Formularios de visado en PDF automáticos
 Empieza con Starter
@@ -3990,8 +4173,10 @@ Precio de lanzamiento (normalmente 109 $ )
 - 5.000 mensajes de IA / mes
 - Todo lo de Starter
 - Mensajería por WhatsApp y bandejas de las OTAs (Booking.com, Airbnb, Expedia)
+- Lio recibe solicitudes de reserva por WhatsApp (con tu aprobación)
+- Análisis con IA de reseñas y mensajes
 - Check-in online con firma digital
-- Venta de traslados y excursiones
+- Venta de traslados, excursiones y extras
 - App móvil para iOS y Android
 Empieza con Pro
 
@@ -4005,6 +4190,7 @@ Precio de lanzamiento (normalmente 189 $ )
 - Hasta 2 alojamientos, 150 habitaciones en total
 - 12.000 mensajes de IA / mes
 - Todo lo de Pro
+- Resumen semanal con IA
 - Sincronización de canales prioritaria
 - Soporte prioritario (siguiente día hábil)
 - Llamada de onboarding personalizada
@@ -4861,6 +5047,34 @@ L Lio Receptionist AI, online
 Hallo! Ist ein später Check-in möglich?
 Natürlich! Unsere Rezeption ist rund um die Uhr besetzt. Risposta in tedesco, 4 sec
 
+## Lio non si limita a rispondere
+Mentre parla con gli ospiti, Lio raccoglie richieste di prenotazione e vende extra, e ogni mattina ti porta dei suggerimenti. L’ultima parola è sempre tua.
+
+## Raccoglie prenotazioni
+Pro e Growth
+Su WhatsApp chiede date, ospiti e camera e indica il prezzo in base alle tue tariffe. Diventa una prenotazione quando la approvi.
+WhatsApp
+Buongiorno! Avete una camera per 2 dal 17 al 19 ottobre?
+Sì! Una doppia vista mare, 240 € in totale per 2 notti. Inoltro la richiesta all’hotel.
+Richiesta di prenotazione · in attesa di approvazione
+
+## Vende extra
+Pro e Growth
+Propone transfer, tour e servizi extra al momento giusto e passa la richiesta al tuo team.
+Potete venirci a prendere in aeroporto? Atterriamo all’una.
+Certo, il transfer privato fino a 3 persone costa 35 €. Lo aggiungo?
+Transfer aeroporto +35 €
+
+## Ogni mattina ti suggerisce
+Tutti i piani
+Suggerimenti quotidiani su prezzi, operatività e opportunità di ricavo. Nulla cambia senza la tua approvazione.
+L Suggerimenti di Lio 08:00
+Sabato all’85% Alza la tariffa del 10% Approva Salta
+
+2 camere da pulire Pronte prima degli arrivi delle 14:00
+
+I suggerimenti sui prezzi restano nei tuoi limiti.
+
 ## Da cosa vuoi iniziare?
 Scegli ciò che ti serve e prepariamo il tuo account su misura.
 
@@ -5049,6 +5263,7 @@ Prezzo di lancio (normalmente 59 $ )
 - 1.000 messaggi AI / mese
 - Sincronizzazione con oltre 100 OTA
 - Messaggi AI su WhatsApp
+- Suggerimenti di Lio ogni mattina
 - Planning camere con calendario prenotazioni
 - Moduli per il visto in PDF automatici
 Inizia con Starter
@@ -5066,8 +5281,10 @@ Prezzo di lancio (normalmente 109 $ )
 - 5.000 messaggi AI / mese
 - Tutto ciò che include Starter
 - WhatsApp + caselle OTA (Booking.com, Airbnb, Expedia)
+- Lio raccoglie richieste di prenotazione su WhatsApp (con la tua approvazione)
+- Insight AI da recensioni e messaggi
 - Check-in online con firma digitale
-- Vendita di transfer e tour
+- Vendita di transfer, tour ed extra
 - App mobile iOS e Android
 Inizia con Pro
 
@@ -5081,6 +5298,7 @@ Prezzo di lancio (normalmente 189 $ )
 - Fino a 2 strutture, 150 camere in totale
 - 12.000 messaggi AI / mese
 - Tutto ciò che include Pro
+- Riepilogo AI settimanale
 - Sincronizzazione dei canali prioritaria
 - Supporto prioritario (entro il giorno lavorativo successivo)
 - Chiamata di onboarding personalizzata
@@ -5167,7 +5385,7 @@ Hallo! Unser Flug landet um 1 Uhr. Können Sie uns abholen, und ist ein später 
 
 Natürlich! Unser Flughafentransfer kostet 35 € für bis zu 3 Gäste. Soll ich ihn für Ihre Ankunft um 1 Uhr buchen? Später Check-in ist kein Problem. Lio, tedesco
 
-Transfer prenotato, link di pagamento inviato.
+Richiesta di transfer creata e inoltrata al tuo team.
 
 Che cos'è un assistente AI per i messaggi degli ospiti di un hotel? Un software che risponde automaticamente alle domande che gli ospiti fanno prima e dopo la prenotazione, usando le informazioni dell'hotel stesso. Lio passa al tuo staff i messaggi a cui non sa rispondere o che richiedono una decisione umana (richieste di sconto, reclami, richieste speciali).
 
@@ -5183,7 +5401,16 @@ L'ospite scrive in giapponese, Lio risponde in giapponese e tu leggi la conversa
 Orari di check-in e check-out, parcheggio, animali, orari della colazione, trasporti e caratteristiche delle camere. Li inserisci una volta e Lio li usa in modo coerente in ogni risposta.
 
 ## Un assistente che vende
-Lio non si limita a rispondere: propone transfer dall'aeroporto, tour della città ed extra al momento giusto e crea la prenotazione.
+Lio non si limita a rispondere: propone transfer dall'aeroporto, tour della città ed extra al momento giusto e inoltra la richiesta al tuo team.
+
+## Raccoglie richieste di prenotazione
+Con i piani Pro e Growth, quando un ospite chiede una camera su WhatsApp, Lio raccoglie date, numero di ospiti e camera preferita e indica un prezzo in base alle tue tariffe e disponibilità. La richiesta arriva a te e diventa una prenotazione quando la approvi.
+
+## Suggerimenti ogni mattina
+Ogni mattina i Suggerimenti di Lio segnalano interventi su prezzi, operatività (camere da pulire, richieste in sospeso), impostazioni mancanti e opportunità di ricavo. Nulla cambia senza la tua approvazione e i suggerimenti sui prezzi restano nei limiti che imposti tu. Inclusi in tutti i piani.
+
+## Insight da recensioni e messaggi
+Con Pro e Growth, Lio riassume i temi di lamentela e di apprezzamento che ricorrono nelle recensioni e nei messaggi degli ospiti. Il riepilogo AI settimanale è incluso in Growth e opzionale in Pro.
 
 ## Il controllo resta a te
 Nei primi giorni puoi approvare le risposte di Lio prima che vengano inviate. Decidi tu quali argomenti Lio chiude da solo e quali passa a te.
@@ -5204,6 +5431,9 @@ A: Lio usa solo le informazioni sull'hotel e i dati delle prenotazioni che forni
 
 Q: Risponde anche ai messaggi di Booking.com e Airbnb?
 A: Sì, anche a quelli di Expedia. Con i piani Pro e Growth i messaggi delle OTA arrivano nella casella di Lio e ricevono risposta allo stesso modo.
+
+Q: Lio può ricevere prenotazioni?
+A: Sì, con i piani Pro e Growth e sempre con la tua approvazione. Quando un ospite scrive su WhatsApp, Lio chiede date, numero di ospiti e camera preferita, indica un prezzo in base alle tue tariffe e disponibilità e ti passa la richiesta. Diventa una prenotazione solo dopo la tua approvazione: Lio non conferma mai una prenotazione da solo. Allo stesso modo raccoglie le richieste di servizi extra come transfer e tour.
 
 Q: Cosa succede quando i messaggi inclusi finiscono?
 A: I messaggi continuano ad arrivare e compaiono nella tua dashboard; si sospendono solo le risposte automatiche. Puoi passare a un piano superiore per aumentare i messaggi disponibili.
@@ -5373,6 +5603,12 @@ Genera con un clic, dai dati della prenotazione, lettere di invito e di conferma
 ## Vendita di transfer e tour
 Lio propone transfer dall'aeroporto e tour durante la conversazione e inoltra la richiesta al tuo team.
 
+## Suggerimenti di Lio e insight AI
+Ogni mattina Lio prepara suggerimenti su prezzi, operatività (camere da pulire, richieste in sospeso), impostazioni mancanti e opportunità di ricavo. Nulla cambia senza la tua approvazione e i suggerimenti sui prezzi restano nei limiti che imposti tu. Con Pro e Growth riassume anche lamentele ed elogi ricorrenti in recensioni e messaggi.
+
+## Report e team
+Report su occupazione, ADR, RevPAR e rendimento dei canali, con un report settimanale e mensile via email. Sei ruoli per il personale, ognuno con i propri permessi, e tutte le notifiche in un unico posto.
+
 ## App mobile
 Gestisci prenotazioni, messaggi e check-in anche lontano dall'hotel con l'app iOS e Android. Funziona anche offline e sincronizza i dati quando torni online.
 
@@ -5389,6 +5625,14 @@ Messaggi AI / mese 1.000 5.000 12.000
 Sincronizzazione con oltre 100 OTA Sì Sì Prioritaria
 
 Messaggi AI su WhatsApp Sì Sì Sì
+
+Suggerimenti di Lio ogni mattina (nulla cambia senza la tua approvazione) Sì Sì Sì
+
+Richieste di prenotazione e servizi extra con Lio su WhatsApp No Sì Sì
+
+Insight AI da recensioni e messaggi degli ospiti No Sì Sì
+
+Riepilogo AI settimanale No Opzionale Sì
 
 Caselle OTA (Booking.com, Airbnb, Expedia) No Sì Sì
 
@@ -5435,6 +5679,7 @@ Prezzo di lancio (normalmente 59 $ )
 - 1.000 messaggi AI / mese
 - Sincronizzazione con oltre 100 OTA
 - Messaggi AI su WhatsApp
+- Suggerimenti di Lio ogni mattina
 - Planning camere con calendario prenotazioni
 - Moduli per il visto in PDF automatici
 Inizia con Starter
@@ -5452,8 +5697,10 @@ Prezzo di lancio (normalmente 109 $ )
 - 5.000 messaggi AI / mese
 - Tutto ciò che include Starter
 - WhatsApp + caselle OTA (Booking.com, Airbnb, Expedia)
+- Lio raccoglie richieste di prenotazione su WhatsApp (con la tua approvazione)
+- Insight AI da recensioni e messaggi
 - Check-in online con firma digitale
-- Vendita di transfer e tour
+- Vendita di transfer, tour ed extra
 - App mobile iOS e Android
 Inizia con Pro
 
@@ -5467,6 +5714,7 @@ Prezzo di lancio (normalmente 189 $ )
 - Fino a 2 strutture, 150 camere in totale
 - 12.000 messaggi AI / mese
 - Tutto ciò che include Pro
+- Riepilogo AI settimanale
 - Sincronizzazione dei canali prioritaria
 - Supporto prioritario (entro il giorno lavorativo successivo)
 - Chiamata di onboarding personalizzata
@@ -6323,6 +6571,34 @@ L Lio Recepcionista de IA, online
 Hallo! Ist ein später Check-in möglich?
 Natürlich! Unsere Rezeption ist rund um die Uhr besetzt. Respondido em alemão, 4 s
 
+## A Lio não só responde
+Enquanto conversa com os hóspedes, a Lio recebe pedidos de reserva e vende extras, e toda manhã traz sugestões para você. A palavra final é sempre sua.
+
+## Recebe reservas
+Pro e Growth
+No WhatsApp, pergunta datas, hóspedes e quarto e informa o preço com base nas suas tarifas. Vira reserva quando você aprova.
+WhatsApp
+Oi! Tem quarto para 2 de 17 a 19 de outubro?
+Tem sim! Duplo com vista para o mar, 240 € no total por 2 noites. Vou passar seu pedido para o hotel.
+Pedido de reserva · aguardando sua aprovação
+
+## Vende extras
+Pro e Growth
+Oferece transfers, passeios e serviços extras na hora certa e repassa o pedido para a sua equipe.
+Vocês podem nos buscar no aeroporto? Chegamos à 1h.
+Claro, o transfer privativo para até 3 pessoas custa 35 €. Posso incluir?
+Transfer do aeroporto +35 €
+
+## Sugere toda manhã
+Todos os planos
+Sugestões diárias sobre preços, operação e oportunidades de receita. Nada muda sem sua aprovação.
+L Sugestões da Lio 08:00
+Sábado com 85% de ocupação Aumente a tarifa em 10% Aprovar Pular
+
+2 quartos para limpar Prontos antes dos check-ins das 14h
+
+As sugestões de preço respeitam seus limites.
+
 ## Por onde você quer começar?
 Escolha o que importa e preparamos sua conta com base nisso.
 
@@ -6511,6 +6787,7 @@ Preço de lançamento (normalmente US$ 59 )
 - 1.000 mensagens de IA / mês
 - Sincronização de reservas das OTAs (100+ canais)
 - Mensagens de IA no WhatsApp
+- Sugestões da Lio toda manhã
 - Calendário de reservas (mapa de reservas)
 - Formulários de visto em PDF automáticos
 Começar com o Starter
@@ -6528,8 +6805,10 @@ Preço de lançamento (normalmente US$ 109 )
 - 5.000 mensagens de IA / mês
 - Tudo do Starter
 - WhatsApp + caixas de entrada das OTAs (Booking.com, Airbnb, Expedia)
+- A Lio recebe pedidos de reserva no WhatsApp (com sua aprovação)
+- Insights de IA sobre avaliações e mensagens
 - Check-in online com assinatura digital
-- Venda de transfers e passeios
+- Venda de transfers, passeios e extras
 - App móvel
 Começar com o Pro
 
@@ -6543,6 +6822,7 @@ Preço de lançamento (normalmente US$ 189 )
 - Até 2 propriedades, 150 quartos no total
 - 12.000 mensagens de IA / mês
 - Tudo do Pro
+- Resumo semanal com IA
 - Sincronização de canais prioritária
 - Suporte prioritário (próximo dia útil)
 - Chamada de onboarding personalizada
@@ -6629,7 +6909,7 @@ Hallo! Unser Flug landet um 1 Uhr. Können Sie uns abholen, und ist ein später 
 
 Natürlich! Unser Flughafentransfer kostet 35 € für bis zu 3 Gäste. Soll ich ihn für Ihre Ankunft um 1 Uhr buchen? Später Check-in ist kein Problem. Lio, alemão
 
-Transfer reservado, link de pagamento enviado.
+Pedido de transfer criado e repassado para a sua equipe.
 
 O que é uma assistente de IA para mensagens de hóspedes em hotéis? É um software que responde automaticamente às perguntas que os hóspedes fazem antes e depois da reserva, usando as informações do próprio hotel. A Lio repassa para a sua equipe as mensagens que não consegue responder ou que exigem uma decisão humana (pedidos de desconto, reclamações, pedidos especiais).
 
@@ -6645,7 +6925,16 @@ O hóspede escreve em japonês, a Lio responde em japonês e você lê a convers
 Horários de check-in e check-out, estacionamento, política para pets, horário do café da manhã, transporte e características dos quartos. Cadastre uma vez e a Lio usa essas informações de forma consistente em todas as respostas.
 
 ## Uma assistente que vende
-A Lio não só responde perguntas: ela oferece transfers do aeroporto, city tours e serviços extras no momento certo e cria a reserva.
+A Lio não só responde perguntas: ela oferece transfers do aeroporto, city tours e serviços extras no momento certo e repassa o pedido para a sua equipe.
+
+## Recebe pedidos de reserva
+Nos planos Pro e Growth, quando um hóspede pergunta por um quarto no WhatsApp, a Lio coleta as datas, o número de hóspedes e o quarto preferido e informa o preço com base nas suas tarifas e disponibilidade. O pedido chega para você e vira reserva quando você aprova.
+
+## Sugestões toda manhã
+Toda manhã, as Sugestões da Lio apontam ajustes de preço, tarefas da operação (quartos aguardando limpeza, pedidos pendentes), configurações que faltam e oportunidades de receita. Nada muda sem sua aprovação, e as sugestões de preço ficam dentro dos limites que você define. Em todos os planos.
+
+## Insights de avaliações e mensagens
+Nos planos Pro e Growth, a Lio resume os temas de reclamação e de elogio que se repetem nas avaliações e mensagens dos hóspedes. O resumo semanal com IA está incluído no Growth e é opcional no Pro.
 
 ## Você mantém o controle
 Nos primeiros dias, você pode aprovar as respostas da Lio antes do envio. Você decide quais assuntos a Lio resolve sozinha e quais ela repassa para você.
@@ -6666,6 +6955,9 @@ A: A Lio usa apenas as informações do hotel e os dados de reserva que você fo
 
 Q: Ela também responde às mensagens do Booking.com e do Airbnb?
 A: Sim. Nos planos Pro e Growth, as mensagens das OTAs chegam à caixa de entrada da Lio e são respondidas da mesma forma.
+
+Q: A Lio consegue receber reservas?
+A: Sim, nos planos Pro e Growth e sempre com a sua aprovação. Quando um hóspede escreve no WhatsApp, a Lio pergunta as datas, o número de hóspedes e o quarto preferido, informa o preço com base nas suas tarifas e disponibilidade e repassa o pedido para você. Ele só vira reserva depois que você aprova; a Lio nunca confirma uma reserva sozinha. Pedidos de serviços extras, como transfers e passeios, funcionam do mesmo jeito.
 
 Q: O que acontece quando a cota de mensagens acaba?
 A: As mensagens continuam chegando e aparecem no seu painel; apenas as respostas automáticas ficam pausadas. Você pode migrar para um plano superior para aumentar a cota.
@@ -6835,6 +7127,12 @@ Gere cartas-convite e declarações de hospedagem do hotel para pedidos de visto
 ## Venda de transfers e passeios
 A Lio sugere transfers do aeroporto e passeios durante a conversa e repassa o pedido para a sua equipe.
 
+## Sugestões da Lio e insights de IA
+Toda manhã a Lio prepara sugestões sobre preços, operação (quartos aguardando limpeza, pedidos pendentes), configurações que faltam e oportunidades de receita. Nada muda sem sua aprovação, e as sugestões de preço respeitam os limites que você define. Nos planos Pro e Growth, ela também resume as reclamações e os elogios que se repetem em avaliações e mensagens.
+
+## Relatórios e equipe
+Relatórios de ocupação, ADR, RevPAR e desempenho por canal, com relatório semanal e mensal por e-mail. Seis funções de equipe com permissões próprias e todas as notificações em um só lugar.
+
 ## App para celular
 Gerencie reservas, mensagens e check-ins fora do hotel com o app para iOS e Android. Ele continua funcionando offline e sincroniza quando você volta a ficar online.
 
@@ -6851,6 +7149,14 @@ Mensagens de IA / mês 1.000 5.000 12.000
 Sincronização com mais de 100 OTAs Sim Sim Prioritária
 
 Mensagens de IA no WhatsApp Sim Sim Sim
+
+Sugestões da Lio toda manhã (nada muda sem sua aprovação) Sim Sim Sim
+
+Pedidos de reserva e de serviços extras pela Lio no WhatsApp Não Sim Sim
+
+Insights de IA sobre avaliações e mensagens de hóspedes Não Sim Sim
+
+Resumo semanal com IA Não Opcional Sim
 
 Caixas de entrada das OTAs (Booking.com, Airbnb, Expedia) Não Sim Sim
 
@@ -6897,6 +7203,7 @@ Preço de lançamento (normalmente US$ 59 )
 - 1.000 mensagens de IA / mês
 - Sincronização de reservas das OTAs (100+ canais)
 - Mensagens de IA no WhatsApp
+- Sugestões da Lio toda manhã
 - Calendário de reservas (mapa de reservas)
 - Formulários de visto em PDF automáticos
 Começar com o Starter
@@ -6914,8 +7221,10 @@ Preço de lançamento (normalmente US$ 109 )
 - 5.000 mensagens de IA / mês
 - Tudo do Starter
 - WhatsApp + caixas de entrada das OTAs (Booking.com, Airbnb, Expedia)
+- A Lio recebe pedidos de reserva no WhatsApp (com sua aprovação)
+- Insights de IA sobre avaliações e mensagens
 - Check-in online com assinatura digital
-- Venda de transfers e passeios
+- Venda de transfers, passeios e extras
 - App móvel
 Começar com o Pro
 
@@ -6929,6 +7238,7 @@ Preço de lançamento (normalmente US$ 189 )
 - Até 2 propriedades, 150 quartos no total
 - 12.000 mensagens de IA / mês
 - Tudo do Pro
+- Resumo semanal com IA
 - Sincronização de canais prioritária
 - Suporte prioritário (próximo dia útil)
 - Chamada de onboarding personalizada
@@ -7785,6 +8095,34 @@ L Lio Réceptionniste IA, en ligne
 Hallo! Ist ein später Check-in möglich?
 Natürlich! Unsere Rezeption ist rund um die Uhr besetzt. Répondu en allemand, 4 s
 
+## Lio ne fait pas que répondre
+En échangeant avec vos clients, Lio prend les demandes de réservation et vend vos extras ; chaque matin, il vous apporte des suggestions. Le dernier mot vous revient toujours.
+
+## Prend les réservations
+Pro et Growth
+Sur WhatsApp, il demande dates, nombre de personnes et chambre, puis annonce votre tarif. La réservation est créée une fois validée par vous.
+WhatsApp
+Bonjour ! Avez-vous une chambre pour 2 du 17 au 19 octobre ?
+Oui ! Une double vue mer, 240 € au total pour 2 nuits. Je transmets votre demande à l’hôtel.
+Demande de réservation · en attente de validation
+
+## Vend vos extras
+Pro et Growth
+Propose transferts, excursions et services au bon moment et transmet la demande à votre équipe.
+Pouvez-vous venir nous chercher à l’aéroport ? Nous atterrissons à 1 h.
+Bien sûr, le transfert privé jusqu’à 3 personnes coûte 35 €. Je l’ajoute ?
+Transfert aéroport +35 €
+
+## Vous suggère chaque matin
+Tous les forfaits
+Des suggestions quotidiennes sur les prix, l’exploitation et les revenus. Rien ne change sans votre accord.
+L Suggestions de Lio 08:00
+Samedi rempli à 85 % Augmentez le tarif de 10 % Valider Ignorer
+
+2 chambres à nettoyer Prêtes avant les arrivées de 14 h
+
+Les suggestions de prix restent dans vos limites.
+
 ## Par quoi voulez-vous commencer ?
 Choisissez ce qui compte pour vous, nous configurons votre compte en conséquence.
 
@@ -7973,6 +8311,7 @@ Prix de lancement (normalement 59 $ )
 - 1 000 messages IA / mois
 - Synchronisation des réservations OTA (100+ canaux)
 - Messagerie IA sur WhatsApp
+- Suggestions de Lio chaque matin
 - Planning des chambres (calendrier des réservations)
 - Formulaires de visa PDF automatiques
 Commencer avec Starter
@@ -7990,8 +8329,10 @@ Prix de lancement (normalement 109 $ )
 - 5 000 messages IA / mois
 - Tout le forfait Starter
 - WhatsApp + messagerie des OTA (Booking.com, Airbnb, Expedia)
+- Lio prend les demandes de réservation sur WhatsApp (avec votre accord)
+- Analyses IA des avis et des messages
 - Check-in en ligne avec signature électronique
-- Vente de transferts et d'excursions
+- Vente de transferts, d'excursions et d'extras
 - Application mobile
 Commencer avec Pro
 
@@ -8005,6 +8346,7 @@ Prix de lancement (normalement 189 $ )
 - Jusqu'à 2 établissements, 150 chambres au total
 - 12 000 messages IA / mois
 - Tout le forfait Pro
+- Synthèse IA hebdomadaire
 - Synchronisation des canaux prioritaire
 - Support prioritaire (jour ouvré suivant)
 - Appel de prise en main personnalisé
@@ -8091,7 +8433,7 @@ Hallo! Unser Flug landet um 1 Uhr. Können Sie uns abholen, und ist ein später 
 
 Natürlich! Unser Flughafentransfer kostet 35 € für bis zu 3 Gäste. Soll ich ihn für Ihre Ankunft um 1 Uhr buchen? Später Check-in ist kein Problem. Lio, allemand
 
-Transfert réservé, lien de paiement envoyé.
+Demande de transfert créée et transmise à votre équipe.
 
 Qu'est-ce qu'un assistant IA de messagerie client pour hôtels ? Un logiciel qui répond automatiquement aux questions que les clients posent avant et après leur réservation, à partir des informations propres à l'hôtel. Lio transmet à votre équipe les messages auxquels il ne peut pas répondre ou qui demandent une décision humaine (demandes de remise, réclamations, demandes particulières).
 
@@ -8107,7 +8449,16 @@ Le client écrit en japonais, Lio répond en japonais, et vous lisez la conversa
 Horaires d'arrivée et de départ, parking, animaux acceptés, horaires du petit-déjeuner, transports et équipements des chambres. Saisissez-les une fois, et Lio les utilise de façon cohérente dans chaque réponse.
 
 ## Un assistant qui vend
-Lio ne se contente pas de répondre : il propose au bon moment transferts aéroport, visites de la ville et prestations supplémentaires, puis enregistre la réservation.
+Lio ne se contente pas de répondre : il propose au bon moment transferts aéroport, visites de la ville et prestations supplémentaires, puis transmet la demande à votre équipe.
+
+## Il prend les demandes de réservation
+Avec les forfaits Pro et Growth, quand un client demande une chambre sur WhatsApp, Lio recueille les dates, le nombre de personnes et la chambre souhaitée, puis annonce un prix calculé à partir de vos tarifs et disponibilités. La demande vous est transmise et devient une réservation une fois que vous l'avez validée.
+
+## Des suggestions chaque matin
+Chaque matin, les Suggestions de Lio portent sur les prix, l'exploitation (chambres à nettoyer, demandes en attente), les réglages manquants et les opportunités de revenus. Rien ne change sans votre accord, et les suggestions de prix restent dans les limites que vous avez fixées. Inclus dans tous les forfaits.
+
+## Ce que disent vos clients
+Avec Pro et Growth, Lio résume les sujets de plainte et de satisfaction qui reviennent dans les avis et les messages de vos clients. Une synthèse IA hebdomadaire est incluse dans Growth et proposée en option avec Pro.
 
 ## Vous gardez la main
 Les premiers jours, vous pouvez valider les réponses de Lio avant leur envoi. Vous décidez quels sujets Lio traite seul et lesquels il vous transmet.
@@ -8128,6 +8479,9 @@ A: Lio utilise uniquement les informations de l'hôtel et les données de réser
 
 Q: Répond-il aussi aux messages Booking.com et Airbnb ?
 A: Oui. Avec les forfaits Pro et Growth, les messages OTA arrivent dans la boîte de réception de Lio et reçoivent une réponse de la même manière.
+
+Q: Lio peut-il prendre des réservations ?
+A: Oui, avec les forfaits Pro et Growth, et toujours avec votre accord. Quand un client écrit sur WhatsApp, Lio lui demande les dates, le nombre de personnes et la chambre souhaitée, annonce un prix calculé à partir de vos tarifs et disponibilités, puis vous transmet la demande. Elle ne devient une réservation qu'après votre validation : Lio ne confirme jamais une réservation seul. Les demandes de services comme les transferts ou les excursions suivent le même principe.
 
 Q: Que se passe-t-il quand le quota de messages est épuisé ?
 A: Les messages continuent d'arriver et s'affichent dans votre tableau de bord ; seules les réponses automatiques sont suspendues. Vous pouvez passer à un forfait supérieur pour augmenter votre quota.
@@ -8297,6 +8651,12 @@ Générez en un clic, à partir des données de réservation, les lettres d'invi
 ## Vente de transferts et d'excursions
 Lio propose transferts aéroport et excursions pendant la conversation et transmet la demande à votre équipe.
 
+## Suggestions de Lio et analyses IA
+Chaque matin, Lio prépare des suggestions sur les prix, l'exploitation (chambres à nettoyer, demandes en attente), les réglages manquants et les opportunités de revenus. Rien ne change sans votre accord, et les suggestions de prix restent dans les limites que vous fixez. Avec Pro et Growth, les plaintes et compliments récurrents dans les avis et les messages sont aussi résumés.
+
+## Rapports et équipe
+Rapports d'occupation, ADR, RevPAR et performance par canal, avec un rapport hebdomadaire et mensuel par e-mail. Six rôles pour le personnel, chacun avec ses droits, et toutes les notifications au même endroit.
+
 ## Application mobile
 Gérez réservations, messages et check-ins hors de l'hôtel avec l'application iOS et Android. Elle fonctionne hors ligne et se synchronise dès que vous êtes de nouveau connecté.
 
@@ -8313,6 +8673,14 @@ Messages IA / mois 1 000 5 000 12 000
 Synchronisation avec plus de 100 OTA Oui Oui Prioritaire
 
 Messagerie IA sur WhatsApp Oui Oui Oui
+
+Suggestions de Lio chaque matin (rien ne change sans votre accord) Oui Oui Oui
+
+Demandes de réservation et de services via Lio sur WhatsApp Non Oui Oui
+
+Analyses IA des avis et des messages clients Non Oui Oui
+
+Synthèse IA hebdomadaire Non En option Oui
 
 Messagerie des OTA (Booking.com, Airbnb, Expedia) Non Oui Oui
 
@@ -8359,6 +8727,7 @@ Prix de lancement (normalement 59 $ )
 - 1 000 messages IA / mois
 - Synchronisation des réservations OTA (100+ canaux)
 - Messagerie IA sur WhatsApp
+- Suggestions de Lio chaque matin
 - Planning des chambres (calendrier des réservations)
 - Formulaires de visa PDF automatiques
 Commencer avec Starter
@@ -8376,8 +8745,10 @@ Prix de lancement (normalement 109 $ )
 - 5 000 messages IA / mois
 - Tout le forfait Starter
 - WhatsApp + messagerie des OTA (Booking.com, Airbnb, Expedia)
+- Lio prend les demandes de réservation sur WhatsApp (avec votre accord)
+- Analyses IA des avis et des messages
 - Check-in en ligne avec signature électronique
-- Vente de transferts et d'excursions
+- Vente de transferts, d'excursions et d'extras
 - Application mobile
 Commencer avec Pro
 
@@ -8391,6 +8762,7 @@ Prix de lancement (normalement 189 $ )
 - Jusqu'à 2 établissements, 150 chambres au total
 - 12 000 messages IA / mois
 - Tout le forfait Pro
+- Synthèse IA hebdomadaire
 - Synchronisation des canaux prioritaire
 - Support prioritaire (jour ouvré suivant)
 - Appel de prise en main personnalisé
