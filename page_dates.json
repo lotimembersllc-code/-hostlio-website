@@ -1,7 +1,7 @@
 {
 "/en/": {
 "d": "2026-10-08",
-"h": "41e48fb52c10"
+"h": "dde39c1d077f"
 },
 "/en/about/": {
 "d": "2026-09-23",
@@ -53,11 +53,11 @@
 },
 "/en/boutique-hotel-software/": {
 "d": "2026-10-08",
-"h": "54e515fc1b34"
+"h": "7fea0fd31930"
 },
 "/en/channel-manager/": {
-"d": "2026-10-03",
-"h": "caf41a1e28cd"
+"d": "2026-10-08",
+"h": "e2a47a36587a"
 },
 "/en/contact/": {
 "d": "2026-09-23",
@@ -73,19 +73,19 @@
 },
 "/en/faq/": {
 "d": "2026-10-08",
-"h": "b0da680d9c46"
+"h": "2d8333dd8a39"
 },
 "/en/features/": {
 "d": "2026-10-08",
-"h": "839b2d7260d0"
+"h": "953308d31f1b"
 },
 "/en/guesthouse-software/": {
 "d": "2026-10-04",
 "h": "ee777ddf21ad"
 },
 "/en/hostel-software/": {
-"d": "2026-10-03",
-"h": "2c5a0d2b8373"
+"d": "2026-10-08",
+"h": "6e138527d045"
 },
 "/en/hotel-software-comparison/": {
 "d": "2026-10-08",
@@ -93,11 +93,11 @@
 },
 "/en/online-check-in/": {
 "d": "2026-10-08",
-"h": "2f401e16790a"
+"h": "bbfa7bc7a2c4"
 },
 "/en/pricing/": {
 "d": "2026-10-08",
-"h": "524ff52f8415"
+"h": "acbb2485d645"
 },
 "/en/privacy/": {
 "d": "2026-10-04",
@@ -109,7 +109,7 @@
 },
 "/en/security/": {
 "d": "2026-10-08",
-"h": "1db9a8e2dfaf"
+"h": "27cc6cbff415"
 },
 "/en/terms/": {
 "d": "2026-10-04",
@@ -117,7 +117,7 @@
 },
 "/es/": {
 "d": "2026-10-08",
-"h": "42c97bc171d5"
+"h": "9a2aa9e7a5f1"
 },
 "/es/asistente-ia-para-huespedes/": {
 "d": "2026-10-08",
@@ -148,12 +148,12 @@
 "h": "b162264f7e4e"
 },
 "/es/channel-manager/": {
-"d": "2026-10-03",
-"h": "53b721c566a8"
+"d": "2026-10-08",
+"h": "ac110e928b80"
 },
 "/es/check-in-online/": {
 "d": "2026-10-08",
-"h": "a1df8c6ea23a"
+"h": "92393d4d08aa"
 },
 "/es/comparativa-software-hotelero/": {
 "d": "2026-10-08",
@@ -169,15 +169,15 @@
 },
 "/es/funcionalidades/": {
 "d": "2026-10-08",
-"h": "b12936443d99"
+"h": "6e5dd4649b80"
 },
 "/es/precios/": {
 "d": "2026-10-08",
-"h": "98c7ad38b6bf"
+"h": "b54138f7b372"
 },
 "/es/preguntas-frecuentes/": {
 "d": "2026-10-08",
-"h": "6b0dc577d26b"
+"h": "586a20d0e0e9"
 },
 "/es/privacidad/": {
 "d": "2026-10-04",
@@ -185,7 +185,7 @@
 },
 "/es/seguridad/": {
 "d": "2026-10-08",
-"h": "d5b121e21970"
+"h": "33abcadb34f7"
 },
 "/es/sobre-nosotros/": {
 "d": "2026-09-23",
@@ -197,15 +197,15 @@
 },
 "/es/software-hotel-boutique/": {
 "d": "2026-10-08",
-"h": "d358e8d82a0d"
+"h": "21962440c6f9"
 },
 "/es/software-para-hostales/": {
 "d": "2026-10-04",
 "h": "110837fab021"
 },
 "/es/software-para-hostels/": {
-"d": "2026-10-03",
-"h": "0d505a895c53"
+"d": "2026-10-08",
+"h": "74ecac6470e4"
 },
 "/es/terminos/": {
 "d": "2026-10-04",
@@ -213,7 +213,7 @@
 },
 "/fr/": {
 "d": "2026-10-08",
-"h": "c0608ccb22b6"
+"h": "93a0ac8ba669"
 },
 "/fr/a-propos/": {
 "d": "2026-10-03",
@@ -248,12 +248,12 @@
 "h": "5fdf99df84f4"
 },
 "/fr/channel-manager/": {
-"d": "2026-10-03",
-"h": "7a92e7fb6923"
+"d": "2026-10-08",
+"h": "ee425bef4ec3"
 },
 "/fr/check-in-en-ligne/": {
 "d": "2026-10-08",
-"h": "1472e8b4409a"
+"h": "f7d31b202121"
 },
 "/fr/comparatif-logiciels-hoteliers/": {
 "d": "2026-10-08",
@@ -273,15 +273,15 @@
 },
 "/fr/faq/": {
 "d": "2026-10-08",
-"h": "e6f2614e45a1"
+"h": "178cf8a9e7cb"
 },
 "/fr/fonctionnalites/": {
 "d": "2026-10-08",
-"h": "5388b05f1a4c"
+"h": "d1334924e9d6"
 },
 "/fr/logiciel-auberge-de-jeunesse/": {
-"d": "2026-10-03",
-"h": "8d5d402b1380"
+"d": "2026-10-08",
+"h": "0a685955b643"
 },
 "/fr/logiciel-chambres-d-hotes/": {
 "d": "2026-10-04",
@@ -289,7 +289,7 @@
 },
 "/fr/logiciel-hotel-boutique/": {
 "d": "2026-10-08",
-"h": "0478ca000d9a"
+"h": "982dba04ac6c"
 },
 "/fr/logiciel-residence-hoteliere/": {
 "d": "2026-10-08",
@@ -297,7 +297,7 @@
 },
 "/fr/securite/": {
 "d": "2026-10-08",
-"h": "7ce7de5c6493"
+"h": "a4ac652f0cef"
 },
 "/fr/supprimer-compte/": {
 "d": "2026-09-23",
@@ -305,11 +305,11 @@
 },
 "/fr/tarifs/": {
 "d": "2026-10-08",
-"h": "1a5aa67c265b"
+"h": "9f987dbb4d1b"
 },
 "/it/": {
 "d": "2026-10-08",
-"h": "db79c0eee045"
+"h": "09220f90f33b"
 },
 "/it/assistente-ai-ospiti/": {
 "d": "2026-10-08",
@@ -340,12 +340,12 @@
 "h": "4caf52d8e9df"
 },
 "/it/channel-manager/": {
-"d": "2026-10-03",
-"h": "f1321ea713be"
+"d": "2026-10-08",
+"h": "19889d3d3c6a"
 },
 "/it/check-in-online/": {
 "d": "2026-10-08",
-"h": "106fdd03ce17"
+"h": "d60ed33a4eaf"
 },
 "/it/chi-siamo/": {
 "d": "2026-10-03",
@@ -361,7 +361,7 @@
 },
 "/it/domande-frequenti/": {
 "d": "2026-10-08",
-"h": "5df2c8a01aeb"
+"h": "42c06ae3e28d"
 },
 "/it/elimina-account/": {
 "d": "2026-09-23",
@@ -369,7 +369,7 @@
 },
 "/it/funzionalita/": {
 "d": "2026-10-08",
-"h": "62efc5d7bcfc"
+"h": "0e2a6115d574"
 },
 "/it/gestionale-b-and-b/": {
 "d": "2026-10-04",
@@ -377,11 +377,11 @@
 },
 "/it/gestionale-boutique-hotel/": {
 "d": "2026-10-08",
-"h": "48a5cb37de2d"
+"h": "80e3743c1234"
 },
 "/it/gestionale-ostelli/": {
-"d": "2026-10-03",
-"h": "92d8cb623398"
+"d": "2026-10-08",
+"h": "bfad67cf2d0a"
 },
 "/it/gestionale-residence-aparthotel/": {
 "d": "2026-10-08",
@@ -389,7 +389,7 @@
 },
 "/it/prezzi/": {
 "d": "2026-10-08",
-"h": "9325c759ddc5"
+"h": "8ae4b0114b5f"
 },
 "/it/privacy/": {
 "d": "2026-10-04",
@@ -397,7 +397,7 @@
 },
 "/it/sicurezza/": {
 "d": "2026-10-08",
-"h": "73a94d79ffac"
+"h": "309ecf53718b"
 },
 "/it/termini/": {
 "d": "2026-10-04",
@@ -405,11 +405,11 @@
 },
 "/pt/": {
 "d": "2026-10-08",
-"h": "4d6e704c9402"
+"h": "827f08a62594"
 },
 "/pt/assistente-ia-para-hospedes/": {
 "d": "2026-10-08",
-"h": "d7ce2e15a93a"
+"h": "bc8ab66f7f53"
 },
 "/pt/blog/": {
 "d": "2026-10-08",
@@ -424,24 +424,24 @@
 "h": "c76a0bf22648"
 },
 "/pt/blog/responder-mensagens-de-hospedes-com-ia/": {
-"d": "2026-10-03",
-"h": "cb46d89f1381"
+"d": "2026-10-08",
+"h": "1235d3f2e032"
 },
 "/pt/blog/resposta-automatica-mensagens-booking-com/": {
 "d": "2026-10-08",
 "h": "82a5ec9f8777"
 },
 "/pt/calculadora-roi/": {
-"d": "2026-10-03",
-"h": "2e9465c90bc0"
+"d": "2026-10-08",
+"h": "889d7ba98b74"
 },
 "/pt/channel-manager/": {
-"d": "2026-10-03",
-"h": "ea05f4c417f8"
+"d": "2026-10-08",
+"h": "8a96360fde85"
 },
 "/pt/check-in-online/": {
 "d": "2026-10-08",
-"h": "964e1820bd44"
+"h": "2d902c98b20a"
 },
 "/pt/comparativo-sistemas-para-hotel/": {
 "d": "2026-10-08",
@@ -457,15 +457,15 @@
 },
 "/pt/funcionalidades/": {
 "d": "2026-10-08",
-"h": "c7de24dfedfa"
+"h": "cf32283e596b"
 },
 "/pt/perguntas-frequentes/": {
 "d": "2026-10-08",
-"h": "f61db12f579c"
+"h": "2394e1c185e9"
 },
 "/pt/precos/": {
 "d": "2026-10-08",
-"h": "af3bb9591524"
+"h": "c91008d73939"
 },
 "/pt/privacidade/": {
 "d": "2026-10-04",
@@ -473,7 +473,7 @@
 },
 "/pt/seguranca/": {
 "d": "2026-10-08",
-"h": "a23e3ad1db70"
+"h": "f1c5e4b25bac"
 },
 "/pt/sistema-apart-hotel/": {
 "d": "2026-10-08",
@@ -481,27 +481,27 @@
 },
 "/pt/sistema-hotel-boutique/": {
 "d": "2026-10-08",
-"h": "3521cf9ae348"
+"h": "8f4e1e3326df"
 },
 "/pt/sistema-para-hostels/": {
-"d": "2026-10-03",
-"h": "3fb3f6cd8e74"
+"d": "2026-10-08",
+"h": "de0098e04a3f"
 },
 "/pt/sistema-para-pousadas/": {
 "d": "2026-10-04",
 "h": "3de65984704a"
 },
 "/pt/sobre-nos/": {
-"d": "2026-09-23",
-"h": "83e48bbafb95"
+"d": "2026-10-08",
+"h": "b1a70a312b97"
 },
 "/pt/termos/": {
-"d": "2026-10-04",
-"h": "2bcbc1b542b1"
+"d": "2026-10-08",
+"h": "1290c9e9dacb"
 },
 "/tr/": {
 "d": "2026-10-08",
-"h": "077ec7d526d5"
+"h": "ad1641540e5a"
 },
 "/tr/ai-misafir-asistani/": {
 "d": "2026-10-08",
@@ -533,11 +533,11 @@
 },
 "/tr/butik-otel-programi/": {
 "d": "2026-10-08",
-"h": "b463a4d29fb0"
+"h": "fb7b935d43e5"
 },
 "/tr/fiyatlandirma/": {
 "d": "2026-10-08",
-"h": "ba2382e64a36"
+"h": "9afbd78d2d07"
 },
 "/tr/gizlilik-politikasi/": {
 "d": "2026-10-04",
@@ -545,7 +545,7 @@
 },
 "/tr/guvenlik-ve-veri/": {
 "d": "2026-10-08",
-"h": "2fb28f0f254c"
+"h": "7c1bd590ad87"
 },
 "/tr/hakkimizda/": {
 "d": "2026-09-23",
@@ -556,16 +556,16 @@
 "h": "2d970c88c753"
 },
 "/tr/hostel-programi/": {
-"d": "2026-10-03",
-"h": "f0bcb0ab05e0"
+"d": "2026-10-08",
+"h": "bc3ef135efa8"
 },
 "/tr/iletisim/": {
 "d": "2026-09-23",
 "h": "1d530719cc69"
 },
 "/tr/kanal-yoneticisi/": {
-"d": "2026-09-23",
-"h": "94650a717fb6"
+"d": "2026-10-08",
+"h": "76772024be52"
 },
 "/tr/kullanim-sartlari/": {
 "d": "2026-10-04",
@@ -573,7 +573,7 @@
 },
 "/tr/online-check-in/": {
 "d": "2026-10-08",
-"h": "7da470e0cb77"
+"h": "c65b3105c994"
 },
 "/tr/otel-programi-karsilastirma/": {
 "d": "2026-10-08",
@@ -581,7 +581,7 @@
 },
 "/tr/ozellikler/": {
 "d": "2026-10-08",
-"h": "615d99571237"
+"h": "0a2ef8d74f18"
 },
 "/tr/pansiyon-programi/": {
 "d": "2026-10-04",
@@ -593,6 +593,6 @@
 },
 "/tr/sss/": {
 "d": "2026-10-08",
-"h": "89b797812d38"
+"h": "3b29f7a7464e"
 }
 }
