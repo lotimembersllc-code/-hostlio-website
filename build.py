@@ -642,6 +642,7 @@ def layout(page, lang):
     if GSC_VERIFY: head_extra += f'<meta name="google-site-verification" content="{GSC_VERIFY}">\n'
     if BING_VERIFY: head_extra += f'<meta name="msvalidate.01" content="{BING_VERIFY}">\n'
     head_extra += analytics_head()
+    if key == "blog" or page.get("og_type") == "article": head_extra += rss_link(lang)
     year = datetime.date.fromisoformat(UPDATED).year
     cmp_li = f'<li><a href="{url("cmp-hub", lang)}">{CMP_LABEL[lang]}</a></li>\n' if lang in ROUTES["cmp-hub"] else ""
     for _n, _a in GEN_ALT.items():
@@ -845,7 +846,8 @@ def add_srcset(doc):
         tag, name = m.group(0), m.group(1)
         ss = srcset_for(name)
         if "srcset=" in tag or not ss: return tag
-        return tag.replace(f'src="/assets/img/{name}.webp"', f'src="/assets/img/{name}.webp" srcset="{ss}" sizes="{IMG_SIZES}"', 1)
+        sz = "(max-width: 640px) 92vw, 220px" if 'data-thumb' in tag else IMG_SIZES   # blog listesi küçük resmi
+        return tag.replace(' data-thumb', '', 1).replace(f'src="/assets/img/{name}.webp"', f'src="/assets/img/{name}.webp" srcset="{ss}" sizes="{sz}"', 1)
     def pre(m):
         # O7: preload, <img> ile AYNI srcset/sizes'ı taşır ⇒ mobil tek dosya indirir
         ss = srcset_for(m.group(1))
@@ -949,6 +951,103 @@ def lang_redirects():
         r.append({"source": old, "destination": new, "permanent": True})
     return r
 
+# ---------------------------------------------------------------- Blog: kapak+kategori listesi, içindekiler, RSS
+# Tarihler atandıktan sonra uygulanır: şablon değişikliği yazıların "güncelleme" tarihini oynatmaz.
+BLOG_CAT = {"post-channel-manager": "dist", "post-overbooking": "dist", "post-noshows": "dist",
+            "post-ai": "msg", "post-autoreply": "msg", "post-whatsapp": "msg", "post-aifrontdesk": "msg",
+            "post-pms": "soft", "post-prices": "soft", "post-pms-vs-cm": "soft", "post-chains": "soft",
+            "post-kbs": "ops"}
+BLOG_CAT_NAME = {
+    "dist": {"tr": "Kanal yönetimi", "en": "Distribution", "es": "Distribución", "it": "Distribuzione", "pt": "Distribuição", "fr": "Distribution"},
+    "msg":  {"tr": "Misafir iletişimi", "en": "Guest messaging", "es": "Comunicación con huéspedes", "it": "Comunicazione con gli ospiti", "pt": "Comunicação com hóspedes", "fr": "Communication client"},
+    "soft": {"tr": "Yazılım seçimi", "en": "Choosing software", "es": "Elegir software", "it": "Scegliere il software", "pt": "Escolher software", "fr": "Choisir un logiciel"},
+    "ops":  {"tr": "Operasyon ve mevzuat", "en": "Operations", "es": "Operaciones", "it": "Operatività", "pt": "Operações", "fr": "Exploitation"},
+}
+TOC_H = {"tr": "İçindekiler", "en": "Contents", "es": "Contenido", "it": "Indice", "pt": "Índice", "fr": "Sommaire"}
+RSS_TITLE = {"tr": "Hostlio Pro Blog: otelciler için rehberler", "en": "Hostlio Pro Blog: guides for independent hotels",
+             "es": "Blog de Hostlio Pro: guías para hoteles independientes", "it": "Blog di Hostlio Pro: guide per hotel indipendenti",
+             "pt": "Blog da Hostlio Pro: guias para hotéis independentes", "fr": "Blog Hostlio Pro : guides pour hôtels indépendants"}
+_TR_ASCII = str.maketrans("çğıöşüÇĞİÖŞÜâîûàáãéêèíìóòôõúùñ", "cgiosucgiosuaiuaaaeeeiioooouun")
+
+def slug(t):
+    t = strip_tags(html.unescape(t)).lower().translate(_TR_ASCII)
+    return re.sub(r"[^a-z0-9]+", "-", t).strip("-")[:60] or "b"
+
+def blog_cover(lang, key):
+    return getattr(__import__("content_" + lang), "COVERS", {}).get(key)
+
+def add_toc(body, lang):
+    """Yazı gövdesindeki h2'lere kimlik verir; 4+ başlıkta kısa cevap kutusundan sonra içindekiler listesi ekler."""
+    m = re.search(r'<div class="prose">(.*?)</article>', body, re.S)
+    if not m: return body
+    prose, seen, items = m.group(1), set(), []
+    def h2(mm):
+        attrs, inner = mm.group(1), mm.group(2)
+        idm = re.search(r'id="([^"]+)"', attrs)
+        i = idm.group(1) if idm else slug(inner)
+        while i in seen: i += "-2"
+        seen.add(i); items.append((i, strip_tags(inner)))
+        return mm.group(0) if idm else f'<h2 id="{i}"{attrs}>{inner}</h2>'
+    prose2 = re.sub(r"<h2([^>]*)>(.*?)</h2>", h2, prose, flags=re.S)
+    if len(items) >= 4:
+        nav = (f'<nav class="toc" aria-labelledby="toc-h"><p id="toc-h" class="toc-h">{TOC_H[lang]}</p><ol>'
+               + "".join(f'<li><a href="#{i}">{html.escape(t, quote=False)}</a></li>' for i, t in items) + "</ol></nav>")
+        am = re.match(r'\s*<div class="answer">.*?</div>', prose2, re.S)
+        prose2 = prose2[:am.end()] + nav + prose2[am.end():] if am else nav + prose2
+    return body[:m.start(1)] + prose2 + body[m.end(1):]
+
+def blog_list(body, lang, by_url):
+    """Blog listesindeki her karta kapak küçük resmi ve kategori etiketi ekler."""
+    def card(mm):
+        href = mm.group(1); k = by_url.get(href)
+        cov = blog_cover(lang, k) if k else None
+        cat = BLOG_CAT.get(k)
+        chip = f'<p class="cat">{BLOG_CAT_NAME[cat][lang]}</p>' if cat else ""
+        img = (f'<a class="pl-img" href="{href}" tabindex="-1" aria-hidden="true"><img src="/assets/img/{cov[0]}.webp" alt="" '
+               f'width="{cov[1]}" height="{cov[2]}" loading="lazy" data-thumb></a>') if cov else ""
+        return f'<article class="{"has-img" if cov else ""}">{img}<div class="pl-txt">{chip}<h2><a href="{href}">'
+    out = re.sub(r'<article><h2><a href="([^"]+)">', card, body)
+    return re.sub(r'(<article class="[^"]*">.*?)(</article>)', lambda mm: mm.group(1) + "</div>" + mm.group(2), out, flags=re.S)
+
+def blog_enhance(pages):
+    for lang, plist in pages.items():
+        by_url = {url(p["key"], lang): p["key"] for p in plist if p["key"].startswith("post")}
+        for p in plist:
+            if p["key"] == "blog": p["body"] = blog_list(p["body"], lang, by_url)
+            elif p.get("og_type") == "article":
+                p["body"] = add_toc(p["body"], lang)
+                cat = BLOG_CAT.get(p["key"])
+                for s_ in p.get("schema", []):
+                    if s_.get("@type") == "BlogPosting" and cat: s_["articleSection"] = BLOG_CAT_NAME[cat][lang]
+
+def rss_link(lang):
+    return f'<link rel="alternate" type="application/rss+xml" title="{html.escape(RSS_TITLE[lang])}" href="{url("blog", lang)}feed.xml">\n'
+
+def write_rss(pages):
+    from email.utils import format_datetime
+    for lang, plist in pages.items():
+        posts = []
+        for p in plist:
+            if p.get("og_type") != "article": continue
+            pub = next((s_.get("datePublished") for s_ in p.get("schema", []) if s_.get("@type") == "BlogPosting"), None)
+            if pub: posts.append((pub, p))
+        posts.sort(key=lambda x: x[0], reverse=True)
+        def d(iso): return format_datetime(datetime.datetime.fromisoformat(iso).replace(hour=9, tzinfo=datetime.timezone.utc))
+        items = "".join(
+            f'<item><title>{html.escape(pricing.fill(p["title"], lang).split(" | ")[0])}</title><link>{abs_url(p["key"], lang)}</link>'
+            f'<guid isPermaLink="true">{abs_url(p["key"], lang)}</guid><pubDate>{d(pub)}</pubDate>'
+            + (f'<category>{html.escape(BLOG_CAT_NAME[BLOG_CAT[p["key"]]][lang])}</category>' if p["key"] in BLOG_CAT else "")
+            + f'<description>{html.escape(pricing.fill(p["desc"], lang))}</description></item>\n' for pub, p in posts)
+        feed = abs_url("blog", lang) + "feed.xml"
+        xml = (f'<?xml version="1.0" encoding="UTF-8"?>\n<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel>\n'
+               f'<title>{html.escape(RSS_TITLE[lang])}</title><link>{abs_url("blog", lang)}</link>'
+               f'<atom:link href="{feed}" rel="self" type="application/rss+xml"/>'
+               f'<description>{html.escape(RSS_TITLE[lang])}</description><language>{IN_LANG[lang]}</language>'
+               + (f'<lastBuildDate>{d(posts[0][0])}</lastBuildDate>\n' if posts else "\n") + items + "</channel></rss>\n")
+        out = DIST / url("blog", lang).strip("/") / "feed.xml"
+        out.parent.mkdir(parents=True, exist_ok=True)
+        out.write_text(xml, encoding="utf-8")
+
 def main():
     import importlib
     if DIST.exists(): shutil.rmtree(DIST)
@@ -973,6 +1072,7 @@ def main():
     page_dates = assign_dates(pages)
     for lang, plist in pages.items():
         POST_INDEX[lang] = {p["key"]: (pricing.fill(p["title"], lang), pricing.fill(p["desc"], lang)) for p in plist if p["key"].startswith("post")}
+    blog_enhance(pages)
     make_variants()
     for lang, plist in pages.items():
         for p in plist:
@@ -991,6 +1091,7 @@ def main():
             txt = _re.sub(r"\n{3,}", "\n\n", txt).strip()
             full.append(pricing.fill(f"---\n# {p['title']}\nURL: {abs_url(p['key'], lang)}\n\n{txt}\n", lang))
             for q, a in p.get("faq", []): full.append(pricing.fill(f"Q: {q}\nA: {strip_tags(a)}\n", lang))
+    write_rss(pages)
     (DIST / "llms-full.txt").write_text("\n".join(full), encoding="utf-8")
     if INDEXNOW_KEY: (DIST / f"{INDEXNOW_KEY}.txt").write_text(INDEXNOW_KEY, encoding="utf-8")
     # sitemap with hreflang alternates

@@ -1114,29 +1114,43 @@ URL: https://hostliopro.com/tr/blog/
 ## Otelciler için blog
 Bağımsız otel işletmeciliği, dağıtım ve misafir iletişimi üzerine pratik yazılar.
 
+Operasyon ve mevzuat
+
 ## KBS bildirimi nasıl yapılır? Oteller ve pansiyonlar için rehber
 2026-10-08
 KBS (Kimlik Bildirim Sistemi) bildirimi adım adım: Emniyet ve Jandarma KBS farkı, kayıt, yabancı misafir, süreler ve cezalar. Resmî kaynaklı.
+
+Yazılım seçimi
 
 ## Otel programı fiyatları 2026: modeller ve gerçek rakamlar
 2026-10-08
 2026 otel programı fiyatları: sabit paket, oda başı, komisyon ve lisans modelleri; resmî sayfalardan alınmış rakamlar ve örnek hesap.
 
+Kanal yönetimi
+
 ## Channel manager nedir? Otelciler için kanal yöneticisi rehberi
 2026-10-08
 Channel manager (kanal yöneticisi) nedir, nasıl çalışır, PMS'ten farkı ne? Fiyat modelleri, seçim için 7 soru ve kurulum adımları.
+
+Kanal yönetimi
 
 ## Overbooking nasıl önlenir? OTA kanallarında 6 adım
 2026-09-21
 Booking.com, Airbnb ve Expedia arasında overbooking nasıl önlenir: tek müsaitlik kaynağı, anlık senkron, eşleme kontrolü ve kriz anında yapılacaklar.
 
+Misafir iletişimi
+
 ## Booking.com Mesajlarına Otomatik Cevap: 12 Ücretsiz Şablon (2026)
 2026-09-21
 Booking.com misafir mesajlarına hazır cevaplar: check-in saati, otopark, geç varış, kahvaltı. Kopyala-yapıştır 12 ücretsiz şablon ve otomatikleştirmenin 3 yolu.
 
+Misafir iletişimi
+
 ## Misafir mesajlarını yapay zekâ ile yanıtlamak: pratik rehber
 2026-09-18
 Otel misafir mesajlarını yapay zekâ ile yanıtlamanın avantajları, riskleri ve kurulum adımları. Hangi sorular otomatikleşir, hangileri insanda kalmalı?
+
+Yazılım seçimi
 
 ## Küçük otel için otel programı (PMS) nasıl seçilir?
 2026-09-10
@@ -1150,6 +1164,14 @@ URL: https://hostliopro.com/tr/blog/otel-misafir-mesajlarini-yapay-zeka-ile-yani
 Yazan: Hostlio Pro ürün ekibi , otel yazılımı geliştiren ekip. Yayın: 2026-09-18 , güncelleme: 2026-09-23
 
 Kısa cevap: Otel mesajlarının büyük kısmı tekrar eden sorulardır (check-in saati, otopark, transfer, kahvaltı). Bu soruları otelin kendi bilgileriyle eğitilmiş bir yapay zekâ asistanına bırakmak, misafire saniyeler içinde kendi dilinde cevap verir; indirim, şikâyet ve özel talepler ise personelde kalmalıdır.
+
+İçindekiler
+
+- Otellere en çok hangi sorular geliyor?
+- Yapay zekâ neyi otomatikleştirmeli, neyi otomatikleştirmemeli?
+- Adım adım kurulum
+- Çok dilli iletişim neden önemli?
+- Hostlio Pro'da nasıl çalışır?
 
 ## Otellere en çok hangi sorular geliyor?
 
@@ -1207,6 +1229,17 @@ URL: https://hostliopro.com/tr/blog/kucuk-otel-icin-otel-yonetim-yazilimi-secimi
 Yazan: Hostlio Pro ürün ekibi , otel yazılımı geliştiren ekip. Yayın: 2026-09-10 , güncelleme: 2026-09-23
 
 Kısa cevap: Küçük bir otel için doğru PMS; entegre kanal yöneticisi olan, sabit ve şeffaf fiyatlı, misafir mesajlarını tek yerde toplayan, mobilden yönetilebilen ve aynı gün kurulabilen yazılımdır. Yüzlerce özelliği olan kurumsal sistemler küçük ekipte kullanılmadan kalır.
+
+İçindekiler
+
+- 1. Entegre kanal yöneticisi
+- 2. Fiyat modeli
+- 3. Misafir iletişimi
+- 4. Oda rafının kullanımı
+- 5. Mobil erişim
+- 6. Online check-in
+- 7. Kurulum ve destek
+- Kontrol listesi
 
 ## 1. Entegre kanal yöneticisi
 
@@ -1691,6 +1724,16 @@ Yazan: Hostlio Pro ürün ekibi , otel yazılımı geliştiren ekip. Yayın: 202
 
 Kısa cevap: Overbooking, aynı oda için satılabilecek olandan fazla rezervasyon alınmasıdır. Bağımsız otellerde en sık sebebi, birden fazla OTA'da müsaitliğin elle güncellenmesidir. Çift yönlü, anlık çalışan bir kanal yöneticisi kullanmak riski büyük ölçüde ortadan kaldırır.
 
+İçindekiler
+
+- Overbooking neden olur?
+- 6 adımda overbooking'i önleyin
+- Overbooking olursa ne yapılır?
+- OTA kanalları arasında overbooking: açıklar nerede?
+- Günlük 5 dakikalık overbooking kontrolü
+- Yine de olursa: misafiri başka otele yönlendirmek
+- Hostlio Pro'da nasıl çalışır?
+
 ## Overbooking neden olur?
 
 - Booking.com, Airbnb ve Expedia'daki müsaitliğin ayrı ayrı, elle güncellenmesi
@@ -1787,6 +1830,15 @@ URL: https://hostliopro.com/tr/blog/booking-com-mesajlarina-otomatik-cevap/
 Yazan: Hostlio Pro ürün ekibi , otel yazılımı geliştiren ekip. Yayın: 2026-09-21 , güncelleme: 2026-09-23
 
 Kısa cevap: Booking.com mesajlarını otomatikleştirmenin üç yolu vardır: extranet'teki hazır mesaj şablonları, rezervasyon aşamasına göre planlanan mesajlar ve misafirin sorusunu anlayıp otel bilgileriyle cevap veren bir yapay zekâ asistanı. Şablonlar standart bilgiler için, AI asistanı ise her misafirin farklı sorusu için uygundur. Aşağıda extranet'e doğrudan kopyalayabileceğiniz 12 ücretsiz cevap şablonu bulabilirsiniz.
+
+İçindekiler
+
+- 1. Hazır mesaj şablonları
+- 2. Planlı mesajlar
+- 3. Yapay zekâ asistanı
+- Cevap süresi neden önemli?
+- Kopyalayıp kullanabileceğiniz 12 ücretsiz Booking.com cevap şablonu
+- Hostlio Pro'da nasıl çalışır?
 
 ## 1. Hazır mesaj şablonları
 
@@ -2563,6 +2615,16 @@ Yazan: Hostlio Pro ürün ekibi , otel yazılımı geliştiren ekip. Yayın: 202
 
 Kısa cevap: Channel manager (kanal yöneticisi), otelinizin müsaitliğini, fiyatlarını ve satış kısıtlamalarını Booking.com, Airbnb, Expedia gibi tüm online satış kanallarına tek yerden gönderen ve bu kanallardan gelen rezervasyonları tek takvimde toplayan yazılımdır. Bir kanaldan rezervasyon geldiğinde o oda diğer kanallarda da otomatik kapanır; böylece overbooking riski azalır ve her kanalın extranet'ine ayrı ayrı girmeniz gerekmez.
 
+İçindekiler
+
+- Channel manager nasıl çalışır?
+- Channel manager ile PMS arasındaki fark
+- Neden gerekli?
+- Kanal yöneticisi fiyat modelleri
+- Channel manager seçerken 7 soru
+- Kurulum nasıl yapılır?
+- Hostlio Pro'da kanal yöneticisi
+
 ## Channel manager nasıl çalışır?
 
 Kanal yöneticisinin işi iki yönlü bir veri akışıdır:
@@ -2657,6 +2719,17 @@ Yazan: Hostlio Pro ürün ekibi , otel yazılımı geliştiren ekip. Yayın: 202
 
 Kısa cevap: KBS (Kimlik Bildirim Sistemi), konaklama tesislerinin misafirlerinin ve çalışanlarının kimlik bilgilerini kolluğa elektronik ortamda bildirdiği sistemdir. 1774 sayılı Kimlik Bildirme Kanunu'na göre bildirim anlık yapılmalıdır. Tesisiniz polis bölgesindeyse Emniyet'in kbs.egm.gov.tr adresini, jandarma bölgesindeyse e-Devlet üzerinden Jandarma KBS'yi kullanırsınız. Kayıt için bağlı olduğunuz polis birimine ya da jandarma karakoluna başvurursunuz.
 
+İçindekiler
+
+- KBS bildirimi kimler için zorunlu?
+- Emniyet KBS mi, Jandarma KBS mi?
+- KBS'ye kayıt: adım adım
+- Misafir bildirimi nasıl yapılır?
+- Bildirim süresi: “anlık” ne demek?
+- KBS bildirimi yapılmazsa ceza nedir?
+- Sık yapılan hatalar
+- Online check-in ile bilgileri önceden toplamak
+- Kaynaklar
 Bu yazı genel bilgilendirme amaçlıdır, hukuki danışmanlık değildir. Bilgiler 8 Ekim 2026 tarihinde resmî kaynaklardan derlendi; uygulama ilden ile değişebilir. Güncel şartları bağlı olduğunuz polis birimine ya da jandarma karakoluna sorun.
 
 ## KBS bildirimi kimler için zorunlu?
@@ -2782,6 +2855,15 @@ Yazan: Hostlio Pro ürün ekibi , otel yazılımı geliştiren ekip. Yayın: 202
 
 Kısa cevap: 2026'da otel programları dört farklı şekilde fiyatlanıyor: sabit aylık paket, oda sayısına göre ücret, rezervasyon gelirinden yüzde ve tek seferlik lisans. Fiyatını açıkça yayınlayan yazılımlarda küçük bir otel için aylık maliyet yaklaşık 15 € ile 150 € arasında başlıyor; bazı büyük firmalar ise yalnızca teklif veriyor. Aşağıdaki tablo, firmaların kendi fiyat sayfalarında 8 Ekim 2026 tarihinde yayınladığı rakamlara dayanıyor.
 
+İçindekiler
+
+- Hostlio Pro ne kadar?
+- Otel programı fiyat modelleri
+- 2026 otel programı fiyatları (yayınlanan rakamlar)
+- Örnek hesap: 10, 25 ve 50 odalı otel
+- Gözden kaçan maliyetler
+- Hangi model size uygun?
+- Kaynaklar
 Hostlio Pro bu karşılaştırmada taraftır. Yalnızca resmî fiyat sayfasında doğrulayabildiğimiz rakamları yazdık; fiyatlar değişebilir, karar vermeden önce her firmanın kendi sayfasını kontrol edin. Para birimleri firmaların kullandığı gibidir (€, $, ₺) ve doğrudan karşılaştırılamaz.
 
 ## Hostlio Pro ne kadar?
@@ -4040,37 +4122,55 @@ URL: https://hostliopro.com/en/blog/
 ## Blog for hoteliers
 Practical writing on running an independent hotel, distribution and guest communication.
 
+Choosing software
+
 ## PMS vs channel manager: what's the difference?
 2026-10-08
 PMS vs channel manager: what each one does, how they work together, what they cost and whether a small hotel needs both. With a comparison table and FAQ.
+
+Guest messaging
 
 ## WhatsApp for hotels: setup, Meta's rules and AI replies (2026)
 2026-05-01
 WhatsApp for hotels in 2026: Business app or API, the 24-hour window, templates, opt-in, Meta's pricing, and what an AI assistant can and can't do.
 
+Distribution
+
 ## How to avoid overbooking in a hotel: 6 steps across OTAs
 2026-09-21
 Hotels avoid overbooking by syncing one availability calendar to Booking.com, Airbnb and Expedia in real time. 6 steps, plus what to do if it happens.
+
+Guest messaging
 
 ## Booking.com Auto-Reply: 12 Free Message Templates (2026)
 2026-09-21
 Copy-paste replies for Booking.com guest messages: check-in time, parking, late arrival, breakfast and more. 12 free templates + 3 ways to automate them.
 
+Guest messaging
+
 ## Answering hotel guest messages with AI: a practical guide
 2026-09-18
 The benefits, risks and setup steps of answering hotel guest messages with AI. Which questions to automate and which should stay with your team.
+
+Choosing software
 
 ## PMS for small hotels: how to choose (7 criteria, 2026)
 2026-09-10
 How to choose a PMS for a small or boutique hotel: 7 criteria, what it should cost, and why a built-in channel manager and guest messaging matter.
 
+Guest messaging
+
 ## The Complete Guide to AI Front Desk for Independent Hotels
 2026-05-01
 AI front-desk tools are no longer science fiction. This guide explains exactly what they do, what they don't, and how to deploy one at your independent hotel.
 
+Distribution
+
 ## 5 Ways to Reduce No-Shows at Your Independent Hotel
 2026-05-01
 No-shows cost independent hotels thousands in lost revenue. Here are five proven strategies to cut your no-show rate and protect your bottom line.
+
+Choosing software
 
 ## Independent Hotels vs. Chains: Competing with Tech in 2026
 2026-05-01
@@ -4084,6 +4184,14 @@ URL: https://hostliopro.com/en/blog/answering-hotel-guest-messages-with-ai/
 By the Hostlio Pro product team , the people who build Hostlio Pro. Published 2026-09-18 , updated 2026-09-23
 
 Short answer: Most hotel messages are repeat questions (check-in time, parking, transfers, breakfast). Handing them to an AI assistant trained on your hotel's own information gets guests an answer in seconds, in their language. Discounts, complaints and special requests should stay with your staff.
+
+Contents
+
+- Which questions do hotels get most?
+- What should AI automate, and what shouldn't it?
+- Step-by-step setup
+- Why multilingual replies matter
+- How it works in Hostlio Pro
 
 ## Which questions do hotels get most?
 
@@ -4141,6 +4249,17 @@ URL: https://hostliopro.com/en/blog/choosing-hotel-management-software-small-hot
 By the Hostlio Pro product team , the people who build Hostlio Pro. Published 2026-09-10 , updated 2026-09-23
 
 Short answer: The right PMS for a small hotel has a built-in channel manager, flat and transparent pricing, one inbox for guest messages, mobile access and same-day setup. Enterprise systems with hundreds of features tend to go unused by small teams.
+
+Contents
+
+- 1. A built-in channel manager
+- 2. Pricing model
+- 3. Guest communication
+- 4. A usable room rack
+- 5. Mobile access
+- 6. Online check-in
+- 7. Setup and support
+- Checklist
 
 ## 1. A built-in channel manager
 
@@ -4609,6 +4728,16 @@ By the Hostlio Pro product team , the people who build Hostlio Pro. Published 20
 
 Short answer: Overbooking means accepting more reservations than you can host for the same room and dates. In independent hotels the most common cause is updating availability by hand on several OTAs. A two-way, real-time channel manager removes most of the risk.
 
+Contents
+
+- Why does overbooking happen?
+- Prevent overbooking in 6 steps
+- What if it happens anyway?
+- Overbooking across OTA channels: where the gaps are
+- A daily 5-minute overbooking check
+- If it happens anyway: walking the guest
+- How it works in Hostlio Pro
+
 ## Why does overbooking happen?
 
 - Updating availability on Booking.com, Airbnb and Expedia separately, by hand
@@ -4705,6 +4834,15 @@ URL: https://hostliopro.com/en/blog/auto-reply-booking-com-messages/
 By the Hostlio Pro product team , the people who build Hostlio Pro. Published 2026-09-21 , updated 2026-09-23
 
 Short answer: There are three ways to automate Booking.com messages: saved message templates in the extranet, scheduled messages tied to the booking stage, and an AI assistant that understands the guest's question and answers from your hotel information. Templates suit standard information; an AI assistant suits the questions that differ for every guest. Below you'll find 12 free reply templates you can copy straight into the extranet.
+
+Contents
+
+- 1. Message templates
+- 2. Scheduled messages
+- 3. An AI assistant
+- Why response time matters
+- 12 free Booking.com reply templates to copy
+- How it works in Hostlio Pro
 
 ## 1. Message templates
 
@@ -5083,7 +5221,14 @@ URL: https://hostliopro.com/en/blog/hotel-ai-front-desk-guide/
 ## The Complete Guide to AI Front Desk for Independent Hotels
 By the Hostlio Pro product team , the people who build Hostlio Pro. Published 2026-05-01 , updated 2026-09-23
 
-The phrase "AI front desk" can conjure images of robot receptionists and sci-fi lobbies. The reality in 2026 is far more practical — and far more accessible. An AI front desk for an independent hotel is not a physical machine; it's a software layer that handles the routine communication work your front desk currently does manually, around the clock, in any language, without getting tired or going on holiday.
+Contents
+
+- What an AI Front Desk Actually Does
+- What AI Cannot Do (Yet)
+- The Multilingual Advantage
+- How to Set Up an AI Front Desk: Step by Step
+- Frequently Asked Questions from Hotel Owners
+- The Right Expectation to Set The phrase "AI front desk" can conjure images of robot receptionists and sci-fi lobbies. The reality in 2026 is far more practical — and far more accessible. An AI front desk for an independent hotel is not a physical machine; it's a software layer that handles the routine communication work your front desk currently does manually, around the clock, in any language, without getting tired or going on holiday.
 
 For a small hotel with limited staff, this is not a luxury. It's becoming an operational necessity. Here's everything you need to know about what AI front-desk tools actually do, how to set one up, and what realistic results to expect.
 
@@ -5192,7 +5337,14 @@ URL: https://hostliopro.com/en/blog/how-to-reduce-hotel-no-shows/
 ## 5 Ways to Reduce No-Shows at Your Independent Hotel
 By the Hostlio Pro product team , the people who build Hostlio Pro. Published 2026-05-01 , updated 2026-09-23
 
-A guest who books a room and never arrives is one of the most frustrating — and expensive — problems an independent hotel faces. Unlike a large chain with dozens of rooms to fill at short notice, a 20-room boutique property loses a significant percentage of nightly revenue every time a no-show occurs. Industry data suggests that no-shows cost the hospitality sector billions globally each year, with independent hotels often absorbing the highest per-room losses because they lack the scale to quickly rebook.
+Contents
+
+- 1. Require a Non-Refundable Deposit at Booking
+- 2. Send Automated Pre-Arrival Reminders
+- 3. Make Cancellation Easy — So Guests Use It
+- 4. Implement a Credit Card Guarantee Policy
+- 5. Build a Last-Minute Rebooking Workflow
+- The Bottom Line A guest who books a room and never arrives is one of the most frustrating — and expensive — problems an independent hotel faces. Unlike a large chain with dozens of rooms to fill at short notice, a 20-room boutique property loses a significant percentage of nightly revenue every time a no-show occurs. Industry data suggests that no-shows cost the hospitality sector billions globally each year, with independent hotels often absorbing the highest per-room losses because they lack the scale to quickly rebook.
 
 The good news: no-show rates are largely preventable. With the right policies and tools in place, most properties can cut their no-show rate by 40–60%. Here are five strategies that work.
 
@@ -5249,7 +5401,13 @@ URL: https://hostliopro.com/en/blog/independent-hotel-vs-chain-technology/
 ## Independent Hotels vs. Chains: Competing with Tech in 2026
 By the Hostlio Pro product team , the people who build Hostlio Pro. Published 2026-05-01 , updated 2026-09-23
 
-For decades, the technology gap between independent hotels and large chains felt insurmountable. Marriott, Hilton, and IHG had entire departments dedicated to building and maintaining proprietary property management systems, loyalty platforms, and guest-facing apps — investments worth hundreds of millions of dollars that a 25-room boutique hotel could never replicate.
+Contents
+
+- What Chains Had That You Didn't — Until Now
+- Where Independent Hotels Have the Natural Edge
+- The Three Technology Priorities That Matter Most
+- The Loyalty Programme Question
+- The Cost of Doing Nothing For decades, the technology gap between independent hotels and large chains felt insurmountable. Marriott, Hilton, and IHG had entire departments dedicated to building and maintaining proprietary property management systems, loyalty platforms, and guest-facing apps — investments worth hundreds of millions of dollars that a 25-room boutique hotel could never replicate.
 
 That gap has closed faster than most people in the industry realise. The SaaS revolution in hospitality technology means that independent hotels can now access the same capabilities — AI-driven guest messaging, real-time channel management across 10+ OTAs, automated visa and registration forms, dynamic pricing tools — at a fraction of the cost, with no technical team required.
 
@@ -6224,6 +6382,19 @@ By the Hostlio Pro product team , the people who build Hostlio Pro. Published 20
 
 Short answer: A PMS (property management system) runs the inside of your hotel: the reservation calendar, rooms, guests, housekeeping and reports. A channel manager runs the connection to the outside: it sends your availability, rates and restrictions to Booking.com, Airbnb, Expedia and other channels, and brings their bookings back. If you sell on more than one online channel, you need both functions. For a small hotel the simplest setup is usually a PMS with a built-in channel manager, so there is only one calendar and nothing to keep in sync between two systems.
 
+Contents
+
+- What a PMS does
+- What a channel manager does
+- PMS vs channel manager at a glance
+- How the two work together
+- Three ways to set it up
+- Do you need both?
+- What it costs
+- Questions to ask before you decide
+- How it works in Hostlio Pro
+- Sources
+
 ## What a PMS does
 
 The PMS is the system your front desk lives in. It is the single record of who is staying, in which room, on which dates and at what price. Typical PMS jobs:
@@ -6345,6 +6516,21 @@ URL: https://hostliopro.com/en/blog/whatsapp-hotel-guest-communication/
 By the Hostlio Pro product team , the people who build Hostlio Pro. Published 2026-05-01 , updated 2026-09-23
 
 Short answer: WhatsApp works well for hotels because guests already use it and reply quickly. A small property can start with the free WhatsApp Business app on one phone. Once several people need to answer, or you want automatic replies and a link to your reservations, you need the WhatsApp Business Platform (Meta's Cloud API), usually through your PMS or a messaging provider. Three rules shape everything: guests must opt in, free-form replies are only possible within 24 hours of the guest's last message, and anything you send outside that window must be a template Meta has approved.
+
+Contents
+
+- Why hotels use WhatsApp
+- WhatsApp Business app or WhatsApp Business Platform?
+- The 24-hour customer service window
+- Message templates
+- What Meta charges
+- Opt-in and opt-out: what the policy requires
+- Messaging limits
+- Answering in every guest's language
+- What an AI assistant can and can't do on WhatsApp
+- Setting up WhatsApp for your hotel: a checklist
+- How Hostlio Pro's Lio fits in
+- Sources
 
 ## Why hotels use WhatsApp
 
@@ -7565,21 +7751,31 @@ URL: https://hostliopro.com/es/blog/
 ## Blog para hoteleros
 Artículos prácticos sobre la gestión de un hotel independiente, la distribución y la comunicación con los huéspedes.
 
+Comunicación con huéspedes
+
 ## WhatsApp para hoteles: configuración, normas de Meta e IA (2026)
 8 de octubre de 2026
 WhatsApp para hoteles en 2026: app Business o API, la ventana de 24 horas, plantillas, consentimiento, precios de Meta y lo que puede hacer un asistente de IA.
+
+Distribución
 
 ## Overbooking hotelero: qué es y cómo evitarlo en 6 pasos
 21 de septiembre de 2026
 Qué es el overbooking hotelero y cómo evitarlo entre Booking.com, Airbnb y Expedia: un solo calendario, sincronización en tiempo real y qué hacer si ocurre.
 
+Comunicación con huéspedes
+
 ## Mensajes de Booking.com: 12 respuestas automáticas gratis (2026)
 21 de septiembre de 2026
 Respuestas listas para los mensajes de huéspedes en Booking.com: check-in, parking, llegada tarde, desayuno. 12 plantillas gratis y 3 formas de automatizar.
 
+Comunicación con huéspedes
+
 ## Responder a los huéspedes del hotel con IA: guía práctica
 18 de septiembre de 2026
 Ventajas, riesgos y pasos de configuración para responder con IA a los mensajes de los huéspedes. Qué preguntas automatizar y cuáles dejar a tu equipo.
+
+Elegir software
 
 ## Software para hoteles pequeños (PMS): cómo elegir y precios 2026
 10 de septiembre de 2026
@@ -7593,6 +7789,14 @@ URL: https://hostliopro.com/es/blog/responder-mensajes-de-huespedes-con-ia/
 Por el equipo de producto de Hostlio Pro , las personas que desarrollan Hostlio Pro. Publicado el 18 de septiembre de 2026 , actualizado el 23 de septiembre de 2026
 
 Respuesta corta: La mayoría de los mensajes que recibe un hotel son preguntas repetidas (hora de check-in, aparcamiento, traslados, desayuno). Si se las encargas a un asistente de IA entrenado con la información de tu propio hotel, los huéspedes reciben respuesta en segundos y en su idioma. Los descuentos, las quejas y las solicitudes especiales deben quedarse en manos de tu equipo.
+
+Contenido
+
+- ¿Qué preguntas reciben más los hoteles?
+- ¿Qué debe automatizar la IA y qué no?
+- Configuración paso a paso
+- Por qué importan las respuestas en varios idiomas
+- Cómo funciona en Hostlio Pro
 
 ## ¿Qué preguntas reciben más los hoteles?
 
@@ -7650,6 +7854,21 @@ URL: https://hostliopro.com/es/blog/como-elegir-software-de-gestion-hotelera-hot
 Por el equipo de producto de Hostlio Pro , las personas que desarrollan Hostlio Pro. Publicado el 10 de septiembre de 2026 , actualizado el 23 de septiembre de 2026
 
 Respuesta corta: El PMS adecuado para un hotel pequeño tiene channel manager integrado, precios fijos y transparentes, una sola bandeja para los mensajes de los huéspedes, acceso móvil y se configura en el mismo día. Los sistemas empresariales con cientos de funciones suelen quedarse sin usar en los equipos pequeños.
+
+Contenido
+
+- 1. Un channel manager integrado
+- 2. Modelo de precios
+- 3. Comunicación con los huéspedes
+- 4. Un planning de habitaciones fácil de usar
+- 5. Acceso móvil
+- 6. Check-in online
+- 7. Configuración y soporte
+- ¿Cuánto cuesta un software de gestión hotelera?
+- Qué plan según el tamaño del hotel
+- Registro de viajeros y SES.Hospedajes: qué preguntar
+- Cómo aprovechar la prueba gratuita: lista para la migración
+- Lista de comprobación
 
 ## 1. Un channel manager integrado
 
@@ -8210,6 +8429,16 @@ Por el equipo de producto de Hostlio Pro , las personas que desarrollan Hostlio 
 
 Respuesta corta: el overbooking consiste en aceptar más reservas de las que puedes alojar para la misma habitación y las mismas fechas. En los hoteles independientes, la causa más habitual es actualizar la disponibilidad a mano en varias OTAs. Un channel manager bidireccional y en tiempo real elimina la mayor parte del riesgo.
 
+Contenido
+
+- ¿Por qué se produce el overbooking?
+- Evita el overbooking en 6 pasos
+- ¿Y si ocurre igualmente?
+- Overbooking entre canales OTA: dónde están los huecos
+- Control diario de 5 minutos
+- Si ocurre igualmente: reubicar al huésped
+- Cómo funciona en Hostlio Pro
+
 ## ¿Por qué se produce el overbooking?
 
 - Actualizar la disponibilidad en Booking.com, Airbnb y Expedia por separado y a mano
@@ -8306,6 +8535,15 @@ URL: https://hostliopro.com/es/blog/respuesta-automatica-mensajes-booking-com/
 Por el equipo de producto de Hostlio Pro , las personas que desarrollan Hostlio Pro. Publicado el 21 de septiembre de 2026 , actualizado el 23 de septiembre de 2026
 
 Respuesta corta: hay tres formas de automatizar los mensajes de Booking.com: las plantillas de mensajes guardadas en la extranet, los mensajes programados según la fase de la reserva y un asistente de IA que entiende la pregunta del huésped y responde con la información de tu hotel. Las plantillas sirven para la información estándar; un asistente de IA, para las preguntas que cambian con cada huésped. Más abajo tienes 12 plantillas de respuesta gratuitas para copiar en la extranet.
+
+Contenido
+
+- 1. Plantillas de mensajes
+- 2. Mensajes programados
+- 3. Un asistente de IA
+- Por qué importa el tiempo de respuesta
+- 12 plantillas gratis para responder mensajes de Booking.com
+- Cómo funciona en Hostlio Pro
 
 ## 1. Plantillas de mensajes
 
@@ -9070,6 +9308,21 @@ URL: https://hostliopro.com/es/blog/whatsapp-para-hoteles/
 Por el equipo de producto de Hostlio Pro , las personas que desarrollan Hostlio Pro. Publicado el 8 de octubre de 2026 , actualizado el 23 de septiembre de 2026
 
 Respuesta corta: WhatsApp funciona bien en hotelería porque los huéspedes ya lo usan y responden rápido. Un alojamiento pequeño puede empezar con la app gratuita WhatsApp Business en un solo teléfono. Cuando varias personas tienen que responder, o quieres respuestas automáticas y conexión con tus reservas, necesitas la WhatsApp Business Platform (la Cloud API de Meta), normalmente a través de tu PMS o de un proveedor de mensajería. Tres reglas lo condicionan todo: el huésped debe dar su consentimiento, las respuestas libres solo son posibles dentro de las 24 horas siguientes a su último mensaje y lo que envíes fuera de esa ventana tiene que ser una plantilla aprobada por Meta.
+
+Contenido
+
+- Por qué los hoteles usan WhatsApp
+- ¿App WhatsApp Business o WhatsApp Business Platform?
+- La ventana de atención de 24 horas
+- Plantillas de mensaje
+- Lo que cobra Meta
+- Consentimiento y baja: lo que exige la política
+- Límites de mensajería
+- Responder en el idioma de cada huésped
+- Lo que un asistente de IA puede y no puede hacer en WhatsApp
+- Configurar WhatsApp en tu hotel: lista de control
+- Cómo encaja Lio, el asistente de Hostlio Pro
+- Fuentes
 
 ## Por qué los hoteles usan WhatsApp
 
@@ -10290,25 +10543,37 @@ URL: https://hostliopro.com/it/blog/
 ## Blog per albergatori
 Articoli pratici sulla gestione di un hotel indipendente, sulla distribuzione e sulla comunicazione con gli ospiti.
 
+Scegliere il software
+
 ## Channel manager cos'è e che differenza c'è con un PMS
 8 ottobre 2026
 Channel manager e PMS: cosa fa ciascuno, come lavorano insieme, quanto costano e se una piccola struttura ha bisogno di entrambi. Con tabella e FAQ.
+
+Comunicazione con gli ospiti
 
 ## WhatsApp per hotel: configurazione, regole di Meta e AI (2026)
 8 ottobre 2026
 WhatsApp per hotel nel 2026: app Business o API, finestra di 24 ore, modelli, consenso, prezzi di Meta e cosa può (e non può) fare un assistente AI.
 
+Distribuzione
+
 ## Overbooking in hotel: cos'è e come evitarlo in 6 passi
 21 settembre 2026
 Cos'è l'overbooking in hotel e come evitarlo tra Booking.com, Airbnb ed Expedia: un solo calendario, sync in tempo reale e cosa fare se succede.
+
+Comunicazione con gli ospiti
 
 ## Messaggi Booking.com: 12 risposte automatiche gratuite (2026)
 21 settembre 2026
 Risposte pronte per i messaggi degli ospiti su Booking.com: check-in, parcheggio, arrivo tardi, colazione. 12 modelli gratuiti e 3 modi per automatizzarle.
 
+Comunicazione con gli ospiti
+
 ## Rispondere ai messaggi degli ospiti con l'AI: guida pratica
 18 settembre 2026
 Vantaggi, rischi e come configurare l'AI per rispondere ai messaggi degli ospiti dell'hotel. Quali domande automatizzare e quali lasciare al tuo team.
+
+Scegliere il software
 
 ## Gestionale per piccoli hotel (PMS): come sceglierlo, prezzi 2026
 10 settembre 2026
@@ -10322,6 +10587,14 @@ URL: https://hostliopro.com/it/blog/rispondere-ai-messaggi-degli-ospiti-con-ai/
 A cura del team di prodotto Hostlio Pro , le persone che sviluppano Hostlio Pro. Pubblicato il 18 settembre 2026 , aggiornato il 23 settembre 2026
 
 In breve: la maggior parte dei messaggi che riceve un hotel sono domande ricorrenti (orario del check-in, parcheggio, transfer, colazione). Affidarle a un assistente AI addestrato sulle informazioni del tuo hotel permette agli ospiti di ricevere una risposta in pochi secondi, nella loro lingua. Sconti, reclami e richieste speciali dovrebbero restare al tuo staff.
+
+Indice
+
+- Quali domande ricevono più spesso gli hotel?
+- Cosa deve automatizzare l'AI, e cosa no?
+- Configurazione passo dopo passo
+- Perché le risposte multilingue sono importanti
+- Come funziona in Hostlio Pro
 
 ## Quali domande ricevono più spesso gli hotel?
 
@@ -10379,6 +10652,21 @@ URL: https://hostliopro.com/it/blog/come-scegliere-gestionale-per-hotel-piccolo/
 A cura del team di prodotto Hostlio Pro , le persone che sviluppano Hostlio Pro. Pubblicato il 10 settembre 2026 , aggiornato il 23 settembre 2026
 
 In breve: il PMS giusto per un piccolo hotel ha un channel manager integrato, prezzi fissi e trasparenti, un'unica casella per i messaggi degli ospiti, accesso da mobile e si configura in giornata. I sistemi enterprise con centinaia di funzioni finiscono spesso inutilizzati dai piccoli team.
+
+Indice
+
+- 1. Un channel manager integrato
+- 2. Modello di prezzo
+- 3. Comunicazione con gli ospiti
+- 4. Un planning camere pratico
+- 5. Accesso da mobile
+- 6. Check-in online
+- 7. Configurazione e supporto
+- Quanto costa un gestionale per hotel?
+- Quale piano per quale dimensione
+- Alloggiati Web e ISTAT: cosa chiedere al fornitore
+- Come usare la prova gratuita: checklist di migrazione
+- Checklist
 
 ## 1. Un channel manager integrato
 
@@ -10927,6 +11215,16 @@ A cura del team di prodotto Hostlio Pro , le persone che sviluppano Hostlio Pro.
 
 In breve: l'overbooking consiste nell'accettare più prenotazioni di quelle che puoi ospitare per la stessa camera e le stesse date. Negli hotel indipendenti la causa più comune è l'aggiornamento manuale della disponibilità su più OTA. Un channel manager bidirezionale e in tempo reale elimina gran parte del rischio.
 
+Indice
+
+- Perché si verifica l'overbooking?
+- Evita l'overbooking in 6 passi
+- E se succede comunque?
+- Overbooking tra i canali OTA: dove sono i buchi
+- Controllo quotidiano di 5 minuti
+- Se succede comunque: riproteggere l'ospite
+- Come funziona in Hostlio Pro
+
 ## Perché si verifica l'overbooking?
 
 - Aggiornare a mano, separatamente, la disponibilità su Booking.com, Airbnb ed Expedia
@@ -11023,6 +11321,15 @@ URL: https://hostliopro.com/it/blog/risposta-automatica-messaggi-booking-com/
 A cura del team di prodotto Hostlio Pro , le persone che sviluppano Hostlio Pro. Pubblicato il 21 settembre 2026 , aggiornato il 23 settembre 2026
 
 In breve: ci sono tre modi per automatizzare i messaggi di Booking.com: i modelli di messaggio salvati nell'extranet, i messaggi programmati legati alla fase della prenotazione e un assistente AI che capisce la domanda dell'ospite e risponde con le informazioni del tuo hotel. I modelli vanno bene per le informazioni standard; un assistente AI è adatto alle domande che cambiano da ospite a ospite. Qui sotto trovi 12 modelli di risposta gratuiti da copiare nell'extranet.
+
+Indice
+
+- 1. Modelli di messaggio
+- 2. Messaggi programmati
+- 3. Un assistente AI
+- Perché il tempo di risposta conta
+- 12 modelli di risposta Booking.com gratuiti da copiare
+- Come funziona in Hostlio Pro
 
 ## 1. Modelli di messaggio
 
@@ -11524,6 +11831,19 @@ A cura del team di prodotto Hostlio Pro , le persone che sviluppano Hostlio Pro.
 
 In breve: il PMS (property management system, il gestionale) gestisce l'interno della struttura: planning delle prenotazioni, camere, ospiti, pulizie e report. Il channel manager gestisce il collegamento con l'esterno: invia disponibilità, tariffe e restrizioni a Booking.com, Airbnb, Expedia e agli altri canali e riporta indietro le loro prenotazioni. Se vendi su più di un canale online ti servono entrambe le funzioni. Per una piccola struttura la soluzione più semplice di solito è un PMS con channel manager integrato: un solo planning e nessuna sincronizzazione da tenere allineata tra due sistemi.
 
+Indice
+
+- Cosa fa un PMS
+- Channel manager: cos'è e cosa fa
+- PMS e channel manager a confronto
+- Come lavorano insieme
+- Tre configurazioni possibili
+- Servono davvero entrambi?
+- Quanto costa
+- Domande da fare prima di scegliere
+- Come funziona in Hostlio Pro
+- Fonti
+
 ## Cosa fa un PMS
 
 Il PMS è il sistema in cui lavora la reception. È l'unico registro di chi alloggia, in quale camera, in quali date e a che prezzo. Compiti tipici:
@@ -11645,6 +11965,21 @@ URL: https://hostliopro.com/it/blog/whatsapp-per-hotel/
 A cura del team di prodotto Hostlio Pro , le persone che sviluppano Hostlio Pro. Pubblicato il 8 ottobre 2026 , aggiornato il 23 settembre 2026
 
 In breve: WhatsApp funziona bene per gli hotel perché gli ospiti lo usano già e rispondono in fretta. Una piccola struttura può iniziare con l'app gratuita WhatsApp Business su un solo telefono. Quando devono rispondere più persone, o vuoi risposte automatiche e un collegamento con le prenotazioni, ti serve la WhatsApp Business Platform (la Cloud API di Meta), di solito tramite il gestionale o un fornitore di messaggistica. Tre regole condizionano tutto: l'ospite deve dare il consenso, le risposte libere sono possibili solo entro 24 ore dal suo ultimo messaggio e ciò che invii fuori da quella finestra deve essere un modello approvato da Meta.
+
+Indice
+
+- Perché gli hotel usano WhatsApp
+- App WhatsApp Business o WhatsApp Business Platform?
+- La finestra di assistenza di 24 ore
+- Modelli di messaggio
+- Quanto fa pagare Meta
+- Consenso e disiscrizione: cosa chiede la policy
+- Limiti di messaggistica
+- Rispondere nella lingua di ogni ospite
+- Cosa può e non può fare un assistente AI su WhatsApp
+- Configurare WhatsApp per il tuo hotel: checklist
+- Come si inserisce Lio, l'assistente di Hostlio Pro
+- Fonti
 
 ## Perché gli hotel usano WhatsApp
 
@@ -12859,21 +13194,31 @@ URL: https://hostliopro.com/pt/blog/
 ## Blog para hoteleiros
 Conteúdo prático sobre a gestão de um hotel independente, distribuição e comunicação com hóspedes.
 
+Escolher software
+
 ## O que é channel manager e qual a diferença para o PMS
 8 de outubro de 2026
 Channel manager e PMS: o que cada um faz, como funcionam juntos, quanto custam e se um hotel pequeno precisa dos dois. Com tabela comparativa e FAQ.
+
+Distribuição
 
 ## Overbooking em hotel: o que é e como evitar em 6 passos
 21 de setembro de 2026
 O que é overbooking em hotel e como evitar entre Booking.com, Airbnb e Expedia: um só calendário, sincronização em tempo real e o que fazer se acontecer.
 
+Comunicação com hóspedes
+
 ## Mensagens do Booking.com: 12 respostas automáticas grátis (2026)
 21 de setembro de 2026
 Respostas prontas para mensagens de hóspedes no Booking.com: check-in, estacionamento, chegada tarde, café. 12 modelos grátis e 3 formas de automatizar.
 
+Comunicação com hóspedes
+
 ## Como responder às mensagens de hóspedes com IA: guia prático
 18 de setembro de 2026
 Benefícios, riscos e como configurar a IA para responder às mensagens dos hóspedes do hotel. Quais perguntas automatizar e quais deixar com a sua equipe.
+
+Escolher software
 
 ## Sistema para hotel pequeno e pousada: como escolher (2026)
 10 de setembro de 2026
@@ -12887,6 +13232,14 @@ URL: https://hostliopro.com/pt/blog/responder-mensagens-de-hospedes-com-ia/
 Pela equipe de produto do Hostlio Pro , as pessoas que desenvolvem o Hostlio Pro. Publicado em 18 de setembro de 2026 , atualizado em 23 de setembro de 2026
 
 Resposta curta: A maioria das mensagens que um hotel recebe são perguntas repetidas (horário de check-in, estacionamento, transfers, café da manhã). Ao entregá-las a uma assistente de IA treinada com as informações do próprio hotel, os hóspedes recebem resposta em segundos, no idioma deles. Descontos, reclamações e pedidos especiais devem continuar com a sua equipe.
+
+Índice
+
+- Quais são as perguntas mais comuns nos hotéis?
+- O que a IA deve automatizar e o que não deve?
+- Configuração passo a passo
+- Por que respostas em vários idiomas importam
+- Como funciona no Hostlio Pro
 
 ## Quais são as perguntas mais comuns nos hotéis?
 
@@ -12944,6 +13297,17 @@ URL: https://hostliopro.com/pt/blog/como-escolher-sistema-para-hotel-pequeno/
 Pela equipe de produto do Hostlio Pro , as pessoas que desenvolvem o Hostlio Pro. Publicado em 10 de setembro de 2026 , atualizado em 23 de setembro de 2026
 
 Resposta curta: O sistema para hotel (PMS) certo para um hotel pequeno tem channel manager integrado, preço fixo e transparente, uma só caixa de entrada para as mensagens dos hóspedes, acesso pelo celular e implantação no mesmo dia. Sistemas corporativos com centenas de funções costumam ficar subutilizados por equipes pequenas.
+
+Índice
+
+- 1. Channel manager integrado
+- 2. Modelo de preços
+- 3. Comunicação com hóspedes
+- 4. Um mapa de reservas prático
+- 5. Acesso pelo celular
+- 6. Check-in online
+- 7. Implantação e suporte
+- Checklist
 
 ## 1. Channel manager integrado
 
@@ -13409,6 +13773,16 @@ Pela equipe de produto do Hostlio Pro , as pessoas que desenvolvem o Hostlio Pro
 
 Resposta curta: Overbooking é aceitar mais reservas do que você consegue hospedar para o mesmo quarto e as mesmas datas. Em hotéis independentes, a causa mais comum é atualizar a disponibilidade à mão em várias OTAs. Um channel manager bidirecional e em tempo real elimina a maior parte do risco.
 
+Índice
+
+- Por que o overbooking acontece?
+- Evite o overbooking em 6 passos
+- E se acontecer mesmo assim?
+- Overbooking entre canais OTA: onde ficam as brechas
+- Checagem diária de 5 minutos
+- Se acontecer mesmo assim: realocar o hóspede
+- Como funciona no Hostlio Pro
+
 ## Por que o overbooking acontece?
 
 - Atualizar a disponibilidade no Booking.com, no Airbnb e na Expedia separadamente, à mão
@@ -13505,6 +13879,15 @@ URL: https://hostliopro.com/pt/blog/resposta-automatica-mensagens-booking-com/
 Pela equipe de produto do Hostlio Pro , as pessoas que desenvolvem o Hostlio Pro. Publicado em 21 de setembro de 2026 , atualizado em 23 de setembro de 2026
 
 Resposta curta: Há três formas de automatizar as mensagens do Booking.com: modelos de mensagem salvos na extranet, mensagens programadas de acordo com a etapa da reserva e um assistente de IA que entende a pergunta do hóspede e responde com as informações do seu hotel. Os modelos servem para informações padrão; um assistente de IA serve para as perguntas que mudam a cada hóspede. Logo abaixo você encontra 12 modelos de resposta grátis para copiar na extranet.
+
+Índice
+
+- 1. Modelos de mensagem
+- 2. Mensagens programadas
+- 3. Um assistente de IA
+- Por que o tempo de resposta importa
+- 12 modelos grátis de resposta para o Booking.com
+- Como funciona no Hostlio Pro
 
 ## 1. Modelos de mensagem
 
@@ -14365,6 +14748,19 @@ URL: https://hostliopro.com/pt/blog/o-que-e-channel-manager-diferenca-pms/
 Pela equipe de produto do Hostlio Pro , as pessoas que desenvolvem o Hostlio Pro. Publicado em 8 de outubro de 2026 , atualizado em 23 de setembro de 2026
 
 Resposta curta: o PMS (property management system, o sistema de gestão do hotel) cuida da parte de dentro: mapa de reservas, quartos, hóspedes, governança e relatórios. O channel manager cuida da conexão com fora: envia disponibilidade, tarifas e restrições para Booking.com, Airbnb, Expedia e outros canais e traz as reservas de volta. Se você vende em mais de um canal online, precisa das duas funções. Para um hotel pequeno, o mais simples costuma ser um PMS com channel manager integrado: um só calendário e nada para manter sincronizado entre dois sistemas.
+
+Índice
+
+- O que um PMS faz
+- O que é channel manager e o que ele faz
+- PMS x channel manager
+- Como os dois trabalham juntos
+- Três formas de montar
+- Preciso dos dois?
+- Quanto custa
+- Perguntas para fazer antes de decidir
+- Como funciona no Hostlio Pro
+- Fontes
 
 ## O que um PMS faz
 
@@ -15558,25 +15954,37 @@ URL: https://hostliopro.com/fr/blog/
 ## Le blog des hôteliers
 Des articles pratiques sur la gestion d'un hôtel indépendant, la distribution et la communication avec les clients.
 
+Choisir un logiciel
+
 ## PMS ou channel manager : quelle différence ?
 8 octobre 2026
 PMS et channel manager : rôle de chacun, fonctionnement ensemble, coûts et faut-il les deux pour un petit hôtel ? Tableau comparatif et FAQ.
+
+Communication client
 
 ## WhatsApp pour hôtels : mise en place, règles de Meta et IA (2026)
 8 octobre 2026
 WhatsApp pour les hôtels en 2026 : app Business ou API, fenêtre de 24 heures, modèles, consentement, tarifs de Meta et ce que peut faire un assistant IA.
 
+Distribution
+
 ## Éviter la surréservation entre canaux OTA : 6 étapes
 21 septembre 2026
 Éviter la surréservation entre Booking.com, Airbnb et Expedia : un seul planning, synchronisation en temps réel et que faire si elle survient.
+
+Communication client
 
 ## Messagerie Booking.com : 12 réponses automatiques (2026)
 21 septembre 2026
 Réponses prêtes pour la messagerie Booking.com : heure d’arrivée, parking, arrivée tardive, petit-déjeuner. 12 modèles gratuits et 3 façons d’automatiser.
 
+Communication client
+
 ## Répondre aux clients de l'hôtel avec l'IA : guide pratique
 18 septembre 2026
 Avantages, risques et mise en place : répondre avec l'IA aux messages de vos clients. Quelles questions automatiser, lesquelles laisser à l'équipe.
+
+Choisir un logiciel
 
 ## Logiciel de gestion hôtelière pour petit hôtel : guide 2026
 10 septembre 2026
@@ -15590,6 +15998,14 @@ URL: https://hostliopro.com/fr/blog/repondre-aux-messages-clients-avec-ia/
 Par l' équipe produit Hostlio Pro , celle qui conçoit Hostlio Pro. Publié le 18 septembre 2026 , mis à jour le 23 septembre 2026
 
 Réponse courte : la plupart des messages reçus par un hôtel sont des questions récurrentes (heure d'arrivée, parking, transferts, petit-déjeuner). Les confier à un assistant IA formé avec les informations de votre hôtel permet aux clients d'obtenir une réponse en quelques secondes, dans leur langue. Les remises, les réclamations et les demandes particulières doivent rester entre les mains de votre équipe.
+
+Sommaire
+
+- Quelles questions les hôtels reçoivent-ils le plus ?
+- Que doit automatiser l'IA, et que ne doit-elle pas automatiser ?
+- Mise en place étape par étape
+- Pourquoi les réponses multilingues comptent
+- Comment cela fonctionne dans Hostlio Pro
 
 ## Quelles questions les hôtels reçoivent-ils le plus ?
 
@@ -15647,6 +16063,17 @@ URL: https://hostliopro.com/fr/blog/choisir-logiciel-gestion-hoteliere-petit-hot
 Par l' équipe produit Hostlio Pro , celle qui conçoit Hostlio Pro. Publié le 10 septembre 2026 , mis à jour le 23 septembre 2026
 
 Réponse courte : le bon logiciel de gestion hôtelière (PMS) pour un petit hôtel intègre un channel manager, propose un prix fixe et transparent, une boîte de réception unique pour les messages clients, un accès mobile et une mise en place le jour même. Les systèmes conçus pour les grands groupes, avec des centaines de fonctionnalités, restent souvent inexploités par les petites équipes.
+
+Sommaire
+
+- 1. Un channel manager intégré
+- 2. Le modèle tarifaire
+- 3. La communication client
+- 4. Un planning des chambres pratique
+- 5. L'accès mobile
+- 6. Le check-in en ligne
+- 7. Mise en place et support
+- Liste de contrôle
 
 ## 1. Un channel manager intégré
 
@@ -16108,6 +16535,16 @@ Par l' équipe produit Hostlio Pro , celle qui conçoit Hostlio Pro. Publié le 
 
 Réponse courte : la surréservation (overbooking) consiste à accepter plus de réservations que vous ne pouvez en accueillir pour la même chambre et les mêmes dates. Dans les hôtels indépendants, la cause la plus fréquente est la mise à jour manuelle des disponibilités sur plusieurs OTA. Un channel manager bidirectionnel en temps réel élimine l’essentiel du risque.
 
+Sommaire
+
+- Pourquoi la surréservation se produit-elle ?
+- Éviter la surréservation en 6 étapes
+- Et si cela arrive malgré tout ?
+- Surréservation entre canaux OTA : où sont les failles
+- Le contrôle quotidien de 5 minutes
+- Si elle survient quand même : délogement du client
+- Comment cela fonctionne dans Hostlio Pro
+
 ## Pourquoi la surréservation se produit-elle ?
 
 - Mettre à jour les disponibilités sur Booking.com, Airbnb et Expedia séparément, à la main
@@ -16204,6 +16641,15 @@ URL: https://hostliopro.com/fr/blog/reponse-automatique-messages-booking-com/
 Par l' équipe produit Hostlio Pro , celle qui conçoit Hostlio Pro. Publié le 21 septembre 2026 , mis à jour le 23 septembre 2026
 
 Réponse courte : il existe trois façons d’automatiser les messages Booking.com : les modèles de messages enregistrés dans l’extranet, les messages programmés selon l’étape de la réservation, et un assistant IA qui comprend la question du client et répond à partir des informations de votre hôtel. Les modèles conviennent aux informations standard ; un assistant IA convient aux questions qui diffèrent d’un client à l’autre. Vous trouverez ci-dessous 12 modèles de réponse gratuits à copier dans l’extranet.
+
+Sommaire
+
+- 1. Modèles de messages
+- 2. Messages programmés
+- 3. Un assistant IA
+- Pourquoi le temps de réponse compte
+- 12 modèles de réponse Booking.com gratuits à copier
+- Comment cela fonctionne dans Hostlio Pro
 
 ## 1. Modèles de messages
 
@@ -16863,6 +17309,19 @@ Par l' équipe produit Hostlio Pro , celle qui conçoit Hostlio Pro. Publié le 
 
 En bref : le PMS (property management system, le logiciel de gestion hôtelière) gère l'intérieur de l'établissement : planning des réservations, chambres, clients, ménage et rapports. Le channel manager gère le lien avec l'extérieur : il envoie disponibilités, tarifs et restrictions à Booking.com, Airbnb, Expedia et aux autres canaux, et rapatrie leurs réservations. Si vous vendez sur plus d'un canal en ligne, vous avez besoin des deux fonctions. Pour un petit hôtel, le plus simple est souvent un PMS avec channel manager intégré : un seul planning et aucune synchronisation à maintenir entre deux systèmes.
 
+Sommaire
+
+- Ce que fait un PMS
+- Ce que fait un channel manager
+- PMS et channel manager en un coup d'œil
+- Comment ils fonctionnent ensemble
+- Trois façons de s'organiser
+- Faut-il les deux ?
+- Combien ça coûte
+- Les questions à poser avant de choisir
+- Comment ça marche dans Hostlio Pro
+- Sources
+
 ## Ce que fait un PMS
 
 Le PMS est l'outil de la réception. C'est le registre unique de qui séjourne, dans quelle chambre, à quelles dates et à quel prix. Ses tâches habituelles :
@@ -16984,6 +17443,21 @@ URL: https://hostliopro.com/fr/blog/whatsapp-pour-hotels/
 Par l' équipe produit Hostlio Pro , celle qui conçoit Hostlio Pro. Publié le 8 octobre 2026 , mis à jour le 23 septembre 2026
 
 En bref : WhatsApp fonctionne bien pour les hôtels parce que les clients l'utilisent déjà et répondent vite. Un petit établissement peut commencer avec l'application gratuite WhatsApp Business sur un seul téléphone. Dès que plusieurs personnes doivent répondre, ou que vous voulez des réponses automatiques reliées à vos réservations, il vous faut la WhatsApp Business Platform (la Cloud API de Meta), en général via votre PMS ou un prestataire de messagerie. Trois règles encadrent tout : le client doit avoir donné son accord, les réponses libres ne sont possibles que dans les 24 heures suivant son dernier message, et tout envoi en dehors de cette fenêtre doit être un modèle approuvé par Meta.
+
+Sommaire
+
+- Pourquoi les hôtels utilisent WhatsApp
+- Application WhatsApp Business ou WhatsApp Business Platform ?
+- La fenêtre de service client de 24 heures
+- Les modèles de message
+- Ce que facture Meta
+- Consentement et désinscription : ce qu'exige la politique
+- Limites d'envoi
+- Répondre dans la langue de chaque client
+- Ce qu'un assistant IA peut et ne peut pas faire sur WhatsApp
+- Mettre en place WhatsApp dans votre hôtel : check-list
+- La place de Lio, l'assistant de Hostlio Pro
+- Sources
 
 ## Pourquoi les hôtels utilisent WhatsApp
 
