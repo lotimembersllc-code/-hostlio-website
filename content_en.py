@@ -76,7 +76,7 @@ def ai():
      ("What if Lio gives wrong information?", "Lio only uses the hotel information and reservation data you provide. When it isn't sure, it hands the message to you instead of guessing. You can also approve every reply before it's sent."),
      ("Does it answer Booking.com and Airbnb messages too?", "Yes. On the Pro and Growth plans, OTA messages arrive in Lio's inbox and are answered the same way."),
      ("Can Lio take bookings?", "Yes, on the Pro and Growth plans, with your approval. When a guest writes on WhatsApp, Lio asks for the dates, number of guests and room preference, quotes a price from your rates and availability, and passes the request to you. It only becomes a reservation once you approve it; Lio never confirms a booking on its own. Extra-service requests such as transfers and tours work the same way."),
-     ("What happens when the message quota runs out?", "Messages keep arriving and appear in your dashboard; only automatic replies pause. You can upgrade to a higher plan to increase your quota."),
+     ("What happens when the message quota runs out?", "You won’t be surprised: the usage counter in the dashboard turns amber at 80%, and at 100% the account owner gets an email and a push notification. Lio keeps replying a little past the limit; automatic replies pause at about 110%. Messages keep arriving and appear in your dashboard, and your team can still answer them by hand. Upgrade to a higher plan to increase your quota."),
      FAQ_CORE[4],
     ]
     return {"key":"ai","title":"AI Guest Messaging for Hotels in 30+ Languages | Hostlio Pro",
@@ -170,7 +170,7 @@ def features():
 <div class="row"><h3>Channel manager</h3><div><p>Availability, rate and booking sync with 100+ OTAs over certified connections.</p><a href="{U("channel")}">Channel manager</a></div></div>
 <div class="row"><h3>Room rack</h3><div><p>Drag-and-drop reservation calendar. Drag a booking to move it to another room; see free rooms and conflicts at a glance.</p></div></div>
 <div class="row"><h3>Online check-in</h3><div><p>Secure link, accompanying guests, document scan (no images stored) and digital signature.</p><a href="{U("checkin")}">Online check-in</a></div></div>
-<div class="row"><h3>Accommodation confirmation for visas</h3><div><p>Create the accommodation confirmation guests need for a visa or invitation application from the reservation in one click, then save it as a PDF or print it.</p></div></div>
+<div class="row"><h3>Guest documents</h3><div><p>From the reservation, create the accommodation confirmation guests need for a visa or invitation application, or a stay receipt with dates, nightly rate and total. Choose English, Turkish, Spanish, Italian, Portuguese or French (the guest’s language is suggested), then print or save as PDF. A guest registration form can be downloaded as a PDF too.</p></div></div>
 <div class="row"><h3>Transfer and tour sales</h3><div><p>Lio suggests airport transfers and tours during the conversation and passes the request to your team.</p></div></div>
 <div class="row"><h3>Lio Suggestions and AI insights</h3><div><p>Every morning Lio prepares suggestions on pricing, operations (rooms waiting to be cleaned, pending requests), setup gaps and revenue opportunities. Nothing changes without your approval, and rate suggestions stay within limits you set. On Pro and Growth, recurring complaints and praise in reviews and messages are summarised too.</p></div></div>
 <div class="row"><h3>Mobile app</h3><div><p>Manage bookings, messages and check-ins away from the hotel with the iOS and Android app.</p>{store_badges("en")}</div></div>
@@ -237,7 +237,7 @@ FAQ_ALL = FAQ_CORE + [
  ("Is my data secure?", "Data is transmitted over encrypted connections, and each hotel's data is isolated from other properties with row-level access rules. Guest data can be deleted on request."),
  ("How long does setup take?", "Your account is ready in minutes. Most hotels connect their channels the same day: add room types and rooms, authorise the connection in each OTA's extranet and map your rooms. The Growth plan includes a custom onboarding call."),
  ("Which languages is support offered in?", "Support is available in English and Turkish. The dashboard, mobile app and guest check-in form are available in 6 languages: English, Turkish, Spanish, French, Italian and Portuguese. Reach us at " + EMAIL + "."),
-] + FX.faq(L,"faq_import","faq_roles","faq_reports")
+] + FX.faq(L,"faq_import","faq_roles","faq_reports","faq_owner")
 
 def faq_page():
     body = f'''<section class="page-hero"><div class="wrap"><h1>Frequently asked questions</h1>

@@ -234,7 +234,7 @@ def whatsapp_page(B):
 <h2 style="margin-top:64px">Lio neler yapar?</h2><div class="rows">{rows}</div>
 <h2 style="margin-top:64px">Lio neleri yapmaz?</h2><div class="prose"><ul>{"".join(f"<li>{x}</li>" for x in donts)}</ul></div>
 <h2 style="margin-top:64px">Planlar ve mesaj kotası</h2><p>Bir AI mesajı, Lio'nun misafire gönderdiği tek bir yanıttır. Kanal yöneticisi ve oda rafı tüm planlarda dahildir.</p>{plan}
-<p class="small muted" style="margin-top:12px">Fiyatlar ABD doları, erken kayıt aylık fiyatlarıdır. Kotanız %80'e ve %100'e geldiğinde e-postayla haber veririz. Ayrıntılar: <a href="{U("pricing")}">fiyatlandırma</a>.</p>
+<p class="small muted" style="margin-top:12px">Fiyatlar ABD doları, erken kayıt aylık fiyatlarıdır. Kullanım sayacı %80'de panelde uyarı verir, %100'de e-posta gönderilir. Ayrıntılar: <a href="{U("pricing")}">fiyatlandırma</a>.</p>
 <h2 style="margin-top:64px">Kimler için uygun?</h2>
 <div class="prose"><ul><li>Gece resepsiyonu olmayan ya da tek kişiyle dönen pansiyon, butik otel ve apart oteller</li>
 <li>Yabancı misafiri çok olan, farklı dillerde mesaj alan tesisler</li>
@@ -245,7 +245,7 @@ def whatsapp_page(B):
            ("Lio hangi dillerde cevap veriyor?", "Misafir hangi dilde yazarsa Lio o dilde cevap verir; cevabın Türkçe çevirisini panelde görürsünüz. Panel ve uygulama Türkçe, İngilizce, İspanyolca, Fransızca, İtalyanca ve Portekizce kullanılabilir."),
            ("Booking.com ve Airbnb mesajlarını da yanıtlıyor mu?", "Evet, Pro ve Growth planlarında. Starter planında Lio WhatsApp mesajlarını yanıtlar; OTA rezervasyonları senkronize edilir ama OTA mesajları Lio'ya bağlanmaz."),
            ("Lio WhatsApp'tan rezervasyon alabiliyor mu?", "Pro ve Growth planlarında rezervasyon talebi alır: tarih, kişi sayısı ve oda tercihini toplar, sizin fiyatlarınıza göre fiyat verir ve talebi size iletir. Talep ancak siz onayladığınızda rezervasyona dönüşür."),
-           ("Mesaj kotası dolarsa ne olur?", "Kotanız %80'e ve %100'e geldiğinde e-postayla haber veririz. Kota aşıldığında mesajlar gelmeye ve panelde görünmeye devam eder, yalnızca otomatik yanıt durur. Üst plana geçerek kotanızı artırabilirsiniz.")]
+           ("Mesaj kotası dolarsa ne olur?", "Paneldeki kullanım sayacı %80'de turuncuya döner, %100'de hesap sahibine e-posta ve anlık bildirim gider. Otomatik yanıt yaklaşık %110'da durur; mesajlar gelmeye ve panelde görünmeye devam eder, ekibiniz elle cevaplayabilir. Üst plana geçerek kotanızı artırabilirsiniz.")]
     return {"key": "whatsapp-tr", "title": "Otel WhatsApp Asistanı: Lio ile 7/24 Misafir Yanıtı | Hostlio Pro",
             "desc": "Otel WhatsApp asistanı Lio, misafir sorularını otel bilgilerinizle ve misafirin dilinde 7/24 yanıtlar; rezervasyon talebini onayınıza getirir.",
             "trail": [("AI asistan Lio", U("ai")), ("Otel WhatsApp asistanı", U("whatsapp-tr"))], "body": body, "faq": faq,

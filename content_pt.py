@@ -81,7 +81,7 @@ def ai():
      ("E se o Lio der uma informação errada?", "O Lio usa apenas as informações do hotel e os dados de reserva que você fornece. Quando não tem certeza, ele repassa a mensagem para você em vez de adivinhar. Você também pode aprovar cada resposta antes do envio."),
      ("Ele também responde às mensagens do Booking.com e do Airbnb?", "Sim. Nos planos Pro e Growth, as mensagens das OTAs chegam à caixa de entrada do Lio e são respondidas da mesma forma."),
      ("O Lio consegue receber reservas?", "Sim, nos planos Pro e Growth e sempre com a sua aprovação. Quando um hóspede escreve no WhatsApp, o Lio pergunta as datas, o número de hóspedes e o quarto preferido, informa o preço com base nas suas tarifas e disponibilidade e repassa o pedido para você. Ele só vira reserva depois que você aprova; o Lio nunca confirma uma reserva sozinho. Pedidos de serviços extras, como transfers e passeios, funcionam do mesmo jeito."),
-     ("O que acontece quando a cota de mensagens acaba?", "As mensagens continuam chegando e aparecem no seu painel; apenas as respostas automáticas ficam pausadas. Você pode migrar para um plano superior para aumentar a cota."),
+     ("O que acontece quando a cota de mensagens acaba?", "Sem surpresas: o contador de uso no painel fica âmbar em 80% e, em 100%, o titular da conta recebe um e-mail e uma notificação push. O Lio continua respondendo um pouco além do limite; as respostas automáticas pausam por volta de 110%. As mensagens continuam chegando e aparecem no seu painel, e a equipe pode responder manualmente. Você pode migrar para um plano superior para aumentar a cota."),
      FAQ_CORE[4],
     ]
     return {"key":"ai","title":"IA para Mensagens de Hóspedes em 30+ Idiomas | Hostlio Pro",
@@ -175,7 +175,7 @@ def features():
 <div class="row"><h3>Channel manager</h3><div><p>Sincronização de disponibilidade, tarifas e reservas com mais de 100 OTAs com conexões certificadas.</p><a href="{U("channel")}">Channel manager</a></div></div>
 <div class="row"><h3>Mapa de reservas</h3><div><p>Calendário de reservas com arrastar e soltar. Arraste uma reserva para trocar de quarto e veja de relance os quartos livres e os conflitos.</p></div></div>
 <div class="row"><h3>Check-in online</h3><div><p>Link seguro, acompanhantes, leitura do documento (sem guardar imagens) e assinatura digital.</p><a href="{U("checkin")}">Check-in online</a></div></div>
-<div class="row"><h3>Declaração de hospedagem para visto</h3><div><p>Gere com um clique, a partir da reserva, a declaração de hospedagem pedida no visto ou na carta-convite; salve em PDF ou imprima.</p></div></div>
+<div class="row"><h3>Documentos do hóspede</h3><div><p>A partir da reserva, gere a declaração de hospedagem pedida no visto ou na carta-convite, ou um recibo da estadia com datas, diária e total. Escolha português, inglês, turco, espanhol, italiano ou francês (o idioma do hóspede é sugerido) e imprima ou salve em PDF. A ficha de registro do hóspede também pode ser baixada em PDF.</p></div></div>
 <div class="row"><h3>Venda de transfers e passeios</h3><div><p>O Lio sugere transfers do aeroporto e passeios durante a conversa e repassa o pedido para a sua equipe.</p></div></div>
 <div class="row"><h3>Sugestões do Lio e insights de IA</h3><div><p>Toda manhã o Lio prepara sugestões sobre preços, operação (quartos aguardando limpeza, pedidos pendentes), configurações que faltam e oportunidades de receita. Nada muda sem sua aprovação, e as sugestões de preço respeitam os limites que você define. Nos planos Pro e Growth, ele também resume as reclamações e os elogios que se repetem em avaliações e mensagens.</p></div></div>
 <div class="row"><h3>App para celular</h3><div><p>Gerencie reservas, mensagens e check-ins fora do hotel com o app para iOS e Android.</p>{store_badges("pt")}</div></div>
@@ -242,7 +242,7 @@ FAQ_ALL = FAQ_CORE + [
  ("Meus dados estão seguros?", "Os dados são transmitidos por conexões criptografadas, e os dados de cada hotel ficam isolados das outras propriedades com regras de acesso por linha. Os dados dos hóspedes podem ser excluídos mediante solicitação."),
  ("Quanto tempo leva a implantação?", "Sua conta fica pronta em minutos. A maioria dos hotéis conecta os canais no mesmo dia: cadastre os tipos de quarto e os quartos, autorize a conexão na extranet de cada OTA e mapeie os quartos. O plano Growth inclui uma chamada de onboarding personalizada."),
  ("Em quais idiomas o suporte é oferecido?", "O suporte é oferecido em inglês e turco. O painel, o app e o formulário de check-in do hóspede estão disponíveis em 6 idiomas: português, inglês, turco, espanhol, francês e italiano. Fale com a gente em " + EMAIL + "."),
-] + FX.faq(L,"faq_import","faq_roles","faq_reports")
+] + FX.faq(L,"faq_import","faq_roles","faq_reports","faq_owner")
 
 def faq_page():
     body = f'''<section class="page-hero"><div class="wrap"><h1>Perguntas frequentes</h1>

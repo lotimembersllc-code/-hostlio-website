@@ -265,6 +265,49 @@ def _fr_typo(x):
     if isinstance(x, tuple): return tuple(_fr_typo(i) for i in x)
     if isinstance(x, dict): return {k: _fr_typo(v) for k, v in x.items()}
     return x
+# Tur 2 (8 Ekim 2026): düşük öncelikli boşluklar — #6 sahiplik devri (SSS), #21 doğrudan rezervasyon indirimleri,
+# #22 misafir kartı, #28 pasif oda tipi (kanal satırı). Kodla doğrulandı (panel + backend main, 8 Ekim):
+# #21 yalnız yüzde, en yüksek tek kural; yalnız elle "Doğrudan" kaynaklı rezervasyonda öneri; OTA'ya gitmez.
+# "Tekrar gelen misafir rozeti" YAZILMADI (genel rozet yok). #22 profiller elle oluşturulur; 365 gün anonimleştirme yazılmadı.
+# #6 yalnız hesap sahibi başlatır, alıcı yönetici rolünde; parola onayı; 48 saatte kabul; eski sahip yönetici olarak kalır.
+# #28 Channex'e eşli oda tipleri için 0 müsaitlik, bayraksız canlı.
+TUR2 = {
+ "en": dict(
+  guest=("Guest cards", "Keep a card for the guests you want to remember: contact details, nationality and your notes. Mark regulars as VIP and filter the list by them; the number of stays and the last stay are counted from their reservations."),
+  disc=("Direct-booking discounts", "Set percentage rules for long stays, early booking, last-minute booking and returning guests, limited to dates or room types if you like. When you enter a direct booking by hand, the best matching discount is suggested and applied in one click; returning guests are recognised by phone or email. Discounts are never sent to the OTAs."),
+  inactive="Deactivating a room type works the same way: availability 0 goes to every connected channel until you switch it back on.",
+  owner=("Can I hand the account over to a new owner?", "Yes. The account owner can transfer ownership to a team member with the manager role after confirming their password. The new owner has 48 hours to accept; the previous owner stays on the team as a manager, and both receive an email when the transfer is complete.")),
+ "tr": dict(
+  guest=("Misafir kartı", "Hatırlamak istediğiniz misafirler için kart tutun: iletişim bilgileri, uyruk ve notlarınız. Düzenli misafirleri VIP işaretleyin, listeyi onlara göre süzün; konaklama sayısı ve son konaklama rezervasyonlarından hesaplanır."),
+  disc=("Doğrudan rezervasyon indirimleri", "Uzun konaklama, erken rezervasyon, son dakika ve tekrar gelen misafir için yüzde indirim kuralları tanımlayın; isterseniz tarihe ya da oda tipine sınırlayın. Elle doğrudan rezervasyon girerken en uygun indirim önerilir ve tek tıkla uygulanır; tekrar gelen misafir telefon ya da e-postasından tanınır. İndirimler OTA'lara gönderilmez."),
+  inactive="Bir oda tipini pasifleştirdiğinizde de aynısı olur: siz yeniden açana kadar tüm bağlı kanallara 0 müsaitlik gider.",
+  owner=("Hesabı yeni bir sahibe devredebilir miyim?", "Evet. Hesap sahibi, parolasını onaylayarak sahipliği yönetici rolündeki bir ekip üyesine devredebilir. Yeni sahibin kabul etmek için 48 saati vardır; önceki sahip ekipte yönetici olarak kalır ve devir tamamlanınca ikisine de e-posta gider.")),
+ "es": dict(
+  guest=("Ficha del huésped", "Guarda una ficha de los huéspedes que quieres recordar: datos de contacto, nacionalidad y tus notas. Marca a los habituales como VIP y filtra la lista por ellos; el número de estancias y la última estancia se calculan a partir de sus reservas."),
+  disc=("Descuentos para reserva directa", "Define reglas en porcentaje para estancias largas, reserva anticipada, última hora y huéspedes que repiten, limitadas a fechas o tipos de habitación si quieres. Al registrar a mano una reserva directa, se sugiere el descuento que mejor encaja y se aplica con un clic; el huésped que repite se reconoce por su teléfono o email. Los descuentos nunca se envían a las OTA."),
+  inactive="Desactivar un tipo de habitación funciona igual: se envía disponibilidad 0 a todos los canales conectados hasta que lo vuelvas a activar.",
+  owner=("¿Puedo traspasar la cuenta a un nuevo propietario?", "Sí. El titular de la cuenta puede transferir la propiedad a un miembro del equipo con rol de gerente, tras confirmar su contraseña. El nuevo titular tiene 48 horas para aceptar; el anterior sigue en el equipo como gerente y ambos reciben un email cuando se completa el traspaso.")),
+ "it": dict(
+  guest=("Scheda ospite", "Tieni una scheda per gli ospiti che vuoi ricordare: contatti, nazionalità e le tue note. Segna gli abituali come VIP e filtra l'elenco; numero di soggiorni e ultimo soggiorno sono calcolati dalle loro prenotazioni."),
+  disc=("Sconti per le prenotazioni dirette", "Imposta regole in percentuale per soggiorni lunghi, prenotazione anticipata, last minute e ospiti che tornano, limitate a date o tipologie se vuoi. Quando inserisci a mano una prenotazione diretta, lo sconto più adatto viene suggerito e applicato con un clic; l'ospite che torna è riconosciuto da telefono o email. Gli sconti non vengono mai inviati alle OTA."),
+  inactive="Lo stesso accade se disattivi una tipologia di camera: a tutti i canali collegati va disponibilità 0 finché non la riattivi.",
+  owner=("Posso cedere l'account a un nuovo titolare?", "Sì. Il titolare dell'account può trasferire la proprietà a un membro del team con ruolo di manager, dopo aver confermato la propria password. Il nuovo titolare ha 48 ore per accettare; il precedente resta nel team come manager ed entrambi ricevono un'email a trasferimento completato.")),
+ "pt": dict(
+  guest=("Ficha do hóspede", "Mantenha uma ficha dos hóspedes que você quer lembrar: contatos, nacionalidade e suas observações. Marque os habituais como VIP e filtre a lista por eles; o número de estadias e a última estadia são calculados a partir das reservas."),
+  disc=("Descontos para reserva direta", "Crie regras em porcentagem para estadias longas, reserva antecipada, última hora e hóspedes que voltam, limitadas a datas ou tipos de quarto se quiser. Ao lançar uma reserva direta à mão, o desconto mais adequado é sugerido e aplicado com um clique; o hóspede que volta é reconhecido pelo telefone ou e-mail. Os descontos nunca são enviados às OTAs."),
+  inactive="Desativar um tipo de quarto funciona do mesmo jeito: disponibilidade 0 vai para todos os canais conectados até você reativá-lo.",
+  owner=("Posso transferir a conta para um novo dono?", "Sim. O titular da conta pode transferir a titularidade para um membro da equipe com papel de gerente, depois de confirmar a senha. O novo titular tem 48 horas para aceitar; o anterior continua na equipe como gerente e os dois recebem um e-mail quando a transferência termina.")),
+ "fr": dict(
+  guest=("Fiche client", "Gardez une fiche pour les clients dont vous voulez vous souvenir : coordonnées, nationalité et vos notes. Marquez les habitués comme VIP et filtrez la liste ; le nombre de séjours et le dernier séjour sont calculés à partir de leurs réservations."),
+  disc=("Remises pour la réservation directe", "Créez des règles en pourcentage pour les longs séjours, la réservation anticipée, la dernière minute et les clients fidèles, limitées à des dates ou types de chambre si vous le souhaitez. Quand vous saisissez une réservation directe, la remise la plus adaptée est proposée et appliquée en un clic ; le client fidèle est reconnu par son téléphone ou son e-mail. Les remises ne sont jamais envoyées aux OTA."),
+  inactive="Désactiver un type de chambre a le même effet : une disponibilité de 0 part vers tous les canaux connectés jusqu'à sa réactivation.",
+  owner=("Puis-je transférer le compte à un nouveau propriétaire ?", "Oui. Le titulaire du compte peut transférer la propriété à un membre de l'équipe ayant le rôle de manager, après avoir confirmé son mot de passe. Le nouveau titulaire a 48 heures pour accepter ; l'ancien reste dans l'équipe en tant que manager et tous deux reçoivent un e-mail une fois le transfert terminé.")),
+}
+for _L, _t in TUR2.items():
+    FX[_L]["groups"][0][1].append(_t["guest"])
+    FX[_L]["groups"][1][1].insert(3, _t["disc"])
+    _h, _p = FX[_L]["ch_rows"][1]; FX[_L]["ch_rows"][1] = (_h, _p + " " + _t["inactive"])
+    FX[_L]["faq_owner"] = _t["owner"]
 FX["fr"] = _fr_typo(FX["fr"])
 
 

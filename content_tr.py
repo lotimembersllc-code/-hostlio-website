@@ -79,7 +79,7 @@ def ai():
      ("Lio yanlış bilgi verirse ne olur?", "Lio yalnızca sizin girdiğiniz otel bilgilerini ve rezervasyon verilerini kullanır. Emin olmadığı sorularda tahmin yürütmek yerine mesajı size iletir. Dilerseniz tüm cevapları gönderilmeden önce onaylayabilirsiniz."),
      ("Booking.com ve Airbnb mesajlarını da yanıtlıyor mu?", "Evet. Pro ve Growth planlarında OTA mesajları da Lio'nun gelen kutusuna düşer ve aynı şekilde yanıtlanır."),
      ("Lio rezervasyon alabiliyor mu?", "Pro ve Growth planlarında evet, onayınızla. Misafir WhatsApp'tan yazdığında Lio tarih, kişi sayısı ve oda tercihini sorar, sizin fiyat ve müsaitlik bilgilerinize göre fiyat verir ve talebi size iletir. Talep ancak siz onayladığınızda rezervasyona dönüşür; Lio kendi başına rezervasyon kesinleştirmez. Transfer ve tur gibi ek hizmet taleplerini de aynı şekilde alır."),
-     ("Mesaj kotası dolarsa ne olur?", "Kotanız dolduğunda mesajlar gelmeye devam eder ve panelde görünür; yalnızca otomatik yanıt durur. Üst plana geçerek kotanızı artırabilirsiniz."),
+     ("Mesaj kotası dolarsa ne olur?", "Sürpriz olmaz: paneldeki kullanım sayacı %80'de turuncuya döner, %100'de hesap sahibine e-posta ve anlık bildirim gider. Lio sınırı biraz aşana kadar cevap vermeye devam eder; otomatik yanıt yaklaşık %110'da durur. Mesajlar gelmeye ve panelde görünmeye devam eder, ekibiniz elle cevaplayabilir. Üst plana geçerek kotanızı artırabilirsiniz."),
      FAQ_CORE[5],
     ]
     return {"key":"ai","title":"AI Misafir Asistanı Lio: 30+ Dilde Mesajlar | Hostlio Pro",
@@ -173,7 +173,7 @@ def features():
 <div class="row"><h3>Kanal yöneticisi</h3><div><p>100+ OTA'da sertifikalı bağlantılarla müsaitlik, fiyat ve rezervasyon senkronizasyonu.</p><a href="{U("channel")}">Kanal yöneticisi</a></div></div>
 <div class="row"><h3>Oda rafı (room rack)</h3><div><p>Sürükle-bırak rezervasyon takvimi. Rezervasyonu sürükleyerek odasını değiştirin; boş odaları ve çakışmaları tek bakışta görün.</p></div></div>
 <div class="row"><h3>Online check-in</h3><div><p>Güvenli bağlantı, refakatçi misafirler, belge tarama (görüntü saklanmaz) ve dijital imza.</p><a href="{U("checkin")}">Online check-in</a></div></div>
-<div class="row"><h3>Vize için konaklama onayı</h3><div><p>Vize ya da davet başvurusunda istenen konaklama onayını rezervasyon bilgilerinden tek tıkla hazırlayın; PDF olarak kaydedin ya da yazdırın.</p></div></div>
+<div class="row"><h3>Misafir belgeleri</h3><div><p>Rezervasyondan, vize ya da davet başvurusunda istenen konaklama onayını veya tarihleri, gecelik fiyatı ve toplamı gösteren konaklama makbuzunu hazırlayın. Türkçe, İngilizce, İspanyolca, İtalyanca, Portekizce ya da Fransızca seçin (misafirin dili önerilir), yazdırın ya da PDF olarak kaydedin. Misafir kayıt formu da PDF olarak indirilebilir.</p></div></div>
 <div class="row"><h3>Transfer ve tur satışı</h3><div><p>Lio mesajlaşma sırasında havalimanı transferi ve tur önerir, talebi ekibinize iletir.</p></div></div>
 <div class="row"><h3>Lio Önerileri ve AI içgörüleri</h3><div><p>Lio her sabah fiyat, operasyon (kirli odalar, bekleyen talepler), kurulum eksikleri ve gelir fırsatları için öneriler hazırlar. Onayınız olmadan hiçbir şey değişmez; fiyat önerileri belirlediğiniz sınırların dışına çıkmaz. Pro ve Growth'ta yorum ve mesajlardaki tekrar eden şikâyet ve övgüler de özetlenir.</p></div></div>
 <div class="row"><h3>Mobil uygulama</h3><div><p>iOS ve Android uygulamasıyla rezervasyonları, mesajları ve check-in'leri otelin dışından yönetin.</p>{store_badges("tr")}</div></div>
@@ -240,7 +240,7 @@ FAQ_ALL = FAQ_CORE + [
  ("Verilerim güvende mi?", "Veriler şifreli bağlantı üzerinden iletilir ve her otelin verisi satır düzeyinde erişim kurallarıyla diğer tesislerden ayrılır. Misafir verileri talep üzerine silinebilir."),
  ("Kurulum ne kadar sürer?", "Hesabınız dakikalar içinde hazır olur. Çoğu otel kanallarını aynı gün bağlar: oda tiplerini ve odaları girin, her OTA'nın extranet'inde bağlantıyı yetkilendirin ve odaları eşleyin. Growth planında birebir kurulum görüşmesi dahildir."),
  ("Türkçe destek veriyor musunuz?", "Evet. Destek Türkçe ve İngilizce verilir. Panel, mobil uygulama ve misafirin check-in formu 6 dilde kullanılabilir: Türkçe, İngilizce, İspanyolca, Fransızca, İtalyanca ve Portekizce. Bize " + EMAIL + " adresinden ulaşabilirsiniz."),
-] + FX.faq(L,"faq_import","faq_roles","faq_reports")
+] + FX.faq(L,"faq_import","faq_roles","faq_reports","faq_owner")
 
 def faq_page():
     body = f'''<section class="page-hero"><div class="wrap"><h1>Sık sorulan sorular</h1>
