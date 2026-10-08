@@ -287,7 +287,7 @@ POSTS = [
 
 POSTS += __import__("legal_v5").legacy_meta()
 def blog():
-    items = "".join(f'<article><h2><a href="{U(p["key"])}">{p["title"]}</a></h2><p class="meta"><time datetime="{p["date"]}">{p["date"]}</time></p><p>{p["desc"]}</p></article>' for p in POSTS)
+    items = "".join(f'<article><h2><a href="{U(p["key"])}">{p["title"]}</a></h2><p class="meta"><time datetime="{p["date"]}">{p["date"]}</time></p><p>{p["desc"]}</p></article>' for p in [dict(p, **{k: v for k, v in __import__("pages_v4").post_meta(L).get(p["key"], {}).items() if k in ("title", "desc")}) for p in POSTS])
     body = f'<section class="page-hero"><div class="wrap"><h1>Blog for hoteliers</h1><p class="lead">Practical writing on running an independent hotel, distribution and guest communication.</p></div></section><section style="padding-top:0"><div class="wrap post-list">{items}</div></section>'
     return {"key":"blog","title":"Blog: Guides for Independent Hotels | Hostlio Pro","desc":"Practical guides for independent hoteliers on hotel management, channel management, OTA distribution and AI guest communication.",
             "trail":[("Blog", U("blog"))],"body":body,"page_type":"CollectionPage"}

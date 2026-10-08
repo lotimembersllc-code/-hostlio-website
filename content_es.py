@@ -291,7 +291,7 @@ POSTS = [
 ]
 
 def blog():
-    items = "".join(f'<article><h2><a href="{U(p["key"])}">{p["title"]}</a></h2><p class="meta"><time datetime="{p["date"]}">{D(p["date"])}</time></p><p>{p["desc"]}</p></article>' for p in POSTS)
+    items = "".join(f'<article><h2><a href="{U(p["key"])}">{p["title"]}</a></h2><p class="meta"><time datetime="{p["date"]}">{D(p["date"])}</time></p><p>{p["desc"]}</p></article>' for p in [dict(p, **{k: v for k, v in __import__("pages_v4").post_meta(L).get(p["key"], {}).items() if k in ("title", "desc")}) for p in POSTS])
     body = f'<section class="page-hero"><div class="wrap"><h1>Blog para hoteleros</h1><p class="lead">Artículos prácticos sobre la gestión de un hotel independiente, la distribución y la comunicación con los huéspedes.</p></div></section><section style="padding-top:0"><div class="wrap post-list">{items}</div></section>'
     return {"key":"blog","title":"Blog: guías para hoteles independientes | Hostlio Pro","desc":"Guías prácticas para hoteleros independientes sobre gestión hotelera, channel manager, distribución en OTAs y comunicación con huéspedes mediante IA.",
             "trail":[("Blog", U("blog"))],"body":body,"page_type":"CollectionPage"}

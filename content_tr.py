@@ -289,14 +289,14 @@ POSTS = [
 ]
 
 def blog():
-    items = "".join(f'<article><h2><a href="{U(p["key"])}">{p["title"]}</a></h2><p class="meta"><time datetime="{p["date"]}">{p["date"]}</time></p><p>{p["desc"]}</p></article>' for p in POSTS)
+    items = "".join(f'<article><h2><a href="{U(p["key"])}">{p["title"]}</a></h2><p class="meta"><time datetime="{p["date"]}">{p["date"]}</time></p><p>{p["desc"]}</p></article>' for p in [dict(p, **{k: v for k, v in __import__("pages_v4").post_meta(L).get(p["key"], {}).items() if k in ("title", "desc")}) for p in POSTS])
     body = f'<section class="page-hero"><div class="wrap"><h1>Otelciler için blog</h1><p class="lead">Bağımsız otel işletmeciliği, dağıtım ve misafir iletişimi üzerine pratik yazılar.</p></div></section><section style="padding-top:0"><div class="wrap post-list">{items}</div></section>'
     return {"key":"blog","title":"Blog: Bağımsız Oteller için Rehberler | Hostlio Pro","desc":"Otel yönetimi, kanal yönetimi, OTA dağıtımı ve AI ile misafir iletişimi üzerine bağımsız otelcilere yönelik pratik rehberler.",
             "trail":[("Blog", U("blog"))],"body":body,"page_type":"CollectionPage"}
 
 COVERS={"post-ai":("gen-checkin-phone",1080,1350),"post-pms":("gen-owner-laptop",1080,1350),"post-overbooking":("gen-reception",1080,1350),"post-autoreply":("gen-night-desk",1080,1350)}
 def article(meta, content, faq=None):
-    art = {"@type":"BlogPosting","headline":meta["title"],"description":meta["desc"],"datePublished":meta["date"],"inLanguage":"tr-TR","author":{"@type":"Organization","name":"Hostlio Pro ürün ekibi","url":SITE+"/hakkimizda/"},"dateModified":UPDATED,"publisher":{"@id":SITE+"/#org"},
+    art = {"@type":"BlogPosting","headline":meta["title"],"description":meta["desc"],"datePublished":meta["date"],"inLanguage":"tr-TR","author":{"@type":"Organization","name":"Hostlio Pro ürün ekibi","url":SITE+U("about")},"dateModified":UPDATED,"publisher":{"@id":SITE+"/#org"},
            "mainEntityOfPage":SITE+U(meta["key"]),"image":SITE+"/assets/img/"+COVERS[meta["key"]][0]+".webp"}
     body = f'<article><section class="page-hero"><div class="wrap"><h1 style="max-width:22ch">{meta["title"]}</h1><p class="meta">Yazan: <a href="/tr/hakkimizda/">Hostlio Pro ürün ekibi</a>, otel yazılımı geliştiren ekip. Yayın: <time datetime="{meta["date"]}">{meta["date"]}</time>, güncelleme: <time datetime="{UPDATED}">{UPDATED}</time></p></div></section><section style="padding-top:0"><div class="wrap"><figure class="post-cover"><img src="/assets/img/{COVERS[meta["key"]][0]}.webp" alt="" width="{COVERS[meta["key"]][1]}" height="{COVERS[meta["key"]][2]}"></figure><div class="prose">{content}</div></div></section></article>'
     return {"key":meta["key"],"title":meta["title"],"desc":meta["desc"],"og_type":"article",
