@@ -287,8 +287,8 @@ POSTS = [
  {"key":"post-autoreply","title":"Répondre automatiquement aux messages clients Booking.com","date":"2026-09-21","desc":"Trois façons d'automatiser les messages des clients Booking.com : modèles de réponse, messages programmés et assistant IA."},
  {"key":"post-ai","title":"Répondre aux clients de l'hôtel avec l'IA : guide pratique","date":"2026-09-18",
   "desc":"Avantages, risques et mise en place : répondre avec l'IA aux messages de vos clients. Quelles questions automatiser, lesquelles laisser à l'équipe."},
- {"key":"post-pms","title":"Choisir un logiciel de gestion hôtelière pour un petit hôtel","date":"2026-09-10",
-  "desc":"7 critères pour choisir le PMS d'un petit hôtel ou d'un hôtel boutique : channel manager, tarification, messagerie client, accès mobile et plus encore."},
+ {"key":"post-pms","title":"Logiciel de gestion hôtelière pour petit hôtel : guide 2026","date":"2026-09-10",
+  "desc":"Choisir un logiciel de gestion hôtelière pour un petit hôtel : 7 critères, modèles de prix, channel manager et check-in en ligne. Dès ⟦price:starter⟧/mois."},
 ]
 
 def blog():
@@ -342,7 +342,7 @@ def post_pms():
 <h2>4. Un planning des chambres pratique</h2>
 <p>Le calendrier des réservations est l'écran que la réception consulte le plus. Déplacer les chambres par glisser-déposer et voir d'un coup d'œil le canal de chaque réservation accélère le travail quotidien.</p>
 <h2>5. L'accès mobile</h2>
-<p>Les propriétaires sont souvent loin de leur établissement. Une application mobile, surtout si elle fonctionne pendant les coupures d'Internet, est un véritable besoin.</p>
+<p>Les propriétaires sont souvent loin de leur établissement. Pouvoir suivre les arrivées, les disponibilités et les messages depuis son téléphone, avec une application mobile ou au moins une interface adaptée au smartphone, est un véritable besoin.</p>
 <h2>6. Le check-in en ligne</h2>
 <p>Collecter les informations des clients avant leur arrivée fait gagner du temps à la réception et simplifie les obligations d'enregistrement des clients.</p>
 <h2>7. Mise en place et support</h2>
@@ -350,7 +350,7 @@ def post_pms():
 <h2>Liste de contrôle</h2>
 <div class="table-wrap"><table><thead><tr><th>Critère</th><th>Question à poser</th></tr></thead><tbody>
 <tr><td>Channel manager</td><td>Est-il inclus, et à combien de canaux se connecte-t-il ?</td></tr><tr><td>Tarifs</td><td>Le prix est-il fixe, y a-t-il une commission, le prix est-il public ?</td></tr>
-<tr><td>Messagerie</td><td>Les messages WhatsApp et OTA sont-ils réunis au même endroit, avec des réponses automatiques ?</td></tr><tr><td>Mobile</td><td>Existe-t-il une application, et fonctionne-t-elle hors ligne ?</td></tr>
+<tr><td>Messagerie</td><td>Les messages WhatsApp et OTA sont-ils réunis au même endroit, avec des réponses automatiques ?</td></tr><tr><td>Mobile</td><td>Existe-t-il une application mobile ou une interface utilisable sur smartphone ?</td></tr>
 <tr><td>Check-in</td><td>Y a-t-il un check-in en ligne avec signature électronique ?</td></tr><tr><td>Essai</td><td>Y a-t-il un essai gratuit et une résiliation sans engagement ?</td></tr></tbody></table></div>
 <p>Hostlio Pro a été conçu autour de ces critères : découvrez les <a href="{U("features")}">fonctionnalités</a> et les <a href="{U("pricing")}">tarifs</a>.</p>'''
     faq = [("Un petit hôtel a-t-il besoin d'un PMS ?", "Si vous vendez sur plusieurs OTA et recevez des dizaines de messages par jour, oui. Travailler avec des tableurs et des extranets OTA séparés augmente le risque de surbooking et de réponses tardives."),

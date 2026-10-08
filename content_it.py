@@ -286,8 +286,8 @@ POSTS = [
  {"key":"post-autoreply","title":"Come rispondere in automatico ai messaggi degli ospiti su Booking.com","date":"2026-09-21","desc":"Tre modi per automatizzare i messaggi degli ospiti di Booking.com: modelli, messaggi programmati e un assistente AI."},
  {"key":"post-ai","title":"Rispondere ai messaggi degli ospiti con l'AI: guida pratica","date":"2026-09-18",
   "desc":"Vantaggi, rischi e come configurare l'AI per rispondere ai messaggi degli ospiti dell'hotel. Quali domande automatizzare e quali lasciare al tuo team."},
- {"key":"post-pms","title":"Come scegliere il gestionale per un piccolo hotel","date":"2026-09-10",
-  "desc":"7 criteri per scegliere un PMS per un piccolo hotel o boutique hotel: channel manager, modello di prezzo, messaggi degli ospiti, accesso da mobile e altro."},
+ {"key":"post-pms","title":"Gestionale per piccoli hotel: come sceglierlo (prezzi 2026)","date":"2026-09-10",
+  "desc":"Come scegliere un gestionale per piccoli hotel: modelli di prezzo, costi per 8, 20 e 45 camere, Alloggiati Web e checklist. PMS da ⟦price:starter⟧/mese."},
 ]
 
 def blog():
@@ -341,19 +341,61 @@ def post_pms():
 <h2>4. Un planning camere pratico</h2>
 <p>Il calendario delle prenotazioni è la schermata che la reception guarda di più. Spostare le camere con il drag-and-drop e vedere a colpo d'occhio il canale di ogni prenotazione velocizza il lavoro quotidiano.</p>
 <h2>5. Accesso da mobile</h2>
-<p>Spesso i titolari non sono in struttura. Un'app mobile, soprattutto se funziona anche quando manca internet, è un'esigenza concreta.</p>
+<p>Spesso i titolari non sono in struttura. Poter controllare arrivi, disponibilità e messaggi dal telefono, con un'app mobile o almeno con un pannello che funzioni bene da smartphone, è un'esigenza concreta.</p>
 <h2>6. Check-in online</h2>
-<p>Raccogliere i dati degli ospiti prima dell'arrivo fa risparmiare tempo alla reception e semplifica gli obblighi di registrazione degli ospiti.</p>
+<p>Raccogliere i dati degli ospiti prima dell'arrivo fa risparmiare tempo alla reception e semplifica gli obblighi di registrazione degli ospiti. Conviene verificare come vengono letti i documenti (inserimento manuale o lettura della banda MRZ), se le immagini dei documenti vengono conservate e se è prevista la firma digitale.</p>
 <h2>7. Configurazione e supporto</h2>
 <p>Un piccolo hotel non può permettersi un progetto di implementazione di settimane. Scegli un software che puoi usare il giorno stesso, con supporto nella tua lingua, e metti alla prova il periodo di prova con prenotazioni reali.</p>
+<h2>Quanto costa un gestionale per hotel?</h2>
+<p>Il canone mensile indicato in vetrina racconta solo una parte della storia. Per confrontare due gestionali bisogna ricostruire il costo annuo complessivo, perché i fornitori combinano voci diverse:</p>
+<ul><li><strong>Canone fisso mensile o annuale:</strong> lo stesso importo indipendentemente dalle prenotazioni. È il modello più facile da mettere a budget.</li>
+<li><strong>Prezzo per camera:</strong> il canone cresce con il numero di camere. Per una struttura che sta aggiungendo camere va calcolato anche lo scenario futuro.</li>
+<li><strong>Commissione sulle prenotazioni:</strong> una percentuale sul valore delle prenotazioni gestite. Il costo sale proprio nei mesi migliori. Ad esempio, l'1% di 100.000 € di prenotazioni annue equivale a 1.000 € all'anno, che si sommano al canone.</li>
+<li><strong>Costi di attivazione:</strong> setup, formazione o migrazione dei dati fatturati una tantum.</li>
+<li><strong>Costi per canale:</strong> alcuni channel manager fanno pagare ogni OTA collegata, o includono solo un numero limitato di canali.</li>
+<li><strong>Moduli aggiuntivi:</strong> channel manager, check-in online, motore di messaggistica o app mobile venduti a parte. Un prezzo base basso può diventare alto una volta aggiunti i moduli indispensabili.</li></ul>
+<h3>Esempio: cosa calcolare per 8, 20 e 45 camere</h3>
+<p>La tabella non riporta prezzi di altri fornitori, che cambiano spesso e spesso non sono pubblici, ma le voci da chiedere per ottenere un preventivo confrontabile. Per i dati pubblicati dai principali fornitori c'è il nostro <a href="{U("compare")}">confronto tra gestionali per hotel</a>, con le fonti.</p>
+<div class="table-wrap"><table><thead><tr><th>Struttura</th><th>Cosa calcolare con ogni fornitore</th><th>Piano Hostlio Pro adatto</th></tr></thead><tbody>
+<tr><td>B&amp;B o piccolo hotel da 8 camere</td><td>Canone annuo + eventuale commissione sul fatturato + costo del channel manager se separato</td><td>Starter: ⟦price:starter⟧/mese, oppure ⟦annual_mo:starter⟧/mese con pagamento annuale</td></tr>
+<tr><td>Hotel da 20 camere</td><td>Canone annuo (verificare se cambia per camera) + moduli per check-in online e caselle OTA + utenti aggiuntivi</td><td>Pro: ⟦price:pro⟧/mese, oppure ⟦annual_mo:pro⟧/mese con pagamento annuale</td></tr>
+<tr><td>Hotel da 45 camere</td><td>Canone annuo + costi per canale + numero di utenti incluso + costi di attivazione e migrazione</td><td>Pro (fino a ⟦rooms:pro⟧ camere), oppure Growth se si gestisce una seconda struttura</td></tr></tbody></table></div>
+<p>Per stimare quanto tempo e quante commissioni può far risparmiare un gestionale, si può usare il <a href="{U("roi")}">calcolatore ROI</a> inserendo i dati della propria struttura.</p>
+<h3>I prezzi di Hostlio Pro</h3>
+<p>Hostlio Pro pubblica i prezzi e applica un canone fisso, senza commissioni sulle prenotazioni. Il channel manager è incluso in tutti i piani. Prezzi in dollari USA:</p>
+<div class="table-wrap"><table><thead><tr><th>Piano</th><th>Mensile</th><th>Annuale (al mese)</th><th>Limite</th></tr></thead><tbody>
+<tr><td>Starter</td><td>⟦price:starter⟧</td><td>⟦annual_mo:starter⟧ (⟦annual:starter⟧/anno)</td><td>1 struttura, fino a ⟦rooms:starter⟧ camere, 3 utenti</td></tr>
+<tr><td>Pro</td><td>⟦price:pro⟧</td><td>⟦annual_mo:pro⟧ (⟦annual:pro⟧/anno)</td><td>1 struttura, fino a ⟦rooms:pro⟧ camere, 8 utenti</td></tr>
+<tr><td>Growth</td><td>⟦price:growth⟧</td><td>⟦annual_mo:growth⟧ (⟦annual:growth⟧/anno)</td><td>Fino a 2 strutture, ⟦rooms:growth⟧ camere in totale, 20 utenti</td></tr></tbody></table></div>
+<p>Ogni piano parte con una prova gratuita di ⟦trial⟧ giorni: la carta viene registrata all'iscrizione, ma l'addebito avviene solo alla fine della prova. Tutti i dettagli sono nella <a href="{U("pricing")}">pagina dei prezzi</a>.</p>
+<h2>Quale piano per quale dimensione</h2>
+<ul><li><strong>Fino a ⟦rooms:starter⟧ camere</strong> (B&amp;B, affittacamere, piccoli boutique hotel): Starter copre planning camere, <a href="{U("channel")}">channel manager</a> e risposte AI su WhatsApp.</li>
+<li><strong>Da 11 a ⟦rooms:pro⟧ camere:</strong> Pro aggiunge le caselle delle OTA (Booking.com, Airbnb, Expedia) nella stessa inbox, il <a href="{U("checkin")}">check-in online</a> con firma digitale e più utenti per lo staff.</li>
+<li><strong>Due strutture</strong>, fino a ⟦rooms:growth⟧ camere in totale: Growth permette di gestirle dallo stesso account, con 20 utenti.</li></ul>
+<h2>Alloggiati Web e ISTAT: cosa chiedere al fornitore</h2>
+<p>In Italia le strutture ricettive devono comunicare le generalità degli ospiti alla Polizia di Stato tramite il portale Alloggiati Web e trasmettere i dati sui movimenti turistici per le statistiche ISTAT, secondo le modalità previste dalla propria regione. Un gestionale può semplificare molto questo lavoro, ma il livello di integrazione varia: alcuni software inviano i dati direttamente, altri si limitano a preparare un file da caricare, altri ancora non prevedono nulla.</p>
+<p>Prima di scegliere conviene chiedere esplicitamente se il PMS è integrato con Alloggiati Web e con il sistema regionale per l'ISTAT, oppure se esporta soltanto i dati. Hostlio Pro raccoglie e organizza i dati degli ospiti con il check-in online, ma non invia i dati ad Alloggiati Web: la comunicazione va fatta tramite il portale ufficiale.</p>
+<h2>Come usare la prova gratuita: checklist di migrazione</h2>
+<ol><li><strong>Importare le prenotazioni future</strong> dal sistema attuale, ad esempio da un file CSV o Excel, e controllare che date, camere e importi corrispondano.</li>
+<li><strong>Mappare camere e tariffe sulle OTA</strong> con attenzione: ogni tipologia di camera del gestionale deve corrispondere a quella giusta su Booking.com, Airbnb ed Expedia.</li>
+<li><strong>Fare una prenotazione di prova</strong> su un canale e verificare che la disponibilità si chiuda sugli altri. È il modo più semplice per <a href="{U("post-overbooking")}">evitare l'overbooking</a> dopo il passaggio.</li>
+<li><strong>Collegare WhatsApp</strong> e caricare le informazioni della struttura, poi lasciare che <a href="{U("ai")}">Lio</a> proponga le risposte e controllarle per qualche giorno.</li>
+<li><strong>Creare gli utenti dello staff</strong> con i ruoli corretti e far lavorare la reception sul planning per almeno un turno completo.</li>
+<li><strong>Esportare i dati</strong> e verificare che sia possibile portarli via in un formato leggibile: è una garanzia anche per il futuro.</li>
+<li><strong>Decidere prima della fine della prova</strong>, così da disdire senza addebiti se il software non è adatto.</li></ol>
 <h2>Checklist</h2>
 <div class="table-wrap"><table><thead><tr><th>Criterio</th><th>Domanda da porre</th></tr></thead><tbody>
 <tr><td>Channel manager</td><td>È incluso e a quanti canali si collega?</td></tr><tr><td>Prezzi</td><td>Il prezzo è fisso, ci sono commissioni, è pubblico?</td></tr>
-<tr><td>Messaggistica</td><td>I messaggi di WhatsApp e delle OTA sono in un unico posto, con risposte automatiche?</td></tr><tr><td>Mobile</td><td>Esiste un'app e funziona offline?</td></tr>
-<tr><td>Check-in</td><td>C'è il check-in online con firma digitale?</td></tr><tr><td>Prova</td><td>C'è una prova gratuita e si può disdire senza vincoli?</td></tr></tbody></table></div>
+<tr><td>Costo totale</td><td>Ci sono costi di attivazione, per canale, per camera o moduli a parte?</td></tr>
+<tr><td>Messaggistica</td><td>I messaggi di WhatsApp e delle OTA sono in un unico posto, con risposte automatiche?</td></tr><tr><td>Mobile</td><td>Esiste un'app mobile o un pannello utilizzabile da smartphone?</td></tr>
+<tr><td>Check-in</td><td>C'è il check-in online con firma digitale?</td></tr><tr><td>Alloggiati Web</td><td>Il PMS invia i dati direttamente o li esporta soltanto?</td></tr>
+<tr><td>Dati</td><td>Si possono importare ed esportare le prenotazioni?</td></tr><tr><td>Prova</td><td>C'è una prova gratuita e si può disdire senza vincoli?</td></tr></tbody></table></div>
 <p>Hostlio Pro è stato progettato intorno a questi criteri: scopri le <a href="{U("features")}">funzionalità</a> e i <a href="{U("pricing")}">prezzi</a>.</p>'''
     faq = [("Un piccolo hotel ha bisogno di un PMS?", "Se vendi su più OTA e ricevi decine di messaggi al giorno, sì. Lavorare con fogli di calcolo e con gli extranet delle singole OTA aumenta il rischio di overbooking e di risposte lente."),
-           ("Qual è la differenza tra un PMS e un channel manager?", "Un PMS gestisce le operazioni interne dell'hotel (prenotazioni, camere, ospiti); un channel manager distribuisce disponibilità e tariffe sulle OTA. Software come Hostlio Pro riuniscono entrambi in un'unica piattaforma.")]
+           ("Qual è la differenza tra un PMS e un channel manager?", "Un PMS gestisce le operazioni interne dell'hotel (prenotazioni, camere, ospiti); un channel manager distribuisce disponibilità e tariffe sulle OTA. Software come Hostlio Pro riuniscono entrambi in un'unica piattaforma."),
+           ("Quanto costa un gestionale per un hotel di 10 camere?", "Dipende dal modello di prezzo: canone fisso, prezzo per camera o commissione sulle prenotazioni, più eventuali moduli e costi di attivazione. Con Hostlio Pro un hotel fino a ⟦rooms:starter⟧ camere rientra nel piano Starter, a ⟦price:starter⟧ al mese o ⟦annual_mo:starter⟧ al mese con pagamento annuale, channel manager incluso e senza commissioni."),
+           ("Un gestionale con commissione sulle prenotazioni conviene?", "Può convenire a chi ha pochissime prenotazioni, ma il costo cresce con l'occupazione. Per confrontarlo con un canone fisso basta moltiplicare la percentuale per il valore annuo delle prenotazioni gestite dal sistema."),
+           ("Hostlio Pro invia i dati ad Alloggiati Web?", "No. Il check-in online di Hostlio Pro raccoglie e organizza i dati degli ospiti prima dell'arrivo, ma la comunicazione alla Polizia di Stato va effettuata tramite il portale Alloggiati Web.")]
     return article(next(p for p in POSTS if p["key"]=="post-pms"), c, faq)
 
 def pages():

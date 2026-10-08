@@ -39,8 +39,8 @@ NOTFOUND = ("Page introuvable | Hostlio Pro", "La page que vous cherchez a peut-
 
 # ------------------------------------------------------------------ home_v3.T
 HOME = dict(
-  title="Hostlio Pro | Logiciel de gestion hôtelière avec IA",
-  desc="Logiciel de gestion hôtelière Hostlio Pro : l’IA Lio répond aux clients 24/7 en 30+ langues et le channel manager synchronise 100+ OTA. 7 jours offerts.",
+  title="Logiciel de gestion hôtelière avec IA | Hostlio Pro",
+  desc="Logiciel de gestion hôtelière : l’IA Lio répond aux clients 24/7 en 30+ langues, channel manager 100+ OTA. Dès ⟦price:starter⟧/mois, ⟦trial⟧ jours offerts.",
   h1='Pendant que votre hôtel dort, <em class="hl">Lio</em> répond',
   lead="Le logiciel de gestion hôtelière propulsé par l’IA pour les hôtels indépendants et les chambres d’hôtes. Réservations, 100+ canaux et messages clients au même endroit, en 30+ langues.",
   try_="Essai gratuit", demo="Demander une démo", via="Connexions certifiées :", more="et 100+ autres",
