@@ -55,7 +55,7 @@ HOME = dict(
   story_p="Cosa succede mentre dormi, in tre scene.",
   story=[("owner-night","Albergatore che dorme mentre il telefono si illumina sul comodino","02:14","Un ospite scrive","Un ospite dalla Germania chiede del check-in in tarda serata. Tu stai dormendo profondamente."),
          ("brand-phone","Mano che tiene un telefono con la schermata arancione di risposta di Lio","02:14","Lio risponde subito","Con le informazioni del tuo hotel, nella lingua dell'ospite. Se serve, ti lascia una nota."),
-         ("brand-hotelier","Albergatrice che attraversa la hall con il caffè del mattino","08:30","Al mattino è tutto pronto","La conversazione ti aspetta nel pannello, già tradotta. L'ospite è soddisfatto e tu sei riposato.")],
+         ("owner-morning","Albergatrice che guarda il telefono con il caffè del mattino sulla terrazza dell’hotel","08:30","Al mattino è tutto pronto","La conversazione ti aspetta nel pannello, già tradotta. L'ospite è soddisfatto e tu sei riposato.")],
   story_chip="Lio ha risposto",
   tour_h="Gestisci la giornata del tuo hotel <em class=\"hl\">da un'unica schermata</em>", tour_p="Messaggi degli ospiti, prenotazioni, canali e check-in lavorano insieme.", tour_label="Tour del prodotto",
   tabs=["Messaggi","Calendario","Canali","Check-in"],
