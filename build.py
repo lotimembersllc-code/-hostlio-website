@@ -408,7 +408,7 @@ def label_regions(body, lang):
             attr = f'aria-labelledby="{lb.group(1)}"'
         else:
             hs = re.findall(r"<h[23][^>]*>(.*?)</h[23]>", body[max(0, m.start() - 3000):m.start()], re.S)
-            txt = strip_tags(hs[-1]) if hs else ""
+            txt = (TABLE_LABEL[lang] + ": " + strip_tags(hs[-1])) if hs and strip_tags(hs[-1]) else ""   # bölüm başlığıyla aynı olmasın (landmark-unique)
             if not txt:
                 ths = [strip_tags(x) for x in re.findall(r"<th[^>]*>(.*?)</th>", nxt, re.S)][:3]
                 txt = TABLE_LABEL[lang] + (": " + ", ".join(t for t in ths if t) if ths else "")
