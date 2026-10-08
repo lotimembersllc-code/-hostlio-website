@@ -277,9 +277,7 @@ VIDEO_BTN = {"en": ("Pause video", "Play video"), "tr": ("Videoyu duraklat", "Vi
 def final_cta(lang):
     u = UI[lang]
     return f'''<section><div class="wrap"><div class="final on-dark">
-<img src="/assets/img/gen-night-desk.webp" alt="" loading="lazy" width="1080" height="1350">
-<video class="final-video" muted loop playsinline preload="none" aria-hidden="true" tabindex="-1" data-webm="/assets/video/night-desk.webm" data-mp4="/assets/video/night-desk.mp4"></video>
-<button type="button" class="vid-toggle" hidden aria-pressed="false" data-pause="{VIDEO_BTN[lang][0]}" data-play="{VIDEO_BTN[lang][1]}" aria-label="{VIDEO_BTN[lang][0]}"><span class="vt-pause" aria-hidden="true"></span></button>
+<img src="/assets/img/night-desk-empty.webp" alt="" loading="lazy" width="1080" height="1341">
 <div><h2>{u["final_h"]}</h2><p>{u["final_p"]}</p></div>
 <div class="cta-row">{btn(u["trial"], SIGNUP_URL)}{btn(u["demo"], demo_url(lang), "ghost")}</div>
 </div></div></section>'''
