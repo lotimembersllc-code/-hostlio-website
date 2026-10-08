@@ -252,7 +252,7 @@ def faq_page():
 
 def about():
     body = f'''<section class="page-hero"><div class="wrap split"><div><h1>Hostlio Pro'yu neden yaptık</h1>
-<p class="lead">Küçük otellerde resepsiyon, satış ve misafir iletişimi çoğu zaman aynı kişinin omzundadır. Hostlio Pro, bu kişinin gece mesajlara, gündüz kanal ekranlarına gömülmemesi için var.</p></div><div class="hero-img"><img src="/assets/img/gen-shutters.webp" alt="" width="1080" height="1350"></div></div></section>
+<p class="lead">Küçük otellerde resepsiyon, satış ve misafir iletişimi çoğu zaman aynı kişinin omzundadır. Hostlio Pro, bu kişinin gece mesajlara, gündüz kanal ekranlarına gömülmemesi için var.</p></div><div class="hero-img"><img src="/assets/img/about-ledger.webp" alt="" width="1080" height="1341"></div></div></section>
 <section class="white rule"><div class="wrap split">
 <div class="prose"><h2>Ne yapıyoruz</h2>
 <p>Hostlio Pro, bağımsız oteller için yapay zekâ destekli bir otel yönetim yazılımıdır. Misafir iletişimini AI asistanımız Lio'ya devrediyor, OTA dağıtımını tek takvimde topluyor ve check-in'i misafirin telefonuna taşıyoruz.</p>

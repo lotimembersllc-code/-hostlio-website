@@ -254,7 +254,7 @@ def faq_page():
 
 def about():
     body = f'''<section class="page-hero"><div class="wrap split"><div><h1>Por que criamos o Hostlio Pro</h1>
-<p class="lead">Em hotéis pequenos, a recepção, as vendas e a comunicação com os hóspedes muitas vezes ficam nas costas de uma só pessoa. O Hostlio Pro existe para que essa pessoa não fique soterrada por mensagens à noite e por telas de canais durante o dia.</p></div><div class="hero-img"><img src="/assets/img/gen-shutters.webp" alt="" width="1080" height="1350"></div></div></section>
+<p class="lead">Em hotéis pequenos, a recepção, as vendas e a comunicação com os hóspedes muitas vezes ficam nas costas de uma só pessoa. O Hostlio Pro existe para que essa pessoa não fique soterrada por mensagens à noite e por telas de canais durante o dia.</p></div><div class="hero-img"><img src="/assets/img/about-ledger.webp" alt="" width="1080" height="1341"></div></div></section>
 <section class="white rule"><div class="wrap split">
 <div class="prose"><h2>O que fazemos</h2>
 <p>O Hostlio Pro é um software de gestão hoteleira com inteligência artificial para hotéis independentes. Entregamos a comunicação com os hóspedes ao nosso assistente de IA Lio, reunimos a distribuição nas OTAs em um único calendário com conexões certificadas e levamos o check-in para o celular do hóspede.</p>

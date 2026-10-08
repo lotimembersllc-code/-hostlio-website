@@ -249,7 +249,7 @@ def faq_page():
 
 def about():
     body = f'''<section class="page-hero"><div class="wrap split"><div><h1>Why we built Hostlio Pro</h1>
-<p class="lead">In small hotels, reception, sales and guest communication often sit on one person's shoulders. Hostlio Pro exists so that person isn't buried in messages at night and channel screens by day.</p></div><div class="hero-img"><img src="/assets/img/gen-shutters.webp" alt="" width="1080" height="1350"></div></div></section>
+<p class="lead">In small hotels, reception, sales and guest communication often sit on one person's shoulders. Hostlio Pro exists so that person isn't buried in messages at night and channel screens by day.</p></div><div class="hero-img"><img src="/assets/img/about-ledger.webp" alt="" width="1080" height="1341"></div></div></section>
 <section class="white rule"><div class="wrap split">
 <div class="prose"><h2>What we do</h2>
 <p>Hostlio Pro is AI-powered hotel management software for independent hotels. We hand guest communication to our AI assistant Lio, bring OTA distribution onto one calendar over certified connections, and move check-in to the guest's phone.</p>

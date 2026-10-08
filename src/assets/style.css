@@ -602,6 +602,7 @@ a.card:hover{transform:translateY(-3px);box-shadow:var(--shadow)}
 .post-cover img{width:100%;height:100%;object-fit:cover}
 .post-cover img[src*="guest-balcony-dusk"]{object-position:50% 40%}
 .post-cover img[src*="overbooking-desk"]{object-position:50% 49%}
+img[src*="about-ledger"]{object-position:50% 68%}
 
 /* dark brand footer */
 .site-footer{background:var(--navy);color:var(--night-ink);border-top:0}
