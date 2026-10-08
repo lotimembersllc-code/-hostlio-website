@@ -161,8 +161,12 @@ def type_page(L, d):
 <h2 style="margin-top:64px">{plan_h}</h2><p class="lead" style="font-size:var(--t-0)">{d["plan"]}</p>
 <p>{cmp_t}</p><div class="cta-row">{btn(pv["see_pricing"], U("pricing"), "ghost")}</div>
 </div></section>'''
+    # SEO S7: segmente özgü ek bölümler ve SSS (derin_sayfalar.TYPE_MORE; yoksa boş)
+    import derin_sayfalar as DS
+    more, more_faq = DS.type_more(L, d["key"])
+    body += more
     return {"key": d["key"], "title": d["title"], "desc": d["desc"], "trail": [(d["crumb"], U(d["key"]))],
-            "body": body, "faq": d["faq"], "preload_img": f"/assets/img/{im[0]}.webp", "schema": [software_schema(L)]}
+            "body": body, "faq": d["faq"] + more_faq, "preload_img": f"/assets/img/{im[0]}.webp", "schema": [software_schema(L)]}
 
 # ------------------------------------------------------------------ comparison
 CMP_SOURCES = [

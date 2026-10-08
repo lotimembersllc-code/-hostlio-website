@@ -1,5 +1,6 @@
 from build import btn, icon, logo, url, room_rack, channel_strip, faq_block, SIGNUP_URL, EMAIL, UPDATED, CHECK, software_schema, SITE, PLANS
 import ozellik_ekleri as FX
+import derin_sayfalar as DS
 L = "fr"
 def U(k): return url(k, L)
 
@@ -116,6 +117,7 @@ def channel():
 <tr><th>Booking.com</th><td>OTA</td></tr><tr><th>Airbnb</th><td>Location courte durée</td></tr><tr><th>Expedia, Hotels.com</th><td>OTA</td></tr>
 <tr><th>Agoda, Trip.com</th><td>OTA (orientée Asie)</td></tr><tr><th>Hotelbeds</th><td>Grossiste (bedbank)</td></tr><tr><th>Hostelworld</th><td>Plateforme d'auberges de jeunesse</td></tr><tr><th>Google Hotels</th><td>Métamoteur</td></tr>
 </tbody></table></div></div></section>
+{DS.more(L,"channel")}
 '''
     faq = [FAQ_CORE[3],
      ("Le channel manager est-il inclus dans tous les forfaits ?", "Oui. Starter, Pro et Growth incluent tous la synchronisation avec plus de 100 OTA. Growth y ajoute la synchronisation prioritaire."),
@@ -123,7 +125,7 @@ def channel():
     ]
     return {"key":"channel","title":"Channel manager hôtelier pour 100+ OTA | Hostlio Pro",
             "desc":"Le channel manager Hostlio Pro synchronise en temps réel disponibilités et tarifs sur 100+ OTA (Booking.com, Airbnb, Expedia, Agoda) sans surbooking.",
-            "trail":[("Channel manager", U("channel"))],"body":body,"faq":faq}
+            "trail":[("Channel manager", U("channel"))],"body":body,"faq":faq+DS.faq(L,"channel")}
 
 def checkin():
     body = f'''
@@ -155,6 +157,7 @@ def checkin():
 <li><h3>Scanner le document</h3><p>Scannez votre passeport ou votre carte d'identité avec votre téléphone : les champs se remplissent automatiquement et aucune image n'est conservée. Indiquez ensuite vos accompagnants.</p></li>
 <li><h3>Signer</h3><p>Acceptez le règlement intérieur et signez à l'écran. À la réception, il ne reste qu'à récupérer la clé.</p></li></ol>
 </div></section>
+{DS.more(L,"checkin")}
 '''
     faq = [("Quels forfaits incluent le check-in en ligne ?", "Le check-in en ligne avec signature électronique est inclus dans les forfaits Pro et Growth."),
            ("Le client doit-il télécharger une application ?", "Non. Le formulaire de check-in s'ouvre dans le navigateur ; aucune application n'est à télécharger."),
@@ -162,7 +165,7 @@ def checkin():
            ("Les photos des pièces d'identité sont-elles conservées ?", "Non. La bande de lecture automatique (MRZ) du document est lue sur le téléphone du client, ou sur l'appareil de l'hôtel avec l'application mobile Hostlio Pro, et seules les données extraites et la signature sont enregistrées. Les passeports et cartes d'identité dotés d'une MRZ peuvent être scannés ; les autres documents sont saisis à la main.")]
     return {"key":"checkin","title":"Check-in en ligne avec signature électronique | Hostlio Pro",
             "desc":"Check-in en ligne : vos clients scannent leur pièce d'identité (aucune image conservée), ajoutent leurs accompagnants et signent depuis leur mobile.",
-            "trail":[("Check-in en ligne", U("checkin"))],"body":body,"faq":faq}
+            "trail":[("Check-in en ligne", U("checkin"))],"body":body,"faq":faq+DS.faq(L,"checkin")}
 
 def features():
     body = f'''

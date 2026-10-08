@@ -1,5 +1,6 @@
 from build import btn, icon, logo, url, room_rack, channel_strip, faq_block, SIGNUP_URL, EMAIL, UPDATED, CHECK, software_schema, SITE, PLANS
 import ozellik_ekleri as FX
+import derin_sayfalar as DS
 L = "tr"
 def U(k): return url(k, L)
 
@@ -113,6 +114,7 @@ def channel():
 <tr><th>Booking.com</th><td>OTA</td></tr><tr><th>Airbnb</th><td>Kısa dönem kiralama</td></tr><tr><th>Expedia, Hotels.com</th><td>OTA</td></tr>
 <tr><th>Agoda, Trip.com</th><td>OTA (Asya ağırlıklı)</td></tr><tr><th>Hotelbeds</th><td>Toptancı (bedbank)</td></tr><tr><th>Hostelworld</th><td>Hostel pazaryeri</td></tr><tr><th>Google Hotels</th><td>Metasearch</td></tr>
 </tbody></table></div></div></section>
+{DS.more(L,"channel")}
 '''
     faq = [FAQ_CORE[4],
      ("Kanal yöneticisi tüm planlarda var mı?", "Evet. Starter, Pro ve Growth planlarının tamamında 100+ OTA ile kanal senkronizasyonu bulunur. Growth planında senkronizasyon önceliklidir."),
@@ -120,7 +122,7 @@ def channel():
     ]
     return {"key":"channel","title":"Otel Kanal Yöneticisi: 100+ OTA Tek Takvimde | Hostlio Pro",
             "desc":"Hostlio Pro kanal yöneticisi Booking.com, Airbnb, Expedia, Agoda dahil 100+ OTA'da müsaitlik ve fiyatı anlık senkronize eder, overbooking'i önler.",
-            "trail":[("Kanal yöneticisi", U("channel"))],"body":body,"faq":faq}
+            "trail":[("Kanal yöneticisi", U("channel"))],"body":body,"faq":faq+DS.faq(L,"channel")}
 
 def checkin():
     body = f'''
@@ -152,6 +154,7 @@ def checkin():
 <li><h3>Belgesini tarar</h3><p>Pasaportunu ya da kimliğini telefonuyla tarar; bilgiler otomatik dolar, görüntü saklanmaz. Ardından refakatçileri girer.</p></li>
 <li><h3>İmzalar</h3><p>Otel kurallarını onaylayıp ekranda imzalar. Resepsiyona sadece anahtar almaya gelir.</p></li></ol>
 </div></section>
+{DS.more(L,"checkin")}
 '''
     faq = [("Online check-in hangi planda var?", "Online check-in ve dijital imza Pro ve Growth planlarına dahildir."),
            ("Misafirin uygulama indirmesi gerekiyor mu?", "Hayır. Check-in formu tarayıcıda açılır; herhangi bir uygulama indirmek gerekmez."),
@@ -159,7 +162,7 @@ def checkin():
            ("Kimlik fotoğrafı saklanıyor mu?", "Hayır. Belgenin makine okunabilir alanı (MRZ) misafirin telefonunda ya da Hostlio Pro mobil uygulamasıyla otelin cihazında okunur; yalnızca okunan bilgiler ve imza kaydedilir. MRZ'li pasaport ve kimlik kartları taranabilir; diğer belgeler elle girilir.")]
     return {"key":"checkin","title":"Otel Online Check-in ve Dijital İmza Yazılımı | Hostlio Pro",
             "desc":"Hostlio Pro online check-in: misafir kimliğini telefonuyla tarar (görüntü saklanmaz), refakatçilerini ve dijital imzasını varıştan önce gönderir.",
-            "trail":[("Online check-in", U("checkin"))],"body":body,"faq":faq}
+            "trail":[("Online check-in", U("checkin"))],"body":body,"faq":faq+DS.faq(L,"checkin")}
 
 def features():
     body = f'''

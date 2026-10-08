@@ -1,5 +1,6 @@
 from build import btn, icon, logo, url, room_rack, channel_strip, faq_block, SIGNUP_URL, EMAIL, UPDATED, CHECK, software_schema, SITE, PLANS
 import ozellik_ekleri as FX
+import derin_sayfalar as DS
 L = "en"
 def U(k): return url(k, L)
 
@@ -110,6 +111,7 @@ def channel():
 <tr><th>Booking.com</th><td>OTA</td></tr><tr><th>Airbnb</th><td>Short-term rental</td></tr><tr><th>Expedia, Hotels.com</th><td>OTA</td></tr>
 <tr><th>Agoda, Trip.com</th><td>OTA (Asia-focused)</td></tr><tr><th>Hotelbeds</th><td>Wholesaler (bedbank)</td></tr><tr><th>Hostelworld</th><td>Hostel marketplace</td></tr><tr><th>Google Hotels</th><td>Metasearch</td></tr>
 </tbody></table></div></div></section>
+{DS.more(L,"channel")}
 '''
     faq = [FAQ_CORE[3],
      ("Is the channel manager included in every plan?", "Yes. Starter, Pro and Growth all include channel sync with 100+ OTAs. Growth adds priority sync."),
@@ -117,7 +119,7 @@ def channel():
     ]
     return {"key":"channel","title":"Hotel Channel Manager for 100+ OTAs | Hostlio Pro",
             "desc":"Hostlio Pro's channel manager syncs rates and availability with 100+ OTAs like Booking.com, Airbnb, Expedia and Agoda in real time to prevent overbooking.",
-            "trail":[("Channel manager", U("channel"))],"body":body,"faq":faq}
+            "trail":[("Channel manager", U("channel"))],"body":body,"faq":faq+DS.faq(L,"channel")}
 
 def checkin():
     body = f'''
@@ -149,6 +151,7 @@ def checkin():
 <li><h3>Scan the document</h3><p>Scan the passport or ID card with the phone: the details fill in automatically and no image is stored. Then list accompanying guests.</p></li>
 <li><h3>Sign</h3><p>Accept house rules and sign on screen. At reception, just pick up the key.</p></li></ol>
 </div></section>
+{DS.more(L,"checkin")}
 '''
     faq = [("Which plans include online check-in?", "Online check-in with digital signature is included in the Pro and Growth plans."),
            ("Does the guest need to download an app?", "No. The check-in form opens in the browser; no app download is required."),
@@ -156,7 +159,7 @@ def checkin():
            ("Are photos of ID documents stored?", "No. The document's machine-readable zone (MRZ) is read on the guest's phone, or on the hotel's device with the Hostlio Pro mobile app, and only the extracted details and the signature are saved. Passports and ID cards with an MRZ can be scanned; other documents are entered by hand.")]
     return {"key":"checkin","title":"Hotel Online Check-in with Digital Signature | Hostlio Pro",
             "desc":"With Hostlio Pro online check-in, guests scan their ID on their phone (no image stored), add companions and sign before arrival. No queue at reception.",
-            "trail":[("Online check-in", U("checkin"))],"body":body,"faq":faq}
+            "trail":[("Online check-in", U("checkin"))],"body":body,"faq":faq+DS.faq(L,"checkin")}
 
 def features():
     body = f'''
