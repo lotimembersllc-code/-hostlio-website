@@ -76,7 +76,7 @@ HOME = dict(
   b_tr=("Venda de transfers e passeios","Lio oferece no momento certo; você fatura mais.","Transfer do aeroporto","+35 €"),
   b_lang=("30+ idiomas","No idioma em que o hóspede escrever, nesse idioma vem a resposta."),
   b_mob=("App móvel","Reservas, mensagens e check-ins no iOS e no Android, onde você estiver."),
-  types_h="Da pousada ao <em class=\"hl\">hotel de ⟦rooms:growth⟧ quartos</em>", types_p="Da equipe de uma pessoa à recepção movimentada: seu plano cresce com o número de quartos.",
+  types_h='Feito para <em class="hl">todo tipo de hospedagem</em>', types_p="Pensado para hospedagens independentes de 1 a 150 quartos.",
   types=[("type-guesthouse", "A dona de uma pousada entrega a chave aos hóspedes na porta de uma pequena casa de pedra", "Pousada e hotel pequeno", "1–⟦rooms:starter⟧ quartos", "Equipe de uma pessoa; o Lio cuida das mensagens da madrugada."),
          ("type-boutique", "Um casal faz check-in no lobby de um hotel boutique de design", "Hotel boutique", "⟦rooms:starter⟧–⟦rooms:pro⟧ quartos", "Muitos hóspedes estrangeiros; check-in online e respostas pessoais."),
          ("type-resort", "Um hotel resort de cinco andares com varandas, visto do terraço da piscina", "Hotel urbano e resort", "⟦rooms:pro⟧–⟦rooms:growth⟧ quartos", "Equipe maior, muito tráfego de canais, suporte prioritário."),

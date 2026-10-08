@@ -213,8 +213,8 @@ Türkçe English Deutsch العربية Русский 日本語 中文 Françai
 ## Mobil uygulama
 iOS ve Android'de rezervasyon, mesaj ve check-in, otelin dışından da.
 
-## Pansiyondan 150 odalı otele
-Tek kişilik ekipten kalabalık resepsiyona; planınız oda sayınıza göre büyür.
+## Her tesis tipine uygun
+1 ila 150 odalı bağımsız tesisler için tasarlandı.
 
 1–10 oda
 ## Pansiyon ve küçük otel
@@ -3163,8 +3163,8 @@ Türkçe English Deutsch العربية Русский 日本語 中文 Françai
 ## Mobile app
 Bookings, messages and check-ins on iOS and Android, wherever you are.
 
-## From guesthouse to 150-room hotel
-From a one-person team to a busy front desk; your plan grows with your room count.
+## Built for every kind of property
+Designed for independent properties with 1 to 150 rooms.
 
 1–10 rooms
 ## Guesthouse & small hotel
@@ -6682,8 +6682,8 @@ Türkçe English Deutsch العربية Русский 日本語 中文 Françai
 ## App móvil
 Reservas, mensajes y check-ins en iOS y Android, estés donde estés.
 
-## De la pensión al hotel de 150 habitaciones
-Del equipo de una persona a una recepción concurrida: su plan crece con su número de habitaciones.
+## Pensado para cada tipo de alojamiento
+Diseñado para alojamientos independientes de 1 a 150 habitaciones.
 
 1–10 habitaciones
 ## Pensión y hotel pequeño
@@ -9401,8 +9401,8 @@ Türkçe English Deutsch العربية Русский 日本語 中文 Françai
 ## App mobile
 Prenotazioni, messaggi e check-in su iOS e Android, ovunque tu sia.
 
-## Dal B&B all’ hotel da 150 camere
-Dal team di una persona alla reception affollata: il piano cresce con il numero di camere.
+## Pensato per ogni tipo di struttura
+Progettato per strutture indipendenti da 1 a 150 camere.
 
 1–10 camere
 ## B&B e piccolo hotel
@@ -11970,8 +11970,8 @@ Türkçe English Deutsch العربية Русский 日本語 中文 Françai
 ## App móvel
 Reservas, mensagens e check-ins no iOS e no Android, onde você estiver.
 
-## Da pousada ao hotel de 150 quartos
-Da equipe de uma pessoa à recepção movimentada: seu plano cresce com o número de quartos.
+## Feito para todo tipo de hospedagem
+Pensado para hospedagens independentes de 1 a 150 quartos.
 
 1–10 quartos
 ## Pousada e hotel pequeno
@@ -14661,8 +14661,8 @@ Türkçe English Deutsch العربية Русский 日本語 中文 Françai
 ## Application mobile
 Réservations, messages et check-ins sur iOS et Android, où que vous soyez.
 
-## De la maison d’hôtes à l’ hôtel de 150 chambres
-De l’équipe d’une personne à la réception animée : votre forfait suit votre nombre de chambres.
+## Conçu pour tous les types d’établissements
+Pensé pour les établissements indépendants de 1 à 150 chambres.
 
 1–10 chambres
 ## Maison d’hôtes et petit hôtel

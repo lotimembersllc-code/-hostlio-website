@@ -73,7 +73,7 @@ HOME = dict(
   b_tr=("Vente de transferts et d’excursions","Lio les propose au bon moment ; vous gagnez plus.","Transfert aéroport","+35 €"),
   b_lang=("30+ langues","Dans la langue où le client écrit, dans cette langue il reçoit sa réponse."),
   b_mob=("Application mobile","Réservations, messages et check-ins sur iOS et Android, où que vous soyez."),
-  types_h="De la maison d’hôtes à l’<em class=\"hl\">hôtel de ⟦rooms:growth⟧ chambres</em>", types_p="De l’équipe d’une personne à la réception animée : votre forfait suit votre nombre de chambres.",
+  types_h='Conçu pour <em class="hl">tous les types d’établissements</em>', types_p="Pensé pour les établissements indépendants de 1 à 150 chambres.",
   types=[("type-guesthouse", "La propriétaire d’une maison d’hôtes remet la clé à ses clients sur le seuil d’une petite maison en pierre", "Maison d’hôtes et petit hôtel", "1–⟦rooms:starter⟧ chambres", "Une équipe d’une personne ; Lio gère les messages de nuit."),
          ("type-boutique", "Un couple s’enregistre dans le hall d’un hôtel boutique design", "Hôtel boutique", "⟦rooms:starter⟧–⟦rooms:pro⟧ chambres", "Beaucoup de clients internationaux ; check-in en ligne et réponses personnelles."),
          ("type-resort", "Un hôtel de séjour de cinq étages avec balcons, vu depuis la terrasse de la piscine", "Hôtel urbain et de séjour", "⟦rooms:pro⟧–⟦rooms:growth⟧ chambres", "Équipe plus grande, fort trafic des canaux, support prioritaire."),
