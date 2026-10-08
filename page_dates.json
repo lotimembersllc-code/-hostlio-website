@@ -65,27 +65,31 @@
 },
 "/en/compare/": {
 "d": "2026-10-08",
-"h": "6a2e21478d5d"
+"h": "86dadecb70df"
 },
 "/en/compare/amenitiz-alternative/": {
 "d": "2026-10-08",
-"h": "d4225ab9ffe3"
+"h": "732f91f36df8"
 },
 "/en/compare/cloudbeds-alternatives/": {
 "d": "2026-10-08",
-"h": "a4f7dc260927"
+"h": "d0d6ada84d32"
 },
 "/en/compare/hijiffy-alternative/": {
 "d": "2026-10-08",
-"h": "c6c3f3b91f3e"
+"h": "17078e964cf7"
 },
 "/en/compare/hostlio-vs-cloudbeds/": {
 "d": "2026-10-08",
-"h": "b8aac9d5a8bd"
+"h": "d08b4771785c"
+},
+"/en/compare/hostlio-vs-elektraweb/": {
+"d": "2026-10-08",
+"h": "24d66903d493"
 },
 "/en/compare/hostlio-vs-hotelrunner/": {
 "d": "2026-10-08",
-"h": "a306cd60faf2"
+"h": "982a9bfd5ce7"
 },
 "/en/contact/": {
 "d": "2026-09-23",
@@ -117,7 +121,7 @@
 },
 "/en/hotel-software-comparison/": {
 "d": "2026-10-08",
-"h": "656b6e7d66f3"
+"h": "06e1d128e75a"
 },
 "/en/online-check-in/": {
 "d": "2026-10-08",
@@ -201,7 +205,7 @@
 },
 "/es/comparativa-software-hotelero/": {
 "d": "2026-10-08",
-"h": "90003b5ab931"
+"h": "16ffaf4ca78d"
 },
 "/es/comparativas/": {
 "d": "2026-10-08",
@@ -333,7 +337,7 @@
 },
 "/fr/comparatif-logiciels-hoteliers/": {
 "d": "2026-10-08",
-"h": "805eea023c4e"
+"h": "d771a8c7b1f4"
 },
 "/fr/comparatifs/": {
 "d": "2026-10-08",
@@ -457,7 +461,7 @@
 },
 "/it/confronto-gestionali-hotel/": {
 "d": "2026-10-08",
-"h": "b22239b3c395"
+"h": "95d210716dd5"
 },
 "/it/contatti/": {
 "d": "2026-10-03",
@@ -481,7 +485,7 @@
 },
 "/it/gestionale-boutique-hotel/": {
 "d": "2026-10-08",
-"h": "cf74d97813a2"
+"h": "cd210fa9d43a"
 },
 "/it/gestionale-ostelli/": {
 "d": "2026-10-08",
@@ -565,7 +569,7 @@
 },
 "/pt/comparativo-sistemas-para-hotel/": {
 "d": "2026-10-08",
-"h": "7a3040abcd85"
+"h": "34eb67ca7239"
 },
 "/pt/comparativos/": {
 "d": "2026-10-08",
@@ -697,7 +701,7 @@
 },
 "/tr/blog/otel-programi-fiyatlari-2026/": {
 "d": "2026-10-08",
-"h": "00a014079498"
+"h": "4d558da59154"
 },
 "/tr/blog/overbooking-nasil-onlenir/": {
 "d": "2026-10-08",
@@ -741,11 +745,15 @@
 },
 "/tr/karsilastirmalar/": {
 "d": "2026-10-08",
-"h": "47078bb3cb5a"
+"h": "067b91305f72"
+},
+"/tr/karsilastirmalar/hostlio-vs-elektraweb/": {
+"d": "2026-10-08",
+"h": "f4dbbaf2d2fc"
 },
 "/tr/karsilastirmalar/hostlio-vs-hotelrunner/": {
 "d": "2026-10-08",
-"h": "d292967074f6"
+"h": "f305f1b08aa2"
 },
 "/tr/kullanim-sartlari/": {
 "d": "2026-10-04",
@@ -757,7 +765,7 @@
 },
 "/tr/otel-programi-karsilastirma/": {
 "d": "2026-10-08",
-"h": "19dc1a6f7148"
+"h": "9ac7f3da9e95"
 },
 "/tr/otel-whatsapp-asistani/": {
 "d": "2026-10-08",

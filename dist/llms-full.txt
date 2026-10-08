@@ -1628,11 +1628,12 @@ Rakip bilgileri firmaların resmî fiyat ve ürün sayfalarından alındı ve 8 
 Otel programı karşılaştırması: Hostlio Pro ve diğerleri (2026) Yazılım Fiyatlar yayınlanıyor mu? Başlangıç Rezervasyon komisyonu Ücretsiz deneme WhatsApp'ta AI misafir mesajlaşması
 Hostlio Pro Evet 49 $/ay (erken kayıt) Yok, sabit aylık ücret 7 gün Tüm planlarda (Lio, 30+ dil)
 HotelRunner Evet (Essential planlar) Asgari 19,95 $/ay + rezervasyon gelirinin %0,75'i (Essential Manage) Essential planlarda aylık rezervasyon gelirinin %0,75–%1,25'i "Ücretsiz deneyin" var; süresi belirtilmiyor AI asistan Advanced planlarda listeleniyor (fiyat satış ekibinden); WhatsApp incelediğimiz sayfalarda belirtilmiyor
+Elektraweb Hayır; fiyat listesi sayfası teklif formuna yönlendiriyor Teklif Fiyat sayfasında belirtilmiyor Belirtilmiyor; ücretsiz demo var WhatsApp API ve Akıllı Sohbet ürün sayfalarında AI destekli asistan anlatılıyor (fiyat teklifle)
 Cloudbeds Hayır, teklif usulü Teklif Booking Engine ve Channel Manager rezervasyonlarından ek komisyon almadığını belirtiyor Fiyat sayfasında belirtilmiyor; demo var WhatsApp ve SMS üzerinden AI chatbot; Guest Experience, Experience planında listeleniyor
 Mews Hayır, teklif usulü (oda başına fiyat) Teklif Fiyat sayfasında belirtilmiyor Fiyat sayfasında belirtilmiyor "WhatsApp ve SMS üzerinden AI mesajlaşma" Mews Pro planında listeleniyor
 Amenitiz Hayır, oda sayısına göre teklif Teklif Doğrudan rezervasyonda komisyon yok; AmenitizPay işlem başına %1,5 + 0,25 € Yok; ücretsiz demo "Guest messaging + WhatsApp" Advanced planda ("live in June" etiketiyle)
 
-Kaynaklar. Rakip bilgileri, 8 Ekim 2026 tarihinde kontrol edilen resmî sayfalar: HotelRunner: Fiyatlandırma · Cloudbeds: Pricing · Cloudbeds: Guest engagement · Mews: Pricing · Amenitiz: Pricing
+Kaynaklar. Rakip bilgileri, 8 Ekim 2026 tarihinde kontrol edilen resmî sayfalar: Elektraweb: Fiyat listesi (teklif formu) · HotelRunner: Fiyatlandırma · Cloudbeds: Pricing · Cloudbeds: Guest engagement · Mews: Pricing · Amenitiz: Pricing
 Hostlio Pro bu karşılaştırmada taraftır. Rakip bilgilerini yalnızca firmaların kendi resmî sayfalarından aldık; doğrulayamadığımız bilgiyi yazmadık. Fiyat ve paketler değişebilir. Hata görürseniz bize yazın , düzeltelim.
 
 ## Hostlio Pro kimin için?
@@ -1641,6 +1642,7 @@ Hostlio Pro; bağımsız ve butik oteller, pansiyonlar, apart oteller ve hostell
 ## Ayrıntılı karşılaştırmalar
 
 - Hostlio Pro ile HotelRunner: sabit aylık ücret mi, gelir yüzdesi mi?
+- Hostlio Pro ile Elektraweb: açık fiyat, her planda WhatsApp'ta AI
 
 ## Hostlio Pro'ya geçiş: 4 adım
 Kurulum dakikalar içinde başlar; kanallar çoğu zaman aynı gün bağlanır.
@@ -1666,7 +1668,7 @@ Q: Otel programı nedir?
 A: Otel programı (otel yönetim yazılımı, PMS), bir konaklama tesisinin rezervasyonlarını, oda müsaitliğini, satış kanallarını ve misafir bilgilerini tek yerden yönetmesini sağlayan yazılımdır.
 
 Q: Otel programı fiyatları ne kadar?
-A: Bu tablodaki yazılımlardan fiyatını yayınlayanlar Hostlio Pro ve HotelRunner: Hostlio Pro sabit ücretle ayda 49 $'dan başlar; HotelRunner Essential planları asgari 19,95 $ artı rezervasyon gelirinden yüzde alır. Cloudbeds, Mews ve Amenitiz teklif verir (8 Ekim 2026). Daha fazla rakam için otel programı fiyatları 2026 rehberimize bakın.
+A: Bu tablodaki yazılımlardan fiyatını yayınlayanlar Hostlio Pro ve HotelRunner: Hostlio Pro sabit ücretle ayda 49 $'dan başlar; HotelRunner Essential planları asgari 19,95 $ artı rezervasyon gelirinden yüzde alır. Elektraweb, Cloudbeds, Mews ve Amenitiz teklif verir (8 Ekim 2026). Daha fazla rakam için otel programı fiyatları 2026 rehberimize bakın.
 
 Q: Komisyonlu mu sabit fiyatlı mı daha avantajlı?
 A: Doluluk ve ortalama oda fiyatı arttıkça gelire bağlı modelin maliyeti büyür. Sabit aylık ücret bütçeyi öngörülebilir kılar: Hostlio Pro'da yüksek sezonda da fatura değişmez.
@@ -2299,7 +2301,9 @@ Sabit aylık ücret, rezervasyon komisyonu yok, fiyatlar sitede açık ve her pl
 
 - Hostlio Pro ile HotelRunner: sabit aylık ücret mi, gelir yüzdesi mi? HotelRunner alternatifi mi arıyorsunuz? Hostlio Pro: sabit aylık ücret, rezervasyon komisyonu yok, her planda WhatsApp'ta AI asistan. Kaynaklı, tarihli.
 
-- Genel karşılaştırma: Hostlio Pro, HotelRunner, Cloudbeds, Mews ve Amenitiz Otel programı karşılaştırması 2026: Hostlio Pro ile HotelRunner, Cloudbeds, Mews ve Amenitiz; fiyat, rezervasyon komisyonu, deneme ve WhatsApp'ta AI.
+- Hostlio Pro ile Elektraweb: açık fiyat, her planda WhatsApp'ta AI Elektraweb alternatifi mi arıyorsunuz? Hostlio Pro: fiyatlar sitede açık, sabit aylık ücret, her planda WhatsApp'ta AI asistan ve 7 gün ücretsiz deneme.
+
+- Genel karşılaştırma: Hostlio Pro, HotelRunner, Elektraweb, Cloudbeds, Mews ve Amenitiz Otel programı karşılaştırması 2026: Hostlio Pro ile HotelRunner, Elektraweb, Cloudbeds, Mews ve Amenitiz; fiyat, komisyon, deneme ve WhatsApp'ta AI.
 
 - Otel programı fiyatları 2026 Ücretsiz otel hesaplayıcıları
 
@@ -2438,7 +2442,8 @@ Otel bilgilerinizi doldurun ve "Lio'yu dene" ile birkaç misafir sorusu sorun.
 
 ## Diğer karşılaştırmalar
 
-- Genel karşılaştırma: Hostlio Pro, HotelRunner, Cloudbeds, Mews ve Amenitiz Tüm karşılaştırmalar · Ücretsiz otel hesaplayıcıları
+- Hostlio Pro ile Elektraweb: açık fiyat, her planda WhatsApp'ta AI
+- Genel karşılaştırma: Hostlio Pro, HotelRunner, Elektraweb, Cloudbeds, Mews ve Amenitiz Tüm karşılaştırmalar · Ücretsiz otel hesaplayıcıları
 
 Q: HotelRunner'dan Hostlio Pro'ya geçebilir miyim?
 A: Evet. Rezervasyonlarınızı HotelRunner'dan CSV ya da Excel olarak dışa aktarıp Hostlio Pro'ya içe aktarırsınız; sütun eşleme, tarih biçimi seçimi ve mükerrer kayıt kontrolü vardır. Kanallarınızı Hostlio Pro'nun sertifikalı kanal yöneticisine bağlarken müsaitliğin tek sistemden gitmesi için geçiş saatini önceden planlayın. Rezervasyon motoru ya da online ödeme tahsilatı kullanıyorsanız, bunların Hostlio Pro'da bulunmadığını hesaba katın.
@@ -2451,6 +2456,97 @@ A: HotelRunner'ın fiyatlandırma sayfasına göre Essential planlarda aylık ü
 
 Q: Hangisi daha ekonomik?
 A: Gelirinize bağlı. HotelRunner'ın yayınladığı formüle göre Essential Sell ücreti, aylık rezervasyon geliri yaklaşık $7.120 olduğunda Hostlio Pro planının aylık ücretine (89 $) eşit olur. Bunun üzerinde Hostlio Pro daha az tutar, altında Essential Sell daha düşüktür. Hostlio Pro'da AI asistan Lio her planda dahildir.
+
+---
+# Hostlio Pro vs Elektraweb (2026): Fiyat, AI | Hostlio Pro
+URL: https://hostliopro.com/tr/karsilastirmalar/hostlio-vs-elektraweb/
+
+## Hostlio Pro vs Elektraweb
+Fiyatı teklif beklemeden görün, bugün deneyin. Hostlio Pro'nun planları sitede açık, ücreti sabit; WhatsApp'ta misafirlere cevap veren AI asistan Lio her planda dahil. 1–150 odalı bağımsız oteller ve pansiyonlar için.
+7 gün ücretsiz dene Planları gör
+
+- 7 gün ücretsiz deneme
+- Rezervasyon komisyonu yok
+- Fiyatlar sitede açık
+- Hızlı kurulum
+
+## Oteller neden Hostlio Pro'ya geçiyor?
+
+## Sabit aylık ücret, rezervasyon komisyonu yok
+Starter 49 $, Pro 89 $, Growth 149 $ / ay. Hostlio rezervasyon başına ücret ya da gelir yüzdesi almaz; yüksek sezonda faturanız büyümez.
+
+## Fiyatlar sitede, 7 gün ücretsiz deneme
+Ne ödeyeceğinizi satış görüşmesinden önce görürsünüz. 7 günlük denemede deneme bitene kadar ücret çekilmez; yıllık ödemede %20 indirim.
+
+## Her planda WhatsApp'ta AI asistan Lio
+Lio misafir sorularını otelinizin bilgileriyle ve misafirin dilinde yanıtlar; indirim, şikâyet gibi kararları size bırakır. Pro ve Growth'ta Booking.com, Airbnb ve Expedia gelen kutuları da Lio'da.
+
+## Lio talep toplar, her sabah öneri getirir
+Pro ve Growth'ta Lio WhatsApp'ta rezervasyon ve ek hizmet talebi toplar; talep sizin onayınızla rezervasyona dönüşür. Lio Önerileri her planda her sabah gelir; onayınız olmadan hiçbir şey değişmez.
+
+## Kimlik taramalı online check-in
+Pro ve Growth'ta misafir gelmeden pasaport ya da kimliğini tarar ve dijital imza atar. Yalnızca okunan bilgiler kaydedilir; belgenin görüntüsü saklanmaz.
+
+## Sertifikalı kanal yöneticisiyle 100+ OTA
+Booking.com, Airbnb, Expedia ve 100'den fazla kanalda müsaitlik ve fiyat tek takvimden güncellenir. Tüm planlarda.
+
+## Analiz, ekip rolleri, 6 dilde panel
+Doluluk, ADR, RevPAR ve kanal bazında net gelir. Resepsiyon, kat hizmetleri ve muhasebe için ayrı roller. Panel 6 dilde, mobil uygulama tüm planlarda.
+
+## Hızlı kurulum, kolay geçiş
+Kurulum sihirbazı eksik bilgiyi gösterir; mevcut rezervasyonlarınızı CSV ya da Excel'den aktarırsınız. Yayına almadan önce "Lio'yu dene" ile kendi sorularınızı sorun.
+
+## Hostlio Pro ve Elektraweb: yan yana
+Hostlio Pro ve Elektraweb: yan yana, Ekim 2026 itibarıyla Ekim 2026 itibarıyla Hostlio Pro Elektraweb
+Fiyat Sitede açık: Starter 49 $, Pro 89 $, Growth 149 $ / ay (USD, erken kayıt); yıllıkta %20 indirim Fiyat listesi sayfası teklif formuna yönlendiriyor ("Fiyat teklifi almak için tıklayınız"); yayınlanmış rakam yok
+Deneme 7 gün ücretsiz; deneme bitene kadar ücret çekilmez Ücretsiz demo talep formu; deneme süresi belirtilmiyor
+WhatsApp'ta AI misafir mesajlaşması Tüm planlarda dahil (Lio); Pro ve Growth'ta Booking.com, Airbnb ve Expedia gelen kutuları da WhatsApp API ve Akıllı Sohbet ürün sayfalarında AI destekli asistan anlatılıyor; ürün menüsünde ayrı başlıklar, fiyat teklifle
+Kanal yöneticisi Tüm planlarda, 100+ OTA'ya sertifikalı bağlantı Dahili kanal yöneticisi modülü; "Booking, Expedia, Hotels.com gibi bilinen tüm kanallarla bağlantısı hazır"
+Çalışma şekli Bulutta; panel 6 dilde, mobil uygulama tüm planlarda Web tabanlı, bulutta çalışan; tablet ve telefonda kullanılabiliyor
+Odak PMS, kanal yöneticisi ve AI misafir asistanı tek pakette; 1–150 oda Ön büro, rezervasyon motoru, kanal yönetimi, POS, muhasebe, stok, bordro gibi modüller; "her büyüklük ve konseptteki turizm tesisi için"
+
+Kaynaklar. Rakip bilgileri, 8 Ekim 2026 tarihinde kontrol edilen resmî sayfalar: Elektraweb: Fiyat listesi (teklif formu) · Elektraweb: Ana sayfa · Elektraweb: Kanal yönetimi · Elektraweb: WhatsApp API · Elektraweb: Akıllı Sohbet
+Hostlio Pro bu karşılaştırmada taraftır. Rakip bilgilerini yalnızca firmaların kendi resmî sayfalarından aldık; doğrulayamadığımız bilgiyi yazmadık. Fiyat ve paketler değişebilir. Hata görürseniz bize yazın , düzeltelim.
+
+## Hostlio Pro kimin için?
+Hostlio Pro; bağımsız ve butik oteller, pansiyonlar, apart oteller ve hosteller için, 1–150 oda ve en fazla 2 tesis (Growth) düşünülerek yapıldı. Odak noktası günü yöneten üç şey: PMS, kanal yöneticisi ve AI misafir mesajlaşması. Rezervasyon motoru, web sitesi kurucu ve ödeme tahsilatı Hostlio Pro'nun parçası değildir. Panel 6 dilde, destek Türkçe ve İngilizce.
+
+## Elektraweb'den Hostlio Pro'ya geçiş: 4 adım
+Kurulum dakikalar içinde başlar; kanallar çoğu zaman aynı gün bağlanır.
+
+-
+## Denemeyi başlatın
+Hesabınızı açın, oda tiplerinizi ve fiyatlarınızı girin; kurulum sihirbazı eksikleri gösterir.
+
+-
+## Rezervasyonları aktarın
+Elektraweb'deki rezervasyonlarınızı CSV ya da Excel olarak dışa aktarıp içeri alın: sütun eşleme, tarih biçimi seçimi ve mükerrer kontrolü dahil.
+
+-
+## Kanalları bağlayın
+OTA'larınızı sertifikalı kanal yöneticisine bağlayın. Müsaitliğin tek sistemden gitmesi için geçiş saatini önceden belirleyin.
+
+-
+## Lio'yu hazırlayın
+Otel bilgilerinizi doldurun ve "Lio'yu dene" ile birkaç misafir sorusu sorun.
+7 gün ücretsiz dene Planları gör
+
+## Diğer karşılaştırmalar
+
+- Hostlio Pro ile HotelRunner: sabit aylık ücret mi, gelir yüzdesi mi?
+- Genel karşılaştırma: Hostlio Pro, HotelRunner, Elektraweb, Cloudbeds, Mews ve Amenitiz Tüm karşılaştırmalar · Ücretsiz otel hesaplayıcıları
+
+Q: Elektraweb'den Hostlio'ya geçebilir miyim?
+A: Evet. Rezervasyonlarınızı Elektraweb'den CSV ya da Excel olarak dışa aktarıp Hostlio Pro'ya içe aktarırsınız; sütun eşleme, tarih biçimi seçimi ve mükerrer kayıt kontrolü vardır. Kanallarınızı Hostlio Pro'nun sertifikalı kanal yöneticisine bağlarken müsaitliğin tek sistemden gitmesi için geçiş saatini önceden planlayın. Hostlio Pro PMS, kanal yöneticisi ve AI misafir mesajlaşmasına odaklanır; POS, muhasebe, bordro, rezervasyon motoru ve ödeme tahsilatı içermez. Bu modülleri kullanıyorsanız geçişi buna göre planlayın.
+
+Q: Elektraweb'in fiyatı ne kadar?
+A: Elektraweb sitesinde fiyat yayınlamıyor; fiyat listesi sayfası teklif formuna yönlendiriyor (8 Ekim 2026). Hostlio Pro'nun planları fiyatlandırma sayfasında açık: Starter 49 $, Pro 89 $, Growth 149 $ / ay.
+
+Q: Hostlio Pro'da WhatsApp AI asistanı hangi planda?
+A: Hepsinde. Lio, Starter dahil her planda misafirlere WhatsApp'tan otelinizin bilgileriyle ve misafirin dilinde cevap verir; indirim, şikâyet gibi kararları size bırakır. Pro ve Growth'ta OTA gelen kutuları ve sizin onayınızla rezervasyona dönüşen talepler de vardır.
+
+Q: Kurulum ne kadar sürer?
+A: Hesap dakikalar içinde hazır olur; kurulum sihirbazı eksik bilgileri gösterir ve kanallar çoğu zaman aynı gün bağlanır. 7 günlük denemeyle kendi odalarınız ve fiyatlarınızla başlayabilirsiniz.
 
 ---
 # Channel manager nedir? Otelciler için kanal yöneticisi rehberi
@@ -2762,8 +2858,8 @@ Tüm kaynaklara 8 Ekim 2026 tarihinde erişildi.
 Q: Otel programı fiyatları ne kadar?
 A: Fiyatını yayınlayan yazılımlarda küçük bir otel için aylık maliyet yaklaşık 15 € ile 150 € arasında başlıyor (8 Ekim 2026). Bazı yazılımlar gelirden yüzde alıyor, bazıları tek seferlik lisans satıyor, bazıları da yalnızca teklif veriyor.
 
-Q: Ücretsiz otel programı var mı?
-A: Bazı yazılımların ücretsiz planı var; örneğin Sirvoy'un ücretsiz planı yalnızca 1 oda için geçerli ve kanal yöneticisi içermiyor. Ücretsiz planların oda, kanal ve destek sınırlarını mutlaka kontrol edin.
+Q: Otel programını ücretsiz deneyebilir miyim?
+A: Hostlio Pro'yu 7 gün ücretsiz deneyebilirsiniz; deneme bitene kadar ücret çekilmez. Denemede kendi odalarınızı ve fiyatlarınızı girer, kanallarınızı bağlar ve AI asistan Lio'yu kendi misafir sorularınızla test edersiniz. Ücretsiz planı olan yazılımlarda oda, kanal ve destek sınırlarını mutlaka kontrol edin.
 
 Q: Komisyonlu mu sabit fiyatlı mı daha avantajlı?
 A: Gelir düşükse yüzdeye dayalı model daha ucuz olabilir; gelir arttıkça maliyeti de büyür. Bütçesini sabitlemek isteyen tesisler için sabit aylık ücret daha öngörülebilirdir.
@@ -4440,11 +4536,12 @@ Competitor information comes from each company's official pricing and product pa
 Hotel software comparison: Hostlio Pro vs the rest (2026) Software Published prices? Starting at Booking commission Free trial AI guest messaging on WhatsApp
 Hostlio Pro Yes $49/month (early bird) None, flat monthly fee 7 days Every plan (Lio, 30+ languages)
 HotelRunner Yes (Essential plans) $19.95/month minimum + 0.75% of booking revenue (Essential Manage) 0.75%–1.25% of monthly booking revenue on Essential plans "Start free trial" offered; length not stated AI assistant listed in the Advanced plans (priced by sales); WhatsApp not stated on the pages we checked
+Elektraweb No; the price-list page leads to a quote form Quote Not stated on the pricing page Not stated; free demo offered AI-assisted assistant described on its WhatsApp API and Smart Chat product pages (priced by quote)
 Cloudbeds No, quote-based Quote States no added commission on Booking Engine and Channel Manager reservations Not mentioned on the pricing page; demo offered AI chatbot via WhatsApp and SMS; Guest Experience listed in the Experience plan
 Mews No, quote-based (priced per room) Quote Not stated on the pricing page Not mentioned on the pricing page "AI messaging via WhatsApp and SMS" listed in Mews Pro
 Amenitiz No, quote by number of rooms Quote No commission on direct bookings; AmenitizPay 1.5% + €0.25 per transaction Not offered; free demo "Guest messaging + WhatsApp" in the Advanced plan (labelled "live in June")
 
-Sources. Competitor information from official pages checked on October 8, 2026: HotelRunner: Pricing · Cloudbeds: Pricing · Cloudbeds: Guest engagement · Mews: Pricing · Amenitiz: Pricing
+Sources. Competitor information from official pages checked on October 8, 2026: Elektraweb: Fiyat listesi (teklif formu) · HotelRunner: Pricing · Cloudbeds: Pricing · Cloudbeds: Guest engagement · Mews: Pricing · Amenitiz: Pricing
 Hostlio Pro is a party to this comparison. Competitor information comes only from each company's own official pages; anything we couldn't verify is left out. Prices and plans can change. Spotted a mistake? Tell us and we'll fix it.
 
 ## Who Hostlio Pro is built for
@@ -4453,6 +4550,7 @@ Hostlio Pro is built for independent and boutique hotels, guesthouses, aparthote
 ## Detailed comparisons
 
 - Hostlio Pro vs HotelRunner: flat monthly fee or a share of revenue?
+- Hostlio Pro vs Elektraweb: published pricing, AI on WhatsApp in every plan
 - Hostlio Pro vs Cloudbeds: published price vs quote, AI messaging
 - Cloudbeds alternatives for small hotels, with published prices
 - Amenitiz alternative: published pricing and AI messaging on WhatsApp
@@ -4482,7 +4580,7 @@ Q: What is hotel management software?
 A: Hotel management software (a PMS) lets a property manage reservations, room availability, sales channels and guest information in one place.
 
 Q: How much does hotel software cost?
-A: Of the vendors in this table, Hostlio Pro and HotelRunner publish prices: Hostlio Pro starts at $49 a month as a flat fee; HotelRunner's Essential plans have a $19.95 monthly minimum plus a share of booking revenue. Cloudbeds, Mews and Amenitiz give quotes (October 8, 2026).
+A: Of the vendors in this table, Hostlio Pro and HotelRunner publish prices: Hostlio Pro starts at $49 a month as a flat fee; HotelRunner's Essential plans have a $19.95 monthly minimum plus a share of booking revenue. Elektraweb, Cloudbeds, Mews and Amenitiz give quotes (October 8, 2026).
 
 Q: Is a commission or a flat fee better?
 A: As occupancy and average rates rise, revenue-based costs grow. A flat monthly fee keeps the budget predictable: with Hostlio Pro your bill stays the same in high season.
@@ -5453,6 +5551,8 @@ Try it free for 7 days See plans
 
 - Hostlio Pro vs HotelRunner: flat monthly fee or a share of revenue? Looking for a HotelRunner alternative? Hostlio Pro: a flat monthly fee, no booking commission and an AI assistant on WhatsApp in every plan. Sourced and dated.
 
+- Hostlio Pro vs Elektraweb: published pricing, AI on WhatsApp in every plan Looking for an Elektraweb alternative? Hostlio Pro: published flat monthly pricing, an AI assistant on WhatsApp in every plan and a 7-day free trial.
+
 - Hostlio Pro vs Cloudbeds: published price vs quote, AI messaging Hostlio Pro vs Cloudbeds: published flat pricing instead of a quote, AI guest messaging on WhatsApp in every plan, 7-day trial. Sourced and dated.
 
 - Cloudbeds alternatives for small hotels, with published prices Cloudbeds alternative for small hotels: Hostlio Pro publishes its prices, charges no booking commission and includes AI on WhatsApp. Checked Oct 2026.
@@ -5461,7 +5561,7 @@ Try it free for 7 days See plans
 
 - HiJiffy alternative: AI guest messaging with the PMS included HiJiffy alternative for small hotels: Hostlio Pro puts the PMS, channel manager and an AI assistant on WhatsApp in one subscription, from the first plan.
 
-- Overview: Hostlio Pro, HotelRunner, Cloudbeds, Mews and Amenitiz Hotel software comparison 2026: Hostlio Pro vs HotelRunner, Cloudbeds, Mews and Amenitiz on pricing, booking commission, free trial and AI on WhatsApp.
+- Overview: Hostlio Pro, HotelRunner, Elektraweb, Cloudbeds, Mews and Amenitiz Hotel software comparison 2026: Hostlio Pro vs HotelRunner, Elektraweb, Cloudbeds, Mews and Amenitiz on pricing, commission, trial and AI on WhatsApp.
 Free hotel calculators
 
 ## Why hotels switch to Hostlio Pro
@@ -5599,11 +5699,12 @@ Try it free for 7 days See plans
 
 ## More comparisons
 
+- Hostlio Pro vs Elektraweb: published pricing, AI on WhatsApp in every plan
 - Hostlio Pro vs Cloudbeds: published price vs quote, AI messaging
 - Cloudbeds alternatives for small hotels, with published prices
 - Amenitiz alternative: published pricing and AI messaging on WhatsApp
 - HiJiffy alternative: AI guest messaging with the PMS included
-- Overview: Hostlio Pro, HotelRunner, Cloudbeds, Mews and Amenitiz All comparisons · Free hotel calculators
+- Overview: Hostlio Pro, HotelRunner, Elektraweb, Cloudbeds, Mews and Amenitiz All comparisons · Free hotel calculators
 
 Q: Can I switch from HotelRunner to Hostlio Pro?
 A: Yes. Export your reservations from HotelRunner as a CSV or Excel file and import them into Hostlio Pro, with column mapping, date-format choice and duplicate checks. When you connect your channels to Hostlio Pro's certified channel manager, plan the cut-over so availability is sent from one system only. If you use a booking engine or online payment collection today, note that Hostlio Pro doesn't include them.
@@ -5616,6 +5717,101 @@ A: According to HotelRunner's pricing page, Essential plans charge a percentage 
 
 Q: Which one costs less?
 A: It depends on your revenue. By HotelRunner's published formula, the Essential Sell fee equals Hostlio Pro's monthly price ($89) at about $7,120 of monthly booking revenue. Above that, Hostlio Pro costs less; below it, Essential Sell is lower. Hostlio Pro includes the Lio AI assistant on every plan.
+
+---
+# Hostlio Pro vs Elektraweb (2026): Pricing, AI | Hostlio Pro
+URL: https://hostliopro.com/en/compare/hostlio-vs-elektraweb/
+
+## Hostlio Pro vs Elektraweb
+See the price without waiting for a quote, and try it today. Hostlio Pro lists its plans on its website at a fixed monthly fee, and Lio, an AI assistant that answers guests on WhatsApp, is included in every plan. Built for independent hotels and guesthouses of 1–150 rooms.
+Try it free for 7 days See plans
+
+- 7-day free trial
+- No booking commission
+- Prices published
+- Quick setup
+
+## Why hotels switch to Hostlio Pro
+
+## A fixed monthly price, no booking commission
+Starter $49, Pro $89, Growth $149 a month. Hostlio never takes a per-booking fee or a share of your revenue, so high season doesn't raise your bill.
+
+## Prices on the website, 7-day free trial
+See what you'll pay before any sales call. No charge until the 7-day trial ends, and 20% off with annual billing.
+
+## Lio, an AI assistant on WhatsApp in every plan
+Lio answers guests with your hotel's information, in the guest's language, and leaves decisions such as discounts or complaints to you. Pro and Growth bring Booking.com, Airbnb and Expedia inboxes into Lio too.
+
+## Lio takes requests and suggests what to do next
+On Pro and Growth, Lio collects booking and extra-service requests on WhatsApp; they become reservations once you approve. Every plan gets Lio Suggestions each morning, and nothing changes without your approval.
+
+## Online check-in with ID scan
+On Pro and Growth, guests scan their passport or ID and sign digitally before arrival. Only the extracted details are saved, never an image of the document.
+
+## 100+ OTAs through a certified channel manager
+Availability and rates for Booking.com, Airbnb, Expedia and 100+ other channels are updated from one calendar, on every plan.
+
+## Analytics, staff roles, a panel in 6 languages
+Occupancy, ADR, RevPAR and net revenue per channel. Separate roles for reception, housekeeping and accounting. The panel speaks 6 languages, and the mobile app is on every plan.
+
+## Quick setup, easy move
+The setup wizard shows what's missing, and you import existing reservations from CSV or Excel. Ask "Try Lio" your own questions before going live.
+
+## Hostlio Pro vs Elektraweb at a glance
+Hostlio Pro vs Elektraweb at a glance, As of October 2026 As of October 2026 Hostlio Pro Elektraweb
+Pricing Published: Starter $49, Pro $89, Growth $149 a month (USD, early bird); 20% off annually The price-list page leads to a quote form ("Fiyat teklifi almak için tıklayınız", click to get a quote); no published figures
+Trial 7 days free; no charge until the trial ends Free demo request form; no trial length stated
+AI guest messaging on WhatsApp Included in every plan (Lio); Booking.com, Airbnb and Expedia inboxes too on Pro and Growth The WhatsApp API and Smart Chat (Akıllı Sohbet) product pages describe an AI-assisted assistant; listed as separate items in the product menu, priced by quote
+Channel manager Every plan, certified connections to 100+ OTAs Built-in channel manager module; ready connections to "all well-known channels such as Booking, Expedia, Hotels.com"
+Deployment Cloud; panel in 6 languages, mobile app on every plan Web-based, cloud-hosted; usable on tablets and phones
+Focus PMS, channel manager and AI guest assistant in one package; 1–150 rooms Modules including front office, booking engine, channel manager, POS, accounting, inventory and payroll; "for tourism properties of every size and concept"
+
+Sources. Competitor information from official pages checked on October 8, 2026: Elektraweb: Fiyat listesi (teklif formu) · Elektraweb: Ana sayfa · Elektraweb: Kanal yönetimi · Elektraweb: WhatsApp API · Elektraweb: Akıllı Sohbet
+Hostlio Pro is a party to this comparison. Competitor information comes only from each company's own official pages; anything we couldn't verify is left out. Prices and plans can change. Spotted a mistake? Tell us and we'll fix it.
+
+## Who Hostlio Pro is built for
+Hostlio Pro is built for independent and boutique hotels, guesthouses, aparthotels and hostels with 1–150 rooms and up to 2 properties (Growth). It focuses on the three things that run the day: PMS, channel manager and AI guest messaging. A booking engine, website builder and payment collection are not part of Hostlio Pro. The panel is in 6 languages; support is in English and Turkish.
+
+## Switching from Elektraweb to Hostlio Pro in 4 steps
+Your account is ready in minutes, and channels are usually connected the same day.
+
+-
+## Start your trial
+Create your account and add room types and rates; the setup wizard shows what's missing.
+
+-
+## Import your reservations
+Export your reservations from Elektraweb as CSV or Excel and import them, with column mapping, date-format choice and duplicate checks.
+
+-
+## Connect your channels
+Connect your OTAs through the certified channel manager. Pick a cut-over time so availability is sent from one system only.
+
+-
+## Get Lio ready
+Fill in your hotel information and ask a few guest questions with "Try Lio".
+Try it free for 7 days See plans
+
+## More comparisons
+
+- Hostlio Pro vs HotelRunner: flat monthly fee or a share of revenue?
+- Hostlio Pro vs Cloudbeds: published price vs quote, AI messaging
+- Cloudbeds alternatives for small hotels, with published prices
+- Amenitiz alternative: published pricing and AI messaging on WhatsApp
+- HiJiffy alternative: AI guest messaging with the PMS included
+- Overview: Hostlio Pro, HotelRunner, Elektraweb, Cloudbeds, Mews and Amenitiz All comparisons · Free hotel calculators
+
+Q: Can I switch from Elektraweb to Hostlio Pro?
+A: Yes. Export your reservations from Elektraweb as a CSV or Excel file and import them into Hostlio Pro, with column mapping, date-format choice and duplicate checks. When you connect your channels to Hostlio Pro's certified channel manager, plan the cut-over so availability is sent from one system only. Hostlio Pro focuses on PMS, channel manager and AI guest messaging; it doesn't include POS, accounting, payroll, a booking engine or payment collection, so plan the move around any of those modules you use.
+
+Q: How much does Elektraweb cost?
+A: Elektraweb doesn't publish prices on its website; its price-list page leads to a quote form (October 8, 2026). Hostlio Pro's plans are on its pricing page: Starter $49, Pro $89, Growth $149 a month.
+
+Q: Which Hostlio Pro plan includes the WhatsApp AI assistant?
+A: All of them. From Starter up, Lio answers guests on WhatsApp with your hotel's information and in the guest's language, and leaves decisions such as discounts or complaints to you. Pro and Growth add OTA inboxes and booking requests that become reservations once you approve them.
+
+Q: How long does setup take?
+A: Your account is ready in minutes; the setup wizard shows what's missing and channels are usually connected the same day. Start with the 7-day trial using your own rooms and rates.
 
 ---
 # Hostlio Pro vs Cloudbeds (2026): Pricing, AI, Fit | Hostlio Pro
@@ -5693,10 +5889,11 @@ Try it free for 7 days See plans
 ## More comparisons
 
 - Hostlio Pro vs HotelRunner: flat monthly fee or a share of revenue?
+- Hostlio Pro vs Elektraweb: published pricing, AI on WhatsApp in every plan
 - Cloudbeds alternatives for small hotels, with published prices
 - Amenitiz alternative: published pricing and AI messaging on WhatsApp
 - HiJiffy alternative: AI guest messaging with the PMS included
-- Overview: Hostlio Pro, HotelRunner, Cloudbeds, Mews and Amenitiz All comparisons · Free hotel calculators
+- Overview: Hostlio Pro, HotelRunner, Elektraweb, Cloudbeds, Mews and Amenitiz All comparisons · Free hotel calculators
 
 Q: Can I switch from Cloudbeds to Hostlio Pro?
 A: Yes. Export your reservations from Cloudbeds and import them into Hostlio Pro as a CSV or Excel file, with column mapping and duplicate checks. Connect your OTAs to Hostlio Pro's certified channel manager and plan the cut-over so availability is sent from one system only. Hostlio Pro covers the PMS, channel manager and guest messaging; it doesn't include a booking engine or payment processing.
@@ -5802,10 +5999,11 @@ Try it free for 7 days See plans
 ## More comparisons
 
 - Hostlio Pro vs HotelRunner: flat monthly fee or a share of revenue?
+- Hostlio Pro vs Elektraweb: published pricing, AI on WhatsApp in every plan
 - Hostlio Pro vs Cloudbeds: published price vs quote, AI messaging
 - Amenitiz alternative: published pricing and AI messaging on WhatsApp
 - HiJiffy alternative: AI guest messaging with the PMS included
-- Overview: Hostlio Pro, HotelRunner, Cloudbeds, Mews and Amenitiz All comparisons · Free hotel calculators
+- Overview: Hostlio Pro, HotelRunner, Elektraweb, Cloudbeds, Mews and Amenitiz All comparisons · Free hotel calculators
 
 Q: Is there a cheaper alternative to Cloudbeds?
 A: Cloudbeds doesn't publish prices, so a direct comparison needs a quote. Hostlio Pro starts at $49 a month with the channel manager and the Lio AI assistant included, and charges no booking commission. Other published starting prices are in the table above (October 8, 2026).
@@ -5892,10 +6090,11 @@ Try it free for 7 days See plans
 ## More comparisons
 
 - Hostlio Pro vs HotelRunner: flat monthly fee or a share of revenue?
+- Hostlio Pro vs Elektraweb: published pricing, AI on WhatsApp in every plan
 - Hostlio Pro vs Cloudbeds: published price vs quote, AI messaging
 - Cloudbeds alternatives for small hotels, with published prices
 - HiJiffy alternative: AI guest messaging with the PMS included
-- Overview: Hostlio Pro, HotelRunner, Cloudbeds, Mews and Amenitiz All comparisons · Free hotel calculators
+- Overview: Hostlio Pro, HotelRunner, Elektraweb, Cloudbeds, Mews and Amenitiz All comparisons · Free hotel calculators
 
 Q: Can I switch from Amenitiz to Hostlio Pro?
 A: Yes. Export your reservations from Amenitiz and import them into Hostlio Pro as CSV or Excel, with column mapping and duplicate checks; then connect your OTAs and plan the cut-over so availability is sent from one system only. Hostlio Pro focuses on PMS, channel manager and AI guest messaging; it doesn't include a website builder, booking engine or payment processing.
@@ -5986,10 +6185,11 @@ Try it free for 7 days See plans
 ## More comparisons
 
 - Hostlio Pro vs HotelRunner: flat monthly fee or a share of revenue?
+- Hostlio Pro vs Elektraweb: published pricing, AI on WhatsApp in every plan
 - Hostlio Pro vs Cloudbeds: published price vs quote, AI messaging
 - Cloudbeds alternatives for small hotels, with published prices
 - Amenitiz alternative: published pricing and AI messaging on WhatsApp
-- Overview: Hostlio Pro, HotelRunner, Cloudbeds, Mews and Amenitiz All comparisons · Free hotel calculators
+- Overview: Hostlio Pro, HotelRunner, Elektraweb, Cloudbeds, Mews and Amenitiz All comparisons · Free hotel calculators
 
 Q: Can I switch from HiJiffy to Hostlio Pro?
 A: Yes, if you also want to move your PMS and channel manager: Hostlio Pro replaces both and includes the Lio AI assistant. Import your reservations from your current PMS as CSV or Excel, connect your OTAs, then fill in Lio's hotel information. Lio works on WhatsApp and OTA inboxes; it doesn't cover website chat or social media channels.
@@ -7935,11 +8135,12 @@ La información de la competencia procede de las páginas oficiales de precios y
 Comparativa de software hotelero: Hostlio Pro frente al resto (2026) Software ¿Precios publicados? Desde Comisión por reserva Prueba gratis Mensajería IA con huéspedes en WhatsApp
 Hostlio Pro Sí 49 $/mes (lanzamiento) Ninguna, cuota mensual fija 7 días Todos los planes (Lio, más de 30 idiomas)
 HotelRunner Sí (planes Essential) Mínimo 19,95 $/mes + 0,75 % de los ingresos por reservas (Essential Manage) 0,75–1,25 % de los ingresos mensuales por reservas en los planes Essential Ofrece "Start free trial"; duración no indicada Asistente de IA en los planes Advanced (precio con ventas); WhatsApp no figura en las páginas que revisamos
+Elektraweb No; la página de precios lleva a un formulario de presupuesto Presupuesto No se indica en la página de precios No se indica; ofrece demo gratuita Asistente con IA descrito en sus páginas de WhatsApp API y Smart Chat (precio con presupuesto)
 Cloudbeds No, con presupuesto Presupuesto Indica que no añade comisión a las reservas del Booking Engine y del Channel Manager No se menciona en la página de precios; ofrece demo Chatbot con IA por WhatsApp y SMS; Guest Experience figura en el plan Experience
 Mews No, con presupuesto (precio por habitación) Presupuesto No se indica en la página de precios No se menciona en la página de precios "AI messaging via WhatsApp and SMS" figura en Mews Pro
 Amenitiz No, presupuesto según habitaciones Presupuesto Sin comisión en reservas directas; AmenitizPay 1,5 % + 0,25 € por transacción No ofrece; demo gratuita "Guest messaging + WhatsApp" en el plan Advanced (con la etiqueta "live in June")
 
-Fuentes. Información de la competencia de páginas oficiales comprobadas el 8 de octubre de 2026: HotelRunner: Pricing · Cloudbeds: Pricing · Cloudbeds: Guest engagement · Mews: Pricing · Amenitiz: Pricing
+Fuentes. Información de la competencia de páginas oficiales comprobadas el 8 de octubre de 2026: Elektraweb: Fiyat listesi (teklif formu) · HotelRunner: Pricing · Cloudbeds: Pricing · Cloudbeds: Guest engagement · Mews: Pricing · Amenitiz: Pricing
 Hostlio Pro es parte interesada en esta comparativa. La información de la competencia procede solo de las páginas oficiales de cada empresa; lo que no pudimos verificar, no lo incluimos. Los precios y planes pueden cambiar. ¿Ves un error? Escríbenos y lo corregimos.
 
 ## Para quién está hecho Hostlio Pro
@@ -7974,7 +8175,7 @@ Q: ¿Qué es un software de gestión hotelera?
 A: Un software de gestión hotelera (un PMS hotelero) permite a un alojamiento gestionar reservas, disponibilidad de habitaciones, canales de venta e información de los huéspedes en un solo lugar.
 
 Q: ¿Cuánto cuesta un programa para hoteles?
-A: De los proveedores de esta tabla, publican precios Hostlio Pro y HotelRunner: Hostlio Pro empieza en 49 $ al mes con cuota fija; los planes Essential de HotelRunner tienen un mínimo de 19,95 $ al mes más un porcentaje de los ingresos por reservas. Cloudbeds, Mews y Amenitiz dan presupuesto (8 de octubre de 2026).
+A: De los proveedores de esta tabla, publican precios Hostlio Pro y HotelRunner: Hostlio Pro empieza en 49 $ al mes con cuota fija; los planes Essential de HotelRunner tienen un mínimo de 19,95 $ al mes más un porcentaje de los ingresos por reservas. Elektraweb, Cloudbeds, Mews y Amenitiz dan presupuesto (8 de octubre de 2026).
 
 Q: ¿Qué es mejor, comisión o cuota fija?
 A: A medida que suben la ocupación y la tarifa media, el coste basado en ingresos crece. Una cuota mensual fija mantiene el presupuesto previsible: con Hostlio Pro tu factura no cambia en temporada alta.
@@ -10429,7 +10630,7 @@ C’è un’app mobile? Sì, iOS e Android, inclusa in tutti i piani
 Approfondisci: rispondere ai messaggi degli ospiti con l’AI e come scegliere un gestionale per un piccolo hotel .
 
 Q: Qual è il miglior gestionale per un boutique hotel?
-A: Dipende dal numero di camere, dal profilo degli ospiti e dal budget. Per hotel da 10–50 camere con molti ospiti internazionali che vogliono un prezzo fisso, la messaggistica AI e il channel manager di Hostlio Pro sono una buona scelta. Consulta la nostra pagina di confronto per altre opzioni.
+A: Dipende dal numero di camere, dal profilo degli ospiti e dal budget. Per un boutique hotel da 10 a 50 camere con molti ospiti internazionali, Hostlio Pro offre un canone mensile fisso senza commissioni sulle prenotazioni, il channel manager e l'assistente AI Lio su WhatsApp in tutti i piani. Puoi provarlo gratis per 7 giorni con le tue camere e tariffe.
 
 Q: Posso usare Hostlio Pro con il mio sito web attuale?
 A: Sì. Hostlio Pro non sostituisce il tuo sito: gli ospiti che ti contattano su WhatsApp ricevono risposta da Lio nella stessa casella dei messaggi delle OTA.
@@ -10650,11 +10851,12 @@ Le informazioni sui concorrenti provengono dalle pagine ufficiali di prezzi e pr
 Confronto gestionali per hotel: Hostlio Pro e gli altri (2026) Software Prezzi pubblicati? Da Commissione sulle prenotazioni Prova gratuita Messaggi AI agli ospiti su WhatsApp
 Hostlio Pro Sì 49 $/mese (early bird) Nessuna, canone mensile fisso 7 giorni Tutti i piani (Lio, oltre 30 lingue)
 HotelRunner Sì (piani Essential) Minimo 19,95 $/mese + 0,75% del fatturato da prenotazioni (Essential Manage) 0,75–1,25% del fatturato mensile da prenotazioni nei piani Essential Offre "Start free trial"; durata non indicata Assistente AI nei piani Advanced (prezzo dal team commerciale); WhatsApp non indicato nelle pagine verificate
+Elektraweb No; la pagina prezzi rimanda a un modulo di preventivo Preventivo Non indicata nella pagina prezzi Non indicata; demo gratuita Assistente con AI descritto nelle pagine WhatsApp API e Smart Chat (prezzo su preventivo)
 Cloudbeds No, su preventivo Preventivo Dichiara di non aggiungere commissioni sulle prenotazioni da Booking Engine e Channel Manager Non menzionata nella pagina prezzi; demo disponibile Chatbot AI via WhatsApp e SMS; Guest Experience è nel piano Experience
 Mews No, su preventivo (prezzo per camera) Preventivo Non indicata nella pagina prezzi Non menzionata nella pagina prezzi "AI messaging via WhatsApp and SMS" incluso in Mews Pro
 Amenitiz No, preventivo in base alle camere Preventivo Nessuna commissione sulle prenotazioni dirette; AmenitizPay 1,5% + 0,25 € per transazione Non offerta; demo gratuita "Guest messaging + WhatsApp" nel piano Advanced (etichetta "live in June")
 
-Fonti. Informazioni sui concorrenti da pagine ufficiali verificate l'8 ottobre 2026: HotelRunner: Pricing · Cloudbeds: Pricing · Cloudbeds: Guest engagement · Mews: Pricing · Amenitiz: Pricing
+Fonti. Informazioni sui concorrenti da pagine ufficiali verificate l'8 ottobre 2026: Elektraweb: Fiyat listesi (teklif formu) · HotelRunner: Pricing · Cloudbeds: Pricing · Cloudbeds: Guest engagement · Mews: Pricing · Amenitiz: Pricing
 Hostlio Pro è parte di questo confronto. Le informazioni sui concorrenti provengono solo dalle pagine ufficiali di ciascuna azienda; ciò che non abbiamo potuto verificare non è incluso. Prezzi e piani possono cambiare. Hai notato un errore? Scrivici e lo correggiamo.
 
 ## Per chi è pensato Hostlio Pro
@@ -10684,7 +10886,7 @@ Q: Che cos'è un gestionale per hotel?
 A: Un gestionale per hotel (PMS) permette a una struttura di gestire prenotazioni, disponibilità delle camere, canali di vendita e dati degli ospiti in un unico posto.
 
 Q: Quanto costa un gestionale per hotel?
-A: Tra i fornitori in tabella, pubblicano i prezzi Hostlio Pro e HotelRunner: Hostlio Pro parte da 49 $ al mese con canone fisso; i piani Essential di HotelRunner prevedono un minimo di 19,95 $ al mese più una percentuale del fatturato da prenotazioni. Cloudbeds, Mews e Amenitiz lavorano su preventivo (8 ottobre 2026).
+A: Tra i fornitori in tabella, pubblicano i prezzi Hostlio Pro e HotelRunner: Hostlio Pro parte da 49 $ al mese con canone fisso; i piani Essential di HotelRunner prevedono un minimo di 19,95 $ al mese più una percentuale del fatturato da prenotazioni. Elektraweb, Cloudbeds, Mews e Amenitiz lavorano su preventivo (8 ottobre 2026).
 
 Q: Meglio una commissione o un canone fisso?
 A: Con l'aumento di occupazione e tariffa media, i costi legati al fatturato crescono. Un canone mensile fisso rende il budget prevedibile: con Hostlio Pro la fattura resta uguale anche in alta stagione.
@@ -13119,11 +13321,12 @@ As informações sobre concorrentes vêm das páginas oficiais de preços e prod
 Comparativo de sistemas para hotel: Hostlio Pro e os outros (2026) Sistema Preços publicados? A partir de Comissão por reserva Teste grátis Mensagens com IA no WhatsApp
 Hostlio Pro Sim US$ 49/mês (early bird) Nenhuma, mensalidade fixa 7 dias Todos os planos (Lio, mais de 30 idiomas)
 HotelRunner Sim (planos Essential) Mínimo US$ 19,95/mês + 0,75% da receita de reservas (Essential Manage) 0,75%–1,25% da receita mensal de reservas nos planos Essential Oferece "Start free trial"; duração não informada Assistente de IA nos planos Advanced (preço com vendas); WhatsApp não aparece nas páginas que verificamos
+Elektraweb Não; a página de preços leva a um formulário de orçamento Orçamento Não informada na página de preços Não informado; demonstração gratuita Assistente com IA descrito nas páginas de WhatsApp API e Smart Chat (preço sob orçamento)
 Cloudbeds Não, sob orçamento Orçamento Informa que não cobra comissão adicional nas reservas do Booking Engine e do Channel Manager Não mencionado na página de preços; oferece demonstração Chatbot com IA via WhatsApp e SMS; Guest Experience aparece no plano Experience
 Mews Não, sob orçamento (preço por quarto) Orçamento Não informada na página de preços Não mencionado na página de preços "AI messaging via WhatsApp and SMS" listado no Mews Pro
 Amenitiz Não, orçamento conforme os quartos Orçamento Sem comissão em reservas diretas; AmenitizPay 1,5% + € 0,25 por transação Não oferece; demonstração gratuita "Guest messaging + WhatsApp" no plano Advanced (com a etiqueta "live in June")
 
-Fontes. Informações sobre concorrentes de páginas oficiais verificadas em 8 de outubro de 2026: HotelRunner: Pricing · Cloudbeds: Pricing · Cloudbeds: Guest engagement · Mews: Pricing · Amenitiz: Pricing
+Fontes. Informações sobre concorrentes de páginas oficiais verificadas em 8 de outubro de 2026: Elektraweb: Fiyat listesi (teklif formu) · HotelRunner: Pricing · Cloudbeds: Pricing · Cloudbeds: Guest engagement · Mews: Pricing · Amenitiz: Pricing
 O Hostlio Pro é parte interessada nesta comparação. As informações sobre concorrentes vêm apenas das páginas oficiais de cada empresa; o que não conseguimos confirmar, deixamos de fora. Preços e planos podem mudar. Viu um erro? Fale com a gente e corrigimos.
 
 ## Para quem o Hostlio Pro foi feito
@@ -13159,7 +13362,7 @@ Q: O que é um sistema de gestão hoteleira?
 A: Um sistema de gestão hoteleira (PMS) permite que uma hospedagem gerencie reservas, disponibilidade de quartos, canais de venda e dados dos hóspedes num só lugar.
 
 Q: Quanto custa um sistema para hotel?
-A: Dos fornecedores desta tabela, publicam preços o Hostlio Pro e a HotelRunner: o Hostlio Pro começa em US$ 49 por mês com mensalidade fixa; os planos Essential da HotelRunner têm mínimo de US$ 19,95 por mês mais um percentual da receita de reservas. Cloudbeds, Mews e Amenitiz trabalham com orçamento (8 de outubro de 2026).
+A: Dos fornecedores desta tabela, publicam preços o Hostlio Pro e a HotelRunner: o Hostlio Pro começa em US$ 49 por mês com mensalidade fixa; os planos Essential da HotelRunner têm mínimo de US$ 19,95 por mês mais um percentual da receita de reservas. Elektraweb, Cloudbeds, Mews e Amenitiz trabalham com orçamento (8 de outubro de 2026).
 
 Q: O que é melhor, comissão ou mensalidade fixa?
 A: Quando a ocupação e a diária média sobem, o custo baseado na receita cresce. Uma mensalidade fixa deixa o orçamento previsível: com o Hostlio Pro a fatura não muda na alta temporada.
@@ -15813,11 +16016,12 @@ Les informations sur les concurrents proviennent des pages officielles de tarifs
 Comparatif des logiciels hôteliers : Hostlio Pro et les autres (2026) Logiciel Tarifs publics ? À partir de Commission sur les réservations Essai gratuit Messagerie client IA sur WhatsApp
 Hostlio Pro Oui 49 $/mois (early bird) Aucune, abonnement mensuel fixe 7 jours Tous les forfaits (Lio, plus de 30 langues)
 HotelRunner Oui (offres Essential) Minimum 19,95 $/mois + 0,75 % du chiffre d’affaires des réservations (Essential Manage) 0,75 à 1,25 % du chiffre d’affaires mensuel des réservations (offres Essential) « Start free trial » proposé ; durée non indiquée Assistant IA dans les offres Advanced (prix sur demande) ; WhatsApp non mentionné sur les pages consultées
+Elektraweb Non ; la page tarifs renvoie vers un formulaire de devis Devis Non indiqué sur la page tarifs Non indiqué ; démo gratuite Assistant IA décrit sur ses pages WhatsApp API et Smart Chat (prix sur devis)
 Cloudbeds Non, sur devis Devis Indique ne pas ajouter de commission sur les réservations du Booking Engine et du Channel Manager Non mentionné sur la page tarifs ; démo proposée Chatbot IA via WhatsApp et SMS ; Guest Experience figure dans l’offre Experience
 Mews Non, sur devis (prix par chambre) Devis Non indiqué sur la page tarifs Non mentionné sur la page tarifs « AI messaging via WhatsApp and SMS » dans Mews Pro
 Amenitiz Non, devis selon le nombre de chambres Devis Aucune commission sur les réservations directes ; AmenitizPay 1,5 % + 0,25 € par transaction Non proposé ; démo gratuite « Messagerie client + WhatsApp » dans l’offre Advanced (mention « disponible en juin »)
 
-Sources. Informations sur les concurrents issues de pages officielles vérifiées le 8 octobre 2026: Amenitiz : Nos tarifs · HotelRunner: Pricing · Cloudbeds: Pricing · Cloudbeds: Guest engagement · Mews: Pricing
+Sources. Informations sur les concurrents issues de pages officielles vérifiées le 8 octobre 2026: Elektraweb: Fiyat listesi (teklif formu) · Amenitiz : Nos tarifs · HotelRunner: Pricing · Cloudbeds: Pricing · Cloudbeds: Guest engagement · Mews: Pricing
 Hostlio Pro est partie prenante de ce comparatif. Les informations sur les concurrents proviennent uniquement de leurs pages officielles ; ce que nous n’avons pas pu vérifier n’y figure pas. Prix et offres peuvent changer. Vous voyez une erreur ? Écrivez-nous , nous la corrigerons.
 
 ## Pour qui Hostlio Pro est conçu
@@ -15851,7 +16055,7 @@ Q: Qu’est-ce qu’un logiciel de gestion hôtelière ?
 A: Un logiciel de gestion hôtelière (PMS) permet à un établissement de gérer réservations, disponibilités, canaux de vente et données clients au même endroit.
 
 Q: Combien coûte un logiciel hôtelier ?
-A: Parmi les éditeurs du tableau, Hostlio Pro et HotelRunner publient leurs prix : Hostlio Pro démarre à 49 $ par mois en abonnement fixe ; les offres Essential de HotelRunner ont un minimum de 19,95 $ par mois plus un pourcentage du chiffre d’affaires des réservations. Cloudbeds, Mews et Amenitiz fonctionnent sur devis (8 octobre 2026).
+A: Parmi les éditeurs du tableau, Hostlio Pro et HotelRunner publient leurs prix : Hostlio Pro démarre à 49 $ par mois en abonnement fixe ; les offres Essential de HotelRunner ont un minimum de 19,95 $ par mois plus un pourcentage du chiffre d’affaires des réservations. Elektraweb, Cloudbeds, Mews et Amenitiz fonctionnent sur devis (8 octobre 2026).
 
 Q: Commission ou abonnement fixe : que choisir ?
 A: Quand le taux d’occupation et le prix moyen augmentent, un coût lié au chiffre d’affaires augmente aussi. Un abonnement fixe rend le budget prévisible : avec Hostlio Pro, la facture ne change pas en haute saison.
