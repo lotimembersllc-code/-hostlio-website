@@ -401,8 +401,13 @@ td.c,th.c{text-align:center}
 
 /* FAQ */
 .faq-wrap{display:grid;grid-template-columns:.8fr 1.4fr;gap:clamp(24px,5vw,72px);align-items:start}
-.faq-wrap h2{position:sticky;top:110px}
-@media (max-width:860px){.faq-wrap{grid-template-columns:1fr}.faq-wrap h2{position:static}}
+.faq-side{position:sticky;top:110px}
+.faq-help{margin-top:28px;padding:24px;border:1px solid var(--line);border-radius:var(--r-l);background:var(--surface);max-width:380px}
+.faq-help .q{font-weight:700;color:var(--ink);margin:0 0 .3em;font-size:1.05rem}
+.faq-help p{margin:0;color:var(--muted)}
+.faq-links{display:flex;flex-wrap:wrap;align-items:center;gap:12px 18px;margin-top:18px}
+.faq-all{font-weight:600;color:var(--ink);text-decoration:underline;text-underline-offset:3px}
+@media (max-width:860px){.faq-wrap{grid-template-columns:1fr}.faq-side{position:static}.faq-help{max-width:none}}
 .faq{max-width:860px}
 .faq details{border-top:1px solid var(--line)}
 .faq details:last-child{border-bottom:1px solid var(--line)}

@@ -264,11 +264,26 @@ ARROW = None
 def btn(label, href, kind="primary", extra=""):
     return f'<a class="btn btn-{kind}" href="{href}"{extra}>{label}<span class="bi">{icon("arrow-up-right")}</span></a>'
 
-def faq_block(faq, lang, heading=True, wrap=True):
+# SSS bölümünün sol sütunu: başlığın altında boşluk kalmasın diye kısa yardım notu ve iki bağlantı (8 Ekim 2026)
+FAQ_SIDE = {
+ "tr": ("Aradığınız cevap yok mu?", "Bize yazın", "Tüm soruları gör"),
+ "en": ("Can't find your answer?", "Write to us", "See all questions"),
+ "es": ("¿No encuentra su respuesta?", "Escríbanos", "Ver todas las preguntas"),
+ "it": ("Non trovi la risposta?", "Scrivici", "Vedi tutte le domande"),
+ "pt": ("Não encontrou sua resposta?", "Fale conosco", "Ver todas as perguntas"),
+ "fr": ("Vous ne trouvez pas votre réponse ?", "Écrivez-nous", "Voir toutes les questions"),
+}
+
+def faq_block(faq, lang, heading=True, wrap=True, key=""):
     items = "".join(f'<details><summary>{html.escape(q)}</summary><div class="a"><p>{a}</p></div></details>' for q, a in faq)
     if not wrap:
         return f'<div class="faq">{items}</div>'
-    return (f'<section class="rule" aria-labelledby="faq-h"><div class="wrap faq-wrap"><h2 id="faq-h">{UI[lang]["faq_h"]}</h2>'
+    q_, write_, all_ = FAQ_SIDE[lang]
+    links = (btn(write_, url("contact", lang), "ghost") if key != "contact" else "") + \
+            (f'<a class="faq-all" href="{url("faq", lang)}">{all_}</a>' if key != "faq" else "")
+    side = (f'<div class="faq-side"><h2 id="faq-h">{UI[lang]["faq_h"]}</h2>'
+            f'<div class="faq-help"><p class="q">{q_}</p><p>{UI[lang]["resp"]}</p><div class="faq-links">{links}</div></div></div>')
+    return (f'<section class="rule" aria-labelledby="faq-h"><div class="wrap faq-wrap">{side}'
             f'<div class="faq">{items}</div></div></section>')
 
 # D6 (WCAG 2.2.2): 10 sn'lik döngü videosu için duraklat/oynat düğmesi (video oynamaya başlayınca görünür)
@@ -613,7 +628,7 @@ def layout(page, lang):
     if key == "about" and (FOUNDER_NOTE or TEAM):
         body += about_people(lang)
     if page.get("faq") and not page.get("faq_inline"):
-        body += faq_block(page["faq"], lang)
+        body += faq_block(page["faq"], lang, key=key)
     body += related_html(key, lang)
     body = label_regions(body, lang)
     upd = u["updated"]
