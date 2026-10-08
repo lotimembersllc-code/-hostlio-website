@@ -257,7 +257,7 @@ def home(L, plans_html, FAQ_CORE):
     logos6 = "".join(f"<span>{logo(n)}</span>" for n in ["bookingdotcom","airbnb","expedia","tripdotcom","hotelsdotcom","google"])
     bento = f'''<section class="white rule"><div class="wrap"><div class="section-head rv"><h2>{t["bento_h"]}</h2><p>{t["bento_p"]}</p></div>
 <div class="bento">
-<a class="card photo span8" href="{U("ai")}">{img("brand-guest-bed","",1200,675)}<div class="float" aria-hidden="true"><span class="chip" lang="en">{logo("whatsapp")}{lio[2]}</span><span class="chip" lang="en">{icon("sparkle")}{lio[3]}</span></div><div class="txt"><h3>{lio[0]}</h3><p>{lio[1]}</p></div></a>
+<a class="card photo span8" href="{U("ai")}">{img("guest-bed-morning","",1600,894)}<div class="float" aria-hidden="true"><span class="chip" lang="en">{logo("whatsapp")}{lio[2]}</span><span class="chip" lang="en">{icon("sparkle")}{lio[3]}</span></div><div class="txt"><h3>{lio[0]}</h3><p>{lio[1]}</p></div></a>
 <a class="card navy" href="{U("channel")}"><span class="ci">{icon("arrows-left-right")}</span><h3>{chan[0]}</h3><p>{chan[1]}</p><div class="vis logo-grid" aria-hidden="true">{logos6}</div></a>
 <a class="card" href="{U("features")}"><span class="ci">{icon("calendar-dots")}</span><h3>{rack[0]}</h3><p>{rack[1]}</p><div class="vis mini-rack" aria-hidden="true"><div style="background:#1B2B4B;color:#fff;width:78%">K. Sato</div><div style="background:var(--orange);color:var(--ink);width:56%;margin-left:30%">Öztürk</div><div style="background:var(--peach);color:var(--peach-ink);width:64%;margin-left:12%">L. Rossi</div></div></a>
 <a class="card" href="{U("checkin")}"><span class="ci">{icon("identification-card")}</span><h3>{ci[0]}</h3><p>{ci[1]}</p><div class="vis sig" aria-hidden="true">{sig}</div></a>
