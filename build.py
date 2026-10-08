@@ -129,7 +129,11 @@ ROUTES.update({
  "post-channel-manager": {"tr": "/tr/blog/channel-manager-nedir/"},
  "post-kbs":       {"tr": "/tr/blog/kbs-bildirimi-nasil-yapilir/"},
  "post-prices":    {"tr": "/tr/blog/otel-programi-fiyatlari-2026/"},
+ # Tur 2 (8 Ekim 2026): SEO fikri #20 ve #14 (guides_intl.py)
+ "post-pms-vs-cm": {"en": "/en/blog/pms-vs-channel-manager/", "it": "/it/blog/channel-manager-cos-e-differenza-pms/",
+                    "pt": "/pt/blog/o-que-e-channel-manager-diferenca-pms/", "fr": "/fr/blog/pms-ou-channel-manager-difference/"},
 })
+ROUTES["post-whatsapp"].update({"es": "/es/blog/whatsapp-para-hoteles/", "it": "/it/blog/whatsapp-per-hotel/", "fr": "/fr/blog/whatsapp-pour-hotels/"})
 TOOLS_LABEL = {"tr": "Ücretsiz araçlar", "en": "Free tools", "es": "Herramientas gratis", "it": "Strumenti gratuiti", "pt": "Ferramentas grátis", "fr": "Outils gratuits"}
 CMP_LABEL = {"tr": "Karşılaştırmalar", "en": "Comparisons", "es": "Comparativas", "it": "Confronti", "pt": "Comparativos", "fr": "Comparatifs"}
 def xdefault(key): return "en" if "en" in ROUTES[key] else langs(key)[0]   # tek dilli (yalnız TR) sayfa x-default'u kendisi
@@ -469,14 +473,15 @@ def label_regions(body, lang):
 # S4: iç link — yazılar arasında "İlgili yazılar", ürün/segment sayfalarında "İlgili rehberler".
 # Listeler öncelik sırasıdır; o dilde olmayan yazı (eski EN yazıları) atlanır, ilk 3 gösterilir.
 RELATED_POSTS = {
-    "post-autoreply": ["post-ai", "post-overbooking", "post-pms", "post-whatsapp"],
+    "post-autoreply": ["post-ai", "post-whatsapp", "post-overbooking", "post-pms"],
     "post-ai": ["post-autoreply", "post-pms", "post-whatsapp", "post-overbooking"],
-    "post-overbooking": ["post-channel-manager", "post-pms", "post-autoreply", "post-noshows", "post-ai"],
-    "post-pms": ["post-prices", "post-channel-manager", "post-overbooking", "post-ai", "post-autoreply"],
+    "post-overbooking": ["post-channel-manager", "post-pms-vs-cm", "post-pms", "post-autoreply", "post-noshows", "post-ai"],
+    "post-pms": ["post-prices", "post-channel-manager", "post-pms-vs-cm", "post-overbooking", "post-ai", "post-autoreply"],
     "post-aifrontdesk": ["post-ai", "post-autoreply", "post-whatsapp"],
     "post-noshows": ["post-overbooking", "post-pms", "post-autoreply"],
     "post-chains": ["post-pms", "post-aifrontdesk", "post-overbooking"],
-    "post-whatsapp": ["post-autoreply", "post-ai", "post-aifrontdesk"],
+    "post-whatsapp": ["post-ai", "post-autoreply", "post-aifrontdesk", "post-pms"],
+    "post-pms-vs-cm": ["post-overbooking", "post-pms", "post-prices", "post-channel-manager", "post-noshows", "post-autoreply"],
     # S9 TR rehberleri (yalnız TR; diğer dillerde liste o dilde olmayan yazıyı zaten atlar)
     "post-channel-manager": ["post-overbooking", "post-prices", "post-pms"],
     "post-kbs": ["post-pms", "post-channel-manager", "post-ai"],
@@ -484,20 +489,20 @@ RELATED_POSTS = {
 }
 RELATED_PRODUCT = {"post-autoreply": "ai", "post-ai": "ai", "post-overbooking": "channel", "post-pms": "pricing",
                    "post-aifrontdesk": "ai", "post-noshows": "channel", "post-chains": "features", "post-whatsapp": "ai",
-                   "post-channel-manager": "channel", "post-kbs": "checkin", "post-prices": "pricing"}
+                   "post-channel-manager": "channel", "post-kbs": "checkin", "post-prices": "pricing", "post-pms-vs-cm": "channel"}
 _SEG = ["post-pms", "post-autoreply", "post-overbooking"]
-PAGE_GUIDES = {"channel": ["post-channel-manager", "post-overbooking", "post-pms", "post-noshows"], "ai": ["post-autoreply", "post-ai", "post-whatsapp"],
+PAGE_GUIDES = {"channel": ["post-channel-manager", "post-pms-vs-cm", "post-overbooking", "post-pms", "post-noshows"], "ai": ["post-whatsapp", "post-autoreply", "post-ai"],
                "checkin": ["post-kbs", "post-pms", "post-ai", "post-noshows"], "pricing": ["post-prices", "post-pms", "post-overbooking", "post-autoreply"],
                "features": _SEG, "compare": ["post-prices", "post-pms", "post-overbooking", "post-autoreply"],
                "t-guesthouse": _SEG, "t-boutique": _SEG, "t-apart": _SEG, "t-hostel": _SEG,
-               "kpi": ["post-pms", "post-overbooking", "post-channel-manager"], "commission": ["post-channel-manager", "post-overbooking", "post-pms"]}
+               "kpi": ["post-pms", "post-overbooking", "post-channel-manager"], "commission": ["post-channel-manager", "post-pms-vs-cm", "post-overbooking", "post-pms"]}
 # S9: "Ayrıca bakın" satırı — araçlar, karşılaştırmalar ve WhatsApp sayfasına bağlamsal iç link (o dilde olmayan atlanır)
 PAGE_EXTRA = {"ai": ["whatsapp-tr", "alt-hijiffy", "roi"], "channel": ["commission", "vs-hotelrunner", "kpi"],
               "pricing": ["cmp-hub", "commission", "kpi"], "features": ["kpi", "commission", "cmp-hub"],
               "compare": ["cmp-hub", "vs-hotelrunner", "vs-cloudbeds", "alt-cloudbeds", "alt-amenitiz", "alt-hijiffy"],
               "t-boutique": ["kpi", "cmp-hub"], "t-guesthouse": ["kpi", "cmp-hub"], "t-apart": ["kpi", "cmp-hub"], "t-hostel": ["kpi", "cmp-hub"],
               "post-pms": ["cmp-hub", "kpi"], "post-ai": ["whatsapp-tr"], "post-autoreply": ["whatsapp-tr"], "post-whatsapp": ["alt-hijiffy"],
-              "post-overbooking": ["commission"], "post-noshows": ["kpi"], "post-prices": ["cmp-hub", "kpi"], "post-channel-manager": ["commission"],
+              "post-overbooking": ["commission"], "post-pms-vs-cm": ["commission", "cmp-hub"], "post-noshows": ["kpi"], "post-prices": ["cmp-hub", "kpi"], "post-channel-manager": ["commission"],
               "kpi": ["commission", "roi"], "commission": ["kpi", "roi"]}
 SEE_ALSO = {"tr": "Ayrıca bakın", "en": "See also", "es": "Ver también", "it": "Vedi anche", "pt": "Veja também", "fr": "Voir aussi"}
 def extra_label(k, lang):
@@ -932,7 +937,8 @@ def main():
     (ROOT / "vercel.json").write_text(json.dumps(vc, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
     import tools_pages, compare_pages, guides_tr, sys as _sys_
     _B = _sys_.modules[__name__]
-    pages = {l: importlib.import_module("content_" + l).pages() + tools_pages.pages(l, _B) + compare_pages.pages(l, _B)
+    import guides_intl
+    pages = {l: importlib.import_module("content_" + l).pages() + tools_pages.pages(l, _B) + compare_pages.pages(l, _B) + guides_intl.pages(l, url)
                 + (guides_tr.pages(_B) if l == "tr" else []) for l in LANGS}
     if GA4_ID:   # GA4 açıkken gizlilik politikasının çerez bölümüne analitik paragrafı (analytics_consent.py)
         for l, plist in pages.items():

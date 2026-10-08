@@ -293,6 +293,8 @@ POSTS = [
 ]
 
 POSTS += __import__("legal_v5").legacy_meta()
+import guides_intl as _gi
+POSTS = _gi.meta(L) + POSTS
 def blog():
     items = "".join(f'<article><h2><a href="{U(p["key"])}">{p["title"]}</a></h2><p class="meta"><time datetime="{p["date"]}">{p["date"]}</time></p><p>{p["desc"]}</p></article>' for p in [dict(p, **{k: v for k, v in __import__("pages_v4").post_meta(L).get(p["key"], {}).items() if k in ("title", "desc")}) for p in POSTS])
     body = f'<section class="page-hero"><div class="wrap"><h1>Blog for hoteliers</h1><p class="lead">Practical writing on running an independent hotel, distribution and guest communication.</p></div></section><section style="padding-top:0"><div class="wrap post-list">{items}</div></section>'
@@ -300,6 +302,7 @@ def blog():
             "trail":[("Blog", U("blog"))],"body":body,"page_type":"CollectionPage"}
 
 COVERS={"post-ai":("gen-checkin-phone",1080,1350),"post-pms":("gen-owner-laptop",1080,1350),"post-overbooking":("gen-reception",1080,1350),"post-autoreply":("gen-night-desk",1080,1350)}
+COVERS.update(_gi.COVER)
 import legal_v5 as _lg
 COVERS.update(_lg.LEGACY_COVER)
 def article(meta, content, faq=None):

@@ -297,6 +297,8 @@ POSTS = [
   "desc":"Come scegliere un gestionale per piccoli hotel: modelli di prezzo, costi per 8, 20 e 45 camere, Alloggiati Web e checklist. PMS da ⟦price:starter⟧/mese."},
 ]
 
+import guides_intl as _gi
+POSTS = _gi.meta(L) + POSTS
 def blog():
     items = "".join(f'<article><h2><a href="{U(p["key"])}">{p["title"]}</a></h2><p class="meta"><time datetime="{p["date"]}">{D(p["date"])}</time></p><p>{p["desc"]}</p></article>' for p in [dict(p, **{k: v for k, v in __import__("pages_v4").post_meta(L).get(p["key"], {}).items() if k in ("title", "desc")}) for p in POSTS])
     body = f'<section class="page-hero"><div class="wrap"><h1>Blog per albergatori</h1><p class="lead">Articoli pratici sulla gestione di un hotel indipendente, sulla distribuzione e sulla comunicazione con gli ospiti.</p></div></section><section style="padding-top:0"><div class="wrap post-list">{items}</div></section>'
@@ -304,6 +306,7 @@ def blog():
             "trail":[("Blog", U("blog"))],"body":body,"page_type":"CollectionPage"}
 
 COVERS={"post-ai":("gen-checkin-phone",1080,1350),"post-pms":("gen-owner-laptop",1080,1350),"post-overbooking":("gen-reception",1080,1350),"post-autoreply":("gen-night-desk",1080,1350)}
+COVERS.update(_gi.COVER)
 def article(meta, content, faq=None):
     art = {"@type":"BlogPosting","headline":meta["title"],"description":meta["desc"],"datePublished":meta["date"],"inLanguage":L,"author":{"@type":"Organization","name":"Team di prodotto Hostlio Pro","url":SITE+U("about")},"dateModified":UPDATED,"publisher":{"@id":SITE+"/#org"},
            "mainEntityOfPage":SITE+U(meta["key"]),"image":SITE+"/assets/img/"+COVERS[meta["key"]][0]+".webp"}

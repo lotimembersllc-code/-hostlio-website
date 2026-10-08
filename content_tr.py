@@ -298,6 +298,8 @@ POSTS = [
   "desc":"Küçük ve butik oteller için PMS seçerken bakılması gereken 7 kriter: kanal yöneticisi, fiyat modeli, misafir iletişimi, mobil erişim ve daha fazlası."},
 ]
 
+import guides_intl as _gi
+POSTS = _gi.meta(L) + POSTS
 def blog():
     items = "".join(f'<article><h2><a href="{U(p["key"])}">{p["title"]}</a></h2><p class="meta"><time datetime="{p["date"]}">{p["date"]}</time></p><p>{p["desc"]}</p></article>' for p in [dict(p, **{k: v for k, v in __import__("pages_v4").post_meta(L).get(p["key"], {}).items() if k in ("title", "desc")}) for p in POSTS])
     body = f'<section class="page-hero"><div class="wrap"><h1>Otelciler için blog</h1><p class="lead">Bağımsız otel işletmeciliği, dağıtım ve misafir iletişimi üzerine pratik yazılar.</p></div></section><section style="padding-top:0"><div class="wrap post-list">{items}</div></section>'
@@ -305,6 +307,7 @@ def blog():
             "trail":[("Blog", U("blog"))],"body":body,"page_type":"CollectionPage"}
 
 COVERS={"post-channel-manager":("gen-team-desk",1080,1350),"post-kbs":("gen-arrival",1080,1350),"post-prices":("gen-facade",1080,1350),"post-ai":("gen-checkin-phone",1080,1350),"post-pms":("gen-owner-laptop",1080,1350),"post-overbooking":("gen-reception",1080,1350),"post-autoreply":("gen-night-desk",1080,1350)}
+COVERS.update(_gi.COVER)
 def article(meta, content, faq=None):
     art = {"@type":"BlogPosting","headline":meta["title"],"description":meta["desc"],"datePublished":meta["date"],"inLanguage":"tr-TR","author":{"@type":"Organization","name":"Hostlio Pro ürün ekibi","url":SITE+U("about")},"dateModified":UPDATED,"publisher":{"@id":SITE+"/#org"},
            "mainEntityOfPage":SITE+U(meta["key"]),"image":SITE+"/assets/img/"+COVERS[meta["key"]][0]+".webp"}
