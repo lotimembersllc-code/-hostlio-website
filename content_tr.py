@@ -306,7 +306,7 @@ def blog():
     return {"key":"blog","title":"Blog: Bağımsız Oteller için Rehberler | Hostlio Pro","desc":"Otel yönetimi, kanal yönetimi, OTA dağıtımı ve AI ile misafir iletişimi üzerine bağımsız otelcilere yönelik pratik rehberler.",
             "trail":[("Blog", U("blog"))],"body":body,"page_type":"CollectionPage"}
 
-COVERS={"post-channel-manager":("gen-team-desk",1080,1350),"post-kbs":("gen-arrival",1080,1350),"post-prices":("gen-facade",1080,1350),"post-ai":("gen-checkin-phone",1080,1350),"post-pms":("gen-owner-laptop",1080,1350),"post-overbooking":("gen-reception",1080,1350),"post-autoreply":("guest-balcony-dusk",1080,1341)}
+COVERS={"post-channel-manager":("gen-team-desk",1080,1350),"post-kbs":("gen-arrival",1080,1350),"post-prices":("gen-facade",1080,1350),"post-ai":("gen-checkin-phone",1080,1350),"post-pms":("gen-owner-laptop",1080,1350),"post-overbooking":("overbooking-desk",1080,1341),"post-autoreply":("guest-balcony-dusk",1080,1341)}
 COVERS.update(_gi.COVER)
 def article(meta, content, faq=None):
     art = {"@type":"BlogPosting","headline":meta["title"],"description":meta["desc"],"datePublished":meta["date"],"inLanguage":"tr-TR","author":{"@type":"Organization","name":"Hostlio Pro ürün ekibi","url":SITE+U("about")},"dateModified":UPDATED,"publisher":{"@id":SITE+"/#org"},
