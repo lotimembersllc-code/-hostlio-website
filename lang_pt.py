@@ -159,7 +159,7 @@ def types(U):
   crumb="Sistema para hostels", h1='<em class="hl">Sistema para hostels</em> com caixas de entrada cheias e multilíngues',
   lead="Hostels têm hóspedes internacionais, grande volume de mensagens e equipes pequenas. O Hostlio Pro cuida das perguntas em vários idiomas e mantém os canais em um só calendário.",
   q="O que é um sistema para hostels?",
-  a="Um sistema para hostels gerencia reservas, canais e comunicação com hóspedes em hostels que vendem camas e quartos. O Hostlio Pro se conecta a mais de 100 canais, incluindo o Hostelworld, com conexões certificadas, e responde às perguntas dos hóspedes em 30+ idiomas com seu assistente de IA Lio.",
+  a="Um sistema para hostels gerencia reservas, canais e comunicação com hóspedes em hostels. O Hostlio Pro se conecta a mais de 100 canais, incluindo o Hostelworld, com conexões certificadas, e responde às perguntas dos hóspedes em 30+ idiomas com seu assistente de IA Lio.",
   pains_h="Do que os hostels mais precisam?",
   pains=[("Tráfego multilíngue","Os viajantes escrevem no próprio idioma. Lio responde em cada um deles."),
          ("Hostelworld e OTAs","Hostelworld, Booking.com e outros canais compartilham uma só disponibilidade."),

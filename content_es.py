@@ -160,8 +160,8 @@ def checkin():
 '''
     faq = [("¿Qué planes incluyen el check-in online?", "El check-in online con firma digital está incluido en los planes Pro y Growth."),
            ("¿El huésped tiene que descargar una app?", "No. El formulario de check-in se abre en el navegador; no hace falta descargar ninguna app."),
-           ("¿Y si un huésped no completa el enlace?", "Haz el check-in de la forma habitual. El personal también puede escanear el documento en recepción con la app móvil de Hostlio Pro; se lee en el dispositivo y no se guarda ninguna imagen."),
-           ("¿Se guardan fotos de los documentos de identidad?", "No. La zona de lectura mecánica (MRZ) del documento se lee en el móvil del huésped, o en el dispositivo del hotel con la app móvil de Hostlio Pro, y solo se guardan los datos extraídos y la firma. Se pueden escanear pasaportes y documentos de identidad con MRZ; los demás se introducen a mano.")]
+           ("¿Y si un huésped no completa el enlace?", "Haz el check-in de la forma habitual. El personal también puede escanear el documento en recepción desde el panel web, con la cámara del ordenador o de la tableta; se lee en el dispositivo y no se guarda ninguna imagen."),
+           ("¿Se guardan fotos de los documentos de identidad?", "No. La zona de lectura mecánica (MRZ) del documento se lee en el móvil del huésped, o en recepción, en el dispositivo del hotel, desde el panel web, y solo se guardan los datos extraídos y la firma. Se pueden escanear pasaportes y documentos de identidad con MRZ; los demás se introducen a mano.")]
     return {"key":"checkin","title":"Check-in online para hoteles con firma digital | Hostlio Pro",
             "desc":"Check-in online de Hostlio Pro: el huésped escanea su documento (sin guardar imágenes), añade acompañantes y firma desde el móvil. Sin colas en recepción.",
             "trail":[("Check-in online", U("checkin"))],"body":body,"faq":faq+DS.faq(L,"checkin")}

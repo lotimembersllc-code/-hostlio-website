@@ -180,10 +180,18 @@
     });
     texts();
   }
+  // Bant açıkken sayfanın en altı (altbilgi, "Çerez tercihleri", "Panele giriş") bandın arkasında
+  // kalmasın: bant yüksekliği kadar alt boşluk (CSS: .consent-open body{padding-bottom:…}).
+  function pay() {
+    if (!box || box.hidden) return;
+    root.style.setProperty('--consent-h', Math.ceil(box.getBoundingClientRect().height) + 'px');
+  }
+  window.addEventListener('resize', pay);
   function show(focus) {
     if (!box) build();
     box.hidden = false;
     root.classList.add('consent-open');
+    pay();
     if (focus) box.focus();
   }
   function hide(returnFocus) {
@@ -191,6 +199,7 @@
     var had = box.contains(d.activeElement);
     box.hidden = true;
     root.classList.remove('consent-open');
+    root.style.removeProperty('--consent-h');
     if (had && returnFocus) {
       if (opener && d.body.contains(opener)) opener.focus();
       else { var m = d.getElementById('main'); if (m) { if (!m.hasAttribute('tabindex')) m.setAttribute('tabindex', '-1'); m.focus({ preventScroll: true }); } }

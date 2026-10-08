@@ -161,8 +161,8 @@ def checkin():
 '''
     faq = [("Quels forfaits incluent le check-in en ligne ?", "Le check-in en ligne avec signature électronique est inclus dans les forfaits Pro et Growth."),
            ("Le client doit-il télécharger une application ?", "Non. Le formulaire de check-in s'ouvre dans le navigateur ; aucune application n'est à télécharger."),
-           ("Et si un client ne remplit pas le formulaire ?", "Enregistrez-le de la manière habituelle. Votre équipe peut aussi scanner le document à la réception avec l'application mobile Hostlio Pro ; la lecture se fait sur l'appareil et aucune image n'est conservée."),
-           ("Les photos des pièces d'identité sont-elles conservées ?", "Non. La bande de lecture automatique (MRZ) du document est lue sur le téléphone du client, ou sur l'appareil de l'hôtel avec l'application mobile Hostlio Pro, et seules les données extraites et la signature sont enregistrées. Les passeports et cartes d'identité dotés d'une MRZ peuvent être scannés ; les autres documents sont saisis à la main.")]
+           ("Et si un client ne remplit pas le formulaire ?", "Enregistrez-le de la manière habituelle. Votre équipe peut aussi scanner le document à la réception depuis le panneau web, avec la caméra de l'ordinateur ou de la tablette ; la lecture se fait sur l'appareil et aucune image n'est conservée."),
+           ("Les photos des pièces d'identité sont-elles conservées ?", "Non. La bande de lecture automatique (MRZ) du document est lue sur le téléphone du client, ou à la réception, sur l'appareil de l'hôtel, depuis le panneau web, et seules les données extraites et la signature sont enregistrées. Les passeports et cartes d'identité dotés d'une MRZ peuvent être scannés ; les autres documents sont saisis à la main.")]
     return {"key":"checkin","title":"Check-in en ligne avec signature électronique | Hostlio Pro",
             "desc":"Check-in en ligne : vos clients scannent leur pièce d'identité (aucune image conservée), ajoutent leurs accompagnants et signent depuis leur mobile.",
             "trail":[("Check-in en ligne", U("checkin"))],"body":body,"faq":faq+DS.faq(L,"checkin")}

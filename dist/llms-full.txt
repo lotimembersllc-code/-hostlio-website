@@ -718,10 +718,10 @@ Q: Misafirin uygulama indirmesi gerekiyor mu?
 A: Hayır. Check-in formu tarayıcıda açılır; herhangi bir uygulama indirmek gerekmez.
 
 Q: Misafir bağlantıyı doldurmazsa ne olur?
-A: Klasik check-in'e devam edebilirsiniz. Resepsiyonda misafirin belgesini Hostlio Pro mobil uygulamasıyla da tarayabilirsiniz; okuma cihazda yapılır, görüntü saklanmaz.
+A: Klasik check-in'e devam edebilirsiniz. Resepsiyonda misafirin belgesini panelden, bilgisayarın ya da tabletin kamerasıyla da tarayabilirsiniz; okuma cihazda yapılır, görüntü saklanmaz.
 
 Q: Kimlik fotoğrafı saklanıyor mu?
-A: Hayır. Belgenin makine okunabilir alanı (MRZ) misafirin telefonunda ya da Hostlio Pro mobil uygulamasıyla otelin cihazında okunur; yalnızca okunan bilgiler ve imza kaydedilir. MRZ'li pasaport ve kimlik kartları taranabilir; diğer belgeler elle girilir.
+A: Hayır. Belgenin makine okunabilir alanı (MRZ) misafirin telefonunda ya da resepsiyonda panelden otelin cihazında okunur; yalnızca okunan bilgiler ve imza kaydedilir. MRZ'li pasaport ve kimlik kartları taranabilir; diğer belgeler elle girilir.
 
 Q: Hostlio Pro KBS bildirimini otomatik yapıyor mu?
 A: Hayır. Hostlio Pro EGM ya da Jandarma KBS’sine bağlanmaz. Online check-in’de toplanan bilgileri tarih aralığına göre CSV olarak indirir, KBS girişinizde kullanırsınız; bildirim yükümlülüğü tesiste kalır.
@@ -2734,10 +2734,10 @@ Q: Does the guest need to download an app?
 A: No. The check-in form opens in the browser; no app download is required.
 
 Q: What if a guest doesn't complete the link?
-A: Check them in the usual way. Staff can also scan the guest's document at the desk with the Hostlio Pro mobile app; it is read on the device and no image is stored.
+A: Check them in the usual way. Staff can also scan the guest's document at the desk from the web panel using the computer's or tablet's camera; it is read on the device and no image is stored.
 
 Q: Are photos of ID documents stored?
-A: No. The document's machine-readable zone (MRZ) is read on the guest's phone, or on the hotel's device with the Hostlio Pro mobile app, and only the extracted details and the signature are saved. Passports and ID cards with an MRZ can be scanned; other documents are entered by hand.
+A: No. The document's machine-readable zone (MRZ) is read on the guest's phone, or at the front desk on the hotel's device from the web panel, and only the extracted details and the signature are saved. Passports and ID cards with an MRZ can be scanned; other documents are entered by hand.
 
 Q: Why do hotels scan your passport?
 A: Because in many countries accommodation providers must record each guest’s identity and, in some, report it to the authorities. With Hostlio Pro’s online check-in the guest reads the passport on their own phone; only the extracted details are saved, never an image.
@@ -5139,10 +5139,10 @@ Q: ¿El huésped tiene que descargar una app?
 A: No. El formulario de check-in se abre en el navegador; no hace falta descargar ninguna app.
 
 Q: ¿Y si un huésped no completa el enlace?
-A: Haz el check-in de la forma habitual. El personal también puede escanear el documento en recepción con la app móvil de Hostlio Pro; se lee en el dispositivo y no se guarda ninguna imagen.
+A: Haz el check-in de la forma habitual. El personal también puede escanear el documento en recepción desde el panel web, con la cámara del ordenador o de la tableta; se lee en el dispositivo y no se guarda ninguna imagen.
 
 Q: ¿Se guardan fotos de los documentos de identidad?
-A: No. La zona de lectura mecánica (MRZ) del documento se lee en el móvil del huésped, o en el dispositivo del hotel con la app móvil de Hostlio Pro, y solo se guardan los datos extraídos y la firma. Se pueden escanear pasaportes y documentos de identidad con MRZ; los demás se introducen a mano.
+A: No. La zona de lectura mecánica (MRZ) del documento se lee en el móvil del huésped, o en recepción, en el dispositivo del hotel, desde el panel web, y solo se guardan los datos extraídos y la firma. Se pueden escanear pasaportes y documentos de identidad con MRZ; los demás se introducen a mano.
 
 Q: ¿Hostlio Pro envía el parte de viajeros a SES.Hospedajes?
 A: No. Hostlio Pro recoge parte de los datos con el check-in online y te permite exportarlos en CSV, pero no se conecta a SES.Hospedajes ni genera el fichero XML del Ministerio. La comunicación sigue siendo responsabilidad del alojamiento.
@@ -5932,7 +5932,7 @@ Los hostels tienen huéspedes internacionales, mucho volumen de mensajes y equip
 Prueba gratis durante 7 días Solicitar demo
 
 ## ¿Qué es un software para hostels?
-Un software para hostels gestiona las reservas, los canales y la comunicación con los huéspedes de los hostels que venden camas y habitaciones. Hostlio Pro se conecta a más de 100 canales, incluido Hostelworld, mediante conexiones certificadas y responde a las preguntas de los huéspedes en más de 30 idiomas con su asistente de IA Lio.
+Un software para hostels gestiona las reservas, los canales y la comunicación con los huéspedes de los hostels. Hostlio Pro se conecta a más de 100 canales, incluido Hostelworld, mediante conexiones certificadas y responde a las preguntas de los huéspedes en más de 30 idiomas con su asistente de IA Lio.
 
 ## ¿Qué es lo que más necesita un hostel?
 
@@ -7209,10 +7209,10 @@ Q: L'ospite deve scaricare un'app?
 A: No. Il modulo di check-in si apre nel browser; non serve scaricare nessuna app.
 
 Q: E se un ospite non completa il check-in dal link?
-A: Fai il check-in nel modo consueto. Lo staff può anche scansionare il documento al banco con l'app mobile di Hostlio Pro; la lettura avviene sul dispositivo e nessuna immagine viene conservata.
+A: Fai il check-in nel modo consueto. Lo staff può anche scansionare il documento al banco dal pannello web, con la fotocamera del computer o del tablet; la lettura avviene sul dispositivo e nessuna immagine viene conservata.
 
 Q: Le foto dei documenti vengono conservate?
-A: No. La zona a lettura ottica (MRZ) del documento viene letta sul telefono dell'ospite, o sul dispositivo dell'hotel con l'app mobile di Hostlio Pro, e vengono salvati solo i dati estratti e la firma. Si possono scansionare passaporti e carte d'identità con MRZ; gli altri documenti si inseriscono a mano.
+A: No. La zona a lettura ottica (MRZ) del documento viene letta sul telefono dell'ospite, o al banco, sul dispositivo dell'hotel, dal pannello web, e vengono salvati solo i dati estratti e la firma. Si possono scansionare passaporti e carte d'identità con MRZ; gli altri documenti si inseriscono a mano.
 
 Q: Hostlio Pro invia le schedine ad Alloggiati Web?
 A: No. Hostlio Pro raccoglie parte dei dati con il check-in online e ti permette di esportarli in CSV, ma non si collega ad Alloggiati Web e non genera il file nel tracciato record della Polizia di Stato. La comunicazione alla Questura resta a carico della struttura.
@@ -9269,10 +9269,10 @@ Q: O hóspede precisa baixar um aplicativo?
 A: Não. O formulário de check-in abre no navegador; não é preciso baixar nenhum aplicativo.
 
 Q: E se o hóspede não preencher o link?
-A: Faça o check-in da forma habitual. A equipe também pode escanear o documento na recepção com o app do Hostlio Pro; a leitura é feita no aparelho e nenhuma imagem é guardada.
+A: Faça o check-in da forma habitual. A equipe também pode escanear o documento na recepção pelo painel web, com a câmera do computador ou do tablet; a leitura é feita no aparelho e nenhuma imagem é guardada.
 
 Q: As fotos dos documentos ficam armazenadas?
-A: Não. A zona de leitura mecânica (MRZ) do documento é lida no celular do hóspede, ou no aparelho do hotel com o app do Hostlio Pro, e só ficam salvos os dados extraídos e a assinatura. Passaportes e documentos de identidade com MRZ podem ser escaneados; os demais são preenchidos à mão.
+A: Não. A zona de leitura mecânica (MRZ) do documento é lida no celular do hóspede, ou na recepção, no aparelho do hotel, pelo painel web, e só ficam salvos os dados extraídos e a assinatura. Passaportes e documentos de identidade com MRZ podem ser escaneados; os demais são preenchidos à mão.
 
 Q: O Hostlio Pro envia a ficha de hóspedes para a FNRH Digital?
 A: Não. O Hostlio Pro coleta parte dos dados no check-in online e permite exportá-los em CSV, mas não está integrado à API da Plataforma FNRH Digital. O registro e a confirmação do check-in na plataforma continuam com a hospedagem.
@@ -9971,7 +9971,7 @@ Hostels têm hóspedes internacionais, grande volume de mensagens e equipes pequ
 Teste grátis por 7 dias Agendar demonstração
 
 ## O que é um sistema para hostels?
-Um sistema para hostels gerencia reservas, canais e comunicação com hóspedes em hostels que vendem camas e quartos. O Hostlio Pro se conecta a mais de 100 canais, incluindo o Hostelworld, com conexões certificadas, e responde às perguntas dos hóspedes em 30+ idiomas com seu assistente de IA Lio.
+Um sistema para hostels gerencia reservas, canais e comunicação com hóspedes em hostels. O Hostlio Pro se conecta a mais de 100 canais, incluindo o Hostelworld, com conexões certificadas, e responde às perguntas dos hóspedes em 30+ idiomas com seu assistente de IA Lio.
 
 ## Do que os hostels mais precisam?
 
@@ -11242,10 +11242,10 @@ Q: Le client doit-il télécharger une application ?
 A: Non. Le formulaire de check-in s'ouvre dans le navigateur ; aucune application n'est à télécharger.
 
 Q: Et si un client ne remplit pas le formulaire ?
-A: Enregistrez-le de la manière habituelle. Votre équipe peut aussi scanner le document à la réception avec l'application mobile Hostlio Pro ; la lecture se fait sur l'appareil et aucune image n'est conservée.
+A: Enregistrez-le de la manière habituelle. Votre équipe peut aussi scanner le document à la réception depuis le panneau web, avec la caméra de l'ordinateur ou de la tablette ; la lecture se fait sur l'appareil et aucune image n'est conservée.
 
 Q: Les photos des pièces d'identité sont-elles conservées ?
-A: Non. La bande de lecture automatique (MRZ) du document est lue sur le téléphone du client, ou sur l'appareil de l'hôtel avec l'application mobile Hostlio Pro, et seules les données extraites et la signature sont enregistrées. Les passeports et cartes d'identité dotés d'une MRZ peuvent être scannés ; les autres documents sont saisis à la main.
+A: Non. La bande de lecture automatique (MRZ) du document est lue sur le téléphone du client, ou à la réception, sur l'appareil de l'hôtel, depuis le panneau web, et seules les données extraites et la signature sont enregistrées. Les passeports et cartes d'identité dotés d'une MRZ peuvent être scannés ; les autres documents sont saisis à la main.
 
 Q: Hostlio Pro remplit-il la fiche de police à ma place ?
 A: Non. Le check-in en ligne recueille une partie des informations (nom, date de naissance, nationalité, document, adresse du titulaire, signature) et vous pouvez les exporter en CSV, mais Hostlio Pro ne produit pas la fiche individuelle de police et ne la transmet ni à la police ni à la gendarmerie.

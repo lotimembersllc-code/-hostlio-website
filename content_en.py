@@ -155,8 +155,8 @@ def checkin():
 '''
     faq = [("Which plans include online check-in?", "Online check-in with digital signature is included in the Pro and Growth plans."),
            ("Does the guest need to download an app?", "No. The check-in form opens in the browser; no app download is required."),
-           ("What if a guest doesn't complete the link?", "Check them in the usual way. Staff can also scan the guest's document at the desk with the Hostlio Pro mobile app; it is read on the device and no image is stored."),
-           ("Are photos of ID documents stored?", "No. The document's machine-readable zone (MRZ) is read on the guest's phone, or on the hotel's device with the Hostlio Pro mobile app, and only the extracted details and the signature are saved. Passports and ID cards with an MRZ can be scanned; other documents are entered by hand.")]
+           ("What if a guest doesn't complete the link?", "Check them in the usual way. Staff can also scan the guest's document at the desk from the web panel using the computer's or tablet's camera; it is read on the device and no image is stored."),
+           ("Are photos of ID documents stored?", "No. The document's machine-readable zone (MRZ) is read on the guest's phone, or at the front desk on the hotel's device from the web panel, and only the extracted details and the signature are saved. Passports and ID cards with an MRZ can be scanned; other documents are entered by hand.")]
     return {"key":"checkin","title":"Hotel Online Check-in with Digital Signature | Hostlio Pro",
             "desc":"With Hostlio Pro online check-in, guests scan their ID on their phone (no image stored), add companions and sign before arrival. No queue at reception.",
             "trail":[("Online check-in", U("checkin"))],"body":body,"faq":faq+DS.faq(L,"checkin")}

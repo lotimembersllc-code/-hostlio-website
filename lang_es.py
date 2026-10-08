@@ -158,7 +158,7 @@ def types(U):
   crumb="Software para hostels", h1='<em class="hl">Software para hostels</em> con bandejas llenas y multilingües',
   lead="Los hostels tienen huéspedes internacionales, mucho volumen de mensajes y equipos pequeños. Hostlio Pro se encarga de las preguntas en varios idiomas y mantiene los canales en un solo calendario.",
   q="¿Qué es un software para hostels?",
-  a="Un software para hostels gestiona las reservas, los canales y la comunicación con los huéspedes de los hostels que venden camas y habitaciones. Hostlio Pro se conecta a más de 100 canales, incluido Hostelworld, mediante conexiones certificadas y responde a las preguntas de los huéspedes en más de 30 idiomas con su asistente de IA Lio.",
+  a="Un software para hostels gestiona las reservas, los canales y la comunicación con los huéspedes de los hostels. Hostlio Pro se conecta a más de 100 canales, incluido Hostelworld, mediante conexiones certificadas y responde a las preguntas de los huéspedes en más de 30 idiomas con su asistente de IA Lio.",
   pains_h="¿Qué es lo que más necesita un hostel?",
   pains=[("Tráfico multilingüe","Los viajeros escriben en su propio idioma. Lio responde en cada uno de ellos."),
          ("Hostelworld y OTAs","Hostelworld, Booking.com y los demás canales comparten una sola disponibilidad."),

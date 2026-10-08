@@ -158,8 +158,8 @@ def checkin():
 '''
     faq = [("Online check-in hangi planda var?", "Online check-in ve dijital imza Pro ve Growth planlarına dahildir."),
            ("Misafirin uygulama indirmesi gerekiyor mu?", "Hayır. Check-in formu tarayıcıda açılır; herhangi bir uygulama indirmek gerekmez."),
-           ("Misafir bağlantıyı doldurmazsa ne olur?", "Klasik check-in'e devam edebilirsiniz. Resepsiyonda misafirin belgesini Hostlio Pro mobil uygulamasıyla da tarayabilirsiniz; okuma cihazda yapılır, görüntü saklanmaz."),
-           ("Kimlik fotoğrafı saklanıyor mu?", "Hayır. Belgenin makine okunabilir alanı (MRZ) misafirin telefonunda ya da Hostlio Pro mobil uygulamasıyla otelin cihazında okunur; yalnızca okunan bilgiler ve imza kaydedilir. MRZ'li pasaport ve kimlik kartları taranabilir; diğer belgeler elle girilir.")]
+           ("Misafir bağlantıyı doldurmazsa ne olur?", "Klasik check-in'e devam edebilirsiniz. Resepsiyonda misafirin belgesini panelden, bilgisayarın ya da tabletin kamerasıyla da tarayabilirsiniz; okuma cihazda yapılır, görüntü saklanmaz."),
+           ("Kimlik fotoğrafı saklanıyor mu?", "Hayır. Belgenin makine okunabilir alanı (MRZ) misafirin telefonunda ya da resepsiyonda panelden otelin cihazında okunur; yalnızca okunan bilgiler ve imza kaydedilir. MRZ'li pasaport ve kimlik kartları taranabilir; diğer belgeler elle girilir.")]
     return {"key":"checkin","title":"Otel Online Check-in ve Dijital İmza Yazılımı | Hostlio Pro",
             "desc":"Hostlio Pro online check-in: misafir kimliğini telefonuyla tarar (görüntü saklanmaz), refakatçilerini ve dijital imzasını varıştan önce gönderir.",
             "trail":[("Online check-in", U("checkin"))],"body":body,"faq":faq+DS.faq(L,"checkin")}

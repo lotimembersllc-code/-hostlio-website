@@ -160,8 +160,8 @@ def checkin():
 '''
     faq = [("Quali piani includono il check-in online?", "Il check-in online con firma digitale è incluso nei piani Pro e Growth."),
            ("L'ospite deve scaricare un'app?", "No. Il modulo di check-in si apre nel browser; non serve scaricare nessuna app."),
-           ("E se un ospite non completa il check-in dal link?", "Fai il check-in nel modo consueto. Lo staff può anche scansionare il documento al banco con l'app mobile di Hostlio Pro; la lettura avviene sul dispositivo e nessuna immagine viene conservata."),
-           ("Le foto dei documenti vengono conservate?", "No. La zona a lettura ottica (MRZ) del documento viene letta sul telefono dell'ospite, o sul dispositivo dell'hotel con l'app mobile di Hostlio Pro, e vengono salvati solo i dati estratti e la firma. Si possono scansionare passaporti e carte d'identità con MRZ; gli altri documenti si inseriscono a mano.")]
+           ("E se un ospite non completa il check-in dal link?", "Fai il check-in nel modo consueto. Lo staff può anche scansionare il documento al banco dal pannello web, con la fotocamera del computer o del tablet; la lettura avviene sul dispositivo e nessuna immagine viene conservata."),
+           ("Le foto dei documenti vengono conservate?", "No. La zona a lettura ottica (MRZ) del documento viene letta sul telefono dell'ospite, o al banco, sul dispositivo dell'hotel, dal pannello web, e vengono salvati solo i dati estratti e la firma. Si possono scansionare passaporti e carte d'identità con MRZ; gli altri documenti si inseriscono a mano.")]
     return {"key":"checkin","title":"Check-in online per hotel con firma digitale | Hostlio Pro",
             "desc":"Check-in online Hostlio Pro: l'ospite scansiona il documento (nessuna immagine conservata), aggiunge accompagnatori e firma dal telefono. Niente code.",
             "trail":[("Check-in online", U("checkin"))],"body":body,"faq":faq+DS.faq(L,"checkin")}
