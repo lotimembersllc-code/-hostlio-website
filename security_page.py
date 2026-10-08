@@ -78,6 +78,10 @@ S = {
 }
 DPA_PDF = "/assets/legal/hostlio-pro-dpa.pdf"
 
+# Q10 (axe heading-order): kart ve ayrıntı gruplarının görsel olarak gizli H2 başlıkları
+SEC_H = {"tr": ("Öne çıkan önlemler", "Ayrıntılar"), "en": ("Key safeguards", "Details"), "es": ("Medidas principales", "Detalles"),
+         "it": ("Misure principali", "Dettagli"), "pt": ("Principais medidas", "Detalhes"), "fr": ("Mesures principales", "Détails")}
+
 def security_page(L, build):
     s = S[L]; R = LV.RETENTION; url = build.url; icon = build.icon
     e = f'<a href="mailto:{build.EMAIL}">{build.EMAIL}</a>'
@@ -85,8 +89,8 @@ def security_page(L, build):
     rows = "".join(f'<div class="row"><h3>{h}</h3><div><p>{p.format(m=R["msg_default_days"], g=R["guest_contact_days"], d=R["deletion_days"])}</p></div></div>' for h, p in s["sec"])
     pdf = f'{build.btn(s["dpa_pdf"], DPA_PDF, "ghost", " download")}' if (build.ROOT / ("src" + DPA_PDF)).exists() else ""
     body = f'''<section class="page-hero"><div class="wrap"><h1>{s["h1"]}</h1><p class="lead">{s["lead"]}</p></div></section>
-<section style="padding-top:0"><div class="wrap"><div class="sec-cards">{cards}</div></div></section>
-<section class="rule"><div class="wrap rows">{rows}</div></section>
+<section style="padding-top:0" aria-labelledby="sec-cards-h"><div class="wrap"><h2 id="sec-cards-h" class="sr-only">{SEC_H[L][0]}</h2><div class="sec-cards">{cards}</div></div></section>
+<section class="rule" aria-labelledby="sec-rows-h"><div class="wrap rows"><h2 id="sec-rows-h" class="sr-only">{SEC_H[L][1]}</h2>{rows}</div></section>
 <section class="rule" aria-labelledby="sp-h"><div class="wrap prose"><h2 id="sp-h">{s["sp_h"]}</h2>{LV.sp_table(L)}</div></section>
 <section class="rule" aria-labelledby="dpa-h"><div class="wrap prose"><h2 id="dpa-h">{s["dpa_h"]}</h2><p>{s["dpa_p"]}</p><div class="cta-row">{build.btn(s["dpa_btn"], url("dpa","en"))}{pdf}</div>
 <h2>{s["report_h"]}</h2><p>{s["report_p"].format(e=e)}</p><p class="small muted">{s["more"].format(p=url("privacy",L), t=url("terms",L))}</p></div></section>'''

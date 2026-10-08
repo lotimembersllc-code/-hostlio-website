@@ -170,7 +170,7 @@ CMP_SOURCES = [
  ("Cloudbeds", "https://www.cloudbeds.com/pricing/"),
  ("Mews", "https://www.mews.com/en/pricing"),
  ("Little Hotelier", "https://www.littlehotelier.com/pricing/"),
- ("HotelRunner", "https://www.hotelrunner.com/tr/fiyatlandirma"),
+ ("HotelRunner", "https://hotelrunner.com/tr/fiyatlandirma/"),
 ]
 CMP_SRC_TXT = {"tr": ("Kaynak", "Fiyat sayfası", "Eylül 2026’da kontrol edildi"), "en": ("Source", "Pricing page", "Checked September 2026"),
                "es": ("Fuente", "Página de precios", "Comprobado en septiembre de 2026"), "it": ("Fonte", "Pagina prezzi", "Verificato a settembre 2026"),

@@ -81,7 +81,7 @@ HOME = dict(
          ("gen-guesthouse","Acogedora habitación de hostal con lámpara de escritorio","Hostal / pensión","1–10 habitaciones","Un turno de noche para un equipo de una sola persona."),
          ("gen-apart","Apartamento luminoso con ropa de cama blanca","Apartahotel","10–40 unidades","Check-in online antes de la llegada.")],
   plans_h="Un plan a la medida de tu hotel", plans_p="Una cuota mensual fija, sin contratos de permanencia. Todos los planes son gratis durante 7 días.",
-  early="⟦eb_pct⟧ de descuento para los primeros 50 clientes, para siempre", tax='Precios sin impuestos. <a href="{p}">Compara los planes en detalle</a>.',
+  early="⟦eb_pct⟧ de descuento para los primeros 50 clientes, de por vida", tax='Precios sin impuestos. <a href="{p}">Compara los planes en detalle</a>.',
   ai_h='Lio, el <em class="hl">turno de noche</em> de tu recepción', ai_p="Un asistente de IA que trabaja con la información de tu hotel. Responde a los huéspedes, vende extras y te deja a ti el resto.",
   ai_wide=("Responde en el idioma del huésped","Una pregunta en japonés recibe respuesta en japonés; una en árabe, en árabe. Tú lees la conversación en tu idioma."),
   ai_cards=[("van","Vende por ti","Ofrece traslados al aeropuerto y excursiones en el momento justo y te pasa la solicitud."),("hand-arrow-up","Sabe cuándo derivar","Los mensajes que requieren una decisión, como descuentos, quejas o peticiones especiales, pasan a tu equipo."),("calendar-dots","Conoce la reserva","Cuando el huésped se vincula a una reserva, las respuestas usan la habitación, las fechas y los datos de la reserva.")],

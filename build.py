@@ -307,10 +307,10 @@ for _l, _m in LANGMOD.items():
 EXTRA = {
  "tr": dict(bill_m="Aylık", bill_a="Yıllık", save="%20 tasarruf", billed_a="yıllık faturalandırılır", form_ok="Mesajınız bize ulaştı. İş günlerinde genellikle 24 saat içinde dönüş yapıyoruz.", form_err="Gönderilemedi. Lütfen e-posta ya da WhatsApp ile yazın.", resp="İş günlerinde genellikle 24 saat içinde yanıt veriyoruz.", sending="Gönderiliyor…"),
  "en": dict(bill_m="Monthly", bill_a="Annual", save="Save 20%", billed_a="billed annually", form_ok="Thanks, your message reached us. We typically reply within 24 hours on business days.", form_err="Couldn't send. Please email us or write on WhatsApp.", resp="We typically reply within 24 hours on business days.", sending="Sending…"),
- "es": dict(bill_m="Mensual", bill_a="Anual", save="Ahorra 20 %", billed_a="facturado anualmente", form_ok="Gracias, hemos recibido tu mensaje. Solemos responder en 24 horas en días laborables.", form_err="No se pudo enviar. Escríbenos por email o WhatsApp.", resp="Solemos responder en 24 horas en días laborables.", sending="Enviando…"),
+ "es": dict(bill_m="Mensual", bill_a="Anual", save="Ahorra 20 %", billed_a="facturado anualmente", form_ok="Gracias, hemos recibido tu mensaje. Solemos responder en 24 horas en días laborables.", form_err="No se pudo enviar. Escríbenos por email o WhatsApp.", resp="Solemos responder en 24 horas en días laborables.", sending="Enviando…"),
  "it": dict(bill_m="Mensile", bill_a="Annuale", save="Risparmi il 20%", billed_a="fatturato annualmente", form_ok="Grazie, abbiamo ricevuto il tuo messaggio. Di solito rispondiamo entro 24 ore nei giorni lavorativi.", form_err="Invio non riuscito. Scrivici via email o WhatsApp.", resp="Di solito rispondiamo entro 24 ore nei giorni lavorativi.", sending="Invio…"),
  "pt": dict(bill_m="Mensal", bill_a="Anual", save="Economize 20%", billed_a="cobrado anualmente", form_ok="Obrigado, recebemos sua mensagem. Costumamos responder em até 24 horas em dias úteis.", form_err="Não foi possível enviar. Escreva para nosso e-mail ou WhatsApp.", resp="Costumamos responder em até 24 horas em dias úteis.", sending="Enviando…"),
- "fr": dict(bill_m="Mensuel", bill_a="Annuel", save="Économisez 20 %", billed_a="facturé annuellement", form_ok="Merci, votre message nous est bien parvenu. Nous répondons généralement sous 24 heures les jours ouvrés.", form_err="L’envoi a échoué. Écrivez-nous par e-mail ou sur WhatsApp.", resp="Nous répondons généralement sous 24 heures les jours ouvrés.", sending="Envoi…"),
+ "fr": dict(bill_m="Mensuel", bill_a="Annuel", save="Économisez 20 %", billed_a="facturé annuellement", form_ok="Merci, votre message nous est bien parvenu. Nous répondons généralement sous 24 heures les jours ouvrés.", form_err="L’envoi a échoué. Écrivez-nous par e-mail ou sur WhatsApp.", resp="Nous répondons généralement sous 24 heures les jours ouvrés.", sending="Envoi…"),
 }
 ANNUAL = {
  "tr": dict(billed_line_m="aylık faturalandırılır", billed_line_a="yılda {at} tek ödeme", annual_line="Yıllık: aylık {am}, yılda {at} tek ödeme", tbl_h="Aylık ve yıllık fiyatlar", tbl_cols=("Plan","Aylık","Yıllık (aylık karşılığı)","Yıllık toplam","Normal aylık fiyat"), tbl_note="Early Bird fiyatları, ABD doları. Yıllık ödemede aylık ödemeye göre %20 tasarruf edersiniz."),
@@ -321,6 +321,15 @@ ANNUAL = {
  "fr": dict(billed_line_m="facturé mensuellement", billed_line_a="{at} facturés par an", annual_line="Annuel : {am}/mois, {at} facturés par an", tbl_h="Tarifs mensuels et annuels", tbl_cols=("Forfait","Mensuel","Annuel (par mois)","Total annuel","Prix mensuel normal"), tbl_note="Tarifs early bird en USD. La facturation annuelle permet d’économiser 20 % par rapport au paiement mensuel."),
 }
 for _l in EXTRA: UI[_l].update(EXTRA[_l]); UI[_l].update(ANNUAL[_l])
+# Q14: iletişim formu kendi doğrulamasını yapar (novalidate) — çevrili alan mesajları
+V_MSG = {"tr": ("Bu alan zorunlu.", "Geçerli bir e-posta adresi girin."),
+         "en": ("This field is required.", "Enter a valid email address."),
+         "es": ("Este campo es obligatorio.", "Introduce un email válido."),
+         "it": ("Questo campo è obbligatorio.", "Inserisci un indirizzo email valido."),
+         "pt": ("Este campo é obrigatório.", "Digite um e-mail válido."),
+         "fr": ("Ce champ est obligatoire.", "Saisissez une adresse e-mail valide.")}
+# Q6: yatay kaydırılan tablo/kart bölgeleri için yedek etiket (önünde başlık yoksa)
+TABLE_LABEL = {"tr": "Tablo", "en": "Table", "es": "Tabla", "it": "Tabella", "pt": "Tabela", "fr": "Tableau"}
 GEN_ALT = {
  "gen-checkin-phone": {'tr': 'Misafirin telefonunda açık online check-in formu', 'en': 'A guest filling in the online check-in form on a phone', 'es': 'Un huésped completa el check-in online en el móvil', 'it': 'Un ospite compila il check-in online sullo smartphone', 'pt': 'Um hóspede preenchendo o check-in online no celular', 'fr': 'Un client remplit le check-in en ligne sur son téléphone'},
  "gen-owner-laptop": {'tr': 'Dizüstü bilgisayarında otel yazılımlarını karşılaştıran otel sahibi', 'en': 'A hotel owner comparing hotel software on a laptop', 'es': 'Una propietaria compara software hotelero en su portátil', 'it': 'Una titolare confronta gestionali per hotel sul portatile', 'pt': 'Uma dona de hotel comparando sistemas no notebook', 'fr': 'Une propriétaire compare des logiciels hôteliers sur son ordinateur'},
@@ -383,6 +392,29 @@ def about_people(lang):
         out += f'<section class="rule"><div class="wrap"><h2>{h_team}</h2><ul class="team">{cards}</ul></div></section>'
     return out
 CUR = ' aria-current="page"'
+def label_regions(body, lang):
+    """Q6 (axe scrollable-region-focusable): yatay kayabilen tablo kapsayıcıları klavyeyle kaydırılabilir
+    bölge olur — tabindex=0, role=region ve önündeki başlıktan (yoksa ilk sütun başlıklarından) etiket."""
+    out, pos = [], 0
+    for m in re.finditer(r'<div class="table-wrap"((?: style="[^"]*")?)>', body):
+        out.append(body[pos:m.start()]); pos = m.end()
+        nxt = body[m.end():m.end() + 400]
+        lb = re.search(r'<table aria-labelledby="([^"]+)"', nxt)
+        if lb:
+            attr = f'aria-labelledby="{lb.group(1)}"'
+        else:
+            hs = re.findall(r"<h[23][^>]*>(.*?)</h[23]>", body[max(0, m.start() - 3000):m.start()], re.S)
+            txt = strip_tags(hs[-1]) if hs else ""
+            if not txt:
+                ths = [strip_tags(x) for x in re.findall(r"<th[^>]*>(.*?)</th>", nxt, re.S)][:3]
+                txt = TABLE_LABEL[lang] + (": " + ", ".join(t for t in ths if t) if ths else "")
+            attr = f'aria-label="{html.escape(txt, quote=True)}"'
+        out.append(f'<div class="table-wrap"{m.group(1)} tabindex="0" role="region" {attr}>')
+    out.append(body[pos:])
+    return "".join(out)
+
+NOT_FOUND = {"en": ("Page not found | Hostlio Pro", "Page not found", 'The address may have changed. <a href="{home}">Go to the home page</a>.'),
+             "tr": ("Sayfa bulunamadı | Hostlio Pro", "Sayfa bulunamadı", 'Adres değişmiş olabilir. <a href="{home}">Ana sayfaya dönün</a>.')}
 def layout(page, lang):
     u = UI[lang]
     key = page["key"]
@@ -414,7 +446,7 @@ def layout(page, lang):
     crumbs = crumbs_html([(u["home"], url("home", lang))] + trail, lang) if trail else ""
     body = page["body"]
     if "data-contact-form" in body:
-        body = body.replace("data-contact-form", f'data-contact-form data-endpoint="{FORM_ENDPOINT}" data-lang="{lang}" data-ok="{html.escape(u["form_ok"])}" data-err="{html.escape(u["form_err"])}" data-sending="{html.escape(u["sending"])}"', 1)
+        body = body.replace("data-contact-form", f'data-contact-form data-endpoint="{FORM_ENDPOINT}" data-lang="{lang}" data-ok="{html.escape(u["form_ok"])}" data-err="{html.escape(u["form_err"])}" data-sending="{html.escape(u["sending"])}" data-v-req="{html.escape(V_MSG[lang][0])}" data-v-email="{html.escape(V_MSG[lang][1])}" novalidate', 1)
         body = body.replace('</div>\n<form class="contact"', f'<p><a href="https://wa.me/{WHATSAPP}" rel="noopener">WhatsApp: {WHATSAPP_TXT}</a></p><p class="small muted">{u["resp"]}</p></div>\n<form class="contact"', 1)
         body = contact_form_extras(body, lang)
     if '<div class="plans">' in body:
@@ -433,8 +465,10 @@ def layout(page, lang):
         body += about_people(lang)
     if page.get("faq") and not page.get("faq_inline"):
         body += faq_block(page["faq"], lang)
+    body = label_regions(body, lang)
     upd = u["updated"]
-    body += f'<p class="wrap small muted updated">{upd}: <time datetime="{page.get("modified", UPDATED)}">{page.get("updated_txt", UPDATED_TXT[lang])}</time></p>'
+    if key != "home" and not page.get("no_updated"):
+        body += f'<p class="wrap small muted updated">{upd}: <time datetime="{page.get("modified", UPDATED)}">{page.get("updated_txt", UPDATED_TXT[lang])}</time></p>'
     if not page.get("no_final"):
         body += final_cta(lang)
     head_extra = ""
@@ -454,7 +488,7 @@ def layout(page, lang):
 <title>{html.escape(title)}</title>
 <meta name="description" content="{html.escape(desc)}">
 <link rel="canonical" href="{canonical}">
-{"".join(f'<link rel="alternate" hreflang="{HREFLANG[l]}" href="{abs_url(key,l)}">' + chr(10) for l in langs(key)) if len(langs(key))>1 else ""}{f'<link rel="alternate" hreflang="x-default" href="{abs_url(key,"en")}">' if len(langs(key))>1 else ""}
+{"".join(f'<link rel="alternate" hreflang="{HREFLANG[l]}" href="{abs_url(key,l)}">' + chr(10) for l in langs(key))}<link rel="alternate" hreflang="x-default" href="{abs_url(key,"en")}">
 <meta name="robots" content="index,follow,max-image-preview:large">
 <meta property="og:type" content="{page.get("og_type","website")}">
 <meta property="og:site_name" content="Hostlio Pro">
@@ -780,8 +814,8 @@ def main():
         for p in plist: lastmod[abs_url(p["key"], lang)] = p.get("modified", lastmod.get(abs_url(p["key"], lang)))
     for key in ROUTES:
         for lang in langs(key):
-            alts = "".join(f'<xhtml:link rel="alternate" hreflang="{HREFLANG[l]}" href="{abs_url(key,l)}"/>' for l in langs(key)) if len(langs(key)) > 1 else ""
-            if alts: alts += f'<xhtml:link rel="alternate" hreflang="x-default" href="{abs_url(key,"en")}"/>'
+            alts = "".join(f'<xhtml:link rel="alternate" hreflang="{HREFLANG[l]}" href="{abs_url(key,l)}"/>' for l in langs(key))
+            alts += f'<xhtml:link rel="alternate" hreflang="x-default" href="{abs_url(key,"en")}"/>'
             items.append(f'<url><loc>{abs_url(key,lang)}</loc><lastmod>{lastmod.get(abs_url(key,lang), UPDATED)}</lastmod>{alts}</url>')
     (DIST / "sitemap.xml").write_text(
         '<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">\n'
@@ -820,8 +854,15 @@ def main():
     for l in LANGS:
         write(signup_url(l), signup_page.render(_sys.modules[__name__], l))
     # 404
-    nf = {"key":"home","title":"Page not found | Hostlio Pro","desc":"The page you are looking for may have moved or been removed.","no_final":True,
-          "body":f'<section class="page-hero"><div class="wrap"><h1>Page not found</h1><p class="lead">The address may have changed. <a href="{url("home","en")}">Go to the home page</a>.</p><p>'+" · ".join(f'<a href="{url("home",l)}" lang="{l}">{LANG_NAME[l]}</a>' for l in LANGS)+'</p></div></section>'}
+    # Q13/D6: Vercel bulunmayan her adreste /404.html'i 404 koduyla döner; dile göre ayrı dosya
+    # verilemez. Bu yüzden 404 sayfası 6 dilin metnini taşır, site.js adresin dil önekine (yoksa
+    # tarayıcı diline) göre doğru bloğu gösterir. JS yoksa İngilizce görünür. "Son güncelleme" yok.
+    nfs = dict(NOT_FOUND)
+    for l, m in LANGMOD.items(): nfs[l] = (m.NOTFOUND[0], m.NOTFOUND[2], m.NOTFOUND[3])
+    links = '<p class="nf-langs">' + " · ".join(f'<a href="{url("home",l)}" lang="{IN_LANG[l]}" hreflang="{HREFLANG[l]}">{LANG_NAME[l]}</a>' for l in LANGS) + '</p>'
+    blocks = "".join(f'<div data-nf="{l}" lang="{IN_LANG[l]}" data-title="{html.escape(nfs[l][0])}"{"" if l == "en" else " hidden"}><h1>{nfs[l][1]}</h1><p class="lead">{nfs[l][2].format(home=url("home", l))}</p></div>' for l in ["en"] + [x for x in LANGS if x != "en"])
+    nf = {"key":"home","title":nfs["en"][0],"desc":"The page you are looking for may have moved or been removed.","no_final":True,"no_updated":True,
+          "body":f'<section class="page-hero"><div class="wrap">{blocks}{links}</div></section>'}
     (DIST / "404.html").write_text(re.sub(r'<meta property="og:url"[^>]*>\n?', '', re.sub(r'<link rel="(alternate|canonical)"[^>]*>\n?', '', layout(nf, "en"))).replace('<meta name="robots" content="index,follow,max-image-preview:large">','<meta name="robots" content="noindex">'), encoding="utf-8")
     print("built", sum(len(v) for v in pages.values()), "pages")
 

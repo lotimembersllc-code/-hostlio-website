@@ -207,7 +207,7 @@ def pricing():
 <section class="page-hero"><div class="wrap"><h1>Tarifs de Hostlio Pro</h1>
 <p class="lead">Un abonnement mensuel fixe. Aucune commission sur les réservations, aucuns frais d'installation. Essayez n'importe quel forfait gratuitement pendant 7 jours.</p></div></section>
 <section style="padding-top:0"><div class="wrap"><h2 class="sr-only">Forfaits</h2>
-<span class="billing-note">⟦eb_pct⟧ de réduction pour les 50 premiers clients, garanti à vie</span>
+<span class="billing-note">⟦eb_pct⟧ de réduction pour les 50 premiers clients, garantie à vie</span>
 {plans_html()}
 <p class="small muted" style="margin-top:18px">Prix en dollars américains, hors taxes. Dernière mise à jour : <time datetime="{UPDATED}">{D(UPDATED)}</time>.</p>
 </div></section>

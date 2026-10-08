@@ -62,26 +62,51 @@
   // contact form -> Make.com webhook (same JSON shape as the previous site), mailto fallback
   // O6: attribution.js'in sunduğu yüzey (süresi dolmuş kayıt dönmez)
   function acq(){try{return typeof window.hostlioAcq==='function'?window.hostlioAcq():null}catch(_e){return null}}
-  var t0=Date.now();
   d.querySelectorAll('[data-contact-form]').forEach(function(f){
+    // Q8: süre sayfa yüklenince değil, formla ilk etkileşimde başlar. Çok hızlı gönderim artık sessizce
+    // düşmez ve sahte "ulaştı" denmez: istek yine gider, yalnız suspect:'fast' ile işaretlenir.
+    var t0=0;function mark(){if(!t0)t0=Date.now()}
+    f.addEventListener('focusin',mark);f.addEventListener('input',mark);
+    // Q14: tarayıcı balonu yerine çevrili alan mesajı (form novalidate); aria-invalid + aria-describedby
+    function fieldErr(el,msg){var lab=el.closest('label')||el.parentNode,id='err-'+el.name,sp=d.getElementById(id);
+      if(!msg){el.removeAttribute('aria-invalid');if(sp)sp.hidden=true;return}
+      if(!sp){sp=d.createElement('span');sp.id=id;sp.className='field-err';lab.appendChild(sp);
+        el.setAttribute('aria-describedby',((el.getAttribute('aria-describedby')||'')+' '+id).trim())}
+      sp.textContent=msg;sp.hidden=false;el.setAttribute('aria-invalid','true')}
+    function check(el){var v=(el.value||'').trim(),msg='';
+      if(el.required&&!v)msg=f.dataset.vReq;else if(el.type==='email'&&v&&!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(v))msg=f.dataset.vEmail;
+      fieldErr(el,msg);return !msg}
+    [].forEach.call(f.querySelectorAll('[required],input[type=email]'),function(el){
+      el.addEventListener('blur',function(){if(el.getAttribute('aria-invalid'))check(el)});
+      el.addEventListener('input',function(){if(el.getAttribute('aria-invalid'))check(el)})});
     f.addEventListener('submit',function(e){
       e.preventDefault();
       var fd=new FormData(f),s=f.querySelector('.form-status'),b=f.querySelector('button[type=submit]');
-      // D9: bal küpü doluysa ya da form 3 sn'den kısa sürede gönderildiyse bot say — Make kotası harcanmaz
-      if((fd.get('website')||'').toString().trim()||Date.now()-t0<3000){f.reset();if(s)s.textContent=f.dataset.ok;return}
+      var bad=[].filter.call(f.querySelectorAll('[required],input[type=email]'),function(el){return !check(el)});
+      if(bad.length){if(s)s.textContent='';bad[0].focus();return}
+      // D9: bal küpü doluysa bot say — Make kotası harcanmaz; ama sahte başarı da gösterilmez
+      if((fd.get('website')||'').toString().trim()){if(s)s.textContent=f.dataset.err;return}
+      var fast=!t0||Date.now()-t0<1500;
       var g=function(k){return (fd.get(k)||'').toString().trim()};
       var lines=['Hotel: '+g('hotel'),'Rooms: '+g('rooms'),'Country/city: '+g('country'),'Language: '+(f.dataset.lang||''),'',g('message')];
       function mailto(){window.location.href='mailto:'+f.dataset.mail+'?subject='+encodeURIComponent(f.dataset.subject+' - '+g('hotel'))+'&body='+encodeURIComponent(lines.join('\n')+'\nEmail: '+g('email'))}
       if(!f.dataset.endpoint||!window.fetch){mailto();if(s)s.textContent=f.dataset.sent;return}
       if(b)b.disabled=true;if(s)s.textContent=f.dataset.sending||'';
-      fetch(f.dataset.endpoint,{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({
-        type:'contact',name:g('name'),email:g('email'),subject:'Request a Demo',message:lines.join('\n'),date:new Date().toISOString(),
-        hotel:g('hotel'),rooms:g('rooms'),country:g('country'),lang:f.dataset.lang||'',page:location.pathname,acquisition:acq()})})
-      .then(function(r){if(!r.ok)throw 0;f.reset();if(s)s.textContent=f.dataset.ok})
+      var payload={type:'contact',name:g('name'),email:g('email'),subject:'Request a Demo',message:lines.join('\n'),date:new Date().toISOString(),
+        hotel:g('hotel'),rooms:g('rooms'),country:g('country'),lang:f.dataset.lang||'',page:location.pathname,acquisition:acq()};
+      if(fast)payload.suspect='fast';
+      fetch(f.dataset.endpoint,{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify(payload)})
+      .then(function(r){if(!r.ok)throw 0;f.reset();t0=0;if(s)s.textContent=f.dataset.ok})
       .catch(function(){if(s)s.textContent=f.dataset.err})
       .then(function(){if(b)b.disabled=false});
     });
   });
+
+  // Q13: 404 sayfası 6 dilin metnini taşır; adresin dil önekine (yoksa tarayıcı diline) göre gösterilir
+  var nf=d.querySelectorAll('[data-nf]');
+  if(nf.length){var m=location.pathname.match(/^\/(tr|en|es|it|pt|fr)(\/|$)/),nl=m?m[1]:((navigator.language||'en').slice(0,2).toLowerCase());
+    var pick=d.querySelector('[data-nf="'+nl+'"]');
+    if(pick){[].forEach.call(nf,function(x){x.hidden=x!==pick});root.lang=pick.getAttribute('lang');d.title=pick.dataset.title}}
 
   // pricing: monthly/annual toggle + live prices (Y2: /assets/prices.js, tek kaynak pricing.py)
   d.querySelectorAll('.plans[data-plans]').forEach(function(box){

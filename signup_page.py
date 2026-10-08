@@ -59,7 +59,7 @@ S = {
   secure="Pago seguro con Stripe", t1="Lo usan hoteles independientes en más de 20 países", t2="Cuenta lista en minutos, canales conectados el mismo día", t3="Sin permanencia",
   eb="Precio de lanzamiento para los primeros 50 clientes, fijo mientras sigas suscrito.",
   form_h="Crea tu cuenta", form_p="Completa tus datos y continúa al pago seguro.",
-  choose="Elige tu plan", monthly="Mensual", annual="Anual", save="Ahorra 20 %", mo="/mes", mo_ann="/mes, facturado anualmente", regular="Precio habitual",
+  choose="Elige tu plan", monthly="Mensual", annual="Anual", save="Ahorra 20 %", mo="/mes", mo_ann="/mes, facturado anualmente", regular="Precio habitual",
   first="Nombre", last="Apellidos", email="Correo electrónico", hotel="Nombre del hotel", rooms="Número de habitaciones", phone="Teléfono (opcional)",
   country="País", select_country="Selecciona tu país…", other="Otro / no aparece…", other_ph="Código de país de 2 letras (p. ej. IS)",
   currency="Moneda de los huéspedes", currency_hint="La moneda en la que pagan tus huéspedes, no tu suscripción a Hostlio Pro (facturada en USD). Debe coincidir con la moneda que usas en Booking.com y otros canales. No se puede cambiar después.",
@@ -116,7 +116,7 @@ S = {
   secure="Paiement sécurisé par Stripe", t1="Utilisé par des hôtels indépendants dans plus de 20 pays", t2="Compte prêt en quelques minutes, canaux connectés le jour même", t3="Sans engagement de longue durée",
   eb="Tarif de lancement pour les 50 premiers clients, garanti tant que vous restez abonné.",
   form_h="Créez votre compte", form_p="Renseignez vos informations, puis passez au paiement sécurisé.",
-  choose="Choisissez votre forfait", monthly="Mensuel", annual="Annuel", save="Économisez 20 %", mo="/mois", mo_ann="/mois, facturé annuellement", regular="Prix normal",
+  choose="Choisissez votre forfait", monthly="Mensuel", annual="Annuel", save="Économisez 20 %", mo="/mois", mo_ann="/mois, facturé annuellement", regular="Prix normal",
   first="Prénom", last="Nom", email="Adresse e-mail", hotel="Nom de l’hôtel", rooms="Nombre de chambres", phone="Téléphone (facultatif)",
   country="Pays", select_country="Sélectionnez votre pays…", other="Autre / non listé…", other_ph="Code pays à 2 lettres (ex. IS)",
   currency="Devise des clients", currency_hint="La devise dans laquelle paient vos clients, pas votre abonnement Hostlio Pro (facturé en USD). Elle doit correspondre à celle utilisée sur Booking.com et vos autres canaux. Elle ne pourra pas être modifiée ensuite.",
@@ -258,7 +258,7 @@ def render(build, lang=None):
 <noscript><p class="co-alert">{s["nojs"]} <a href="mailto:{build.EMAIL}">{build.EMAIL}</a></p></noscript>
 <div class="error-msg co-alert" id="error-msg" role="alert" hidden></div>
 
-<form id="signup-form" action="#" method="post" aria-describedby="error-msg">
+<form id="signup-form" action="#" method="post" aria-describedby="error-msg" novalidate>
 <fieldset class="co-plans"><legend data-t="choose">{s["choose"]}</legend>
 <div class="billing co-billing" role="group" aria-labelledby="co-bill-l"><span id="co-bill-l" class="sr-only">{s["monthly"]} / {s["annual"]}</span><button type="button" class="on" aria-pressed="true" data-bill="m" data-t="monthly">{s["monthly"]}</button><button type="button" aria-pressed="false" data-bill="a"><span data-t="annual">{s["annual"]}</span> <span class="save" data-t="save">{s["save"]}</span></button></div>
 <div class="plan-grid">{plans}</div>
