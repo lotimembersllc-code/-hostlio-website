@@ -79,7 +79,7 @@ HOME = dict(
   types=[("type-guesthouse", "La titolare di un B&B consegna la chiave agli ospiti sulla porta di una piccola casa in pietra", "B&B e piccolo hotel", "1–⟦rooms:starter⟧ camere", "Team di una persona; Lio gestisce i messaggi notturni."),
          ("type-boutique", "Una coppia fa il check-in nella hall di un boutique hotel di design", "Boutique hotel", "⟦rooms:starter⟧–⟦rooms:pro⟧ camere", "Tanti ospiti internazionali; check-in online e risposte personali."),
          ("type-resort", "Un resort di cinque piani con balconi, visto dalla terrazza della piscina", "Hotel di città e resort", "⟦rooms:pro⟧–⟦rooms:growth⟧ camere", "Team più grande, molto traffico dai canali, supporto prioritario."),
-         ("type-multi", "Un albergatore con un tablet cammina davanti a due edifici d’hotel distinti", "Due strutture", "2 strutture · ⟦rooms:growth⟧ camere", "Gestisci entrambi gli hotel da un solo account e una sola app.")],
+         ("type-twin-hotels", "Due hotel dallo stesso design, uno accanto all’altro al tramonto", "Due strutture", "2 strutture · ⟦rooms:growth⟧ camere", "Gestisci entrambi gli hotel da un solo account e una sola app.")],
   plans_h="Un piano per le dimensioni del tuo hotel", plans_p="Un canone mensile fisso, nessun contratto a lungo termine. Ogni piano è gratuito per 7 giorni.",
   early="⟦eb_pct⟧ di sconto per i primi 50 clienti, bloccato per sempre", tax='I prezzi non includono le imposte. <a href="{p}">Confronta i piani nel dettaglio</a>.',
   ai_h='Lio, il <em class="hl">turno di notte</em> della tua reception', ai_p="Un assistente AI che lavora con le informazioni del tuo hotel. Risponde agli ospiti, vende servizi extra e lascia a te il resto.",
