@@ -1840,12 +1840,12 @@ Kanunen gerektiğinde veya haklarımızı korumak için de veri açıklayabiliri
 ## 7. Saklama süreleri
 
 - Misafir mesaj içerikleri ve ekleri çıkıştan 60 gün sonra (konuşma bir rezervasyona bağlı değilse son mesajdan 60 gün sonra) anonimleştirilir. Otel bu süreyi ayarlarından en az 30 güne kadar kısaltabilir, uzatamaz
-- Misafirin e-posta adresi, telefonu ve rezervasyon notları, otel daha önce silmezse çıkıştan 90 gün sonra silinir; misafirlerin Lio üzerinden yaptığı rezervasyon talepleri için de aynısı geçerlidir. Misafir adı ve rezervasyon bilgileri (tarihler, oda, fiyat, kanal) otel faturalandırma ve muhasebe için ihtiyaç duyabileceğinden otelin hesabı aktif olduğu sürece rezervasyonda kalır
+- Misafirin e-posta adresi, telefonu ve rezervasyon notları, otel daha önce silmezse çıkıştan 90 gün sonra silinir. Misafirlerin Lio üzerinden yaptığı rezervasyon taleplerinde misafirin adı ve iletişim bilgileri, otel talep hakkında karar verdikten 90 gün sonra silinir. Misafir adı ve rezervasyon bilgileri (tarihler, oda, fiyat, kanal) otel faturalandırma ve muhasebe için ihtiyaç duyabileceğinden otelin hesabı aktif olduğu sürece rezervasyonda kalır
 - Otelin misafir listesindeki misafir profilleri 365 gün konaklama olmazsa anonimleştirilir
 - OTA yorumlarındaki yorum sahibi adı, yorum alındıktan 365 gün sonra silinir; kanalda herkese açık olan yorum metni saklanır
 - Online check-in: kimlik belgesi görüntüsü hiçbir zaman saklanmaz. Misafir imzaları çıkıştan 30 gün sonra otomatik silinir. Kimlik belgesi bilgileri yalnızca otelin misafir kayıt (kimlik bildirimi) yükümlülükleri için gerektiği kadar saklanır; en geç otelin hesabıyla birlikte silinir
 - İşlem geçmişi 365 gün, uygulama içi bildirimler 90 gün saklanır
-- [TASLAK – hesap silme metni bekleniyor] Hesap ve otel verileri hesap aktif olduğu sürece saklanır; doğrulanmış silme talebinden sonra 30 gün içinde silinir
+- Hesap ve otel verileri hesap aktif olduğu sürece saklanır. Hesap sahibi silme talebini panelden veya mobil uygulamadan (Ayarlar) ya da hesap silme sayfamızdan e-postayla iletebilir; talebi parola ya da sahibin e-posta adresine gönderilen onay bağlantısıyla doğrularız. Hesap ve tüm mülkleri doğrulanmış talepten 30 gün sonra silinir (sahip o güne kadar iptal edebilir). Bu 30 gün boyunca otomatik yanıtlar, otomatik misafir mesajları ve kanal senkronizasyonu durur, abonelik yenilenmez. Faturalar ödeme sağlayıcımızda (Stripe) saklanır; vergi ve muhasebe amacıyla kişisel veri içermeyen asgari bir fatura kaydını (hesap kimliği, Stripe müşteri ve abonelik kimlikleri, plan ve tarihler) en fazla 10 yıl tutarız
 - Fatura kayıtları vergi ve muhasebe mevzuatının gerektirdiği süre boyunca saklanır
 - Kayıt ve güvenlik kayıtları dolandırıcılığı önlemek için sınırlı bir süre saklanır
 
@@ -1927,7 +1927,7 @@ Doğru bilgi vermeli ve giriş bilgilerinizi güvende tutmalısınız. Çalışa
 Her plan aylık bir AI mesaj kotası (Starter 1.000, Pro 5.000, Growth 12.000) ve azami tesis ve oda sayısı içerir. Kotanın %80’ine ulaştığınızda sizi bilgilendiririz. Kullanım aylık kotanın %110’unu geçtiğinde otomatik AI cevapları durur ; bir sonraki dönemin başında veya planınızı yükselttiğinizde yeniden başlar. Misafir mesajları gelen kutunuza gelmeye devam eder, kendiniz cevaplayabilirsiniz.
 
 ## 5. İptal ve iade
-İstediğiniz zaman panelin faturalandırma sayfasından veya hello@hostliopro.com adresine yazarak iptal edebilirsiniz. Deneme sırasında iptal ederseniz ücret alınmaz. Aksi halde iptal, ödenmiş dönemin sonunda geçerli olur ve hizmet o güne kadar açık kalır. Kanunun zorunlu kıldığı haller dışında kısmi dönem iadesi yapılmaz.
+İstediğiniz zaman panelin faturalandırma sayfasından veya hello@hostliopro.com adresine yazarak iptal edebilirsiniz. Deneme sırasında iptal ederseniz ücret alınmaz. Aksi halde iptal, ödenmiş dönemin sonunda geçerli olur ve hizmet o güne kadar açık kalır. Kanunun zorunlu kıldığı haller dışında kısmi dönem iadesi yapılmaz. Hesap silme talebinde aboneliğiniz yenilenmeyecek şekilde ayarlanır; 30 gün sonra hâlâ süren bir ödenmiş dönem varsa hesap silindiğinde sona erer, kısmi iade yapılmaz.
 
 ## 6. Kabul edilebilir kullanım
 Şunları yapmamayı kabul edersiniz:
@@ -1947,7 +1947,7 @@ Lio, verdiğiniz bilgileri kullanarak cevap hazırlar ve gönderir. Yapay zekâ 
 Kanal bağlantıları bağlantı ortağımız Channex üzerinden; mesajlaşma ise WhatsApp Business Platformu ve OTA gelen kutuları üzerinden sağlanır. Bağladığınız her platformun şartlarına uymalısınız. Üçüncü taraf API veya politikalarındaki değişiklikler özellikleri etkileyebilir; bunlardan sorumlu değiliz.
 
 ## 10. Verileriniz
-Verileriniz size aittir. Onları yalnızca hizmeti sunmak için, Gizlilik Politikamız ve DPA’da anlatıldığı şekilde işleriz. Hesabınız açıkken verilerinizi dışa aktarabilirsiniz. [TASLAK – hesap silme metni bekleniyor] Hesabınızı kapatmak için hesap silme sayfasına bakın.
+Verileriniz size aittir. Onları yalnızca hizmeti sunmak için, Gizlilik Politikamız ve DPA’da anlatıldığı şekilde işleriz. Hesabınız açıkken verilerinizi dışa aktarabilirsiniz. Hesap sahibi hesabın ve tüm verilerinin silinmesini talep edebilir; hesap silme sayfasına bakın.
 
 ## 11. Hizmet sürekliliği
 Yüksek erişilebilirlik hedefleriz ancak kesintisiz hizmet garanti etmeyiz. Planlı bakımları mümkün olduğunca önceden duyururuz.
@@ -1974,10 +1974,11 @@ Bu Şartlar ABD’nin Kaliforniya Eyaleti hukukuna tabidir. Emredici tüketici v
 URL: https://hostliopro.com/tr/hesap-silme/
 
 ## Hesap silme talebi
+TASLAK – hukuki inceleme sürüyor, henüz yürürlükte değil. Hukuki görüş değildir.
 
-Hostlio Pro hesabınızın ve ilişkili tüm verilerin silinmesini talep etmek için hello@hostliopro.com adresine “Hesap Silme Talebi” konulu bir e-posta gönderin ve kayıtlı e-posta adresinizi ekleyin. Talebinizi 30 gün içinde işleme alırız.
+Panele ya da Hostlio Pro uygulamasına girip Ayarlar → Hesabı sil adımını izleyin. Silme talebini yalnız hesap sahibi verebilir; talebi parolanızla doğrularız. Giriş yapamıyorsanız hesap sahibinin e-posta adresinden hello@hostliopro.com adresine “Hesap Silme Talebi” konulu bir e-posta gönderin; o adrese 24 saat geçerli bir onay bağlantısı göndeririz. Hesap ve tüm mülkleri onaydan 30 gün sonra silinir; o güne kadar iptal edebilirsiniz. Bu 30 gün boyunca otomatik yanıtlar, otomatik misafir mesajları ve kanal senkronizasyonu durur, aboneliğiniz yenilenmez.
 
-Göndermeden önce: silme işlemi kalıcı olduğundan rezervasyon ve misafir kayıtlarınızı panelden dışa aktarmanızı öneririz.
+Göndermeden önce: silme kalıcıdır — önce rezervasyon ve misafir kayıtlarınızı panelden dışa aktarın. Faturalar ödeme sağlayıcımızda (Stripe) kalır.
 
 Silme talebi gönder
 
@@ -2018,7 +2019,7 @@ Lio, misafir mesajının içeriğini yalnızca cevap taslağı hazırlamak için
 Kimlik belgesi bilgileri ve dijital imzalar hassas veri olarak ele alınır ve yalnız rolü izin veren personele görünür. İmzalar çıkıştan 30 gün sonra silinir; kimlik belgesi bilgileri en geç hesabınızla birlikte silinir. Kimlik ve pasaport görüntüsü saklamayız: makine okunabilir alan misafirin ya da personelinizin kendi cihazında okunur, yalnızca okunan alanlar gönderilir (KVKK İlke Kararı 2025/2120).
 
 ## Saklama
-Misafir mesaj içerikleri çıkıştan 60 gün sonra anonimleştirilir (30 güne kadar kısaltabilirsiniz); misafirin e-postası, telefonu ve rezervasyon notları çıkıştan 90 gün sonra silinir; misafir profilleri 365 gün konaklama olmazsa anonimleştirilir; işlem geçmişi 365 gün tutulur. Tam liste Gizlilik Politikamızın 7. bölümünde.
+Misafir mesaj içerikleri çıkıştan 60 gün sonra anonimleştirilir (30 güne kadar kısaltabilirsiniz); misafirin e-postası, telefonu ve rezervasyon notları çıkıştan 90 gün sonra silinir; misafir profilleri 365 gün konaklama olmazsa anonimleştirilir; işlem geçmişi 365 gün tutulur; hesap verileri doğrulanmış silme talebinden 30 gün sonra silinir (Stripe’taki faturalar ve kişisel veri içermeyen asgari fatura kaydı hariç). Tam liste Gizlilik Politikamızın 7. bölümünde.
 
 ## GDPR ve KVKK kapsamındaki roller
 Misafir verilerinde otel veri sorumlusu, Hostlio Pro veri işleyendir. Bu yükümlülükler Veri İşleme Sözleşmemizde yer alır ve Kullanım Şartlarımızın parçasıdır.
@@ -4509,12 +4510,12 @@ We are based in the United States and some subprocessors process data outside th
 ## 7. How long we keep data
 
 - Guest message content and attachments are anonymised 60 days after check-out, or after the last message if the conversation is not linked to a reservation. The hotel can shorten this period in its settings to as little as 30 days, but cannot extend it
-- Guest email addresses, phone numbers and reservation notes are erased 90 days after check-out, unless the hotel deletes them sooner; the same applies to booking requests guests make through Lio. Guest names and booking details (dates, room, price, channel) stay on the reservation while the hotel’s account is active, because the hotel may need them for invoicing and accounting
+- Guest email addresses, phone numbers and reservation notes are erased 90 days after check-out, unless the hotel deletes them sooner. For booking requests guests make through Lio, the guest’s name and contact details are erased 90 days after the hotel decides on the request. Guest names and booking details (dates, room, price, channel) stay on the reservation while the hotel’s account is active, because the hotel may need them for invoicing and accounting
 - Guest profiles in the hotel’s guest list are anonymised after 365 days without a stay
 - Reviewer names on OTA reviews are removed 365 days after the review is received; the review text, which is public on the channel, is kept
 - Online check-in: images of identity documents are never stored. Guest signatures are deleted automatically 30 days after check-out. Identity document details are kept only as long as the hotel needs them to meet its guest-registration duties, and are deleted with the hotel’s account at the latest
 - The activity log is kept for 365 days and in-app notifications for 90 days
-- [DRAFT – account deletion wording pending] Account and hotel data are kept while the account is active and deleted within 30 days of a verified deletion request
+- Account and hotel data are kept while the account is active. The account owner can request deletion in the dashboard or the mobile app (Settings), or by email from our account deletion page; we verify the request by password or by a confirmation link sent to the owner’s email address. The account and all of its properties are deleted 30 days after a verified request (the owner can cancel until then). During those 30 days automatic replies, automatic guest messages and channel sync are paused and the subscription does not renew. Invoices are kept by our payment provider (Stripe), and we keep a minimal billing record without personal data (account identifier, Stripe customer and subscription identifiers, plan and dates) for up to 10 years for tax and accounting purposes
 - Billing records are kept for as long as tax and accounting law requires
 - Signup and security logs are kept for a limited period for fraud prevention
 
@@ -4596,7 +4597,7 @@ You must give accurate information and keep your login details secure. You are r
 Each plan includes a monthly quota of AI messages (Starter 1,000, Pro 5,000, Growth 12,000) and a maximum number of properties and rooms. We notify you when you reach 80% of the quota. Automatic AI replies pause once usage passes 110% of the monthly quota and resume at the start of the next period or when you upgrade. Guest messages keep arriving in your inbox so you can reply yourself.
 
 ## 5. Cancellation and refunds
-You can cancel at any time from the billing page of the dashboard or by emailing hello@hostliopro.com. Cancelling during the trial means you are not charged. Otherwise cancellation takes effect at the end of the current paid period and the service stays available until then. We do not refund partial periods, except where the law requires it.
+You can cancel at any time from the billing page of the dashboard or by emailing hello@hostliopro.com. Cancelling during the trial means you are not charged. Otherwise cancellation takes effect at the end of the current paid period and the service stays available until then. We do not refund partial periods, except where the law requires it. If you request account deletion, your subscription is set not to renew; if a paid period is still running 30 days later, it ends when the account is deleted, without a partial refund.
 
 ## 6. Acceptable use
 You agree not to:
@@ -4616,7 +4617,7 @@ Lio drafts and sends replies using the information you provide. AI can make mist
 Channel connections are provided through our connectivity partner Channex, and messaging through the WhatsApp Business Platform and OTA inboxes. You must follow the terms of each platform you connect. Changes to third-party APIs or policies can affect features, and we are not responsible for them.
 
 ## 10. Your data
-You own your data. We process it only to provide the service, as described in our Privacy Policy and the DPA. You can export your data while your account is active. [DRAFT – account deletion wording pending] To close your account, see Delete your account .
+You own your data. We process it only to provide the service, as described in our Privacy Policy and the DPA. You can export your data while your account is active. The account owner can request deletion of the account and all of its data; see Delete your account .
 
 ## 11. Availability
 We aim for high availability but do not guarantee uninterrupted service. We announce planned maintenance in advance where possible.
@@ -4643,10 +4644,11 @@ We will notify you of material changes by email or in the dashboard at least 30 
 URL: https://hostliopro.com/en/delete-account/
 
 ## Request account deletion
+DRAFT – under legal review, not yet in effect. Not legal advice.
 
-To request deletion of your Hostlio Pro account and all associated data, email hello@hostliopro.com with the subject line “Account Deletion Request” and include your registered email address. We will process your request within 30 days.
+Sign in to the dashboard or the Hostlio Pro app and go to Settings → Delete account . Only the account owner can request deletion, and we confirm it with your password. If you can’t sign in, email hello@hostliopro.com from the account owner’s email address with the subject line “Account Deletion Request” ; we’ll send a confirmation link to that address (valid for 24 hours). The account and all of its properties are deleted 30 days after you confirm; you can cancel until then. During those 30 days automatic replies, automatic guest messages and channel sync are paused and your subscription does not renew.
 
-Before you go: exporting your reservations and guest records from the dashboard is recommended, because deletion is permanent.
+Before you go: export your reservations and guest records from the dashboard first, because deletion is permanent. Invoices stay with our payment provider (Stripe).
 
 Send deletion request
 
@@ -4687,7 +4689,7 @@ Lio sends guest message content to our AI provider only to draft a reply. Under 
 Identity document details and digital signatures are treated as sensitive data and are visible only to staff whose role allows it. Signatures are deleted 30 days after check-out; identity document details are deleted with your account at the latest. We do not store images of ID documents or passports: the machine-readable zone is read on the guest’s or your staff’s own device and only the extracted fields are sent.
 
 ## Retention
-Guest message content is anonymised 60 days after check-out (you can shorten this to 30); guest email, phone and booking notes are erased 90 days after check-out; guest profiles are anonymised after 365 days without a stay; the activity log is kept 365 days. Full list in our Privacy Policy, section 7.
+Guest message content is anonymised 60 days after check-out (you can shorten this to 30); guest email, phone and booking notes are erased 90 days after check-out; guest profiles are anonymised after 365 days without a stay; the activity log is kept 365 days; account data is deleted 30 days after a verified deletion request, except invoices kept by Stripe and a minimal billing record without personal data. Full list in our Privacy Policy, section 7.
 
 ## Your roles under GDPR and KVKK
 For guest data your hotel is the controller and Hostlio Pro is the processor. Our Data Processing Addendum sets out these obligations and forms part of our Terms of Service.
@@ -5096,7 +5098,7 @@ We will notify you without undue delay, and in any case within 48 hours, after b
 We give reasonable assistance with data protection impact assessments and prior consultations with supervisory authorities, taking into account the information available to us.
 
 ## 9. Deletion and return
-You can export your data while your account is active. [DRAFT – account deletion wording pending] After the account ends we delete Customer Personal Data within 30 days, except where the law requires us to keep it. During the subscription, Customer Personal Data is deleted or anonymised automatically on the schedule in section 7 of our Privacy Policy : among others, guest message content 60 days after check-out (you can shorten this to 30 days), guest email, phone and booking notes 90 days after check-out, guest signatures 30 days after check-out, inactive guest profiles after 365 days and activity log entries after 365 days.
+You can export your data while your account is active. The account owner can request deletion of the account at any time. Customer Personal Data is deleted 30 days after a verified deletion request (the owner can cancel until then), except where the law requires us to keep it; a minimal billing record without personal data is kept for up to 10 years. During the subscription, Customer Personal Data is deleted or anonymised automatically on the schedule in section 7 of our Privacy Policy : among others, guest message content 60 days after check-out (you can shorten this to 30 days), guest email, phone and booking notes 90 days after check-out, guest signatures 30 days after check-out, inactive guest profiles after 365 days and activity log entries after 365 days.
 
 ## 10. Audits
 We make available the information reasonably necessary to demonstrate compliance with this DPA, including our subprocessors’ security reports where they allow it. If that is not sufficient, you may carry out an audit once a year, with 30 days’ notice, during business hours, at your cost and under confidentiality.
@@ -7592,12 +7594,12 @@ Tenemos sede en Estados Unidos y algunos subencargados tratan datos fuera del EE
 ## 7. Cuánto tiempo conservamos los datos
 
 - El contenido de los mensajes de huéspedes y sus adjuntos se anonimiza 60 días después de la salida o, si la conversación no está vinculada a una reserva, del último mensaje. El hotel puede acortar este plazo en sus ajustes hasta un mínimo de 30 días, pero no ampliarlo
-- El email, el teléfono y las notas de la reserva del huésped se borran 90 días después de la salida, salvo que el hotel los borre antes; lo mismo se aplica a las solicitudes de reserva hechas a través de Lio. El nombre del huésped y los datos de la reserva (fechas, habitación, precio, canal) permanecen en la reserva mientras la cuenta del hotel esté activa, porque el hotel puede necesitarlos para su facturación y contabilidad
+- El email, el teléfono y las notas de la reserva del huésped se borran 90 días después de la salida, salvo que el hotel los borre antes. En las solicitudes de reserva hechas a través de Lio, el nombre y los datos de contacto del huésped se borran 90 días después de que el hotel decida sobre la solicitud. El nombre del huésped y los datos de la reserva (fechas, habitación, precio, canal) permanecen en la reserva mientras la cuenta del hotel esté activa, porque el hotel puede necesitarlos para su facturación y contabilidad
 - Los perfiles de la lista de huéspedes del hotel se anonimizan tras 365 días sin estancias
 - El nombre del autor de las reseñas de OTAs se elimina 365 días después de recibir la reseña; el texto, que es público en el canal, se conserva
 - Check-in online: nunca se guardan imágenes de documentos de identidad. Las firmas de los huéspedes se eliminan automáticamente 30 días después de la salida. Los datos del documento de identidad se conservan solo el tiempo que el hotel los necesite para sus obligaciones de registro de viajeros y, como tarde, se eliminan con la cuenta del hotel
 - El registro de actividad se conserva 365 días y las notificaciones de la app 90 días
-- [BORRADOR – texto de eliminación de cuenta pendiente] Los datos de la cuenta y del hotel se conservan mientras la cuenta esté activa y se eliminan en un plazo de 30 días tras una solicitud de eliminación verificada
+- Los datos de la cuenta y del hotel se conservan mientras la cuenta esté activa. El titular de la cuenta puede solicitar la eliminación desde el panel o la app móvil (Ajustes), o por email desde nuestra página de eliminación de cuenta; verificamos la solicitud con la contraseña o con un enlace de confirmación enviado al email del titular. La cuenta y todos sus alojamientos se eliminan 30 días después de una solicitud verificada (el titular puede cancelarla hasta entonces). Durante esos 30 días se pausan las respuestas automáticas, los mensajes automáticos a huéspedes y la sincronización de canales, y la suscripción no se renueva. Las facturas las conserva nuestro proveedor de pagos (Stripe), y guardamos un registro mínimo de facturación sin datos personales (identificador de la cuenta, identificadores de cliente y suscripción de Stripe, plan y fechas) durante un máximo de 10 años por motivos fiscales y contables
 - Los registros de facturación se conservan el tiempo que exija la normativa fiscal y contable
 - Los registros de registro y seguridad se conservan un tiempo limitado para prevenir fraudes
 ## 8. Seguridad
@@ -7672,7 +7674,7 @@ Debes dar información correcta y proteger tus datos de acceso. Eres responsable
 Cada plan incluye una cuota mensual de mensajes de IA (Starter 1.000, Pro 5.000, Growth 12.000) y un número máximo de alojamientos y habitaciones. Te avisamos al llegar al 80 % de la cuota. Las respuestas automáticas de IA se pausan cuando el uso supera el 110 % de la cuota mensual y se reanudan al empezar el siguiente periodo o al mejorar el plan. Los mensajes de los huéspedes siguen llegando a tu bandeja para que respondas tú.
 
 ## 5. Cancelación y reembolsos
-Puedes cancelar cuando quieras desde la página de facturación del panel o escribiendo a hello@hostliopro.com. Si cancelas durante la prueba, no se te cobra nada. En otro caso, la cancelación surte efecto al final del periodo pagado y el servicio sigue disponible hasta entonces. No reembolsamos periodos parciales, salvo cuando la ley lo exija.
+Puedes cancelar cuando quieras desde la página de facturación del panel o escribiendo a hello@hostliopro.com. Si cancelas durante la prueba, no se te cobra nada. En otro caso, la cancelación surte efecto al final del periodo pagado y el servicio sigue disponible hasta entonces. No reembolsamos periodos parciales, salvo cuando la ley lo exija. Si solicitas la eliminación de la cuenta, tu suscripción se configura para no renovarse; si 30 días después sigue en curso un periodo pagado, termina cuando se elimina la cuenta, sin reembolso parcial.
 
 ## 6. Uso aceptable
 Te comprometes a no:
@@ -7691,7 +7693,7 @@ Lio redacta y envía respuestas con la información que tú facilitas. La IA pue
 Las conexiones con canales se prestan a través de nuestro socio de conectividad Channex, y la mensajería a través de la plataforma WhatsApp Business y las bandejas de las OTAs. Debes cumplir las condiciones de cada plataforma que conectes. Los cambios en las API o políticas de terceros pueden afectar a las funciones y no somos responsables de ellos.
 
 ## 10. Tus datos
-Tus datos son tuyos. Solo los tratamos para prestar el servicio, como se describe en nuestra Política de privacidad y en el DPA. Puedes exportarlos mientras tu cuenta esté activa. [BORRADOR – texto de eliminación de cuenta pendiente] Para cerrar tu cuenta, consulta Eliminar tu cuenta .
+Tus datos son tuyos. Solo los tratamos para prestar el servicio, como se describe en nuestra Política de privacidad y en el DPA. Puedes exportarlos mientras tu cuenta esté activa. El titular de la cuenta puede solicitar la eliminación de la cuenta y de todos sus datos; consulta Eliminar tu cuenta .
 
 ## 11. Disponibilidad
 Buscamos una alta disponibilidad, pero no garantizamos un servicio ininterrumpido. Anunciamos con antelación el mantenimiento programado siempre que es posible.
@@ -7718,10 +7720,11 @@ Te avisaremos de los cambios importantes por email o en el panel al menos 30 dí
 URL: https://hostliopro.com/es/eliminar-cuenta/
 
 ## Solicitar la eliminación de la cuenta
+BORRADOR – en revisión legal, aún no está en vigor. No constituye asesoramiento jurídico.
 
-Para solicitar la eliminación de tu cuenta de Hostlio Pro y de todos los datos asociados, envía un correo a hello@hostliopro.com con el asunto “Solicitud de eliminación de cuenta” e incluye el correo con el que te registraste. Tramitaremos tu solicitud en un plazo de 30 días.
+Inicia sesión en el panel o en la app de Hostlio Pro y ve a Ajustes → Eliminar cuenta . Solo el titular de la cuenta puede solicitar la eliminación, y la confirmamos con tu contraseña. Si no puedes iniciar sesión, escribe a hello@hostliopro.com desde el email del titular de la cuenta con el asunto “Solicitud de eliminación de cuenta” ; enviaremos a esa dirección un enlace de confirmación (válido 24 horas). La cuenta y todos sus alojamientos se eliminan 30 días después de tu confirmación; puedes cancelarla hasta entonces. Durante esos 30 días se pausan las respuestas automáticas, los mensajes automáticos a huéspedes y la sincronización de canales, y tu suscripción no se renueva.
 
-Antes de enviarla: te recomendamos exportar tus reservas y fichas de huéspedes desde el panel, porque la eliminación es definitiva.
+Antes de enviarla: exporta primero tus reservas y fichas de huéspedes desde el panel, porque la eliminación es definitiva. Las facturas quedan en nuestro proveedor de pagos (Stripe).
 
 Enviar solicitud de eliminación
 
@@ -7762,7 +7765,7 @@ Lio envía el contenido del mensaje a nuestro proveedor de IA solo para redactar
 Los datos de documentos de identidad y las firmas digitales se tratan como datos sensibles y solo los ve el personal cuya función lo permite. Las firmas se eliminan 30 días después de la salida; los datos de los documentos, como tarde, con tu cuenta. No guardamos imágenes de documentos ni pasaportes: la zona de lectura mecánica se lee en el dispositivo del huésped o de tu personal y solo se envían los datos extraídos.
 
 ## Conservación
-El contenido de los mensajes se anonimiza 60 días después de la salida (puedes acortarlo a 30); el email, el teléfono y las notas de la reserva se borran 90 días después de la salida; los perfiles de huéspedes se anonimizan tras 365 días sin estancias; el registro de actividad se guarda 365 días. Lista completa en la sección 7 de nuestra Política de privacidad.
+El contenido de los mensajes se anonimiza 60 días después de la salida (puedes acortarlo a 30); el email, el teléfono y las notas de la reserva se borran 90 días después de la salida; los perfiles de huéspedes se anonimizan tras 365 días sin estancias; el registro de actividad se guarda 365 días; los datos de la cuenta se eliminan 30 días después de una solicitud de eliminación verificada, salvo las facturas que conserva Stripe y un registro mínimo de facturación sin datos personales. Lista completa en la sección 7 de nuestra Política de privacidad.
 
 ## Funciones según el RGPD
 Para los datos de huéspedes, tu hotel es el responsable y Hostlio Pro el encargado del tratamiento. Nuestro DPA recoge estas obligaciones y forma parte de las Condiciones del servicio.
@@ -9976,12 +9979,12 @@ Abbiamo sede negli Stati Uniti e alcuni sub-responsabili trattano dati fuori dal
 ## 7. Per quanto tempo conserviamo i dati
 
 - Il contenuto dei messaggi degli ospiti e gli allegati vengono anonimizzati 60 giorni dopo la partenza oppure, se la conversazione non è collegata a una prenotazione, dopo l’ultimo messaggio. L’hotel può ridurre questo periodo nelle impostazioni fino a un minimo di 30 giorni, ma non estenderlo
-- Email, telefono e note di prenotazione dell’ospite vengono cancellati 90 giorni dopo la partenza, salvo cancellazione anticipata da parte dell’hotel; lo stesso vale per le richieste di prenotazione fatte tramite Lio. Nome dell’ospite e dati della prenotazione (date, camera, prezzo, canale) restano sulla prenotazione finché l’account dell’hotel è attivo, perché l’hotel può averne bisogno per fatturazione e contabilità
+- Email, telefono e note di prenotazione dell’ospite vengono cancellati 90 giorni dopo la partenza, salvo cancellazione anticipata da parte dell’hotel. Nelle richieste di prenotazione fatte tramite Lio, nome e recapiti dell’ospite vengono cancellati 90 giorni dopo la decisione dell’hotel sulla richiesta. Nome dell’ospite e dati della prenotazione (date, camera, prezzo, canale) restano sulla prenotazione finché l’account dell’hotel è attivo, perché l’hotel può averne bisogno per fatturazione e contabilità
 - I profili nell’elenco ospiti dell’hotel vengono anonimizzati dopo 365 giorni senza soggiorni
 - Il nome dell’autore delle recensioni OTA viene rimosso 365 giorni dopo la ricezione della recensione; il testo, pubblico sul canale, viene conservato
 - Check-in online: le immagini dei documenti d’identità non vengono mai conservate. Le firme degli ospiti vengono cancellate automaticamente 30 giorni dopo la partenza. I dati del documento d’identità sono conservati solo per il tempo necessario all’hotel per i propri obblighi di registrazione degli ospiti e, al più tardi, sono cancellati con l’account dell’hotel
 - Il registro attività è conservato per 365 giorni e le notifiche nell’app per 90 giorni
-- [BOZZA – testo sull’eliminazione dell’account in attesa] I dati dell’account e dell’hotel sono conservati finché l’account è attivo e cancellati entro 30 giorni da una richiesta di cancellazione verificata
+- I dati dell’account e dell’hotel sono conservati finché l’account è attivo. Il titolare dell’account può chiedere l’eliminazione dal pannello o dall’app mobile (Impostazioni), oppure via email dalla nostra pagina di eliminazione dell’account; verifichiamo la richiesta con la password o con un link di conferma inviato all’indirizzo email del titolare. L’account e tutte le sue strutture vengono eliminati 30 giorni dopo una richiesta verificata (il titolare può annullarla fino ad allora). In quei 30 giorni le risposte automatiche, i messaggi automatici agli ospiti e la sincronizzazione dei canali sono sospesi e l’abbonamento non si rinnova. Le fatture sono conservate dal nostro fornitore di pagamenti (Stripe) e conserviamo un registro minimo di fatturazione senza dati personali (identificativo dell’account, identificativi cliente e abbonamento Stripe, piano e date) per un massimo di 10 anni a fini fiscali e contabili
 - I dati di fatturazione sono conservati per il tempo richiesto dalla normativa fiscale e contabile
 - I log di registrazione e sicurezza sono conservati per un periodo limitato a fini antifrode
 ## 8. Sicurezza
@@ -10056,7 +10059,7 @@ Devi fornire informazioni corrette e proteggere le credenziali di accesso. Sei r
 Ogni piano include una quota mensile di messaggi AI (Starter 1.000, Pro 5.000, Growth 12.000) e un numero massimo di strutture e camere. Ti avvisiamo quando raggiungi l’80% della quota. Le risposte automatiche AI si sospendono quando l’uso supera il 110% della quota mensile e riprendono all’inizio del periodo successivo o con l’upgrade del piano. I messaggi degli ospiti continuano ad arrivare nella casella perché tu possa rispondere.
 
 ## 5. Disdetta e rimborsi
-Puoi disdire in qualsiasi momento dalla pagina di fatturazione del pannello o scrivendo a hello@hostliopro.com. Se disdici durante la prova non ti viene addebitato nulla. Altrimenti la disdetta ha effetto alla fine del periodo pagato e il servizio resta disponibile fino ad allora. Non rimborsiamo periodi parziali, salvo ove richiesto dalla legge.
+Puoi disdire in qualsiasi momento dalla pagina di fatturazione del pannello o scrivendo a hello@hostliopro.com. Se disdici durante la prova non ti viene addebitato nulla. Altrimenti la disdetta ha effetto alla fine del periodo pagato e il servizio resta disponibile fino ad allora. Non rimborsiamo periodi parziali, salvo ove richiesto dalla legge. Se chiedi l’eliminazione dell’account, l’abbonamento viene impostato per non rinnovarsi; se 30 giorni dopo è ancora in corso un periodo pagato, termina con l’eliminazione dell’account, senza rimborso parziale.
 
 ## 6. Uso consentito
 Ti impegni a non:
@@ -10075,7 +10078,7 @@ Lio prepara e invia risposte con le informazioni che fornisci. L’AI può sbagl
 Le connessioni ai canali sono fornite tramite il nostro partner di connettività Channex e la messaggistica tramite la piattaforma WhatsApp Business e le caselle OTA. Devi rispettare i termini di ogni piattaforma che colleghi. Le modifiche ad API o policy di terzi possono incidere sulle funzioni e non ne siamo responsabili.
 
 ## 10. I tuoi dati
-I tuoi dati restano tuoi. Li trattiamo solo per erogare il servizio, come descritto nell’ Informativa sulla privacy e nel DPA. Puoi esportarli finché l’account è attivo. [BOZZA – testo sull’eliminazione dell’account in attesa] Per chiudere l’account consulta Elimina il tuo account .
+I tuoi dati restano tuoi. Li trattiamo solo per erogare il servizio, come descritto nell’ Informativa sulla privacy e nel DPA. Puoi esportarli finché l’account è attivo. Il titolare dell’account può chiedere l’eliminazione dell’account e di tutti i suoi dati; consulta Elimina il tuo account .
 
 ## 11. Disponibilità
 Puntiamo a un’elevata disponibilità ma non garantiamo un servizio ininterrotto. Quando possibile annunciamo in anticipo la manutenzione programmata.
@@ -10102,10 +10105,11 @@ Ti avviseremo delle modifiche rilevanti via email o nel pannello almeno 30 giorn
 URL: https://hostliopro.com/it/elimina-account/
 
 ## Richiedi l’eliminazione dell’account
+BOZZA – in revisione legale, non ancora in vigore. Non costituisce consulenza legale.
 
-Per richiedere l’eliminazione del tuo account Hostlio Pro e di tutti i dati collegati, scrivi a hello@hostliopro.com con oggetto “Richiesta di eliminazione account” indicando l’indirizzo email registrato. Gestiremo la richiesta entro 30 giorni.
+Accedi al pannello o all’app Hostlio Pro e vai in Impostazioni → Elimina account . Solo il titolare dell’account può richiedere l’eliminazione, e la confermiamo con la tua password. Se non riesci ad accedere, scrivi a hello@hostliopro.com dall’indirizzo email del titolare con oggetto “Richiesta di eliminazione account” ; invieremo a quell’indirizzo un link di conferma (valido 24 ore). L’account e tutte le sue strutture vengono eliminati 30 giorni dopo la conferma; puoi annullare fino ad allora. In quei 30 giorni le risposte automatiche, i messaggi automatici agli ospiti e la sincronizzazione dei canali sono sospesi e l’abbonamento non si rinnova.
 
-Prima di inviarla: ti consigliamo di esportare prenotazioni e schede ospiti dal pannello, perché l’eliminazione è definitiva.
+Prima di inviarla: esporta prima prenotazioni e schede ospiti dal pannello, perché l’eliminazione è definitiva. Le fatture restano presso il nostro fornitore di pagamenti (Stripe).
 
 Invia la richiesta di eliminazione
 
@@ -10146,7 +10150,7 @@ Lio invia il contenuto del messaggio al nostro fornitore di AI solo per preparar
 Dati dei documenti e firme digitali sono trattati come dati sensibili e sono visibili solo allo staff il cui ruolo lo consente. Le firme sono cancellate 30 giorni dopo la partenza; i dati dei documenti al più tardi con il tuo account. Non conserviamo immagini di documenti o passaporti: la zona a lettura ottica viene letta sul dispositivo dell’ospite o del tuo staff e vengono inviati solo i dati estratti.
 
 ## Conservazione
-Il contenuto dei messaggi è anonimizzato 60 giorni dopo la partenza (puoi ridurlo a 30); email, telefono e note di prenotazione sono cancellati 90 giorni dopo la partenza; i profili ospite sono anonimizzati dopo 365 giorni senza soggiorni; il registro attività è conservato 365 giorni. Elenco completo nella sezione 7 dell’Informativa sulla privacy.
+Il contenuto dei messaggi è anonimizzato 60 giorni dopo la partenza (puoi ridurlo a 30); email, telefono e note di prenotazione sono cancellati 90 giorni dopo la partenza; i profili ospite sono anonimizzati dopo 365 giorni senza soggiorni; il registro attività è conservato 365 giorni; i dati dell’account sono cancellati 30 giorni dopo una richiesta di eliminazione verificata, tranne le fatture conservate da Stripe e un registro minimo di fatturazione senza dati personali. Elenco completo nella sezione 7 dell’Informativa sulla privacy.
 
 ## Ruoli secondo il GDPR
 Per i dati degli ospiti il titolare è il tuo hotel e Hostlio Pro è responsabile del trattamento. Il nostro DPA definisce questi obblighi e fa parte dei Termini di servizio.
@@ -12101,12 +12105,12 @@ Estamos sediados nos Estados Unidos e alguns suboperadores tratam dados fora do 
 ## 7. Por quanto tempo guardamos os dados
 
 - O conteúdo das mensagens de hóspedes e os anexos são anonimizados 60 dias após o check-out ou, se a conversa não estiver ligada a uma reserva, após a última mensagem. O hotel pode encurtar esse prazo nas configurações até o mínimo de 30 dias, mas não estendê-lo
-- O e-mail, o telefone e as observações da reserva do hóspede são apagados 90 dias após o check-out, salvo se o hotel os apagar antes; o mesmo vale para pedidos de reserva feitos pelo Lio. O nome do hóspede e os dados da reserva (datas, quarto, preço, canal) permanecem na reserva enquanto a conta do hotel estiver ativa, pois o hotel pode precisar deles para faturamento e contabilidade
+- O e-mail, o telefone e as observações da reserva do hóspede são apagados 90 dias após o check-out, salvo se o hotel os apagar antes. Nos pedidos de reserva feitos pelo Lio, o nome e os contatos do hóspede são apagados 90 dias depois de o hotel decidir sobre o pedido. O nome do hóspede e os dados da reserva (datas, quarto, preço, canal) permanecem na reserva enquanto a conta do hotel estiver ativa, pois o hotel pode precisar deles para faturamento e contabilidade
 - Os perfis da lista de hóspedes do hotel são anonimizados após 365 dias sem estadias
 - O nome do autor das avaliações das OTAs é removido 365 dias após o recebimento; o texto, público no canal, é mantido
 - Check-in online: imagens de documentos de identidade nunca são guardadas. As assinaturas dos hóspedes são apagadas automaticamente 30 dias após o check-out. Os dados do documento de identidade são guardados apenas pelo tempo que o hotel precisar para suas obrigações de registro de hóspedes e, no máximo, são apagados com a conta do hotel
 - O registro de atividades é guardado por 365 dias e as notificações no app por 90 dias
-- [RASCUNHO – texto de exclusão da conta pendente] Os dados da conta e do hotel são guardados enquanto a conta estiver ativa e apagados em até 30 dias após um pedido de exclusão verificado
+- Os dados da conta e do hotel são guardados enquanto a conta estiver ativa. O titular da conta pode pedir a exclusão pelo painel ou pelo app (Configurações), ou por e-mail a partir da nossa página de exclusão de conta; verificamos o pedido pela senha ou por um link de confirmação enviado ao e-mail do titular. A conta e todas as suas propriedades são excluídas 30 dias após um pedido verificado (o titular pode cancelar até lá). Durante esses 30 dias, as respostas automáticas, as mensagens automáticas a hóspedes e a sincronização de canais ficam pausadas e a assinatura não é renovada. As faturas ficam com nosso provedor de pagamentos (Stripe), e mantemos um registro mínimo de cobrança sem dados pessoais (identificador da conta, identificadores de cliente e assinatura na Stripe, plano e datas) por até 10 anos para fins fiscais e contábeis
 - Os registros de cobrança são guardados pelo tempo exigido pela legislação fiscal e contábil
 - Os registros de cadastro e segurança são guardados por tempo limitado para prevenção de fraudes
 ## 8. Segurança
@@ -12181,7 +12185,7 @@ Você deve informar dados corretos e proteger seus dados de acesso. Você é res
 Cada plano inclui uma cota mensal de mensagens de IA (Starter 1.000, Pro 5.000, Growth 12.000) e um número máximo de propriedades e quartos. Avisamos quando você atingir 80% da cota. As respostas automáticas de IA são pausadas quando o uso passa de 110% da cota mensal e voltam no início do próximo período ou quando você faz upgrade. As mensagens dos hóspedes continuam chegando à sua caixa para você responder.
 
 ## 5. Cancelamento e reembolsos
-Você pode cancelar a qualquer momento pela página de cobrança do painel ou escrevendo para hello@hostliopro.com. Se cancelar durante o teste, nada é cobrado. Caso contrário, o cancelamento vale no fim do período pago e o serviço fica disponível até lá. Não reembolsamos períodos parciais, salvo quando a lei exigir.
+Você pode cancelar a qualquer momento pela página de cobrança do painel ou escrevendo para hello@hostliopro.com. Se cancelar durante o teste, nada é cobrado. Caso contrário, o cancelamento vale no fim do período pago e o serviço fica disponível até lá. Não reembolsamos períodos parciais, salvo quando a lei exigir. Se você pedir a exclusão da conta, a assinatura é configurada para não renovar; se 30 dias depois ainda houver um período pago em curso, ele termina quando a conta é excluída, sem reembolso parcial.
 
 ## 6. Uso aceitável
 Você se compromete a não:
@@ -12200,7 +12204,7 @@ O Lio redige e envia respostas com as informações que você fornece. A IA pode
 As conexões com canais são fornecidas pelo nosso parceiro de conectividade Channex, e as mensagens pela plataforma WhatsApp Business e pelas caixas das OTAs. Você deve cumprir os termos de cada plataforma que conectar. Mudanças em APIs ou políticas de terceiros podem afetar recursos e não somos responsáveis por elas.
 
 ## 10. Seus dados
-Seus dados são seus. Só os tratamos para prestar o serviço, como descrito na Política de Privacidade e no DPA. Você pode exportá-los enquanto a conta estiver ativa. [RASCUNHO – texto de exclusão da conta pendente] Para encerrar sua conta, veja Excluir sua conta .
+Seus dados são seus. Só os tratamos para prestar o serviço, como descrito na Política de Privacidade e no DPA. Você pode exportá-los enquanto a conta estiver ativa. O titular da conta pode pedir a exclusão da conta e de todos os seus dados; veja Excluir sua conta .
 
 ## 11. Disponibilidade
 Buscamos alta disponibilidade, mas não garantimos serviço ininterrupto. Sempre que possível avisamos com antecedência sobre manutenções programadas.
@@ -12227,10 +12231,11 @@ Avisaremos sobre alterações relevantes por e-mail ou no painel pelo menos 30 d
 URL: https://hostliopro.com/pt/excluir-conta/
 
 ## Solicitar exclusão da conta
+RASCUNHO – em revisão jurídica, ainda não está em vigor. Não constitui aconselhamento jurídico.
 
-Para solicitar a exclusão da sua conta do Hostlio Pro e de todos os dados associados, envie um e-mail para hello@hostliopro.com com o assunto “Solicitação de exclusão de conta” e informe o e-mail cadastrado. Processaremos sua solicitação em até 30 dias.
+Entre no painel ou no app do Hostlio Pro e vá em Configurações → Excluir conta . Só o titular da conta pode pedir a exclusão, e confirmamos o pedido com a sua senha. Se não conseguir entrar, escreva para hello@hostliopro.com a partir do e-mail do titular da conta com o assunto “Solicitação de exclusão de conta” ; enviaremos a esse endereço um link de confirmação (válido por 24 horas). A conta e todas as suas propriedades são excluídas 30 dias após a sua confirmação; você pode cancelar até lá. Durante esses 30 dias, as respostas automáticas, as mensagens automáticas a hóspedes e a sincronização de canais ficam pausadas e a assinatura não é renovada.
 
-Antes de enviar: recomendamos exportar suas reservas e fichas de hóspedes pelo painel, pois a exclusão é definitiva.
+Antes de enviar: exporte primeiro suas reservas e fichas de hóspedes pelo painel, pois a exclusão é definitiva. As faturas ficam com nosso provedor de pagamentos (Stripe).
 
 Enviar solicitação de exclusão
 
@@ -12271,7 +12276,7 @@ O Lio envia o conteúdo da mensagem ao nosso fornecedor de IA apenas para redigi
 Dados de documentos e assinaturas digitais são tratados como dados sensíveis e só ficam visíveis para a equipe cuja função permite. As assinaturas são apagadas 30 dias após o check-out; os dados dos documentos, no máximo, junto com a sua conta. Não armazenamos imagens de documentos ou passaportes: a zona de leitura mecânica é lida no aparelho do hóspede ou da sua equipe e só os dados extraídos são enviados.
 
 ## Retenção
-O conteúdo das mensagens é anonimizado 60 dias após o check-out (você pode reduzir para 30); e-mail, telefone e observações da reserva são apagados 90 dias após o check-out; perfis de hóspedes são anonimizados após 365 dias sem estadias; o registro de atividades é guardado por 365 dias. Lista completa na seção 7 da Política de Privacidade.
+O conteúdo das mensagens é anonimizado 60 dias após o check-out (você pode reduzir para 30); e-mail, telefone e observações da reserva são apagados 90 dias após o check-out; perfis de hóspedes são anonimizados após 365 dias sem estadias; o registro de atividades é guardado por 365 dias; os dados da conta são apagados 30 dias após um pedido de exclusão verificado, exceto as faturas mantidas pela Stripe e um registro mínimo de cobrança sem dados pessoais. Lista completa na seção 7 da Política de Privacidade.
 
 ## Papéis na LGPD e no GDPR
 Para os dados de hóspedes, o hotel é o controlador e o Hostlio Pro é o operador. Nosso DPA define essas obrigações e faz parte dos Termos de Serviço.
@@ -14468,12 +14473,12 @@ Nous sommes établis aux États-Unis et certains sous-traitants traitent des don
 ## 7. Durées de conservation
 
 - Le contenu des messages clients et leurs pièces jointes sont anonymisés 60 jours après le départ ou, si la conversation n’est liée à aucune réservation, après le dernier message. L’hôtel peut raccourcir ce délai dans ses réglages jusqu’à 30 jours au minimum, mais pas l’allonger
-- L’e-mail, le téléphone et les notes de réservation du client sont effacés 90 jours après le départ, sauf suppression anticipée par l’hôtel ; il en va de même pour les demandes de réservation faites via Lio. Le nom du client et les détails de la réservation (dates, chambre, prix, canal) restent sur la réservation tant que le compte de l’hôtel est actif, car l’hôtel peut en avoir besoin pour sa facturation et sa comptabilité
+- L’e-mail, le téléphone et les notes de réservation du client sont effacés 90 jours après le départ, sauf suppression anticipée par l’hôtel. Pour les demandes de réservation faites via Lio, le nom et les coordonnées du client sont effacés 90 jours après la décision de l’hôtel sur la demande. Le nom du client et les détails de la réservation (dates, chambre, prix, canal) restent sur la réservation tant que le compte de l’hôtel est actif, car l’hôtel peut en avoir besoin pour sa facturation et sa comptabilité
 - Les fiches de la liste clients de l’hôtel sont anonymisées après 365 jours sans séjour
 - Le nom de l’auteur des avis OTA est supprimé 365 jours après la réception de l’avis ; le texte, public sur le canal, est conservé
 - Check-in en ligne : aucune image de pièce d’identité n’est jamais conservée. Les signatures des clients sont supprimées automatiquement 30 jours après le départ. Les informations de la pièce d’identité ne sont conservées que le temps nécessaire à l’hôtel pour ses obligations d’enregistrement des voyageurs et, au plus tard, supprimées avec le compte de l’hôtel
 - Le journal d’activité est conservé 365 jours et les notifications de l’application 90 jours
-- [BROUILLON – texte de suppression du compte en attente] Les données du compte et de l’hôtel sont conservées tant que le compte est actif et supprimées dans les 30 jours suivant une demande de suppression vérifiée
+- Les données du compte et de l’hôtel sont conservées tant que le compte est actif. Le titulaire du compte peut demander la suppression depuis le tableau de bord ou l’application mobile (Réglages), ou par e-mail depuis notre page de suppression de compte ; nous vérifions la demande par mot de passe ou par un lien de confirmation envoyé à l’adresse e-mail du titulaire. Le compte et tous ses établissements sont supprimés 30 jours après une demande vérifiée (le titulaire peut l’annuler jusque-là). Pendant ces 30 jours, les réponses automatiques, les messages automatiques aux clients et la synchronisation des canaux sont suspendus et l’abonnement n’est pas renouvelé. Les factures sont conservées par notre prestataire de paiement (Stripe) et nous gardons un registre de facturation minimal sans données personnelles (identifiant du compte, identifiants client et abonnement Stripe, forfait et dates) pendant 10 ans au maximum à des fins fiscales et comptables
 - Les données de facturation sont conservées aussi longtemps que l’exigent les règles fiscales et comptables
 - Les journaux d’inscription et de sécurité sont conservés pour une durée limitée à des fins de lutte contre la fraude
 ## 8. Sécurité
@@ -14548,7 +14553,7 @@ Vous devez fournir des informations exactes et protéger vos identifiants. Vous 
 Chaque forfait comprend un quota mensuel de messages IA (Starter 1 000, Pro 5 000, Growth 12 000) et un nombre maximal d’établissements et de chambres. Nous vous prévenons lorsque vous atteignez 80 % du quota. Les réponses automatiques de l’IA sont suspendues dès que l’usage dépasse 110 % du quota mensuel et reprennent au début de la période suivante ou lors d’un passage à un forfait supérieur. Les messages des clients continuent d’arriver dans votre messagerie pour que vous puissiez répondre vous-même.
 
 ## 5. Résiliation et remboursements
-Vous pouvez résilier à tout moment depuis la page de facturation du tableau de bord ou en écrivant à hello@hostliopro.com. Une résiliation pendant l’essai n’entraîne aucun débit. Sinon, la résiliation prend effet à la fin de la période payée et le service reste accessible jusque-là. Nous ne remboursons pas les périodes partielles, sauf si la loi l’impose.
+Vous pouvez résilier à tout moment depuis la page de facturation du tableau de bord ou en écrivant à hello@hostliopro.com. Une résiliation pendant l’essai n’entraîne aucun débit. Sinon, la résiliation prend effet à la fin de la période payée et le service reste accessible jusque-là. Nous ne remboursons pas les périodes partielles, sauf si la loi l’impose. Si vous demandez la suppression du compte, votre abonnement est paramétré pour ne pas se renouveler ; si une période payée est encore en cours 30 jours plus tard, elle prend fin à la suppression du compte, sans remboursement partiel.
 
 ## 6. Utilisation acceptable
 Vous vous engagez à ne pas :
@@ -14567,7 +14572,7 @@ Lio prépare et envoie des réponses à partir des informations que vous fournis
 Les connexions aux canaux sont assurées par notre partenaire de connectivité Channex, et la messagerie par la plateforme WhatsApp Business et les messageries des OTA. Vous devez respecter les conditions de chaque plateforme connectée. Les évolutions des API ou politiques de tiers peuvent affecter certaines fonctions et nous n’en sommes pas responsables.
 
 ## 10. Vos données
-Vos données vous appartiennent. Nous ne les traitons que pour fournir le service, comme décrit dans notre Politique de confidentialité et le DPA. Vous pouvez les exporter tant que votre compte est actif. [BROUILLON – texte de suppression du compte en attente] Pour fermer votre compte, voir Supprimer votre compte .
+Vos données vous appartiennent. Nous ne les traitons que pour fournir le service, comme décrit dans notre Politique de confidentialité et le DPA. Vous pouvez les exporter tant que votre compte est actif. Le titulaire du compte peut demander la suppression du compte et de toutes ses données ; voir Supprimer votre compte .
 
 ## 11. Disponibilité
 Nous visons une haute disponibilité sans garantir un service ininterrompu. Nous annonçons les maintenances planifiées à l’avance dans la mesure du possible.
@@ -14594,10 +14599,11 @@ Nous vous informerons des modifications importantes par e-mail ou dans le tablea
 URL: https://hostliopro.com/fr/supprimer-compte/
 
 ## Demander la suppression du compte
+BROUILLON – en cours de relecture juridique, pas encore en vigueur. Ne constitue pas un conseil juridique.
 
-Pour demander la suppression de votre compte Hostlio Pro et de toutes les données associées, écrivez à hello@hostliopro.com avec l’objet « Demande de suppression de compte » en indiquant l’adresse e-mail utilisée à l’inscription. Nous traiterons votre demande sous 30 jours.
+Connectez-vous au tableau de bord ou à l’application Hostlio Pro et allez dans Réglages → Supprimer le compte . Seul le titulaire du compte peut demander la suppression, que nous confirmons avec votre mot de passe. Si vous ne pouvez pas vous connecter, écrivez à hello@hostliopro.com depuis l’adresse e-mail du titulaire avec l’objet « Demande de suppression de compte » ; nous enverrons à cette adresse un lien de confirmation (valable 24 heures). Le compte et tous ses établissements sont supprimés 30 jours après votre confirmation ; vous pouvez annuler jusque-là. Pendant ces 30 jours, les réponses automatiques, les messages automatiques aux clients et la synchronisation des canaux sont suspendus et votre abonnement n’est pas renouvelé.
 
-Avant l’envoi : nous vous conseillons d’exporter vos réservations et fiches clients depuis le tableau de bord, car la suppression est définitive.
+Avant l’envoi : exportez d’abord vos réservations et fiches clients depuis le tableau de bord, car la suppression est définitive. Les factures restent chez notre prestataire de paiement (Stripe).
 
 Envoyer la demande de suppression
 
@@ -14638,7 +14644,7 @@ Lio transmet le contenu du message à notre fournisseur d’IA uniquement pour p
 Les données des pièces d’identité et les signatures électroniques sont traitées comme des données sensibles, visibles uniquement par le personnel dont le rôle le permet. Les signatures sont supprimées 30 jours après le départ ; les données des pièces d’identité au plus tard avec votre compte. Nous ne conservons aucune image de pièce d’identité ni de passeport : la bande de lecture automatique est lue sur l’appareil du client ou de votre personnel et seules les données extraites sont envoyées.
 
 ## Conservation
-Le contenu des messages est anonymisé 60 jours après le départ (vous pouvez réduire ce délai à 30) ; l’e-mail, le téléphone et les notes de réservation sont effacés 90 jours après le départ ; les fiches clients sont anonymisées après 365 jours sans séjour ; le journal d’activité est conservé 365 jours. Liste complète à la section 7 de notre Politique de confidentialité.
+Le contenu des messages est anonymisé 60 jours après le départ (vous pouvez réduire ce délai à 30) ; l’e-mail, le téléphone et les notes de réservation sont effacés 90 jours après le départ ; les fiches clients sont anonymisées après 365 jours sans séjour ; le journal d’activité est conservé 365 jours ; les données du compte sont supprimées 30 jours après une demande de suppression vérifiée, hormis les factures conservées par Stripe et un registre de facturation minimal sans données personnelles. Liste complète à la section 7 de notre Politique de confidentialité.
 
 ## Rôles au sens du RGPD
 Pour les données des clients, votre hôtel est responsable du traitement et Hostlio Pro sous-traitant. Notre DPA fixe ces obligations et fait partie des Conditions d’utilisation.
