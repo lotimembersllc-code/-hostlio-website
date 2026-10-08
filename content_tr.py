@@ -287,6 +287,9 @@ def contact():
             "trail":[("İletişim", U("contact"))],"body":body,"page_type":"ContactPage","no_final":True}
 
 POSTS = [
+ {"key":"post-kbs","title":"KBS bildirimi nasıl yapılır? Oteller ve pansiyonlar için rehber","date":"2026-10-08","desc":"KBS (Kimlik Bildirim Sistemi) bildirimi adım adım: Emniyet ve Jandarma KBS farkı, kayıt, yabancı misafir, süreler ve cezalar. Resmî kaynaklı."},
+ {"key":"post-prices","title":"Otel programı fiyatları 2026: modeller ve gerçek rakamlar","date":"2026-10-08","desc":"2026 otel programı fiyatları: sabit paket, oda başı, komisyon ve lisans modelleri; resmî sayfalardan alınmış rakamlar ve örnek hesap."},
+ {"key":"post-channel-manager","title":"Channel manager nedir? Otelciler için kanal yöneticisi rehberi","date":"2026-10-08","desc":"Channel manager (kanal yöneticisi) nedir, nasıl çalışır, PMS'ten farkı ne? Fiyat modelleri, seçim için 7 soru ve kurulum adımları."},
  {"key":"post-overbooking","title":"Overbooking nasıl önlenir? Oteller için 6 adım","date":"2026-09-21","desc":"Otellerde overbooking (çift rezervasyon) neden olur ve nasıl önlenir? Kanal yöneticisi, stop-sell, müsaitlik tamponu ve kriz anında yapılacaklar."},
  {"key":"post-autoreply","title":"Booking.com mesajlarına otomatik cevap nasıl verilir?","date":"2026-09-21","desc":"Booking.com misafir mesajlarını otomatik yanıtlamanın üç yolu: hazır şablonlar, planlı mesajlar ve yapay zekâ asistanı."},
  {"key":"post-ai","title":"Misafir mesajlarını yapay zekâ ile yanıtlamak: pratik rehber","date":"2026-09-18",
@@ -301,7 +304,7 @@ def blog():
     return {"key":"blog","title":"Blog: Bağımsız Oteller için Rehberler | Hostlio Pro","desc":"Otel yönetimi, kanal yönetimi, OTA dağıtımı ve AI ile misafir iletişimi üzerine bağımsız otelcilere yönelik pratik rehberler.",
             "trail":[("Blog", U("blog"))],"body":body,"page_type":"CollectionPage"}
 
-COVERS={"post-ai":("gen-checkin-phone",1080,1350),"post-pms":("gen-owner-laptop",1080,1350),"post-overbooking":("gen-reception",1080,1350),"post-autoreply":("gen-night-desk",1080,1350)}
+COVERS={"post-channel-manager":("gen-team-desk",1080,1350),"post-kbs":("gen-arrival",1080,1350),"post-prices":("gen-facade",1080,1350),"post-ai":("gen-checkin-phone",1080,1350),"post-pms":("gen-owner-laptop",1080,1350),"post-overbooking":("gen-reception",1080,1350),"post-autoreply":("gen-night-desk",1080,1350)}
 def article(meta, content, faq=None):
     art = {"@type":"BlogPosting","headline":meta["title"],"description":meta["desc"],"datePublished":meta["date"],"inLanguage":"tr-TR","author":{"@type":"Organization","name":"Hostlio Pro ürün ekibi","url":SITE+U("about")},"dateModified":UPDATED,"publisher":{"@id":SITE+"/#org"},
            "mainEntityOfPage":SITE+U(meta["key"]),"image":SITE+"/assets/img/"+COVERS[meta["key"]][0]+".webp"}

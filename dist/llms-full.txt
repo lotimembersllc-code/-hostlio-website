@@ -1099,6 +1099,18 @@ URL: https://hostliopro.com/tr/blog/
 ## Otelciler için blog
 Bağımsız otel işletmeciliği, dağıtım ve misafir iletişimi üzerine pratik yazılar.
 
+## KBS bildirimi nasıl yapılır? Oteller ve pansiyonlar için rehber
+2026-10-08
+KBS (Kimlik Bildirim Sistemi) bildirimi adım adım: Emniyet ve Jandarma KBS farkı, kayıt, yabancı misafir, süreler ve cezalar. Resmî kaynaklı.
+
+## Otel programı fiyatları 2026: modeller ve gerçek rakamlar
+2026-10-08
+2026 otel programı fiyatları: sabit paket, oda başı, komisyon ve lisans modelleri; resmî sayfalardan alınmış rakamlar ve örnek hesap.
+
+## Channel manager nedir? Otelciler için kanal yöneticisi rehberi
+2026-10-08
+Channel manager (kanal yöneticisi) nedir, nasıl çalışır, PMS'ten farkı ne? Fiyat modelleri, seçim için 7 soru ve kurulum adımları.
+
 ## Overbooking nasıl önlenir? Oteller için 6 adım
 2026-09-21
 Otellerde overbooking (çift rezervasyon) neden olur ve nasıl önlenir? Kanal yöneticisi, stop-sell, müsaitlik tamponu ve kriz anında yapılacaklar.
@@ -2035,6 +2047,648 @@ Plan ücreti düşüldükten sonra kazanç –
 Hostlio Pro’yu 7 gün ücretsiz deneyin
 
 Yalnızca tahmindir; girdiğiniz rakamlara ve ayda 30 güne dayanır. Sonuçlar misafirlerinize, ayarlarınıza ve Lio’nun otomatik cevapladığı konulara göre değişir. Plan fiyatları ABD doları cinsinden erken kayıt aylık fiyatlarıdır.
+
+---
+# Ücretsiz Otel Hesaplayıcıları: RevPAR, Komisyon | Hostlio Pro
+URL: https://hostliopro.com/tr/araclar/
+
+## Otelciler için ücretsiz hesaplayıcılar
+Kayıt olmadan, tarayıcınızda çalışan basit araçlar. Girdiğiniz rakamlar hiçbir yere gönderilmez.
+
+- RevPAR, ADR ve doluluk oranı hesaplama Oda sayısı, satılan oda gecesi ve oda gelirinden üç temel göstergeyi formülleriyle birlikte hesaplayın.
+
+- OTA komisyonu → net gelir Booking.com, Expedia gibi kanallardan gelen rezervasyonda komisyon ve ek kesintilerden sonra elinize ne kalıyor?
+
+- AI mesajlaşma tasarruf hesaplayıcı Misafir mesajlarını cevaplamanın kaç saat ve ne kadar personel maliyeti tuttuğunu tahmin edin.
+Hesaplamalar yalnızca tarayıcınızda yapılır; girdiğiniz rakamlar kaydedilmez ve sunucuya gönderilmez.
+
+---
+# RevPAR, ADR ve Doluluk Oranı Hesaplama (Ücretsiz) | Hostlio Pro
+URL: https://hostliopro.com/tr/araclar/revpar-adr-doluluk-hesaplama/
+
+## RevPAR, ADR ve doluluk oranı hesaplama
+Dönemdeki oda sayınızı, satılan oda gecelerini ve oda gelirinizi girin; doluluk oranı, ortalama oda fiyatı (ADR) ve müsait oda başına gelir (RevPAR) anında hesaplansın.
+
+Para birimi USD EUR GBP TRY BRL Satılabilir oda sayısı Dönemdeki gün sayısı Satılan oda gecesi Her dolu oda, her gece için 1 sayılır. 3 gece kalan bir misafir = 3 oda gecesi. Dönemin oda geliri Yalnızca oda geliri; kahvaltı dışı ekstralar, transfer ve vergiler hariç (raporlamanızda nasıl tutuyorsanız tutarlı olun).
+Satılabilir oda gecesi –
+Doluluk oranı –
+ADR (ortalama oda fiyatı) –
+RevPAR (müsait oda başına gelir) –
+
+Hesap tarayıcınızda yapılır; rakamlarınız hiçbir yere gönderilmez.
+
+## Formüller
+
+## Doluluk oranı
+Satılan oda gecesi ÷ satılabilir oda gecesi × 100
+Odalarınızın yüzde kaçının dolu olduğunu gösterir. Satılabilir oda gecesi = oda sayısı × gün sayısı.
+
+## ADR (Average Daily Rate)
+Oda geliri ÷ satılan oda gecesi
+Satılan bir oda gecesinin ortalama fiyatı. Boş odaları hesaba katmaz.
+
+## RevPAR (Revenue per Available Room)
+Oda geliri ÷ satılabilir oda gecesi = ADR × doluluk oranı
+Fiyat ve doluluğu tek rakamda birleştirir; boş kalan odaların maliyetini de gösterir.
+
+## Adım adım örnek
+12 odalı bir butik otel, 31 günlük bir ayda 285 oda gecesi satmış ve 39.900 ₺ oda geliri elde etmiş olsun:
+
+- Satılabilir oda gecesi: 12 × 31 = 372
+- Doluluk oranı: 285 ÷ 372 = %76,6
+- ADR: 39.900 ₺ ÷ 285 = 140 ₺
+- RevPAR: 39.900 ₺ ÷ 372 = 107,26 ₺ (ya da 140 ₺ × %76,6) Hesaplayıcıdaki varsayılan rakamlar bu örnektir; kendi rakamlarınızla değiştirin.
+
+## Hangi gösterge neyi anlatır?
+
+## Doluluk yüksek, RevPAR düşükse
+Odalarınızı fazla ucuza satıyor olabilirsiniz. Yoğun günlerde fiyatı biraz artırmak doluluğu çok düşürmeden RevPAR'ı yükseltebilir.
+
+## ADR yüksek, doluluk düşükse
+Fiyat talebin üzerinde olabilir ya da kanal dağıtımınız zayıf olabilir. Daha fazla kanalda görünmek ve minimum konaklama kurallarını gözden geçirmek işe yarayabilir.
+
+## RevPAR'ı karşılaştırırken
+Aynı dönemi geçen yılla, ya da benzer büyüklükteki rakip tesislerle karşılaştırın. Farklı oda sayısındaki oteller için RevPAR, toplam gelirden daha adil bir ölçüdür.
+
+## Sık yapılan hatalar
+
+- Kahvaltı, transfer ve tur gelirini oda gelirine katmak (ADR ve RevPAR şişer).
+- Satılabilir oda sayısından arızalı odaları bir ay düşüp bir ay düşmemek. Hangi yöntemi seçerseniz her dönem aynısını kullanın.
+- Ücretsiz (kompliman) odaları satılan oda gecesine katıp gelir yazmamak; ADR'yi düşük gösterir.
+- Komisyonlu kanal gelirini brüt mü net mi yazdığınızı karıştırmak. Kanal karlılığı için OTA komisyon hesaplayıcısını kullanın.
+
+## Hostlio Pro'da bu rakamlar kendiliğinden gelir
+Hostlio Pro panelindeki Analiz ekranı doluluk, ADR ve RevPAR'ı rezervasyonlarınızdan otomatik hesaplar; önceki dönemle ve geçen yılla karşılaştırır, kanal bazında brüt gelir, komisyon ve net geliri gösterir. Raporları Excel'e aktarabilirsiniz. Tüm özellikleri görün ya da planları karşılaştırın (aylık 49 $'dan başlar).
+
+Q: RevPAR nasıl hesaplanır?
+A: RevPAR, dönemin oda gelirinin satılabilir oda gecesi sayısına bölünmesiyle bulunur. Aynı sonucu ADR'yi doluluk oranıyla çarparak da alırsınız: 140 ₺ ADR ve %76,6 doluluk yaklaşık 107 ₺ RevPAR eder.
+
+Q: ADR ile RevPAR arasındaki fark nedir?
+A: ADR yalnızca satılan odaların ortalama fiyatıdır; RevPAR ise boş odaları da hesaba katar. Bu yüzden RevPAR hem fiyat hem doluluk performansını tek rakamda gösterir.
+
+Q: Doluluk oranı nasıl hesaplanır?
+A: Satılan oda gecesini, satılabilir oda gecesine (oda sayısı × gün) bölüp 100 ile çarparsınız. 20 odalı bir otel 30 günde 450 oda gecesi sattıysa doluluk 450 ÷ 600 = %75'tir.
+
+Q: Oda gelirine kahvaltı dahil mi?
+A: Konaklamaya dahil (paket) kahvaltıyı ayırmak çoğu zaman pratik değildir; önemli olan her dönem aynı yöntemi kullanmaktır. Ayrıca satılan ekstralar (transfer, tur, ayrı ücretli kahvaltı) oda gelirine katılmaz.
+
+Q: Girdiğim rakamlar kaydediliyor mu?
+A: Hayır. Hesaplama tamamen tarayıcınızda yapılır; rakamlar sunucuya gönderilmez.
+
+---
+# OTA Komisyon Hesaplama: Net Gelir Hesaplayıcı | Hostlio Pro
+URL: https://hostliopro.com/tr/araclar/ota-komisyon-hesaplama/
+
+## OTA komisyonu sonrası net gelir hesaplama
+Rezervasyon tutarını, sözleşmenizdeki komisyon oranını ve varsa ödeme/ek kesinti oranını girin. Komisyon tutarı, elinize kalan net gelir ve gece başı net fiyat anında hesaplanır.
+
+Para birimi USD EUR GBP TRY BRL Rezervasyon tutarı (brüt) Komisyon oranı % Oranı kanal sözleşmenizden ya da extranet'teki faturadan kontrol edin. Varsayılan rakamlar yalnızca örnektir. Ödeme ve diğer kesintiler % Gece sayısı (isteğe bağlı)
+Komisyon tutarı –
+Diğer kesintiler –
+Net gelir –
+Elinize kalan oran –
+Gece başı net –
+Hesap tarayıcınızda yapılır; rakamlarınız hiçbir yere gönderilmez.
+
+## Nasıl hesaplanır?
+
+- Komisyon = brüt tutar × komisyon oranı
+- Diğer kesintiler = brüt tutar × kesinti oranı (ör. sanal kart veya ödeme işlem ücreti)
+- Net gelir = brüt tutar − komisyon − diğer kesintiler
+- Gece başı net = net gelir ÷ gece sayısı
+
+## Örnek
+3 gecelik, 1.200 ₺'lik bir rezervasyonda komisyon %18, ödeme kesintisi %1,5 olsun: komisyon 216 ₺, diğer kesinti 18 ₺, net gelir 966 ₺, gece başı net 322 ₺. Yani misafirin ödediği 400 ₺'lik gecenin 322 ₺'si size kalır.
+Bazı kanallar komisyonu vergiler dahil tutar üzerinden, bazıları vergiler hariç tutar üzerinden hesaplar. Brüt tutarı sözleşmenizdeki esasa göre girin. Bu sayfa vergi danışmanlığı değildir.
+
+## Doğrudan rezervasyonla karşılaştırın
+Aynı oda doğrudan (telefon, WhatsApp, web siteniz) satıldığında komisyon ödenmez. Örnekteki gibi elinize kalan oran %80,5 ise, doğrudan rezervasyonda %19,5'e kadar indirim verseniz bile net geliriniz OTA satışından düşük olmaz. Doğrudan satışın kendi maliyetlerini (ödeme altyapısı, reklam) da hesaba katın.
+
+Hostlio Pro'nun Analiz ekranı her kanalın brüt gelirini, komisyonunu ve net gelirini yan yana gösterir; hangi kanalın komisyondan sonra gerçekten kazandırdığını görürsünüz. Kanal yöneticisi 100+ OTA'yı tek takvimde toplar; Lio WhatsApp'tan gelen soruları yanıtlayarak doğrudan rezervasyon talebi almanıza yardım eder. Planlar aylık 49 $'dan başlar.
+
+RevPAR, ADR ve doluluk hesaplama · AI mesajlaşma tasarruf hesaplayıcı
+
+Q: OTA komisyonu nasıl hesaplanır?
+A: Komisyon, rezervasyon tutarının sözleşmenizdeki oranla çarpılmasıyla bulunur: 1.200 ₺ × %18 = 216 ₺. Net gelir için bu tutarı ve varsa ödeme kesintilerini brüt tutardan çıkarın.
+
+Q: Komisyon vergiler dahil mi hesaplanır?
+A: Kanala ve ülkeye göre değişir. Sözleşmenizde ve kanalın aylık faturasında hangi tutarın esas alındığı yazar; hesaplayıcıya o tutarı girin.
+
+Q: Net ADR nedir?
+A: Komisyon ve kesintiler düşüldükten sonra satılan bir oda gecesine kalan ortalama gelirdir. Kanalları karşılaştırırken brüt ADR yerine net ADR'ye bakmak daha doğru sonuç verir.
+
+Q: Rakamlarım kaydediliyor mu?
+A: Hayır. Hesaplama tarayıcınızda yapılır ve hiçbir yere gönderilmez.
+
+---
+# Otel Programı Karşılaştırmaları | Hostlio Pro
+URL: https://hostliopro.com/tr/karsilastirmalar/
+
+## Otel programı karşılaştırmaları
+Her karşılaştırma yalnızca firmaların kendi resmî sayfalarında yayınladığı bilgilere dayanır ve tarihlidir. Rakibin daha uygun olduğu durumları da yazıyoruz.
+
+- Hostlio Pro ile HotelRunner: sabit aylık ücret mi, gelir yüzdesi mi? Hostlio Pro ve HotelRunner karşılaştırması: sabit aylık ücret ile rezervasyon gelirinden yüzde, AI misafir mesajlaşması, WhatsApp ve hangisi kime uygun.
+
+- Genel karşılaştırma: Hostlio Pro, Cloudbeds, Mews, Little Hotelier ve HotelRunner
+- Otel programı fiyatları 2026
+Ücretsiz otel hesaplayıcıları
+
+---
+# Hostlio Pro vs HotelRunner (2026): Fiyat, AI | Hostlio Pro
+URL: https://hostliopro.com/tr/karsilastirmalar/hostlio-vs-hotelrunner/
+
+## Hostlio Pro vs HotelRunner
+İkisi de bağımsız tesisler için bulut tabanlı yazılım. En büyük fark ödeme modelinde: Hostlio Pro sabit aylık ücret alır, HotelRunner'ın Essential planları ise asgari aylık ücretle birlikte rezervasyon gelirinin bir yüzdesini alır. Aşağıdaki karşılaştırma her iki firmanın yayınladığı bilgilere dayanır.
+7 gün ücretsiz dene Planları gör
+
+Kısa cevap: Sabit, gelirle büyümeyen bir aylık ücret ve her planda misafirlere WhatsApp'tan cevap veren bir AI asistan istiyorsanız Hostlio Pro uygundur. Aynı platformda rezervasyon motoru ve web sitesi, online ödeme tahsilatı ya da acente (B2B) dağıtımı istiyorsanız veya çok kullanıcılı büyük bir tesis işletiyorsanız HotelRunner daha uygun olabilir.
+
+Hostlio Pro vs HotelRunner, Ekim 2026 itibarıyla Ekim 2026 itibarıyla Hostlio Pro HotelRunner
+Fiyat modeli Sabit aylık ücret: Starter 49 $, Pro 89 $, Growth 149 $ (USD, erken kayıt fiyatı); yıllık ödemede %20 indirim Essential planlar: tüm kanallardan gelen aylık gerçekleşen rezervasyon gelirinin yüzdesi, asgari aylık ücretle
+Yayınlanan fiyatlar Evet, fiyatlandırma sayfasında Essential Manage aylık %0,75 (asgari $19,95), Sell %1,25 (asgari $29,95), Complete %1 (asgari $39,95). Advanced ve Elite: satış ekibiyle görüşme
+Rezervasyon başı ücret Hostlio rezervasyon başına ücret ya da gelir yüzdesi almaz Essential planlarda gelir yüzdesi (yukarıda)
+Kanal yöneticisi Tüm planlarda, 100+ OTA'ya sertifikalı bağlantı Sell ve Complete planlarında; "150+ kanal"
+Rezervasyon motoru ve web sitesi Yok; Hostlio Pro PMS, kanal yöneticisi ve AI mesajlaşmaya odaklanır Sell ve Complete planlarında
+AI misafir mesajlaşması AI asistan Lio tüm planlarda WhatsApp'ta; Pro ve Growth'ta Booking.com, Airbnb ve Expedia gelen kutuları da Konuşma yöneticisi, AI asistan ve AI çeviri, Advanced planlardaki Misafir İlişkileri Yönetimi'nde listeleniyor (fiyat satış ekibinden)
+WhatsApp ile misafir mesajlaşması Tüm planlarda (Lio) İncelediğimiz fiyat ve ürün sayfalarında belirtilmiyor
+Oda ve kullanıcı Oda: Starter 10, Pro 50, Growth 150. Kullanıcı: 3 / 8 / 20 Essential planlarda sınırsız oda ve sınırsız kullanıcı
+Ücretsiz deneme 7 gün (kart kayıtta alınır, deneme bitene kadar ücret çekilmez) "Ücretsiz deneyin" seçeneği var; süresi fiyat sayfasında belirtilmiyor
+Destek Türkçe ve İngilizce Tüm planlarda mesaj, e-posta ve telefon desteği
+
+Rakip bilgileri yalnızca firmaların kendi resmî sayfalarından alınmıştır ve 8 Ekim 2026 tarihinde kontrol edilmiştir; fiyat ve paketler değişebilir. Hostlio Pro bu karşılaştırmada taraftır. Bir bilgiyi doğrulayamadığımızda tabloya yazmadık. Hata görürseniz bize yazın , düzeltelim.
+
+## Hangisi daha ekonomik? Gelire göre örnek hesap
+HotelRunner'ın SSS'sinde yayınlanan formüle göre Essential Sell planında aylık ücret, tüm kanallardan gerçekleşen rezervasyon gelirinin %1,25'idir; bu tutar $29,95'in altında kalırsa asgari ücret ödenir. Hostlio Pro planı ise gelirden bağımsız olarak sabittir. Aşağıdaki rakamlar bizim hesabımızdır; OTA komisyonları ve vergiler hariçtir, iki ürünün kapsamı da aynı değildir.
+Aylık rezervasyon geliri HotelRunner Essential Sell (%1,25, asgari $29,95) Hostlio Pro
+$2.000 $29,95 89 $
+$5.000 $62,50 89 $
+$10.000 $125 89 $
+$20.000 $250 89 $
+
+Bu formüle göre aylık rezervasyon geliriniz yaklaşık $7.120'ın altındaysa Essential Sell ücreti Hostlio Pro'dan düşük, üstündeyse yüksek olur. Starter için bu eşik yaklaşık $3.920'dır.
+
+## Hostlio Pro nerede öne çıkar?
+
+## Bütçe sezonla büyümez
+Yüksek sezonda geliriniz artsa da Hostlio Pro'nun aylık ücreti değişmez. Kanal yöneticisi, oda rafı ve AI asistan aynı pakette.
+
+## Her planda WhatsApp'ta AI asistan
+Lio, misafir sorularını otelinizin bilgileriyle ve misafirin dilinde yanıtlar; indirim, şikâyet gibi karar gerektiren mesajları size bırakır. Pro ve Growth'ta OTA gelen kutuları da Lio'ya bağlanır ve Lio WhatsApp'ta rezervasyon talebi toplar, talep sizin onayınızla rezervasyona dönüşür.
+
+## Her sabah öneri, net rakamlar
+Lio Önerileri her sabah fiyat ve operasyon önerisi getirir; onayınız olmadan hiçbir şey değişmez. Analiz ekranı doluluk, ADR, RevPAR ile kanal bazında brüt, komisyon ve net geliri gösterir.
+
+## Kolay geçiş
+Mevcut rezervasyonlarınızı CSV ya da Excel dosyasıyla içeri aktarırsınız; kurulum sihirbazı eksik bilgileri işaretler.
+
+## HotelRunner hangi durumda daha uygun?
+
+## Rezervasyon motoru ve web sitesi gerekiyorsa
+HotelRunner'ın Sell planı kanal yöneticisinin yanında rezervasyon motoru, web sitesi, merkezi rezervasyon sistemi ve meta arama içerir. Hostlio Pro bunları sunmaz.
+
+## Ödemeyi platformda almak istiyorsanız
+HotelRunner online ödeme ve ödeme bağlantısı gibi ödeme özelliklerini listeler. Hostlio Pro ödeme tahsil etmez.
+
+## Çok kullanıcılı, çok odalı tesisler
+Essential planlarda oda ve kullanıcı sınırı yoktur; Hostlio Pro'da Growth planı 150 oda ve 20 kullanıcıyla sınırlıdır.
+
+## Acente (B2B) satışı önemliyse
+HotelRunner acente ağı ve sözleşme yönetimi gibi B2B araçları sunar.
+
+## Rezervasyon geliriniz düşükse
+Aylık geliri yaklaşık $3.920'ın altında kalan küçük bir tesis için yüzdeye dayalı model daha ucuza gelebilir.
+
+## Hostlio Pro'ya geçiş nasıl olur?
+
+- 7 günlük denemeyi başlatın; oda tiplerinizi ve fiyatlarınızı girin.
+- Mevcut rezervasyonlarınızı CSV ya da Excel dosyasıyla aktarın (sütun eşleme ve mükerrer kontrolü dahil).
+- Kanallarınızı Hostlio Pro'ya bağlayın. Müsaitliğin tek sistemden güncellenmesi için eski kanal yöneticisinden çıkış saatini önceden planlayın.
+- Lio'nun otel bilgilerini doldurun ve "Lio'yu dene" ile birkaç misafir sorusu deneyin.
+
+7 gün ücretsiz dene Planları gör
+
+## Kaynaklar
+
+- HotelRunner: Fiyatlandırma (8 Ekim 2026'da kontrol edildi)
+- HotelRunner: Pricing (8 Ekim 2026'da kontrol edildi)
+- HotelRunner: Channel manager (8 Ekim 2026'da kontrol edildi)
+
+## Diğer karşılaştırmalar
+
+- Genel karşılaştırma: Hostlio Pro, Cloudbeds, Mews, Little Hotelier ve HotelRunner Tüm karşılaştırmalar · Ücretsiz otel hesaplayıcıları
+
+Q: HotelRunner komisyonlu mu çalışıyor?
+A: HotelRunner'ın fiyatlandırma sayfasına göre Essential planlarda aylık ücret, tüm kanallardan gerçekleşen rezervasyon gelirinin bir yüzdesidir (%0,75–%1,25) ve her planın asgari aylık tutarı vardır ($19,95–$39,95). Advanced ve Elite planlarının fiyatı satış ekibinden alınır.
+
+Q: Hostlio Pro komisyon alıyor mu?
+A: Hayır. Hostlio Pro sabit aylık ücretlidir ve rezervasyon başına ücret ya da gelir yüzdesi almaz. OTA'ların kendi komisyonları her iki durumda da ayrıca geçerlidir.
+
+Q: Hangisi daha ucuz?
+A: Gelirinize bağlı. HotelRunner'ın yayınladığı formüle göre Essential Sell ücreti, aylık rezervasyon geliri yaklaşık $7.120 olduğunda Hostlio Pro planının aylık ücretine (89 $) eşit olur; bunun üstünde HotelRunner, altında Hostlio Pro daha pahalıdır. Kapsamlar farklı olduğu için yalnızca fiyata bakmayın.
+
+Q: HotelRunner'dan Hostlio Pro'ya rezervasyonlarımı taşıyabilir miyim?
+A: Evet. Rezervasyonlarınızı CSV ya da Excel dosyası olarak dışa aktarıp Hostlio Pro'ya içe aktarabilirsiniz; içe aktarma sütun eşleme, tarih biçimi seçimi ve mükerrer kayıt kontrolü içerir.
+
+---
+# Channel manager nedir? Otelciler için kanal yöneticisi rehberi
+URL: https://hostliopro.com/tr/blog/channel-manager-nedir/
+
+## Channel manager nedir? Otelciler için kanal yöneticisi rehberi
+Yazan: Hostlio Pro ürün ekibi , otel yazılımı geliştiren ekip. Yayın: 2026-10-08 , güncelleme: 2026-09-23
+
+Kısa cevap: Channel manager (kanal yöneticisi), otelinizin müsaitliğini, fiyatlarını ve satış kısıtlamalarını Booking.com, Airbnb, Expedia gibi tüm online satış kanallarına tek yerden gönderen ve bu kanallardan gelen rezervasyonları tek takvimde toplayan yazılımdır. Bir kanaldan rezervasyon geldiğinde o oda diğer kanallarda da otomatik kapanır; böylece overbooking riski azalır ve her kanalın extranet'ine ayrı ayrı girmeniz gerekmez.
+
+## Channel manager nasıl çalışır?
+
+Kanal yöneticisinin işi iki yönlü bir veri akışıdır:
+
+- Otelden kanallara: müsaitlik (kaç oda satılabilir), fiyat ve kısıtlamalar. Sektörde buna kısaca ARI (availability, rates, inventory) denir. Kısıtlamalar; minimum ve maksimum konaklama, girişe kapalı (CTA), çıkışa kapalı (CTD) ve satışa kapama (stop-sell) gibi kurallardır.
+
+- Kanallardan otele: yeni rezervasyonlar, değişiklikler ve iptaller. Bunlar takviminize düşer ve müsaitlik yeniden hesaplanıp tüm kanallara gönderilir.
+Örnek: 8 odalı bir pansiyonda son boş oda Airbnb'den satıldı. Kanal yöneticisi rezervasyonu alır, o tarihte müsaitliği sıfıra indirir ve Booking.com ile Expedia'ya da “0 oda” gönderir. Siz hiçbir extranet'e girmeden oda tüm kanallarda kapanmış olur.
+
+## Channel manager ile PMS arasındaki fark
+
+Konu Channel manager PMS (otel programı)
+Ana görevi Satış kanallarıyla müsaitlik, fiyat ve rezervasyon alışverişi Otelin günlük işleyişi: rezervasyon takvimi, oda durumu, misafir kayıtları, raporlar
+Kimlerle konuşur OTA'lar ve diğer satış kanalları Resepsiyon, kat hizmetleri, yönetim
+Tek başına yeterli mi Çoğu zaman bir PMS ya da takvimle birlikte kullanılır Kanal bağlantısı yoksa müsaitliği kanallara elle girmeniz gerekir
+
+Küçük otellerde ikisini ayrı ayrı almak yerine kanal yöneticisi PMS'e yerleşik bir sistem seçmek, iki yazılım arasındaki senkron sorunlarını ortadan kaldırır. Ayrıntılı seçim kriterleri için küçük otel için otel programı seçimi rehberine bakın.
+
+## Neden gerekli?
+
+- Overbooking riskini azaltır. Elle güncellemede iki kanal aynı odayı aynı anda satabilir. Nasıl önleneceğini overbooking rehberinde anlattık.
+
+- Zaman kazandırır. Sezon fiyatını bir kez girersiniz, tüm kanallara gider.
+
+- Fiyatlarınız tutarlı kalır. Bir kanalı güncelleyip diğerini unutma ihtimali ortadan kalkar.
+
+- Daha fazla kanalda görünmenizi kolaylaştırır. Yeni bir kanal eklemek, ayrı bir takvimi yönetmek anlamına gelmez.
+
+## Kanal yöneticisi fiyat modelleri
+
+Yazılımlar kanal yöneticisini farklı şekillerde fiyatlandırır. Firmaların kendi sayfalarında yayınladığı örnekler (8 Ekim 2026):
+
+- Sabit aylık ücret: Oda sayısından ya da gelirden bağımsız tek fiyat. Hostlio Pro'da kanal yöneticisi tüm planlara dahildir (aylık 49 $'dan).
+
+- Oda kademesine göre: Örneğin Sirvoy'da 10 odaya kadar Pro planı aylık 79 €; kanal yöneticisi bu yazılımda yalnızca Pro planında yer alıyor.
+
+- Oda ve kanal başına: Beds24 taban ücret, oda başı ücret ve kanal bağlantısı başına ücret alıyor (aylık 15,50 €'dan başlıyor).
+
+- Gelir yüzdesi: HotelRunner'ın Essential planları aylık rezervasyon gelirinin %0,75–%1,25'ini alıyor, her planın asgari aylık tutarı var.
+Rakamların tamamı ve kaynakları için otel programı fiyatları 2026 rehberine bakın.
+
+## Channel manager seçerken 7 soru
+
+- Sattığım tüm kanallara (Booking.com, Airbnb, Expedia, Agoda…) sertifikalı bağlantısı var mı?
+
+- Senkron anlık mı, yoksa belirli aralıklarla mı yapılıyor?
+
+- Fiyat ve kısıtlamaları (min. konaklama, CTA, CTD, stop-sell) tarih aralığına toplu girebiliyor muyum?
+
+- PMS'e yerleşik mi, yoksa ayrı bir sistemle mi entegre?
+
+- Fiyat modeli ne: sabit, oda başı, rezervasyon başı ya da gelir yüzdesi? Yüksek sezonda maliyet nasıl değişir?
+
+- Oda eşlemesini kim yapıyor; kurulumda destek var mı, hangi dilde?
+
+- Gerçek oda ve fiyatlarımla deneyebileceğim ücretsiz bir deneme süresi var mı?
+
+## Kurulum nasıl yapılır?
+
+- Oda tiplerinizi ve fiyat planlarınızı yazılıma girin.
+
+- Her kanalın extranet'inde kanal yöneticisi bağlantısını yetkilendirin.
+
+- Kanaldaki oda ve fiyat planlarını yazılımdakilerle eşleyin.
+
+- Bir test tarihinde müsaitliği değiştirip tüm kanallara yansıdığını kontrol edin.
+
+- Eski sistemden geçiyorsanız kesin bir geçiş saati belirleyin; müsaitlik aynı anda iki sistemden güncellenmesin.
+
+## Hostlio Pro'da kanal yöneticisi
+
+Hostlio Pro'nun kanal yöneticisi tüm planlara dahildir ve sertifikalı bağlantılarla 100'den fazla kanala (Booking.com, Airbnb, Expedia, Agoda, Trip.com, Hotels.com, Hotelbeds, Hostelworld, Google Hotels ve diğerleri) bağlanır. Oda tipi ve fiyat planı ızgarasında fiyat, minimum ve maksimum konaklama, girişe ve çıkışa kapalı ve satışa kapama kurallarını tarih aralığına toplu girersiniz. Arızalı bir odayı “satış dışı” yaptığınızda oda OTA müsaitliğinden de otomatik düşer. Analiz ekranı her kanalın brüt gelirini, komisyonunu ve net gelirini gösterir; komisyon sonrası tabloyu kendiniz görmek için OTA komisyon hesaplayıcısını da kullanabilirsiniz.
+
+Q: Channel manager ne iş yapar?
+A: Müsaitliğinizi, fiyatlarınızı ve kısıtlamalarınızı tüm online satış kanallarına tek yerden gönderir ve kanallardan gelen rezervasyonları tek takvimde toplar. Bir kanaldan gelen rezervasyon, odayı diğer kanallarda da otomatik kapatır.
+
+Q: Kanal yöneticisi ile otel programı (PMS) aynı şey mi?
+A: Hayır. PMS otelin günlük işleyişini (rezervasyon takvimi, oda durumu, misafir kayıtları) yönetir; kanal yöneticisi ise satış kanallarıyla veri alışverişi yapar. Birçok yazılımda ikisi tek pakette sunulur.
+
+Q: Ücretsiz channel manager var mı?
+A: Bazı yazılımların ücretsiz planı vardır, ancak kanal yöneticisi her planda olmayabilir. Örneğin Sirvoy'un fiyat sayfasında kanal yöneticisi yalnızca Pro planında yer alıyor. Planın neleri kapsadığını mutlaka kontrol edin.
+
+Q: Booking.com ve Airbnb'yi aynı anda nasıl senkron tutarım?
+A: İki kanalı da aynı kanal yöneticisine bağlarsınız. Müsaitlik tek takvimden yönetilir; bir kanaldan rezervasyon geldiğinde diğer kanaldaki müsaitlik otomatik güncellenir.
+
+---
+# KBS bildirimi nasıl yapılır? Oteller ve pansiyonlar için rehber
+URL: https://hostliopro.com/tr/blog/kbs-bildirimi-nasil-yapilir/
+
+## KBS bildirimi nasıl yapılır? Oteller ve pansiyonlar için rehber
+Yazan: Hostlio Pro ürün ekibi , otel yazılımı geliştiren ekip. Yayın: 2026-10-08 , güncelleme: 2026-09-23
+
+Kısa cevap: KBS (Kimlik Bildirim Sistemi), konaklama tesislerinin misafirlerinin ve çalışanlarının kimlik bilgilerini kolluğa elektronik ortamda bildirdiği sistemdir. 1774 sayılı Kimlik Bildirme Kanunu'na göre bildirim anlık yapılmalıdır. Tesisiniz polis bölgesindeyse Emniyet'in kbs.egm.gov.tr adresini, jandarma bölgesindeyse e-Devlet üzerinden Jandarma KBS'yi kullanırsınız. Kayıt için bağlı olduğunuz polis birimine ya da jandarma karakoluna başvurursunuz.
+
+Bu yazı genel bilgilendirme amaçlıdır, hukuki danışmanlık değildir. Bilgiler 8 Ekim 2026 tarihinde resmî kaynaklardan derlendi; uygulama ilden ile değişebilir. Güncel şartları bağlı olduğunuz polis birimine ya da jandarma karakoluna sorun.
+
+## KBS bildirimi kimler için zorunlu?
+
+1774 sayılı Kanun'un 2. maddesi otel, motel, han, pansiyon, bekâr odaları, günübirlik kiralanan evler, kamp, kamping, tatil köyü, marinalar ve benzeri her türlü özel veya resmî konaklama yerinin sorumlu işleticisini, yerli ya da yabancı herkesin kimlik ve geliş-ayrılış kayıtlarını tutmakla yükümlü kılar. Kanun'un ek 1. maddesi bu kayıtların bilgisayarda günü gününe tutulmasını ve kolluğa anlık olarak bildirilmesini zorunlu tutar; KBS'nin dayanağı bu maddedir.
+
+Uygulama yönetmeliği apart otelleri de konaklama işletmeleri arasında sayar. Turizm amaçlı kiralanan konutlar için Kültür ve Turizm Bakanlığı yönetmeliği de izin belgesi sahibinin 1774 sayılı Kanun'daki yükümlülükleri yerine getirmesini şart koşar.
+
+## Emniyet KBS mi, Jandarma KBS mi?
+
+Konu Polis bölgesi (Emniyet) Jandarma bölgesi
+Sistem Emniyet Genel Müdürlüğü KBS (2017'den beri) Jandarma KBS (“KBS Tesis 2”)
+Adres kbs.egm.gov.tr e-Devlet: turkiye.gov.tr/jandarma-kimlik-bildirim-sistemi ya da jandarma.gov.tr/kbs
+Giriş Kullanıcı adı, parola ve EGMSEC uygulamasından alınan tek kullanımlık şifre Tesis yetkilisinin e-Devlet girişiyle
+Başvuru yeri Tesisin bağlı olduğu güvenlik birimi (polis) Tesisten sorumlu Jandarma Karakol Komutanlığı
+
+Tesisinizin hangi bölgede olduğunu gösteren resmî bir çevrimiçi sorgu bulamadık; emin değilseniz en yakın polis merkezine ya da jandarma karakoluna sorun.
+
+## KBS'ye kayıt: adım adım
+
+## Polis bölgesindeki tesisler
+
+- Tesis yetkilisi, tesisin bağlı olduğu güvenlik birimine başvurarak kayıt yaptırır (EGM Asayiş Daire Başkanlığı).
+
+- İstenen belgeler ilden ile değişebilir. Örneğin Kocaeli İl Emniyet Müdürlüğü gerçek kişiler için işyeri açma ve çalıştırma ruhsatı, vergi levhası, nüfus cüzdanı fotokopisi, dilekçe, KBS kullanıcı bilgi formu ve turizm işletme ya da konut izin belgesi istiyor; şirketlerde ticaret sicil gazetesi ve imza beyannamesi de ekleniyor.
+
+- Aynı il müdürlüğünün açıklamasına göre parola kayıtta bildirilen e-posta adresine gelir, kullanıcı adı e-posta adresidir ve sabit IP adresi tanımlanmayan tesis sisteme giremez.
+
+- Girişte telefonunuza kuracağınız EGMSEC uygulamasının ürettiği tek kullanımlık şifre de istenir.
+
+## Jandarma bölgesindeki tesisler
+
+- Tesis yetkilisi geçiş/bildirim formunu doldurarak tesisten sorumlu Jandarma Karakol Komutanlığına başvurur. Formda tesis bilgileri, adres kodu, koordinat ve yetkili kullanıcının T.C. kimlik numarası gibi alanlar bulunur.
+
+- Yetki karakol tarafından tanımlanır; sonra tesis yetkilisi e-Devlet şifresiyle sisteme girer.
+
+- Tesis yetkilisi kendi altına konaklayan, personel ya da her ikisini bildirebilecek başka kullanıcılar ekleyebilir; her kullanıcı kendi e-Devlet şifresiyle girer.
+
+## Misafir bildirimi nasıl yapılır?
+
+Jandarma KBS dokümanına göre:
+
+- T.C. vatandaşı: T.C. kimlik numarası, oda numarası ve giriş tarihi girilir; varsa araç plakası ve telefon eklenir. Ad, soyad gibi bilgiler kontrol için nüfus kayıtlarından ekrana gelir.
+
+- Yabancı kimlik numarası olan yabancı: Yabancı kimlik numarası, ülke, oda numarası ve giriş tarihi girilir.
+
+- Diğer yabancı misafirler: Kimlik bilgilerinin tamamı elle girilir; pasaport numarası “Belge Seri No” alanına yazılır ve ülke seçilir. Jandarma'nın duyurusuna göre yabancı turistler için ana adı, baba adı, medeni hal ve cinsiyet bildirme zorunluluğu kaldırılmıştır.
+
+- Çıkış: Misafir ayrıldığında çıkış kaydı yapılır. Kocaeli İl Emniyet Müdürlüğü'nün tesislere yönelik notunda çıkışın “çıkış anında” yapılması isteniyor.
+Emniyet KBS ekranındaki alanlar oturum açmadan görülemediği için yabancı misafirde hangi alanların zorunlu olduğunu ekranınızdan kontrol edin.
+
+## Bildirim süresi: “anlık” ne demek?
+
+Kanun ve yönetmelik misafir bildirimi için saat cinsinden bir süre vermez; ölçüt anlık bildirimdir. Jandarma sistemi teknik aksaklıklar nedeniyle giriş kaydının 72 saat, çıkışın üç gün geriye dönük girilmesine izin verir; bu bir yasal süre değil, sistemin teknik toleransıdır. Çalışanların işe giriş ve ayrılışı ise Kanun'un 4. maddesine göre 24 saat içinde bildirilir.
+
+## KBS bildirimi yapılmazsa ceza nedir?
+
+- Kanun'un ek 1. maddesine göre kolluk terminaline bağlanmayan tesise 10.000 TL, anlık veri göndermeyen ya da gerçeğe aykırı kayıt tutan tesise 5.000 TL idari para cezası verilir. Bu tutarlar Kanun'daki nominal tutarlardır; Kabahatler Kanunu gereği her yıl yeniden değerleme oranıyla artırılır.
+
+- Kocaeli İl Emniyet Müdürlüğü'nün 2026 bilgilendirmesinde bu tutarlar 2026 yılı için 170.903 TL (sisteme dahil olmadan faaliyet) ve 85.437 TL (anlık bildirim yapmama ya da gerçeğe aykırı kayıt) olarak veriliyor. Ulusal düzeyde yayınlanmış resmî bir 2026 tablosu bulamadık.
+
+- 5 Aralık 2025'te yürürlüğe giren 7565 sayılı Kanun'la, aynı takvim yılında tekrarında son cezanın iki katı uygulanması ve dördüncü kez işlenmesinde işletme ruhsatının iptali hükme bağlandı.
+
+## Sık yapılan hatalar
+
+- Misafiri kayıt yapılmadan odaya çıkarmak.
+
+- Çıkış kaydını günler sonra toplu yapmak.
+
+- Grup ya da aile konaklamalarında bireylerden birini eksik bırakmak.
+
+- Yabancı misafirde pasaport numarasını yanlış alana ya da eksik yazmak.
+
+- Yeni çalışanı 24 saat içinde bildirmemek.
+
+## Online check-in ile bilgileri önceden toplamak
+
+Resepsiyondaki yükü azaltmanın bir yolu, misafir bilgilerini varıştan önce toplamaktır. Hostlio Pro'nun online check-in özelliğinde (Pro ve Growth planları) misafir pasaportunun ya da kimlik kartının makinece okunabilir bölgesini (MRZ) kendi telefonuyla okutur; okuma tarayıcıda yapılır ve yalnızca çıkarılan alanlar ile dijital imza kaydedilir, belge görüntüsü saklanmaz.
+
+Hostlio Pro panelindeki KBS dışa aktarma , seçtiğiniz tarih aralığındaki misafirleri (iptal edilen rezervasyonlar hariç) ad soyad, belge tipi, belge numarası, uyruk, doğum tarihi, giriş tarihi ve kayıt zamanıyla tek bir CSV dosyasında toplar.
+
+Önemli: Hostlio Pro KBS'ye bağlanmaz ve KBS'ye otomatik bildirim yapmaz . CSV dosyası, bildirimi kendi KBS ekranınızdan yaparken bilgileri tek yerde görmeniz içindir; bildirimi yapmak ve süresine uymak tesisin sorumluluğundadır.
+
+## Kaynaklar
+Tüm kaynaklara 8 Ekim 2026 tarihinde erişildi.
+
+- 1774 sayılı Kimlik Bildirme Kanunu (mevzuat.gov.tr)
+- Kimlik Bildirme Kanununun Uygulanması ile İlgili Yönetmelik (mevzuat.gov.tr)
+- Konutların Turizm Amaçlı Kiralanması Yönetmeliği (mevzuat.gov.tr)
+- 7565 sayılı Kanun, Resmî Gazete 5 Aralık 2025
+- Emniyet Genel Müdürlüğü: Kimlik Bildirim Sistemi
+- EGM Asayiş Daire Başkanlığı: KBS
+- EGMSEC iki faktörlü doğrulama kılavuzu (KBS)
+- Kocaeli İl Emniyet Müdürlüğü: KBS projesi
+- Jandarma Genel Komutanlığı: Kimlik Bildirim Sistemi
+- Jandarma KBS Tesis 2 uygulama dokümanı
+- Jandarma KBS Tesis 2 geçiş işlemleri
+- Jandarma KBS web servis tanım dokümanı
+- e-Devlet: Jandarma Kimlik Bildirim Sistemi
+- 5326 sayılı Kabahatler Kanunu (mevzuat.gov.tr)
+
+Q: KBS bildirimi ne zaman yapılır?
+A: 1774 sayılı Kanun'un ek 1. maddesine göre misafir bilgileri kolluğa anlık olarak bildirilir; mevzuatta saat cinsinden ayrı bir süre yoktur. Çalışanlar ise 24 saat içinde bildirilir.
+
+Q: KBS'ye nasıl kayıt olunur?
+A: Polis bölgesindeki tesisler bağlı oldukları güvenlik birimine, jandarma bölgesindeki tesisler sorumlu Jandarma Karakol Komutanlığına başvurur. İstenen belgeler ilden ile değişebilir; başvurmadan önce ilgili birime sorun.
+
+Q: Yabancı misafir KBS'ye nasıl bildirilir?
+A: Jandarma KBS'de yabancı kimlik numarası olmayan misafirin kimlik bilgileri elle girilir, pasaport numarası “Belge Seri No” alanına yazılır ve ülke seçilir. Emniyet KBS'de zorunlu alanları kendi ekranınızdan kontrol edin.
+
+Q: Hostlio Pro KBS'ye otomatik bildirim yapıyor mu?
+A: Hayır. Hostlio Pro, online check-in ile toplanan bilgileri tarih aralığına göre CSV olarak dışa aktarır. KBS'ye bağlanmaz ve bildirim göndermez; bildirimi KBS ekranınızdan siz yaparsınız.
+
+Q: KBS bildirimi yapılmazsa ceza var mı?
+A: Evet. Kanun'un ek 1. maddesi sisteme bağlanmayan ve anlık bildirim yapmayan tesislere idari para cezası öngörür; tutarlar her yıl yeniden değerleme oranıyla artar. Aynı yıl içinde dördüncü kez tekrarında işletme ruhsatı iptal edilir.
+
+---
+# Otel programı fiyatları 2026: modeller ve gerçek rakamlar
+URL: https://hostliopro.com/tr/blog/otel-programi-fiyatlari-2026/
+
+## Otel programı fiyatları 2026: modeller ve gerçek rakamlar
+Yazan: Hostlio Pro ürün ekibi , otel yazılımı geliştiren ekip. Yayın: 2026-10-08 , güncelleme: 2026-09-23
+
+Kısa cevap: 2026'da otel programları dört farklı şekilde fiyatlanıyor: sabit aylık paket, oda sayısına göre ücret, rezervasyon gelirinden yüzde ve tek seferlik lisans. Fiyatını açıkça yayınlayan yazılımlarda küçük bir otel için aylık maliyet yaklaşık 15 € ile 150 € arasında başlıyor; bazı büyük firmalar ise yalnızca teklif veriyor. Aşağıdaki tablo, firmaların kendi fiyat sayfalarında 8 Ekim 2026 tarihinde yayınladığı rakamlara dayanıyor.
+
+Hostlio Pro bu karşılaştırmada taraftır. Yalnızca resmî fiyat sayfasında doğrulayabildiğimiz rakamları yazdık; fiyatlar değişebilir, karar vermeden önce her firmanın kendi sayfasını kontrol edin. Para birimleri firmaların kullandığı gibidir (€, $, ₺) ve doğrudan karşılaştırılamaz.
+
+## Otel programı fiyat modelleri
+
+- Sabit aylık paket: Ücret belli bir oda aralığı ya da plan için sabittir. Bütçe öngörülebilir; yüksek sezonda fatura büyümez.
+
+- Oda başı ya da oda kademesi: Oda sayısı arttıkça ücret artar. Küçük tesisler için ucuz başlar.
+
+- Gelir yüzdesi ya da rezervasyon başı ücret: Düşük sezonda az ödersiniz, yüksek sezonda maliyet gelirle birlikte büyür.
+
+- Tek seferlik lisans: Yazılımı satın alırsınız; güncelleme, sunucu ve destek maliyetlerini ayrıca sorun.
+
+- Teklif: Fiyat, demo sonrası tesisinize göre verilir.
+
+## 2026 otel programı fiyatları (yayınlanan rakamlar)
+
+Yazılım Model Yayınlanan fiyat Not
+Hostlio Pro Sabit aylık ücret (plan) Starter 49 $, Pro 89 $, Growth 149 $ / ay (USD, erken kayıt); yıllıkta %20 indirim PMS, kanal yöneticisi ve AI asistan Lio tüm planlarda; oda sınırı 10 / 50 / 150
+HMS Otel Oda aralığına göre sabit paket 1–10 oda 88 €, 11–20 oda 100 €, 21–30 oda 112 €, 31–40 oda 124 €, 41–50 oda 136 € / ay; 51+ oda teklifle Kurulum, uzaktan eğitim ve teknik destek için ek ücret alınmıyor; misafir ilişkileri modülü (SMS/e-posta) ayrıca ücretli
+HotelRunner Rezervasyon gelirinden yüzde + asgari ücret Essential Manage %0,75 (asgari 19,95 $), Sell %1,25 (asgari 29,95 $), Complete %1 (asgari 39,95 $) / ay Yüzde, tüm kanallardan gerçekleşen aylık rezervasyon gelirine uygulanıyor; Advanced ve Elite teklifle
+AKINSOFT WOLVOX Otel Tek seferlik lisans Otel Yönetimi 1 (50 oda dahil): liste fiyatı 102.950 ₺, KDV hariç Ekim 2026'da süreli kampanya indirimi uygulanıyor (sayfaya göre 27 Ekim 2026'ya kadar)
+Sirvoy Oda kademesine göre sabit aylık 10 odaya kadar: Starter 22 €, Pro 79 € / ay (aylık ödeme); 1 oda için ücretsiz plan Kanal yöneticisi yalnızca Pro planında; 14 gün deneme
+Beds24 Kullandıkça öde Taban 12,90 € + oda başı 2,60 € + oda tipi başına kanal bağlantısı 0,55 € / ay; “15,50 €'dan başlayan” Kurulum ücreti ve taahhüt yok
+eviivo “Başlayan” fiyat + rezervasyon başı ücret Tek tesis 50 $'dan başlayan / ay, vergiler hariç; onaylanan rezervasyon başına 0,50 $ 10 odanın üzerinde hacim fiyatı teklifle; 14 gün ücretsiz
+Elektraweb, Sistem Otel Teklif Yayınlanmıyor Fiyat sayfaları teklif formuna yönlendiriyor
+Cloudbeds, Amenitiz Teklif Yayınlanmıyor Fiyat sayfalarında teklif isteniyor
+
+## Örnek hesap: 10, 25 ve 50 odalı otel
+
+Aşağıdaki aylık rakamlar yayınlanan fiyatlardan yaptığımız hesaptır. Beds24 için resmî hesaplayıcısındaki birim fiyatları kullandık (taban + oda başı + oda tipi × kanal). Rezervasyon gelirine bağlı modeller (HotelRunner, eviivo) gelirinize göre değiştiği için tabloya alınmadı; HotelRunner için gelire göre örnek hesabı Hostlio Pro ile HotelRunner karşılaştırmasında bulabilirsiniz. Yazılımların kapsamı aynı değildir; yalnızca fiyata bakarak karar vermeyin.
+
+Tesis Hostlio Pro HMS Otel Sirvoy Beds24
+10 oda (2 oda tipi, 3 kanal) 49 $ (Starter) ya da 89 $ (Pro) 88 € 79 € (Pro, 10 odaya kadar) 42,20 €
+25 oda (3 oda tipi, 3 kanal) 89 $ (Pro) 112 € 149 € (Pro, 50 odaya kadar) 82,85 €
+50 oda (4 oda tipi, 4 kanal) 89 $ (Pro, 50 odaya kadar) 136 € 149 € (Pro, 50 odaya kadar) 151,70 €
+
+## Gözden kaçan maliyetler
+
+- Ek modüller: SMS, e-posta, misafir ilişkileri ya da gelir yönetimi modülleri ayrı ücretlendirilebilir.
+
+- Rezervasyon başı ücretler: Küçük görünür ama yüksek sezonda toplanır.
+
+- Ödeme işlem ücretleri: Online tahsilat yapan sistemlerde işlem başına kesinti olur.
+
+- Kurulum ve eğitim: Bazı firmalar ücretsiz yapar, bazıları ayrıca fiyatlar.
+
+- KDV ve kur: Fiyatlar çoğunlukla KDV hariçtir; döviz bazlı fiyatlar kurla birlikte değişir.
+
+- OTA komisyonları: Yazılımdan bağımsızdır ama asıl büyük kalem çoğu zaman budur. Kanal bazında net geliri OTA komisyon hesaplayıcısıyla görebilirsiniz.
+
+## Hangi model size uygun?
+
+- Gelirin mevsime göre çok değiştiği ve bütçeyi sabit tutmak isteyen tesisler için sabit aylık paket öngörülebilirdir.
+
+- 1–5 odalı, düşük gelirli tesisler için oda başı ya da düşük asgari ücretli yüzde modeli daha ucuza gelebilir.
+
+- Kendi sunucusunu yönetmek isteyen ve tek seferlik ödemeyi tercih eden işletmeler için lisans bir seçenektir.
+Seçim kriterlerinin tamamı için küçük otel için otel programı seçimi rehberine, ürün karşılaştırmaları için karşılaştırmalar sayfasına bakın.
+
+## Hostlio Pro ne kadar?
+
+Hostlio Pro'nun üç planı vardır: Starter aylık 49 $ (10 oda), Pro 89 $ (50 oda) ve Growth 149 $ (150 oda, 2 tesis). Kanal yöneticisi ve AI asistan Lio tüm planlarda dahildir; Hostlio rezervasyon başına ücret ya da gelir yüzdesi almaz. Yıllık ödemede %20 indirim vardır ve 7 gün ücretsiz deneyebilirsiniz. Ayrıntılar: fiyatlandırma .
+
+## Kaynaklar
+Tüm kaynaklara 8 Ekim 2026 tarihinde erişildi.
+
+- HMS Otel: Fiyat listesi
+- HotelRunner: Fiyatlandırma
+- AKINSOFT: WOLVOX Otel Programı
+- Sirvoy: Pricing
+- Beds24: Pricing
+- eviivo: Pricing
+- Elektraweb: Fiyat listesi (teklif formu)
+- Sistem Otel
+- Cloudbeds: Pricing
+- Amenitiz: Pricing
+
+Q: Otel programı fiyatları ne kadar?
+A: Fiyatını yayınlayan yazılımlarda küçük bir otel için aylık maliyet yaklaşık 15 € ile 150 € arasında başlıyor (8 Ekim 2026). Bazı yazılımlar gelirden yüzde alıyor, bazıları tek seferlik lisans satıyor, bazıları da yalnızca teklif veriyor.
+
+Q: Ücretsiz otel programı var mı?
+A: Bazı yazılımların ücretsiz planı var; örneğin Sirvoy'un ücretsiz planı yalnızca 1 oda için geçerli ve kanal yöneticisi içermiyor. Ücretsiz planların oda, kanal ve destek sınırlarını mutlaka kontrol edin.
+
+Q: Komisyonlu mu sabit fiyatlı mı daha avantajlı?
+A: Gelir düşükse yüzdeye dayalı model daha ucuz olabilir; gelir arttıkça maliyeti de büyür. Bütçesini sabitlemek isteyen tesisler için sabit aylık ücret daha öngörülebilirdir.
+
+Q: Hostlio Pro'nun fiyatı ne kadar?
+A: Starter aylık 49 $, Pro 89 $, Growth 149 $ (USD, erken kayıt fiyatı). Yıllık ödemede %20 indirim vardır; 7 gün ücretsiz deneme sunulur.
+
+---
+# Otel WhatsApp Asistanı: Lio ile 7/24 Misafir Yanıtı | Hostlio Pro
+URL: https://hostliopro.com/tr/otel-whatsapp-asistani/
+
+## Otel WhatsApp asistanı: gece de cevap veren Lio
+
+Misafirleriniz WhatsApp'tan yazıyor; check-in saati, otopark, transfer, kahvaltı. Hostlio Pro'nun AI asistanı Lio bu soruları otelinizin bilgileriyle, misafirin dilinde ve günün her saatinde yanıtlar; karar gerektiren mesajları size bırakır.
+
+7 gün ücretsiz dene Lio'yu tanıyın
+
+## Otel WhatsApp asistanı nedir?
+Otel WhatsApp asistanı, misafirlerin WhatsApp'tan sorduğu soruları otelin kendi bilgileriyle otomatik yanıtlayan yapay zekâ yazılımıdır. İyi bir asistan yalnızca bildiği konularda cevap verir, emin olmadığı ya da insan kararı gereken mesajları (indirim talebi, şikâyet, özel istek) personele devreder.
+
+## Nasıl çalışır?
+
+## 1. Otel bilgilerinizi girin
+Check-in ve check-out saatleri, otopark, kahvaltı, evcil hayvan kuralları, ulaşım, oda özellikleri. Bir kez girersiniz, Lio her cevapta tutarlı kullanır. Kurulumu bitirmeden “Lio'yu dene” ile bir misafir sorusu yazıp Lio'nun cevabını görebilirsiniz.
+
+## 2. WhatsApp'ı bağlayın
+Otelinizin WhatsApp hattını Hostlio Pro'ya bağlarsınız. Pro ve Growth planlarında Booking.com, Airbnb ve Expedia mesajları da aynı gelen kutusuna düşer.
+
+## 3. Lio cevaplasın, siz kontrol edin
+Lio misafire kendi dilinde, saniyeler içinde cevap verir; cevabın Türkçe çevirisini panelde görürsünüz. İlk günlerde cevapları göndermeden önce onaylayabilir, hangi konuları Lio'nun kapatacağını siz belirlersiniz.
+
+## Lio neler yapar?
+
+## Sık soruları 7/24 yanıtlar
+Gece 02:00'de gelen “geç check-in olur mu?” sorusu sabahı beklemez. Lio yalnızca sizin girdiğiniz bilgileri ve rezervasyon verilerini kullanır; emin olmadığı soruyu size iletir.
+
+## Misafirin dilinde konuşur
+Misafir hangi dilde yazarsa Lio o dilde cevap verir. Sizin elle yazdığınız cevaplar ise yazdığınız gibi gönderilir, otomatik çevrilmez.
+
+## Rezervasyon talebi alır (Pro ve Growth)
+Misafir WhatsApp'tan oda sorduğunda Lio tarihleri, kişi sayısını ve oda tercihini toplar, sizin fiyat ve müsaitliğinize göre fiyat verir. Talep onayınıza gelir; siz onaylayınca rezervasyona dönüşür. Lio kendi başına rezervasyon kesinleştirmez.
+
+## Ek hizmet sunar (Pro ve Growth)
+Havalimanı transferi ve tur gibi tanımladığınız ek hizmetleri uygun anda önerir, talebi ekibinize iletir.
+
+## Eksik bilgiyi size söyler
+Lio cevaplayamadığı soru konularını kurulumda eksik alan olarak işaretler; alanı bir kez doldurursunuz, uyarı kendiliğinden kapanır.
+
+## Her sabah öneri getirir
+Lio Önerileri her sabah fiyat, operasyon ve kurulum için öneri sunar. Onayınız olmadan hiçbir şey değişmez.
+
+## Lio neleri yapmaz?
+
+- Rezervasyonu kendi başına kesinleştirmez; her talep sizin onayınızdan geçer.
+- Ödeme almaz ve indirim kararı vermez; bu tür mesajları size bırakır.
+- Sizin yazdığınız mesajları otomatik çevirmez.
+- Girmediğiniz bir bilgiyi uydurmak yerine soruyu size iletir.
+
+## Planlar ve mesaj kotası
+Bir AI mesajı, Lio'nun misafire gönderdiği tek bir yanıttır. Kanal yöneticisi ve oda rafı tüm planlarda dahildir.
+Plan Aylık fiyat Aylık AI mesajı Lio'nun cevap verdiği kanallar
+Starter 49 $ 1.000 WhatsApp
+Pro 89 $ 5.000 WhatsApp + Booking.com, Airbnb, Expedia gelen kutuları
+Growth 149 $ 12.000 WhatsApp + Booking.com, Airbnb, Expedia gelen kutuları
+
+Fiyatlar ABD doları, erken kayıt aylık fiyatlarıdır. Kotanız %80'e ve %100'e geldiğinde e-postayla haber veririz. Ayrıntılar: fiyatlandırma .
+
+## Kimler için uygun?
+
+- Gece resepsiyonu olmayan ya da tek kişiyle dönen pansiyon, butik otel ve apart oteller
+
+- Yabancı misafiri çok olan, farklı dillerde mesaj alan tesisler
+
+- Booking.com, Airbnb ve WhatsApp mesajlarını tek ekranda toplamak isteyen ekipler (Pro ve Growth)
+Lio'nun size ne kadar zaman kazandırabileceğini tasarruf hesaplayıcısıyla tahmin edebilirsiniz. Yöntemler ve sınırlar için misafir mesajlarını yapay zekâ ile yanıtlamak ve Booking.com mesajlarına otomatik cevap yazılarına bakın. Verilerin nasıl korunduğu güvenlik ve veri sayfasında.
+
+Q: Lio yanlış bilgi verirse ne olur?
+A: Lio yalnızca sizin girdiğiniz otel bilgilerini ve rezervasyon verilerini kullanır. Emin olmadığı sorularda tahmin yürütmek yerine mesajı size iletir. Dilerseniz tüm cevapları gönderilmeden önce onaylayabilirsiniz.
+
+Q: Lio hangi dillerde cevap veriyor?
+A: Misafir hangi dilde yazarsa Lio o dilde cevap verir; cevabın Türkçe çevirisini panelde görürsünüz. Panel ve uygulama Türkçe, İngilizce, İspanyolca, Fransızca, İtalyanca ve Portekizce kullanılabilir.
+
+Q: Booking.com ve Airbnb mesajlarını da yanıtlıyor mu?
+A: Evet, Pro ve Growth planlarında. Starter planında Lio WhatsApp mesajlarını yanıtlar; OTA rezervasyonları senkronize edilir ama OTA mesajları Lio'ya bağlanmaz.
+
+Q: Lio WhatsApp'tan rezervasyon alabiliyor mu?
+A: Pro ve Growth planlarında rezervasyon talebi alır: tarih, kişi sayısı ve oda tercihini toplar, sizin fiyatlarınıza göre fiyat verir ve talebi size iletir. Talep ancak siz onayladığınızda rezervasyona dönüşür.
+
+Q: Mesaj kotası dolarsa ne olur?
+A: Kotanız %80'e ve %100'e geldiğinde e-postayla haber veririz. Kota aşıldığında mesajlar gelmeye ve panelde görünmeye devam eder, yalnızca otomatik yanıt durur. Üst plana geçerek kotanızı artırabilirsiniz.
 
 ---
 # Hostlio Pro | AI Hotel Management for Independent Hotels
@@ -4445,6 +5099,576 @@ Planned: Twilio Inc. (WhatsApp numbers and messaging billing) and Twilio SendGri
 Accepted electronically by the Controller when accepting the Terms of Service. For a countersigned copy, email hello@hostliopro.com with your company name, address and the name of your signatory.
 
 ---
+# Free Hotel Calculators: RevPAR, ADR, Commission | Hostlio Pro
+URL: https://hostliopro.com/en/tools/
+
+## Free calculators for hoteliers
+Simple tools that run in your browser, no signup needed. The numbers you enter are never sent anywhere.
+
+- RevPAR, ADR and occupancy calculator Work out the three core hotel KPIs from rooms, room nights sold and room revenue, with the formulas shown.
+
+- OTA commission → net revenue What do you actually keep from a Booking.com or Expedia booking after commission and other fees?
+
+- AI messaging ROI calculator Estimate the staff hours and cost that answering guest messages takes today.
+Calculations run only in your browser; the numbers you enter are not stored or sent to a server.
+
+---
+# RevPAR, ADR & Occupancy Rate Calculator (Free) | Hostlio Pro
+URL: https://hostliopro.com/en/tools/revpar-adr-occupancy-calculator/
+
+## RevPAR, ADR and occupancy calculator
+Enter your rooms, the room nights you sold and your room revenue for the period. Occupancy rate, average daily rate (ADR) and revenue per available room (RevPAR) update instantly.
+
+Currency USD EUR GBP TRY BRL Rooms available to sell Days in the period Room nights sold Each occupied room counts once per night. A guest staying 3 nights = 3 room nights. Room revenue for the period Room revenue only; leave out extras such as transfers, tours and taxes (whatever you choose, be consistent).
+Available room nights –
+Occupancy rate –
+ADR (average daily rate) –
+RevPAR (revenue per available room) –
+
+Calculated in your browser; your numbers are never sent anywhere.
+
+## The formulas
+
+## Occupancy rate
+Room nights sold ÷ available room nights × 100
+The share of your rooms that were occupied. Available room nights = rooms × days.
+
+## ADR (average daily rate)
+Room revenue ÷ room nights sold
+The average price of one room night sold. It ignores empty rooms.
+
+## RevPAR (revenue per available room)
+Room revenue ÷ available room nights = ADR × occupancy rate
+Combines price and occupancy in one number, so it also shows the cost of empty rooms.
+
+## A worked example
+A 12-room boutique hotel sold 285 room nights in a 31-day month and earned $39,900 in room revenue:
+
+- Available room nights: 12 × 31 = 372
+- Occupancy rate: 285 ÷ 372 = 76.6%
+- ADR: $39,900 ÷ 285 = $140
+- RevPAR: $39,900 ÷ 372 = $107.26 (or $140 × 76.6%) The calculator's default values are this example; replace them with your own numbers.
+
+## What each number tells you
+
+## High occupancy, low RevPAR
+You may be selling rooms too cheaply. Raising rates a little on busy dates can lift RevPAR without losing much occupancy.
+
+## High ADR, low occupancy
+Your rate may be above demand, or your distribution may be thin. Appearing on more channels and reviewing minimum-stay rules can help.
+
+## Comparing RevPAR
+Compare the same period last year, or properties of a similar size. For hotels with different room counts RevPAR is fairer than total revenue.
+
+## Common mistakes
+
+- Adding breakfast, transfer and tour income to room revenue (it inflates ADR and RevPAR).
+- Removing out-of-order rooms from available rooms one month but not the next. Pick one method and keep it.
+- Counting complimentary rooms as sold with no revenue, which drags ADR down.
+- Mixing gross and net revenue for commission-based channels. For channel profitability use the OTA commission calculator .
+
+## In Hostlio Pro these numbers come in by themselves
+The Analytics screen in the Hostlio Pro dashboard calculates occupancy, ADR and RevPAR from your reservations, compares them with the previous period and last year, and shows gross revenue, commission and net revenue per channel. You can export reports to Excel. See all features or compare plans (from $49 a month).
+
+Q: How do you calculate RevPAR?
+A: Divide room revenue for the period by available room nights. You get the same result by multiplying ADR by the occupancy rate: a $140 ADR at 76.6% occupancy is about $107 RevPAR.
+
+Q: What is the difference between ADR and RevPAR?
+A: ADR is the average price of the rooms you sold; RevPAR also counts the rooms you didn't sell. That's why RevPAR shows price and occupancy performance in one number.
+
+Q: How do you calculate hotel occupancy rate?
+A: Divide room nights sold by available room nights (rooms × days) and multiply by 100. A 20-room hotel that sold 450 room nights in 30 days has 450 ÷ 600 = 75% occupancy.
+
+Q: Should breakfast be included in room revenue?
+A: Separating breakfast included in a package rate is often impractical; what matters is using the same method every period. Extras sold separately (transfers, tours, paid breakfast) are not room revenue.
+
+Q: Are the numbers I enter saved?
+A: No. The calculation runs entirely in your browser; nothing is sent to a server.
+
+---
+# OTA Commission Calculator: Net Revenue per Booking | Hostlio Pro
+URL: https://hostliopro.com/en/tools/ota-commission-calculator/
+
+## OTA commission → net revenue calculator
+Enter the booking amount, the commission rate in your contract and any payment or other fees. Commission, the net revenue you keep and net revenue per night update instantly.
+
+Currency USD EUR GBP TRY BRL Booking amount (gross) Commission rate % Check the rate in your channel contract or on the invoice in the extranet. The default values are only an example. Payment and other fees % Nights (optional)
+Commission –
+Other fees –
+Net revenue –
+Share you keep –
+Net per night –
+Calculated in your browser; your numbers are never sent anywhere.
+
+## How it's calculated
+
+- Commission = gross amount × commission rate
+- Other fees = gross amount × fee rate (e.g. virtual card or payment processing fees)
+- Net revenue = gross amount − commission − other fees
+- Net per night = net revenue ÷ nights
+
+## Example
+A 3-night booking worth $1,200 with 18% commission and a 1.5% payment fee: commission $216, other fees $18, net revenue $966, net per night $322. Of the $400 the guest pays per night, you keep $322.
+Some channels charge commission on the amount including taxes, others on the amount excluding taxes. Enter the gross amount on the basis your contract uses. This page is not tax advice.
+
+## Compare with a direct booking
+When the same room is sold direct (phone, WhatsApp, your website) there is no commission. If you keep 80.5%, as in the example, you could offer up to 19.5% off on a direct booking and still not earn less than from the OTA sale. Remember direct sales have their own costs (payment processing, advertising).
+
+The Analytics screen in Hostlio Pro shows gross revenue, commission and net revenue side by side for every channel, so you can see which one really pays after commission. The channel manager keeps 100+ OTAs on one calendar, and Lio answers WhatsApp questions so you can take direct booking requests. Plans start at $49 a month.
+
+RevPAR, ADR and occupancy calculator · AI messaging ROI calculator
+
+Q: How do you calculate OTA commission?
+A: Multiply the booking amount by the rate in your contract: $1,200 × 18% = $216. For net revenue, subtract that and any payment fees from the gross amount.
+
+Q: Is commission charged on the amount including taxes?
+A: It depends on the channel and country. Your contract and the channel's monthly invoice state which amount is used; enter that amount in the calculator.
+
+Q: What is net ADR?
+A: The average revenue left per room night sold after commission and fees. When comparing channels, net ADR gives a truer picture than gross ADR.
+
+Q: Are my numbers saved?
+A: No. The calculation runs in your browser and nothing is sent anywhere.
+
+---
+# Hotel Software Comparisons & Alternatives | Hostlio Pro
+URL: https://hostliopro.com/en/compare/
+
+## Hotel software comparisons
+Every comparison uses only what each company publishes on its own official pages, and is dated. We also say when the other product is the better fit.
+
+- Hostlio Pro vs HotelRunner: flat monthly fee or a share of revenue? Hostlio Pro vs HotelRunner: a flat monthly fee vs a percentage of booking revenue, AI guest messaging, WhatsApp and which one fits your property.
+
+- Hostlio Pro vs Cloudbeds: published price vs quote, AI messaging Hostlio Pro vs Cloudbeds compared: published flat pricing vs quote-based plans, AI guest messaging and WhatsApp, and when each one is the better fit.
+
+- Cloudbeds alternatives for small hotels, with published prices Cloudbeds alternatives for small and independent hotels: pricing models and published starting prices from official pages, plus how to choose. Checked Oct 2026.
+
+- Amenitiz alternative: published pricing and AI messaging on WhatsApp Looking for an Amenitiz alternative? Compare quote-based Amenitiz with Hostlio Pro's published pricing, AI guest messaging on WhatsApp and when each fits.
+
+- HiJiffy alternative: AI guest messaging with the PMS included HiJiffy alternative for small hotels: compare HiJiffy's guest-messaging plans with Hostlio Pro, where PMS, channel manager and WhatsApp AI come in one price.
+
+- Overview: Hostlio Pro, Cloudbeds, Mews, Little Hotelier and HotelRunner
+Free hotel calculators
+
+---
+# Hostlio Pro vs HotelRunner (2026): Pricing, AI | Hostlio Pro
+URL: https://hostliopro.com/en/compare/hostlio-vs-hotelrunner/
+
+## Hostlio Pro vs HotelRunner
+Both are cloud software for independent properties. The biggest difference is how you pay: Hostlio Pro charges a flat monthly fee, while HotelRunner's Essential plans charge a percentage of booking revenue with a monthly minimum. This comparison is based on what each company publishes.
+Try it free for 7 days See plans
+
+Short answer: choose Hostlio Pro if you want a fixed monthly price that doesn't grow with revenue and an AI assistant that answers guests on WhatsApp on every plan. HotelRunner may fit better if you need a booking engine and website, online payment collection or travel-agency (B2B) distribution in the same platform, or run a large property with many users.
+
+Hostlio Pro vs HotelRunner, As of October 2026 As of October 2026 Hostlio Pro HotelRunner
+Pricing model Flat monthly fee: Starter $49, Pro $89, Growth $149 (USD, early-bird); 20% off with annual billing Essential plans: a percentage of monthly realized booking revenue from all channels, with a monthly minimum
+Published prices Yes, on the pricing page Essential Manage 0.75% a month (min. $19.95), Sell 1.25% (min. $29.95), Complete 1% (min. $39.95). Advanced and Elite: talk to sales
+Per-booking fees No per-booking fee or revenue percentage from Hostlio Revenue percentage on Essential plans (above)
+Channel manager All plans, certified connections to 100+ OTAs On Sell and Complete; "150+ channels"
+Booking engine and website Not included; Hostlio Pro focuses on PMS, channel manager and AI messaging On Sell and Complete
+AI guest messaging Lio AI assistant on WhatsApp on every plan; Booking.com, Airbnb and Expedia inboxes too on Pro and Growth Conversation manager, AI assistant and AI translation are listed under Guest Relationship Management in the Advanced plans (priced by sales)
+WhatsApp guest messaging All plans (Lio) Not stated on the pricing and product pages we checked
+Rooms and users Rooms: Starter 10, Pro 50, Growth 150. Users: 3 / 8 / 20 Unlimited rooms and unlimited users on Essential plans
+Free trial 7 days (card at signup, no charge until the trial ends) "Start free trial" offered; length not stated on the pricing page
+Support English and Turkish Chat, email and phone support on all plans
+
+Competitor information comes only from each company's own official pages and was checked on October 8, 2026; prices and plans can change. Hostlio Pro is a party to this comparison. Where we couldn't verify something, we left it out. Spotted a mistake? Tell us and we'll fix it.
+
+## Which costs less? A worked example by revenue
+Under the formula in HotelRunner's pricing FAQ, the Essential Sell fee is 1.25% of monthly realized booking revenue from all channels, with $29.95 as the minimum. Hostlio Pro's plan price is fixed whatever your revenue. The numbers below are our own calculation; they exclude OTA commissions and taxes, and the two products don't cover exactly the same features.
+Monthly booking revenue HotelRunner Essential Sell (1.25%, min. $29.95) Hostlio Pro
+$2,000 $29.95 $89
+$5,000 $62.50 $89
+$10,000 $125 $89
+$20,000 $250 $89
+
+By this formula, below roughly $7,120 of monthly booking revenue the Essential Sell fee is lower than Hostlio Pro's; above it, higher. For Starter the threshold is about $3,920.
+
+## Where Hostlio Pro fits
+
+## A budget that doesn't grow with the season
+Your Hostlio Pro fee stays the same in high season. The channel manager, room rack and AI assistant come in one package.
+
+## An AI assistant on WhatsApp on every plan
+Lio answers guest questions with your hotel's information in the guest's language and leaves decisions such as discounts or complaints to you. On Pro and Growth, OTA inboxes are connected too, and Lio collects booking requests on WhatsApp that become reservations once you approve them.
+
+## Daily suggestions and clear numbers
+Lio Suggestions bring pricing and operations ideas every morning; nothing changes without your approval. Analytics shows occupancy, ADR, RevPAR and gross, commission and net revenue per channel.
+
+## An easy move
+Import your existing reservations from a CSV or Excel file; the setup wizard flags anything missing.
+
+## When HotelRunner is a better fit
+
+## You need a booking engine and website
+HotelRunner's Sell plan includes a booking engine, website, central reservation system and metasearch next to the channel manager. Hostlio Pro doesn't offer these.
+
+## You want to collect payments in the platform
+HotelRunner lists online payment processing and payment links. Hostlio Pro doesn't collect payments.
+
+## Large teams and many rooms
+Essential plans have no room or user limit; Hostlio Pro's Growth plan stops at 150 rooms and 20 users.
+
+## Travel-agency (B2B) sales matter to you
+HotelRunner offers B2B tools such as agency networking and contracting.
+
+## Your booking revenue is low
+For a small property earning under roughly $3,920 a month, a percentage-based plan can cost less.
+
+## How switching to Hostlio Pro works
+
+- Start the 7-day trial and add your room types and rates.
+- Import your existing reservations from CSV or Excel (with column mapping and duplicate checks).
+- Connect your channels to Hostlio Pro. Plan the cut-over time with your old channel manager so availability is updated from one system only.
+- Fill in Lio's hotel information and use "Try Lio" to test a few guest questions.
+
+Try it free for 7 days See plans
+
+## Sources
+
+- HotelRunner: Pricing (Checked on October 8, 2026)
+- HotelRunner: Fiyatlandırma (Checked on October 8, 2026)
+- HotelRunner: Channel manager (Checked on October 8, 2026)
+
+## More comparisons
+
+- Hostlio Pro vs Cloudbeds: published price vs quote, AI messaging
+- Cloudbeds alternatives for small hotels, with published prices
+- Amenitiz alternative: published pricing and AI messaging on WhatsApp
+- HiJiffy alternative: AI guest messaging with the PMS included
+- Overview: Hostlio Pro, Cloudbeds, Mews, Little Hotelier and HotelRunner All comparisons · Free hotel calculators
+
+Q: Is HotelRunner commission-based?
+A: According to HotelRunner's pricing page, Essential plans charge a percentage (0.75%–1.25%) of monthly realized booking revenue from all channels, and each plan has a monthly minimum ($19.95–$39.95). Advanced and Elite plans are priced by the sales team.
+
+Q: Does Hostlio Pro charge a commission?
+A: No. Hostlio Pro is a flat monthly fee with no per-booking fee or revenue percentage. OTAs charge their own commission either way.
+
+Q: Which one is cheaper?
+A: It depends on your revenue. By HotelRunner's published formula, the Essential Sell fee equals Hostlio Pro's monthly price ($89) at about $7,120 of monthly booking revenue; above that HotelRunner costs more, below it Hostlio Pro does. The products differ in scope, so don't compare on price alone.
+
+Q: Can I move my reservations from HotelRunner?
+A: Yes. Export your reservations as a CSV or Excel file and import them into Hostlio Pro; the import supports column mapping, date-format selection and duplicate checks.
+
+---
+# Hostlio Pro vs Cloudbeds (2026): Pricing, AI, Fit | Hostlio Pro
+URL: https://hostliopro.com/en/compare/hostlio-vs-cloudbeds/
+
+## Hostlio Pro vs Cloudbeds
+Cloudbeds is a broad hospitality platform for properties of every size; Hostlio Pro is a focused PMS, channel manager and AI guest assistant for independent properties of roughly 1–150 rooms. Here is how they compare, using only what each company publishes.
+Try it free for 7 days See plans
+
+Short answer: Hostlio Pro fits small and mid-sized independent properties that want to see the price before a sales call and have an AI assistant on WhatsApp in every plan. Cloudbeds fits properties that need a booking engine, integrated payments, a large integration marketplace or multi-property scale, and are happy to get a quote.
+
+Hostlio Pro vs Cloudbeds, As of October 2026 As of October 2026 Hostlio Pro Cloudbeds
+Pricing Flat monthly fee: Starter $49, Pro $89, Growth $149 (USD, early-bird); 20% off with annual billing Quote-based: Flex, One, Experience and Enterprise plans all show "Request a quote"
+Booking fees No per-booking fee or revenue percentage from Hostlio States it doesn't charge added commission on reservations made through its Booking Engine or Channel Manager; metasearch commissions apply after the stay
+Channel manager All plans, certified connections to 100+ OTAs In the One plan and above (Flex lets you bring your own channel manager)
+Booking engine and payments Not included; Hostlio Pro focuses on PMS, channel manager and AI messaging Booking Engine in One and above; Payments included with all plans
+AI guest messaging and WhatsApp Lio AI assistant on WhatsApp on every plan; Booking.com, Airbnb and Expedia inboxes too on Pro and Growth AI chatbot and a unified inbox covering WhatsApp, SMS, email and OTA messages; on the pricing page Guest Experience is listed in the Experience plan
+Integrations Channel connections through Channex; Booking.com, Airbnb and Expedia inboxes "400+ integration partners" (pricing page)
+Free trial 7 days (card at signup, no charge until the trial ends) Not mentioned on the pricing page; demo offered
+Onboarding and support Setup wizard, CSV/Excel import; support in English and Turkish Self-serve or with an onboarding coach; 24/7 support
+
+Competitor information comes only from each company's own official pages and was checked on October 8, 2026; prices and plans can change. Hostlio Pro is a party to this comparison. Where we couldn't verify something, we left it out. Spotted a mistake? Tell us and we'll fix it.
+
+## Where Hostlio Pro fits
+
+## You see the price up front
+Plans start at $49 a month and are listed on the pricing page; you can start a 7-day trial without a sales call.
+
+## AI in every plan
+Lio answers guests on WhatsApp on every plan, with your hotel's information and in the guest's language. Pro and Growth add Booking.com, Airbnb and Expedia inboxes and booking requests that you approve.
+
+## Built for 1–150 rooms
+One calendar, a channel manager, online check-in (Pro and Growth), analytics with occupancy, ADR and RevPAR, and staff roles, without modules to assemble.
+
+## Easy to switch
+Import reservations from CSV or Excel; the setup wizard shows what's missing before you go live.
+
+## When Cloudbeds is a better fit
+
+## You need a booking engine and payments
+Cloudbeds includes a Booking Engine (One and above) and Payments. Hostlio Pro offers neither a booking engine nor payment collection.
+
+## You rely on many third-party tools
+Cloudbeds lists 400+ integration partners in its marketplace.
+
+## You run a large portfolio
+Cloudbeds says it serves businesses of every size up to enterprise portfolios; Hostlio Pro's largest plan covers 2 properties and 150 rooms.
+
+## You want round-the-clock support
+Cloudbeds offers 24/7 support after onboarding. Hostlio Pro support is in English and Turkish, typically within 24 hours on business days.
+
+## How switching to Hostlio Pro works
+
+- Start the 7-day trial and add your room types and rates.
+- Export your reservations from Cloudbeds and import them as CSV or Excel.
+- Connect your OTAs to Hostlio Pro; plan the cut-over so availability is sent from one system only.
+- Fill in Lio's hotel information and test it with "Try Lio".
+
+Try it free for 7 days See plans
+
+## Sources
+
+- Cloudbeds: Pricing (Checked on October 8, 2026)
+- Cloudbeds: Home (Checked on October 8, 2026)
+- Cloudbeds: Guest engagement (Checked on October 8, 2026)
+
+## More comparisons
+
+- Hostlio Pro vs HotelRunner: flat monthly fee or a share of revenue?
+- Cloudbeds alternatives for small hotels, with published prices
+- Amenitiz alternative: published pricing and AI messaging on WhatsApp
+- HiJiffy alternative: AI guest messaging with the PMS included
+- Overview: Hostlio Pro, Cloudbeds, Mews, Little Hotelier and HotelRunner All comparisons · Free hotel calculators
+
+Q: How much does Cloudbeds cost?
+A: Cloudbeds doesn't publish prices. Its pricing page lists four plans (Flex, One, Experience, Enterprise), each with "Request a quote".
+
+Q: Does Cloudbeds include WhatsApp messaging?
+A: Cloudbeds' site describes a unified inbox that includes WhatsApp and an AI chatbot that can work via WhatsApp or SMS. On the pricing page, Guest Experience is listed in the Experience plan.
+
+Q: Is Hostlio Pro a full Cloudbeds replacement?
+A: For the PMS, channel manager and guest messaging, yes for many small properties. If you need a booking engine, payment processing or a large integration marketplace, Cloudbeds covers more.
+
+Q: How long does switching take?
+A: The account is ready in minutes and channels are usually connected the same day. Reservations can be imported from a CSV or Excel file.
+
+---
+# Cloudbeds Alternatives for Small Hotels (2026) | Hostlio Pro
+URL: https://hostliopro.com/en/compare/cloudbeds-alternatives/
+
+## Cloudbeds alternatives for small hotels
+Cloudbeds publishes no prices and asks for a quote. If you'd rather compare published prices first, here are alternatives whose pricing we could verify on their own websites, including Hostlio Pro (our product).
+Try it free for 7 days See plans
+
+Short answer: for a small independent property, the main questions are how you pay (flat fee, per room or a share of revenue), whether the channel manager is included, and whether guest messaging is part of the plan. Hostlio Pro, Sirvoy and Beds24 publish flat or usage-based prices; HotelRunner charges a share of booking revenue; Amenitiz, like Cloudbeds, gives quotes.
+
+## As of October 2026
+Cloudbeds alternatives for small hotels, As of October 2026 Software Pricing model Published starting price Free trial (as stated) Often a good fit for Source
+Hostlio Pro Flat monthly fee $49/month (Starter, early-bird) 7 days Independent properties of 1–150 rooms that want an AI assistant on WhatsApp included Hostlio Pro
+HotelRunner % of booking revenue with a monthly minimum (Essential) 0.75% a month, min. $19.95 (Essential Manage) Offered; length not stated Properties that want a booking engine, website and payments in one platform HotelRunner
+Amenitiz Quote based on number of rooms Not published Not offered; free demo Independent hotels and B&Bs in Europe wanting an all-in-one system with website builder Amenitiz
+Sirvoy Flat monthly fee by room tier Up to 10 rooms: €22 (Starter) or €79 (Pro, with channel manager) a month, monthly billing 14 days Small hotels and B&Bs wanting a simple, published price Sirvoy
+Beds24 Pay as you go: base + per room + per channel link From €15.50/month Free trial available Budget-minded properties comfortable configuring a flexible system Beds24
+eviivo From-price plus a per-booking fee From $50/month (single property, excl. taxes) + $0.50 per confirmed booking 14 days (single property) Small accommodation businesses wanting an all-in-one system eviivo
+
+Competitor information comes only from each company's own official pages and was checked on October 8, 2026; prices and plans can change. Hostlio Pro is a party to this comparison. Where we couldn't verify something, we left it out. Spotted a mistake? Tell us and we'll fix it.
+
+## What Cloudbeds offers, in its own words
+
+- Four plans, Flex, One, Experience and Enterprise, all priced by quote.
+- No added commission on reservations made through its Booking Engine or Channel Manager.
+- Guest messaging with an AI chatbot and a unified inbox that includes WhatsApp, listed under Guest Experience in the Experience plan.
+- "400+ integration partners", onboarding self-serve or with a coach, and 24/7 support.
+
+## Why small properties compare alternatives
+
+- They want to see a price before booking a sales demo.
+- They run 1–50 rooms and need fewer modules.
+- They want guest messaging included rather than in a higher plan.
+
+## How to choose
+
+- Write down your monthly booking revenue and room count, then work out the yearly cost under each pricing model.
+- Check that the channel manager covers the OTAs you sell on.
+- Decide whether you need a booking engine and payment collection in the same tool.
+- Ask how guest messages from WhatsApp and OTA inboxes are handled, and in which plan.
+- Use the free trial with your real rooms and rates before switching.
+
+Try it free for 7 days See plans
+
+## Sources
+
+- Cloudbeds: Pricing (Checked on October 8, 2026)
+- Cloudbeds: Guest engagement (Checked on October 8, 2026)
+- HotelRunner: Pricing (Checked on October 8, 2026)
+- Amenitiz: Pricing (Checked on October 8, 2026)
+- Sirvoy: Pricing (Checked on October 8, 2026)
+- Beds24: Pricing (Checked on October 8, 2026)
+- eviivo: Pricing (Checked on October 8, 2026)
+
+## More comparisons
+
+- Hostlio Pro vs HotelRunner: flat monthly fee or a share of revenue?
+- Hostlio Pro vs Cloudbeds: published price vs quote, AI messaging
+- Amenitiz alternative: published pricing and AI messaging on WhatsApp
+- HiJiffy alternative: AI guest messaging with the PMS included
+- Overview: Hostlio Pro, Cloudbeds, Mews, Little Hotelier and HotelRunner All comparisons · Free hotel calculators
+
+Q: Is there a cheaper alternative to Cloudbeds?
+A: Cloudbeds doesn't publish prices, so a direct comparison needs a quote. Among alternatives with published prices, Beds24 starts from €15.50 a month, Sirvoy from €22 a month for up to 10 rooms (Starter), and Hostlio Pro from $49 a month.
+
+Q: Which Cloudbeds alternative includes AI guest messaging?
+A: Hostlio Pro includes its AI assistant Lio on WhatsApp in every plan, and adds Booking.com, Airbnb and Expedia inboxes on Pro and Growth. For other products, check the plan details on their websites.
+
+Q: Can I move my data from Cloudbeds?
+A: Most systems let you export reservations. Hostlio Pro imports reservations from CSV or Excel files with column mapping and duplicate checks.
+
+---
+# Amenitiz Alternative: Hostlio Pro Compared (2026) | Hostlio Pro
+URL: https://hostliopro.com/en/compare/amenitiz-alternative/
+
+## An Amenitiz alternative with published pricing
+Amenitiz is an all-in-one system for independent hotels and B&Bs in Europe, priced by quote. Hostlio Pro is a PMS, channel manager and AI guest assistant with prices on its website. Here is an honest side-by-side, based on each company's own pages.
+Try it free for 7 days See plans
+
+Short answer: Hostlio Pro suits properties that want to see the price up front and have an AI assistant answering on WhatsApp in every plan. Amenitiz suits properties that want a website builder, booking engine and integrated payments in one subscription, with support in their own language.
+
+An Amenitiz alternative with published pricing, As of October 2026 As of October 2026 Hostlio Pro Amenitiz
+Pricing Flat monthly fee: Starter $49, Pro $89, Growth $149 (USD, early-bird); 20% off with annual billing Not published: personalised quote based on number of rooms; monthly or annual (extra discount)
+Booking fees No per-booking fee or revenue percentage from Hostlio No commission on direct bookings and no per-reservation fees; AmenitizPay transactions 1.5% + €0.25
+Channel manager All plans, certified connections to 100+ OTAs Core plan: channel manager with unlimited OTA connections ("150+ OTAs")
+Website, booking engine and payments Not included; Hostlio Pro focuses on PMS, channel manager and AI messaging Booking engine and AmenitizPay in Core; website builder as Presence/Ultimate+ or the Advanced Website add-on
+Guest messaging and WhatsApp Lio AI assistant on WhatsApp on every plan; Booking.com, Airbnb and Expedia inboxes too on Pro and Growth Core: automated guest emails and a unified guest inbox. "Guest messaging + WhatsApp" is in Advanced (labelled "live in June" on the pricing page)
+Free trial 7 days (card at signup, no charge until the trial ends) Not offered; free demo, and "Live in 30 days or your first month is on us"
+Support languages English and Turkish (dashboard in 6 languages) English, French, Italian, Spanish or Portuguese on every plan
+
+Competitor information comes only from each company's own official pages and was checked on October 8, 2026; prices and plans can change. Hostlio Pro is a party to this comparison. Where we couldn't verify something, we left it out. Spotted a mistake? Tell us and we'll fix it.
+
+## Where Hostlio Pro fits
+
+## Price before the demo
+Plans and prices are on the pricing page, from $49 a month, with a 7-day trial.
+
+## WhatsApp AI from the first plan
+Lio answers guests on WhatsApp on every plan, with your hotel's information and in the guest's language; Pro and Growth add Booking.com, Airbnb and Expedia inboxes.
+
+## Daily suggestions
+Every morning Lio suggests pricing and operations actions; nothing changes without your approval.
+
+## Numbers per channel
+Analytics shows occupancy, ADR, RevPAR and what each channel leaves you after commission.
+
+## When Amenitiz is a better fit
+
+## You want a website and booking engine in the same subscription
+Amenitiz includes a booking engine and offers website building; Hostlio Pro doesn't.
+
+## You want to take payments
+AmenitizPay is integrated; Hostlio Pro doesn't collect payments.
+
+## You want support in French, Italian, Spanish or Portuguese
+Amenitiz offers native-language support on every plan; Hostlio Pro support is in English and Turkish.
+
+## You want a dedicated account manager
+Amenitiz lists a dedicated account manager in its Advanced plan.
+
+## Other alternatives with published prices
+
+- Sirvoy : Flat monthly fee by room tier, e.g. up to 10 rooms €22 (Starter) or €79 (Pro, with channel manager), 14-day trial. (source)
+- Beds24 : Pay as you go from €15.50 a month: base fee, per room and per channel link. (source)
+
+## How switching to Hostlio Pro works
+
+- Start the 7-day trial and add your room types and rates.
+- Import your reservations from a CSV or Excel export.
+- Connect your OTAs and plan the cut-over so availability is sent from one system only.
+- Fill in Lio's hotel information and test it with "Try Lio".
+
+Try it free for 7 days See plans
+
+## Sources
+
+- Amenitiz: Pricing (Checked on October 8, 2026)
+- Amenitiz : Nos tarifs (Checked on October 8, 2026)
+- Amenitiz: Channel manager (Checked on October 8, 2026)
+
+## More comparisons
+
+- Hostlio Pro vs HotelRunner: flat monthly fee or a share of revenue?
+- Hostlio Pro vs Cloudbeds: published price vs quote, AI messaging
+- Cloudbeds alternatives for small hotels, with published prices
+- HiJiffy alternative: AI guest messaging with the PMS included
+- Overview: Hostlio Pro, Cloudbeds, Mews, Little Hotelier and HotelRunner All comparisons · Free hotel calculators
+
+Q: How much does Amenitiz cost?
+A: Amenitiz doesn't publish prices. Its pricing page offers a personalised quote based on the number of rooms, with monthly or annual billing.
+
+Q: Does Amenitiz include WhatsApp?
+A: On Amenitiz's pricing page, "Guest messaging + WhatsApp" is listed in the Advanced plan, not in Core, and is labelled "live in June".
+
+Q: Is Hostlio Pro available in French, Spanish, Italian and Portuguese?
+A: The dashboard, mobile app and guest check-in form are available in English, Turkish, Spanish, French, Italian and Portuguese. Support is in English and Turkish.
+
+---
+# HiJiffy Alternative: AI Messaging with PMS Included | Hostlio Pro
+URL: https://hostliopro.com/en/compare/hijiffy-alternative/
+
+## A HiJiffy alternative with the PMS included
+HiJiffy is a guest-communication and AI layer that works on top of your existing PMS. Hostlio Pro is the PMS and channel manager itself, with an AI guest assistant built in. They solve overlapping problems in different ways, so the right choice depends on what you already use.
+Try it free for 7 days See plans
+
+Short answer: if you're happy with your PMS and want a messaging layer across website chat, social channels and WhatsApp, HiJiffy is built for that. If you're a small independent property that wants the PMS, channel manager and an AI assistant on WhatsApp in one subscription, Hostlio Pro covers all three, with WhatsApp on every plan.
+
+A HiJiffy alternative with the PMS included, As of October 2026 As of October 2026 Hostlio Pro HiJiffy
+What it is PMS + channel manager + AI guest assistant (Lio) A guest-communication and AI layer that integrates with PMSs, booking engines and CRMs
+Pricing Flat monthly fee: Starter $49, Pro $89, Growth $149 (USD, early-bird); 20% off with annual billing Per property, "starting at" by room count: Basic €99, Pro €159, Premium €319 a month with yearly billing (€105 / €170 / €350 monthly), plus a setup fee of €99 / €399 / €599 for each 5 properties; Enterprise by quote
+WhatsApp All plans (Lio) From the Premium plan; Pro covers website, Facebook, Instagram and Telegram
+OTA messaging Booking.com, Airbnb and Expedia inboxes on Pro and Growth Its site says it centralises OTA native messaging including Booking.com, Expedia and Airbnb
+PMS and channel manager All plans, certified connections to 100+ OTAs Not a PMS or channel manager; PMS integration from Premium
+Free trial 7 days (card at signup, no charge until the trial ends) Not mentioned; subscribe or book a demo
+
+Competitor information comes only from each company's own official pages and was checked on October 8, 2026; prices and plans can change. Hostlio Pro is a party to this comparison. Where we couldn't verify something, we left it out. Spotted a mistake? Tell us and we'll fix it.
+
+## Where Hostlio Pro fits
+
+## One subscription instead of two
+Reservations, the room rack, the channel manager and Lio sit in one product, so Lio answers with live availability and your own rates.
+
+## WhatsApp on every plan
+Lio answers on WhatsApp from Starter ($49 a month), in the guest's language; it hands decisions to you.
+
+## Booking requests you approve
+On Pro and Growth, Lio collects dates, guests and room preference on WhatsApp and quotes from your rates; the request becomes a reservation once you approve it.
+
+## Online check-in
+Pro and Growth include online check-in with ID/passport MRZ reading and a digital signature.
+
+## When HiJiffy is a better fit
+
+## You want to keep your current PMS
+HiJiffy is designed to sit on top of existing hotel systems. Hostlio Pro replaces the PMS and channel manager.
+
+## You need website chat and social channels
+HiJiffy covers website chat, Facebook, Instagram and Telegram. Hostlio Pro's Lio works on WhatsApp and OTA inboxes.
+
+## You run a large hotel or a group
+HiJiffy offers Enterprise plans with custom integrations and Power BI; Hostlio Pro's largest plan covers 2 properties and 150 rooms.
+
+## How switching to Hostlio Pro works
+
+- Start the 7-day trial and add your room types and rates.
+- Import your reservations from a CSV or Excel export of your current PMS.
+- Connect your OTAs and your WhatsApp number.
+- Fill in Lio's hotel information and test it with "Try Lio".
+
+Try it free for 7 days See plans
+
+## Sources
+
+- HiJiffy: Plans and pricing (Checked on October 8, 2026)
+- HiJiffy: Home (Checked on October 8, 2026)
+
+## More comparisons
+
+- Hostlio Pro vs HotelRunner: flat monthly fee or a share of revenue?
+- Hostlio Pro vs Cloudbeds: published price vs quote, AI messaging
+- Cloudbeds alternatives for small hotels, with published prices
+- Amenitiz alternative: published pricing and AI messaging on WhatsApp
+- Overview: Hostlio Pro, Cloudbeds, Mews, Little Hotelier and HotelRunner All comparisons · Free hotel calculators
+
+Q: How much does HiJiffy cost?
+A: HiJiffy's pricing page lists per-property "starting at" prices that depend on room count: Basic €99, Pro €159 and Premium €319 a month with yearly billing, or €105, €170 and €350 billed monthly, plus a setup fee. Enterprise is by quote.
+
+Q: Which HiJiffy plan includes WhatsApp?
+A: According to HiJiffy's pricing page, WhatsApp is part of the Premium plan; the Pro plan's channels are website, Facebook, Instagram and Telegram.
+
+Q: Is Hostlio Pro only a chatbot?
+A: No. Hostlio Pro is a PMS and channel manager with an AI assistant built in, so it also handles reservations, availability on 100+ OTAs and online check-in.
+
+---
 # Hostlio Pro | Software de gestión hotelera con IA
 URL: https://hostliopro.com/es/
 
@@ -6515,6 +7739,302 @@ Prueba Hostlio Pro gratis 7 días
 Solo son estimaciones, basadas en tus datos y en meses de 30 días. El resultado depende de tus huéspedes, tu configuración y los temas que dejes responder a Lio automáticamente. Los precios son mensuales de lanzamiento en USD.
 
 ---
+# Calculadoras gratis para hoteles: RevPAR y comisión | Hostlio Pro
+URL: https://hostliopro.com/es/herramientas/
+
+## Calculadoras gratuitas para hoteleros
+Herramientas sencillas que funcionan en tu navegador, sin registro. Los números que introduces no se envían a ningún sitio.
+
+- Calculadora de RevPAR, ADR y ocupación Calcula los tres indicadores clave del hotel a partir de habitaciones, noches vendidas e ingresos por habitaciones, con las fórmulas.
+
+- Comisión OTA → ingreso neto ¿Cuánto te queda realmente de una reserva de Booking.com o Expedia después de la comisión y otros cargos?
+
+- Calculadora de ROI de mensajería IA Estima las horas y el coste de personal que hoy te lleva responder a los huéspedes.
+Los cálculos se hacen solo en tu navegador; los datos no se guardan ni se envían a ningún servidor.
+
+---
+# Calculadora de RevPAR, ADR y ocupación hotelera | Hostlio Pro
+URL: https://hostliopro.com/es/herramientas/calculadora-revpar-adr-ocupacion/
+
+## Calculadora de RevPAR, ADR y ocupación
+Introduce tus habitaciones, las noches de habitación vendidas y los ingresos por habitaciones del periodo. La ocupación, la tarifa media diaria (ADR) y el ingreso por habitación disponible (RevPAR) se calculan al instante.
+
+Moneda USD EUR GBP TRY BRL Habitaciones a la venta Días del periodo Noches de habitación vendidas Cada habitación ocupada cuenta una vez por noche. Un huésped que se queda 3 noches = 3 noches de habitación. Ingresos por habitaciones del periodo Solo ingresos por habitaciones; sin extras como traslados, excursiones e impuestos (elijas lo que elijas, sé coherente).
+Noches de habitación disponibles –
+Porcentaje de ocupación –
+ADR (tarifa media diaria) –
+RevPAR (ingreso por habitación disponible) –
+
+Se calcula en tu navegador; tus datos no se envían a ningún sitio.
+
+## Las fórmulas
+
+## Porcentaje de ocupación
+Noches vendidas ÷ noches disponibles × 100
+Qué parte de tus habitaciones estuvo ocupada. Noches disponibles = habitaciones × días.
+
+## ADR (Average Daily Rate)
+Ingresos por habitaciones ÷ noches vendidas
+El precio medio de una noche de habitación vendida. No tiene en cuenta las habitaciones vacías.
+
+## RevPAR (Revenue per Available Room)
+Ingresos por habitaciones ÷ noches disponibles = ADR × ocupación
+Une precio y ocupación en un solo número, así que también muestra el coste de las habitaciones vacías.
+
+## Ejemplo paso a paso
+Un hotel boutique de 12 habitaciones vendió 285 noches de habitación en un mes de 31 días e ingresó 39.900 € por habitaciones:
+
+- Noches disponibles: 12 × 31 = 372
+- Ocupación: 285 ÷ 372 = 76,6 %
+- ADR: 39.900 € ÷ 285 = 140 €
+- RevPAR: 39.900 € ÷ 372 = 107,26 € (o 140 € × 76,6 %) Los valores por defecto de la calculadora son este ejemplo; sustitúyelos por los tuyos.
+
+## Qué te dice cada indicador
+
+## Ocupación alta, RevPAR bajo
+Puede que vendas demasiado barato. Subir un poco la tarifa en fechas de alta demanda puede mejorar el RevPAR sin perder mucha ocupación.
+
+## ADR alto, ocupación baja
+La tarifa puede estar por encima de la demanda o tu distribución puede ser escasa. Estar en más canales y revisar las estancias mínimas puede ayudar.
+
+## Al comparar el RevPAR
+Compáralo con el mismo periodo del año anterior o con alojamientos de tamaño parecido. Entre hoteles con distinto número de habitaciones, el RevPAR es más justo que los ingresos totales.
+
+## Errores frecuentes
+
+- Sumar desayunos, traslados y excursiones a los ingresos por habitaciones (infla ADR y RevPAR).
+- Restar las habitaciones fuera de servicio un mes sí y otro no. Elige un método y mantenlo.
+- Contar habitaciones de cortesía como vendidas sin ingresos, lo que hunde el ADR.
+- Mezclar ingresos brutos y netos de los canales con comisión. Para ver la rentabilidad por canal usa la calculadora de comisión OTA .
+
+## En Hostlio Pro estos números se calculan solos
+La pantalla de Análisis del panel de Hostlio Pro calcula la ocupación, el ADR y el RevPAR a partir de tus reservas, los compara con el periodo anterior y con el año pasado, y muestra ingresos brutos, comisión e ingresos netos por canal. Puedes exportar los informes a Excel. Ver todas las funcionalidades o comparar planes (desde 49 $ al mes).
+
+Q: ¿Cómo se calcula el RevPAR?
+A: Divide los ingresos por habitaciones del periodo entre las noches de habitación disponibles. El resultado es el mismo que multiplicar el ADR por la ocupación: 140 € de ADR con un 76,6 % de ocupación son unos 107 € de RevPAR.
+
+Q: ¿Qué diferencia hay entre ADR y RevPAR?
+A: El ADR es el precio medio de las habitaciones vendidas; el RevPAR también cuenta las que no se vendieron. Por eso el RevPAR resume precio y ocupación en un solo número.
+
+Q: ¿Cómo se calcula el porcentaje de ocupación hotelera?
+A: Divide las noches vendidas entre las noches disponibles (habitaciones × días) y multiplica por 100. Un hotel de 20 habitaciones que vendió 450 noches en 30 días tiene una ocupación de 450 ÷ 600 = 75 %.
+
+Q: ¿El desayuno cuenta como ingreso por habitación?
+A: Separar el desayuno incluido en una tarifa paquete suele ser poco práctico; lo importante es usar el mismo criterio en cada periodo. Los extras vendidos aparte (traslados, excursiones, desayuno de pago) no son ingresos por habitación.
+
+Q: ¿Se guardan los datos que introduzco?
+A: No. El cálculo se hace por completo en tu navegador; no se envía nada a ningún servidor.
+
+---
+# Calculadora de comisión OTA: ingreso neto | Hostlio Pro
+URL: https://hostliopro.com/es/herramientas/calculadora-comision-ota/
+
+## Comisión OTA → ingreso neto
+Introduce el importe de la reserva, la comisión de tu contrato y otros cargos si los hay. La comisión, el ingreso neto y el neto por noche se calculan al instante.
+
+Moneda USD EUR GBP TRY BRL Importe de la reserva (bruto) Porcentaje de comisión % Comprueba el porcentaje en tu contrato con el canal o en la factura de la extranet. Los valores por defecto son solo un ejemplo. Gastos de pago y otros % Noches (opcional)
+Comisión –
+Otros gastos –
+Ingreso neto –
+Parte que te queda –
+Neto por noche –
+Se calcula en tu navegador; tus datos no se envían a ningún sitio.
+
+## Cómo se calcula
+
+- Comisión = importe bruto × porcentaje de comisión
+- Otros gastos = importe bruto × porcentaje de gastos (p. ej. tarjeta virtual o pasarela de pago)
+- Ingreso neto = importe bruto − comisión − otros gastos
+- Neto por noche = ingreso neto ÷ noches
+
+## Ejemplo
+Una reserva de 3 noches de 1.200 € con un 18 % de comisión y un 1,5 % de gastos de pago: comisión 216 €, otros gastos 18 €, ingreso neto 966 €, neto por noche 322 €. De los 400 € que paga el huésped por noche, te quedan 322 €.
+Algunos canales calculan la comisión sobre el importe con impuestos y otros sin impuestos. Introduce el importe bruto según la base de tu contrato. Esta página no es asesoramiento fiscal.
+
+## Compárala con una reserva directa
+Si la misma habitación se vende de forma directa (teléfono, WhatsApp, tu web) no hay comisión. Si te queda el 80,5 %, como en el ejemplo, podrías ofrecer hasta un 19,5 % de descuento en directo sin ganar menos que con la OTA. Ten en cuenta los costes propios de la venta directa (pasarela de pago, publicidad).
+
+La pantalla de Análisis de Hostlio Pro muestra ingresos brutos, comisión e ingresos netos de cada canal, para que veas cuál es rentable de verdad tras la comisión. El channel manager reúne más de 100 OTAs en un calendario y Lio responde por WhatsApp para que recibas solicitudes de reserva directa. Los planes empiezan en 49 $ al mes.
+
+Calculadora de RevPAR, ADR y ocupación · Calculadora de ROI de mensajería IA
+
+Q: ¿Cómo se calcula la comisión de una OTA?
+A: Multiplica el importe de la reserva por el porcentaje de tu contrato: 1.200 € × 18 % = 216 €. Para el ingreso neto, resta ese importe y los gastos de pago del importe bruto.
+
+Q: ¿La comisión se calcula con impuestos incluidos?
+A: Depende del canal y del país. Tu contrato y la factura mensual del canal indican qué importe se usa; introduce ese importe en la calculadora.
+
+Q: ¿Qué es el ADR neto?
+A: El ingreso medio que queda por noche vendida después de comisiones y gastos. Para comparar canales, el ADR neto es más fiel que el bruto.
+
+Q: ¿Se guardan mis datos?
+A: No. El cálculo se hace en tu navegador y no se envía nada.
+
+---
+# Comparativas de software hotelero | Hostlio Pro
+URL: https://hostliopro.com/es/comparativas/
+
+## Comparativas de software hotelero
+Cada comparativa usa solo lo que cada empresa publica en sus páginas oficiales y lleva fecha. También explicamos cuándo encaja mejor el otro producto.
+
+- Hostlio Pro vs Cloudbeds: precio publicado o presupuesto, IA incluida Hostlio Pro frente a Cloudbeds: precio fijo publicado o planes con presupuesto, mensajería con IA y WhatsApp, y cuándo encaja mejor cada uno.
+
+- Alternativas a Cloudbeds para hoteles pequeños, con precios publicados Alternativas a Cloudbeds para hoteles pequeños e independientes: modelos de precio y precios de partida publicados en webs oficiales, y cómo elegir.
+
+- Visión general: Hostlio Pro, Cloudbeds, Mews, Little Hotelier y HotelRunner
+Calculadoras hoteleras gratis
+
+---
+# Hostlio Pro vs Cloudbeds (2026): precios e IA | Hostlio Pro
+URL: https://hostliopro.com/es/comparativas/hostlio-vs-cloudbeds/
+
+## Hostlio Pro vs Cloudbeds
+Cloudbeds es una plataforma hotelera amplia para alojamientos de cualquier tamaño; Hostlio Pro es un PMS, channel manager y asistente de IA centrado en alojamientos independientes de 1 a 150 habitaciones aproximadamente. Así se comparan, solo con lo que publica cada empresa.
+Pruébalo gratis 7 días Ver planes
+
+Respuesta corta: Hostlio Pro encaja con alojamientos independientes pequeños y medianos que quieren ver el precio antes de hablar con ventas y tener un asistente de IA en WhatsApp en todos los planes. Cloudbeds encaja con quien necesita motor de reservas, pagos integrados, un gran marketplace de integraciones o escala multipropiedad, y no le importa pedir presupuesto.
+
+Hostlio Pro vs Cloudbeds, A octubre de 2026 A octubre de 2026 Hostlio Pro Cloudbeds
+Precio Cuota mensual fija: Starter 49 $, Pro 89 $, Growth 149 $ (USD, precio de lanzamiento); 20 % de descuento en pago anual Con presupuesto: los planes Flex, One, Experience y Enterprise muestran "Request a quote"
+Comisiones Hostlio no cobra por reserva ni un porcentaje de ingresos Indica que no cobra comisión añadida por las reservas de su Booking Engine o Channel Manager; en metabuscadores cobra comisión tras la estancia
+Channel manager Todos los planes, conexiones certificadas con más de 100 OTAs En el plan One y superiores (en Flex puedes usar tu propio channel manager)
+Motor de reservas y pagos No incluido; Hostlio Pro se centra en PMS, channel manager y mensajería con IA Booking Engine en One y superiores; Payments incluido en todos los planes
+Mensajería con IA y WhatsApp El asistente IA Lio en WhatsApp en todos los planes; en Pro y Growth también las bandejas de Booking.com, Airbnb y Expedia Chatbot con IA y bandeja unificada con WhatsApp, SMS, email y mensajes de OTAs; en la página de precios Guest Experience figura en el plan Experience
+Integraciones Conexiones de canal mediante Channex; bandejas de Booking.com, Airbnb y Expedia "400+ integration partners" (página de precios)
+Prueba gratis 7 días (tarjeta al registrarse, sin cargo hasta que termina la prueba) No se menciona en la página de precios; ofrece demo
+Puesta en marcha y soporte Asistente de configuración e importación CSV/Excel; soporte en inglés y turco Autoservicio o con un coach de onboarding; soporte 24/7
+
+La información de la competencia procede solo de las páginas oficiales de cada empresa y se comprobó el 8 de octubre de 2026; los precios y planes pueden cambiar. Hostlio Pro es parte interesada en esta comparativa. Lo que no pudimos verificar, no lo incluimos. ¿Ves un error? Escríbenos y lo corregimos.
+
+## Dónde encaja Hostlio Pro
+
+## Ves el precio desde el principio
+Los planes empiezan en 49 $ al mes y están en la página de precios; puedes empezar una prueba de 7 días sin llamada comercial.
+
+## IA en todos los planes
+Lio responde a los huéspedes por WhatsApp en todos los planes, con la información de tu hotel y en su idioma. Pro y Growth añaden las bandejas de Booking.com, Airbnb y Expedia y solicitudes de reserva que tú apruebas.
+
+## Pensado para 1–150 habitaciones
+Un calendario, channel manager, check-in online (Pro y Growth), análisis con ocupación, ADR y RevPAR y roles de equipo, sin módulos que montar.
+
+## Cambio sencillo
+Importa reservas desde CSV o Excel; el asistente de configuración te muestra lo que falta antes de empezar.
+
+## Cuándo encaja mejor Cloudbeds
+
+## Necesitas motor de reservas y pagos
+Cloudbeds incluye Booking Engine (One y superiores) y Payments. Hostlio Pro no ofrece motor de reservas ni cobro de pagos.
+
+## Usas muchas herramientas de terceros
+Cloudbeds anuncia más de 400 socios de integración en su marketplace.
+
+## Gestionas una cartera grande
+Cloudbeds dice atender a negocios de cualquier tamaño, hasta carteras enterprise; el plan mayor de Hostlio Pro cubre 2 alojamientos y 150 habitaciones.
+
+## Quieres soporte 24/7 en tu idioma
+Cloudbeds ofrece soporte 24/7 tras el onboarding. El soporte de Hostlio Pro es en inglés y turco, aunque el panel está en español.
+
+## Cómo es el cambio a Hostlio Pro
+
+- Empieza la prueba de 7 días y añade tus tipos de habitación y tarifas.
+- Exporta tus reservas de Cloudbeds e impórtalas en CSV o Excel.
+- Conecta tus OTAs a Hostlio Pro y planifica el cambio para que la disponibilidad salga de un solo sistema.
+- Completa la información del hotel para Lio y pruébalo con "Probar Lio".
+
+Pruébalo gratis 7 días Ver planes
+
+## Fuentes
+
+- Cloudbeds: Pricing (Comprobado el 8 de octubre de 2026)
+- Cloudbeds: Home (Comprobado el 8 de octubre de 2026)
+- Cloudbeds: Guest engagement (Comprobado el 8 de octubre de 2026)
+
+## Más comparativas
+
+- Alternativas a Cloudbeds para hoteles pequeños, con precios publicados
+- Visión general: Hostlio Pro, Cloudbeds, Mews, Little Hotelier y HotelRunner Todas las comparativas · Calculadoras hoteleras gratis
+
+Q: ¿Cuánto cuesta Cloudbeds?
+A: Cloudbeds no publica precios. Su página de precios muestra cuatro planes (Flex, One, Experience, Enterprise), todos con "Request a quote".
+
+Q: ¿Cloudbeds incluye WhatsApp?
+A: La web de Cloudbeds describe una bandeja unificada que incluye WhatsApp y un chatbot con IA que puede funcionar por WhatsApp o SMS. En la página de precios, Guest Experience figura en el plan Experience.
+
+Q: ¿Hostlio Pro sustituye por completo a Cloudbeds?
+A: Para PMS, channel manager y mensajería con huéspedes, sí en muchos alojamientos pequeños. Si necesitas motor de reservas, cobro de pagos o un gran marketplace de integraciones, Cloudbeds cubre más.
+
+Q: ¿Cuánto tarda el cambio?
+A: La cuenta está lista en minutos y los canales suelen conectarse el mismo día. Las reservas se pueden importar desde un archivo CSV o Excel.
+
+---
+# Alternativas a Cloudbeds para hoteles pequeños | Hostlio Pro
+URL: https://hostliopro.com/es/comparativas/alternativas-a-cloudbeds/
+
+## Alternativas a Cloudbeds para hoteles pequeños
+Cloudbeds no publica precios y trabaja con presupuesto. Si prefieres comparar primero precios publicados, estas son alternativas cuyos precios pudimos verificar en sus propias webs, incluido Hostlio Pro (nuestro producto).
+Pruébalo gratis 7 días Ver planes
+
+Respuesta corta: en un alojamiento pequeño e independiente, las preguntas clave son cómo pagas (cuota fija, por habitación o un porcentaje de ingresos), si el channel manager está incluido y si la mensajería con huéspedes forma parte del plan. Hostlio Pro, Sirvoy y Beds24 publican precios fijos o por uso; HotelRunner cobra un porcentaje de los ingresos por reservas; Amenitiz, como Cloudbeds, da presupuesto.
+
+## A octubre de 2026
+Alternativas a Cloudbeds para hoteles pequeños, A octubre de 2026 Software Modelo de precio Precio de partida publicado Prueba gratis (según la web) Suele encajar con Fuente
+Hostlio Pro Cuota mensual fija 49 $/mes (Starter, lanzamiento) 7 días Alojamientos independientes de 1–150 habitaciones que quieren un asistente de IA en WhatsApp incluido Hostlio Pro
+HotelRunner % de los ingresos por reservas con mínimo mensual (Essential) 0,75 % al mes, mínimo 19,95 $ (Essential Manage) Disponible; duración no indicada Alojamientos que quieren motor de reservas, web y pagos en una plataforma HotelRunner
+Amenitiz Presupuesto según número de habitaciones No publicado No ofrece; demo gratuita Hoteles independientes y B&B en Europa que buscan un todo en uno con creador de webs Amenitiz
+Sirvoy Cuota mensual fija por tramo de habitaciones Hasta 10 habitaciones: 22 € (Starter) o 79 € (Pro, con channel manager) al mes, pago mensual 14 días Hoteles pequeños y B&B que quieren un precio sencillo y publicado Sirvoy
+Beds24 Pago por uso: base + por habitación + por conexión de canal Desde 15,50 €/mes Prueba gratuita disponible Alojamientos con presupuesto ajustado que no temen configurar un sistema flexible Beds24
+eviivo Precio desde + tarifa por reserva Desde 50 $/mes (un alojamiento, sin impuestos) + 0,50 $ por reserva confirmada 14 días (un alojamiento) Pequeños alojamientos que quieren un sistema todo en uno eviivo
+
+La información de la competencia procede solo de las páginas oficiales de cada empresa y se comprobó el 8 de octubre de 2026; los precios y planes pueden cambiar. Hostlio Pro es parte interesada en esta comparativa. Lo que no pudimos verificar, no lo incluimos. ¿Ves un error? Escríbenos y lo corregimos.
+
+## Qué ofrece Cloudbeds, según su web
+
+- Cuatro planes, Flex, One, Experience y Enterprise, todos con presupuesto.
+- Sin comisión añadida por las reservas de su Booking Engine o Channel Manager.
+- Mensajería con chatbot de IA y bandeja unificada que incluye WhatsApp, dentro de Guest Experience en el plan Experience.
+- "400+ integration partners", onboarding autoservicio o con coach, y soporte 24/7.
+
+## Por qué los alojamientos pequeños comparan alternativas
+
+- Quieren ver un precio antes de reservar una demo comercial.
+- Tienen 1–50 habitaciones y necesitan menos módulos.
+- Quieren la mensajería con huéspedes incluida y no en un plan superior.
+
+## Cómo elegir
+
+- Anota tus ingresos mensuales por reservas y tus habitaciones, y calcula el coste anual con cada modelo de precio.
+- Comprueba que el channel manager cubre las OTAs en las que vendes.
+- Decide si necesitas motor de reservas y cobro de pagos en la misma herramienta.
+- Pregunta cómo se gestionan los mensajes de WhatsApp y de las bandejas de las OTAs, y en qué plan.
+- Usa la prueba gratuita con tus habitaciones y tarifas reales antes de cambiar.
+
+Pruébalo gratis 7 días Ver planes
+
+## Fuentes
+
+- Cloudbeds: Pricing (Comprobado el 8 de octubre de 2026)
+- Cloudbeds: Guest engagement (Comprobado el 8 de octubre de 2026)
+- HotelRunner: Pricing (Comprobado el 8 de octubre de 2026)
+- Amenitiz: Pricing (Comprobado el 8 de octubre de 2026)
+- Sirvoy: Pricing (Comprobado el 8 de octubre de 2026)
+- Beds24: Pricing (Comprobado el 8 de octubre de 2026)
+- eviivo: Pricing (Comprobado el 8 de octubre de 2026)
+
+## Más comparativas
+
+- Hostlio Pro vs Cloudbeds: precio publicado o presupuesto, IA incluida
+- Visión general: Hostlio Pro, Cloudbeds, Mews, Little Hotelier y HotelRunner Todas las comparativas · Calculadoras hoteleras gratis
+
+Q: ¿Hay una alternativa más barata a Cloudbeds?
+A: Cloudbeds no publica precios, así que una comparación directa requiere presupuesto. Entre las alternativas con precio publicado, Beds24 empieza en 15,50 € al mes, Sirvoy en 22 € al mes hasta 10 habitaciones (Starter) y Hostlio Pro en 49 $ al mes.
+
+Q: ¿Qué alternativa a Cloudbeds incluye mensajería con IA?
+A: Hostlio Pro incluye su asistente de IA Lio en WhatsApp en todos los planes y añade las bandejas de Booking.com, Airbnb y Expedia en Pro y Growth. Para otros productos, revisa los detalles de sus planes en sus webs.
+
+Q: ¿Puedo llevarme mis datos de Cloudbeds?
+A: La mayoría de sistemas permite exportar reservas. Hostlio Pro importa reservas desde archivos CSV o Excel con asignación de columnas y control de duplicados.
+
+---
 # Hostlio Pro | Gestionale per hotel con AI e channel manager
 URL: https://hostliopro.com/it/
 
@@ -8578,6 +10098,138 @@ Prova Hostlio Pro gratis per 7 giorni
 Solo stime, basate sui dati inseriti e su mesi di 30 giorni. I risultati dipendono dai tuoi ospiti, dalle impostazioni e dagli argomenti a cui lasci rispondere Lio in automatico. Prezzi mensili early bird in USD.
 
 ---
+# Calcolatori gratis per hotel: RevPAR e commissioni | Hostlio Pro
+URL: https://hostliopro.com/it/strumenti/
+
+## Calcolatori gratuiti per albergatori
+Strumenti semplici che funzionano nel browser, senza registrazione. I numeri che inserisci non vengono inviati da nessuna parte.
+
+- Calcolatore di RevPAR, ADR e occupazione Calcola i tre indicatori chiave dell’hotel da camere, notti vendute e ricavi camere, con le formule.
+
+- Commissione OTA → ricavo netto Quanto ti resta davvero di una prenotazione Booking.com o Expedia dopo commissione e altri costi?
+
+- Calcolatore ROI dei messaggi AI Stima le ore e il costo del personale che oggi richiede rispondere agli ospiti.
+I calcoli avvengono solo nel tuo browser; i dati non vengono salvati né inviati a un server.
+
+---
+# Calcolo RevPAR, ADR e tasso di occupazione (gratis) | Hostlio Pro
+URL: https://hostliopro.com/it/strumenti/calcolo-revpar-adr-occupazione/
+
+## Calcolo di RevPAR, ADR e tasso di occupazione
+Inserisci le camere, le notti camera vendute e i ricavi camere del periodo. Tasso di occupazione, prezzo medio giornaliero (ADR) e ricavo per camera disponibile (RevPAR) si aggiornano subito.
+
+Valuta USD EUR GBP TRY BRL Camere in vendita Giorni del periodo Notti camera vendute Ogni camera occupata conta una volta per notte. Un ospite che resta 3 notti = 3 notti camera. Ricavi camere del periodo Solo ricavi camere; escludi extra come transfer, escursioni e imposte (qualunque scelta, sii coerente).
+Notti camera disponibili –
+Tasso di occupazione –
+ADR (prezzo medio giornaliero) –
+RevPAR (ricavo per camera disponibile) –
+
+Il calcolo avviene nel browser; i tuoi numeri non vengono inviati.
+
+## Le formule
+
+## Tasso di occupazione
+Notti vendute ÷ notti disponibili × 100
+La quota di camere occupate. Notti disponibili = camere × giorni.
+
+## ADR (Average Daily Rate)
+Ricavi camere ÷ notti vendute
+Il prezzo medio di una notte camera venduta. Non considera le camere vuote.
+
+## RevPAR (Revenue per Available Room)
+Ricavi camere ÷ notti disponibili = ADR × tasso di occupazione
+Unisce prezzo e occupazione in un solo numero, quindi mostra anche il costo delle camere vuote.
+
+## Esempio passo passo
+Un boutique hotel di 12 camere ha venduto 285 notti camera in un mese di 31 giorni con 39.900 € di ricavi camere:
+
+- Notti disponibili: 12 × 31 = 372
+- Occupazione: 285 ÷ 372 = 76,6%
+- ADR: 39.900 € ÷ 285 = 140 €
+- RevPAR: 39.900 € ÷ 372 = 107,26 € (oppure 140 € × 76,6%) I valori predefiniti del calcolatore sono questo esempio; sostituiscili con i tuoi.
+
+## Cosa ti dice ogni indicatore
+
+## Occupazione alta, RevPAR basso
+Forse vendi a prezzi troppo bassi. Alzare un po’ la tariffa nelle date di punta può aumentare il RevPAR senza perdere molta occupazione.
+
+## ADR alto, occupazione bassa
+La tariffa può essere sopra la domanda o la distribuzione può essere limitata. Essere su più canali e rivedere i soggiorni minimi può aiutare.
+
+## Quando confronti il RevPAR
+Confrontalo con lo stesso periodo dell’anno precedente o con strutture di dimensioni simili. Tra hotel con un numero di camere diverso, il RevPAR è più equo dei ricavi totali.
+
+## Errori comuni
+
+- Sommare colazioni, transfer ed escursioni ai ricavi camere (gonfia ADR e RevPAR).
+- Togliere le camere fuori servizio un mese sì e uno no. Scegli un metodo e mantienilo.
+- Contare le camere gratuite come vendute senza ricavi, abbassando l’ADR.
+- Confondere ricavi lordi e netti dei canali a commissione. Per la redditività per canale usa il calcolatore di commissioni OTA .
+
+## In Hostlio Pro questi numeri arrivano da soli
+La schermata Analisi del pannello Hostlio Pro calcola occupazione, ADR e RevPAR dalle tue prenotazioni, li confronta con il periodo precedente e con l’anno scorso e mostra ricavi lordi, commissioni e ricavi netti per canale. Puoi esportare i report in Excel. Vedi tutte le funzionalità o confronta i piani (da 49 $ al mese).
+
+Q: Come si calcola il RevPAR?
+A: Dividi i ricavi camere del periodo per le notti camera disponibili. Ottieni lo stesso risultato moltiplicando l’ADR per il tasso di occupazione: 140 € di ADR al 76,6% di occupazione fanno circa 107 € di RevPAR.
+
+Q: Che differenza c’è tra ADR e RevPAR?
+A: L’ADR è il prezzo medio delle camere vendute; il RevPAR conta anche quelle non vendute. Per questo il RevPAR riassume prezzo e occupazione in un solo numero.
+
+Q: Come si calcola il tasso di occupazione di un hotel?
+A: Dividi le notti vendute per le notti disponibili (camere × giorni) e moltiplica per 100. Un hotel di 20 camere che ha venduto 450 notti in 30 giorni ha un’occupazione di 450 ÷ 600 = 75%.
+
+Q: La colazione rientra nei ricavi camere?
+A: Separare la colazione inclusa in una tariffa pacchetto spesso non è pratico; conta usare lo stesso criterio in ogni periodo. Gli extra venduti a parte (transfer, escursioni, colazione a pagamento) non sono ricavi camere.
+
+Q: I numeri che inserisco vengono salvati?
+A: No. Il calcolo avviene interamente nel browser; nulla viene inviato a un server.
+
+---
+# Calcolatore commissioni OTA: ricavo netto | Hostlio Pro
+URL: https://hostliopro.com/it/strumenti/calcolatore-commissioni-ota/
+
+## Commissione OTA → ricavo netto
+Inserisci l’importo della prenotazione, la commissione del contratto ed eventuali altri costi. Commissione, ricavo netto e netto per notte si aggiornano subito.
+
+Valuta USD EUR GBP TRY BRL Importo prenotazione (lordo) Percentuale di commissione % Verifica la percentuale nel contratto con il canale o nella fattura dell’extranet. I valori predefiniti sono solo un esempio. Costi di pagamento e altri % Notti (facoltativo)
+Commissione –
+Altri costi –
+Ricavo netto –
+Quota che ti resta –
+Netto per notte –
+Il calcolo avviene nel browser; i tuoi numeri non vengono inviati.
+
+## Come si calcola
+
+- Commissione = importo lordo × percentuale di commissione
+- Altri costi = importo lordo × percentuale costi (es. carta virtuale o commissioni di pagamento)
+- Ricavo netto = importo lordo − commissione − altri costi
+- Netto per notte = ricavo netto ÷ notti
+
+## Esempio
+Una prenotazione di 3 notti da 1.200 € con commissione del 18% e costi di pagamento dell’1,5%: commissione 216 €, altri costi 18 €, ricavo netto 966 €, netto per notte 322 €. Dei 400 € a notte pagati dall’ospite, a te restano 322 €.
+Alcuni canali calcolano la commissione sull’importo con imposte, altri senza. Inserisci l’importo lordo secondo la base del tuo contratto. Questa pagina non è consulenza fiscale.
+
+## Confronta con una prenotazione diretta
+Se la stessa camera è venduta direttamente (telefono, WhatsApp, il tuo sito) non c’è commissione. Se ti resta l’80,5%, come nell’esempio, potresti offrire fino al 19,5% di sconto in diretta senza guadagnare meno che con l’OTA. Considera i costi propri della vendita diretta (pagamenti, pubblicità).
+
+La schermata Analisi di Hostlio Pro mostra ricavi lordi, commissioni e ricavi netti di ogni canale, così vedi quale rende davvero dopo la commissione. Il channel manager riunisce oltre 100 OTA in un calendario e Lio risponde su WhatsApp per aiutarti a ricevere richieste di prenotazione diretta. I piani partono da 49 $ al mese.
+
+Calcolatore di RevPAR, ADR e occupazione · Calcolatore ROI dei messaggi AI
+
+Q: Come si calcola la commissione OTA?
+A: Moltiplica l’importo della prenotazione per la percentuale del contratto: 1.200 € × 18% = 216 €. Per il ricavo netto sottrai questo importo e gli eventuali costi di pagamento dal lordo.
+
+Q: La commissione si calcola con le imposte incluse?
+A: Dipende dal canale e dal paese. Il contratto e la fattura mensile del canale indicano l’importo di riferimento; inserisci quello.
+
+Q: Cos’è l’ADR netto?
+A: Il ricavo medio che resta per notte venduta dopo commissioni e costi. Per confrontare i canali è più fedele dell’ADR lordo.
+
+Q: I miei numeri vengono salvati?
+A: No. Il calcolo avviene nel browser e non viene inviato nulla.
+
+---
 # Sistema para Hotel com IA e Channel Manager | Hostlio Pro
 URL: https://hostliopro.com/pt/
 
@@ -10546,6 +12198,380 @@ Teste o Hostlio Pro grátis por 7 dias
 São apenas estimativas, com base nos números informados e em meses de 30 dias. O resultado depende dos seus hóspedes, das configurações e dos assuntos que você deixa o Lio responder sozinho. Preços mensais early bird em USD.
 
 ---
+# Calculadoras grátis para hotéis: RevPAR e comissão | Hostlio Pro
+URL: https://hostliopro.com/pt/ferramentas/
+
+## Calculadoras gratuitas para hoteleiros
+Ferramentas simples que funcionam no seu navegador, sem cadastro. Os números que você digita não são enviados a lugar nenhum.
+
+- Calculadora de RevPAR, ADR e ocupação Calcule os três indicadores principais do hotel a partir de quartos, diárias vendidas e receita de hospedagem, com as fórmulas.
+
+- Comissão de OTA → receita líquida Quanto realmente sobra de uma reserva do Booking.com ou da Expedia depois da comissão e de outras taxas?
+
+- Calculadora de ROI de mensagens com IA Estime as horas e o custo de equipe que responder hóspedes exige hoje.
+Os cálculos são feitos só no seu navegador; os dados não são salvos nem enviados a um servidor.
+
+---
+# Calculadora de RevPAR, ADR e taxa de ocupação | Hostlio Pro
+URL: https://hostliopro.com/pt/ferramentas/calculadora-revpar-adr-ocupacao/
+
+## Calculadora de RevPAR, ADR e taxa de ocupação
+Informe seus quartos, as diárias vendidas e a receita de hospedagem do período. Taxa de ocupação, diária média (ADR) e receita por quarto disponível (RevPAR) são calculadas na hora.
+
+Moeda USD EUR GBP TRY BRL Quartos disponíveis para venda Dias do período Diárias vendidas (quartos-noite) Cada quarto ocupado conta uma vez por noite. Um hóspede que fica 3 noites = 3 diárias. Receita de hospedagem do período Só receita de hospedagem; sem extras como transfer, passeios e impostos (seja qual for a escolha, mantenha a coerência).
+Quartos-noite disponíveis –
+Taxa de ocupação –
+ADR (diária média) –
+RevPAR (receita por quarto disponível) –
+
+Calculado no seu navegador; seus números não são enviados.
+
+## As fórmulas
+
+## Taxa de ocupação
+Diárias vendidas ÷ quartos-noite disponíveis × 100
+Quanto dos seus quartos ficou ocupado. Quartos-noite disponíveis = quartos × dias.
+
+## ADR (Average Daily Rate)
+Receita de hospedagem ÷ diárias vendidas
+O preço médio de uma diária vendida. Não considera os quartos vazios.
+
+## RevPAR (Revenue per Available Room)
+Receita de hospedagem ÷ quartos-noite disponíveis = ADR × taxa de ocupação
+Junta preço e ocupação num só número, mostrando também o custo dos quartos vazios.
+
+## Exemplo passo a passo
+Um hotel boutique de 12 quartos vendeu 285 diárias num mês de 31 dias e faturou R$ 39.900 em hospedagem:
+
+- Quartos-noite disponíveis: 12 × 31 = 372
+- Ocupação: 285 ÷ 372 = 76,6%
+- ADR: R$ 39.900 ÷ 285 = R$ 140
+- RevPAR: R$ 39.900 ÷ 372 = R$ 107,26 (ou R$ 140 × 76,6%) Os valores padrão da calculadora são este exemplo; troque pelos seus.
+
+## O que cada indicador mostra
+
+## Ocupação alta, RevPAR baixo
+Talvez você esteja vendendo barato demais. Subir um pouco a tarifa nas datas de maior procura pode aumentar o RevPAR sem perder muita ocupação.
+
+## ADR alto, ocupação baixa
+A tarifa pode estar acima da demanda ou a distribuição pode estar fraca. Estar em mais canais e rever estadias mínimas pode ajudar.
+
+## Ao comparar o RevPAR
+Compare com o mesmo período do ano anterior ou com hotéis de porte parecido. Entre hotéis com número de quartos diferente, o RevPAR é mais justo que a receita total.
+
+## Erros comuns
+
+- Somar café da manhã, transfer e passeios à receita de hospedagem (infla ADR e RevPAR).
+- Tirar os quartos interditados num mês e no outro não. Escolha um método e mantenha.
+- Contar cortesias como vendidas sem receita, o que derruba o ADR.
+- Misturar receita bruta e líquida dos canais com comissão. Para ver a rentabilidade por canal use a calculadora de comissão de OTA .
+
+## No Hostlio Pro esses números aparecem sozinhos
+A tela de Análise do painel do Hostlio Pro calcula ocupação, ADR e RevPAR a partir das suas reservas, compara com o período anterior e com o ano passado e mostra receita bruta, comissão e receita líquida por canal. Você pode exportar os relatórios para Excel. Veja todos os recursos ou compare os planos (a partir de US$ 49 por mês).
+
+Q: Como calcular o RevPAR?
+A: Divida a receita de hospedagem do período pelos quartos-noite disponíveis. O resultado é o mesmo que multiplicar o ADR pela taxa de ocupação: ADR de R$ 140 com 76,6% de ocupação dá cerca de R$ 107 de RevPAR.
+
+Q: Qual a diferença entre ADR e RevPAR?
+A: O ADR é o preço médio dos quartos vendidos; o RevPAR também conta os que não foram vendidos. Por isso o RevPAR resume preço e ocupação num só número.
+
+Q: Como calcular a taxa de ocupação de um hotel?
+A: Divida as diárias vendidas pelos quartos-noite disponíveis (quartos × dias) e multiplique por 100. Um hotel de 20 quartos que vendeu 450 diárias em 30 dias tem ocupação de 450 ÷ 600 = 75%.
+
+Q: O café da manhã entra na receita de hospedagem?
+A: Separar o café incluído numa tarifa pacote costuma ser pouco prático; o importante é usar o mesmo critério em todo período. Extras vendidos à parte (transfer, passeios, café pago) não são receita de hospedagem.
+
+Q: Os números que eu digito ficam salvos?
+A: Não. O cálculo é feito inteiramente no seu navegador; nada é enviado a um servidor.
+
+---
+# Calculadora de comissão de OTA: receita líquida | Hostlio Pro
+URL: https://hostliopro.com/pt/ferramentas/calculadora-comissao-ota/
+
+## Comissão de OTA → receita líquida
+Informe o valor da reserva, a comissão do seu contrato e outras taxas, se houver. Comissão, receita líquida e líquido por noite são calculados na hora.
+
+Moeda USD EUR GBP TRY BRL Valor da reserva (bruto) Percentual de comissão % Confira o percentual no contrato com o canal ou na fatura da extranet. Os valores padrão são só um exemplo. Taxas de pagamento e outras % Noites (opcional)
+Comissão –
+Outras taxas –
+Receita líquida –
+Parte que fica com você –
+Líquido por noite –
+Calculado no seu navegador; seus números não são enviados.
+
+## Como é calculado
+
+- Comissão = valor bruto × percentual de comissão
+- Outras taxas = valor bruto × percentual de taxas (ex.: cartão virtual ou processamento de pagamento)
+- Receita líquida = valor bruto − comissão − outras taxas
+- Líquido por noite = receita líquida ÷ noites
+
+## Exemplo
+Uma reserva de 3 noites de R$ 1.200 com 18% de comissão e 1,5% de taxa de pagamento: comissão R$ 216, outras taxas R$ 18, receita líquida R$ 966, líquido por noite R$ 322. Dos R$ 400 por noite que o hóspede paga, ficam R$ 322 com você.
+Alguns canais cobram comissão sobre o valor com impostos, outros sem impostos. Informe o valor bruto conforme a base do seu contrato. Esta página não é consultoria tributária.
+
+## Compare com uma reserva direta
+Quando o mesmo quarto é vendido direto (telefone, WhatsApp, seu site) não há comissão. Se fica com você 80,5%, como no exemplo, você poderia dar até 19,5% de desconto na reserva direta sem ganhar menos que pela OTA. Considere os custos da venda direta (pagamentos, anúncios).
+
+A tela de Análise do Hostlio Pro mostra receita bruta, comissão e receita líquida de cada canal, para você ver qual realmente compensa depois da comissão. O channel manager reúne mais de 100 OTAs num calendário e a Lio responde no WhatsApp para você receber pedidos de reserva direta. Os planos começam em US$ 49 por mês.
+
+Calculadora de RevPAR, ADR e ocupação · Calculadora de ROI de mensagens com IA
+
+Q: Como calcular a comissão da OTA?
+A: Multiplique o valor da reserva pelo percentual do contrato: R$ 1.200 × 18% = R$ 216. Para a receita líquida, subtraia esse valor e as taxas de pagamento do valor bruto.
+
+Q: A comissão é calculada com impostos?
+A: Depende do canal e do país. O contrato e a fatura mensal do canal indicam o valor de base; informe esse valor na calculadora.
+
+Q: O que é ADR líquido?
+A: A receita média que sobra por diária vendida depois de comissões e taxas. Para comparar canais, o ADR líquido é mais fiel que o bruto.
+
+Q: Meus números ficam salvos?
+A: Não. O cálculo é feito no navegador e nada é enviado.
+
+---
+# Comparativos de sistemas para hotel | Hostlio Pro
+URL: https://hostliopro.com/pt/comparativos/
+
+## Comparativos de sistemas para hotel
+Cada comparativo usa só o que cada empresa publica nas próprias páginas oficiais e tem data. Também dizemos quando o outro produto é a melhor escolha.
+
+- Hostlio Pro vs Cloudbeds: preço publicado ou orçamento, IA incluída Hostlio Pro x Cloudbeds: preço fixo publicado ou planos sob orçamento, mensagens com IA e WhatsApp, e quando cada um é a melhor escolha.
+
+- Alternativas à Cloudbeds para hotéis pequenos, com preços publicados Alternativas à Cloudbeds para hotéis e pousadas independentes: modelos de preço e preços iniciais publicados nos sites oficiais, e como escolher.
+
+- Alternativa à HiJiffy: mensagens com IA e PMS incluído Alternativa à HiJiffy para hotéis pequenos: compare os planos de mensagens da HiJiffy com o Hostlio Pro, que inclui PMS, channel manager e IA no WhatsApp.
+
+- Visão geral: Hostlio Pro, Cloudbeds, Mews, Little Hotelier e HotelRunner
+Calculadoras gratuitas para hotéis
+
+---
+# Hostlio Pro vs Cloudbeds (2026): preços e IA | Hostlio Pro
+URL: https://hostliopro.com/pt/comparativos/hostlio-vs-cloudbeds/
+
+## Hostlio Pro vs Cloudbeds
+A Cloudbeds é uma plataforma ampla para hospedagens de todos os portes; o Hostlio Pro é um PMS, channel manager e assistente de IA focado em hotéis independentes de cerca de 1 a 150 quartos. Veja a comparação, só com o que cada empresa publica.
+Teste grátis por 7 dias Ver planos
+
+Resposta curta: o Hostlio Pro serve para hotéis e pousadas independentes de pequeno e médio porte que querem ver o preço antes de falar com vendas e ter um assistente de IA no WhatsApp em todos os planos. A Cloudbeds serve para quem precisa de motor de reservas, pagamentos integrados, um grande marketplace de integrações ou escala multipropriedade, e aceita pedir orçamento.
+
+Hostlio Pro vs Cloudbeds, Em outubro de 2026 Em outubro de 2026 Hostlio Pro Cloudbeds
+Preço Mensalidade fixa: Starter US$ 49, Pro US$ 89, Growth US$ 149 (USD, preço early bird); 20% de desconto no plano anual Sob orçamento: os planos Flex, One, Experience e Enterprise mostram "Request a quote"
+Comissões O Hostlio não cobra por reserva nem percentual da receita Informa que não cobra comissão adicional nas reservas do seu Booking Engine ou Channel Manager; em metabuscadores cobra comissão após a estadia
+Channel manager Todos os planos, conexões certificadas com mais de 100 OTAs No plano One e acima (no Flex você usa seu próprio channel manager)
+Motor de reservas e pagamentos Não incluído; o Hostlio Pro se concentra em PMS, channel manager e mensagens com IA Booking Engine no One e acima; Payments incluído em todos os planos
+Mensagens com IA e WhatsApp Assistente de IA Lio no WhatsApp em todos os planos; no Pro e no Growth também as caixas de entrada do Booking.com, Airbnb e Expedia Chatbot com IA e caixa de entrada unificada com WhatsApp, SMS, e-mail e mensagens de OTAs; na página de preços, Guest Experience aparece no plano Experience
+Integrações Conexões de canal via Channex; caixas de entrada do Booking.com, Airbnb e Expedia "400+ integration partners" (página de preços)
+Teste grátis 7 dias (cartão no cadastro, sem cobrança até o fim do teste) Não mencionado na página de preços; oferece demonstração
+Implantação e suporte Assistente de configuração e importação CSV/Excel; suporte em inglês e turco Autoatendimento ou com um coach de onboarding; suporte 24/7
+
+As informações sobre concorrentes vêm apenas das páginas oficiais de cada empresa e foram verificadas em 8 de outubro de 2026; preços e planos podem mudar. O Hostlio Pro é parte interessada nesta comparação. O que não conseguimos confirmar, deixamos de fora. Viu um erro? Fale com a gente e corrigimos.
+
+## Onde o Hostlio Pro se encaixa
+
+## Você vê o preço logo de início
+Os planos começam em US$ 49 por mês e estão na página de preços; dá para iniciar um teste de 7 dias sem ligação de vendas.
+
+## IA em todos os planos
+A Lio responde hóspedes no WhatsApp em todos os planos, com as informações do seu hotel e no idioma do hóspede. Pro e Growth incluem as caixas de entrada do Booking.com, Airbnb e Expedia e pedidos de reserva que você aprova.
+
+## Feito para 1–150 quartos
+Um calendário, channel manager, check-in online (Pro e Growth), análises com ocupação, ADR e RevPAR e perfis de equipe, sem módulos para montar.
+
+## Migração simples
+Importe reservas de um arquivo CSV ou Excel; o assistente de configuração mostra o que falta antes de começar.
+
+## Quando a Cloudbeds é a melhor escolha
+
+## Você precisa de motor de reservas e pagamentos
+A Cloudbeds inclui Booking Engine (One e acima) e Payments. O Hostlio Pro não oferece motor de reservas nem processamento de pagamentos.
+
+## Você usa muitas ferramentas de terceiros
+A Cloudbeds anuncia mais de 400 parceiros de integração no marketplace.
+
+## Você administra um portfólio grande
+A Cloudbeds diz atender negócios de todos os portes, até portfólios enterprise; o maior plano do Hostlio Pro cobre 2 propriedades e 150 quartos.
+
+## Você quer suporte 24/7
+A Cloudbeds oferece suporte 24/7 após o onboarding. O suporte do Hostlio Pro é em inglês e turco, embora o painel esteja em português.
+
+## Como é a migração para o Hostlio Pro
+
+- Comece o teste de 7 dias e cadastre seus tipos de quarto e tarifas.
+- Exporte suas reservas da Cloudbeds e importe em CSV ou Excel.
+- Conecte suas OTAs ao Hostlio Pro e planeje a troca para que a disponibilidade saia de um só sistema.
+- Preencha as informações do hotel para a Lio e teste com "Testar a Lio".
+
+Teste grátis por 7 dias Ver planos
+
+## Fontes
+
+- Cloudbeds: Pricing (Verificado em 8 de outubro de 2026)
+- Cloudbeds: Home (Verificado em 8 de outubro de 2026)
+- Cloudbeds: Guest engagement (Verificado em 8 de outubro de 2026)
+
+## Mais comparativos
+
+- Alternativas à Cloudbeds para hotéis pequenos, com preços publicados
+- Alternativa à HiJiffy: mensagens com IA e PMS incluído
+- Visão geral: Hostlio Pro, Cloudbeds, Mews, Little Hotelier e HotelRunner Todos os comparativos · Calculadoras gratuitas para hotéis
+
+Q: Quanto custa a Cloudbeds?
+A: A Cloudbeds não publica preços. A página de preços mostra quatro planos (Flex, One, Experience, Enterprise), todos com "Request a quote".
+
+Q: A Cloudbeds tem WhatsApp?
+A: O site da Cloudbeds descreve uma caixa de entrada unificada que inclui WhatsApp e um chatbot com IA que funciona via WhatsApp ou SMS. Na página de preços, Guest Experience aparece no plano Experience.
+
+Q: O Hostlio Pro substitui totalmente a Cloudbeds?
+A: Para PMS, channel manager e mensagens com hóspedes, sim, em muitos hotéis pequenos. Se você precisa de motor de reservas, pagamentos ou de um grande marketplace de integrações, a Cloudbeds cobre mais.
+
+Q: Quanto tempo leva a migração?
+A: A conta fica pronta em minutos e os canais costumam ser conectados no mesmo dia. As reservas podem ser importadas de um arquivo CSV ou Excel.
+
+---
+# Alternativas à Cloudbeds para hotéis pequenos | Hostlio Pro
+URL: https://hostliopro.com/pt/comparativos/alternativas-ao-cloudbeds/
+
+## Alternativas à Cloudbeds para hotéis pequenos
+A Cloudbeds não publica preços e trabalha com orçamento. Se você prefere comparar preços publicados primeiro, estas são alternativas cujos preços conseguimos confirmar nos próprios sites, incluindo o Hostlio Pro (nosso produto).
+Teste grátis por 7 dias Ver planos
+
+Resposta curta: para um hotel pequeno e independente, as perguntas principais são como você paga (mensalidade fixa, por quarto ou percentual da receita), se o channel manager está incluído e se as mensagens com hóspedes fazem parte do plano. Hostlio Pro, Sirvoy e Beds24 publicam preços fixos ou por uso; a HotelRunner cobra um percentual da receita de reservas; a Amenitiz, como a Cloudbeds, trabalha com orçamento.
+
+## Em outubro de 2026
+Alternativas à Cloudbeds para hotéis pequenos, Em outubro de 2026 Software Modelo de preço Preço inicial publicado Teste grátis (segundo o site) Costuma servir para Fonte
+Hostlio Pro Mensalidade fixa US$ 49/mês (Starter, early bird) 7 dias Hotéis independentes de 1–150 quartos que querem um assistente de IA no WhatsApp incluído Hostlio Pro
+HotelRunner % da receita de reservas com mínimo mensal (Essential) 0,75% ao mês, mínimo US$ 19,95 (Essential Manage) Disponível; duração não informada Hotéis que querem motor de reservas, site e pagamentos numa só plataforma HotelRunner
+Amenitiz Orçamento conforme o número de quartos Não publicado Não oferece; demonstração gratuita Hotéis independentes e B&Bs na Europa que buscam um sistema completo com criador de sites Amenitiz
+Sirvoy Mensalidade fixa por faixa de quartos Até 10 quartos: € 22 (Starter) ou € 79 (Pro, com channel manager) por mês, cobrança mensal 14 dias Hotéis pequenos e B&Bs que querem um preço simples e publicado Sirvoy
+Beds24 Pague pelo uso: base + por quarto + por conexão de canal A partir de € 15,50/mês Teste grátis disponível Hospedagens com orçamento apertado que não se importam em configurar um sistema flexível Beds24
+eviivo Preço a partir de + taxa por reserva A partir de US$ 50/mês (uma propriedade, sem impostos) + US$ 0,50 por reserva confirmada 14 dias (uma propriedade) Pequenas hospedagens que querem um sistema completo eviivo
+
+As informações sobre concorrentes vêm apenas das páginas oficiais de cada empresa e foram verificadas em 8 de outubro de 2026; preços e planos podem mudar. O Hostlio Pro é parte interessada nesta comparação. O que não conseguimos confirmar, deixamos de fora. Viu um erro? Fale com a gente e corrigimos.
+
+## O que a Cloudbeds oferece, segundo o próprio site
+
+- Quatro planos, Flex, One, Experience e Enterprise, todos sob orçamento.
+- Sem comissão adicional nas reservas do seu Booking Engine ou Channel Manager.
+- Mensagens com chatbot de IA e caixa de entrada unificada que inclui WhatsApp, dentro de Guest Experience no plano Experience.
+- "400+ integration partners", onboarding por autoatendimento ou com coach, e suporte 24/7.
+
+## Por que hotéis pequenos comparam alternativas
+
+- Querem ver um preço antes de agendar uma demonstração de vendas.
+- Têm 1–50 quartos e precisam de menos módulos.
+- Querem as mensagens com hóspedes incluídas, não num plano superior.
+
+## Como escolher
+
+- Anote sua receita mensal de reservas e o número de quartos e calcule o custo anual em cada modelo de preço.
+- Confira se o channel manager cobre as OTAs em que você vende.
+- Decida se precisa de motor de reservas e de processamento de pagamentos na mesma ferramenta.
+- Pergunte como são tratadas as mensagens do WhatsApp e das caixas de entrada das OTAs, e em qual plano.
+- Use o teste grátis com seus quartos e tarifas reais antes de migrar.
+
+Teste grátis por 7 dias Ver planos
+
+## Fontes
+
+- Cloudbeds: Pricing (Verificado em 8 de outubro de 2026)
+- Cloudbeds: Guest engagement (Verificado em 8 de outubro de 2026)
+- HotelRunner: Pricing (Verificado em 8 de outubro de 2026)
+- Amenitiz: Pricing (Verificado em 8 de outubro de 2026)
+- Sirvoy: Pricing (Verificado em 8 de outubro de 2026)
+- Beds24: Pricing (Verificado em 8 de outubro de 2026)
+- eviivo: Pricing (Verificado em 8 de outubro de 2026)
+
+## Mais comparativos
+
+- Hostlio Pro vs Cloudbeds: preço publicado ou orçamento, IA incluída
+- Alternativa à HiJiffy: mensagens com IA e PMS incluído
+- Visão geral: Hostlio Pro, Cloudbeds, Mews, Little Hotelier e HotelRunner Todos os comparativos · Calculadoras gratuitas para hotéis
+
+Q: Existe uma alternativa mais barata à Cloudbeds?
+A: A Cloudbeds não publica preços, então uma comparação direta exige orçamento. Entre as alternativas com preço publicado, a Beds24 começa em € 15,50 por mês, a Sirvoy em € 22 por mês para até 10 quartos (Starter) e o Hostlio Pro em US$ 49 por mês.
+
+Q: Qual alternativa à Cloudbeds inclui mensagens com IA?
+A: O Hostlio Pro inclui a assistente de IA Lio no WhatsApp em todos os planos e acrescenta as caixas de entrada do Booking.com, Airbnb e Expedia no Pro e no Growth. Para outros produtos, confira os detalhes dos planos nos sites deles.
+
+Q: Consigo levar meus dados da Cloudbeds?
+A: A maioria dos sistemas permite exportar reservas. O Hostlio Pro importa reservas de arquivos CSV ou Excel, com mapeamento de colunas e controle de duplicados.
+
+---
+# Alternativa à HiJiffy com PMS incluído | Hostlio Pro
+URL: https://hostliopro.com/pt/comparativos/alternativa-hijiffy/
+
+## Uma alternativa à HiJiffy com o PMS incluído
+A HiJiffy é uma camada de comunicação com hóspedes e IA que funciona sobre o PMS que você já usa. O Hostlio Pro é o próprio PMS e channel manager, com um assistente de IA embutido. Os dois resolvem problemas parecidos de formas diferentes; a escolha depende do que você já tem.
+Teste grátis por 7 dias Ver planos
+
+Resposta curta: se você está satisfeito com seu PMS e quer uma camada de mensagens para chat do site, redes sociais e WhatsApp, a HiJiffy foi feita para isso. Se você tem um hotel ou pousada independente e quer PMS, channel manager e um assistente de IA no WhatsApp numa só assinatura, o Hostlio Pro cobre os três, com WhatsApp em todos os planos.
+
+Uma alternativa à HiJiffy com o PMS incluído, Em outubro de 2026 Em outubro de 2026 Hostlio Pro HiJiffy
+O que é PMS + channel manager + assistente de IA (Lio) Uma camada de comunicação com hóspedes e IA que se integra a PMSs, motores de reserva e CRMs
+Preço Mensalidade fixa: Starter US$ 49, Pro US$ 89, Growth US$ 149 (USD, preço early bird); 20% de desconto no plano anual Por propriedade, "a partir de" conforme o número de quartos: Basic € 99, Pro € 159, Premium € 319 por mês no plano anual (€ 105 / € 170 / € 350 no mensal), mais taxa de implantação de € 99 / € 399 / € 599 a cada 5 propriedades; Enterprise sob orçamento
+WhatsApp Todos os planos (Lio) A partir do plano Premium; o Pro cobre site, Facebook, Instagram e Telegram
+Mensagens das OTAs Caixas de entrada do Booking.com, Airbnb e Expedia no Pro e no Growth O site informa que centraliza as mensagens nativas das OTAs, incluindo Booking.com, Expedia e Airbnb
+PMS e channel manager Todos os planos, conexões certificadas com mais de 100 OTAs Não é PMS nem channel manager; integração com PMS a partir do Premium
+Teste grátis 7 dias (cartão no cadastro, sem cobrança até o fim do teste) Não mencionado; assinar ou agendar demonstração
+
+As informações sobre concorrentes vêm apenas das páginas oficiais de cada empresa e foram verificadas em 8 de outubro de 2026; preços e planos podem mudar. O Hostlio Pro é parte interessada nesta comparação. O que não conseguimos confirmar, deixamos de fora. Viu um erro? Fale com a gente e corrigimos.
+
+## Onde o Hostlio Pro se encaixa
+
+## Uma assinatura em vez de duas
+Reservas, mapa de quartos, channel manager e Lio ficam no mesmo produto, então a Lio responde com a disponibilidade real e as suas tarifas.
+
+## WhatsApp em todos os planos
+A Lio responde no WhatsApp desde o Starter (US$ 49 por mês), no idioma do hóspede, e passa as decisões para você.
+
+## Pedidos de reserva com sua aprovação
+No Pro e no Growth, a Lio coleta datas, número de hóspedes e preferência de quarto no WhatsApp e informa o preço pelas suas tarifas; o pedido vira reserva quando você aprova.
+
+## Check-in online
+Pro e Growth incluem check-in online com leitura MRZ de documento/passaporte e assinatura digital.
+
+## Quando a HiJiffy é a melhor escolha
+
+## Você quer manter seu PMS atual
+A HiJiffy foi feita para funcionar sobre os sistemas do hotel. O Hostlio Pro substitui o PMS e o channel manager.
+
+## Você precisa de chat no site e redes sociais
+A HiJiffy cobre chat do site, Facebook, Instagram e Telegram. A Lio do Hostlio Pro funciona no WhatsApp e nas caixas de entrada das OTAs.
+
+## Você administra um hotel grande ou uma rede
+A HiJiffy oferece planos Enterprise com integrações sob medida e Power BI; o maior plano do Hostlio Pro cobre 2 propriedades e 150 quartos.
+
+## Como é a migração para o Hostlio Pro
+
+- Comece o teste de 7 dias e cadastre seus tipos de quarto e tarifas.
+- Importe suas reservas de um arquivo CSV ou Excel exportado do seu PMS atual.
+- Conecte suas OTAs e seu número de WhatsApp.
+- Preencha as informações do hotel para a Lio e teste com "Testar a Lio".
+
+Teste grátis por 7 dias Ver planos
+
+## Fontes
+
+- HiJiffy: Plans and pricing (Verificado em 8 de outubro de 2026)
+- HiJiffy: Home (Verificado em 8 de outubro de 2026)
+
+## Mais comparativos
+
+- Hostlio Pro vs Cloudbeds: preço publicado ou orçamento, IA incluída
+- Alternativas à Cloudbeds para hotéis pequenos, com preços publicados
+- Visão geral: Hostlio Pro, Cloudbeds, Mews, Little Hotelier e HotelRunner Todos os comparativos · Calculadoras gratuitas para hotéis
+
+Q: Quanto custa a HiJiffy?
+A: A página de preços da HiJiffy mostra preços "a partir de" por propriedade, que dependem do número de quartos: Basic € 99, Pro € 159 e Premium € 319 por mês no plano anual, ou € 105, € 170 e € 350 no mensal, mais taxa de implantação. O Enterprise é sob orçamento.
+
+Q: Qual plano da HiJiffy inclui WhatsApp?
+A: Segundo a página de preços da HiJiffy, o WhatsApp faz parte do plano Premium; os canais do plano Pro são site, Facebook, Instagram e Telegram.
+
+Q: O Hostlio Pro é só um chatbot?
+A: Não. O Hostlio Pro é um PMS e channel manager com assistente de IA embutido; também cuida das reservas, da disponibilidade em mais de 100 OTAs e do check-in online.
+
+---
 # Logiciel de gestion hôtelière avec IA | Hostlio Pro
 URL: https://hostliopro.com/fr/
 
@@ -12512,3 +14538,229 @@ Forfait conseillé –
 Essayez Hostlio Pro gratuitement pendant 7 jours
 
 Il s’agit d’estimations fondées sur vos chiffres et sur des mois de 30 jours. Le résultat dépend de vos clients, de vos réglages et des sujets auxquels vous laissez Lio répondre automatiquement. Prix mensuels early bird en USD.
+
+---
+# Calculateurs hôteliers gratuits : RevPAR, ADR | Hostlio Pro
+URL: https://hostliopro.com/fr/outils/
+
+## Calculateurs gratuits pour hôteliers
+Des outils simples qui fonctionnent dans votre navigateur, sans inscription. Les chiffres saisis ne sont envoyés nulle part.
+
+- Calculateur de RevPAR, ADR et taux d’occupation Calculez les trois indicateurs clés de l’hôtel à partir des chambres, des nuitées vendues et du chiffre d’affaires hébergement, formules à l’appui.
+
+- Commission OTA → revenu net Que vous reste-t-il vraiment d’une réservation Booking.com ou Expedia après la commission et les autres frais ?
+
+- Calculateur de ROI de la messagerie IA Estimez les heures et le coût de personnel que demandent aujourd’hui les réponses aux clients.
+Les calculs se font uniquement dans votre navigateur ; les données ne sont ni enregistrées ni envoyées à un serveur.
+
+---
+# Calcul du RevPAR, de l’ADR et du taux d’occupation | Hostlio Pro
+URL: https://hostliopro.com/fr/outils/calcul-revpar-adr-taux-occupation/
+
+## Calcul du RevPAR, de l’ADR et du taux d’occupation
+Saisissez vos chambres, les nuitées vendues et le chiffre d’affaires hébergement de la période. Taux d’occupation, prix moyen par chambre (ADR) et revenu par chambre disponible (RevPAR) se calculent aussitôt.
+
+Devise USD EUR GBP TRY BRL Chambres disponibles à la vente Jours de la période Nuitées vendues (chambres-nuits) Chaque chambre occupée compte une fois par nuit. Un client qui reste 3 nuits = 3 nuitées. CA hébergement de la période Uniquement le chiffre d’affaires hébergement ; sans extras comme transferts, excursions et taxes (quel que soit votre choix, restez cohérent).
+Chambres-nuits disponibles –
+Taux d’occupation –
+ADR (prix moyen par chambre) –
+RevPAR (revenu par chambre disponible) –
+
+Calcul effectué dans votre navigateur ; vos chiffres ne sont envoyés nulle part.
+
+## Les formules
+
+## Taux d’occupation
+Nuitées vendues ÷ chambres-nuits disponibles × 100
+La part de vos chambres occupées. Chambres-nuits disponibles = chambres × jours.
+
+## ADR (Average Daily Rate, prix moyen)
+CA hébergement ÷ nuitées vendues
+Le prix moyen d’une nuitée vendue. Il ne tient pas compte des chambres vides.
+
+## RevPAR (Revenue per Available Room)
+CA hébergement ÷ chambres-nuits disponibles = ADR × taux d’occupation
+Réunit prix et occupation en un seul chiffre, et montre donc aussi le coût des chambres vides.
+
+## Exemple détaillé
+Un hôtel boutique de 12 chambres a vendu 285 nuitées sur un mois de 31 jours pour 39 900 € de chiffre d’affaires hébergement :
+
+- Chambres-nuits disponibles : 12 × 31 = 372
+- Taux d’occupation : 285 ÷ 372 = 76,6 %
+- ADR : 39 900 € ÷ 285 = 140 €
+- RevPAR : 39 900 € ÷ 372 = 107,26 € (ou 140 € × 76,6 %) Les valeurs par défaut du calculateur reprennent cet exemple ; remplacez-les par les vôtres.
+
+## Ce que dit chaque indicateur
+
+## Occupation élevée, RevPAR faible
+Vous vendez peut-être trop bon marché. Relever un peu le prix les jours de forte demande peut augmenter le RevPAR sans perdre beaucoup d’occupation.
+
+## ADR élevé, occupation faible
+Le prix est peut-être au-dessus de la demande, ou votre distribution est trop limitée. Être présent sur plus de canaux et revoir les durées minimales de séjour peut aider.
+
+## Pour comparer le RevPAR
+Comparez avec la même période de l’année précédente ou avec des établissements de taille proche. Entre hôtels de tailles différentes, le RevPAR est plus juste que le chiffre d’affaires total.
+
+## Erreurs fréquentes
+
+- Ajouter petits-déjeuners, transferts et excursions au CA hébergement (cela gonfle ADR et RevPAR).
+- Retirer les chambres hors service un mois sur deux. Choisissez une méthode et gardez-la.
+- Compter les chambres offertes comme vendues sans revenu, ce qui fait baisser l’ADR.
+- Mélanger revenu brut et net des canaux à commission. Pour la rentabilité par canal, utilisez le calculateur de commission OTA .
+
+## Dans Hostlio Pro, ces chiffres arrivent tout seuls
+L’écran Analyse du tableau de bord Hostlio Pro calcule le taux d’occupation, l’ADR et le RevPAR à partir de vos réservations, les compare à la période précédente et à l’année dernière, et affiche revenu brut, commission et revenu net par canal. Vous pouvez exporter les rapports vers Excel. Voir toutes les fonctionnalités ou comparer les forfaits (dès 49 $ par mois).
+
+Q: Comment calculer le RevPAR ?
+A: Divisez le chiffre d’affaires hébergement de la période par les chambres-nuits disponibles. On obtient le même résultat en multipliant l’ADR par le taux d’occupation : 140 € d’ADR à 76,6 % d’occupation donnent environ 107 € de RevPAR.
+
+Q: Quelle différence entre ADR et RevPAR ?
+A: L’ADR est le prix moyen des chambres vendues ; le RevPAR tient aussi compte des chambres invendues. C’est pourquoi le RevPAR résume prix et occupation en un seul chiffre.
+
+Q: Comment calculer le taux d’occupation d’un hôtel ?
+A: Divisez les nuitées vendues par les chambres-nuits disponibles (chambres × jours) et multipliez par 100. Un hôtel de 20 chambres qui a vendu 450 nuitées en 30 jours a un taux d’occupation de 450 ÷ 600 = 75 %.
+
+Q: Le petit-déjeuner fait-il partie du CA hébergement ?
+A: Séparer le petit-déjeuner inclus dans un tarif forfaitaire est souvent peu pratique ; l’essentiel est de garder la même méthode à chaque période. Les extras vendus à part (transferts, excursions, petit-déjeuner payant) ne sont pas du CA hébergement.
+
+Q: Les chiffres saisis sont-ils enregistrés ?
+A: Non. Le calcul se fait entièrement dans votre navigateur ; rien n’est envoyé à un serveur.
+
+---
+# Calculateur de commission OTA : revenu net | Hostlio Pro
+URL: https://hostliopro.com/fr/outils/calculateur-commission-ota/
+
+## Commission OTA → revenu net
+Saisissez le montant de la réservation, le taux de commission de votre contrat et les autres frais éventuels. Commission, revenu net et net par nuit se calculent aussitôt.
+
+Devise USD EUR GBP TRY BRL Montant de la réservation (brut) Taux de commission % Vérifiez le taux dans votre contrat avec le canal ou sur la facture de l’extranet. Les valeurs par défaut ne sont qu’un exemple. Frais de paiement et autres % Nuits (facultatif)
+Commission –
+Autres frais –
+Revenu net –
+Part qui vous reste –
+Net par nuit –
+Calcul effectué dans votre navigateur ; vos chiffres ne sont envoyés nulle part.
+
+## Comment c’est calculé
+
+- Commission = montant brut × taux de commission
+- Autres frais = montant brut × taux de frais (p. ex. carte virtuelle ou frais de paiement)
+- Revenu net = montant brut − commission − autres frais
+- Net par nuit = revenu net ÷ nuits
+
+## Exemple
+Une réservation de 3 nuits à 1 200 € avec 18 % de commission et 1,5 % de frais de paiement : commission 216 €, autres frais 18 €, revenu net 966 €, net par nuit 322 €. Sur les 400 € par nuit payés par le client, il vous reste 322 €.
+Certains canaux calculent la commission sur le montant TTC, d’autres sur le montant HT. Saisissez le montant brut selon la base de votre contrat. Cette page n’est pas un conseil fiscal.
+
+## Comparez avec une réservation directe
+Quand la même chambre est vendue en direct (téléphone, WhatsApp, votre site), il n’y a pas de commission. Si la part qui vous reste est de 80,5 %, comme dans l’exemple, vous pourriez accorder jusqu’à 19,5 % de remise en direct sans gagner moins qu’avec l’OTA. Tenez compte des coûts propres à la vente directe (paiement, publicité).
+
+L’écran Analyse de Hostlio Pro affiche revenu brut, commission et revenu net de chaque canal : vous voyez lequel rapporte vraiment après commission. Le channel manager réunit plus de 100 OTA dans un seul calendrier et Lio répond sur WhatsApp pour vous aider à recevoir des demandes de réservation directe. Les forfaits commencent à 49 $ par mois.
+
+Calculateur de RevPAR, ADR et taux d’occupation · Calculateur de ROI de la messagerie IA
+
+Q: Comment calculer la commission d’une OTA ?
+A: Multipliez le montant de la réservation par le taux de votre contrat : 1 200 € × 18 % = 216 €. Pour le revenu net, soustrayez ce montant et les frais de paiement du montant brut.
+
+Q: La commission est-elle calculée TTC ?
+A: Cela dépend du canal et du pays. Votre contrat et la facture mensuelle du canal indiquent le montant de référence ; saisissez celui-là.
+
+Q: Qu’est-ce que l’ADR net ?
+A: Le revenu moyen qui reste par nuitée vendue après commissions et frais. Pour comparer les canaux, l’ADR net est plus fidèle que l’ADR brut.
+
+Q: Mes chiffres sont-ils enregistrés ?
+A: Non. Le calcul se fait dans votre navigateur et rien n’est envoyé.
+
+---
+# Comparatifs de logiciels hôteliers | Hostlio Pro
+URL: https://hostliopro.com/fr/comparatifs/
+
+## Comparatifs de logiciels hôteliers
+Chaque comparatif s’appuie uniquement sur ce que chaque entreprise publie sur ses pages officielles, et il est daté. Nous indiquons aussi quand l’autre produit convient mieux.
+
+- Alternative à Amenitiz : tarifs publics et IA sur WhatsApp Vous cherchez une alternative à Amenitiz ? Comparez Amenitiz (sur devis) et Hostlio Pro : tarifs publics, IA sur WhatsApp et cas où chacun convient.
+
+- Vue d’ensemble : Hostlio Pro, Cloudbeds, Mews, Little Hotelier et HotelRunner
+Calculateurs gratuits pour hôtels
+
+---
+# Alternative à Amenitiz : Hostlio Pro comparé (2026) | Hostlio Pro
+URL: https://hostliopro.com/fr/comparatifs/alternative-amenitiz/
+
+## Une alternative à Amenitiz avec des tarifs publics
+Amenitiz est une solution tout-en-un pour hôtels indépendants et chambres d’hôtes en Europe, sur devis. Hostlio Pro est un PMS, un channel manager et un assistant IA pour les clients, avec des tarifs affichés sur son site. Voici une comparaison honnête, fondée sur les pages officielles de chacun.
+Essai gratuit de 7 jours Voir les forfaits
+
+En bref : Hostlio Pro convient aux établissements qui veulent connaître le prix d’emblée et disposer d’un assistant IA qui répond sur WhatsApp dans tous les forfaits. Amenitiz convient à ceux qui veulent un créateur de site, un moteur de réservation et l’encaissement des paiements dans un seul abonnement, avec un support dans leur langue.
+
+Une alternative à Amenitiz avec des tarifs publics, En octobre 2026 En octobre 2026 Hostlio Pro Amenitiz
+Tarifs Abonnement mensuel fixe : Starter 49 $, Pro 89 $, Growth 149 $ (USD, tarif early bird) ; −20 % en paiement annuel Non publiés : devis personnalisé selon le nombre de chambres ; paiement mensuel ou annuel (remise supplémentaire)
+Commissions Aucun frais par réservation ni pourcentage du chiffre d’affaires Aucune commission sur les réservations directes ni frais par réservation ; transactions AmenitizPay 1,5 % + 0,25 €
+Channel manager Tous les forfaits, connexions certifiées à plus de 100 OTA Offre Core : channel manager avec connexions OTA illimitées (« 150+ OTAs »)
+Site, moteur de réservation et paiements Non inclus ; Hostlio Pro se concentre sur le PMS, le channel manager et la messagerie IA Moteur de réservation et AmenitizPay dans Core ; création de site via Presence/Ultimate+ ou l’option Advanced Website
+Messagerie clients et WhatsApp L’assistant IA Lio sur WhatsApp dans tous les forfaits ; en Pro et Growth, aussi les messageries Booking.com, Airbnb et Expedia Core : e-mails automatiques et messagerie client unifiée. « Messagerie client + WhatsApp » dans l’offre Advanced (mention « disponible en juin » sur la page tarifs)
+Essai gratuit 7 jours (carte à l’inscription, aucun prélèvement avant la fin de l’essai) Non proposé ; démo gratuite et « mise en ligne en 30 jours ou premier mois offert »
+Langues du support Anglais et turc (tableau de bord en 6 langues) Anglais, français, italien, espagnol ou portugais dans toutes les offres
+
+Les informations sur les concurrents proviennent uniquement de leurs pages officielles et ont été vérifiées le 8 octobre 2026 ; prix et offres peuvent changer. Hostlio Pro est partie prenante de ce comparatif. Ce que nous n’avons pas pu vérifier n’y figure pas. Vous voyez une erreur ? Écrivez-nous , nous la corrigerons.
+
+## Où Hostlio Pro se distingue
+
+## Le prix avant la démo
+Les forfaits et leurs prix sont sur la page tarifs, dès 49 $ par mois, avec un essai de 7 jours.
+
+## L’IA sur WhatsApp dès le premier forfait
+Lio répond aux clients sur WhatsApp dans tous les forfaits, avec les informations de votre hôtel et dans la langue du client ; Pro et Growth ajoutent les messageries Booking.com, Airbnb et Expedia.
+
+## Des suggestions chaque matin
+Chaque matin, Lio propose des actions sur les prix et l’exploitation ; rien ne change sans votre accord.
+
+## Les chiffres par canal
+L’écran Analyse affiche taux d’occupation, ADR, RevPAR et ce que chaque canal vous laisse après commission.
+
+## Quand Amenitiz convient mieux
+
+## Vous voulez site et moteur de réservation dans le même abonnement
+Amenitiz inclut un moteur de réservation et propose la création de site ; pas Hostlio Pro.
+
+## Vous voulez encaisser les paiements
+AmenitizPay est intégré ; Hostlio Pro n’encaisse pas de paiements.
+
+## Vous voulez un support en français
+Amenitiz propose un support dans votre langue dans toutes ses offres ; le support Hostlio Pro est en anglais et en turc, même si le tableau de bord est en français.
+
+## Vous voulez un interlocuteur dédié
+Amenitiz mentionne un account manager dédié dans son offre Advanced.
+
+## Autres alternatives aux tarifs publics
+
+- Sirvoy : Abonnement mensuel fixe par tranche de chambres, par ex. jusqu’à 10 chambres 22 € (Starter) ou 79 € (Pro, avec channel manager), essai de 14 jours. (source)
+- Beds24 : Paiement à l’usage dès 15,50 € par mois : forfait de base, par chambre et par connexion de canal. (source)
+
+## Passer à Hostlio Pro : comment ça se passe
+
+- Démarrez l’essai de 7 jours et saisissez vos types de chambres et vos tarifs.
+- Importez vos réservations depuis un export CSV ou Excel.
+- Connectez vos OTA et planifiez la bascule pour que les disponibilités partent d’un seul système.
+- Renseignez les informations de l’hôtel pour Lio et testez-le avec « Essayer Lio ».
+
+Essai gratuit de 7 jours Voir les forfaits
+
+## Sources
+
+- Amenitiz : Nos tarifs (Vérifié le 8 octobre 2026)
+- Amenitiz: Pricing (Vérifié le 8 octobre 2026)
+- Amenitiz: Channel manager (Vérifié le 8 octobre 2026)
+
+## Autres comparatifs
+
+- Vue d’ensemble : Hostlio Pro, Cloudbeds, Mews, Little Hotelier et HotelRunner Tous les comparatifs · Calculateurs gratuits pour hôtels
+
+Q: Combien coûte Amenitiz ?
+A: Amenitiz ne publie pas ses prix. Sa page tarifs propose un devis personnalisé selon le nombre de chambres, en paiement mensuel ou annuel.
+
+Q: Amenitiz inclut-il WhatsApp ?
+A: Sur la page tarifs d’Amenitiz, « Messagerie client + WhatsApp » figure dans l’offre Advanced, pas dans Core, avec la mention « disponible en juin ».
+
+Q: Hostlio Pro est-il disponible en français ?
+A: Oui : le tableau de bord, l’application mobile et le formulaire de check-in client existent en français (ainsi qu’en anglais, turc, espagnol, italien et portugais). Le support est en anglais et en turc.

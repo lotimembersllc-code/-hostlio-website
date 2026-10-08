@@ -12,12 +12,16 @@ Aşağıdaki "v5 … v14" bölümleri sürüm geçmişidir; geçerli mimari bu b
 | `booking_templates.py` | Booking.com otomatik cevap yazısının (6 dil) başlık/açıklaması ve 12 kopyalanabilir mesaj şablonu; `pages_v4.guides()` yazıya ekler, blog listesi başlığı `post_meta()` ile aynı kaynaktan |
 | `legal_v6.py`, `legal_v6_intl.py`, `legal_v5.py` | Gizlilik, şartlar, hesap silme (alt işleyici listesi `SUBPROCESSORS`) |
 | `security_page.py`, `roi_page.py`, `signup_page.py` | Güvenlik + DPA, ROI hesaplayıcı, kayıt/ödeme sayfaları |
+| `tools_pages.py` | Ücretsiz araçlar (6 dil): Araçlar dizini, RevPAR/ADR/doluluk ve OTA komisyonu hesaplayıcıları. Hesap `src/assets/kpi.js`; formül testi `node scripts/kpi.test.js` |
+| `compare_pages.py` | Karşılaştırma merkezi + Hostlio vs HotelRunner/Cloudbeds, Cloudbeds/Amenitiz/HiJiffy alternatifleri (yalnız var olan dillerde). Rakip bilgisi YALNIZ resmî sayfadan, `SRC` + kontrol tarihiyle; 3 ayda bir yeniden doğrulayın |
+| `guides_tr.py` | Yalnız TR: channel manager nedir, KBS bildirimi (Hostlio KBS'ye otomatik bildirim YAPMAZ), otel programı fiyatları 2026, otel WhatsApp asistanı |
 | `src/` | Olduğu gibi kopyalanan dosyalar: `assets/` (CSS, JS, görsel, font, video), `attribution.js`, Google doğrulama dosyası, `robots.txt`, `vercel.json` tabanı |
 | `page_dates.json` | Sayfa başına içerik özeti + tarih (dateModified / sitemap lastmod). Build günceller; commit edin |
 | `scripts/check.py` | Kapı: kırık link/asset, JSON-LD, hreflang, title/description tekrarı ve uzunluğu, satır içi betik (CSP), fiyat yer tutucusu, yönlendirme hedefleri. `--live-prices` canlı `plans` ucuyla karşılaştırır |
 | `scripts/attribution-check.mjs` | `src/attribution.js` ilk temas + 90 gün testi (kök `attribution.js` birebir kopya olmalı) |
 | `preview.py`, `shots/*.py` | Yerel önizleme ve ekran görüntüsü/erişilebilirlik betikleri (build'e bağlı değil) |
 
+Tek dilli sayfalar (ör. yalnız TR): hreflang yalnız var olan dili listeler, x-default sayfanın kendisidir (`xdefault()`). Araç/karşılaştırma sayfalarına bağlamsal link `PAGE_EXTRA` ("Ayrıca bakın" satırı) ile verilir.
 İç link (S4, 8 Ekim 2026): yazılarda "İlgili yazılar", ürün/segment sayfalarında "İlgili rehberler" bloğu `build.py`
 `RELATED_POSTS` / `PAGE_GUIDES` eşlemesinden üretilir; yeni yazı eklerken bu iki tabloya da ekleyin.
 404: Vercel tek `/404.html` verir; sayfa 6 dilin metnini taşır, `site.js` dil önekine göre gösterir.

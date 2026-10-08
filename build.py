@@ -111,6 +111,28 @@ ROUTES["privacy"]["en"] = "/en/privacy/"; ROUTES["terms"]["en"] = "/en/terms/"; 
 ROUTES["security"] = {"tr": "/tr/guvenlik-ve-veri/", "en": "/en/security/", "es": "/es/seguridad/", "it": "/it/sicurezza/", "pt": "/pt/seguranca/", "fr": "/fr/securite/"}
 ROUTES["dpa"] = {"en": "/en/dpa/"}
 ROUTES["roi"] = {"tr": "/tr/roi-hesaplayici/", "en": "/en/roi-calculator/", "es": "/es/calculadora-roi/", "it": "/it/calcolatore-roi/", "pt": "/pt/calculadora-roi/", "fr": "/fr/calculateur-roi/"}
+# S9 (8 Ekim 2026): ücretsiz araçlar (tools_pages.py), karşılaştırmalar (compare_pages.py), TR rehberleri (guides_tr.py).
+# Bir sayfa yalnız var olduğu dillerde listelenir; hreflang/sitemap ROUTES'tan türetilir.
+ROUTES.update({
+ "tools":      {"tr": "/tr/araclar/", "en": "/en/tools/", "es": "/es/herramientas/", "it": "/it/strumenti/", "pt": "/pt/ferramentas/", "fr": "/fr/outils/"},
+ "kpi":        {"tr": "/tr/araclar/revpar-adr-doluluk-hesaplama/", "en": "/en/tools/revpar-adr-occupancy-calculator/", "es": "/es/herramientas/calculadora-revpar-adr-ocupacion/",
+                "it": "/it/strumenti/calcolo-revpar-adr-occupazione/", "pt": "/pt/ferramentas/calculadora-revpar-adr-ocupacao/", "fr": "/fr/outils/calcul-revpar-adr-taux-occupation/"},
+ "commission": {"tr": "/tr/araclar/ota-komisyon-hesaplama/", "en": "/en/tools/ota-commission-calculator/", "es": "/es/herramientas/calculadora-comision-ota/",
+                "it": "/it/strumenti/calcolatore-commissioni-ota/", "pt": "/pt/ferramentas/calculadora-comissao-ota/", "fr": "/fr/outils/calculateur-commission-ota/"},
+ "cmp-hub":    {"tr": "/tr/karsilastirmalar/", "en": "/en/compare/", "es": "/es/comparativas/", "pt": "/pt/comparativos/", "fr": "/fr/comparatifs/"},
+ "vs-hotelrunner": {"tr": "/tr/karsilastirmalar/hostlio-vs-hotelrunner/", "en": "/en/compare/hostlio-vs-hotelrunner/"},
+ "vs-cloudbeds":   {"en": "/en/compare/hostlio-vs-cloudbeds/", "es": "/es/comparativas/hostlio-vs-cloudbeds/", "pt": "/pt/comparativos/hostlio-vs-cloudbeds/"},
+ "alt-cloudbeds":  {"en": "/en/compare/cloudbeds-alternatives/", "es": "/es/comparativas/alternativas-a-cloudbeds/", "pt": "/pt/comparativos/alternativas-ao-cloudbeds/"},
+ "alt-amenitiz":   {"en": "/en/compare/amenitiz-alternative/", "fr": "/fr/comparatifs/alternative-amenitiz/"},
+ "alt-hijiffy":    {"en": "/en/compare/hijiffy-alternative/", "pt": "/pt/comparativos/alternativa-hijiffy/"},
+ "whatsapp-tr":    {"tr": "/tr/otel-whatsapp-asistani/"},
+ "post-channel-manager": {"tr": "/tr/blog/channel-manager-nedir/"},
+ "post-kbs":       {"tr": "/tr/blog/kbs-bildirimi-nasil-yapilir/"},
+ "post-prices":    {"tr": "/tr/blog/otel-programi-fiyatlari-2026/"},
+})
+TOOLS_LABEL = {"tr": "Ücretsiz araçlar", "en": "Free tools", "es": "Herramientas gratis", "it": "Strumenti gratuiti", "pt": "Ferramentas grátis", "fr": "Outils gratuits"}
+CMP_LABEL = {"tr": "Karşılaştırmalar", "en": "Comparisons", "es": "Comparativas", "it": "Confronti", "pt": "Comparativos", "fr": "Comparatifs"}
+def xdefault(key): return "en" if "en" in ROUTES[key] else langs(key)[0]   # tek dilli (yalnız TR) sayfa x-default'u kendisi
 # Q2: mobil menü düğmesinin açık/kapalı etiketi; Q1: footer'daki panel girişi; Q9: footer check-in etiketi
 MENU_CLOSE = {"tr": "Menüyü kapat", "en": "Close menu", "es": "Cerrar menú", "it": "Chiudi il menu", "pt": "Fechar menu", "fr": "Fermer le menu"}
 FOOT_LOGIN = {"tr": "Panele giriş", "en": "Log in to dashboard", "es": "Acceso al panel", "it": "Accedi al pannello", "pt": "Entrar no painel", "fr": "Connexion au tableau de bord"}
@@ -449,20 +471,48 @@ def label_regions(body, lang):
 RELATED_POSTS = {
     "post-autoreply": ["post-ai", "post-overbooking", "post-pms", "post-whatsapp"],
     "post-ai": ["post-autoreply", "post-pms", "post-whatsapp", "post-overbooking"],
-    "post-overbooking": ["post-pms", "post-autoreply", "post-noshows", "post-ai"],
-    "post-pms": ["post-overbooking", "post-ai", "post-autoreply"],
+    "post-overbooking": ["post-channel-manager", "post-pms", "post-autoreply", "post-noshows", "post-ai"],
+    "post-pms": ["post-prices", "post-channel-manager", "post-overbooking", "post-ai", "post-autoreply"],
     "post-aifrontdesk": ["post-ai", "post-autoreply", "post-whatsapp"],
     "post-noshows": ["post-overbooking", "post-pms", "post-autoreply"],
     "post-chains": ["post-pms", "post-aifrontdesk", "post-overbooking"],
     "post-whatsapp": ["post-autoreply", "post-ai", "post-aifrontdesk"],
+    # S9 TR rehberleri (yalnız TR; diğer dillerde liste o dilde olmayan yazıyı zaten atlar)
+    "post-channel-manager": ["post-overbooking", "post-prices", "post-pms"],
+    "post-kbs": ["post-pms", "post-channel-manager", "post-ai"],
+    "post-prices": ["post-pms", "post-channel-manager", "post-overbooking"],
 }
 RELATED_PRODUCT = {"post-autoreply": "ai", "post-ai": "ai", "post-overbooking": "channel", "post-pms": "pricing",
-                   "post-aifrontdesk": "ai", "post-noshows": "channel", "post-chains": "features", "post-whatsapp": "ai"}
+                   "post-aifrontdesk": "ai", "post-noshows": "channel", "post-chains": "features", "post-whatsapp": "ai",
+                   "post-channel-manager": "channel", "post-kbs": "checkin", "post-prices": "pricing"}
 _SEG = ["post-pms", "post-autoreply", "post-overbooking"]
-PAGE_GUIDES = {"channel": ["post-overbooking", "post-pms", "post-noshows"], "ai": ["post-autoreply", "post-ai", "post-whatsapp"],
-               "checkin": ["post-pms", "post-ai", "post-noshows"], "pricing": ["post-pms", "post-overbooking", "post-autoreply"],
-               "features": _SEG, "compare": ["post-pms", "post-overbooking", "post-autoreply"],
-               "t-guesthouse": _SEG, "t-boutique": _SEG, "t-apart": _SEG, "t-hostel": _SEG}
+PAGE_GUIDES = {"channel": ["post-channel-manager", "post-overbooking", "post-pms", "post-noshows"], "ai": ["post-autoreply", "post-ai", "post-whatsapp"],
+               "checkin": ["post-kbs", "post-pms", "post-ai", "post-noshows"], "pricing": ["post-prices", "post-pms", "post-overbooking", "post-autoreply"],
+               "features": _SEG, "compare": ["post-prices", "post-pms", "post-overbooking", "post-autoreply"],
+               "t-guesthouse": _SEG, "t-boutique": _SEG, "t-apart": _SEG, "t-hostel": _SEG,
+               "kpi": ["post-pms", "post-overbooking", "post-channel-manager"], "commission": ["post-channel-manager", "post-overbooking", "post-pms"]}
+# S9: "Ayrıca bakın" satırı — araçlar, karşılaştırmalar ve WhatsApp sayfasına bağlamsal iç link (o dilde olmayan atlanır)
+PAGE_EXTRA = {"ai": ["whatsapp-tr", "alt-hijiffy", "roi"], "channel": ["commission", "vs-hotelrunner", "kpi"],
+              "pricing": ["cmp-hub", "commission", "kpi"], "features": ["kpi", "commission", "cmp-hub"],
+              "compare": ["cmp-hub", "vs-hotelrunner", "vs-cloudbeds", "alt-cloudbeds", "alt-amenitiz", "alt-hijiffy"],
+              "t-boutique": ["kpi", "cmp-hub"], "t-guesthouse": ["kpi", "cmp-hub"], "t-apart": ["kpi", "cmp-hub"], "t-hostel": ["kpi", "cmp-hub"],
+              "post-pms": ["cmp-hub", "kpi"], "post-ai": ["whatsapp-tr"], "post-autoreply": ["whatsapp-tr"], "post-whatsapp": ["alt-hijiffy"],
+              "post-overbooking": ["commission"], "post-noshows": ["kpi"], "post-prices": ["cmp-hub", "kpi"], "post-channel-manager": ["commission"],
+              "kpi": ["commission", "roi"], "commission": ["kpi", "roi"]}
+SEE_ALSO = {"tr": "Ayrıca bakın", "en": "See also", "es": "Ver también", "it": "Vedi anche", "pt": "Veja também", "fr": "Voir aussi"}
+def extra_label(k, lang):
+    import tools_pages, compare_pages
+    if k == "tools": return TOOLS_LABEL[lang]
+    if k == "cmp-hub": return CMP_LABEL[lang]
+    if k == "roi": return ROI_LABEL[lang]
+    if k == "kpi": return tools_pages.T[lang]["kpi_crumb"]
+    if k == "commission": return tools_pages.T[lang]["com_crumb"]
+    if k == "whatsapp-tr": return "Otel WhatsApp asistanı"
+    return compare_pages.P[k][lang]["crumb"]
+def extra_html(key, lang):
+    ks = [k for k in PAGE_EXTRA.get(key, []) if lang in ROUTES.get(k, {}) and k != key]
+    if not ks: return ""
+    return f'<p class="more">{SEE_ALSO[lang]}: ' + " · ".join(f'<a href="{url(k, lang)}">{html.escape(extra_label(k, lang))}</a>' for k in ks) + '</p>'
 RELATED_H = {"tr": ("İlgili yazılar", "İlgili rehberler", "Hostlio Pro'da"), "en": ("Related articles", "Related guides", "In Hostlio Pro"),
              "es": ("Artículos relacionados", "Guías relacionadas", "En Hostlio Pro"), "it": ("Articoli correlati", "Guide correlate", "In Hostlio Pro"),
              "pt": ("Artigos relacionados", "Guias relacionados", "No Hostlio Pro"), "fr": ("Articles connexes", "Guides associés", "Dans Hostlio Pro")}
@@ -481,7 +531,7 @@ def related_html(key, lang):
         lbl = dict(UI[lang]["nav"]).get(prod) or CHECKIN_LABEL[lang]
         more = f'<p class="more">{RELATED_H[lang][2]}: <a href="{url(prod, lang)}">{lbl}</a></p>'
     return (f'<section class="rule related" aria-labelledby="rel-h"><div class="wrap"><h2 id="rel-h">{h}</h2>'
-            f'<ul class="related-list">{items}</ul>{more}</div></section>')
+            f'<ul class="related-list">{items}</ul>{more}{extra_html(key, lang)}</div></section>')
 
 def post_dates(page, lang, body):
     """Yazının görünen "güncelleme" tarihi ve BlogPosting.dateModified sabit UPDATED yerine sayfanın kendi
@@ -562,6 +612,7 @@ def layout(page, lang):
     if BING_VERIFY: head_extra += f'<meta name="msvalidate.01" content="{BING_VERIFY}">\n'
     head_extra += analytics_head()
     year = datetime.date.fromisoformat(UPDATED).year
+    cmp_li = f'<li><a href="{url("cmp-hub", lang)}">{CMP_LABEL[lang]}</a></li>\n' if lang in ROUTES["cmp-hub"] else ""
     for _n, _a in GEN_ALT.items():
         body = re.sub(r'(<img src="/assets/img/' + _n + r'\.webp" alt=")[^"]*"', lambda m: m.group(1) + html.escape(_a[lang]) + '"', body)
     doc = f'''<!doctype html>
@@ -572,7 +623,7 @@ def layout(page, lang):
 <title>{html.escape(title)}</title>
 <meta name="description" content="{html.escape(desc)}">
 <link rel="canonical" href="{canonical}">
-{"".join(f'<link rel="alternate" hreflang="{HREFLANG[l]}" href="{abs_url(key,l)}">' + chr(10) for l in langs(key))}<link rel="alternate" hreflang="x-default" href="{abs_url(key,"en")}">
+{"".join(f'<link rel="alternate" hreflang="{HREFLANG[l]}" href="{abs_url(key,l)}">' + chr(10) for l in langs(key))}<link rel="alternate" hreflang="x-default" href="{abs_url(key,xdefault(key))}">
 <meta name="robots" content="index,follow,max-image-preview:large">
 <meta property="og:type" content="{page.get("og_type","website")}">
 <meta property="og:site_name" content="Hostlio Pro">
@@ -627,7 +678,8 @@ def layout(page, lang):
 <li><a href="{url("blog",lang)}">Blog</a></li>
 <li><a href="{url("faq",lang)}">{u["foot_faq"]}</a></li>
 <li><a href="{url("roi",lang)}">{ROI_LABEL[lang]}</a></li>
-<li><a href="/llms.txt">llms.txt</a></li></ul></div>
+<li><a href="{url("tools",lang)}">{TOOLS_LABEL[lang]}</a></li>
+{cmp_li}<li><a href="/llms.txt">llms.txt</a></li></ul></div>
 <div><p class="fh">{u["foot_company"]}</p><ul>
 <li><a href="{url("about",lang)}">{u["foot_about"]}</a></li>
 <li><a href="{url("contact",lang)}">{u["foot_contact"]}</a></li>
@@ -878,7 +930,10 @@ def main():
     (DIST / "vercel.json").write_text(json.dumps(vc, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
     vc = {"buildCommand": BUILD_COMMAND, "outputDirectory": "dist", **vc}
     (ROOT / "vercel.json").write_text(json.dumps(vc, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
-    pages = {l: importlib.import_module("content_" + l).pages() for l in LANGS}
+    import tools_pages, compare_pages, guides_tr, sys as _sys_
+    _B = _sys_.modules[__name__]
+    pages = {l: importlib.import_module("content_" + l).pages() + tools_pages.pages(l, _B) + compare_pages.pages(l, _B)
+                + (guides_tr.pages(_B) if l == "tr" else []) for l in LANGS}
     if GA4_ID:   # GA4 açıkken gizlilik politikasının çerez bölümüne analitik paragrafı (analytics_consent.py)
         for l, plist in pages.items():
             for p in plist:
@@ -914,7 +969,7 @@ def main():
     for key in ROUTES:
         for lang in langs(key):
             alts = "".join(f'<xhtml:link rel="alternate" hreflang="{HREFLANG[l]}" href="{abs_url(key,l)}"/>' for l in langs(key))
-            alts += f'<xhtml:link rel="alternate" hreflang="x-default" href="{abs_url(key,"en")}"/>'
+            alts += f'<xhtml:link rel="alternate" hreflang="x-default" href="{abs_url(key,xdefault(key))}"/>'
             items.append(f'<url><loc>{abs_url(key,lang)}</loc><lastmod>{lastmod.get(abs_url(key,lang), UPDATED)}</lastmod>{alts}</url>')
     (DIST / "sitemap.xml").write_text(
         '<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">\n'

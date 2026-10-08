@@ -52,6 +52,15 @@
 - [Security and Data Protection](https://hostliopro.com/en/security/): How Hostlio Pro protects hotel and guest data: encryption, access control, subprocessors, data retention, GDPR, KVKK and our Data Processing Addendum.
 - [Data Processing Addendum (DPA)](https://hostliopro.com/en/dpa/): Hostlio Pro Data Processing Addendum for hotels: GDPR, UK GDPR, KVKK and CCPA terms, security measures, subprocessors and international transfers.
 - [Hotel AI Messaging ROI Calculator](https://hostliopro.com/en/roi-calculator/): Estimate how many staff hours and how much money AI guest messaging could save your hotel each month. Enter your rooms, daily messages and staff cost.
+- [Free Hotel Calculators: RevPAR, ADR, Commission](https://hostliopro.com/en/tools/): Free calculators for hoteliers: RevPAR, ADR and occupancy rate, net revenue after OTA commission, and AI messaging savings. No signup needed.
+- [RevPAR, ADR & Occupancy Rate Calculator (Free)](https://hostliopro.com/en/tools/revpar-adr-occupancy-calculator/): Calculate RevPAR, ADR and occupancy rate in seconds. Formulas, a worked example and common mistakes. Free hotel KPI calculator, no signup needed.
+- [OTA Commission Calculator: Net Revenue per Booking](https://hostliopro.com/en/tools/ota-commission-calculator/): Work out what you keep from a Booking.com or Expedia booking after commission and payment fees, plus net revenue per night. Free calculator, no signup.
+- [Hotel Software Comparisons & Alternatives](https://hostliopro.com/en/compare/): Compare Hostlio Pro with HotelRunner, Cloudbeds, Amenitiz and HiJiffy: pricing models, AI guest messaging and when each one fits. Sourced and dated.
+- [Hostlio Pro vs HotelRunner (2026): Pricing, AI](https://hostliopro.com/en/compare/hostlio-vs-hotelrunner/): Hostlio Pro vs HotelRunner: a flat monthly fee vs a percentage of booking revenue, AI guest messaging, WhatsApp and which one fits your property.
+- [Hostlio Pro vs Cloudbeds (2026): Pricing, AI, Fit](https://hostliopro.com/en/compare/hostlio-vs-cloudbeds/): Hostlio Pro vs Cloudbeds compared: published flat pricing vs quote-based plans, AI guest messaging and WhatsApp, and when each one is the better fit.
+- [Cloudbeds Alternatives for Small Hotels (2026)](https://hostliopro.com/en/compare/cloudbeds-alternatives/): Cloudbeds alternatives for small and independent hotels: pricing models and published starting prices from official pages, plus how to choose. Checked Oct 2026.
+- [Amenitiz Alternative: Hostlio Pro Compared (2026)](https://hostliopro.com/en/compare/amenitiz-alternative/): Looking for an Amenitiz alternative? Compare quote-based Amenitiz with Hostlio Pro's published pricing, AI guest messaging on WhatsApp and when each fits.
+- [HiJiffy Alternative: AI Messaging with PMS Included](https://hostliopro.com/en/compare/hijiffy-alternative/): HiJiffy alternative for small hotels: compare HiJiffy's guest-messaging plans with Hostlio Pro, where PMS, channel manager and WhatsApp AI come in one price.
 
 ## Türkçe sayfalar
 - [Hostlio Pro](https://hostliopro.com/tr/): Otel programı Hostlio Pro: AI asistan Lio misafir mesajlarını 30+ dilde 7/24 yanıtlar, kanal yöneticisi 100+ OTA'yı senkronlar. 7 gün ücretsiz deneyin.
@@ -78,6 +87,15 @@
 - [Hesap Silme](https://hostliopro.com/tr/hesap-silme/): Hostlio Pro hesabınızın ve ilişkili verilerin silinmesini nasıl talep edeceğiniz.
 - [Güvenlik ve Veri Koruma](https://hostliopro.com/tr/guvenlik-ve-veri/): Hostlio Pro otel ve misafir verilerini nasıl korur: şifreleme, erişim kontrolü, alt işleyiciler, saklama süreleri, KVKK, GDPR ve Veri İşleme Sözleşmesi.
 - [Otel AI Mesajlaşma Tasarruf Hesaplayıcı](https://hostliopro.com/tr/roi-hesaplayici/): Yapay zekâ ile misafir mesajlaşmasının otelinize ayda kaç personel saati ve ne kadar maliyet kazandırabileceğini oda ve mesaj sayınızla hesaplayın.
+- [Ücretsiz Otel Hesaplayıcıları: RevPAR, Komisyon](https://hostliopro.com/tr/araclar/): Otelciler için ücretsiz hesaplayıcılar: RevPAR, ADR ve doluluk oranı, OTA komisyonu sonrası net gelir ve AI mesajlaşma tasarrufu. Kayıt gerekmez.
+- [RevPAR, ADR ve Doluluk Oranı Hesaplama (Ücretsiz)](https://hostliopro.com/tr/araclar/revpar-adr-doluluk-hesaplama/): RevPAR, ADR ve doluluk oranını saniyeler içinde hesaplayın. Formüller, adım adım örnek ve sık yapılan hatalar. Ücretsiz otel hesaplayıcısı, kayıt gerekmez.
+- [OTA Komisyon Hesaplama: Net Gelir Hesaplayıcı](https://hostliopro.com/tr/araclar/ota-komisyon-hesaplama/): Booking.com, Expedia gibi OTA rezervasyonlarında komisyon ve ödeme kesintisinden sonra elinize kalan net geliri ve gece başı net fiyatı ücretsiz hesaplayın.
+- [Otel Programı Karşılaştırmaları](https://hostliopro.com/tr/karsilastirmalar/): Hostlio Pro'yu HotelRunner ve diğer otel programlarıyla karşılaştırın: fiyat modeli, AI misafir mesajlaşması ve hangisi kime uygun. Resmî kaynaklı, tarihli.
+- [Hostlio Pro vs HotelRunner (2026): Fiyat, AI](https://hostliopro.com/tr/karsilastirmalar/hostlio-vs-hotelrunner/): Hostlio Pro ve HotelRunner karşılaştırması: sabit aylık ücret ile rezervasyon gelirinden yüzde, AI misafir mesajlaşması, WhatsApp ve hangisi kime uygun.
+- [Otel WhatsApp Asistanı: Lio ile 7/24 Misafir Yanıtı](https://hostliopro.com/tr/otel-whatsapp-asistani/): Otel WhatsApp asistanı Lio, misafir sorularını otel bilgilerinizle ve misafirin dilinde 7/24 yanıtlar; rezervasyon talebini onayınıza getirir.
+- [Channel manager nedir? Otelciler için kanal yöneticisi rehberi](https://hostliopro.com/tr/blog/channel-manager-nedir/): Channel manager (kanal yöneticisi) nedir, nasıl çalışır, PMS'ten farkı ne? Fiyat modelleri, seçim için 7 soru ve kurulum adımları. 2026 rehberi.
+- [KBS bildirimi nasıl yapılır? Oteller ve pansiyonlar için rehber](https://hostliopro.com/tr/blog/kbs-bildirimi-nasil-yapilir/): KBS (Kimlik Bildirim Sistemi) bildirimi adım adım: Emniyet ve Jandarma KBS farkı, kayıt, yabancı misafir, süreler ve cezalar. Resmî kaynaklı.
+- [Otel programı fiyatları 2026: modeller ve gerçek rakamlar](https://hostliopro.com/tr/blog/otel-programi-fiyatlari-2026/): 2026 otel programı fiyatları: sabit paket, oda başı, komisyon ve lisans modelleri; resmî sayfalardan alınmış rakamlar ve 10, 25, 50 oda için örnek hesap.
 
 ## Páginas en español
 - [Hostlio Pro](https://hostliopro.com/es/): Software de gestión hotelera Hostlio Pro: la IA Lio atiende a huéspedes 24/7 en 30+ idiomas y el channel manager sincroniza 100+ OTAs. 7 días gratis.
@@ -104,6 +122,12 @@
 - [Eliminar tu cuenta](https://hostliopro.com/es/eliminar-cuenta/): Cómo solicitar la eliminación de tu cuenta de Hostlio Pro y de los datos asociados.
 - [Seguridad y protección de datos](https://hostliopro.com/es/seguridad/): Cómo protege Hostlio Pro los datos de hoteles y huéspedes: cifrado, control de acceso, subencargados, conservación, RGPD y nuestro acuerdo DPA.
 - [Calculadora de ROI de mensajería IA para hoteles](https://hostliopro.com/es/calculadora-roi/): Calcula cuántas horas y cuánto coste de personal podría ahorrar tu hotel al mes con la mensajería con IA, según habitaciones y mensajes diarios.
+- [Calculadoras gratis para hoteles: RevPAR y comisión](https://hostliopro.com/es/herramientas/): Calculadoras gratuitas para hoteleros: RevPAR, ADR y ocupación, ingreso neto tras la comisión de la OTA y ahorro con mensajería IA. Sin registro.
+- [Calculadora de RevPAR, ADR y ocupación hotelera](https://hostliopro.com/es/herramientas/calculadora-revpar-adr-ocupacion/): Calcula RevPAR, ADR y porcentaje de ocupación en segundos. Fórmulas, ejemplo paso a paso y errores frecuentes. Calculadora hotelera gratuita, sin registro.
+- [Calculadora de comisión OTA: ingreso neto](https://hostliopro.com/es/herramientas/calculadora-comision-ota/): Calcula cuánto te queda de una reserva de Booking.com o Expedia tras la comisión y los gastos de pago, y el ingreso neto por noche. Gratis y sin registro.
+- [Comparativas de software hotelero](https://hostliopro.com/es/comparativas/): Compara Hostlio Pro con Cloudbeds y otras alternativas: modelos de precio, mensajería con IA y cuándo encaja cada uno. Con fuentes oficiales y fecha.
+- [Hostlio Pro vs Cloudbeds (2026): precios e IA](https://hostliopro.com/es/comparativas/hostlio-vs-cloudbeds/): Hostlio Pro frente a Cloudbeds: precio fijo publicado o planes con presupuesto, mensajería con IA y WhatsApp, y cuándo encaja mejor cada uno.
+- [Alternativas a Cloudbeds para hoteles pequeños](https://hostliopro.com/es/comparativas/alternativas-a-cloudbeds/): Alternativas a Cloudbeds para hoteles pequeños e independientes: modelos de precio y precios de partida publicados en webs oficiales, y cómo elegir.
 
 ## Pagine in italiano
 - [Hostlio Pro](https://hostliopro.com/it/): Gestionale per hotel Hostlio Pro: l'assistente AI Lio risponde agli ospiti 24/7 in 30+ lingue e il channel manager sincronizza 100+ OTA. 7 giorni gratis.
@@ -130,6 +154,9 @@
 - [Elimina il tuo account](https://hostliopro.com/it/elimina-account/): Come richiedere l’eliminazione del tuo account Hostlio Pro e dei dati collegati.
 - [Sicurezza e protezione dei dati](https://hostliopro.com/it/sicurezza/): Come Hostlio Pro protegge i dati di hotel e ospiti: cifratura, controllo degli accessi, sub-responsabili, conservazione, GDPR e il nostro DPA.
 - [Calcolatore ROI dei messaggi AI per hotel](https://hostliopro.com/it/calcolatore-roi/): Stima quante ore e quanto costo del personale i messaggi AI con gli ospiti possono far risparmiare al tuo hotel ogni mese, in base a camere e messaggi.
+- [Calcolatori gratis per hotel: RevPAR e commissioni](https://hostliopro.com/it/strumenti/): Calcolatori gratuiti per albergatori: RevPAR, ADR e occupazione, ricavo netto dopo la commissione OTA e risparmio con i messaggi AI. Senza registrazione.
+- [Calcolo RevPAR, ADR e tasso di occupazione (gratis)](https://hostliopro.com/it/strumenti/calcolo-revpar-adr-occupazione/): Calcola RevPAR, ADR e tasso di occupazione in pochi secondi. Formule, esempio passo passo ed errori comuni. Calcolatore gratuito per hotel, senza registrazione.
+- [Calcolatore commissioni OTA: ricavo netto](https://hostliopro.com/it/strumenti/calcolatore-commissioni-ota/): Calcola quanto ti resta di una prenotazione Booking.com o Expedia dopo commissione e costi di pagamento, e il netto per notte. Gratis, senza registrazione.
 
 ## Páginas em português
 - [Sistema para Hotel com IA e Channel Manager](https://hostliopro.com/pt/): Sistema para hotel Hostlio Pro: o assistente de IA Lio responde aos hóspedes 24/7 em 30+ idiomas e o channel manager sincroniza 100+ OTAs. 7 dias grátis.
@@ -156,6 +183,13 @@
 - [Excluir sua conta](https://hostliopro.com/pt/excluir-conta/): Como solicitar a exclusão da sua conta do Hostlio Pro e dos dados associados.
 - [Segurança e proteção de dados](https://hostliopro.com/pt/seguranca/): Como o Hostlio Pro protege os dados de hotéis e hóspedes: criptografia, controle de acesso, suboperadores, retenção, LGPD, GDPR e nosso DPA.
 - [Calculadora de ROI de mensagens com IA](https://hostliopro.com/pt/calculadora-roi/): Estime quantas horas e quanto custo de equipe as mensagens com IA podem economizar no seu hotel por mês, com base em quartos e mensagens diárias.
+- [Calculadoras grátis para hotéis: RevPAR e comissão](https://hostliopro.com/pt/ferramentas/): Calculadoras gratuitas para hoteleiros: RevPAR, ADR e taxa de ocupação, receita líquida após a comissão da OTA e economia com mensagens de IA. Sem cadastro.
+- [Calculadora de RevPAR, ADR e taxa de ocupação](https://hostliopro.com/pt/ferramentas/calculadora-revpar-adr-ocupacao/): Calcule RevPAR, ADR e taxa de ocupação em segundos. Fórmulas, exemplo passo a passo e erros comuns. Calculadora hoteleira gratuita, sem cadastro.
+- [Calculadora de comissão de OTA: receita líquida](https://hostliopro.com/pt/ferramentas/calculadora-comissao-ota/): Calcule quanto sobra de uma reserva do Booking.com ou da Expedia após comissão e taxas de pagamento, e a receita líquida por noite. Grátis e sem cadastro.
+- [Comparativos de sistemas para hotel](https://hostliopro.com/pt/comparativos/): Compare o Hostlio Pro com Cloudbeds, HiJiffy e outras alternativas: modelos de preço, mensagens com IA e quando cada um serve. Com fontes oficiais e data.
+- [Hostlio Pro vs Cloudbeds (2026): preços e IA](https://hostliopro.com/pt/comparativos/hostlio-vs-cloudbeds/): Hostlio Pro x Cloudbeds: preço fixo publicado ou planos sob orçamento, mensagens com IA e WhatsApp, e quando cada um é a melhor escolha.
+- [Alternativas à Cloudbeds para hotéis pequenos](https://hostliopro.com/pt/comparativos/alternativas-ao-cloudbeds/): Alternativas à Cloudbeds para hotéis e pousadas independentes: modelos de preço e preços iniciais publicados nos sites oficiais, e como escolher.
+- [Alternativa à HiJiffy com PMS incluído](https://hostliopro.com/pt/comparativos/alternativa-hijiffy/): Alternativa à HiJiffy para hotéis pequenos: compare os planos de mensagens da HiJiffy com o Hostlio Pro, que inclui PMS, channel manager e IA no WhatsApp.
 
 ## Pages en français
 - [Logiciel de gestion hôtelière avec IA](https://hostliopro.com/fr/): Logiciel de gestion hôtelière : l’IA Lio répond aux clients 24/7 en 30+ langues, channel manager 100+ OTA. Dès 49 $/mois, 7 jours offerts.
@@ -182,3 +216,8 @@
 - [Supprimer votre compte](https://hostliopro.com/fr/supprimer-compte/): Comment demander la suppression de votre compte Hostlio Pro et des données associées.
 - [Sécurité et protection des données](https://hostliopro.com/fr/securite/): Comment Hostlio Pro protège les données des hôtels et des clients : chiffrement, contrôle d’accès, sous-traitants, conservation, RGPD et notre DPA.
 - [Calculateur de ROI de la messagerie IA](https://hostliopro.com/fr/calculateur-roi/): Estimez les heures et le coût de personnel que la messagerie IA peut faire gagner à votre hôtel chaque mois, selon vos chambres et vos messages.
+- [Calculateurs hôteliers gratuits : RevPAR, ADR](https://hostliopro.com/fr/outils/): Calculateurs gratuits pour hôteliers : RevPAR, ADR et taux d’occupation, revenu net après commission OTA et économies de la messagerie IA. Sans inscription.
+- [Calcul du RevPAR, de l’ADR et du taux d’occupation](https://hostliopro.com/fr/outils/calcul-revpar-adr-taux-occupation/): Calculez RevPAR, ADR (prix moyen) et taux d’occupation en quelques secondes. Formules, exemple détaillé et erreurs fréquentes. Outil gratuit, sans inscription.
+- [Calculateur de commission OTA : revenu net](https://hostliopro.com/fr/outils/calculateur-commission-ota/): Calculez ce qu’il vous reste d’une réservation Booking.com ou Expedia après commission et frais de paiement, et le net par nuit. Gratuit, sans inscription.
+- [Comparatifs de logiciels hôteliers](https://hostliopro.com/fr/comparatifs/): Comparez Hostlio Pro à Amenitiz et à d’autres logiciels hôteliers : modèles de prix, messagerie IA et cas où chacun convient. Sources officielles, datées.
+- [Alternative à Amenitiz : Hostlio Pro comparé (2026)](https://hostliopro.com/fr/comparatifs/alternative-amenitiz/): Vous cherchez une alternative à Amenitiz ? Comparez Amenitiz (sur devis) et Hostlio Pro : tarifs publics, IA sur WhatsApp et cas où chacun convient.
