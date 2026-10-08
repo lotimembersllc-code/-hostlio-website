@@ -339,6 +339,9 @@ from booking_templates import TEMPLATES as _TPL
 COPY_LBL = {"tr": ("Kopyala", "Kopyalandı"), "en": ("Copy", "Copied"), "es": ("Copiar", "Copiado"),
             "it": ("Copia", "Copiato"), "pt": ("Copiar", "Copiado"), "fr": ("Copier", "Copié")}
 def _with_templates(L, g):
+    if g["key"] == "post-overbooking":   # Tur 2: SEO fikri #21 (overbooking_ek.py)
+        import overbooking_ek
+        return overbooking_ek.apply(L, g, url)
     t = _TPL.get(L)
     if g["key"] != "post-autoreply" or not t: return g
     c = g["content"]
