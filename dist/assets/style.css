@@ -603,6 +603,8 @@ a.card:hover{transform:translateY(-3px);box-shadow:var(--shadow)}
 .post-cover img[src*="guest-balcony-dusk"]{object-position:50% 40%}
 .post-cover img[src*="overbooking-desk"]{object-position:50% 49%}
 img[src*="about-ledger"]{object-position:50% 68%}
+.page-photo{border-radius:var(--r-xl);overflow:hidden;aspect-ratio:16/9;margin:48px 0 0;max-width:900px}
+.page-photo img{width:100%;height:100%;object-fit:cover;object-position:50% 56%}
 
 /* dark brand footer */
 .site-footer{background:var(--navy);color:var(--night-ink);border-top:0}

@@ -102,6 +102,7 @@ def channel():
 </div></section>
 <section class="white rule"><div class="wrap">
 <div class="answer"><p><strong>Kanal yöneticisi (channel manager) nedir?</strong> Bir otelin odalarını birden fazla online satış kanalında aynı anda satarken müsaitlik ve fiyatları otomatik eşitleyen yazılımdır. Bir kanalda oda satıldığında diğer tüm kanallarda o oda anında kapanır, böylece çift rezervasyon (overbooking) önlenir.</p></div>
+<figure class="page-photo"><img src="/assets/img/channel-owner-evening.webp" alt="" loading="lazy" width="1080" height="1341"></figure>
 <h2 style="margin-top:64px">Kanal yöneticisinin sağladıkları</h2><div class="rows">
 <div class="row"><h3>Çift yönlü senkronizasyon</h3><div><p>Yeni rezervasyon, değişiklik ve iptaller oda rafına otomatik düşer. Takvimde yaptığınız değişiklik de tüm kanallara gider.</p></div></div>
 <div class="row"><h3>Fiyat ve kısıtlama yönetimi</h3><div><p>Oda tipi bazında fiyat, minimum konaklama ve satış kapatma gibi kısıtlamaları tek ekrandan tüm kanallara gönderin.</p></div></div>

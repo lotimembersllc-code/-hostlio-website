@@ -99,6 +99,7 @@ def channel():
 </div></section>
 <section class="white rule"><div class="wrap">
 <div class="answer"><p><strong>What is a channel manager?</strong> Software that keeps a hotel's availability and rates in sync while it sells rooms on several online channels at once. When a room sells on one channel it closes on all the others immediately, preventing double bookings (overbooking).</p></div>
+<figure class="page-photo"><img src="/assets/img/channel-owner-evening.webp" alt="" loading="lazy" width="1080" height="1341"></figure>
 <h2 style="margin-top:64px">What the channel manager does</h2><div class="rows">
 <div class="row"><h3>Two-way sync</h3><div><p>New bookings, modifications and cancellations drop onto the room rack automatically, and changes you make in the calendar go out to every channel.</p></div></div>
 <div class="row"><h3>Rates and restrictions</h3><div><p>Push rates, minimum stays and stop-sells per room type to all channels from one screen.</p></div></div>

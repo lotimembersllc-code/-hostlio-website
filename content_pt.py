@@ -104,6 +104,7 @@ def channel():
 </div></section>
 <section class="white rule"><div class="wrap">
 <div class="answer"><p><strong>O que é um channel manager?</strong> É um software que mantém a disponibilidade e as tarifas do hotel sincronizadas enquanto ele vende quartos em vários canais online ao mesmo tempo. Quando um quarto é vendido em um canal, ele é fechado imediatamente em todos os outros, evitando reservas duplicadas (overbooking).</p></div>
+<figure class="page-photo"><img src="/assets/img/channel-owner-evening.webp" alt="" loading="lazy" width="1080" height="1341"></figure>
 <h2 style="margin-top:64px">O que o channel manager faz</h2><div class="rows">
 <div class="row"><h3>Sincronização bidirecional</h3><div><p>Novas reservas, alterações e cancelamentos entram automaticamente no mapa de reservas, e as mudanças que você faz no calendário vão para todos os canais.</p></div></div>
 <div class="row"><h3>Tarifas e restrições</h3><div><p>Envie tarifas, estadias mínimas e fechamentos de venda por tipo de quarto para todos os canais a partir de uma única tela.</p></div></div>
