@@ -329,8 +329,33 @@ GUIDES = {
 
 for _l, _m in LANGMOD.items(): GUIDES[_l] = _m.guides(lambda k, _l=_l: url(k, _l))
 
+# S1 (8 Ekim 2026): Booking.com otomatik cevap yazısı — tıklanır başlık/açıklama + 12 kopyalanabilir şablon
+import html as _html
+from booking_templates import TEMPLATES as _TPL
+COPY_LBL = {"tr": ("Kopyala", "Kopyalandı"), "en": ("Copy", "Copied"), "es": ("Copiar", "Copiado"),
+            "it": ("Copia", "Copiato"), "pt": ("Copiar", "Copiado"), "fr": ("Copier", "Copié")}
+def _with_templates(L, g):
+    t = _TPL.get(L)
+    if g["key"] != "post-autoreply" or not t: return g
+    c = g["content"]
+    c = c.replace("</p></div>", " " + _html.escape(t["answer_add"]) + "</p></div>", 1)
+    cp, done = COPY_LBL[L]
+    items = "".join(f'<div class="tpl"><h3>{i}. {_html.escape(lbl)}</h3><blockquote class="tpl-text"><p>{_html.escape(txt)}</p></blockquote>'
+                    f'<button type="button" class="tpl-copy" data-copy data-done="{done}" hidden>{cp}</button></div>'
+                    for i, (lbl, txt) in enumerate(t["items"], 1))
+    sec = (f'<h2 id="templates">{_html.escape(t["h2"])}</h2><p>{_html.escape(t["intro"])}</p>'
+           f'<div class="tpl-list">{items}</div><p class="small muted">{_html.escape(t["note"])}</p>\n')
+    k = c.rfind("<h2>")            # son bölüm ("… Hostlio Pro'da nasıl çalışır?") şablonlardan sonra gelir
+    c = c[:k] + sec + c[k:] if k > -1 else c + sec
+    return dict(g, title=t["title"], desc=t["desc"], content=c, faq=list(g["faq"]) + [t["faq"]])
+
+def post_meta(L):
+    """T12: blog listesi başlık/açıklamayı yazının kendisinden alır (tek kaynak)."""
+    return {g["key"]: _with_templates(L, g) for g in GUIDES[L]}
+
 def guides(L, article):
-    return [article({"key": g["key"], "title": g["title"], "date": g["date"], "desc": g["desc"]}, g["content"], g["faq"]) for g in GUIDES[L]]
+    return [article({"key": g["key"], "title": g["title"], "date": g["date"], "desc": g["desc"]}, g["content"], g["faq"])
+            for g in (_with_templates(L, g) for g in GUIDES[L])]
 
 def pages(L, article):
     return [type_page(L, d) for d in TYPES[L]] + [compare_page(L)] + guides(L, article)
