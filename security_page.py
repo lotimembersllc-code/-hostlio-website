@@ -1,6 +1,7 @@
 """Güvenlik ve veri sayfası (6 dil) + Veri İşleme Sözleşmesi / DPA (yalnız İngilizce, esas metin).
 Rapor: K5 (DPA) ve "Güçlendirme önerileri → Güvenlik ve veri sayfası"."""
 import legal_v6 as LV
+import ozellik_ekleri as FXM
 
 S = {
  "en": dict(title="Security and Data Protection | Hostlio Pro", desc="How Hostlio Pro protects hotel and guest data: encryption, access control, subprocessors, data retention, GDPR, KVKK and our Data Processing Addendum.",
@@ -56,7 +57,7 @@ S = {
   cards=[("lock-simple","Criptografia em tudo","TLS em trânsito e criptografia em repouso do banco de dados e dos arquivos."),("users-three","Acesso por função e hotel","Cada hotel vê só os próprios dados; o acesso da equipe segue as funções que você definir."),("shield-check","Fornecedores auditados","Banco de dados com auditoria SOC 2 Tipo 2; pagamentos com cartão pela Stripe (PCI DSS Nível 1)."),("file-pdf","DPA pronto","Acordo de Tratamento de Dados para LGPD, GDPR, UK GDPR, KVKK e CCPA.")],
   sec=[("Onde ficam seus dados","Banco de dados, autenticação e funções de servidor rodam na Supabase; o site e o painel ficam na Vercel. Alguns fornecedores estão nos EUA; as transferências internacionais são protegidas por Cláusulas Contratuais Padrão ou outros mecanismos legais."),
        ("Pagamentos","Os dados do cartão são digitados na Stripe e nunca chegam aos nossos servidores. Só vemos o plano, o período de cobrança e o status do pagamento."),
-       ("IA e mensagens de hóspedes","A Lio envia o conteúdo da mensagem ao nosso fornecedor de IA apenas para redigir uma resposta. Pelos termos comerciais, o fornecedor não usa esse conteúdo para treinar modelos. Você decide quais assuntos a Lio responde sozinha e quais precisam da sua aprovação."),
+       ("IA e mensagens de hóspedes","O Lio envia o conteúdo da mensagem ao nosso fornecedor de IA apenas para redigir uma resposta. Pelos termos comerciais, o fornecedor não usa esse conteúdo para treinar modelos. Você decide quais assuntos o Lio responde sozinho e quais precisam da sua aprovação."),
        ("Dados do check-in online","Dados de documentos e assinaturas digitais são tratados como dados sensíveis, visíveis só para a equipe do seu hotel e apagados, no máximo, junto com a sua conta. Não armazenamos imagens de documentos ou passaportes: a zona de leitura mecânica é lida no aparelho do hóspede ou da sua equipe e só os dados extraídos são enviados."),
        ("Retenção","O conteúdo das mensagens é anonimizado ao fim do prazo que você definir (padrão {m} dias); os contatos dos hóspedes ficam guardados {g} dias após a saída; os dados da conta são apagados em até {d} dias após um pedido verificado."),
        ("Papéis na LGPD e no GDPR","Para os dados de hóspedes, o hotel é o controlador e o Hostlio Pro é o operador. Nosso DPA define essas obrigações e faz parte dos Termos de Serviço.")],
@@ -86,7 +87,7 @@ def security_page(L, build):
     s = S[L]; R = LV.RETENTION; url = build.url; icon = build.icon
     e = f'<a href="mailto:{build.EMAIL}">{build.EMAIL}</a>'
     cards = "".join(f'<div class="sec-card"><span class="mi">{icon(i)}</span><h3>{t}</h3><p>{d}</p></div>' for i, t, d in s["cards"])
-    rows = "".join(f'<div class="row"><h3>{h}</h3><div><p>{p.format(m=R["msg_default_days"], g=R["guest_contact_days"], d=R["deletion_days"])}</p></div></div>' for h, p in s["sec"])
+    rows = "".join(f'<div class="row"><h3>{h}</h3><div><p>{p.format(m=R["msg_default_days"], g=R["guest_contact_days"], d=R["deletion_days"])}</p></div></div>' for h, p in s["sec"] + FXM.FX[L]["sec"])
     pdf = f'{build.btn(s["dpa_pdf"], DPA_PDF, "ghost", " download")}' if (build.ROOT / ("src" + DPA_PDF)).exists() else ""
     body = f'''<section class="page-hero"><div class="wrap"><h1>{s["h1"]}</h1><p class="lead">{s["lead"]}</p></div></section>
 <section style="padding-top:0" aria-labelledby="sec-cards-h"><div class="wrap"><h2 id="sec-cards-h" class="sr-only">{SEC_H[L][0]}</h2><div class="sec-cards">{cards}</div></div></section>
