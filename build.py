@@ -710,7 +710,7 @@ def layout(page, lang):
 <li><a href="{url("faq",lang)}">{u["foot_faq"]}</a></li>
 <li><a href="{url("roi",lang)}">{ROI_LABEL[lang]}</a></li>
 <li><a href="{url("tools",lang)}">{TOOLS_LABEL[lang]}</a></li>
-{cmp_li}<li><a href="/llms.txt">llms.txt</a></li></ul></div>
+{cmp_li}</ul></div>
 <div><p class="fh">{u["foot_company"]}</p><ul>
 <li><a href="{url("about",lang)}">{u["foot_about"]}</a></li>
 <li><a href="{url("contact",lang)}">{u["foot_contact"]}</a></li>
