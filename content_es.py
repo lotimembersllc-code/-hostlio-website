@@ -1,4 +1,6 @@
 from build import store_badges, btn, icon, logo, url, room_rack, channel_strip, faq_block, SIGNUP_URL, EMAIL, UPDATED, CHECK, software_schema, SITE, PLANS
+import ozellik_ekleri as FX
+import derin_sayfalar as DS
 L = "es"
 def U(k): return url(k, L)
 
@@ -8,8 +10,8 @@ def D(iso):
     return f"{int(d)} de {MESES[int(m)-1]} de {y}"
 
 PLAN_TXT = {
- "starter": ("Para hostales, pensiones y hoteles boutique pequeños", ["1 alojamiento, hasta 10 habitaciones, 3 usuarios","⟦quota:starter⟧ mensajes de IA / mes","Sincronización de reservas de OTAs (más de 100 canales)","Mensajería IA por WhatsApp","Sugerencias de Lio cada mañana","Calendario de reservas (planning de habitaciones)","Confirmación de alojamiento para visados (PDF)"]),
- "pro":     ("Para hoteles en crecimiento con un solo alojamiento", ["1 alojamiento, hasta 50 habitaciones, 8 usuarios","⟦quota:pro⟧ mensajes de IA / mes","Todo lo de Starter","Mensajería por WhatsApp y bandejas de las OTAs (Booking.com, Airbnb, Expedia)","Lio recibe solicitudes de reserva por WhatsApp (con tu aprobación)","Análisis con IA de reseñas y mensajes","Check-in online con firma digital","Venta de traslados, excursiones y extras","App móvil para iOS y Android"]),
+ "starter": ("Para hostales, pensiones y hoteles boutique pequeños", ["1 alojamiento, hasta 10 habitaciones, 3 usuarios","⟦quota:starter⟧ mensajes de IA / mes","Sincronización de reservas de OTAs (más de 100 canales)","Mensajería IA por WhatsApp","Sugerencias de Lio cada mañana","Calendario de reservas (planning de habitaciones)","Confirmación de alojamiento para visados (PDF)","App móvil para iOS y Android"]),
+ "pro":     ("Para hoteles en crecimiento con un solo alojamiento", ["1 alojamiento, hasta 50 habitaciones, 8 usuarios","⟦quota:pro⟧ mensajes de IA / mes","Todo lo de Starter","Mensajería por WhatsApp y bandejas de las OTAs (Booking.com, Airbnb, Expedia)","Lio recibe solicitudes de reserva por WhatsApp (con tu aprobación)","Análisis con IA de reseñas y mensajes","Check-in online con firma digital","Venta de traslados, excursiones y extras"]),
  "growth":  ("Para equipos que gestionan dos alojamientos", ["Hasta 2 alojamientos, 150 habitaciones en total, 20 usuarios","⟦quota:growth⟧ mensajes de IA / mes","Todo lo de Pro","Resumen semanal con IA","Sincronización de canales prioritaria","Soporte prioritario (siguiente día hábil)","Llamada de onboarding personalizada","Opciones de marca blanca"]),
 }
 
@@ -107,20 +109,22 @@ def channel():
 <div class="row"><h3>Tarifas y restricciones</h3><div><p>Envía tarifas, estancias mínimas y cierres de venta por tipo de habitación a todos los canales desde una sola pantalla.</p></div></div>
 <div class="row"><h3>Planning de habitaciones por colores</h3><div><p>Ve de un vistazo de qué canal viene cada reserva. Reasigna habitaciones arrastrando y soltando.</p></div></div>
 <div class="row"><h3>Conectado a la mensajería</h3><div><p>Los mensajes de los huéspedes de reservas de OTAs llegan a la bandeja de Lio con el huésped, la habitación y las fechas junto a cada conversación.</p></div></div>
+{FX.channel_rows(L)}
 </div></div></section>
 <section><div class="wrap"><div class="section-head"><h2>Principales canales compatibles</h2><p>La lista sigue nuestra red de conexiones certificadas. ¿Echas en falta algún canal? Escríbenos.</p></div>
 <div class="table-wrap"><table><thead><tr><th>Canal</th><th>Tipo</th></tr></thead><tbody>
 <tr><th>Booking.com</th><td>OTA</td></tr><tr><th>Airbnb</th><td>Alquiler de corta estancia</td></tr><tr><th>Expedia, Hotels.com</th><td>OTA</td></tr>
 <tr><th>Agoda, Trip.com</th><td>OTA (enfocada en Asia)</td></tr><tr><th>Hotelbeds</th><td>Mayorista (banco de camas)</td></tr><tr><th>Hostelworld</th><td>Marketplace de hostels</td></tr><tr><th>Google Hotels</th><td>Metabuscador</td></tr>
 </tbody></table></div></div></section>
+{DS.more(L,"channel")}
 '''
     faq = [FAQ_CORE[3],
      ("¿El channel manager está incluido en todos los planes?", "Sí. Starter, Pro y Growth incluyen la sincronización con más de 100 OTAs. Growth añade sincronización prioritaria."),
-     ("¿Es difícil cambiar desde mi channel manager actual?", "No. Crea tus tipos de habitación en Hostlio Pro y vincula tus cuentas de OTAs a través de Channex. Nuestro equipo de onboarding te ayuda durante el cambio."),
+     FX.FX[L]["ch_switch"],
     ]
     return {"key":"channel","title":"Channel manager hotelero para 100+ OTAs | Hostlio Pro",
             "desc":"El channel manager de Hostlio Pro sincroniza en tiempo real disponibilidad y tarifas con 100+ OTAs (Booking.com, Airbnb, Expedia, Agoda) sin overbooking.",
-            "trail":[("Channel manager", U("channel"))],"body":body,"faq":faq}
+            "trail":[("Channel manager", U("channel"))],"body":body,"faq":faq+DS.faq(L,"channel")}
 
 def checkin():
     body = f'''
@@ -140,6 +144,7 @@ def checkin():
 <div class="answer"><p><strong>¿Cómo funciona el check-in online?</strong> Hostlio Pro envía a quien hizo la reserva un enlace personal, seguro y con caducidad. Desde ese enlace, el huésped escanea con la cámara del móvil la zona de lectura mecánica (MRZ) de su pasaporte o documento de identidad. La lectura se hace en su propio navegador y los datos se rellenan solos. Después añade a sus acompañantes y firma el formulario digitalmente. En la reserva solo se guardan los datos extraídos y la firma; ninguna imagen del documento se sube ni se almacena.</p></div>
 <h2 style="margin-top:64px">Funcionalidades del check-in online</h2><div class="rows">
 <div class="row"><h3>Enlace seguro</h3><div><p>Un enlace basado en token, único para cada reserva. Solo abre el formulario de esa reserva.</p></div></div>
+{FX.checkin_row(L)}
 <div class="row"><h3>Escaneo del documento sin guardar imágenes</h3><div><p>La zona de lectura mecánica del pasaporte o del documento de identidad se lee en el propio dispositivo del huésped. Solo se guardan el nombre, el número de documento, la nacionalidad, la fecha de nacimiento y la fecha de caducidad, nunca una foto del documento. Los documentos sin zona de lectura mecánica se introducen a mano.</p></div></div>
 <div class="row"><h3>Acompañantes</h3><div><p>Todas las personas que se alojan en la habitación se añaden en un solo formulario, así nadie tiene que escribir datos en recepción.</p></div></div>
 <div class="row"><h3>Firma digital y consentimiento</h3><div><p>Los huéspedes aceptan las normas de la casa y el consentimiento de datos firmando en pantalla. Las firmas se eliminan automáticamente 30 días después del check-out.</p></div></div>
@@ -151,6 +156,7 @@ def checkin():
 <li><h3>Escanear el documento</h3><p>Escanea el pasaporte o el documento de identidad con el móvil: los datos se rellenan solos y no se guarda ninguna imagen. Después indica los acompañantes.</p></li>
 <li><h3>Firmar</h3><p>Acepta las normas de la casa y firma en pantalla. En recepción, solo queda recoger la llave.</p></li></ol>
 </div></section>
+{DS.more(L,"checkin")}
 '''
     faq = [("¿Qué planes incluyen el check-in online?", "El check-in online con firma digital está incluido en los planes Pro y Growth."),
            ("¿El huésped tiene que descargar una app?", "No. El formulario de check-in se abre en el navegador; no hace falta descargar ninguna app."),
@@ -158,7 +164,7 @@ def checkin():
            ("¿Se guardan fotos de los documentos de identidad?", "No. La zona de lectura mecánica (MRZ) del documento se lee en el móvil del huésped, o en el dispositivo del hotel con la app móvil de Hostlio Pro, y solo se guardan los datos extraídos y la firma. Se pueden escanear pasaportes y documentos de identidad con MRZ; los demás se introducen a mano.")]
     return {"key":"checkin","title":"Check-in online para hoteles con firma digital | Hostlio Pro",
             "desc":"Check-in online de Hostlio Pro: el huésped escanea su documento (sin guardar imágenes), añade acompañantes y firma desde el móvil. Sin colas en recepción.",
-            "trail":[("Check-in online", U("checkin"))],"body":body,"faq":faq}
+            "trail":[("Check-in online", U("checkin"))],"body":body,"faq":faq+DS.faq(L,"checkin")}
 
 def features():
     body = f'''
@@ -172,9 +178,9 @@ def features():
 <div class="row"><h3>Confirmación de alojamiento para visados</h3><div><p>Prepara en un clic, a partir de la reserva, la confirmación de alojamiento que el huésped necesita para su visado o carta de invitación. Guárdala en PDF o imprímela.</p></div></div>
 <div class="row"><h3>Venta de traslados y excursiones</h3><div><p>Lio sugiere traslados al aeropuerto y excursiones durante la conversación y pasa la solicitud a tu equipo.</p></div></div>
 <div class="row"><h3>Sugerencias de Lio y análisis con IA</h3><div><p>Cada mañana Lio prepara sugerencias sobre precios, operaciones (habitaciones pendientes de limpieza, solicitudes sin atender), configuración incompleta y oportunidades de ingresos. Nada cambia sin tu aprobación y las sugerencias de precio respetan los límites que tú fijas. En Pro y Growth también resume las quejas y los elogios que se repiten en reseñas y mensajes.</p></div></div>
-<div class="row"><h3>Informes y equipo</h3><div><p>Informes de ocupación, ADR, RevPAR y rendimiento por canal, con un informe semanal y mensual por email. Seis roles de personal con sus propios permisos y todas las notificaciones en un solo lugar.</p></div></div>
 <div class="row"><h3>App móvil</h3><div><p>Gestiona reservas, mensajes y check-ins fuera del hotel con la app para iOS y Android.</p>{store_badges("es")}</div></div>
 </div></div></section>
+{FX.features_more(L)}
 <section><div class="wrap"><div class="section-head"><h2>Funcionalidades por plan</h2></div>
 <div class="table-wrap"><table><thead><tr><th>Funcionalidad</th><th class="c">Starter</th><th class="c">Pro</th><th class="c">Growth</th></tr></thead><tbody>
 <tr><th>Alojamientos</th><td class="c">1</td><td class="c">1</td><td class="c">2</td></tr>
@@ -192,14 +198,15 @@ def features():
 <tr><th>Confirmación de alojamiento para visados (PDF)</th><td class="c">Sí</td><td class="c">Sí</td><td class="c">Sí</td></tr>
 <tr><th>Check-in online y firma digital</th><td class="c">No</td><td class="c">Sí</td><td class="c">Sí</td></tr>
 <tr><th>Venta de traslados y excursiones</th><td class="c">No</td><td class="c">Sí</td><td class="c">Sí</td></tr>
-<tr><th>App móvil para iOS y Android</th><td class="c">No</td><td class="c">Sí</td><td class="c">Sí</td></tr>
+<tr><th>App móvil para iOS y Android</th><td class="c">Sí</td><td class="c">Sí</td><td class="c">Sí</td></tr>
 <tr><th>Soporte prioritario y llamada de onboarding</th><td class="c">No</td><td class="c">No</td><td class="c">Sí</td></tr>
 <tr><th>Marca blanca</th><td class="c">No</td><td class="c">No</td><td class="c">Sí</td></tr>
+{FX.table_rows(L)}
 </tbody></table></div></div></section>
 '''
     return {"key":"features","title":"Funciones del software de gestión hotelera | Hostlio Pro",
             "desc":"Hostlio Pro incluye asistente IA, channel manager con 100+ OTAs, planning de habitaciones, check-in online, cartas para visado, traslados y app móvil.",
-            "trail":[("Funcionalidades", U("features"))],"body":body,"faq":[FAQ_CORE[0], FAQ_CORE[3]]}
+            "trail":[("Funcionalidades", U("features"))],"body":body,"faq":[FAQ_CORE[0], FAQ_CORE[3]]+FX.faq(L,"faq_import","faq_roles","faq_reports")}
 
 def pricing():
     body = f'''
@@ -229,13 +236,13 @@ def pricing():
 
 FAQ_ALL = FAQ_CORE + [
  ("¿Para qué tipos de hotel es Hostlio Pro?", "Para alojamientos independientes de 1 a 150 habitaciones, como hoteles boutique, hoteles urbanos, hostales y pensiones, apartahoteles y hostels."),
- ("¿Hay una app móvil?", "Sí. Los planes Pro y Growth incluyen una app para iOS y Android. Gestiona reservas, mensajes y check-ins fuera del alojamiento."),
+ ("¿Hay una app móvil?", "Sí. Todos los planes, también Starter, incluyen la app para iOS y Android. Gestiona reservas, mensajes y check-ins fuera del alojamiento."),
  ("¿Cómo funciona el check-in online?", "Los huéspedes reciben un enlace personal y seguro, escanean su documento con el móvil (no se guarda ninguna imagen) y, antes de llegar, envían sus acompañantes y una firma digital. Disponible en Pro y Growth."),
  ("¿Para qué sirve la confirmación de alojamiento para visados?", "Para los huéspedes que necesitan visado, prepara en un clic una confirmación de alojamiento a partir de los datos de la reserva, para usarla en la solicitud de visado o de invitación. Puedes guardarla en PDF o imprimirla."),
  ("¿Están seguros mis datos?", "Los datos se transmiten mediante conexiones cifradas, y los datos de cada hotel están aislados de los de otros alojamientos con reglas de acceso a nivel de fila. Los datos de los huéspedes pueden eliminarse a petición."),
  ("¿Cuánto tiempo lleva la configuración?", "Tu cuenta está lista en minutos. La mayoría de los hoteles conectan sus canales el mismo día: añade tipos de habitación y habitaciones, autoriza la conexión en la extranet de cada OTA y asigna las habitaciones. El plan Growth incluye una llamada de onboarding personalizada."),
  ("¿En qué idiomas se ofrece el soporte?", "El soporte se ofrece en inglés y turco. El panel, la app móvil y el formulario de check-in del huésped están disponibles en 6 idiomas: español, inglés, turco, francés, italiano y portugués. Escríbenos a " + EMAIL + "."),
-]
+] + FX.faq(L,"faq_import","faq_roles","faq_reports")
 
 def faq_page():
     body = f'''<section class="page-hero"><div class="wrap"><h1>Preguntas frecuentes</h1>

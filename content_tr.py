@@ -1,11 +1,13 @@
 from build import store_badges, btn, icon, logo, url, room_rack, channel_strip, faq_block, SIGNUP_URL, EMAIL, UPDATED, CHECK, software_schema, SITE, PLANS
+import ozellik_ekleri as FX
+import derin_sayfalar as DS
 L = "tr"
 def U(k): return url(k, L)
 
 # ------------------------------------------------------------ shared facts
 PLAN_TXT = {
- "starter": ("Küçük pansiyon ve butik oteller için", ["1 tesis, 10 odaya kadar, 3 kullanıcı","Aylık ⟦quota:starter⟧ AI mesajı","100+ OTA ile kanal senkronizasyonu","WhatsApp AI mesajlaşma","Lio Önerileri: her sabah öneriler","Oda rafı (rezervasyon takvimi)","Vize için konaklama onayı (PDF)"]),
- "pro":     ("Tek tesisli, büyüyen oteller için", ["1 tesis, 50 odaya kadar, 8 kullanıcı","Aylık ⟦quota:pro⟧ AI mesajı","Starter'daki her şey","WhatsApp + OTA gelen kutusu mesajlaşması (Booking.com, Airbnb, Expedia)","Lio WhatsApp'ta rezervasyon talebi alır (onayınızla)","AI yorum ve mesaj içgörüleri","Online check-in ve dijital imza","Transfer, tur ve ek hizmet satışı","Mobil uygulama"]),
+ "starter": ("Küçük pansiyon ve butik oteller için", ["1 tesis, 10 odaya kadar, 3 kullanıcı","Aylık ⟦quota:starter⟧ AI mesajı","100+ OTA ile kanal senkronizasyonu","WhatsApp AI mesajlaşma","Lio Önerileri: her sabah öneriler","Oda rafı (rezervasyon takvimi)","Vize için konaklama onayı (PDF)","iOS ve Android uygulaması"]),
+ "pro":     ("Tek tesisli, büyüyen oteller için", ["1 tesis, 50 odaya kadar, 8 kullanıcı","Aylık ⟦quota:pro⟧ AI mesajı","Starter'daki her şey","WhatsApp + OTA gelen kutusu mesajlaşması (Booking.com, Airbnb, Expedia)","Lio WhatsApp'ta rezervasyon talebi alır (onayınızla)","AI yorum ve mesaj içgörüleri","Online check-in ve dijital imza","Transfer, tur ve ek hizmet satışı"]),
  "growth":  ("İki tesis işleten ekipler için", ["2 tesise kadar, toplam 150 oda, 20 kullanıcı","Aylık ⟦quota:growth⟧ AI mesajı","Pro'daki her şey","Haftalık AI özeti","Öncelikli kanal senkronizasyonu","Öncelikli destek (ertesi iş günü)","Birebir kurulum görüşmesi","White-label seçenekleri"]),
 }
 
@@ -105,20 +107,22 @@ def channel():
 <div class="row"><h3>Fiyat ve kısıtlama yönetimi</h3><div><p>Oda tipi bazında fiyat, minimum konaklama ve satış kapatma gibi kısıtlamaları tek ekrandan tüm kanallara gönderin.</p></div></div>
 <div class="row"><h3>Kanal renkleriyle oda rafı</h3><div><p>Hangi rezervasyonun hangi kanaldan geldiğini renkten anlarsınız. Oda değişikliği sürükle-bırak ile yapılır.</p></div></div>
 <div class="row"><h3>Mesajlarla entegre</h3><div><p>OTA'dan gelen rezervasyonun misafir mesajları da Lio'nun gelen kutusuna bağlanır; kim, hangi oda, hangi tarih bilgisi her yazışmanın yanındadır.</p></div></div>
+{FX.channel_rows(L)}
 </div></div></section>
 <section><div class="wrap"><div class="section-head"><h2>Desteklenen başlıca kanallar</h2><p>Liste sertifikalı bağlantı ağımıza göre güncellenir; burada olmayan bir kanal için bize yazın.</p></div>
 <div class="table-wrap"><table><thead><tr><th>Kanal</th><th>Tür</th></tr></thead><tbody>
 <tr><th>Booking.com</th><td>OTA</td></tr><tr><th>Airbnb</th><td>Kısa dönem kiralama</td></tr><tr><th>Expedia, Hotels.com</th><td>OTA</td></tr>
 <tr><th>Agoda, Trip.com</th><td>OTA (Asya ağırlıklı)</td></tr><tr><th>Hotelbeds</th><td>Toptancı (bedbank)</td></tr><tr><th>Hostelworld</th><td>Hostel pazaryeri</td></tr><tr><th>Google Hotels</th><td>Metasearch</td></tr>
 </tbody></table></div></div></section>
+{DS.more(L,"channel")}
 '''
     faq = [FAQ_CORE[4],
      ("Kanal yöneticisi tüm planlarda var mı?", "Evet. Starter, Pro ve Growth planlarının tamamında 100+ OTA ile kanal senkronizasyonu bulunur. Growth planında senkronizasyon önceliklidir."),
-     ("Mevcut kanal yöneticimden geçiş zor mu?", "Hayır. Oda tiplerinizi Hostlio Pro'da oluşturup OTA hesaplarınızı Channex üzerinden eşlemeniz yeterli. Geçiş sırasında kurulum ekibimiz size eşlik eder."),
+     FX.FX[L]["ch_switch"],
     ]
     return {"key":"channel","title":"Otel Kanal Yöneticisi: 100+ OTA Tek Takvimde | Hostlio Pro",
             "desc":"Hostlio Pro kanal yöneticisi Booking.com, Airbnb, Expedia, Agoda dahil 100+ OTA'da müsaitlik ve fiyatı anlık senkronize eder, overbooking'i önler.",
-            "trail":[("Kanal yöneticisi", U("channel"))],"body":body,"faq":faq}
+            "trail":[("Kanal yöneticisi", U("channel"))],"body":body,"faq":faq+DS.faq(L,"channel")}
 
 def checkin():
     body = f'''
@@ -138,6 +142,7 @@ def checkin():
 <div class="answer"><p><strong>Online check-in nasıl çalışır?</strong> Hostlio Pro, rezervasyon sahibine kişiye özel, süreli ve güvenli bir bağlantı gönderir. Misafir bu bağlantıdan pasaportunun ya da kimlik kartının makine okunabilir alanını (MRZ) telefon kamerasıyla tarar; okuma misafirin kendi tarayıcısında yapılır ve bilgiler otomatik dolar. Ardından varsa refakatçileri ekler ve formu dijital olarak imzalar. Rezervasyona yalnızca okunan bilgiler ve imza kaydedilir; belgenin görüntüsü gönderilmez, saklanmaz.</p></div>
 <h2 style="margin-top:64px">Online check-in özellikleri</h2><div class="rows">
 <div class="row"><h3>Güvenli bağlantı</h3><div><p>Her rezervasyona özel, token tabanlı bağlantı. Bağlantı yalnızca o rezervasyonun formunu açar.</p></div></div>
+{FX.checkin_row(L)}
 <div class="row"><h3>KVKK uyumlu belge tarama</h3><div><p>Pasaportun veya kimlik kartının makine okunabilir alanı misafirin kendi cihazında okunur. Yalnızca ad soyad, belge numarası (T.C. kimlik kartlarında T.C. kimlik no), uyruk, doğum tarihi ve geçerlilik tarihi kaydedilir; kimliğin fotokopisi ya da fotoğrafı saklanmaz. Bu, konaklama işletmelerinin kimlik fotokopisi saklamamasını öngören KVKK İlke Kararı 2025/2120 ile uyumludur. Makine okunabilir alanı olmayan belgeler elle girilir.</p></div></div>
 <div class="row"><h3>Refakatçi misafirler</h3><div><p>Aynı odada kalan tüm misafirler tek formda eklenir. Resepsiyonda tek tek bilgi yazmaya gerek kalmaz.</p></div></div>
 <div class="row"><h3>Dijital imza ve onay</h3><div><p>Misafir otel kurallarını ve kişisel veri onayını ekranda imzalar. İmzalar çıkıştan 30 gün sonra otomatik olarak silinir.</p></div></div>
@@ -149,6 +154,7 @@ def checkin():
 <li><h3>Belgesini tarar</h3><p>Pasaportunu ya da kimliğini telefonuyla tarar; bilgiler otomatik dolar, görüntü saklanmaz. Ardından refakatçileri girer.</p></li>
 <li><h3>İmzalar</h3><p>Otel kurallarını onaylayıp ekranda imzalar. Resepsiyona sadece anahtar almaya gelir.</p></li></ol>
 </div></section>
+{DS.more(L,"checkin")}
 '''
     faq = [("Online check-in hangi planda var?", "Online check-in ve dijital imza Pro ve Growth planlarına dahildir."),
            ("Misafirin uygulama indirmesi gerekiyor mu?", "Hayır. Check-in formu tarayıcıda açılır; herhangi bir uygulama indirmek gerekmez."),
@@ -156,7 +162,7 @@ def checkin():
            ("Kimlik fotoğrafı saklanıyor mu?", "Hayır. Belgenin makine okunabilir alanı (MRZ) misafirin telefonunda ya da Hostlio Pro mobil uygulamasıyla otelin cihazında okunur; yalnızca okunan bilgiler ve imza kaydedilir. MRZ'li pasaport ve kimlik kartları taranabilir; diğer belgeler elle girilir.")]
     return {"key":"checkin","title":"Otel Online Check-in ve Dijital İmza Yazılımı | Hostlio Pro",
             "desc":"Hostlio Pro online check-in: misafir kimliğini telefonuyla tarar (görüntü saklanmaz), refakatçilerini ve dijital imzasını varıştan önce gönderir.",
-            "trail":[("Online check-in", U("checkin"))],"body":body,"faq":faq}
+            "trail":[("Online check-in", U("checkin"))],"body":body,"faq":faq+DS.faq(L,"checkin")}
 
 def features():
     body = f'''
@@ -170,9 +176,9 @@ def features():
 <div class="row"><h3>Vize için konaklama onayı</h3><div><p>Vize ya da davet başvurusunda istenen konaklama onayını rezervasyon bilgilerinden tek tıkla hazırlayın; PDF olarak kaydedin ya da yazdırın.</p></div></div>
 <div class="row"><h3>Transfer ve tur satışı</h3><div><p>Lio mesajlaşma sırasında havalimanı transferi ve tur önerir, talebi ekibinize iletir.</p></div></div>
 <div class="row"><h3>Lio Önerileri ve AI içgörüleri</h3><div><p>Lio her sabah fiyat, operasyon (kirli odalar, bekleyen talepler), kurulum eksikleri ve gelir fırsatları için öneriler hazırlar. Onayınız olmadan hiçbir şey değişmez; fiyat önerileri belirlediğiniz sınırların dışına çıkmaz. Pro ve Growth'ta yorum ve mesajlardaki tekrar eden şikâyet ve övgüler de özetlenir.</p></div></div>
-<div class="row"><h3>Raporlar ve ekip</h3><div><p>Doluluk, ADR, RevPAR ve kanal performansı raporları; haftalık ve aylık e-posta raporu. 6 personel rolüyle yetkilendirme ve tek yerde toplanan bildirimler.</p></div></div>
 <div class="row"><h3>Mobil uygulama</h3><div><p>iOS ve Android uygulamasıyla rezervasyonları, mesajları ve check-in'leri otelin dışından yönetin.</p>{store_badges("tr")}</div></div>
 </div></div></section>
+{FX.features_more(L)}
 <section><div class="wrap"><div class="section-head"><h2>Planlara göre özellikler</h2></div>
 <div class="table-wrap"><table><thead><tr><th>Özellik</th><th class="c">Starter</th><th class="c">Pro</th><th class="c">Growth</th></tr></thead><tbody>
 <tr><th>Tesis sayısı</th><td class="c">1</td><td class="c">1</td><td class="c">2</td></tr>
@@ -190,14 +196,15 @@ def features():
 <tr><th>Vize için konaklama onayı (PDF)</th><td class="c">Var</td><td class="c">Var</td><td class="c">Var</td></tr>
 <tr><th>Online check-in ve dijital imza</th><td class="c">Yok</td><td class="c">Var</td><td class="c">Var</td></tr>
 <tr><th>Transfer ve tur satışı</th><td class="c">Yok</td><td class="c">Var</td><td class="c">Var</td></tr>
-<tr><th>iOS ve Android uygulaması</th><td class="c">Yok</td><td class="c">Var</td><td class="c">Var</td></tr>
+<tr><th>iOS ve Android uygulaması</th><td class="c">Var</td><td class="c">Var</td><td class="c">Var</td></tr>
 <tr><th>Öncelikli destek ve kurulum görüşmesi</th><td class="c">Yok</td><td class="c">Yok</td><td class="c">Var</td></tr>
 <tr><th>White-label</th><td class="c">Yok</td><td class="c">Yok</td><td class="c">Var</td></tr>
+{FX.table_rows(L)}
 </tbody></table></div></div></section>
 '''
     return {"key":"features","title":"Otel Programı Özellikleri: AI, Kanal Yönetimi | Hostlio Pro",
             "desc":"Hostlio Pro özellikleri: AI asistan, 100+ OTA kanal yönetimi, sürükle-bırak oda rafı, online check-in, vize konaklama onayı, transfer satışı ve mobil uygulama.",
-            "trail":[("Özellikler", U("features"))],"body":body,"faq":[FAQ_CORE[0], FAQ_CORE[1], FAQ_CORE[4]]}
+            "trail":[("Özellikler", U("features"))],"body":body,"faq":[FAQ_CORE[0], FAQ_CORE[1], FAQ_CORE[4]]+FX.faq(L,"faq_import","faq_roles","faq_reports")}
 
 def pricing():
     body = f'''
@@ -227,13 +234,13 @@ def pricing():
 
 FAQ_ALL = FAQ_CORE + [
  ("Hostlio Pro hangi otel tiplerine uygun?", "Butik oteller, şehir otelleri, pansiyonlar, apart oteller ve hosteller gibi 1 ila 150 odalı bağımsız tesisler için tasarlandı."),
- ("Mobil uygulama var mı?", "Evet. Pro ve Growth planlarında iOS ve Android uygulaması bulunur. Rezervasyonları, mesajları ve check-in'leri otelin dışından da yönetirsiniz."),
+ ("Mobil uygulama var mı?", "Evet. Starter dahil tüm planlarda iOS ve Android uygulaması bulunur. Rezervasyonları, mesajları ve check-in'leri otelin dışından da yönetirsiniz."),
  ("Online check-in nasıl çalışıyor?", "Misafire kişiye özel güvenli bir bağlantı gönderilir. Misafir kimliğini telefonuyla tarar (görüntü saklanmaz), refakatçilerini ve dijital imzasını varıştan önce gönderir. Pro ve Growth planlarında vardır."),
  ("Vize için konaklama onayı ne işe yarar?", "Vizeye ihtiyaç duyan misafir için, vize ya da davet başvurusunda kullanılacak konaklama onayını rezervasyon bilgilerinden tek tıkla hazırlar. Belgeyi PDF olarak kaydedebilir ya da yazdırabilirsiniz."),
  ("Verilerim güvende mi?", "Veriler şifreli bağlantı üzerinden iletilir ve her otelin verisi satır düzeyinde erişim kurallarıyla diğer tesislerden ayrılır. Misafir verileri talep üzerine silinebilir."),
  ("Kurulum ne kadar sürer?", "Hesabınız dakikalar içinde hazır olur. Çoğu otel kanallarını aynı gün bağlar: oda tiplerini ve odaları girin, her OTA'nın extranet'inde bağlantıyı yetkilendirin ve odaları eşleyin. Growth planında birebir kurulum görüşmesi dahildir."),
  ("Türkçe destek veriyor musunuz?", "Evet. Destek Türkçe ve İngilizce verilir. Panel, mobil uygulama ve misafirin check-in formu 6 dilde kullanılabilir: Türkçe, İngilizce, İspanyolca, Fransızca, İtalyanca ve Portekizce. Bize " + EMAIL + " adresinden ulaşabilirsiniz."),
-]
+] + FX.faq(L,"faq_import","faq_roles","faq_reports")
 
 def faq_page():
     body = f'''<section class="page-hero"><div class="wrap"><h1>Sık sorulan sorular</h1>

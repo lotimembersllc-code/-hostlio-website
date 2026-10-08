@@ -366,6 +366,10 @@ section.tight{padding:clamp(36px,5vw,56px) 0}
 .row h3{margin:0}
 .row p{margin:0 0 .6em;color:var(--ink-2)}
 .row a{font-weight:600}
+.row h4{margin:0;font-size:var(--t-1);letter-spacing:-.015em;line-height:1.25;overflow-wrap:break-word;hyphens:auto;-webkit-hyphens:auto}
+.fx-group{margin:48px 0 4px;font-size:.82rem;font-weight:700;letter-spacing:.06em;text-transform:uppercase;color:var(--muted)}
+.fx-group:first-of-type{margin-top:8px}
+.today-list .pill{min-width:2.2em;text-align:center}
 @media (max-width:720px){.row{grid-template-columns:1fr;gap:8px}}
 .split{display:grid;grid-template-columns:1fr 1fr;gap:clamp(28px,5vw,72px);align-items:center}
 @media (max-width:860px){.split{grid-template-columns:1fr}}

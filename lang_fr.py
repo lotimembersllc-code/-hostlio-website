@@ -26,7 +26,7 @@ MEGA = {"btn":"Produit","cols":[
    ("Clients",[("ai","sparkle","Assistant IA Lio","Réponses aux clients 24h/24 en 30+ langues"),("checkin","identification-card","Check-in en ligne","Pièce d’identité, accompagnants et signature électronique")]),
    ("Distribution",[("channel","arrows-left-right","Channel manager","100+ OTA sur un seul calendrier"),("features","calendar-dots","Planning des chambres","Calendrier des réservations en glisser-déposer")]),
    ("Exploitation",[("features","van","Transferts et excursions","Des revenus en plus pendant la conversation"),("features","device-mobile","Application mobile","Sur iOS et Android, gérez à distance")]),
-   ("Par type d’établissement",[("t-boutique","sparkle","Hôtels boutique","Hôtels de 10 à 50 chambres"),("t-guesthouse","users-three","Chambres d’hôtes","Établissements de 1 à 10 chambres"),("t-apart","calendar-dots","Résidences hôtelières","Appartements et suites"),("t-hostel","globe-simple","Auberges de jeunesse","Vente au lit")]),
+   ("Par type d’établissement",[("t-boutique","sparkle","Hôtels boutique","Hôtels de 10 à 50 chambres"),("t-guesthouse","users-three","Chambres d’hôtes","Établissements de 1 à 10 chambres"),("t-apart","calendar-dots","Résidences hôtelières","Appartements et suites"),("t-hostel","globe-simple","Auberges de jeunesse","Voyageurs multilingues")]),
   ],"feat":("pricing","Comparer les formules","À partir de ⟦price:starter⟧ par mois, 7 jours offerts")}
 
 # ------------------------------------------------------------------ build.software_schema / room_rack / 404
@@ -129,7 +129,7 @@ def types(U):
          ("Revenus complémentaires","Les transferts aéroport et les excursions comptent pour un hôtel boutique. Lio les propose au bon moment."),
          ("Trafic OTA important","Les réservations Booking.com, Expedia et Airbnb apparaissent sur un seul planning des chambres, colorées par canal."),
          ("Check-in rapide","Grâce au check-in en ligne et à la signature électronique, les clients reçoivent une boisson de bienvenue au lieu d’un formulaire.")],
-  plan="Pour les hôtels boutique de 10 à 50 chambres, nous recommandons <strong>Pro</strong> : ⟦quota:pro⟧ messages IA par mois, WhatsApp et messagerie des OTA (Booking.com, Airbnb, Expedia), check-in en ligne, vente de transferts et d’excursions et application iOS et Android.",
+  plan="Pour les hôtels boutique de 10 à 50 chambres, nous recommandons <strong>Pro</strong> : ⟦quota:pro⟧ messages IA par mois, WhatsApp et messagerie des OTA (Booking.com, Airbnb, Expedia), check-in en ligne et vente de transferts et d’excursions. L’application iOS et Android est incluse dans tous les forfaits.",
   faq=[("Quel est le meilleur logiciel pour un hôtel boutique ?","Cela dépend du nombre de chambres, du profil des clients et du budget. Pour les hôtels de 10 à 50 chambres qui accueillent beaucoup de clients internationaux et veulent un prix fixe, la messagerie IA et le channel manager de Hostlio Pro sont un bon choix. Consultez notre page comparative pour d’autres options."),
        ("Lio répond-il aux messages des OTA ?","Oui, avec Pro et Growth : les messages Booking.com, Airbnb et Expedia arrivent dans la même boîte de réception que WhatsApp, et Lio y répond. Starter synchronise les réservations des OTA et répond aux clients sur WhatsApp."),
        ("Combien d’utilisateurs puis-je ajouter ?","Starter inclut 3 utilisateurs, Pro 8 et Growth 20. Chaque personne reçoit un rôle avec les droits correspondants (réception, ménage ou comptabilité, par exemple).")]),
@@ -161,9 +161,9 @@ def types(U):
          ("Hostelworld et OTA","Hostelworld, Booking.com et les autres canaux partagent une seule disponibilité."),
          ("Excursions et transferts","Visites de la ville et transferts aéroport sont des extras courants en auberge ; Lio les propose au bon moment."),
          ("Équipe de nuit","Les questions nocturnes n’attendent pas le matin ; l’équipe ne traite que ce qui demande une décision.")],
-  plan="Pour les auberges à fort volume de messages, nous recommandons <strong>Pro</strong> avec ⟦quota:pro⟧ messages IA par mois. Préparons ensemble votre configuration au lit pendant la démo.",
+  plan="Pour les auberges à fort volume de messages, nous recommandons <strong>Pro</strong> avec ⟦quota:pro⟧ messages IA par mois. Hostlio Pro gère la disponibilité par chambre et non par lit : il convient surtout aux auberges qui vendent principalement des chambres privées ou des chambres entières.",
   faq=[("Fonctionne-t-il avec Hostelworld ?","Oui. Hostelworld fait partie des canaux connectés à Channex."),
-       ("La vente au lit (dortoirs) est-elle prise en charge ?","Cela dépend de votre configuration ; préparons ensemble la structure de vos chambres et de vos lits pendant la démo."),
+       ("La vente au lit (dortoirs) est-elle prise en charge ?","Pas sous forme d’inventaire de lits séparé. Hostlio Pro gère la disponibilité par chambre : chaque type de chambre a un nombre d’unités et une capacité maximale, et une réservation occupe une chambre. Il convient aux auberges qui ont des chambres privées ; si l’essentiel de vos revenus vient de la vente de lits à l’unité en dortoir, vérifions ensemble en démo si une configuration par chambre fonctionne avec vos canaux avant de changer."),
        ("De combien de messages IA ai-je besoin ?","Environ 150 réponses automatiques par jour représentent à peu près 4 500 messages par mois, ce qui correspond à la formule Pro.")]),
     ]
 

@@ -79,7 +79,7 @@ Yazışma Türkçe çevirisiyle panelinizde. Misafir memnun, siz dinlenmiş.
 ## Otelinizin gününü tek ekrandan yönetin
 Misafir mesajı, rezervasyon, kanal ve check-in birbirine bağlı çalışır.
 
-Mesajlar Takvim Kanallar Check-in
+Mesajlar Takvim Kanallar Check-in Bugün
 
 ## Tüm misafir mesajları tek gelen kutusunda
 WhatsApp ve OTA gelen kutusu mesajları (Booking.com, Airbnb, Expedia) bir arada. Lio otelinizin bilgileriyle cevaplar, siz sadece gerekeni görürsünüz.
@@ -165,6 +165,19 @@ Refakatçi 1 misafir eklendi
 
 İmza
 
+## Günün işleri her sabah hazır
+Paneli açın: kim geliyor, kim çıkıyor, hangi oda temizlenecek, hangi mesaj sizi bekliyor.
+
+- Gelen, giden ve temizlenecek odalar
+- Sizi bekleyen mesajlar ve Lio taslakları
+- Servis dışı oda tüm kanallarda kapanır Tüm özellikler
+Bugün 08:00
+Gelenler 6
+Gidenler 4
+Temizlenecek oda 5
+Cevap bekleyen mesaj 2
+Onay bekleyen taslak 1
+
 ## Bir otelin ihtiyacı olan her şey
 Her modül birbirine bağlı; ayrı ayrı araç, ayrı ayrı şifre yok.
 
@@ -238,6 +251,7 @@ Erken kayıt fiyatı (normali 59 $ )
 - Lio Önerileri: her sabah öneriler
 - Oda rafı (rezervasyon takvimi)
 - Vize için konaklama onayı (PDF)
+- iOS ve Android uygulaması
 Starter ile başla
 
 En çok tercih edilen
@@ -257,7 +271,6 @@ Erken kayıt fiyatı (normali 109 $ )
 - AI yorum ve mesaj içgörüleri
 - Online check-in ve dijital imza
 - Transfer, tur ve ek hizmet satışı
-- Mobil uygulama
 Pro ile başla
 
 ## Growth
@@ -454,6 +467,15 @@ Hangi rezervasyonun hangi kanaldan geldiğini renkten anlarsınız. Oda değişi
 ## Mesajlarla entegre
 OTA'dan gelen rezervasyonun misafir mesajları da Lio'nun gelen kutusuna bağlanır; kim, hangi oda, hangi tarih bilgisi her yazışmanın yanındadır.
 
+## Bir sezonu tek seferde girin
+Tarih aralığını, oda tiplerini ve fiyat planlarını seçin; fiyatı, en az ve en çok konaklamayı, varışa kapalı, çıkışa kapalı ya da satışa kapatma kuralını girin. Cuma ve cumartesi gecelerini ayrı fiyatlamak için “yalnız hafta sonu”nu işaretleyin. Bir kanal geride kalırsa “kanallara yeniden gönder” güncel fiyat ve müsaitliği tekrar iletir.
+
+## Servis dışı oda otomatik kapanır
+Arıza nedeniyle oda servis dışı yapılınca bağlı tüm kanallarda müsaitlik düşer ve oda yeniden hizmete girene kadar rezervasyona atanamaz.
+
+## Mevcut rezervasyonlarınızı getirin
+Eski programınızdaki rezervasyonları CSV ya da Excel dosyasıyla yükleyin. Sütunlar otomatik eşlenir, mükerrerler atlanır, sorunlu satırlar nedeniyle listelenir.
+
 ## Desteklenen başlıca kanallar
 Liste sertifikalı bağlantı ağımıza göre güncellenir; burada olmayan bir kanal için bize yazın.
 
@@ -475,7 +497,7 @@ Q: Kanal yöneticisi tüm planlarda var mı?
 A: Evet. Starter, Pro ve Growth planlarının tamamında 100+ OTA ile kanal senkronizasyonu bulunur. Growth planında senkronizasyon önceliklidir.
 
 Q: Mevcut kanal yöneticimden geçiş zor mu?
-A: Hayır. Oda tiplerinizi Hostlio Pro'da oluşturup OTA hesaplarınızı Channex üzerinden eşlemeniz yeterli. Geçiş sırasında kurulum ekibimiz size eşlik eder.
+A: Hayır. Oda tiplerinizi Hostlio Pro'da oluşturun, mevcut rezervasyonlarınızı CSV ya da Excel dosyasıyla içeri aktarın ve OTA hesaplarınızı Channex üzerinden eşleyin. Kurulum ekibimiz geçiş sırasında yardımcı olur.
 
 ---
 # Otel Online Check-in ve Dijital İmza Yazılımı | Hostlio Pro
@@ -505,6 +527,9 @@ Online check-in nasıl çalışır? Hostlio Pro, rezervasyon sahibine kişiye ö
 
 ## Güvenli bağlantı
 Her rezervasyona özel, token tabanlı bağlantı. Bağlantı yalnızca o rezervasyonun formunu açar.
+
+## Check-in bağlantısı otomatik e-postayla
+Açtığınızda e-posta adresi olan her yeni rezervasyonda misafirin kişisel check-in bağlantısı, misafirin dilinde e-postayla gider. Hangi rezervasyon kaynaklarına gideceğini siz seçersiniz: doğrudan rezervasyon, Booking.com, Expedia, Airbnb, Agoda ya da diğer OTA'lar. Siz açana kadar kapalı kalır.
 
 ## KVKK uyumlu belge tarama
 Pasaportun veya kimlik kartının makine okunabilir alanı misafirin kendi cihazında okunur. Yalnızca ad soyad, belge numarası (T.C. kimlik kartlarında T.C. kimlik no), uyruk, doğum tarihi ve geçerlilik tarihi kaydedilir; kimliğin fotokopisi ya da fotoğrafı saklanmaz. Bu, konaklama işletmelerinin kimlik fotokopisi saklamamasını öngören KVKK İlke Kararı 2025/2120 ile uyumludur. Makine okunabilir alanı olmayan belgeler elle girilir.
@@ -581,11 +606,40 @@ Lio mesajlaşma sırasında havalimanı transferi ve tur önerir, talebi ekibini
 ## Lio Önerileri ve AI içgörüleri
 Lio her sabah fiyat, operasyon (kirli odalar, bekleyen talepler), kurulum eksikleri ve gelir fırsatları için öneriler hazırlar. Onayınız olmadan hiçbir şey değişmez; fiyat önerileri belirlediğiniz sınırların dışına çıkmaz. Pro ve Growth'ta yorum ve mesajlardaki tekrar eden şikâyet ve övgüler de özetlenir.
 
-## Raporlar ve ekip
-Doluluk, ADR, RevPAR ve kanal performansı raporları; haftalık ve aylık e-posta raporu. 6 personel rolüyle yetkilendirme ve tek yerde toplanan bildirimler.
-
 ## Mobil uygulama
 iOS ve Android uygulamasıyla rezervasyonları, mesajları ve check-in'leri otelin dışından yönetin.
+
+## Günün tamamını tek panelden yönetin
+Mesajlaşma ve kanal yönetiminin yanında ekibinizin her gün kullandığı araçlar. Hepsi web panelinde; aksi belirtilmedikçe tüm planlara dahil.
+
+## Günlük operasyon
+Bugün ekranı Sabah paneli açtığınızda günün işleri hazırdır: gelenler, gidenler, temizlenecek odalar, cevap bekleyen mesajlar, onayınızı bekleyen Lio taslakları, rezervasyon talepleri ve cevaplanacak yorumlar.
+
+Kat hizmetleri Her odanın bir durumu vardır: temiz, kirli, bakımda ya da servis dışı. Bugün çıkışı olan odalar listenin başındadır; aynı gün yeni misafir gelecek oda yüksek öncelikli işaretlenir. Günlük temizlik listesini PDF olarak yazdırın; kat hizmetleri rolündeki personel yalnız odaları görür.
+
+Arıza kaydı ve satış dışı oda Arızayı en fazla beş fotoğrafla (konum bilgisi silinir), kategori ve öncelikle bildirin. Odayı servis dışı yaptığınızda satıştan çıkar: bağlı kanallardaki müsaitlik otomatik düşer, odaya rezervasyon atanamaz ve ekibinize bildirim gider.
+
+Büyüyen otele uygun oda rafı Büyük tesisler için üç yoğunluk seviyesi, oda tipine ya da kata göre gruplama, günlük boş oda sayısı, boş oda arama ve 7, 14 ya da 30 günlük görünüm. Çakışma kontrolü çift ya da odası atanmamış rezervasyonları listeler, raf uygun tipte boş oda önerir; rezervasyonları fareyle ya da klavyeyle taşırsınız.
+
+Bildirimler ve sabah özeti Yeni, değişen ve iptal edilen rezervasyonlar, cevap bekleyen mesajlar, onaylanacak taslaklar, kanal sorunları ve arıza kayıtları tek bildirim kutusunda toplanır, 90 gün saklanır. Mobil uygulama her sabah 08:00'de (otelin saatiyle) günün özetini de gönderir (bugün Android'de, iOS'ta yakında gelecek uygulama güncellemesiyle).
+
+## Gelir, fiyat ve raporlar
+Analiz Doluluk, ADR, RevPAR, gelir, ortalama konaklama süresi, iptal ve no-show; önceki dönemle karşılaştırmalı. 30, 60 ve 90 günlük ileriye bakış ve pickup, takvimde neyin dolu olduğunu gösterir; kanal görünümü her OTA için brüt gelir, komisyon ve neti verir, hangi kanalın gerçekten kazandırdığını görürsünüz. Oda tipleri, misafirler, ek hizmetler ve Lio'nun işi için ayrı sekmeler var.
+
+Excel, PDF ve e-posta raporları Analizin tüm sekmelerini tek tıkla Excel'e aktarın ya da açık görünümü PDF olarak yazdırın; muhasebeciniz ayrıca bir şey istemez. Her pazartesi haftanın özeti, her ayın 1'inde CSV ekli aylık rapor otel sahibinin e-postasına gelir.
+
+Fiyat ve kısıtlamalar Her oda tipi ve fiyat planı için tek ızgara: fiyat, en az ve en çok konaklama, varışa kapalı (CTA), çıkışa kapalı (CTD), satışa kapatma ve müsaitlik. Bir sezonu tek seferde girin: tarih aralığını, oda tiplerini ve planları seçin, cuma ve cumartesi gecelerini ayrı fiyatlamak için “yalnız hafta sonu” kutusunu işaretleyin. Bir kanal geride kalırsa “kanallara yeniden gönder” düğmesi her şeyi tekrar iletir.
+
+Rezervasyon içe aktarma Başka bir programdan mı geliyorsunuz? Rezervasyonlarınızı .csv, .xlsx ya da .xls dosyasıyla yükleyin. Sütunlar otomatik eşlenir ve değiştirebilirsiniz, tarih biçimi algılanır ya da siz seçersiniz, mükerrer kayıtlar atlanır, aktarılamayan her satır nedeniyle listelenir.
+
+## Ekip ve kontrol
+Personel, roller ve yetkiler Ekip arkadaşlarınızı e-postayla davet edin, her birine rol verin: sahip, yönetici, resepsiyon, kat hizmetleri, muhasebe ya da izleyici. Herkes yalnız işi için gerekeni görür: kat görevlisi odaları görür, muhasebe misafir mesajlarını görmez. Erişimi istediğiniz an askıya alın. Starter 3, Pro 8, Growth 20 kullanıcı içerir.
+
+İşlem geçmişi Kim, ne zaman, neyi değiştirdi: değişiklikler alan alan, eski ve yeni değeriyle kaydedilir; misafirin kişisel verisi kayda girmez. Kişiye, modüle, tesise ya da tarihe göre süzün, 365 gün geriye bakın, kaydı CSV olarak indirin.
+
+Growth'ta iki tesis Tesisler arasında tek tıkla geçin; iki tesisin gelen, giden, doluluk ve gelirini tek “Tüm mülkler” sayfasında görün. İkinci tesisi eklerken politikaları, AI ayarlarını, mesaj şablonlarını ve bildirim ayarlarını ilkinden kopyalayın. İki tesis tek AI mesaj kotasını paylaşır.
+
+Panel 6 dilde Panel, mobil uygulama ve misafirin check-in formu Türkçe, İngilizce, İspanyolca, Fransızca, İtalyanca ve Portekizce; ekibinizdeki herkes kendi dilinde çalışır.
 
 ## Planlara göre özellikler
 
@@ -621,11 +675,15 @@ Online check-in ve dijital imza Yok Var Var
 
 Transfer ve tur satışı Yok Var Var
 
-iOS ve Android uygulaması Yok Var Var
+iOS ve Android uygulaması Var Var Var
 
 Öncelikli destek ve kurulum görüşmesi Yok Yok Var
 
 White-label Yok Yok Var
+
+Analiz, Excel'e aktarma ve haftalık/aylık e-posta raporu Var Var Var
+Otomatik check-in bağlantısı e-postası (kaynakları siz seçersiniz) Yok Var Var
+“Tüm mülkler” özeti ve tesis değiştirici Yok Yok Var
 
 Q: Otel programı nedir?
 A: Otel programı (otel yönetim yazılımı, PMS), bir konaklama tesisinin rezervasyonlarını, oda müsaitliğini, satış kanallarını ve misafir bilgilerini tek yerden yönetmesini sağlayan yazılımdır. Hostlio Pro bu işlevlere misafir mesajlarını 30+ dilde yanıtlayan yapay zekâ asistanı Lio'yu ekler.
@@ -635,6 +693,15 @@ A: Hostlio Pro, bağımsız oteller, butik oteller ve pansiyonlar için gelişti
 
 Q: Hangi OTA'larla çalışıyor?
 A: Hostlio Pro, Channex altyapısı üzerinden Booking.com, Airbnb, Expedia, Agoda, Trip.com, Hotels.com, Hotelbeds, Hostelworld ve Google Hotels dahil 100'den fazla kanala bağlanır. Müsaitlik, fiyat ve rezervasyonlar tüm kanallarda eşzamanlı güncellenir.
+
+Q: Eski programımdaki rezervasyonları aktarabilir miyim?
+A: Evet. Rezervasyonlarınızı mevcut programınızdan CSV ya da Excel olarak dışa aktarın ve panelde yükleyin. Sütunlar otomatik eşlenir, mükerrer kayıtlar atlanır, sorunlu her satır nedeniyle listelenir. Ardından kanallarınızı bağlayın; yeni OTA rezervasyonları bundan sonra kendiliğinden gelir.
+
+Q: Personelin neyi göreceğini sınırlayabilir miyim?
+A: Evet. Her kişiye bir rol verirsiniz: sahip, yönetici, resepsiyon, kat hizmetleri, muhasebe ya da izleyici. Kat görevlisi yalnız odaları görür, muhasebe misafir mesajlarını görmez; işlem geçmişi kimin neyi değiştirdiğini kaydeder. Starter 3, Pro 8, Growth 20 kullanıcı içerir.
+
+Q: Hangi raporları alırım?
+A: Tüm planlarda doluluk, ADR, RevPAR, gelir, iptaller, 30/60/90 günlük ileriye bakış ve komisyon sonrası kanal geliri analizleri vardır. Excel'e ya da PDF'e aktarabilirsiniz; otel sahibine her pazartesi haftalık özet, her ay da CSV ekli aylık rapor e-postayla gelir.
 
 ---
 # Otel Yazılımı Fiyatları: Aylık 49 $'dan Başlar | Hostlio Pro
@@ -662,6 +729,7 @@ Erken kayıt fiyatı (normali 59 $ )
 - Lio Önerileri: her sabah öneriler
 - Oda rafı (rezervasyon takvimi)
 - Vize için konaklama onayı (PDF)
+- iOS ve Android uygulaması
 Starter ile başla
 
 En çok tercih edilen
@@ -681,7 +749,6 @@ Erken kayıt fiyatı (normali 109 $ )
 - AI yorum ve mesaj içgörüleri
 - Online check-in ve dijital imza
 - Transfer, tur ve ek hizmet satışı
-- Mobil uygulama
 Pro ile başla
 
 ## Growth
@@ -754,7 +821,7 @@ AI asistan Lio hangi dillerde yanıt veriyor? Lio, Türkçe, İngilizce, Arapça
 
 Hostlio Pro hangi otel tiplerine uygun? Butik oteller, şehir otelleri, pansiyonlar, apart oteller ve hosteller gibi 1 ila 150 odalı bağımsız tesisler için tasarlandı.
 
-Mobil uygulama var mı? Evet. Pro ve Growth planlarında iOS ve Android uygulaması bulunur. Rezervasyonları, mesajları ve check-in'leri otelin dışından da yönetirsiniz.
+Mobil uygulama var mı? Evet. Starter dahil tüm planlarda iOS ve Android uygulaması bulunur. Rezervasyonları, mesajları ve check-in'leri otelin dışından da yönetirsiniz.
 
 Online check-in nasıl çalışıyor? Misafire kişiye özel güvenli bir bağlantı gönderilir. Misafir kimliğini telefonuyla tarar (görüntü saklanmaz), refakatçilerini ve dijital imzasını varıştan önce gönderir. Pro ve Growth planlarında vardır.
 
@@ -765,6 +832,12 @@ Verilerim güvende mi? Veriler şifreli bağlantı üzerinden iletilir ve her ot
 Kurulum ne kadar sürer? Hesabınız dakikalar içinde hazır olur. Çoğu otel kanallarını aynı gün bağlar: oda tiplerini ve odaları girin, her OTA'nın extranet'inde bağlantıyı yetkilendirin ve odaları eşleyin. Growth planında birebir kurulum görüşmesi dahildir.
 
 Türkçe destek veriyor musunuz? Evet. Destek Türkçe ve İngilizce verilir. Panel, mobil uygulama ve misafirin check-in formu 6 dilde kullanılabilir: Türkçe, İngilizce, İspanyolca, Fransızca, İtalyanca ve Portekizce. Bize hello@hostliopro.com adresinden ulaşabilirsiniz.
+
+Eski programımdaki rezervasyonları aktarabilir miyim? Evet. Rezervasyonlarınızı mevcut programınızdan CSV ya da Excel olarak dışa aktarın ve panelde yükleyin. Sütunlar otomatik eşlenir, mükerrer kayıtlar atlanır, sorunlu her satır nedeniyle listelenir. Ardından kanallarınızı bağlayın; yeni OTA rezervasyonları bundan sonra kendiliğinden gelir.
+
+Personelin neyi göreceğini sınırlayabilir miyim? Evet. Her kişiye bir rol verirsiniz: sahip, yönetici, resepsiyon, kat hizmetleri, muhasebe ya da izleyici. Kat görevlisi yalnız odaları görür, muhasebe misafir mesajlarını görmez; işlem geçmişi kimin neyi değiştirdiğini kaydeder. Starter 3, Pro 8, Growth 20 kullanıcı içerir.
+
+Hangi raporları alırım? Tüm planlarda doluluk, ADR, RevPAR, gelir, iptaller, 30/60/90 günlük ileriye bakış ve komisyon sonrası kanal geliri analizleri vardır. Excel'e ya da PDF'e aktarabilirsiniz; otel sahibine her pazartesi haftalık özet, her ay da CSV ekli aylık rapor e-postayla gelir.
 
 Q: Otel programı nedir?
 A: Otel programı (otel yönetim yazılımı, PMS), bir konaklama tesisinin rezervasyonlarını, oda müsaitliğini, satış kanallarını ve misafir bilgilerini tek yerden yönetmesini sağlayan yazılımdır. Hostlio Pro bu işlevlere misafir mesajlarını 30+ dilde yanıtlayan yapay zekâ asistanı Lio'yu ekler.
@@ -788,7 +861,7 @@ Q: Hostlio Pro hangi otel tiplerine uygun?
 A: Butik oteller, şehir otelleri, pansiyonlar, apart oteller ve hosteller gibi 1 ila 150 odalı bağımsız tesisler için tasarlandı.
 
 Q: Mobil uygulama var mı?
-A: Evet. Pro ve Growth planlarında iOS ve Android uygulaması bulunur. Rezervasyonları, mesajları ve check-in'leri otelin dışından da yönetirsiniz.
+A: Evet. Starter dahil tüm planlarda iOS ve Android uygulaması bulunur. Rezervasyonları, mesajları ve check-in'leri otelin dışından da yönetirsiniz.
 
 Q: Online check-in nasıl çalışıyor?
 A: Misafire kişiye özel güvenli bir bağlantı gönderilir. Misafir kimliğini telefonuyla tarar (görüntü saklanmaz), refakatçilerini ve dijital imzasını varıştan önce gönderir. Pro ve Growth planlarında vardır.
@@ -804,6 +877,15 @@ A: Hesabınız dakikalar içinde hazır olur. Çoğu otel kanallarını aynı g�
 
 Q: Türkçe destek veriyor musunuz?
 A: Evet. Destek Türkçe ve İngilizce verilir. Panel, mobil uygulama ve misafirin check-in formu 6 dilde kullanılabilir: Türkçe, İngilizce, İspanyolca, Fransızca, İtalyanca ve Portekizce. Bize hello@hostliopro.com adresinden ulaşabilirsiniz.
+
+Q: Eski programımdaki rezervasyonları aktarabilir miyim?
+A: Evet. Rezervasyonlarınızı mevcut programınızdan CSV ya da Excel olarak dışa aktarın ve panelde yükleyin. Sütunlar otomatik eşlenir, mükerrer kayıtlar atlanır, sorunlu her satır nedeniyle listelenir. Ardından kanallarınızı bağlayın; yeni OTA rezervasyonları bundan sonra kendiliğinden gelir.
+
+Q: Personelin neyi göreceğini sınırlayabilir miyim?
+A: Evet. Her kişiye bir rol verirsiniz: sahip, yönetici, resepsiyon, kat hizmetleri, muhasebe ya da izleyici. Kat görevlisi yalnız odaları görür, muhasebe misafir mesajlarını görmez; işlem geçmişi kimin neyi değiştirdiğini kaydeder. Starter 3, Pro 8, Growth 20 kullanıcı içerir.
+
+Q: Hangi raporları alırım?
+A: Tüm planlarda doluluk, ADR, RevPAR, gelir, iptaller, 30/60/90 günlük ileriye bakış ve komisyon sonrası kanal geliri analizleri vardır. Excel'e ya da PDF'e aktarabilirsiniz; otel sahibine her pazartesi haftalık özet, her ay da CSV ekli aylık rapor e-postayla gelir.
 
 ---
 # Hakkımızda | Hostlio Pro
@@ -1053,7 +1135,7 @@ Booking.com, Expedia ve Airbnb'den gelen rezervasyonlar tek oda rafında, kanal 
 Online check-in ve dijital imza sayesinde misafir lobide form doldurmak yerine hoş geldin içeceğini alır.
 
 ## Hangi plan uygun?
-10 ila 50 odalı butik oteller için Pro planı önerilir: aylık 5.000 AI mesajı, WhatsApp ve OTA gelen kutusu mesajlaşması (Booking.com, Airbnb, Expedia), online check-in, transfer ve tur satışı ile iOS ve Android uygulaması.
+10 ila 50 odalı butik oteller için Pro planı önerilir: aylık 5.000 AI mesajı, WhatsApp ve OTA gelen kutusu mesajlaşması (Booking.com, Airbnb, Expedia), online check-in ile transfer ve tur satışı. iOS ve Android uygulaması tüm planlarda var.
 
 Diğer otel programlarıyla karşılaştırmak için otel programı karşılaştırması sayfamıza bakın.
 Fiyatları gör
@@ -1135,7 +1217,7 @@ Hostelworld, Booking.com ve diğer kanallar tek müsaitlikle yönetilir.
 Gece gelen sorular sabaha kalmaz; ekip yalnızca karar gerektiren konulara bakar.
 
 ## Hangi plan uygun?
-Mesaj trafiği yüksek hosteller için aylık 5.000 AI mesajı sunan Pro planı önerilir. Yatak bazlı kurulum detaylarını demo sırasında birlikte netleştirelim.
+Mesaj trafiği yüksek hosteller için aylık 5.000 AI mesajı sunan Pro planı önerilir. Hostlio Pro müsaitliği yatak değil oda bazında yönetir; bu yüzden en çok özel oda ya da odanın tamamını satan hostellere uyar.
 
 Diğer otel programlarıyla karşılaştırmak için otel programı karşılaştırması sayfamıza bakın.
 Fiyatları gör
@@ -1144,7 +1226,7 @@ Q: Hostelworld ile çalışıyor mu?
 A: Evet. Hostelworld, Channex'in bağlı kanalları arasındadır.
 
 Q: Yatak bazlı (dorm) satış destekleniyor mu?
-A: Kurulumunuza göre değişir; oda ve yatak yapınızı demo sırasında birlikte planlayalım.
+A: Ayrı bir yatak envanteri olarak hayır. Hostlio Pro müsaitliği oda bazında yönetir: her oda tipinin oda sayısı ve en fazla kişi sayısı vardır, bir rezervasyon bir odayı tutar. Özel odaları olan hosteller için uygundur; gelirinizin çoğu ortak yatakhanelerde tek tek yatak satışından geliyorsa, geçmeden önce oda bazlı kurulumun kanallarınıza uyup uymadığını bir demoda birlikte kontrol edelim.
 
 Q: Kaç AI mesajı yeterli olur?
 A: Günde ortalama 150 otomatik yanıt, aylık yaklaşık 4.500 mesaj eder; bu durumda Pro planı uygundur.
@@ -1565,6 +1647,12 @@ Misafir mesaj içerikleri belirlediğiniz sürenin sonunda anonimleştirilir (va
 ## GDPR ve KVKK kapsamındaki roller
 Misafir verilerinde otel veri sorumlusu, Hostlio Pro veri işleyendir. Bu yükümlülükler Veri İşleme Sözleşmemizde yer alır ve Kullanım Şartlarımızın parçasıdır.
 
+## Personel rolleri ve yetkiler
+Ayrı yetkileri olan altı rol (sahip, yönetici, resepsiyon, kat hizmetleri, muhasebe, izleyici), tesis bazında atanır. Kat görevlisi yalnız odaları görür; muhasebe misafir mesajlarını görmez. Dışa aktarma ayrı bir yetki ister ve bir kişinin erişimini istediğiniz an askıya alabilirsiniz.
+
+## İşlem geçmişi
+Paneldeki değişiklikler alan alan kaydedilir: kim, ne zaman, hangi tesis, eski ve yeni değer. Misafirin kişisel verisi kayda kopyalanmaz. Kayıtlar 365 gün saklanır; süzülebilir ve CSV olarak indirilebilir.
+
 ## Alt işleyiciler
 Alt işleyici Konum Amaç
 Supabase, Inc. USA Veritabanı, kimlik doğrulama ve sunucu fonksiyonları
@@ -1687,7 +1775,7 @@ The conversation waits in your dashboard, translated. A happy guest and a rested
 ## Run your hotel's day from one screen
 Guest messages, reservations, channels and check-in work together.
 
-Messages Calendar Channels Check-in
+Messages Calendar Channels Check-in Today
 
 ## Every guest message in one inbox
 WhatsApp and OTA inbox messages (Booking.com, Airbnb, Expedia) together. Lio answers with your hotel's information, and you only see what needs you.
@@ -1773,6 +1861,19 @@ Companions 1 guest added
 
 Signature
 
+## The day’s work, ready each morning
+Open the dashboard and see who arrives, who leaves, which rooms need cleaning and what is waiting for you.
+
+- Arrivals, departures and rooms to clean
+- Messages and Lio drafts waiting for you
+- Out-of-order rooms close on every channel All features
+Today 08:00
+Arrivals 6
+Departures 4
+Rooms to clean 5
+Messages waiting 2
+Drafts to approve 1
+
 ## Everything a hotel needs
 Every module is connected: no separate tools, no separate passwords.
 
@@ -1846,6 +1947,7 @@ Early-bird price (regularly $59 )
 - Lio Suggestions every morning
 - Room rack reservation calendar
 - Accommodation confirmation for visas (PDF)
+- iOS and Android app
 Start with Starter
 
 Most popular
@@ -1865,7 +1967,6 @@ Early-bird price (regularly $109 )
 - AI insights from reviews and messages
 - Online check-in with digital signature
 - Transfer, tour and extras sales
-- Mobile app
 Start with Pro
 
 ## Growth
@@ -2059,6 +2160,15 @@ See at a glance which channel each booking came from. Reassign rooms with drag a
 ## Connected to messaging
 Guest messages for OTA bookings land in Lio's inbox with the guest, room and dates alongside every conversation.
 
+## A whole season in one go
+Pick a date range, the room types and rate plans, then set price, minimum and maximum stay, closed to arrival, closed to departure or stop sell. Tick “weekends only” to price Friday and Saturday nights separately. A “resend to channels” button pushes the current rates and availability again if a channel ever falls out of step.
+
+## Out-of-order rooms close automatically
+When a room is taken out of order because of a fault, availability drops on every connected channel and the room can’t be assigned until it is back in service.
+
+## Bring your existing bookings
+Upload the reservations from your old system as CSV or Excel. Columns are matched automatically, duplicates are skipped and problem rows are listed with the reason.
+
 ## Main supported channels
 The list follows our certified connection network. Missing a channel? Get in touch.
 
@@ -2080,7 +2190,7 @@ Q: Is the channel manager included in every plan?
 A: Yes. Starter, Pro and Growth all include channel sync with 100+ OTAs. Growth adds priority sync.
 
 Q: Is it hard to switch from my current channel manager?
-A: No. Create your room types in Hostlio Pro and map your OTA accounts through Channex. Our onboarding team helps during the switch.
+A: No. Create your room types in Hostlio Pro, import your existing reservations from a CSV or Excel file, and map your OTA accounts through Channex. Our onboarding team helps during the switch.
 
 ---
 # Hotel Online Check-in with Digital Signature | Hostlio Pro
@@ -2110,6 +2220,9 @@ How does online check-in work? Hostlio Pro sends the booker a personal, time-lim
 
 ## Secure link
 A token-based link unique to each reservation. It only opens that reservation's form.
+
+## Check-in link by email, automatically
+Switch it on and every new reservation with an email address gets the guest’s personal check-in link by email, in the guest’s language. You choose which booking sources it applies to: direct bookings, Booking.com, Expedia, Airbnb, Agoda or other OTAs. It stays off until you turn it on.
 
 ## Document scan, no images stored
 The machine-readable zone of the passport or ID card is read on the guest's own device. Only the name, document number (the T.C. identity number on Turkish ID cards), nationality, date of birth and expiry date are saved, never a picture of the document. This is in line with KVKK principle decision 2025/2120, under which accommodation businesses in Türkiye must not keep copies of ID documents. Documents without a machine-readable zone are entered by hand.
@@ -2186,11 +2299,40 @@ Lio suggests airport transfers and tours during the conversation and passes the 
 ## Lio Suggestions and AI insights
 Every morning Lio prepares suggestions on pricing, operations (rooms waiting to be cleaned, pending requests), setup gaps and revenue opportunities. Nothing changes without your approval, and rate suggestions stay within limits you set. On Pro and Growth, recurring complaints and praise in reviews and messages are summarised too.
 
-## Reports and team
-Occupancy, ADR, RevPAR and channel performance reports, plus a weekly and monthly email report. Six staff roles with their own permissions, and all notifications in one place.
-
 ## Mobile app
 Manage bookings, messages and check-ins away from the hotel with the iOS and Android app.
+
+## Run the whole day from one dashboard
+Beyond messaging and distribution, these are the tools your team uses every day. All of them are in the web dashboard and included in every plan unless noted.
+
+## Daily operations
+Today screen Open the dashboard in the morning and the day is already laid out: arrivals, departures, rooms to clean, messages waiting for a reply, Lio drafts waiting for your approval, booking requests and reviews to answer.
+
+Housekeeping Every room has a status: clean, dirty, maintenance or out of order. Today’s departures come first, and a room with a same-day arrival is marked high priority. Print the day’s housekeeping list as a PDF; housekeepers with the housekeeping role only see rooms.
+
+Maintenance and out-of-order rooms Report a fault with up to five photos (location data is removed), a category and a priority. Take a room out of order and it leaves sale: availability drops on your connected channels automatically, the room can’t be assigned to a booking and your team is notified.
+
+A room rack that scales For larger properties: three density levels, rooms grouped by type or floor, a daily free-room count, a free-room search and 7, 14 or 30-day views. The conflict check lists double-booked and unassigned reservations, the rack suggests a free room of the right type, and bookings move with the mouse or the keyboard.
+
+Notifications and morning summary New, changed and cancelled bookings, messages waiting for a reply, drafts to approve, channel issues and maintenance reports land in one notification centre, kept for 90 days. The mobile app also sends a summary of the day at 08:00 hotel time (Android today, iOS with the upcoming app update).
+
+## Revenue, rates and reports
+Analytics Occupancy, ADR, RevPAR, revenue, length of stay, cancellations and no-shows, compared with the previous period. A 30, 60 and 90-day forward view with pickup shows what is already on the books, and the channel view shows gross revenue, commission and net for each OTA, so you know which one really pays. Room types, guests, extras and Lio’s work have their own tabs.
+
+Excel, PDF and email reports Export every analytics tab to Excel in one click or print the open view as a PDF; your accountant gets the numbers without extra work. Every Monday a weekly summary reaches the owner’s inbox, and on the 1st of each month a monthly report with CSV attachments.
+
+Rates and restrictions One grid for every room type and rate plan: price, minimum and maximum stay, closed to arrival, closed to departure, stop sell and availability. Enter a whole season at once: pick a date range, room types and plans, and tick “weekends only” to price Friday and Saturday nights separately. A “resend to channels” button pushes everything again if a channel ever falls out of step.
+
+Reservation import Moving from another system? Upload your reservations as a .csv, .xlsx or .xls file. Columns are matched automatically and you can adjust them, the date format is detected or chosen by you, duplicates are skipped, and any row that can’t be imported is listed with the reason.
+
+## Team and control
+Staff roles and permissions Invite colleagues by email and give each a role: owner, manager, front desk, housekeeping, accounting or viewer. Everyone sees only what their job needs: housekeeping sees rooms, accounting doesn’t see guest messages. Suspend access at any time. Starter includes 3 users, Pro 8 and Growth 20.
+
+Activity log Who changed what, and when: changes are logged field by field with the old and new value, without guest personal data. Filter by person, module, property or date, look back 365 days and download the log as CSV.
+
+Two properties on Growth Switch between properties in one click and see both properties’ arrivals, departures, occupancy and revenue on one “All properties” page. When you add the second property, copy policies, AI settings, message templates and notification settings from the first. Both properties share one AI message quota.
+
+Dashboard in 6 languages The dashboard, mobile app and guest check-in form are available in English, Turkish, Spanish, French, Italian and Portuguese, so every team member works in their own language.
 
 ## Features by plan
 
@@ -2226,17 +2368,30 @@ Online check-in and digital signature No Yes Yes
 
 Transfer and tour sales No Yes Yes
 
-iOS and Android app No Yes Yes
+iOS and Android app Yes Yes Yes
 
 Priority support and onboarding call No No Yes
 
 White-label No No Yes
+
+Analytics, Excel export and weekly/monthly email reports Yes Yes Yes
+Automatic check-in link email (you choose the booking sources) No Yes Yes
+“All properties” overview and property switcher No No Yes
 
 Q: What is Hostlio Pro?
 A: Hostlio Pro is AI-powered hotel management software (PMS) built for independent hotels, boutique hotels and guesthouses. It combines Lio, an AI assistant that answers guest messages 24/7 in 30+ languages, a channel manager connected to 100+ OTAs, a drag-and-drop reservation calendar and online check-in in one platform.
 
 Q: Which OTAs does Hostlio Pro connect to?
 A: Through Channex, Hostlio Pro connects to 100+ channels including Booking.com, Airbnb, Expedia, Agoda, Trip.com, Hotels.com, Hotelbeds, Hostelworld and Google Hotels. Availability, rates and reservations stay in sync across all of them.
+
+Q: Can I bring my reservations from my current software?
+A: Yes. Export your reservations from your current system as a CSV or Excel file and upload it in the dashboard. Columns are matched automatically, duplicates are skipped and any row with a problem is listed with the reason. Then connect your channels: new OTA bookings arrive on their own from then on.
+
+Q: Can I limit what each staff member sees?
+A: Yes. Each person gets a role: owner, manager, front desk, housekeeping, accounting or viewer. Housekeeping only sees rooms, accounting doesn’t see guest messages, and an activity log records who changed what. Starter includes 3 users, Pro 8 and Growth 20.
+
+Q: Which reports do I get?
+A: Every plan includes analytics for occupancy, ADR, RevPAR, revenue, cancellations, a 30/60/90-day forward view and revenue per channel after commission. You can export to Excel or PDF, and the owner receives a weekly summary every Monday and a monthly report with CSV attachments.
 
 ---
 # Hotel Software Pricing: Plans from $49/month | Hostlio Pro
@@ -2264,6 +2419,7 @@ Early-bird price (regularly $59 )
 - Lio Suggestions every morning
 - Room rack reservation calendar
 - Accommodation confirmation for visas (PDF)
+- iOS and Android app
 Start with Starter
 
 Most popular
@@ -2283,7 +2439,6 @@ Early-bird price (regularly $109 )
 - AI insights from reviews and messages
 - Online check-in with digital signature
 - Transfer, tour and extras sales
-- Mobile app
 Start with Pro
 
 ## Growth
@@ -2354,7 +2509,7 @@ Which languages does Lio reply in? Lio replies in 30+ languages, including Engli
 
 What types of hotels is Hostlio Pro for? Independent properties with 1 to 150 rooms, such as boutique hotels, city hotels, guesthouses, aparthotels and hostels.
 
-Is there a mobile app? Yes. The Pro and Growth plans include an iOS and Android app. Manage bookings, messages and check-ins away from the hotel.
+Is there a mobile app? Yes. Every plan, including Starter, includes the iOS and Android app. Manage bookings, messages and check-ins away from the hotel.
 
 How does online check-in work? Guests receive a personal secure link, scan their ID document on their phone (no image is stored) and send accompanying guests and a digital signature before arrival. Available on Pro and Growth.
 
@@ -2365,6 +2520,12 @@ Is my data secure? Data is transmitted over encrypted connections, and each hote
 How long does setup take? Your account is ready in minutes. Most hotels connect their channels the same day: add room types and rooms, authorise the connection in each OTA's extranet and map your rooms. The Growth plan includes a custom onboarding call.
 
 Which languages is support offered in? Support is available in English and Turkish. The dashboard, mobile app and guest check-in form are available in 6 languages: English, Turkish, Spanish, French, Italian and Portuguese. Reach us at hello@hostliopro.com.
+
+Can I bring my reservations from my current software? Yes. Export your reservations from your current system as a CSV or Excel file and upload it in the dashboard. Columns are matched automatically, duplicates are skipped and any row with a problem is listed with the reason. Then connect your channels: new OTA bookings arrive on their own from then on.
+
+Can I limit what each staff member sees? Yes. Each person gets a role: owner, manager, front desk, housekeeping, accounting or viewer. Housekeeping only sees rooms, accounting doesn’t see guest messages, and an activity log records who changed what. Starter includes 3 users, Pro 8 and Growth 20.
+
+Which reports do I get? Every plan includes analytics for occupancy, ADR, RevPAR, revenue, cancellations, a 30/60/90-day forward view and revenue per channel after commission. You can export to Excel or PDF, and the owner receives a weekly summary every Monday and a monthly report with CSV attachments.
 
 Q: What is Hostlio Pro?
 A: Hostlio Pro is AI-powered hotel management software (PMS) built for independent hotels, boutique hotels and guesthouses. It combines Lio, an AI assistant that answers guest messages 24/7 in 30+ languages, a channel manager connected to 100+ OTAs, a drag-and-drop reservation calendar and online check-in in one platform.
@@ -2385,7 +2546,7 @@ Q: What types of hotels is Hostlio Pro for?
 A: Independent properties with 1 to 150 rooms, such as boutique hotels, city hotels, guesthouses, aparthotels and hostels.
 
 Q: Is there a mobile app?
-A: Yes. The Pro and Growth plans include an iOS and Android app. Manage bookings, messages and check-ins away from the hotel.
+A: Yes. Every plan, including Starter, includes the iOS and Android app. Manage bookings, messages and check-ins away from the hotel.
 
 Q: How does online check-in work?
 A: Guests receive a personal secure link, scan their ID document on their phone (no image is stored) and send accompanying guests and a digital signature before arrival. Available on Pro and Growth.
@@ -2401,6 +2562,15 @@ A: Your account is ready in minutes. Most hotels connect their channels the same
 
 Q: Which languages is support offered in?
 A: Support is available in English and Turkish. The dashboard, mobile app and guest check-in form are available in 6 languages: English, Turkish, Spanish, French, Italian and Portuguese. Reach us at hello@hostliopro.com.
+
+Q: Can I bring my reservations from my current software?
+A: Yes. Export your reservations from your current system as a CSV or Excel file and upload it in the dashboard. Columns are matched automatically, duplicates are skipped and any row with a problem is listed with the reason. Then connect your channels: new OTA bookings arrive on their own from then on.
+
+Q: Can I limit what each staff member sees?
+A: Yes. Each person gets a role: owner, manager, front desk, housekeeping, accounting or viewer. Housekeeping only sees rooms, accounting doesn’t see guest messages, and an activity log records who changed what. Starter includes 3 users, Pro 8 and Growth 20.
+
+Q: Which reports do I get?
+A: Every plan includes analytics for occupancy, ADR, RevPAR, revenue, cancellations, a 30/60/90-day forward view and revenue per channel after commission. You can export to Excel or PDF, and the owner receives a weekly summary every Monday and a monthly report with CSV attachments.
 
 ---
 # About Hostlio Pro
@@ -2666,10 +2836,72 @@ Bookings from Booking.com, Expedia and Airbnb appear on one room rack, colour-co
 With online check-in and a digital signature, guests get a welcome drink instead of a form.
 
 ## Which plan fits?
-For boutique hotels with 10 to 50 rooms we recommend Pro : 5,000 AI messages a month, WhatsApp + OTA inbox messaging (Booking.com, Airbnb, Expedia), online check-in, transfer and tour sales and the iOS and Android app.
+For boutique hotels with 10 to 50 rooms we recommend Pro : 5,000 AI messages a month, WhatsApp + OTA inbox messaging (Booking.com, Airbnb, Expedia), online check-in, and transfer and tour sales. The iOS and Android app is included in every plan.
 
 To compare with other hotel software, see our hotel software comparison .
 See pricing
+
+## AI for boutique hotels, without losing the personal touch
+
+## Your tone, your details
+Lio writes in the guest’s language using your own property information: check-in times, breakfast on the terrace, parking, pets, how to find you. It does not invent offers or policies that you have not entered.
+
+## You decide what is automatic
+Start in approval mode and read every reply before it goes out. Then let Lio close routine questions on its own and keep discounts, complaints and special requests for your team.
+
+## One inbox for every guest
+WhatsApp messages, and on Pro and Growth the Booking.com, Airbnb and Expedia inboxes, arrive in one place next to the guest’s reservation. Your team stops switching between extranets.
+
+## Know the limits
+Replies you type yourself are sent exactly as written. Lio shows you a translation of its own replies, and it hands over anything it is not sure about instead of guessing.
+
+## A 50-room boutique hotel on a normal day
+An illustration of how the pieces fit together; your numbers will differ.
+Time What happens Where in Hostlio Pro
+02:10 A guest from Seoul asks whether late check-in is possible Lio replies in Korean from your check-in rules
+08:00 The owner reads the day: 12 arrivals, 9 departures, 2 drafts to approve Today screen and Lio Suggestions
+10:30 A sink is leaking in room 14 Maintenance report; the room leaves sale on every channel
+12:00 Housekeeping turns over today’s departures, priority rooms first Housekeeping list, printable as PDF
+15:00 Arriving guests already checked in online Online check-in with digital signature (Pro and Growth)
+18:00 A guest asks for an airport transfer for Friday Lio offers it and passes the request to your team
+Monday The owner compares channel net revenue with last week Analytics and the weekly email report
+
+## More revenue per stay, without a hard sell
+
+## Extras at the right moment
+Airport transfers, tours and other extras are offered when they are relevant to the conversation, and the request reaches your team (Pro and Growth).
+
+## Booking requests on WhatsApp
+When a guest asks about dates on WhatsApp, Lio collects dates, guests and room preference and quotes your own rate. It becomes a reservation only after you approve it (Pro and Growth).
+
+## Suggestions every morning
+Lio Suggestions point out pricing, operations and revenue opportunities. Nothing changes without your approval, and rate suggestions stay within limits you set.
+
+## Channel net revenue
+Analytics shows each OTA’s gross revenue, commission and net, plus a 30, 60 and 90-day forward view with pickup, so you can see where direct bookings would pay off most.
+
+## Arrival that feels like a welcome, not a form
+
+## Check-in before arrival
+Guests scan the machine-readable zone of their passport or ID on their own phone, add companions and sign. No document images are stored, and signatures are deleted 30 days after check-out.
+
+## Link sent automatically
+Switch on the check-in email and every new reservation with an email address receives the link in the guest’s language. You choose which booking sources it applies to.
+
+## Visa letters in one click
+Create an accommodation confirmation for visa or invitation applications from the reservation and save it as a PDF.
+
+## Boutique hotel software checklist
+Question to ask any vendor Hostlio Pro
+Is the price public and flat, without booking commission? Yes: from $49 a month, no commission, 7-day free trial
+Is the channel manager included? Yes, on every plan, with certified connections to 100+ channels
+Can AI answer guests in their language, with approval? Yes: WhatsApp on every plan, OTA inboxes on Pro and Growth
+Can each team member see only what they need? Yes: six roles; 3, 8 or 20 users by plan; activity log
+Can I see revenue per channel after commission? Yes, with Excel export and weekly and monthly email reports
+Can I bring my existing bookings? Yes, from a CSV or Excel file
+Is there a mobile app? Yes, iOS and Android, included in every plan
+
+Read more: answering hotel guest messages with AI and choosing hotel management software for a small hotel .
 
 Q: What is the best software for a boutique hotel?
 A: It depends on room count, guest profile and budget. For 10–50 room hotels with many international guests that want flat pricing, Hostlio Pro's AI messaging and channel manager are a good fit. See our comparison page for other options.
@@ -2679,6 +2911,12 @@ A: Yes. Hostlio Pro works alongside your existing website rather than replacing 
 
 Q: How many users can I add?
 A: Starter includes 3 users, Pro 8 and Growth 20. Each person gets a role with matching permissions (for example front desk, housekeeping or accounting).
+
+Q: Will AI make a boutique hotel feel generic?
+A: Only if it guesses. Lio answers routine questions from your own information, in the guest’s language, and hands discounts, complaints and special requests to your team. Many hotels start in approval mode and read every reply for the first days.
+
+Q: What is the best guest messaging setup for a 50-room boutique hotel?
+A: One inbox for WhatsApp and the OTA inboxes, automatic replies for routine questions, and clear handover rules for everything else. Hostlio Pro’s Pro plan covers up to 50 rooms with 5,000 AI messages a month; Growth covers two properties or up to 150 rooms.
 
 ---
 # Aparthotel Software: Online Check-in, OTA Sync | Hostlio Pro
@@ -2748,19 +2986,100 @@ City tours and airport transfers are common extras in hostels; Lio offers them a
 Night-time questions don't wait until morning; staff only handle what needs a decision.
 
 ## Which plan fits?
-For high-volume hostels we recommend Pro with 5,000 AI messages a month. Let's plan your bed-based setup together during the demo.
+For high-volume hostels we recommend Pro with 5,000 AI messages a month. Hostlio Pro manages availability by room, not by bed, so it fits hostels that mainly sell private rooms or whole rooms best.
 
 To compare with other hotel software, see our hotel software comparison .
 See pricing
+
+## A day at the hostel desk with Hostlio Pro
+
+## 08:00, the day is laid out
+The Today screen lists arrivals, departures, rooms to clean, messages waiting for a reply and Lio drafts waiting for approval. The mobile app can send the same summary to your phone at 08:00 hotel time (Android today, iOS with the upcoming app update).
+
+## Late morning, turnover
+Housekeeping sees today’s departures first, with rooms that have a same-day arrival marked high priority. When a room is clean, its status changes and reception sees it at once. If a shower breaks, report it with a photo and take the room out of order: it leaves sale on every connected channel until it is fixed.
+
+## Afternoon, arrivals
+Guests who completed online check-in (Pro and Growth) have already scanned their passport or ID and signed, so the desk hands over keys instead of typing passport numbers. No document images are stored.
+
+## Night, the inbox keeps moving
+Travellers write at all hours, in many languages, about late arrival, luggage storage, lockers, the kitchen or the nearest bus stop. Lio answers from the information you entered and hands anything that needs a decision to your night staff or to the morning shift.
+
+## What hostel guests ask, and where Lio gets the answer
+Lio only answers from your property information and the guest’s reservation. The more of these you fill in once, the fewer messages reach your team.
+Typical question What Lio uses to answer
+“We land at 1 am, can we still check in?” Your check-in hours and late-arrival rules
+“Can we leave our bags after check-out?” Your luggage storage policy
+“Are there lockers? Do I need my own padlock?” Room and facility details you add
+“Is there a kitchen guests can use?” Facilities and house rules
+“How do we get here from the airport?” Transport notes, plus your airport transfer if you sell one
+“Do you run a walking tour tomorrow?” Your extras list; on Pro and Growth Lio can pass the request to your team
+“Can I change my dates?” Handed to your team: Lio does not change reservations
+
+## Hostelworld, Booking.com and direct bookings on one calendar
+
+## One availability for every channel
+Hostlio Pro connects to Hostelworld, Booking.com, Airbnb, Expedia and 100+ other channels over certified connections. A room sold on one channel closes on the others, and cancellations reopen it everywhere.
+
+## Weekend and event pricing
+Set a whole season in one go: choose dates, room types and rate plans, tick “weekends only” to price Friday and Saturday nights separately, and add a minimum stay, closed to arrival or stop sell for festival weekends.
+
+## See which channel really pays
+Analytics shows occupancy, ADR and RevPAR, plus gross revenue, commission and net for each OTA, so you can decide where to push direct bookings. Export to Excel for your accountant.
+
+## Night staff, volunteers and housekeeping
+
+## A role for everyone
+Give each person a role: manager, front desk, housekeeping, accounting or viewer. Housekeepers only see rooms; accounting doesn’t see guest messages. When a volunteer leaves, suspend their access in one click. Starter includes 3 users, Pro 8 and Growth 20.
+
+## Know who changed what
+The activity log records each change field by field, with the person and time, for 365 days. Useful when several shifts touch the same booking.
+
+## Everyone in their language
+The dashboard and mobile app are in English, Spanish, French, Italian, Portuguese and Turkish, so an international team can work in its own language.
+
+## Is Hostlio Pro the right hostel software for you?
+We would rather tell you now than after a migration. Hostlio Pro manages availability by room, not by bed.
+Area Good fit Check with us first
+Inventory Private rooms, family rooms and whole dorm rooms sold as one unit Selling single beds in shared dorms as separate inventory is not supported
+Bookings One room per reservation, from any channel or entered by hand Group bookings across several rooms are entered as separate reservations
+Size 1 to 150 rooms, one property or two on Growth More than two properties or more than 150 rooms
+Payments Prices, extras and printable receipts on the reservation There is no built-in card payment, folio or point of sale
+Guests International travellers who write on WhatsApp and through OTA inboxes —
+
+## Switching from your current hostel software
+
+-
+## Set up rooms and rates
+Create your room types, rooms and rate plans. The setup assistant checks what is missing before you go live.
+
+-
+## Import your bookings
+Export future reservations from your old system as CSV or Excel and upload them. Columns are matched automatically and problem rows are listed with the reason.
+
+-
+## Connect your channels
+Authorise Hostelworld, Booking.com and your other OTAs and map your rooms. Most properties connect the same day.
+
+Read more: how to prevent overbooking across channels and how to auto-reply to Booking.com messages .
 
 Q: Does it work with Hostelworld?
 A: Yes. Hostelworld is among Channex's connected channels.
 
 Q: Is bed-based (dorm) selling supported?
-A: It depends on your setup; let's plan your room and bed structure together during the demo.
+A: Not as a separate bed inventory. Hostlio Pro manages availability by room: each room type has a number of units and a maximum occupancy, and one reservation holds one room. It suits hostels with private rooms; if most of your revenue comes from selling single beds in shared dorms, let's check in a demo whether a room-based setup works with your channels before you switch.
 
 Q: How many AI messages do I need?
 A: About 150 automatic replies a day is roughly 4,500 a month, which fits the Pro plan.
+
+Q: Can Lio answer questions about lockers, the kitchen or late arrival?
+A: Yes, as long as that information is in your property settings. Lio answers in the guest’s language and only from what you entered; when something is missing, it hands the message to your team and the dashboard shows which detail to add.
+
+Q: Can I take group bookings?
+A: A reservation holds one room, so a group across several rooms is entered as several reservations. For large groups, tell us how you sell them and we will check the setup with you in a demo.
+
+Q: Can volunteers or night staff get limited access?
+A: Yes. Give them the front desk or viewer role, or housekeeping if they only clean rooms. You can suspend access at any time, and the activity log shows who changed what.
 
 ---
 # Hotel Software Comparison 2026: Pricing and AI | Hostlio Pro
@@ -3177,6 +3496,12 @@ Guest message content is anonymised after the period you set (default 60 days); 
 
 ## Your roles under GDPR and KVKK
 For guest data your hotel is the controller and Hostlio Pro is the processor. Our Data Processing Addendum sets out these obligations and forms part of our Terms of Service.
+
+## Staff roles and permissions
+Six roles (owner, manager, front desk, housekeeping, accounting, viewer) with separate permissions, assigned per property. A housekeeper only sees rooms; accounting doesn’t see guest messages. Exports need their own permission, and you can suspend a person’s access at any time.
+
+## Activity log
+Changes in the dashboard are recorded field by field: who, when, which property, old and new value. Guest personal data is not copied into the log. Entries are kept for 365 days and can be filtered and downloaded as CSV.
 
 ## Subprocessors
 Subprocessor Location Purpose
@@ -3707,7 +4032,7 @@ La conversación te espera en tu panel, traducida. Un huésped contento y tú, d
 ## Gestiona el día de tu hotel desde una sola pantalla
 Mensajes de huéspedes, reservas, canales y check-in funcionan conectados.
 
-Mensajes Calendario Canales Check-in
+Mensajes Calendario Canales Check-in Hoy
 
 ## Todos los mensajes de huéspedes en una sola bandeja
 WhatsApp y los mensajes de Booking.com, Airbnb y Expedia, todo junto. Lio responde con la información de tu hotel y tú solo ves lo que te necesita.
@@ -3793,6 +4118,19 @@ Acompañantes 1 huésped añadido
 
 Firma
 
+## El trabajo del día, listo cada mañana
+Abre el panel y mira quién llega, quién se va, qué habitaciones hay que limpiar y qué te está esperando.
+
+- Llegadas, salidas y habitaciones por limpiar
+- Mensajes y borradores de Lio pendientes
+- Las habitaciones fuera de servicio se cierran en todos los canales Todas las funcionalidades
+Hoy 08:00
+Llegadas 6
+Salidas 4
+Habitaciones por limpiar 5
+Mensajes pendientes 2
+Borradores por aprobar 1
+
 ## Todo lo que un hotel necesita
 Todos los módulos están conectados: sin herramientas sueltas ni contraseñas distintas.
 
@@ -3866,6 +4204,7 @@ Precio de lanzamiento (normalmente 59 $ )
 - Sugerencias de Lio cada mañana
 - Calendario de reservas (planning de habitaciones)
 - Confirmación de alojamiento para visados (PDF)
+- App móvil para iOS y Android
 Empieza con Starter
 
 El más elegido
@@ -3885,7 +4224,6 @@ Precio de lanzamiento (normalmente 109 $ )
 - Análisis con IA de reseñas y mensajes
 - Check-in online con firma digital
 - Venta de traslados, excursiones y extras
-- App móvil para iOS y Android
 Empieza con Pro
 
 ## Growth
@@ -4079,6 +4417,15 @@ Ve de un vistazo de qué canal viene cada reserva. Reasigna habitaciones arrastr
 ## Conectado a la mensajería
 Los mensajes de los huéspedes de reservas de OTAs llegan a la bandeja de Lio con el huésped, la habitación y las fechas junto a cada conversación.
 
+## Una temporada entera de una vez
+Elige un rango de fechas, los tipos de habitación y los planes tarifarios, y define precio, estancia mínima y máxima, cerrado a la llegada, cerrado a la salida o cierre de ventas. Marca «solo fines de semana» para dar otro precio a las noches de viernes y sábado. Si un canal se desincroniza, «reenviar a los canales» envía de nuevo las tarifas y la disponibilidad actuales.
+
+## Las habitaciones fuera de servicio se cierran solas
+Cuando una habitación queda fuera de servicio por una avería, la disponibilidad baja en todos los canales conectados y la habitación no se puede asignar hasta que vuelve a estar operativa.
+
+## Trae tus reservas actuales
+Sube las reservas de tu sistema anterior en CSV o Excel. Las columnas se asignan automáticamente, los duplicados se omiten y las filas con problemas aparecen con el motivo.
+
 ## Principales canales compatibles
 La lista sigue nuestra red de conexiones certificadas. ¿Echas en falta algún canal? Escríbenos.
 
@@ -4093,6 +4440,62 @@ Hotelbeds Mayorista (banco de camas)
 Hostelworld Marketplace de hostels
 Google Hotels Metabuscador
 
+## Cómo funciona la sincronización, paso a paso
+
+-
+## Crea tu inventario
+Tipos de habitación, habitaciones y planes tarifarios en Hostlio Pro. Es la única fuente de disponibilidad para todos los canales.
+
+-
+## Conecta cada OTA
+Autoriza la conexión en la extranet de Booking.com, Airbnb, Expedia o el canal que uses y asigna tus habitaciones. La mayoría de los alojamientos lo hacen el mismo día.
+
+-
+## Vende y olvídate de copiar
+Cada reserva, modificación o cancelación llega sola al planning y la disponibilidad se actualiza en los demás canales.
+
+## PMS integrado con channel manager: por qué importa
+
+## Una sola disponibilidad
+Cuando el channel manager y el PMS son el mismo sistema, no hay dos calendarios que puedan desincronizarse. Una reserva por teléfono, una habitación fuera de servicio o una cancelación cambian la disponibilidad en todos los canales a la vez.
+
+## Habitaciones fuera de servicio
+Si registras una avería y pones la habitación fuera de servicio, sale de la venta en todas las OTAs conectadas y no se puede asignar hasta que vuelve a estar operativa.
+
+## Mensajes junto a la reserva
+Los mensajes de los huéspedes de Booking.com, Airbnb y Expedia llegan a la bandeja de Lio con la reserva al lado (planes Pro y Growth). Lio responde en el idioma del huésped.
+
+## Informes por canal
+Ves ingresos brutos, comisión y neto de cada OTA, ocupación, ADR y RevPAR, y una vista a 30, 60 y 90 días. Exporta a Excel cuando lo necesites.
+
+## Tarifas y restricciones: qué es cada una
+Restricción Para qué sirve Ejemplo
+Precio La tarifa por noche de cada tipo de habitación y plan Doble estándar a 95 € de lunes a jueves
+Estancia mínima / máxima Limita cuántas noches puede reservar el huésped Mínimo 2 noches los fines de semana de agosto
+Cerrado a la llegada (CTA) Nadie puede llegar ese día, aunque sí alojarse Sin llegadas el sábado de un festival
+Cerrado a la salida (CTD) Nadie puede salir ese día Evitar salidas el domingo para no dejar huecos
+Cierre de ventas Cierra la venta de ese tipo de habitación o plan Cerrar la tarifa no reembolsable en temporada alta
+
+Con la edición masiva eliges un rango de fechas, los tipos de habitación y los planes, y aplicas todo de una vez; la opción «solo fines de semana» cambia solo las noches de viernes y sábado. Si un canal no recibe una actualización, el botón «reenviar a los canales» vuelve a enviar las tarifas y la disponibilidad actuales.
+
+## ¿Existe un channel manager gratis?
+
+## Lo que suele haber detrás
+Los channel managers «gratis» suelen cobrar una comisión por reserva, limitar el número de canales o venir atados a un motor de reservas. Con comisión, el coste sube justo cuando más vendes.
+
+## Cómo lo hacemos nosotros
+Hostlio Pro no es gratis, pero el precio es fijo y público: desde 49 $ al mes, sin comisión por reserva, con el channel manager incluido en todos los planes y 7 días de prueba gratuita.
+
+## Cambiar de channel manager sin overbooking
+Paso Qué hacer
+1. Prepara el inventario Crea tipos de habitación y planes en Hostlio Pro con los mismos nombres que usas en las OTAs.
+2. Importa las reservas futuras Exporta las reservas de tu sistema actual en CSV o Excel y súbelas; los duplicados se omiten.
+3. Conecta en horas tranquilas Desconecta el canal en el sistema anterior y conéctalo en Hostlio Pro, uno a uno o todos el mismo día.
+4. Revisa el planning El control de conflictos lista reservas duplicadas o sin habitación asignada.
+5. Compara la disponibilidad Comprueba en la extranet de cada OTA que la disponibilidad coincide con tu planning.
+
+Más detalles en nuestra guía cómo evitar el overbooking .
+
 Q: ¿Con qué OTAs se conecta Hostlio Pro?
 A: A través de Channex, Hostlio Pro se conecta con más de 100 canales, entre ellos Booking.com, Airbnb, Expedia, Agoda, Trip.com, Hotels.com, Hotelbeds, Hostelworld y Google Hotels. La disponibilidad, las tarifas y las reservas se mantienen sincronizadas en todos ellos.
 
@@ -4100,7 +4503,16 @@ Q: ¿El channel manager está incluido en todos los planes?
 A: Sí. Starter, Pro y Growth incluyen la sincronización con más de 100 OTAs. Growth añade sincronización prioritaria.
 
 Q: ¿Es difícil cambiar desde mi channel manager actual?
-A: No. Crea tus tipos de habitación en Hostlio Pro y vincula tus cuentas de OTAs a través de Channex. Nuestro equipo de onboarding te ayuda durante el cambio.
+A: No. Crea tus tipos de habitación en Hostlio Pro, importa tus reservas actuales desde un archivo CSV o Excel y vincula tus cuentas de OTAs a través de Channex. Nuestro equipo de onboarding te ayuda durante el cambio.
+
+Q: ¿Hay un channel manager gratis?
+A: Hostlio Pro no es gratuito, pero puedes probarlo 7 días sin cargo. Después, el channel manager está incluido en todos los planes desde 49 $ al mes, sin comisión por reserva.
+
+Q: ¿Cuánto tarda en conectarse un canal?
+A: Tu cuenta está lista en minutos. Para cada OTA autorizas la conexión en su extranet y asignas tus habitaciones; la mayoría de los alojamientos conectan sus canales el mismo día.
+
+Q: ¿Qué pasa si una OTA no recibe una actualización?
+A: El botón «reenviar a los canales» vuelve a enviar las tarifas, restricciones y disponibilidad actuales. Si el problema persiste, el centro de notificaciones te avisa de las incidencias del canal.
 
 ---
 # Check-in online para hoteles con firma digital | Hostlio Pro
@@ -4131,6 +4543,9 @@ Firma Firma digital recibida
 ## Enlace seguro
 Un enlace basado en token, único para cada reserva. Solo abre el formulario de esa reserva.
 
+## Enlace de check-in por email, automáticamente
+Actívalo y cada nueva reserva con email recibe el enlace personal de check-in, en el idioma del huésped. Tú eliges a qué canales de origen se aplica: reservas directas, Booking.com, Expedia, Airbnb, Agoda u otras OTAs. Está desactivado hasta que lo enciendas.
+
 ## Escaneo del documento sin guardar imágenes
 La zona de lectura mecánica del pasaporte o del documento de identidad se lee en el propio dispositivo del huésped. Solo se guardan el nombre, el número de documento, la nacionalidad, la fecha de nacimiento y la fecha de caducidad, nunca una foto del documento. Los documentos sin zona de lectura mecánica se introducen a mano.
 
@@ -4160,6 +4575,73 @@ Escanea el pasaporte o el documento de identidad con el móvil: los datos se rel
 ## Firmar
 Acepta las normas de la casa y firma en pantalla. En recepción, solo queda recoger la llave.
 
+## Check-in online y SES.Hospedajes (parte de viajeros)
+En resumen: en España, los alojamientos deben comunicar al Ministerio del Interior los datos de sus huéspedes a través de SES.Hospedajes. Hostlio Pro recoge con el check-in online una parte de esos datos y te permite exportarlos, pero no envía nada a SES.Hospedajes : la comunicación la sigue haciendo tu establecimiento.
+
+## Qué es
+El Real Decreto 933/2021 , de 26 de octubre, obliga a quienes prestan servicios de alojamiento, de forma profesional o no (hoteles, hostales, pensiones, apartamentos turísticos, turismo rural y campings, entre otros), a llevar un registro documental de sus huéspedes y a comunicarlo al Ministerio del Interior. La comunicación se hace en SES.Hospedajes, la plataforma del Ministerio, operativa desde el 2 de diciembre de 2024.
+
+## Qué se comunica
+Dos cosas distintas: el parte de viajeros (los datos de cada huésped) y los datos de la reserva o del contrato. El decreto pide comunicarlos de manera inmediata y, en todo caso, en un plazo máximo de 24 horas desde la reserva o su cancelación y desde el inicio de la estancia. Cualquier cambio exige una nueva comunicación.
+
+## Qué datos pide
+De cada viajero: nombre y apellidos, sexo, tipo y número de documento, número de soporte, nacionalidad, fecha de nacimiento, domicilio, teléfono o email y, si viaja un menor, la relación de parentesco con el adulto. De la operación: referencia y fechas del contrato, entrada y salida, número de viajeros y datos de pago.
+
+## Cómo se envía
+En la propia aplicación de SES.Hospedajes, cargando un fichero XML o mediante un servicio web automático. Los registros se conservan durante tres años.
+
+Fuentes: BOE (RD 933/2021) , Sede del Ministerio del Interior y instrucciones de SES.Hospedajes . Consultado en octubre de 2026. Esta sección es informativa y no es asesoramiento legal.
+
+## Qué datos recoge el check-in online de Hostlio Pro
+Así encaja el formulario de check-in con lo que pide el parte de viajeros. Lo que falta lo completas tú antes de comunicarlo.
+Dato del parte de viajeros ¿Lo recoge Hostlio Pro?
+Nombre y apellidos Sí, en un solo campo (no separa primer y segundo apellido)
+Tipo y número de documento Sí: pasaporte o documento de identidad, leído de la zona MRZ o escrito a mano
+Nacionalidad y fecha de nacimiento Sí
+Domicilio Sí, del titular de la reserva (campo opcional)
+Acompañantes Sí: nombre, documento, nacionalidad y fecha de nacimiento de hasta 10 personas
+Sexo No
+Número de soporte del documento No
+Parentesco con menores No
+Teléfono o email No en el formulario; suelen estar en la reserva
+Datos de pago No
+
+## Cómo usar esos datos para tu comunicación
+
+-
+## El huésped completa el check-in
+Antes de llegar, escanea su documento con el móvil, añade acompañantes y firma. No se guarda ninguna imagen del documento.
+
+-
+## Exportas los datos
+Desde el panel descargas un CSV con los huéspedes registrados en un rango de fechas (nombre, tipo y número de documento, nacionalidad, fecha de nacimiento y fecha de entrada). Las reservas canceladas no se incluyen.
+
+-
+## Comunicas a SES.Hospedajes
+Completa los datos que faltan y haz la comunicación en SES.Hospedajes como hasta ahora. Hostlio Pro no genera el fichero XML del Ministerio ni se conecta a su servicio web.
+
+## Check-in online integrado en el PMS, sin herramienta extra
+
+## Todo en la misma reserva
+Muchos programas de gestión hotelera resuelven el check-in online con una herramienta externa conectada por integración, con su propia suscripción. En Hostlio Pro el check-in forma parte del propio PMS: el enlace sale de la reserva y los datos, la firma y los acompañantes vuelven a esa misma reserva.
+
+## Enlace automático por email
+Activa el email de check-in y cada reserva nueva con dirección de email recibe su enlace en el idioma del huésped. Tú eliges los canales: reservas directas, Booking.com, Expedia, Airbnb, Agoda u otras OTAs.
+
+## En recepción, sin teclear
+Si un huésped no completa el enlace, el personal puede escanear su documento desde el panel; se lee en el dispositivo y tampoco se guarda imagen.
+
+## Privacidad
+Los datos del documento solo los ve el personal de tu alojamiento, las firmas se eliminan 30 días después del check-out y el texto de consentimiento forma parte del formulario. Para el RGPD, tu alojamiento es el responsable y Hostlio Pro el encargado del tratamiento.
+
+## Qué ganas con el check-in online
+En recepción, sin check-in online Con el check-in online de Hostlio Pro
+Fotocopias o fotos del documento Solo los datos extraídos; ninguna imagen guardada
+Teclear nombres y números de pasaporte Los datos llegan rellenados desde la zona MRZ
+Cola a la llegada de un grupo o un vuelo Cada huésped llega con el formulario hecho
+Firma en papel que hay que archivar Firma digital en la reserva, eliminada a los 30 días del check-out
+Formularios en un solo idioma Formulario en español, inglés, francés, italiano, portugués y turco
+
 Q: ¿Qué planes incluyen el check-in online?
 A: El check-in online con firma digital está incluido en los planes Pro y Growth.
 
@@ -4171,6 +4653,18 @@ A: Haz el check-in de la forma habitual. El personal también puede escanear el 
 
 Q: ¿Se guardan fotos de los documentos de identidad?
 A: No. La zona de lectura mecánica (MRZ) del documento se lee en el móvil del huésped, o en el dispositivo del hotel con la app móvil de Hostlio Pro, y solo se guardan los datos extraídos y la firma. Se pueden escanear pasaportes y documentos de identidad con MRZ; los demás se introducen a mano.
+
+Q: ¿Hostlio Pro envía el parte de viajeros a SES.Hospedajes?
+A: No. Hostlio Pro recoge parte de los datos con el check-in online y te permite exportarlos en CSV, pero no se conecta a SES.Hospedajes ni genera el fichero XML del Ministerio. La comunicación sigue siendo responsabilidad del alojamiento.
+
+Q: ¿Qué datos del parte de viajeros tendré que completar yo?
+A: El formulario no recoge el sexo, el número de soporte del documento, el segundo apellido por separado, el parentesco con menores ni los datos de pago. Tendrás que añadirlos antes de comunicar a SES.Hospedajes.
+
+Q: ¿Necesito otra herramienta de check-in además del PMS?
+A: No. En Hostlio Pro el check-in online está integrado en el PMS en los planes Pro y Growth: el enlace sale de la reserva y los datos vuelven a ella, sin otra suscripción ni integración.
+
+Q: ¿Sirve para el DNI y la TIE?
+A: Los documentos con zona de lectura mecánica (MRZ) se escanean con la cámara del móvil; los que no la tienen se introducen a mano en el mismo formulario.
 
 ---
 # Funciones del software de gestión hotelera | Hostlio Pro
@@ -4206,11 +4700,40 @@ Lio sugiere traslados al aeropuerto y excursiones durante la conversación y pas
 ## Sugerencias de Lio y análisis con IA
 Cada mañana Lio prepara sugerencias sobre precios, operaciones (habitaciones pendientes de limpieza, solicitudes sin atender), configuración incompleta y oportunidades de ingresos. Nada cambia sin tu aprobación y las sugerencias de precio respetan los límites que tú fijas. En Pro y Growth también resume las quejas y los elogios que se repiten en reseñas y mensajes.
 
-## Informes y equipo
-Informes de ocupación, ADR, RevPAR y rendimiento por canal, con un informe semanal y mensual por email. Seis roles de personal con sus propios permisos y todas las notificaciones en un solo lugar.
-
 ## App móvil
 Gestiona reservas, mensajes y check-ins fuera del hotel con la app para iOS y Android.
+
+## Todo el día desde un solo panel
+Además de la mensajería y la distribución, estas son las herramientas que tu equipo usa a diario. Todas están en el panel web e incluidas en todos los planes, salvo que se indique lo contrario.
+
+## Operación diaria
+Pantalla Hoy Abres el panel por la mañana y el día ya está organizado: llegadas, salidas, habitaciones por limpiar, mensajes pendientes de respuesta, borradores de Lio que esperan tu aprobación, solicitudes de reserva y reseñas por contestar.
+
+Housekeeping Cada habitación tiene un estado: limpia, sucia, en mantenimiento o fuera de servicio. Las salidas del día van primero y, si entra un huésped el mismo día, la habitación se marca como prioritaria. Imprime la lista de limpieza del día en PDF; el personal con rol de housekeeping solo ve las habitaciones.
+
+Averías y habitaciones fuera de servicio Registra una avería con hasta cinco fotos (se elimina la ubicación), una categoría y una prioridad. Si pones una habitación fuera de servicio, sale de la venta: la disponibilidad baja automáticamente en tus canales conectados, no se puede asignar a ninguna reserva y tu equipo recibe un aviso.
+
+Un planning que crece contigo Para alojamientos más grandes: tres niveles de densidad, habitaciones agrupadas por tipo o por planta, número de habitaciones libres por día, búsqueda de habitación libre y vistas de 7, 14 o 30 días. El control de conflictos lista las reservas duplicadas o sin habitación, el planning te sugiere una habitación libre del tipo correcto y las reservas se mueven con el ratón o con el teclado.
+
+Notificaciones y resumen matinal Reservas nuevas, modificadas y canceladas, mensajes sin responder, borradores por aprobar, incidencias de canal y averías llegan a un único centro de notificaciones, que las guarda 90 días. La app móvil también te envía un resumen del día a las 08:00, hora del hotel (hoy en Android; en iOS con la próxima actualización de la app).
+
+## Ingresos, tarifas e informes
+Análisis Ocupación, ADR, RevPAR, ingresos, estancia media, cancelaciones y no-shows, comparados con el periodo anterior. La vista a 30, 60 y 90 días con pickup muestra lo que ya tienes reservado, y la vista por canal te da ingresos brutos, comisión y neto de cada OTA, para que sepas cuál te deja más. Tipos de habitación, huéspedes, extras y el trabajo de Lio tienen sus propias pestañas.
+
+Informes en Excel, PDF y por email Exporta todas las pestañas del análisis a Excel en un clic o imprime la vista abierta en PDF; tu gestor tiene los números sin trabajo extra. Cada lunes llega un resumen semanal al email del propietario y el día 1 de cada mes, un informe mensual con archivos CSV adjuntos.
+
+Tarifas y restricciones Una sola cuadrícula para cada tipo de habitación y plan tarifario: precio, estancia mínima y máxima, cerrado a la llegada (CTA), cerrado a la salida (CTD), cierre de ventas y disponibilidad. Carga una temporada entera de una vez: elige el rango de fechas, los tipos de habitación y los planes, y marca «solo fines de semana» para dar otro precio a las noches de viernes y sábado. Si un canal se desincroniza, el botón «reenviar a los canales» lo envía todo de nuevo.
+
+Importación de reservas ¿Vienes de otro sistema? Sube tus reservas en un archivo .csv, .xlsx o .xls. Las columnas se asignan automáticamente y puedes ajustarlas, el formato de fecha se detecta o lo eliges tú, los duplicados se omiten y cada fila que no se puede importar aparece con el motivo.
+
+## Equipo y control
+Personal, roles y permisos Invita a tus compañeros por email y asigna a cada uno un rol: propietario, gerente, recepción, housekeeping, contabilidad u observador. Cada persona ve solo lo que necesita: housekeeping ve las habitaciones y contabilidad no ve los mensajes de los huéspedes. Suspende un acceso cuando quieras. Starter incluye 3 usuarios, Pro 8 y Growth 20.
+
+Historial de actividad Quién cambió qué y cuándo: los cambios se registran campo a campo, con el valor anterior y el nuevo, sin datos personales de los huéspedes. Filtra por persona, módulo, alojamiento o fecha, consulta 365 días hacia atrás y descarga el registro en CSV.
+
+Dos alojamientos en Growth Cambia de alojamiento con un clic y consulta las llegadas, salidas, ocupación e ingresos de ambos en una sola página «Todos los alojamientos». Al añadir el segundo, copia del primero las políticas, los ajustes de IA, las plantillas de mensajes y las notificaciones. Los dos comparten una misma cuota de mensajes de IA.
+
+Panel en 6 idiomas El panel, la app móvil y el formulario de check-in del huésped están en español, inglés, turco, francés, italiano y portugués, así que cada persona del equipo trabaja en su idioma.
 
 ## Funcionalidades por plan
 
@@ -4246,17 +4769,30 @@ Check-in online y firma digital No Sí Sí
 
 Venta de traslados y excursiones No Sí Sí
 
-App móvil para iOS y Android No Sí Sí
+App móvil para iOS y Android Sí Sí Sí
 
 Soporte prioritario y llamada de onboarding No No Sí
 
 Marca blanca No No Sí
+
+Análisis, exportación a Excel e informes semanales/mensuales por email Sí Sí Sí
+Email automático con el enlace de check-in (tú eliges los canales de origen) No Sí Sí
+Vista «Todos los alojamientos» y cambio de alojamiento No No Sí
 
 Q: ¿Qué es Hostlio Pro?
 A: Hostlio Pro es un software de gestión hotelera (PMS hotelero) con inteligencia artificial, creado para hoteles independientes, hoteles boutique y hostales. Reúne en una sola plataforma a Lio, un asistente de IA que responde a los huéspedes 24/7 en más de 30 idiomas, un channel manager conectado a más de 100 OTAs, un calendario de reservas con arrastrar y soltar y el check-in online.
 
 Q: ¿Con qué OTAs se conecta Hostlio Pro?
 A: A través de Channex, Hostlio Pro se conecta con más de 100 canales, entre ellos Booking.com, Airbnb, Expedia, Agoda, Trip.com, Hotels.com, Hotelbeds, Hostelworld y Google Hotels. La disponibilidad, las tarifas y las reservas se mantienen sincronizadas en todos ellos.
+
+Q: ¿Puedo traer las reservas de mi programa actual?
+A: Sí. Exporta tus reservas del sistema actual en CSV o Excel y súbelas en el panel. Las columnas se asignan automáticamente, los duplicados se omiten y cada fila con un problema aparece con el motivo. Después conecta tus canales: a partir de ahí, las nuevas reservas de las OTAs llegan solas.
+
+Q: ¿Puedo limitar lo que ve cada persona del equipo?
+A: Sí. Cada persona tiene un rol: propietario, gerente, recepción, housekeeping, contabilidad u observador. Housekeeping solo ve las habitaciones, contabilidad no ve los mensajes de los huéspedes y un historial de actividad registra quién cambió qué. Starter incluye 3 usuarios, Pro 8 y Growth 20.
+
+Q: ¿Qué informes obtengo?
+A: Todos los planes incluyen análisis de ocupación, ADR, RevPAR, ingresos, cancelaciones, una vista a 30/60/90 días e ingresos por canal después de comisión. Puedes exportarlos a Excel o PDF, y el propietario recibe un resumen semanal cada lunes y un informe mensual con CSV adjuntos.
 
 ---
 # Precios de software hotelero: desde 49 $/mes | Hostlio Pro
@@ -4284,6 +4820,7 @@ Precio de lanzamiento (normalmente 59 $ )
 - Sugerencias de Lio cada mañana
 - Calendario de reservas (planning de habitaciones)
 - Confirmación de alojamiento para visados (PDF)
+- App móvil para iOS y Android
 Empieza con Starter
 
 El más elegido
@@ -4303,7 +4840,6 @@ Precio de lanzamiento (normalmente 109 $ )
 - Análisis con IA de reseñas y mensajes
 - Check-in online con firma digital
 - Venta de traslados, excursiones y extras
-- App móvil para iOS y Android
 Empieza con Pro
 
 ## Growth
@@ -4374,7 +4910,7 @@ Las preguntas más habituales sobre las funcionalidades, los precios y la config
 
 ¿Para qué tipos de hotel es Hostlio Pro? Para alojamientos independientes de 1 a 150 habitaciones, como hoteles boutique, hoteles urbanos, hostales y pensiones, apartahoteles y hostels.
 
-¿Hay una app móvil? Sí. Los planes Pro y Growth incluyen una app para iOS y Android. Gestiona reservas, mensajes y check-ins fuera del alojamiento.
+¿Hay una app móvil? Sí. Todos los planes, también Starter, incluyen la app para iOS y Android. Gestiona reservas, mensajes y check-ins fuera del alojamiento.
 
 ¿Cómo funciona el check-in online? Los huéspedes reciben un enlace personal y seguro, escanean su documento con el móvil (no se guarda ninguna imagen) y, antes de llegar, envían sus acompañantes y una firma digital. Disponible en Pro y Growth.
 
@@ -4385,6 +4921,12 @@ Las preguntas más habituales sobre las funcionalidades, los precios y la config
 ¿Cuánto tiempo lleva la configuración? Tu cuenta está lista en minutos. La mayoría de los hoteles conectan sus canales el mismo día: añade tipos de habitación y habitaciones, autoriza la conexión en la extranet de cada OTA y asigna las habitaciones. El plan Growth incluye una llamada de onboarding personalizada.
 
 ¿En qué idiomas se ofrece el soporte? El soporte se ofrece en inglés y turco. El panel, la app móvil y el formulario de check-in del huésped están disponibles en 6 idiomas: español, inglés, turco, francés, italiano y portugués. Escríbenos a hello@hostliopro.com.
+
+¿Puedo traer las reservas de mi programa actual? Sí. Exporta tus reservas del sistema actual en CSV o Excel y súbelas en el panel. Las columnas se asignan automáticamente, los duplicados se omiten y cada fila con un problema aparece con el motivo. Después conecta tus canales: a partir de ahí, las nuevas reservas de las OTAs llegan solas.
+
+¿Puedo limitar lo que ve cada persona del equipo? Sí. Cada persona tiene un rol: propietario, gerente, recepción, housekeeping, contabilidad u observador. Housekeeping solo ve las habitaciones, contabilidad no ve los mensajes de los huéspedes y un historial de actividad registra quién cambió qué. Starter incluye 3 usuarios, Pro 8 y Growth 20.
+
+¿Qué informes obtengo? Todos los planes incluyen análisis de ocupación, ADR, RevPAR, ingresos, cancelaciones, una vista a 30/60/90 días e ingresos por canal después de comisión. Puedes exportarlos a Excel o PDF, y el propietario recibe un resumen semanal cada lunes y un informe mensual con CSV adjuntos.
 
 Q: ¿Qué es Hostlio Pro?
 A: Hostlio Pro es un software de gestión hotelera (PMS hotelero) con inteligencia artificial, creado para hoteles independientes, hoteles boutique y hostales. Reúne en una sola plataforma a Lio, un asistente de IA que responde a los huéspedes 24/7 en más de 30 idiomas, un channel manager conectado a más de 100 OTAs, un calendario de reservas con arrastrar y soltar y el check-in online.
@@ -4405,7 +4947,7 @@ Q: ¿Para qué tipos de hotel es Hostlio Pro?
 A: Para alojamientos independientes de 1 a 150 habitaciones, como hoteles boutique, hoteles urbanos, hostales y pensiones, apartahoteles y hostels.
 
 Q: ¿Hay una app móvil?
-A: Sí. Los planes Pro y Growth incluyen una app para iOS y Android. Gestiona reservas, mensajes y check-ins fuera del alojamiento.
+A: Sí. Todos los planes, también Starter, incluyen la app para iOS y Android. Gestiona reservas, mensajes y check-ins fuera del alojamiento.
 
 Q: ¿Cómo funciona el check-in online?
 A: Los huéspedes reciben un enlace personal y seguro, escanean su documento con el móvil (no se guarda ninguna imagen) y, antes de llegar, envían sus acompañantes y una firma digital. Disponible en Pro y Growth.
@@ -4421,6 +4963,15 @@ A: Tu cuenta está lista en minutos. La mayoría de los hoteles conectan sus can
 
 Q: ¿En qué idiomas se ofrece el soporte?
 A: El soporte se ofrece en inglés y turco. El panel, la app móvil y el formulario de check-in del huésped están disponibles en 6 idiomas: español, inglés, turco, francés, italiano y portugués. Escríbenos a hello@hostliopro.com.
+
+Q: ¿Puedo traer las reservas de mi programa actual?
+A: Sí. Exporta tus reservas del sistema actual en CSV o Excel y súbelas en el panel. Las columnas se asignan automáticamente, los duplicados se omiten y cada fila con un problema aparece con el motivo. Después conecta tus canales: a partir de ahí, las nuevas reservas de las OTAs llegan solas.
+
+Q: ¿Puedo limitar lo que ve cada persona del equipo?
+A: Sí. Cada persona tiene un rol: propietario, gerente, recepción, housekeeping, contabilidad u observador. Housekeeping solo ve las habitaciones, contabilidad no ve los mensajes de los huéspedes y un historial de actividad registra quién cambió qué. Starter incluye 3 usuarios, Pro 8 y Growth 20.
+
+Q: ¿Qué informes obtengo?
+A: Todos los planes incluyen análisis de ocupación, ADR, RevPAR, ingresos, cancelaciones, una vista a 30/60/90 días e ingresos por canal después de comisión. Puedes exportarlos a Excel o PDF, y el propietario recibe un resumen semanal cada lunes y un informe mensual con CSV adjuntos.
 
 ---
 # Sobre nosotros | Hostlio Pro
@@ -4758,7 +5309,7 @@ Las reservas de Booking.com, Expedia y Airbnb aparecen en un solo planning de ha
 Con el check-in online y la firma digital, el huésped recibe una bebida de bienvenida en lugar de un formulario.
 
 ## ¿Qué plan te conviene?
-Para hoteles boutique de 10 a 50 habitaciones recomendamos Pro : 5000 mensajes de IA al mes, mensajería por WhatsApp y en las bandejas de Booking.com, Airbnb y Expedia, check-in online, venta de traslados y excursiones y la app para iOS y Android.
+Para hoteles boutique de 10 a 50 habitaciones recomendamos Pro : 5.000 mensajes de IA al mes, mensajería por WhatsApp y en las bandejas de Booking.com, Airbnb y Expedia, check-in online y venta de traslados y excursiones. La app para iOS y Android está incluida en todos los planes.
 
 Para compararlo con otros programas para hoteles, consulta nuestra comparativa de software hotelero .
 Ver precios
@@ -4840,7 +5391,7 @@ Los tours por la ciudad y los traslados al aeropuerto son extras habituales en l
 Las preguntas nocturnas no esperan a la mañana; el equipo solo se ocupa de lo que requiere una decisión.
 
 ## ¿Qué plan te conviene?
-Para hostels con mucho volumen recomendamos Pro , con 5000 mensajes de IA al mes. Planifiquemos juntos la configuración por camas durante la demo.
+Para hostels con mucho volumen recomendamos Pro , con 5.000 mensajes de IA al mes. Hostlio Pro gestiona la disponibilidad por habitación, no por cama, así que encaja mejor con hostels que venden sobre todo habitaciones privadas o habitaciones completas.
 
 Para compararlo con otros programas para hoteles, consulta nuestra comparativa de software hotelero .
 Ver precios
@@ -4849,7 +5400,7 @@ Q: ¿Funciona con Hostelworld?
 A: Sí. Hostelworld está entre los canales conectados a Channex.
 
 Q: ¿Se admite la venta por camas (dormitorios compartidos)?
-A: Depende de tu configuración; planifiquemos juntos la estructura de habitaciones y camas durante la demo.
+A: No como un inventario de camas separado. Hostlio Pro gestiona la disponibilidad por habitación: cada tipo de habitación tiene un número de unidades y una ocupación máxima, y una reserva ocupa una habitación. Encaja con hostels que tienen habitaciones privadas; si la mayor parte de tus ingresos viene de vender camas sueltas en dormitorios compartidos, comprobemos en una demo si una configuración por habitaciones funciona con tus canales antes de cambiar.
 
 Q: ¿Cuántos mensajes de IA necesito?
 A: Unas 150 respuestas automáticas al día son aproximadamente 4500 al mes, lo que encaja con el plan Pro.
@@ -5259,6 +5810,12 @@ El contenido de los mensajes se anonimiza al final del plazo que fijes (por defe
 ## Funciones según el RGPD
 Para los datos de huéspedes, tu hotel es el responsable y Hostlio Pro el encargado del tratamiento. Nuestro DPA recoge estas obligaciones y forma parte de las Condiciones del servicio.
 
+## Roles y permisos del personal
+Seis roles (propietario, gerente, recepción, housekeeping, contabilidad, observador) con permisos distintos, asignados por alojamiento. El personal de limpieza solo ve las habitaciones; contabilidad no ve los mensajes de los huéspedes. Exportar requiere su propio permiso y puedes suspender el acceso de una persona en cualquier momento.
+
+## Historial de actividad
+Los cambios en el panel se registran campo a campo: quién, cuándo, en qué alojamiento, valor anterior y nuevo. Los datos personales de los huéspedes no se copian en el registro. Las entradas se conservan 365 días y se pueden filtrar y descargar en CSV.
+
 ## Subencargados
 Subencargado Ubicación Finalidad
 Supabase, Inc. USA Base de datos, autenticación y funciones de servidor
@@ -5381,7 +5938,7 @@ La conversazione ti aspetta nel pannello, già tradotta. L'ospite è soddisfatto
 ## Gestisci la giornata del tuo hotel da un'unica schermata
 Messaggi degli ospiti, prenotazioni, canali e check-in lavorano insieme.
 
-Messaggi Calendario Canali Check-in
+Messaggi Calendario Canali Check-in Oggi
 
 ## Tutti i messaggi degli ospiti in un'unica casella
 WhatsApp e messaggi delle OTA (Booking.com, Airbnb, Expedia) tutti insieme. Lio risponde con le informazioni del tuo hotel e tu vedi solo ciò che richiede il tuo intervento.
@@ -5467,6 +6024,19 @@ Accompagnatori 1 ospite aggiunto
 
 Firma
 
+## Il lavoro del giorno, pronto ogni mattina
+Apri il pannello e vedi chi arriva, chi parte, quali camere vanno pulite e cosa ti sta aspettando.
+
+- Arrivi, partenze e camere da pulire
+- Messaggi e bozze di Lio in attesa
+- Le camere fuori servizio si chiudono su tutti i canali Tutte le funzionalità
+Oggi 08:00
+Arrivi 6
+Partenze 4
+Camere da pulire 5
+Messaggi in attesa 2
+Bozze da approvare 1
+
 ## Tutto ciò che serve a un hotel
 Ogni modulo è collegato: niente strumenti separati, niente password separate.
 
@@ -5540,6 +6110,7 @@ Prezzo di lancio (normalmente 59 $ )
 - Suggerimenti di Lio ogni mattina
 - Planning camere con calendario prenotazioni
 - Conferma di alloggio per il visto (PDF)
+- App mobile iOS e Android
 Inizia con Starter
 
 Il più scelto
@@ -5559,7 +6130,6 @@ Prezzo di lancio (normalmente 109 $ )
 - Insight AI da recensioni e messaggi
 - Check-in online con firma digitale
 - Vendita di transfer, tour ed extra
-- App mobile iOS e Android
 Inizia con Pro
 
 ## Growth
@@ -5753,6 +6323,15 @@ Vedi a colpo d'occhio da quale canale arriva ogni prenotazione. Riassegna le cam
 ## Collegato alla messaggistica
 I messaggi degli ospiti delle prenotazioni OTA arrivano nella casella di Lio, con ospite, camera e date accanto a ogni conversazione.
 
+## Un’intera stagione in una volta
+Scegli un intervallo di date, le tipologie di camera e i piani tariffari, poi imposta prezzo, soggiorno minimo e massimo, chiuso all’arrivo, chiuso alla partenza o stop vendite. Spunta «solo weekend» per prezzare a parte le notti di venerdì e sabato. Se un canale resta indietro, «reinvia ai canali» invia di nuovo tariffe e disponibilità attuali.
+
+## Le camere fuori servizio si chiudono da sole
+Quando una camera va fuori servizio per un guasto, la disponibilità scende su tutti i canali collegati e la camera non può essere assegnata finché non torna operativa.
+
+## Porta le prenotazioni esistenti
+Carica le prenotazioni del vecchio gestionale in CSV o Excel. Le colonne vengono abbinate automaticamente, i duplicati saltati e le righe con problemi elencate con il motivo.
+
 ## Principali canali supportati
 L'elenco segue la nostra rete di connessioni certificate. Manca un canale? Contattaci.
 
@@ -5773,8 +6352,8 @@ A: Tramite Channex, Hostlio Pro si collega a oltre 100 canali, tra cui Booking.c
 Q: Il channel manager è incluso in tutti i piani?
 A: Sì. Starter, Pro e Growth includono tutti la sincronizzazione con oltre 100 OTA. Growth aggiunge la sincronizzazione prioritaria.
 
-Q: È difficile passare dal mio attuale channel manager?
-A: No. Crea le tipologie di camera in Hostlio Pro e collega i tuoi account OTA tramite Channex. Il nostro team di onboarding ti aiuta durante il passaggio.
+Q: È difficile passare dal mio channel manager attuale?
+A: No. Crea le tipologie di camera in Hostlio Pro, importa le prenotazioni esistenti da un file CSV o Excel e collega i tuoi account OTA tramite Channex. Il nostro team di onboarding ti aiuta durante il passaggio.
 
 ---
 # Check-in online per hotel con firma digitale | Hostlio Pro
@@ -5804,6 +6383,9 @@ Come funziona il check-in online? Hostlio Pro invia a chi ha prenotato un link p
 
 ## Link sicuro
 Un link basato su token, unico per ogni prenotazione. Apre solo il modulo di quella prenotazione.
+
+## Link di check-in via email, in automatico
+Attivalo e ogni nuova prenotazione con un indirizzo email riceve il link personale di check-in, nella lingua dell’ospite. Scegli tu a quali canali di provenienza si applica: prenotazioni dirette, Booking.com, Expedia, Airbnb, Agoda o altre OTA. Resta disattivato finché non lo accendi.
 
 ## Scansione del documento senza immagini
 La zona a lettura ottica del passaporto o della carta d'identità viene letta sul dispositivo dell'ospite. Vengono salvati solo nome, numero del documento, nazionalità, data di nascita e data di scadenza, mai una foto del documento. I documenti senza zona a lettura ottica si inseriscono a mano.
@@ -5880,11 +6462,40 @@ Lio propone transfer dall'aeroporto e tour durante la conversazione e inoltra la
 ## Suggerimenti di Lio e insight AI
 Ogni mattina Lio prepara suggerimenti su prezzi, operatività (camere da pulire, richieste in sospeso), impostazioni mancanti e opportunità di ricavo. Nulla cambia senza la tua approvazione e i suggerimenti sui prezzi restano nei limiti che imposti tu. Con Pro e Growth riassume anche lamentele ed elogi ricorrenti in recensioni e messaggi.
 
-## Report e team
-Report su occupazione, ADR, RevPAR e rendimento dei canali, con un report settimanale e mensile via email. Sei ruoli per il personale, ognuno con i propri permessi, e tutte le notifiche in un unico posto.
-
 ## App mobile
 Gestisci prenotazioni, messaggi e check-in anche lontano dall'hotel con l'app iOS e Android.
+
+## Tutta la giornata da un solo pannello
+Oltre alla messaggistica e alla distribuzione, ecco gli strumenti che il tuo staff usa ogni giorno. Sono tutti nel pannello web e inclusi in ogni piano, salvo diversa indicazione.
+
+## Operatività quotidiana
+Schermata Oggi Apri il pannello al mattino e la giornata è già organizzata: arrivi, partenze, camere da pulire, messaggi in attesa di risposta, bozze di Lio da approvare, richieste di prenotazione e recensioni a cui rispondere.
+
+Housekeeping Ogni camera ha uno stato: pulita, sporca, in manutenzione o fuori servizio. Le partenze del giorno vengono prima e, se nella stessa camera arriva un ospite in giornata, la camera è segnata come prioritaria. Stampa in PDF la lista delle pulizie del giorno; chi ha il ruolo housekeeping vede solo le camere.
+
+Guasti e camere fuori servizio Segnala un guasto con un massimo di cinque foto (i dati di posizione vengono rimossi), una categoria e una priorità. Se metti una camera fuori servizio, esce dalla vendita: la disponibilità scende automaticamente sui canali collegati, la camera non può essere assegnata e il tuo staff riceve un avviso.
+
+Un planning che cresce con te Per le strutture più grandi: tre livelli di densità, camere raggruppate per tipologia o piano, numero di camere libere per giorno, ricerca di camere libere e viste a 7, 14 o 30 giorni. Il controllo conflitti elenca le prenotazioni doppie o senza camera, il planning suggerisce una camera libera della tipologia giusta e le prenotazioni si spostano con il mouse o con la tastiera.
+
+Notifiche e riepilogo del mattino Prenotazioni nuove, modificate e cancellate, messaggi senza risposta, bozze da approvare, problemi dei canali e guasti arrivano in un unico centro notifiche, conservato per 90 giorni. L’app mobile ti invia anche un riepilogo della giornata alle 08:00, ora dell’hotel (oggi su Android; su iOS con il prossimo aggiornamento dell’app).
+
+## Ricavi, tariffe e report
+Analisi Occupazione, ADR, RevPAR, ricavi, durata media del soggiorno, cancellazioni e no-show, a confronto con il periodo precedente. La vista a 30, 60 e 90 giorni con pickup mostra cosa è già prenotato, e la vista per canale riporta ricavo lordo, commissione e netto di ogni OTA, così sai quale ti rende davvero. Tipologie di camera, ospiti, extra e il lavoro di Lio hanno schede proprie.
+
+Report in Excel, PDF e via email Esporta in Excel tutte le schede dell’analisi con un clic o stampa in PDF la vista aperta; il commercialista ha i numeri senza lavoro in più. Ogni lunedì un riepilogo settimanale arriva all’email del titolare e il 1° di ogni mese un report mensile con allegati CSV.
+
+Tariffe e restrizioni Un’unica griglia per ogni tipologia di camera e piano tariffario: prezzo, soggiorno minimo e massimo, chiuso all’arrivo (CTA), chiuso alla partenza (CTD), stop vendite e disponibilità. Inserisci un’intera stagione in una volta: scegli l’intervallo di date, le tipologie e i piani e spunta «solo weekend» per prezzare a parte le notti di venerdì e sabato. Se un canale resta indietro, il pulsante «reinvia ai canali» invia di nuovo tutto.
+
+Importazione delle prenotazioni Arrivi da un altro gestionale? Carica le prenotazioni in un file .csv, .xlsx o .xls. Le colonne vengono abbinate automaticamente e puoi modificarle, il formato della data viene riconosciuto o lo scegli tu, i duplicati vengono saltati e ogni riga non importabile è elencata con il motivo.
+
+## Team e controllo
+Staff, ruoli e permessi Invita i colleghi via email e assegna a ciascuno un ruolo: titolare, manager, reception, housekeeping, contabilità o osservatore. Ognuno vede solo ciò che serve al suo lavoro: l’housekeeping vede le camere, la contabilità non vede i messaggi degli ospiti. Sospendi un accesso quando vuoi. Starter include 3 utenti, Pro 8 e Growth 20.
+
+Registro attività Chi ha cambiato cosa e quando: le modifiche sono registrate campo per campo, con valore precedente e nuovo, senza dati personali degli ospiti. Filtra per persona, modulo, struttura o data, consulta 365 giorni di storico e scarica il registro in CSV.
+
+Due strutture con Growth Passa da una struttura all’altra con un clic e vedi arrivi, partenze, occupazione e ricavi di entrambe in un’unica pagina «Tutte le strutture». Quando aggiungi la seconda, copia dalla prima regole, impostazioni AI, modelli di messaggio e notifiche. Le due strutture condividono una sola quota di messaggi AI.
+
+Pannello in 6 lingue Il pannello, l’app mobile e il modulo di check-in dell’ospite sono disponibili in italiano, inglese, turco, spagnolo, francese e portoghese, così ognuno nel team lavora nella propria lingua.
 
 ## Funzionalità per piano
 
@@ -5920,17 +6531,30 @@ Check-in online e firma digitale No Sì Sì
 
 Vendita di transfer e tour No Sì Sì
 
-App mobile iOS e Android No Sì Sì
+App mobile iOS e Android Sì Sì Sì
 
 Supporto prioritario e chiamata di onboarding No No Sì
 
 White-label No No Sì
+
+Analisi, esportazione in Excel e report settimanali/mensili via email Sì Sì Sì
+Email automatica con il link di check-in (scegli tu i canali di provenienza) No Sì Sì
+Vista «Tutte le strutture» e cambio struttura No No Sì
 
 Q: Che cos'è Hostlio Pro?
 A: Hostlio Pro è un gestionale per hotel (PMS) basato sull'intelligenza artificiale, pensato per hotel indipendenti, boutique hotel e B&B. Riunisce in un'unica piattaforma Lio, un assistente AI che risponde ai messaggi degli ospiti 24 ore su 24 in oltre 30 lingue, un channel manager collegato a oltre 100 OTA, un calendario delle prenotazioni drag-and-drop e il check-in online.
 
 Q: A quali OTA si collega Hostlio Pro?
 A: Tramite Channex, Hostlio Pro si collega a oltre 100 canali, tra cui Booking.com, Airbnb, Expedia, Agoda, Trip.com, Hotels.com, Hotelbeds, Hostelworld e Google Hotels. Disponibilità, tariffe e prenotazioni restano sincronizzate su tutti.
+
+Q: Posso portare le prenotazioni dal mio gestionale attuale?
+A: Sì. Esporta le prenotazioni dal sistema attuale in CSV o Excel e caricale nel pannello. Le colonne vengono abbinate automaticamente, i duplicati saltati e ogni riga con un problema è elencata con il motivo. Poi collega i canali: da quel momento le nuove prenotazioni delle OTA arrivano da sole.
+
+Q: Posso limitare ciò che vede ogni membro dello staff?
+A: Sì. Ogni persona ha un ruolo: titolare, manager, reception, housekeeping, contabilità o osservatore. L’housekeeping vede solo le camere, la contabilità non vede i messaggi degli ospiti e un registro attività annota chi ha cambiato cosa. Starter include 3 utenti, Pro 8 e Growth 20.
+
+Q: Quali report ottengo?
+A: Tutti i piani includono l’analisi di occupazione, ADR, RevPAR, ricavi, cancellazioni, una vista a 30/60/90 giorni e i ricavi per canale al netto delle commissioni. Puoi esportare in Excel o PDF, e il titolare riceve un riepilogo settimanale ogni lunedì e un report mensile con allegati CSV.
 
 ---
 # Prezzi del gestionale per hotel: da 49 $/mese | Hostlio Pro
@@ -5958,6 +6582,7 @@ Prezzo di lancio (normalmente 59 $ )
 - Suggerimenti di Lio ogni mattina
 - Planning camere con calendario prenotazioni
 - Conferma di alloggio per il visto (PDF)
+- App mobile iOS e Android
 Inizia con Starter
 
 Il più scelto
@@ -5977,7 +6602,6 @@ Prezzo di lancio (normalmente 109 $ )
 - Insight AI da recensioni e messaggi
 - Check-in online con firma digitale
 - Vendita di transfer, tour ed extra
-- App mobile iOS e Android
 Inizia con Pro
 
 ## Growth
@@ -6048,7 +6672,7 @@ In quali lingue risponde Lio? Lio risponde in oltre 30 lingue, tra cui inglese, 
 
 Per quali tipi di struttura è pensato Hostlio Pro? Per strutture indipendenti da 1 a 150 camere, come boutique hotel, hotel di città, B&B e affittacamere, residence e aparthotel e ostelli.
 
-Esiste un'app mobile? Sì. I piani Pro e Growth includono un'app iOS e Android. Gestisci prenotazioni, messaggi e check-in anche lontano dall'hotel.
+Esiste un'app mobile? Sì. Tutti i piani, Starter compreso, includono l'app iOS e Android. Gestisci prenotazioni, messaggi e check-in anche lontano dall'hotel.
 
 Come funziona il check-in online? Gli ospiti ricevono un link personale e sicuro, scansionano il documento con il telefono (nessuna immagine viene conservata) e, prima dell'arrivo, inviano accompagnatori e firma digitale. Disponibile nei piani Pro e Growth.
 
@@ -6059,6 +6683,12 @@ I miei dati sono al sicuro? I dati vengono trasmessi tramite connessioni crittog
 Quanto tempo richiede la configurazione? Il tuo account è pronto in pochi minuti. La maggior parte degli hotel collega i canali in giornata: aggiungi tipologie di camera e camere, autorizza la connessione nell’extranet di ogni OTA e abbina le camere. Il piano Growth include una chiamata di onboarding personalizzata.
 
 In quali lingue è disponibile il supporto? Il supporto è disponibile in inglese e in turco. La dashboard, l'app mobile e il modulo di check-in per gli ospiti sono disponibili in 6 lingue: italiano, inglese, turco, spagnolo, francese e portoghese. Scrivici a hello@hostliopro.com.
+
+Posso portare le prenotazioni dal mio gestionale attuale? Sì. Esporta le prenotazioni dal sistema attuale in CSV o Excel e caricale nel pannello. Le colonne vengono abbinate automaticamente, i duplicati saltati e ogni riga con un problema è elencata con il motivo. Poi collega i canali: da quel momento le nuove prenotazioni delle OTA arrivano da sole.
+
+Posso limitare ciò che vede ogni membro dello staff? Sì. Ogni persona ha un ruolo: titolare, manager, reception, housekeeping, contabilità o osservatore. L’housekeeping vede solo le camere, la contabilità non vede i messaggi degli ospiti e un registro attività annota chi ha cambiato cosa. Starter include 3 utenti, Pro 8 e Growth 20.
+
+Quali report ottengo? Tutti i piani includono l’analisi di occupazione, ADR, RevPAR, ricavi, cancellazioni, una vista a 30/60/90 giorni e i ricavi per canale al netto delle commissioni. Puoi esportare in Excel o PDF, e il titolare riceve un riepilogo settimanale ogni lunedì e un report mensile con allegati CSV.
 
 Q: Che cos'è Hostlio Pro?
 A: Hostlio Pro è un gestionale per hotel (PMS) basato sull'intelligenza artificiale, pensato per hotel indipendenti, boutique hotel e B&B. Riunisce in un'unica piattaforma Lio, un assistente AI che risponde ai messaggi degli ospiti 24 ore su 24 in oltre 30 lingue, un channel manager collegato a oltre 100 OTA, un calendario delle prenotazioni drag-and-drop e il check-in online.
@@ -6079,7 +6709,7 @@ Q: Per quali tipi di struttura è pensato Hostlio Pro?
 A: Per strutture indipendenti da 1 a 150 camere, come boutique hotel, hotel di città, B&B e affittacamere, residence e aparthotel e ostelli.
 
 Q: Esiste un'app mobile?
-A: Sì. I piani Pro e Growth includono un'app iOS e Android. Gestisci prenotazioni, messaggi e check-in anche lontano dall'hotel.
+A: Sì. Tutti i piani, Starter compreso, includono l'app iOS e Android. Gestisci prenotazioni, messaggi e check-in anche lontano dall'hotel.
 
 Q: Come funziona il check-in online?
 A: Gli ospiti ricevono un link personale e sicuro, scansionano il documento con il telefono (nessuna immagine viene conservata) e, prima dell'arrivo, inviano accompagnatori e firma digitale. Disponibile nei piani Pro e Growth.
@@ -6095,6 +6725,15 @@ A: Il tuo account è pronto in pochi minuti. La maggior parte degli hotel colleg
 
 Q: In quali lingue è disponibile il supporto?
 A: Il supporto è disponibile in inglese e in turco. La dashboard, l'app mobile e il modulo di check-in per gli ospiti sono disponibili in 6 lingue: italiano, inglese, turco, spagnolo, francese e portoghese. Scrivici a hello@hostliopro.com.
+
+Q: Posso portare le prenotazioni dal mio gestionale attuale?
+A: Sì. Esporta le prenotazioni dal sistema attuale in CSV o Excel e caricale nel pannello. Le colonne vengono abbinate automaticamente, i duplicati saltati e ogni riga con un problema è elencata con il motivo. Poi collega i canali: da quel momento le nuove prenotazioni delle OTA arrivano da sole.
+
+Q: Posso limitare ciò che vede ogni membro dello staff?
+A: Sì. Ogni persona ha un ruolo: titolare, manager, reception, housekeeping, contabilità o osservatore. L’housekeeping vede solo le camere, la contabilità non vede i messaggi degli ospiti e un registro attività annota chi ha cambiato cosa. Starter include 3 utenti, Pro 8 e Growth 20.
+
+Q: Quali report ottengo?
+A: Tutti i piani includono l’analisi di occupazione, ADR, RevPAR, ricavi, cancellazioni, una vista a 30/60/90 giorni e i ricavi per canale al netto delle commissioni. Puoi esportare in Excel o PDF, e il titolare riceve un riepilogo settimanale ogni lunedì e un report mensile con allegati CSV.
 
 ---
 # Chi siamo | Hostlio Pro
@@ -6432,7 +7071,7 @@ Le prenotazioni da Booking.com, Expedia e Airbnb compaiono in un unico planning 
 Con il check-in online e la firma digitale, gli ospiti ricevono un drink di benvenuto invece di un modulo da compilare.
 
 ## Quale piano fa per te?
-Per i boutique hotel da 10 a 50 camere consigliamo Pro : 5.000 messaggi AI al mese, WhatsApp e caselle delle OTA (Booking.com, Airbnb, Expedia), check-in online, vendita di transfer e tour e l'app iOS e Android.
+Per i boutique hotel da 10 a 50 camere consigliamo Pro : 5.000 messaggi AI al mese, WhatsApp e caselle delle OTA (Booking.com, Airbnb, Expedia), check-in online e vendita di transfer e tour. L'app iOS e Android è inclusa in tutti i piani.
 
 Per confrontarlo con altri software alberghieri, consulta il nostro confronto gestionali per hotel .
 Vedi i prezzi
@@ -6514,7 +7153,7 @@ Tour della città e transfer aeroportuali sono extra molto diffusi negli ostelli
 Le domande notturne non aspettano il mattino; lo staff si occupa solo di ciò che richiede una decisione.
 
 ## Quale piano fa per te?
-Per gli ostelli con molti messaggi consigliamo Pro , con 5.000 messaggi AI al mese. Pianifichiamo insieme la configurazione a posti letto durante la demo.
+Per gli ostelli con molti messaggi consigliamo Pro , con 5.000 messaggi AI al mese. Hostlio Pro gestisce la disponibilità per camera, non per posto letto, quindi si adatta meglio agli ostelli che vendono soprattutto camere private o camere intere.
 
 Per confrontarlo con altri software alberghieri, consulta il nostro confronto gestionali per hotel .
 Vedi i prezzi
@@ -6523,7 +7162,7 @@ Q: Funziona con Hostelworld?
 A: Sì. Hostelworld è tra i canali collegati a Channex.
 
 Q: È supportata la vendita a posto letto (dormitorio)?
-A: Dipende dalla tua configurazione; pianifichiamo insieme la struttura di camere e posti letto durante la demo.
+A: Non come inventario separato di posti letto. Hostlio Pro gestisce la disponibilità per camera: ogni tipologia ha un numero di unità e un’occupazione massima, e una prenotazione occupa una camera. È adatto agli ostelli con camere private; se la maggior parte dei ricavi viene dalla vendita di singoli letti in dormitorio, verifichiamo in una demo se una configurazione per camere funziona con i tuoi canali prima di passare.
 
 Q: Quanti messaggi AI mi servono?
 A: Circa 150 risposte automatiche al giorno corrispondono a circa 4.500 al mese, una quantità adatta al piano Pro.
@@ -6933,6 +7572,12 @@ Il contenuto dei messaggi è anonimizzato alla scadenza del periodo impostato (p
 ## Ruoli secondo il GDPR
 Per i dati degli ospiti il titolare è il tuo hotel e Hostlio Pro è responsabile del trattamento. Il nostro DPA definisce questi obblighi e fa parte dei Termini di servizio.
 
+## Ruoli e permessi dello staff
+Sei ruoli (titolare, manager, reception, housekeeping, contabilità, osservatore) con permessi distinti, assegnati per struttura. Chi fa le pulizie vede solo le camere; la contabilità non vede i messaggi degli ospiti. L’esportazione richiede un permesso a parte e puoi sospendere l’accesso di una persona in qualsiasi momento.
+
+## Registro attività
+Le modifiche nel pannello sono registrate campo per campo: chi, quando, in quale struttura, valore precedente e nuovo. I dati personali degli ospiti non vengono copiati nel registro. Le voci sono conservate 365 giorni e si possono filtrare e scaricare in CSV.
+
 ## Sub-responsabili
 Sub-responsabile Sede Finalità
 Supabase, Inc. USA Database, autenticazione e funzioni server
@@ -6995,8 +7640,8 @@ L Lio Recepcionista de IA, online
 Hallo! Ist ein später Check-in möglich?
 Natürlich! Unsere Rezeption ist rund um die Uhr besetzt. Respondido em alemão, 4 s
 
-## A Lio não só responde
-Enquanto conversa com os hóspedes, a Lio recebe pedidos de reserva e vende extras, e toda manhã traz sugestões para você. A palavra final é sempre sua.
+## O Lio não só responde
+Enquanto conversa com os hóspedes, o Lio recebe pedidos de reserva e vende extras, e toda manhã traz sugestões para você. A palavra final é sempre sua.
 
 ## Recebe reservas
 Pro e Growth
@@ -7016,7 +7661,7 @@ Transfer do aeroporto +35 €
 ## Sugere toda manhã
 Todos os planos
 Sugestões diárias sobre preços, operação e oportunidades de receita. Nada muda sem sua aprovação.
-L Sugestões da Lio 08:00
+L Sugestões do Lio 08:00
 Sábado com 85% de ocupação Aumente a tarifa em 10% Aprovar Pular
 
 2 quartos para limpar Prontos antes dos check-ins das 14h
@@ -7055,7 +7700,7 @@ A conversa espera por você no painel, já traduzida. Hóspede satisfeito e voc�
 ## Gerencie o dia do seu hotel em uma só tela
 Mensagens de hóspedes, reservas, canais e check-in funcionam juntos.
 
-Mensagens Calendário Canais Check-in
+Mensagens Calendário Canais Check-in Hoje
 
 ## Todas as mensagens de hóspedes em uma só caixa de entrada
 WhatsApp e as caixas de entrada das OTAs (Booking.com, Airbnb, Expedia) juntos. Lio responde com as informações do seu hotel, e você só vê o que realmente precisa de você.
@@ -7141,6 +7786,19 @@ Acompanhantes 1 hóspede adicionado
 
 Assinatura
 
+## O trabalho do dia, pronto toda manhã
+Abra o painel e veja quem chega, quem sai, quais quartos precisam de limpeza e o que está esperando por você.
+
+- Chegadas, saídas e quartos para limpar
+- Mensagens e rascunhos do Lio aguardando você
+- Quarto fora de serviço fecha em todos os canais Todas as funcionalidades
+Hoje 08:00
+Chegadas 6
+Saídas 4
+Quartos para limpar 5
+Mensagens aguardando 2
+Rascunhos para aprovar 1
+
 ## Tudo o que um hotel precisa
 Todos os módulos estão conectados: nada de ferramentas separadas nem de senhas separadas.
 
@@ -7211,9 +7869,10 @@ Preço de lançamento (normalmente US$ 59 )
 - 1.000 mensagens de IA / mês
 - Sincronização de reservas das OTAs (100+ canais)
 - Mensagens de IA no WhatsApp
-- Sugestões da Lio toda manhã
+- Sugestões do Lio toda manhã
 - Calendário de reservas (mapa de reservas)
 - Declaração de hospedagem para visto (PDF)
+- App para iOS e Android
 Começar com o Starter
 
 Mais popular
@@ -7229,11 +7888,10 @@ Preço de lançamento (normalmente US$ 109 )
 - 5.000 mensagens de IA / mês
 - Tudo do Starter
 - WhatsApp + caixas de entrada das OTAs (Booking.com, Airbnb, Expedia)
-- A Lio recebe pedidos de reserva no WhatsApp (com sua aprovação)
+- O Lio recebe pedidos de reserva no WhatsApp (com sua aprovação)
 - Insights de IA sobre avaliações e mensagens
 - Check-in online com assinatura digital
 - Venda de transfers, passeios e extras
-- App móvel
 Começar com o Pro
 
 ## Growth
@@ -7303,7 +7961,7 @@ Como conecto o Booking.com?
 Escolha o Booking.com em Canais e autorize uma vez. As reservas são sincronizadas automaticamente.
 
 Q: O que é o Hostlio Pro?
-A: O Hostlio Pro é um sistema para hotel (PMS hoteleiro) com inteligência artificial, feito para hotéis independentes, hotéis boutique e pousadas. Ele reúne em uma só plataforma a Lio, uma assistente de IA que responde às mensagens dos hóspedes 24 horas por dia em mais de 30 idiomas, um channel manager conectado a mais de 100 OTAs, um calendário de reservas com arrastar e soltar e o check-in online.
+A: O Hostlio Pro é um sistema para hotel (PMS hoteleiro) com inteligência artificial, feito para hotéis independentes, hotéis boutique e pousadas. Ele reúne em uma só plataforma o Lio, um assistente de IA que responde às mensagens dos hóspedes 24 horas por dia em mais de 30 idiomas, um channel manager conectado a mais de 100 OTAs, um calendário de reservas com arrastar e soltar e o check-in online.
 
 Q: Quanto custa o Hostlio Pro?
 A: São três planos: Starter por US$ 49/mês, Pro por US$ 89/mês e Growth por US$ 149/mês. Esses preços incluem um desconto de lançamento de 17–21% para os primeiros 50 clientes, garantido enquanto a assinatura estiver ativa. Os preços normais são US$ 59, US$ 109 e US$ 189.
@@ -7314,18 +7972,18 @@ A: Sim. Todos os planos incluem 7 dias de teste grátis. O cartão é cadastrado
 Q: Com quais OTAs o Hostlio Pro se conecta?
 A: Por meio da Channex, o Hostlio Pro se conecta a mais de 100 canais, entre eles Booking.com, Airbnb, Expedia, Agoda, Trip.com, Hotels.com, Hotelbeds, Hostelworld e Google Hotels. Disponibilidade, tarifas e reservas ficam sincronizadas em todos eles.
 
-Q: Em quais idiomas a Lio responde?
-A: A Lio responde em mais de 30 idiomas, incluindo inglês, turco, árabe, russo, alemão, japonês e chinês. Ela responde no idioma do hóspede, e você vê a tradução no seu painel.
+Q: Em quais idiomas o Lio responde?
+A: O Lio responde em mais de 30 idiomas, incluindo inglês, turco, árabe, russo, alemão, japonês e chinês. Ele responde no idioma do hóspede, e você vê a tradução no seu painel.
 
 ---
 # IA para Mensagens de Hóspedes em 30+ Idiomas | Hostlio Pro
 URL: https://hostliopro.com/pt/assistente-ia-para-hospedes/
 
-## Lio, a assistente de IA para mensagens de hóspedes
+## Lio, o assistente de IA para mensagens de hóspedes
 
-A Lio é uma assistente de IA treinada com as informações do seu hotel. Ela responde às mensagens dos hóspedes no WhatsApp e nas caixas de entrada das OTAs (Booking.com, Airbnb, Expedia) em mais de 30 idiomas, a qualquer hora.
+O Lio é um assistente de IA treinado com as informações do seu hotel. Ele responde às mensagens dos hóspedes no WhatsApp e nas caixas de entrada das OTAs (Booking.com, Airbnb, Expedia) em mais de 30 idiomas, a qualquer hora.
 
-Teste a Lio grátis por 7 dias
+Teste o Lio grátis por 7 dias
 
 WhatsApp, 02:47
 
@@ -7335,36 +7993,36 @@ Natürlich! Unser Flughafentransfer kostet 35 € für bis zu 3 Gäste. Soll ich
 
 Pedido de transfer criado e repassado para a sua equipe.
 
-O que é uma assistente de IA para mensagens de hóspedes em hotéis? É um software que responde automaticamente às perguntas que os hóspedes fazem antes e depois da reserva, usando as informações do próprio hotel. A Lio repassa para a sua equipe as mensagens que não consegue responder ou que exigem uma decisão humana (pedidos de desconto, reclamações, pedidos especiais).
+O que é uma assistente de IA para mensagens de hóspedes em hotéis? É um software que responde automaticamente às perguntas que os hóspedes fazem antes e depois da reserva, usando as informações do próprio hotel. O Lio repassa para a sua equipe as mensagens que não consegue responder ou que exigem uma decisão humana (pedidos de desconto, reclamações, pedidos especiais).
 
-## O que a Lio faz
+## O que o Lio faz
 
 ## Uma só caixa de entrada
-Mensagens do WhatsApp e das OTAs (Booking.com, Airbnb, Expedia) chegam em uma única tela. A Lio vincula automaticamente cada hóspede à sua reserva.
+Mensagens do WhatsApp e das OTAs (Booking.com, Airbnb, Expedia) chegam em uma única tela. O Lio vincula automaticamente cada hóspede à sua reserva.
 
 ## Mais de 30 idiomas, com tradução automática
-O hóspede escreve em japonês e a Lio responde em japonês; você vê a tradução da resposta da Lio no seu idioma. As respostas que você mesmo escreve são enviadas como estão, sem tradução automática.
+O hóspede escreve em japonês e o Lio responde em japonês; você vê a tradução da resposta do Lio no seu idioma. As respostas que você mesmo escreve são enviadas como estão, sem tradução automática.
 
 ## Conhece o seu hotel
-Horários de check-in e check-out, estacionamento, política para pets, horário do café da manhã, transporte e características dos quartos. Cadastre uma vez e a Lio usa essas informações de forma consistente em todas as respostas.
+Horários de check-in e check-out, estacionamento, política para pets, horário do café da manhã, transporte e características dos quartos. Cadastre uma vez e o Lio usa essas informações de forma consistente em todas as respostas.
 
-## Uma assistente que vende
-A Lio não só responde perguntas: ela oferece transfers do aeroporto, city tours e serviços extras no momento certo e repassa o pedido para a sua equipe.
+## Um assistente que vende
+O Lio não só responde perguntas: ele oferece transfers do aeroporto, city tours e serviços extras no momento certo e repassa o pedido para a sua equipe.
 
 ## Recebe pedidos de reserva
-Nos planos Pro e Growth, quando um hóspede pergunta por um quarto no WhatsApp, a Lio coleta as datas, o número de hóspedes e o quarto preferido e informa o preço com base nas suas tarifas e disponibilidade. O pedido chega para você e vira reserva quando você aprova.
+Nos planos Pro e Growth, quando um hóspede pergunta por um quarto no WhatsApp, o Lio coleta as datas, o número de hóspedes e o quarto preferido e informa o preço com base nas suas tarifas e disponibilidade. O pedido chega para você e vira reserva quando você aprova.
 
 ## Sugestões toda manhã
-Toda manhã, as Sugestões da Lio apontam ajustes de preço, tarefas da operação (quartos aguardando limpeza, pedidos pendentes), configurações que faltam e oportunidades de receita. Nada muda sem sua aprovação, e as sugestões de preço ficam dentro dos limites que você define. Em todos os planos.
+Toda manhã, as Sugestões do Lio apontam ajustes de preço, tarefas da operação (quartos aguardando limpeza, pedidos pendentes), configurações que faltam e oportunidades de receita. Nada muda sem sua aprovação, e as sugestões de preço ficam dentro dos limites que você define. Em todos os planos.
 
 ## Insights de avaliações e mensagens
-Nos planos Pro e Growth, a Lio resume os temas de reclamação e de elogio que se repetem nas avaliações e mensagens dos hóspedes. O resumo semanal com IA está incluído no Growth e é opcional no Pro.
+Nos planos Pro e Growth, o Lio resume os temas de reclamação e de elogio que se repetem nas avaliações e mensagens dos hóspedes. O resumo semanal com IA está incluído no Growth e é opcional no Pro.
 
 ## Você mantém o controle
-Nos primeiros dias, você pode aprovar as respostas da Lio antes do envio. Você decide quais assuntos a Lio resolve sozinha e quais ela repassa para você.
+Nos primeiros dias, você pode aprovar as respostas do Lio antes do envio. Você decide quais assuntos o Lio resolve sozinho e quais ele repassa para você.
 
 ## Cota de mensagens de IA por plano
-Uma mensagem é uma única resposta que a Lio envia a um hóspede.
+Uma mensagem é uma única resposta que o Lio envia a um hóspede.
 
 Plano Mensagens de IA / mês Canais de mensagens
 
@@ -7374,20 +8032,20 @@ Pro 5.000 WhatsApp + caixas de entrada das OTAs (Booking.com, Airbnb, Expedia)
 
 Growth 12.000 WhatsApp + caixas de entrada das OTAs (Booking.com, Airbnb, Expedia)
 
-Q: E se a Lio der uma informação errada?
-A: A Lio usa apenas as informações do hotel e os dados de reserva que você fornece. Quando não tem certeza, ela repassa a mensagem para você em vez de adivinhar. Você também pode aprovar cada resposta antes do envio.
+Q: E se o Lio der uma informação errada?
+A: O Lio usa apenas as informações do hotel e os dados de reserva que você fornece. Quando não tem certeza, ele repassa a mensagem para você em vez de adivinhar. Você também pode aprovar cada resposta antes do envio.
 
-Q: Ela também responde às mensagens do Booking.com e do Airbnb?
-A: Sim. Nos planos Pro e Growth, as mensagens das OTAs chegam à caixa de entrada da Lio e são respondidas da mesma forma.
+Q: Ele também responde às mensagens do Booking.com e do Airbnb?
+A: Sim. Nos planos Pro e Growth, as mensagens das OTAs chegam à caixa de entrada do Lio e são respondidas da mesma forma.
 
-Q: A Lio consegue receber reservas?
-A: Sim, nos planos Pro e Growth e sempre com a sua aprovação. Quando um hóspede escreve no WhatsApp, a Lio pergunta as datas, o número de hóspedes e o quarto preferido, informa o preço com base nas suas tarifas e disponibilidade e repassa o pedido para você. Ele só vira reserva depois que você aprova; a Lio nunca confirma uma reserva sozinha. Pedidos de serviços extras, como transfers e passeios, funcionam do mesmo jeito.
+Q: O Lio consegue receber reservas?
+A: Sim, nos planos Pro e Growth e sempre com a sua aprovação. Quando um hóspede escreve no WhatsApp, o Lio pergunta as datas, o número de hóspedes e o quarto preferido, informa o preço com base nas suas tarifas e disponibilidade e repassa o pedido para você. Ele só vira reserva depois que você aprova; o Lio nunca confirma uma reserva sozinho. Pedidos de serviços extras, como transfers e passeios, funcionam do mesmo jeito.
 
 Q: O que acontece quando a cota de mensagens acaba?
 A: As mensagens continuam chegando e aparecem no seu painel; apenas as respostas automáticas ficam pausadas. Você pode migrar para um plano superior para aumentar a cota.
 
-Q: Em quais idiomas a Lio responde?
-A: A Lio responde em mais de 30 idiomas, incluindo inglês, turco, árabe, russo, alemão, japonês e chinês. Ela responde no idioma do hóspede, e você vê a tradução no seu painel.
+Q: Em quais idiomas o Lio responde?
+A: O Lio responde em mais de 30 idiomas, incluindo inglês, turco, árabe, russo, alemão, japonês e chinês. Ele responde no idioma do hóspede, e você vê a tradução no seu painel.
 
 ---
 # Channel Manager para Hotel com 100+ OTAs | Hostlio Pro
@@ -7425,7 +8083,16 @@ Envie tarifas, estadias mínimas e fechamentos de venda por tipo de quarto para 
 Veja rapidamente de qual canal veio cada reserva. Troque os quartos arrastando e soltando.
 
 ## Integrado às mensagens
-As mensagens dos hóspedes de reservas das OTAs chegam à caixa de entrada da Lio com o hóspede, o quarto e as datas ao lado de cada conversa.
+As mensagens dos hóspedes de reservas das OTAs chegam à caixa de entrada do Lio com o hóspede, o quarto e as datas ao lado de cada conversa.
+
+## Uma temporada inteira de uma vez
+Escolha um período, os tipos de quarto e os planos tarifários e defina preço, estadia mínima e máxima, fechado para chegada, fechado para saída ou stop sell. Marque «só fins de semana» para dar outro preço às noites de sexta e sábado. Se um canal ficar para trás, «reenviar aos canais» envia de novo as tarifas e a disponibilidade atuais.
+
+## Quartos fora de serviço fecham sozinhos
+Quando um quarto fica fora de serviço por um problema, a disponibilidade cai em todos os canais conectados e o quarto não pode ser atribuído até voltar a funcionar.
+
+## Traga suas reservas atuais
+Envie as reservas do sistema antigo em CSV ou Excel. As colunas são associadas automaticamente, duplicatas são ignoradas e linhas com problema aparecem com o motivo.
 
 ## Principais canais compatíveis
 A lista segue a nossa rede de conexões certificadas. Sentiu falta de algum canal? Fale com a gente.
@@ -7447,8 +8114,8 @@ A: Por meio da Channex, o Hostlio Pro se conecta a mais de 100 canais, entre ele
 Q: O channel manager está incluído em todos os planos?
 A: Sim. Starter, Pro e Growth incluem sincronização com mais de 100 OTAs. O Growth acrescenta sincronização prioritária.
 
-Q: É difícil trocar o meu channel manager atual?
-A: Não. Crie seus tipos de quarto no Hostlio Pro e mapeie suas contas das OTAs pela Channex. Nossa equipe de onboarding ajuda durante a migração.
+Q: É difícil migrar do meu channel manager atual?
+A: Não. Crie seus tipos de quarto no Hostlio Pro, importe as reservas atuais de um arquivo CSV ou Excel e vincule suas contas das OTAs pela Channex. Nossa equipe de implantação ajuda durante a troca.
 
 ---
 # Check-in Online com Assinatura Digital | Hostlio Pro
@@ -7478,6 +8145,9 @@ Como funciona o check-in online? O Hostlio Pro envia a quem fez a reserva um lin
 
 ## Link seguro
 Um link baseado em token, exclusivo de cada reserva. Ele abre apenas o formulário daquela reserva.
+
+## Link de check-in por e-mail, automaticamente
+Ative e cada nova reserva com e-mail recebe o link pessoal de check-in, no idioma do hóspede. Você escolhe a quais origens se aplica: reservas diretas, Booking.com, Expedia, Airbnb, Agoda ou outras OTAs. Fica desativado até você ligar.
 
 ## Leitura do documento sem guardar imagens
 A zona de leitura mecânica do passaporte ou da carteira de identidade é lida no próprio aparelho do hóspede. Só ficam salvos nome, número do documento, nacionalidade, data de nascimento e validade, nunca uma foto do documento. Documentos sem zona de leitura mecânica são preenchidos à mão.
@@ -7532,7 +8202,7 @@ Os módulos de que um hotel independente precisa no dia a dia: comunicação com
 
 ## Assistente de IA Lio
 Respostas aos hóspedes 24 horas por dia em mais de 30 idiomas. Mensagens do WhatsApp e das OTAs (Booking.com, Airbnb, Expedia) em uma só caixa de entrada.
-Saiba mais sobre a Lio
+Saiba mais sobre o Lio
 
 ## Channel manager
 Sincronização de disponibilidade, tarifas e reservas com mais de 100 OTAs com conexões certificadas.
@@ -7549,16 +8219,45 @@ Check-in online
 Gere com um clique, a partir da reserva, a declaração de hospedagem pedida no visto ou na carta-convite; salve em PDF ou imprima.
 
 ## Venda de transfers e passeios
-A Lio sugere transfers do aeroporto e passeios durante a conversa e repassa o pedido para a sua equipe.
+O Lio sugere transfers do aeroporto e passeios durante a conversa e repassa o pedido para a sua equipe.
 
-## Sugestões da Lio e insights de IA
-Toda manhã a Lio prepara sugestões sobre preços, operação (quartos aguardando limpeza, pedidos pendentes), configurações que faltam e oportunidades de receita. Nada muda sem sua aprovação, e as sugestões de preço respeitam os limites que você define. Nos planos Pro e Growth, ela também resume as reclamações e os elogios que se repetem em avaliações e mensagens.
-
-## Relatórios e equipe
-Relatórios de ocupação, ADR, RevPAR e desempenho por canal, com relatório semanal e mensal por e-mail. Seis funções de equipe com permissões próprias e todas as notificações em um só lugar.
+## Sugestões do Lio e insights de IA
+Toda manhã o Lio prepara sugestões sobre preços, operação (quartos aguardando limpeza, pedidos pendentes), configurações que faltam e oportunidades de receita. Nada muda sem sua aprovação, e as sugestões de preço respeitam os limites que você define. Nos planos Pro e Growth, ele também resume as reclamações e os elogios que se repetem em avaliações e mensagens.
 
 ## App para celular
 Gerencie reservas, mensagens e check-ins fora do hotel com o app para iOS e Android.
+
+## O dia inteiro em um só painel
+Além da mensageria e da distribuição, estas são as ferramentas que sua equipe usa todos os dias. Todas estão no painel web e incluídas em todos os planos, salvo indicação em contrário.
+
+## Operação do dia a dia
+Tela Hoje Abra o painel de manhã e o dia já está organizado: chegadas, saídas, quartos para limpar, mensagens aguardando resposta, rascunhos do Lio esperando sua aprovação, pedidos de reserva e avaliações para responder.
+
+Governança Cada quarto tem um status: limpo, sujo, em manutenção ou fora de serviço. As saídas do dia vêm primeiro e, se um hóspede chega no mesmo quarto no mesmo dia, ele fica marcado como prioritário. Imprima a lista de limpeza do dia em PDF; quem tem a função de governança vê só os quartos.
+
+Manutenção e quartos fora de serviço Registre um problema com até cinco fotos (os dados de localização são removidos), uma categoria e uma prioridade. Coloque um quarto fora de serviço e ele sai da venda: a disponibilidade cai automaticamente nos canais conectados, o quarto não pode ser atribuído a nenhuma reserva e sua equipe é avisada.
+
+Um mapa de quartos que acompanha o crescimento Para propriedades maiores: três níveis de densidade, quartos agrupados por tipo ou andar, número de quartos livres por dia, busca de quarto livre e visões de 7, 14 ou 30 dias. A verificação de conflitos lista reservas duplicadas ou sem quarto, o mapa sugere um quarto livre do tipo certo e as reservas se movem com o mouse ou com o teclado.
+
+Notificações e resumo da manhã Reservas novas, alteradas e canceladas, mensagens sem resposta, rascunhos para aprovar, problemas de canal e registros de manutenção chegam a uma única central de notificações, guardada por 90 dias. O app também envia um resumo do dia às 08:00, horário do hotel (hoje no Android; no iOS com a próxima atualização do app).
+
+## Receita, tarifas e relatórios
+Análises Ocupação, ADR, RevPAR, receita, estadia média, cancelamentos e no-shows, comparados com o período anterior. A visão de 30, 60 e 90 dias com pickup mostra o que já está reservado, e a visão por canal traz receita bruta, comissão e líquido de cada OTA, para você saber qual realmente compensa. Tipos de quarto, hóspedes, extras e o trabalho do Lio têm abas próprias.
+
+Relatórios em Excel, PDF e por e-mail Exporte todas as abas de análise para Excel com um clique ou imprima a visão aberta em PDF; seu contador recebe os números sem trabalho extra. Toda segunda-feira um resumo semanal chega ao e-mail do proprietário e, no dia 1º de cada mês, um relatório mensal com anexos CSV.
+
+Tarifas e restrições Uma única grade para cada tipo de quarto e plano tarifário: preço, estadia mínima e máxima, fechado para chegada (CTA), fechado para saída (CTD), stop sell e disponibilidade. Lance uma temporada inteira de uma vez: escolha o período, os tipos de quarto e os planos e marque «só fins de semana» para dar outro preço às noites de sexta e sábado. Se um canal ficar dessincronizado, o botão «reenviar aos canais» envia tudo de novo.
+
+Importação de reservas Vindo de outro sistema? Envie suas reservas em um arquivo .csv, .xlsx ou .xls. As colunas são associadas automaticamente e você pode ajustá-las, o formato de data é detectado ou escolhido por você, duplicatas são ignoradas e cada linha que não pode ser importada aparece com o motivo.
+
+## Equipe e controle
+Equipe, funções e permissões Convide colegas por e-mail e dê a cada um uma função: proprietário, gerente, recepção, governança, financeiro ou observador. Cada pessoa vê só o que o trabalho exige: a governança vê os quartos e o financeiro não vê as mensagens dos hóspedes. Suspenda um acesso quando quiser. O Starter inclui 3 usuários, o Pro 8 e o Growth 20.
+
+Histórico de atividades Quem mudou o quê, e quando: as alterações são registradas campo a campo, com o valor antigo e o novo, sem dados pessoais dos hóspedes. Filtre por pessoa, módulo, propriedade ou data, consulte 365 dias de histórico e baixe o registro em CSV.
+
+Duas propriedades no Growth Alterne entre propriedades com um clique e veja chegadas, saídas, ocupação e receita das duas em uma só página «Todas as propriedades». Ao adicionar a segunda, copie da primeira as políticas, as configurações de IA, os modelos de mensagem e as notificações. As duas compartilham uma única cota de mensagens de IA.
+
+Painel em 6 idiomas O painel, o app e o formulário de check-in do hóspede estão em português, inglês, turco, espanhol, francês e italiano, para que cada pessoa da equipe trabalhe no seu idioma.
 
 ## Funcionalidades por plano
 
@@ -7576,9 +8275,9 @@ Sincronização com mais de 100 OTAs Sim Sim Prioritária
 
 Mensagens de IA no WhatsApp Sim Sim Sim
 
-Sugestões da Lio toda manhã (nada muda sem sua aprovação) Sim Sim Sim
+Sugestões do Lio toda manhã (nada muda sem sua aprovação) Sim Sim Sim
 
-Pedidos de reserva e de serviços extras pela Lio no WhatsApp Não Sim Sim
+Pedidos de reserva e de serviços extras pelo Lio no WhatsApp Não Sim Sim
 
 Insights de IA sobre avaliações e mensagens de hóspedes Não Sim Sim
 
@@ -7594,17 +8293,30 @@ Check-in online e assinatura digital Não Sim Sim
 
 Venda de transfers e passeios Não Sim Sim
 
-App para iOS e Android Não Sim Sim
+App para iOS e Android Sim Sim Sim
 
 Suporte prioritário e chamada de onboarding Não Não Sim
 
 White-label Não Não Sim
 
+Análises, exportação para Excel e relatórios semanais/mensais por e-mail Sim Sim Sim
+E-mail automático com o link de check-in (você escolhe as origens das reservas) Não Sim Sim
+Visão «Todas as propriedades» e troca de propriedade Não Não Sim
+
 Q: O que é o Hostlio Pro?
-A: O Hostlio Pro é um sistema para hotel (PMS hoteleiro) com inteligência artificial, feito para hotéis independentes, hotéis boutique e pousadas. Ele reúne em uma só plataforma a Lio, uma assistente de IA que responde às mensagens dos hóspedes 24 horas por dia em mais de 30 idiomas, um channel manager conectado a mais de 100 OTAs, um calendário de reservas com arrastar e soltar e o check-in online.
+A: O Hostlio Pro é um sistema para hotel (PMS hoteleiro) com inteligência artificial, feito para hotéis independentes, hotéis boutique e pousadas. Ele reúne em uma só plataforma o Lio, um assistente de IA que responde às mensagens dos hóspedes 24 horas por dia em mais de 30 idiomas, um channel manager conectado a mais de 100 OTAs, um calendário de reservas com arrastar e soltar e o check-in online.
 
 Q: Com quais OTAs o Hostlio Pro se conecta?
 A: Por meio da Channex, o Hostlio Pro se conecta a mais de 100 canais, entre eles Booking.com, Airbnb, Expedia, Agoda, Trip.com, Hotels.com, Hotelbeds, Hostelworld e Google Hotels. Disponibilidade, tarifas e reservas ficam sincronizadas em todos eles.
+
+Q: Posso trazer as reservas do meu sistema atual?
+A: Sim. Exporte as reservas do sistema atual em CSV ou Excel e envie o arquivo no painel. As colunas são associadas automaticamente, duplicatas são ignoradas e cada linha com problema aparece com o motivo. Depois conecte seus canais: a partir daí, as novas reservas das OTAs chegam sozinhas.
+
+Q: Posso limitar o que cada pessoa da equipe vê?
+A: Sim. Cada pessoa recebe uma função: proprietário, gerente, recepção, governança, financeiro ou observador. A governança vê só os quartos, o financeiro não vê as mensagens dos hóspedes e um histórico de atividades registra quem mudou o quê. O Starter inclui 3 usuários, o Pro 8 e o Growth 20.
+
+Q: Quais relatórios eu recebo?
+A: Todos os planos incluem análises de ocupação, ADR, RevPAR, receita, cancelamentos, uma visão de 30/60/90 dias e receita por canal depois da comissão. Você pode exportar para Excel ou PDF, e o proprietário recebe um resumo semanal toda segunda-feira e um relatório mensal com anexos CSV.
 
 ---
 # Preços do Sistema para Hotel: desde US$ 49/mês | Hostlio Pro
@@ -7629,9 +8341,10 @@ Preço de lançamento (normalmente US$ 59 )
 - 1.000 mensagens de IA / mês
 - Sincronização de reservas das OTAs (100+ canais)
 - Mensagens de IA no WhatsApp
-- Sugestões da Lio toda manhã
+- Sugestões do Lio toda manhã
 - Calendário de reservas (mapa de reservas)
 - Declaração de hospedagem para visto (PDF)
+- App para iOS e Android
 Começar com o Starter
 
 Mais popular
@@ -7647,11 +8360,10 @@ Preço de lançamento (normalmente US$ 109 )
 - 5.000 mensagens de IA / mês
 - Tudo do Starter
 - WhatsApp + caixas de entrada das OTAs (Booking.com, Airbnb, Expedia)
-- A Lio recebe pedidos de reserva no WhatsApp (com sua aprovação)
+- O Lio recebe pedidos de reserva no WhatsApp (com sua aprovação)
 - Insights de IA sobre avaliações e mensagens
 - Check-in online com assinatura digital
 - Venda de transfers, passeios e extras
-- App móvel
 Começar com o Pro
 
 ## Growth
@@ -7679,7 +8391,7 @@ Preços em dólares americanos, sem impostos. Última atualização: 23 de setem
 Pousadas e hotéis boutique com até 10 quartos, que enviam menos de 1.000 respostas por mês e querem começar com sincronização de canais e respostas por IA.
 
 ## Pro
-Hotéis de 11 a 50 quartos que querem que a Lio cuide também das mensagens das OTAs, usar o check-in online e vender transfers e passeios.
+Hotéis de 11 a 50 quartos que querem que o Lio cuide também das mensagens das OTAs, usar o check-in online e vender transfers e passeios.
 
 ## Growth
 Duas propriedades ou até 150 quartos, quando você precisa de suporte prioritário, onboarding personalizado e uso white-label.
@@ -7710,7 +8422,7 @@ URL: https://hostliopro.com/pt/perguntas-frequentes/
 
 As dúvidas mais comuns sobre as funcionalidades, os preços e a implantação do Hostlio Pro. Não encontrou sua resposta? Escreva para nós .
 
-O que é o Hostlio Pro? O Hostlio Pro é um sistema para hotel (PMS hoteleiro) com inteligência artificial, feito para hotéis independentes, hotéis boutique e pousadas. Ele reúne em uma só plataforma a Lio, uma assistente de IA que responde às mensagens dos hóspedes 24 horas por dia em mais de 30 idiomas, um channel manager conectado a mais de 100 OTAs, um calendário de reservas com arrastar e soltar e o check-in online.
+O que é o Hostlio Pro? O Hostlio Pro é um sistema para hotel (PMS hoteleiro) com inteligência artificial, feito para hotéis independentes, hotéis boutique e pousadas. Ele reúne em uma só plataforma o Lio, um assistente de IA que responde às mensagens dos hóspedes 24 horas por dia em mais de 30 idiomas, um channel manager conectado a mais de 100 OTAs, um calendário de reservas com arrastar e soltar e o check-in online.
 
 Quanto custa o Hostlio Pro? São três planos: Starter por US$ 49/mês, Pro por US$ 89/mês e Growth por US$ 149/mês. Esses preços incluem um desconto de lançamento de 17–21% para os primeiros 50 clientes, garantido enquanto a assinatura estiver ativa. Os preços normais são US$ 59, US$ 109 e US$ 189.
 
@@ -7718,11 +8430,11 @@ Existe um período de teste grátis? Sim. Todos os planos incluem 7 dias de test
 
 Com quais OTAs o Hostlio Pro se conecta? Por meio da Channex, o Hostlio Pro se conecta a mais de 100 canais, entre eles Booking.com, Airbnb, Expedia, Agoda, Trip.com, Hotels.com, Hotelbeds, Hostelworld e Google Hotels. Disponibilidade, tarifas e reservas ficam sincronizadas em todos eles.
 
-Em quais idiomas a Lio responde? A Lio responde em mais de 30 idiomas, incluindo inglês, turco, árabe, russo, alemão, japonês e chinês. Ela responde no idioma do hóspede, e você vê a tradução no seu painel.
+Em quais idiomas o Lio responde? O Lio responde em mais de 30 idiomas, incluindo inglês, turco, árabe, russo, alemão, japonês e chinês. Ele responde no idioma do hóspede, e você vê a tradução no seu painel.
 
 Para que tipos de hotel o Hostlio Pro foi feito? Para propriedades independentes de 1 a 150 quartos, como hotéis boutique, hotéis urbanos, pousadas, apart-hotéis e hostels.
 
-Existe um app para celular? Sim. Os planos Pro e Growth incluem um app para iOS e Android. Gerencie reservas, mensagens e check-ins fora do hotel.
+Existe um app para celular? Sim. Todos os planos, inclusive o Starter, incluem o app para iOS e Android. Gerencie reservas, mensagens e check-ins fora do hotel.
 
 Como funciona o check-in online? Os hóspedes recebem um link pessoal e seguro, escaneiam o documento pelo celular (nenhuma imagem é guardada) e enviam, antes da chegada, os acompanhantes e a assinatura digital. Disponível nos planos Pro e Growth.
 
@@ -7734,8 +8446,14 @@ Quanto tempo leva a implantação? Sua conta fica pronta em minutos. A maioria d
 
 Em quais idiomas o suporte é oferecido? O suporte é oferecido em inglês e turco. O painel, o app e o formulário de check-in do hóspede estão disponíveis em 6 idiomas: português, inglês, turco, espanhol, francês e italiano. Fale com a gente em hello@hostliopro.com.
 
+Posso trazer as reservas do meu sistema atual? Sim. Exporte as reservas do sistema atual em CSV ou Excel e envie o arquivo no painel. As colunas são associadas automaticamente, duplicatas são ignoradas e cada linha com problema aparece com o motivo. Depois conecte seus canais: a partir daí, as novas reservas das OTAs chegam sozinhas.
+
+Posso limitar o que cada pessoa da equipe vê? Sim. Cada pessoa recebe uma função: proprietário, gerente, recepção, governança, financeiro ou observador. A governança vê só os quartos, o financeiro não vê as mensagens dos hóspedes e um histórico de atividades registra quem mudou o quê. O Starter inclui 3 usuários, o Pro 8 e o Growth 20.
+
+Quais relatórios eu recebo? Todos os planos incluem análises de ocupação, ADR, RevPAR, receita, cancelamentos, uma visão de 30/60/90 dias e receita por canal depois da comissão. Você pode exportar para Excel ou PDF, e o proprietário recebe um resumo semanal toda segunda-feira e um relatório mensal com anexos CSV.
+
 Q: O que é o Hostlio Pro?
-A: O Hostlio Pro é um sistema para hotel (PMS hoteleiro) com inteligência artificial, feito para hotéis independentes, hotéis boutique e pousadas. Ele reúne em uma só plataforma a Lio, uma assistente de IA que responde às mensagens dos hóspedes 24 horas por dia em mais de 30 idiomas, um channel manager conectado a mais de 100 OTAs, um calendário de reservas com arrastar e soltar e o check-in online.
+A: O Hostlio Pro é um sistema para hotel (PMS hoteleiro) com inteligência artificial, feito para hotéis independentes, hotéis boutique e pousadas. Ele reúne em uma só plataforma o Lio, um assistente de IA que responde às mensagens dos hóspedes 24 horas por dia em mais de 30 idiomas, um channel manager conectado a mais de 100 OTAs, um calendário de reservas com arrastar e soltar e o check-in online.
 
 Q: Quanto custa o Hostlio Pro?
 A: São três planos: Starter por US$ 49/mês, Pro por US$ 89/mês e Growth por US$ 149/mês. Esses preços incluem um desconto de lançamento de 17–21% para os primeiros 50 clientes, garantido enquanto a assinatura estiver ativa. Os preços normais são US$ 59, US$ 109 e US$ 189.
@@ -7746,14 +8464,14 @@ A: Sim. Todos os planos incluem 7 dias de teste grátis. O cartão é cadastrado
 Q: Com quais OTAs o Hostlio Pro se conecta?
 A: Por meio da Channex, o Hostlio Pro se conecta a mais de 100 canais, entre eles Booking.com, Airbnb, Expedia, Agoda, Trip.com, Hotels.com, Hotelbeds, Hostelworld e Google Hotels. Disponibilidade, tarifas e reservas ficam sincronizadas em todos eles.
 
-Q: Em quais idiomas a Lio responde?
-A: A Lio responde em mais de 30 idiomas, incluindo inglês, turco, árabe, russo, alemão, japonês e chinês. Ela responde no idioma do hóspede, e você vê a tradução no seu painel.
+Q: Em quais idiomas o Lio responde?
+A: O Lio responde em mais de 30 idiomas, incluindo inglês, turco, árabe, russo, alemão, japonês e chinês. Ele responde no idioma do hóspede, e você vê a tradução no seu painel.
 
 Q: Para que tipos de hotel o Hostlio Pro foi feito?
 A: Para propriedades independentes de 1 a 150 quartos, como hotéis boutique, hotéis urbanos, pousadas, apart-hotéis e hostels.
 
 Q: Existe um app para celular?
-A: Sim. Os planos Pro e Growth incluem um app para iOS e Android. Gerencie reservas, mensagens e check-ins fora do hotel.
+A: Sim. Todos os planos, inclusive o Starter, incluem o app para iOS e Android. Gerencie reservas, mensagens e check-ins fora do hotel.
 
 Q: Como funciona o check-in online?
 A: Os hóspedes recebem um link pessoal e seguro, escaneiam o documento pelo celular (nenhuma imagem é guardada) e enviam, antes da chegada, os acompanhantes e a assinatura digital. Disponível nos planos Pro e Growth.
@@ -7770,6 +8488,15 @@ A: Sua conta fica pronta em minutos. A maioria dos hotéis conecta os canais no 
 Q: Em quais idiomas o suporte é oferecido?
 A: O suporte é oferecido em inglês e turco. O painel, o app e o formulário de check-in do hóspede estão disponíveis em 6 idiomas: português, inglês, turco, espanhol, francês e italiano. Fale com a gente em hello@hostliopro.com.
 
+Q: Posso trazer as reservas do meu sistema atual?
+A: Sim. Exporte as reservas do sistema atual em CSV ou Excel e envie o arquivo no painel. As colunas são associadas automaticamente, duplicatas são ignoradas e cada linha com problema aparece com o motivo. Depois conecte seus canais: a partir daí, as novas reservas das OTAs chegam sozinhas.
+
+Q: Posso limitar o que cada pessoa da equipe vê?
+A: Sim. Cada pessoa recebe uma função: proprietário, gerente, recepção, governança, financeiro ou observador. A governança vê só os quartos, o financeiro não vê as mensagens dos hóspedes e um histórico de atividades registra quem mudou o quê. O Starter inclui 3 usuários, o Pro 8 e o Growth 20.
+
+Q: Quais relatórios eu recebo?
+A: Todos os planos incluem análises de ocupação, ADR, RevPAR, receita, cancelamentos, uma visão de 30/60/90 dias e receita por canal depois da comissão. Você pode exportar para Excel ou PDF, e o proprietário recebe um resumo semanal toda segunda-feira e um relatório mensal com anexos CSV.
+
 ---
 # Sobre o Hostlio Pro | Sistema para Hotel com IA
 URL: https://hostliopro.com/pt/sobre-nos/
@@ -7780,7 +8507,7 @@ Em hotéis pequenos, a recepção, as vendas e a comunicação com os hóspedes 
 
 ## O que fazemos
 
-O Hostlio Pro é um software de gestão hoteleira com inteligência artificial para hotéis independentes. Entregamos a comunicação com os hóspedes à nossa assistente de IA Lio, reunimos a distribuição nas OTAs em um único calendário com conexões certificadas e levamos o check-in para o celular do hóspede.
+O Hostlio Pro é um software de gestão hoteleira com inteligência artificial para hotéis independentes. Entregamos a comunicação com os hóspedes ao nosso assistente de IA Lio, reunimos a distribuição nas OTAs em um único calendário com conexões certificadas e levamos o check-in para o celular do hóspede.
 
 ## Como trabalhamos
 
@@ -7884,7 +8611,7 @@ Hóspedes que escrevem no próprio idioma compartilham mais detalhes e confiam m
 
 ## Como funciona no Hostlio Pro
 
-A assistente de IA do Hostlio Pro, a Lio , usa as informações do seu hotel e os dados das reservas para responder a mensagens do WhatsApp e das OTAs (Booking.com, Airbnb, Expedia) em mais de 30 idiomas. Os planos incluem de 1.000 a 12.000 mensagens de IA por mês; veja os detalhes na página de preços .
+O assistente de IA do Hostlio Pro, o Lio , usa as informações do seu hotel e os dados das reservas para responder a mensagens do WhatsApp e das OTAs (Booking.com, Airbnb, Expedia) em mais de 30 idiomas. Os planos incluem de 1.000 a 12.000 mensagens de IA por mês; veja os detalhes na página de preços .
 
 Q: A IA pode dar informações erradas aos hóspedes?
 A: O risco é mínimo quando a assistente trabalha apenas com as informações fornecidas pelo hotel e repassa as perguntas duvidosas para a equipe. Recomenda-se começar no modo de aprovação.
@@ -8018,7 +8745,7 @@ Reservas do Booking.com, da Expedia e do Airbnb aparecem em um só mapa de reser
 Com check-in online e assinatura digital, o hóspede recebe um drinque de boas-vindas em vez de um formulário.
 
 ## Qual plano é o ideal?
-Para hotéis boutique de 10 a 50 quartos, recomendamos o Pro : 5.000 mensagens de IA por mês, WhatsApp e caixas de entrada das OTAs (Booking.com, Airbnb, Expedia), check-in online, venda de transfers e passeios e o app para iOS e Android.
+Para hotéis boutique de 10 a 50 quartos, recomendamos o Pro : 5.000 mensagens de IA por mês, WhatsApp e caixas de entrada das OTAs (Booking.com, Airbnb, Expedia), check-in online e venda de transfers e passeios. O app para iOS e Android está incluído em todos os planos.
 
 Para comparar com outros sistemas para hotel, veja nosso comparativo de sistemas para hotel .
 Ver preços
@@ -8100,7 +8827,7 @@ City tours e transfers do aeroporto são extras comuns em hostels; Lio oferece n
 Perguntas feitas à noite não esperam até de manhã; a equipe só cuida do que exige uma decisão.
 
 ## Qual plano é o ideal?
-Para hostels com grande volume, recomendamos o Pro , com 5.000 mensagens de IA por mês. Vamos planejar juntos a sua configuração por cama durante a demonstração.
+Para hostels com grande volume, recomendamos o Pro , com 5.000 mensagens de IA por mês. O Hostlio Pro gerencia a disponibilidade por quarto, não por cama, então combina melhor com hostels que vendem principalmente quartos privativos ou quartos inteiros.
 
 Para comparar com outros sistemas para hotel, veja nosso comparativo de sistemas para hotel .
 Ver preços
@@ -8109,7 +8836,7 @@ Q: Funciona com o Hostelworld?
 A: Sim. O Hostelworld está entre os canais conectados ao Channex.
 
 Q: A venda por cama (dormitório) é suportada?
-A: Depende da sua configuração; vamos planejar juntos a estrutura de quartos e camas durante a demonstração.
+A: Não como um inventário separado de camas. O Hostlio Pro gerencia a disponibilidade por quarto: cada tipo de quarto tem um número de unidades e uma ocupação máxima, e uma reserva ocupa um quarto. Funciona bem para hostels com quartos privativos; se a maior parte da sua receita vem da venda de camas avulsas em dormitórios, vamos verificar numa demonstração se uma configuração por quarto funciona com seus canais antes de migrar.
 
 Q: De quantas mensagens de IA eu preciso?
 A: Cerca de 150 respostas automáticas por dia dão aproximadamente 4.500 por mês, o que se encaixa no plano Pro.
@@ -8438,7 +9165,7 @@ Você se compromete a não:
 Você é o controlador dos dados pessoais dos seus hóspedes. Cabe a você ter base legal para tratá-los, informar os hóspedes (por exemplo, no seu próprio aviso de privacidade) e cumprir as regras de registro de hóspedes e documentos de identidade aplicáveis. Nosso Acordo de Tratamento de Dados (DPA) faz parte destes Termos e se aplica aos dados de hóspedes que tratamos para você.
 
 ## 8. Respostas geradas por IA
-A Lio redige e envia respostas com as informações que você fornece. A IA pode errar. Você decide quais mensagens a Lio pode responder automaticamente e quais exigem aprovação, e continua responsável pelas respostas enviadas em nome da sua propriedade. A Lio repassa as mensagens sobre as quais não tem certeza, mas você não deve confiar nela para questões jurídicas, médicas ou de emergência. Na medida permitida por lei, não respondemos pelo conteúdo das respostas geradas por IA.
+O Lio redige e envia respostas com as informações que você fornece. A IA pode errar. Você decide quais mensagens o Lio pode responder automaticamente e quais exigem aprovação, e continua responsável pelas respostas enviadas em nome da sua propriedade. O Lio repassa as mensagens sobre as quais não tem certeza, mas você não deve confiar nela para questões jurídicas, médicas ou de emergência. Na medida permitida por lei, não respondemos pelo conteúdo das respostas geradas por IA.
 
 ## 9. Canais conectados e WhatsApp
 As conexões com canais são fornecidas pelo nosso parceiro de conectividade Channex, e as mensagens pela plataforma WhatsApp Business e pelas caixas das OTAs. Você deve cumprir os termos de cada plataforma que conectar. Mudanças em APIs ou políticas de terceiros podem afetar recursos e não somos responsáveis por elas.
@@ -8508,7 +9235,7 @@ Banco de dados, autenticação e funções de servidor rodam na Supabase; o site
 Os dados do cartão são digitados na Stripe e nunca chegam aos nossos servidores. Só vemos o plano, o período de cobrança e o status do pagamento.
 
 ## IA e mensagens de hóspedes
-A Lio envia o conteúdo da mensagem ao nosso fornecedor de IA apenas para redigir uma resposta. Pelos termos comerciais, o fornecedor não usa esse conteúdo para treinar modelos. Você decide quais assuntos a Lio responde sozinha e quais precisam da sua aprovação.
+O Lio envia o conteúdo da mensagem ao nosso fornecedor de IA apenas para redigir uma resposta. Pelos termos comerciais, o fornecedor não usa esse conteúdo para treinar modelos. Você decide quais assuntos o Lio responde sozinho e quais precisam da sua aprovação.
 
 ## Dados do check-in online
 Dados de documentos e assinaturas digitais são tratados como dados sensíveis, visíveis só para a equipe do seu hotel e apagados, no máximo, junto com a sua conta. Não armazenamos imagens de documentos ou passaportes: a zona de leitura mecânica é lida no aparelho do hóspede ou da sua equipe e só os dados extraídos são enviados.
@@ -8518,6 +9245,12 @@ O conteúdo das mensagens é anonimizado ao fim do prazo que você definir (padr
 
 ## Papéis na LGPD e no GDPR
 Para os dados de hóspedes, o hotel é o controlador e o Hostlio Pro é o operador. Nosso DPA define essas obrigações e faz parte dos Termos de Serviço.
+
+## Funções e permissões da equipe
+Seis funções (proprietário, gerente, recepção, governança, financeiro, observador) com permissões próprias, atribuídas por propriedade. Quem faz a limpeza vê só os quartos; o financeiro não vê as mensagens dos hóspedes. Exportar exige uma permissão própria, e você pode suspender o acesso de uma pessoa a qualquer momento.
+
+## Histórico de atividades
+As alterações no painel são registradas campo a campo: quem, quando, em qual propriedade, valor antigo e novo. Os dados pessoais dos hóspedes não são copiados para o registro. As entradas ficam guardadas por 365 dias e podem ser filtradas e baixadas em CSV.
 
 ## Suboperadores
 Suboperador Localização Finalidade
@@ -8548,10 +9281,10 @@ Mais detalhes na Política de Privacidade e nos Termos de Serviço .
 # Calculadora de ROI de mensagens com IA | Hostlio Pro
 URL: https://hostliopro.com/pt/calculadora-roi/
 
-## Quanto tempo a Lio pode economizar para você?
-Informe alguns números da sua propriedade. A calculadora estima as horas e o custo de equipe que responder hóspedes exige hoje, e quanto disso você poderia passar para a Lio.
+## Quanto tempo o Lio pode economizar para você?
+Informe alguns números da sua propriedade. A calculadora estima as horas e o custo de equipe que responder hóspedes exige hoje, e quanto disso você poderia passar para o Lio.
 
-Quartos Mensagens de hóspedes por dia Minutos para responder uma mensagem Parcela de mensagens que você deixaria com a Lio % Parcela que chega à noite (22:00–08:00) % Custo da equipe por hora (USD) $
+Quartos Mensagens de hóspedes por dia Minutos para responder uma mensagem Parcela de mensagens que você deixaria com o Lio % Parcela que chega à noite (22:00–08:00) % Custo da equipe por hora (USD) $
 Horas de equipe economizadas por mês –
 Custo de equipe economizado por mês –
 Mensagens noturnas respondidas por mês –
@@ -8561,7 +9294,7 @@ Economia após o preço do plano –
 
 Teste o Hostlio Pro grátis por 7 dias
 
-São apenas estimativas, com base nos números informados e em meses de 30 dias. O resultado depende dos seus hóspedes, das configurações e dos assuntos que você deixa a Lio responder sozinha. Preços mensais early bird em USD.
+São apenas estimativas, com base nos números informados e em meses de 30 dias. O resultado depende dos seus hóspedes, das configurações e dos assuntos que você deixa o Lio responder sozinho. Preços mensais early bird em USD.
 
 ---
 # Logiciel de gestion hôtelière avec IA | Hostlio Pro
@@ -8641,7 +9374,7 @@ La conversation vous attend dans votre tableau de bord, traduite. Un client sati
 ## Pilotez la journée de votre hôtel depuis un seul écran
 Messages clients, réservations, canaux et check-in fonctionnent ensemble.
 
-Messages Calendrier Canaux Check-in
+Messages Calendrier Canaux Check-in Aujourd’hui
 
 ## Tous les messages clients dans une seule boîte
 WhatsApp et messages des OTA (Booking.com, Airbnb, Expedia) réunis. Lio répond avec les informations de votre hôtel, et vous ne voyez que ce qui a besoin de vous.
@@ -8727,6 +9460,19 @@ Accompagnants 1 personne ajoutée
 
 Signature
 
+## Le travail du jour, prêt chaque matin
+Ouvrez le tableau de bord : qui arrive, qui part, quelles chambres nettoyer et ce qui vous attend.
+
+- Arrivées, départs et chambres à nettoyer
+- Messages et brouillons de Lio en attente
+- Une chambre hors service se ferme sur tous les canaux Toutes les fonctionnalités
+Aujourd’hui 08:00
+Arrivées 6
+Départs 4
+Chambres à nettoyer 5
+Messages en attente 2
+Brouillons à valider 1
+
 ## Tout ce dont un hôtel a besoin
 Chaque module est connecté : pas d’outils séparés, pas de mots de passe multiples.
 
@@ -8800,6 +9546,7 @@ Prix de lancement (normalement 59 $ )
 - Suggestions de Lio chaque matin
 - Planning des chambres (calendrier des réservations)
 - Attestation d'hébergement pour visa (PDF)
+- Application iOS et Android
 Commencer avec Starter
 
 Le plus populaire
@@ -8819,7 +9566,6 @@ Prix de lancement (normalement 109 $ )
 - Analyses IA des avis et des messages
 - Check-in en ligne avec signature électronique
 - Vente de transferts, d'excursions et d'extras
-- Application mobile
 Commencer avec Pro
 
 ## Growth
@@ -9013,6 +9759,15 @@ Voyez d'un coup d'œil de quel canal provient chaque réservation. Réattribuez 
 ## Relié à la messagerie
 Les messages des clients ayant réservé via une OTA arrivent dans la boîte de réception de Lio, avec le client, la chambre et les dates à côté de chaque conversation.
 
+## Toute une saison d’un coup
+Choisissez une période, les types de chambre et les plans tarifaires, puis fixez le prix, le séjour minimum et maximum, la fermeture à l’arrivée, au départ ou l’arrêt des ventes. Cochez « week-ends uniquement » pour tarifer à part les nuits du vendredi et du samedi. Si un canal prend du retard, « renvoyer aux canaux » renvoie les tarifs et la disponibilité actuels.
+
+## Les chambres hors service se ferment seules
+Quand une chambre passe hors service à cause d’une panne, la disponibilité baisse sur tous les canaux connectés et la chambre ne peut plus être attribuée tant qu’elle n’est pas remise en service.
+
+## Reprenez vos réservations existantes
+Importez les réservations de votre ancien logiciel en CSV ou Excel. Les colonnes sont associées automatiquement, les doublons ignorés et les lignes posant problème listées avec la raison.
+
 ## Principaux canaux pris en charge
 La liste suit notre réseau de connexions certifiées. Un canal manque ? Contactez-nous.
 
@@ -9033,8 +9788,8 @@ A: Via Channex, Hostlio Pro se connecte à plus de 100 canaux, dont Booking.com,
 Q: Le channel manager est-il inclus dans tous les forfaits ?
 A: Oui. Starter, Pro et Growth incluent tous la synchronisation avec plus de 100 OTA. Growth y ajoute la synchronisation prioritaire.
 
-Q: Est-il difficile de quitter mon channel manager actuel ?
-A: Non. Créez vos types de chambres dans Hostlio Pro et associez vos comptes OTA via Channex. Notre équipe de prise en main vous accompagne pendant la transition.
+Q: Est-il difficile de quitter mon channel manager actuel ?
+A: Non. Créez vos types de chambre dans Hostlio Pro, importez vos réservations existantes depuis un fichier CSV ou Excel et associez vos comptes OTA via Channex. Notre équipe d’intégration vous accompagne pendant la transition.
 
 ---
 # Check-in en ligne avec signature électronique | Hostlio Pro
@@ -9064,6 +9819,9 @@ Comment fonctionne le check-in en ligne ? Hostlio Pro envoie à la personne qui 
 
 ## Lien sécurisé
 Un lien à jeton, propre à chaque réservation. Il n'ouvre que le formulaire de cette réservation.
+
+## Lien de check-in envoyé automatiquement par e-mail
+Activez-le et chaque nouvelle réservation avec une adresse e-mail reçoit le lien de check-in personnel, dans la langue du client. Vous choisissez les sources concernées : réservations directes, Booking.com, Expedia, Airbnb, Agoda ou autres OTA. Il reste désactivé tant que vous ne l’allumez pas.
 
 ## Scan du document sans conserver d'image
 La bande de lecture automatique du passeport ou de la carte d'identité est lue sur l'appareil du client. Seuls le nom, le numéro du document, la nationalité, la date de naissance et la date d'expiration sont enregistrés, jamais une photo du document. Les documents sans bande de lecture automatique sont saisis à la main.
@@ -9140,11 +9898,40 @@ Lio propose transferts aéroport et excursions pendant la conversation et transm
 ## Suggestions de Lio et analyses IA
 Chaque matin, Lio prépare des suggestions sur les prix, l'exploitation (chambres à nettoyer, demandes en attente), les réglages manquants et les opportunités de revenus. Rien ne change sans votre accord, et les suggestions de prix restent dans les limites que vous fixez. Avec Pro et Growth, les plaintes et compliments récurrents dans les avis et les messages sont aussi résumés.
 
-## Rapports et équipe
-Rapports d'occupation, ADR, RevPAR et performance par canal, avec un rapport hebdomadaire et mensuel par e-mail. Six rôles pour le personnel, chacun avec ses droits, et toutes les notifications au même endroit.
-
 ## Application mobile
 Gérez réservations, messages et check-ins hors de l'hôtel avec l'application iOS et Android.
+
+## Toute la journée depuis un seul tableau de bord
+En plus de la messagerie et de la distribution, voici les outils que votre équipe utilise chaque jour. Ils sont tous dans le tableau de bord web et inclus dans chaque forfait, sauf mention contraire.
+
+## Opérations du quotidien
+Écran Aujourd’hui Ouvrez le tableau de bord le matin : la journée est déjà prête. Arrivées, départs, chambres à nettoyer, messages en attente de réponse, brouillons de Lio à valider, demandes de réservation et avis auxquels répondre.
+
+Ménage (housekeeping) Chaque chambre a un statut : propre, sale, en maintenance ou hors service. Les départs du jour passent en premier, et une chambre où un client arrive le jour même est marquée prioritaire. Imprimez la liste de ménage du jour en PDF ; le personnel avec le rôle ménage ne voit que les chambres.
+
+Pannes et chambres hors service Signalez une panne avec jusqu’à cinq photos (les données de localisation sont supprimées), une catégorie et une priorité. Passez une chambre hors service et elle sort de la vente : la disponibilité baisse automatiquement sur vos canaux connectés, la chambre ne peut plus être attribuée et votre équipe est prévenue.
+
+Un planning qui suit votre croissance Pour les établissements plus grands : trois niveaux de densité, chambres regroupées par type ou par étage, nombre de chambres libres par jour, recherche de chambre libre et vues sur 7, 14 ou 30 jours. Le contrôle des conflits liste les réservations en double ou sans chambre, le planning propose une chambre libre du bon type, et les réservations se déplacent à la souris ou au clavier.
+
+Notifications et résumé du matin Réservations nouvelles, modifiées ou annulées, messages sans réponse, brouillons à valider, incidents de canal et pannes arrivent dans un seul centre de notifications, conservé 90 jours. L’application mobile envoie aussi un résumé de la journée à 08:00, heure de l’hôtel (sur Android aujourd’hui, sur iOS avec la prochaine mise à jour de l’application).
+
+## Revenus, tarifs et rapports
+Analyses Taux d’occupation, ADR, RevPAR, chiffre d’affaires, durée moyenne de séjour, annulations et no-shows, comparés à la période précédente. La vue à 30, 60 et 90 jours avec pickup montre ce qui est déjà réservé, et la vue par canal donne le revenu brut, la commission et le net de chaque OTA : vous savez lequel rapporte vraiment. Types de chambre, clients, extras et travail de Lio ont leurs propres onglets.
+
+Rapports Excel, PDF et par e-mail Exportez tous les onglets d’analyse vers Excel en un clic ou imprimez la vue ouverte en PDF ; votre comptable a les chiffres sans travail supplémentaire. Chaque lundi, un résumé hebdomadaire arrive dans la boîte du propriétaire, et le 1er de chaque mois un rapport mensuel avec pièces jointes CSV.
+
+Tarifs et restrictions Une seule grille pour chaque type de chambre et plan tarifaire : prix, séjour minimum et maximum, fermé à l’arrivée (CTA), fermé au départ (CTD), arrêt des ventes et disponibilité. Saisissez toute une saison d’un coup : choisissez la période, les types de chambre et les plans, et cochez « week-ends uniquement » pour tarifer à part les nuits du vendredi et du samedi. Si un canal se désynchronise, le bouton « renvoyer aux canaux » renvoie tout.
+
+Import de réservations Vous venez d’un autre logiciel ? Importez vos réservations depuis un fichier .csv, .xlsx ou .xls. Les colonnes sont associées automatiquement et vous pouvez les ajuster, le format de date est détecté ou choisi par vous, les doublons sont ignorés et chaque ligne non importée est listée avec la raison.
+
+## Équipe et contrôle
+Personnel, rôles et droits Invitez vos collègues par e-mail et donnez à chacun un rôle : propriétaire, manager, réception, ménage, comptabilité ou lecteur. Chacun ne voit que ce dont il a besoin : le ménage voit les chambres, la comptabilité ne voit pas les messages des clients. Suspendez un accès à tout moment. Starter inclut 3 utilisateurs, Pro 8 et Growth 20.
+
+Journal d’activité Qui a changé quoi, et quand : les modifications sont enregistrées champ par champ, avec l’ancienne et la nouvelle valeur, sans données personnelles des clients. Filtrez par personne, module, établissement ou date, remontez 365 jours en arrière et téléchargez le journal en CSV.
+
+Deux établissements avec Growth Passez d’un établissement à l’autre en un clic et voyez arrivées, départs, occupation et chiffre d’affaires des deux sur une seule page « Tous les établissements ». En ajoutant le second, copiez depuis le premier les règles, les réglages IA, les modèles de message et les notifications. Les deux partagent un même quota de messages IA.
+
+Tableau de bord en 6 langues Le tableau de bord, l’application mobile et le formulaire de check-in du client sont disponibles en français, anglais, turc, espagnol, italien et portugais : chacun dans l’équipe travaille dans sa langue.
 
 ## Fonctionnalités par forfait
 
@@ -9180,17 +9967,30 @@ Check-in en ligne et signature électronique Non Oui Oui
 
 Vente de transferts et d'excursions Non Oui Oui
 
-Application mobile iOS et Android Non Oui Oui
+Application mobile iOS et Android Oui Oui Oui
 
 Support prioritaire et appel de prise en main Non Non Oui
 
 Marque blanche Non Non Oui
+
+Analyses, export Excel et rapports hebdomadaires/mensuels par e-mail Oui Oui Oui
+E-mail automatique avec le lien de check-in (vous choisissez les sources de réservation) Non Oui Oui
+Vue « Tous les établissements » et changement d’établissement Non Non Oui
 
 Q: Qu'est-ce que Hostlio Pro ?
 A: Hostlio Pro est un logiciel de gestion hôtelière (PMS) propulsé par l'IA, conçu pour les hôtels indépendants, les hôtels boutique et les chambres d'hôtes. Il réunit sur une seule plateforme Lio, un assistant IA qui répond aux messages des clients 24 h/24 et 7 j/7 dans plus de 30 langues, un channel manager connecté à plus de 100 OTA, un calendrier de réservations en glisser-déposer et le check-in en ligne.
 
 Q: À quelles OTA Hostlio Pro est-il connecté ?
 A: Via Channex, Hostlio Pro se connecte à plus de 100 canaux, dont Booking.com, Airbnb, Expedia, Agoda, Trip.com, Hotels.com, Hotelbeds, Hostelworld et Google Hotels. Disponibilités, tarifs et réservations restent synchronisés sur l'ensemble de ces canaux.
+
+Q: Puis-je reprendre les réservations de mon logiciel actuel ?
+A: Oui. Exportez vos réservations depuis votre système actuel en CSV ou Excel, puis importez le fichier dans le tableau de bord. Les colonnes sont associées automatiquement, les doublons ignorés et chaque ligne posant problème est listée avec la raison. Connectez ensuite vos canaux : les nouvelles réservations des OTA arrivent alors toutes seules.
+
+Q: Puis-je limiter ce que voit chaque membre du personnel ?
+A: Oui. Chaque personne reçoit un rôle : propriétaire, manager, réception, ménage, comptabilité ou lecteur. Le ménage ne voit que les chambres, la comptabilité ne voit pas les messages des clients, et un journal d’activité enregistre qui a changé quoi. Starter inclut 3 utilisateurs, Pro 8 et Growth 20.
+
+Q: Quels rapports vais-je recevoir ?
+A: Tous les forfaits incluent des analyses d’occupation, d’ADR, de RevPAR, de chiffre d’affaires et d’annulations, une vue à 30/60/90 jours et le revenu par canal après commission. Vous pouvez exporter en Excel ou en PDF, et le propriétaire reçoit un résumé hebdomadaire chaque lundi et un rapport mensuel avec pièces jointes CSV.
 
 ---
 # Tarifs du logiciel hôtelier : dès 49 $/mois | Hostlio Pro
@@ -9218,6 +10018,7 @@ Prix de lancement (normalement 59 $ )
 - Suggestions de Lio chaque matin
 - Planning des chambres (calendrier des réservations)
 - Attestation d'hébergement pour visa (PDF)
+- Application iOS et Android
 Commencer avec Starter
 
 Le plus populaire
@@ -9237,7 +10038,6 @@ Prix de lancement (normalement 109 $ )
 - Analyses IA des avis et des messages
 - Check-in en ligne avec signature électronique
 - Vente de transferts, d'excursions et d'extras
-- Application mobile
 Commencer avec Pro
 
 ## Growth
@@ -9308,7 +10108,7 @@ Dans quelles langues Lio répond-il ? Lio répond dans plus de 30 langues, dont 
 
 À quels types d'hôtels s'adresse Hostlio Pro ? Aux établissements indépendants de 1 à 150 chambres : hôtels boutique, hôtels urbains, chambres d'hôtes, résidences hôtelières et auberges de jeunesse.
 
-Existe-t-il une application mobile ? Oui. Les forfaits Pro et Growth incluent une application iOS et Android. Gérez réservations, messages et check-ins hors de l'hôtel.
+Existe-t-il une application mobile ? Oui. Tous les forfaits, Starter compris, incluent l'application iOS et Android. Gérez réservations, messages et check-ins hors de l'hôtel.
 
 Comment fonctionne le check-in en ligne ? Les clients reçoivent un lien sécurisé personnel, scannent leur pièce d'identité avec leur téléphone (aucune image n'est conservée) et envoient avant leur arrivée leurs accompagnants et leur signature électronique. Disponible avec Pro et Growth.
 
@@ -9319,6 +10119,12 @@ Mes données sont-elles sécurisées ? Les données transitent par des connexion
 Combien de temps prend la mise en place ? Votre compte est prêt en quelques minutes. La plupart des hôtels connectent leurs canaux le jour même : ajoutez types de chambres et chambres, autorisez la connexion dans l’extranet de chaque OTA et associez les chambres. Le forfait Growth inclut un appel de prise en main personnalisé.
 
 Dans quelles langues le support est-il proposé ? Le support est assuré en anglais et en turc. Le tableau de bord, l'application mobile et le formulaire de check-in des clients sont disponibles en 6 langues : français, anglais, turc, espagnol, italien et portugais. Écrivez-nous à hello@hostliopro.com.
+
+Puis-je reprendre les réservations de mon logiciel actuel ? Oui. Exportez vos réservations depuis votre système actuel en CSV ou Excel, puis importez le fichier dans le tableau de bord. Les colonnes sont associées automatiquement, les doublons ignorés et chaque ligne posant problème est listée avec la raison. Connectez ensuite vos canaux : les nouvelles réservations des OTA arrivent alors toutes seules.
+
+Puis-je limiter ce que voit chaque membre du personnel ? Oui. Chaque personne reçoit un rôle : propriétaire, manager, réception, ménage, comptabilité ou lecteur. Le ménage ne voit que les chambres, la comptabilité ne voit pas les messages des clients, et un journal d’activité enregistre qui a changé quoi. Starter inclut 3 utilisateurs, Pro 8 et Growth 20.
+
+Quels rapports vais-je recevoir ? Tous les forfaits incluent des analyses d’occupation, d’ADR, de RevPAR, de chiffre d’affaires et d’annulations, une vue à 30/60/90 jours et le revenu par canal après commission. Vous pouvez exporter en Excel ou en PDF, et le propriétaire reçoit un résumé hebdomadaire chaque lundi et un rapport mensuel avec pièces jointes CSV.
 
 Q: Qu'est-ce que Hostlio Pro ?
 A: Hostlio Pro est un logiciel de gestion hôtelière (PMS) propulsé par l'IA, conçu pour les hôtels indépendants, les hôtels boutique et les chambres d'hôtes. Il réunit sur une seule plateforme Lio, un assistant IA qui répond aux messages des clients 24 h/24 et 7 j/7 dans plus de 30 langues, un channel manager connecté à plus de 100 OTA, un calendrier de réservations en glisser-déposer et le check-in en ligne.
@@ -9339,7 +10145,7 @@ Q: À quels types d'hôtels s'adresse Hostlio Pro ?
 A: Aux établissements indépendants de 1 à 150 chambres : hôtels boutique, hôtels urbains, chambres d'hôtes, résidences hôtelières et auberges de jeunesse.
 
 Q: Existe-t-il une application mobile ?
-A: Oui. Les forfaits Pro et Growth incluent une application iOS et Android. Gérez réservations, messages et check-ins hors de l'hôtel.
+A: Oui. Tous les forfaits, Starter compris, incluent l'application iOS et Android. Gérez réservations, messages et check-ins hors de l'hôtel.
 
 Q: Comment fonctionne le check-in en ligne ?
 A: Les clients reçoivent un lien sécurisé personnel, scannent leur pièce d'identité avec leur téléphone (aucune image n'est conservée) et envoient avant leur arrivée leurs accompagnants et leur signature électronique. Disponible avec Pro et Growth.
@@ -9355,6 +10161,15 @@ A: Votre compte est prêt en quelques minutes. La plupart des hôtels connectent
 
 Q: Dans quelles langues le support est-il proposé ?
 A: Le support est assuré en anglais et en turc. Le tableau de bord, l'application mobile et le formulaire de check-in des clients sont disponibles en 6 langues : français, anglais, turc, espagnol, italien et portugais. Écrivez-nous à hello@hostliopro.com.
+
+Q: Puis-je reprendre les réservations de mon logiciel actuel ?
+A: Oui. Exportez vos réservations depuis votre système actuel en CSV ou Excel, puis importez le fichier dans le tableau de bord. Les colonnes sont associées automatiquement, les doublons ignorés et chaque ligne posant problème est listée avec la raison. Connectez ensuite vos canaux : les nouvelles réservations des OTA arrivent alors toutes seules.
+
+Q: Puis-je limiter ce que voit chaque membre du personnel ?
+A: Oui. Chaque personne reçoit un rôle : propriétaire, manager, réception, ménage, comptabilité ou lecteur. Le ménage ne voit que les chambres, la comptabilité ne voit pas les messages des clients, et un journal d’activité enregistre qui a changé quoi. Starter inclut 3 utilisateurs, Pro 8 et Growth 20.
+
+Q: Quels rapports vais-je recevoir ?
+A: Tous les forfaits incluent des analyses d’occupation, d’ADR, de RevPAR, de chiffre d’affaires et d’annulations, une vue à 30/60/90 jours et le revenu par canal après commission. Vous pouvez exporter en Excel ou en PDF, et le propriétaire reçoit un résumé hebdomadaire chaque lundi et un rapport mensuel avec pièces jointes CSV.
 
 ---
 # À propos de Hostlio Pro
@@ -9604,7 +10419,7 @@ Les réservations Booking.com, Expedia et Airbnb apparaissent sur un seul planni
 Grâce au check-in en ligne et à la signature électronique, les clients reçoivent une boisson de bienvenue au lieu d’un formulaire.
 
 ## Quelle formule choisir ?
-Pour les hôtels boutique de 10 à 50 chambres, nous recommandons Pro  : 5 000 messages IA par mois, WhatsApp et messagerie des OTA (Booking.com, Airbnb, Expedia), check-in en ligne, vente de transferts et d’excursions et application iOS et Android.
+Pour les hôtels boutique de 10 à 50 chambres, nous recommandons Pro  : 5 000 messages IA par mois, WhatsApp et messagerie des OTA (Booking.com, Airbnb, Expedia), check-in en ligne et vente de transferts et d’excursions. L’application iOS et Android est incluse dans tous les forfaits.
 
 Pour comparer avec d’autres logiciels hôteliers, consultez notre comparatif des logiciels hôteliers .
 Voir les tarifs
@@ -9686,7 +10501,7 @@ Visites de la ville et transferts aéroport sont des extras courants en auberge�
 Les questions nocturnes n’attendent pas le matin ; l’équipe ne traite que ce qui demande une décision.
 
 ## Quelle formule choisir ?
-Pour les auberges à fort volume de messages, nous recommandons Pro avec 5 000 messages IA par mois. Préparons ensemble votre configuration au lit pendant la démo.
+Pour les auberges à fort volume de messages, nous recommandons Pro avec 5 000 messages IA par mois. Hostlio Pro gère la disponibilité par chambre et non par lit : il convient surtout aux auberges qui vendent principalement des chambres privées ou des chambres entières.
 
 Pour comparer avec d’autres logiciels hôteliers, consultez notre comparatif des logiciels hôteliers .
 Voir les tarifs
@@ -9695,7 +10510,7 @@ Q: Fonctionne-t-il avec Hostelworld ?
 A: Oui. Hostelworld fait partie des canaux connectés à Channex.
 
 Q: La vente au lit (dortoirs) est-elle prise en charge ?
-A: Cela dépend de votre configuration ; préparons ensemble la structure de vos chambres et de vos lits pendant la démo.
+A: Pas sous forme d’inventaire de lits séparé. Hostlio Pro gère la disponibilité par chambre : chaque type de chambre a un nombre d’unités et une capacité maximale, et une réservation occupe une chambre. Il convient aux auberges qui ont des chambres privées ; si l’essentiel de vos revenus vient de la vente de lits à l’unité en dortoir, vérifions ensemble en démo si une configuration par chambre fonctionne avec vos canaux avant de changer.
 
 Q: De combien de messages IA ai-je besoin ?
 A: Environ 150 réponses automatiques par jour représentent à peu près 4 500 messages par mois, ce qui correspond à la formule Pro.
@@ -10104,6 +10919,12 @@ Le contenu des messages est anonymisé à la fin de la durée que vous fixez (pa
 
 ## Rôles au sens du RGPD
 Pour les données des clients, votre hôtel est responsable du traitement et Hostlio Pro sous-traitant. Notre DPA fixe ces obligations et fait partie des Conditions d’utilisation.
+
+## Rôles et droits du personnel
+Six rôles (propriétaire, manager, réception, ménage, comptabilité, lecteur) avec des droits distincts, attribués par établissement. Le personnel de ménage ne voit que les chambres ; la comptabilité ne voit pas les messages des clients. L’export nécessite un droit spécifique et vous pouvez suspendre l’accès d’une personne à tout moment.
+
+## Journal d’activité
+Les modifications dans le tableau de bord sont enregistrées champ par champ : qui, quand, dans quel établissement, ancienne et nouvelle valeur. Les données personnelles des clients ne sont pas copiées dans le journal. Les entrées sont conservées 365 jours et peuvent être filtrées et téléchargées en CSV.
 
 ## Sous-traitants
 Sous-traitant Localisation Finalité

@@ -40,7 +40,7 @@ TYPES = {
          ("Ek gelir","Havalimanı transferi ve tur satışı butik otellerde önemli bir gelir kalemidir. Lio bu teklifleri doğru anda sunar."),
          ("Yoğun OTA trafiği","Booking.com, Expedia ve Airbnb'den gelen rezervasyonlar tek oda rafında, kanal renkleriyle görünür."),
          ("Hızlı check-in","Online check-in ve dijital imza sayesinde misafir lobide form doldurmak yerine hoş geldin içeceğini alır.")],
-  plan="10 ila 50 odalı butik oteller için <strong>Pro</strong> planı önerilir: aylık ⟦quota:pro⟧ AI mesajı, WhatsApp ve OTA gelen kutusu mesajlaşması (Booking.com, Airbnb, Expedia), online check-in, transfer ve tur satışı ile iOS ve Android uygulaması.",
+  plan="10 ila 50 odalı butik oteller için <strong>Pro</strong> planı önerilir: aylık ⟦quota:pro⟧ AI mesajı, WhatsApp ve OTA gelen kutusu mesajlaşması (Booking.com, Airbnb, Expedia), online check-in ile transfer ve tur satışı. iOS ve Android uygulaması tüm planlarda var.",
   faq=[("Butik otel için en iyi otel programı hangisi?","Seçim oda sayısına, misafir profiline ve bütçeye bağlıdır. Yabancı misafiri çok olan, sabit fiyat isteyen 10–50 odalı oteller için Hostlio Pro'nun AI mesajlaşması ve kanal yöneticisi iyi bir eşleşmedir. Diğer seçenekler için karşılaştırma sayfamıza bakın."),
        ("Hostlio Pro'yu mevcut web sitemle kullanabilir miyim?","Evet. Hostlio Pro mevcut web sitenizin yerine geçmez, onunla birlikte çalışır. Misafir mesajları WhatsApp ve OTA gelen kutularından (Booking.com, Airbnb, Expedia) tek panelde toplanır."),
        ("Kaç kullanıcı ekleyebilirim?","Starter'da 3, Pro'da 8, Growth'ta 20 kullanıcı. Her kişiye rolüne göre yetki verirsiniz (ör. resepsiyon, kat hizmetleri, muhasebe).")]),
@@ -72,9 +72,9 @@ TYPES = {
          ("Hostelworld ve OTA'lar","Hostelworld, Booking.com ve diğer kanallar tek müsaitlikle yönetilir."),
          ("Tur ve transfer","Şehir turu ve havalimanı transferi hostellerde yaygın ek gelirdir; Lio doğru anda sunar."),
          ("Gece vardiyası","Gece gelen sorular sabaha kalmaz; ekip yalnızca karar gerektiren konulara bakar.")],
-  plan="Mesaj trafiği yüksek hosteller için aylık ⟦quota:pro⟧ AI mesajı sunan <strong>Pro</strong> planı önerilir. Yatak bazlı kurulum detaylarını demo sırasında birlikte netleştirelim.",
+  plan="Mesaj trafiği yüksek hosteller için aylık ⟦quota:pro⟧ AI mesajı sunan <strong>Pro</strong> planı önerilir. Hostlio Pro müsaitliği yatak değil oda bazında yönetir; bu yüzden en çok özel oda ya da odanın tamamını satan hostellere uyar.",
   faq=[("Hostelworld ile çalışıyor mu?","Evet. Hostelworld, Channex'in bağlı kanalları arasındadır."),
-       ("Yatak bazlı (dorm) satış destekleniyor mu?","Kurulumunuza göre değişir; oda ve yatak yapınızı demo sırasında birlikte planlayalım."),
+       ("Yatak bazlı (dorm) satış destekleniyor mu?","Ayrı bir yatak envanteri olarak hayır. Hostlio Pro müsaitliği oda bazında yönetir: her oda tipinin oda sayısı ve en fazla kişi sayısı vardır, bir rezervasyon bir odayı tutar. Özel odaları olan hosteller için uygundur; gelirinizin çoğu ortak yatakhanelerde tek tek yatak satışından geliyorsa, geçmeden önce oda bazlı kurulumun kanallarınıza uyup uymadığını bir demoda birlikte kontrol edelim."),
        ("Kaç AI mesajı yeterli olur?","Günde ortalama 150 otomatik yanıt, aylık yaklaşık 4.500 mesaj eder; bu durumda Pro planı uygundur.")]),
 ],
 "en": [
@@ -106,7 +106,7 @@ TYPES = {
          ("Extra revenue","Airport transfers and tours matter for boutique hotels. Lio offers them at the right moment."),
          ("Heavy OTA traffic","Bookings from Booking.com, Expedia and Airbnb appear on one room rack, colour-coded by channel."),
          ("Fast check-in","With online check-in and a digital signature, guests get a welcome drink instead of a form.")],
-  plan="For boutique hotels with 10 to 50 rooms we recommend <strong>Pro</strong>: ⟦quota:pro⟧ AI messages a month, WhatsApp + OTA inbox messaging (Booking.com, Airbnb, Expedia), online check-in, transfer and tour sales and the iOS and Android app.",
+  plan="For boutique hotels with 10 to 50 rooms we recommend <strong>Pro</strong>: ⟦quota:pro⟧ AI messages a month, WhatsApp + OTA inbox messaging (Booking.com, Airbnb, Expedia), online check-in, and transfer and tour sales. The iOS and Android app is included in every plan.",
   faq=[("What is the best software for a boutique hotel?","It depends on room count, guest profile and budget. For 10–50 room hotels with many international guests that want flat pricing, Hostlio Pro's AI messaging and channel manager are a good fit. See our comparison page for other options."),
        ("Can I use Hostlio Pro with my existing website?","Yes. Hostlio Pro works alongside your existing website rather than replacing it. Guest messages from WhatsApp and OTA inboxes (Booking.com, Airbnb, Expedia) come together in one dashboard."),
        ("How many users can I add?","Starter includes 3 users, Pro 8 and Growth 20. Each person gets a role with matching permissions (for example front desk, housekeeping or accounting).")]),
@@ -138,9 +138,9 @@ TYPES = {
          ("Hostelworld and OTAs","Hostelworld, Booking.com and other channels share one availability."),
          ("Tours and transfers","City tours and airport transfers are common extras in hostels; Lio offers them at the right moment."),
          ("Night shift","Night-time questions don't wait until morning; staff only handle what needs a decision.")],
-  plan="For high-volume hostels we recommend <strong>Pro</strong> with ⟦quota:pro⟧ AI messages a month. Let's plan your bed-based setup together during the demo.",
+  plan="For high-volume hostels we recommend <strong>Pro</strong> with ⟦quota:pro⟧ AI messages a month. Hostlio Pro manages availability by room, not by bed, so it fits hostels that mainly sell private rooms or whole rooms best.",
   faq=[("Does it work with Hostelworld?","Yes. Hostelworld is among Channex's connected channels."),
-       ("Is bed-based (dorm) selling supported?","It depends on your setup; let's plan your room and bed structure together during the demo."),
+       ("Is bed-based (dorm) selling supported?","Not as a separate bed inventory. Hostlio Pro manages availability by room: each room type has a number of units and a maximum occupancy, and one reservation holds one room. It suits hostels with private rooms; if most of your revenue comes from selling single beds in shared dorms, let's check in a demo whether a room-based setup works with your channels before you switch."),
        ("How many AI messages do I need?","About 150 automatic replies a day is roughly 4,500 a month, which fits the Pro plan.")]),
 ]}
 
@@ -161,8 +161,12 @@ def type_page(L, d):
 <h2 style="margin-top:64px">{plan_h}</h2><p class="lead" style="font-size:var(--t-0)">{d["plan"]}</p>
 <p>{cmp_t}</p><div class="cta-row">{btn(pv["see_pricing"], U("pricing"), "ghost")}</div>
 </div></section>'''
+    # SEO S7: segmente özgü ek bölümler ve SSS (derin_sayfalar.TYPE_MORE; yoksa boş)
+    import derin_sayfalar as DS
+    more, more_faq = DS.type_more(L, d["key"])
+    body += more
     return {"key": d["key"], "title": d["title"], "desc": d["desc"], "trail": [(d["crumb"], U(d["key"]))],
-            "body": body, "faq": d["faq"], "preload_img": f"/assets/img/{im[0]}.webp", "schema": [software_schema(L)]}
+            "body": body, "faq": d["faq"] + more_faq, "preload_img": f"/assets/img/{im[0]}.webp", "schema": [software_schema(L)]}
 
 # ------------------------------------------------------------------ comparison
 CMP_SOURCES = [

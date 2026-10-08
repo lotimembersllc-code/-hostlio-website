@@ -170,13 +170,13 @@ LIO_DO = {
          "Potete venirci a prendere in aeroporto? Atterriamo all’una.","Certo, il transfer privato fino a 3 persone costa 35 €. Lo aggiungo?","Transfer aeroporto","+35 €"),
    sug=("Ogni mattina ti suggerisce","Suggerimenti quotidiani su prezzi, operatività e opportunità di ricavo. Nulla cambia senza la tua approvazione.","Tutti i piani",
         "Suggerimenti di Lio","Sabato all’85%","Alza la tariffa del 10%","Approva","Salta","2 camere da pulire","Pronte prima degli arrivi delle 14:00","I suggerimenti sui prezzi restano nei tuoi limiti.")),
- "pt": dict(h='A Lio não só <em class="hl">responde</em>', p="Enquanto conversa com os hóspedes, a Lio recebe pedidos de reserva e vende extras, e toda manhã traz sugestões para você. A palavra final é sempre sua.",
+ "pt": dict(h='O Lio não só <em class="hl">responde</em>', p="Enquanto conversa com os hóspedes, o Lio recebe pedidos de reserva e vende extras, e toda manhã traz sugestões para você. A palavra final é sempre sua.",
    book=("Recebe reservas","No WhatsApp, pergunta datas, hóspedes e quarto e informa o preço com base nas suas tarifas. Vira reserva quando você aprova.","Pro e Growth",
          "Oi! Tem quarto para 2 de 17 a 19 de outubro?","Tem sim! Duplo com vista para o mar, 240 € no total por 2 noites. Vou passar seu pedido para o hotel.","Pedido de reserva · aguardando sua aprovação"),
    sell=("Vende extras","Oferece transfers, passeios e serviços extras na hora certa e repassa o pedido para a sua equipe.","Pro e Growth",
          "Vocês podem nos buscar no aeroporto? Chegamos à 1h.","Claro, o transfer privativo para até 3 pessoas custa 35 €. Posso incluir?","Transfer do aeroporto","+35 €"),
    sug=("Sugere toda manhã","Sugestões diárias sobre preços, operação e oportunidades de receita. Nada muda sem sua aprovação.","Todos os planos",
-        "Sugestões da Lio","Sábado com 85% de ocupação","Aumente a tarifa em 10%","Aprovar","Pular","2 quartos para limpar","Prontos antes dos check-ins das 14h","As sugestões de preço respeitam seus limites.")),
+        "Sugestões do Lio","Sábado com 85% de ocupação","Aumente a tarifa em 10%","Aprovar","Pular","2 quartos para limpar","Prontos antes dos check-ins das 14h","As sugestões de preço respeitam seus limites.")),
 }
 
 def lio_strip(L):
@@ -241,10 +241,15 @@ def home(L, plans_html, FAQ_CORE):
     sig = '<svg viewBox="0 0 120 40" fill="none" aria-hidden="true"><path d="M4 30c10-18 18-22 20-12s-6 14 2 6 14-20 18-12-4 16 4 10 12-12 18-6 6 8 14 2 10-8 16-6" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>'
     fields = "".join(f'<div class="field"><span>{a}</span><div>{b}</div></div>' for a,b in t["ci_f"])
     ci_ui = f'<div class="ui"><div class="ui-top">{t["ci_top"][0]}<span>{t["ci_top"][1]}</span></div><div class="ui-body" aria-hidden="true">{fields}<div class="field"><span>{t["ci_sig"]}</span><div class="sig">{sig}</div></div></div></div>'
-    visuals = [inbox, room_rack(L), chan_ui, ci_ui]
-    grads = ["g-lilac","g-sky","g-mint","g-peach"]; icons_ = ["chats-circle","calendar-dots","arrows-left-right","identification-card"]; ids = "mtkc"
-    tabs = "".join(f'<button class="tab" role="tab" id="tab-{ids[i]}" aria-controls="st-{ids[i]}" aria-selected="{"true" if i==0 else "false"}"{"" if i==0 else TI}>{icon(icons_[i])}{t["tabs"][i]}</button>' for i in range(4))
-    stages = "".join(f'<div class="stage {grads[i]}" role="tabpanel" id="st-{ids[i]}" aria-labelledby="tab-{ids[i]}"{"" if i==0 else HID}><div><h3>{h}</h3><p>{p}</p>{chk(li)}{more(k,m)}</div>{visuals[i]}</div>' for i,(h,p,li,k,m) in enumerate(t["st"]))
+    # Gap #7 (8 Ekim): ürün turunun 5. sekmesi "Bugün" — metin ozellik_ekleri.FX[L]["today"]
+    import ozellik_ekleri as FXM
+    td, today_ui = FXM.today_stage(L, icon)
+    visuals = [inbox, room_rack(L), chan_ui, ci_ui, today_ui]
+    tab_names = list(t["tabs"]) + [td["tab"]]
+    st_rows = list(t["st"]) + [(td["h"], td["p"], td["li"], "features", td["more"])]
+    grads = ["g-lilac","g-sky","g-mint","g-peach","g-sky"]; icons_ = ["chats-circle","calendar-dots","arrows-left-right","identification-card","check"]; ids = "mtkcb"
+    tabs = "".join(f'<button class="tab" role="tab" id="tab-{ids[i]}" aria-controls="st-{ids[i]}" aria-selected="{"true" if i==0 else "false"}"{"" if i==0 else TI}>{icon(icons_[i])}{tab_names[i]}</button>' for i in range(len(tab_names)))
+    stages = "".join(f'<div class="stage {grads[i]}" role="tabpanel" id="st-{ids[i]}" aria-labelledby="tab-{ids[i]}"{"" if i==0 else HID}><div><h3>{h}</h3><p>{p}</p>{chk(li)}{more(k,m)}</div>{visuals[i]}</div>' for i,(h,p,li,k,m) in enumerate(st_rows))
     tour = f'''<section><div class="wrap"><div class="section-head center rv"><h2>{t["tour_h"]}</h2><p>{t["tour_p"]}</p></div>
 <div class="tabs" role="tablist" aria-label="{t["tour_label"]}" style="justify-content:center">{tabs}</div>{stages}</div></section>'''
 

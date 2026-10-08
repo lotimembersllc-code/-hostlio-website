@@ -27,12 +27,12 @@ MEGA = {"btn":"Produto","cols":[
    ("Hóspedes",[("ai","sparkle","Assistente de IA Lio","Respostas 24/7 aos hóspedes em 30+ idiomas"),("checkin","identification-card","Check-in online","Documento, acompanhantes e assinatura digital")]),
    ("Distribuição",[("channel","arrows-left-right","Channel manager","100+ OTAs em um só calendário"),("features","calendar-dots","Mapa de reservas","Calendário de reservas com arrastar e soltar")]),
    ("Operação",[("features","van","Transfers e passeios","Receita extra enquanto você conversa"),("features","device-mobile","App móvel","iOS e Android, gestão de qualquer lugar")]),
-   ("Por tipo de hospedagem",[("t-boutique","sparkle","Hotéis boutique","Hotéis de 10 a 50 quartos"),("t-guesthouse","users-three","Pousadas","Hospedagens de 1 a 10 quartos"),("t-apart","calendar-dots","Apart-hotéis","Apartamentos e suítes"),("t-hostel","globe-simple","Hostels","Venda por cama")]),
+   ("Por tipo de hospedagem",[("t-boutique","sparkle","Hotéis boutique","Hotéis de 10 a 50 quartos"),("t-guesthouse","users-three","Pousadas","Hospedagens de 1 a 10 quartos"),("t-apart","calendar-dots","Apart-hotéis","Apartamentos e suítes"),("t-hostel","globe-simple","Hostels","Viajantes de vários idiomas")]),
   ],"feat":("pricing","Compare os planos","A partir de ⟦price:starter⟧ por mês, 7 dias grátis")}
 
 # ------------------------------------------------------------------ build.software_schema / room_rack / 404
 SOFT_DESC = "Sistema para hotel com inteligência artificial para hotéis independentes: mensagens com hóspedes 24/7 em 30+ idiomas, channel manager com 100+ OTAs, calendário de reservas e check-in online."
-SOFT_FEATURES = ["Assistente de IA Lio para hóspedes (30+ idiomas)", "Channel manager (conexões certificadas com 100+ OTAs)", "Calendário de reservas com arrastar e soltar", "Check-in online com leitura do documento (sem guardar imagens) e assinatura digital", "Declaração de hospedagem para visto (PDF)", "Venda de transfers e passeios", "Sugestões da Lio: recomendações diárias de preços e operação (com aprovação)", "Pedidos de reserva e serviços extras pela Lio no WhatsApp (com aprovação)", "Insights de IA sobre avaliações e mensagens de hóspedes", "Relatórios de ocupação, ADR, RevPAR e desempenho por canal", "App móvel para iOS e Android"]
+SOFT_FEATURES = ["Assistente de IA Lio para hóspedes (30+ idiomas)", "Channel manager (conexões certificadas com 100+ OTAs)", "Calendário de reservas com arrastar e soltar", "Check-in online com leitura do documento (sem guardar imagens) e assinatura digital", "Declaração de hospedagem para visto (PDF)", "Venda de transfers e passeios", "Sugestões do Lio: recomendações diárias de preços e operação (com aprovação)", "Pedidos de reserva e serviços extras pelo Lio no WhatsApp (com aprovação)", "Insights de IA sobre avaliações e mensagens de hóspedes", "Relatórios de ocupação, ADR, RevPAR e desempenho por canal", "App móvel para iOS e Android"]
 DAYS = ["Seg","Ter","Qua","Qui","Sex","Sáb","Dom"]
 RACK = ("Mapa de reservas", "Setembro, semana 3", "Reservas com cores por canal: Booking.com em azul, Airbnb em pêssego, Expedia em lilás, Agoda em areia, diretas em verde")
 NOTFOUND = ("Página não encontrada | Hostlio Pro",
@@ -133,7 +133,7 @@ def types(U):
          ("Receita extra","Transfers do aeroporto e passeios fazem diferença para hotéis boutique. Lio oferece esses serviços no momento certo."),
          ("Muito tráfego das OTAs","Reservas do Booking.com, da Expedia e do Airbnb aparecem em um só mapa de reservas, com cores por canal."),
          ("Check-in rápido","Com check-in online e assinatura digital, o hóspede recebe um drinque de boas-vindas em vez de um formulário.")],
-  plan="Para hotéis boutique de 10 a 50 quartos, recomendamos o <strong>Pro</strong>: ⟦quota:pro⟧ mensagens de IA por mês, WhatsApp e caixas de entrada das OTAs (Booking.com, Airbnb, Expedia), check-in online, venda de transfers e passeios e o app para iOS e Android.",
+  plan="Para hotéis boutique de 10 a 50 quartos, recomendamos o <strong>Pro</strong>: ⟦quota:pro⟧ mensagens de IA por mês, WhatsApp e caixas de entrada das OTAs (Booking.com, Airbnb, Expedia), check-in online e venda de transfers e passeios. O app para iOS e Android está incluído em todos os planos.",
   faq=[("Qual é o melhor sistema para hotel boutique?","Depende do número de quartos, do perfil dos hóspedes e do orçamento. Para hotéis de 10 a 50 quartos com muitos hóspedes estrangeiros e que querem preço fixo, as mensagens por IA e o channel manager do Hostlio Pro são uma boa escolha. Veja nossa página de comparativo para outras opções."),
        ("Posso usar o Hostlio Pro com o site que já tenho?","Sim. O Hostlio Pro funciona ao lado do seu site atual; as reservas das OTAs são sincronizadas e as mensagens de hóspedes do WhatsApp e das OTAs chegam a uma só caixa de entrada."),
        ("Quantos usuários posso adicionar?","O Starter inclui 3 usuários, o Pro 8 e o Growth 20. Cada pessoa recebe uma função com as permissões correspondentes (por exemplo, recepção, governança ou financeiro).")]),
@@ -165,9 +165,9 @@ def types(U):
          ("Hostelworld e OTAs","Hostelworld, Booking.com e outros canais compartilham uma só disponibilidade."),
          ("Passeios e transfers","City tours e transfers do aeroporto são extras comuns em hostels; Lio oferece no momento certo."),
          ("Turno da noite","Perguntas feitas à noite não esperam até de manhã; a equipe só cuida do que exige uma decisão.")],
-  plan="Para hostels com grande volume, recomendamos o <strong>Pro</strong>, com ⟦quota:pro⟧ mensagens de IA por mês. Vamos planejar juntos a sua configuração por cama durante a demonstração.",
+  plan="Para hostels com grande volume, recomendamos o <strong>Pro</strong>, com ⟦quota:pro⟧ mensagens de IA por mês. O Hostlio Pro gerencia a disponibilidade por quarto, não por cama, então combina melhor com hostels que vendem principalmente quartos privativos ou quartos inteiros.",
   faq=[("Funciona com o Hostelworld?","Sim. O Hostelworld está entre os canais conectados ao Channex."),
-       ("A venda por cama (dormitório) é suportada?","Depende da sua configuração; vamos planejar juntos a estrutura de quartos e camas durante a demonstração."),
+       ("A venda por cama (dormitório) é suportada?","Não como um inventário separado de camas. O Hostlio Pro gerencia a disponibilidade por quarto: cada tipo de quarto tem um número de unidades e uma ocupação máxima, e uma reserva ocupa um quarto. Funciona bem para hostels com quartos privativos; se a maior parte da sua receita vem da venda de camas avulsas em dormitórios, vamos verificar numa demonstração se uma configuração por quarto funciona com seus canais antes de migrar."),
        ("De quantas mensagens de IA eu preciso?","Cerca de 150 respostas automáticas por dia dão aproximadamente 4.500 por mês, o que se encaixa no plano Pro.")]),
     ]
 
