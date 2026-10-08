@@ -4,14 +4,29 @@
   function onScroll(){if(hdr)hdr.classList.toggle('scrolled',window.scrollY>8)}
   window.addEventListener('scroll',onScroll,{passive:true});onScroll();
 
-  // mobile menu
+  // mobile menu (Q2): açılınca odak ilk menü öğesine gider, odak başlık içinde döner, etiket Aç/Kapat olur,
+  // dışarı dokununca ya da Escape ile kapanır, arka sayfa kaymaz, kapanınca odak düğmeye döner
   var t=d.querySelector('.menu-toggle'),n=d.getElementById('nav-links');
-  if(t&&n){t.addEventListener('click',function(){var o=n.classList.toggle('open');t.setAttribute('aria-expanded',o)})}
+  function menuOpen(){return !!(n&&n.classList.contains('open'))}
+  function setMenu(o,back){if(!t||!n)return;n.classList.toggle('open',o);t.setAttribute('aria-expanded',o);
+    if(t.dataset.open)t.setAttribute('aria-label',o?t.dataset.close:t.dataset.open);root.classList.toggle('menu-open',o);
+    if(o){var f=n.querySelector('a[href],button');if(f)f.focus()}else{closeMega();if(back)t.focus()}}
+  function hdrFocusables(){return [].slice.call(hdr.querySelectorAll('a[href],button:not([disabled])')).filter(function(x){return x.offsetWidth||x.offsetHeight||x.getClientRects().length})}
+  if(t&&n){
+    t.addEventListener('click',function(){setMenu(!menuOpen(),false)});
+    d.addEventListener('click',function(e){if(menuOpen()&&!hdr.contains(e.target))setMenu(false,false)});
+    d.addEventListener('keydown',function(e){if(e.key!=='Tab'||!menuOpen())return;var f=hdrFocusables();if(!f.length)return;
+      var i=f.indexOf(d.activeElement);
+      if(e.shiftKey&&i<=0){e.preventDefault();f[f.length-1].focus()}else if(!e.shiftKey&&(i===-1||i===f.length-1)){e.preventDefault();f[0].focus()}});
+    // masaüstü genişliğine geçilirse kilit kalmasın
+    if(window.matchMedia){var mq=matchMedia('(min-width:1041px)');var mqf=function(){if(mq.matches&&menuOpen())setMenu(false,false)};if(mq.addEventListener)mq.addEventListener('change',mqf)}
+  }
   // mega menu
   var mb=d.querySelector('.mega-btn'),mg=d.getElementById('mega');
   function closeMega(){if(mb&&mg){mg.hidden=true;mb.setAttribute('aria-expanded','false')}}
   if(mb&&mg){
-    mb.addEventListener('click',function(e){e.stopPropagation();var open=mg.hidden;mg.hidden=!open;mb.setAttribute('aria-expanded',open)});
+    // Q3: mega açılırken dil menüsü kapanır (dil menüsü açılırken mega zaten kapanıyordu)
+    mb.addEventListener('click',function(e){e.stopPropagation();var open=mg.hidden;mg.hidden=!open;mb.setAttribute('aria-expanded',open);if(open)closeLang()});
     d.addEventListener('click',function(e){if(!mg.hidden&&!mg.contains(e.target))closeMega()});
   }
   // language menu
@@ -22,9 +37,10 @@
     d.addEventListener('click',function(e){if(!lm.hidden&&!lm.contains(e.target))closeLang()});
   }
   d.addEventListener('keydown',function(e){if(e.key!=='Escape')return;
-    if(lm&&!lm.hidden){closeLang();lb.focus()}
-    if(mg&&!mg.hidden){closeMega();mb.focus()}
-    if(n&&n.classList.contains('open')){n.classList.remove('open');t.setAttribute('aria-expanded','false');t.focus()}});
+    // en içteki açık katman kapanır: dil menüsü → mega → mobil menü
+    if(lm&&!lm.hidden){closeLang();lb.focus();return}
+    if(mg&&!mg.hidden){closeMega();mb.focus();return}
+    if(menuOpen())setMenu(false,true)});
 
   // showcase tabs
   d.querySelectorAll('[role="tablist"]').forEach(function(list){

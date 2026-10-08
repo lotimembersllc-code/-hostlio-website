@@ -104,6 +104,10 @@ ROUTES["privacy"]["en"] = "/en/privacy/"; ROUTES["terms"]["en"] = "/en/terms/"; 
 ROUTES["security"] = {"tr": "/tr/guvenlik-ve-veri/", "en": "/en/security/", "es": "/es/seguridad/", "it": "/it/sicurezza/", "pt": "/pt/seguranca/", "fr": "/fr/securite/"}
 ROUTES["dpa"] = {"en": "/en/dpa/"}
 ROUTES["roi"] = {"tr": "/tr/roi-hesaplayici/", "en": "/en/roi-calculator/", "es": "/es/calculadora-roi/", "it": "/it/calcolatore-roi/", "pt": "/pt/calculadora-roi/", "fr": "/fr/calculateur-roi/"}
+# Q2: mobil menü düğmesinin açık/kapalı etiketi; Q1: footer'daki panel girişi; Q9: footer check-in etiketi
+MENU_CLOSE = {"tr": "Menüyü kapat", "en": "Close menu", "es": "Cerrar menú", "it": "Chiudi il menu", "pt": "Fechar menu", "fr": "Fermer le menu"}
+FOOT_LOGIN = {"tr": "Panele giriş", "en": "Log in to dashboard", "es": "Acceso al panel", "it": "Accedi al pannello", "pt": "Entrar no painel", "fr": "Connexion au tableau de bord"}
+CHECKIN_LABEL = {"tr": "Online check-in", "en": "Online check-in", "es": "Check-in online", "it": "Check-in online", "pt": "Check-in online", "fr": "Check-in en ligne"}
 ROI_LABEL = {"tr": "Tasarruf hesaplayıcı", "en": "ROI calculator", "es": "Calculadora de ROI", "it": "Calcolatore ROI", "pt": "Calculadora de ROI", "fr": "Calculateur de ROI"}
 def url(key, lang): return ROUTES[key].get(lang) or ROUTES["blog"][lang]
 def demo_url(lang): return DEMO_URL or url("contact", lang)
@@ -464,7 +468,7 @@ def layout(page, lang):
 <meta name="theme-color" content="#1B2B4B">
 <link rel="icon" href="/assets/favicon.svg" type="image/svg+xml">
 <link rel="apple-touch-icon" href="/assets/apple-touch-icon.png">
-{font_preloads(lang)}<link rel="stylesheet" href="{asset('/assets/style.css')}">
+{font_preloads(lang, body)}<link rel="stylesheet" href="{asset('/assets/style.css')}">
 {head_extra}<script type="application/ld+json">{ld}</script>
 </head>
 <body>
@@ -474,12 +478,13 @@ def layout(page, lang):
 <ul class="nav-links" id="nav-links">
 <li><button type="button" class="mega-btn" aria-expanded="false" aria-controls="mega">{MEGA[lang]["btn"]}{icon("caret-down","caret")}</button>{mega_html(lang)}</li>
 {nav}
+<li class="nav-login"><a href="{LOGIN_URL}">{u["login"]}{icon("arrow-up-right")}</a></li>
 </ul>
 <div class="nav-end">
 {lang_menu(key, lang)}
 <a class="login" href="{LOGIN_URL}">{u["login"]}</a>
 {btn(u["trial"], SIGNUP_URL)}
-<button class="menu-toggle" aria-expanded="false" aria-controls="nav-links" aria-label="{u["menu"]}"><span></span></button>
+<button type="button" class="menu-toggle" aria-expanded="false" aria-controls="nav-links" aria-label="{u["menu"]}" data-open="{u["menu"]}" data-close="{MENU_CLOSE[lang]}"><span></span></button>
 </div></div></header>
 <main id="main">
 {crumbs}
@@ -492,7 +497,7 @@ def layout(page, lang):
 <li><a href="{url("features",lang)}">{dict(u["nav"])["features"]}</a></li>
 <li><a href="{url("ai",lang)}">{dict(u["nav"])["ai"]}</a></li>
 <li><a href="{url("channel",lang)}">{dict(u["nav"])["channel"]}</a></li>
-<li><a href="{url("checkin",lang)}">Online check-in</a></li>
+<li><a href="{url("checkin",lang)}">{CHECKIN_LABEL[lang]}</a></li>
 <li><a href="{url("pricing",lang)}">{dict(u["nav"])["pricing"]}</a></li></ul></div>
 <div><h2>{u["foot_sol"]}</h2><ul>
 <li><a href="{url("t-boutique",lang)}">{u["sol"][0]}</a></li>
@@ -508,7 +513,8 @@ def layout(page, lang):
 <div><h2>{u["foot_company"]}</h2><ul>
 <li><a href="{url("about",lang)}">{u["foot_about"]}</a></li>
 <li><a href="{url("contact",lang)}">{u["foot_contact"]}</a></li>
-<li><a href="{url("security",lang)}">{SEC_LABEL[lang]}</a></li></ul></div>
+<li><a href="{url("security",lang)}">{SEC_LABEL[lang]}</a></li>
+<li><a href="{LOGIN_URL}">{FOOT_LOGIN[lang]}</a></li></ul></div>
 </div>
 <div class="foot-bottom"><span>© {year} Hostlio Pro, Loti Members LLC. {u["rights"]}</span><span class="legal"><a href="{url("privacy",lang)}">{u["privacy"]}</a><a href="{url("terms",lang)}">{u["terms"]}</a><a href="{url("delacc",lang)}">{u["delacc"]}</a><a href="{url("dpa","en")}" hreflang="en">DPA</a></span><span>2108 N ST STE N, Sacramento, CA 95816</span></div>
 </div></footer>
@@ -519,9 +525,19 @@ def layout(page, lang):
 </html>'''
     return finish(doc, lang)
 
-def font_preloads(lang):
-    """D7: Türkçe sayfalarda ğ/ş/İ latin-ext dosyasında ⇒ o dosya da önceden yüklenir."""
+_LATIN_EXT = re.compile(r"[\u0100-\u0130\u0132-\u0151\u0154-\u02BA]")
+def font_preloads(lang, body=None):
+    """D7: Türkçe sayfalarda ğ/ş/İ latin-ext dosyasında ⇒ o dosya da önceden yüklenir.
+    Q4 (CLS): H1'de italik vurgu (em.hl) varsa italik dosya da önceden yüklenir; yoksa italik metin
+    geç gelir ve başlık yeniden sarılıp hero'yu aşağı iter. latin-ext italik yalnız vurgu metni gerektiriyorsa."""
     files = ["instrument-sans-latin-wght-normal.woff2"] + (["instrument-sans-latin-ext-wght-normal.woff2"] if lang == "tr" else [])
+    h1 = re.search(r"<h1[^>]*>(.*?)</h1>", body or "", re.S)
+    if h1:
+        ems = re.findall(r'<em class="hl">(.*?)</em>', h1.group(1), re.S)
+        if ems:
+            files.append("instrument-sans-latin-wght-italic.woff2")
+            if any(_LATIN_EXT.search(html.unescape(e)) for e in ems):
+                files.append("instrument-sans-latin-ext-wght-italic.woff2")
     return "".join(f'<link rel="preload" href="/assets/fonts/{f}" as="font" type="font/woff2" crossorigin>\n' for f in files)
 
 def analytics_head():
