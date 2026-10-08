@@ -1,5 +1,5 @@
 """Home page (v3, brand visuals) shared by TR and EN."""
-from build import icon, logo, btn, room_rack, url, SIGNUP_URL, EMAIL, software_schema, LANGMOD
+from build import store_badges, icon, logo, btn, room_rack, url, SIGNUP_URL, EMAIL, software_schema, LANGMOD
 
 IMG = "/assets/img/"
 TI = ' tabindex="-1"'
@@ -259,7 +259,7 @@ def home(L, plans_html, FAQ_CORE):
 <a class="card" href="{U("features")}"><span class="ci">{icon("file-pdf")}</span><h3>{pdf[0]}</h3><p>{pdf[1]}</p><div class="vis pdf" aria-hidden="true"><div class="ph">{pdf[2]}<span>{pdf[3]}</span></div><i class="m"></i><i></i><i class="s"></i></div></a>
 <a class="card peach" href="{U("features")}"><span class="ci">{icon("van")}</span><h3>{tr[0]}</h3><p>{tr[1]}</p><div class="vis price-chip" aria-hidden="true">{tr[2]}<b>{tr[3]}</b></div></a>
 <a class="card" href="{U("ai")}"><span class="ci">{icon("translate")}</span><h3>{lang[0]}</h3><p>{lang[1]}</p><div class="vis langs" aria-hidden="true"><span>Türkçe</span><span>English</span><span lang="de">Deutsch</span><span lang="ar">العربية</span><span lang="ru">Русский</span><span lang="ja">日本語</span><span lang="zh">中文</span><span lang="fr">Français</span></div></a>
-<a class="card photo" href="{U("features")}">{img("brand-phone","")}<div class="txt"><h3>{mob[0]}</h3><p>{mob[1]}</p></div></a>
+<div class="card photo app-card">{img("brand-phone","")}<div class="txt"><h3>{mob[0]}</h3><p>{mob[1]}</p>{store_badges(L)}</div></div>
 </div></div></section>'''
 
     tkeys = ["t-boutique","t-hostel","t-guesthouse","t-apart"]

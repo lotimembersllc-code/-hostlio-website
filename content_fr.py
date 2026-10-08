@@ -1,4 +1,4 @@
-from build import btn, icon, logo, url, room_rack, channel_strip, faq_block, SIGNUP_URL, EMAIL, UPDATED, CHECK, software_schema, SITE, PLANS
+from build import store_badges, btn, icon, logo, url, room_rack, channel_strip, faq_block, SIGNUP_URL, EMAIL, UPDATED, CHECK, software_schema, SITE, PLANS
 L = "fr"
 def U(k): return url(k, L)
 
@@ -174,7 +174,7 @@ def features():
 <div class="row"><h3>Vente de transferts et d'excursions</h3><div><p>Lio propose transferts aéroport et excursions pendant la conversation et transmet la demande à votre équipe.</p></div></div>
 <div class="row"><h3>Suggestions de Lio et analyses IA</h3><div><p>Chaque matin, Lio prépare des suggestions sur les prix, l'exploitation (chambres à nettoyer, demandes en attente), les réglages manquants et les opportunités de revenus. Rien ne change sans votre accord, et les suggestions de prix restent dans les limites que vous fixez. Avec Pro et Growth, les plaintes et compliments récurrents dans les avis et les messages sont aussi résumés.</p></div></div>
 <div class="row"><h3>Rapports et équipe</h3><div><p>Rapports d'occupation, ADR, RevPAR et performance par canal, avec un rapport hebdomadaire et mensuel par e-mail. Six rôles pour le personnel, chacun avec ses droits, et toutes les notifications au même endroit.</p></div></div>
-<div class="row"><h3>Application mobile</h3><div><p>Gérez réservations, messages et check-ins hors de l'hôtel avec l'application iOS et Android.</p></div></div>
+<div class="row"><h3>Application mobile</h3><div><p>Gérez réservations, messages et check-ins hors de l'hôtel avec l'application iOS et Android.</p>{store_badges("fr")}</div></div>
 </div></div></section>
 <section><div class="wrap"><div class="section-head"><h2>Fonctionnalités par forfait</h2></div>
 <div class="table-wrap"><table><thead><tr><th>Fonctionnalité</th><th class="c">Starter</th><th class="c">Pro</th><th class="c">Growth</th></tr></thead><tbody>

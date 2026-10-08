@@ -1,4 +1,4 @@
-from build import btn, icon, logo, url, room_rack, channel_strip, faq_block, SIGNUP_URL, EMAIL, UPDATED, CHECK, software_schema, SITE, PLANS
+from build import store_badges, btn, icon, logo, url, room_rack, channel_strip, faq_block, SIGNUP_URL, EMAIL, UPDATED, CHECK, software_schema, SITE, PLANS
 L = "tr"
 def U(k): return url(k, L)
 
@@ -171,7 +171,7 @@ def features():
 <div class="row"><h3>Transfer ve tur satışı</h3><div><p>Lio mesajlaşma sırasında havalimanı transferi ve tur önerir, talebi ekibinize iletir.</p></div></div>
 <div class="row"><h3>Lio Önerileri ve AI içgörüleri</h3><div><p>Lio her sabah fiyat, operasyon (kirli odalar, bekleyen talepler), kurulum eksikleri ve gelir fırsatları için öneriler hazırlar. Onayınız olmadan hiçbir şey değişmez; fiyat önerileri belirlediğiniz sınırların dışına çıkmaz. Pro ve Growth'ta yorum ve mesajlardaki tekrar eden şikâyet ve övgüler de özetlenir.</p></div></div>
 <div class="row"><h3>Raporlar ve ekip</h3><div><p>Doluluk, ADR, RevPAR ve kanal performansı raporları; haftalık ve aylık e-posta raporu. 6 personel rolüyle yetkilendirme ve tek yerde toplanan bildirimler.</p></div></div>
-<div class="row"><h3>Mobil uygulama</h3><div><p>iOS ve Android uygulamasıyla rezervasyonları, mesajları ve check-in'leri otelin dışından yönetin.</p></div></div>
+<div class="row"><h3>Mobil uygulama</h3><div><p>iOS ve Android uygulamasıyla rezervasyonları, mesajları ve check-in'leri otelin dışından yönetin.</p>{store_badges("tr")}</div></div>
 </div></div></section>
 <section><div class="wrap"><div class="section-head"><h2>Planlara göre özellikler</h2></div>
 <div class="table-wrap"><table><thead><tr><th>Özellik</th><th class="c">Starter</th><th class="c">Pro</th><th class="c">Growth</th></tr></thead><tbody>

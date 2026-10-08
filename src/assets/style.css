@@ -780,3 +780,12 @@ h1,h2,h3{overflow-wrap:break-word;hyphens:auto;-webkit-hyphens:auto}
 .tpl blockquote p{margin:0;white-space:pre-line}
 .tpl-copy{margin-top:10px;font:inherit;font-size:.85rem;font-weight:600;background:var(--sand);color:var(--ink);border:1px solid var(--line);border-radius:999px;padding:.35em .9em;min-height:32px;cursor:pointer}
 .tpl-copy:hover{background:var(--line)}
+
+/* Mağaza rozetleri (8 Ekim 2026): resmî rozetler değiştirilmeden, ikisi de 40 px yüksek; aradaki boşluk ≥ rozet yüksekliğinin 1/4'ü */
+.stores{display:flex;flex-wrap:wrap;align-items:center;gap:12px;margin-top:16px}
+.stores a{display:block;line-height:0;border-radius:7px}
+.stores img{display:block;height:40px;width:auto;max-width:none}
+.card.photo .stores img{position:static;inset:auto;width:auto;height:40px;object-fit:fill;z-index:auto}
+.card.photo .stores{margin-top:14px}
+.row .stores{margin-top:12px}
+.site-footer .foot-stores{margin-top:18px}

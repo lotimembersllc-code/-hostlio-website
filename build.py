@@ -379,6 +379,30 @@ def lang_menu(key, lang):
     return (f'<div class="lang-wrap"><button type="button" class="lang" aria-expanded="false" aria-controls="lang-menu" aria-label="{UI[lang]["lang_label"]}: {LANG_NAME[lang]}">'
             f'{icon("globe-simple")}{lang.upper()}{icon("caret-down","caret")}</button><ul class="lang-menu" id="lang-menu" hidden>{items}</ul></div>')
 
+# Mağaza rozetleri (8 Ekim 2026): resmî, yerelleştirilmiş rozetler src/assets/badges/ altında (Apple SVG: toolbox.marketingtools.apple.com,
+# Google Play PNG: play.google.com/intl/.../badges, saydam kenar kırpıldı, 80 px yükseklik = 2x). Rozetler değiştirilmez; ikisi de 40 px yüksek.
+# iOS bağlantısı bölgesiz: App Store ziyaretçiyi kendi ülke mağazasına yönlendirir. Google Play'de hl= yalnız arayüz dilini seçer.
+IOS_STORE_URL = "https://apps.apple.com/app/id6765888744"
+PLAY_STORE_URL = "https://play.google.com/store/apps/details?id=com.hostlio.hostliopro"
+PLAY_HL = {"tr": "tr", "en": "en", "es": "es", "it": "it", "pt": "pt-BR", "fr": "fr"}
+STORE_ALT = {  # rozetin üzerindeki metin = erişilebilir ad
+    "tr": ("App Store'dan indirin", "Google Play'den indirin"),
+    "en": ("Download on the App Store", "Get it on Google Play"),
+    "es": ("Consíguelo en el App Store", "Disponible en Google Play"),
+    "it": ("Scarica su App Store", "Disponibile su Google Play"),
+    "pt": ("Baixar na App Store", "Disponível no Google Play"),
+    "fr": ("Télécharger dans l'App Store", "Disponible sur Google Play"),
+}
+STORE_W = {"tr": 151, "en": 120, "es": 120, "it": 120, "pt": 120, "fr": 127}  # App Store rozeti genişliği (40 px yükseklikte)
+STORE_LABEL = {"tr": "Mobil uygulamayı indirin", "en": "Download the mobile app", "es": "Descarga la app móvil",
+               "it": "Scarica l'app mobile", "pt": "Baixe o app", "fr": "Télécharger l'application mobile"}
+def store_badges(lang, cls=""):
+    """App Store + Google Play rozetleri (aynı sekmede açılır, site geleneği: rel=noopener, target yok)."""
+    a_alt, g_alt = STORE_ALT[lang]
+    return (f'<div class="stores{(" " + cls) if cls else ""}" role="group" aria-label="{STORE_LABEL[lang]}">'
+            f'<a href="{IOS_STORE_URL}" rel="noopener"><img src="/assets/badges/app-store-{lang}.svg" alt="{a_alt}" width="{STORE_W[lang]}" height="40" loading="lazy" decoding="async"></a>'
+            f'<a href="{PLAY_STORE_URL}&amp;hl={PLAY_HL[lang]}" rel="noopener"><img src="/assets/badges/google-play-{lang}.png" alt="{g_alt}" width="135" height="40" loading="lazy" decoding="async"></a></div>')
+
 SEC_LABEL = {"tr": "Güvenlik ve veri", "en": "Security", "es": "Seguridad", "it": "Sicurezza", "pt": "Segurança", "fr": "Sécurité"}
 ABOUT_H = {"tr": ("Kurucudan", "Ekip"), "en": ("A note from the founder", "The team"), "es": ("Una nota del fundador", "El equipo"),
            "it": ("Una nota dal fondatore", "Il team"), "pt": ("Uma nota do fundador", "A equipe"), "fr": ("Le mot du fondateur", "L’équipe")}
@@ -583,7 +607,7 @@ def layout(page, lang):
 </main>
 <footer class="site-footer"><div class="wrap">
 <div class="foot-grid">
-<div><a class="brand" href="{url("home",lang)}">{LOGO}<span>Hostlio <span class="pro">Pro</span></span></a><p class="muted small" style="margin-top:12px">{u["foot_tag"]}</p><p class="small"><a href="mailto:{EMAIL}">{EMAIL}</a><br><a href="https://wa.me/{WHATSAPP}" rel="noopener">WhatsApp {WHATSAPP_TXT}</a></p></div>
+<div><a class="brand" href="{url("home",lang)}">{LOGO}<span>Hostlio <span class="pro">Pro</span></span></a><p class="muted small" style="margin-top:12px">{u["foot_tag"]}</p><p class="small"><a href="mailto:{EMAIL}">{EMAIL}</a><br><a href="https://wa.me/{WHATSAPP}" rel="noopener">WhatsApp {WHATSAPP_TXT}</a></p>{store_badges(lang, "foot-stores")}</div>
 <div><p class="fh">{u["foot_product"]}</p><ul>
 <li><a href="{url("features",lang)}">{dict(u["nav"])["features"]}</a></li>
 <li><a href="{url("ai",lang)}">{dict(u["nav"])["ai"]}</a></li>

@@ -1,4 +1,4 @@
-from build import btn, icon, logo, url, room_rack, channel_strip, faq_block, SIGNUP_URL, EMAIL, UPDATED, CHECK, software_schema, SITE, PLANS
+from build import store_badges, btn, icon, logo, url, room_rack, channel_strip, faq_block, SIGNUP_URL, EMAIL, UPDATED, CHECK, software_schema, SITE, PLANS
 L = "en"
 def U(k): return url(k, L)
 
@@ -168,7 +168,7 @@ def features():
 <div class="row"><h3>Transfer and tour sales</h3><div><p>Lio suggests airport transfers and tours during the conversation and passes the request to your team.</p></div></div>
 <div class="row"><h3>Lio Suggestions and AI insights</h3><div><p>Every morning Lio prepares suggestions on pricing, operations (rooms waiting to be cleaned, pending requests), setup gaps and revenue opportunities. Nothing changes without your approval, and rate suggestions stay within limits you set. On Pro and Growth, recurring complaints and praise in reviews and messages are summarised too.</p></div></div>
 <div class="row"><h3>Reports and team</h3><div><p>Occupancy, ADR, RevPAR and channel performance reports, plus a weekly and monthly email report. Six staff roles with their own permissions, and all notifications in one place.</p></div></div>
-<div class="row"><h3>Mobile app</h3><div><p>Manage bookings, messages and check-ins away from the hotel with the iOS and Android app.</p></div></div>
+<div class="row"><h3>Mobile app</h3><div><p>Manage bookings, messages and check-ins away from the hotel with the iOS and Android app.</p>{store_badges("en")}</div></div>
 </div></div></section>
 <section><div class="wrap"><div class="section-head"><h2>Features by plan</h2></div>
 <div class="table-wrap"><table><thead><tr><th>Feature</th><th class="c">Starter</th><th class="c">Pro</th><th class="c">Growth</th></tr></thead><tbody>
