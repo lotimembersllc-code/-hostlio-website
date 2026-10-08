@@ -125,11 +125,12 @@ LEGACY_KEYS = {"hotel-ai-front-desk-guide": "post-aifrontdesk", "how-to-reduce-h
 LEGACY_COVER = {"post-aifrontdesk": ("gen-arrival", 1080, 1350), "post-noshows": ("gen-room-dusk", 1080, 1350),
                 "post-chains": ("gen-facade", 1080, 1350), "post-whatsapp": ("gen-terrace-phone", 1080, 1350)}
 
+LEGACY_SKIP = {"whatsapp-hotel-guest-communication"}   # Tur 2: guides_intl/rehber_whatsapp.py üretir (adres aynı)
 def legacy_meta():
-    return [{"key": LEGACY_KEYS[p["slug"]], "title": p["title"], "date": p["date"], "desc": p["desc"]} for p in LEGACY]
+    return [{"key": LEGACY_KEYS[p["slug"]], "title": p["title"], "date": p["date"], "desc": p["desc"]} for p in LEGACY if p["slug"] not in LEGACY_SKIP]
 
 def legacy_posts(article):
-    return [article({"key": LEGACY_KEYS[p["slug"]], "title": p["title"], "date": p["date"], "desc": p["desc"]}, p["body"], []) for p in LEGACY]
+    return [article({"key": LEGACY_KEYS[p["slug"]], "title": p["title"], "date": p["date"], "desc": p["desc"]}, p["body"], []) for p in LEGACY if p["slug"] not in LEGACY_SKIP]
 
 DELACC = {
  "en": ("Delete Your Account | Hostlio Pro", "How to request deletion of your Hostlio Pro account and the data associated with it.", "Request account deletion",
