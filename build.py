@@ -996,6 +996,11 @@ def add_toc(body, lang):
         prose2 = prose2[:am.end()] + nav + prose2[am.end():] if am else nav + prose2
     return body[:m.start(1)] + prose2 + body[m.end(1):]
 
+def readable_dates(body, lang):
+    """ISO yazılmış <time> metnini dile göre okunur biçime çevirir (datetime özniteliği aynı kalır)."""
+    fmt = getattr(__import__("content_" + lang), "D", None) or (lambda d: fmt_date(d, lang))
+    return re.sub(r'<time datetime="(\d{4}-\d\d-\d\d)">\1</time>', lambda mm: f'<time datetime="{mm.group(1)}">{fmt(mm.group(1))}</time>', body)
+
 def blog_list(body, lang, by_url):
     """Blog listesindeki her karta kapak küçük resmi ve kategori etiketi ekler."""
     def card(mm):
@@ -1007,6 +1012,7 @@ def blog_list(body, lang, by_url):
                f'width="{cov[1]}" height="{cov[2]}" loading="lazy" data-thumb></a>') if cov else ""
         return f'<article class="{"has-img" if cov else ""}">{img}<div class="pl-txt">{chip}<h2><a href="{href}">'
     out = re.sub(r'<article><h2><a href="([^"]+)">', card, body)
+    out = readable_dates(out, lang)
     return re.sub(r'(<article class="[^"]*">.*?)(</article>)', lambda mm: mm.group(1) + "</div>" + mm.group(2), out, flags=re.S)
 
 def blog_enhance(pages):
@@ -1015,7 +1021,7 @@ def blog_enhance(pages):
         for p in plist:
             if p["key"] == "blog": p["body"] = blog_list(p["body"], lang, by_url)
             elif p.get("og_type") == "article":
-                p["body"] = add_toc(p["body"], lang)
+                p["body"] = readable_dates(add_toc(p["body"], lang), lang)
                 cat = BLOG_CAT.get(p["key"])
                 for s_ in p.get("schema", []):
                     if s_.get("@type") == "BlogPosting" and cat: s_["articleSection"] = BLOG_CAT_NAME[cat][lang]
