@@ -114,7 +114,7 @@ def legal_page(key, L):
     note = {"tr": f'Son güncelleme: <time datetime="{LEGAL_DATE["iso"]}">{LEGAL_DATE["tr"]}</time>, {ADDR}. Bu metin İngilizce aslının çevirisidir; farklılık halinde <a href="{url(key,"en")}">İngilizce metin</a> esas alınır.',
             "en": f'Last updated: <time datetime="{LEGAL_DATE["iso"]}">{LEGAL_DATE["en"]}</time>, {ADDR}',
             **{l: m.LEGAL_NOTE.format(iso=LEGAL_DATE["iso"], date=LEGAL_DATE[l], addr=ADDR, en_url=url(key, "en")) for l, m in LANGMOD.items()}}[L]
-    body = f'''<section class="page-hero"><div class="wrap"><h1>{h1}</h1><p class="meta">{note}</p></div></section>
+    body = f'''<section class="page-hero"><div class="wrap"><h1>{h1}</h1><p class="meta">{note}</p>{_v6.taslak_serit(L)}</div></section>
 <section style="padding-top:0"><div class="wrap prose">{body_fn(L)}</div></section>'''
     return {"key": key, "title": title, "desc": desc, "trail": [(h1, url(key, L))], "body": body,
             "no_final": True, "modified": LEGAL_DATE["iso"], "updated_txt": LEGAL_DATE[L]}

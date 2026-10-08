@@ -1773,7 +1773,8 @@ A: Booking.com extranet'inde misafir mesajları kutusunu açıp her metni mesaj 
 URL: https://hostliopro.com/tr/gizlilik-politikasi/
 
 ## Gizlilik Politikası
-Son güncelleme: 4 Ekim 2026 , Loti Members LLC, 2108 N ST STE N, Sacramento, CA 95816. Bu metin İngilizce aslının çevirisidir; farklılık halinde İngilizce metin esas alınır.
+Son güncelleme: 8 Ekim 2026 , Loti Members LLC, 2108 N ST STE N, Sacramento, CA 95816. Bu metin İngilizce aslının çevirisidir; farklılık halinde İngilizce metin esas alınır.
+TASLAK – hukuki inceleme sürüyor, henüz yürürlükte değil. Hukuki görüş değildir.
 
 Bu Gizlilik Politikası, Loti Members LLC (“biz”) tarafından işletilen Hostlio Pro’nun; hostliopro.com’u ziyaret ettiğinizde, kaydolduğunuzda ya da Hostlio Pro paneli, mobil uygulaması ve misafire dönük özelliklerini kullandığınızda kişisel verileri nasıl topladığını, kullandığını ve paylaştığını açıklar.
 
@@ -1789,18 +1790,24 @@ Müşterilerimize (otel sahipleri ve çalışanları) ve site ziyaretçilerine a
 - Online check-in verileri: otel online check-in kullanıyorsa kimlik belgesi bilgileri (ad soyad, belge numarası ya da T.C. kimlik kartlarında T.C. kimlik no, uyruk, doğum tarihi ve geçerlilik tarihi), refakatçiler ve dijital imza. Belgenin makine okunabilir alanı misafirin ya da otel personelinin kendi cihazında okunur; kimlik belgesi görüntüsü toplamaz ve saklamayız. Bu verileri hassas veri olarak ele alırız
 - Kayıt ve güvenlik verileri: IP adresi, e-postanın özetlenmiş (hash) hali ve kayıt denemelerinin sonucu; dolandırıcılık ve kötüye kullanımı önlemek için
 - Pazarlama kaynağı: yalnızca sitemize kampanya parametreleri (UTM parametreleri veya reklam tıklama kimliği) içeren bir bağlantıyla geldiyseniz bu parametreler, giriş sayfası ve ilk ziyaretinizin zamanı; tarayıcınızda saklanır ve bize yalnızca kayıt veya iletişim formuyla birlikte iletilir
-- Kullanım verileri: panel ve uygulamanın nasıl kullanıldığı, teknik kayıtlar ve mobil uygulamayı kullandığınızda cihazınızın bildirim jetonu (push token)
+- Personel verileri: ekip üyesi davet ettiğinizde o kişinin e-posta adresi, adı, rolü, erişebileceği tesisler, davet durumu ve dil tercihi
+- İşlem geçmişi: panelde ve uygulamada kimin neyi ne zaman yaptığı (kullanıcı, rol, işlem, etkilenen kayıt, kullanılan uygulama ve kısaltılmış IP adresi). Misafir ve check-in kayıtlarında yalnız işlem ve değişen alanların adları kaydedilir, değerleri asla kaydedilmez
+- OTA yorumları: bağlı kanallardan gelen yorum metni, puanlar ve yorum yapanın adı ile onayladığınız cevaplar
+- Kullanım verileri: panel ve uygulamanın nasıl kullanıldığı, teknik kayıtlar ve mobil uygulamayı kullandığınızda cihazınızın bildirim jetonu (push token). hostliopro.com’daki çerezler ve site analitiği 10. bölümde anlatılır
 
 ## 3. Verileri nasıl kullanırız
 
 - Hizmeti sunmak için: kanalları senkronize etmek, rezervasyonları göstermek, misafir mesajlarını göndermek ve online check-in’i yürütmek
 - Otel adına misafir mesajlarına yapay zekâ ile cevap taslağı hazırlamak ve göndermek
+- Otele analizlerini (doluluk, gelir ve benzeri toplamlar) göstermek ve yalnız toplamları içeren, misafir bilgisi taşımayan haftalık ve aylık rapor e-postaları göndermek
+- Otele Lio Önerileri sunmak: misafir mesajları ve yorumlardaki tekrarlayan konular dahil, otelin kendi verilerine dayanan öneriler (bkz. 13. bölüm)
+- Hesap sahibinin kimin neyi değiştirdiğini görebilmesi ve güvenlik olaylarının incelenebilmesi için işlem geçmişi tutmak
 - Aboneliğinizi yürütmek için: ücretsiz deneme, deneme bitiminde ve her yenilemede otomatik ücretlendirme, faturalar ve aylık AI mesaj kotası gibi plan limitleri
 - Hizmeti güvende tutmak ve dolandırıcılığı önlemek
 - Hangi pazarlama kanallarının müşteri getirdiğini ölçmek
 - Destek taleplerini yanıtlamak, hizmet ve fatura e-postaları göndermek
 - Yasal yükümlülükleri yerine getirmek
-Kişisel verileri satmayız ve davranışsal reklam için paylaşmayız. Misafir mesajları pazarlamamızda kullanılmaz. Yapay zekâ sağlayıcımız mesaj içeriğini yalnızca cevap üretmek için işler ve ticari şartları gereği modellerini eğitmekte kullanmaz.
+Kişisel verileri satmayız ve davranışsal reklam için paylaşmayız. Misafir mesajları pazarlamamızda kullanılmaz. Yapay zekâ sağlayıcımız bu içeriği yalnızca 13. bölümde anlatılan yapay zekâ özelliklerini sunmak için işler ve ticari şartları gereği modellerini eğitmekte kullanmaz.
 
 ## 4. Hukuki sebepler (AEA, Birleşik Krallık, Türkiye)
 Sizinle yaptığımız sözleşmenin ifası, meşru menfaatlerimiz (güvenlik, dolandırıcılığın önlenmesi, hizmetin geliştirilmesi, pazarlamanın ölçülmesi), yasal yükümlülükler ve gerektiğinde açık rızanıza dayanırız. Misafir verilerinde hukuki sebebi otel belirler.
@@ -1809,18 +1816,19 @@ Sizinle yaptığımız sözleşmenin ifası, meşru menfaatlerimiz (güvenlik, d
 Aşağıdaki alt işleyicileri kullanırız; her biri verileri koruyan bir sözleşmeyle bağlıdır. Bir satış kanalı (Booking.com, Airbnb, Expedia gibi) bağladığınızda veriler o kanalla kendi şartları çerçevesinde paylaşılır.
 
 Alt işleyici Konum Amaç
-Supabase, Inc. USA Veritabanı, kimlik doğrulama ve sunucu fonksiyonları
-Vercel, Inc. USA Web sitesi ve panel barındırma
+Supabase, Inc. EU (Ireland); company in USA Veritabanı, kimlik doğrulama ve sunucu fonksiyonları
+Vercel, Inc. USA Web sitesi, panel ve misafir check-in sayfası barındırma (otellerin kendi check-in alan adları dahil)
 Stripe, Inc. USA Ödemeler ve abonelik faturalandırması
-Anthropic, PBC USA Cevap taslağı için misafir mesajlarının yapay zekâ ile işlenmesi
+Anthropic, PBC USA Misafir mesajlarına ve OTA yorumlarına cevap taslağı hazırlamak, otelin mesaj şablonlarını çevirmek ve Lio Önerileri için kişisel bilgiler maskelendikten sonra misafir mesajları ile yorumlarda tekrarlayan konuları bulmak üzere yapay zekâ ile işleme
 Meta Platforms, Inc. (WhatsApp Business Platform) USA / Ireland WhatsApp mesajlarının gönderilmesi ve alınması
 Channex.io Ltd United Kingdom Müsaitlik, fiyat, rezervasyon ve OTA mesaj senkronizasyonu
+Resend, Inc. USA E-posta gönderimi: hesap, fatura ve kota bildirimleri, personel davetleri, haftalık ve aylık raporlar ile otel açtığında misafirlere check-in bağlantısı ve mesajlar
 Make (Celonis) EU İletişim formu ve iç iş akışı otomasyonu
 Google LLC / Google Ireland Ltd. (Firebase Cloud Messaging) USA / global Hostlio Pro mobil uygulamasına (iOS ve Android) anlık bildirim gönderimi (cihaz bildirim jetonu, uygulama örneği kimlikleri, yeni mesaj veya rezervasyon uyarısı gibi bildirim içeriği)
 Apple Inc. (Apple Push Notification service) USA iPhone ve iPad cihazlara anlık bildirimin iletilmesi (Firebase Cloud Messaging üzerinden aktarılan cihaz jetonu ve bildirim içeriği)
 Google LLC (ML Kit — on-device text recognition) On device (metrics: USA) Mobil uygulamada kimlik belgesinin makine okunabilir alanının otel personelinin cihazında okunması; görüntü veya metin cihazdan çıkmaz, Google yalnızca anonim API kullanım ve performans ölçümlerini alır
 Twilio Inc.* USA Oteller için WhatsApp numarası ve mesaj faturalandırması
-Twilio SendGrid* USA İşlemsel e-posta
+Twilio SendGrid* USA Planlanan e-posta kanalı için misafir e-postalarının alınması
 
 * Planlanan — veri işlemeye başlamadan önce bu listeye eklenecek
 
@@ -1831,15 +1839,18 @@ Kanunen gerektiğinde veya haklarımızı korumak için de veri açıklayabiliri
 
 ## 7. Saklama süreleri
 
-- Misafir mesaj içerikleri, otelin ayarlarında belirlediği sürenin sonunda anonimleştirilir (varsayılan: 60 gün)
-- Misafir iletişim bilgileri, otel daha önce silmezse ayrılıştan sonra 90 gün saklanır
-- Online check-in verileri yalnızca otelin misafir kayıt yükümlülükleri için gerektiği kadar saklanır; en geç otelin hesabıyla birlikte silinir
-- Hesap ve otel verileri hesap aktif olduğu sürece saklanır; doğrulanmış silme talebinden sonra 30 gün içinde silinir
+- Misafir mesaj içerikleri ve ekleri çıkıştan 60 gün sonra (konuşma bir rezervasyona bağlı değilse son mesajdan 60 gün sonra) anonimleştirilir. Otel bu süreyi ayarlarından en az 30 güne kadar kısaltabilir, uzatamaz
+- Misafirin e-posta adresi, telefonu ve rezervasyon notları, otel daha önce silmezse çıkıştan 90 gün sonra silinir; misafirlerin Lio üzerinden yaptığı rezervasyon talepleri için de aynısı geçerlidir. Misafir adı ve rezervasyon bilgileri (tarihler, oda, fiyat, kanal) otel faturalandırma ve muhasebe için ihtiyaç duyabileceğinden otelin hesabı aktif olduğu sürece rezervasyonda kalır
+- Otelin misafir listesindeki misafir profilleri 365 gün konaklama olmazsa anonimleştirilir
+- OTA yorumlarındaki yorum sahibi adı, yorum alındıktan 365 gün sonra silinir; kanalda herkese açık olan yorum metni saklanır
+- Online check-in: kimlik belgesi görüntüsü hiçbir zaman saklanmaz. Misafir imzaları çıkıştan 30 gün sonra otomatik silinir. Kimlik belgesi bilgileri yalnızca otelin misafir kayıt (kimlik bildirimi) yükümlülükleri için gerektiği kadar saklanır; en geç otelin hesabıyla birlikte silinir
+- İşlem geçmişi 365 gün, uygulama içi bildirimler 90 gün saklanır
+- [TASLAK – hesap silme metni bekleniyor] Hesap ve otel verileri hesap aktif olduğu sürece saklanır; doğrulanmış silme talebinden sonra 30 gün içinde silinir
 - Fatura kayıtları vergi ve muhasebe mevzuatının gerektirdiği süre boyunca saklanır
 - Kayıt ve güvenlik kayıtları dolandırıcılığı önlemek için sınırlı bir süre saklanır
 
 ## 8. Güvenlik
-Veriler aktarım sırasında (TLS) ve depolamada şifrelenir. Erişim role ve otele göre sınırlandırılır. Veritabanı sağlayıcımız SOC 2 Type 2 denetimlidir; kart ödemeleri PCI DSS Level 1 hizmet sağlayıcısı Stripe tarafından işlenir. Ayrıntılar Güvenlik ve veri sayfasında.
+Veriler aktarım sırasında (TLS) ve depolamada şifrelenir. Erişim otele ve role göre sınırlandırılır: personel yalnız rolünün izin verdiği tesisleri ve özellikleri görür, önemli işlemler işlem geçmişine kaydedilir. Veritabanı sağlayıcımız SOC 2 Type 2 denetimlidir; kart ödemeleri PCI DSS Level 1 hizmet sağlayıcısı Stripe tarafından işlenir. Ayrıntılar Güvenlik ve veri sayfasında.
 
 ## 9. Haklarınız
 
@@ -1864,13 +1875,24 @@ Seçiminiz tarayıcınızın yerel depolamasında hostlio_consent anahtarıyla 6
 ## 11. WhatsApp ve misafir mesajlaşması
 Hostlio Pro, oteller adına misafir mesajlarını göndermek ve almak için WhatsApp Business Platformu’na ve OTA gelen kutularına bağlanır. Misafir telefon numaraları yalnızca konaklamayla ilgili iletişim için kullanılır. Misafirler otele bildirerek mesaj almayı durdurabilir.
 
-## 12. Çocuklar
+## 12. Personel hesapları ve işlem geçmişi
+Hesap sahibi personel davet edebilir, her kişiye bir rol (yönetici, resepsiyon, kat hizmetleri, muhasebe veya izleyici) ve seçtiği tesislere erişim verebilir. Daveti göndermek için davet edilen kişinin e-posta adresini, kişi daveti kabul ettikten sonra da erişim sağlamak için adını, e-posta adresini, rolünü ve tesis erişimlerini kullanırız. Kimin davet edileceğine hesap sahibi karar verir; personeli işlemlerinin kayda alındığı konusunda bilgilendirmelidir.
+İşlem geçmişi; rezervasyon oluşturma, değiştirme veya iptal etme, fiyat, oda, ayar veya ekip değişiklikleri ve yapay zekâ cevaplarının onaylanması ya da reddedilmesi gibi işlemleri; kullanıcı, rolü, zaman, kullanılan uygulama ve kısaltılmış IP adresiyle (IPv4 /24, IPv6 /48) birlikte kaydeder. Kayıtlar değiştirilemez, hesap sahibi ve yetkili roller tarafından görülebilir ve 365 gün sonra silinir.
+
+## 13. Yapay zekâ özellikleri (Lio)
+
+- Misafirlere cevaplar: Lio cevap taslağı hazırlamak için misafirin mesajını, konuşmadaki önceki mesajları, misafirin rezervasyon bilgilerini (ad, tarihler, oda gibi) ve otelin bilgilerini yapay zekâ sağlayıcımıza gönderir. Hangi konuların otomatik cevaplanacağına, hangilerinin onay gerektireceğine otel karar verir
+- Yorum cevapları: bu özelliği içeren planlarda Lio OTA yorumlarına cevap taslağı hazırlar. Hiçbir yorum cevabı otelin onayı olmadan gönderilmez
+- Çeviri: otelin karşılama ve veda mesajı şablonları yapay zekâ ile çevrilebilir
+- Lio Önerileri: Pro ve Growth planlarında yeni misafir mesajları ve yorumlar günde bir kez tekrarlayan konular (ör. temizlik, Wi-Fi) için incelenir. Metin gönderilmeden önce e-posta adresleri, telefon numaraları, web bağlantıları, rezervasyon veya kart numarası gibi uzun sayılar ve misafirin adı otomatik olarak maskelenir. Sonuçlar kişi adı, oda numarası, tarih veya iletişim bilgisi içermeyen kısa ve genel özetlerdir; orijinal metinler önerilerle birlikte veya kayıtlarımızda saklanmaz. İsteğe bağlı haftalık özet yalnız bu konular ve istatistiklerden, misafir metni kullanılmadan yazılır. Otel, Lio Önerileri’nin yapay zekâ bölümünü ayarlarından kapatabilir
+
+## 14. Çocuklar
 Hostlio Pro bir işletme hizmetidir ve 16 yaşından küçüklere yönelik değildir.
 
-## 13. Değişiklikler
+## 15. Değişiklikler
 Değişiklikleri bu sayfada yayınlar ve yukarıdaki tarihi güncelleriz. Önemli değişiklikleri ayrıca e-posta veya panel üzerinden bildiririz.
 
-## 14. İletişim
+## 16. İletişim
 
 - E-posta: hello@hostliopro.com
 - Adres: Loti Members LLC, 2108 N ST STE N, Sacramento, CA 95816
@@ -1880,7 +1902,8 @@ Değişiklikleri bu sayfada yayınlar ve yukarıdaki tarihi güncelleriz. Öneml
 URL: https://hostliopro.com/tr/kullanim-sartlari/
 
 ## Kullanım Şartları
-Son güncelleme: 4 Ekim 2026 , Loti Members LLC, 2108 N ST STE N, Sacramento, CA 95816. Bu metin İngilizce aslının çevirisidir; farklılık halinde İngilizce metin esas alınır.
+Son güncelleme: 8 Ekim 2026 , Loti Members LLC, 2108 N ST STE N, Sacramento, CA 95816. Bu metin İngilizce aslının çevirisidir; farklılık halinde İngilizce metin esas alınır.
+TASLAK – hukuki inceleme sürüyor, henüz yürürlükte değil. Hukuki görüş değildir.
 
 Bu Kullanım Şartları (“Şartlar”), Loti Members LLC (“biz”) tarafından işletilen Hostlio Pro’yu kullanımınızı düzenler. Hesap oluşturarak veya hizmeti kullanarak bu Şartları kabul edersiniz. Hostlio Pro’yu bir işletme adına kullanıyorsanız Şartları o işletme adına kabul etmiş olursunuz.
 
@@ -1888,13 +1911,14 @@ Bu Kullanım Şartları (“Şartlar”), Loti Members LLC (“biz”) tarafınd
 Hostlio Pro oteller için bulut yazılımıdır: yapay zekâ ile misafir mesajlaşması (Lio), kanal yöneticisi, rezervasyon takvimi, online check-in ve ilgili araçlar; web sitesi, panel ve mobil uygulama üzerinden abonelikle sunulur.
 
 ## 2. Hesabınız
-Doğru bilgi vermeli ve giriş bilgilerinizi güvende tutmalısınız. Çalışanlarınız dahil, hesabınız altında yapılan her işlemden siz sorumlusunuz.
+Doğru bilgi vermeli ve giriş bilgilerinizi güvende tutmalısınız. Çalışanlarınız dahil, hesabınız altında yapılan her işlemden siz sorumlusunuz. Hesap sahibi personel davet edebilir, onlara rol ve tesis erişimi verebilir ve istediği an kaldırabilir; kimin erişeceğine hesap sahibi karar verir. Panelde ve uygulamada yapılan işlemler Gizlilik Politikamızda anlatıldığı şekilde işlem geçmişine kaydedilir.
 
 ## 3. Ücretsiz deneme, ödeme ve otomatik yenileme
 
 - Her plan 7 günlük ücretsiz denemeyle başlar. Kayıt sırasında Stripe üzerinden bir ödeme kartı alınır
 - Deneme bitmeden iptal etmezseniz, deneme sonunda seçtiğiniz plan ve fatura dönemi için kartınızdan otomatik olarak ücret alınır
 - Abonelikler peşin ödenir ve iptal edilene kadar her aylık veya yıllık dönemin sonunda otomatik olarak yenilenir . Her yenilemede kayıtlı karttan ücret alınır
+- Plan değişikliği: faturalandırma sayfasından istediğiniz zaman başka bir plana veya fatura dönemine geçebilirsiniz. Değişiklik hemen geçerli olur. İçinde bulunulan dönemin kalan kısmı için fiyat farkı kıst (orantılı) hesaplanır: üst plana geçişte orantılı ek ücret, alt plana geçişte orantılı alacak oluşur; ikisi de bir sonraki faturanıza yansır. Aylık ile yıllık ödeme arasında geçiş yeni bir fatura dönemini hemen başlatır ve önceki dönemin kullanılmayan kısmı düşülerek hemen faturalanır. Değişiklik için gereken ödeme alınamazsa değişiklik uygulanmaz
 - Fiyatlar ABD doları cinsindendir, vergiler hariçtir. Güncel planlar ve fiyatlar fiyatlandırma sayfamızda . Yıllık ödeme, aylık ödemeye göre %20 daha ucuzdur
 - Erken kayıt (Early Bird) fiyatı: ilk 50 müşteri, aboneliği kesintisiz devam ettiği sürece erken kayıt fiyatını korur. Abonelik iptal edilir veya süresi dolarsa erken kayıt fiyatı sona erer; yeni abonelikte güncel fiyatlar geçerlidir
 - Gelecek dönemlerin fiyatlarını en az 30 gün önceden e-postayla bildirerek değiştirebiliriz; yeni fiyat bir sonraki yenilemeden itibaren uygulanır
@@ -1917,13 +1941,13 @@ Her plan aylık bir AI mesaj kotası (Starter 1.000, Pro 5.000, Growth 12.000) v
 Misafirlerinizin kişisel verilerinin veri sorumlusu sizsiniz. Bu verileri işlemek için hukuki sebebe sahip olmak, misafirleri bilgilendirmek (ör. kendi aydınlatma metninizle) ve tesisiniz için geçerli misafir kayıt ve kimlik belgesi kurallarına uymak sizin sorumluluğunuzdadır. Veri İşleme Sözleşmemiz (DPA) bu Şartların parçasıdır ve sizin adınıza işlediğimiz misafir verilerine uygulanır.
 
 ## 8. Yapay zekâ cevapları
-Lio, verdiğiniz bilgileri kullanarak cevap hazırlar ve gönderir. Yapay zekâ hata yapabilir. Lio’nun hangi mesajlara otomatik cevap vereceğine, hangilerinin onay gerektireceğine siz karar verirsiniz ve tesisiniz adına gönderilen cevaplardan siz sorumlu olursunuz. Lio emin olmadığı mesajları size devreder; yine de hukuki, tıbbi veya acil konularda ona güvenmemelisiniz. Kanunun izin verdiği ölçüde yapay zekâ cevaplarının içeriğinden sorumlu değiliz.
+Lio, verdiğiniz bilgileri kullanarak cevap hazırlar ve gönderir. Yapay zekâ hata yapabilir. Lio’nun hangi mesajlara otomatik cevap vereceğine, hangilerinin onay gerektireceğine siz karar verirsiniz ve tesisiniz adına gönderilen cevaplardan siz sorumlu olursunuz. Lio emin olmadığı mesajları size devreder; yine de hukuki, tıbbi veya acil konularda ona güvenmemelisiniz. OTA yorumlarına cevaplar yalnızca siz onayladıktan sonra gönderilir. Lio Önerileri, analizler ve raporlar verilerinize dayanan öneri ve özetlerdir; bunlara göre hareket edip etmeyeceğinize siz karar verirsiniz ve herhangi bir sonucu garanti etmeyiz. Kanunun izin verdiği ölçüde yapay zekâ cevaplarının ve önerilerinin içeriğinden sorumlu değiliz.
 
 ## 9. Bağlı kanallar ve WhatsApp
 Kanal bağlantıları bağlantı ortağımız Channex üzerinden; mesajlaşma ise WhatsApp Business Platformu ve OTA gelen kutuları üzerinden sağlanır. Bağladığınız her platformun şartlarına uymalısınız. Üçüncü taraf API veya politikalarındaki değişiklikler özellikleri etkileyebilir; bunlardan sorumlu değiliz.
 
 ## 10. Verileriniz
-Verileriniz size aittir. Onları yalnızca hizmeti sunmak için, Gizlilik Politikamız ve DPA’da anlatıldığı şekilde işleriz. Hesabınız açıkken verilerinizi dışa aktarabilirsiniz.
+Verileriniz size aittir. Onları yalnızca hizmeti sunmak için, Gizlilik Politikamız ve DPA’da anlatıldığı şekilde işleriz. Hesabınız açıkken verilerinizi dışa aktarabilirsiniz. [TASLAK – hesap silme metni bekleniyor] Hesabınızı kapatmak için hesap silme sayfasına bakın.
 
 ## 11. Hizmet sürekliliği
 Yüksek erişilebilirlik hedefleriz ancak kesintisiz hizmet garanti etmeyiz. Planlı bakımları mümkün olduğunca önceden duyururuz.
@@ -1963,6 +1987,7 @@ URL: https://hostliopro.com/tr/guvenlik-ve-veri/
 
 ## Güvenlik ve veri koruma
 Oteller rezervasyonlarını, misafir mesajlarını ve kimlik bilgilerini bize emanet ediyor. Bu sayfa onları nasıl koruduğumuzu, kimlerin işlediğini ve Veri İşleme Sözleşmemizi (DPA) nasıl imzalayabileceğinizi anlatır.
+TASLAK – hukuki inceleme sürüyor, henüz yürürlükte değil. Hukuki görüş değildir.
 
 ## Öne çıkan önlemler
 
@@ -1970,7 +1995,7 @@ Oteller rezervasyonlarını, misafir mesajlarını ve kimlik bilgilerini bize em
 Aktarımda TLS; veritabanı ve dosya depolamada şifreleme.
 
 ## Role ve otele göre erişim
-Her otel yalnız kendi verisini görür; personel erişimi belirlediğiniz rollere göre.
+Her otel yalnız kendi verisini görür; personel erişimi belirlediğiniz rollere göre, önemli işlemler işlem geçmişinde tutulur.
 
 ## Denetimli sağlayıcılar
 SOC 2 Type 2 denetimli veritabanı; kart ödemeleri Stripe (PCI DSS Level 1) ile.
@@ -1981,19 +2006,19 @@ GDPR, UK GDPR, KVKK ve CCPA için Veri İşleme Sözleşmesi.
 ## Ayrıntılar
 
 ## Verileriniz nerede
-Veritabanı, kimlik doğrulama ve sunucu fonksiyonlarımız Supabase’te; web sitesi ve panel Vercel’de çalışır. Bazı sağlayıcılar ABD’dedir; AEA, Birleşik Krallık ve Türkiye’den yapılan aktarımlar Standart Sözleşme Maddeleri veya diğer yasal araçlarla korunur.
+Veritabanı, kimlik doğrulama ve sunucu fonksiyonlarımız Supabase’te çalışır; veritabanı ve dosya depolama AB’de (İrlanda) barındırılır. Web sitesi ve panel Vercel’de çalışır. Bazı sağlayıcılar ABD’dedir; AEA, Birleşik Krallık ve Türkiye’den yapılan aktarımlar Standart Sözleşme Maddeleri veya diğer yasal araçlarla korunur.
 
 ## Ödemeler
 Kart bilgileri Stripe’a girilir ve sunucularımıza hiç ulaşmaz. Biz yalnızca planı, fatura dönemini ve ödeme durumunu görürüz.
 
 ## Yapay zekâ ve misafir mesajları
-Lio, misafir mesajının içeriğini yalnızca cevap taslağı hazırlamak için yapay zekâ sağlayıcımıza gönderir. Sağlayıcı, ticari şartları gereği bu içeriği modellerini eğitmekte kullanmaz. Lio’nun hangi konulara otomatik cevap vereceğine ve hangilerinin onay gerektireceğine siz karar verirsiniz.
+Lio, misafir mesajının içeriğini yalnızca cevap taslağı hazırlamak için yapay zekâ sağlayıcımıza gönderir. Sağlayıcı, ticari şartları gereği bu içeriği modellerini eğitmekte kullanmaz. Lio’nun hangi konulara otomatik cevap vereceğine ve hangilerinin onay gerektireceğine siz karar verirsiniz. Lio Önerileri için misafir mesajları ve yorumlar incelenmeden önce iletişim bilgileri, uzun sayılar ve misafir adları maskelenir; sonuçlarda kişi adı yer almaz.
 
 ## Online check-in verileri
-Kimlik belgesi bilgileri ve dijital imzalar hassas veri olarak ele alınır, yalnız otelinizin personeline görünür ve en geç hesabınızla birlikte silinir. Kimlik ve pasaport görüntüsü saklamayız: makine okunabilir alan misafirin ya da personelinizin kendi cihazında okunur, yalnızca okunan alanlar gönderilir (KVKK İlke Kararı 2025/2120).
+Kimlik belgesi bilgileri ve dijital imzalar hassas veri olarak ele alınır ve yalnız rolü izin veren personele görünür. İmzalar çıkıştan 30 gün sonra silinir; kimlik belgesi bilgileri en geç hesabınızla birlikte silinir. Kimlik ve pasaport görüntüsü saklamayız: makine okunabilir alan misafirin ya da personelinizin kendi cihazında okunur, yalnızca okunan alanlar gönderilir (KVKK İlke Kararı 2025/2120).
 
 ## Saklama
-Misafir mesaj içerikleri belirlediğiniz sürenin sonunda anonimleştirilir (varsayılan 60 gün); misafir iletişim bilgileri ayrılıştan sonra 90 gün saklanır; hesap verileri doğrulanmış silme talebinden sonra 30 gün içinde silinir.
+Misafir mesaj içerikleri çıkıştan 60 gün sonra anonimleştirilir (30 güne kadar kısaltabilirsiniz); misafirin e-postası, telefonu ve rezervasyon notları çıkıştan 90 gün sonra silinir; misafir profilleri 365 gün konaklama olmazsa anonimleştirilir; işlem geçmişi 365 gün tutulur. Tam liste Gizlilik Politikamızın 7. bölümünde.
 
 ## GDPR ve KVKK kapsamındaki roller
 Misafir verilerinde otel veri sorumlusu, Hostlio Pro veri işleyendir. Bu yükümlülükler Veri İşleme Sözleşmemizde yer alır ve Kullanım Şartlarımızın parçasıdır.
@@ -2006,18 +2031,19 @@ Paneldeki değişiklikler alan alan kaydedilir: kim, ne zaman, hangi tesis, eski
 
 ## Alt işleyiciler
 Alt işleyici Konum Amaç
-Supabase, Inc. USA Veritabanı, kimlik doğrulama ve sunucu fonksiyonları
-Vercel, Inc. USA Web sitesi ve panel barındırma
+Supabase, Inc. EU (Ireland); company in USA Veritabanı, kimlik doğrulama ve sunucu fonksiyonları
+Vercel, Inc. USA Web sitesi, panel ve misafir check-in sayfası barındırma (otellerin kendi check-in alan adları dahil)
 Stripe, Inc. USA Ödemeler ve abonelik faturalandırması
-Anthropic, PBC USA Cevap taslağı için misafir mesajlarının yapay zekâ ile işlenmesi
+Anthropic, PBC USA Misafir mesajlarına ve OTA yorumlarına cevap taslağı hazırlamak, otelin mesaj şablonlarını çevirmek ve Lio Önerileri için kişisel bilgiler maskelendikten sonra misafir mesajları ile yorumlarda tekrarlayan konuları bulmak üzere yapay zekâ ile işleme
 Meta Platforms, Inc. (WhatsApp Business Platform) USA / Ireland WhatsApp mesajlarının gönderilmesi ve alınması
 Channex.io Ltd United Kingdom Müsaitlik, fiyat, rezervasyon ve OTA mesaj senkronizasyonu
+Resend, Inc. USA E-posta gönderimi: hesap, fatura ve kota bildirimleri, personel davetleri, haftalık ve aylık raporlar ile otel açtığında misafirlere check-in bağlantısı ve mesajlar
 Make (Celonis) EU İletişim formu ve iç iş akışı otomasyonu
 Google LLC / Google Ireland Ltd. (Firebase Cloud Messaging) USA / global Hostlio Pro mobil uygulamasına (iOS ve Android) anlık bildirim gönderimi (cihaz bildirim jetonu, uygulama örneği kimlikleri, yeni mesaj veya rezervasyon uyarısı gibi bildirim içeriği)
 Apple Inc. (Apple Push Notification service) USA iPhone ve iPad cihazlara anlık bildirimin iletilmesi (Firebase Cloud Messaging üzerinden aktarılan cihaz jetonu ve bildirim içeriği)
 Google LLC (ML Kit — on-device text recognition) On device (metrics: USA) Mobil uygulamada kimlik belgesinin makine okunabilir alanının otel personelinin cihazında okunması; görüntü veya metin cihazdan çıkmaz, Google yalnızca anonim API kullanım ve performans ölçümlerini alır
 Twilio Inc.* USA Oteller için WhatsApp numarası ve mesaj faturalandırması
-Twilio SendGrid* USA İşlemsel e-posta
+Twilio SendGrid* USA Planlanan e-posta kanalı için misafir e-postalarının alınması
 
 * Planlanan — veri işlemeye başlamadan önce bu listeye eklenecek
 
@@ -4416,7 +4442,8 @@ A: In the Booking.com extranet, open the guest messages inbox and save each text
 URL: https://hostliopro.com/en/privacy/
 
 ## Privacy Policy
-Last updated: October 4, 2026 , Loti Members LLC, 2108 N ST STE N, Sacramento, CA 95816
+Last updated: October 8, 2026 , Loti Members LLC, 2108 N ST STE N, Sacramento, CA 95816
+DRAFT – under legal review, not yet in effect. Not legal advice.
 
 This Privacy Policy explains how Hostlio Pro, operated by Loti Members LLC (“we”, “us”), collects, uses and shares personal data when you visit hostliopro.com, sign up, or use the Hostlio Pro dashboard, mobile app and guest-facing features.
 
@@ -4432,18 +4459,24 @@ For data about our customers (hotel owners and staff) and website visitors, we a
 - Online check-in data: identity document details (name, document number or, for Turkish ID cards, the T.C. identity number, nationality, date of birth and expiry date), companions and a digital signature, when the hotel uses online check-in. The document’s machine-readable zone is read on the guest’s or the hotel staff’s own device; we do not collect or store images of identity documents. We treat this data as sensitive
 - Signup and security data: IP address, a hashed email and the outcome of signup attempts, used to prevent fraud and abuse
 - Marketing source: only if you arrive through a link with campaign parameters (UTM parameters or an ad click ID): those parameters, the landing page and the time of your first visit, stored in your browser and sent to us only with your signup or contact form
-- Usage data: how the dashboard and app are used, technical logs and, when you use the mobile app, your device’s push notification token
+- Staff data: when you invite team members, their email address, name, role, the properties they can access, invitation status and preferred language
+- Activity log: who did what and when in the dashboard and app (user, role, action, affected record, source app and a shortened IP address). For guest and check-in records only the action and the names of changed fields are logged, never their values
+- OTA reviews: review text, ratings and the reviewer’s name received from connected channels, and the replies you approve
+- Usage data: how the dashboard and app are used, technical logs and, when you use the mobile app, your device’s push notification token. Cookies and website analytics on hostliopro.com are described in section 10
 
 ## 3. How we use data
 
 - To provide the service: syncing channels, showing reservations, sending guest messages and running online check-in
 - To draft and send AI replies to guest messages on the hotel’s behalf
+- To show the hotel its analytics (occupancy, revenue and similar totals) and to send weekly and monthly report emails, which contain totals only and no guest details
+- To give the hotel Lio Suggestions: suggestions based on its own data, including recurring themes in guest messages and reviews (see section 13)
+- To keep an activity log so the account owner can see who changed what, and to investigate security incidents
 - To run your subscription: the free trial, automatic charges when the trial ends and at each renewal, invoices and plan limits such as the monthly AI message quota
 - To keep the service secure and prevent fraud
 - To measure which marketing channels bring customers
 - To answer support requests and send service and billing emails
 - To meet legal obligations
-We do not sell personal data and we do not share it for cross-context behavioural advertising. Guest message content is not used for our marketing. Our AI provider processes message content only to generate replies and, under its commercial terms, does not use it to train its models.
+We do not sell personal data and we do not share it for cross-context behavioural advertising. Guest message content is not used for our marketing. Our AI provider processes this content only to provide the AI features described in section 13 and, under its commercial terms, does not use it to train its models.
 
 ## 4. Legal bases (EEA, UK, Türkiye)
 We rely on performance of our contract with you, our legitimate interests (security, fraud prevention, improving the service, measuring marketing), compliance with legal obligations and, where required, your consent. For guest data, the hotel determines the legal basis.
@@ -4452,18 +4485,19 @@ We rely on performance of our contract with you, our legitimate interests (secur
 We use the subprocessors below. Each is bound by a contract that protects the data. When you connect a sales channel (such as Booking.com, Airbnb or Expedia), data is exchanged with that channel under its own terms.
 
 Subprocessor Location Purpose
-Supabase, Inc. USA Database, authentication and server functions
-Vercel, Inc. USA Website and dashboard hosting
+Supabase, Inc. EU (Ireland); company in USA Database, authentication and server functions
+Vercel, Inc. USA Website, dashboard and guest check-in page hosting, including hotels’ own check-in domains
 Stripe, Inc. USA Payments and subscription billing
-Anthropic, PBC USA AI processing of guest messages to draft replies
+Anthropic, PBC USA AI processing to draft replies to guest messages and OTA reviews, translate the hotel’s message templates and, for Lio Suggestions, find recurring themes in guest messages and reviews after personal details are masked
 Meta Platforms, Inc. (WhatsApp Business Platform) USA / Ireland Sending and receiving WhatsApp messages
 Channex.io Ltd United Kingdom Availability, rate, booking and OTA message sync
+Resend, Inc. USA Sending emails: account, billing and quota notices, staff invitations, weekly and monthly reports, and, when the hotel enables them, check-in links and messages to guests
 Make (Celonis) EU Contact form and internal workflow automation
 Google LLC / Google Ireland Ltd. (Firebase Cloud Messaging) USA / global Push notifications to the Hostlio Pro mobile app on iOS and Android (device push token, app instance identifiers, notification content such as new message or reservation alerts)
 Apple Inc. (Apple Push Notification service) USA Delivery of push notifications to iPhone and iPad devices (device token and notification content, passed on by Firebase Cloud Messaging)
 Google LLC (ML Kit — on-device text recognition) On device (metrics: USA) Reading the ID document’s machine-readable zone on the hotel staff’s device in the mobile app; no images or text leave the device; Google receives only anonymous API usage and performance metrics
 Twilio Inc.* USA WhatsApp numbers and messaging billing for hotels
-Twilio SendGrid* USA Transactional email
+Twilio SendGrid* USA Receiving guest emails for a planned email channel
 
 * Planned — added to this list before they process any data
 
@@ -4474,15 +4508,18 @@ We are based in the United States and some subprocessors process data outside th
 
 ## 7. How long we keep data
 
-- Guest message content is anonymised after the retention period the hotel sets in its settings (default: 60 days)
-- Guest contact details are kept for 90 days after departure, unless the hotel deletes them sooner
-- Online check-in data is kept only as long as the hotel needs it to meet its guest-registration duties, and is deleted with the hotel’s account at the latest
-- Account and hotel data are kept while the account is active and deleted within 30 days of a verified deletion request
+- Guest message content and attachments are anonymised 60 days after check-out, or after the last message if the conversation is not linked to a reservation. The hotel can shorten this period in its settings to as little as 30 days, but cannot extend it
+- Guest email addresses, phone numbers and reservation notes are erased 90 days after check-out, unless the hotel deletes them sooner; the same applies to booking requests guests make through Lio. Guest names and booking details (dates, room, price, channel) stay on the reservation while the hotel’s account is active, because the hotel may need them for invoicing and accounting
+- Guest profiles in the hotel’s guest list are anonymised after 365 days without a stay
+- Reviewer names on OTA reviews are removed 365 days after the review is received; the review text, which is public on the channel, is kept
+- Online check-in: images of identity documents are never stored. Guest signatures are deleted automatically 30 days after check-out. Identity document details are kept only as long as the hotel needs them to meet its guest-registration duties, and are deleted with the hotel’s account at the latest
+- The activity log is kept for 365 days and in-app notifications for 90 days
+- [DRAFT – account deletion wording pending] Account and hotel data are kept while the account is active and deleted within 30 days of a verified deletion request
 - Billing records are kept for as long as tax and accounting law requires
 - Signup and security logs are kept for a limited period for fraud prevention
 
 ## 8. Security
-Data is encrypted in transit (TLS) and at rest. Access is restricted by role and by hotel. Our database provider is SOC 2 Type 2 audited and card payments are handled by Stripe, a PCI DSS Level 1 service provider. More on our Security and data page.
+Data is encrypted in transit (TLS) and at rest. Access is restricted by hotel and by role: staff only see the properties and features their role allows, and important actions are recorded in the activity log. Our database provider is SOC 2 Type 2 audited and card payments are handled by Stripe, a PCI DSS Level 1 service provider. More on our Security and data page.
 
 ## 9. Your rights
 
@@ -4507,13 +4544,24 @@ Cookie preferences
 ## 11. WhatsApp and guest messaging
 Hostlio Pro connects to the WhatsApp Business Platform and to OTA inboxes to send and receive guest messages for hotels. Guest phone numbers are used only to communicate about the stay. Guests can stop receiving messages by telling the hotel.
 
-## 12. Children
+## 12. Staff accounts and activity log
+The account owner can invite staff and give each person a role (manager, front desk, housekeeping, accounting or viewer) and access to selected properties. We use the invited person’s email address to send the invitation and, once they accept, their name, email address, role and property access to let them in. The owner decides who is invited and should tell staff that their actions are logged.
+The activity log records actions such as creating, changing or cancelling reservations, changing rates, rooms, settings or team members, and approving or rejecting AI replies, together with the user, their role, the time, the app used and a shortened IP address (IPv4 to /24, IPv6 to /48). Entries cannot be edited, are visible to the account owner and to roles with permission, and are deleted after 365 days.
+
+## 13. AI features (Lio)
+
+- Replies to guests: Lio sends the guest’s message, earlier messages in the conversation, the guest’s booking details (such as name, dates and room) and the hotel’s information to our AI provider to draft a reply. The hotel decides which topics are answered automatically and which need approval
+- Review replies: on plans that include it, Lio drafts replies to OTA reviews. No review reply is sent without the hotel’s approval
+- Translation: the hotel’s welcome and farewell templates can be translated with AI
+- Lio Suggestions: on the Pro and Growth plans, new guest messages and reviews are checked once a day for recurring themes (for example cleanliness or Wi-Fi). Before any text is sent, email addresses, phone numbers, web links, long numbers such as booking or card numbers, and the guest’s name are masked automatically. The results are short, general summaries without personal names, room numbers, dates or contact details; the original texts are not stored with the suggestions or in our logs. The optional weekly summary is written only from these themes and statistics, without guest texts. The hotel can turn off the AI part of Lio Suggestions in its settings
+
+## 14. Children
 Hostlio Pro is a business service and is not directed to children under 16.
 
-## 13. Changes
+## 15. Changes
 We will post changes on this page and update the date above. For material changes we will also notify customers by email or in the dashboard.
 
-## 14. Contact
+## 16. Contact
 
 - Email: hello@hostliopro.com
 - Address: Loti Members LLC, 2108 N ST STE N, Sacramento, CA 95816
@@ -4523,7 +4571,8 @@ We will post changes on this page and update the date above. For material change
 URL: https://hostliopro.com/en/terms/
 
 ## Terms of Service
-Last updated: October 4, 2026 , Loti Members LLC, 2108 N ST STE N, Sacramento, CA 95816
+Last updated: October 8, 2026 , Loti Members LLC, 2108 N ST STE N, Sacramento, CA 95816
+DRAFT – under legal review, not yet in effect. Not legal advice.
 
 These Terms of Service (“Terms”) govern your use of Hostlio Pro, operated by Loti Members LLC (“we”, “us”). By creating an account or using the service you agree to these Terms. If you use Hostlio Pro for a business, you accept them on its behalf.
 
@@ -4531,13 +4580,14 @@ These Terms of Service (“Terms”) govern your use of Hostlio Pro, operated by
 Hostlio Pro is cloud software for hotels: AI guest messaging (Lio), a channel manager, a reservation calendar, online check-in and related tools, available by subscription through the website, the dashboard and the mobile app.
 
 ## 2. Your account
-You must give accurate information and keep your login details secure. You are responsible for everything done under your account, including by your staff.
+You must give accurate information and keep your login details secure. You are responsible for everything done under your account, including by your staff. The account owner can invite staff, give them roles and property access, and remove them at any time; the owner decides who has access. Actions in the dashboard and app are recorded in an activity log, as described in our Privacy Policy .
 
 ## 3. Free trial, payment and automatic renewal
 
 - Every plan starts with a 7-day free trial. A payment card is collected at signup through Stripe
 - Unless you cancel before the trial ends, your card is charged automatically for the plan and billing period you chose when the trial ends
 - Subscriptions are paid in advance and renew automatically at the end of each monthly or annual period until cancelled. We charge the card on file at each renewal
+- Plan changes: you can switch to another plan or billing period at any time from the billing page. The change takes effect immediately. The price difference for the rest of the current period is prorated: moving to a higher plan adds a prorated charge and moving to a lower plan a prorated credit, both settled on your next invoice. Switching between monthly and annual billing starts a new billing period at once and is invoiced immediately, with credit for the unused part of the previous period. If a payment needed for the change fails, the change is not applied
 - Prices are in US dollars and exclude taxes. Current plans and prices are on our pricing page . Annual billing costs 20% less than paying monthly
 - Early-bird price: the first 50 customers keep their early-bird price for as long as their subscription stays active without interruption. If the subscription is cancelled or lapses, the early-bird price ends and current prices apply to any new subscription
 - We may change prices for future periods with at least 30 days’ notice by email; the new price applies from your next renewal
@@ -4560,13 +4610,13 @@ You agree not to:
 You are the controller of your guests’ personal data. You are responsible for having a lawful basis to process it, informing guests (for example in your own privacy notice) and meeting guest-registration and identity-document rules that apply to your property. Our Data Processing Addendum forms part of these Terms and applies to the guest data we process for you.
 
 ## 8. AI-generated replies
-Lio drafts and sends replies using the information you provide. AI can make mistakes. You decide which messages Lio may answer automatically and which need approval, and you remain responsible for the replies sent on behalf of your property. Lio hands over messages it is not sure about, but you should not rely on it for legal, medical or emergency matters. To the extent permitted by law, we are not liable for the content of AI-generated replies.
+Lio drafts and sends replies using the information you provide. AI can make mistakes. You decide which messages Lio may answer automatically and which need approval, and you remain responsible for the replies sent on behalf of your property. Lio hands over messages it is not sure about, but you should not rely on it for legal, medical or emergency matters. Replies to OTA reviews are only sent after you approve them. Lio Suggestions, analytics and reports are suggestions and summaries based on your data; you decide whether to act on them and we do not guarantee any result. To the extent permitted by law, we are not liable for the content of AI-generated replies or suggestions.
 
 ## 9. Connected channels and WhatsApp
 Channel connections are provided through our connectivity partner Channex, and messaging through the WhatsApp Business Platform and OTA inboxes. You must follow the terms of each platform you connect. Changes to third-party APIs or policies can affect features, and we are not responsible for them.
 
 ## 10. Your data
-You own your data. We process it only to provide the service, as described in our Privacy Policy and the DPA. You can export your data while your account is active.
+You own your data. We process it only to provide the service, as described in our Privacy Policy and the DPA. You can export your data while your account is active. [DRAFT – account deletion wording pending] To close your account, see Delete your account .
 
 ## 11. Availability
 We aim for high availability but do not guarantee uninterrupted service. We announce planned maintenance in advance where possible.
@@ -4606,6 +4656,7 @@ URL: https://hostliopro.com/en/security/
 
 ## Security and data protection
 Hotels trust us with reservations, guest messages and identity document details. This page explains how we protect them, who processes them, and how you can sign our Data Processing Addendum.
+DRAFT – under legal review, not yet in effect. Not legal advice.
 
 ## Key safeguards
 
@@ -4613,7 +4664,7 @@ Hotels trust us with reservations, guest messages and identity document details.
 TLS in transit and encryption at rest for the database and file storage.
 
 ## Access by role and hotel
-Each hotel only sees its own data; staff access follows roles you set.
+Each hotel only sees its own data; staff access follows roles you set, and important actions are kept in an activity log.
 
 ## Audited providers
 SOC 2 Type 2 database provider; card payments via Stripe (PCI DSS Level 1).
@@ -4624,19 +4675,19 @@ A Data Processing Addendum for GDPR, UK GDPR, KVKK and CCPA.
 ## Details
 
 ## Where your data lives
-Our database, authentication and server functions run on Supabase; the website and dashboard are hosted on Vercel. Some providers are in the United States; transfers from the EEA, the UK and Türkiye are covered by Standard Contractual Clauses or other lawful mechanisms.
+Our database, authentication and server functions run on Supabase, with the database and file storage hosted in the EU (Ireland); the website and dashboard are hosted on Vercel. Some providers are in the United States; transfers from the EEA, the UK and Türkiye are covered by Standard Contractual Clauses or other lawful mechanisms.
 
 ## Payments
 Card details are entered into Stripe and never reach our servers. We only see the plan, billing period and payment status.
 
 ## AI and guest messages
-Lio sends guest message content to our AI provider only to draft a reply. Under its commercial terms, the provider does not use this content to train its models. You decide which topics Lio answers automatically and which need your approval.
+Lio sends guest message content to our AI provider only to draft a reply. Under its commercial terms, the provider does not use this content to train its models. You decide which topics Lio answers automatically and which need your approval. For Lio Suggestions, contact details, long numbers and guest names are masked before guest messages and reviews are analysed, and the results contain no personal names.
 
 ## Online check-in data
-Identity document details and digital signatures are treated as sensitive data, visible only to your hotel’s staff, and deleted with your account at the latest. We do not store images of ID documents or passports: the machine-readable zone is read on the guest’s or your staff’s own device and only the extracted fields are sent.
+Identity document details and digital signatures are treated as sensitive data and are visible only to staff whose role allows it. Signatures are deleted 30 days after check-out; identity document details are deleted with your account at the latest. We do not store images of ID documents or passports: the machine-readable zone is read on the guest’s or your staff’s own device and only the extracted fields are sent.
 
 ## Retention
-Guest message content is anonymised after the period you set (default 60 days); guest contact details are kept 90 days after departure; account data is deleted within 30 days of a verified deletion request.
+Guest message content is anonymised 60 days after check-out (you can shorten this to 30); guest email, phone and booking notes are erased 90 days after check-out; guest profiles are anonymised after 365 days without a stay; the activity log is kept 365 days. Full list in our Privacy Policy, section 7.
 
 ## Your roles under GDPR and KVKK
 For guest data your hotel is the controller and Hostlio Pro is the processor. Our Data Processing Addendum sets out these obligations and forms part of our Terms of Service.
@@ -4649,18 +4700,19 @@ Changes in the dashboard are recorded field by field: who, when, which property,
 
 ## Subprocessors
 Subprocessor Location Purpose
-Supabase, Inc. USA Database, authentication and server functions
-Vercel, Inc. USA Website and dashboard hosting
+Supabase, Inc. EU (Ireland); company in USA Database, authentication and server functions
+Vercel, Inc. USA Website, dashboard and guest check-in page hosting, including hotels’ own check-in domains
 Stripe, Inc. USA Payments and subscription billing
-Anthropic, PBC USA AI processing of guest messages to draft replies
+Anthropic, PBC USA AI processing to draft replies to guest messages and OTA reviews, translate the hotel’s message templates and, for Lio Suggestions, find recurring themes in guest messages and reviews after personal details are masked
 Meta Platforms, Inc. (WhatsApp Business Platform) USA / Ireland Sending and receiving WhatsApp messages
 Channex.io Ltd United Kingdom Availability, rate, booking and OTA message sync
+Resend, Inc. USA Sending emails: account, billing and quota notices, staff invitations, weekly and monthly reports, and, when the hotel enables them, check-in links and messages to guests
 Make (Celonis) EU Contact form and internal workflow automation
 Google LLC / Google Ireland Ltd. (Firebase Cloud Messaging) USA / global Push notifications to the Hostlio Pro mobile app on iOS and Android (device push token, app instance identifiers, notification content such as new message or reservation alerts)
 Apple Inc. (Apple Push Notification service) USA Delivery of push notifications to iPhone and iPad devices (device token and notification content, passed on by Firebase Cloud Messaging)
 Google LLC (ML Kit — on-device text recognition) On device (metrics: USA) Reading the ID document’s machine-readable zone on the hotel staff’s device in the mobile app; no images or text leave the device; Google receives only anonymous API usage and performance metrics
 Twilio Inc.* USA WhatsApp numbers and messaging billing for hotels
-Twilio SendGrid* USA Transactional email
+Twilio SendGrid* USA Receiving guest emails for a planned email channel
 
 * Planned — added to this list before they process any data
 
@@ -5012,8 +5064,9 @@ Done right, WhatsApp guest communication is one of the highest-ROI changes an in
 URL: https://hostliopro.com/en/dpa/
 
 ## Data Processing Addendum
-Version 1.0 · Effective October 4, 2026 · Loti Members LLC, 2108 N ST STE N, Sacramento, CA 95816, USA
+Version 1.1 (draft) · Effective October 8, 2026 · Loti Members LLC, 2108 N ST STE N, Sacramento, CA 95816, USA
 
+DRAFT – under legal review, not yet in effect. Not legal advice.
 Print or save as PDF
 
 This Data Processing Addendum (“DPA”) forms part of the Terms of Service between Loti Members LLC, operator of Hostlio Pro (“Processor”, “we”), and the customer that has accepted them (“Controller”, “you”). It applies to personal data of your guests and staff that we process on your behalf when providing Hostlio Pro (“Customer Personal Data”). It takes effect when you accept the Terms of Service. A countersigned copy is available on request from hello@hostliopro.com.
@@ -5043,7 +5096,7 @@ We will notify you without undue delay, and in any case within 48 hours, after b
 We give reasonable assistance with data protection impact assessments and prior consultations with supervisory authorities, taking into account the information available to us.
 
 ## 9. Deletion and return
-You can export your data while your account is active. After the account ends we delete Customer Personal Data within 30 days, except where the law requires us to keep it. Guest message content is anonymised after the retention period you configure (default 60 days).
+You can export your data while your account is active. [DRAFT – account deletion wording pending] After the account ends we delete Customer Personal Data within 30 days, except where the law requires us to keep it. During the subscription, Customer Personal Data is deleted or anonymised automatically on the schedule in section 7 of our Privacy Policy : among others, guest message content 60 days after check-out (you can shorten this to 30 days), guest email, phone and booking notes 90 days after check-out, guest signatures 30 days after check-out, inactive guest profiles after 365 days and activity log entries after 365 days.
 
 ## 10. Audits
 We make available the information reasonably necessary to demonstrate compliance with this DPA, including our subprocessors’ security reports where they allow it. If that is not sufficient, you may carry out an audit once a year, with 30 days’ notice, during business hours, at your cost and under confidentiality.
@@ -5060,40 +5113,42 @@ Each party’s liability under this DPA is subject to the limitations in the Ter
 ## Annex 1 — Details of processing
 
 - Subject matter and duration: providing Hostlio Pro for the term of your subscription and until deletion under section 9
-- Nature and purpose: hosting and storage; syncing availability, rates and reservations with sales channels; sending and receiving guest messages on WhatsApp and OTA inboxes; drafting replies with AI; online check-in, including reading the identity document’s machine-readable zone on the guest’s or your staff’s device; push notifications to your staff’s Hostlio Pro mobile app (iOS and Android); support
-- Data subjects: your guests and their companions; your staff and users of the dashboard
-- Categories of data: names, contact details (phone, email), reservation details (dates, room, price, channel), message content, preferences and requests; for online check-in, identity document details (name, document number or, for Turkish ID cards, the T.C. identity number, nationality, date of birth and expiry date) and digital signatures, with no images of identity documents collected or stored; for users of the mobile app, device push notification tokens and app instance identifiers
+- Nature and purpose: hosting and storage; syncing availability, rates and reservations with sales channels; sending and receiving guest messages on WhatsApp and OTA inboxes; drafting replies to guest messages and OTA reviews with AI (review replies are sent only after your approval); translating your message templates; Lio Suggestions, including AI analysis of guest messages and reviews for recurring themes after contact details, long numbers and guest names are masked; analytics and weekly and monthly report emails with aggregated figures; staff accounts with roles and an activity log; online check-in, including reading the identity document’s machine-readable zone on the guest’s or your staff’s device; emails to guests that you enable (such as check-in links); push notifications to your staff’s Hostlio Pro mobile app (iOS and Android); support
+- Data subjects: your guests and their companions; authors of reviews on connected channels; your staff and users of the dashboard
+- Categories of data: names, contact details (phone, email), reservation details (dates, room, price, channel), message content, preferences and requests; for online check-in, identity document details (name, document number or, for Turkish ID cards, the T.C. identity number, nationality, date of birth and expiry date) and digital signatures, with no images of identity documents collected or stored; for users of the mobile app, device push notification tokens and app instance identifiers; OTA reviews (text, ratings, reviewer name); for staff, name, email address, role, property access and activity log entries (action, time, app used and an IP address shortened to /24 for IPv4 or /48 for IPv6)
 - Special categories: none intended. Identity document details and signatures are handled as sensitive data. Please do not ask guests to send health or other special-category data through Hostlio Pro
 - Frequency: continuous
 
 ## Annex 2 — Technical and organisational measures
 
 - Encryption in transit (TLS 1.2+) and at rest for databases and file storage
-- Logical separation of each customer’s data and row-level access rules; staff access by role
+- Logical separation of each customer’s data and row-level access rules; staff access by role and property, with an activity log that cannot be edited and is kept for 365 days
 - Authentication for all dashboard users; passwords stored as salted hashes by our authentication provider
 - Least-privilege access for our personnel; production access limited to those who need it
 - Payment card data handled only by Stripe (PCI DSS Level 1); no card data on our systems
 - Managed infrastructure with automated backups and provider-level physical security (SOC 2 Type 2 audited database provider)
 - Logging of security-relevant events and monitoring for abuse; fraud controls at signup
-- Configurable retention and anonymisation of guest message content
+- Automatic retention schedules: anonymisation of guest message content, erasure of guest contact data, deletion of check-in signatures and of old activity log and notification entries
+- Automatic masking of email addresses, phone numbers, web links, long numbers and guest names before guest texts are analysed for Lio Suggestions; AI results checked to contain no personal names or contact details
 - Vendor review and written data-protection terms with each subprocessor
 - Incident response process with customer notification as set out in section 7
 
 ## Annex 3 — Subprocessors
 
 Subprocessor Location Purpose
-Supabase, Inc. USA Database, authentication and server functions
-Vercel, Inc. USA Website and dashboard hosting
+Supabase, Inc. EU (Ireland); company in USA Database, authentication and server functions
+Vercel, Inc. USA Website, dashboard and guest check-in page hosting, including hotels’ own check-in domains
 Stripe, Inc. USA Payments and subscription billing
-Anthropic, PBC USA AI processing of guest messages to draft replies
+Anthropic, PBC USA AI processing to draft replies to guest messages and OTA reviews, translate the hotel’s message templates and, for Lio Suggestions, find recurring themes in guest messages and reviews after personal details are masked
 Meta Platforms, Inc. (WhatsApp Business Platform) USA / Ireland Sending and receiving WhatsApp messages
 Channex.io Ltd United Kingdom Availability, rate, booking and OTA message sync
+Resend, Inc. USA Sending emails: account, billing and quota notices, staff invitations, weekly and monthly reports, and, when the hotel enables them, check-in links and messages to guests
 Make (Celonis) EU Contact form and internal workflow automation
 Google LLC / Google Ireland Ltd. (Firebase Cloud Messaging) USA / global Push notifications to the Hostlio Pro mobile app on iOS and Android (device push token, app instance identifiers, notification content such as new message or reservation alerts)
 Apple Inc. (Apple Push Notification service) USA Delivery of push notifications to iPhone and iPad devices (device token and notification content, passed on by Firebase Cloud Messaging)
 Google LLC (ML Kit — on-device text recognition) On device (metrics: USA) Reading the ID document’s machine-readable zone on the hotel staff’s device in the mobile app; no images or text leave the device; Google receives only anonymous API usage and performance metrics
 
-Planned: Twilio Inc. (WhatsApp numbers and messaging billing) and Twilio SendGrid (transactional email). They will be added with notice under section 5 before they process Customer Personal Data.
+Planned: Twilio Inc. (WhatsApp numbers and messaging billing) and Twilio SendGrid (receiving guest emails for a planned email channel). They will be added with notice under section 5 before they process Customer Personal Data.
 
 ## Signatures
 Accepted electronically by the Controller when accepting the Terms of Service. For a countersigned copy, email hello@hostliopro.com with your company name, address and the name of your signatory.
@@ -7474,7 +7529,8 @@ A: En la extranet de Booking.com, abre la bandeja de mensajes de los huéspedes 
 URL: https://hostliopro.com/es/privacidad/
 
 ## Política de privacidad
-Última actualización: 4 de octubre de 2026 , Loti Members LLC, 2108 N ST STE N, Sacramento, CA 95816. Este texto es una traducción del original en inglés; en caso de discrepancia, prevalecerá la versión en inglés .
+Última actualización: 8 de octubre de 2026 , Loti Members LLC, 2108 N ST STE N, Sacramento, CA 95816. Este texto es una traducción del original en inglés; en caso de discrepancia, prevalecerá la versión en inglés .
+BORRADOR – en revisión legal, aún no está en vigor. No constituye asesoramiento jurídico.
 
 Esta Política de privacidad explica cómo Hostlio Pro, operado por Loti Members LLC («nosotros»), recoge, usa y comparte datos personales cuando visitas hostliopro.com, te registras o usas el panel, la app móvil y las funciones para huéspedes de Hostlio Pro.
 
@@ -7490,16 +7546,22 @@ Para los datos de nuestros clientes (propietarios y personal de hoteles) y de lo
 - Datos del check-in online: datos del documento de identidad (nombre, número de documento, nacionalidad, fecha de nacimiento y fecha de caducidad), acompañantes y firma digital, cuando el hotel usa el check-in online. La zona de lectura mecánica del documento se lee en el propio dispositivo del huésped o del personal del hotel; no recogemos ni guardamos imágenes de documentos de identidad. Los tratamos como datos sensibles
 - Datos de registro y seguridad: dirección IP, email cifrado (hash) y resultado de los intentos de registro, para prevenir fraudes y abusos
 - Origen de marketing: solo si llegas a través de un enlace con parámetros de campaña (parámetros UTM o un identificador de clic publicitario): esos parámetros, la página de entrada y la hora de tu primera visita, guardados en tu navegador y enviados a nosotros solo con el formulario de registro o de contacto
-- Datos de uso: cómo se usan el panel y la app, registros técnicos y, si usas la app móvil, el token de notificaciones push de tu dispositivo
+- Datos del personal: cuando invitas a miembros del equipo, su email, nombre, función, los alojamientos a los que pueden acceder, el estado de la invitación y el idioma preferido
+- Registro de actividad: quién hizo qué y cuándo en el panel y la app (usuario, función, acción, registro afectado, app de origen y dirección IP acortada). En los registros de huéspedes y de check-in solo se anotan la acción y los nombres de los campos modificados, nunca sus valores
+- Reseñas de OTAs: texto de la reseña, puntuaciones y nombre del autor recibidos de los canales conectados, y las respuestas que apruebas
+- Datos de uso: cómo se usan el panel y la app, registros técnicos y, si usas la app móvil, el token de notificaciones push de tu dispositivo. Las cookies y la analítica web de hostliopro.com se describen en la sección 10
 ## 3. Cómo usamos los datos
 
 - Prestar el servicio: sincronizar canales, mostrar reservas, enviar mensajes a huéspedes y gestionar el check-in online
 - Redactar y enviar respuestas con IA a los huéspedes en nombre del hotel
+- Mostrar al hotel sus analíticas (ocupación, ingresos y totales similares) y enviar informes semanales y mensuales por email, que solo contienen totales y ningún dato de huéspedes
+- Ofrecer al hotel las Sugerencias de Lio: recomendaciones basadas en sus propios datos, incluidos los temas recurrentes en mensajes y reseñas de huéspedes (ver sección 13)
+- Mantener un registro de actividad para que el titular de la cuenta vea quién cambió qué y para investigar incidentes de seguridad
 - Gestionar tu suscripción: la prueba gratuita, los cargos automáticos al terminar la prueba y en cada renovación, las facturas y los límites del plan, como la cuota mensual de mensajes de IA
 - Mantener el servicio seguro y prevenir fraudes
 - Medir qué canales de marketing nos traen clientes
 - Responder a solicitudes de soporte y enviar emails de servicio y facturación
-- Cumplir obligaciones legales No vendemos datos personales ni los compartimos para publicidad comportamental. El contenido de los mensajes de huéspedes no se usa para nuestro marketing. Nuestro proveedor de IA trata ese contenido solo para generar respuestas y, según sus condiciones comerciales, no lo usa para entrenar sus modelos.
+- Cumplir obligaciones legales No vendemos datos personales ni los compartimos para publicidad comportamental. El contenido de los mensajes de huéspedes no se usa para nuestro marketing. Nuestro proveedor de IA trata ese contenido solo para prestar las funciones de IA descritas en la sección 13 y, según sus condiciones comerciales, no lo usa para entrenar sus modelos.
 
 ## 4. Bases jurídicas (EEE, Reino Unido, Turquía)
 Nos basamos en la ejecución del contrato contigo, nuestro interés legítimo (seguridad, prevención del fraude, mejora del servicio, medición del marketing), el cumplimiento de obligaciones legales y, cuando sea necesario, tu consentimiento. Para los datos de huéspedes, la base jurídica la determina el hotel.
@@ -7507,18 +7569,19 @@ Nos basamos en la ejecución del contrato contigo, nuestro interés legítimo (s
 ## 5. Con quién compartimos datos
 Usamos los subencargados siguientes; cada uno está obligado por un contrato que protege los datos. Cuando conectas un canal de venta (como Booking.com, Airbnb o Expedia), los datos se intercambian con ese canal según sus propias condiciones.
 Subencargado Ubicación Finalidad
-Supabase, Inc. USA Base de datos, autenticación y funciones de servidor
-Vercel, Inc. USA Alojamiento del sitio web y del panel
+Supabase, Inc. EU (Ireland); company in USA Base de datos, autenticación y funciones de servidor
+Vercel, Inc. USA Alojamiento del sitio web, del panel y de la página de check-in de huéspedes, incluidos los dominios de check-in propios de los hoteles
 Stripe, Inc. USA Pagos y facturación de la suscripción
-Anthropic, PBC USA Procesamiento con IA de los mensajes de huéspedes para redactar respuestas
+Anthropic, PBC USA Procesamiento con IA para redactar respuestas a mensajes de huéspedes y a reseñas de OTAs, traducir las plantillas de mensajes del hotel y, para las Sugerencias de Lio, detectar temas recurrentes en mensajes y reseñas tras ocultar los datos personales
 Meta Platforms, Inc. (WhatsApp Business Platform) USA / Ireland Envío y recepción de mensajes de WhatsApp
 Channex.io Ltd United Kingdom Sincronización de disponibilidad, tarifas, reservas y mensajes de OTAs
+Resend, Inc. USA Envío de emails: avisos de cuenta, facturación y cuota, invitaciones al personal, informes semanales y mensuales y, si el hotel los activa, enlaces de check-in y mensajes a huéspedes
 Make (Celonis) EU Formulario de contacto y automatización interna
 Google LLC / Google Ireland Ltd. (Firebase Cloud Messaging) USA / global Notificaciones push a la app móvil de Hostlio Pro en iOS y Android (token push del dispositivo, identificadores de instancia de la app y contenido de la notificación, como avisos de nuevos mensajes o reservas)
 Apple Inc. (Apple Push Notification service) USA Entrega de notificaciones push a dispositivos iPhone e iPad (token del dispositivo y contenido de la notificación, transmitidos a través de Firebase Cloud Messaging)
 Google LLC (ML Kit — on-device text recognition) On device (metrics: USA) Lectura de la zona de lectura mecánica del documento de identidad en el dispositivo del personal del hotel, en la app móvil; ninguna imagen ni texto sale del dispositivo y Google solo recibe métricas anónimas de uso y rendimiento de la API
 Twilio Inc.* USA Números de WhatsApp y facturación de mensajes para hoteles
-Twilio SendGrid* USA Correo transaccional
+Twilio SendGrid* USA Recepción de emails de huéspedes para un futuro canal de email
 
 * Previsto: se añadirá a esta lista antes de que trate ningún dato
 También podemos comunicar datos cuando la ley lo exija o para proteger nuestros derechos.
@@ -7528,14 +7591,17 @@ Tenemos sede en Estados Unidos y algunos subencargados tratan datos fuera del EE
 
 ## 7. Cuánto tiempo conservamos los datos
 
-- El contenido de los mensajes de huéspedes se anonimiza al final del plazo que el hotel fija en sus ajustes (por defecto: 60 días)
-- Los datos de contacto de los huéspedes se conservan 90 días tras la salida, salvo que el hotel los borre antes
-- Los datos del check-in online se conservan solo el tiempo que el hotel los necesite para sus obligaciones de registro de viajeros y, como tarde, se eliminan con la cuenta del hotel
-- Los datos de la cuenta y del hotel se conservan mientras la cuenta esté activa y se eliminan en un plazo de 30 días tras una solicitud de eliminación verificada
+- El contenido de los mensajes de huéspedes y sus adjuntos se anonimiza 60 días después de la salida o, si la conversación no está vinculada a una reserva, del último mensaje. El hotel puede acortar este plazo en sus ajustes hasta un mínimo de 30 días, pero no ampliarlo
+- El email, el teléfono y las notas de la reserva del huésped se borran 90 días después de la salida, salvo que el hotel los borre antes; lo mismo se aplica a las solicitudes de reserva hechas a través de Lio. El nombre del huésped y los datos de la reserva (fechas, habitación, precio, canal) permanecen en la reserva mientras la cuenta del hotel esté activa, porque el hotel puede necesitarlos para su facturación y contabilidad
+- Los perfiles de la lista de huéspedes del hotel se anonimizan tras 365 días sin estancias
+- El nombre del autor de las reseñas de OTAs se elimina 365 días después de recibir la reseña; el texto, que es público en el canal, se conserva
+- Check-in online: nunca se guardan imágenes de documentos de identidad. Las firmas de los huéspedes se eliminan automáticamente 30 días después de la salida. Los datos del documento de identidad se conservan solo el tiempo que el hotel los necesite para sus obligaciones de registro de viajeros y, como tarde, se eliminan con la cuenta del hotel
+- El registro de actividad se conserva 365 días y las notificaciones de la app 90 días
+- [BORRADOR – texto de eliminación de cuenta pendiente] Los datos de la cuenta y del hotel se conservan mientras la cuenta esté activa y se eliminan en un plazo de 30 días tras una solicitud de eliminación verificada
 - Los registros de facturación se conservan el tiempo que exija la normativa fiscal y contable
 - Los registros de registro y seguridad se conservan un tiempo limitado para prevenir fraudes
 ## 8. Seguridad
-Los datos se cifran en tránsito (TLS) y en reposo. El acceso se limita por función y por hotel. Nuestro proveedor de base de datos está auditado SOC 2 Tipo 2 y los pagos con tarjeta los gestiona Stripe, proveedor PCI DSS Nivel 1. Más información en Seguridad y datos .
+Los datos se cifran en tránsito (TLS) y en reposo. El acceso se limita por hotel y por función: el personal solo ve los alojamientos y funciones que permite su función, y las acciones importantes quedan en el registro de actividad. Nuestro proveedor de base de datos está auditado SOC 2 Tipo 2 y los pagos con tarjeta los gestiona Stripe, proveedor PCI DSS Nivel 1. Más información en Seguridad y datos .
 
 ## 9. Tus derechos
 EEE y Reino Unido: puedes solicitar acceso, rectificación, supresión, limitación y portabilidad, y oponerte al tratamiento. También puedes reclamar ante tu autoridad de protección de datos.
@@ -7556,13 +7622,23 @@ Preferencias de cookies
 ## 11. WhatsApp y mensajería con huéspedes
 Hostlio Pro se conecta a la plataforma WhatsApp Business y a las bandejas de las OTAs para enviar y recibir mensajes de huéspedes en nombre de los hoteles. Los teléfonos de los huéspedes solo se usan para comunicarse sobre la estancia. Los huéspedes pueden dejar de recibir mensajes pidiéndoselo al hotel.
 
-## 12. Menores
+## 12. Cuentas del personal y registro de actividad
+El titular de la cuenta puede invitar al personal y asignar a cada persona una función (gerente, recepción, limpieza, contabilidad o solo lectura) y acceso a los alojamientos que elija. Usamos el email de la persona invitada para enviarle la invitación y, cuando la acepta, su nombre, email, función y accesos para darle entrada. El titular decide a quién invita y debe informar al personal de que sus acciones quedan registradas.
+El registro de actividad anota acciones como crear, modificar o cancelar reservas, cambiar tarifas, habitaciones, ajustes o miembros del equipo, y aprobar o rechazar respuestas de IA, junto con el usuario, su función, la hora, la app usada y una dirección IP acortada (IPv4 a /24, IPv6 a /48). Las entradas no se pueden modificar, las ven el titular de la cuenta y las funciones autorizadas, y se eliminan a los 365 días.
+
+## 13. Funciones de IA (Lio)
+
+- Respuestas a huéspedes: para redactar una respuesta, Lio envía a nuestro proveedor de IA el mensaje del huésped, los mensajes anteriores de la conversación, los datos de su reserva (como nombre, fechas y habitación) y la información del hotel. El hotel decide qué temas se responden automáticamente y cuáles requieren aprobación
+- Respuestas a reseñas: en los planes que lo incluyen, Lio redacta respuestas a las reseñas de OTAs. Ninguna respuesta a una reseña se envía sin la aprobación del hotel
+- Traducción: las plantillas de bienvenida y despedida del hotel pueden traducirse con IA
+- Sugerencias de Lio: en los planes Pro y Growth, los nuevos mensajes y reseñas de huéspedes se analizan una vez al día para detectar temas recurrentes (por ejemplo, limpieza o wifi). Antes de enviar cualquier texto se ocultan automáticamente los emails, teléfonos, enlaces web, números largos como números de reserva o de tarjeta y el nombre del huésped. El resultado son resúmenes breves y generales, sin nombres de personas, números de habitación, fechas ni datos de contacto; los textos originales no se guardan con las sugerencias ni en nuestros registros. El resumen semanal opcional se redacta solo a partir de esos temas y estadísticas, sin textos de huéspedes. El hotel puede desactivar la parte de IA de las Sugerencias de Lio en sus ajustes
+## 14. Menores
 Hostlio Pro es un servicio para empresas y no está dirigido a menores de 16 años.
 
-## 13. Cambios
+## 15. Cambios
 Publicaremos los cambios en esta página y actualizaremos la fecha. Los cambios importantes también se notificarán a los clientes por email o en el panel.
 
-## 14. Contacto
+## 16. Contacto
 
 - Email: hello@hostliopro.com
 - Dirección: Loti Members LLC, 2108 N ST STE N, Sacramento, CA 95816
@@ -7572,7 +7648,8 @@ Publicaremos los cambios en esta página y actualizaremos la fecha. Los cambios 
 URL: https://hostliopro.com/es/terminos/
 
 ## Términos del servicio
-Última actualización: 4 de octubre de 2026 , Loti Members LLC, 2108 N ST STE N, Sacramento, CA 95816. Este texto es una traducción del original en inglés; en caso de discrepancia, prevalecerá la versión en inglés .
+Última actualización: 8 de octubre de 2026 , Loti Members LLC, 2108 N ST STE N, Sacramento, CA 95816. Este texto es una traducción del original en inglés; en caso de discrepancia, prevalecerá la versión en inglés .
+BORRADOR – en revisión legal, aún no está en vigor. No constituye asesoramiento jurídico.
 
 Estas Condiciones del servicio («Condiciones») regulan el uso de Hostlio Pro, operado por Loti Members LLC («nosotros»). Al crear una cuenta o usar el servicio aceptas estas Condiciones. Si usas Hostlio Pro para una empresa, las aceptas en su nombre.
 
@@ -7580,13 +7657,14 @@ Estas Condiciones del servicio («Condiciones») regulan el uso de Hostlio Pro, 
 Hostlio Pro es software en la nube para hoteles: mensajería con huéspedes por IA (Lio), channel manager, calendario de reservas, check-in online y herramientas relacionadas, ofrecido por suscripción a través del sitio web, el panel y la app móvil.
 
 ## 2. Tu cuenta
-Debes dar información correcta y proteger tus datos de acceso. Eres responsable de todo lo que se haga con tu cuenta, también por parte de tu equipo.
+Debes dar información correcta y proteger tus datos de acceso. Eres responsable de todo lo que se haga con tu cuenta, también por parte de tu equipo. El titular de la cuenta puede invitar al personal, asignarle funciones y acceso a alojamientos y retirarlo en cualquier momento; el titular decide quién tiene acceso. Las acciones en el panel y la app quedan en un registro de actividad, como se explica en nuestra Política de privacidad .
 
 ## 3. Prueba gratuita, pago y renovación automática
 
 - Todos los planes empiezan con una prueba gratuita de 7 días. Al registrarte se registra una tarjeta a través de Stripe
 - Si no cancelas antes de que termine la prueba, al terminar se cobrará automáticamente en tu tarjeta el plan y el periodo de facturación que elegiste
 - Las suscripciones se pagan por adelantado y se renuevan automáticamente al final de cada periodo mensual o anual hasta que las canceles. En cada renovación cobramos la tarjeta registrada
+- Cambios de plan: puedes pasar a otro plan o periodo de facturación cuando quieras desde la página de facturación. El cambio se aplica de inmediato. La diferencia de precio por el resto del periodo en curso se prorratea: al subir de plan se genera un cargo proporcional y al bajar, un crédito proporcional, ambos en tu siguiente factura. Pasar de facturación mensual a anual o al revés inicia en el acto un nuevo periodo de facturación y se factura inmediatamente, descontando la parte no usada del periodo anterior. Si falla un pago necesario para el cambio, el cambio no se aplica
 - Los precios están en dólares estadounidenses y no incluyen impuestos. Los planes y precios vigentes están en nuestra página de precios . La facturación anual cuesta un 20 % menos que el pago mensual
 - Precio de lanzamiento (early bird): los primeros 50 clientes mantienen ese precio mientras su suscripción siga activa sin interrupción. Si la suscripción se cancela o vence, el precio de lanzamiento termina y a una nueva suscripción se le aplican los precios vigentes
 - Podemos cambiar los precios de periodos futuros avisando por email con al menos 30 días de antelación; el nuevo precio se aplica desde tu siguiente renovación
@@ -7607,13 +7685,13 @@ Te comprometes a no:
 Eres el responsable del tratamiento de los datos personales de tus huéspedes. Te corresponde tener una base jurídica para tratarlos, informar a los huéspedes (por ejemplo, en tu propia política de privacidad) y cumplir las normas de registro de viajeros y documentos de identidad aplicables. Nuestro Acuerdo de tratamiento de datos (DPA) forma parte de estas Condiciones y se aplica a los datos de huéspedes que tratamos por ti.
 
 ## 8. Respuestas generadas por IA
-Lio redacta y envía respuestas con la información que tú facilitas. La IA puede equivocarse. Tú decides qué mensajes puede responder Lio automáticamente y cuáles requieren aprobación, y sigues siendo responsable de las respuestas enviadas en nombre de tu alojamiento. Lio te deriva los mensajes sobre los que no está seguro, pero no debes confiar en él para asuntos legales, médicos o de emergencia. En la medida permitida por la ley, no respondemos del contenido de las respuestas generadas por IA.
+Lio redacta y envía respuestas con la información que tú facilitas. La IA puede equivocarse. Tú decides qué mensajes puede responder Lio automáticamente y cuáles requieren aprobación, y sigues siendo responsable de las respuestas enviadas en nombre de tu alojamiento. Lio te deriva los mensajes sobre los que no está seguro, pero no debes confiar en él para asuntos legales, médicos o de emergencia. Las respuestas a reseñas de OTAs solo se envían cuando las apruebas. Las Sugerencias de Lio, las analíticas y los informes son recomendaciones y resúmenes basados en tus datos; tú decides si actuar según ellos y no garantizamos ningún resultado. En la medida permitida por la ley, no respondemos del contenido de las respuestas ni de las sugerencias generadas por IA.
 
 ## 9. Canales conectados y WhatsApp
 Las conexiones con canales se prestan a través de nuestro socio de conectividad Channex, y la mensajería a través de la plataforma WhatsApp Business y las bandejas de las OTAs. Debes cumplir las condiciones de cada plataforma que conectes. Los cambios en las API o políticas de terceros pueden afectar a las funciones y no somos responsables de ellos.
 
 ## 10. Tus datos
-Tus datos son tuyos. Solo los tratamos para prestar el servicio, como se describe en nuestra Política de privacidad y en el DPA. Puedes exportarlos mientras tu cuenta esté activa.
+Tus datos son tuyos. Solo los tratamos para prestar el servicio, como se describe en nuestra Política de privacidad y en el DPA. Puedes exportarlos mientras tu cuenta esté activa. [BORRADOR – texto de eliminación de cuenta pendiente] Para cerrar tu cuenta, consulta Eliminar tu cuenta .
 
 ## 11. Disponibilidad
 Buscamos una alta disponibilidad, pero no garantizamos un servicio ininterrumpido. Anunciamos con antelación el mantenimiento programado siempre que es posible.
@@ -7653,6 +7731,7 @@ URL: https://hostliopro.com/es/seguridad/
 
 ## Seguridad y protección de datos
 Los hoteles nos confían reservas, mensajes de huéspedes y datos de documentos de identidad. Aquí explicamos cómo los protegemos, quién los trata y cómo firmar nuestro Acuerdo de tratamiento de datos (DPA).
+BORRADOR – en revisión legal, aún no está en vigor. No constituye asesoramiento jurídico.
 
 ## Medidas principales
 
@@ -7660,7 +7739,7 @@ Los hoteles nos confían reservas, mensajes de huéspedes y datos de documentos 
 TLS en tránsito y cifrado en reposo de la base de datos y los archivos.
 
 ## Acceso por función y hotel
-Cada hotel solo ve sus datos; el acceso del personal sigue los roles que definas.
+Cada hotel solo ve sus datos; el acceso del personal sigue los roles que definas y las acciones importantes quedan en un registro de actividad.
 
 ## Proveedores auditados
 Base de datos con auditoría SOC 2 Tipo 2; pagos con tarjeta vía Stripe (PCI DSS Nivel 1).
@@ -7671,19 +7750,19 @@ Acuerdo de tratamiento de datos para RGPD, UK GDPR, KVKK y CCPA.
 ## Detalles
 
 ## Dónde están tus datos
-La base de datos, la autenticación y las funciones de servidor funcionan en Supabase; el sitio y el panel se alojan en Vercel. Algunos proveedores están en EE. UU.; las transferencias desde el EEE, el Reino Unido y Turquía se protegen con Cláusulas Contractuales Tipo u otros mecanismos legales.
+La base de datos, la autenticación y las funciones de servidor funcionan en Supabase, con la base de datos y el almacenamiento de archivos alojados en la UE (Irlanda); el sitio y el panel se alojan en Vercel. Algunos proveedores están en EE. UU.; las transferencias desde el EEE, el Reino Unido y Turquía se protegen con Cláusulas Contractuales Tipo u otros mecanismos legales.
 
 ## Pagos
 Los datos de la tarjeta se introducen en Stripe y nunca llegan a nuestros servidores. Solo vemos el plan, el periodo de facturación y el estado del pago.
 
 ## IA y mensajes de huéspedes
-Lio envía el contenido del mensaje a nuestro proveedor de IA solo para redactar una respuesta. Según sus condiciones comerciales, el proveedor no lo usa para entrenar sus modelos. Tú decides qué temas responde Lio automáticamente y cuáles requieren tu aprobación.
+Lio envía el contenido del mensaje a nuestro proveedor de IA solo para redactar una respuesta. Según sus condiciones comerciales, el proveedor no lo usa para entrenar sus modelos. Tú decides qué temas responde Lio automáticamente y cuáles requieren tu aprobación. Para las Sugerencias de Lio, los datos de contacto, los números largos y los nombres de huéspedes se ocultan antes de analizar mensajes y reseñas, y los resultados no contienen nombres de personas.
 
 ## Datos del check-in online
-Los datos de documentos de identidad y las firmas digitales se tratan como datos sensibles, solo los ve el personal de tu hotel y, como tarde, se eliminan con tu cuenta. No guardamos imágenes de documentos ni pasaportes: la zona de lectura mecánica se lee en el dispositivo del huésped o de tu personal y solo se envían los datos extraídos.
+Los datos de documentos de identidad y las firmas digitales se tratan como datos sensibles y solo los ve el personal cuya función lo permite. Las firmas se eliminan 30 días después de la salida; los datos de los documentos, como tarde, con tu cuenta. No guardamos imágenes de documentos ni pasaportes: la zona de lectura mecánica se lee en el dispositivo del huésped o de tu personal y solo se envían los datos extraídos.
 
 ## Conservación
-El contenido de los mensajes se anonimiza al final del plazo que fijes (por defecto 60 días); los datos de contacto de huéspedes se guardan 90 días tras la salida; los datos de la cuenta se eliminan en 30 días tras una solicitud verificada.
+El contenido de los mensajes se anonimiza 60 días después de la salida (puedes acortarlo a 30); el email, el teléfono y las notas de la reserva se borran 90 días después de la salida; los perfiles de huéspedes se anonimizan tras 365 días sin estancias; el registro de actividad se guarda 365 días. Lista completa en la sección 7 de nuestra Política de privacidad.
 
 ## Funciones según el RGPD
 Para los datos de huéspedes, tu hotel es el responsable y Hostlio Pro el encargado del tratamiento. Nuestro DPA recoge estas obligaciones y forma parte de las Condiciones del servicio.
@@ -7696,18 +7775,19 @@ Los cambios en el panel se registran campo a campo: quién, cuándo, en qué alo
 
 ## Subencargados
 Subencargado Ubicación Finalidad
-Supabase, Inc. USA Base de datos, autenticación y funciones de servidor
-Vercel, Inc. USA Alojamiento del sitio web y del panel
+Supabase, Inc. EU (Ireland); company in USA Base de datos, autenticación y funciones de servidor
+Vercel, Inc. USA Alojamiento del sitio web, del panel y de la página de check-in de huéspedes, incluidos los dominios de check-in propios de los hoteles
 Stripe, Inc. USA Pagos y facturación de la suscripción
-Anthropic, PBC USA Procesamiento con IA de los mensajes de huéspedes para redactar respuestas
+Anthropic, PBC USA Procesamiento con IA para redactar respuestas a mensajes de huéspedes y a reseñas de OTAs, traducir las plantillas de mensajes del hotel y, para las Sugerencias de Lio, detectar temas recurrentes en mensajes y reseñas tras ocultar los datos personales
 Meta Platforms, Inc. (WhatsApp Business Platform) USA / Ireland Envío y recepción de mensajes de WhatsApp
 Channex.io Ltd United Kingdom Sincronización de disponibilidad, tarifas, reservas y mensajes de OTAs
+Resend, Inc. USA Envío de emails: avisos de cuenta, facturación y cuota, invitaciones al personal, informes semanales y mensuales y, si el hotel los activa, enlaces de check-in y mensajes a huéspedes
 Make (Celonis) EU Formulario de contacto y automatización interna
 Google LLC / Google Ireland Ltd. (Firebase Cloud Messaging) USA / global Notificaciones push a la app móvil de Hostlio Pro en iOS y Android (token push del dispositivo, identificadores de instancia de la app y contenido de la notificación, como avisos de nuevos mensajes o reservas)
 Apple Inc. (Apple Push Notification service) USA Entrega de notificaciones push a dispositivos iPhone e iPad (token del dispositivo y contenido de la notificación, transmitidos a través de Firebase Cloud Messaging)
 Google LLC (ML Kit — on-device text recognition) On device (metrics: USA) Lectura de la zona de lectura mecánica del documento de identidad en el dispositivo del personal del hotel, en la app móvil; ninguna imagen ni texto sale del dispositivo y Google solo recibe métricas anónimas de uso y rendimiento de la API
 Twilio Inc.* USA Números de WhatsApp y facturación de mensajes para hoteles
-Twilio SendGrid* USA Correo transaccional
+Twilio SendGrid* USA Recepción de emails de huéspedes para un futuro canal de email
 
 * Previsto: se añadirá a esta lista antes de que trate ningún dato
 
@@ -9833,7 +9913,8 @@ A: Nell'extranet di Booking.com apri la casella dei messaggi degli ospiti e salv
 URL: https://hostliopro.com/it/privacy/
 
 ## Informativa sulla privacy
-Ultimo aggiornamento: 4 ottobre 2026 , Loti Members LLC, 2108 N ST STE N, Sacramento, CA 95816. Il presente testo è una traduzione dell'originale in inglese; in caso di discrepanze prevale la versione inglese .
+Ultimo aggiornamento: 8 ottobre 2026 , Loti Members LLC, 2108 N ST STE N, Sacramento, CA 95816. Il presente testo è una traduzione dell'originale in inglese; in caso di discrepanze prevale la versione inglese .
+BOZZA – in revisione legale, non ancora in vigore. Non costituisce consulenza legale.
 
 La presente Informativa sulla privacy spiega come Hostlio Pro, gestito da Loti Members LLC («noi»), raccoglie, usa e condivide dati personali quando visiti hostliopro.com, ti registri o usi il pannello, l’app mobile e le funzioni per gli ospiti di Hostlio Pro.
 
@@ -9849,16 +9930,22 @@ Per i dati dei nostri clienti (titolari e personale degli hotel) e dei visitator
 - Dati del check-in online: dati del documento d’identità (nome, numero del documento, nazionalità, data di nascita e data di scadenza), accompagnatori e firma digitale, se l’hotel usa il check-in online. La zona a lettura ottica del documento viene letta sul dispositivo dell’ospite o dello staff dell’hotel; non raccogliamo né conserviamo immagini dei documenti d’identità. Li trattiamo come dati sensibili
 - Dati di registrazione e sicurezza: indirizzo IP, email cifrata (hash) ed esito dei tentativi di registrazione, per prevenire frodi e abusi
 - Origine di marketing: solo se arrivi tramite un link con parametri di campagna (parametri UTM o un identificativo di clic pubblicitario): tali parametri, la pagina di arrivo e l’ora della prima visita, salvati nel browser e inviati a noi solo con il modulo di registrazione o di contatto
-- Dati di utilizzo: come vengono usati il pannello e l’app, log tecnici e, se usi l’app mobile, il token per le notifiche push del dispositivo
+- Dati dello staff: quando inviti membri del team, il loro indirizzo email, nome, ruolo, le strutture a cui possono accedere, lo stato dell’invito e la lingua preferita
+- Registro attività: chi ha fatto cosa e quando nel pannello e nell’app (utente, ruolo, azione, record interessato, app di origine e indirizzo IP abbreviato). Per i record di ospiti e check-in vengono registrati solo l’azione e i nomi dei campi modificati, mai i loro valori
+- Recensioni OTA: testo della recensione, punteggi e nome dell’autore ricevuti dai canali collegati, e le risposte che approvi
+- Dati di utilizzo: come vengono usati il pannello e l’app, log tecnici e, se usi l’app mobile, il token per le notifiche push del dispositivo. Cookie e strumenti di analisi del sito hostliopro.com sono descritti nella sezione 10
 ## 3. Come usiamo i dati
 
 - Erogare il servizio: sincronizzare i canali, mostrare le prenotazioni, inviare messaggi agli ospiti e gestire il check-in online
 - Preparare e inviare risposte AI agli ospiti per conto dell’hotel
+- Mostrare all’hotel le sue analisi (occupazione, ricavi e totali simili) e inviare report settimanali e mensili via email, che contengono solo totali e nessun dato degli ospiti
+- Offrire all’hotel i Suggerimenti di Lio: indicazioni basate sui suoi dati, compresi i temi ricorrenti nei messaggi e nelle recensioni degli ospiti (vedi sezione 13)
+- Tenere un registro attività perché il titolare dell’account veda chi ha modificato cosa, e per indagare su incidenti di sicurezza
 - Gestire l’abbonamento: prova gratuita, addebiti automatici alla fine della prova e a ogni rinnovo, fatture e limiti del piano come la quota mensile di messaggi AI
 - Mantenere il servizio sicuro e prevenire frodi
 - Misurare quali canali di marketing portano clienti
 - Rispondere alle richieste di assistenza e inviare email di servizio e fatturazione
-- Adempiere agli obblighi di legge Non vendiamo dati personali né li condividiamo per pubblicità comportamentale. Il contenuto dei messaggi degli ospiti non è usato per il nostro marketing. Il nostro fornitore di AI tratta tale contenuto solo per generare risposte e, secondo le sue condizioni commerciali, non lo usa per addestrare i propri modelli.
+- Adempiere agli obblighi di legge Non vendiamo dati personali né li condividiamo per pubblicità comportamentale. Il contenuto dei messaggi degli ospiti non è usato per il nostro marketing. Il nostro fornitore di AI tratta tale contenuto solo per fornire le funzioni AI descritte nella sezione 13 e, secondo le sue condizioni commerciali, non lo usa per addestrare i propri modelli.
 
 ## 4. Basi giuridiche (SEE, Regno Unito, Turchia)
 Ci basiamo sull’esecuzione del contratto con te, sul nostro legittimo interesse (sicurezza, prevenzione delle frodi, miglioramento del servizio, misurazione del marketing), sull’adempimento di obblighi di legge e, ove necessario, sul tuo consenso. Per i dati degli ospiti la base giuridica è stabilita dall’hotel.
@@ -9866,18 +9953,19 @@ Ci basiamo sull’esecuzione del contratto con te, sul nostro legittimo interess
 ## 5. Con chi condividiamo i dati
 Usiamo i sub-responsabili indicati sotto, ciascuno vincolato da un contratto che protegge i dati. Quando colleghi un canale di vendita (come Booking.com, Airbnb o Expedia), i dati sono scambiati con quel canale secondo le sue condizioni.
 Sub-responsabile Sede Finalità
-Supabase, Inc. USA Database, autenticazione e funzioni server
-Vercel, Inc. USA Hosting del sito e del pannello
+Supabase, Inc. EU (Ireland); company in USA Database, autenticazione e funzioni server
+Vercel, Inc. USA Hosting del sito, del pannello e della pagina di check-in per gli ospiti, compresi i domini di check-in propri degli hotel
 Stripe, Inc. USA Pagamenti e fatturazione dell’abbonamento
-Anthropic, PBC USA Elaborazione AI dei messaggi degli ospiti per preparare le risposte
+Anthropic, PBC USA Elaborazione AI per preparare risposte ai messaggi degli ospiti e alle recensioni OTA, tradurre i modelli di messaggio dell’hotel e, per i Suggerimenti di Lio, individuare temi ricorrenti in messaggi e recensioni dopo il mascheramento dei dati personali
 Meta Platforms, Inc. (WhatsApp Business Platform) USA / Ireland Invio e ricezione di messaggi WhatsApp
 Channex.io Ltd United Kingdom Sincronizzazione di disponibilità, tariffe, prenotazioni e messaggi OTA
+Resend, Inc. USA Invio di email: avvisi su account, fatturazione e quota, inviti allo staff, report settimanali e mensili e, se l’hotel li attiva, link di check-in e messaggi agli ospiti
 Make (Celonis) EU Modulo di contatto e automazioni interne
 Google LLC / Google Ireland Ltd. (Firebase Cloud Messaging) USA / global Notifiche push all’app mobile Hostlio Pro su iOS e Android (token push del dispositivo, identificativi dell’istanza dell’app e contenuto della notifica, come avvisi di nuovi messaggi o prenotazioni)
 Apple Inc. (Apple Push Notification service) USA Consegna delle notifiche push ai dispositivi iPhone e iPad (token del dispositivo e contenuto della notifica, inoltrati tramite Firebase Cloud Messaging)
 Google LLC (ML Kit — on-device text recognition) On device (metrics: USA) Lettura della zona a lettura ottica del documento d’identità sul dispositivo dello staff dell’hotel, nell’app mobile; nessuna immagine o testo lascia il dispositivo e Google riceve solo metriche anonime di utilizzo e prestazioni dell’API
 Twilio Inc.* USA Numeri WhatsApp e fatturazione dei messaggi per gli hotel
-Twilio SendGrid* USA Email transazionali
+Twilio SendGrid* USA Ricezione delle email degli ospiti per un futuro canale email
 
 * Previsto: sarà aggiunto a questo elenco prima di trattare qualsiasi dato
 Possiamo inoltre comunicare dati quando richiesto dalla legge o per tutelare i nostri diritti.
@@ -9887,14 +9975,17 @@ Abbiamo sede negli Stati Uniti e alcuni sub-responsabili trattano dati fuori dal
 
 ## 7. Per quanto tempo conserviamo i dati
 
-- Il contenuto dei messaggi degli ospiti viene anonimizzato alla scadenza del periodo impostato dall’hotel (predefinito: 60 giorni)
-- I recapiti degli ospiti sono conservati per 90 giorni dopo la partenza, salvo cancellazione anticipata da parte dell’hotel
-- I dati del check-in online sono conservati solo per il tempo necessario all’hotel per i propri obblighi di registrazione degli ospiti e, al più tardi, sono cancellati con l’account dell’hotel
-- I dati dell’account e dell’hotel sono conservati finché l’account è attivo e cancellati entro 30 giorni da una richiesta di cancellazione verificata
+- Il contenuto dei messaggi degli ospiti e gli allegati vengono anonimizzati 60 giorni dopo la partenza oppure, se la conversazione non è collegata a una prenotazione, dopo l’ultimo messaggio. L’hotel può ridurre questo periodo nelle impostazioni fino a un minimo di 30 giorni, ma non estenderlo
+- Email, telefono e note di prenotazione dell’ospite vengono cancellati 90 giorni dopo la partenza, salvo cancellazione anticipata da parte dell’hotel; lo stesso vale per le richieste di prenotazione fatte tramite Lio. Nome dell’ospite e dati della prenotazione (date, camera, prezzo, canale) restano sulla prenotazione finché l’account dell’hotel è attivo, perché l’hotel può averne bisogno per fatturazione e contabilità
+- I profili nell’elenco ospiti dell’hotel vengono anonimizzati dopo 365 giorni senza soggiorni
+- Il nome dell’autore delle recensioni OTA viene rimosso 365 giorni dopo la ricezione della recensione; il testo, pubblico sul canale, viene conservato
+- Check-in online: le immagini dei documenti d’identità non vengono mai conservate. Le firme degli ospiti vengono cancellate automaticamente 30 giorni dopo la partenza. I dati del documento d’identità sono conservati solo per il tempo necessario all’hotel per i propri obblighi di registrazione degli ospiti e, al più tardi, sono cancellati con l’account dell’hotel
+- Il registro attività è conservato per 365 giorni e le notifiche nell’app per 90 giorni
+- [BOZZA – testo sull’eliminazione dell’account in attesa] I dati dell’account e dell’hotel sono conservati finché l’account è attivo e cancellati entro 30 giorni da una richiesta di cancellazione verificata
 - I dati di fatturazione sono conservati per il tempo richiesto dalla normativa fiscale e contabile
 - I log di registrazione e sicurezza sono conservati per un periodo limitato a fini antifrode
 ## 8. Sicurezza
-I dati sono cifrati in transito (TLS) e a riposo. L’accesso è limitato per ruolo e per hotel. Il nostro fornitore di database è certificato SOC 2 Type 2 e i pagamenti con carta sono gestiti da Stripe, fornitore PCI DSS Level 1. Maggiori dettagli nella pagina Sicurezza e dati .
+I dati sono cifrati in transito (TLS) e a riposo. L’accesso è limitato per hotel e per ruolo: lo staff vede solo le strutture e le funzioni consentite dal proprio ruolo e le azioni importanti sono annotate nel registro attività. Il nostro fornitore di database è certificato SOC 2 Type 2 e i pagamenti con carta sono gestiti da Stripe, fornitore PCI DSS Level 1. Maggiori dettagli nella pagina Sicurezza e dati .
 
 ## 9. I tuoi diritti
 SEE e Regno Unito: puoi chiedere accesso, rettifica, cancellazione, limitazione e portabilità, e opporti al trattamento. Puoi anche proporre reclamo all’autorità di controllo.
@@ -9915,13 +10006,23 @@ Preferenze cookie
 ## 11. WhatsApp e messaggi con gli ospiti
 Hostlio Pro si collega alla piattaforma WhatsApp Business e alle caselle OTA per inviare e ricevere i messaggi degli ospiti per conto degli hotel. I numeri di telefono degli ospiti sono usati solo per comunicare sul soggiorno. Gli ospiti possono smettere di ricevere messaggi chiedendolo all’hotel.
 
-## 12. Minori
+## 12. Account dello staff e registro attività
+Il titolare dell’account può invitare lo staff e assegnare a ciascuno un ruolo (responsabile, reception, pulizie, contabilità o sola lettura) e l’accesso alle strutture scelte. Usiamo l’indirizzo email della persona invitata per inviare l’invito e, dopo l’accettazione, nome, email, ruolo e accessi per consentirle l’ingresso. Il titolare decide chi invitare e deve informare lo staff che le sue azioni vengono registrate.
+Il registro attività annota azioni come creare, modificare o cancellare prenotazioni, cambiare tariffe, camere, impostazioni o membri del team e approvare o rifiutare risposte AI, insieme all’utente, al suo ruolo, all’ora, all’app usata e a un indirizzo IP abbreviato (IPv4 a /24, IPv6 a /48). Le voci non sono modificabili, sono visibili al titolare dell’account e ai ruoli autorizzati e vengono cancellate dopo 365 giorni.
+
+## 13. Funzioni AI (Lio)
+
+- Risposte agli ospiti: per preparare una risposta, Lio invia al nostro fornitore di AI il messaggio dell’ospite, i messaggi precedenti della conversazione, i dati della prenotazione (come nome, date e camera) e le informazioni dell’hotel. L’hotel decide a quali argomenti si risponde automaticamente e quali richiedono approvazione
+- Risposte alle recensioni: nei piani che lo prevedono, Lio prepara risposte alle recensioni OTA. Nessuna risposta a una recensione viene inviata senza l’approvazione dell’hotel
+- Traduzione: i modelli di benvenuto e di saluto dell’hotel possono essere tradotti con l’AI
+- Suggerimenti di Lio: nei piani Pro e Growth i nuovi messaggi e le nuove recensioni degli ospiti vengono analizzati una volta al giorno per individuare temi ricorrenti (ad esempio pulizia o Wi-Fi). Prima di inviare qualsiasi testo vengono mascherati automaticamente indirizzi email, numeri di telefono, link, numeri lunghi come quelli di prenotazione o di carta e il nome dell’ospite. Il risultato sono sintesi brevi e generali, senza nomi di persone, numeri di camera, date o recapiti; i testi originali non vengono conservati con i suggerimenti né nei nostri log. Il riepilogo settimanale facoltativo è redatto solo da questi temi e statistiche, senza testi degli ospiti. L’hotel può disattivare la parte AI dei Suggerimenti di Lio nelle impostazioni
+## 14. Minori
 Hostlio Pro è un servizio per aziende e non è rivolto a minori di 16 anni.
 
-## 13. Modifiche
+## 15. Modifiche
 Pubblicheremo le modifiche in questa pagina aggiornando la data. Le modifiche rilevanti saranno comunicate ai clienti anche via email o nel pannello.
 
-## 14. Contatti
+## 16. Contatti
 
 - Email: hello@hostliopro.com
 - Indirizzo: Loti Members LLC, 2108 N ST STE N, Sacramento, CA 95816
@@ -9931,7 +10032,8 @@ Pubblicheremo le modifiche in questa pagina aggiornando la data. Le modifiche ri
 URL: https://hostliopro.com/it/termini/
 
 ## Termini di servizio
-Ultimo aggiornamento: 4 ottobre 2026 , Loti Members LLC, 2108 N ST STE N, Sacramento, CA 95816. Il presente testo è una traduzione dell'originale in inglese; in caso di discrepanze prevale la versione inglese .
+Ultimo aggiornamento: 8 ottobre 2026 , Loti Members LLC, 2108 N ST STE N, Sacramento, CA 95816. Il presente testo è una traduzione dell'originale in inglese; in caso di discrepanze prevale la versione inglese .
+BOZZA – in revisione legale, non ancora in vigore. Non costituisce consulenza legale.
 
 I presenti Termini di servizio («Termini») disciplinano l’uso di Hostlio Pro, gestito da Loti Members LLC («noi»). Creando un account o usando il servizio accetti questi Termini. Se usi Hostlio Pro per un’azienda, li accetti per suo conto.
 
@@ -9939,13 +10041,14 @@ I presenti Termini di servizio («Termini») disciplinano l’uso di Hostlio Pro
 Hostlio Pro è un software in cloud per hotel: messaggi AI con gli ospiti (Lio), channel manager, calendario prenotazioni, check-in online e strumenti correlati, offerto in abbonamento tramite il sito, il pannello e l’app mobile.
 
 ## 2. Il tuo account
-Devi fornire informazioni corrette e proteggere le credenziali di accesso. Sei responsabile di tutto ciò che avviene con il tuo account, anche da parte del tuo staff.
+Devi fornire informazioni corrette e proteggere le credenziali di accesso. Sei responsabile di tutto ciò che avviene con il tuo account, anche da parte del tuo staff. Il titolare dell’account può invitare lo staff, assegnare ruoli e accesso alle strutture e rimuoverlo in qualsiasi momento; è il titolare a decidere chi ha accesso. Le azioni nel pannello e nell’app sono annotate in un registro attività, come descritto nell’ Informativa sulla privacy .
 
 ## 3. Prova gratuita, pagamento e rinnovo automatico
 
 - Ogni piano inizia con una prova gratuita di 7 giorni. Alla registrazione viene acquisita una carta tramite Stripe
 - Se non disdici prima della fine della prova, al termine la carta viene addebitata automaticamente per il piano e il periodo di fatturazione scelti
 - Gli abbonamenti si pagano in anticipo e si rinnovano automaticamente alla fine di ogni periodo mensile o annuale fino alla disdetta. A ogni rinnovo addebitiamo la carta registrata
+- Cambio di piano: puoi passare a un altro piano o periodo di fatturazione in qualsiasi momento dalla pagina di fatturazione. La modifica ha effetto immediato. La differenza di prezzo per il resto del periodo in corso è calcolata pro rata: il passaggio a un piano superiore genera un addebito proporzionale e quello a un piano inferiore un credito proporzionale, entrambi sulla fattura successiva. Il passaggio dalla fatturazione mensile a quella annuale o viceversa avvia subito un nuovo periodo di fatturazione ed è fatturato immediatamente, scalando la parte non usata del periodo precedente. Se un pagamento necessario per la modifica non va a buon fine, la modifica non viene applicata
 - I prezzi sono in dollari USA, tasse escluse. Piani e prezzi aggiornati sono nella pagina prezzi . La fatturazione annuale costa il 20% in meno del pagamento mensile
 - Prezzo early bird: i primi 50 clienti mantengono il prezzo early bird finché l’abbonamento resta attivo senza interruzioni. Se l’abbonamento viene disdetto o scade, il prezzo early bird termina e a un nuovo abbonamento si applicano i prezzi correnti
 - Possiamo modificare i prezzi dei periodi futuri con almeno 30 giorni di preavviso via email; il nuovo prezzo si applica dal rinnovo successivo
@@ -9966,13 +10069,13 @@ Ti impegni a non:
 Sei il titolare del trattamento dei dati personali dei tuoi ospiti. Spetta a te avere una base giuridica per trattarli, informare gli ospiti (ad esempio con la tua informativa) e rispettare le norme sulla registrazione degli ospiti e sui documenti d’identità applicabili. Il nostro Accordo sul trattamento dei dati (DPA) fa parte di questi Termini e si applica ai dati degli ospiti che trattiamo per te.
 
 ## 8. Risposte generate dall’AI
-Lio prepara e invia risposte con le informazioni che fornisci. L’AI può sbagliare. Sei tu a decidere a quali messaggi Lio può rispondere automaticamente e quali richiedono approvazione, e resti responsabile delle risposte inviate per conto della tua struttura. Lio ti passa i messaggi su cui non è sicuro, ma non devi affidarti a lui per questioni legali, mediche o di emergenza. Nei limiti di legge non rispondiamo del contenuto delle risposte generate dall’AI.
+Lio prepara e invia risposte con le informazioni che fornisci. L’AI può sbagliare. Sei tu a decidere a quali messaggi Lio può rispondere automaticamente e quali richiedono approvazione, e resti responsabile delle risposte inviate per conto della tua struttura. Lio ti passa i messaggi su cui non è sicuro, ma non devi affidarti a lui per questioni legali, mediche o di emergenza. Le risposte alle recensioni OTA vengono inviate solo dopo la tua approvazione. I Suggerimenti di Lio, le analisi e i report sono indicazioni e sintesi basate sui tuoi dati; decidi tu se seguirli e non garantiamo alcun risultato. Nei limiti di legge non rispondiamo del contenuto delle risposte e dei suggerimenti generati dall’AI.
 
 ## 9. Canali collegati e WhatsApp
 Le connessioni ai canali sono fornite tramite il nostro partner di connettività Channex e la messaggistica tramite la piattaforma WhatsApp Business e le caselle OTA. Devi rispettare i termini di ogni piattaforma che colleghi. Le modifiche ad API o policy di terzi possono incidere sulle funzioni e non ne siamo responsabili.
 
 ## 10. I tuoi dati
-I tuoi dati restano tuoi. Li trattiamo solo per erogare il servizio, come descritto nell’ Informativa sulla privacy e nel DPA. Puoi esportarli finché l’account è attivo.
+I tuoi dati restano tuoi. Li trattiamo solo per erogare il servizio, come descritto nell’ Informativa sulla privacy e nel DPA. Puoi esportarli finché l’account è attivo. [BOZZA – testo sull’eliminazione dell’account in attesa] Per chiudere l’account consulta Elimina il tuo account .
 
 ## 11. Disponibilità
 Puntiamo a un’elevata disponibilità ma non garantiamo un servizio ininterrotto. Quando possibile annunciamo in anticipo la manutenzione programmata.
@@ -10012,6 +10115,7 @@ URL: https://hostliopro.com/it/sicurezza/
 
 ## Sicurezza e protezione dei dati
 Gli hotel ci affidano prenotazioni, messaggi degli ospiti e dati dei documenti d’identità. Qui spieghiamo come li proteggiamo, chi li tratta e come firmare il nostro Accordo sul trattamento dei dati (DPA).
+BOZZA – in revisione legale, non ancora in vigore. Non costituisce consulenza legale.
 
 ## Misure principali
 
@@ -10019,7 +10123,7 @@ Gli hotel ci affidano prenotazioni, messaggi degli ospiti e dati dei documenti d
 TLS in transito e cifratura a riposo di database e file.
 
 ## Accesso per ruolo e hotel
-Ogni hotel vede solo i propri dati; l’accesso dello staff segue i ruoli che imposti.
+Ogni hotel vede solo i propri dati; l’accesso dello staff segue i ruoli che imposti e le azioni importanti restano in un registro attività.
 
 ## Fornitori certificati
 Database con audit SOC 2 Type 2; pagamenti con carta tramite Stripe (PCI DSS Level 1).
@@ -10030,19 +10134,19 @@ Accordo sul trattamento dei dati per GDPR, UK GDPR, KVKK e CCPA.
 ## Dettagli
 
 ## Dove sono i tuoi dati
-Database, autenticazione e funzioni server girano su Supabase; sito e pannello sono ospitati su Vercel. Alcuni fornitori hanno sede negli USA; i trasferimenti da SEE, Regno Unito e Turchia sono tutelati da Clausole contrattuali tipo o altri strumenti legittimi.
+Database, autenticazione e funzioni server girano su Supabase, con database e archiviazione dei file ospitati nell’UE (Irlanda); sito e pannello sono ospitati su Vercel. Alcuni fornitori hanno sede negli USA; i trasferimenti da SEE, Regno Unito e Turchia sono tutelati da Clausole contrattuali tipo o altri strumenti legittimi.
 
 ## Pagamenti
 I dati della carta vengono inseriti in Stripe e non arrivano mai ai nostri server. Vediamo solo piano, periodo di fatturazione e stato del pagamento.
 
 ## AI e messaggi degli ospiti
-Lio invia il contenuto del messaggio al nostro fornitore di AI solo per preparare una risposta. Secondo le sue condizioni commerciali, il fornitore non lo usa per addestrare i modelli. Sei tu a decidere a quali argomenti Lio risponde da solo e quali richiedono la tua approvazione.
+Lio invia il contenuto del messaggio al nostro fornitore di AI solo per preparare una risposta. Secondo le sue condizioni commerciali, il fornitore non lo usa per addestrare i modelli. Sei tu a decidere a quali argomenti Lio risponde da solo e quali richiedono la tua approvazione. Per i Suggerimenti di Lio, recapiti, numeri lunghi e nomi degli ospiti vengono mascherati prima di analizzare messaggi e recensioni, e i risultati non contengono nomi di persone.
 
 ## Dati del check-in online
-Dati dei documenti e firme digitali sono trattati come dati sensibili, visibili solo allo staff del tuo hotel e cancellati al più tardi con il tuo account. Non conserviamo immagini di documenti o passaporti: la zona a lettura ottica viene letta sul dispositivo dell’ospite o del tuo staff e vengono inviati solo i dati estratti.
+Dati dei documenti e firme digitali sono trattati come dati sensibili e sono visibili solo allo staff il cui ruolo lo consente. Le firme sono cancellate 30 giorni dopo la partenza; i dati dei documenti al più tardi con il tuo account. Non conserviamo immagini di documenti o passaporti: la zona a lettura ottica viene letta sul dispositivo dell’ospite o del tuo staff e vengono inviati solo i dati estratti.
 
 ## Conservazione
-Il contenuto dei messaggi è anonimizzato alla scadenza del periodo impostato (predefinito 60 giorni); i recapiti degli ospiti sono conservati 90 giorni dopo la partenza; i dati dell’account sono cancellati entro 30 giorni da una richiesta verificata.
+Il contenuto dei messaggi è anonimizzato 60 giorni dopo la partenza (puoi ridurlo a 30); email, telefono e note di prenotazione sono cancellati 90 giorni dopo la partenza; i profili ospite sono anonimizzati dopo 365 giorni senza soggiorni; il registro attività è conservato 365 giorni. Elenco completo nella sezione 7 dell’Informativa sulla privacy.
 
 ## Ruoli secondo il GDPR
 Per i dati degli ospiti il titolare è il tuo hotel e Hostlio Pro è responsabile del trattamento. Il nostro DPA definisce questi obblighi e fa parte dei Termini di servizio.
@@ -10055,18 +10159,19 @@ Le modifiche nel pannello sono registrate campo per campo: chi, quando, in quale
 
 ## Sub-responsabili
 Sub-responsabile Sede Finalità
-Supabase, Inc. USA Database, autenticazione e funzioni server
-Vercel, Inc. USA Hosting del sito e del pannello
+Supabase, Inc. EU (Ireland); company in USA Database, autenticazione e funzioni server
+Vercel, Inc. USA Hosting del sito, del pannello e della pagina di check-in per gli ospiti, compresi i domini di check-in propri degli hotel
 Stripe, Inc. USA Pagamenti e fatturazione dell’abbonamento
-Anthropic, PBC USA Elaborazione AI dei messaggi degli ospiti per preparare le risposte
+Anthropic, PBC USA Elaborazione AI per preparare risposte ai messaggi degli ospiti e alle recensioni OTA, tradurre i modelli di messaggio dell’hotel e, per i Suggerimenti di Lio, individuare temi ricorrenti in messaggi e recensioni dopo il mascheramento dei dati personali
 Meta Platforms, Inc. (WhatsApp Business Platform) USA / Ireland Invio e ricezione di messaggi WhatsApp
 Channex.io Ltd United Kingdom Sincronizzazione di disponibilità, tariffe, prenotazioni e messaggi OTA
+Resend, Inc. USA Invio di email: avvisi su account, fatturazione e quota, inviti allo staff, report settimanali e mensili e, se l’hotel li attiva, link di check-in e messaggi agli ospiti
 Make (Celonis) EU Modulo di contatto e automazioni interne
 Google LLC / Google Ireland Ltd. (Firebase Cloud Messaging) USA / global Notifiche push all’app mobile Hostlio Pro su iOS e Android (token push del dispositivo, identificativi dell’istanza dell’app e contenuto della notifica, come avvisi di nuovi messaggi o prenotazioni)
 Apple Inc. (Apple Push Notification service) USA Consegna delle notifiche push ai dispositivi iPhone e iPad (token del dispositivo e contenuto della notifica, inoltrati tramite Firebase Cloud Messaging)
 Google LLC (ML Kit — on-device text recognition) On device (metrics: USA) Lettura della zona a lettura ottica del documento d’identità sul dispositivo dello staff dell’hotel, nell’app mobile; nessuna immagine o testo lascia il dispositivo e Google riceve solo metriche anonime di utilizzo e prestazioni dell’API
 Twilio Inc.* USA Numeri WhatsApp e fatturazione dei messaggi per gli hotel
-Twilio SendGrid* USA Email transazionali
+Twilio SendGrid* USA Ricezione delle email degli ospiti per un futuro canale email
 
 * Previsto: sarà aggiunto a questo elenco prima di trattare qualsiasi dato
 
@@ -11933,7 +12038,8 @@ A: Na extranet do Booking.com, abra a caixa de mensagens dos hóspedes e salve c
 URL: https://hostliopro.com/pt/privacidade/
 
 ## Política de privacidade
-Última atualização: 4 de outubro de 2026 , Loti Members LLC, 2108 N ST STE N, Sacramento, CA 95816. Este texto é uma tradução do original em inglês; em caso de divergência, prevalece a versão em inglês .
+Última atualização: 8 de outubro de 2026 , Loti Members LLC, 2108 N ST STE N, Sacramento, CA 95816. Este texto é uma tradução do original em inglês; em caso de divergência, prevalece a versão em inglês .
+RASCUNHO – em revisão jurídica, ainda não está em vigor. Não constitui aconselhamento jurídico.
 
 Esta Política de Privacidade explica como o Hostlio Pro, operado pela Loti Members LLC («nós»), coleta, usa e compartilha dados pessoais quando você visita hostliopro.com, se cadastra ou usa o painel, o app e os recursos para hóspedes do Hostlio Pro.
 
@@ -11949,16 +12055,22 @@ Para os dados dos nossos clientes (proprietários e equipes de hotéis) e visita
 - Dados do check-in online: dados do documento de identidade (nome, número do documento, nacionalidade, data de nascimento e validade), acompanhantes e assinatura digital, quando o hotel usa o check-in online. A zona de leitura mecânica do documento é lida no próprio aparelho do hóspede ou da equipe do hotel; não coletamos nem armazenamos imagens de documentos de identidade. Tratamos esses dados como sensíveis
 - Dados de cadastro e segurança: endereço IP, e-mail em hash e resultado das tentativas de cadastro, para prevenir fraudes e abusos
 - Origem de marketing: só se você chegar por um link com parâmetros de campanha (parâmetros UTM ou um identificador de clique de anúncio): esses parâmetros, a página de entrada e o horário da primeira visita, guardados no navegador e enviados a nós só com o formulário de cadastro ou de contato
-- Dados de uso: como o painel e o app são usados, registros técnicos e, se você usa o app, o token de notificações push do seu dispositivo
+- Dados da equipe: quando você convida membros da equipe, o e-mail, nome, função, as propriedades que podem acessar, o status do convite e o idioma preferido
+- Registro de atividades: quem fez o quê e quando no painel e no app (usuário, função, ação, registro afetado, app de origem e endereço IP encurtado). Em registros de hóspedes e de check-in, só a ação e os nomes dos campos alterados são registrados, nunca os valores
+- Avaliações das OTAs: texto da avaliação, notas e nome do autor recebidos dos canais conectados, e as respostas que você aprova
+- Dados de uso: como o painel e o app são usados, registros técnicos e, se você usa o app, o token de notificações push do seu dispositivo. Cookies e análise de tráfego do site hostliopro.com são descritos na seção 10
 ## 3. Como usamos os dados
 
 - Prestar o serviço: sincronizar canais, mostrar reservas, enviar mensagens a hóspedes e fazer o check-in online
 - Redigir e enviar respostas com IA aos hóspedes em nome do hotel
+- Mostrar ao hotel suas análises (ocupação, receita e totais semelhantes) e enviar relatórios semanais e mensais por e-mail, que contêm só totais e nenhum dado de hóspedes
+- Oferecer ao hotel as Sugestões do Lio: recomendações baseadas nos próprios dados dele, incluindo temas recorrentes em mensagens e avaliações de hóspedes (ver seção 13)
+- Manter um registro de atividades para que o titular da conta veja quem alterou o quê e para investigar incidentes de segurança
 - Gerir sua assinatura: o teste grátis, as cobranças automáticas ao fim do teste e a cada renovação, faturas e limites do plano, como a cota mensal de mensagens de IA
 - Manter o serviço seguro e prevenir fraudes
 - Medir quais canais de marketing trazem clientes
 - Responder a pedidos de suporte e enviar e-mails de serviço e cobrança
-- Cumprir obrigações legais Não vendemos dados pessoais nem os compartilhamos para publicidade comportamental. O conteúdo das mensagens de hóspedes não é usado no nosso marketing. Nosso fornecedor de IA trata esse conteúdo apenas para gerar respostas e, pelos seus termos comerciais, não o usa para treinar modelos.
+- Cumprir obrigações legais Não vendemos dados pessoais nem os compartilhamos para publicidade comportamental. O conteúdo das mensagens de hóspedes não é usado no nosso marketing. Nosso fornecedor de IA trata esse conteúdo apenas para oferecer os recursos de IA descritos na seção 13 e, pelos seus termos comerciais, não o usa para treinar modelos.
 
 ## 4. Bases legais (EEE, Reino Unido, Turquia, Brasil)
 Nos baseamos na execução do contrato com você, em nosso legítimo interesse (segurança, prevenção de fraudes, melhoria do serviço, medição de marketing), no cumprimento de obrigações legais e, quando necessário, no seu consentimento. Para dados de hóspedes, a base legal é definida pelo hotel.
@@ -11966,18 +12078,19 @@ Nos baseamos na execução do contrato com você, em nosso legítimo interesse (
 ## 5. Com quem compartilhamos dados
 Usamos os suboperadores abaixo, cada um vinculado a um contrato que protege os dados. Quando você conecta um canal de venda (como Booking.com, Airbnb ou Expedia), os dados são trocados com esse canal conforme os termos dele.
 Suboperador Localização Finalidade
-Supabase, Inc. USA Banco de dados, autenticação e funções de servidor
-Vercel, Inc. USA Hospedagem do site e do painel
+Supabase, Inc. EU (Ireland); company in USA Banco de dados, autenticação e funções de servidor
+Vercel, Inc. USA Hospedagem do site, do painel e da página de check-in dos hóspedes, incluindo domínios de check-in próprios dos hotéis
 Stripe, Inc. USA Pagamentos e cobrança da assinatura
-Anthropic, PBC USA Processamento por IA das mensagens de hóspedes para redigir respostas
+Anthropic, PBC USA Processamento por IA para redigir respostas a mensagens de hóspedes e a avaliações das OTAs, traduzir os modelos de mensagem do hotel e, nas Sugestões do Lio, encontrar temas recorrentes em mensagens e avaliações depois de mascarar os dados pessoais
 Meta Platforms, Inc. (WhatsApp Business Platform) USA / Ireland Envio e recebimento de mensagens no WhatsApp
 Channex.io Ltd United Kingdom Sincronização de disponibilidade, tarifas, reservas e mensagens das OTAs
+Resend, Inc. USA Envio de e-mails: avisos de conta, cobrança e cota, convites para a equipe, relatórios semanais e mensais e, quando o hotel ativa, links de check-in e mensagens a hóspedes
 Make (Celonis) EU Formulário de contato e automação interna
 Google LLC / Google Ireland Ltd. (Firebase Cloud Messaging) USA / global Notificações push no app do Hostlio Pro para iOS e Android (token push do dispositivo, identificadores da instância do app e conteúdo da notificação, como alertas de novas mensagens ou reservas)
 Apple Inc. (Apple Push Notification service) USA Entrega de notificações push em iPhone e iPad (token do aparelho e conteúdo da notificação, repassados pelo Firebase Cloud Messaging)
 Google LLC (ML Kit — on-device text recognition) On device (metrics: USA) Leitura da zona de leitura mecânica do documento de identidade no aparelho da equipe do hotel, no app; nenhuma imagem ou texto sai do aparelho e o Google recebe apenas métricas anônimas de uso e desempenho da API
 Twilio Inc.* USA Números de WhatsApp e cobrança de mensagens para hotéis
-Twilio SendGrid* USA E-mail transacional
+Twilio SendGrid* USA Recebimento de e-mails de hóspedes para um futuro canal de e-mail
 
 * Previsto: será incluído nesta lista antes de tratar qualquer dado
 Também podemos divulgar dados quando exigido por lei ou para proteger nossos direitos.
@@ -11987,14 +12100,17 @@ Estamos sediados nos Estados Unidos e alguns suboperadores tratam dados fora do 
 
 ## 7. Por quanto tempo guardamos os dados
 
-- O conteúdo das mensagens de hóspedes é anonimizado ao fim do prazo definido pelo hotel nas configurações (padrão: 60 dias)
-- Os contatos dos hóspedes são guardados por 90 dias após a saída, salvo se o hotel os apagar antes
-- Os dados do check-in online são guardados apenas pelo tempo que o hotel precisar para suas obrigações de registro de hóspedes e, no máximo, são apagados com a conta do hotel
-- Os dados da conta e do hotel são guardados enquanto a conta estiver ativa e apagados em até 30 dias após um pedido de exclusão verificado
+- O conteúdo das mensagens de hóspedes e os anexos são anonimizados 60 dias após o check-out ou, se a conversa não estiver ligada a uma reserva, após a última mensagem. O hotel pode encurtar esse prazo nas configurações até o mínimo de 30 dias, mas não estendê-lo
+- O e-mail, o telefone e as observações da reserva do hóspede são apagados 90 dias após o check-out, salvo se o hotel os apagar antes; o mesmo vale para pedidos de reserva feitos pelo Lio. O nome do hóspede e os dados da reserva (datas, quarto, preço, canal) permanecem na reserva enquanto a conta do hotel estiver ativa, pois o hotel pode precisar deles para faturamento e contabilidade
+- Os perfis da lista de hóspedes do hotel são anonimizados após 365 dias sem estadias
+- O nome do autor das avaliações das OTAs é removido 365 dias após o recebimento; o texto, público no canal, é mantido
+- Check-in online: imagens de documentos de identidade nunca são guardadas. As assinaturas dos hóspedes são apagadas automaticamente 30 dias após o check-out. Os dados do documento de identidade são guardados apenas pelo tempo que o hotel precisar para suas obrigações de registro de hóspedes e, no máximo, são apagados com a conta do hotel
+- O registro de atividades é guardado por 365 dias e as notificações no app por 90 dias
+- [RASCUNHO – texto de exclusão da conta pendente] Os dados da conta e do hotel são guardados enquanto a conta estiver ativa e apagados em até 30 dias após um pedido de exclusão verificado
 - Os registros de cobrança são guardados pelo tempo exigido pela legislação fiscal e contábil
 - Os registros de cadastro e segurança são guardados por tempo limitado para prevenção de fraudes
 ## 8. Segurança
-Os dados são criptografados em trânsito (TLS) e em repouso. O acesso é restrito por função e por hotel. Nosso fornecedor de banco de dados tem auditoria SOC 2 Tipo 2 e os pagamentos com cartão são processados pela Stripe, fornecedora PCI DSS Nível 1. Mais detalhes em Segurança e dados .
+Os dados são criptografados em trânsito (TLS) e em repouso. O acesso é restrito por hotel e por função: a equipe só vê as propriedades e os recursos que sua função permite, e as ações importantes ficam no registro de atividades. Nosso fornecedor de banco de dados tem auditoria SOC 2 Tipo 2 e os pagamentos com cartão são processados pela Stripe, fornecedora PCI DSS Nível 1. Mais detalhes em Segurança e dados .
 
 ## 9. Seus direitos
 Brasil (LGPD), EEE e Reino Unido: você pode pedir acesso, correção, exclusão, restrição e portabilidade, e se opor ao tratamento. Também pode reclamar à autoridade de proteção de dados.
@@ -12015,13 +12131,23 @@ Preferências de cookies
 ## 11. WhatsApp e mensagens com hóspedes
 O Hostlio Pro se conecta à plataforma WhatsApp Business e às caixas das OTAs para enviar e receber mensagens de hóspedes em nome dos hotéis. Os telefones dos hóspedes são usados só para falar sobre a estadia. Os hóspedes podem deixar de receber mensagens pedindo ao hotel.
 
-## 12. Menores
+## 12. Contas da equipe e registro de atividades
+O titular da conta pode convidar a equipe e dar a cada pessoa uma função (gerente, recepção, limpeza, contabilidade ou somente leitura) e acesso às propriedades escolhidas. Usamos o e-mail da pessoa convidada para enviar o convite e, depois que ela aceita, nome, e-mail, função e acessos para liberar a entrada. O titular decide quem convidar e deve informar a equipe de que suas ações são registradas.
+O registro de atividades anota ações como criar, alterar ou cancelar reservas, mudar tarifas, quartos, configurações ou membros da equipe e aprovar ou recusar respostas de IA, junto com o usuário, sua função, o horário, o app usado e um endereço IP encurtado (IPv4 para /24, IPv6 para /48). As entradas não podem ser editadas, são visíveis ao titular da conta e às funções autorizadas e são apagadas após 365 dias.
+
+## 13. Recursos de IA (Lio)
+
+- Respostas a hóspedes: para redigir uma resposta, o Lio envia ao nosso fornecedor de IA a mensagem do hóspede, as mensagens anteriores da conversa, os dados da reserva (como nome, datas e quarto) e as informações do hotel. O hotel decide quais assuntos são respondidos automaticamente e quais exigem aprovação
+- Respostas a avaliações: nos planos que incluem o recurso, o Lio redige respostas às avaliações das OTAs. Nenhuma resposta a avaliação é enviada sem a aprovação do hotel
+- Tradução: os modelos de boas-vindas e despedida do hotel podem ser traduzidos com IA
+- Sugestões do Lio: nos planos Pro e Growth, as novas mensagens e avaliações de hóspedes são analisadas uma vez por dia em busca de temas recorrentes (por exemplo, limpeza ou Wi-Fi). Antes do envio de qualquer texto, e-mails, telefones, links, números longos como números de reserva ou de cartão e o nome do hóspede são mascarados automaticamente. O resultado são resumos curtos e gerais, sem nomes de pessoas, números de quarto, datas ou contatos; os textos originais não são guardados com as sugestões nem nos nossos registros. O resumo semanal opcional é escrito só a partir desses temas e estatísticas, sem textos de hóspedes. O hotel pode desligar a parte de IA das Sugestões do Lio nas configurações
+## 14. Menores
 O Hostlio Pro é um serviço para empresas e não se destina a menores de 16 anos.
 
-## 13. Alterações
+## 15. Alterações
 Publicaremos as alterações nesta página e atualizaremos a data. Alterações relevantes também serão comunicadas aos clientes por e-mail ou no painel.
 
-## 14. Contato
+## 16. Contato
 
 - E-mail: hello@hostliopro.com
 - Endereço: Loti Members LLC, 2108 N ST STE N, Sacramento, CA 95816
@@ -12031,7 +12157,8 @@ Publicaremos as alterações nesta página e atualizaremos a data. Alterações 
 URL: https://hostliopro.com/pt/termos/
 
 ## Termos de serviço
-Última atualização: 4 de outubro de 2026 , Loti Members LLC, 2108 N ST STE N, Sacramento, CA 95816. Este texto é uma tradução do original em inglês; em caso de divergência, prevalece a versão em inglês .
+Última atualização: 8 de outubro de 2026 , Loti Members LLC, 2108 N ST STE N, Sacramento, CA 95816. Este texto é uma tradução do original em inglês; em caso de divergência, prevalece a versão em inglês .
+RASCUNHO – em revisão jurídica, ainda não está em vigor. Não constitui aconselhamento jurídico.
 
 Estes Termos de Serviço («Termos») regem o uso do Hostlio Pro, operado pela Loti Members LLC («nós»). Ao criar uma conta ou usar o serviço você aceita estes Termos. Se usar o Hostlio Pro para uma empresa, você os aceita em nome dela.
 
@@ -12039,13 +12166,14 @@ Estes Termos de Serviço («Termos») regem o uso do Hostlio Pro, operado pela L
 O Hostlio Pro é um software em nuvem para hotéis: mensagens com hóspedes por IA (Lio), channel manager, calendário de reservas, check-in online e ferramentas relacionadas, oferecido por assinatura pelo site, pelo painel e pelo app.
 
 ## 2. Sua conta
-Você deve informar dados corretos e proteger seus dados de acesso. Você é responsável por tudo o que for feito na sua conta, inclusive pela sua equipe.
+Você deve informar dados corretos e proteger seus dados de acesso. Você é responsável por tudo o que for feito na sua conta, inclusive pela sua equipe. O titular da conta pode convidar a equipe, atribuir funções e acesso às propriedades e removê-la a qualquer momento; é o titular quem decide quem tem acesso. As ações no painel e no app ficam em um registro de atividades, como descrito na Política de Privacidade .
 
 ## 3. Teste grátis, pagamento e renovação automática
 
 - Todos os planos começam com um teste grátis de 7 dias. No cadastro, um cartão é registrado pela Stripe
 - Se você não cancelar antes do fim do teste, ao final o cartão será cobrado automaticamente pelo plano e pelo período de cobrança escolhidos
 - As assinaturas são pagas antecipadamente e renovadas automaticamente ao fim de cada período mensal ou anual até o cancelamento. Em cada renovação cobramos o cartão registrado
+- Troca de plano: você pode mudar para outro plano ou período de cobrança a qualquer momento pela página de cobrança. A mudança vale na hora. A diferença de preço pelo restante do período atual é calculada proporcionalmente: subir de plano gera uma cobrança proporcional e descer gera um crédito proporcional, ambos na próxima fatura. Trocar entre cobrança mensal e anual inicia um novo período de cobrança na hora e é faturado imediatamente, descontando a parte não usada do período anterior. Se um pagamento necessário para a mudança falhar, a mudança não é aplicada
 - Os preços são em dólares americanos e não incluem impostos. Planos e preços atuais estão na nossa página de preços . O plano anual custa 20% menos que o pagamento mensal
 - Preço early bird: os primeiros 50 clientes mantêm o preço early bird enquanto a assinatura continuar ativa sem interrupção. Se a assinatura for cancelada ou expirar, o preço early bird termina e uma nova assinatura segue os preços vigentes
 - Podemos alterar preços de períodos futuros com pelo menos 30 dias de aviso por e-mail; o novo preço vale a partir da sua próxima renovação
@@ -12066,13 +12194,13 @@ Você se compromete a não:
 Você é o controlador dos dados pessoais dos seus hóspedes. Cabe a você ter base legal para tratá-los, informar os hóspedes (por exemplo, no seu próprio aviso de privacidade) e cumprir as regras de registro de hóspedes e documentos de identidade aplicáveis. Nosso Acordo de Tratamento de Dados (DPA) faz parte destes Termos e se aplica aos dados de hóspedes que tratamos para você.
 
 ## 8. Respostas geradas por IA
-O Lio redige e envia respostas com as informações que você fornece. A IA pode errar. Você decide quais mensagens o Lio pode responder automaticamente e quais exigem aprovação, e continua responsável pelas respostas enviadas em nome da sua propriedade. O Lio repassa as mensagens sobre as quais não tem certeza, mas você não deve confiar nela para questões jurídicas, médicas ou de emergência. Na medida permitida por lei, não respondemos pelo conteúdo das respostas geradas por IA.
+O Lio redige e envia respostas com as informações que você fornece. A IA pode errar. Você decide quais mensagens o Lio pode responder automaticamente e quais exigem aprovação, e continua responsável pelas respostas enviadas em nome da sua propriedade. O Lio repassa as mensagens sobre as quais não tem certeza, mas você não deve confiar nela para questões jurídicas, médicas ou de emergência. Respostas a avaliações das OTAs só são enviadas depois da sua aprovação. As Sugestões do Lio, as análises e os relatórios são recomendações e resumos baseados nos seus dados; você decide se age com base neles e não garantimos nenhum resultado. Na medida permitida por lei, não respondemos pelo conteúdo das respostas e sugestões geradas por IA.
 
 ## 9. Canais conectados e WhatsApp
 As conexões com canais são fornecidas pelo nosso parceiro de conectividade Channex, e as mensagens pela plataforma WhatsApp Business e pelas caixas das OTAs. Você deve cumprir os termos de cada plataforma que conectar. Mudanças em APIs ou políticas de terceiros podem afetar recursos e não somos responsáveis por elas.
 
 ## 10. Seus dados
-Seus dados são seus. Só os tratamos para prestar o serviço, como descrito na Política de Privacidade e no DPA. Você pode exportá-los enquanto a conta estiver ativa.
+Seus dados são seus. Só os tratamos para prestar o serviço, como descrito na Política de Privacidade e no DPA. Você pode exportá-los enquanto a conta estiver ativa. [RASCUNHO – texto de exclusão da conta pendente] Para encerrar sua conta, veja Excluir sua conta .
 
 ## 11. Disponibilidade
 Buscamos alta disponibilidade, mas não garantimos serviço ininterrupto. Sempre que possível avisamos com antecedência sobre manutenções programadas.
@@ -12112,6 +12240,7 @@ URL: https://hostliopro.com/pt/seguranca/
 
 ## Segurança e proteção de dados
 Os hotéis nos confiam reservas, mensagens de hóspedes e dados de documentos de identidade. Aqui explicamos como protegemos esses dados, quem os trata e como assinar nosso Acordo de Tratamento de Dados (DPA).
+RASCUNHO – em revisão jurídica, ainda não está em vigor. Não constitui aconselhamento jurídico.
 
 ## Principais medidas
 
@@ -12119,7 +12248,7 @@ Os hotéis nos confiam reservas, mensagens de hóspedes e dados de documentos de
 TLS em trânsito e criptografia em repouso do banco de dados e dos arquivos.
 
 ## Acesso por função e hotel
-Cada hotel vê só os próprios dados; o acesso da equipe segue as funções que você definir.
+Cada hotel vê só os próprios dados; o acesso da equipe segue as funções que você definir e as ações importantes ficam em um registro de atividades.
 
 ## Fornecedores auditados
 Banco de dados com auditoria SOC 2 Tipo 2; pagamentos com cartão pela Stripe (PCI DSS Nível 1).
@@ -12130,19 +12259,19 @@ Acordo de Tratamento de Dados para LGPD, GDPR, UK GDPR, KVKK e CCPA.
 ## Detalhes
 
 ## Onde ficam seus dados
-Banco de dados, autenticação e funções de servidor rodam na Supabase; o site e o painel ficam na Vercel. Alguns fornecedores estão nos EUA; as transferências internacionais são protegidas por Cláusulas Contratuais Padrão ou outros mecanismos legais.
+Banco de dados, autenticação e funções de servidor rodam na Supabase, com o banco de dados e o armazenamento de arquivos hospedados na UE (Irlanda); o site e o painel ficam na Vercel. Alguns fornecedores estão nos EUA; as transferências internacionais são protegidas por Cláusulas Contratuais Padrão ou outros mecanismos legais.
 
 ## Pagamentos
 Os dados do cartão são digitados na Stripe e nunca chegam aos nossos servidores. Só vemos o plano, o período de cobrança e o status do pagamento.
 
 ## IA e mensagens de hóspedes
-O Lio envia o conteúdo da mensagem ao nosso fornecedor de IA apenas para redigir uma resposta. Pelos termos comerciais, o fornecedor não usa esse conteúdo para treinar modelos. Você decide quais assuntos o Lio responde sozinho e quais precisam da sua aprovação.
+O Lio envia o conteúdo da mensagem ao nosso fornecedor de IA apenas para redigir uma resposta. Pelos termos comerciais, o fornecedor não usa esse conteúdo para treinar modelos. Você decide quais assuntos o Lio responde sozinho e quais precisam da sua aprovação. Nas Sugestões do Lio, contatos, números longos e nomes de hóspedes são mascarados antes da análise de mensagens e avaliações, e os resultados não contêm nomes de pessoas.
 
 ## Dados do check-in online
-Dados de documentos e assinaturas digitais são tratados como dados sensíveis, visíveis só para a equipe do seu hotel e apagados, no máximo, junto com a sua conta. Não armazenamos imagens de documentos ou passaportes: a zona de leitura mecânica é lida no aparelho do hóspede ou da sua equipe e só os dados extraídos são enviados.
+Dados de documentos e assinaturas digitais são tratados como dados sensíveis e só ficam visíveis para a equipe cuja função permite. As assinaturas são apagadas 30 dias após o check-out; os dados dos documentos, no máximo, junto com a sua conta. Não armazenamos imagens de documentos ou passaportes: a zona de leitura mecânica é lida no aparelho do hóspede ou da sua equipe e só os dados extraídos são enviados.
 
 ## Retenção
-O conteúdo das mensagens é anonimizado ao fim do prazo que você definir (padrão 60 dias); os contatos dos hóspedes ficam guardados 90 dias após a saída; os dados da conta são apagados em até 30 dias após um pedido verificado.
+O conteúdo das mensagens é anonimizado 60 dias após o check-out (você pode reduzir para 30); e-mail, telefone e observações da reserva são apagados 90 dias após o check-out; perfis de hóspedes são anonimizados após 365 dias sem estadias; o registro de atividades é guardado por 365 dias. Lista completa na seção 7 da Política de Privacidade.
 
 ## Papéis na LGPD e no GDPR
 Para os dados de hóspedes, o hotel é o controlador e o Hostlio Pro é o operador. Nosso DPA define essas obrigações e faz parte dos Termos de Serviço.
@@ -12155,18 +12284,19 @@ As alterações no painel são registradas campo a campo: quem, quando, em qual 
 
 ## Suboperadores
 Suboperador Localização Finalidade
-Supabase, Inc. USA Banco de dados, autenticação e funções de servidor
-Vercel, Inc. USA Hospedagem do site e do painel
+Supabase, Inc. EU (Ireland); company in USA Banco de dados, autenticação e funções de servidor
+Vercel, Inc. USA Hospedagem do site, do painel e da página de check-in dos hóspedes, incluindo domínios de check-in próprios dos hotéis
 Stripe, Inc. USA Pagamentos e cobrança da assinatura
-Anthropic, PBC USA Processamento por IA das mensagens de hóspedes para redigir respostas
+Anthropic, PBC USA Processamento por IA para redigir respostas a mensagens de hóspedes e a avaliações das OTAs, traduzir os modelos de mensagem do hotel e, nas Sugestões do Lio, encontrar temas recorrentes em mensagens e avaliações depois de mascarar os dados pessoais
 Meta Platforms, Inc. (WhatsApp Business Platform) USA / Ireland Envio e recebimento de mensagens no WhatsApp
 Channex.io Ltd United Kingdom Sincronização de disponibilidade, tarifas, reservas e mensagens das OTAs
+Resend, Inc. USA Envio de e-mails: avisos de conta, cobrança e cota, convites para a equipe, relatórios semanais e mensais e, quando o hotel ativa, links de check-in e mensagens a hóspedes
 Make (Celonis) EU Formulário de contato e automação interna
 Google LLC / Google Ireland Ltd. (Firebase Cloud Messaging) USA / global Notificações push no app do Hostlio Pro para iOS e Android (token push do dispositivo, identificadores da instância do app e conteúdo da notificação, como alertas de novas mensagens ou reservas)
 Apple Inc. (Apple Push Notification service) USA Entrega de notificações push em iPhone e iPad (token do aparelho e conteúdo da notificação, repassados pelo Firebase Cloud Messaging)
 Google LLC (ML Kit — on-device text recognition) On device (metrics: USA) Leitura da zona de leitura mecânica do documento de identidade no aparelho da equipe do hotel, no app; nenhuma imagem ou texto sai do aparelho e o Google recebe apenas métricas anônimas de uso e desempenho da API
 Twilio Inc.* USA Números de WhatsApp e cobrança de mensagens para hotéis
-Twilio SendGrid* USA E-mail transacional
+Twilio SendGrid* USA Recebimento de e-mails de hóspedes para um futuro canal de e-mail
 
 * Previsto: será incluído nesta lista antes de tratar qualquer dado
 
@@ -14275,7 +14405,8 @@ A: Dans l’extranet Booking.com, ouvrez la boîte de réception des messages cl
 URL: https://hostliopro.com/fr/confidentialite/
 
 ## Politique de confidentialité
-Dernière mise à jour : 4 octobre 2026 , Loti Members LLC, 2108 N ST STE N, Sacramento, CA 95816. Ce texte est une traduction de l’original anglais ; en cas de divergence, la version anglaise prévaut.
+Dernière mise à jour : 8 octobre 2026 , Loti Members LLC, 2108 N ST STE N, Sacramento, CA 95816. Ce texte est une traduction de l’original anglais ; en cas de divergence, la version anglaise prévaut.
+BROUILLON – en cours de relecture juridique, pas encore en vigueur. Ne constitue pas un conseil juridique.
 
 La présente Politique de confidentialité explique comment Hostlio Pro, exploité par Loti Members LLC (« nous »), collecte, utilise et partage des données personnelles lorsque vous visitez hostliopro.com, vous inscrivez ou utilisez le tableau de bord, l’application mobile et les fonctions destinées aux clients de Hostlio Pro.
 
@@ -14291,16 +14422,22 @@ Pour les données de nos clients (propriétaires et personnel d’hôtels) et de
 - Données du check-in en ligne : informations de la pièce d’identité (nom, numéro du document, nationalité, date de naissance et date d’expiration), accompagnants et signature électronique, lorsque l’hôtel utilise le check-in en ligne. La bande de lecture automatique du document est lue sur l’appareil du client ou du personnel de l’hôtel ; nous ne collectons ni ne conservons d’images de pièces d’identité. Nous les traitons comme des données sensibles
 - Données d’inscription et de sécurité : adresse IP, e-mail haché et résultat des tentatives d’inscription, pour prévenir la fraude et les abus
 - Source marketing : uniquement si vous arrivez par un lien contenant des paramètres de campagne (paramètres UTM ou identifiant de clic publicitaire) : ces paramètres, la page d’arrivée et l’heure de votre première visite, conservés dans votre navigateur et transmis uniquement avec le formulaire d’inscription ou de contact
-- Données d’utilisation : utilisation du tableau de bord et de l’application, journaux techniques et, si vous utilisez l’application mobile, le jeton de notifications push de votre appareil
+- Données du personnel : lorsque vous invitez des membres de l’équipe, leur adresse e-mail, nom, rôle, les établissements auxquels ils ont accès, le statut de l’invitation et la langue préférée
+- Journal d’activité : qui a fait quoi et quand dans le tableau de bord et l’application (utilisateur, rôle, action, enregistrement concerné, application d’origine et adresse IP tronquée). Pour les fiches clients et de check-in, seuls l’action et le nom des champs modifiés sont consignés, jamais leurs valeurs
+- Avis OTA : texte de l’avis, notes et nom de l’auteur reçus des canaux connectés, ainsi que les réponses que vous validez
+- Données d’utilisation : utilisation du tableau de bord et de l’application, journaux techniques et, si vous utilisez l’application mobile, le jeton de notifications push de votre appareil. Les cookies et la mesure d’audience du site hostliopro.com sont décrits à la section 10
 ## 3. Utilisation des données
 
 - Fournir le service : synchroniser les canaux, afficher les réservations, envoyer les messages clients et gérer le check-in en ligne
 - Préparer et envoyer des réponses IA aux clients au nom de l’hôtel
+- Présenter à l’hôtel ses statistiques (occupation, chiffre d’affaires et totaux similaires) et envoyer des rapports hebdomadaires et mensuels par e-mail, qui ne contiennent que des totaux et aucune donnée client
+- Fournir à l’hôtel les Suggestions de Lio : des recommandations fondées sur ses propres données, y compris les thèmes récurrents des messages et avis clients (voir section 13)
+- Tenir un journal d’activité pour que le titulaire du compte voie qui a modifié quoi, et pour enquêter sur les incidents de sécurité
 - Gérer votre abonnement : l’essai gratuit, les prélèvements automatiques à la fin de l’essai et à chaque renouvellement, les factures et les limites du forfait comme le quota mensuel de messages IA
 - Sécuriser le service et prévenir la fraude
 - Mesurer quels canaux marketing nous amènent des clients
 - Répondre aux demandes d’assistance et envoyer des e-mails de service et de facturation
-- Respecter nos obligations légales Nous ne vendons pas de données personnelles et ne les partageons pas à des fins de publicité comportementale. Le contenu des messages clients n’est pas utilisé pour notre marketing. Notre fournisseur d’IA ne traite ce contenu que pour générer des réponses et, selon ses conditions commerciales, ne l’utilise pas pour entraîner ses modèles.
+- Respecter nos obligations légales Nous ne vendons pas de données personnelles et ne les partageons pas à des fins de publicité comportementale. Le contenu des messages clients n’est pas utilisé pour notre marketing. Notre fournisseur d’IA ne traite ce contenu que pour fournir les fonctions d’IA décrites à la section 13 et, selon ses conditions commerciales, ne l’utilise pas pour entraîner ses modèles.
 
 ## 4. Bases légales (EEE, Royaume-Uni, Turquie)
 Nous nous fondons sur l’exécution du contrat conclu avec vous, notre intérêt légitime (sécurité, prévention de la fraude, amélioration du service, mesure du marketing), le respect d’obligations légales et, si nécessaire, votre consentement. Pour les données des clients de l’hôtel, la base légale est déterminée par l’hôtel.
@@ -14308,18 +14445,19 @@ Nous nous fondons sur l’exécution du contrat conclu avec vous, notre intérê
 ## 5. Partage des données
 Nous faisons appel aux sous-traitants ci-dessous, chacun lié par un contrat qui protège les données. Lorsque vous connectez un canal de vente (Booking.com, Airbnb, Expedia…), les données sont échangées avec ce canal selon ses propres conditions.
 Sous-traitant Localisation Finalité
-Supabase, Inc. USA Base de données, authentification et fonctions serveur
-Vercel, Inc. USA Hébergement du site et du tableau de bord
+Supabase, Inc. EU (Ireland); company in USA Base de données, authentification et fonctions serveur
+Vercel, Inc. USA Hébergement du site, du tableau de bord et de la page de check-in des clients, y compris les domaines de check-in propres aux hôtels
 Stripe, Inc. USA Paiements et facturation de l’abonnement
-Anthropic, PBC USA Traitement par IA des messages clients pour préparer les réponses
+Anthropic, PBC USA Traitement par IA pour préparer les réponses aux messages clients et aux avis OTA, traduire les modèles de messages de l’hôtel et, pour les Suggestions de Lio, repérer les thèmes récurrents des messages et avis après masquage des données personnelles
 Meta Platforms, Inc. (WhatsApp Business Platform) USA / Ireland Envoi et réception de messages WhatsApp
 Channex.io Ltd United Kingdom Synchronisation des disponibilités, tarifs, réservations et messages OTA
+Resend, Inc. USA Envoi d’e-mails : avis de compte, de facturation et de quota, invitations du personnel, rapports hebdomadaires et mensuels et, si l’hôtel les active, liens de check-in et messages aux clients
 Make (Celonis) EU Formulaire de contact et automatisation interne
 Google LLC / Google Ireland Ltd. (Firebase Cloud Messaging) USA / global Notifications push vers l’application mobile Hostlio Pro sur iOS et Android (jeton push de l’appareil, identifiants d’instance de l’application et contenu de la notification, par exemple alertes de nouveau message ou de réservation)
 Apple Inc. (Apple Push Notification service) USA Distribution des notifications push sur iPhone et iPad (jeton de l’appareil et contenu de la notification, transmis via Firebase Cloud Messaging)
 Google LLC (ML Kit — on-device text recognition) On device (metrics: USA) Lecture de la bande de lecture automatique de la pièce d’identité sur l’appareil du personnel de l’hôtel, dans l’application mobile ; aucune image ni aucun texte ne quitte l’appareil et Google ne reçoit que des mesures anonymes d’utilisation et de performance de l’API
 Twilio Inc.* USA Numéros WhatsApp et facturation des messages pour les hôtels
-Twilio SendGrid* USA E-mails transactionnels
+Twilio SendGrid* USA Réception des e-mails des clients pour un futur canal e-mail
 
 * Prévu : ajouté à cette liste avant tout traitement de données
 Nous pouvons aussi communiquer des données lorsque la loi l’exige ou pour protéger nos droits.
@@ -14329,14 +14467,17 @@ Nous sommes établis aux États-Unis et certains sous-traitants traitent des don
 
 ## 7. Durées de conservation
 
-- Le contenu des messages clients est anonymisé à la fin de la durée fixée par l’hôtel dans ses réglages (par défaut : 60 jours)
-- Les coordonnées des clients sont conservées 90 jours après le départ, sauf suppression anticipée par l’hôtel
-- Les données du check-in en ligne ne sont conservées que le temps nécessaire à l’hôtel pour ses obligations d’enregistrement des voyageurs et, au plus tard, supprimées avec le compte de l’hôtel
-- Les données du compte et de l’hôtel sont conservées tant que le compte est actif et supprimées dans les 30 jours suivant une demande de suppression vérifiée
+- Le contenu des messages clients et leurs pièces jointes sont anonymisés 60 jours après le départ ou, si la conversation n’est liée à aucune réservation, après le dernier message. L’hôtel peut raccourcir ce délai dans ses réglages jusqu’à 30 jours au minimum, mais pas l’allonger
+- L’e-mail, le téléphone et les notes de réservation du client sont effacés 90 jours après le départ, sauf suppression anticipée par l’hôtel ; il en va de même pour les demandes de réservation faites via Lio. Le nom du client et les détails de la réservation (dates, chambre, prix, canal) restent sur la réservation tant que le compte de l’hôtel est actif, car l’hôtel peut en avoir besoin pour sa facturation et sa comptabilité
+- Les fiches de la liste clients de l’hôtel sont anonymisées après 365 jours sans séjour
+- Le nom de l’auteur des avis OTA est supprimé 365 jours après la réception de l’avis ; le texte, public sur le canal, est conservé
+- Check-in en ligne : aucune image de pièce d’identité n’est jamais conservée. Les signatures des clients sont supprimées automatiquement 30 jours après le départ. Les informations de la pièce d’identité ne sont conservées que le temps nécessaire à l’hôtel pour ses obligations d’enregistrement des voyageurs et, au plus tard, supprimées avec le compte de l’hôtel
+- Le journal d’activité est conservé 365 jours et les notifications de l’application 90 jours
+- [BROUILLON – texte de suppression du compte en attente] Les données du compte et de l’hôtel sont conservées tant que le compte est actif et supprimées dans les 30 jours suivant une demande de suppression vérifiée
 - Les données de facturation sont conservées aussi longtemps que l’exigent les règles fiscales et comptables
 - Les journaux d’inscription et de sécurité sont conservés pour une durée limitée à des fins de lutte contre la fraude
 ## 8. Sécurité
-Les données sont chiffrées en transit (TLS) et au repos. L’accès est limité par rôle et par hôtel. Notre fournisseur de base de données est audité SOC 2 Type 2 et les paiements par carte sont traités par Stripe, prestataire PCI DSS niveau 1. Plus de détails sur la page Sécurité et données .
+Les données sont chiffrées en transit (TLS) et au repos. L’accès est limité par hôtel et par rôle : le personnel ne voit que les établissements et fonctions que son rôle autorise, et les actions importantes sont consignées dans le journal d’activité. Notre fournisseur de base de données est audité SOC 2 Type 2 et les paiements par carte sont traités par Stripe, prestataire PCI DSS niveau 1. Plus de détails sur la page Sécurité et données .
 
 ## 9. Vos droits
 EEE et Royaume-Uni : vous pouvez demander l’accès, la rectification, l’effacement, la limitation et la portabilité, et vous opposer au traitement. Vous pouvez aussi saisir votre autorité de protection des données.
@@ -14357,13 +14498,23 @@ Préférences cookies
 ## 11. WhatsApp et messages clients
 Hostlio Pro se connecte à la plateforme WhatsApp Business et aux messageries des OTA pour envoyer et recevoir les messages clients au nom des hôtels. Les numéros de téléphone des clients ne servent qu’à communiquer au sujet du séjour. Les clients peuvent ne plus recevoir de messages en le demandant à l’hôtel.
 
-## 12. Mineurs
+## 12. Comptes du personnel et journal d’activité
+Le titulaire du compte peut inviter du personnel et attribuer à chaque personne un rôle (responsable, réception, service des étages, comptabilité ou lecture seule) et l’accès aux établissements choisis. Nous utilisons l’adresse e-mail de la personne invitée pour envoyer l’invitation puis, une fois celle-ci acceptée, son nom, son e-mail, son rôle et ses accès pour lui ouvrir le service. Le titulaire décide qui est invité et doit informer le personnel que ses actions sont consignées.
+Le journal d’activité consigne des actions comme la création, la modification ou l’annulation de réservations, la modification des tarifs, des chambres, des réglages ou de l’équipe, et la validation ou le refus de réponses IA, avec l’utilisateur, son rôle, l’heure, l’application utilisée et une adresse IP tronquée (IPv4 à /24, IPv6 à /48). Les entrées ne sont pas modifiables, sont visibles par le titulaire du compte et les rôles autorisés, et sont supprimées au bout de 365 jours.
+
+## 13. Fonctions d’IA (Lio)
+
+- Réponses aux clients : pour préparer une réponse, Lio envoie à notre fournisseur d’IA le message du client, les messages précédents de la conversation, les détails de sa réservation (nom, dates, chambre…) et les informations de l’hôtel. L’hôtel décide quels sujets reçoivent une réponse automatique et lesquels nécessitent une validation
+- Réponses aux avis : dans les forfaits qui l’incluent, Lio prépare des réponses aux avis OTA. Aucune réponse à un avis n’est envoyée sans la validation de l’hôtel
+- Traduction : les modèles de messages de bienvenue et d’au revoir de l’hôtel peuvent être traduits par l’IA
+- Suggestions de Lio : dans les forfaits Pro et Growth, les nouveaux messages et avis clients sont analysés une fois par jour pour repérer des thèmes récurrents (propreté, Wi-Fi…). Avant tout envoi, les adresses e-mail, numéros de téléphone, liens, numéros longs comme les numéros de réservation ou de carte et le nom du client sont masqués automatiquement. Le résultat consiste en de courtes synthèses générales, sans nom de personne, numéro de chambre, date ni coordonnées ; les textes d’origine ne sont conservés ni avec les suggestions ni dans nos journaux. La synthèse hebdomadaire facultative est rédigée uniquement à partir de ces thèmes et statistiques, sans texte de client. L’hôtel peut désactiver la partie IA des Suggestions de Lio dans ses réglages
+## 14. Mineurs
 Hostlio Pro est un service destiné aux professionnels et ne s’adresse pas aux moins de 16 ans.
 
-## 13. Modifications
+## 15. Modifications
 Nous publierons les modifications sur cette page et mettrons la date à jour. Les modifications importantes seront aussi notifiées aux clients par e-mail ou dans le tableau de bord.
 
-## 14. Contact
+## 16. Contact
 
 - E-mail: hello@hostliopro.com
 - Adresse: Loti Members LLC, 2108 N ST STE N, Sacramento, CA 95816
@@ -14373,7 +14524,8 @@ Nous publierons les modifications sur cette page et mettrons la date à jour. Le
 URL: https://hostliopro.com/fr/conditions/
 
 ## Conditions d’utilisation
-Dernière mise à jour : 4 octobre 2026 , Loti Members LLC, 2108 N ST STE N, Sacramento, CA 95816. Ce texte est une traduction de l’original anglais ; en cas de divergence, la version anglaise prévaut.
+Dernière mise à jour : 8 octobre 2026 , Loti Members LLC, 2108 N ST STE N, Sacramento, CA 95816. Ce texte est une traduction de l’original anglais ; en cas de divergence, la version anglaise prévaut.
+BROUILLON – en cours de relecture juridique, pas encore en vigueur. Ne constitue pas un conseil juridique.
 
 Les présentes Conditions d’utilisation (« Conditions ») régissent l’utilisation de Hostlio Pro, exploité par Loti Members LLC (« nous »). En créant un compte ou en utilisant le service, vous acceptez ces Conditions. Si vous utilisez Hostlio Pro pour une entreprise, vous les acceptez en son nom.
 
@@ -14381,13 +14533,14 @@ Les présentes Conditions d’utilisation (« Conditions ») régissent l’util
 Hostlio Pro est un logiciel en ligne pour les hôtels : messagerie clients par IA (Lio), channel manager, calendrier des réservations, check-in en ligne et outils associés, proposé par abonnement via le site, le tableau de bord et l’application mobile.
 
 ## 2. Votre compte
-Vous devez fournir des informations exactes et protéger vos identifiants. Vous êtes responsable de tout ce qui est fait depuis votre compte, y compris par votre équipe.
+Vous devez fournir des informations exactes et protéger vos identifiants. Vous êtes responsable de tout ce qui est fait depuis votre compte, y compris par votre équipe. Le titulaire du compte peut inviter du personnel, lui attribuer des rôles et l’accès à des établissements, et le retirer à tout moment ; c’est lui qui décide qui a accès. Les actions effectuées dans le tableau de bord et l’application sont consignées dans un journal d’activité, comme décrit dans notre Politique de confidentialité .
 
 ## 3. Essai gratuit, paiement et renouvellement automatique
 
 - Chaque forfait commence par un essai gratuit de 7 jours. Une carte bancaire est enregistrée via Stripe lors de l’inscription
 - Si vous ne résiliez pas avant la fin de l’essai, votre carte est automatiquement débitée à la fin de l’essai pour le forfait et la période de facturation choisis
 - Les abonnements sont payables d’avance et se renouvellent automatiquement à la fin de chaque période mensuelle ou annuelle jusqu’à résiliation. La carte enregistrée est débitée à chaque renouvellement
+- Changement de forfait : vous pouvez passer à un autre forfait ou à une autre périodicité à tout moment depuis la page de facturation. Le changement prend effet immédiatement. La différence de prix pour le reste de la période en cours est calculée au prorata : passer à un forfait supérieur entraîne un montant supplémentaire au prorata, passer à un forfait inférieur un crédit au prorata, tous deux reportés sur votre prochaine facture. Passer de la facturation mensuelle à annuelle, ou l’inverse, ouvre aussitôt une nouvelle période de facturation, facturée immédiatement après déduction de la partie non utilisée de la période précédente. Si un paiement nécessaire au changement échoue, le changement n’est pas appliqué
 - Les prix sont en dollars américains, hors taxes. Les forfaits et tarifs en vigueur figurent sur notre page tarifs . La facturation annuelle coûte 20 % de moins que le paiement mensuel
 - Tarif early bird : les 50 premiers clients conservent ce tarif tant que leur abonnement reste actif sans interruption. En cas de résiliation ou d’expiration, le tarif early bird prend fin et un nouvel abonnement suit les tarifs en vigueur
 - Nous pouvons modifier les prix des périodes futures moyennant un préavis d’au moins 30 jours par e-mail ; le nouveau prix s’applique à partir de votre prochain renouvellement
@@ -14408,13 +14561,13 @@ Vous vous engagez à ne pas :
 Vous êtes responsable du traitement des données personnelles de vos clients. Il vous appartient de disposer d’une base légale pour les traiter, d’informer les clients (par exemple dans votre propre politique de confidentialité) et de respecter les règles applicables d’enregistrement des voyageurs et de pièces d’identité. Notre Accord de traitement des données (DPA) fait partie des présentes Conditions et s’applique aux données clients que nous traitons pour vous.
 
 ## 8. Réponses générées par l’IA
-Lio prépare et envoie des réponses à partir des informations que vous fournissez. L’IA peut se tromper. Vous décidez à quels messages Lio peut répondre automatiquement et lesquels nécessitent une validation, et vous restez responsable des réponses envoyées au nom de votre établissement. Lio vous transmet les messages dont il n’est pas sûr, mais vous ne devez pas vous y fier pour des questions juridiques, médicales ou urgentes. Dans les limites permises par la loi, nous ne sommes pas responsables du contenu des réponses générées par l’IA.
+Lio prépare et envoie des réponses à partir des informations que vous fournissez. L’IA peut se tromper. Vous décidez à quels messages Lio peut répondre automatiquement et lesquels nécessitent une validation, et vous restez responsable des réponses envoyées au nom de votre établissement. Lio vous transmet les messages dont il n’est pas sûr, mais vous ne devez pas vous y fier pour des questions juridiques, médicales ou urgentes. Les réponses aux avis OTA ne sont envoyées qu’après votre validation. Les Suggestions de Lio, les statistiques et les rapports sont des recommandations et des synthèses fondées sur vos données ; vous décidez d’y donner suite ou non et nous ne garantissons aucun résultat. Dans les limites permises par la loi, nous ne sommes pas responsables du contenu des réponses et suggestions générées par l’IA.
 
 ## 9. Canaux connectés et WhatsApp
 Les connexions aux canaux sont assurées par notre partenaire de connectivité Channex, et la messagerie par la plateforme WhatsApp Business et les messageries des OTA. Vous devez respecter les conditions de chaque plateforme connectée. Les évolutions des API ou politiques de tiers peuvent affecter certaines fonctions et nous n’en sommes pas responsables.
 
 ## 10. Vos données
-Vos données vous appartiennent. Nous ne les traitons que pour fournir le service, comme décrit dans notre Politique de confidentialité et le DPA. Vous pouvez les exporter tant que votre compte est actif.
+Vos données vous appartiennent. Nous ne les traitons que pour fournir le service, comme décrit dans notre Politique de confidentialité et le DPA. Vous pouvez les exporter tant que votre compte est actif. [BROUILLON – texte de suppression du compte en attente] Pour fermer votre compte, voir Supprimer votre compte .
 
 ## 11. Disponibilité
 Nous visons une haute disponibilité sans garantir un service ininterrompu. Nous annonçons les maintenances planifiées à l’avance dans la mesure du possible.
@@ -14454,6 +14607,7 @@ URL: https://hostliopro.com/fr/securite/
 
 ## Sécurité et protection des données
 Les hôtels nous confient leurs réservations, les messages de leurs clients et des données de pièces d’identité. Cette page explique comment nous les protégeons, qui les traite et comment signer notre Accord de traitement des données (DPA).
+BROUILLON – en cours de relecture juridique, pas encore en vigueur. Ne constitue pas un conseil juridique.
 
 ## Mesures principales
 
@@ -14461,7 +14615,7 @@ Les hôtels nous confient leurs réservations, les messages de leurs clients et 
 TLS en transit et chiffrement au repos de la base de données et des fichiers.
 
 ## Accès par rôle et par hôtel
-Chaque hôtel ne voit que ses données ; l’accès du personnel suit les rôles que vous définissez.
+Chaque hôtel ne voit que ses données ; l’accès du personnel suit les rôles que vous définissez et les actions importantes sont consignées dans un journal d’activité.
 
 ## Prestataires audités
 Base de données auditée SOC 2 Type 2 ; paiements par carte via Stripe (PCI DSS niveau 1).
@@ -14472,19 +14626,19 @@ Accord de traitement des données pour le RGPD, l’UK GDPR, la KVKK et le CCPA.
 ## Détails
 
 ## Où sont vos données
-La base de données, l’authentification et les fonctions serveur tournent sur Supabase ; le site et le tableau de bord sont hébergés sur Vercel. Certains prestataires sont aux États-Unis ; les transferts depuis l’EEE, le Royaume-Uni et la Turquie sont encadrés par les clauses contractuelles types ou d’autres mécanismes légaux.
+La base de données, l’authentification et les fonctions serveur tournent sur Supabase, la base de données et le stockage de fichiers étant hébergés dans l’UE (Irlande) ; le site et le tableau de bord sont hébergés sur Vercel. Certains prestataires sont aux États-Unis ; les transferts depuis l’EEE, le Royaume-Uni et la Turquie sont encadrés par les clauses contractuelles types ou d’autres mécanismes légaux.
 
 ## Paiements
 Les données de carte sont saisies chez Stripe et n’atteignent jamais nos serveurs. Nous ne voyons que le forfait, la période de facturation et le statut du paiement.
 
 ## IA et messages clients
-Lio transmet le contenu du message à notre fournisseur d’IA uniquement pour préparer une réponse. Selon ses conditions commerciales, le fournisseur ne l’utilise pas pour entraîner ses modèles. Vous choisissez les sujets auxquels Lio répond seul et ceux qui nécessitent votre validation.
+Lio transmet le contenu du message à notre fournisseur d’IA uniquement pour préparer une réponse. Selon ses conditions commerciales, le fournisseur ne l’utilise pas pour entraîner ses modèles. Vous choisissez les sujets auxquels Lio répond seul et ceux qui nécessitent votre validation. Pour les Suggestions de Lio, les coordonnées, les numéros longs et les noms des clients sont masqués avant l’analyse des messages et des avis, et les résultats ne contiennent aucun nom de personne.
 
 ## Données du check-in en ligne
-Les données des pièces d’identité et les signatures électroniques sont traitées comme des données sensibles, visibles uniquement par le personnel de votre hôtel et supprimées au plus tard avec votre compte. Nous ne conservons aucune image de pièce d’identité ni de passeport : la bande de lecture automatique est lue sur l’appareil du client ou de votre personnel et seules les données extraites sont envoyées.
+Les données des pièces d’identité et les signatures électroniques sont traitées comme des données sensibles, visibles uniquement par le personnel dont le rôle le permet. Les signatures sont supprimées 30 jours après le départ ; les données des pièces d’identité au plus tard avec votre compte. Nous ne conservons aucune image de pièce d’identité ni de passeport : la bande de lecture automatique est lue sur l’appareil du client ou de votre personnel et seules les données extraites sont envoyées.
 
 ## Conservation
-Le contenu des messages est anonymisé à la fin de la durée que vous fixez (par défaut 60 jours) ; les coordonnées des clients sont conservées 90 jours après le départ ; les données du compte sont supprimées dans les 30 jours suivant une demande vérifiée.
+Le contenu des messages est anonymisé 60 jours après le départ (vous pouvez réduire ce délai à 30) ; l’e-mail, le téléphone et les notes de réservation sont effacés 90 jours après le départ ; les fiches clients sont anonymisées après 365 jours sans séjour ; le journal d’activité est conservé 365 jours. Liste complète à la section 7 de notre Politique de confidentialité.
 
 ## Rôles au sens du RGPD
 Pour les données des clients, votre hôtel est responsable du traitement et Hostlio Pro sous-traitant. Notre DPA fixe ces obligations et fait partie des Conditions d’utilisation.
@@ -14497,18 +14651,19 @@ Les modifications dans le tableau de bord sont enregistrées champ par champ : 
 
 ## Sous-traitants
 Sous-traitant Localisation Finalité
-Supabase, Inc. USA Base de données, authentification et fonctions serveur
-Vercel, Inc. USA Hébergement du site et du tableau de bord
+Supabase, Inc. EU (Ireland); company in USA Base de données, authentification et fonctions serveur
+Vercel, Inc. USA Hébergement du site, du tableau de bord et de la page de check-in des clients, y compris les domaines de check-in propres aux hôtels
 Stripe, Inc. USA Paiements et facturation de l’abonnement
-Anthropic, PBC USA Traitement par IA des messages clients pour préparer les réponses
+Anthropic, PBC USA Traitement par IA pour préparer les réponses aux messages clients et aux avis OTA, traduire les modèles de messages de l’hôtel et, pour les Suggestions de Lio, repérer les thèmes récurrents des messages et avis après masquage des données personnelles
 Meta Platforms, Inc. (WhatsApp Business Platform) USA / Ireland Envoi et réception de messages WhatsApp
 Channex.io Ltd United Kingdom Synchronisation des disponibilités, tarifs, réservations et messages OTA
+Resend, Inc. USA Envoi d’e-mails : avis de compte, de facturation et de quota, invitations du personnel, rapports hebdomadaires et mensuels et, si l’hôtel les active, liens de check-in et messages aux clients
 Make (Celonis) EU Formulaire de contact et automatisation interne
 Google LLC / Google Ireland Ltd. (Firebase Cloud Messaging) USA / global Notifications push vers l’application mobile Hostlio Pro sur iOS et Android (jeton push de l’appareil, identifiants d’instance de l’application et contenu de la notification, par exemple alertes de nouveau message ou de réservation)
 Apple Inc. (Apple Push Notification service) USA Distribution des notifications push sur iPhone et iPad (jeton de l’appareil et contenu de la notification, transmis via Firebase Cloud Messaging)
 Google LLC (ML Kit — on-device text recognition) On device (metrics: USA) Lecture de la bande de lecture automatique de la pièce d’identité sur l’appareil du personnel de l’hôtel, dans l’application mobile ; aucune image ni aucun texte ne quitte l’appareil et Google ne reçoit que des mesures anonymes d’utilisation et de performance de l’API
 Twilio Inc.* USA Numéros WhatsApp et facturation des messages pour les hôtels
-Twilio SendGrid* USA E-mails transactionnels
+Twilio SendGrid* USA Réception des e-mails des clients pour un futur canal e-mail
 
 * Prévu : ajouté à cette liste avant tout traitement de données
 
