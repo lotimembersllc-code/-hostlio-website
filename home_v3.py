@@ -41,11 +41,11 @@ T = {
   b_tr=("Transfer ve tur satışı","Lio doğru anda teklif eder, siz kazanırsınız.","Havalimanı transferi","+35 €"),
   b_lang=("30+ dil","Misafir hangi dilde yazarsa o dilde cevap."),
   b_mob=("Mobil uygulama","iOS ve Android'de rezervasyon, mesaj ve check-in, otelin dışından da."),
-  types_h='Her <em class="hl">tesis tipine</em> uygun', types_p="1 ila 150 odalı bağımsız tesisler için tasarlandı.",
-  types=[("brand-courtyard","Havuzlu, bugenvilli butik otel avlusu","Butik otel","10–50 oda","Yabancı misafiri çok, her mesaj kişisel."),
-         ("gen-hostel","Ahşap panelli, ortak alanlı konaklama lobisi","Hostel","Yatak ve oda","Çok dilli gezginler, yoğun mesaj trafiği."),
-         ("gen-guesthouse","Masa lambalı sıcak pansiyon odası","Pansiyon","1–10 oda","Tek kişilik ekip için gece vardiyası."),
-         ("gen-apart","Aydınlık beyaz nevresimli apart daire","Apart otel","10–40 daire","Varıştan önce online check-in.")],
+  types_h="Pansiyondan <em class=\"hl\">⟦rooms:growth⟧ odalı otele</em>", types_p="Tek kişilik ekipten kalabalık resepsiyona; planınız oda sayınıza göre büyür.",
+  types=[("gen-reception", "Küçük bir otelin resepsiyonunda karşılanan misafirler", "Pansiyon ve küçük otel", "1–⟦rooms:starter⟧ oda", "Tek kişilik ekip; gece gelen mesajları Lio karşılar."),
+         ("gen-boutique-room", "Taş duvarlı, panjurlu penceresi eski şehre bakan butik otel odası", "Butik otel", "⟦rooms:starter⟧–⟦rooms:pro⟧ oda", "Yabancı misafiri çok; online check-in ve kişisel cevaplar."),
+         ("brand-courtyard", "Havuzlu, bugenvilli otel avlusu", "Şehir ve tatil oteli", "⟦rooms:pro⟧–⟦rooms:growth⟧ oda", "Geniş ekip, yoğun kanal trafiği, öncelikli destek."),
+         ("gen-facade", "Taş cepheli, balkonlu bir otel binası", "İki tesisli işletme", "2 tesis · ⟦rooms:growth⟧ oda", "İki otelinizi tek hesaptan, tek uygulamadan yönetin.")],
   plans_h="Otelinizin büyüklüğüne göre plan", plans_p="Sabit aylık ücret, uzun süreli sözleşme yok. Tüm planlar 7 gün ücretsiz.",
   early="İlk 50 müşteriye ⟦eb_pct⟧ indirim, abonelik boyunca sabit", tax='Fiyatlara vergi dahil değildir. <a href="{p}">Planları detaylı karşılaştırın</a>.',
   ai_h='Lio: resepsiyonunuzun <em class="hl">gece vardiyası</em>', ai_p="Otelinizin bilgileriyle çalışan yapay zekâ asistanı. Misafire cevap verir, satış yapar, gerekeni size bırakır.",
@@ -96,11 +96,11 @@ T = {
   b_tr=("Transfer and tour sales","Lio offers them at the right moment; you earn more.","Airport transfer","+€35"),
   b_lang=("30+ languages","Whatever language the guest writes in, that's the reply."),
   b_mob=("Mobile app","Bookings, messages and check-ins on iOS and Android, wherever you are."),
-  types_h='Built for <em class="hl">every kind of property</em>', types_p="Designed for independent properties with 1 to 150 rooms.",
-  types=[("brand-courtyard","Boutique hotel courtyard with a pool and bougainvillea","Boutique hotel","10–50 rooms","Many international guests, every message personal."),
-         ("gen-hostel","Lobby with wood panelling and shared seating","Hostel","Beds and rooms","Multilingual travellers, busy inboxes."),
-         ("gen-guesthouse","Warm guesthouse room with a desk lamp","Guesthouse","1–10 rooms","A night shift for a one-person team."),
-         ("gen-apart","Bright apartment with white bedding","Aparthotel","10–40 units","Online check-in before arrival.")],
+  types_h="From guesthouse to <em class=\"hl\">⟦rooms:growth⟧-room hotel</em>", types_p="From a one-person team to a busy front desk; your plan grows with your room count.",
+  types=[("gen-reception", "Guests being welcomed at the front desk of a small hotel", "Guesthouse & small hotel", "1–⟦rooms:starter⟧ rooms", "A one-person team; Lio handles the night-time messages."),
+         ("gen-boutique-room", "Stone-walled boutique hotel room with shuttered window over the old town", "Boutique hotel", "⟦rooms:starter⟧–⟦rooms:pro⟧ rooms", "Many international guests; online check-in and personal replies."),
+         ("brand-courtyard", "Hotel courtyard with a pool and bougainvillea", "City & resort hotel", "⟦rooms:pro⟧–⟦rooms:growth⟧ rooms", "A larger team, heavy channel traffic, priority support."),
+         ("gen-facade", "Stone hotel building with balconies", "Two-property business", "2 properties · ⟦rooms:growth⟧ rooms", "Run both hotels from one account and one app.")],
   plans_h="A plan for your hotel's size", plans_p="A flat monthly fee, no long-term contract. Every plan is free for 7 days.",
   early="⟦eb_pct⟧ off for the first 50 customers, locked in for life", tax='Prices exclude taxes. <a href="{p}">Compare plans in detail</a>.',
   ai_h='Lio, your front desk\'s <em class="hl">night shift</em>', ai_p="An AI assistant that works from your hotel's information. It answers guests, sells extras and leaves the rest to you.",
@@ -267,7 +267,7 @@ def home(L, plans_html, FAQ_CORE):
 <div class="card photo app-card">{img(f"app-phone-{L}","",1080,1341)}<div class="txt"><h3>{mob[0]}</h3><p>{mob[1]}</p>{store_badges(L)}</div></div>
 </div></div></section>'''
 
-    tkeys = ["t-boutique","t-hostel","t-guesthouse","t-apart"]
+    tkeys = ["t-guesthouse","t-boutique","pricing","pricing"]  # büyüklüğe göre: Starter, Pro, Growth, Growth (2 tesis)
     types = "".join(f'<a class="type" href="{U(tkeys[i])}">{img(im, alt)}<span class="tag">{tag}</span><div class="txt"><h3>{h}</h3><p>{p}</p></div></a>' for i,(im,alt,h,tag,p) in enumerate(t["types"]))
     types_sec = f'''<section><div class="wrap"><div class="section-head rv"><h2>{t["types_h"]}</h2><p>{t["types_p"]}</p></div><div class="types">{types}</div></div></section>'''
 

@@ -213,24 +213,24 @@ Türkçe English Deutsch العربية Русский 日本語 中文 Françai
 ## Mobil uygulama
 iOS ve Android'de rezervasyon, mesaj ve check-in, otelin dışından da.
 
-## Her tesis tipine uygun
-1 ila 150 odalı bağımsız tesisler için tasarlandı.
+## Pansiyondan 150 odalı otele
+Tek kişilik ekipten kalabalık resepsiyona; planınız oda sayınıza göre büyür.
+
+1–10 oda
+## Pansiyon ve küçük otel
+Tek kişilik ekip; gece gelen mesajları Lio karşılar.
 
 10–50 oda
 ## Butik otel
-Yabancı misafiri çok, her mesaj kişisel.
+Yabancı misafiri çok; online check-in ve kişisel cevaplar.
 
-Yatak ve oda
-## Hostel
-Çok dilli gezginler, yoğun mesaj trafiği.
+50–150 oda
+## Şehir ve tatil oteli
+Geniş ekip, yoğun kanal trafiği, öncelikli destek.
 
-1–10 oda
-## Pansiyon
-Tek kişilik ekip için gece vardiyası.
-
-10–40 daire
-## Apart otel
-Varıştan önce online check-in.
+2 tesis · 150 oda
+## İki tesisli işletme
+İki otelinizi tek hesaptan, tek uygulamadan yönetin.
 
 ## Otelinizin büyüklüğüne göre plan
 Sabit aylık ücret, uzun süreli sözleşme yok. Tüm planlar 7 gün ücretsiz.
@@ -3163,24 +3163,24 @@ Türkçe English Deutsch العربية Русский 日本語 中文 Françai
 ## Mobile app
 Bookings, messages and check-ins on iOS and Android, wherever you are.
 
-## Built for every kind of property
-Designed for independent properties with 1 to 150 rooms.
+## From guesthouse to 150-room hotel
+From a one-person team to a busy front desk; your plan grows with your room count.
+
+1–10 rooms
+## Guesthouse & small hotel
+A one-person team; Lio handles the night-time messages.
 
 10–50 rooms
 ## Boutique hotel
-Many international guests, every message personal.
+Many international guests; online check-in and personal replies.
 
-Beds and rooms
-## Hostel
-Multilingual travellers, busy inboxes.
+50–150 rooms
+## City & resort hotel
+A larger team, heavy channel traffic, priority support.
 
-1–10 rooms
-## Guesthouse
-A night shift for a one-person team.
-
-10–40 units
-## Aparthotel
-Online check-in before arrival.
+2 properties · 150 rooms
+## Two-property business
+Run both hotels from one account and one app.
 
 ## A plan for your hotel's size
 A flat monthly fee, no long-term contract. Every plan is free for 7 days.
@@ -6682,24 +6682,24 @@ Türkçe English Deutsch العربية Русский 日本語 中文 Françai
 ## App móvil
 Reservas, mensajes y check-ins en iOS y Android, estés donde estés.
 
-## Pensado para cada tipo de alojamiento
-Diseñado para alojamientos independientes de 1 a 150 habitaciones.
+## De la pensión al hotel de 150 habitaciones
+Del equipo de una persona a una recepción concurrida: su plan crece con su número de habitaciones.
+
+1–10 habitaciones
+## Pensión y hotel pequeño
+Equipo de una persona; Lio atiende los mensajes de la noche.
 
 10–50 habitaciones
 ## Hotel boutique
-Muchos huéspedes internacionales, cada mensaje personal.
+Muchos huéspedes internacionales; check-in online y respuestas personales.
 
-Camas y habitaciones
-## Hostel
-Viajeros de muchos idiomas, bandejas llenas.
+50–150 habitaciones
+## Hotel urbano y vacacional
+Equipo más grande, mucho tráfico de canales, soporte prioritario.
 
-1–10 habitaciones
-## Hostal / pensión
-Un turno de noche para un equipo de una sola persona.
-
-10–40 unidades
-## Apartahotel
-Check-in online antes de la llegada.
+2 alojamientos · 150 habitaciones
+## Negocio con dos alojamientos
+Gestione ambos hoteles desde una cuenta y una app.
 
 ## Un plan a la medida de tu hotel
 Una cuota mensual fija, sin contratos de permanencia. Todos los planes son gratis durante 7 días.
@@ -9401,24 +9401,24 @@ Türkçe English Deutsch العربية Русский 日本語 中文 Françai
 ## App mobile
 Prenotazioni, messaggi e check-in su iOS e Android, ovunque tu sia.
 
-## Pensato per ogni tipo di struttura
-Progettato per strutture indipendenti da 1 a 150 camere.
+## Dal B&B all’ hotel da 150 camere
+Dal team di una persona alla reception affollata: il piano cresce con il numero di camere.
+
+1–10 camere
+## B&B e piccolo hotel
+Team di una persona; Lio gestisce i messaggi notturni.
 
 10–50 camere
 ## Boutique hotel
-Tanti ospiti internazionali, ogni messaggio è personale.
+Tanti ospiti internazionali; check-in online e risposte personali.
 
-Posti letto e camere
-## Ostello
-Viaggiatori multilingue, caselle di posta affollate.
+50–150 camere
+## Hotel di città e resort
+Team più grande, molto traffico dai canali, supporto prioritario.
 
-1–10 camere
-## B&B e affittacamere
-Un turno di notte per chi gestisce tutto da solo.
-
-10–40 unità
-## Residence e aparthotel
-Check-in online prima dell’arrivo.
+2 strutture · 150 camere
+## Due strutture
+Gestisci entrambi gli hotel da un solo account e una sola app.
 
 ## Un piano per le dimensioni del tuo hotel
 Un canone mensile fisso, nessun contratto a lungo termine. Ogni piano è gratuito per 7 giorni.
@@ -11970,24 +11970,24 @@ Türkçe English Deutsch العربية Русский 日本語 中文 Françai
 ## App móvel
 Reservas, mensagens e check-ins no iOS e no Android, onde você estiver.
 
-## Feito para todo tipo de hospedagem
-Pensado para hospedagens independentes de 1 a 150 quartos.
+## Da pousada ao hotel de 150 quartos
+Da equipe de uma pessoa à recepção movimentada: seu plano cresce com o número de quartos.
+
+1–10 quartos
+## Pousada e hotel pequeno
+Equipe de uma pessoa; o Lio cuida das mensagens da madrugada.
 
 10–50 quartos
 ## Hotel boutique
-Muitos hóspedes estrangeiros, cada mensagem pessoal.
+Muitos hóspedes estrangeiros; check-in online e respostas pessoais.
 
-Camas e quartos
-## Hostel
-Viajantes de vários idiomas, caixas de entrada cheias.
+50–150 quartos
+## Hotel urbano e resort
+Equipe maior, muito tráfego de canais, suporte prioritário.
 
-1–10 quartos
-## Pousada
-Um turno da noite para uma equipe de uma pessoa só.
-
-10–40 unidades
-## Apart-hotel
-Check-in online antes da chegada.
+2 hospedagens · 150 quartos
+## Empresa com duas hospedagens
+Gerencie os dois hotéis em uma conta e um app.
 
 ## Um plano para o tamanho do seu hotel
 Mensalidade fixa, sem contrato de longo prazo. Todos os planos são grátis por 7 dias.
@@ -14661,24 +14661,24 @@ Türkçe English Deutsch العربية Русский 日本語 中文 Françai
 ## Application mobile
 Réservations, messages et check-ins sur iOS et Android, où que vous soyez.
 
-## Conçu pour tous les types d’établissements
-Pensé pour les établissements indépendants de 1 à 150 chambres.
+## De la maison d’hôtes à l’ hôtel de 150 chambres
+De l’équipe d’une personne à la réception animée : votre forfait suit votre nombre de chambres.
+
+1–10 chambres
+## Maison d’hôtes et petit hôtel
+Une équipe d’une personne ; Lio gère les messages de nuit.
 
 10–50 chambres
 ## Hôtel boutique
-Beaucoup de clients internationaux, chaque message est personnel.
+Beaucoup de clients internationaux ; check-in en ligne et réponses personnelles.
 
-Lits et chambres
-## Auberge de jeunesse
-Voyageurs multilingues, boîtes de réception chargées.
+50–150 chambres
+## Hôtel urbain et de séjour
+Équipe plus grande, fort trafic des canaux, support prioritaire.
 
-1–10 chambres
-## Chambres d’hôtes
-Une équipe de nuit pour une équipe d’une seule personne.
-
-10–40 logements
-## Résidence hôtelière
-Le check-in en ligne avant l’arrivée.
+2 établissements · 150 chambres
+## Deux établissements
+Gérez vos deux hôtels depuis un seul compte et une seule appli.
 
 ## Une formule adaptée à la taille de votre hôtel
 Un abonnement mensuel fixe, sans engagement de longue durée. Chaque formule est gratuite pendant 7 jours.
