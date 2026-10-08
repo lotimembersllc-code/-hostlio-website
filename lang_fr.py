@@ -25,13 +25,13 @@ UI = {
 MEGA = {"btn":"Produit","cols":[
    ("Clients",[("ai","sparkle","Assistant IA Lio","Réponses aux clients 24h/24 en 30+ langues"),("checkin","identification-card","Check-in en ligne","Pièce d’identité, accompagnants et signature électronique")]),
    ("Distribution",[("channel","arrows-left-right","Channel manager","100+ OTA sur un seul calendrier"),("features","calendar-dots","Planning des chambres","Calendrier des réservations en glisser-déposer")]),
-   ("Exploitation",[("features","van","Transferts et excursions","Des revenus en plus pendant la conversation"),("features","device-mobile","Application mobile","Sur iOS et Android, même hors connexion")]),
+   ("Exploitation",[("features","van","Transferts et excursions","Des revenus en plus pendant la conversation"),("features","device-mobile","Application mobile","Sur iOS et Android, gérez à distance")]),
    ("Par type d’établissement",[("t-boutique","sparkle","Hôtels boutique","Hôtels de 10 à 50 chambres"),("t-guesthouse","users-three","Chambres d’hôtes","Établissements de 1 à 10 chambres"),("t-apart","calendar-dots","Résidences hôtelières","Appartements et suites"),("t-hostel","globe-simple","Auberges de jeunesse","Vente au lit")]),
   ],"feat":("pricing","Comparer les formules","À partir de ⟦price:starter⟧ par mois, 7 jours offerts")}
 
 # ------------------------------------------------------------------ build.software_schema / room_rack / 404
 SOFT_DESC = "Logiciel de gestion hôtelière propulsé par l’IA pour les hôtels indépendants : messagerie clients 24h/24 en 30+ langues, channel manager pour 100+ OTA, calendrier des réservations et check-in en ligne."
-SOFT_FEATURES = ["Assistant IA Lio pour les clients (30+ langues)", "Channel manager (connexions certifiées à 100+ OTA)", "Calendrier des réservations en glisser-déposer", "Check-in en ligne avec scan de la pièce d’identité (aucune image conservée) et signature électronique", "Formulaires de visa PDF automatiques", "Vente de transferts et d’excursions", "Suggestions de Lio : recommandations quotidiennes sur les prix et l’exploitation (avec validation)", "Demandes de réservation et de services via Lio sur WhatsApp (avec validation)", "Analyses IA des avis et des messages clients", "Rapports d’occupation, ADR, RevPAR et performance par canal", "Application mobile utilisable hors connexion"]
+SOFT_FEATURES = ["Assistant IA Lio pour les clients (30+ langues)", "Channel manager (connexions certifiées à 100+ OTA)", "Calendrier des réservations en glisser-déposer", "Check-in en ligne avec scan de la pièce d’identité (aucune image conservée) et signature électronique", "Attestation d’hébergement pour visa (PDF)", "Vente de transferts et d’excursions", "Suggestions de Lio : recommandations quotidiennes sur les prix et l’exploitation (avec validation)", "Demandes de réservation et de services via Lio sur WhatsApp (avec validation)", "Analyses IA des avis et des messages clients", "Rapports d’occupation, ADR, RevPAR et performance par canal", "Application mobile iOS et Android"]
 DAYS = ["Lun","Mar","Mer","Jeu","Ven","Sam","Dim"]
 RACK = ("Planning des chambres", "Septembre, semaine 3", "Réservations colorées par canal : Booking.com en bleu, Airbnb en pêche, Expedia en lilas, Agoda en sable, direct en vert")
 NOTFOUND = ("Page introuvable | Hostlio Pro", "La page que vous cherchez a peut-être été déplacée ou supprimée.", "Page introuvable",
@@ -58,7 +58,7 @@ HOME = dict(
   tour_h='Pilotez la journée de votre hôtel <em class="hl">depuis un seul écran</em>', tour_p="Messages clients, réservations, canaux et check-in fonctionnent ensemble.", tour_label="Visite du produit",
   tabs=["Messages","Calendrier","Canaux","Check-in"],
   st=[("Tous les messages clients dans une seule boîte","WhatsApp et messages des OTA (Booking.com, Airbnb, Expedia) réunis. Lio répond avec les informations de votre hôtel, et vous ne voyez que ce qui a besoin de vous.",["Réponses automatiques en 30+ langues","Détails de la réservation à côté de chaque message","Vous transmet ce dont il n’est pas sûr"],"ai","Comment fonctionne Lio"),
-      ("Toute votre semaine sur le planning des chambres","Chaque réservation apparaît dans la couleur de son canal. Changer de chambre, prolonger un séjour ou bloquer des dates se fait d’un seul geste.",["Changements de chambre en glisser-déposer","Réservations colorées par canal","Le même calendrier sur le web, iOS et Android"],"features","Toutes les fonctionnalités"),
+      ("Toute votre semaine sur le planning des chambres","Chaque réservation apparaît dans la couleur de son canal. Pour changer un client de chambre, il suffit de faire glisser sa réservation.",["Changements de chambre en glisser-déposer","Réservations colorées par canal","Le même calendrier sur le web, iOS et Android"],"features","Toutes les fonctionnalités"),
       ("100+ canaux, une seule disponibilité","Synchronisation bidirectionnelle par connexions de canal certifiées. Une chambre vendue sur un canal se ferme instantanément sur les autres.",["Tarifs et restrictions depuis un seul écran","Nouvelles réservations et annulations intégrées automatiquement","Aucun risque de surréservation"],"channel","Channel manager"),
       ("Le check-in est fait avant l’arrivée","Les clients envoient leurs informations d’identité, leurs accompagnants et leur signature depuis leur téléphone, via un lien sécurisé.",["Dans le navigateur, sans application à télécharger","Scan de la pièce d’identité, aucune image conservée","Signature électronique et consentement"],"checkin","Check-in en ligne")],
   inbox_top=("Boîte de réception","12 conversations ouvertes"), inbox_note="Traduction : le check-in est à partir de 14 h, nous pouvons garder vos bagages.",
@@ -69,10 +69,10 @@ HOME = dict(
   b_chan=("Channel manager","100+ canaux de vente, une seule disponibilité."),
   b_rack=("Planning des chambres","Calendrier des réservations en glisser-déposer."),
   b_ci=("Check-in en ligne","Identité, accompagnants et signature électronique avant l’arrivée."),
-  b_pdf=("Formulaires de visa PDF","Attestations d’hébergement et lettres d’invitation en un clic.","Attestation d’hébergement","PDF"),
+  b_pdf=("Attestation pour visa","L’attestation d’hébergement, depuis la réservation, en un clic.","Attestation d’hébergement","PDF"),
   b_tr=("Vente de transferts et d’excursions","Lio les propose au bon moment ; vous gagnez plus.","Transfert aéroport","+35 €"),
   b_lang=("30+ langues","Dans la langue où le client écrit, dans cette langue il reçoit sa réponse."),
-  b_mob=("Application mobile","Réservations, messages et check-ins sur iOS et Android, même hors connexion."),
+  b_mob=("Application mobile","Réservations, messages et check-ins sur iOS et Android, où que vous soyez."),
   types_h='Conçu pour <em class="hl">tous les types d’établissements</em>', types_p="Pensé pour les établissements indépendants de 1 à 150 chambres.",
   types=[("brand-courtyard","Cour d’un hôtel boutique avec piscine et bougainvilliers","Hôtel boutique","10–50 chambres","Beaucoup de clients internationaux, chaque message est personnel."),
          ("gen-hostel","Hall aux boiseries avec espace commun","Auberge de jeunesse","Lits et chambres","Voyageurs multilingues, boîtes de réception chargées."),
@@ -132,7 +132,7 @@ def types(U):
   plan="Pour les hôtels boutique de 10 à 50 chambres, nous recommandons <strong>Pro</strong> : ⟦quota:pro⟧ messages IA par mois, WhatsApp et messagerie des OTA (Booking.com, Airbnb, Expedia), check-in en ligne, vente de transferts et d’excursions et application iOS et Android.",
   faq=[("Quel est le meilleur logiciel pour un hôtel boutique ?","Cela dépend du nombre de chambres, du profil des clients et du budget. Pour les hôtels de 10 à 50 chambres qui accueillent beaucoup de clients internationaux et veulent un prix fixe, la messagerie IA et le channel manager de Hostlio Pro sont un bon choix. Consultez notre page comparative pour d’autres options."),
        ("Lio répond-il aux messages des OTA ?","Oui, avec Pro et Growth : les messages Booking.com, Airbnb et Expedia arrivent dans la même boîte de réception que WhatsApp, et Lio y répond. Starter synchronise les réservations des OTA et répond aux clients sur WhatsApp."),
-       ("Combien d’utilisateurs puis-je ajouter ?","Consultez la page des tarifs pour le détail des formules, ou posez la question à notre équipe pendant la démo.")]),
+       ("Combien d’utilisateurs puis-je ajouter ?","Starter inclut 3 utilisateurs, Pro 8 et Growth 20. Chaque personne reçoit un rôle avec les droits correspondants (réception, ménage ou comptabilité, par exemple).")]),
  dict(key="t-apart", img=("gen-apart", "Appartement lumineux au linge de lit blanc", 1080, 1350),
   title="Logiciel de résidence hôtelière et aparthotel | Hostlio Pro",
   desc="Logiciel pour résidence hôtelière et appart’hôtel : synchro Airbnb et Booking.com, check-in en ligne signé électroniquement, messagerie IA en 30+ langues.",
@@ -144,7 +144,7 @@ def types(U):
   pains=[("Check-in à distance","Le formulaire de check-in en ligne recueille l’identité, les accompagnants et la signature avant l’arrivée."),
          ("Instructions d’accès","Remise des clés, Wi-Fi, parking : les questions se répètent. Lio y répond à partir des informations de votre établissement."),
          ("Canaux de courte durée","Les disponibilités Airbnb et Booking.com se synchronisent instantanément par connexions certifiées."),
-         ("Séjours plus longs","Prolonger un séjour ou changer d’appartement se fait par glisser-déposer sur le planning des chambres.")],
+         ("Séjours plus longs","Changer d’appartement se fait par glisser-déposer sur le planning ; prolonger un séjour, d’une simple modification de la réservation.")],
   plan="Le check-in en ligne est inclus dans Pro et Growth ; nous recommandons donc <strong>Pro</strong> pour les résidences hôtelières. Si vous gérez deux établissements, regardez <strong>Growth</strong>.",
   faq=[("Hostlio Pro fonctionne-t-il pour une résidence hôtelière sans réception ?","Oui. Le check-in en ligne et la messagerie IA prennent en charge, à distance, la collecte d’informations et les réponses aux questions qu’assurerait une réception."),
        ("Répond-il aux messages Airbnb ?","Avec Pro et Growth, les messages des OTA, y compris Airbnb, arrivent dans la boîte de réception de Lio."),

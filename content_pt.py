@@ -8,9 +8,9 @@ def D(iso):
     return f"{int(d)} de {MESES[int(m)-1]} de {y}"
 
 PLAN_TXT = {
- "starter": ("Para pousadas pequenas e hotéis boutique", ["1 propriedade, até 10 quartos","⟦quota:starter⟧ mensagens de IA / mês","Sincronização de reservas das OTAs (100+ canais)","Mensagens de IA no WhatsApp","Sugestões da Lio toda manhã","Calendário de reservas (mapa de reservas)","Formulários de visto em PDF automáticos"]),
- "pro":     ("Para hotéis de uma propriedade em crescimento", ["1 propriedade, até 50 quartos","⟦quota:pro⟧ mensagens de IA / mês","Tudo do Starter","WhatsApp + caixas de entrada das OTAs (Booking.com, Airbnb, Expedia)","A Lio recebe pedidos de reserva no WhatsApp (com sua aprovação)","Insights de IA sobre avaliações e mensagens","Check-in online com assinatura digital","Venda de transfers, passeios e extras","App móvel"]),
- "growth":  ("Para equipes que administram duas propriedades", ["Até 2 propriedades, 150 quartos no total","⟦quota:growth⟧ mensagens de IA / mês","Tudo do Pro","Resumo semanal com IA","Sincronização de canais prioritária","Suporte prioritário (próximo dia útil)","Chamada de onboarding personalizada","Opções white-label"]),
+ "starter": ("Para pousadas pequenas e hotéis boutique", ["1 propriedade, até 10 quartos, 3 usuários","⟦quota:starter⟧ mensagens de IA / mês","Sincronização de reservas das OTAs (100+ canais)","Mensagens de IA no WhatsApp","Sugestões da Lio toda manhã","Calendário de reservas (mapa de reservas)","Declaração de hospedagem para visto (PDF)"]),
+ "pro":     ("Para hotéis de uma propriedade em crescimento", ["1 propriedade, até 50 quartos, 8 usuários","⟦quota:pro⟧ mensagens de IA / mês","Tudo do Starter","WhatsApp + caixas de entrada das OTAs (Booking.com, Airbnb, Expedia)","A Lio recebe pedidos de reserva no WhatsApp (com sua aprovação)","Insights de IA sobre avaliações e mensagens","Check-in online com assinatura digital","Venda de transfers, passeios e extras","App móvel"]),
+ "growth":  ("Para equipes que administram duas propriedades", ["Até 2 propriedades, 150 quartos no total, 20 usuários","⟦quota:growth⟧ mensagens de IA / mês","Tudo do Pro","Resumo semanal com IA","Sincronização de canais prioritária","Suporte prioritário (próximo dia útil)","Chamada de onboarding personalizada","Opções white-label"]),
 }
 
 def plans_html():
@@ -57,7 +57,7 @@ def ai():
 <div class="answer"><p><strong>O que é uma assistente de IA para mensagens de hóspedes em hotéis?</strong> É um software que responde automaticamente às perguntas que os hóspedes fazem antes e depois da reserva, usando as informações do próprio hotel. A Lio repassa para a sua equipe as mensagens que não consegue responder ou que exigem uma decisão humana (pedidos de desconto, reclamações, pedidos especiais).</p></div>
 <h2 style="margin-top:64px">O que a Lio faz</h2><div class="rows">
 <div class="row"><h3>Uma só caixa de entrada</h3><div><p>Mensagens do WhatsApp e das OTAs (Booking.com, Airbnb, Expedia) chegam em uma única tela. A Lio vincula automaticamente cada hóspede à sua reserva.</p></div></div>
-<div class="row"><h3>Mais de 30 idiomas, com tradução automática</h3><div><p>O hóspede escreve em japonês, a Lio responde em japonês e você lê a conversa no seu idioma. As respostas manuais também são traduzidas para o idioma do hóspede.</p></div></div>
+<div class="row"><h3>Mais de 30 idiomas, com tradução automática</h3><div><p>O hóspede escreve em japonês e a Lio responde em japonês; você vê a tradução da resposta da Lio no seu idioma. As respostas que você mesmo escreve são enviadas como estão, sem tradução automática.</p></div></div>
 <div class="row"><h3>Conhece o seu hotel</h3><div><p>Horários de check-in e check-out, estacionamento, política para pets, horário do café da manhã, transporte e características dos quartos. Cadastre uma vez e a Lio usa essas informações de forma consistente em todas as respostas.</p></div></div>
 <div class="row"><h3>Uma assistente que vende</h3><div><p>A Lio não só responde perguntas: ela oferece transfers do aeroporto, city tours e serviços extras no momento certo e repassa o pedido para a sua equipe.</p></div></div>
 <div class="row"><h3>Recebe pedidos de reserva</h3><div><p>Nos planos Pro e Growth, quando um hóspede pergunta por um quarto no WhatsApp, a Lio coleta as datas, o número de hóspedes e o quarto preferido e informa o preço com base nas suas tarifas e disponibilidade. O pedido chega para você e vira reserva quando você aprova.</p></div></div>
@@ -142,12 +142,12 @@ def checkin():
 <div class="row"><h3>Link seguro</h3><div><p>Um link baseado em token, exclusivo de cada reserva. Ele abre apenas o formulário daquela reserva.</p></div></div>
 <div class="row"><h3>Leitura do documento sem guardar imagens</h3><div><p>A zona de leitura mecânica do passaporte ou da carteira de identidade é lida no próprio aparelho do hóspede. Só ficam salvos nome, número do documento, nacionalidade, data de nascimento e validade, nunca uma foto do documento. Documentos sem zona de leitura mecânica são preenchidos à mão.</p></div></div>
 <div class="row"><h3>Acompanhantes</h3><div><p>Todos que vão ficar no quarto são adicionados em um único formulário, e ninguém precisa digitar dados na recepção.</p></div></div>
-<div class="row"><h3>Assinatura digital e consentimento</h3><div><p>Os hóspedes aceitam as regras da casa e o consentimento de dados assinando na tela. O registro assinado fica armazenado com a reserva.</p></div></div>
+<div class="row"><h3>Assinatura digital e consentimento</h3><div><p>Os hóspedes aceitam as regras da casa e o consentimento de dados assinando na tela. As assinaturas são excluídas automaticamente 30 dias após o check-out.</p></div></div>
 <div class="row"><h3>Privacidade desde a concepção</h3><div><p>Os dados dos hóspedes podem ser excluídos mediante solicitação, e o texto de consentimento faz parte do formulário.</p></div></div>
 <div class="row"><h3>Exportação para registros oficiais</h3><div><p>Os dados coletados dos hóspedes podem ser exportados em um formato que você pode usar para as exigências locais de registro de hóspedes.</p></div></div>
 </div></div></section>
 <section class="dark on-dark"><div class="wrap"><div class="section-head"><h2>Três passos para o hóspede</h2></div>
-<ol class="steps"><li><h3>Abrir o link</h3><p>Abrir o link pessoal recebido após a confirmação da reserva (enviado automaticamente por e-mail ou compartilhado pelo hotel).</p></li>
+<ol class="steps"><li><h3>Abrir o link</h3><p>Abrir o link pessoal recebido após a confirmação da reserva (enviado automaticamente por e-mail se o hotel ativou essa opção, ou compartilhado pelo hotel).</p></li>
 <li><h3>Escanear o documento</h3><p>Escanear o passaporte ou a identidade com o celular: os dados são preenchidos automaticamente e nenhuma imagem é guardada. Depois, informar os acompanhantes.</p></li>
 <li><h3>Assinar</h3><p>Aceitar as regras da casa e assinar na tela. Na recepção, é só pegar a chave.</p></li></ol>
 </div></section>
@@ -167,18 +167,19 @@ def features():
 <section class="white rule"><div class="wrap"><h2 class="sr-only">Módulos</h2><div class="rows">
 <div class="row"><h3>Assistente de IA Lio</h3><div><p>Respostas aos hóspedes 24 horas por dia em mais de 30 idiomas. Mensagens do WhatsApp e das OTAs (Booking.com, Airbnb, Expedia) em uma só caixa de entrada.</p><a href="{U("ai")}">Saiba mais sobre a Lio</a></div></div>
 <div class="row"><h3>Channel manager</h3><div><p>Sincronização de disponibilidade, tarifas e reservas com mais de 100 OTAs com conexões certificadas.</p><a href="{U("channel")}">Channel manager</a></div></div>
-<div class="row"><h3>Mapa de reservas</h3><div><p>Calendário de reservas com arrastar e soltar. Trocas de quarto, prorrogações e bloqueios em um só gesto.</p></div></div>
+<div class="row"><h3>Mapa de reservas</h3><div><p>Calendário de reservas com arrastar e soltar. Arraste uma reserva para trocar de quarto e veja de relance os quartos livres e os conflitos.</p></div></div>
 <div class="row"><h3>Check-in online</h3><div><p>Link seguro, acompanhantes, leitura do documento (sem guardar imagens) e assinatura digital.</p><a href="{U("checkin")}">Check-in online</a></div></div>
-<div class="row"><h3>Formulários de visto em PDF automáticos</h3><div><p>Gere cartas-convite e declarações de hospedagem do hotel para pedidos de visto a partir dos dados da reserva, com um clique.</p></div></div>
+<div class="row"><h3>Declaração de hospedagem para visto</h3><div><p>Gere com um clique, a partir da reserva, a declaração de hospedagem pedida no visto ou na carta-convite; salve em PDF ou imprima.</p></div></div>
 <div class="row"><h3>Venda de transfers e passeios</h3><div><p>A Lio sugere transfers do aeroporto e passeios durante a conversa e repassa o pedido para a sua equipe.</p></div></div>
 <div class="row"><h3>Sugestões da Lio e insights de IA</h3><div><p>Toda manhã a Lio prepara sugestões sobre preços, operação (quartos aguardando limpeza, pedidos pendentes), configurações que faltam e oportunidades de receita. Nada muda sem sua aprovação, e as sugestões de preço respeitam os limites que você define. Nos planos Pro e Growth, ela também resume as reclamações e os elogios que se repetem em avaliações e mensagens.</p></div></div>
 <div class="row"><h3>Relatórios e equipe</h3><div><p>Relatórios de ocupação, ADR, RevPAR e desempenho por canal, com relatório semanal e mensal por e-mail. Seis funções de equipe com permissões próprias e todas as notificações em um só lugar.</p></div></div>
-<div class="row"><h3>App para celular</h3><div><p>Gerencie reservas, mensagens e check-ins fora do hotel com o app para iOS e Android. Ele continua funcionando offline e sincroniza quando você volta a ficar online.</p></div></div>
+<div class="row"><h3>App para celular</h3><div><p>Gerencie reservas, mensagens e check-ins fora do hotel com o app para iOS e Android.</p></div></div>
 </div></div></section>
 <section><div class="wrap"><div class="section-head"><h2>Funcionalidades por plano</h2></div>
 <div class="table-wrap"><table><thead><tr><th>Funcionalidade</th><th class="c">Starter</th><th class="c">Pro</th><th class="c">Growth</th></tr></thead><tbody>
 <tr><th>Propriedades</th><td class="c">1</td><td class="c">1</td><td class="c">2</td></tr>
 <tr><th>Limite de quartos</th><td class="c num">10</td><td class="c num">50</td><td class="c num">150</td></tr>
+<tr><th>Usuários (contas da equipe)</th><td class="c num">3</td><td class="c num">8</td><td class="c num">20</td></tr>
 <tr><th>Mensagens de IA / mês</th><td class="c num">⟦quota:starter⟧</td><td class="c num">⟦quota:pro⟧</td><td class="c num">⟦quota:growth⟧</td></tr>
 <tr><th>Sincronização com mais de 100 OTAs</th><td class="c">Sim</td><td class="c">Sim</td><td class="c">Prioritária</td></tr>
 <tr><th>Mensagens de IA no WhatsApp</th><td class="c">Sim</td><td class="c">Sim</td><td class="c">Sim</td></tr>
@@ -188,7 +189,7 @@ def features():
 <tr><th>Resumo semanal com IA</th><td class="c">Não</td><td class="c">Opcional</td><td class="c">Sim</td></tr>
 <tr><th>Caixas de entrada das OTAs (Booking.com, Airbnb, Expedia)</th><td class="c">Não</td><td class="c">Sim</td><td class="c">Sim</td></tr>
 <tr><th>Calendário (mapa de reservas)</th><td class="c">Sim</td><td class="c">Sim</td><td class="c">Sim</td></tr>
-<tr><th>Formulários de visto em PDF</th><td class="c">Sim</td><td class="c">Sim</td><td class="c">Sim</td></tr>
+<tr><th>Declaração de hospedagem para visto (PDF)</th><td class="c">Sim</td><td class="c">Sim</td><td class="c">Sim</td></tr>
 <tr><th>Check-in online e assinatura digital</th><td class="c">Não</td><td class="c">Sim</td><td class="c">Sim</td></tr>
 <tr><th>Venda de transfers e passeios</th><td class="c">Não</td><td class="c">Sim</td><td class="c">Sim</td></tr>
 <tr><th>App para iOS e Android</th><td class="c">Não</td><td class="c">Sim</td><td class="c">Sim</td></tr>
@@ -197,7 +198,7 @@ def features():
 </tbody></table></div></div></section>
 '''
     return {"key":"features","title":"Funcionalidades do Sistema para Hotel | Hostlio Pro",
-            "desc":"Recursos do Hostlio Pro: assistente de IA, channel manager com 100+ OTAs, mapa de reservas, check-in online, vistos em PDF, venda de transfers e app.",
+            "desc":"Recursos do Hostlio Pro: assistente de IA, channel manager com 100+ OTAs, mapa de reservas, check-in online, cartas para visto, venda de transfers e app.",
             "trail":[("Funcionalidades", U("features"))],"body":body,"faq":[FAQ_CORE[0], FAQ_CORE[3]]}
 
 def pricing():
@@ -220,7 +221,7 @@ def pricing():
     faq = [FAQ_CORE[1], FAQ_CORE[2],
       ("Vocês cobram comissão por reserva?", "Não. O Hostlio Pro é uma assinatura mensal fixa; não fica com nenhuma porcentagem do valor das reservas."),
       ("Existe opção de cobrança anual?", "Sim. As assinaturas são cobradas mensal ou anualmente de forma antecipada, e os planos anuais têm 20% de desconto (Termos de serviço, seção 3)."),
-      ("Posso trocar de plano?", "Sim. Faça upgrade ou downgrade quando quiser; a mudança vale a partir do próximo período de cobrança."),
+      ("Posso trocar de plano?", "Sim. Faça upgrade ou downgrade quando quiser. A mudança vale na hora, e a diferença de preço é calculada proporcionalmente na próxima fatura."),
       ("Por quanto tempo vale o desconto de lançamento?", "Ele vale para os primeiros 50 clientes, e o seu preço fica garantido enquanto a sua assinatura continuar ativa.")]
     return {"key":"pricing","title":"Preços do Sistema para Hotel: desde ⟦price:starter⟧/mês | Hostlio Pro",
             "desc":"Preços do Hostlio Pro: Starter ⟦price:starter⟧, Pro ⟦price:pro⟧ e Growth ⟦price:growth⟧ por mês. Sem comissão nem taxa de implantação, 7 dias grátis. Compare os planos.",
@@ -228,12 +229,12 @@ def pricing():
 
 FAQ_ALL = FAQ_CORE + [
  ("Para que tipos de hotel o Hostlio Pro foi feito?", "Para propriedades independentes de 1 a 150 quartos, como hotéis boutique, hotéis urbanos, pousadas, apart-hotéis e hostels."),
- ("Existe um app para celular?", "Sim. Os planos Pro e Growth incluem um app para iOS e Android. Ele funciona sem conexão com a internet e sincroniza os dados quando você volta a ficar online."),
+ ("Existe um app para celular?", "Sim. Os planos Pro e Growth incluem um app para iOS e Android. Gerencie reservas, mensagens e check-ins fora do hotel."),
  ("Como funciona o check-in online?", "Os hóspedes recebem um link pessoal e seguro, escaneiam o documento pelo celular (nenhuma imagem é guardada) e enviam, antes da chegada, os acompanhantes e a assinatura digital. Disponível nos planos Pro e Growth."),
- ("Para que serve o recurso de formulários de visto em PDF?", "Ele transforma automaticamente os dados da reserva em declarações de hospedagem e cartas-convite do hotel em PDF para hóspedes que precisam de visto."),
+ ("Para que serve a declaração de hospedagem para visto?", "Para hóspedes que precisam de visto, ela gera com um clique uma declaração de hospedagem a partir dos dados da reserva, para usar no pedido de visto ou de convite. Você pode salvar em PDF ou imprimir."),
  ("Meus dados estão seguros?", "Os dados são transmitidos por conexões criptografadas, e os dados de cada hotel ficam isolados das outras propriedades com regras de acesso por linha. Os dados dos hóspedes podem ser excluídos mediante solicitação."),
  ("Quanto tempo leva a implantação?", "Sua conta fica pronta em minutos. A maioria dos hotéis conecta os canais no mesmo dia: cadastre os tipos de quarto e os quartos, autorize a conexão na extranet de cada OTA e mapeie os quartos. O plano Growth inclui uma chamada de onboarding personalizada."),
- ("Em quais idiomas o suporte é oferecido?", "O painel e o suporte estão disponíveis em inglês e turco. Fale com a gente em " + EMAIL + "."),
+ ("Em quais idiomas o suporte é oferecido?", "O suporte é oferecido em inglês e turco. O painel, o app e o formulário de check-in do hóspede estão disponíveis em 6 idiomas: português, inglês, turco, espanhol, francês e italiano. Fale com a gente em " + EMAIL + "."),
 ]
 
 def faq_page():

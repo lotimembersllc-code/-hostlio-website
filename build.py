@@ -178,8 +178,8 @@ def software_schema(lang, detailed=False):
          "applicationSubCategory": "Hotel management software (PMS)",
          "operatingSystem": "Web, iOS, Android", "description": desc, "url": abs_url("home", lang),
          "publisher": {"@id": SITE + "/#org"},
-         "featureList": {"tr": ["AI misafir asistanı Lio (WhatsApp ve OTA gelen kutuları, 30+ dil)", "Kanal yöneticisi (100+ OTA'ya sertifikalı bağlantı)", "Sürükle-bırak rezervasyon takvimi", "Online check-in: KVKK uyumlu belge tarama (görüntü saklanmaz) ve dijital imza", "Otomatik PDF vize formları", "Transfer ve tur satışı", "Lio Önerileri: her sabah fiyat ve operasyon önerileri (onayınızla)", "Lio ile WhatsApp'ta rezervasyon ve ek hizmet talebi (onaylı)", "Yorum ve misafir mesajlarından AI içgörüleri", "Doluluk, ADR, RevPAR ve kanal performansı raporları", "Çevrimdışı çalışan mobil uygulama"],
-                         "en": ["Lio AI guest assistant (WhatsApp and OTA inboxes, 30+ languages)", "Channel manager (certified connections to 100+ OTAs)", "Drag-and-drop reservation calendar", "Online check-in with ID document scanning (no images stored) and digital signature", "Automatic PDF visa forms", "Transfer and tour sales", "Lio Suggestions: daily pricing and operations suggestions (approval-based)", "Booking and extra-service requests via Lio on WhatsApp (approval-based)", "AI insights from reviews and guest messages", "Occupancy, ADR, RevPAR and channel performance reports", "Offline-capable mobile app"], **{l: m.SOFT_FEATURES for l, m in LANGMOD.items()}}[lang],
+         "featureList": {"tr": ["AI misafir asistanı Lio (WhatsApp ve OTA gelen kutuları, 30+ dil)", "Kanal yöneticisi (100+ OTA'ya sertifikalı bağlantı)", "Sürükle-bırak rezervasyon takvimi", "Online check-in: KVKK uyumlu belge tarama (görüntü saklanmaz) ve dijital imza", "Vize için konaklama onayı (PDF)", "Transfer ve tur satışı", "Lio Önerileri: her sabah fiyat ve operasyon önerileri (onayınızla)", "Lio ile WhatsApp'ta rezervasyon ve ek hizmet talebi (onaylı)", "Yorum ve misafir mesajlarından AI içgörüleri", "Doluluk, ADR, RevPAR ve kanal performansı raporları", "iOS ve Android mobil uygulaması"],
+                         "en": ["Lio AI guest assistant (WhatsApp and OTA inboxes, 30+ languages)", "Channel manager (certified connections to 100+ OTAs)", "Drag-and-drop reservation calendar", "Online check-in with ID document scanning (no images stored) and digital signature", "Accommodation confirmation for visa applications (PDF)", "Transfer and tour sales", "Lio Suggestions: daily pricing and operations suggestions (approval-based)", "Booking and extra-service requests via Lio on WhatsApp (approval-based)", "AI insights from reviews and guest messages", "Occupancy, ADR, RevPAR and channel performance reports", "iOS and Android mobile app"], **{l: m.SOFT_FEATURES for l, m in LANGMOD.items()}}[lang],
          "offers": {"@type": "AggregateOffer", "priceCurrency": pricing.CURRENCY, "lowPrice": str(min(p["price"] for p in PLANS)), "highPrice": str(max(p["price"] for p in PLANS)), "offerCount": str(len(PLANS))},
          **({"downloadUrl": APP_STORE_URL, "installUrl": APP_STORE_URL} if APP_STORE_URL else {})}
     if detailed:
@@ -288,13 +288,13 @@ MEGA = {
  "tr": {"btn":"Ürün","cols":[
    ("Misafir",[("ai","sparkle","AI asistan Lio","30+ dilde 7/24 misafir yanıtı"),("checkin","identification-card","Online check-in","Kimlik, refakatçi ve dijital imza")]),
    ("Dağıtım",[("channel","arrows-left-right","Kanal yöneticisi","100+ OTA tek takvimde"),("features","calendar-dots","Oda rafı","Sürükle-bırak rezervasyon takvimi")]),
-   ("İşletme",[("features","van","Transfer ve tur satışı","Mesajlaşırken ek gelir"),("features","device-mobile","Mobil uygulama","iOS ve Android, çevrimdışı da çalışır")]),
+   ("İşletme",[("features","van","Transfer ve tur satışı","Mesajlaşırken ek gelir"),("features","device-mobile","Mobil uygulama","iOS ve Android, otel dışından yönetim")]),
    ("Tesis tipine göre",[("t-boutique","sparkle","Butik otel programı","10–50 odalı oteller"),("t-guesthouse","users-three","Pansiyon programı","1–10 odalı işletmeler"),("t-apart","calendar-dots","Apart otel programı","Daire ve suitler"),("t-hostel","globe-simple","Hostel programı","Yatak bazlı satış")]),
   ],"feat":("pricing","Planları karşılaştır","Aylık ⟦price:starter⟧'dan başlar, 7 gün ücretsiz")},
  "en": {"btn":"Product","cols":[
    ("Guests",[("ai","sparkle","Lio AI assistant","24/7 guest replies in 30+ languages"),("checkin","identification-card","Online check-in","ID, companions and digital signature")]),
    ("Distribution",[("channel","arrows-left-right","Channel manager","100+ OTAs on one calendar"),("features","calendar-dots","Room rack","Drag-and-drop reservation calendar")]),
-   ("Operations",[("features","van","Transfers and tours","Extra revenue while you chat"),("features","device-mobile","Mobile app","iOS and Android, works offline too")]),
+   ("Operations",[("features","van","Transfers and tours","Extra revenue while you chat"),("features","device-mobile","Mobile app","iOS and Android, manage on the go")]),
    ("By property",[("t-boutique","sparkle","Boutique hotels","10–50 room hotels"),("t-guesthouse","users-three","Guesthouses","1–10 room properties"),("t-apart","calendar-dots","Aparthotels","Apartments and suites"),("t-hostel","globe-simple","Hostels","Bed-based selling")]),
   ],"feat":("pricing","Compare plans","From ⟦price:starter⟧ a month, 7 days free")},
 }
@@ -776,14 +776,14 @@ def main():
     def line(k, lang, src): return pricing.fill(f'- [{src[k]["title"].split(" | ")[0]}]({abs_url(k,lang)}): {src[k]["desc"]}', lang)
     llms = f"""# Hostlio Pro
 
-> Hostlio Pro (also called "Hostlio") is AI-powered hotel management software (PMS) for independent hotels, boutique hotels, guesthouses, aparthotels and hostels with roughly 1–150 rooms. It combines Lio, an AI guest-messaging assistant that replies 24/7 in 30+ languages on WhatsApp and OTA inboxes (Booking.com, Airbnb, Expedia), a channel manager with certified connections to 100+ OTAs, a drag-and-drop room rack calendar, online check-in with on-device ID document scanning (no document images stored) and digital signature, automatic PDF visa forms, transfer and tour sales, and an offline-capable mobile app for iOS and Android. Operated by Loti Members LLC (Sacramento, CA, USA). Used by independent hotels in 20+ countries.
+> Hostlio Pro (also called "Hostlio") is AI-powered hotel management software (PMS) for independent hotels, boutique hotels, guesthouses, aparthotels and hostels with roughly 1–150 rooms. It combines Lio, an AI guest-messaging assistant that replies 24/7 in 30+ languages on WhatsApp and OTA inboxes (Booking.com, Airbnb, Expedia), a channel manager with certified connections to 100+ OTAs, a drag-and-drop room rack calendar, online check-in with on-device ID document scanning (no document images stored) and digital signature, an accommodation confirmation letter for visa applications (PDF), transfer and tour sales, and a mobile app for iOS and Android. Operated by Loti Members LLC (Sacramento, CA, USA). Used by independent hotels in 20+ countries.
 
 ## Key facts
 - Pricing (USD/month, early-bird for first 50 customers, locked in while subscribed): Starter ⟦price:starter⟧ (regular ⟦regular:starter⟧), Pro ⟦price:pro⟧ (regular ⟦regular:pro⟧), Growth ⟦price:growth⟧ (regular ⟦regular:growth⟧).
-- Starter: 1 property, up to 10 rooms, ⟦quota:starter⟧ AI messages/month, 100+ OTA sync, WhatsApp AI messaging, Lio Suggestions, room rack, PDF visa forms.
-- Pro: 1 property, up to 50 rooms, ⟦quota:pro⟧ AI messages/month, adds OTA inbox messaging (Booking.com, Airbnb, Expedia), booking and extra-service requests via Lio on WhatsApp, AI insights from reviews and guest messages, optional weekly AI summary, online check-in, transfer & tour sales, mobile app.
+- Starter: 1 property, up to 10 rooms, 3 users, ⟦quota:starter⟧ AI messages/month, 100+ OTA sync, WhatsApp AI messaging, Lio Suggestions, room rack, visa accommodation confirmation (PDF).
+- Pro: 1 property, up to 50 rooms, 8 users, ⟦quota:pro⟧ AI messages/month, adds OTA inbox messaging (Booking.com, Airbnb, Expedia), booking and extra-service requests via Lio on WhatsApp, AI insights from reviews and guest messages, optional weekly AI summary, online check-in, transfer & tour sales, mobile app.
 - Online check-in (Pro and Growth): the guest scans the machine-readable zone (MRZ) of a passport or ID card with their own phone; reading happens entirely in the browser and only the extracted fields (name, document number or Turkish T.C. identity number, nationality, date of birth, expiry date) and the digital signature are saved. No ID or passport images are uploaded or stored, in line with KVKK principle decision 2025/2120. Staff can scan at the desk with the mobile app (on-device Google ML Kit text recognition). Documents without an MRZ are entered manually.
-- Growth: up to 2 properties, 150 rooms, ⟦quota:growth⟧ AI messages/month, weekly AI summary, priority sync, priority support, onboarding call, white-label.
+- Growth: up to 2 properties, 150 rooms, 20 users, ⟦quota:growth⟧ AI messages/month, weekly AI summary, priority sync, priority support, onboarding call, white-label.
 - Free trial: 7 days; a payment card is collected at signup, no charge until the trial ends, cancel anytime.
 - Annual billing: 20% off — Starter ⟦annual_mo:starter⟧/mo (⟦annual:starter⟧/year), Pro ⟦annual_mo:pro⟧/mo (⟦annual:pro⟧/year), Growth ⟦annual_mo:growth⟧/mo (⟦annual:growth⟧/year), early-bird.
 - Setup: the account is ready in minutes; channels are usually connected the same day (add rooms, authorise the connection in each OTA extranet, map rooms).
@@ -792,7 +792,7 @@ def main():
 - Booking requests (Pro and Growth): on WhatsApp Lio collects dates, guests and room preference and quotes a price from the hotel's own rates and availability; the request becomes a reservation only after the hotelier approves it. Lio does not confirm bookings on its own.
 - Also available: analytics (occupancy, ADR, RevPAR, channel performance, weekly/monthly email report), staff roles and permissions (6 roles), notification center.
 - Channels include Booking.com, Airbnb, Expedia, Agoda, Trip.com, Hotels.com, Hotelbeds, Hostelworld, Google Hotels.
-- Languages: website in English, Turkish, Spanish, Italian, Portuguese and French; support in English and Turkish; guest replies in 30+ languages.
+- Languages: website in English, Turkish, Spanish, Italian, Portuguese and French; dashboard, mobile app and guest check-in form in the same 6 languages; support in English and Turkish; guest replies in 30+ languages.
 - Contact: {EMAIL}, WhatsApp {WHATSAPP_TXT}
 - Last updated: {UPDATED}
 

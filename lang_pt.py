@@ -26,13 +26,13 @@ UI = {
 MEGA = {"btn":"Produto","cols":[
    ("Hóspedes",[("ai","sparkle","Assistente de IA Lio","Respostas 24/7 aos hóspedes em 30+ idiomas"),("checkin","identification-card","Check-in online","Documento, acompanhantes e assinatura digital")]),
    ("Distribuição",[("channel","arrows-left-right","Channel manager","100+ OTAs em um só calendário"),("features","calendar-dots","Mapa de reservas","Calendário de reservas com arrastar e soltar")]),
-   ("Operação",[("features","van","Transfers e passeios","Receita extra enquanto você conversa"),("features","device-mobile","App móvel","iOS e Android, até off-line")]),
+   ("Operação",[("features","van","Transfers e passeios","Receita extra enquanto você conversa"),("features","device-mobile","App móvel","iOS e Android, gestão de qualquer lugar")]),
    ("Por tipo de hospedagem",[("t-boutique","sparkle","Hotéis boutique","Hotéis de 10 a 50 quartos"),("t-guesthouse","users-three","Pousadas","Hospedagens de 1 a 10 quartos"),("t-apart","calendar-dots","Apart-hotéis","Apartamentos e suítes"),("t-hostel","globe-simple","Hostels","Venda por cama")]),
   ],"feat":("pricing","Compare os planos","A partir de ⟦price:starter⟧ por mês, 7 dias grátis")}
 
 # ------------------------------------------------------------------ build.software_schema / room_rack / 404
 SOFT_DESC = "Sistema para hotel com inteligência artificial para hotéis independentes: mensagens com hóspedes 24/7 em 30+ idiomas, channel manager com 100+ OTAs, calendário de reservas e check-in online."
-SOFT_FEATURES = ["Assistente de IA Lio para hóspedes (30+ idiomas)", "Channel manager (conexões certificadas com 100+ OTAs)", "Calendário de reservas com arrastar e soltar", "Check-in online com leitura do documento (sem guardar imagens) e assinatura digital", "Formulários de visto em PDF automáticos", "Venda de transfers e passeios", "Sugestões da Lio: recomendações diárias de preços e operação (com aprovação)", "Pedidos de reserva e serviços extras pela Lio no WhatsApp (com aprovação)", "Insights de IA sobre avaliações e mensagens de hóspedes", "Relatórios de ocupação, ADR, RevPAR e desempenho por canal", "App móvel que funciona off-line"]
+SOFT_FEATURES = ["Assistente de IA Lio para hóspedes (30+ idiomas)", "Channel manager (conexões certificadas com 100+ OTAs)", "Calendário de reservas com arrastar e soltar", "Check-in online com leitura do documento (sem guardar imagens) e assinatura digital", "Declaração de hospedagem para visto (PDF)", "Venda de transfers e passeios", "Sugestões da Lio: recomendações diárias de preços e operação (com aprovação)", "Pedidos de reserva e serviços extras pela Lio no WhatsApp (com aprovação)", "Insights de IA sobre avaliações e mensagens de hóspedes", "Relatórios de ocupação, ADR, RevPAR e desempenho por canal", "App móvel para iOS e Android"]
 DAYS = ["Seg","Ter","Qua","Qui","Sex","Sáb","Dom"]
 RACK = ("Mapa de reservas", "Setembro, semana 3", "Reservas com cores por canal: Booking.com em azul, Airbnb em pêssego, Expedia em lilás, Agoda em areia, diretas em verde")
 NOTFOUND = ("Página não encontrada | Hostlio Pro",
@@ -61,7 +61,7 @@ HOME = dict(
   tour_h='Gerencie o dia do seu hotel <em class="hl">em uma só tela</em>', tour_p="Mensagens de hóspedes, reservas, canais e check-in funcionam juntos.", tour_label="Tour pelo produto",
   tabs=["Mensagens","Calendário","Canais","Check-in"],
   st=[("Todas as mensagens de hóspedes em uma só caixa de entrada","WhatsApp e as caixas de entrada das OTAs (Booking.com, Airbnb, Expedia) juntos. Lio responde com as informações do seu hotel, e você só vê o que realmente precisa de você.",["Respostas automáticas em 30+ idiomas","Dados da reserva ao lado de cada mensagem","Repassa a você o que não tem certeza"],"ai","Como o Lio funciona"),
-      ("A semana inteira no mapa de reservas","Veja cada reserva na cor do seu canal. Trocar de quarto, estender a estadia ou bloquear datas exige um único gesto.",["Troca de quarto com arrastar e soltar","Reservas com cores por canal","O mesmo calendário na web, no iOS e no Android"],"features","Todas as funcionalidades"),
+      ("A semana inteira no mapa de reservas","Veja cada reserva na cor do seu canal. Para trocar um hóspede de quarto, basta arrastar a reserva.",["Troca de quarto com arrastar e soltar","Reservas com cores por canal","O mesmo calendário na web, no iOS e no Android"],"features","Todas as funcionalidades"),
       ("100+ canais, uma só disponibilidade","Sincronização bidirecional com conexões de canal certificadas. Um quarto vendido em um canal fecha nos outros na hora.",["Tarifas e restrições em uma só tela","Novas reservas e cancelamentos entram sozinhos","Sem risco de overbooking"],"channel","Channel manager"),
       ("O check-in fica pronto antes da chegada","O hóspede envia os dados do documento, os acompanhantes e a assinatura pelo celular, por meio de um link seguro.",["No navegador, sem baixar app","Leitura do documento, sem guardar imagens","Assinatura digital e consentimento"],"checkin","Check-in online")],
   inbox_top=("Caixa de entrada","12 conversas abertas"), inbox_note="Tradução: o check-in é a partir das 14h, podemos guardar sua bagagem.",
@@ -72,10 +72,10 @@ HOME = dict(
   b_chan=("Channel manager","100+ canais de venda, uma só disponibilidade."),
   b_rack=("Mapa de reservas","Calendário de reservas com arrastar e soltar."),
   b_ci=("Check-in online","Documento, acompanhantes e assinatura digital antes da chegada."),
-  b_pdf=("Formulários de visto em PDF","Cartas de hospedagem e de convite com um clique.","Carta de hospedagem","PDF"),
+  b_pdf=("Declaração para visto","A declaração de hospedagem, a partir da reserva, com um clique.","Declaração de hospedagem","PDF"),
   b_tr=("Venda de transfers e passeios","Lio oferece no momento certo; você fatura mais.","Transfer do aeroporto","+35 €"),
   b_lang=("30+ idiomas","No idioma em que o hóspede escrever, nesse idioma vem a resposta."),
-  b_mob=("App móvel","Reservas, mensagens e check-ins no iOS e no Android, até off-line."),
+  b_mob=("App móvel","Reservas, mensagens e check-ins no iOS e no Android, onde você estiver."),
   types_h='Feito para <em class="hl">todo tipo de hospedagem</em>', types_p="Pensado para hospedagens independentes de 1 a 150 quartos.",
   types=[("brand-courtyard","Pátio de hotel boutique com piscina e buganvílias","Hotel boutique","10–50 quartos","Muitos hóspedes estrangeiros, cada mensagem pessoal."),
          ("gen-hostel","Lobby com painéis de madeira e área de convivência","Hostel","Camas e quartos","Viajantes de vários idiomas, caixas de entrada cheias."),
@@ -136,7 +136,7 @@ def types(U):
   plan="Para hotéis boutique de 10 a 50 quartos, recomendamos o <strong>Pro</strong>: ⟦quota:pro⟧ mensagens de IA por mês, WhatsApp e caixas de entrada das OTAs (Booking.com, Airbnb, Expedia), check-in online, venda de transfers e passeios e o app para iOS e Android.",
   faq=[("Qual é o melhor sistema para hotel boutique?","Depende do número de quartos, do perfil dos hóspedes e do orçamento. Para hotéis de 10 a 50 quartos com muitos hóspedes estrangeiros e que querem preço fixo, as mensagens por IA e o channel manager do Hostlio Pro são uma boa escolha. Veja nossa página de comparativo para outras opções."),
        ("Posso usar o Hostlio Pro com o site que já tenho?","Sim. O Hostlio Pro funciona ao lado do seu site atual; as reservas das OTAs são sincronizadas e as mensagens de hóspedes do WhatsApp e das OTAs chegam a uma só caixa de entrada."),
-       ("Quantos usuários posso adicionar?","Veja a página de preços para os detalhes de cada plano ou pergunte à nossa equipe durante a demonstração.")]),
+       ("Quantos usuários posso adicionar?","O Starter inclui 3 usuários, o Pro 8 e o Growth 20. Cada pessoa recebe uma função com as permissões correspondentes (por exemplo, recepção, governança ou financeiro).")]),
  dict(key="t-apart", img=("gen-apart", "Apartamento claro com roupa de cama branca", 1080, 1350),
   title="Sistema para Apart-Hotel com Check-in Online | Hostlio Pro",
   desc="Sistema para apart-hotel e flats: sincronização com Airbnb e Booking.com, check-in online com assinatura digital e mensagens por IA em 30+ idiomas.",
@@ -148,7 +148,7 @@ def types(U):
   pains=[("Check-in remoto","O formulário de check-in online coleta documento, acompanhantes e assinatura antes da chegada."),
          ("Instruções de acesso","Perguntas sobre entrega de chaves, Wi-Fi e estacionamento se repetem. Lio responde com base nas informações da sua hospedagem."),
          ("Canais de estadia curta","A disponibilidade no Airbnb e no Booking.com é sincronizada na hora com conexões certificadas."),
-         ("Estadias longas","Estender uma estadia ou trocar de apartamento é só arrastar e soltar no mapa de reservas.")],
+         ("Estadias longas","Trocar de apartamento é só arrastar e soltar no mapa de reservas; estender a estadia é uma edição rápida na reserva.")],
   plan="O check-in online está incluído nos planos Pro e Growth, por isso recomendamos o <strong>Pro</strong> para apart-hotéis. Se você administra duas propriedades, veja o <strong>Growth</strong>.",
   faq=[("O Hostlio Pro funciona em um apart-hotel sem recepção?","Sim. O check-in online e as mensagens por IA fazem a distância o trabalho de coletar informações e responder dúvidas que uma recepção faria."),
        ("Ele responde às mensagens do Airbnb?","Nos planos Pro e Growth, as mensagens das OTAs, incluindo o Airbnb, chegam à caixa de entrada do Lio."),

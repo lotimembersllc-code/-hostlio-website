@@ -4,9 +4,9 @@ def U(k): return url(k, L)
 
 # ------------------------------------------------------------ shared facts
 PLAN_TXT = {
- "starter": ("Küçük pansiyon ve butik oteller için", ["1 tesis, 10 odaya kadar","Aylık ⟦quota:starter⟧ AI mesajı","100+ OTA ile kanal senkronizasyonu","WhatsApp AI mesajlaşma","Lio Önerileri: her sabah öneriler","Oda rafı (rezervasyon takvimi)","Otomatik PDF vize formları"]),
- "pro":     ("Tek tesisli, büyüyen oteller için", ["1 tesis, 50 odaya kadar","Aylık ⟦quota:pro⟧ AI mesajı","Starter'daki her şey","WhatsApp + OTA gelen kutusu mesajlaşması (Booking.com, Airbnb, Expedia)","Lio WhatsApp'ta rezervasyon talebi alır (onayınızla)","AI yorum ve mesaj içgörüleri","Online check-in ve dijital imza","Transfer, tur ve ek hizmet satışı","Mobil uygulama"]),
- "growth":  ("İki tesis işleten ekipler için", ["2 tesise kadar, toplam 150 oda","Aylık ⟦quota:growth⟧ AI mesajı","Pro'daki her şey","Haftalık AI özeti","Öncelikli kanal senkronizasyonu","Öncelikli destek (ertesi iş günü)","Birebir kurulum görüşmesi","White-label seçenekleri"]),
+ "starter": ("Küçük pansiyon ve butik oteller için", ["1 tesis, 10 odaya kadar, 3 kullanıcı","Aylık ⟦quota:starter⟧ AI mesajı","100+ OTA ile kanal senkronizasyonu","WhatsApp AI mesajlaşma","Lio Önerileri: her sabah öneriler","Oda rafı (rezervasyon takvimi)","Vize için konaklama onayı (PDF)"]),
+ "pro":     ("Tek tesisli, büyüyen oteller için", ["1 tesis, 50 odaya kadar, 8 kullanıcı","Aylık ⟦quota:pro⟧ AI mesajı","Starter'daki her şey","WhatsApp + OTA gelen kutusu mesajlaşması (Booking.com, Airbnb, Expedia)","Lio WhatsApp'ta rezervasyon talebi alır (onayınızla)","AI yorum ve mesaj içgörüleri","Online check-in ve dijital imza","Transfer, tur ve ek hizmet satışı","Mobil uygulama"]),
+ "growth":  ("İki tesis işleten ekipler için", ["2 tesise kadar, toplam 150 oda, 20 kullanıcı","Aylık ⟦quota:growth⟧ AI mesajı","Pro'daki her şey","Haftalık AI özeti","Öncelikli kanal senkronizasyonu","Öncelikli destek (ertesi iş günü)","Birebir kurulum görüşmesi","White-label seçenekleri"]),
 }
 
 def plans_html():
@@ -55,7 +55,7 @@ def ai():
 <div class="answer"><p><strong>Otelde AI misafir asistanı nedir?</strong> Misafirlerin rezervasyon öncesi ve sonrası sorduğu soruları, otelin kendi bilgilerini kullanarak otomatik yanıtlayan yazılımdır. Lio, cevaplayamadığı ya da insan kararı gereken mesajları (indirim talebi, şikâyet, özel istek) personele iletir.</p></div>
 <h2 style="margin-top:64px">Lio neler yapar</h2><div class="rows">
 <div class="row"><h3>Tek gelen kutusu</h3><div><p>WhatsApp ve OTA gelen kutusu mesajları (Booking.com, Airbnb, Expedia) tek ekranda toplanır. Hangi misafirin hangi rezervasyona ait olduğunu Lio otomatik eşler.</p></div></div>
-<div class="row"><h3>30+ dil, otomatik çeviri</h3><div><p>Misafir Japonca yazar, Lio Japonca cevaplar; siz yazışmayı Türkçe görürsünüz. Manuel cevap yazarken de mesajınız misafirin diline çevrilir.</p></div></div>
+<div class="row"><h3>30+ dil, otomatik çeviri</h3><div><p>Misafir Japonca yazar, Lio Japonca cevaplar; Lio'nun cevabının Türkçe çevirisini panelde görürsünüz. Kendi yazdığınız cevaplar ise yazdığınız gibi gönderilir, otomatik çevrilmez.</p></div></div>
 <div class="row"><h3>Otelinize özel bilgi</h3><div><p>Check-in/check-out saatleri, otopark, evcil hayvan kuralları, kahvaltı saatleri, yakın ulaşım, oda özellikleri. Bu bilgileri bir kez girersiniz, Lio her cevapta tutarlı kullanır.</p></div></div>
 <div class="row"><h3>Satış yapan asistan</h3><div><p>Lio sadece soru yanıtlamaz: havalimanı transferi, şehir turu ve ek hizmet tekliflerini uygun anda sunar, talebi oluşturup ekibinize iletir.</p></div></div>
 <div class="row"><h3>Rezervasyon talebi alır</h3><div><p>Pro ve Growth planlarında misafir WhatsApp'tan oda sorduğunda Lio tarihleri, kişi sayısını ve oda tercihini toplar, sizin fiyat ve müsaitlik bilgilerinize göre fiyat verir. Talep onayınıza gelir; siz onayladığınızda rezervasyona dönüşür.</p></div></div>
@@ -140,12 +140,12 @@ def checkin():
 <div class="row"><h3>Güvenli bağlantı</h3><div><p>Her rezervasyona özel, token tabanlı bağlantı. Bağlantı yalnızca o rezervasyonun formunu açar.</p></div></div>
 <div class="row"><h3>KVKK uyumlu belge tarama</h3><div><p>Pasaportun veya kimlik kartının makine okunabilir alanı misafirin kendi cihazında okunur. Yalnızca ad soyad, belge numarası (T.C. kimlik kartlarında T.C. kimlik no), uyruk, doğum tarihi ve geçerlilik tarihi kaydedilir; kimliğin fotokopisi ya da fotoğrafı saklanmaz. Bu, konaklama işletmelerinin kimlik fotokopisi saklamamasını öngören KVKK İlke Kararı 2025/2120 ile uyumludur. Makine okunabilir alanı olmayan belgeler elle girilir.</p></div></div>
 <div class="row"><h3>Refakatçi misafirler</h3><div><p>Aynı odada kalan tüm misafirler tek formda eklenir. Resepsiyonda tek tek bilgi yazmaya gerek kalmaz.</p></div></div>
-<div class="row"><h3>Dijital imza ve onay</h3><div><p>Misafir otel kurallarını ve kişisel veri onayını ekranda imzalar. İmzalı kayıt rezervasyonda saklanır.</p></div></div>
+<div class="row"><h3>Dijital imza ve onay</h3><div><p>Misafir otel kurallarını ve kişisel veri onayını ekranda imzalar. İmzalar çıkıştan 30 gün sonra otomatik olarak silinir.</p></div></div>
 <div class="row"><h3>Kişisel verilere saygı</h3><div><p>Misafir verileri talep üzerine silinebilir. Açık rıza metni formun parçasıdır.</p></div></div>
 <div class="row"><h3>Resmî bildirim için dışa aktarma</h3><div><p>Toplanan misafir bilgileri, yasal konaklama bildirimlerinizde kullanabileceğiniz formatta dışa aktarılır.</p></div></div>
 </div></div></section>
 <section class="dark on-dark"><div class="wrap"><div class="section-head"><h2>Misafir tarafında üç adım</h2></div>
-<ol class="steps"><li><h3>Bağlantıyı açar</h3><p>Rezervasyon onayından sonra gelen kişisel bağlantıyı açar (otomatik e-postayla gönderilir ya da otel paylaşır).</p></li>
+<ol class="steps"><li><h3>Bağlantıyı açar</h3><p>Rezervasyon onayından sonra gelen kişisel bağlantıyı açar (otel bu seçeneği açtıysa otomatik e-postayla gelir; açmadıysa bağlantıyı otel paylaşır).</p></li>
 <li><h3>Belgesini tarar</h3><p>Pasaportunu ya da kimliğini telefonuyla tarar; bilgiler otomatik dolar, görüntü saklanmaz. Ardından refakatçileri girer.</p></li>
 <li><h3>İmzalar</h3><p>Otel kurallarını onaylayıp ekranda imzalar. Resepsiyona sadece anahtar almaya gelir.</p></li></ol>
 </div></section>
@@ -165,18 +165,19 @@ def features():
 <section class="white rule"><div class="wrap"><h2 class="sr-only">Modüller</h2><div class="rows">
 <div class="row"><h3>AI asistan Lio</h3><div><p>30+ dilde, 7/24 misafir yanıtı. WhatsApp ve OTA gelen kutusu mesajları (Booking.com, Airbnb, Expedia) tek gelen kutusunda.</p><a href="{U("ai")}">Lio hakkında daha fazlası</a></div></div>
 <div class="row"><h3>Kanal yöneticisi</h3><div><p>100+ OTA'da sertifikalı bağlantılarla müsaitlik, fiyat ve rezervasyon senkronizasyonu.</p><a href="{U("channel")}">Kanal yöneticisi</a></div></div>
-<div class="row"><h3>Oda rafı (room rack)</h3><div><p>Sürükle-bırak rezervasyon takvimi. Oda değişikliği, konaklama uzatma ve blokaj tek hareketle.</p></div></div>
+<div class="row"><h3>Oda rafı (room rack)</h3><div><p>Sürükle-bırak rezervasyon takvimi. Rezervasyonu sürükleyerek odasını değiştirin; boş odaları ve çakışmaları tek bakışta görün.</p></div></div>
 <div class="row"><h3>Online check-in</h3><div><p>Güvenli bağlantı, refakatçi misafirler, belge tarama (görüntü saklanmaz) ve dijital imza.</p><a href="{U("checkin")}">Online check-in</a></div></div>
-<div class="row"><h3>Otomatik PDF vize formları</h3><div><p>Vize başvurusu için otel davet ve konaklama belgelerini rezervasyon bilgilerinden tek tıkla PDF olarak üretin.</p></div></div>
+<div class="row"><h3>Vize için konaklama onayı</h3><div><p>Vize ya da davet başvurusunda istenen konaklama onayını rezervasyon bilgilerinden tek tıkla hazırlayın; PDF olarak kaydedin ya da yazdırın.</p></div></div>
 <div class="row"><h3>Transfer ve tur satışı</h3><div><p>Lio mesajlaşma sırasında havalimanı transferi ve tur önerir, talebi ekibinize iletir.</p></div></div>
 <div class="row"><h3>Lio Önerileri ve AI içgörüleri</h3><div><p>Lio her sabah fiyat, operasyon (kirli odalar, bekleyen talepler), kurulum eksikleri ve gelir fırsatları için öneriler hazırlar. Onayınız olmadan hiçbir şey değişmez; fiyat önerileri belirlediğiniz sınırların dışına çıkmaz. Pro ve Growth'ta yorum ve mesajlardaki tekrar eden şikâyet ve övgüler de özetlenir.</p></div></div>
 <div class="row"><h3>Raporlar ve ekip</h3><div><p>Doluluk, ADR, RevPAR ve kanal performansı raporları; haftalık ve aylık e-posta raporu. 6 personel rolüyle yetkilendirme ve tek yerde toplanan bildirimler.</p></div></div>
-<div class="row"><h3>Mobil uygulama</h3><div><p>iOS ve Android uygulamasıyla rezervasyonları, mesajları ve check-in'leri otelin dışından yönetin. İnternet kesildiğinde de çalışır, bağlantı gelince senkronize olur.</p></div></div>
+<div class="row"><h3>Mobil uygulama</h3><div><p>iOS ve Android uygulamasıyla rezervasyonları, mesajları ve check-in'leri otelin dışından yönetin.</p></div></div>
 </div></div></section>
 <section><div class="wrap"><div class="section-head"><h2>Planlara göre özellikler</h2></div>
 <div class="table-wrap"><table><thead><tr><th>Özellik</th><th class="c">Starter</th><th class="c">Pro</th><th class="c">Growth</th></tr></thead><tbody>
 <tr><th>Tesis sayısı</th><td class="c">1</td><td class="c">1</td><td class="c">2</td></tr>
 <tr><th>Oda limiti</th><td class="c num">10</td><td class="c num">50</td><td class="c num">150</td></tr>
+<tr><th>Kullanıcı (personel hesabı)</th><td class="c num">3</td><td class="c num">8</td><td class="c num">20</td></tr>
 <tr><th>Aylık AI mesajı</th><td class="c num">⟦quota:starter⟧</td><td class="c num">⟦quota:pro⟧</td><td class="c num">⟦quota:growth⟧</td></tr>
 <tr><th>100+ OTA kanal senkronizasyonu</th><td class="c">Var</td><td class="c">Var</td><td class="c">Öncelikli</td></tr>
 <tr><th>WhatsApp AI mesajlaşma</th><td class="c">Var</td><td class="c">Var</td><td class="c">Var</td></tr>
@@ -186,7 +187,7 @@ def features():
 <tr><th>Haftalık AI özeti</th><td class="c">Yok</td><td class="c">İsteğe bağlı</td><td class="c">Var</td></tr>
 <tr><th>OTA gelen kutusu mesajlaşması (Booking.com, Airbnb, Expedia)</th><td class="c">Yok</td><td class="c">Var</td><td class="c">Var</td></tr>
 <tr><th>Oda rafı takvimi</th><td class="c">Var</td><td class="c">Var</td><td class="c">Var</td></tr>
-<tr><th>PDF vize formları</th><td class="c">Var</td><td class="c">Var</td><td class="c">Var</td></tr>
+<tr><th>Vize için konaklama onayı (PDF)</th><td class="c">Var</td><td class="c">Var</td><td class="c">Var</td></tr>
 <tr><th>Online check-in ve dijital imza</th><td class="c">Yok</td><td class="c">Var</td><td class="c">Var</td></tr>
 <tr><th>Transfer ve tur satışı</th><td class="c">Yok</td><td class="c">Var</td><td class="c">Var</td></tr>
 <tr><th>iOS ve Android uygulaması</th><td class="c">Yok</td><td class="c">Var</td><td class="c">Var</td></tr>
@@ -195,7 +196,7 @@ def features():
 </tbody></table></div></div></section>
 '''
     return {"key":"features","title":"Otel Programı Özellikleri: AI, Kanal Yönetimi | Hostlio Pro",
-            "desc":"Hostlio Pro özellikleri: AI asistan, 100+ OTA kanal yönetimi, sürükle-bırak oda rafı, online check-in, PDF vize formu, transfer satışı ve mobil uygulama.",
+            "desc":"Hostlio Pro özellikleri: AI asistan, 100+ OTA kanal yönetimi, sürükle-bırak oda rafı, online check-in, vize konaklama onayı, transfer satışı ve mobil uygulama.",
             "trail":[("Özellikler", U("features"))],"body":body,"faq":[FAQ_CORE[0], FAQ_CORE[1], FAQ_CORE[4]]}
 
 def pricing():
@@ -218,7 +219,7 @@ def pricing():
     faq = [FAQ_CORE[2], FAQ_CORE[3],
       ("Rezervasyon başına komisyon alıyor musunuz?", "Hayır. Hostlio Pro sabit aylık abonelikle çalışır; rezervasyon değerinden yüzde almaz."),
       ("Yıllık ödeme seçeneği var mı?", "Evet. Abonelikler aylık veya yıllık peşin faturalandırılır; yıllık planlarda %20 indirim uygulanır (Kullanım Şartları, 3. madde)."),
-      ("Plan değiştirebilir miyim?", "Evet. İstediğiniz zaman üst veya alt plana geçebilirsiniz; değişiklik bir sonraki fatura döneminde yansır."),
+      ("Plan değiştirebilir miyim?", "Evet. İstediğiniz zaman üst veya alt plana geçebilirsiniz. Değişiklik hemen geçerli olur; fiyat farkı kalan güne göre hesaplanıp bir sonraki faturanıza yansıtılır."),
       ("Erken kayıt indirimi ne kadar sürer?", "İndirim ilk 50 müşteri için geçerlidir ve aboneliğiniz devam ettiği sürece fiyatınız sabit kalır.")]
     return {"key":"pricing","title":"Otel Yazılımı Fiyatları: Aylık ⟦price:starter⟧'dan Başlar | Hostlio Pro",
             "desc":"Hostlio Pro fiyatları: Starter ⟦price:starter⟧, Pro ⟦price:pro⟧, Growth ⟦price:growth⟧/ay. Komisyon yok, kurulum ücreti yok, 7 gün ücretsiz deneme. Planları karşılaştırın.",
@@ -226,12 +227,12 @@ def pricing():
 
 FAQ_ALL = FAQ_CORE + [
  ("Hostlio Pro hangi otel tiplerine uygun?", "Butik oteller, şehir otelleri, pansiyonlar, apart oteller ve hosteller gibi 1 ila 150 odalı bağımsız tesisler için tasarlandı."),
- ("Mobil uygulama var mı?", "Evet. Pro ve Growth planlarında iOS ve Android uygulaması bulunur. Uygulama internet bağlantısı olmadan da çalışır ve bağlantı geldiğinde verileri senkronize eder."),
+ ("Mobil uygulama var mı?", "Evet. Pro ve Growth planlarında iOS ve Android uygulaması bulunur. Rezervasyonları, mesajları ve check-in'leri otelin dışından da yönetirsiniz."),
  ("Online check-in nasıl çalışıyor?", "Misafire kişiye özel güvenli bir bağlantı gönderilir. Misafir kimliğini telefonuyla tarar (görüntü saklanmaz), refakatçilerini ve dijital imzasını varıştan önce gönderir. Pro ve Growth planlarında vardır."),
- ("PDF vize formu özelliği ne işe yarar?", "Vizeye ihtiyaç duyan misafirler için otel konaklama ve davet belgelerini rezervasyon bilgilerinden otomatik olarak PDF'e dönüştürür."),
+ ("Vize için konaklama onayı ne işe yarar?", "Vizeye ihtiyaç duyan misafir için, vize ya da davet başvurusunda kullanılacak konaklama onayını rezervasyon bilgilerinden tek tıkla hazırlar. Belgeyi PDF olarak kaydedebilir ya da yazdırabilirsiniz."),
  ("Verilerim güvende mi?", "Veriler şifreli bağlantı üzerinden iletilir ve her otelin verisi satır düzeyinde erişim kurallarıyla diğer tesislerden ayrılır. Misafir verileri talep üzerine silinebilir."),
  ("Kurulum ne kadar sürer?", "Hesabınız dakikalar içinde hazır olur. Çoğu otel kanallarını aynı gün bağlar: oda tiplerini ve odaları girin, her OTA'nın extranet'inde bağlantıyı yetkilendirin ve odaları eşleyin. Growth planında birebir kurulum görüşmesi dahildir."),
- ("Türkçe destek veriyor musunuz?", "Evet. Panel ve destek Türkçe ve İngilizce sunulur. Bize " + EMAIL + " adresinden ulaşabilirsiniz."),
+ ("Türkçe destek veriyor musunuz?", "Evet. Destek Türkçe ve İngilizce verilir. Panel, mobil uygulama ve misafirin check-in formu 6 dilde kullanılabilir: Türkçe, İngilizce, İspanyolca, Fransızca, İtalyanca ve Portekizce. Bize " + EMAIL + " adresinden ulaşabilirsiniz."),
 ]
 
 def faq_page():
