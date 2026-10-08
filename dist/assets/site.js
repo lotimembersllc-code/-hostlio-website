@@ -62,6 +62,8 @@
   // contact form -> Make.com webhook (same JSON shape as the previous site), mailto fallback
   // O6: attribution.js'in sunduğu yüzey (süresi dolmuş kayıt dönmez)
   function acq(){try{return typeof window.hostlioAcq==='function'?window.hostlioAcq():null}catch(_e){return null}}
+  // GA4 olayları (consent.js; yalnız GA4_ID doluyken ve ziyaretçi izin verdiyse gönderilir — kişisel veri yok)
+  function track(n,p){try{if(typeof window.hostlioTrack==='function')window.hostlioTrack(n,p)}catch(_e){}}
   d.querySelectorAll('[data-contact-form]').forEach(function(f){
     // Q8: süre sayfa yüklenince değil, formla ilk etkileşimde başlar. Çok hızlı gönderim artık sessizce
     // düşmez ve sahte "ulaştı" denmez: istek yine gider, yalnız suspect:'fast' ile işaretlenir.
@@ -96,7 +98,7 @@
         hotel:g('hotel'),rooms:g('rooms'),country:g('country'),lang:f.dataset.lang||'',page:location.pathname,acquisition:acq()};
       if(fast)payload.suspect='fast';
       fetch(f.dataset.endpoint,{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify(payload)})
-      .then(function(r){if(!r.ok)throw 0;f.reset();t0=0;if(s)s.textContent=f.dataset.ok})
+      .then(function(r){if(!r.ok)throw 0;f.reset();t0=0;if(s)s.textContent=f.dataset.ok;track('generate_lead',{form:'contact'})})
       .catch(function(){if(s)s.textContent=f.dataset.err})
       .then(function(){if(b)b.disabled=false});
     });
@@ -120,7 +122,7 @@
     }
     if(tg)tg.addEventListener('click',function(ev){var t=ev.target.closest('[data-bill]');if(!t)return;annual=t.dataset.bill==='a';
       [].forEach.call(tg.querySelectorAll('[data-bill]'),function(x){var on=x===t;x.classList.toggle('on',on);x.setAttribute('aria-pressed',on)});
-      render();[].forEach.call(box.querySelectorAll('a.btn'),function(a){try{var u=new URL(a.getAttribute('href'),location.origin);u.searchParams.set('billing',annual?'annual':'monthly');a.setAttribute('href',u.pathname+u.search)}catch(e){}})});
+      render();track('pricing_billing_toggle',{billing:annual?'annual':'monthly',context:'pricing'});[].forEach.call(box.querySelectorAll('a.btn'),function(a){try{var u=new URL(a.getAttribute('href'),location.origin);u.searchParams.set('billing',annual?'annual':'monthly');a.setAttribute('href',u.pathname+u.search)}catch(e){}})});
     if(HP)HP.onUpdate(render);
   });
 
