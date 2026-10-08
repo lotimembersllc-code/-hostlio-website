@@ -1,0 +1,1381 @@
+[
+{
+"lang": "en",
+"key": "about",
+"title": "About Hostlio Pro",
+"crumb": "About",
+"type": ""
+},
+{
+"lang": "en",
+"key": "ai",
+"title": "AI Guest Messaging for Hotels in 30+ Languages | Hostlio Pro",
+"crumb": "Lio AI assistant",
+"type": ""
+},
+{
+"lang": "en",
+"key": "alt-amenitiz",
+"title": "Amenitiz Alternative: Hostlio Pro Compared (2026) | Hostlio Pro",
+"crumb": "Amenitiz alternative",
+"type": ""
+},
+{
+"lang": "en",
+"key": "alt-cloudbeds",
+"title": "Cloudbeds Alternatives for Small Hotels (2026) | Hostlio Pro",
+"crumb": "Cloudbeds alternatives",
+"type": ""
+},
+{
+"lang": "en",
+"key": "alt-hijiffy",
+"title": "HiJiffy Alternative: AI Messaging with PMS Included | Hostlio Pro",
+"crumb": "HiJiffy alternative",
+"type": ""
+},
+{
+"lang": "en",
+"key": "blog",
+"title": "Blog: Guides for Independent Hotels | Hostlio Pro",
+"crumb": "Blog",
+"type": ""
+},
+{
+"lang": "en",
+"key": "channel",
+"title": "Hotel Channel Manager for 100+ OTAs | Hostlio Pro",
+"crumb": "Channel manager",
+"type": ""
+},
+{
+"lang": "en",
+"key": "checkin",
+"title": "Hotel Online Check-in with Digital Signature | Hostlio Pro",
+"crumb": "Online check-in",
+"type": ""
+},
+{
+"lang": "en",
+"key": "cmp-hub",
+"title": "Hotel Software Comparisons & Alternatives | Hostlio Pro",
+"crumb": "Comparisons",
+"type": ""
+},
+{
+"lang": "en",
+"key": "commission",
+"title": "OTA Commission Calculator: Net Revenue per Booking | Hostlio Pro",
+"crumb": "OTA commission calculator",
+"type": ""
+},
+{
+"lang": "en",
+"key": "compare",
+"title": "Hotel Software Comparison 2026: Pricing and AI | Hostlio Pro",
+"crumb": "Hotel software comparison",
+"type": ""
+},
+{
+"lang": "en",
+"key": "contact",
+"title": "Contact and Demo Request | Hostlio Pro",
+"crumb": "Contact",
+"type": ""
+},
+{
+"lang": "en",
+"key": "delacc",
+"title": "Delete Your Account | Hostlio Pro",
+"crumb": "Request account deletion",
+"type": ""
+},
+{
+"lang": "en",
+"key": "dpa",
+"title": "Data Processing Addendum (DPA) | Hostlio Pro",
+"crumb": "Data Processing Addendum",
+"type": ""
+},
+{
+"lang": "en",
+"key": "faq",
+"title": "Hostlio Pro FAQ: Frequently Asked Questions",
+"crumb": "FAQ",
+"type": ""
+},
+{
+"lang": "en",
+"key": "features",
+"title": "Hotel Management Software Features | Hostlio Pro",
+"crumb": "Features",
+"type": ""
+},
+{
+"lang": "en",
+"key": "home",
+"title": "Hostlio Pro | AI Hotel Management for Independent Hotels",
+"crumb": "",
+"type": ""
+},
+{
+"lang": "en",
+"key": "kpi",
+"title": "RevPAR, ADR & Occupancy Rate Calculator (Free) | Hostlio Pro",
+"crumb": "RevPAR, ADR and occupancy calculator",
+"type": ""
+},
+{
+"lang": "en",
+"key": "post-ai",
+"title": "Answering hotel guest messages with AI: a practical guide",
+"crumb": "Answering hotel guest messages with AI: a practical guide",
+"type": "article"
+},
+{
+"lang": "en",
+"key": "post-aifrontdesk",
+"title": "The Complete Guide to AI Front Desk for Independent Hotels",
+"crumb": "The Complete Guide to AI Front Desk for Independent Hotels",
+"type": "article"
+},
+{
+"lang": "en",
+"key": "post-autoreply",
+"title": "Booking.com Auto-Reply: 3 Methods + 12 Free Templates (2026)",
+"crumb": "Booking.com Auto-Reply: 3 Methods + 12 Free Templates (2026)",
+"type": "article"
+},
+{
+"lang": "en",
+"key": "post-chains",
+"title": "Independent Hotels vs. Chains: Competing with Tech in 2026",
+"crumb": "Independent Hotels vs. Chains: Competing with Tech in 2026",
+"type": "article"
+},
+{
+"lang": "en",
+"key": "post-noshows",
+"title": "5 Ways to Reduce No-Shows at Your Independent Hotel",
+"crumb": "5 Ways to Reduce No-Shows at Your Independent Hotel",
+"type": "article"
+},
+{
+"lang": "en",
+"key": "post-overbooking",
+"title": "How to prevent overbooking across OTA channels: 6 steps",
+"crumb": "How to prevent overbooking across OTA channels: 6 steps",
+"type": "article"
+},
+{
+"lang": "en",
+"key": "post-pms",
+"title": "Choosing hotel management software for a small hotel",
+"crumb": "Choosing hotel management software for a small hotel",
+"type": "article"
+},
+{
+"lang": "en",
+"key": "post-pms-vs-cm",
+"title": "PMS vs channel manager: what's the difference?",
+"crumb": "PMS vs channel manager: what's the difference?",
+"type": "article"
+},
+{
+"lang": "en",
+"key": "post-whatsapp",
+"title": "WhatsApp for hotels: setup, Meta's rules and AI replies (2026)",
+"crumb": "WhatsApp for hotels: setup, Meta's rules and AI replies (2026)",
+"type": "article"
+},
+{
+"lang": "en",
+"key": "pricing",
+"title": "Hotel Software Pricing: Plans from ⟦price:starter⟧/month | Hostlio Pro",
+"crumb": "Pricing",
+"type": ""
+},
+{
+"lang": "en",
+"key": "privacy",
+"title": "Privacy Policy | Hostlio Pro",
+"crumb": "Privacy Policy",
+"type": ""
+},
+{
+"lang": "en",
+"key": "roi",
+"title": "Hotel AI Messaging ROI Calculator | Hostlio Pro",
+"crumb": "How much time could Lio save you?",
+"type": ""
+},
+{
+"lang": "en",
+"key": "security",
+"title": "Security and Data Protection | Hostlio Pro",
+"crumb": "Security and data protection",
+"type": ""
+},
+{
+"lang": "en",
+"key": "t-apart",
+"title": "Aparthotel Software: Online Check-in, OTA Sync | Hostlio Pro",
+"crumb": "Aparthotel software",
+"type": ""
+},
+{
+"lang": "en",
+"key": "t-boutique",
+"title": "Boutique Hotel Software with AI Messaging | Hostlio Pro",
+"crumb": "Boutique hotel software",
+"type": ""
+},
+{
+"lang": "en",
+"key": "t-guesthouse",
+"title": "Guesthouse Software with an AI Guest Assistant | Hostlio Pro",
+"crumb": "Guesthouse software",
+"type": ""
+},
+{
+"lang": "en",
+"key": "t-hostel",
+"title": "Hostel Software: Multilingual Guest Messaging | Hostlio Pro",
+"crumb": "Hostel software",
+"type": ""
+},
+{
+"lang": "en",
+"key": "terms",
+"title": "Terms of Service | Hostlio Pro",
+"crumb": "Terms of Service",
+"type": ""
+},
+{
+"lang": "en",
+"key": "tools",
+"title": "Free Hotel Calculators: RevPAR, ADR, Commission | Hostlio Pro",
+"crumb": "Tools",
+"type": ""
+},
+{
+"lang": "en",
+"key": "vs-cloudbeds",
+"title": "Hostlio Pro vs Cloudbeds (2026): Pricing, AI, Fit | Hostlio Pro",
+"crumb": "Hostlio Pro vs Cloudbeds",
+"type": ""
+},
+{
+"lang": "en",
+"key": "vs-elektraweb",
+"title": "Hostlio Pro vs Elektraweb (2026): Pricing, AI | Hostlio Pro",
+"crumb": "Hostlio Pro vs Elektraweb",
+"type": ""
+},
+{
+"lang": "en",
+"key": "vs-hotelrunner",
+"title": "Hostlio Pro vs HotelRunner (2026): Pricing, AI | Hostlio Pro",
+"crumb": "Hostlio Pro vs HotelRunner",
+"type": ""
+},
+{
+"lang": "es",
+"key": "about",
+"title": "Sobre nosotros | Hostlio Pro",
+"crumb": "Sobre nosotros",
+"type": ""
+},
+{
+"lang": "es",
+"key": "ai",
+"title": "Mensajería con IA para hoteles en 30+ idiomas | Hostlio Pro",
+"crumb": "Asistente IA Lio",
+"type": ""
+},
+{
+"lang": "es",
+"key": "alt-cloudbeds",
+"title": "Alternativas a Cloudbeds para hoteles pequeños | Hostlio Pro",
+"crumb": "Alternativas a Cloudbeds",
+"type": ""
+},
+{
+"lang": "es",
+"key": "blog",
+"title": "Blog: guías para hoteles independientes | Hostlio Pro",
+"crumb": "Blog",
+"type": ""
+},
+{
+"lang": "es",
+"key": "channel",
+"title": "Channel manager hotelero para 100+ OTAs | Hostlio Pro",
+"crumb": "Channel manager",
+"type": ""
+},
+{
+"lang": "es",
+"key": "checkin",
+"title": "Check-in online para hoteles con firma digital | Hostlio Pro",
+"crumb": "Check-in online",
+"type": ""
+},
+{
+"lang": "es",
+"key": "cmp-hub",
+"title": "Comparativas de software hotelero | Hostlio Pro",
+"crumb": "Comparativas",
+"type": ""
+},
+{
+"lang": "es",
+"key": "commission",
+"title": "Calculadora de comisión OTA: ingreso neto | Hostlio Pro",
+"crumb": "Calculadora de comisión OTA",
+"type": ""
+},
+{
+"lang": "es",
+"key": "compare",
+"title": "Comparativa de software hotelero 2026: precios | Hostlio Pro",
+"crumb": "Comparativa de software hotelero",
+"type": ""
+},
+{
+"lang": "es",
+"key": "contact",
+"title": "Contacto y solicitud de demo | Hostlio Pro",
+"crumb": "Contacto",
+"type": ""
+},
+{
+"lang": "es",
+"key": "delacc",
+"title": "Eliminar tu cuenta | Hostlio Pro",
+"crumb": "Solicitar la eliminación de la cuenta",
+"type": ""
+},
+{
+"lang": "es",
+"key": "faq",
+"title": "Preguntas frecuentes sobre Hostlio Pro | Hostlio Pro",
+"crumb": "Preguntas frecuentes",
+"type": ""
+},
+{
+"lang": "es",
+"key": "features",
+"title": "Funciones del software de gestión hotelera | Hostlio Pro",
+"crumb": "Funcionalidades",
+"type": ""
+},
+{
+"lang": "es",
+"key": "home",
+"title": "Hostlio Pro | Software de gestión hotelera con IA",
+"crumb": "",
+"type": ""
+},
+{
+"lang": "es",
+"key": "kpi",
+"title": "Calculadora de RevPAR, ADR y ocupación hotelera | Hostlio Pro",
+"crumb": "Calculadora de RevPAR, ADR y ocupación",
+"type": ""
+},
+{
+"lang": "es",
+"key": "post-ai",
+"title": "Responder a los huéspedes del hotel con IA: guía práctica",
+"crumb": "Responder a los huéspedes del hotel con IA: guía práctica",
+"type": "article"
+},
+{
+"lang": "es",
+"key": "post-autoreply",
+"title": "Respuesta automática Booking.com: 12 plantillas gratis (2026)",
+"crumb": "Respuesta automática Booking.com: 12 plantillas gratis (2026)",
+"type": "article"
+},
+{
+"lang": "es",
+"key": "post-overbooking",
+"title": "Cómo evitar el overbooking entre canales OTA: 6 pasos",
+"crumb": "Cómo evitar el overbooking entre canales OTA: 6 pasos",
+"type": "article"
+},
+{
+"lang": "es",
+"key": "post-pms",
+"title": "Software para hoteles pequeños: cómo elegirlo y precios 2026",
+"crumb": "Software para hoteles pequeños: cómo elegirlo y precios 2026",
+"type": "article"
+},
+{
+"lang": "es",
+"key": "post-whatsapp",
+"title": "WhatsApp para hoteles: configuración, normas de Meta e IA (2026)",
+"crumb": "WhatsApp para hoteles: configuración, normas de Meta e IA (2026)",
+"type": "article"
+},
+{
+"lang": "es",
+"key": "pricing",
+"title": "Precios de software hotelero: desde ⟦price:starter⟧/mes | Hostlio Pro",
+"crumb": "Precios",
+"type": ""
+},
+{
+"lang": "es",
+"key": "privacy",
+"title": "Política de privacidad | Hostlio Pro",
+"crumb": "Política de privacidad",
+"type": ""
+},
+{
+"lang": "es",
+"key": "roi",
+"title": "Calculadora de ROI de mensajería IA para hoteles | Hostlio Pro",
+"crumb": "¿Cuánto tiempo podría ahorrarte Lio?",
+"type": ""
+},
+{
+"lang": "es",
+"key": "security",
+"title": "Seguridad y protección de datos | Hostlio Pro",
+"crumb": "Seguridad y protección de datos",
+"type": ""
+},
+{
+"lang": "es",
+"key": "t-apart",
+"title": "Software para apartahotel con check-in online | Hostlio Pro",
+"crumb": "Software para apartahoteles",
+"type": ""
+},
+{
+"lang": "es",
+"key": "t-boutique",
+"title": "Software para hotel boutique con mensajería IA | Hostlio Pro",
+"crumb": "Software para hoteles boutique",
+"type": ""
+},
+{
+"lang": "es",
+"key": "t-guesthouse",
+"title": "Software para hostales y pensiones con IA | Hostlio Pro",
+"crumb": "Software para hostales y pensiones",
+"type": ""
+},
+{
+"lang": "es",
+"key": "t-hostel",
+"title": "Software para hostels: mensajes multilingües | Hostlio Pro",
+"crumb": "Software para hostels",
+"type": ""
+},
+{
+"lang": "es",
+"key": "terms",
+"title": "Términos del servicio | Hostlio Pro",
+"crumb": "Términos del servicio",
+"type": ""
+},
+{
+"lang": "es",
+"key": "tools",
+"title": "Calculadoras gratis para hoteles: RevPAR y comisión | Hostlio Pro",
+"crumb": "Herramientas",
+"type": ""
+},
+{
+"lang": "es",
+"key": "vs-cloudbeds",
+"title": "Hostlio Pro vs Cloudbeds (2026): precios e IA | Hostlio Pro",
+"crumb": "Hostlio Pro vs Cloudbeds",
+"type": ""
+},
+{
+"lang": "fr",
+"key": "about",
+"title": "À propos de Hostlio Pro",
+"crumb": "À propos",
+"type": ""
+},
+{
+"lang": "fr",
+"key": "ai",
+"title": "Messagerie client IA pour hôtel en 30+ langues | Hostlio Pro",
+"crumb": "Assistant IA Lio",
+"type": ""
+},
+{
+"lang": "fr",
+"key": "alt-amenitiz",
+"title": "Alternative à Amenitiz : Hostlio Pro comparé (2026) | Hostlio Pro",
+"crumb": "Alternative à Amenitiz",
+"type": ""
+},
+{
+"lang": "fr",
+"key": "blog",
+"title": "Blog : guides pour hôtels indépendants | Hostlio Pro",
+"crumb": "Blog",
+"type": ""
+},
+{
+"lang": "fr",
+"key": "channel",
+"title": "Channel manager hôtelier pour 100+ OTA | Hostlio Pro",
+"crumb": "Channel manager",
+"type": ""
+},
+{
+"lang": "fr",
+"key": "checkin",
+"title": "Check-in en ligne avec signature électronique | Hostlio Pro",
+"crumb": "Check-in en ligne",
+"type": ""
+},
+{
+"lang": "fr",
+"key": "cmp-hub",
+"title": "Comparatifs de logiciels hôteliers | Hostlio Pro",
+"crumb": "Comparatifs",
+"type": ""
+},
+{
+"lang": "fr",
+"key": "commission",
+"title": "Calculateur de commission OTA : revenu net | Hostlio Pro",
+"crumb": "Calculateur de commission OTA",
+"type": ""
+},
+{
+"lang": "fr",
+"key": "compare",
+"title": "Comparatif logiciels hôteliers 2026 : prix, IA | Hostlio Pro",
+"crumb": "Comparatif logiciels hôteliers",
+"type": ""
+},
+{
+"lang": "fr",
+"key": "contact",
+"title": "Contact et demande de démo | Hostlio Pro",
+"crumb": "Contact",
+"type": ""
+},
+{
+"lang": "fr",
+"key": "delacc",
+"title": "Supprimer votre compte | Hostlio Pro",
+"crumb": "Demander la suppression du compte",
+"type": ""
+},
+{
+"lang": "fr",
+"key": "faq",
+"title": "FAQ Hostlio Pro : questions fréquentes",
+"crumb": "FAQ",
+"type": ""
+},
+{
+"lang": "fr",
+"key": "features",
+"title": "Fonctions du logiciel de gestion hôtelière | Hostlio Pro",
+"crumb": "Fonctionnalités",
+"type": ""
+},
+{
+"lang": "fr",
+"key": "home",
+"title": "Logiciel de gestion hôtelière avec IA | Hostlio Pro",
+"crumb": "",
+"type": ""
+},
+{
+"lang": "fr",
+"key": "kpi",
+"title": "Calcul du RevPAR, de l’ADR et du taux d’occupation | Hostlio Pro",
+"crumb": "Calculateur de RevPAR, ADR et taux d’occupation",
+"type": ""
+},
+{
+"lang": "fr",
+"key": "post-ai",
+"title": "Répondre aux clients de l'hôtel avec l'IA : guide pratique",
+"crumb": "Répondre aux clients de l'hôtel avec l'IA : guide pratique",
+"type": "article"
+},
+{
+"lang": "fr",
+"key": "post-autoreply",
+"title": "Réponse automatique Booking.com : 12 modèles gratuits (2026)",
+"crumb": "Réponse automatique Booking.com : 12 modèles gratuits (2026)",
+"type": "article"
+},
+{
+"lang": "fr",
+"key": "post-overbooking",
+"title": "Éviter la surréservation entre canaux OTA : 6 étapes",
+"crumb": "Éviter la surréservation entre canaux OTA : 6 étapes",
+"type": "article"
+},
+{
+"lang": "fr",
+"key": "post-pms",
+"title": "Logiciel de gestion hôtelière pour petit hôtel : guide 2026",
+"crumb": "Logiciel de gestion hôtelière pour petit hôtel : guide 2026",
+"type": "article"
+},
+{
+"lang": "fr",
+"key": "post-pms-vs-cm",
+"title": "PMS ou channel manager : quelle différence ?",
+"crumb": "PMS ou channel manager : quelle différence ?",
+"type": "article"
+},
+{
+"lang": "fr",
+"key": "post-whatsapp",
+"title": "WhatsApp pour hôtels : mise en place, règles de Meta et IA (2026)",
+"crumb": "WhatsApp pour hôtels : mise en place, règles de Meta et IA (2026)",
+"type": "article"
+},
+{
+"lang": "fr",
+"key": "pricing",
+"title": "Tarifs du logiciel hôtelier : dès ⟦price:starter⟧/mois | Hostlio Pro",
+"crumb": "Tarifs",
+"type": ""
+},
+{
+"lang": "fr",
+"key": "privacy",
+"title": "Politique de confidentialité | Hostlio Pro",
+"crumb": "Politique de confidentialité",
+"type": ""
+},
+{
+"lang": "fr",
+"key": "roi",
+"title": "Calculateur de ROI de la messagerie IA | Hostlio Pro",
+"crumb": "Combien de temps Lio peut-il vous faire gagner ?",
+"type": ""
+},
+{
+"lang": "fr",
+"key": "security",
+"title": "Sécurité et protection des données | Hostlio Pro",
+"crumb": "Sécurité et protection des données",
+"type": ""
+},
+{
+"lang": "fr",
+"key": "t-apart",
+"title": "Logiciel de résidence hôtelière et aparthotel | Hostlio Pro",
+"crumb": "Logiciel pour résidences hôtelières",
+"type": ""
+},
+{
+"lang": "fr",
+"key": "t-boutique",
+"title": "Logiciel pour hôtel boutique et messagerie IA | Hostlio Pro",
+"crumb": "Logiciel pour hôtel boutique",
+"type": ""
+},
+{
+"lang": "fr",
+"key": "t-guesthouse",
+"title": "Logiciel pour chambres d’hôtes avec IA | Hostlio Pro",
+"crumb": "Logiciel pour chambres d’hôtes",
+"type": ""
+},
+{
+"lang": "fr",
+"key": "t-hostel",
+"title": "Logiciel pour auberge de jeunesse et hostel | Hostlio Pro",
+"crumb": "Logiciel pour auberges de jeunesse",
+"type": ""
+},
+{
+"lang": "fr",
+"key": "terms",
+"title": "Conditions d’utilisation | Hostlio Pro",
+"crumb": "Conditions d’utilisation",
+"type": ""
+},
+{
+"lang": "fr",
+"key": "tools",
+"title": "Calculateurs hôteliers gratuits : RevPAR, ADR | Hostlio Pro",
+"crumb": "Outils",
+"type": ""
+},
+{
+"lang": "it",
+"key": "about",
+"title": "Chi siamo | Hostlio Pro",
+"crumb": "Chi siamo",
+"type": ""
+},
+{
+"lang": "it",
+"key": "ai",
+"title": "Assistente AI per hotel in oltre 30 lingue | Hostlio Pro",
+"crumb": "Assistente AI Lio",
+"type": ""
+},
+{
+"lang": "it",
+"key": "blog",
+"title": "Blog: guide per hotel indipendenti | Hostlio Pro",
+"crumb": "Blog",
+"type": ""
+},
+{
+"lang": "it",
+"key": "channel",
+"title": "Channel manager per hotel con oltre 100 OTA | Hostlio Pro",
+"crumb": "Channel manager",
+"type": ""
+},
+{
+"lang": "it",
+"key": "checkin",
+"title": "Check-in online per hotel con firma digitale | Hostlio Pro",
+"crumb": "Check-in online",
+"type": ""
+},
+{
+"lang": "it",
+"key": "commission",
+"title": "Calcolatore commissioni OTA: ricavo netto | Hostlio Pro",
+"crumb": "Calcolatore commissioni OTA",
+"type": ""
+},
+{
+"lang": "it",
+"key": "compare",
+"title": "Confronto gestionali hotel 2026: prezzi e AI | Hostlio Pro",
+"crumb": "Confronto gestionali hotel",
+"type": ""
+},
+{
+"lang": "it",
+"key": "contact",
+"title": "Contatti e richiesta demo | Hostlio Pro",
+"crumb": "Contatti",
+"type": ""
+},
+{
+"lang": "it",
+"key": "delacc",
+"title": "Elimina il tuo account | Hostlio Pro",
+"crumb": "Richiedi l’eliminazione dell’account",
+"type": ""
+},
+{
+"lang": "it",
+"key": "faq",
+"title": "Domande frequenti sul gestionale per hotel | Hostlio Pro",
+"crumb": "Domande frequenti",
+"type": ""
+},
+{
+"lang": "it",
+"key": "features",
+"title": "Funzionalità del gestionale per hotel | Hostlio Pro",
+"crumb": "Funzionalità",
+"type": ""
+},
+{
+"lang": "it",
+"key": "home",
+"title": "Hostlio Pro | Gestionale per hotel con AI e channel manager",
+"crumb": "",
+"type": ""
+},
+{
+"lang": "it",
+"key": "kpi",
+"title": "Calcolo RevPAR, ADR e tasso di occupazione (gratis) | Hostlio Pro",
+"crumb": "Calcolatore di RevPAR, ADR e occupazione",
+"type": ""
+},
+{
+"lang": "it",
+"key": "post-ai",
+"title": "Rispondere ai messaggi degli ospiti con l'AI: guida pratica",
+"crumb": "Rispondere ai messaggi degli ospiti con l'AI: guida pratica",
+"type": "article"
+},
+{
+"lang": "it",
+"key": "post-autoreply",
+"title": "Risposta automatica Booking.com: 12 modelli gratuiti (2026)",
+"crumb": "Risposta automatica Booking.com: 12 modelli gratuiti (2026)",
+"type": "article"
+},
+{
+"lang": "it",
+"key": "post-overbooking",
+"title": "Come evitare l'overbooking tra i canali OTA: 6 passi",
+"crumb": "Come evitare l'overbooking tra i canali OTA: 6 passi",
+"type": "article"
+},
+{
+"lang": "it",
+"key": "post-pms",
+"title": "Gestionale per piccoli hotel: come sceglierlo (prezzi 2026)",
+"crumb": "Gestionale per piccoli hotel: come sceglierlo (prezzi 2026)",
+"type": "article"
+},
+{
+"lang": "it",
+"key": "post-pms-vs-cm",
+"title": "Channel manager cos'è e che differenza c'è con un PMS",
+"crumb": "Channel manager cos'è e che differenza c'è con un PMS",
+"type": "article"
+},
+{
+"lang": "it",
+"key": "post-whatsapp",
+"title": "WhatsApp per hotel: configurazione, regole di Meta e AI (2026)",
+"crumb": "WhatsApp per hotel: configurazione, regole di Meta e AI (2026)",
+"type": "article"
+},
+{
+"lang": "it",
+"key": "pricing",
+"title": "Prezzi del gestionale per hotel: da ⟦price:starter⟧/mese | Hostlio Pro",
+"crumb": "Prezzi",
+"type": ""
+},
+{
+"lang": "it",
+"key": "privacy",
+"title": "Informativa sulla privacy | Hostlio Pro",
+"crumb": "Informativa sulla privacy",
+"type": ""
+},
+{
+"lang": "it",
+"key": "roi",
+"title": "Calcolatore ROI dei messaggi AI per hotel | Hostlio Pro",
+"crumb": "Quanto tempo può farti risparmiare Lio?",
+"type": ""
+},
+{
+"lang": "it",
+"key": "security",
+"title": "Sicurezza e protezione dei dati | Hostlio Pro",
+"crumb": "Sicurezza e protezione dei dati",
+"type": ""
+},
+{
+"lang": "it",
+"key": "t-apart",
+"title": "Gestionale per residence: check-in online, OTA | Hostlio Pro",
+"crumb": "Gestionale per residence e aparthotel",
+"type": ""
+},
+{
+"lang": "it",
+"key": "t-boutique",
+"title": "Gestionale per boutique hotel con messaggi AI | Hostlio Pro",
+"crumb": "Gestionale per boutique hotel",
+"type": ""
+},
+{
+"lang": "it",
+"key": "t-guesthouse",
+"title": "Gestionale per B&B e affittacamere con AI | Hostlio Pro",
+"crumb": "Gestionale per B&B e affittacamere",
+"type": ""
+},
+{
+"lang": "it",
+"key": "t-hostel",
+"title": "Gestionale per ostelli: messaggi multilingue | Hostlio Pro",
+"crumb": "Gestionale per ostelli",
+"type": ""
+},
+{
+"lang": "it",
+"key": "terms",
+"title": "Termini di servizio | Hostlio Pro",
+"crumb": "Termini di servizio",
+"type": ""
+},
+{
+"lang": "it",
+"key": "tools",
+"title": "Calcolatori gratis per hotel: RevPAR e commissioni | Hostlio Pro",
+"crumb": "Strumenti",
+"type": ""
+},
+{
+"lang": "pt",
+"key": "about",
+"title": "Sobre o Hostlio Pro | Sistema para Hotel com IA",
+"crumb": "Sobre nós",
+"type": ""
+},
+{
+"lang": "pt",
+"key": "ai",
+"title": "IA para Mensagens de Hóspedes em 30+ Idiomas | Hostlio Pro",
+"crumb": "Assistente de IA Lio",
+"type": ""
+},
+{
+"lang": "pt",
+"key": "alt-cloudbeds",
+"title": "Alternativas à Cloudbeds para hotéis pequenos | Hostlio Pro",
+"crumb": "Alternativas à Cloudbeds",
+"type": ""
+},
+{
+"lang": "pt",
+"key": "alt-hijiffy",
+"title": "Alternativa à HiJiffy com PMS incluído | Hostlio Pro",
+"crumb": "Alternativa à HiJiffy",
+"type": ""
+},
+{
+"lang": "pt",
+"key": "blog",
+"title": "Blog: Guias para Hotéis Independentes | Hostlio Pro",
+"crumb": "Blog",
+"type": ""
+},
+{
+"lang": "pt",
+"key": "channel",
+"title": "Channel Manager para Hotel com 100+ OTAs | Hostlio Pro",
+"crumb": "Channel manager",
+"type": ""
+},
+{
+"lang": "pt",
+"key": "checkin",
+"title": "Check-in Online com Assinatura Digital | Hostlio Pro",
+"crumb": "Check-in online",
+"type": ""
+},
+{
+"lang": "pt",
+"key": "cmp-hub",
+"title": "Comparativos de sistemas para hotel | Hostlio Pro",
+"crumb": "Comparativos",
+"type": ""
+},
+{
+"lang": "pt",
+"key": "commission",
+"title": "Calculadora de comissão de OTA: receita líquida | Hostlio Pro",
+"crumb": "Calculadora de comissão de OTA",
+"type": ""
+},
+{
+"lang": "pt",
+"key": "compare",
+"title": "Comparativo de sistemas para hotel 2026: preços | Hostlio Pro",
+"crumb": "Comparativo de sistemas para hotel",
+"type": ""
+},
+{
+"lang": "pt",
+"key": "contact",
+"title": "Contato e Demonstração | Hostlio Pro",
+"crumb": "Contato",
+"type": ""
+},
+{
+"lang": "pt",
+"key": "delacc",
+"title": "Excluir sua conta | Hostlio Pro",
+"crumb": "Solicitar exclusão da conta",
+"type": ""
+},
+{
+"lang": "pt",
+"key": "faq",
+"title": "Perguntas Frequentes sobre o Hostlio Pro",
+"crumb": "Perguntas frequentes",
+"type": ""
+},
+{
+"lang": "pt",
+"key": "features",
+"title": "Funcionalidades do Sistema para Hotel | Hostlio Pro",
+"crumb": "Funcionalidades",
+"type": ""
+},
+{
+"lang": "pt",
+"key": "home",
+"title": "Sistema para Hotel com IA e Channel Manager | Hostlio Pro",
+"crumb": "",
+"type": ""
+},
+{
+"lang": "pt",
+"key": "kpi",
+"title": "Calculadora de RevPAR, ADR e taxa de ocupação | Hostlio Pro",
+"crumb": "Calculadora de RevPAR, ADR e ocupação",
+"type": ""
+},
+{
+"lang": "pt",
+"key": "post-ai",
+"title": "Como responder às mensagens de hóspedes com IA: guia prático",
+"crumb": "Como responder às mensagens de hóspedes com IA: guia prático",
+"type": "article"
+},
+{
+"lang": "pt",
+"key": "post-autoreply",
+"title": "Resposta automática Booking.com: 12 modelos grátis (2026)",
+"crumb": "Resposta automática Booking.com: 12 modelos grátis (2026)",
+"type": "article"
+},
+{
+"lang": "pt",
+"key": "post-overbooking",
+"title": "Como evitar overbooking entre canais OTA: 6 passos",
+"crumb": "Como evitar overbooking entre canais OTA: 6 passos",
+"type": "article"
+},
+{
+"lang": "pt",
+"key": "post-pms",
+"title": "Como escolher um sistema para hotel pequeno",
+"crumb": "Como escolher um sistema para hotel pequeno",
+"type": "article"
+},
+{
+"lang": "pt",
+"key": "post-pms-vs-cm",
+"title": "O que é channel manager e qual a diferença para o PMS",
+"crumb": "O que é channel manager e qual a diferença para o PMS",
+"type": "article"
+},
+{
+"lang": "pt",
+"key": "pricing",
+"title": "Preços do Sistema para Hotel: desde ⟦price:starter⟧/mês | Hostlio Pro",
+"crumb": "Preços",
+"type": ""
+},
+{
+"lang": "pt",
+"key": "privacy",
+"title": "Política de Privacidade | Hostlio Pro",
+"crumb": "Política de privacidade",
+"type": ""
+},
+{
+"lang": "pt",
+"key": "roi",
+"title": "Calculadora de ROI de mensagens com IA | Hostlio Pro",
+"crumb": "Quanto tempo o Lio pode economizar para você?",
+"type": ""
+},
+{
+"lang": "pt",
+"key": "security",
+"title": "Segurança e proteção de dados | Hostlio Pro",
+"crumb": "Segurança e proteção de dados",
+"type": ""
+},
+{
+"lang": "pt",
+"key": "t-apart",
+"title": "Sistema para Apart-Hotel com Check-in Online | Hostlio Pro",
+"crumb": "Sistema para apart-hotel",
+"type": ""
+},
+{
+"lang": "pt",
+"key": "t-boutique",
+"title": "Sistema para Hotel Boutique com IA | Hostlio Pro",
+"crumb": "Sistema para hotel boutique",
+"type": ""
+},
+{
+"lang": "pt",
+"key": "t-guesthouse",
+"title": "Sistema para Pousada com Assistente de IA | Hostlio Pro",
+"crumb": "Sistema para pousadas",
+"type": ""
+},
+{
+"lang": "pt",
+"key": "t-hostel",
+"title": "Sistema para Hostels: Mensagens em 30+ Idiomas | Hostlio Pro",
+"crumb": "Sistema para hostels",
+"type": ""
+},
+{
+"lang": "pt",
+"key": "terms",
+"title": "Termos de Serviço | Hostlio Pro",
+"crumb": "Termos de serviço",
+"type": ""
+},
+{
+"lang": "pt",
+"key": "tools",
+"title": "Calculadoras grátis para hotéis: RevPAR e comissão | Hostlio Pro",
+"crumb": "Ferramentas",
+"type": ""
+},
+{
+"lang": "pt",
+"key": "vs-cloudbeds",
+"title": "Hostlio Pro vs Cloudbeds (2026): preços e IA | Hostlio Pro",
+"crumb": "Hostlio Pro vs Cloudbeds",
+"type": ""
+},
+{
+"lang": "tr",
+"key": "about",
+"title": "Hakkımızda | Hostlio Pro",
+"crumb": "Hakkımızda",
+"type": ""
+},
+{
+"lang": "tr",
+"key": "ai",
+"title": "AI Misafir Asistanı Lio: 30+ Dilde Mesajlar | Hostlio Pro",
+"crumb": "AI asistan Lio",
+"type": ""
+},
+{
+"lang": "tr",
+"key": "blog",
+"title": "Blog: Bağımsız Oteller için Rehberler | Hostlio Pro",
+"crumb": "Blog",
+"type": ""
+},
+{
+"lang": "tr",
+"key": "channel",
+"title": "Otel Kanal Yöneticisi: 100+ OTA Tek Takvimde | Hostlio Pro",
+"crumb": "Kanal yöneticisi",
+"type": ""
+},
+{
+"lang": "tr",
+"key": "checkin",
+"title": "Otel Online Check-in ve Dijital İmza Yazılımı | Hostlio Pro",
+"crumb": "Online check-in",
+"type": ""
+},
+{
+"lang": "tr",
+"key": "cmp-hub",
+"title": "Otel Programı Karşılaştırmaları | Hostlio Pro",
+"crumb": "Karşılaştırmalar",
+"type": ""
+},
+{
+"lang": "tr",
+"key": "commission",
+"title": "OTA Komisyon Hesaplama: Net Gelir Hesaplayıcı | Hostlio Pro",
+"crumb": "OTA komisyon hesaplama",
+"type": ""
+},
+{
+"lang": "tr",
+"key": "compare",
+"title": "Otel Programı Karşılaştırması 2026: Fiyatlar | Hostlio Pro",
+"crumb": "Otel programı karşılaştırması",
+"type": ""
+},
+{
+"lang": "tr",
+"key": "contact",
+"title": "İletişim ve Demo Talebi | Hostlio Pro",
+"crumb": "İletişim",
+"type": ""
+},
+{
+"lang": "tr",
+"key": "delacc",
+"title": "Hesap Silme | Hostlio Pro",
+"crumb": "Hesap silme talebi",
+"type": ""
+},
+{
+"lang": "tr",
+"key": "faq",
+"title": "Hostlio Pro Hakkında Sık Sorulan Sorular (SSS)",
+"crumb": "SSS",
+"type": ""
+},
+{
+"lang": "tr",
+"key": "features",
+"title": "Otel Programı Özellikleri: AI, Kanal Yönetimi | Hostlio Pro",
+"crumb": "Özellikler",
+"type": ""
+},
+{
+"lang": "tr",
+"key": "home",
+"title": "Hostlio Pro | AI Destekli Otel Programı ve Kanal Yöneticisi",
+"crumb": "",
+"type": ""
+},
+{
+"lang": "tr",
+"key": "kpi",
+"title": "RevPAR, ADR ve Doluluk Oranı Hesaplama (Ücretsiz) | Hostlio Pro",
+"crumb": "RevPAR, ADR ve doluluk hesaplama",
+"type": ""
+},
+{
+"lang": "tr",
+"key": "post-ai",
+"title": "Misafir mesajlarını yapay zekâ ile yanıtlamak: pratik rehber",
+"crumb": "Misafir mesajlarını yapay zekâ ile yanıtlamak: pratik rehber",
+"type": "article"
+},
+{
+"lang": "tr",
+"key": "post-autoreply",
+"title": "Booking.com Mesajlarına Otomatik Cevap: 12 Ücretsiz Şablon (2026)",
+"crumb": "Booking.com Mesajlarına Otomatik Cevap: 12 Ücretsiz Şablon (2026)",
+"type": "article"
+},
+{
+"lang": "tr",
+"key": "post-channel-manager",
+"title": "Channel manager nedir? Otelciler için kanal yöneticisi rehberi",
+"crumb": "Channel manager nedir? Otelciler için kanal yöneticisi rehberi",
+"type": "article"
+},
+{
+"lang": "tr",
+"key": "post-kbs",
+"title": "KBS bildirimi nasıl yapılır? Oteller ve pansiyonlar için rehber",
+"crumb": "KBS bildirimi nasıl yapılır? Oteller ve pansiyonlar için rehber",
+"type": "article"
+},
+{
+"lang": "tr",
+"key": "post-overbooking",
+"title": "Overbooking nasıl önlenir? OTA kanallarında 6 adım",
+"crumb": "Overbooking nasıl önlenir? OTA kanallarında 6 adım",
+"type": "article"
+},
+{
+"lang": "tr",
+"key": "post-pms",
+"title": "Küçük otel için otel programı (PMS) nasıl seçilir?",
+"crumb": "Küçük otel için otel programı (PMS) nasıl seçilir?",
+"type": "article"
+},
+{
+"lang": "tr",
+"key": "post-prices",
+"title": "Otel programı fiyatları 2026: modeller ve gerçek rakamlar",
+"crumb": "Otel programı fiyatları 2026: modeller ve gerçek rakamlar",
+"type": "article"
+},
+{
+"lang": "tr",
+"key": "pricing",
+"title": "Otel Yazılımı Fiyatları: Aylık ⟦price:starter⟧'dan Başlar | Hostlio Pro",
+"crumb": "Fiyatlandırma",
+"type": ""
+},
+{
+"lang": "tr",
+"key": "privacy",
+"title": "Gizlilik Politikası | Hostlio Pro",
+"crumb": "Gizlilik Politikası",
+"type": ""
+},
+{
+"lang": "tr",
+"key": "roi",
+"title": "Otel AI Mesajlaşma Tasarruf Hesaplayıcı | Hostlio Pro",
+"crumb": "Lio size ne kadar zaman kazandırır?",
+"type": ""
+},
+{
+"lang": "tr",
+"key": "security",
+"title": "Güvenlik ve Veri Koruma | Hostlio Pro",
+"crumb": "Güvenlik ve veri koruma",
+"type": ""
+},
+{
+"lang": "tr",
+"key": "t-apart",
+"title": "Apart Otel Programı ve Online Check-in | Hostlio Pro",
+"crumb": "Apart otel programı",
+"type": ""
+},
+{
+"lang": "tr",
+"key": "t-boutique",
+"title": "Butik Otel Programı: AI ve Kanal Yöneticisi | Hostlio Pro",
+"crumb": "Butik otel programı",
+"type": ""
+},
+{
+"lang": "tr",
+"key": "t-guesthouse",
+"title": "Pansiyon Programı: AI Destekli, Aylık ⟦price:starter⟧'dan | Hostlio Pro",
+"crumb": "Pansiyon programı",
+"type": ""
+},
+{
+"lang": "tr",
+"key": "t-hostel",
+"title": "Hostel Programı: Çok Dilli Mesaj, OTA Senkronu | Hostlio Pro",
+"crumb": "Hostel programı",
+"type": ""
+},
+{
+"lang": "tr",
+"key": "terms",
+"title": "Kullanım Şartları | Hostlio Pro",
+"crumb": "Kullanım Şartları",
+"type": ""
+},
+{
+"lang": "tr",
+"key": "tools",
+"title": "Ücretsiz Otel Hesaplayıcıları: RevPAR, Komisyon | Hostlio Pro",
+"crumb": "Araçlar",
+"type": ""
+},
+{
+"lang": "tr",
+"key": "vs-elektraweb",
+"title": "Hostlio Pro vs Elektraweb (2026): Fiyat, AI | Hostlio Pro",
+"crumb": "Hostlio Pro vs Elektraweb",
+"type": ""
+},
+{
+"lang": "tr",
+"key": "vs-hotelrunner",
+"title": "Hostlio Pro vs HotelRunner (2026): Fiyat, AI | Hostlio Pro",
+"crumb": "Hostlio Pro vs HotelRunner",
+"type": ""
+},
+{
+"lang": "tr",
+"key": "whatsapp-tr",
+"title": "Otel WhatsApp Asistanı: Lio ile 7/24 Misafir Yanıtı | Hostlio Pro",
+"crumb": "Otel WhatsApp asistanı",
+"type": ""
+}
+]

@@ -556,6 +556,8 @@ def post_dates(page, lang, body):
 
 NOT_FOUND = {"en": ("Page not found | Hostlio Pro", "Page not found", 'The address may have changed. <a href="{home}">Go to the home page</a>.'),
              "tr": ("Sayfa bulunamadı | Hostlio Pro", "Sayfa bulunamadı", 'Adres değişmiş olabilir. <a href="{home}">Ana sayfaya dönün</a>.')}
+OG_PAGES = {}  # (lang, key) → başlık; og/pages.json olarak yazılır
+
 def layout(page, lang):
     u = UI[lang]
     key = page["key"]
@@ -582,7 +584,10 @@ def layout(page, lang):
         else: graph.append(faq_schema(page["faq"]))
     for s in page.get("schema", []): graph.append(s)
     ld = json.dumps({"@context": "https://schema.org", "@graph": graph}, ensure_ascii=False, indent=None)
-    og_img = SITE + "/assets/og-" + lang + ".png"
+    # Sayfaya özel paylaşım görseli (og/make_pages.mjs üretir, depoda commit'li); yoksa dil geneli görsel
+    _og = f"og/{lang}-{key}.jpg"
+    og_img = SITE + "/assets/" + (_og if (ROOT / "src/assets" / _og).exists() else "og-" + lang + ".png")
+    OG_PAGES[(lang, key)] = {"title": title, "crumb": (page.get("trail") or [("", "")])[-1][0], "type": page.get("og_type", "")}
     locale = LOCALE[lang]
     alt_locales = "".join(f'<meta property="og:locale:alternate" content="{LOCALE[l]}">' for l in langs(key) if l != lang)
     crumbs = crumbs_html([(u["home"], url("home", lang))] + trail, lang) if trail else ""
@@ -1020,6 +1025,8 @@ def main():
     for l in LANGS:
         write(signup_url(l), signup_page.render(_sys.modules[__name__], l))
     # 404
+    # og/pages.json: sayfa başına paylaşım görseli üreticisinin (og/make_pages.mjs) girdisi; 404'ten ÖNCE yazılır
+    (ROOT / "og/pages.json").write_text(json.dumps([dict(lang=l, key=k, **v) for (l, k), v in sorted(OG_PAGES.items())], ensure_ascii=False, indent=0), encoding="utf-8")
     # Q13/D6: Vercel bulunmayan her adreste /404.html'i 404 koduyla döner; dile göre ayrı dosya
     # verilemez. Bu yüzden 404 sayfası 6 dilin metnini taşır, site.js adresin dil önekine (yoksa
     # tarayıcı diline) göre doğru bloğu gösterir. JS yoksa İngilizce görünür. "Son güncelleme" yok.
