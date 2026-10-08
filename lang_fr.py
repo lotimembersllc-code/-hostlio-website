@@ -51,7 +51,7 @@ HOME = dict(
   tiles=[("ai","sparkle","t-peach","Assistant IA Lio","Réponses aux clients en 30+ langues"),("channel","arrows-left-right","t-lilac","Channel manager","Synchro en temps réel avec 100+ OTA"),("rack","calendar-dots","t-sand","Planning des chambres","Calendrier des réservations en glisser-déposer"),("checkin","identification-card","t-peach","Check-in en ligne","Identité et signature avant l’arrivée"),("upsell","van","t-lilac","Transferts et excursions","Des revenus en plus pendant la conversation"),("mobile","device-mobile","t-sand","Application mobile","Gérez l’hôtel où que vous soyez")],
   story_h='<em class="hl">2 h 14</em>, un client écrit',
   story_p="Ce qui se passe pendant votre sommeil, en trois images.",
-  story=[("brand-night","Hôtelier endormi, un téléphone qui s’allume sur la table de nuit","02:14","Un client envoie un message","Un client venu d’Allemagne demande s’il peut arriver tard. Vous dormez profondément."),
+  story=[("owner-night","Hôtelier endormi, un téléphone qui s’allume sur la table de nuit","02:14","Un client envoie un message","Un client venu d’Allemagne demande s’il peut arriver tard. Vous dormez profondément."),
          ("brand-phone","Main tenant un téléphone affichant l’écran de réponse orange de Lio","02:14","Lio répond aussitôt","Avec les informations de votre hôtel, dans la langue du client. Et vous laisse une note si besoin."),
          ("brand-hotelier","Hôtelier traversant le hall avec son café du matin","08:30","Au réveil, tout est réglé","La conversation vous attend dans votre tableau de bord, traduite. Un client satisfait, et vous reposé.")],
   story_chip="Lio a répondu",

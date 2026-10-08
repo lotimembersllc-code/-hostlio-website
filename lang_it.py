@@ -53,7 +53,7 @@ HOME = dict(
   tiles=[("ai","sparkle","t-peach","Assistente AI Lio","Risposte agli ospiti in 30+ lingue"),("channel","arrows-left-right","t-lilac","Channel manager","Sincronizzazione in tempo reale con 100+ OTA"),("rack","calendar-dots","t-sand","Planning camere","Calendario prenotazioni drag-and-drop"),("checkin","identification-card","t-peach","Check-in online","Documento e firma prima dell'arrivo"),("upsell","van","t-lilac","Transfer e tour","Ricavi extra mentre chatti"),("mobile","device-mobile","t-sand","App mobile","Gestisci l'hotel da dove vuoi")],
   story_h='Sono le <em class="hl">2:14</em> di notte e un ospite scrive',
   story_p="Cosa succede mentre dormi, in tre scene.",
-  story=[("brand-night","Albergatore che dorme mentre il telefono si illumina sul comodino","02:14","Un ospite scrive","Un ospite dalla Germania chiede del check-in in tarda serata. Tu stai dormendo profondamente."),
+  story=[("owner-night","Albergatore che dorme mentre il telefono si illumina sul comodino","02:14","Un ospite scrive","Un ospite dalla Germania chiede del check-in in tarda serata. Tu stai dormendo profondamente."),
          ("brand-phone","Mano che tiene un telefono con la schermata arancione di risposta di Lio","02:14","Lio risponde subito","Con le informazioni del tuo hotel, nella lingua dell'ospite. Se serve, ti lascia una nota."),
          ("brand-hotelier","Albergatrice che attraversa la hall con il caffè del mattino","08:30","Al mattino è tutto pronto","La conversazione ti aspetta nel pannello, già tradotta. L'ospite è soddisfatto e tu sei riposato.")],
   story_chip="Lio ha risposto",
