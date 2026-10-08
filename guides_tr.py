@@ -258,7 +258,97 @@ def whatsapp_page(B):
             "trail": [("AI asistan Lio", U("ai")), ("Otel WhatsApp asistanı", U("whatsapp-tr"))], "body": body, "faq": faq,
             "schema": [B.software_schema("tr")]}
 
+# ------------------------------------------------------------------ En çok kullanılan otel programları (9 Ekim 2026)
+# Bilgiler firmaların kendi sitelerinden, 9 Ekim 2026. Türkiye için açık pazar payı verisi yok ⇒ sıralama iddiası yok;
+# müşteri sayıları "firmanın beyanı" olarak verilir. protel.com.tr (Oracle iş ortağı) ile Planet'in protel PMS'i ayrı şirketler.
+PROG_DATE = "9 Ekim 2026"
+PROG_SRC = [
+ ("Elektraweb", "https://www.elektraweb.com"),
+ ("Elektraweb yardım: Kimlik Bildirim Sistemi", "https://yardim.elektraweb.com/detayli-anlatim/kimlik-bildirim-sistemi"),
+ ("HMS Otel", "https://www.hmsotel.com"),
+ ("HMS Otel: Fiyat listesi", "https://www.hmsotel.com/fiyat-listesi/"),
+ ("Sistem Otel", "https://www.sistemotel.com"),
+ ("AKINSOFT: WOLVOX Otel Programı", "https://www.akinsoft.com.tr/programlar/detay/wolvox-otel-programi--who9"),
+ ("HotelRunner: Hakkımızda", "https://www.hotelrunner.com/tr/hakkimizda"),
+ ("HotelRunner: Fiyatlandırma", "https://www.hotelrunner.com/tr/fiyatlandirma"),
+ ("Veboni (eski adıyla Sedna)", "https://www.veboni.com/"),
+ ("Oracle: OPERA Cloud PMS", "https://www.oracle.com/hospitality/hotel-property-management/hotel-pms-software/"),
+ ("Protel A.Ş.", "https://www.protel.com.tr"),
+ ("Planet: Hospitality (protel PMS)", "https://www.weareplanet.com/hospitality"),
+ ("Cloudbeds: Pricing", "https://www.cloudbeds.com/pricing/"),
+ ("Sirvoy: Pricing", "https://sirvoy.com/pricing"),
+ ("Beds24: Pricing", "https://beds24.com/pricing.html"),
+ ("eviivo", "https://eviivo.com/"),
+]
+
+def programs(U):
+    from build import btn, SIGNUP_URL
+    cta = btn("7 gün ücretsiz dene", SIGNUP_URL) + btn("Planları gör", U("pricing"), "ghost")
+    rows = [
+      ("Elektraweb", "Bulut PMS + modüler paket", "Her büyüklük; geniş modül ihtiyacı olan oteller", "Teklif", "Kanal yöneticisi, POS, e-Fatura, KBS entegrasyonu"),
+      ("HMS Otel", "Bulut PMS", "Küçük ve orta oteller, butik, apart", "Yayınlanıyor (oda aralığına göre €)", "Kanal yöneticisi, rezervasyon motoru ve KBS her pakette"),
+      ("Sistem Otel", "Otel programı (PMS)", "Tek otel ve zincirler", "Teklif", "Kanal yöneticisi, restoran, e-Fatura, kimlik okuyucu"),
+      ("AKINSOFT WOLVOX Otel", "Kurulu yazılım, tek seferlik lisans", "Yerel kurulum ve muhasebe bütünlüğü isteyen tesisler", "Yayınlanıyor (₺, KDV hariç)", "Kanal yöneticisi dahili değil (HotelRunner entegrasyonu)"),
+      ("HotelRunner", "Satış odaklı paket: kanal yöneticisi, rezervasyon motoru, PMS", "Online satışı büyütmek isteyen bağımsız tesisler", "Yayınlanıyor (gelirden yüzde + asgari $)", "KBS entegrasyonu fiyat sayfasında listeleniyor"),
+      ("Veboni (Sedna)", "Web tabanlı otel ERP", "Büyük oteller, resort ve zincirler", "Teklif", "Ön büro, POS, muhasebe, CRM, SPA"),
+      ("Oracle OPERA Cloud", "Kurumsal bulut PMS", "Büyük oteller ve zincirler", "Teklif", "Türkiye'de iş ortakları üzerinden satılıyor"),
+      ("Cloudbeds", "Bulut PMS + kanal yöneticisi", "Bağımsız tesisler", "Teklif", "Türkçe arayüz ve KBS bilgisi sitede yok"),
+      ("Sirvoy, Beds24, eviivo", "Bulut PMS (yabancı)", "Küçük tesisler, pansiyon, kiralık daire", "Sirvoy ve Beds24 yayınlıyor; eviivo demo", "Sitelerinde Türkçe ve KBS bilgisi yok"),
+      ("Hostlio Pro", "Bulut PMS + kanal yöneticisi + AI asistan", "1–150 odalı bağımsız oteller ve pansiyonlar", "Yayınlanıyor (sabit aylık, ⟦price:starter⟧'dan)", "WhatsApp'ta AI asistan her planda; KBS için CSV dışa aktarım"),
+    ]
+    c = f'''<div class="answer"><p><strong>Kısa cevap:</strong> Türkiye'de otellerde en sık karşılaşılan otel programları yerli tarafta Elektraweb, HMS Otel, Sistem Otel, AKINSOFT WOLVOX Otel, HotelRunner ve Veboni (eski adıyla Sedna); büyük otel ve zincirlerde Oracle OPERA Cloud. Küçük tesislerde Cloudbeds, Sirvoy ve Beds24 gibi yabancı bulut programları da kullanılıyor. Hangisinin "en çok" kullanıldığını gösteren bağımsız bir pazar payı verisi yok; doğru seçim oda sayınıza, satış kanallarınıza ve ihtiyaç duyduğunuz modüllere bağlı.</p></div>
+<p class="small muted">Hostlio Pro bu listede taraftır. Bilgileri firmaların kendi sitelerinden {PROG_DATE} tarihinde aldık; müşteri sayıları firmaların kendi beyanıdır, bağımsız olarak doğrulanmadı. Liste bir sıralama değildir. Ürünler ve fiyatlar değişebilir; karar vermeden önce firmanın kendi sayfasını kontrol edin.</p>
+<h2>Otel programı (PMS) ne işe yarar?</h2>
+<p>Otel programı, sektördeki adıyla PMS (property management system), otelin günlük işini tek yerde toplar: rezervasyon takvimi, giriş ve çıkış, oda durumu, misafir kayıtları, fatura ve raporlar. Bugün çoğu program buna bir de <a href="{U("post-channel-manager")}">kanal yöneticisi</a> ekliyor; böylece Booking.com, Airbnb ve Expedia'daki müsaitlik ve fiyatlar otomatik güncelleniyor. Türkiye'de ayrıca konaklayan misafirlerin <a href="{U("post-kbs")}">KBS'ye bildirimi</a> ve e-Fatura gibi yerel ihtiyaçlar var.</p>
+<h2>2026 listesi: kısa karşılaştırma</h2>
+{_tbl(["Program", "Tür", "Kime uygun", "Fiyat", "Öne çıkan"], rows)}
+<h2>Yerli otel programları</h2>
+<h3>Elektraweb</h3>
+<p>Talya Bilişim'in bulut tabanlı otel programı. Kendini "Türkiye'nin ilk bulutta barındırılan web tabanlı otel programı" olarak tanıtıyor ve 35'ten fazla ülkede 5.000'den fazla otel beyan ediyor. Kanal yöneticisi, rezervasyon motoru, POS, e-Fatura ve e-Arşiv modülleri var; yardım sayfalarında Emniyet ve Jandarma KBS entegrasyonu anlatılıyor. Fiyat yayınlanmıyor, teklif formuyla veriliyor. Ayrıntılı karşılaştırma: <a href="{U("vs-elektraweb")}">Hostlio Pro ile Elektraweb</a>.</p>
+<h3>HMS Otel</h3>
+<p>Denizli'de, Pamukkale Üniversitesi Teknokent'te 2010'dan beri geliştirilen bulut otel programı; 5.000'in üzerinde tesis beyan ediyor. Kanal yöneticisi, online rezervasyon motoru ve Polis/Jandarma KBS bağlantısı her pakette yer alıyor, iOS ve Android uygulaması var. Fiyatını oda aralığına göre avro olarak yayınlayan az sayıdaki yerli firmadan biri; rakamlar <a href="{U("post-prices")}">otel programı fiyatları</a> yazımızda.</p>
+<h3>Sistem Otel</h3>
+<p>Arpies Yazılım'ın otel programı; 20 ülkede 2.269 otel beyan ediyor. Kanal yöneticisi ve rezervasyon motoru, restoran programı, e-Fatura/e-Arşiv, kimlik okuyucu ve Emniyet/Jandarma bildirim entegrasyonu sunuyor; sitesinde WhatsApp için bir "AI resepsiyonist" ürünü de tanıtılıyor. Fiyat teklifle veriliyor.</p>
+<h3>AKINSOFT WOLVOX Otel</h3>
+<p>Konya merkezli AKINSOFT'un (1995) WOLVOX ERP üzerine kurulu otel programı; otel, motel, apart ve pansiyonlara yönelik. Bilgisayara kurulan, tek seferlik lisansla satılan bir yazılım; fiyatı sitede Türk lirası olarak yayınlanıyor (KDV hariç, Ekim 2026'da süreli kampanya var). AKBS ve Jandarma entegrasyonu ile e-Fatura modülleri var. Kanal yöneticisi dahili değil; online satış HotelRunner entegrasyonuyla yapılıyor.</p>
+<h3>HotelRunner</h3>
+<p>2011'de Türkiye'de kurulan HotelRunner kanal yöneticisi ve rezervasyon motoru olarak başladı; bugün PMS, POS, web sitesi ve otomatik fiyatlandırmayı da içeren satış odaklı bir paket. 100'den fazla ülkede 64.000'den fazla konaklama iş ortağı beyan ediyor. Fiyatı rezervasyon gelirinden yüzde ve aylık asgari ücret olarak yayınlanıyor; fiyat sayfasında KBS entegrasyonu listeleniyor. Ayrıntılı karşılaştırma: <a href="{U("vs-hotelrunner")}">Hostlio Pro ile HotelRunner</a>.</p>
+<h3>Veboni (eski adıyla Sedna)</h3>
+<p>Antalya merkezli Kod Yazılım'ın otel ERP'si; uzun süre Sedna adıyla bilinen ürün artık Veboni markasıyla sunuluyor. Ön büro, online rezervasyon, kanal yöneticisi, POS, CRM, muhasebe ve SPA modülleri var; 700'den fazla referans otel beyan ediyor. Daha çok resort ve büyük otellerin geniş modül ihtiyacına yönelik; fiyat yayınlanmıyor.</p>
+<h2>Yabancı otel programları</h2>
+<h3>Oracle OPERA Cloud</h3>
+<p>Eski adıyla Fidelio olarak bilinen sistemin devamı olan OPERA, büyük oteller ve zincirlerin kullandığı kurumsal PMS. Türkiye'de Oracle iş ortakları üzerinden satılıyor; bunlardan biri Protel A.Ş. Bu yerli firma, Almanya kökenli protel PMS'ten (bugün Planet şirketinin ürünü) ayrı bir şirket; iki ad sık karıştırılıyor. Fiyat teklifle.</p>
+<h3>Cloudbeds</h3>
+<p>Bağımsız tesislere yönelik bulut PMS, kanal yöneticisi ve rezervasyon motoru; 150'den fazla ülkede 20.000'den fazla tesis beyan ediyor. Dört planın hepsi teklifle fiyatlanıyor. Sitesinde Türkçe arayüz ya da KBS bilgisine rastlamadık.</p>
+<h3>Sirvoy, Beds24 ve eviivo</h3>
+<p>Küçük oteller, pansiyonlar ve kiralık daireler için yabancı bulut programları. Sirvoy ve Beds24 fiyatlarını sitede yayınlıyor (Sirvoy'da kanal yöneticisi yalnız Pro planında); eviivo demo talebiyle ilerliyor. Üçünün sitesinde de Türkçe dil seçeneği ya da KBS bağlantısı yer almıyor; Türkiye'deki bir tesis için bu, misafir bildirimini ayrıca çözmek demek.</p>
+<h2>Hostlio Pro bu listede nerede duruyor?</h2>
+<p>Hostlio Pro, 1–150 odalı bağımsız oteller ve pansiyonlar için PMS, sertifikalı kanal yöneticisi (100+ OTA) ve WhatsApp'ta misafirlere cevap veren AI asistan Lio'yu tek pakette sunar. Fiyatı sitede açıktır ve sabittir: Starter ⟦price:starter⟧, Pro ⟦price:pro⟧, Growth ⟦price:growth⟧ / ay; rezervasyon başına ücret ya da gelir yüzdesi alınmaz. Panel Türkçe dahil 6 dilde, mobil uygulama her planda. Açık olmak gerekirse: Hostlio Pro KBS'ye otomatik bildirim yapmaz, misafir listesini CSV olarak dışa aktarır; POS, muhasebe ve bordro gibi modüller sunmaz. Bu modüllere ihtiyacı olan büyük tesisler için yukarıdaki kapsamlı paketler daha uygun olabilir.</p>
+<div class="cta-row" style="margin-top:12px">{cta}</div>
+<h2>Hangisini seçmeli?</h2>
+<ul><li><strong>1–20 oda, pansiyon ve butik otel:</strong> Kurulumu kolay bir bulut PMS ve dahili kanal yöneticisi yeterli. Aylık sabit ücret ve mobil uygulama işinizi kolaylaştırır.</li>
+<li><strong>20–150 oda, bağımsız otel:</strong> Kanal yöneticisinin sertifikalı bağlantıları, misafir mesajlarının tek yerden yönetimi, personel rolleri ve raporlar öne çıkar.</li>
+<li><strong>Restoranı, SPA'sı ve muhasebesi aynı sistemde olması gereken resort ve zincirler:</strong> Modüler, kurumsal paketler (Elektraweb, Veboni, OPERA gibi) bu ihtiyaca göre tasarlanmıştır.</li>
+<li><strong>İnternet bağımsız, yerel kurulum isteyenler:</strong> Tek seferlik lisanslı kurulu yazılımlar; güncelleme, yedekleme ve kanal yöneticisi maliyetini ayrıca hesaplayın.</li></ul>
+<h2>Seçmeden önce sorulacak 5 soru</h2>
+<ol><li><strong>Fiyat nasıl hesaplanıyor?</strong> Sabit mi, oda başı mı, gelirden yüzde mi? Yüksek sezonda fatura büyüyor mu?</li>
+<li><strong>Kanal yöneticisi dahil mi?</strong> Hangi planda, hangi kanallara, sertifikalı bağlantıyla mı?</li>
+<li><strong>KBS ve e-Fatura nasıl çözülüyor?</strong> Otomatik bildirim mi, dosya dışa aktarımı mı?</li>
+<li><strong>Misafir mesajlaşması var mı?</strong> WhatsApp ve OTA mesajları tek ekranda mı, otomatik cevap var mı?</li>
+<li><strong>Deneyebiliyor musunuz?</strong> Kendi odalarınız ve fiyatlarınızla, satış görüşmesi beklemeden?</li></ol>
+<p>Kriterlerin ayrıntısı için <a href="{U("post-pms")}">küçük otel için otel programı seçimi</a>, maliyet için <a href="{U("post-prices")}">otel programı fiyatları 2026</a> yazılarına bakın.</p>
+'''
+    lis = "".join(f'<li><a href="{u}" rel="nofollow noopener">{html.escape(n)}</a></li>' for n, u in PROG_SRC)
+    c += f'<h2>Kaynaklar</h2><p class="small muted">Tüm kaynaklara {PROG_DATE} tarihinde erişildi.</p><ul>{lis}</ul>'
+    faq = [("Türkiye'de en çok kullanılan otel programı hangisi?", "Bunu gösteren bağımsız bir pazar payı verisi yok. Yerli tarafta Elektraweb, HMS Otel, Sistem Otel, AKINSOFT WOLVOX Otel, HotelRunner ve Veboni (Sedna) yaygın biliniyor; büyük otellerde Oracle OPERA Cloud kullanılıyor. Firmaların açıkladığı müşteri sayıları kendi beyanlarıdır."),
+           ("Küçük otel için hangi otel programı uygun?", "1–50 odalı tesislerde kurulumu kolay, dahili kanal yöneticisi olan ve aylık sabit ücretli bir bulut program genellikle yeterlidir. POS, muhasebe ve bordro gibi modüllere ihtiyacınız yoksa kapsamlı kurumsal paketler gereğinden pahalı ve karmaşık olabilir."),
+           ("Otel programı KBS bildirimini otomatik yapar mı?", "Bazı yerli programlar Emniyet ve Jandarma KBS entegrasyonu sunuyor (örneğin Elektraweb, HMS Otel, Sistem Otel, AKINSOFT WOLVOX, HotelRunner). Yabancı programların sitelerinde KBS bilgisi yok. Hostlio Pro otomatik bildirim yapmaz, misafir listesini CSV olarak dışa aktarır."),
+           ("Hostlio Pro'yu ücretsiz deneyebilir miyim?", "Evet, 7 gün ücretsiz deneyebilirsiniz; deneme bitene kadar ücret çekilmez. Planlar Starter ⟦price:starter⟧, Pro ⟦price:pro⟧ ve Growth ⟦price:growth⟧ / ay (USD, erken kayıt).")]
+    return c, faq
+
 META = [
+ dict(key="post-programs", date="2026-10-09", title="En çok kullanılan otel programları: 2026 listesi",
+      desc="Türkiye'de otellerin kullandığı otel programları: Elektraweb, HMS, Sistem Otel, WOLVOX, HotelRunner, OPERA ve diğerleri. Kime uygun, fiyat, KBS."),
  dict(key="post-channel-manager", date="2026-10-08", title="Channel manager nedir? Otelciler için kanal yöneticisi rehberi",
       desc="Channel manager (kanal yöneticisi) nedir, nasıl çalışır, PMS'ten farkı ne? Fiyat modelleri, seçim için 7 soru ve kurulum adımları. 2026 rehberi."),
  dict(key="post-kbs", date="2026-10-08", title="KBS bildirimi nasıl yapılır? Oteller ve pansiyonlar için rehber",
@@ -266,7 +356,7 @@ META = [
  dict(key="post-prices", date="2026-10-08", title="Otel programı fiyatları 2026: modeller ve gerçek rakamlar",
       desc="2026 otel programı fiyatları: sabit paket, oda başı, komisyon ve lisans modelleri; resmî sayfalardan alınmış rakamlar ve 10, 25, 50 oda için örnek hesap."),
 ]
-_FN = {"post-channel-manager": channel_manager, "post-kbs": kbs, "post-prices": prices}
+_FN = {"post-programs": programs, "post-channel-manager": channel_manager, "post-kbs": kbs, "post-prices": prices}
 
 def pages(B):
     import content_tr

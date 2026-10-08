@@ -291,6 +291,7 @@ def contact():
             "trail":[("İletişim", U("contact"))],"body":body,"page_type":"ContactPage","no_final":True}
 
 POSTS = [
+ {"key":"post-programs","title":"En çok kullanılan otel programları: 2026 listesi","date":"2026-10-09","desc":"Türkiye'de otellerin kullandığı otel programları: Elektraweb, HMS, Sistem Otel, WOLVOX, HotelRunner, OPERA ve diğerleri. Kime uygun, fiyat, KBS."},
  {"key":"post-kbs","title":"KBS bildirimi nasıl yapılır? Oteller ve pansiyonlar için rehber","date":"2026-10-08","desc":"KBS (Kimlik Bildirim Sistemi) bildirimi adım adım: Emniyet ve Jandarma KBS farkı, kayıt, yabancı misafir, süreler ve cezalar. Resmî kaynaklı."},
  {"key":"post-prices","title":"Otel programı fiyatları 2026: modeller ve gerçek rakamlar","date":"2026-10-08","desc":"2026 otel programı fiyatları: sabit paket, oda başı, komisyon ve lisans modelleri; resmî sayfalardan alınmış rakamlar ve örnek hesap."},
  {"key":"post-channel-manager","title":"Channel manager nedir? Otelciler için kanal yöneticisi rehberi","date":"2026-10-08","desc":"Channel manager (kanal yöneticisi) nedir, nasıl çalışır, PMS'ten farkı ne? Fiyat modelleri, seçim için 7 soru ve kurulum adımları."},
@@ -310,7 +311,7 @@ def blog():
     return {"key":"blog","title":"Blog: Bağımsız Oteller için Rehberler | Hostlio Pro","desc":"Otel yönetimi, kanal yönetimi, OTA dağıtımı ve AI ile misafir iletişimi üzerine bağımsız otelcilere yönelik pratik rehberler.",
             "trail":[("Blog", U("blog"))],"body":body,"page_type":"CollectionPage"}
 
-COVERS={"post-channel-manager":("cover-channel-manager",1600,800),"post-kbs":("gen-arrival",1080,1350),"post-prices":("cover-pricing-models",1600,800),"post-ai":("gen-checkin-phone",1080,1350),"post-pms":("gen-owner-laptop",1080,1350),"post-overbooking":("overbooking-desk",1080,1341),"post-autoreply":("guest-balcony-dusk",1080,1341)}
+COVERS={"post-programs":("cover-otel-programlari",1600,800),"post-channel-manager":("cover-channel-manager",1600,800),"post-kbs":("gen-arrival",1080,1350),"post-prices":("cover-pricing-models",1600,800),"post-ai":("gen-checkin-phone",1080,1350),"post-pms":("gen-owner-laptop",1080,1350),"post-overbooking":("overbooking-desk",1080,1341),"post-autoreply":("guest-balcony-dusk",1080,1341)}
 COVERS.update(_gi.COVER)
 def article(meta, content, faq=None):
     art = {"@type":"BlogPosting","headline":meta["title"],"description":meta["desc"],"datePublished":meta["date"],"inLanguage":"tr-TR","author":{"@type":"Organization","name":"Hostlio Pro ürün ekibi","url":SITE+U("about")},"dateModified":UPDATED,"publisher":{"@id":SITE+"/#org"},
