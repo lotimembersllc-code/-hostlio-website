@@ -7897,6 +7897,12 @@ URL: https://hostliopro.com/es/blog/
 ## Blog para hoteleros
 Artículos prácticos sobre la gestión de un hotel independiente, la distribución y la comunicación con los huéspedes.
 
+Elegir software
+
+## ¿Cuánto cuesta un software de gestión hotelera? Precios 2026
+9 de octubre de 2026
+Precios 2026 de software de gestión hotelera en España: cuotas publicadas, coste para 10 y 25 habitaciones, extras ocultos y SES.Hospedajes.
+
 Comunicación con huéspedes
 
 ## WhatsApp para hoteles: configuración, normas de Meta e IA (2026)
@@ -9445,6 +9451,125 @@ A: Hostlio Pro incluye su asistente de IA Lio en WhatsApp en todos los planes y 
 
 Q: ¿Puedo pasarme de Cloudbeds a Hostlio Pro?
 A: Sí. Exporta tus reservas de Cloudbeds e impórtalas en Hostlio Pro en CSV o Excel, con asignación de columnas y control de duplicados; después conecta tus OTAs y planifica el cambio. Hostlio Pro no incluye motor de reservas ni cobro de pagos.
+
+---
+# ¿Cuánto cuesta un software de gestión hotelera? Precios 2026
+URL: https://hostliopro.com/es/blog/cuanto-cuesta-software-gestion-hotelera/
+
+## ¿Cuánto cuesta un software de gestión hotelera? Precios 2026
+Por el equipo de producto de Hostlio Pro , las personas que desarrollan Hostlio Pro. Publicado el 9 de octubre de 2026 , actualizado el 23 de septiembre de 2026
+
+Respuesta corta: en 2026, un software de gestión hotelera (PMS) para un hotel pequeño en España cuesta entre unos 40 € y 250 € al mes entre los proveedores que publican sus precios. Para 10 habitaciones, las cuotas publicadas van de unos 42 € a 164 € al mes; para 25 habitaciones, de unos 82 € a 243 €. Varios proveedores conocidos solo dan presupuesto. Antes de comparar, suma el channel manager, la puesta en marcha, el IVA y las comisiones por reserva: ahí está la diferencia real.
+
+Contenido
+
+- Cuánto cuesta Hostlio Pro
+- Los 4 modelos de precio
+- Precios publicados en 2026
+- Ejemplo: hotel de 10 y de 25 habitaciones
+- Costes que no se ven en la cuota
+- SES.Hospedajes: pregunta antes de contratar
+- ¿Qué modelo te conviene?
+- Fuentes
+Hostlio Pro es parte interesada en esta comparativa. Solo incluimos cifras que hemos comprobado en la web oficial de cada proveedor (o en la calculadora de esa misma página) el 9 de octubre de 2026. Los precios cambian; consulta siempre la página del proveedor antes de decidir. Las monedas son las que usa cada proveedor (€ o USD) y no se comparan directamente.
+
+## Cuánto cuesta Hostlio Pro
+
+Hostlio Pro tiene tres planes con cuota fija: Starter 49 $ al mes (hasta 10 habitaciones), Pro 89 $ (hasta 50) y Growth 149 $ (hasta 150 habitaciones y 2 alojamientos). No cobra comisión por reserva ni porcentaje de ingresos, así que en temporada alta pagas lo mismo. El channel manager certificado (más de 100 OTAs) y Lio, el asistente con IA que responde a los huéspedes por WhatsApp, están incluidos en todos los planes. Con pago anual hay un 20 % de descuento y puedes probarlo 7 días gratis.
+
+Prueba gratis 7 días Ver planes
+
+## Los 4 modelos de precio
+
+- Cuota fija mensual: pagas lo mismo cada mes. Es el modelo más fácil de presupuestar.
+
+- Por habitación o por tramos: la cuota sube con el número de habitaciones. Barato para alojamientos muy pequeños; calcula también el escenario si amplías.
+
+- Comisión sobre reservas: un porcentaje o un importe por reserva. Pagas poco en temporada baja, pero el coste crece justo en los mejores meses.
+
+- Licencia única: pagas al principio; pregunta por actualizaciones, servidor y soporte.
+
+- Presupuesto: el precio se da tras una demo, según tu alojamiento.
+
+## Precios publicados en 2026
+
+Software Modelo Precio publicado Channel manager
+Hostlio Pro Cuota fija mensual por plan Starter 49 $, Pro 89 $, Growth 149 $ al mes (USD, precio de lanzamiento); 20 % de descuento anual Incluido en todos los planes
+Sirvoy Cuota por tramos de habitaciones Starter 22 € y Pro 79 € al mes de 6 a 10 habitaciones; 42 € y 149 € de 21 a 50; plan gratuito para 1 habitación Solo en Pro
+Beds24 Pago por uso 12,90 € de base + 2,60 € por habitación + 0,55 € por tipo de habitación y canal, al mes Por conexión (0,55 €)
+Hotelgest Tramos por habitación, sin IVA 55 € hasta 5 habitaciones; luego 9,50 € por habitación de la 6 a la 10 y 7,50 € de la 11 a la 20; alta 590 € Extra: +30 € al mes
+RoomRaccoon Cuota según habitaciones Desde 164 € (Entry) hasta 435 € (Pro) al mes hasta 18 habitaciones, según su calculadora Incluido
+eviivo Desde, sin impuestos Desde 40 € al mes (un alojamiento); precio por volumen a partir de 10 habitaciones Incluido
+Octorate Por habitación Basic desde 8 € por habitación al mes; Pro y Ultimate a consultar Incluido en Basic
+Amenitiz, Avirato, Cloudbeds, Mews Presupuesto No publicado Según plan
+
+## Ejemplo: hotel de 10 y de 25 habitaciones
+
+Cuota mensual calculada con los precios publicados y las calculadoras oficiales. En Beds24 el precio depende de los tipos de habitación y de los canales conectados; usamos 3 tipos para 10 habitaciones, 4 tipos para 25 y 2 OTAs en ambos casos. eviivo y Octorate no se incluyen porque su precio para estos tamaños no se puede determinar desde la web. Los programas no incluyen lo mismo: no decidas solo por la cifra.
+
+Software 10 habitaciones 25 habitaciones Nota
+Hostlio Pro 49 $ (Starter) 89 $ (Pro) Ninguno; channel manager incluido
+Sirvoy Pro 79 € 149 € Sin contrato
+Beds24 42,20 € 82,30 € Supone 3 y 4 tipos de habitación, 2 OTAs
+Hotelgest + channel manager 132,50 € 242,50 € Sin IVA; alta única de 590 €
+RoomRaccoon Entry 164 € 228 € Módulo legal (SES) desde Essential
+
+## Costes que no se ven en la cuota
+
+- Channel manager aparte: en algunos proveedores es un extra mensual o solo está en el plan superior.
+
+- Alta y migración: pueden cobrarse una vez (por ejemplo, 590 € en Hotelgest).
+
+- Comisión por reserva o por pago: pequeña por reserva, pero se acumula en temporada alta.
+
+- IVA: muchos precios se publican sin IVA; algunos proveedores ni lo indican.
+
+- Módulos: motor de reservas, limpieza, mensajería o el módulo legal pueden ir aparte.
+
+- Comisiones de las OTAs: no dependen del software, pero suelen ser la partida más grande. Mira el neto por canal en la calculadora de comisiones OTA .
+
+## SES.Hospedajes: pregunta antes de contratar
+
+Desde el 2 de diciembre de 2024, los alojamientos en España comunican los datos de los viajeros al Ministerio del Interior a través de SES.Hospedajes. El Real Decreto 933/2021 exige enviarlos de inmediato y, en todo caso, en menos de 24 horas, y conservarlos tres años. Algunos PMS los envían automáticamente (Hotelgest, Avirato, Octorate y RoomRaccoon desde su plan Essential lo indican en su web); otros lo resuelven con un socio como Chekin o con un fichero que subes tú.
+
+Para ser claros: Hostlio Pro recoge y organiza los datos de los huéspedes con el check-in online , pero no los envía a SES.Hospedajes; la comunicación se hace por el canal oficial. Si el envío automático es imprescindible para ti, tenlo en cuenta al comparar.
+
+## ¿Qué modelo te conviene?
+
+- Hostales, pensiones y casas rurales de hasta 10 habitaciones: una cuota fija baja con el channel manager incluido evita sorpresas.
+
+- Hoteles de 10 a 50 habitaciones: compara el coste anual completo; las cuotas por habitación y los extras crecen rápido con el tamaño.
+
+- Si tu ocupación es muy estacional: un modelo por reserva puede salir barato en invierno, pero calcula el año entero.
+Para los criterios de elección más allá del precio, lee cómo elegir software para hoteles pequeños . Y para ver cuánto tiempo y comisiones puede ahorrarte un PMS, prueba la calculadora de ROI .
+
+## Fuentes
+Todas las fuentes se consultaron el 9 de octubre de 2026. En Sirvoy, Beds24, Hotelgest y RoomRaccoon, los importes por número de habitaciones salen de la calculadora de su página oficial.
+
+- Sirvoy: Precios
+- Beds24: Pricing
+- Hotelgest: Planes
+- RoomRaccoon: Precios
+- eviivo: Precios
+- Octorate: Precios
+- Amenitiz: Precios
+- Avirato: Planes de pago
+- Cloudbeds: Precios
+- Mews: Pricing
+- BOE: Real Decreto 933/2021
+- La Moncloa: el Ministerio del Interior activa SES.Hospedajes (2 de diciembre de 2024)
+
+Q: ¿Cuánto cuesta un software de gestión hotelera para un hotel pequeño?
+A: Entre los proveedores que publican precios, un hotel de 10 habitaciones paga entre unos 42 € y 164 € al mes (9 de octubre de 2026). A eso hay que sumar, según el proveedor, el channel manager, la puesta en marcha, el IVA y las comisiones por reserva. Algunos proveedores solo dan presupuesto.
+
+Q: ¿El channel manager está incluido en el precio?
+A: Depende. En Hostlio Pro, RoomRaccoon, eviivo y Octorate Basic está incluido; en Sirvoy solo en el plan Pro; en Beds24 se paga por conexión y en Hotelgest es un extra de 30 € al mes.
+
+Q: ¿Hostlio Pro envía los datos a SES.Hospedajes?
+A: No. Hostlio Pro recoge los datos de los huéspedes con el check-in online, pero no los envía a SES.Hospedajes; la comunicación se hace por el canal oficial.
+
+Q: ¿Puedo probar Hostlio Pro gratis?
+A: Sí, 7 días. Registras la tarjeta al darte de alta, pero no se cobra nada hasta que termina la prueba. Los planes cuestan 49 $, 89 $ y 149 $ al mes.
 
 ---
 # WhatsApp para hoteles: configuración, normas de Meta e IA (2026)

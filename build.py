@@ -131,6 +131,7 @@ ROUTES.update({
  "post-kbs":       {"tr": "/tr/blog/kbs-bildirimi-nasil-yapilir/"},
  "post-prices":    {"tr": "/tr/blog/otel-programi-fiyatlari-2026/"},
  "post-programs":  {"tr": "/tr/blog/en-cok-kullanilan-otel-programlari/"},
+ "post-cost":      {"es": "/es/blog/cuanto-cuesta-software-gestion-hotelera/"},
  # Tur 2 (8 Ekim 2026): SEO fikri #20 ve #14 (guides_intl.py)
  "post-pms-vs-cm": {"en": "/en/blog/pms-vs-channel-manager/", "it": "/it/blog/channel-manager-cos-e-differenza-pms/",
                     "pt": "/pt/blog/o-que-e-channel-manager-diferenca-pms/", "fr": "/fr/blog/pms-ou-channel-manager-difference/"},
@@ -385,6 +386,7 @@ GEN_ALT = {
  "brand-phone": {'tr': "Lio'nun cevap ekranını gösteren telefonu tutan el", 'en': "Hand holding a phone showing Lio's reply screen", 'es': 'Mano sosteniendo un móvil con la pantalla de respuesta de Lio', 'it': 'Mano che tiene uno smartphone con la schermata di risposta di Lio', 'pt': 'Mão segurando um celular com a tela de resposta do Lio', 'fr': 'Main tenant un téléphone affichant l’écran de réponse de Lio'},
  "brand-guest-bed": {'tr': 'Otel odasında yatağında telefonundan mesaj yazan misafir', 'en': 'A guest in a hotel bed writing a message on a phone', 'es': 'Un huésped en la cama del hotel escribe un mensaje en el móvil', 'it': 'Un ospite a letto in hotel scrive un messaggio sullo smartphone', 'pt': 'Um hóspede na cama do hotel escrevendo uma mensagem no celular', 'fr': 'Un client allongé dans sa chambre écrit un message sur son téléphone'},
  "guest-bed-morning": {'tr': 'Otel odasında yatağın kenarında oturup telefonundan mesaj yazan misafir', 'en': 'A guest sitting on a hotel bed writing a message on a phone', 'es': 'Un huésped sentado en la cama del hotel escribe un mensaje en el móvil', 'it': 'Un ospite seduto sul letto in hotel scrive un messaggio sullo smartphone', 'pt': 'Um hóspede sentado na cama do hotel escrevendo uma mensagem no celular', 'fr': 'Un client assis sur le lit de sa chambre écrit un message sur son téléphone'},
+ "cover-precios-software-es": {'tr': 'İnfografik: otel yazılımının dört fiyat modeli', 'en': 'Infographic: the four pricing models of hotel software', 'es': 'Infografía: los cuatro modelos de precio del software hotelero (cuota fija mensual, por habitación, comisión sobre reservas y licencia única) y cómo evoluciona el coste mensual en cada uno', 'it': 'Infografica: i quattro modelli di prezzo dei gestionali per hotel', 'pt': 'Infográfico: os quatro modelos de preço dos sistemas para hotel', 'fr': 'Infographie : les quatre modèles de prix des logiciels hôteliers'},
  "cover-otel-programlari": {'tr': 'İnfografik: tesis büyüklüğüne göre otel programı seçimi (1–20 oda pansiyon ve butik otel, 20–150 oda bağımsız otel, 150+ oda resort ve zincir)', 'en': 'Infographic: choosing hotel software by property size', 'es': 'Infografía: elegir software hotelero según el tamaño', 'it': 'Infografica: scegliere il gestionale in base alle dimensioni', 'pt': 'Infográfico: escolher o sistema conforme o tamanho', 'fr': 'Infographie : choisir son logiciel selon la taille'},
  "cover-pricing-models": {'tr': 'İnfografik: otel programlarının dört fiyatlandırma modeli (sabit aylık paket, oda sayısına göre, rezervasyon gelirinden yüzde, tek seferlik lisans) ve her birinde aylık maliyetin seyri', 'en': 'Infographic: the four pricing models of hotel software and how the monthly cost behaves in each', 'es': 'Infografía: los cuatro modelos de precio del software hotelero', 'it': 'Infografica: i quattro modelli di prezzo dei gestionali per hotel', 'pt': 'Infográfico: os quatro modelos de preço dos sistemas para hotel', 'fr': 'Infographie : les quatre modèles de prix des logiciels hôteliers'},
  "cover-channel-manager": {'tr': "Şema: kanal yöneticisi otelin müsaitlik, fiyat ve kısıtlamalarını Booking.com, Airbnb, Expedia, Google Hotels, Hotels.com ve Trip.com'a gönderir; rezervasyon, değişiklik ve iptalleri tek takvime alır", 'en': 'Diagram: a channel manager sends availability, rates and restrictions to the booking channels and brings reservations back to one calendar', 'es': 'Esquema: el channel manager envía disponibilidad y tarifas a los canales y trae las reservas a un solo calendario', 'it': 'Schema: il channel manager invia disponibilità e tariffe ai canali e riporta le prenotazioni in un unico calendario', 'pt': 'Esquema: o channel manager envia disponibilidade e tarifas aos canais e traz as reservas para um só calendário', 'fr': 'Schéma : le channel manager envoie disponibilités et tarifs aux canaux et ramène les réservations dans un seul calendrier'},
@@ -499,7 +501,7 @@ RELATED_POSTS = {
     "post-autoreply": ["post-ai", "post-whatsapp", "post-overbooking", "post-pms"],
     "post-ai": ["post-autoreply", "post-pms", "post-whatsapp", "post-overbooking"],
     "post-overbooking": ["post-channel-manager", "post-pms-vs-cm", "post-pms", "post-autoreply", "post-noshows", "post-ai"],
-    "post-pms": ["post-prices", "post-programs", "post-channel-manager", "post-pms-vs-cm", "post-overbooking", "post-ai", "post-autoreply"],
+    "post-pms": ["post-prices", "post-cost", "post-programs", "post-channel-manager", "post-pms-vs-cm", "post-overbooking", "post-ai", "post-autoreply"],
     "post-aifrontdesk": ["post-ai", "post-autoreply", "post-whatsapp"],
     "post-noshows": ["post-overbooking", "post-pms", "post-autoreply"],
     "post-chains": ["post-pms", "post-aifrontdesk", "post-overbooking"],
@@ -509,11 +511,12 @@ RELATED_POSTS = {
     "post-channel-manager": ["post-overbooking", "post-prices", "post-pms"],
     "post-kbs": ["post-pms", "post-channel-manager", "post-ai"],
     "post-prices": ["post-programs", "post-pms", "post-channel-manager", "post-overbooking"],
+    "post-cost": ["post-pms", "post-overbooking", "post-whatsapp", "post-autoreply"],
     "post-programs": ["post-prices", "post-pms", "post-channel-manager", "post-kbs"],
 }
 RELATED_PRODUCT = {"post-autoreply": "ai", "post-ai": "ai", "post-overbooking": "channel", "post-pms": "pricing",
                    "post-aifrontdesk": "ai", "post-noshows": "channel", "post-chains": "features", "post-whatsapp": "ai",
-                   "post-channel-manager": "channel", "post-kbs": "checkin", "post-prices": "pricing", "post-pms-vs-cm": "channel", "post-programs": "pricing"}
+                   "post-channel-manager": "channel", "post-kbs": "checkin", "post-prices": "pricing", "post-pms-vs-cm": "channel", "post-programs": "pricing", "post-cost": "pricing"}
 _SEG = ["post-pms", "post-autoreply", "post-overbooking"]
 PAGE_GUIDES = {"channel": ["post-channel-manager", "post-pms-vs-cm", "post-overbooking", "post-pms", "post-noshows"], "ai": ["post-whatsapp", "post-autoreply", "post-ai"],
                "checkin": ["post-kbs", "post-pms", "post-ai", "post-noshows"], "pricing": ["post-prices", "post-pms", "post-overbooking", "post-autoreply"],
@@ -958,7 +961,7 @@ def lang_redirects():
 # Tarihler atandıktan sonra uygulanır: şablon değişikliği yazıların "güncelleme" tarihini oynatmaz.
 BLOG_CAT = {"post-channel-manager": "dist", "post-overbooking": "dist", "post-noshows": "dist",
             "post-ai": "msg", "post-autoreply": "msg", "post-whatsapp": "msg", "post-aifrontdesk": "msg",
-            "post-pms": "soft", "post-prices": "soft", "post-programs": "soft", "post-pms-vs-cm": "soft", "post-chains": "soft",
+            "post-pms": "soft", "post-prices": "soft", "post-programs": "soft", "post-cost": "soft", "post-pms-vs-cm": "soft", "post-chains": "soft",
             "post-kbs": "ops"}
 BLOG_CAT_NAME = {
     "dist": {"tr": "Kanal yönetimi", "en": "Distribution", "es": "Distribución", "it": "Distribuzione", "pt": "Distribuição", "fr": "Distribution"},

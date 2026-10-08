@@ -4,10 +4,10 @@
   korunur, legacy_posts.json'daki eski gövde artık kullanılmaz), ES/IT/FR sürümleri (SEO fikri #14) (rehber_whatsapp.py)
 Blog listesi: content_<dil>.POSTS bu modülün meta(L) çıktısını başa ekler. Kapaklar COVER'da."""
 import importlib
-import rehber_pms_cm, rehber_whatsapp
+import rehber_pms_cm, rehber_whatsapp, rehber_precios
 
-MODS = [rehber_pms_cm, rehber_whatsapp]
-COVER = {"post-pms-vs-cm": ("gen-support-call", 1080, 1350), "post-whatsapp": ("gen-terrace-phone", 1080, 1350)}
+MODS = [rehber_precios, rehber_pms_cm, rehber_whatsapp]
+COVER = {"post-cost": ("cover-precios-software-es", 1600, 800), "post-pms-vs-cm": ("gen-support-call", 1080, 1350), "post-whatsapp": ("gen-terrace-phone", 1080, 1350)}
 
 
 def meta(L):
