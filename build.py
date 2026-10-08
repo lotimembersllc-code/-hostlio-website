@@ -121,6 +121,7 @@ ROUTES.update({
                 "it": "/it/strumenti/calcolatore-commissioni-ota/", "pt": "/pt/ferramentas/calculadora-comissao-ota/", "fr": "/fr/outils/calculateur-commission-ota/"},
  "cmp-hub":    {"tr": "/tr/karsilastirmalar/", "en": "/en/compare/", "es": "/es/comparativas/", "pt": "/pt/comparativos/", "fr": "/fr/comparatifs/"},
  "vs-hotelrunner": {"tr": "/tr/karsilastirmalar/hostlio-vs-hotelrunner/", "en": "/en/compare/hostlio-vs-hotelrunner/"},
+ "vs-elektraweb":  {"tr": "/tr/karsilastirmalar/hostlio-vs-elektraweb/", "en": "/en/compare/hostlio-vs-elektraweb/"},
  "vs-cloudbeds":   {"en": "/en/compare/hostlio-vs-cloudbeds/", "es": "/es/comparativas/hostlio-vs-cloudbeds/", "pt": "/pt/comparativos/hostlio-vs-cloudbeds/"},
  "alt-cloudbeds":  {"en": "/en/compare/cloudbeds-alternatives/", "es": "/es/comparativas/alternativas-a-cloudbeds/", "pt": "/pt/comparativos/alternativas-ao-cloudbeds/"},
  "alt-amenitiz":   {"en": "/en/compare/amenitiz-alternative/", "fr": "/fr/comparatifs/alternative-amenitiz/"},
@@ -499,7 +500,7 @@ PAGE_GUIDES = {"channel": ["post-channel-manager", "post-pms-vs-cm", "post-overb
 # S9: "Ayrıca bakın" satırı — araçlar, karşılaştırmalar ve WhatsApp sayfasına bağlamsal iç link (o dilde olmayan atlanır)
 PAGE_EXTRA = {"ai": ["whatsapp-tr", "alt-hijiffy", "roi"], "channel": ["commission", "vs-hotelrunner", "kpi"],
               "pricing": ["cmp-hub", "commission", "kpi"], "features": ["kpi", "commission", "cmp-hub"],
-              "compare": ["cmp-hub", "vs-hotelrunner", "vs-cloudbeds", "alt-cloudbeds", "alt-amenitiz", "alt-hijiffy"],
+              "compare": ["cmp-hub", "vs-hotelrunner", "vs-elektraweb", "vs-cloudbeds", "alt-cloudbeds", "alt-amenitiz", "alt-hijiffy"],
               "t-boutique": ["kpi", "cmp-hub"], "t-guesthouse": ["kpi", "cmp-hub"], "t-apart": ["kpi", "cmp-hub"], "t-hostel": ["kpi", "cmp-hub"],
               "post-pms": ["cmp-hub", "kpi"], "post-ai": ["whatsapp-tr"], "post-autoreply": ["whatsapp-tr"], "post-whatsapp": ["alt-hijiffy"],
               "post-overbooking": ["commission"], "post-pms-vs-cm": ["commission", "cmp-hub"], "post-noshows": ["kpi"], "post-prices": ["cmp-hub", "kpi"], "post-channel-manager": ["commission"],

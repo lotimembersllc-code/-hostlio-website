@@ -207,7 +207,7 @@ def prices(U):
 '''
     c += _src(PRICE_SRC)
     faq = [("Otel programı fiyatları ne kadar?", "Fiyatını yayınlayan yazılımlarda küçük bir otel için aylık maliyet yaklaşık 15 € ile 150 € arasında başlıyor (8 Ekim 2026). Bazı yazılımlar gelirden yüzde alıyor, bazıları tek seferlik lisans satıyor, bazıları da yalnızca teklif veriyor."),
-           ("Ücretsiz otel programı var mı?", "Bazı yazılımların ücretsiz planı var; örneğin Sirvoy'un ücretsiz planı yalnızca 1 oda için geçerli ve kanal yöneticisi içermiyor. Ücretsiz planların oda, kanal ve destek sınırlarını mutlaka kontrol edin."),
+           ("Otel programını ücretsiz deneyebilir miyim?", "Hostlio Pro'yu 7 gün ücretsiz deneyebilirsiniz; deneme bitene kadar ücret çekilmez. Denemede kendi odalarınızı ve fiyatlarınızı girer, kanallarınızı bağlar ve AI asistan Lio'yu kendi misafir sorularınızla test edersiniz. Ücretsiz planı olan yazılımlarda oda, kanal ve destek sınırlarını mutlaka kontrol edin."),
            ("Komisyonlu mu sabit fiyatlı mı daha avantajlı?", "Gelir düşükse yüzdeye dayalı model daha ucuz olabilir; gelir arttıkça maliyeti de büyür. Bütçesini sabitlemek isteyen tesisler için sabit aylık ücret daha öngörülebilirdir."),
            ("Hostlio Pro'nun fiyatı ne kadar?", "Starter aylık ⟦price:starter⟧, Pro ⟦price:pro⟧, Growth ⟦price:growth⟧ (USD, erken kayıt fiyatı). Yıllık ödemede %20 indirim vardır; 7 gün ücretsiz deneme sunulur.")]
     return c, faq

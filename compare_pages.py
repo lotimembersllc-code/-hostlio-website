@@ -29,6 +29,11 @@ SRC = {
     "am_cm": ("Amenitiz: Channel manager", "https://amenitiz.com/en/product/channel-manager"),
     "hj_pr": ("HiJiffy: Plans and pricing", "https://www.hijiffy.com/plans-and-pricing"),
     "hj_home": ("HiJiffy: Home", "https://www.hijiffy.com/"),
+    "ew_home": ("Elektraweb: Ana sayfa", "https://elektraweb.com/"),
+    "ew_pr": ("Elektraweb: Fiyat listesi (teklif formu)", "https://elektraweb.com/elektraweb-fiyat-listesi/"),
+    "ew_cm": ("Elektraweb: Kanal yönetimi", "https://elektraweb.com/kanal-yonetimi"),
+    "ew_wa": ("Elektraweb: WhatsApp API", "https://elektraweb.com/whatsapp-api"),
+    "ew_chat": ("Elektraweb: Akıllı Sohbet", "https://elektraweb.com/akilli-sohbet"),
     "sv_pr": ("Sirvoy: Pricing", "https://sirvoy.com/pricing"),
     "b24_pr": ("Beds24: Pricing", "https://beds24.com/pricing.html"),
     "ev_pr": ("eviivo: Pricing", "https://eviivo.com/pricing/"),
@@ -232,6 +237,46 @@ P["vs-hotelrunner"] = {
        ("Does Hostlio Pro charge a commission?", "No. Hostlio Pro is a flat monthly fee with no per-booking fee or revenue percentage. OTAs charge their own commission either way."),
        ("Is HotelRunner commission-based?", "According to HotelRunner's pricing page, Essential plans charge a percentage (0.75%–1.25%) of monthly realized booking revenue from all channels, and each plan has a monthly minimum ($19.95–$39.95). Advanced and Elite plans are priced by the sales team (October 8, 2026)."),
        ("Which one costs less?", f"It depends on your revenue. By HotelRunner's published formula, the Essential Sell fee equals Hostlio Pro's monthly price (⟦price:pro⟧) at about {_usd(BREAK_EVEN_PRO, 'en')} of monthly booking revenue. Above that, Hostlio Pro costs less; below it, Essential Sell is lower. Hostlio Pro includes the Lio AI assistant on every plan.")]),
+}
+
+# Elektraweb: tüm bilgiler 8 Ekim 2026'da elektraweb.com resmî sayfalarından (ham HTML) doğrulandı; bkz. scratchpad/site_karsi2.md
+P["vs-elektraweb"] = {
+"tr": dict(
+  card="Hostlio Pro ile Elektraweb: açık fiyat, her planda WhatsApp'ta AI",
+  title="Hostlio Pro vs Elektraweb (2026): Fiyat, AI | Hostlio Pro",
+  desc="Elektraweb alternatifi mi arıyorsunuz? Hostlio Pro: fiyatlar sitede açık, sabit aylık ücret, her planda WhatsApp'ta AI asistan ve 7 gün ücretsiz deneme.",
+  crumb="Hostlio Pro vs Elektraweb", h1='Hostlio Pro vs <em class="hl">Elektraweb</em>',
+  lead="Fiyatı teklif beklemeden görün, bugün deneyin. Hostlio Pro'nun planları sitede açık, ücreti sabit; WhatsApp'ta misafirlere cevap veren AI asistan Lio her planda dahil. 1–150 odalı bağımsız oteller ve pansiyonlar için.",
+  name="Elektraweb", frm="Elektraweb'deki", switch_h="Elektraweb'den Hostlio Pro'ya geçiş: 4 adım",
+  rows=[("Fiyat", "Sitede açık: Starter ⟦price:starter⟧, Pro ⟦price:pro⟧, Growth ⟦price:growth⟧ / ay (USD, erken kayıt); yıllıkta %20 indirim", "Fiyat listesi sayfası teklif formuna yönlendiriyor (\"Fiyat teklifi almak için tıklayınız\"); yayınlanmış rakam yok"),
+        ("Deneme", "7 gün ücretsiz; deneme bitene kadar ücret çekilmez", "Ücretsiz demo talep formu; deneme süresi belirtilmiyor"),
+        ("WhatsApp'ta AI misafir mesajlaşması", "Tüm planlarda dahil (Lio); Pro ve Growth'ta Booking.com, Airbnb ve Expedia gelen kutuları da", "WhatsApp API ve Akıllı Sohbet ürün sayfalarında AI destekli asistan anlatılıyor; ürün menüsünde ayrı başlıklar, fiyat teklifle"),
+        ("Kanal yöneticisi", "Tüm planlarda, 100+ OTA'ya sertifikalı bağlantı", "Dahili kanal yöneticisi modülü; \"Booking, Expedia, Hotels.com gibi bilinen tüm kanallarla bağlantısı hazır\""),
+        ("Çalışma şekli", "Bulutta; panel 6 dilde, mobil uygulama tüm planlarda", "Web tabanlı, bulutta çalışan; tablet ve telefonda kullanılabiliyor"),
+        ("Odak", "PMS, kanal yöneticisi ve AI misafir asistanı tek pakette; 1–150 oda", "Ön büro, rezervasyon motoru, kanal yönetimi, POS, muhasebe, stok, bordro gibi modüller; \"her büyüklük ve konseptteki turizm tesisi için\"")],
+  srcs=["ew_pr", "ew_home", "ew_cm", "ew_wa", "ew_chat"],
+  faq=[("Elektraweb'den Hostlio'ya geçebilir miyim?", "Evet. Rezervasyonlarınızı Elektraweb'den CSV ya da Excel olarak dışa aktarıp Hostlio Pro'ya içe aktarırsınız; sütun eşleme, tarih biçimi seçimi ve mükerrer kayıt kontrolü vardır. Kanallarınızı Hostlio Pro'nun sertifikalı kanal yöneticisine bağlarken müsaitliğin tek sistemden gitmesi için geçiş saatini önceden planlayın. Hostlio Pro PMS, kanal yöneticisi ve AI misafir mesajlaşmasına odaklanır; POS, muhasebe, bordro, rezervasyon motoru ve ödeme tahsilatı içermez. Bu modülleri kullanıyorsanız geçişi buna göre planlayın."),
+       ("Elektraweb'in fiyatı ne kadar?", "Elektraweb sitesinde fiyat yayınlamıyor; fiyat listesi sayfası teklif formuna yönlendiriyor (8 Ekim 2026). Hostlio Pro'nun planları fiyatlandırma sayfasında açık: Starter ⟦price:starter⟧, Pro ⟦price:pro⟧, Growth ⟦price:growth⟧ / ay."),
+       ("Hostlio Pro'da WhatsApp AI asistanı hangi planda?", "Hepsinde. Lio, Starter dahil her planda misafirlere WhatsApp'tan otelinizin bilgileriyle ve misafirin dilinde cevap verir; indirim, şikâyet gibi kararları size bırakır. Pro ve Growth'ta OTA gelen kutuları ve sizin onayınızla rezervasyona dönüşen talepler de vardır."),
+       ("Kurulum ne kadar sürer?", "Hesap dakikalar içinde hazır olur; kurulum sihirbazı eksik bilgileri gösterir ve kanallar çoğu zaman aynı gün bağlanır. 7 günlük denemeyle kendi odalarınız ve fiyatlarınızla başlayabilirsiniz.")]),
+"en": dict(
+  card="Hostlio Pro vs Elektraweb: published pricing, AI on WhatsApp in every plan",
+  title="Hostlio Pro vs Elektraweb (2026): Pricing, AI | Hostlio Pro",
+  desc="Looking for an Elektraweb alternative? Hostlio Pro: published flat monthly pricing, an AI assistant on WhatsApp in every plan and a 7-day free trial.",
+  crumb="Hostlio Pro vs Elektraweb", h1='Hostlio Pro vs <em class="hl">Elektraweb</em>',
+  lead="See the price without waiting for a quote, and try it today. Hostlio Pro lists its plans on its website at a fixed monthly fee, and Lio, an AI assistant that answers guests on WhatsApp, is included in every plan. Built for independent hotels and guesthouses of 1–150 rooms.",
+  name="Elektraweb", frm="from Elektraweb",
+  rows=[("Pricing", "Published: Starter ⟦price:starter⟧, Pro ⟦price:pro⟧, Growth ⟦price:growth⟧ a month (USD, early bird); 20% off annually", "The price-list page leads to a quote form (\"Fiyat teklifi almak için tıklayınız\", click to get a quote); no published figures"),
+        ("Trial", "7 days free; no charge until the trial ends", "Free demo request form; no trial length stated"),
+        ("AI guest messaging on WhatsApp", "Included in every plan (Lio); Booking.com, Airbnb and Expedia inboxes too on Pro and Growth", "The WhatsApp API and Smart Chat (Akıllı Sohbet) product pages describe an AI-assisted assistant; listed as separate items in the product menu, priced by quote"),
+        ("Channel manager", "Every plan, certified connections to 100+ OTAs", "Built-in channel manager module; ready connections to \"all well-known channels such as Booking, Expedia, Hotels.com\""),
+        ("Deployment", "Cloud; panel in 6 languages, mobile app on every plan", "Web-based, cloud-hosted; usable on tablets and phones"),
+        ("Focus", "PMS, channel manager and AI guest assistant in one package; 1–150 rooms", "Modules including front office, booking engine, channel manager, POS, accounting, inventory and payroll; \"for tourism properties of every size and concept\"")],
+  srcs=["ew_pr", "ew_home", "ew_cm", "ew_wa", "ew_chat"],
+  faq=[("Can I switch from Elektraweb to Hostlio Pro?", "Yes. Export your reservations from Elektraweb as a CSV or Excel file and import them into Hostlio Pro, with column mapping, date-format choice and duplicate checks. When you connect your channels to Hostlio Pro's certified channel manager, plan the cut-over so availability is sent from one system only. Hostlio Pro focuses on PMS, channel manager and AI guest messaging; it doesn't include POS, accounting, payroll, a booking engine or payment collection, so plan the move around any of those modules you use."),
+       ("How much does Elektraweb cost?", "Elektraweb doesn't publish prices on its website; its price-list page leads to a quote form (October 8, 2026). Hostlio Pro's plans are on its pricing page: Starter ⟦price:starter⟧, Pro ⟦price:pro⟧, Growth ⟦price:growth⟧ a month."),
+       ("Which Hostlio Pro plan includes the WhatsApp AI assistant?", "All of them. From Starter up, Lio answers guests on WhatsApp with your hotel's information and in the guest's language, and leaves decisions such as discounts or complaints to you. Pro and Growth add OTA inboxes and booking requests that become reservations once you approve them."),
+       ("How long does setup take?", "Your account is ready in minutes; the setup wizard shows what's missing and channels are usually connected the same day. Start with the 7-day trial using your own rooms and rates.")]),
 }
 
 P["vs-cloudbeds"] = {
@@ -447,37 +492,39 @@ P["alt-hijiffy"] = {
 # Little Hotelier 8 Ekim 2026'da doğrulanamadı (resmî fiyat sayfası 403) ⇒ tablodan çıkarıldı. Mews 8 Ekim'de resmî sayfadan doğrulandı.
 GEN = {
 "tr": dict(title="Otel Programı Karşılaştırması 2026: Fiyatlar | Hostlio Pro",
-  desc="Otel programı karşılaştırması 2026: Hostlio Pro ile HotelRunner, Cloudbeds, Mews ve Amenitiz; fiyat, rezervasyon komisyonu, deneme ve WhatsApp'ta AI.",
+  desc="Otel programı karşılaştırması 2026: Hostlio Pro ile HotelRunner, Elektraweb, Cloudbeds, Mews ve Amenitiz; fiyat, komisyon, deneme ve WhatsApp'ta AI.",
   crumb="Otel programı karşılaştırması", h1='Otel programı karşılaştırması: <em class="hl">Hostlio Pro</em> ve diğerleri (2026)',
   lead="Sabit aylık ücret, rezervasyon komisyonu yok, fiyatlar sitede açık ve her planda WhatsApp'ta AI asistan. Hostlio Pro'yu bağımsız oteller için popüler yazılımlarla, firmaların kendi yayınladığı bilgilere göre yan yana koyduk.",
   tbl_h="Hostlio Pro ve diğer otel programları", tbl_p="Rakip bilgileri firmaların resmî fiyat ve ürün sayfalarından alındı ve 8 Ekim 2026'da kontrol edildi.",
   cols=["Yazılım", "Fiyatlar yayınlanıyor mu?", "Başlangıç", "Rezervasyon komisyonu", "Ücretsiz deneme", "WhatsApp'ta AI misafir mesajlaşması"],
   rows=[("Hostlio Pro", "Evet", "⟦price:starter⟧/ay (erken kayıt)", "Yok, sabit aylık ücret", "7 gün", "Tüm planlarda (Lio, 30+ dil)"),
         ("HotelRunner", "Evet (Essential planlar)", "Asgari 19,95 $/ay + rezervasyon gelirinin %0,75'i (Essential Manage)", "Essential planlarda aylık rezervasyon gelirinin %0,75–%1,25'i", "\"Ücretsiz deneyin\" var; süresi belirtilmiyor", "AI asistan Advanced planlarda listeleniyor (fiyat satış ekibinden); WhatsApp incelediğimiz sayfalarda belirtilmiyor"),
+        ("Elektraweb", "Hayır; fiyat listesi sayfası teklif formuna yönlendiriyor", "Teklif", "Fiyat sayfasında belirtilmiyor", "Belirtilmiyor; ücretsiz demo var", "WhatsApp API ve Akıllı Sohbet ürün sayfalarında AI destekli asistan anlatılıyor (fiyat teklifle)"),
         ("Cloudbeds", "Hayır, teklif usulü", "Teklif", "Booking Engine ve Channel Manager rezervasyonlarından ek komisyon almadığını belirtiyor", "Fiyat sayfasında belirtilmiyor; demo var", "WhatsApp ve SMS üzerinden AI chatbot; Guest Experience, Experience planında listeleniyor"),
         ("Mews", "Hayır, teklif usulü (oda başına fiyat)", "Teklif", "Fiyat sayfasında belirtilmiyor", "Fiyat sayfasında belirtilmiyor", "\"WhatsApp ve SMS üzerinden AI mesajlaşma\" Mews Pro planında listeleniyor"),
         ("Amenitiz", "Hayır, oda sayısına göre teklif", "Teklif", "Doğrudan rezervasyonda komisyon yok; AmenitizPay işlem başına %1,5 + 0,25 €", "Yok; ücretsiz demo", "\"Guest messaging + WhatsApp\" Advanced planda (\"live in June\" etiketiyle)")],
-  srcs=["hr_tr", "cb_pr", "cb_ge", "mews_pr", "am_en"],
+  srcs=["ew_pr", "hr_tr", "cb_pr", "cb_ge", "mews_pr", "am_en"],
   links_h="Ayrıntılı karşılaştırmalar",
   faq=[("Otel programı nedir?", "Otel programı (otel yönetim yazılımı, PMS), bir konaklama tesisinin rezervasyonlarını, oda müsaitliğini, satış kanallarını ve misafir bilgilerini tek yerden yönetmesini sağlayan yazılımdır."),
-       ("Otel programı fiyatları ne kadar?", "Bu tablodaki yazılımlardan fiyatını yayınlayanlar Hostlio Pro ve HotelRunner: Hostlio Pro sabit ücretle ayda ⟦price:starter⟧'dan başlar; HotelRunner Essential planları asgari 19,95 $ artı rezervasyon gelirinden yüzde alır. Cloudbeds, Mews ve Amenitiz teklif verir (8 Ekim 2026). Daha fazla rakam için otel programı fiyatları 2026 rehberimize bakın."),
+       ("Otel programı fiyatları ne kadar?", "Bu tablodaki yazılımlardan fiyatını yayınlayanlar Hostlio Pro ve HotelRunner: Hostlio Pro sabit ücretle ayda ⟦price:starter⟧'dan başlar; HotelRunner Essential planları asgari 19,95 $ artı rezervasyon gelirinden yüzde alır. Elektraweb, Cloudbeds, Mews ve Amenitiz teklif verir (8 Ekim 2026). Daha fazla rakam için otel programı fiyatları 2026 rehberimize bakın."),
        ("Komisyonlu mu sabit fiyatlı mı daha avantajlı?", "Doluluk ve ortalama oda fiyatı arttıkça gelire bağlı modelin maliyeti büyür. Sabit aylık ücret bütçeyi öngörülebilir kılar: Hostlio Pro'da yüksek sezonda da fatura değişmez."),
        ("Mevcut programımdan Hostlio Pro'ya geçebilir miyim?", "Evet. Rezervasyonlarınızı CSV ya da Excel dosyasıyla içeri aktarırsınız (sütun eşleme ve mükerrer kontrolü dahil), kanallarınızı sertifikalı kanal yöneticisine bağlarsınız. Hesap dakikalar içinde hazır olur, kanallar çoğu zaman aynı gün bağlanır.")]),
 "en": dict(title="Hotel Software Comparison 2026: Pricing and AI | Hostlio Pro",
-  desc="Hotel software comparison 2026: Hostlio Pro vs HotelRunner, Cloudbeds, Mews and Amenitiz on pricing, booking commission, free trial and AI on WhatsApp.",
+  desc="Hotel software comparison 2026: Hostlio Pro vs HotelRunner, Elektraweb, Cloudbeds, Mews and Amenitiz on pricing, commission, trial and AI on WhatsApp.",
   crumb="Hotel software comparison", h1='Hotel software comparison: <em class="hl">Hostlio Pro</em> vs the rest (2026)',
   lead="A fixed monthly price, no booking commission, prices on the website and an AI assistant on WhatsApp in every plan. Here's Hostlio Pro side by side with popular software for independent hotels, using what each company publishes.",
   tbl_h="Hostlio Pro and other hotel software", tbl_p="Competitor information comes from each company's official pricing and product pages, checked on October 8, 2026.",
   cols=["Software", "Published prices?", "Starting at", "Booking commission", "Free trial", "AI guest messaging on WhatsApp"],
   rows=[("Hostlio Pro", "Yes", "⟦price:starter⟧/month (early bird)", "None, flat monthly fee", "7 days", "Every plan (Lio, 30+ languages)"),
         ("HotelRunner", "Yes (Essential plans)", "$19.95/month minimum + 0.75% of booking revenue (Essential Manage)", "0.75%–1.25% of monthly booking revenue on Essential plans", "\"Start free trial\" offered; length not stated", "AI assistant listed in the Advanced plans (priced by sales); WhatsApp not stated on the pages we checked"),
+        ("Elektraweb", "No; the price-list page leads to a quote form", "Quote", "Not stated on the pricing page", "Not stated; free demo offered", "AI-assisted assistant described on its WhatsApp API and Smart Chat product pages (priced by quote)"),
         ("Cloudbeds", "No, quote-based", "Quote", "States no added commission on Booking Engine and Channel Manager reservations", "Not mentioned on the pricing page; demo offered", "AI chatbot via WhatsApp and SMS; Guest Experience listed in the Experience plan"),
         ("Mews", "No, quote-based (priced per room)", "Quote", "Not stated on the pricing page", "Not mentioned on the pricing page", "\"AI messaging via WhatsApp and SMS\" listed in Mews Pro"),
         ("Amenitiz", "No, quote by number of rooms", "Quote", "No commission on direct bookings; AmenitizPay 1.5% + €0.25 per transaction", "Not offered; free demo", "\"Guest messaging + WhatsApp\" in the Advanced plan (labelled \"live in June\")")],
-  srcs=["hr_en", "cb_pr", "cb_ge", "mews_pr", "am_en"],
+  srcs=["ew_pr", "hr_en", "cb_pr", "cb_ge", "mews_pr", "am_en"],
   links_h="Detailed comparisons",
   faq=[("What is hotel management software?", "Hotel management software (a PMS) lets a property manage reservations, room availability, sales channels and guest information in one place."),
-       ("How much does hotel software cost?", "Of the vendors in this table, Hostlio Pro and HotelRunner publish prices: Hostlio Pro starts at ⟦price:starter⟧ a month as a flat fee; HotelRunner's Essential plans have a $19.95 monthly minimum plus a share of booking revenue. Cloudbeds, Mews and Amenitiz give quotes (October 8, 2026)."),
+       ("How much does hotel software cost?", "Of the vendors in this table, Hostlio Pro and HotelRunner publish prices: Hostlio Pro starts at ⟦price:starter⟧ a month as a flat fee; HotelRunner's Essential plans have a $19.95 monthly minimum plus a share of booking revenue. Elektraweb, Cloudbeds, Mews and Amenitiz give quotes (October 8, 2026)."),
        ("Is a commission or a flat fee better?", "As occupancy and average rates rise, revenue-based costs grow. A flat monthly fee keeps the budget predictable: with Hostlio Pro your bill stays the same in high season."),
        ("Can I switch to Hostlio Pro from my current software?", "Yes. Import your reservations from a CSV or Excel file (with column mapping and duplicate checks) and connect your channels to the certified channel manager. Your account is ready in minutes, and channels are usually connected the same day.")]),
 "es": dict(title="Comparativa de software hotelero 2026: precios | Hostlio Pro",
@@ -488,13 +535,14 @@ GEN = {
   cols=["Software", "¿Precios publicados?", "Desde", "Comisión por reserva", "Prueba gratis", "Mensajería IA con huéspedes en WhatsApp"],
   rows=[("Hostlio Pro", "Sí", "⟦price:starter⟧/mes (lanzamiento)", "Ninguna, cuota mensual fija", "7 días", "Todos los planes (Lio, más de 30 idiomas)"),
         ("HotelRunner", "Sí (planes Essential)", "Mínimo 19,95 $/mes + 0,75 % de los ingresos por reservas (Essential Manage)", "0,75–1,25 % de los ingresos mensuales por reservas en los planes Essential", "Ofrece \"Start free trial\"; duración no indicada", "Asistente de IA en los planes Advanced (precio con ventas); WhatsApp no figura en las páginas que revisamos"),
+        ("Elektraweb", "No; la página de precios lleva a un formulario de presupuesto", "Presupuesto", "No se indica en la página de precios", "No se indica; ofrece demo gratuita", "Asistente con IA descrito en sus páginas de WhatsApp API y Smart Chat (precio con presupuesto)"),
         ("Cloudbeds", "No, con presupuesto", "Presupuesto", "Indica que no añade comisión a las reservas del Booking Engine y del Channel Manager", "No se menciona en la página de precios; ofrece demo", "Chatbot con IA por WhatsApp y SMS; Guest Experience figura en el plan Experience"),
         ("Mews", "No, con presupuesto (precio por habitación)", "Presupuesto", "No se indica en la página de precios", "No se menciona en la página de precios", "\"AI messaging via WhatsApp and SMS\" figura en Mews Pro"),
         ("Amenitiz", "No, presupuesto según habitaciones", "Presupuesto", "Sin comisión en reservas directas; AmenitizPay 1,5 % + 0,25 € por transacción", "No ofrece; demo gratuita", "\"Guest messaging + WhatsApp\" en el plan Advanced (con la etiqueta \"live in June\")")],
-  srcs=["hr_en", "cb_pr", "cb_ge", "mews_pr", "am_en"],
+  srcs=["ew_pr", "hr_en", "cb_pr", "cb_ge", "mews_pr", "am_en"],
   links_h="Comparativas detalladas",
   faq=[("¿Qué es un software de gestión hotelera?", "Un software de gestión hotelera (un PMS hotelero) permite a un alojamiento gestionar reservas, disponibilidad de habitaciones, canales de venta e información de los huéspedes en un solo lugar."),
-       ("¿Cuánto cuesta un programa para hoteles?", "De los proveedores de esta tabla, publican precios Hostlio Pro y HotelRunner: Hostlio Pro empieza en ⟦price:starter⟧ al mes con cuota fija; los planes Essential de HotelRunner tienen un mínimo de 19,95 $ al mes más un porcentaje de los ingresos por reservas. Cloudbeds, Mews y Amenitiz dan presupuesto (8 de octubre de 2026)."),
+       ("¿Cuánto cuesta un programa para hoteles?", "De los proveedores de esta tabla, publican precios Hostlio Pro y HotelRunner: Hostlio Pro empieza en ⟦price:starter⟧ al mes con cuota fija; los planes Essential de HotelRunner tienen un mínimo de 19,95 $ al mes más un porcentaje de los ingresos por reservas. Elektraweb, Cloudbeds, Mews y Amenitiz dan presupuesto (8 de octubre de 2026)."),
        ("¿Qué es mejor, comisión o cuota fija?", "A medida que suben la ocupación y la tarifa media, el coste basado en ingresos crece. Una cuota mensual fija mantiene el presupuesto previsible: con Hostlio Pro tu factura no cambia en temporada alta."),
        ("¿Puedo pasarme a Hostlio Pro desde mi programa actual?", "Sí. Importa tus reservas desde un archivo CSV o Excel (con asignación de columnas y control de duplicados) y conecta tus canales al channel manager certificado. La cuenta está lista en minutos y los canales suelen conectarse el mismo día.")]),
 "it": dict(title="Confronto gestionali hotel 2026: prezzi e AI | Hostlio Pro",
@@ -505,13 +553,14 @@ GEN = {
   cols=["Software", "Prezzi pubblicati?", "Da", "Commissione sulle prenotazioni", "Prova gratuita", "Messaggi AI agli ospiti su WhatsApp"],
   rows=[("Hostlio Pro", "Sì", "⟦price:starter⟧/mese (early bird)", "Nessuna, canone mensile fisso", "7 giorni", "Tutti i piani (Lio, oltre 30 lingue)"),
         ("HotelRunner", "Sì (piani Essential)", "Minimo 19,95 $/mese + 0,75% del fatturato da prenotazioni (Essential Manage)", "0,75–1,25% del fatturato mensile da prenotazioni nei piani Essential", "Offre \"Start free trial\"; durata non indicata", "Assistente AI nei piani Advanced (prezzo dal team commerciale); WhatsApp non indicato nelle pagine verificate"),
+        ("Elektraweb", "No; la pagina prezzi rimanda a un modulo di preventivo", "Preventivo", "Non indicata nella pagina prezzi", "Non indicata; demo gratuita", "Assistente con AI descritto nelle pagine WhatsApp API e Smart Chat (prezzo su preventivo)"),
         ("Cloudbeds", "No, su preventivo", "Preventivo", "Dichiara di non aggiungere commissioni sulle prenotazioni da Booking Engine e Channel Manager", "Non menzionata nella pagina prezzi; demo disponibile", "Chatbot AI via WhatsApp e SMS; Guest Experience è nel piano Experience"),
         ("Mews", "No, su preventivo (prezzo per camera)", "Preventivo", "Non indicata nella pagina prezzi", "Non menzionata nella pagina prezzi", "\"AI messaging via WhatsApp and SMS\" incluso in Mews Pro"),
         ("Amenitiz", "No, preventivo in base alle camere", "Preventivo", "Nessuna commissione sulle prenotazioni dirette; AmenitizPay 1,5% + 0,25 € per transazione", "Non offerta; demo gratuita", "\"Guest messaging + WhatsApp\" nel piano Advanced (etichetta \"live in June\")")],
-  srcs=["hr_en", "cb_pr", "cb_ge", "mews_pr", "am_en"],
+  srcs=["ew_pr", "hr_en", "cb_pr", "cb_ge", "mews_pr", "am_en"],
   links_h="Confronti dettagliati",
   faq=[("Che cos'è un gestionale per hotel?", "Un gestionale per hotel (PMS) permette a una struttura di gestire prenotazioni, disponibilità delle camere, canali di vendita e dati degli ospiti in un unico posto."),
-       ("Quanto costa un gestionale per hotel?", "Tra i fornitori in tabella, pubblicano i prezzi Hostlio Pro e HotelRunner: Hostlio Pro parte da ⟦price:starter⟧ al mese con canone fisso; i piani Essential di HotelRunner prevedono un minimo di 19,95 $ al mese più una percentuale del fatturato da prenotazioni. Cloudbeds, Mews e Amenitiz lavorano su preventivo (8 ottobre 2026)."),
+       ("Quanto costa un gestionale per hotel?", "Tra i fornitori in tabella, pubblicano i prezzi Hostlio Pro e HotelRunner: Hostlio Pro parte da ⟦price:starter⟧ al mese con canone fisso; i piani Essential di HotelRunner prevedono un minimo di 19,95 $ al mese più una percentuale del fatturato da prenotazioni. Elektraweb, Cloudbeds, Mews e Amenitiz lavorano su preventivo (8 ottobre 2026)."),
        ("Meglio una commissione o un canone fisso?", "Con l'aumento di occupazione e tariffa media, i costi legati al fatturato crescono. Un canone mensile fisso rende il budget prevedibile: con Hostlio Pro la fattura resta uguale anche in alta stagione."),
        ("Posso passare a Hostlio Pro dal mio gestionale attuale?", "Sì. Importa le prenotazioni da un file CSV o Excel (con mappatura delle colonne e controllo dei duplicati) e collega i canali al channel manager certificato. L'account è pronto in pochi minuti e i canali di solito si collegano in giornata.")]),
 "pt": dict(title="Comparativo de sistemas para hotel 2026: preços | Hostlio Pro",
@@ -522,13 +571,14 @@ GEN = {
   cols=["Sistema", "Preços publicados?", "A partir de", "Comissão por reserva", "Teste grátis", "Mensagens com IA no WhatsApp"],
   rows=[("Hostlio Pro", "Sim", "⟦price:starter⟧/mês (early bird)", "Nenhuma, mensalidade fixa", "7 dias", "Todos os planos (Lio, mais de 30 idiomas)"),
         ("HotelRunner", "Sim (planos Essential)", "Mínimo US$ 19,95/mês + 0,75% da receita de reservas (Essential Manage)", "0,75%–1,25% da receita mensal de reservas nos planos Essential", "Oferece \"Start free trial\"; duração não informada", "Assistente de IA nos planos Advanced (preço com vendas); WhatsApp não aparece nas páginas que verificamos"),
+        ("Elektraweb", "Não; a página de preços leva a um formulário de orçamento", "Orçamento", "Não informada na página de preços", "Não informado; demonstração gratuita", "Assistente com IA descrito nas páginas de WhatsApp API e Smart Chat (preço sob orçamento)"),
         ("Cloudbeds", "Não, sob orçamento", "Orçamento", "Informa que não cobra comissão adicional nas reservas do Booking Engine e do Channel Manager", "Não mencionado na página de preços; oferece demonstração", "Chatbot com IA via WhatsApp e SMS; Guest Experience aparece no plano Experience"),
         ("Mews", "Não, sob orçamento (preço por quarto)", "Orçamento", "Não informada na página de preços", "Não mencionado na página de preços", "\"AI messaging via WhatsApp and SMS\" listado no Mews Pro"),
         ("Amenitiz", "Não, orçamento conforme os quartos", "Orçamento", "Sem comissão em reservas diretas; AmenitizPay 1,5% + € 0,25 por transação", "Não oferece; demonstração gratuita", "\"Guest messaging + WhatsApp\" no plano Advanced (com a etiqueta \"live in June\")")],
-  srcs=["hr_en", "cb_pr", "cb_ge", "mews_pr", "am_en"],
+  srcs=["ew_pr", "hr_en", "cb_pr", "cb_ge", "mews_pr", "am_en"],
   links_h="Comparativos detalhados",
   faq=[("O que é um sistema de gestão hoteleira?", "Um sistema de gestão hoteleira (PMS) permite que uma hospedagem gerencie reservas, disponibilidade de quartos, canais de venda e dados dos hóspedes num só lugar."),
-       ("Quanto custa um sistema para hotel?", "Dos fornecedores desta tabela, publicam preços o Hostlio Pro e a HotelRunner: o Hostlio Pro começa em ⟦price:starter⟧ por mês com mensalidade fixa; os planos Essential da HotelRunner têm mínimo de US$ 19,95 por mês mais um percentual da receita de reservas. Cloudbeds, Mews e Amenitiz trabalham com orçamento (8 de outubro de 2026)."),
+       ("Quanto custa um sistema para hotel?", "Dos fornecedores desta tabela, publicam preços o Hostlio Pro e a HotelRunner: o Hostlio Pro começa em ⟦price:starter⟧ por mês com mensalidade fixa; os planos Essential da HotelRunner têm mínimo de US$ 19,95 por mês mais um percentual da receita de reservas. Elektraweb, Cloudbeds, Mews e Amenitiz trabalham com orçamento (8 de outubro de 2026)."),
        ("O que é melhor, comissão ou mensalidade fixa?", "Quando a ocupação e a diária média sobem, o custo baseado na receita cresce. Uma mensalidade fixa deixa o orçamento previsível: com o Hostlio Pro a fatura não muda na alta temporada."),
        ("Posso migrar do meu sistema atual para o Hostlio Pro?", "Sim. Importe suas reservas de um arquivo CSV ou Excel (com mapeamento de colunas e controle de duplicados) e conecte seus canais ao channel manager certificado. A conta fica pronta em minutos e os canais costumam ser conectados no mesmo dia.")]),
 "fr": dict(title="Comparatif logiciels hôteliers 2026 : prix, IA | Hostlio Pro",
@@ -539,13 +589,14 @@ GEN = {
   cols=["Logiciel", "Tarifs publics ?", "À partir de", "Commission sur les réservations", "Essai gratuit", "Messagerie client IA sur WhatsApp"],
   rows=[("Hostlio Pro", "Oui", "⟦price:starter⟧/mois (early bird)", "Aucune, abonnement mensuel fixe", "7 jours", "Tous les forfaits (Lio, plus de 30 langues)"),
         ("HotelRunner", "Oui (offres Essential)", "Minimum 19,95 $/mois + 0,75 % du chiffre d’affaires des réservations (Essential Manage)", "0,75 à 1,25 % du chiffre d’affaires mensuel des réservations (offres Essential)", "« Start free trial » proposé ; durée non indiquée", "Assistant IA dans les offres Advanced (prix sur demande) ; WhatsApp non mentionné sur les pages consultées"),
+        ("Elektraweb", "Non ; la page tarifs renvoie vers un formulaire de devis", "Devis", "Non indiqué sur la page tarifs", "Non indiqué ; démo gratuite", "Assistant IA décrit sur ses pages WhatsApp API et Smart Chat (prix sur devis)"),
         ("Cloudbeds", "Non, sur devis", "Devis", "Indique ne pas ajouter de commission sur les réservations du Booking Engine et du Channel Manager", "Non mentionné sur la page tarifs ; démo proposée", "Chatbot IA via WhatsApp et SMS ; Guest Experience figure dans l’offre Experience"),
         ("Mews", "Non, sur devis (prix par chambre)", "Devis", "Non indiqué sur la page tarifs", "Non mentionné sur la page tarifs", "« AI messaging via WhatsApp and SMS » dans Mews Pro"),
         ("Amenitiz", "Non, devis selon le nombre de chambres", "Devis", "Aucune commission sur les réservations directes ; AmenitizPay 1,5 % + 0,25 € par transaction", "Non proposé ; démo gratuite", "« Messagerie client + WhatsApp » dans l’offre Advanced (mention « disponible en juin »)")],
-  srcs=["am_fr", "hr_en", "cb_pr", "cb_ge", "mews_pr"],
+  srcs=["ew_pr", "am_fr", "hr_en", "cb_pr", "cb_ge", "mews_pr"],
   links_h="Comparatifs détaillés",
   faq=[("Qu’est-ce qu’un logiciel de gestion hôtelière ?", "Un logiciel de gestion hôtelière (PMS) permet à un établissement de gérer réservations, disponibilités, canaux de vente et données clients au même endroit."),
-       ("Combien coûte un logiciel hôtelier ?", "Parmi les éditeurs du tableau, Hostlio Pro et HotelRunner publient leurs prix : Hostlio Pro démarre à ⟦price:starter⟧ par mois en abonnement fixe ; les offres Essential de HotelRunner ont un minimum de 19,95 $ par mois plus un pourcentage du chiffre d’affaires des réservations. Cloudbeds, Mews et Amenitiz fonctionnent sur devis (8 octobre 2026)."),
+       ("Combien coûte un logiciel hôtelier ?", "Parmi les éditeurs du tableau, Hostlio Pro et HotelRunner publient leurs prix : Hostlio Pro démarre à ⟦price:starter⟧ par mois en abonnement fixe ; les offres Essential de HotelRunner ont un minimum de 19,95 $ par mois plus un pourcentage du chiffre d’affaires des réservations. Elektraweb, Cloudbeds, Mews et Amenitiz fonctionnent sur devis (8 octobre 2026)."),
        ("Commission ou abonnement fixe : que choisir ?", "Quand le taux d’occupation et le prix moyen augmentent, un coût lié au chiffre d’affaires augmente aussi. Un abonnement fixe rend le budget prévisible : avec Hostlio Pro, la facture ne change pas en haute saison."),
        ("Puis-je passer à Hostlio Pro depuis mon logiciel actuel ?", "Oui. Importez vos réservations depuis un fichier CSV ou Excel (avec correspondance des colonnes et contrôle des doublons) et connectez vos canaux au channel manager certifié. Le compte est prêt en quelques minutes et les canaux sont souvent connectés le jour même.")]),
 }
@@ -555,12 +606,12 @@ HUB = {
   desc="Hostlio Pro'yu HotelRunner ve diğer otel programlarıyla karşılaştırın: sabit aylık ücret, rezervasyon komisyonu yok, her planda WhatsApp'ta AI.",
   crumb="Karşılaştırmalar", h1='Neden <em class="hl">Hostlio Pro</em>? Otel programı karşılaştırmaları',
   lead="Sabit aylık ücret, rezervasyon komisyonu yok, fiyatlar sitede açık ve her planda WhatsApp'ta AI asistan. Karşılaştırmalarımız rakip bilgisini yalnızca firmaların kendi resmî sayfalarından alır ve tarihlidir.",
-  list_h="Karşılaştırmalar", general="Genel karşılaştırma: Hostlio Pro, HotelRunner, Cloudbeds, Mews ve Amenitiz", prices="Otel programı fiyatları 2026"),
+  list_h="Karşılaştırmalar", general="Genel karşılaştırma: Hostlio Pro, HotelRunner, Elektraweb, Cloudbeds, Mews ve Amenitiz", prices="Otel programı fiyatları 2026"),
 "en": dict(title="Hotel Software Comparisons & Alternatives | Hostlio Pro",
   desc="Compare Hostlio Pro with HotelRunner, Cloudbeds, Amenitiz and HiJiffy: a flat monthly fee, no booking commission and AI on WhatsApp in every plan.",
   crumb="Comparisons", h1='Why <em class="hl">Hostlio Pro</em>? Hotel software comparisons',
   lead="A fixed monthly price, no booking commission, prices on the website and an AI assistant on WhatsApp in every plan. Our comparisons take competitor information only from each company's official pages, and they're dated.",
-  list_h="Comparisons", general="Overview: Hostlio Pro, HotelRunner, Cloudbeds, Mews and Amenitiz"),
+  list_h="Comparisons", general="Overview: Hostlio Pro, HotelRunner, Elektraweb, Cloudbeds, Mews and Amenitiz"),
 "es": dict(title="Comparativas de software hotelero | Hostlio Pro",
   desc="Compara Hostlio Pro con Cloudbeds y otras alternativas: cuota mensual fija, sin comisión por reserva e IA en WhatsApp en todos los planes.",
   crumb="Comparativas", h1='¿Por qué <em class="hl">Hostlio Pro</em>? Comparativas de software hotelero',
@@ -577,7 +628,7 @@ HUB = {
   lead="Un abonnement mensuel fixe, aucune commission sur les réservations, des tarifs publics et un assistant IA sur WhatsApp dans tous les forfaits. Nos comparatifs ne reprennent que les informations publiées par chaque concurrent sur ses pages officielles, et ils sont datés.",
   list_h="Comparatifs", general="Vue d’ensemble : Hostlio Pro, HotelRunner, Cloudbeds, Mews et Amenitiz"),
 }
-HUB_KEYS = ["vs-hotelrunner", "vs-cloudbeds", "alt-cloudbeds", "alt-amenitiz", "alt-hijiffy"]
+HUB_KEYS = ["vs-hotelrunner", "vs-elektraweb", "vs-cloudbeds", "alt-cloudbeds", "alt-amenitiz", "alt-hijiffy"]
 
 # ---------------------------------------------------------------- rendering (mevcut bileşenler: page-hero, support, steps, table-wrap, related-list)
 def _plain(s): return s.replace('<em class="hl">', "").replace("</em>", "")
@@ -629,9 +680,9 @@ def _fit(lang):
     return f'<h2 style="margin-top:64px">{C[lang]["fit_h"]}</h2><div class="answer"><p>{FIT[lang]}</p></div>'
 
 CTA_GAP = ' style="margin-top:32px"'
-def _switch(lang, B, name=None, frm=None):
+def _switch(lang, B, name=None, frm=None, override=None):
     c = C[lang]
-    h = c["switch_h"].format(x=name) if name else c["switch_gen"]
+    h = (override or c["switch_h"].format(x=name)) if name else c["switch_gen"]
     steps = "".join(f'<li><h3>{t}</h3><p>{p.format(frm=frm or FRM[lang])}</p></li>' for t, p in SWITCH[lang])
     return (f'<section class="dark"><div class="wrap"><div class="section-head"><h2>{h}</h2><p>{c["switch_p"]}</p></div>'
             f'<ol class="steps four">{steps}</ol>{_cta(lang, B, CTA_GAP)}</div></section>')
@@ -657,7 +708,7 @@ def vs_page(key, lang, B):
 {calc}{_fit(lang)}
 </div></section>'''
     return (_hero(d, lang, B) + _why(lang, B) + table
-            + _switch(lang, B, None if d.get("gen_switch") else d["name"], d.get("frm")) + _more(key, lang, B))
+            + _switch(lang, B, None if d.get("gen_switch") else d["name"], d.get("frm"), d.get("switch_h")) + _more(key, lang, B))
 
 def alt_page(key, lang, B):
     d = P[key][lang]; c = C[lang]
