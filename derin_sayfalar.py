@@ -63,7 +63,7 @@ def _hostel_en(U):
         ]), "white rule"),
         _sec("Is Hostlio Pro the right hostel software for you?",
             '<p class="lead" style="font-size:var(--t-0);max-width:70ch">We would rather tell you now than after a migration. Hostlio Pro manages availability by room, not by bed.</p>'
-            + _table(["", "Good fit", "Check with us first"], [
+            + _table(["Area", "Good fit", "Check with us first"], [
                 ("Inventory", "Private rooms, family rooms and whole dorm rooms sold as one unit", "Selling single beds in shared dorms as separate inventory is not supported"),
                 ("Bookings", "One room per reservation, from any channel or entered by hand", "Group bookings across several rooms are entered as separate reservations"),
                 ("Size", "1 to 150 rooms, one property or two on Growth", "More than two properties or more than 150 rooms"),
