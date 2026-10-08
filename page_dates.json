@@ -59,6 +59,30 @@
 "d": "2026-10-08",
 "h": "e2a47a36587a"
 },
+"/en/compare/": {
+"d": "2026-10-08",
+"h": "e010b58ff915"
+},
+"/en/compare/amenitiz-alternative/": {
+"d": "2026-10-08",
+"h": "08556b7d2296"
+},
+"/en/compare/cloudbeds-alternatives/": {
+"d": "2026-10-08",
+"h": "e514863c9042"
+},
+"/en/compare/hijiffy-alternative/": {
+"d": "2026-10-08",
+"h": "d8d258391213"
+},
+"/en/compare/hostlio-vs-cloudbeds/": {
+"d": "2026-10-08",
+"h": "f31e51ab6994"
+},
+"/en/compare/hostlio-vs-hotelrunner/": {
+"d": "2026-10-08",
+"h": "b2905f7229a5"
+},
 "/en/contact/": {
 "d": "2026-09-23",
 "h": "9b2a6d6c0df9"
@@ -115,6 +139,18 @@
 "d": "2026-10-04",
 "h": "ec29dcc02df8"
 },
+"/en/tools/": {
+"d": "2026-10-08",
+"h": "d0d20c1f96d6"
+},
+"/en/tools/ota-commission-calculator/": {
+"d": "2026-10-08",
+"h": "4d8776ab0a13"
+},
+"/en/tools/revpar-adr-occupancy-calculator/": {
+"d": "2026-10-08",
+"h": "547a01fc3c67"
+},
 "/es/": {
 "d": "2026-10-08",
 "h": "579aea9cabe7"
@@ -159,6 +195,18 @@
 "d": "2026-10-08",
 "h": "89b589d8ac36"
 },
+"/es/comparativas/": {
+"d": "2026-10-08",
+"h": "9e077998a554"
+},
+"/es/comparativas/alternativas-a-cloudbeds/": {
+"d": "2026-10-08",
+"h": "a988efbb33cd"
+},
+"/es/comparativas/hostlio-vs-cloudbeds/": {
+"d": "2026-10-08",
+"h": "feada8428b54"
+},
 "/es/contacto/": {
 "d": "2026-10-03",
 "h": "1a52cd09700b"
@@ -170,6 +218,18 @@
 "/es/funcionalidades/": {
 "d": "2026-10-08",
 "h": "78691fe6a409"
+},
+"/es/herramientas/": {
+"d": "2026-10-08",
+"h": "85d5ee644967"
+},
+"/es/herramientas/calculadora-comision-ota/": {
+"d": "2026-10-08",
+"h": "e7da200bd5f7"
+},
+"/es/herramientas/calculadora-revpar-adr-ocupacion/": {
+"d": "2026-10-08",
+"h": "6a9c46b708ff"
 },
 "/es/precios/": {
 "d": "2026-10-08",
@@ -259,6 +319,14 @@
 "d": "2026-10-08",
 "h": "9887558e81d5"
 },
+"/fr/comparatifs/": {
+"d": "2026-10-08",
+"h": "73de9463933c"
+},
+"/fr/comparatifs/alternative-amenitiz/": {
+"d": "2026-10-08",
+"h": "db89f88c1c65"
+},
 "/fr/conditions/": {
 "d": "2026-10-04",
 "h": "8cab45e7358b"
@@ -294,6 +362,18 @@
 "/fr/logiciel-residence-hoteliere/": {
 "d": "2026-10-08",
 "h": "b9123bfde0a3"
+},
+"/fr/outils/": {
+"d": "2026-10-08",
+"h": "6da94711652c"
+},
+"/fr/outils/calcul-revpar-adr-taux-occupation/": {
+"d": "2026-10-08",
+"h": "b2dc29e8ff9a"
+},
+"/fr/outils/calculateur-commission-ota/": {
+"d": "2026-10-08",
+"h": "47b61ac9206c"
 },
 "/fr/securite/": {
 "d": "2026-10-08",
@@ -399,6 +479,18 @@
 "d": "2026-10-08",
 "h": "309ecf53718b"
 },
+"/it/strumenti/": {
+"d": "2026-10-08",
+"h": "abdcdcb1f59e"
+},
+"/it/strumenti/calcolatore-commissioni-ota/": {
+"d": "2026-10-08",
+"h": "183ac5bfc71b"
+},
+"/it/strumenti/calcolo-revpar-adr-occupazione/": {
+"d": "2026-10-08",
+"h": "bd544de9cdfa"
+},
 "/it/termini/": {
 "d": "2026-10-04",
 "h": "1e33f96aa489"
@@ -447,6 +539,22 @@
 "d": "2026-10-08",
 "h": "f16041b37a25"
 },
+"/pt/comparativos/": {
+"d": "2026-10-08",
+"h": "a9393a5742ed"
+},
+"/pt/comparativos/alternativa-hijiffy/": {
+"d": "2026-10-08",
+"h": "8cd750855202"
+},
+"/pt/comparativos/alternativas-ao-cloudbeds/": {
+"d": "2026-10-08",
+"h": "9b034d89220c"
+},
+"/pt/comparativos/hostlio-vs-cloudbeds/": {
+"d": "2026-10-08",
+"h": "d64dd727dd90"
+},
 "/pt/contato/": {
 "d": "2026-10-03",
 "h": "33f4e76e082c"
@@ -454,6 +562,18 @@
 "/pt/excluir-conta/": {
 "d": "2026-09-23",
 "h": "86a9ee297df6"
+},
+"/pt/ferramentas/": {
+"d": "2026-10-08",
+"h": "b6dd7414f7d7"
+},
+"/pt/ferramentas/calculadora-comissao-ota/": {
+"d": "2026-10-08",
+"h": "e0cb36551e7d"
+},
+"/pt/ferramentas/calculadora-revpar-adr-ocupacao/": {
+"d": "2026-10-08",
+"h": "a48424506999"
 },
 "/pt/funcionalidades/": {
 "d": "2026-10-08",
@@ -511,13 +631,33 @@
 "d": "2026-10-08",
 "h": "e84b442f027a"
 },
+"/tr/araclar/": {
+"d": "2026-10-08",
+"h": "760db87d1cb6"
+},
+"/tr/araclar/ota-komisyon-hesaplama/": {
+"d": "2026-10-08",
+"h": "df5ddfcb430f"
+},
+"/tr/araclar/revpar-adr-doluluk-hesaplama/": {
+"d": "2026-10-08",
+"h": "3efeecd88485"
+},
 "/tr/blog/": {
 "d": "2026-10-08",
-"h": "9331451d430f"
+"h": "8fae7d9c85d0"
 },
 "/tr/blog/booking-com-mesajlarina-otomatik-cevap/": {
 "d": "2026-10-08",
 "h": "fa4e48356336"
+},
+"/tr/blog/channel-manager-nedir/": {
+"d": "2026-10-08",
+"h": "19a314247920"
+},
+"/tr/blog/kbs-bildirimi-nasil-yapilir/": {
+"d": "2026-10-08",
+"h": "8e49c21fc983"
 },
 "/tr/blog/kucuk-otel-icin-otel-yonetim-yazilimi-secimi/": {
 "d": "2026-09-23",
@@ -526,6 +666,10 @@
 "/tr/blog/otel-misafir-mesajlarini-yapay-zeka-ile-yanitlamak/": {
 "d": "2026-10-03",
 "h": "cf8310f2327e"
+},
+"/tr/blog/otel-programi-fiyatlari-2026/": {
+"d": "2026-10-08",
+"h": "905c3d5a54cf"
 },
 "/tr/blog/overbooking-nasil-onlenir/": {
 "d": "2026-09-23",
@@ -567,6 +711,14 @@
 "d": "2026-10-08",
 "h": "76772024be52"
 },
+"/tr/karsilastirmalar/": {
+"d": "2026-10-08",
+"h": "f4b3ad48727d"
+},
+"/tr/karsilastirmalar/hostlio-vs-hotelrunner/": {
+"d": "2026-10-08",
+"h": "263f037a1e51"
+},
 "/tr/kullanim-sartlari/": {
 "d": "2026-10-04",
 "h": "7f1125115257"
@@ -578,6 +730,10 @@
 "/tr/otel-programi-karsilastirma/": {
 "d": "2026-10-08",
 "h": "2608d1e2ce0b"
+},
+"/tr/otel-whatsapp-asistani/": {
+"d": "2026-10-08",
+"h": "7836799c8928"
 },
 "/tr/ozellikler/": {
 "d": "2026-10-08",
