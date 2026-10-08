@@ -70,7 +70,8 @@ def ai():
 </div></div></section>
 
 <section><div class="wrap">
-<div class="section-head"><h2>Quota de messages IA par forfait</h2><p>Un message correspond à une réponse envoyée par Lio à un client.</p></div>
+<div class="section-head"><figure class="app-shot"><a href="/assets/img/panel-msg-fr.webp"><img src="/assets/img/panel-msg-fr.webp" alt="Boîte de réception Hostlio Pro : Lio répond à un client Booking.com au sujet du transfert" loading="lazy" width="1600" height="998"></a><figcaption>Écran réel du tableau de bord Hostlio Pro (données d’un hôtel de démonstration)</figcaption></figure>
+<h2>Quota de messages IA par forfait</h2><p>Un message correspond à une réponse envoyée par Lio à un client.</p></div>
 <div class="table-wrap"><table><thead><tr><th>Forfait</th><th class="c">Messages IA / mois</th><th>Canaux de messagerie</th></tr></thead><tbody>
 <tr><th>Starter</th><td class="c num">⟦quota:starter⟧</td><td>WhatsApp</td></tr>
 <tr><th>Pro</th><td class="c num">⟦quota:pro⟧</td><td>WhatsApp + messageries OTA (Booking.com, Airbnb, Expedia)</td></tr>
@@ -113,7 +114,8 @@ def channel():
 <div class="row"><h3>Relié à la messagerie</h3><div><p>Les messages des clients ayant réservé via une OTA arrivent dans la boîte de réception de Lio, avec le client, la chambre et les dates à côté de chaque conversation.</p></div></div>
 {FX.channel_rows(L)}
 </div></div></section>
-<section><div class="wrap"><div class="section-head"><h2>Principaux canaux pris en charge</h2><p>La liste suit notre réseau de connexions certifiées. Un canal manque ? Contactez-nous.</p></div>
+<section><div class="wrap"><div class="section-head"><figure class="app-shot"><a href="/assets/img/panel-rack-fr.webp"><img src="/assets/img/panel-rack-fr.webp" alt="Calendrier des chambres Hostlio Pro : Booking.com, Airbnb, Expedia et réservations directes sur un seul calendrier" loading="lazy" width="1600" height="980"></a><figcaption>Écran réel du tableau de bord Hostlio Pro (données d’un hôtel de démonstration)</figcaption></figure>
+<h2>Principaux canaux pris en charge</h2><p>La liste suit notre réseau de connexions certifiées. Un canal manque ? Contactez-nous.</p></div>
 <div class="table-wrap"><table><thead><tr><th>Canal</th><th>Type</th></tr></thead><tbody>
 <tr><th>Booking.com</th><td>OTA</td></tr><tr><th>Airbnb</th><td>Location courte durée</td></tr><tr><th>Expedia, Hotels.com</th><td>OTA</td></tr>
 <tr><th>Agoda, Trip.com</th><td>OTA (orientée Asie)</td></tr><tr><th>Hotelbeds</th><td>Grossiste (bedbank)</td></tr><tr><th>Hostelworld</th><td>Plateforme d'auberges de jeunesse</td></tr><tr><th>Google Hotels</th><td>Métamoteur</td></tr>
@@ -153,7 +155,8 @@ def checkin():
 <div class="row"><h3>Confidentialité dès la conception</h3><div><p>Les données des clients peuvent être supprimées sur demande, et le texte de consentement fait partie du formulaire.</p></div></div>
 <div class="row"><h3>Export pour les déclarations officielles</h3><div><p>Les données collectées peuvent être exportées dans un format utilisable pour les obligations locales d'enregistrement des clients.</p></div></div>
 </div></div></section>
-<section class="dark on-dark"><div class="wrap"><div class="section-head"><h2>Trois étapes pour le client</h2></div>
+<section class="dark on-dark"><div class="wrap"><div class="section-head"><figure class="app-shot"><a href="/assets/img/panel-res-fr.webp"><img src="/assets/img/panel-res-fr.webp" alt="Liste des réservations Hostlio Pro avec le bouton d’export KBS" loading="lazy" width="1600" height="1176"></a><figcaption>Écran réel du tableau de bord Hostlio Pro (données d’un hôtel de démonstration)</figcaption></figure>
+<h2>Trois étapes pour le client</h2></div>
 <ol class="steps"><li><h3>Ouvrir le lien</h3><p>Touchez le lien envoyé après la confirmation de la réservation.</p></li>
 <li><h3>Scanner le document</h3><p>Scannez votre passeport ou votre carte d'identité avec votre téléphone : les champs se remplissent automatiquement et aucune image n'est conservée. Indiquez ensuite vos accompagnants.</p></li>
 <li><h3>Signer</h3><p>Acceptez le règlement intérieur et signez à l'écran. À la réception, il ne reste qu'à récupérer la clé.</p></li></ol>

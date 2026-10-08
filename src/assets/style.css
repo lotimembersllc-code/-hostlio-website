@@ -605,6 +605,9 @@ a.card:hover{transform:translateY(-3px);box-shadow:var(--shadow)}
 .post-cover img[src*="guest-balcony-dusk"]{object-position:50% 40%}
 .post-cover img[src*="overbooking-desk"]{object-position:50% 49%}
 img[src*="about-ledger"]{object-position:50% 68%}
+.app-shot{margin:48px 0 0;max-width:1000px}
+.app-shot img{display:block;width:100%;height:auto;border-radius:18px;border:1px solid var(--line);box-shadow:0 18px 48px rgba(15,30,54,.10);background:#fff}
+.app-shot figcaption{margin-top:10px;font-size:.85rem;color:var(--muted)}
 .page-photo{border-radius:var(--r-xl);overflow:hidden;aspect-ratio:16/9;margin:48px 0 0;max-width:900px}
 .page-photo img{width:100%;height:100%;object-fit:cover;object-position:50% 56%}
 

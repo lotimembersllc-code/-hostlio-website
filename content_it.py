@@ -69,7 +69,8 @@ def ai():
 </div></div></section>
 
 <section><div class="wrap">
-<div class="section-head"><h2>Messaggi AI inclusi per piano</h2><p>Un messaggio corrisponde a una singola risposta che Lio invia a un ospite.</p></div>
+<div class="section-head"><figure class="app-shot"><a href="/assets/img/panel-msg-it.webp"><img src="/assets/img/panel-msg-it.webp" alt="Posta di Hostlio Pro: Lio risponde alla domanda di un ospite Booking.com sul transfer" loading="lazy" width="1600" height="998"></a><figcaption>Schermata reale del pannello Hostlio Pro (dati di un hotel demo)</figcaption></figure>
+<h2>Messaggi AI inclusi per piano</h2><p>Un messaggio corrisponde a una singola risposta che Lio invia a un ospite.</p></div>
 <div class="table-wrap"><table><thead><tr><th>Piano</th><th class="c">Messaggi AI / mese</th><th>Canali di messaggistica</th></tr></thead><tbody>
 <tr><th>Starter</th><td class="c num">⟦quota:starter⟧</td><td>WhatsApp</td></tr>
 <tr><th>Pro</th><td class="c num">⟦quota:pro⟧</td><td>WhatsApp + caselle OTA (Booking.com, Airbnb, Expedia)</td></tr>
@@ -112,7 +113,8 @@ def channel():
 <div class="row"><h3>Collegato alla messaggistica</h3><div><p>I messaggi degli ospiti delle prenotazioni OTA arrivano nella casella di Lio, con ospite, camera e date accanto a ogni conversazione.</p></div></div>
 {FX.channel_rows(L)}
 </div></div></section>
-<section><div class="wrap"><div class="section-head"><h2>Principali canali supportati</h2><p>L'elenco segue la nostra rete di connessioni certificate. Manca un canale? Contattaci.</p></div>
+<section><div class="wrap"><div class="section-head"><figure class="app-shot"><a href="/assets/img/panel-rack-it.webp"><img src="/assets/img/panel-rack-it.webp" alt="Calendario camere di Hostlio Pro: Booking.com, Airbnb, Expedia e prenotazioni dirette in un unico calendario" loading="lazy" width="1600" height="980"></a><figcaption>Schermata reale del pannello Hostlio Pro (dati di un hotel demo)</figcaption></figure>
+<h2>Principali canali supportati</h2><p>L'elenco segue la nostra rete di connessioni certificate. Manca un canale? Contattaci.</p></div>
 <div class="table-wrap"><table><thead><tr><th>Canale</th><th>Tipo</th></tr></thead><tbody>
 <tr><th>Booking.com</th><td>OTA</td></tr><tr><th>Airbnb</th><td>Affitti brevi</td></tr><tr><th>Expedia, Hotels.com</th><td>OTA</td></tr>
 <tr><th>Agoda, Trip.com</th><td>OTA (focus sull'Asia)</td></tr><tr><th>Hotelbeds</th><td>Wholesaler (bedbank)</td></tr><tr><th>Hostelworld</th><td>Marketplace per ostelli</td></tr><tr><th>Google Hotels</th><td>Metamotore</td></tr>
@@ -152,7 +154,8 @@ def checkin():
 <div class="row"><h3>Privacy by design</h3><div><p>I dati degli ospiti possono essere cancellati su richiesta e il testo del consenso fa parte del modulo.</p></div></div>
 <div class="row"><h3>Esportazione per le comunicazioni ufficiali</h3><div><p>I dati raccolti possono essere esportati in un formato utilizzabile per gli obblighi locali di registrazione degli ospiti.</p></div></div>
 </div></div></section>
-<section class="dark on-dark"><div class="wrap"><div class="section-head"><h2>Tre passaggi per l'ospite</h2></div>
+<section class="dark on-dark"><div class="wrap"><div class="section-head"><figure class="app-shot"><a href="/assets/img/panel-res-it.webp"><img src="/assets/img/panel-res-it.webp" alt="Elenco prenotazioni di Hostlio Pro con il pulsante di esportazione KBS" loading="lazy" width="1600" height="1176"></a><figcaption>Schermata reale del pannello Hostlio Pro (dati di un hotel demo)</figcaption></figure>
+<h2>Tre passaggi per l'ospite</h2></div>
 <ol class="steps"><li><h3>Apre il link</h3><p>Apre il link personale ricevuto dopo la conferma della prenotazione (inviato automaticamente via email se l'hotel ha attivato l'opzione, oppure condiviso dall'hotel).</p></li>
 <li><h3>Scansiona il documento</h3><p>Scansiona il passaporto o la carta d'identità con il telefono: i dati si compilano da soli e nessuna immagine viene conservata. Poi indica gli accompagnatori.</p></li>
 <li><h3>Firma</h3><p>Accetta il regolamento della struttura e firma sullo schermo. Alla reception deve solo ritirare la chiave.</p></li></ol>

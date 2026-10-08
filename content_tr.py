@@ -67,7 +67,8 @@ def ai():
 </div></div></section>
 
 <section><div class="wrap">
-<div class="section-head"><h2>Planlara göre AI mesaj kotası</h2><p>Bir mesaj, Lio'nun misafire gönderdiği tek bir yanıttır.</p></div>
+<div class="section-head"><figure class="app-shot"><a href="/assets/img/panel-msg-tr.webp"><img src="/assets/img/panel-msg-tr.webp" alt="Hostlio Pro mesaj kutusu: Lio, Booking.com misafirinin havalimanı transferi sorusunu yanıtlıyor" loading="lazy" width="1600" height="998"></a><figcaption>Hostlio Pro panelinden gerçek ekran (demo otel verisi)</figcaption></figure>
+<h2>Planlara göre AI mesaj kotası</h2><p>Bir mesaj, Lio'nun misafire gönderdiği tek bir yanıttır.</p></div>
 <div class="table-wrap"><table><thead><tr><th>Plan</th><th class="c">Aylık AI mesajı</th><th>Mesaj kanalları</th></tr></thead><tbody>
 <tr><th>Starter</th><td class="c num">⟦quota:starter⟧</td><td>WhatsApp</td></tr>
 <tr><th>Pro</th><td class="c num">⟦quota:pro⟧</td><td>WhatsApp + OTA gelen kutuları (Booking.com, Airbnb, Expedia)</td></tr>
@@ -110,7 +111,8 @@ def channel():
 <div class="row"><h3>Mesajlarla entegre</h3><div><p>OTA'dan gelen rezervasyonun misafir mesajları da Lio'nun gelen kutusuna bağlanır; kim, hangi oda, hangi tarih bilgisi her yazışmanın yanındadır.</p></div></div>
 {FX.channel_rows(L)}
 </div></div></section>
-<section><div class="wrap"><div class="section-head"><h2>Desteklenen başlıca kanallar</h2><p>Liste sertifikalı bağlantı ağımıza göre güncellenir; burada olmayan bir kanal için bize yazın.</p></div>
+<section><div class="wrap"><div class="section-head"><figure class="app-shot"><a href="/assets/img/panel-rack-tr.webp"><img src="/assets/img/panel-rack-tr.webp" alt="Hostlio Pro oda takvimi: Booking.com, Airbnb, Expedia ve doğrudan rezervasyonlar tek takvimde" loading="lazy" width="1600" height="980"></a><figcaption>Hostlio Pro panelinden gerçek ekran (demo otel verisi)</figcaption></figure>
+<h2>Desteklenen başlıca kanallar</h2><p>Liste sertifikalı bağlantı ağımıza göre güncellenir; burada olmayan bir kanal için bize yazın.</p></div>
 <div class="table-wrap"><table><thead><tr><th>Kanal</th><th>Tür</th></tr></thead><tbody>
 <tr><th>Booking.com</th><td>OTA</td></tr><tr><th>Airbnb</th><td>Kısa dönem kiralama</td></tr><tr><th>Expedia, Hotels.com</th><td>OTA</td></tr>
 <tr><th>Agoda, Trip.com</th><td>OTA (Asya ağırlıklı)</td></tr><tr><th>Hotelbeds</th><td>Toptancı (bedbank)</td></tr><tr><th>Hostelworld</th><td>Hostel pazaryeri</td></tr><tr><th>Google Hotels</th><td>Metasearch</td></tr>
@@ -150,7 +152,8 @@ def checkin():
 <div class="row"><h3>Kişisel verilere saygı</h3><div><p>Misafir verileri talep üzerine silinebilir. Açık rıza metni formun parçasıdır.</p></div></div>
 <div class="row"><h3>Resmî bildirim için dışa aktarma</h3><div><p>Toplanan misafir bilgileri, yasal konaklama bildirimlerinizde kullanabileceğiniz formatta dışa aktarılır.</p></div></div>
 </div></div></section>
-<section class="dark on-dark"><div class="wrap"><div class="section-head"><h2>Misafir tarafında üç adım</h2></div>
+<section class="dark on-dark"><div class="wrap"><div class="section-head"><figure class="app-shot"><a href="/assets/img/panel-res-tr.webp"><img src="/assets/img/panel-res-tr.webp" alt="Hostlio Pro rezervasyon listesi ve KBS dışa aktarma düğmesi" loading="lazy" width="1600" height="1176"></a><figcaption>Hostlio Pro panelinden gerçek ekran (demo otel verisi)</figcaption></figure>
+<h2>Misafir tarafında üç adım</h2></div>
 <ol class="steps"><li><h3>Bağlantıyı açar</h3><p>Rezervasyon onayından sonra gelen kişisel bağlantıyı açar (otel bu seçeneği açtıysa otomatik e-postayla gelir; açmadıysa bağlantıyı otel paylaşır).</p></li>
 <li><h3>Belgesini tarar</h3><p>Pasaportunu ya da kimliğini telefonuyla tarar; bilgiler otomatik dolar, görüntü saklanmaz. Ardından refakatçileri girer.</p></li>
 <li><h3>İmzalar</h3><p>Otel kurallarını onaylayıp ekranda imzalar. Resepsiyona sadece anahtar almaya gelir.</p></li></ol>

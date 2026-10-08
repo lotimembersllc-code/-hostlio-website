@@ -69,7 +69,8 @@ def ai():
 </div></div></section>
 
 <section><div class="wrap">
-<div class="section-head"><h2>Cota de mensagens de IA por plano</h2><p>Uma mensagem é uma única resposta que o Lio envia a um hóspede.</p></div>
+<div class="section-head"><figure class="app-shot"><a href="/assets/img/panel-msg-pt.webp"><img src="/assets/img/panel-msg-pt.webp" alt="Caixa de entrada do Hostlio Pro: o Lio responde a pergunta de um hóspede do Booking.com sobre transfer" loading="lazy" width="1600" height="998"></a><figcaption>Tela real do painel do Hostlio Pro (dados de um hotel de demonstração)</figcaption></figure>
+<h2>Cota de mensagens de IA por plano</h2><p>Uma mensagem é uma única resposta que o Lio envia a um hóspede.</p></div>
 <div class="table-wrap"><table><thead><tr><th>Plano</th><th class="c">Mensagens de IA / mês</th><th>Canais de mensagens</th></tr></thead><tbody>
 <tr><th>Starter</th><td class="c num">⟦quota:starter⟧</td><td>WhatsApp</td></tr>
 <tr><th>Pro</th><td class="c num">⟦quota:pro⟧</td><td>WhatsApp + caixas de entrada das OTAs (Booking.com, Airbnb, Expedia)</td></tr>
@@ -112,7 +113,8 @@ def channel():
 <div class="row"><h3>Integrado às mensagens</h3><div><p>As mensagens dos hóspedes de reservas das OTAs chegam à caixa de entrada do Lio com o hóspede, o quarto e as datas ao lado de cada conversa.</p></div></div>
 {FX.channel_rows(L)}
 </div></div></section>
-<section><div class="wrap"><div class="section-head"><h2>Principais canais compatíveis</h2><p>A lista segue a nossa rede de conexões certificadas. Sentiu falta de algum canal? Fale com a gente.</p></div>
+<section><div class="wrap"><div class="section-head"><figure class="app-shot"><a href="/assets/img/panel-rack-pt.webp"><img src="/assets/img/panel-rack-pt.webp" alt="Calendário de quartos do Hostlio Pro: Booking.com, Airbnb, Expedia e reservas diretas em um calendário" loading="lazy" width="1600" height="980"></a><figcaption>Tela real do painel do Hostlio Pro (dados de um hotel de demonstração)</figcaption></figure>
+<h2>Principais canais compatíveis</h2><p>A lista segue a nossa rede de conexões certificadas. Sentiu falta de algum canal? Fale com a gente.</p></div>
 <div class="table-wrap"><table><thead><tr><th>Canal</th><th>Tipo</th></tr></thead><tbody>
 <tr><th>Booking.com</th><td>OTA</td></tr><tr><th>Airbnb</th><td>Aluguel por temporada</td></tr><tr><th>Expedia, Hotels.com</th><td>OTA</td></tr>
 <tr><th>Agoda, Trip.com</th><td>OTA (foco na Ásia)</td></tr><tr><th>Hotelbeds</th><td>Atacadista (bedbank)</td></tr><tr><th>Hostelworld</th><td>Marketplace de hostels</td></tr><tr><th>Google Hotels</th><td>Metabuscador</td></tr>
@@ -152,7 +154,8 @@ def checkin():
 <div class="row"><h3>Privacidade desde a concepção</h3><div><p>Os dados dos hóspedes podem ser excluídos mediante solicitação, e o texto de consentimento faz parte do formulário.</p></div></div>
 <div class="row"><h3>Exportação para registros oficiais</h3><div><p>Os dados coletados dos hóspedes podem ser exportados em um formato que você pode usar para as exigências locais de registro de hóspedes.</p></div></div>
 </div></div></section>
-<section class="dark on-dark"><div class="wrap"><div class="section-head"><h2>Três passos para o hóspede</h2></div>
+<section class="dark on-dark"><div class="wrap"><div class="section-head"><figure class="app-shot"><a href="/assets/img/panel-res-pt.webp"><img src="/assets/img/panel-res-pt.webp" alt="Lista de reservas do Hostlio Pro com o botão de exportação KBS" loading="lazy" width="1600" height="1176"></a><figcaption>Tela real do painel do Hostlio Pro (dados de um hotel de demonstração)</figcaption></figure>
+<h2>Três passos para o hóspede</h2></div>
 <ol class="steps"><li><h3>Abrir o link</h3><p>Abrir o link pessoal recebido após a confirmação da reserva (enviado automaticamente por e-mail se o hotel ativou essa opção, ou compartilhado pelo hotel).</p></li>
 <li><h3>Escanear o documento</h3><p>Escanear o passaporte ou a identidade com o celular: os dados são preenchidos automaticamente e nenhuma imagem é guardada. Depois, informar os acompanhantes.</p></li>
 <li><h3>Assinar</h3><p>Aceitar as regras da casa e assinar na tela. Na recepção, é só pegar a chave.</p></li></ol>

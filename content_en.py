@@ -64,7 +64,8 @@ def ai():
 </div></div></section>
 
 <section><div class="wrap">
-<div class="section-head"><h2>AI message quota by plan</h2><p>One message is a single reply Lio sends to a guest.</p></div>
+<div class="section-head"><figure class="app-shot"><a href="/assets/img/panel-msg-en.webp"><img src="/assets/img/panel-msg-en.webp" alt="Hostlio Pro inbox: Lio answers a Booking.com guest's airport transfer question" loading="lazy" width="1600" height="998"></a><figcaption>A real screen from the Hostlio Pro dashboard (demo hotel data)</figcaption></figure>
+<h2>AI message quota by plan</h2><p>One message is a single reply Lio sends to a guest.</p></div>
 <div class="table-wrap"><table><thead><tr><th>Plan</th><th class="c">AI messages / month</th><th>Messaging channels</th></tr></thead><tbody>
 <tr><th>Starter</th><td class="c num">⟦quota:starter⟧</td><td>WhatsApp</td></tr>
 <tr><th>Pro</th><td class="c num">⟦quota:pro⟧</td><td>WhatsApp + OTA inboxes (Booking.com, Airbnb, Expedia)</td></tr>
@@ -107,7 +108,8 @@ def channel():
 <div class="row"><h3>Connected to messaging</h3><div><p>Guest messages for OTA bookings land in Lio's inbox with the guest, room and dates alongside every conversation.</p></div></div>
 {FX.channel_rows(L)}
 </div></div></section>
-<section><div class="wrap"><div class="section-head"><h2>Main supported channels</h2><p>The list follows our certified connection network. Missing a channel? Get in touch.</p></div>
+<section><div class="wrap"><div class="section-head"><figure class="app-shot"><a href="/assets/img/panel-rack-en.webp"><img src="/assets/img/panel-rack-en.webp" alt="Hostlio Pro room calendar: Booking.com, Airbnb, Expedia and direct bookings on one calendar" loading="lazy" width="1600" height="980"></a><figcaption>A real screen from the Hostlio Pro dashboard (demo hotel data)</figcaption></figure>
+<h2>Main supported channels</h2><p>The list follows our certified connection network. Missing a channel? Get in touch.</p></div>
 <div class="table-wrap"><table><thead><tr><th>Channel</th><th>Type</th></tr></thead><tbody>
 <tr><th>Booking.com</th><td>OTA</td></tr><tr><th>Airbnb</th><td>Short-term rental</td></tr><tr><th>Expedia, Hotels.com</th><td>OTA</td></tr>
 <tr><th>Agoda, Trip.com</th><td>OTA (Asia-focused)</td></tr><tr><th>Hotelbeds</th><td>Wholesaler (bedbank)</td></tr><tr><th>Hostelworld</th><td>Hostel marketplace</td></tr><tr><th>Google Hotels</th><td>Metasearch</td></tr>
@@ -147,7 +149,8 @@ def checkin():
 <div class="row"><h3>Privacy by design</h3><div><p>Guest data can be deleted on request, and the consent text is part of the form.</p></div></div>
 <div class="row"><h3>Export for official reporting</h3><div><p>Collected guest details can be exported in a format you can use for local guest registration requirements.</p></div></div>
 </div></div></section>
-<section class="dark on-dark"><div class="wrap"><div class="section-head"><h2>Three steps for the guest</h2></div>
+<section class="dark on-dark"><div class="wrap"><div class="section-head"><figure class="app-shot"><a href="/assets/img/panel-res-en.webp"><img src="/assets/img/panel-res-en.webp" alt="Hostlio Pro reservation list with the KBS export button" loading="lazy" width="1600" height="1176"></a><figcaption>A real screen from the Hostlio Pro dashboard (demo hotel data)</figcaption></figure>
+<h2>Three steps for the guest</h2></div>
 <ol class="steps"><li><h3>Open the link</h3><p>Open the personal link received after the booking is confirmed (sent automatically by email if the hotel has turned this on, or shared by the hotel).</p></li>
 <li><h3>Scan the document</h3><p>Scan the passport or ID card with the phone: the details fill in automatically and no image is stored. Then list accompanying guests.</p></li>
 <li><h3>Sign</h3><p>Accept house rules and sign on screen. At reception, just pick up the key.</p></li></ol>

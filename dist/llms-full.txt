@@ -403,6 +403,8 @@ Pro ve Growth'ta Lio, misafir yorumlarında ve mesajlarında tekrar eden şikây
 ## Kontrol sizde
 İlk günlerde Lio'nun cevaplarını göndermeden önce onaylayabilirsiniz. Hangi konuları kendisi kapatacağını, hangilerini size devredeceğini siz belirlersiniz.
 
+Hostlio Pro panelinden gerçek ekran (demo otel verisi)
+
 ## Planlara göre AI mesaj kotası
 Bir mesaj, Lio'nun misafire gönderdiği tek bir yanıttır.
 
@@ -475,6 +477,8 @@ Arıza nedeniyle oda servis dışı yapılınca bağlı tüm kanallarda müsaitl
 
 ## Mevcut rezervasyonlarınızı getirin
 Eski programınızdaki rezervasyonları CSV ya da Excel dosyasıyla yükleyin. Sütunlar otomatik eşlenir, mükerrerler atlanır, sorunlu satırlar nedeniyle listelenir.
+
+Hostlio Pro panelinden gerçek ekran (demo otel verisi)
 
 ## Desteklenen başlıca kanallar
 Liste sertifikalı bağlantı ağımıza göre güncellenir; burada olmayan bir kanal için bize yazın.
@@ -628,6 +632,8 @@ Misafir verileri talep üzerine silinebilir. Açık rıza metni formun parçası
 
 ## Resmî bildirim için dışa aktarma
 Toplanan misafir bilgileri, yasal konaklama bildirimlerinizde kullanabileceğiniz formatta dışa aktarılır.
+
+Hostlio Pro panelinden gerçek ekran (demo otel verisi)
 
 ## Misafir tarafında üç adım
 
@@ -3350,6 +3356,8 @@ On Pro and Growth, Lio summarises recurring complaint and praise themes from gue
 ## You stay in control
 During the first days you can approve Lio's replies before they're sent. You decide which topics Lio closes on its own and which it hands to you.
 
+A real screen from the Hostlio Pro dashboard (demo hotel data)
+
 ## AI message quota by plan
 One message is a single reply Lio sends to a guest.
 
@@ -3422,6 +3430,8 @@ When a room is taken out of order because of a fault, availability drops on ever
 
 ## Bring your existing bookings
 Upload the reservations from your old system as CSV or Excel. Columns are matched automatically, duplicates are skipped and problem rows are listed with the reason.
+
+A real screen from the Hostlio Pro dashboard (demo hotel data)
 
 ## Main supported channels
 The list follows our certified connection network. Missing a channel? Get in touch.
@@ -3561,6 +3571,8 @@ Guest data can be deleted on request, and the consent text is part of the form.
 
 ## Export for official reporting
 Collected guest details can be exported in a format you can use for local guest registration requirements.
+
+A real screen from the Hostlio Pro dashboard (demo hotel data)
 
 ## Three steps for the guest
 
@@ -6869,6 +6881,8 @@ En Pro y Growth, Lio resume los temas de queja y de elogio que se repiten en las
 ## Tú mantienes el control
 Durante los primeros días puedes aprobar las respuestas de Lio antes de que se envíen. Tú decides qué temas cierra Lio por su cuenta y cuáles te pasa a ti.
 
+Pantalla real del panel de Hostlio Pro (datos de un hotel de demostración)
+
 ## Cuota de mensajes de IA por plan
 Un mensaje es una sola respuesta que Lio envía a un huésped.
 
@@ -6941,6 +6955,8 @@ Cuando una habitación queda fuera de servicio por una avería, la disponibilida
 
 ## Trae tus reservas actuales
 Sube las reservas de tu sistema anterior en CSV o Excel. Las columnas se asignan automáticamente, los duplicados se omiten y las filas con problemas aparecen con el motivo.
+
+Pantalla real del panel de Hostlio Pro (datos de un hotel de demostración)
 
 ## Principales canales compatibles
 La lista sigue nuestra red de conexiones certificadas. ¿Echas en falta algún canal? Escríbenos.
@@ -7076,6 +7092,8 @@ Los datos de los huéspedes pueden eliminarse a petición, y el texto de consent
 
 ## Exportación para comunicaciones oficiales
 Los datos recogidos de los huéspedes pueden exportarse en un formato útil para cumplir los requisitos locales de registro de viajeros.
+
+Pantalla real del panel de Hostlio Pro (datos de un hotel de demostración)
 
 ## Tres pasos para el huésped
 
@@ -9588,6 +9606,8 @@ Con Pro e Growth, Lio riassume i temi di lamentela e di apprezzamento che ricorr
 ## Il controllo resta a te
 Nei primi giorni puoi approvare le risposte di Lio prima che vengano inviate. Decidi tu quali argomenti Lio chiude da solo e quali passa a te.
 
+Schermata reale del pannello Hostlio Pro (dati di un hotel demo)
+
 ## Messaggi AI inclusi per piano
 Un messaggio corrisponde a una singola risposta che Lio invia a un ospite.
 
@@ -9660,6 +9680,8 @@ Quando una camera va fuori servizio per un guasto, la disponibilità scende su t
 
 ## Porta le prenotazioni esistenti
 Carica le prenotazioni del vecchio gestionale in CSV o Excel. Le colonne vengono abbinate automaticamente, i duplicati saltati e le righe con problemi elencate con il motivo.
+
+Schermata reale del pannello Hostlio Pro (dati di un hotel demo)
 
 ## Principali canali supportati
 L'elenco segue la nostra rete di connessioni certificate. Manca un canale? Contattaci.
@@ -9804,6 +9826,8 @@ I dati degli ospiti possono essere cancellati su richiesta e il testo del consen
 
 ## Esportazione per le comunicazioni ufficiali
 I dati raccolti possono essere esportati in un formato utilizzabile per gli obblighi locali di registrazione degli ospiti.
+
+Schermata reale del pannello Hostlio Pro (dati di un hotel demo)
 
 ## Tre passaggi per l'ospite
 
@@ -12157,6 +12181,8 @@ Nos planos Pro e Growth, o Lio resume os temas de reclamação e de elogio que s
 ## Você mantém o controle
 Nos primeiros dias, você pode aprovar as respostas do Lio antes do envio. Você decide quais assuntos o Lio resolve sozinho e quais ele repassa para você.
 
+Tela real do painel do Hostlio Pro (dados de um hotel de demonstração)
+
 ## Cota de mensagens de IA por plano
 Uma mensagem é uma única resposta que o Lio envia a um hóspede.
 
@@ -12229,6 +12255,8 @@ Quando um quarto fica fora de serviço por um problema, a disponibilidade cai em
 
 ## Traga suas reservas atuais
 Envie as reservas do sistema antigo em CSV ou Excel. As colunas são associadas automaticamente, duplicatas são ignoradas e linhas com problema aparecem com o motivo.
+
+Tela real do painel do Hostlio Pro (dados de um hotel de demonstração)
 
 ## Principais canais compatíveis
 A lista segue a nossa rede de conexões certificadas. Sentiu falta de algum canal? Fale com a gente.
@@ -12364,6 +12392,8 @@ Os dados dos hóspedes podem ser excluídos mediante solicitação, e o texto de
 
 ## Exportação para registros oficiais
 Os dados coletados dos hóspedes podem ser exportados em um formato que você pode usar para as exigências locais de registro de hóspedes.
+
+Tela real do painel do Hostlio Pro (dados de um hotel de demonstração)
 
 ## Três passos para o hóspede
 
@@ -14848,6 +14878,8 @@ Avec Pro et Growth, Lio résume les sujets de plainte et de satisfaction qui rev
 ## Vous gardez la main
 Les premiers jours, vous pouvez valider les réponses de Lio avant leur envoi. Vous décidez quels sujets Lio traite seul et lesquels il vous transmet.
 
+Écran réel du tableau de bord Hostlio Pro (données d’un hôtel de démonstration)
+
 ## Quota de messages IA par forfait
 Un message correspond à une réponse envoyée par Lio à un client.
 
@@ -14920,6 +14952,8 @@ Quand une chambre passe hors service à cause d’une panne, la disponibilité b
 
 ## Reprenez vos réservations existantes
 Importez les réservations de votre ancien logiciel en CSV ou Excel. Les colonnes sont associées automatiquement, les doublons ignorés et les lignes posant problème listées avec la raison.
+
+Écran réel du tableau de bord Hostlio Pro (données d’un hôtel de démonstration)
 
 ## Principaux canaux pris en charge
 La liste suit notre réseau de connexions certifiées. Un canal manque ? Contactez-nous.
@@ -15066,6 +15100,8 @@ Les données des clients peuvent être supprimées sur demande, et le texte de c
 
 ## Export pour les déclarations officielles
 Les données collectées peuvent être exportées dans un format utilisable pour les obligations locales d'enregistrement des clients.
+
+Écran réel du tableau de bord Hostlio Pro (données d’un hôtel de démonstration)
 
 ## Trois étapes pour le client
 
