@@ -93,7 +93,7 @@ HOME = dict(
   sup=[("rocket-launch","t-peach","Cuenta en minutos, canales el mismo día","Tu cuenta está lista en minutos; añade los tipos de habitación y conecta los canales el mismo día. El plan Growth incluye una llamada de puesta en marcha personalizada."),
        ("lifebuoy","t-lilac","Soporte en inglés y turco",'¿Te has atascado con algo? Escribe al equipo a <a href="mailto:{e}">{e}</a>.'),
        ("book-open-text","t-sand","Guías",'<a href="{b}">Artículos del blog</a> sobre gestión hotelera y distribución, además de <a href="{f}">preguntas frecuentes</a>.')],
-  sup_img=("gen-support-call","Propietario de un hotel revisando las reservas en su portátil"),
+  sup_img=("owner-video-call","Propietaria de un hotel en una videollamada de configuración con auriculares, tomando notas"),
 )
 
 # ------------------------------------------------------------------ pages_v4 labels

@@ -59,7 +59,7 @@ T = {
   sup=[("rocket-launch","t-peach","Dakikalar içinde hesap, aynı gün kanal","Hesabınız dakikalar içinde hazır; oda tiplerini girip kanalları aynı gün bağlayın. Growth planında birebir kurulum görüşmesi dahil."),
        ("lifebuoy","t-lilac","Türkçe ve İngilizce destek",'Takıldığınız yerde ekibe <a href="mailto:{e}">{e}</a> adresinden ulaşın.'),
        ("book-open-text","t-sand","Rehberler",'Otel yönetimi ve dağıtım üzerine <a href="{b}">blog yazıları</a> ve <a href="{f}">sık sorulan sorular</a>.')],
-  sup_img=("gen-support-call","Dizüstü bilgisayarında rezervasyonlara bakan otel işletmecisi"),
+  sup_img=("owner-video-call","Kulaklığıyla görüntülü kurulum görüşmesi yaparken not alan otel işletmecisi"),
 ),
 "en": dict(
   title="Hostlio Pro | AI Hotel Management for Independent Hotels",
@@ -114,7 +114,7 @@ T = {
   sup=[("rocket-launch","t-peach","Ready in minutes, live the same day","Your account is ready in minutes; add room types and connect channels the same day. Growth includes a one-to-one onboarding call."),
        ("lifebuoy","t-lilac","Support in English and Turkish",'Stuck on something? Reach the team at <a href="mailto:{e}">{e}</a>.'),
        ("book-open-text","t-sand","Guides",'<a href="{b}">Blog posts</a> on hotel management and distribution, plus <a href="{f}">frequently asked questions</a>.')],
-  sup_img=("gen-support-call","Hotel owner checking bookings on a laptop"),
+  sup_img=("owner-video-call","A hotel owner on a setup video call with earbuds, taking notes"),
 ),
 }
 
