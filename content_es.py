@@ -305,7 +305,7 @@ def blog():
     return {"key":"blog","title":"Blog: guías para hoteles independientes | Hostlio Pro","desc":"Guías prácticas para hoteleros independientes sobre gestión hotelera, channel manager, distribución en OTAs y comunicación con huéspedes mediante IA.",
             "trail":[("Blog", U("blog"))],"body":body,"page_type":"CollectionPage"}
 
-COVERS={"post-ai":("gen-checkin-phone",1080,1350),"post-pms":("gen-owner-laptop",1080,1350),"post-overbooking":("gen-reception",1080,1350),"post-autoreply":("gen-night-desk",1080,1350)}
+COVERS={"post-ai":("gen-checkin-phone",1080,1350),"post-pms":("gen-owner-laptop",1080,1350),"post-overbooking":("gen-reception",1080,1350),"post-autoreply":("guest-balcony-dusk",1080,1341)}
 COVERS.update(_gi.COVER)
 def article(meta, content, faq=None):
     art = {"@type":"BlogPosting","headline":meta["title"],"description":meta["desc"],"datePublished":meta["date"],"inLanguage":L,"author":{"@type":"Organization","name":"Equipo de producto de Hostlio Pro","url":SITE+U("about")},"dateModified":UPDATED,"publisher":{"@id":SITE+"/#org"},

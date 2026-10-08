@@ -301,7 +301,7 @@ def blog():
     return {"key":"blog","title":"Blog: Guides for Independent Hotels | Hostlio Pro","desc":"Practical guides for independent hoteliers on hotel management, channel management, OTA distribution and AI guest communication.",
             "trail":[("Blog", U("blog"))],"body":body,"page_type":"CollectionPage"}
 
-COVERS={"post-ai":("gen-checkin-phone",1080,1350),"post-pms":("gen-owner-laptop",1080,1350),"post-overbooking":("gen-reception",1080,1350),"post-autoreply":("gen-night-desk",1080,1350)}
+COVERS={"post-ai":("gen-checkin-phone",1080,1350),"post-pms":("gen-owner-laptop",1080,1350),"post-overbooking":("gen-reception",1080,1350),"post-autoreply":("guest-balcony-dusk",1080,1341)}
 COVERS.update(_gi.COVER)
 import legal_v5 as _lg
 COVERS.update(_lg.LEGACY_COVER)
