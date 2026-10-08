@@ -1,7 +1,7 @@
 {
 "/en/": {
 "d": "2026-10-08",
-"h": "4c4a77351268"
+"h": "41e48fb52c10"
 },
 "/en/about/": {
 "d": "2026-09-23",
@@ -16,16 +16,16 @@
 "h": "8b083229a9ac"
 },
 "/en/blog/": {
-"d": "2026-10-03",
-"h": "67f247e8f079"
+"d": "2026-10-08",
+"h": "98c47d4a25f4"
 },
 "/en/blog/answering-hotel-guest-messages-with-ai/": {
 "d": "2026-09-23",
 "h": "ab8d1f11aa70"
 },
 "/en/blog/auto-reply-booking-com-messages/": {
-"d": "2026-09-23",
-"h": "524145fb6524"
+"d": "2026-10-08",
+"h": "1f30d1360295"
 },
 "/en/blog/choosing-hotel-management-software-small-hotel/": {
 "d": "2026-10-03",
@@ -88,8 +88,8 @@
 "h": "2c5a0d2b8373"
 },
 "/en/hotel-software-comparison/": {
-"d": "2026-10-03",
-"h": "fdb738feccf6"
+"d": "2026-10-08",
+"h": "22822008a60e"
 },
 "/en/online-check-in/": {
 "d": "2026-10-08",
@@ -108,8 +108,8 @@
 "h": "6376decbccb9"
 },
 "/en/security/": {
-"d": "2026-10-04",
-"h": "2ad02eaa0921"
+"d": "2026-10-08",
+"h": "1db9a8e2dfaf"
 },
 "/en/terms/": {
 "d": "2026-10-04",
@@ -117,19 +117,19 @@
 },
 "/es/": {
 "d": "2026-10-08",
-"h": "893a10a66683"
+"h": "42c97bc171d5"
 },
 "/es/asistente-ia-para-huespedes/": {
 "d": "2026-10-08",
 "h": "8cf7aab5fc16"
 },
 "/es/blog/": {
-"d": "2026-10-03",
-"h": "afb5f6decba0"
+"d": "2026-10-08",
+"h": "478914671d2a"
 },
 "/es/blog/como-elegir-software-de-gestion-hotelera-hotel-pequeno/": {
-"d": "2026-10-03",
-"h": "dc7688874c5a"
+"d": "2026-10-08",
+"h": "431cfff3ea43"
 },
 "/es/blog/como-evitar-el-overbooking/": {
 "d": "2026-10-03",
@@ -140,8 +140,8 @@
 "h": "6f99a323e40b"
 },
 "/es/blog/respuesta-automatica-mensajes-booking-com/": {
-"d": "2026-10-03",
-"h": "894f289d65e1"
+"d": "2026-10-08",
+"h": "59ebf308b429"
 },
 "/es/calculadora-roi/": {
 "d": "2026-10-03",
@@ -156,8 +156,8 @@
 "h": "a1df8c6ea23a"
 },
 "/es/comparativa-software-hotelero/": {
-"d": "2026-10-03",
-"h": "44233e974b86"
+"d": "2026-10-08",
+"h": "89b589d8ac36"
 },
 "/es/contacto/": {
 "d": "2026-10-03",
@@ -184,8 +184,8 @@
 "h": "d65aaa717d88"
 },
 "/es/seguridad/": {
-"d": "2026-10-04",
-"h": "9feadf6cbf2a"
+"d": "2026-10-08",
+"h": "d5b121e21970"
 },
 "/es/sobre-nosotros/": {
 "d": "2026-09-23",
@@ -213,7 +213,7 @@
 },
 "/fr/": {
 "d": "2026-10-08",
-"h": "eebf12867cbb"
+"h": "c0608ccb22b6"
 },
 "/fr/a-propos/": {
 "d": "2026-10-03",
@@ -224,12 +224,12 @@
 "h": "c5d69a4024de"
 },
 "/fr/blog/": {
-"d": "2026-10-03",
-"h": "88b72be11cc2"
+"d": "2026-10-08",
+"h": "0f933ca18475"
 },
 "/fr/blog/choisir-logiciel-gestion-hoteliere-petit-hotel/": {
-"d": "2026-10-03",
-"h": "99e74efc1266"
+"d": "2026-10-08",
+"h": "be0f59f34d4c"
 },
 "/fr/blog/comment-eviter-le-surbooking/": {
 "d": "2026-09-23",
@@ -240,8 +240,8 @@
 "h": "7e5f8a92caad"
 },
 "/fr/blog/reponse-automatique-messages-booking-com/": {
-"d": "2026-10-03",
-"h": "309391eaf7f9"
+"d": "2026-10-08",
+"h": "390dca87bda2"
 },
 "/fr/calculateur-roi/": {
 "d": "2026-10-03",
@@ -256,8 +256,8 @@
 "h": "1472e8b4409a"
 },
 "/fr/comparatif-logiciels-hoteliers/": {
-"d": "2026-10-03",
-"h": "9d775caa0c31"
+"d": "2026-10-08",
+"h": "9887558e81d5"
 },
 "/fr/conditions/": {
 "d": "2026-10-04",
@@ -296,8 +296,8 @@
 "h": "b9123bfde0a3"
 },
 "/fr/securite/": {
-"d": "2026-10-04",
-"h": "57428f265cfd"
+"d": "2026-10-08",
+"h": "7ce7de5c6493"
 },
 "/fr/supprimer-compte/": {
 "d": "2026-09-23",
@@ -305,35 +305,35 @@
 },
 "/fr/tarifs/": {
 "d": "2026-10-08",
-"h": "d437850b7877"
+"h": "1a5aa67c265b"
 },
 "/it/": {
 "d": "2026-10-08",
-"h": "be9d624d7708"
+"h": "db79c0eee045"
 },
 "/it/assistente-ai-ospiti/": {
 "d": "2026-10-08",
 "h": "ba98904a04ec"
 },
 "/it/blog/": {
-"d": "2026-10-03",
-"h": "1ad0239a5e88"
+"d": "2026-10-08",
+"h": "a11107026b85"
 },
 "/it/blog/come-evitare-overbooking/": {
 "d": "2026-09-23",
 "h": "3c036e6f6baf"
 },
 "/it/blog/come-scegliere-gestionale-per-hotel-piccolo/": {
-"d": "2026-10-03",
-"h": "9e4eeb6fca97"
+"d": "2026-10-08",
+"h": "7266bcddf6b4"
 },
 "/it/blog/rispondere-ai-messaggi-degli-ospiti-con-ai/": {
 "d": "2026-10-03",
 "h": "b2e23d5b66c2"
 },
 "/it/blog/risposta-automatica-messaggi-booking-com/": {
-"d": "2026-10-03",
-"h": "627cd091fbbf"
+"d": "2026-10-08",
+"h": "20db89e172c8"
 },
 "/it/calcolatore-roi/": {
 "d": "2026-10-03",
@@ -352,8 +352,8 @@
 "h": "8757e0526433"
 },
 "/it/confronto-gestionali-hotel/": {
-"d": "2026-10-03",
-"h": "7320be74bd7a"
+"d": "2026-10-08",
+"h": "3e081289abc2"
 },
 "/it/contatti/": {
 "d": "2026-10-03",
@@ -396,8 +396,8 @@
 "h": "c65411eb6925"
 },
 "/it/sicurezza/": {
-"d": "2026-10-04",
-"h": "9cf574a40779"
+"d": "2026-10-08",
+"h": "73a94d79ffac"
 },
 "/it/termini/": {
 "d": "2026-10-04",
@@ -405,15 +405,15 @@
 },
 "/pt/": {
 "d": "2026-10-08",
-"h": "70d870de9ba6"
+"h": "4d6e704c9402"
 },
 "/pt/assistente-ia-para-hospedes/": {
 "d": "2026-10-08",
 "h": "d7ce2e15a93a"
 },
 "/pt/blog/": {
-"d": "2026-10-03",
-"h": "a275ec11a548"
+"d": "2026-10-08",
+"h": "9093ba820c5f"
 },
 "/pt/blog/como-escolher-sistema-para-hotel-pequeno/": {
 "d": "2026-10-03",
@@ -428,8 +428,8 @@
 "h": "cb46d89f1381"
 },
 "/pt/blog/resposta-automatica-mensagens-booking-com/": {
-"d": "2026-10-03",
-"h": "6a0716c1a1dd"
+"d": "2026-10-08",
+"h": "82a5ec9f8777"
 },
 "/pt/calculadora-roi/": {
 "d": "2026-10-03",
@@ -444,8 +444,8 @@
 "h": "964e1820bd44"
 },
 "/pt/comparativo-sistemas-para-hotel/": {
-"d": "2026-10-03",
-"h": "6d7852729429"
+"d": "2026-10-08",
+"h": "f16041b37a25"
 },
 "/pt/contato/": {
 "d": "2026-10-03",
@@ -472,8 +472,8 @@
 "h": "a1aa77ec2a60"
 },
 "/pt/seguranca/": {
-"d": "2026-10-04",
-"h": "ba47869946f4"
+"d": "2026-10-08",
+"h": "a23e3ad1db70"
 },
 "/pt/sistema-apart-hotel/": {
 "d": "2026-10-08",
@@ -501,7 +501,7 @@
 },
 "/tr/": {
 "d": "2026-10-08",
-"h": "2176b861afd1"
+"h": "077ec7d526d5"
 },
 "/tr/ai-misafir-asistani/": {
 "d": "2026-10-08",
@@ -512,12 +512,12 @@
 "h": "e84b442f027a"
 },
 "/tr/blog/": {
-"d": "2026-10-03",
-"h": "02a65a3cb349"
+"d": "2026-10-08",
+"h": "9331451d430f"
 },
 "/tr/blog/booking-com-mesajlarina-otomatik-cevap/": {
-"d": "2026-09-23",
-"h": "dfa83724c419"
+"d": "2026-10-08",
+"h": "fa4e48356336"
 },
 "/tr/blog/kucuk-otel-icin-otel-yonetim-yazilimi-secimi/": {
 "d": "2026-09-23",
@@ -544,8 +544,8 @@
 "h": "5edfe91590e0"
 },
 "/tr/guvenlik-ve-veri/": {
-"d": "2026-10-04",
-"h": "478b5367b7ca"
+"d": "2026-10-08",
+"h": "2fb28f0f254c"
 },
 "/tr/hakkimizda/": {
 "d": "2026-09-23",
@@ -576,8 +576,8 @@
 "h": "7da470e0cb77"
 },
 "/tr/otel-programi-karsilastirma/": {
-"d": "2026-10-03",
-"h": "f746a3111383"
+"d": "2026-10-08",
+"h": "2608d1e2ce0b"
 },
 "/tr/ozellikler/": {
 "d": "2026-10-08",

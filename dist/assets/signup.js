@@ -292,6 +292,7 @@ function summary() {
 function apply() {
   var l = CO.lang; d.documentElement.lang = l === 'pt' ? 'pt-BR' : l;
   if (!CO.fixed) {
+    d.title = tr('title');   // Q15: kök /signup/ dil algılayınca sekme başlığı da çevrilir
     d.querySelectorAll('[data-t]').forEach(function (el) { el.textContent = tr(el.getAttribute('data-t')); });
     d.querySelectorAll('[data-tph]').forEach(function (el) { el.placeholder = tr(el.getAttribute('data-tph')); });
     var t = d.getElementById('co-terms'); if (t) t.innerHTML = tr('terms').replace('{t}', CO.TERMS[l]).replace('{p}', CO.PRIVACY[l]);
