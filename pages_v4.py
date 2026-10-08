@@ -169,86 +169,11 @@ def type_page(L, d):
             "body": body, "faq": d["faq"] + more_faq, "preload_img": f"/assets/img/{im[0]}.webp", "schema": [software_schema(L)]}
 
 # ------------------------------------------------------------------ comparison
-CMP_SOURCES = [
- ("Hostlio Pro", "https://hostliopro.com/fiyatlandirma/"),
- ("Cloudbeds", "https://www.cloudbeds.com/pricing/"),
- ("Mews", "https://www.mews.com/en/pricing"),
- ("Little Hotelier", "https://www.littlehotelier.com/pricing/"),
- ("HotelRunner", "https://hotelrunner.com/tr/fiyatlandirma/"),
-]
-CMP_SRC_TXT = {"tr": ("Kaynak", "Fiyat sayfası", "Eylül 2026’da kontrol edildi"), "en": ("Source", "Pricing page", "Checked September 2026"),
-               "es": ("Fuente", "Página de precios", "Comprobado en septiembre de 2026"), "it": ("Fonte", "Pagina prezzi", "Verificato a settembre 2026"),
-               "pt": ("Fonte", "Página de preços", "Verificado em setembro de 2026"), "fr": ("Source", "Page tarifs", "Vérifié en septembre 2026")}
-CMP = {
-"tr": dict(
-  title="Otel Programı Karşılaştırması 2026: Fiyatlar | Hostlio Pro",
-  desc="Hostlio Pro, Cloudbeds, Mews, Little Hotelier ve HotelRunner karşılaştırması: liste fiyatları, başlangıç fiyatı, komisyon, deneme süresi ve AI mesajlaşma.",
-  crumb="Otel programı karşılaştırması", h1='Otel programı <em class="hl">karşılaştırması</em> (2026)',
-  lead="Bağımsız oteller için beş popüler otel yönetim yazılımını, firmaların kendi fiyatlandırma sayfalarında yayınladığı bilgilere göre karşılaştırdık.",
-  q="Hangi otel programı daha uygun?",
-  a="Kısa cevap: tek tesisli, 1–150 odalı ve yabancı misafiri çok olan oteller için sabit fiyatlı ve AI mesajlaşması dahil bir yazılım (Hostlio Pro gibi) bütçeyi öngörülebilir kılar. Çok tesisli ve kurumsal ihtiyaçları olan gruplar için Mews veya Cloudbeds gibi teklif bazlı platformlar, Türkiye'de B2B ağı ve yerel destek arayanlar için HotelRunner, SiteMinder ağıyla çalışmak isteyen küçük tesisler için Little Hotelier değerlendirilebilir.",
-  cols=["Yazılım","Fiyatlar yayınlanıyor mu?","Başlangıç","Rezervasyon komisyonu","Ücretsiz deneme","AI misafir mesajlaşması"],
-  rows=[("Hostlio Pro","Evet","⟦price:starter⟧/ay (erken kayıt)","Yok, sabit aylık ücret","7 gün","Tüm planlarda (Lio, 30+ dil)"),
-        ("Cloudbeds","Hayır, teklif usulü","Teklif","Booking Engine ve Channel Manager rezervasyonlarından ek komisyon almadığını belirtiyor","Fiyat sayfasında belirtilmiyor","Fiyat sayfasında ayrıca belirtilmiyor"),
-        ("Mews","Hayır, teklif usulü","Teklif","Fiyat sayfasında belirtilmiyor","Fiyat sayfasında belirtilmiyor","Advanced planda AI misafir tercih özetleri; mesajlaşma ayrıca belirtilmiyor"),
-        ("Little Hotelier","Oda sayısına göre hesaplanıyor","Fiyat hesaplayıcısıyla","Basics planında %1 rezervasyon ücreti","30 gün","Fiyat sayfasında belirtilmiyor"),
-        ("HotelRunner","Evet (temel paketler)","19,95 $/ay + %0,75 (Manage)","%0,75 ile %1,25 arası (pakete göre)","Var","Advanced \"Automate\" paketinde")],
-  when_h="Hangi durumda hangisi?",
-  when=[("Hostlio Pro","Tek tesis ya da iki tesis, 1–150 oda, yabancı misafir trafiği yüksek, sabit aylık bütçe isteyen oteller."),
-        ("Cloudbeds ve Mews","Birden fazla tesis, gelir yönetimi ve geniş entegrasyon pazarı gibi kurumsal ihtiyaçları olan gruplar."),
-        ("HotelRunner","Türkiye'de yerel destek, B2B satış ağı ve komisyonlu, düşük sabit ücretli model tercih eden tesisler."),
-        ("Little Hotelier","SiteMinder altyapısıyla çalışmak isteyen, oda sayısına göre fiyatlandırmayı kabul eden küçük tesisler.")],
-  note="Bilgiler 21 Eylül 2026 tarihinde firmaların fiyatlandırma sayfalarından derlenmiştir; fiyat ve paketler değişebilir. Güncel bilgi için her firmanın kendi sayfasını kontrol edin. Hostlio Pro bu karşılaştırmada taraflıdır; tabloyu yalnızca yayınlanmış bilgilere dayandırdık.",
-  src_h="Kaynaklar",
-  faq=[("Otel programı nedir?","Otel programı (otel yönetim yazılımı, PMS), bir konaklama tesisinin rezervasyonlarını, oda müsaitliğini, satış kanallarını ve misafir bilgilerini tek yerden yönetmesini sağlayan yazılımdır."),
-       ("Otel programı fiyatları ne kadar?","Yayınlanmış fiyatlara göre aylık yaklaşık 20 $ ile 150 $ arasında başlayan paketler var; bazı yazılımlar buna rezervasyon başı %0,75–1,25 komisyon ekler, bazıları ise yalnızca teklif verir."),
-       ("Komisyonlu mu sabit fiyatlı mı daha avantajlı?","Doluluk ve ortalama oda fiyatı arttıkça komisyonlu modelin maliyeti büyür. Bütçesini sabitlemek isteyen oteller için sabit aylık ücret daha öngörülebilirdir.")]),
-"en": dict(
-  title="Hotel Software Comparison 2026: Pricing and AI | Hostlio Pro",
-  desc="Hostlio Pro, Cloudbeds, Mews, Little Hotelier and HotelRunner compared: published pricing, starting price, booking fees, free trial and AI guest messaging.",
-  crumb="Hotel software comparison", h1='Hotel software <em class="hl">comparison</em> (2026)',
-  lead="We compared five popular hotel management systems for independent hotels, using only what each vendor publishes on its own pricing page.",
-  q="Which hotel software is right for you?",
-  a="Short answer: for single-property hotels with 1–150 rooms and many international guests, flat-priced software with AI messaging included (like Hostlio Pro) keeps the budget predictable. Multi-property groups with enterprise needs may consider quote-based platforms such as Mews or Cloudbeds; properties in Turkey wanting local support and a B2B network may look at HotelRunner; small properties that want the SiteMinder network may consider Little Hotelier.",
-  cols=["Software","Published pricing?","Starting at","Booking fee","Free trial","AI guest messaging"],
-  rows=[("Hostlio Pro","Yes","⟦price:starter⟧/month (early bird)","None, flat monthly fee","7 days","All plans (Lio, 30+ languages)"),
-        ("Cloudbeds","No, quote-based","Quote","States no added commission on Booking Engine and Channel Manager reservations","Not stated on pricing page","Not separately stated on pricing page"),
-        ("Mews","No, quote-based","Quote","Not stated on pricing page","Not stated on pricing page","AI guest-preference summaries on Advanced; messaging not separately stated"),
-        ("Little Hotelier","Calculated by room count","Via price calculator","1% booking fee on Basics","30 days","Not stated on pricing page"),
-        ("HotelRunner","Yes (core plans)","$19.95/month + 0.75% (Manage)","0.75% to 1.25% depending on plan","Available","In the Advanced \"Automate\" tier")],
-  when_h="Which one, when?",
-  when=[("Hostlio Pro","One or two properties, 1–150 rooms, heavy international guest traffic and a fixed monthly budget."),
-        ("Cloudbeds and Mews","Multi-property groups with enterprise needs such as revenue management and a large integration marketplace."),
-        ("HotelRunner","Properties in Turkey that want local support, a B2B sales network and a low fixed fee plus commission."),
-        ("Little Hotelier","Small properties that want the SiteMinder infrastructure and accept room-count-based pricing.")],
-  note="Information compiled on September 21, 2026 from each vendor's pricing page; prices and plans can change, so check each vendor's page for current details. Hostlio Pro is a party to this comparison; we based the table only on published information.",
-  src_h="Sources",
-  faq=[("What is hotel management software?","Hotel management software (a PMS) lets a property manage reservations, room availability, sales channels and guest information in one place."),
-       ("How much does hotel software cost?","Based on published prices, plans start at roughly $20 to $150 a month; some vendors add a 0.75–1.25% booking fee, and others only give quotes."),
-       ("Is a commission or a flat fee better?","As occupancy and average rates rise, commission-based costs grow. A flat monthly fee is more predictable for hotels that want a fixed budget.")]),
-}
-
-for _l, _m in LANGMOD.items(): CMP[_l] = _m.cmp(lambda k, _l=_l: url(k, _l))
-
 def compare_page(L):
-    d = CMP[L]; U = lambda k: url(k, L)
-    # O7: her satırda kaynak bağlantısı ve kontrol tarihi
-    sh, sl, chk = CMP_SRC_TXT[L]
-    srcmap = dict(CMP_SOURCES); srcmap["Hostlio Pro"] = SITE + U("pricing")
-    head = "".join(f"<th>{c}</th>" for c in d["cols"]) + f"<th>{sh}</th>"
-    rows = "".join("<tr>" + f'<th scope="row">{r[0]}</th>' + "".join(f"<td>{c}</td>" for c in r[1:])
-                   + f'<td><a href="{srcmap.get(r[0], "#")}" rel="nofollow noopener">{sl}</a><br><span class="small muted">{chk}</span></td>' + "</tr>" for r in d["rows"])
-    when = "".join(f'<div class="row"><h3>{h}</h3><div><p>{p}</p></div></div>' for h,p in d["when"])
-    src = "".join(f'<li><a href="{srcmap[n]}" rel="nofollow noopener">{n}</a></li>' for n,u in CMP_SOURCES)
-    body = f'''<section class="page-hero"><div class="wrap"><h1>{d["h1"]}</h1><p class="lead">{d["lead"]}</p></div></section>
-<section style="padding-top:0"><div class="wrap">
-<div class="answer"><h2 style="font-size:var(--t-1);margin-bottom:.4em">{d["q"]}</h2><p>{d["a"]}</p></div>
-<div class="table-wrap" style="margin-top:40px"><table><caption class="sr-only">{d["h1"].replace('<em class="hl">','').replace('</em>','')}</caption><thead><tr>{head}</tr></thead><tbody>{rows}</tbody></table></div>
-<p class="small muted" style="margin-top:14px">{d["note"]}</p>
-<h2 style="margin-top:64px">{d["when_h"]}</h2><div class="rows">{when}</div>
-<h2 style="margin-top:48px;font-size:var(--t-1)">{d["src_h"]}</h2><ul>{src}</ul>
-</div></section>'''
-    return {"key":"compare","title":d["title"],"desc":d["desc"],"trail":[(d["crumb"], U("compare"))],"body":body,"faq":d["faq"]}
+    """Genel karşılaştırma sayfası: içerik ve çizim compare_pages.GEN / general_page'de (8 Ekim 2026, Hostlio önce)."""
+    import sys, compare_pages
+    B = sys.modules.get("__main__") if hasattr(sys.modules.get("__main__"), "ROUTES") else sys.modules["build"]
+    return compare_pages.general_page(L, B)
 
 # ------------------------------------------------------------------ guides
 GUIDES = {

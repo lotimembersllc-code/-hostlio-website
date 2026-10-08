@@ -13,7 +13,7 @@ Aşağıdaki "v5 … v14" bölümleri sürüm geçmişidir; geçerli mimari bu b
 | `legal_v6.py`, `legal_v6_intl.py`, `legal_v5.py` | Gizlilik, şartlar, hesap silme (alt işleyici listesi `SUBPROCESSORS`) |
 | `security_page.py`, `roi_page.py`, `signup_page.py` | Güvenlik + DPA, ROI hesaplayıcı, kayıt/ödeme sayfaları |
 | `tools_pages.py` | Ücretsiz araçlar (6 dil): Araçlar dizini, RevPAR/ADR/doluluk ve OTA komisyonu hesaplayıcıları. Hesap `src/assets/kpi.js`; formül testi `node scripts/kpi.test.js` |
-| `compare_pages.py` | Karşılaştırma merkezi + Hostlio vs HotelRunner/Cloudbeds, Cloudbeds/Amenitiz/HiJiffy alternatifleri (yalnız var olan dillerde). Rakip bilgisi YALNIZ resmî sayfadan, `SRC` + kontrol tarihiyle; 3 ayda bir yeniden doğrulayın |
+| `compare_pages.py` | Karşılaştırma merkezi + Hostlio vs HotelRunner/Cloudbeds, Cloudbeds/Amenitiz/HiJiffy alternatifleri + **genel karşılaştırma sayfası** (`GEN`, 6 dil; `pages_v4.compare_page` buraya yönlendirir). v2 (8 Ekim 2026): Hostlio önce (fayda kartları → Hostlio sütunu vurgulu tablo → kimin için → geçiş adımları → SSS), "X ne zaman daha uygun" bölümleri yok. Rakip bilgisi YALNIZ resmî sayfadan, `SRC` + kontrol tarihiyle; tabloda yalnız iki tarafı da doğrulanmış satırlar; 3 ayda bir yeniden doğrulayın. CSS: `style.css` sonundaki "Comparison pages v2" bloğu |
 | `guides_tr.py` | Yalnız TR: channel manager nedir, KBS bildirimi (Hostlio KBS'ye otomatik bildirim YAPMAZ), otel programı fiyatları 2026, otel WhatsApp asistanı |
 | `src/` | Olduğu gibi kopyalanan dosyalar: `assets/` (CSS, JS, görsel, font, video), `attribution.js`, Google doğrulama dosyası, `robots.txt`, `vercel.json` tabanı |
 | `page_dates.json` | Sayfa başına içerik özeti + tarih (dateModified / sitemap lastmod). Build günceller; commit edin |

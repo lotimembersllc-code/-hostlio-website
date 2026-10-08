@@ -812,3 +812,34 @@ h1,h2,h3{overflow-wrap:break-word;hyphens:auto;-webkit-hyphens:auto}
 @media print{.consent{display:none!important}}
 .consent-open .site-footer{padding-bottom:calc(var(--consent-h,0px) + 24px)}
 @media print{.consent-open .site-footer{padding-bottom:revert}}
+
+/* Comparison pages v2 (Oct 2026): Hostlio-first; Hostlio column/row highlighted */
+.cmp-trust{list-style:none;display:flex;flex-wrap:wrap;gap:10px 22px;padding:0;margin:22px 0 0;color:var(--ink-2);font-size:var(--t-sm);font-weight:500}
+.cmp-trust li{display:flex;align-items:center}
+.yes{display:inline-grid;place-items:center;flex:none;width:20px;height:20px;border-radius:50%;background:var(--mint);color:var(--mint-ink);margin-right:8px;vertical-align:-4px}
+.yes svg{width:13px;height:13px}
+.cmp-why{grid-template-columns:repeat(4,1fr)}
+.cmp-why article{padding:22px}
+.cmp-why .ai{background:var(--peach);color:var(--peach-ink)}
+.cmp-why .ai svg{width:24px;height:24px}
+.cmp-why h3{font-size:var(--t-0);line-height:1.3}
+.cmp-why p{font-size:var(--t-sm)}
+@media (max-width:1060px){.cmp-why{grid-template-columns:repeat(2,1fr)}}
+@media (max-width:620px){.cmp-why{grid-template-columns:1fr}}
+table.cmp-3{min-width:560px}
+table.cmp-3 th:first-child{width:24%}
+table.cmp-3 .hl{width:36%}
+table.cmp thead th.hl{background:var(--orange);color:var(--ink)}
+table.cmp td.hl{background:#FFF3EC;color:var(--ink);font-weight:500}
+table.cmp tr.hl th,table.cmp tr.hl td{background:#FFF3EC;color:var(--ink);font-weight:500}
+table.cmp tr.hl th{font-weight:700}
+table.cmp tr.hl th::before{content:"";display:inline-block;width:8px;height:8px;border-radius:50%;background:var(--orange);margin-right:8px;vertical-align:1px}
+table.cmp-rows{min-width:760px}
+.cmp-src{margin-top:14px;max-width:90ch}
+.cmp-src p{margin:0 0 6px}
+.cmp-ask .row p{display:flex;align-items:flex-start}
+.cmp-ask .row .yes{margin-top:3px}
+.steps.four{grid-template-columns:repeat(4,1fr)}
+@media (max-width:1060px){.steps.four{grid-template-columns:repeat(2,1fr)}}
+@media (max-width:620px){.steps.four{grid-template-columns:1fr}}
+@media (max-width:620px){.cmp-why{gap:12px}.cmp-why article{padding:18px;display:grid;grid-template-columns:40px 1fr;column-gap:14px;align-items:start}.cmp-why .ai{width:40px;height:40px;margin:0;grid-row:span 2}.cmp-why .ai svg{width:22px;height:22px}.cmp-why h3{margin:0 0 .35em}}

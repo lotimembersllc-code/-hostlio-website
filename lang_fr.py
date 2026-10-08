@@ -167,31 +167,6 @@ def types(U):
        ("De combien de messages IA ai-je besoin ?","Environ 150 réponses automatiques par jour représentent à peu près 4 500 messages par mois, ce qui correspond à la formule Pro.")]),
     ]
 
-def cmp(U):
-    return dict(
-  title="Comparatif des logiciels hôteliers 2026 | Hostlio Pro",
-  desc="Hostlio Pro, Cloudbeds, Mews, Little Hotelier et HotelRunner comparés : tarifs publiés, prix de départ, commissions, essai gratuit et messagerie IA.",
-  crumb="Comparatif des logiciels hôteliers", h1='<em class="hl">Comparatif</em> des logiciels hôteliers (2026)',
-  lead="Nous avons comparé cinq logiciels de gestion hôtelière populaires auprès des hôtels indépendants, en nous appuyant uniquement sur ce que chaque éditeur publie sur sa propre page de tarifs.",
-  q="Quel logiciel hôtelier vous convient ?",
-  a="Réponse courte : pour les hôtels à établissement unique de 1 à 150 chambres qui accueillent beaucoup de clients internationaux, un logiciel à prix fixe incluant la messagerie IA (comme Hostlio Pro) garde le budget prévisible. Les groupes multi-établissements aux besoins de grand compte peuvent envisager des plateformes sur devis comme Mews ou Cloudbeds ; les établissements en Turquie qui veulent un support local et un réseau B2B peuvent regarder HotelRunner ; les petits établissements qui souhaitent profiter du réseau SiteMinder peuvent envisager Little Hotelier.",
-  cols=["Logiciel","Tarifs publiés ?","À partir de","Commission sur les réservations","Essai gratuit","Messagerie IA pour les clients"],
-  rows=[("Hostlio Pro","Oui","⟦price:starter⟧/mois (prix de lancement)","Aucune, abonnement mensuel fixe","7 jours","Toutes les formules (Lio, 30+ langues)"),
-        ("Cloudbeds","Non, sur devis","Devis","Indique ne prélever aucune commission supplémentaire sur les réservations du Booking Engine et du Channel Manager","Non indiqué sur la page de tarifs","Non indiqué séparément sur la page de tarifs"),
-        ("Mews","Non, sur devis","Devis","Non indiqué sur la page de tarifs","Non indiqué sur la page de tarifs","Résumés IA des préférences des clients dans Advanced ; messagerie non indiquée séparément"),
-        ("Little Hotelier","Calculés selon le nombre de chambres","Via un simulateur de prix","Frais de réservation de 1 % dans Basics","30 jours","Non indiqué sur la page de tarifs"),
-        ("HotelRunner","Oui (formules de base)","19,95 $/mois + 0,75 % (Manage)","De 0,75 % à 1,25 % selon la formule","Disponible","Dans le niveau Advanced « Automate »")],
-  when_h="Lequel choisir, et quand ?",
-  when=[("Hostlio Pro","Un ou deux établissements, 1 à 150 chambres, beaucoup de clients internationaux et un budget mensuel fixe."),
-        ("Cloudbeds et Mews","Groupes multi-établissements aux besoins de grand compte, comme le revenue management et une large place de marché d’intégrations."),
-        ("HotelRunner","Établissements en Turquie qui veulent un support local, un réseau de vente B2B et un faible abonnement fixe plus commission."),
-        ("Little Hotelier","Petits établissements qui souhaitent l’infrastructure SiteMinder et acceptent une tarification selon le nombre de chambres.")],
-  note="Informations recueillies le 21 septembre 2026 sur la page de tarifs de chaque éditeur ; les prix et les formules peuvent changer, vérifiez donc la page de chaque éditeur pour les informations à jour. Hostlio Pro est partie prenante de ce comparatif ; nous avons établi le tableau uniquement à partir d’informations publiées.",
-  src_h="Sources",
-  faq=[("Qu’est-ce qu’un logiciel de gestion hôtelière ?","Un logiciel de gestion hôtelière (un PMS) permet à un établissement de gérer les réservations, la disponibilité des chambres, les canaux de vente et les informations des clients au même endroit."),
-       ("Combien coûte un logiciel hôtelier ?","D’après les prix publiés, les formules démarrent entre 20 $ et 150 $ environ par mois ; certains éditeurs ajoutent des frais de réservation de 0,75 à 1,25 %, d’autres ne fournissent que des devis."),
-       ("Vaut-il mieux une commission ou un abonnement fixe ?","Quand le taux d’occupation et le prix moyen augmentent, le coût d’un modèle à commission augmente aussi. Un abonnement mensuel fixe est plus prévisible pour les hôtels qui veulent maîtriser leur budget.")])
-
 def guides(U):
     return [
  dict(key="post-overbooking", date="2026-09-21", title="Comment éviter la surréservation : 6 étapes pour les hôtels",

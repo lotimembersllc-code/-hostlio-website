@@ -170,33 +170,6 @@ def types(U):
        ("¿Cuántos mensajes de IA necesito?","Unas 150 respuestas automáticas al día son aproximadamente 4500 al mes, lo que encaja con el plan Pro.")]),
     ]
 
-# ------------------------------------------------------------------ pages_v4.CMP
-def cmp(U):
-    return dict(
-  title="Comparativa de software hotelero 2026: precios | Hostlio Pro",
-  desc="Hostlio Pro, Cloudbeds, Mews, Little Hotelier y HotelRunner comparados: precios publicados, precio inicial, comisiones, prueba gratuita y mensajería IA.",
-  crumb="Comparativa de software hotelero", h1='<em class="hl">Comparativa</em> de software hotelero (2026)',
-  lead="Comparamos cinco programas para hoteles populares entre los hoteles independientes, usando solo lo que cada proveedor publica en su propia página de precios.",
-  q="¿Qué software de gestión hotelera te conviene?",
-  a="Respuesta corta: para hoteles de un solo establecimiento con 1 a 150 habitaciones y muchos huéspedes internacionales, un software de precio fijo con mensajería IA incluida (como Hostlio Pro) mantiene el presupuesto previsible. Los grupos con varios establecimientos y necesidades corporativas pueden valorar plataformas con precio bajo presupuesto como Mews o Cloudbeds; los alojamientos en Turquía que buscan soporte local y una red B2B pueden mirar HotelRunner; y los alojamientos pequeños que quieren la red de SiteMinder pueden considerar Little Hotelier.",
-  cols=["Software","¿Precios publicados?","Desde","Comisión por reserva","Prueba gratuita","Mensajería IA con huéspedes"],
-  rows=[("Hostlio Pro","Sí","⟦price:starter⟧/mes (precio de lanzamiento)","Ninguna, cuota mensual fija","7 días","Todos los planes (Lio, más de 30 idiomas)"),
-        ("Cloudbeds","No, bajo presupuesto","Presupuesto","Indica que no añade comisión a las reservas del Booking Engine y del Channel Manager","No se indica en la página de precios","No se indica por separado en la página de precios"),
-        ("Mews","No, bajo presupuesto","Presupuesto","No se indica en la página de precios","No se indica en la página de precios","Resúmenes con IA de las preferencias del huésped en Advanced; la mensajería no se indica por separado"),
-        ("Little Hotelier","Se calcula según el número de habitaciones","Mediante calculadora de precios","Comisión del 1 % por reserva en Basics","30 días","No se indica en la página de precios"),
-        ("HotelRunner","Sí (planes principales)","$19,95/mes + 0,75 % (Manage)","Del 0,75 % al 1,25 % según el plan","Disponible","En el nivel Advanced \"Automate\"")],
-  when_h="¿Cuál elegir y cuándo?",
-  when=[("Hostlio Pro","Uno o dos establecimientos, de 1 a 150 habitaciones, mucho tráfico de huéspedes internacionales y un presupuesto mensual fijo."),
-        ("Cloudbeds y Mews","Grupos con varios establecimientos y necesidades corporativas, como revenue management y un amplio marketplace de integraciones."),
-        ("HotelRunner","Alojamientos en Turquía que quieren soporte local, una red de ventas B2B y una cuota fija baja más comisión."),
-        ("Little Hotelier","Alojamientos pequeños que quieren la infraestructura de SiteMinder y aceptan un precio basado en el número de habitaciones.")],
-  note="Información recopilada el 21 de septiembre de 2026 de la página de precios de cada proveedor; los precios y planes pueden cambiar, así que consulta la página de cada proveedor para ver los datos actualizados. Hostlio Pro es parte interesada en esta comparativa; hemos basado la tabla solo en información publicada.",
-  src_h="Fuentes",
-  faq=[("¿Qué es un software de gestión hotelera?","Un software de gestión hotelera (un PMS hotelero) permite a un alojamiento gestionar reservas, disponibilidad de habitaciones, canales de venta e información de los huéspedes en un solo lugar."),
-       ("¿Cuánto cuesta un programa para hoteles?","Según los precios publicados, los planes empiezan aproximadamente entre $20 y $150 al mes; algunos proveedores añaden una comisión del 0,75–1,25 % por reserva y otros solo dan presupuestos."),
-       ("¿Qué es mejor, comisión o cuota fija?","A medida que suben la ocupación y la tarifa media, el coste basado en comisiones crece. Una cuota mensual fija es más previsible para los hoteles que quieren un presupuesto fijo.")],
-    )
-
 # ------------------------------------------------------------------ pages_v4.GUIDES
 def guides(U):
     return [

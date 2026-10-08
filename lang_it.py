@@ -170,32 +170,6 @@ def types(U):
        ("Quanti messaggi AI mi servono?","Circa 150 risposte automatiche al giorno corrispondono a circa 4.500 al mese, una quantità adatta al piano Pro.")]),
     ]
 
-# ---------------------------------------------------------------- pages_v4.CMP
-def cmp(U):
-    return dict(
-  title="Confronto gestionali hotel 2026: prezzi e AI | Hostlio Pro",
-  desc="Hostlio Pro, Cloudbeds, Mews, Little Hotelier e HotelRunner a confronto: prezzi pubblicati, prezzo di partenza, commissioni, prova gratuita e messaggi AI.",
-  crumb="Confronto gestionali per hotel", h1='<em class="hl">Confronto</em> gestionali per hotel (2026)',
-  lead="Abbiamo confrontato cinque gestionali per hotel molto diffusi tra le strutture indipendenti, usando solo ciò che ogni fornitore pubblica sulla propria pagina dei prezzi.",
-  q="Quale gestionale per hotel fa per te?",
-  a="In breve: per hotel con una sola struttura, 1–150 camere e molti ospiti internazionali, un software a prezzo fisso con la messaggistica AI inclusa (come Hostlio Pro) rende il budget prevedibile. I gruppi con più strutture ed esigenze enterprise possono valutare piattaforme su preventivo come Mews o Cloudbeds; le strutture in Turchia che cercano assistenza locale e una rete B2B possono guardare a HotelRunner; le piccole strutture che vogliono la rete SiteMinder possono considerare Little Hotelier.",
-  cols=["Software","Prezzi pubblicati?","A partire da","Commissione sulle prenotazioni","Prova gratuita","Messaggi AI agli ospiti"],
-  rows=[("Hostlio Pro","Sì","⟦price:starter⟧/mese (early bird)","Nessuna, canone mensile fisso","7 giorni","In tutti i piani (Lio, 30+ lingue)"),
-        ("Cloudbeds","No, su preventivo","Preventivo","Dichiara di non applicare commissioni aggiuntive sulle prenotazioni da Booking Engine e Channel Manager","Non indicata nella pagina dei prezzi","Non indicati separatamente nella pagina dei prezzi"),
-        ("Mews","No, su preventivo","Preventivo","Non indicata nella pagina dei prezzi","Non indicata nella pagina dei prezzi","Riepiloghi AI delle preferenze degli ospiti nel piano Advanced; messaggistica non indicata separatamente"),
-        ("Little Hotelier","Calcolati in base al numero di camere","Tramite calcolatore dei prezzi","Commissione dell'1% sulle prenotazioni nel piano Basics","30 giorni","Non indicati nella pagina dei prezzi"),
-        ("HotelRunner","Sì (piani principali)","$19,95/mese + 0,75% (Manage)","Dallo 0,75% all'1,25% a seconda del piano","Disponibile","Nel livello Advanced \"Automate\"")],
-  when_h="Quale scegliere, e quando?",
-  when=[("Hostlio Pro","Una o due strutture, 1–150 camere, tanti ospiti internazionali e un budget mensile fisso."),
-        ("Cloudbeds e Mews","Gruppi con più strutture ed esigenze enterprise, come revenue management e un ampio marketplace di integrazioni."),
-        ("HotelRunner","Strutture in Turchia che vogliono assistenza locale, una rete di vendita B2B e un canone fisso basso più commissione."),
-        ("Little Hotelier","Piccole strutture che vogliono l'infrastruttura SiteMinder e accettano prezzi basati sul numero di camere.")],
-  note="Informazioni raccolte il 21 settembre 2026 dalla pagina dei prezzi di ciascun fornitore; prezzi e piani possono cambiare, quindi verifica i dettagli aggiornati sulla pagina di ogni fornitore. Hostlio Pro è parte di questo confronto; abbiamo basato la tabella solo su informazioni pubblicate.",
-  src_h="Fonti",
-  faq=[("Che cos'è un gestionale per hotel?","Un gestionale per hotel (un PMS) permette a una struttura di gestire prenotazioni, disponibilità delle camere, canali di vendita e informazioni sugli ospiti in un unico posto."),
-       ("Quanto costa un gestionale per hotel?","In base ai prezzi pubblicati, i piani partono all'incirca da $20 a $150 al mese; alcuni fornitori aggiungono una commissione sulle prenotazioni dello 0,75–1,25%, altri forniscono solo preventivi."),
-       ("Meglio una commissione o un canone fisso?","Con l'aumentare dell'occupazione e delle tariffe medie, i costi a commissione crescono. Un canone mensile fisso è più prevedibile per gli hotel che vogliono un budget stabile.")])
-
 # ---------------------------------------------------------------- pages_v4.GUIDES
 def guides(U):
     return [

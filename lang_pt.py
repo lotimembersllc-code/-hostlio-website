@@ -171,33 +171,6 @@ def types(U):
        ("De quantas mensagens de IA eu preciso?","Cerca de 150 respostas automáticas por dia dão aproximadamente 4.500 por mês, o que se encaixa no plano Pro.")]),
     ]
 
-# ------------------------------------------------------------------ pages_v4.CMP
-def cmp(U):
-    return dict(
-  title="Comparativo de Sistemas para Hotel 2026 | Hostlio Pro",
-  desc="Hostlio Pro, Cloudbeds, Mews, Little Hotelier e HotelRunner comparados: preços publicados, preço inicial, comissões, teste grátis e mensagens por IA.",
-  crumb="Comparativo de sistemas para hotel", h1='<em class="hl">Comparativo</em> de sistemas para hotel (2026)',
-  lead="Comparamos cinco sistemas de gestão hoteleira populares entre hotéis independentes, usando apenas o que cada fornecedor publica na sua própria página de preços.",
-  q="Qual sistema para hotel é o ideal para você?",
-  a="Resposta curta: para hotéis com uma única propriedade, de 1 a 150 quartos e muitos hóspedes estrangeiros, um sistema de preço fixo com mensagens por IA incluídas (como o Hostlio Pro) mantém o orçamento previsível. Grupos com várias propriedades e necessidades corporativas podem considerar plataformas com preço sob consulta, como Mews ou Cloudbeds; propriedades na Turquia que buscam suporte local e uma rede B2B podem olhar o HotelRunner; pequenas propriedades que querem a rede da SiteMinder podem considerar o Little Hotelier.",
-  cols=["Sistema","Preços publicados?","A partir de","Taxa por reserva","Teste grátis","Mensagens com hóspedes por IA"],
-  rows=[("Hostlio Pro","Sim","⟦price:starter⟧/mês (preço de lançamento)","Nenhuma, mensalidade fixa","7 dias","Todos os planos (Lio, 30+ idiomas)"),
-        ("Cloudbeds","Não, sob consulta","Sob consulta","Informa que não cobra comissão adicional sobre reservas do Booking Engine e do Channel Manager","Não informado na página de preços","Não informado separadamente na página de preços"),
-        ("Mews","Não, sob consulta","Sob consulta","Não informado na página de preços","Não informado na página de preços","Resumos de preferências dos hóspedes por IA no plano Advanced; mensagens não informadas separadamente"),
-        ("Little Hotelier","Calculado pelo número de quartos","Pela calculadora de preços","Taxa de 1% por reserva no plano Basics","30 dias","Não informado na página de preços"),
-        ("HotelRunner","Sim (planos principais)","US$ 19,95/mês + 0,75% (Manage)","De 0,75% a 1,25%, conforme o plano","Disponível","No nível Advanced \"Automate\"")],
-  when_h="Qual escolher, e quando?",
-  when=[("Hostlio Pro","Uma ou duas propriedades, de 1 a 150 quartos, muito tráfego de hóspedes estrangeiros e orçamento mensal fixo."),
-        ("Cloudbeds e Mews","Grupos com várias propriedades e necessidades corporativas, como revenue management e um grande marketplace de integrações."),
-        ("HotelRunner","Propriedades na Turquia que querem suporte local, uma rede de vendas B2B e uma taxa fixa baixa mais comissão."),
-        ("Little Hotelier","Pequenas propriedades que querem a infraestrutura da SiteMinder e aceitam preço baseado no número de quartos.")],
-  note="Informações reunidas em 21 de setembro de 2026 a partir da página de preços de cada fornecedor; preços e planos podem mudar, então confira a página de cada fornecedor para ver os dados atuais. O Hostlio Pro é parte interessada neste comparativo; baseamos a tabela apenas em informações publicadas.",
-  src_h="Fontes",
-  faq=[("O que é um software de gestão hoteleira?","Um software de gestão hoteleira (um PMS hoteleiro) permite que uma hospedagem gerencie reservas, disponibilidade de quartos, canais de venda e informações dos hóspedes em um só lugar."),
-       ("Quanto custa um sistema para hotel?","Com base nos preços publicados, os planos começam entre cerca de US$ 20 e US$ 150 por mês; alguns fornecedores acrescentam uma taxa de 0,75–1,25% por reserva, e outros só trabalham com preço sob consulta."),
-       ("É melhor pagar comissão ou mensalidade fixa?","À medida que a ocupação e a diária média sobem, o custo baseado em comissão cresce. Uma mensalidade fixa é mais previsível para hotéis que querem um orçamento fixo.")],
-    )
-
 # ------------------------------------------------------------------ pages_v4.GUIDES
 def guides(U):
     return [

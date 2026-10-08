@@ -14,10 +14,13 @@ def _src(items):
     lis = "".join(f'<li><a href="{u}" rel="nofollow noopener">{html.escape(n)}</a></li>' for n, u in items)
     return f'<h2>Kaynaklar</h2><p class="small muted">Tüm kaynaklara {SRC_DATE} tarihinde erişildi.</p><ul>{lis}</ul>'
 
-def _tbl(head, rows, cls=""):
-    h = "".join(f"<th>{x}</th>" for x in head)
-    b = "".join("<tr>" + f'<th scope="row">{r[0]}</th>' + "".join(f"<td>{c}</td>" for c in r[1:]) + "</tr>" for r in rows)
-    return f'<div class="table-wrap"><table><thead><tr>{h}</tr></thead><tbody>{b}</tbody></table></div>'
+def _tbl(head, rows, cls="", hl_col=None):
+    """hl_col: vurgulanacak sütun (Hostlio Pro); ilk hücresi "Hostlio Pro" olan satır da vurgulanır (style.css table.cmp)."""
+    hc = lambda i: ' class="hl"' if i == hl_col else ""
+    h = "".join(f'<th scope="col"{hc(i)}>{x}</th>' for i, x in enumerate(head))
+    b = "".join(("<tr class=\"hl\">" if r[0] == "Hostlio Pro" else "<tr>") + f'<th scope="row">{r[0]}</th>'
+                + "".join(f"<td{hc(i)}>{c}</td>" for i, c in enumerate(r[1:], 1)) + "</tr>" for r in rows)
+    return f'<div class="table-wrap"><table class="cmp"><thead><tr>{h}</tr></thead><tbody>{b}</tbody></table></div>'
 
 # ------------------------------------------------------------------ channel manager nedir
 def channel_manager(U):
@@ -155,6 +158,8 @@ PRICE_SRC = [
 def b24(rooms, types, channels): return 12.90 + 2.60 * rooms + 0.55 * types * channels
 
 def prices(U):
+    from build import btn, SIGNUP_URL
+    cta = btn("7 gün ücretsiz dene", SIGNUP_URL) + btn("Planları gör", U("pricing"), "ghost")
     def eur(x): return f"{x:,.2f} €".replace(",", "X").replace(".", ",").replace("X", ".").replace(",00 €", " €")
     rows = [
       ("Hostlio Pro", "Sabit aylık ücret (plan)", "Starter ⟦price:starter⟧, Pro ⟦price:pro⟧, Growth ⟦price:growth⟧ / ay (USD, erken kayıt); yıllıkta %20 indirim", "PMS, kanal yöneticisi ve AI asistan Lio tüm planlarda; oda sınırı 10 / 50 / 150"),
@@ -173,6 +178,9 @@ def prices(U):
     ex_rows = [(f"{r} oda ({t} oda tipi, {ch} kanal)", hl[r], hms[r], sv[r], eur(b24(r, t, ch))) for r, t, ch in ex]
     c = f'''<div class="answer"><p><strong>Kısa cevap:</strong> 2026'da otel programları dört farklı şekilde fiyatlanıyor: sabit aylık paket, oda sayısına göre ücret, rezervasyon gelirinden yüzde ve tek seferlik lisans. Fiyatını açıkça yayınlayan yazılımlarda küçük bir otel için aylık maliyet yaklaşık 15 € ile 150 € arasında başlıyor; bazı büyük firmalar ise yalnızca teklif veriyor. Aşağıdaki tablo, firmaların kendi fiyat sayfalarında {SRC_DATE} tarihinde yayınladığı rakamlara dayanıyor.</p></div>
 <p class="small muted">Hostlio Pro bu karşılaştırmada taraftır. Yalnızca resmî fiyat sayfasında doğrulayabildiğimiz rakamları yazdık; fiyatlar değişebilir, karar vermeden önce her firmanın kendi sayfasını kontrol edin. Para birimleri firmaların kullandığı gibidir (€, $, ₺) ve doğrudan karşılaştırılamaz.</p>
+<h2>Hostlio Pro ne kadar?</h2>
+<p>Hostlio Pro'nun üç planı vardır: Starter aylık ⟦price:starter⟧ (10 oda), Pro ⟦price:pro⟧ (50 oda) ve Growth ⟦price:growth⟧ (150 oda, 2 tesis). Fiyat sabittir: Hostlio rezervasyon başına ücret ya da gelir yüzdesi almaz, yüksek sezonda faturanız büyümez. Sertifikalı kanal yöneticisi (100+ OTA) ve WhatsApp'ta misafirlere cevap veren AI asistan Lio tüm planlarda dahildir. Yıllık ödemede %20 indirim vardır; 7 gün ücretsiz deneyebilirsiniz.</p>
+<div class="cta-row" style="margin-top:12px">{cta}</div>
 <h2>Otel programı fiyat modelleri</h2>
 <ul><li><strong>Sabit aylık paket:</strong> Ücret belli bir oda aralığı ya da plan için sabittir. Bütçe öngörülebilir; yüksek sezonda fatura büyümez.</li>
 <li><strong>Oda başı ya da oda kademesi:</strong> Oda sayısı arttıkça ücret artar. Küçük tesisler için ucuz başlar.</li>
@@ -183,7 +191,7 @@ def prices(U):
 {_tbl(["Yazılım", "Model", "Yayınlanan fiyat", "Not"], rows)}
 <h2>Örnek hesap: 10, 25 ve 50 odalı otel</h2>
 <p>Aşağıdaki aylık rakamlar yayınlanan fiyatlardan yaptığımız hesaptır. Beds24 için resmî hesaplayıcısındaki birim fiyatları kullandık (taban + oda başı + oda tipi × kanal). Rezervasyon gelirine bağlı modeller (HotelRunner, eviivo) gelirinize göre değiştiği için tabloya alınmadı; HotelRunner için gelire göre örnek hesabı <a href="{U("vs-hotelrunner")}">Hostlio Pro ile HotelRunner karşılaştırmasında</a> bulabilirsiniz. Yazılımların kapsamı aynı değildir; yalnızca fiyata bakarak karar vermeyin.</p>
-{_tbl(["Tesis", "Hostlio Pro", "HMS Otel", "Sirvoy", "Beds24"], ex_rows)}
+{_tbl(["Tesis", "Hostlio Pro", "HMS Otel", "Sirvoy", "Beds24"], ex_rows, hl_col=1)}
 <h2>Gözden kaçan maliyetler</h2>
 <ul><li><strong>Ek modüller:</strong> SMS, e-posta, misafir ilişkileri ya da gelir yönetimi modülleri ayrı ücretlendirilebilir.</li>
 <li><strong>Rezervasyon başı ücretler:</strong> Küçük görünür ama yüksek sezonda toplanır.</li>
@@ -192,12 +200,11 @@ def prices(U):
 <li><strong>KDV ve kur:</strong> Fiyatlar çoğunlukla KDV hariçtir; döviz bazlı fiyatlar kurla birlikte değişir.</li>
 <li><strong>OTA komisyonları:</strong> Yazılımdan bağımsızdır ama asıl büyük kalem çoğu zaman budur. Kanal bazında net geliri <a href="{U("commission")}">OTA komisyon hesaplayıcısıyla</a> görebilirsiniz.</li></ul>
 <h2>Hangi model size uygun?</h2>
-<ul><li>Gelirin mevsime göre çok değiştiği ve bütçeyi sabit tutmak isteyen tesisler için <strong>sabit aylık paket</strong> öngörülebilirdir.</li>
-<li>1–5 odalı, düşük gelirli tesisler için <strong>oda başı</strong> ya da düşük asgari ücretli <strong>yüzde</strong> modeli daha ucuza gelebilir.</li>
-<li>Kendi sunucusunu yönetmek isteyen ve tek seferlik ödemeyi tercih eden işletmeler için <strong>lisans</strong> bir seçenektir.</li></ul>
+<ul><li>Gelirin mevsime göre değiştiği ve bütçesini sabit tutmak isteyen tesisler için <strong>sabit aylık paket</strong> en öngörülebilir modeldir; Hostlio Pro bu modelle çalışır ve yüksek sezonda da aynı ücreti alır.</li>
+<li><strong>Oda başı</strong> ya da <strong>gelir yüzdesi</strong> modellerinde maliyet oda sayısı ve gelirle birlikte artar; yıllık toplamı kendi rakamlarınızla hesaplayın.</li>
+<li><strong>Tek seferlik lisansta</strong> güncelleme, sunucu ve destek maliyetlerini ayrıca sorun.</li></ul>
 <p>Seçim kriterlerinin tamamı için <a href="{U("post-pms")}">küçük otel için otel programı seçimi</a> rehberine, ürün karşılaştırmaları için <a href="{U("cmp-hub")}">karşılaştırmalar</a> sayfasına bakın.</p>
-<h2>Hostlio Pro ne kadar?</h2>
-<p>Hostlio Pro'nun üç planı vardır: Starter aylık ⟦price:starter⟧ (10 oda), Pro ⟦price:pro⟧ (50 oda) ve Growth ⟦price:growth⟧ (150 oda, 2 tesis). Kanal yöneticisi ve AI asistan Lio tüm planlarda dahildir; Hostlio rezervasyon başına ücret ya da gelir yüzdesi almaz. Yıllık ödemede %20 indirim vardır ve 7 gün ücretsiz deneyebilirsiniz. Ayrıntılar: <a href="{U("pricing")}">fiyatlandırma</a>.</p>'''
+'''
     c += _src(PRICE_SRC)
     faq = [("Otel programı fiyatları ne kadar?", "Fiyatını yayınlayan yazılımlarda küçük bir otel için aylık maliyet yaklaşık 15 € ile 150 € arasında başlıyor (8 Ekim 2026). Bazı yazılımlar gelirden yüzde alıyor, bazıları tek seferlik lisans satıyor, bazıları da yalnızca teklif veriyor."),
            ("Ücretsiz otel programı var mı?", "Bazı yazılımların ücretsiz planı var; örneğin Sirvoy'un ücretsiz planı yalnızca 1 oda için geçerli ve kanal yöneticisi içermiyor. Ücretsiz planların oda, kanal ve destek sınırlarını mutlaka kontrol edin."),
