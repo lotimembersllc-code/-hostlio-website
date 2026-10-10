@@ -4270,6 +4270,12 @@ Practical writing on running an independent hotel, distribution and guest commun
 
 Choosing software
 
+## Best PMS for small hotels in 2026: an honest comparison
+October 10, 2026
+11 PMS for small hotels compared: published prices for 10 and 25 rooms, channel manager, guest messaging, mobile app and trials. Sourced, Oct 2026.
+
+Choosing software
+
 ## PMS vs channel manager: what's the difference?
 October 8, 2026
 PMS vs channel manager: what each one does, how they work together, what they cost and whether a small hotel needs both. With a comparison table and FAQ.
@@ -6518,6 +6524,135 @@ A: According to HiJiffy's pricing page, WhatsApp is part of the Premium plan; th
 
 Q: Is Hostlio Pro only a chatbot?
 A: No. Hostlio Pro is a PMS and channel manager with an AI assistant built in, so it also handles reservations, availability on 100+ OTAs, online check-in and analytics.
+
+---
+# Best PMS for small hotels in 2026: an honest comparison
+URL: https://hostliopro.com/en/blog/best-pms-for-small-hotels/
+
+## Best PMS for small hotels in 2026: an honest comparison
+By the Hostlio Pro product team , the people who build Hostlio Pro. Published October 10, 2026 , updated September 23, 2026
+
+Short answer: there's no single best PMS for every small hotel. For 5–50 rooms, the ones worth shortlisting in 2026 are those that include a channel manager, let you message guests from one inbox and publish a price you can check before a sales call. Among vendors that publish prices, a 10-room property pays roughly 40 to 165 a month and a 25-room property roughly 85 to 250, in euros or dollars depending on the vendor. Cloudbeds, Mews, ResNexus and ThinkReservations only quote.
+
+Contents
+
+- How we compared
+- Comparison table
+- What 10 and 25 rooms cost
+- The PMS one by one
+- Which one fits you?
+- Sources
+Hostlio Pro is one of the products compared here, so we're not neutral. We only used facts from each vendor's own website, checked on 10 October 2026; customer counts are the vendors' own claims. Prices change and appear in different currencies (€, $, £) that we don't convert. Check each vendor's page before you decide.
+
+## How we compared
+
+We looked at what matters most to an owner-run property of 5–50 rooms: what you'll actually pay each month, whether the channel manager is included, how guest messages are handled, whether there's a mobile app and whether you can try it before you sign. For the selection criteria in more depth, see how to choose a PMS for a small hotel .
+
+## Comparison table
+
+PMS Pricing Channel manager Guest messaging Mobile app Free trial
+Hostlio Pro Published flat fee: $49 / $89 / $149 a month Every plan WhatsApp AI assistant in every plan; OTA inboxes on Pro and Growth iOS and Android 7 days
+Cloudbeds Quote only Depends on plan Unified inbox incl. WhatsApp and OTAs; AI chatbot Included Not stated
+Little Hotelier Published by room tier; Basics plan adds a 1% booking fee Included Guest engagement tools Yes 30 days; card required
+Mews Quote only (per room) Included in Mews Pro AI messaging via WhatsApp and SMS (Pro) iOS and Android Not stated
+eviivo From $50: $10 per bedroom a month; volume pricing above 10 rooms Included Unified inbox incl. WhatsApp; AI concierge is a paid add-on Included 14 days
+Sirvoy Published by room tier (€, $ or £) Pro plan only Automated email; SMS paid per message Mobile web app 14 days
+Beds24 Pay as you go: €12.90 base + €2.60 per room Add-on: €0.55 per room type per channel Inbox for Airbnb and Booking.com; WhatsApp messages iOS and Android Free trial
+RoomRaccoon Published calculator, from €164 a month Built in (3 channels on Entry) Email templates; third-party apps iOS only 14 days after a demo
+WebRezPro $10 per unit a month, minimum $100 Via integrations (cost not stated) Not detailed Not verified Not stated
+innRoad Quote; “around $150 per month for most properties” Add-on Text messaging add-on Mobile-friendly web Not stated
+ResNexus Quote only Direct connect to Expedia, Booking.com, Airbnb Text messaging add-on Yes “Try risk-free”
+ThinkReservations Quote only Available (inclusion not stated) SMS with templates Staff app Not stated
+
+## What 10 and 25 rooms cost
+
+Monthly cost from published prices and each vendor's own calculator. Quote-only vendors are left out, and Little Hotelier is left out because we couldn't load its pricing page reliably. The products don't include the same things, so don't decide on price alone.
+
+PMS 10 rooms 25 rooms Note
+Hostlio Pro $49 (Starter) $89 (Pro) Channel manager and AI messaging included
+Sirvoy Pro €79 €149 Monthly billing; yearly billing is cheaper
+Beds24 €43.85 €86.15 Assumes 3 and 5 room types on 3 channels
+eviivo $100 Contact sales Volume pricing above 10 rooms; add-ons per room
+WebRezPro $100 Up to $250 Large-property discount on request
+RoomRaccoon Entry €164 €228 Calculator figures, 9 October 2026
+
+## The PMS one by one
+
+## Hostlio Pro
+
+Built for independent hotels and guesthouses of 1–150 rooms. Every plan includes the PMS, a certified channel manager connected to 100+ OTAs, the room rack, a mobile app and Lio, an AI assistant that answers guests on WhatsApp in their language with your hotel's information. Pro and Growth add Booking.com, Airbnb and Expedia inboxes and online check-in . Prices are published and flat: no booking fees or revenue share. What it doesn't do: POS, accounting or payroll, and it doesn't submit guest data to police registration systems for you. See how Lio works .
+
+Try free for 7 days See plans
+
+## Cloudbeds
+
+A broad platform for independent properties of all sizes, with a unified inbox (WhatsApp, SMS, email and OTA messages) and an AI chatbot. Distribution is included in the One plan and optional or “bring your own” in others. Pricing is quote-only. It claims 20,000+ properties in 150+ countries. More detail: Hostlio Pro vs Cloudbeds .
+
+## Little Hotelier
+
+SiteMinder's PMS for small properties; its pricing page says it specialises in properties with 1–30 rooms. The channel manager, booking engine and mobile app are included from the entry plan. Price depends on your room tier, and the Basics plan adds a 1% booking fee, so the cost rises with your bookings. No long-term contract.
+
+## Mews
+
+A cloud hospitality platform used by a wide range of hotels; it claims 15,000+ hoteliers. Pricing is per room but quote-only, and payments are charged separately. Mews Pro includes distribution to a large channel network and AI messaging via WhatsApp and SMS.
+
+## eviivo
+
+For hotels, B&Bs and rentals. Its calculator shows $10 per bedroom a month with a $50 minimum, and volume pricing above 10 rooms. Channel manager and mobile app are included; the AI concierge and some tools are paid add-ons per room, and there's a small fee per confirmed booking for some services. 14-day free trial. Claims 28,000+ properties in 70 countries.
+
+## Sirvoy
+
+Simple, affordable and transparent. Prices are published by room tier, with no contracts or setup fees and a 14-day trial. The catch: the channel manager is only in the Pro plan, and there's no native app (it's a mobile web app).
+
+## Beds24
+
+Flexible and low-cost to start (from €15.50 a month for one room); you pay per room and per channel connection, so the price grows with your setup. It has an inbox for Airbnb and Booking.com messages, WhatsApp messaging and mobile apps. Popular with technically confident owners and rentals.
+
+## RoomRaccoon
+
+An all-in-one system for B&Bs and independent hotels with a built-in channel manager (limited channels on the entry plan). From €164 a month in its calculator, so it sits at the higher end for very small properties. The trial starts after a demo.
+
+## WebRezPro, innRoad, ResNexus and ThinkReservations
+
+Four North American PMS for independent properties. WebRezPro publishes $10 per unit a month with a $100 minimum; innRoad says its core PMS is “around $150 per month for most properties”, with channel management and text messaging as add-ons; ResNexus and ThinkReservations quote on request. Check carefully what's included, since channel management and guest texting are often extra.
+
+## Which one fits you?
+
+- Under 10 rooms, owner-run: look for a flat fee with the channel manager included and a mobile app. Booking-fee models look cheap until high season.
+
+- 10–50 rooms with a small team: prioritise one inbox for guest messages, staff roles and reliable OTA sync. Compare the full yearly cost, including add-ons.
+
+- Many outlets (restaurant, spa) or complex groups: broader platforms with POS and payments may be worth the quote process.
+Whatever you shortlist, run a free trial with your own rooms, rates and one OTA before you commit. You can estimate the time and commission you'd save with the ROI calculator .
+
+## Sources
+All sources accessed 10 October 2026. Room-count prices for Sirvoy, Beds24, eviivo and RoomRaccoon come from the calculator on each vendor's official pricing page.
+
+- Cloudbeds: Pricing
+- Cloudbeds
+- Little Hotelier: Pricing
+- Mews: Pricing
+- eviivo: Pricing
+- eviivo
+- Sirvoy: Pricing
+- Beds24: Pricing
+- RoomRaccoon: Pricing
+- WebRezPro: Pricing
+- innRoad: Pricing
+- ResNexus: Pricing
+- ThinkReservations: Guest communications
+
+Q: What is the best PMS for a small hotel?
+A: It depends on your size and what you need included. For 5–50 rooms, shortlist a PMS that includes a channel manager, handles guest messages in one inbox, has a mobile app and publishes its price. Then test two or three with a free trial using your own rooms and rates.
+
+Q: How much does a PMS cost for a 10-room hotel?
+A: Among vendors that publish prices, roughly 40 to 165 a month in euros or dollars (10 October 2026), depending on whether the channel manager and messaging are included. Booking fees, add-ons and setup fees can add to that. Several well-known vendors only quote.
+
+Q: Do I need a separate channel manager?
+A: Not if your PMS includes one. Some include it in every plan, some only in higher plans, and some charge per channel connection. Check this before comparing prices.
+
+Q: Can I try Hostlio Pro for free?
+A: Yes, for 7 days. You add a card at signup, but nothing is charged until the trial ends. Plans cost $49, $89 and $149 a month, with the channel manager and the WhatsApp AI assistant in every plan.
 
 ---
 # PMS vs channel manager: what's the difference?
