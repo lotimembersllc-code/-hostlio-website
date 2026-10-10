@@ -64,15 +64,15 @@ Başla
 ## Gece 02:14 , bir misafir yazıyor
 Siz uyurken olan biten, üç karede.
 
-02:14
+Gece 02:14
 ## Misafir mesaj atar
 Almanya'dan gelen misafir geç check-in'i soruyor. Siz derin uykudasınız.
 
-02:14 Lio yanıtladı
+Gece 02:14 Lio yanıtladı
 ## Lio anında cevaplar
 Otelinizin bilgileriyle, misafirin kendi dilinde. Gerekiyorsa size not bırakır.
 
-08:30
+Sabah 08:30
 ## Sabah her şey hazır
 Yazışma Türkçe çevirisiyle panelinizde. Misafir memnun, siz dinlenmiş.
 
@@ -3377,15 +3377,15 @@ Get started
 ## 2:14 am , a guest is writing
 What happens while you sleep, in three frames.
 
-02:14
+Night 02:14
 ## A guest messages
 A guest from Germany asks about late check-in. You're fast asleep.
 
-02:14 Lio replied
+Night 02:14 Lio replied
 ## Lio replies instantly
 With your hotel's information, in the guest's own language. It leaves you a note if needed.
 
-08:30
+Morning 08:30
 ## Morning, all sorted
 The conversation waits in your dashboard, translated. A happy guest and a rested you.
 
@@ -7141,15 +7141,15 @@ Empezar
 ## 2:14 de la madrugada : un huésped escribe
 Lo que pasa mientras duermes, en tres escenas.
 
-02:14
+Noche 02:14
 ## Un huésped escribe
 Un huésped de Alemania pregunta por el check-in tardío. Tú estás profundamente dormido.
 
-02:14 Lio respondió
+Noche 02:14 Lio respondió
 ## Lio responde al instante
 Con la información de tu hotel y en el idioma del huésped. Si hace falta, te deja una nota.
 
-08:30
+Mañana 08:30
 ## Por la mañana, todo resuelto
 La conversación te espera en tu panel, traducida. Un huésped contento y tú, descansado.
 
@@ -10058,15 +10058,15 @@ Inizia
 ## Sono le 2:14 di notte e un ospite scrive
 Cosa succede mentre dormi, in tre scene.
 
-02:14
+Notte 02:14
 ## Un ospite scrive
 Un ospite dalla Germania chiede del check-in in tarda serata. Tu stai dormendo profondamente.
 
-02:14 Lio ha risposto
+Notte 02:14 Lio ha risposto
 ## Lio risponde subito
 Con le informazioni del tuo hotel, nella lingua dell'ospite. Se serve, ti lascia una nota.
 
-08:30
+Mattina 08:30
 ## Al mattino è tutto pronto
 La conversazione ti aspetta nel pannello, già tradotta. L'ospite è soddisfatto e tu sei riposato.
 
@@ -12715,15 +12715,15 @@ Começar
 ## 2h14 da madrugada , um hóspede está escrevendo
 O que acontece enquanto você dorme, em três quadros.
 
-02:14
+Noite 02:14
 ## Um hóspede envia uma mensagem
 Um hóspede da Alemanha pergunta sobre check-in tardio. Você está em sono profundo.
 
-02:14 Lio respondeu
+Noite 02:14 Lio respondeu
 ## Lio responde na hora
 Com as informações do seu hotel, no idioma do próprio hóspede. Se for preciso, deixa um recado para você.
 
-08:30
+Manhã 08:30
 ## De manhã, tudo resolvido
 A conversa espera por você no painel, já traduzida. Hóspede satisfeito e você descansado.
 
@@ -15473,15 +15473,15 @@ Commencer
 ## 2 h 14 , un client écrit
 Ce qui se passe pendant votre sommeil, en trois images.
 
-02:14
+Nuit 02:14
 ## Un client envoie un message
 Un client venu d’Allemagne demande s’il peut arriver tard. Vous dormez profondément.
 
-02:14 Lio a répondu
+Nuit 02:14 Lio a répondu
 ## Lio répond aussitôt
 Avec les informations de votre hôtel, dans la langue du client. Et vous laisse une note si besoin.
 
-08:30
+Matin 08:30
 ## Au réveil, tout est réglé
 La conversation vous attend dans votre tableau de bord, traduite. Un client satisfait, et vous reposé.
 

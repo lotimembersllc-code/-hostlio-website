@@ -197,6 +197,9 @@ def lio_strip(L):
             f'<div class="bento">{book}{sell}{sug}</div></div></section>')
 
 
+STORY_WHEN = {"tr": ("Gece", "Sabah"), "en": ("Night", "Morning"), "es": ("Noche", "Mañana"), "it": ("Notte", "Mattina"),
+              "pt": ("Noite", "Manhã"), "fr": ("Nuit", "Matin")}
+
 def home(L, plans_html, FAQ_CORE):
     t = T[L]; U = lambda k: url(k, L)
     chk = lambda items: "<ul>" + "".join(f"<li>{icon('check')}<span>{x}</span></li>" for x in items) + "</ul>"
@@ -227,7 +230,10 @@ def home(L, plans_html, FAQ_CORE):
     st = ""
     for i,(im,alt,tm,h,p) in enumerate(t["story"]):
         chip = f'<span class="chip" aria-hidden="true">{icon("sparkle")}{t["story_chip"]}</span>' if i == 1 else ""
-        st += f'<article>{img(im, alt)}<span class="time">{tm}</span>{chip}<div class="txt"><h3>{h}</h3><p>{p}</p></div></article>'
+        night = int(tm.split(":")[0]) < 6   # saat etiketi video süresine benzemesin: simge + "Gece/Sabah" (10 Ekim 2026)
+        when = STORY_WHEN[L][0 if night else 1]
+        st += (f'<article>{img(im, alt)}<span class="time">{icon("moon" if night else "sun")}<span class="when">{when}</span>'
+               f'<time>{tm}</time></span>{chip}<div class="txt"><h3>{h}</h3><p>{p}</p></div></article>')
     story = f'''<section class="white rule"><div class="wrap"><div class="section-head rv"><h2 id="story-h">{t["story_h"]}</h2><p>{t["story_p"]}</p></div>
 <div class="story" tabindex="0" role="region" aria-labelledby="story-h">{st}</div></div></section>'''
 
