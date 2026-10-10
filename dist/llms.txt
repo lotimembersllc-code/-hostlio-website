@@ -101,6 +101,7 @@
 - [KBS bildirimi nasıl yapılır? Oteller ve pansiyonlar için rehber](https://hostliopro.com/tr/blog/kbs-bildirimi-nasil-yapilir/): KBS (Kimlik Bildirim Sistemi) bildirimi adım adım: Emniyet ve Jandarma KBS farkı, kayıt, yabancı misafir, süreler ve cezalar. Resmî kaynaklı.
 - [Otel programı fiyatları 2026: modeller ve gerçek rakamlar](https://hostliopro.com/tr/blog/otel-programi-fiyatlari-2026/): 2026 otel programı fiyatları: sabit paket, oda başı, komisyon ve lisans modelleri; resmî sayfalardan alınmış rakamlar ve 10, 25, 50 oda için örnek hesap.
 - [En çok kullanılan otel programları: 2026 listesi](https://hostliopro.com/tr/blog/en-cok-kullanilan-otel-programlari/): Türkiye'de otellerin kullandığı otel programları: Elektraweb, HMS, Sistem Otel, WOLVOX, HotelRunner, OPERA ve diğerleri. Kime uygun, fiyat, KBS.
+- [Konaklama vergisi 2026: oran, hesaplama ve beyan](https://hostliopro.com/tr/blog/konaklama-vergisi/): Konaklama vergisi 2026: oran %1 (Mayıs–Aralık 2026), kimler öder, KDV hariç matrah, örnek hesap, istisnalar, beyanname ve son gün. Resmî kaynaklı.
 
 ## Páginas en español
 - [Hostlio Pro](https://hostliopro.com/es/): Software de gestión hotelera Hostlio Pro: la IA Lio atiende a huéspedes 24/7 en 30+ idiomas y el channel manager sincroniza 100+ OTAs. 7 días gratis.

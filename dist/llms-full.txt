@@ -1114,6 +1114,12 @@ URL: https://hostliopro.com/tr/blog/
 ## Otelciler için blog
 Bağımsız otel işletmeciliği, dağıtım ve misafir iletişimi üzerine pratik yazılar.
 
+Operasyon ve mevzuat
+
+## Konaklama vergisi 2026: oran, hesaplama ve beyan
+20 Ekim 2026
+Konaklama vergisi 2026: oran %1 (Mayıs–Aralık 2026), kimler öder, KDV hariç matrah, örnek hesap, istisnalar, beyanname ve son gün. Resmî kaynaklı.
+
 Yazılım seçimi
 
 ## En çok kullanılan otel programları: 2026 listesi
@@ -2611,6 +2617,129 @@ A: Hepsinde. Lio, Starter dahil her planda misafirlere WhatsApp'tan otelinizin b
 
 Q: Kurulum ne kadar sürer?
 A: Hesap dakikalar içinde hazır olur; kurulum sihirbazı eksik bilgileri gösterir ve kanallar çoğu zaman aynı gün bağlanır. 7 günlük denemeyle kendi odalarınız ve fiyatlarınızla başlayabilirsiniz.
+
+---
+# Konaklama vergisi 2026: oran, hesaplama ve beyan
+URL: https://hostliopro.com/tr/blog/konaklama-vergisi/
+
+## Konaklama vergisi 2026: oran, hesaplama ve beyan
+Yazan: Hostlio Pro ürün ekibi , otel yazılımı geliştiren ekip. Yayın: 20 Ekim 2026 , güncelleme: 23 Eylül 2026
+
+Kısa cevap: Konaklama vergisi, otel, pansiyon, apart ve benzeri tesislerde verilen geceleme hizmetinden ve bu hizmetle birlikte sunulan yeme-içme, havuz, spa gibi hizmetlerden alınan bir vergidir. Kanundaki oran %2'dir; ancak 1 Mayıs 2026'dan 31 Aralık 2026'ya kadar oran %1 olarak uygulanıyor. Vergi KDV hariç bedel üzerinden hesaplanır, faturada ayrıca gösterilir ve her ay ayrı bir "Konaklama Vergisi Beyannamesi" ile ertesi ayın 26'sı akşamına kadar beyan edilip ödenir.
+
+İçindekiler
+
+- Konaklama vergisi nedir, ne zamandan beri var?
+- 2026'da oran ne kadar?
+- Hangi tesisler konaklama vergisi öder?
+- Hangi hizmetler vergiye tabi?
+- Nasıl hesaplanır? Örnek
+- İstisnalar
+- Beyan ve ödeme
+- Geç beyan ve cezalar
+- Sık yapılan yanlışlar
+- Hostlio Pro bu işte ne yapar, ne yapmaz?
+- Kaynaklar
+Bu yazı genel bilgilendirme amaçlıdır, vergi danışmanlığı değildir. Bilgiler 10 Ekim 2026 tarihinde resmî kaynaklardan (kanun, tebliğ, Cumhurbaşkanı Kararı ve GİB kılavuzu) derlendi. Oranlar ve uygulama değişebilir; kendi durumunuz için mali müşavirinize danışın.
+
+## Konaklama vergisi nedir, ne zamandan beri var?
+
+Konaklama vergisi 6802 sayılı Gider Vergileri Kanunu'nun 34. maddesinde düzenlenir; bu madde 7194 sayılı Kanun'la eklendi. Vergi ilk olarak 2020'de başlayacaktı, ancak salgın döneminde üç kez ertelendi ve 1 Ocak 2023'ten beri uygulanıyor. Uygulamanın ayrıntıları Konaklama Vergisi Uygulama Genel Tebliği'nde (Resmî Gazete, 14 Aralık 2022) yer alır.
+
+## 2026'da oran ne kadar?
+
+Kanundaki oran %2 'dir ve Cumhurbaşkanı bu oranı iki katına kadar artırabilir ya da yarısına kadar indirebilir. 1 Mayıs 2026'da yayımlanan 11263 sayılı Cumhurbaşkanı Kararı ile oran 31 Aralık 2026'ya kadar %1 olarak belirlendi. Yeni bir karar yayımlanmazsa 1 Ocak 2027'den itibaren yeniden %2 uygulanır. Ay sonunu ve yıl başını kapsayan konaklamalarda hangi oranın uygulanacağını mali müşavirinizle netleştirin.
+
+## Hangi tesisler konaklama vergisi öder?
+
+Kanun otel, motel, tatil köyü, pansiyon, apart otel, misafirhane, kamping, dağ evi ve yayla evini sayar. Tebliğ kapsamı genişletir: butik otel, çiftlik ve köy evi, termal tesisler, uygulama otelleri, kurum misafirhaneleri ve turizm işletmesi belgesi ya da işyeri açma belgesi olup olmadığına bakılmaksızın geceleme hizmeti sunan diğer tüm tesisler. Misafirin yerli ya da yabancı olması fark etmez. Vergiyi tesisi fiilen işleten öder; mülkün sahibi olmak gerekmez.
+
+## Hangi hizmetler vergiye tabi?
+
+- Tabi: geceleme hizmeti ve onunla birlikte satılan her şey: oda-kahvaltı, yarım pansiyon, tam pansiyon, her şey dahil paketler, yeme-içme, havuz, spa, termal ve spor hizmetleri. Kahvaltı faturada ayrı satırda gösterilse bile vergiye tabidir.
+
+- Tabi değil: konaklamayan kişilere verilen hizmetler (örneğin dışarıdan gelen misafire restoran ya da günübirlik spa), konaklamayla birlikte satılmayan ve ayrı fiyatlanan ekstralar, ayrı gösterilen ya da ayrı faturalanan transfer ve turlar, konaklama içermeyen düğün ve toplantılar.
+
+- Ücretsiz konaklama: sahiplere, yakınlara, personele ya da tanıtım amacıyla verilen ücretsiz konaklamalarda vergi emsal bedel üzerinden hesaplanır.
+
+## Nasıl hesaplanır? Örnek
+
+Matrah, konaklama hizmetinin KDV hariç bedelidir; vade, kur ve fiyat farkları da matraha girer, faturada gösterilen ticari iskontolar düşülebilir. Döviz cinsinden fiyatlarda vergi doğduğu günün TCMB döviz alış kuru kullanılır. Vergi faturada ayrıca gösterilir, üzerinden indirim yapılamaz ve KDV matrahına dahil edilmez . Konaklamadan önce kesilen faturada (örneğin ön ödeme) konaklama vergisi gösterilmez.
+
+Kalem Tutar Not
+Konaklama bedeli (KDV hariç) 5.000 TL Oda ile birlikte satılan kahvaltı ve yemek dahil
+Konaklama vergisi (%1) 50 TL 5.000 × 0,01; faturada ayrı satırda
+KDV matrahı 5.000 TL Konaklama vergisi KDV matrahına girmez
+KDV Geçerli oranla hesaplanır Oranı muhasebecinizle teyit edin
+
+Örnek, Tebliğ'deki örneğin bugünkü %1 oranına uyarlanmış hâlidir. Konaklama hizmetindeki güncel KDV oranını muhasebecinizle teyit edin.
+
+## İstisnalar
+
+- Öğrenciler: öğrenci yurtları, pansiyonları ve kamplarında öğrencilere verilen konaklama hizmeti istisnadır. Bu yerlerde zaman zaman konaklayan öğrenci olmayan kişiler vergiye tabidir.
+
+- Diplomatik temsilcilikler: karşılıklılık esasıyla diplomatik temsilcilikler, konsolosluklar ve vergi muafiyeti tanınan uluslararası kuruluşlar; Dışişleri Bakanlığı belgesi ve faturaya düşülen kanuni açıklama gerekir.
+
+- Genel bir kamu istisnası yoktur: kurum misafirhaneleri de vergiye tabidir; yalnızca lojmanlar kapsam dışıdır.
+Kanunda ve Tebliğ'de konaklama süresine bağlı bir sınır yoktur; fiilen konaklanan geceler vergilendirilir.
+
+## Beyan ve ödeme
+
+- Ayrı beyanname: vergi, KDV ya da muhtasar beyannamesiyle değil, ayrı bir Konaklama Vergisi Beyannamesi ile elektronik ortamda beyan edilir.
+
+- Dönem ve süre: aylıktır; bir ayın vergisi ertesi ayın 26'sı akşamına kadar beyan edilir ve aynı sürede ödenir.
+
+- Nereye: KDV mükellefiyseniz bağlı olduğunuz vergi dairesine; birden fazla tesisiniz varsa hepsi için tek beyanname verilir.
+
+- Satış olmayan aylar: o ay vergiye tabi işlem olmasa da beyanname verilmesi gerekir.
+
+- Fazla ödeme: önce misafire iade edilir, sonra beyanname düzeltilir ve iade talep edilir.
+
+## Geç beyan ve cezalar
+
+Konaklama vergisine özgü ayrı bir ceza yoktur; Vergi Usul Kanunu'nun genel hükümleri uygulanır. GİB kılavuzuna göre süresinden sonra pişmanlıkla verilen beyannamede vergi ziyaı cezası kesilmez ama pişmanlık zammı ve özel usulsüzlük cezası uygulanır. Pişmanlık şartları sağlanmadan süresinden sonra verilen beyannamede ise vergi ziyaı cezası (%50) ve gecikme faizi de gündeme gelir. En kolayı her ay 26'sını takvime yazmaktır.
+
+## Sık yapılan yanlışlar
+
+- "Oran %2": 2026'nın Mayıs–Aralık döneminde %1.
+
+- "KDV beyannamesinde beyan edilir": hayır, ayrı bir beyanname vardır.
+
+- "Son gün ayın 28'i": konaklama vergisinde ertesi ayın 26'sıdır.
+
+- "Kahvaltı ayrı yazılırsa vergi yok": konaklamayla birlikte satılan kahvaltı vergiye tabidir.
+
+- "Satış yoksa beyanname yok": satış olmayan ayda da beyanname verilir.
+
+## Hostlio Pro bu işte ne yapar, ne yapmaz?
+
+Açık olalım: Hostlio Pro fatura kesmez ve konaklama vergisi beyannamesi hazırlamaz; bunlar muhasebe yazılımınızın ve mali müşavirinizin işidir. Hostlio Pro'da rezervasyonlarınız, gelir ve doluluk raporlarınız tek yerde durur; raporları Excel'e aktarıp muhasebecinize iletebilirsiniz. Misafir kimlik bildirimi için de KBS bildirimi rehberimize bakın.
+
+7 gün ücretsiz dene Planları gör
+
+## Kaynaklar
+Tüm kaynaklara 10 Ekim 2026 tarihinde erişildi.
+
+- 6802 sayılı Gider Vergileri Kanunu (md. 34, güncel metin)
+- Konaklama Vergisi Uygulama Genel Tebliği (Resmî Gazete, 14.12.2022)
+- Cumhurbaşkanı Kararı 11263: oran %1 (Resmî Gazete, 1.5.2026)
+- GİB: Konaklama Vergisi Beyannamesi Düzenleme Kılavuzu
+- 7194 sayılı Kanun
+
+Q: Konaklama vergisi oranı 2026'da kaç?
+A: Kanundaki oran %2'dir. 11263 sayılı Cumhurbaşkanı Kararı ile 1 Mayıs 2026'dan 31 Aralık 2026'ya kadar %1 uygulanıyor. Yeni karar çıkmazsa 1 Ocak 2027'den itibaren yeniden %2.
+
+Q: Konaklama vergisi KDV'ye dahil mi?
+A: Hayır. Konaklama vergisi KDV hariç bedel üzerinden hesaplanır, faturada ayrıca gösterilir ve KDV matrahına dahil edilmez.
+
+Q: Konaklama vergisi beyannamesi ne zaman verilir?
+A: Aylık olarak, ertesi ayın 26'sı akşamına kadar; ödeme de aynı sürede yapılır. Vergiye tabi işlem olmayan aylarda da beyanname verilir.
+
+Q: Pansiyonlar da konaklama vergisi öder mi?
+A: Evet. Kanun pansiyonları açıkça sayar; Tebliğ'e göre belgesi olup olmadığına bakılmaksızın geceleme hizmeti sunan tüm tesisler kapsamdadır.
+
+Q: Kahvaltı konaklama vergisine tabi mi?
+A: Konaklamayla birlikte satılıyorsa evet; faturada ayrı satırda gösterilse bile. Konaklamayan kişiye satılan kahvaltı ise vergiye tabi değildir.
 
 ---
 # En çok kullanılan otel programları: 2026 listesi

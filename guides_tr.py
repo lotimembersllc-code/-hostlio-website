@@ -346,7 +346,78 @@ def programs(U):
            ("Hostlio Pro'yu ücretsiz deneyebilir miyim?", "Evet, 7 gün ücretsiz deneyebilirsiniz; deneme bitene kadar ücret çekilmez. Planlar Starter ⟦price:starter⟧, Pro ⟦price:pro⟧ ve Growth ⟦price:growth⟧ / ay (USD, erken kayıt).")]
     return c, faq
 
+# ------------------------------------------------------------------ Konaklama vergisi (takvim: 20 Ekim 2026)
+# Resmî kaynaklar 10 Ekim 2026: 6802 GVK md. 34, Konaklama Vergisi Uygulama Genel Tebliği (RG 14.12.2022),
+# CK 11263 (RG 1.5.2026: %1, 31.12.2026'ya kadar), GİB beyanname kılavuzu. KDV oranı bilerek yazılmadı (doğrulanmadı).
+# Hostlio fatura kesmez, beyanname hazırlamaz — metin bunu söyler.
+TAX_DATE = "10 Ekim 2026"
+TAX_SRC = [
+ ("6802 sayılı Gider Vergileri Kanunu (md. 34, güncel metin)", "https://www.mevzuat.gov.tr/mevzuatmetin/1.3.6802.pdf"),
+ ("Konaklama Vergisi Uygulama Genel Tebliği (Resmî Gazete, 14.12.2022)", "https://www.resmigazete.gov.tr/eskiler/2022/12/20221214-6.htm"),
+ ("Cumhurbaşkanı Kararı 11263: oran %1 (Resmî Gazete, 1.5.2026)", "https://www.resmigazete.gov.tr/eskiler/2026/05/20260501-6.pdf"),
+ ("GİB: Konaklama Vergisi Beyannamesi Düzenleme Kılavuzu", "https://intvrg.gib.gov.tr/KONAKLAMA_VERGISI_BEYANNAMESI_DUZENLEME_KILAVUZU.pdf"),
+ ("7194 sayılı Kanun", "https://www.mevzuat.gov.tr/mevzuatmetin/1.5.7194.pdf"),
+]
+
+def tax(U):
+    from build import btn, SIGNUP_URL
+    cta = btn("7 gün ücretsiz dene", SIGNUP_URL) + btn("Planları gör", U("pricing"), "ghost")
+    calc = _tbl(["Kalem", "Tutar", "Not"], [
+        ("Konaklama bedeli (KDV hariç)", "5.000 TL", "Oda ile birlikte satılan kahvaltı ve yemek dahil"),
+        ("Konaklama vergisi (%1)", "50 TL", "5.000 × 0,01; faturada ayrı satırda"),
+        ("KDV matrahı", "5.000 TL", "Konaklama vergisi KDV matrahına girmez"),
+        ("KDV", "Geçerli oranla hesaplanır", "Oranı muhasebecinizle teyit edin")])
+    c = f'''<div class="answer"><p><strong>Kısa cevap:</strong> Konaklama vergisi, otel, pansiyon, apart ve benzeri tesislerde verilen geceleme hizmetinden ve bu hizmetle birlikte sunulan yeme-içme, havuz, spa gibi hizmetlerden alınan bir vergidir. Kanundaki oran %2'dir; ancak 1 Mayıs 2026'dan 31 Aralık 2026'ya kadar oran <strong>%1</strong> olarak uygulanıyor. Vergi KDV hariç bedel üzerinden hesaplanır, faturada ayrıca gösterilir ve her ay ayrı bir "Konaklama Vergisi Beyannamesi" ile ertesi ayın 26'sı akşamına kadar beyan edilip ödenir.</p></div>
+<p class="small muted">Bu yazı genel bilgilendirme amaçlıdır, vergi danışmanlığı değildir. Bilgiler {TAX_DATE} tarihinde resmî kaynaklardan (kanun, tebliğ, Cumhurbaşkanı Kararı ve GİB kılavuzu) derlendi. Oranlar ve uygulama değişebilir; kendi durumunuz için mali müşavirinize danışın.</p>
+<h2>Konaklama vergisi nedir, ne zamandan beri var?</h2>
+<p>Konaklama vergisi 6802 sayılı Gider Vergileri Kanunu'nun 34. maddesinde düzenlenir; bu madde 7194 sayılı Kanun'la eklendi. Vergi ilk olarak 2020'de başlayacaktı, ancak salgın döneminde üç kez ertelendi ve <strong>1 Ocak 2023'ten beri</strong> uygulanıyor. Uygulamanın ayrıntıları Konaklama Vergisi Uygulama Genel Tebliği'nde (Resmî Gazete, 14 Aralık 2022) yer alır.</p>
+<h2>2026'da oran ne kadar?</h2>
+<p>Kanundaki oran <strong>%2</strong>'dir ve Cumhurbaşkanı bu oranı iki katına kadar artırabilir ya da yarısına kadar indirebilir. 1 Mayıs 2026'da yayımlanan 11263 sayılı Cumhurbaşkanı Kararı ile oran <strong>31 Aralık 2026'ya kadar %1</strong> olarak belirlendi. Yeni bir karar yayımlanmazsa 1 Ocak 2027'den itibaren yeniden %2 uygulanır. Ay sonunu ve yıl başını kapsayan konaklamalarda hangi oranın uygulanacağını mali müşavirinizle netleştirin.</p>
+<h2>Hangi tesisler konaklama vergisi öder?</h2>
+<p>Kanun otel, motel, tatil köyü, pansiyon, apart otel, misafirhane, kamping, dağ evi ve yayla evini sayar. Tebliğ kapsamı genişletir: butik otel, çiftlik ve köy evi, termal tesisler, uygulama otelleri, kurum misafirhaneleri ve <em>turizm işletmesi belgesi ya da işyeri açma belgesi olup olmadığına bakılmaksızın</em> geceleme hizmeti sunan diğer tüm tesisler. Misafirin yerli ya da yabancı olması fark etmez. Vergiyi tesisi fiilen işleten öder; mülkün sahibi olmak gerekmez.</p>
+<h2>Hangi hizmetler vergiye tabi?</h2>
+<ul><li><strong>Tabi:</strong> geceleme hizmeti ve onunla birlikte satılan her şey: oda-kahvaltı, yarım pansiyon, tam pansiyon, her şey dahil paketler, yeme-içme, havuz, spa, termal ve spor hizmetleri. Kahvaltı faturada ayrı satırda gösterilse bile vergiye tabidir.</li>
+<li><strong>Tabi değil:</strong> konaklamayan kişilere verilen hizmetler (örneğin dışarıdan gelen misafire restoran ya da günübirlik spa), konaklamayla birlikte satılmayan ve ayrı fiyatlanan ekstralar, ayrı gösterilen ya da ayrı faturalanan transfer ve turlar, konaklama içermeyen düğün ve toplantılar.</li>
+<li><strong>Ücretsiz konaklama:</strong> sahiplere, yakınlara, personele ya da tanıtım amacıyla verilen ücretsiz konaklamalarda vergi emsal bedel üzerinden hesaplanır.</li></ul>
+<h2>Nasıl hesaplanır? Örnek</h2>
+<p>Matrah, konaklama hizmetinin <strong>KDV hariç</strong> bedelidir; vade, kur ve fiyat farkları da matraha girer, faturada gösterilen ticari iskontolar düşülebilir. Döviz cinsinden fiyatlarda vergi doğduğu günün TCMB döviz alış kuru kullanılır. Vergi faturada ayrıca gösterilir, üzerinden indirim yapılamaz ve <strong>KDV matrahına dahil edilmez</strong>. Konaklamadan önce kesilen faturada (örneğin ön ödeme) konaklama vergisi gösterilmez.</p>
+{calc}
+<p>Örnek, Tebliğ'deki örneğin bugünkü %1 oranına uyarlanmış hâlidir. Konaklama hizmetindeki güncel KDV oranını muhasebecinizle teyit edin.</p>
+<h2>İstisnalar</h2>
+<ul><li><strong>Öğrenciler:</strong> öğrenci yurtları, pansiyonları ve kamplarında öğrencilere verilen konaklama hizmeti istisnadır. Bu yerlerde zaman zaman konaklayan öğrenci olmayan kişiler vergiye tabidir.</li>
+<li><strong>Diplomatik temsilcilikler:</strong> karşılıklılık esasıyla diplomatik temsilcilikler, konsolosluklar ve vergi muafiyeti tanınan uluslararası kuruluşlar; Dışişleri Bakanlığı belgesi ve faturaya düşülen kanuni açıklama gerekir.</li>
+<li><strong>Genel bir kamu istisnası yoktur:</strong> kurum misafirhaneleri de vergiye tabidir; yalnızca lojmanlar kapsam dışıdır.</li></ul>
+<p>Kanunda ve Tebliğ'de konaklama süresine bağlı bir sınır yoktur; fiilen konaklanan geceler vergilendirilir.</p>
+<h2>Beyan ve ödeme</h2>
+<ol><li><strong>Ayrı beyanname:</strong> vergi, KDV ya da muhtasar beyannamesiyle değil, ayrı bir <em>Konaklama Vergisi Beyannamesi</em> ile elektronik ortamda beyan edilir.</li>
+<li><strong>Dönem ve süre:</strong> aylıktır; bir ayın vergisi ertesi ayın <strong>26'sı akşamına kadar</strong> beyan edilir ve aynı sürede ödenir.</li>
+<li><strong>Nereye:</strong> KDV mükellefiyseniz bağlı olduğunuz vergi dairesine; birden fazla tesisiniz varsa hepsi için tek beyanname verilir.</li>
+<li><strong>Satış olmayan aylar:</strong> o ay vergiye tabi işlem olmasa da beyanname verilmesi gerekir.</li>
+<li><strong>Fazla ödeme:</strong> önce misafire iade edilir, sonra beyanname düzeltilir ve iade talep edilir.</li></ol>
+<h2>Geç beyan ve cezalar</h2>
+<p>Konaklama vergisine özgü ayrı bir ceza yoktur; Vergi Usul Kanunu'nun genel hükümleri uygulanır. GİB kılavuzuna göre süresinden sonra pişmanlıkla verilen beyannamede vergi ziyaı cezası kesilmez ama pişmanlık zammı ve özel usulsüzlük cezası uygulanır. Pişmanlık şartları sağlanmadan süresinden sonra verilen beyannamede ise vergi ziyaı cezası (%50) ve gecikme faizi de gündeme gelir. En kolayı her ay 26'sını takvime yazmaktır.</p>
+<h2>Sık yapılan yanlışlar</h2>
+<ul><li>"Oran %2": 2026'nın Mayıs–Aralık döneminde %1.</li>
+<li>"KDV beyannamesinde beyan edilir": hayır, ayrı bir beyanname vardır.</li>
+<li>"Son gün ayın 28'i": konaklama vergisinde ertesi ayın 26'sıdır.</li>
+<li>"Kahvaltı ayrı yazılırsa vergi yok": konaklamayla birlikte satılan kahvaltı vergiye tabidir.</li>
+<li>"Satış yoksa beyanname yok": satış olmayan ayda da beyanname verilir.</li></ul>
+<h2>Hostlio Pro bu işte ne yapar, ne yapmaz?</h2>
+<p>Açık olalım: Hostlio Pro fatura kesmez ve konaklama vergisi beyannamesi hazırlamaz; bunlar muhasebe yazılımınızın ve mali müşavirinizin işidir. Hostlio Pro'da rezervasyonlarınız, gelir ve doluluk raporlarınız tek yerde durur; raporları Excel'e aktarıp muhasebecinize iletebilirsiniz. Misafir kimlik bildirimi için de <a href="{U("post-kbs")}">KBS bildirimi rehberimize</a> bakın.</p>
+<div class="cta-row" style="margin-top:12px">{cta}</div>
+'''
+    lis = "".join(f'<li><a href="{u}" rel="nofollow noopener">{html.escape(n)}</a></li>' for n, u in TAX_SRC)
+    c += f'<h2>Kaynaklar</h2><p class="small muted">Tüm kaynaklara {TAX_DATE} tarihinde erişildi.</p><ul>{lis}</ul>'
+    faq = [("Konaklama vergisi oranı 2026'da kaç?", "Kanundaki oran %2'dir. 11263 sayılı Cumhurbaşkanı Kararı ile 1 Mayıs 2026'dan 31 Aralık 2026'ya kadar %1 uygulanıyor. Yeni karar çıkmazsa 1 Ocak 2027'den itibaren yeniden %2."),
+           ("Konaklama vergisi KDV'ye dahil mi?", "Hayır. Konaklama vergisi KDV hariç bedel üzerinden hesaplanır, faturada ayrıca gösterilir ve KDV matrahına dahil edilmez."),
+           ("Konaklama vergisi beyannamesi ne zaman verilir?", "Aylık olarak, ertesi ayın 26'sı akşamına kadar; ödeme de aynı sürede yapılır. Vergiye tabi işlem olmayan aylarda da beyanname verilir."),
+           ("Pansiyonlar da konaklama vergisi öder mi?", "Evet. Kanun pansiyonları açıkça sayar; Tebliğ'e göre belgesi olup olmadığına bakılmaksızın geceleme hizmeti sunan tüm tesisler kapsamdadır."),
+           ("Kahvaltı konaklama vergisine tabi mi?", "Konaklamayla birlikte satılıyorsa evet; faturada ayrı satırda gösterilse bile. Konaklamayan kişiye satılan kahvaltı ise vergiye tabi değildir.")]
+    return c, faq
+
 META = [
+ dict(key="post-taxtr", date="2026-10-20", title="Konaklama vergisi 2026: oran, hesaplama ve beyan",
+      desc="Konaklama vergisi 2026: oran %1 (Mayıs–Aralık 2026), kimler öder, KDV hariç matrah, örnek hesap, istisnalar, beyanname ve son gün. Resmî kaynaklı."),
  dict(key="post-programs", date="2026-10-09", title="En çok kullanılan otel programları: 2026 listesi",
       desc="Türkiye'de otellerin kullandığı otel programları: Elektraweb, HMS, Sistem Otel, WOLVOX, HotelRunner, OPERA ve diğerleri. Kime uygun, fiyat, KBS."),
  dict(key="post-channel-manager", date="2026-10-08", title="Channel manager nedir? Otelciler için kanal yöneticisi rehberi",
@@ -356,7 +427,7 @@ META = [
  dict(key="post-prices", date="2026-10-08", title="Otel programı fiyatları 2026: modeller ve gerçek rakamlar",
       desc="2026 otel programı fiyatları: sabit paket, oda başı, komisyon ve lisans modelleri; resmî sayfalardan alınmış rakamlar ve 10, 25, 50 oda için örnek hesap."),
 ]
-_FN = {"post-programs": programs, "post-channel-manager": channel_manager, "post-kbs": kbs, "post-prices": prices}
+_FN = {"post-taxtr": tax, "post-programs": programs, "post-channel-manager": channel_manager, "post-kbs": kbs, "post-prices": prices}
 
 def pages(B):
     import content_tr
