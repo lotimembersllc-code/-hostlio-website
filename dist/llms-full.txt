@@ -1117,7 +1117,7 @@ Bağımsız otel işletmeciliği, dağıtım ve misafir iletişimi üzerine prat
 Operasyon ve mevzuat
 
 ## Konaklama vergisi 2026: oran, hesaplama ve beyan
-20 Ekim 2026
+10 Ekim 2026
 Konaklama vergisi 2026: oran %1 (Mayıs–Aralık 2026), kimler öder, KDV hariç matrah, örnek hesap, istisnalar, beyanname ve son gün. Resmî kaynaklı.
 
 Yazılım seçimi
@@ -2623,7 +2623,7 @@ A: Hesap dakikalar içinde hazır olur; kurulum sihirbazı eksik bilgileri göst
 URL: https://hostliopro.com/tr/blog/konaklama-vergisi/
 
 ## Konaklama vergisi 2026: oran, hesaplama ve beyan
-Yazan: Hostlio Pro ürün ekibi , otel yazılımı geliştiren ekip. Yayın: 20 Ekim 2026 , güncelleme: 23 Eylül 2026
+Yazan: Hostlio Pro ürün ekibi , otel yazılımı geliştiren ekip. Yayın: 10 Ekim 2026 , güncelleme: 23 Eylül 2026
 
 Kısa cevap: Konaklama vergisi, otel, pansiyon, apart ve benzeri tesislerde verilen geceleme hizmetinden ve bu hizmetle birlikte sunulan yeme-içme, havuz, spa gibi hizmetlerden alınan bir vergidir. Kanundaki oran %2'dir; ancak 1 Mayıs 2026'dan 31 Aralık 2026'ya kadar oran %1 olarak uygulanıyor. Vergi KDV hariç bedel üzerinden hesaplanır, faturada ayrıca gösterilir ve her ay ayrı bir "Konaklama Vergisi Beyannamesi" ile ertesi ayın 26'sı akşamına kadar beyan edilip ödenir.
 

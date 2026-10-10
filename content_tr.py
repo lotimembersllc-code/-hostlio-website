@@ -291,7 +291,7 @@ def contact():
             "trail":[("İletişim", U("contact"))],"body":body,"page_type":"ContactPage","no_final":True}
 
 POSTS = [
- {"key":"post-taxtr","title":"Konaklama vergisi 2026: oran, hesaplama ve beyan","date":"2026-10-20","desc":"Konaklama vergisi 2026: oran %1 (Mayıs–Aralık 2026), kimler öder, KDV hariç matrah, örnek hesap, istisnalar, beyanname ve son gün. Resmî kaynaklı."},
+ {"key":"post-taxtr","title":"Konaklama vergisi 2026: oran, hesaplama ve beyan","date":"2026-10-10","desc":"Konaklama vergisi 2026: oran %1 (Mayıs–Aralık 2026), kimler öder, KDV hariç matrah, örnek hesap, istisnalar, beyanname ve son gün. Resmî kaynaklı."},
  {"key":"post-programs","title":"En çok kullanılan otel programları: 2026 listesi","date":"2026-10-09","desc":"Türkiye'de otellerin kullandığı otel programları: Elektraweb, HMS, Sistem Otel, WOLVOX, HotelRunner, OPERA ve diğerleri. Kime uygun, fiyat, KBS."},
  {"key":"post-kbs","title":"KBS bildirimi nasıl yapılır? Oteller ve pansiyonlar için rehber","date":"2026-10-08","desc":"KBS (Kimlik Bildirim Sistemi) bildirimi adım adım: Emniyet ve Jandarma KBS farkı, kayıt, yabancı misafir, süreler ve cezalar. Resmî kaynaklı."},
  {"key":"post-prices","title":"Otel programı fiyatları 2026: modeller ve gerçek rakamlar","date":"2026-10-08","desc":"2026 otel programı fiyatları: sabit paket, oda başı, komisyon ve lisans modelleri; resmî sayfalardan alınmış rakamlar ve örnek hesap."},

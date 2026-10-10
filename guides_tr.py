@@ -416,7 +416,7 @@ def tax(U):
     return c, faq
 
 META = [
- dict(key="post-taxtr", date="2026-10-20", title="Konaklama vergisi 2026: oran, hesaplama ve beyan",
+ dict(key="post-taxtr", date="2026-10-10", title="Konaklama vergisi 2026: oran, hesaplama ve beyan",
       desc="Konaklama vergisi 2026: oran %1 (Mayıs–Aralık 2026), kimler öder, KDV hariç matrah, örnek hesap, istisnalar, beyanname ve son gün. Resmî kaynaklı."),
  dict(key="post-programs", date="2026-10-09", title="En çok kullanılan otel programları: 2026 listesi",
       desc="Türkiye'de otellerin kullandığı otel programları: Elektraweb, HMS, Sistem Otel, WOLVOX, HotelRunner, OPERA ve diğerleri. Kime uygun, fiyat, KBS."),
