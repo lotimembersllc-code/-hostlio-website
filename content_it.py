@@ -164,7 +164,7 @@ def checkin():
 '''
     faq = [("Quali piani includono il check-in online?", "Il check-in online con firma digitale è incluso nei piani Pro e Growth."),
            ("L'ospite deve scaricare un'app?", "No. Il modulo di check-in si apre nel browser; non serve scaricare nessuna app."),
-           ("E se un ospite non completa il check-in dal link?", "Fai il check-in nel modo consueto. Lo staff può anche scansionare il documento al banco dal pannello web, con la fotocamera del computer o del tablet; la lettura avviene sul dispositivo e nessuna immagine viene conservata."),
+           ("E se un ospite non completa il check-in dal link?", "Fai il check-in nel modo consueto. Lo staff può anche scansionare il documento al banco dal pannello web, con la fotocamera del computer o del tablet, oppure con l'app mobile di Hostlio Pro; la lettura avviene sul dispositivo e nessuna immagine viene conservata."),
            ("Le foto dei documenti vengono conservate?", "No. La zona a lettura ottica (MRZ) del documento viene letta sul telefono dell'ospite, o al banco, sul dispositivo dell'hotel, dal pannello web, e vengono salvati solo i dati estratti e la firma. Si possono scansionare passaporti e carte d'identità con MRZ; gli altri documenti si inseriscono a mano.")]
     return {"key":"checkin","title":"Check-in online per hotel con firma digitale | Hostlio Pro",
             "desc":"Check-in online Hostlio Pro: l'ospite scansiona il documento (nessuna immagine conservata), aggiunge accompagnatori e firma dal telefono. Niente code.",
@@ -182,7 +182,7 @@ def features():
 <div class="row"><h3>Documenti per l'ospite</h3><div><p>Dalla prenotazione prepari la conferma di alloggio richiesta per il visto o la lettera d'invito, oppure una ricevuta del soggiorno con date, prezzo a notte e totale. Scegli italiano, inglese, turco, spagnolo, portoghese o francese (viene proposta la lingua dell'ospite), poi stampa o salva in PDF. Anche la scheda di registrazione dell'ospite si scarica in PDF.</p></div></div>
 <div class="row"><h3>Vendita di transfer e tour</h3><div><p>Lio propone transfer dall'aeroporto e tour durante la conversazione e inoltra la richiesta al tuo team.</p></div></div>
 <div class="row"><h3>Suggerimenti di Lio e insight AI</h3><div><p>Ogni mattina Lio prepara suggerimenti su prezzi, operatività (camere da pulire, richieste in sospeso), impostazioni mancanti e opportunità di ricavo. Nulla cambia senza la tua approvazione e i suggerimenti sui prezzi restano nei limiti che imposti tu. Con Pro e Growth riassume anche lamentele ed elogi ricorrenti in recensioni e messaggi.</p></div></div>
-<div class="row"><h3>App mobile</h3><div><p>Gestisci prenotazioni, messaggi e check-in anche lontano dall'hotel con l'app iOS e Android.</p>{store_badges("it")}</div></div>
+<div class="row"><h3>App mobile</h3><div><p>Gestisci prenotazioni, messaggi e check-in anche lontano dall'hotel con l'app iOS e Android. Nell'app trovi anche la schermata Oggi, analisi e report, il centro notifiche, le segnalazioni di guasti con foto, la gestione del team e la scansione dei documenti al banco; con due strutture passi dall'una all'altra con un tocco.</p>{store_badges("it")}</div></div>
 </div></div></section>
 {FX.features_more(L)}
 <section><div class="wrap"><div class="section-head"><h2>Funzionalità per piano</h2></div>
@@ -240,7 +240,7 @@ def pricing():
 
 FAQ_ALL = FAQ_CORE + [
  ("Per quali tipi di struttura è pensato Hostlio Pro?", "Per strutture indipendenti da 1 a 150 camere, come boutique hotel, hotel di città, B&B e affittacamere, residence e aparthotel e ostelli."),
- ("Esiste un'app mobile?", "Sì. Tutti i piani, Starter compreso, includono l'app iOS e Android. Gestisci prenotazioni, messaggi e check-in anche lontano dall'hotel."),
+ ("Esiste un'app mobile?", "Sì. Tutti i piani, Starter compreso, includono l'app iOS e Android. Gestisci prenotazioni, messaggi e check-in anche lontano dall'hotel; analisi, notifiche, guasti e scansione dei documenti sono anche nell'app."),
  ("Come funziona il check-in online?", "Gli ospiti ricevono un link personale e sicuro, scansionano il documento con il telefono (nessuna immagine viene conservata) e, prima dell'arrivo, inviano accompagnatori e firma digitale. Disponibile nei piani Pro e Growth."),
  ("A cosa serve la conferma di alloggio per il visto?", "Per gli ospiti che hanno bisogno di un visto, prepara con un clic una conferma di alloggio dai dati della prenotazione, da usare nella richiesta di visto o di invito. Puoi salvarla in PDF o stamparla."),
  ("I miei dati sono al sicuro?", "I dati vengono trasmessi tramite connessioni crittografate e i dati di ogni hotel sono isolati da quelli delle altre strutture con regole di accesso a livello di riga. Puoi eliminare la scheda di un ospite dal pannello, e firme e conversazioni vengono cancellate o anonimizzate automaticamente dopo periodi definiti."),

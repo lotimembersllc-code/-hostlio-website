@@ -164,7 +164,7 @@ def checkin():
 '''
     faq = [("Quais planos incluem o check-in online?", "O check-in online com assinatura digital está incluído nos planos Pro e Growth."),
            ("O hóspede precisa baixar um aplicativo?", "Não. O formulário de check-in abre no navegador; não é preciso baixar nenhum aplicativo."),
-           ("E se o hóspede não preencher o link?", "Faça o check-in da forma habitual. A equipe também pode escanear o documento na recepção pelo painel web, com a câmera do computador ou do tablet; a leitura é feita no aparelho e nenhuma imagem é guardada."),
+           ("E se o hóspede não preencher o link?", "Faça o check-in da forma habitual. A equipe também pode escanear o documento na recepção pelo painel web, com a câmera do computador ou do tablet, ou com o app da Hostlio Pro; a leitura é feita no aparelho e nenhuma imagem é guardada."),
            ("As fotos dos documentos ficam armazenadas?", "Não. A zona de leitura mecânica (MRZ) do documento é lida no celular do hóspede, ou na recepção, no aparelho do hotel, pelo painel web, e só ficam salvos os dados extraídos e a assinatura. Passaportes e documentos de identidade com MRZ podem ser escaneados; os demais são preenchidos à mão.")]
     return {"key":"checkin","title":"Check-in Online com Assinatura Digital | Hostlio Pro",
             "desc":"Check-in online do Hostlio Pro: o hóspede escaneia o documento (sem guardar imagens), adiciona acompanhantes e assina pelo celular. Sem fila na recepção.",
@@ -182,7 +182,7 @@ def features():
 <div class="row"><h3>Documentos do hóspede</h3><div><p>A partir da reserva, gere a declaração de hospedagem pedida no visto ou na carta-convite, ou um recibo da estadia com datas, diária e total. Escolha português, inglês, turco, espanhol, italiano ou francês (o idioma do hóspede é sugerido) e imprima ou salve em PDF. A ficha de registro do hóspede também pode ser baixada em PDF.</p></div></div>
 <div class="row"><h3>Venda de transfers e passeios</h3><div><p>O Lio sugere transfers do aeroporto e passeios durante a conversa e repassa o pedido para a sua equipe.</p></div></div>
 <div class="row"><h3>Sugestões do Lio e insights de IA</h3><div><p>Toda manhã o Lio prepara sugestões sobre preços, operação (quartos aguardando limpeza, pedidos pendentes), configurações que faltam e oportunidades de receita. Nada muda sem sua aprovação, e as sugestões de preço respeitam os limites que você define. Nos planos Pro e Growth, ele também resume as reclamações e os elogios que se repetem em avaliações e mensagens.</p></div></div>
-<div class="row"><h3>App para celular</h3><div><p>Gerencie reservas, mensagens e check-ins fora do hotel com o app para iOS e Android.</p>{store_badges("pt")}</div></div>
+<div class="row"><h3>App para celular</h3><div><p>Gerencie reservas, mensagens e check-ins fora do hotel com o app para iOS e Android. O app também tem a tela Hoje, análises e relatórios, a central de notificações, registro de avarias com fotos, gestão da equipe e leitura de documentos na recepção; com duas propriedades, você alterna entre elas com um toque.</p>{store_badges("pt")}</div></div>
 </div></div></section>
 {FX.features_more(L)}
 <section><div class="wrap"><div class="section-head"><h2>Funcionalidades por plano</h2></div>
@@ -240,7 +240,7 @@ def pricing():
 
 FAQ_ALL = FAQ_CORE + [
  ("Para que tipos de hotel o Hostlio Pro foi feito?", "Para propriedades independentes de 1 a 150 quartos, como hotéis boutique, hotéis urbanos, pousadas, apart-hotéis e hostels."),
- ("Existe um app para celular?", "Sim. Todos os planos, inclusive o Starter, incluem o app para iOS e Android. Gerencie reservas, mensagens e check-ins fora do hotel."),
+ ("Existe um app para celular?", "Sim. Todos os planos, inclusive o Starter, incluem o app para iOS e Android. Gerencie reservas, mensagens e check-ins fora do hotel; análises, notificações, avarias e leitura de documentos também estão no app."),
  ("Como funciona o check-in online?", "Os hóspedes recebem um link pessoal e seguro, escaneiam o documento pelo celular (nenhuma imagem é guardada) e enviam, antes da chegada, os acompanhantes e a assinatura digital. Disponível nos planos Pro e Growth."),
  ("Para que serve a declaração de hospedagem para visto?", "Para hóspedes que precisam de visto, ela gera com um clique uma declaração de hospedagem a partir dos dados da reserva, para usar no pedido de visto ou de convite. Você pode salvar em PDF ou imprimir."),
  ("Meus dados estão seguros?", "Os dados são transmitidos por conexões criptografadas, e os dados de cada hotel ficam isolados das outras propriedades com regras de acesso por linha. Você pode excluir a ficha de um hóspede pelo painel, e assinaturas e conversas são apagadas ou anonimizadas automaticamente após prazos definidos."),

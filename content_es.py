@@ -164,7 +164,7 @@ def checkin():
 '''
     faq = [("¿Qué planes incluyen el check-in online?", "El check-in online con firma digital está incluido en los planes Pro y Growth."),
            ("¿El huésped tiene que descargar una app?", "No. El formulario de check-in se abre en el navegador; no hace falta descargar ninguna app."),
-           ("¿Y si un huésped no completa el enlace?", "Haz el check-in de la forma habitual. El personal también puede escanear el documento en recepción desde el panel web, con la cámara del ordenador o de la tableta; se lee en el dispositivo y no se guarda ninguna imagen."),
+           ("¿Y si un huésped no completa el enlace?", "Haz el check-in de la forma habitual. El personal también puede escanear el documento en recepción desde el panel web, con la cámara del ordenador o de la tableta, o con la app móvil de Hostlio Pro; se lee en el dispositivo y no se guarda ninguna imagen."),
            ("¿Se guardan fotos de los documentos de identidad?", "No. La zona de lectura mecánica (MRZ) del documento se lee en el móvil del huésped, o en recepción, en el dispositivo del hotel, desde el panel web, y solo se guardan los datos extraídos y la firma. Se pueden escanear pasaportes y documentos de identidad con MRZ; los demás se introducen a mano.")]
     return {"key":"checkin","title":"Check-in online para hoteles con firma digital | Hostlio Pro",
             "desc":"Check-in online de Hostlio Pro: el huésped escanea su documento (sin guardar imágenes), añade acompañantes y firma desde el móvil. Sin colas en recepción.",
@@ -182,7 +182,7 @@ def features():
 <div class="row"><h3>Documentos para el huésped</h3><div><p>A partir de la reserva, prepara la confirmación de alojamiento que el huésped necesita para su visado o carta de invitación, o un recibo de estancia con fechas, precio por noche y total. Elige español, inglés, turco, italiano, portugués o francés (se sugiere el idioma del huésped) e imprímelo o guárdalo en PDF. La ficha de registro del huésped también se descarga en PDF.</p></div></div>
 <div class="row"><h3>Venta de traslados y excursiones</h3><div><p>Lio sugiere traslados al aeropuerto y excursiones durante la conversación y pasa la solicitud a tu equipo.</p></div></div>
 <div class="row"><h3>Sugerencias de Lio y análisis con IA</h3><div><p>Cada mañana Lio prepara sugerencias sobre precios, operaciones (habitaciones pendientes de limpieza, solicitudes sin atender), configuración incompleta y oportunidades de ingresos. Nada cambia sin tu aprobación y las sugerencias de precio respetan los límites que tú fijas. En Pro y Growth también resume las quejas y los elogios que se repiten en reseñas y mensajes.</p></div></div>
-<div class="row"><h3>App móvil</h3><div><p>Gestiona reservas, mensajes y check-ins fuera del hotel con la app para iOS y Android.</p>{store_badges("es")}</div></div>
+<div class="row"><h3>App móvil</h3><div><p>Gestiona reservas, mensajes y check-ins fuera del hotel con la app para iOS y Android. También incluye la pantalla Hoy, análisis e informes, el centro de notificaciones, partes de averías con fotos, la gestión del equipo y el escaneo de documentos en recepción; si tienes dos alojamientos, cambias de uno a otro con un toque.</p>{store_badges("es")}</div></div>
 </div></div></section>
 {FX.features_more(L)}
 <section><div class="wrap"><div class="section-head"><h2>Funcionalidades por plan</h2></div>
@@ -240,7 +240,7 @@ def pricing():
 
 FAQ_ALL = FAQ_CORE + [
  ("¿Para qué tipos de hotel es Hostlio Pro?", "Para alojamientos independientes de 1 a 150 habitaciones, como hoteles boutique, hoteles urbanos, hostales y pensiones, apartahoteles y hostels."),
- ("¿Hay una app móvil?", "Sí. Todos los planes, también Starter, incluyen la app para iOS y Android. Gestiona reservas, mensajes y check-ins fuera del alojamiento."),
+ ("¿Hay una app móvil?", "Sí. Todos los planes, también Starter, incluyen la app para iOS y Android. Gestiona reservas, mensajes y check-ins fuera del alojamiento; los análisis, las notificaciones, las averías y el escaneo de documentos también están en la app."),
  ("¿Cómo funciona el check-in online?", "Los huéspedes reciben un enlace personal y seguro, escanean su documento con el móvil (no se guarda ninguna imagen) y, antes de llegar, envían sus acompañantes y una firma digital. Disponible en Pro y Growth."),
  ("¿Para qué sirve la confirmación de alojamiento para visados?", "Para los huéspedes que necesitan visado, prepara en un clic una confirmación de alojamiento a partir de los datos de la reserva, para usarla en la solicitud de visado o de invitación. Puedes guardarla en PDF o imprimirla."),
  ("¿Están seguros mis datos?", "Los datos se transmiten mediante conexiones cifradas, y los datos de cada hotel están aislados de los de otros alojamientos con reglas de acceso a nivel de fila. Puedes eliminar la ficha de un huésped desde el panel, y las firmas y conversaciones se borran o anonimizan solas tras plazos definidos."),

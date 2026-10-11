@@ -165,7 +165,7 @@ def checkin():
 '''
     faq = [("Quels forfaits incluent le check-in en ligne ?", "Le check-in en ligne avec signature électronique est inclus dans les forfaits Pro et Growth."),
            ("Le client doit-il télécharger une application ?", "Non. Le formulaire de check-in s'ouvre dans le navigateur ; aucune application n'est à télécharger."),
-           ("Et si un client ne remplit pas le formulaire ?", "Enregistrez-le de la manière habituelle. Votre équipe peut aussi scanner le document à la réception depuis le panneau web, avec la caméra de l'ordinateur ou de la tablette ; la lecture se fait sur l'appareil et aucune image n'est conservée."),
+           ("Et si un client ne remplit pas le formulaire ?", "Enregistrez-le de la manière habituelle. Votre équipe peut aussi scanner le document à la réception depuis le panneau web, avec la caméra de l'ordinateur ou de la tablette, ou avec l'application mobile Hostlio Pro ; la lecture se fait sur l'appareil et aucune image n'est conservée."),
            ("Les photos des pièces d'identité sont-elles conservées ?", "Non. La bande de lecture automatique (MRZ) du document est lue sur le téléphone du client, ou à la réception, sur l'appareil de l'hôtel, depuis le panneau web, et seules les données extraites et la signature sont enregistrées. Les passeports et cartes d'identité dotés d'une MRZ peuvent être scannés ; les autres documents sont saisis à la main.")]
     return {"key":"checkin","title":"Check-in en ligne avec signature électronique | Hostlio Pro",
             "desc":"Check-in en ligne : vos clients scannent leur pièce d'identité (aucune image conservée), ajoutent leurs accompagnants et signent depuis leur mobile.",
@@ -183,7 +183,7 @@ def features():
 <div class="row"><h3>Documents pour le client</h3><div><p>À partir de la réservation, préparez l'attestation d'hébergement demandée pour un visa ou une invitation, ou un reçu de séjour avec dates, prix par nuit et total. Choisissez le français, l'anglais, le turc, l'espagnol, l'italien ou le portugais (la langue du client est proposée), puis imprimez ou enregistrez en PDF. La fiche d'enregistrement du client se télécharge aussi en PDF.</p></div></div>
 <div class="row"><h3>Vente de transferts et d'excursions</h3><div><p>Lio propose transferts aéroport et excursions pendant la conversation et transmet la demande à votre équipe.</p></div></div>
 <div class="row"><h3>Suggestions de Lio et analyses IA</h3><div><p>Chaque matin, Lio prépare des suggestions sur les prix, l'exploitation (chambres à nettoyer, demandes en attente), les réglages manquants et les opportunités de revenus. Rien ne change sans votre accord, et les suggestions de prix restent dans les limites que vous fixez. Avec Pro et Growth, les plaintes et compliments récurrents dans les avis et les messages sont aussi résumés.</p></div></div>
-<div class="row"><h3>Application mobile</h3><div><p>Gérez réservations, messages et check-ins hors de l'hôtel avec l'application iOS et Android.</p>{store_badges("fr")}</div></div>
+<div class="row"><h3>Application mobile</h3><div><p>Gérez réservations, messages et check-ins hors de l'hôtel avec l'application iOS et Android. Elle propose aussi l'écran Aujourd'hui, les analyses et rapports, le centre de notifications, les signalements de pannes avec photos, la gestion de l'équipe et le scan des documents à la réception ; avec deux établissements, vous passez de l'un à l'autre d'un geste.</p>{store_badges("fr")}</div></div>
 </div></div></section>
 {FX.features_more(L)}
 <section><div class="wrap"><div class="section-head"><h2>Fonctionnalités par forfait</h2></div>
@@ -241,7 +241,7 @@ def pricing():
 
 FAQ_ALL = FAQ_CORE + [
  ("À quels types d'hôtels s'adresse Hostlio Pro ?", "Aux établissements indépendants de 1 à 150 chambres : hôtels boutique, hôtels urbains, chambres d'hôtes, résidences hôtelières et auberges de jeunesse."),
- ("Existe-t-il une application mobile ?", "Oui. Tous les forfaits, Starter compris, incluent l'application iOS et Android. Gérez réservations, messages et check-ins hors de l'hôtel."),
+ ("Existe-t-il une application mobile ?", "Oui. Tous les forfaits, Starter compris, incluent l'application iOS et Android. Gérez réservations, messages et check-ins hors de l'hôtel ; analyses, notifications, pannes et scan des documents sont aussi dans l'application."),
  ("Comment fonctionne le check-in en ligne ?", "Les clients reçoivent un lien sécurisé personnel, scannent leur pièce d'identité avec leur téléphone (aucune image n'est conservée) et envoient avant leur arrivée leurs accompagnants et leur signature électronique. Disponible avec Pro et Growth."),
  ("À quoi sert l'attestation d'hébergement pour visa ?", "Pour les clients qui ont besoin d'un visa, elle prépare en un clic une attestation d'hébergement à partir des données de réservation, à joindre à une demande de visa ou d'invitation. Vous pouvez l'enregistrer en PDF ou l'imprimer."),
  ("Mes données sont-elles sécurisées ?", "Les données transitent par des connexions chiffrées, et les données de chaque hôtel sont isolées de celles des autres établissements grâce à des règles d'accès au niveau des lignes. Vous pouvez supprimer la fiche d'un client depuis le tableau de bord, et les signatures et conversations sont effacées ou anonymisées automatiquement après des délais définis."),

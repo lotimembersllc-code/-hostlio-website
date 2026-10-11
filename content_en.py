@@ -159,7 +159,7 @@ def checkin():
 '''
     faq = [("Which plans include online check-in?", "Online check-in with digital signature is included in the Pro and Growth plans."),
            ("Does the guest need to download an app?", "No. The check-in form opens in the browser; no app download is required."),
-           ("What if a guest doesn't complete the link?", "Check them in the usual way. Staff can also scan the guest's document at the desk from the web panel using the computer's or tablet's camera; it is read on the device and no image is stored."),
+           ("What if a guest doesn't complete the link?", "Check them in the usual way. Staff can also scan the guest's document at the desk from the web panel using the computer's or tablet's camera, or with the Hostlio Pro mobile app; it is read on the device and no image is stored."),
            ("Are photos of ID documents stored?", "No. The document's machine-readable zone (MRZ) is read on the guest's phone, or at the front desk on the hotel's device from the web panel, and only the extracted details and the signature are saved. Passports and ID cards with an MRZ can be scanned; other documents are entered by hand.")]
     return {"key":"checkin","title":"Hotel Online Check-in with Digital Signature | Hostlio Pro",
             "desc":"With Hostlio Pro online check-in, guests scan their ID on their phone (no image stored), add companions and sign before arrival. No queue at reception.",
@@ -177,7 +177,7 @@ def features():
 <div class="row"><h3>Guest documents</h3><div><p>From the reservation, create the accommodation confirmation guests need for a visa or invitation application, or a stay receipt with dates, nightly rate and total. Choose English, Turkish, Spanish, Italian, Portuguese or French (the guest’s language is suggested), then print or save as PDF. A guest registration form can be downloaded as a PDF too.</p></div></div>
 <div class="row"><h3>Transfer and tour sales</h3><div><p>Lio suggests airport transfers and tours during the conversation and passes the request to your team.</p></div></div>
 <div class="row"><h3>Lio Suggestions and AI insights</h3><div><p>Every morning Lio prepares suggestions on pricing, operations (rooms waiting to be cleaned, pending requests), setup gaps and revenue opportunities. Nothing changes without your approval, and rate suggestions stay within limits you set. On Pro and Growth, recurring complaints and praise in reviews and messages are summarised too.</p></div></div>
-<div class="row"><h3>Mobile app</h3><div><p>Manage bookings, messages and check-ins away from the hotel with the iOS and Android app.</p>{store_badges("en")}</div></div>
+<div class="row"><h3>Mobile app</h3><div><p>Manage bookings, messages and check-ins away from the hotel with the iOS and Android app. It also has the Today screen, analytics and reports, the notification centre, maintenance reports with photos, team management and document scanning at the desk; with two properties, switch between them in one tap.</p>{store_badges("en")}</div></div>
 </div></div></section>
 {FX.features_more(L)}
 <section><div class="wrap"><div class="section-head"><h2>Features by plan</h2></div>
@@ -235,7 +235,7 @@ def pricing():
 
 FAQ_ALL = FAQ_CORE + [
  ("What types of hotels is Hostlio Pro for?", "Independent properties with 1 to 150 rooms, such as boutique hotels, city hotels, guesthouses, aparthotels and hostels."),
- ("Is there a mobile app?", "Yes. Every plan, including Starter, includes the iOS and Android app. Manage bookings, messages and check-ins away from the hotel."),
+ ("Is there a mobile app?", "Yes. Every plan, including Starter, includes the iOS and Android app. Manage bookings, messages and check-ins away from the hotel; analytics, notifications, maintenance reports and document scanning are in the app too."),
  ("How does online check-in work?", "Guests receive a personal secure link, scan their ID document on their phone (no image is stored) and send accompanying guests and a digital signature before arrival. Available on Pro and Growth."),
  ("What is the accommodation confirmation for visas?", "For guests who need a visa, it creates an accommodation confirmation from the reservation data in one click, to use in a visa or invitation application. You can save it as a PDF or print it."),
  ("Is my data secure?", "Data is transmitted over encrypted connections, and each hotel's data is isolated from other properties with row-level access rules. You can delete a guest's profile from the dashboard, and signatures and conversations are deleted or anonymised automatically after set periods."),

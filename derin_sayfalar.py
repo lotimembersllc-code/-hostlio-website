@@ -36,7 +36,7 @@ def _steps(items):
 def _hostel_en(U):
     return "".join([
         _sec("A day at the hostel desk with Hostlio Pro", _rows([
-            ("08:00, the day is laid out", "The Today screen lists arrivals, departures, rooms to clean, messages waiting for a reply and Lio drafts waiting for approval. The mobile app can send the same summary to your phone at 08:00 hotel time (Android today, iOS with the upcoming app update)."),
+            ("08:00, the day is laid out", "The Today screen lists arrivals, departures, rooms to clean, messages waiting for a reply and Lio drafts waiting for approval. The mobile app can send the same summary to your phone at 08:00 hotel time (Android and iOS)."),
             ("Late morning, turnover", "Housekeeping sees today’s departures first, with rooms that have a same-day arrival marked high priority. When a room is clean, its status changes and reception sees it at once. If a shower breaks, report it with a photo and take the room out of order: it leaves sale on every connected channel until it is fixed."),
             ("Afternoon, arrivals", "Guests who completed online check-in (Pro and Growth) have already scanned their passport or ID and signed, so the desk hands over keys instead of typing passport numbers. No document images are stored."),
             ("Night, the inbox keeps moving", "Travellers write at all hours, in many languages, about late arrival, luggage storage, lockers, the kitchen or the nearest bus stop. Lio answers from the information you entered and hands anything that needs a decision to your night staff or to the morning shift."),
@@ -573,7 +573,7 @@ CHANNEL_TR_FAQ = [
 def _hostel_fr(U):
     return "".join([
         _sec("Une journée à l’accueil d’une auberge avec Hostlio Pro", _rows([
-            ("8 h, la journée est prête", "L’écran Aujourd’hui affiche les arrivées, les départs, les chambres à nettoyer, les messages en attente de réponse et les brouillons de Lio à valider. L’application mobile peut aussi envoyer ce résumé sur votre téléphone à 8 h, heure de l’établissement (sur Android aujourd’hui, sur iOS avec la prochaine mise à jour de l’application)."),
+            ("8 h, la journée est prête", "L’écran Aujourd’hui affiche les arrivées, les départs, les chambres à nettoyer, les messages en attente de réponse et les brouillons de Lio à valider. L’application mobile peut aussi envoyer ce résumé sur votre téléphone à 8 h, heure de l’établissement (Android et iOS)."),
             ("Fin de matinée, le grand ménage", "L’équipe de ménage voit d’abord les départs du jour, et les chambres où quelqu’un arrive le soir même sont marquées prioritaires. Dès qu’une chambre est propre, son statut change et l’accueil le voit aussitôt. Une douche en panne ? Signalez-la avec une photo et passez la chambre hors service : elle sort de la vente sur tous les canaux connectés jusqu’à la réparation."),
             ("Après-midi, les arrivées", "Les voyageurs qui ont fait leur check-in en ligne (forfaits Pro et Growth) ont déjà scanné leur passeport ou leur carte d’identité et signé : à l’accueil, on remet les clés au lieu de recopier des numéros de passeport. Aucune image du document n’est conservée."),
             ("La nuit, la boîte de réception ne dort pas", "Arrivée tardive, consigne à bagages, casiers, cuisine commune, dernier métro : les voyageurs écrivent à toute heure et dans toutes les langues. Lio répond à partir des informations que vous avez saisies et transmet ce qui demande une décision au veilleur de nuit ou à l’équipe du matin."),

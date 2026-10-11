@@ -724,7 +724,7 @@ Q: Misafirin uygulama indirmesi gerekiyor mu?
 A: Hayır. Check-in formu tarayıcıda açılır; herhangi bir uygulama indirmek gerekmez.
 
 Q: Misafir bağlantıyı doldurmazsa ne olur?
-A: Klasik check-in'e devam edebilirsiniz. Resepsiyonda misafirin belgesini panelden, bilgisayarın ya da tabletin kamerasıyla da tarayabilirsiniz; okuma cihazda yapılır, görüntü saklanmaz.
+A: Klasik check-in'e devam edebilirsiniz. Resepsiyonda misafirin belgesini panelden bilgisayarın ya da tabletin kamerasıyla ya da Hostlio Pro mobil uygulamasıyla da tarayabilirsiniz; okuma cihazda yapılır, görüntü saklanmaz.
 
 Q: Kimlik fotoğrafı saklanıyor mu?
 A: Hayır. Belgenin makine okunabilir alanı (MRZ) misafirin telefonunda ya da resepsiyonda panelden otelin cihazında okunur; yalnızca okunan bilgiler ve imza kaydedilir. MRZ'li pasaport ve kimlik kartları taranabilir; diğer belgeler elle girilir.
@@ -776,7 +776,7 @@ Lio mesajlaşma sırasında havalimanı transferi ve tur önerir, talebi ekibini
 Lio her sabah fiyat, operasyon (kirli odalar, bekleyen talepler), kurulum eksikleri ve gelir fırsatları için öneriler hazırlar. Onayınız olmadan hiçbir şey değişmez; fiyat önerileri belirlediğiniz sınırların dışına çıkmaz. Pro ve Growth'ta yorum ve mesajlardaki tekrar eden şikâyet ve övgüler de özetlenir.
 
 ## Mobil uygulama
-iOS ve Android uygulamasıyla rezervasyonları, mesajları ve check-in'leri otelin dışından yönetin.
+iOS ve Android uygulamasıyla rezervasyonları, mesajları ve check-in'leri otelin dışından yönetin. Uygulamada Bugün ekranı, analiz ve raporlar, bildirim merkezi, fotoğraflı arıza kaydı, ekip yönetimi ve resepsiyonda belge tarama da var; iki tesisiniz varsa aralarında tek dokunuşla geçersiniz.
 
 ## Günün tamamını tek panelden yönetin
 Mesajlaşma ve kanal yönetiminin yanında ekibinizin her gün kullandığı araçlar. Hepsi web panelinde; aksi belirtilmedikçe tüm planlara dahil.
@@ -790,7 +790,7 @@ Arıza kaydı ve satış dışı oda Arızayı en fazla beş fotoğrafla (konum 
 
 Büyüyen otele uygun oda rafı Büyük tesisler için üç yoğunluk seviyesi, oda tipine ya da kata göre gruplama, günlük boş oda sayısı, boş oda arama ve 7, 14 ya da 30 günlük görünüm. Çakışma kontrolü çift ya da odası atanmamış rezervasyonları listeler, raf uygun tipte boş oda önerir; rezervasyonları fareyle ya da klavyeyle taşırsınız.
 
-Bildirimler ve sabah özeti Yeni, değişen ve iptal edilen rezervasyonlar, cevap bekleyen mesajlar, onaylanacak taslaklar, kanal sorunları ve arıza kayıtları tek bildirim kutusunda toplanır, 90 gün saklanır. Mobil uygulama her sabah 08:00'de (otelin saatiyle) günün özetini de gönderir (bugün Android'de, iOS'ta yakında gelecek uygulama güncellemesiyle).
+Bildirimler ve sabah özeti Yeni, değişen ve iptal edilen rezervasyonlar, cevap bekleyen mesajlar, onaylanacak taslaklar, kanal sorunları ve arıza kayıtları tek bildirim kutusunda toplanır, 90 gün saklanır. Mobil uygulama her sabah 08:00'de (otelin saatiyle) günün özetini de gönderir (Android ve iOS).
 
 Misafir kartı Hatırlamak istediğiniz misafirler için kart tutun: iletişim bilgileri, uyruk ve notlarınız. Düzenli misafirleri VIP işaretleyin, listeyi onlara göre süzün; konaklama sayısı ve son konaklama rezervasyonlarından hesaplanır.
 
@@ -994,7 +994,7 @@ AI asistan Lio hangi dillerde yanıt veriyor? Lio, Türkçe, İngilizce, Arapça
 
 Hostlio Pro hangi otel tiplerine uygun? Butik oteller, şehir otelleri, pansiyonlar, apart oteller ve hosteller gibi 1 ila 150 odalı bağımsız tesisler için tasarlandı.
 
-Mobil uygulama var mı? Evet. Starter dahil tüm planlarda iOS ve Android uygulaması bulunur. Rezervasyonları, mesajları ve check-in'leri otelin dışından da yönetirsiniz.
+Mobil uygulama var mı? Evet. Starter dahil tüm planlarda iOS ve Android uygulaması bulunur. Rezervasyonları, mesajları ve check-in'leri otelin dışından da yönetirsiniz; analiz, bildirimler, arıza kaydı ve belge tarama da uygulamada.
 
 Online check-in nasıl çalışıyor? Misafire kişiye özel güvenli bir bağlantı gönderilir. Misafir kimliğini telefonuyla tarar (görüntü saklanmaz), refakatçilerini ve dijital imzasını varıştan önce gönderir. Pro ve Growth planlarında vardır.
 
@@ -1036,7 +1036,7 @@ Q: Hostlio Pro hangi otel tiplerine uygun?
 A: Butik oteller, şehir otelleri, pansiyonlar, apart oteller ve hosteller gibi 1 ila 150 odalı bağımsız tesisler için tasarlandı.
 
 Q: Mobil uygulama var mı?
-A: Evet. Starter dahil tüm planlarda iOS ve Android uygulaması bulunur. Rezervasyonları, mesajları ve check-in'leri otelin dışından da yönetirsiniz.
+A: Evet. Starter dahil tüm planlarda iOS ve Android uygulaması bulunur. Rezervasyonları, mesajları ve check-in'leri otelin dışından da yönetirsiniz; analiz, bildirimler, arıza kaydı ve belge tarama da uygulamada.
 
 Q: Online check-in nasıl çalışıyor?
 A: Misafire kişiye özel güvenli bir bağlantı gönderilir. Misafir kimliğini telefonuyla tarar (görüntü saklanmaz), refakatçilerini ve dijital imzasını varıştan önce gönderir. Pro ve Growth planlarında vardır.
@@ -4018,7 +4018,7 @@ Q: Does the guest need to download an app?
 A: No. The check-in form opens in the browser; no app download is required.
 
 Q: What if a guest doesn't complete the link?
-A: Check them in the usual way. Staff can also scan the guest's document at the desk from the web panel using the computer's or tablet's camera; it is read on the device and no image is stored.
+A: Check them in the usual way. Staff can also scan the guest's document at the desk from the web panel using the computer's or tablet's camera, or with the Hostlio Pro mobile app; it is read on the device and no image is stored.
 
 Q: Are photos of ID documents stored?
 A: No. The document's machine-readable zone (MRZ) is read on the guest's phone, or at the front desk on the hotel's device from the web panel, and only the extracted details and the signature are saved. Passports and ID cards with an MRZ can be scanned; other documents are entered by hand.
@@ -4067,7 +4067,7 @@ Lio suggests airport transfers and tours during the conversation and passes the 
 Every morning Lio prepares suggestions on pricing, operations (rooms waiting to be cleaned, pending requests), setup gaps and revenue opportunities. Nothing changes without your approval, and rate suggestions stay within limits you set. On Pro and Growth, recurring complaints and praise in reviews and messages are summarised too.
 
 ## Mobile app
-Manage bookings, messages and check-ins away from the hotel with the iOS and Android app.
+Manage bookings, messages and check-ins away from the hotel with the iOS and Android app. It also has the Today screen, analytics and reports, the notification centre, maintenance reports with photos, team management and document scanning at the desk; with two properties, switch between them in one tap.
 
 ## Run the whole day from one dashboard
 Beyond messaging and distribution, these are the tools your team uses every day. All of them are in the web dashboard and included in every plan unless noted.
@@ -4081,7 +4081,7 @@ Maintenance and out-of-order rooms Report a fault with up to five photos (locati
 
 A room rack that scales For larger properties: three density levels, rooms grouped by type or floor, a daily free-room count, a free-room search and 7, 14 or 30-day views. The conflict check lists double-booked and unassigned reservations, the rack suggests a free room of the right type, and bookings move with the mouse or the keyboard.
 
-Notifications and morning summary New, changed and cancelled bookings, messages waiting for a reply, drafts to approve, channel issues and maintenance reports land in one notification centre, kept for 90 days. The mobile app also sends a summary of the day at 08:00 hotel time (Android today, iOS with the upcoming app update).
+Notifications and morning summary New, changed and cancelled bookings, messages waiting for a reply, drafts to approve, channel issues and maintenance reports land in one notification centre, kept for 90 days. The mobile app also sends a summary of the day at 08:00 hotel time (Android and iOS).
 
 Guest cards Keep a card for the guests you want to remember: contact details, nationality and your notes. Mark regulars as VIP and filter the list by them; the number of stays and the last stay are counted from their reservations.
 
@@ -4280,7 +4280,7 @@ Which languages does Lio reply in? Lio replies in 30+ languages, including Engli
 
 What types of hotels is Hostlio Pro for? Independent properties with 1 to 150 rooms, such as boutique hotels, city hotels, guesthouses, aparthotels and hostels.
 
-Is there a mobile app? Yes. Every plan, including Starter, includes the iOS and Android app. Manage bookings, messages and check-ins away from the hotel.
+Is there a mobile app? Yes. Every plan, including Starter, includes the iOS and Android app. Manage bookings, messages and check-ins away from the hotel; analytics, notifications, maintenance reports and document scanning are in the app too.
 
 How does online check-in work? Guests receive a personal secure link, scan their ID document on their phone (no image is stored) and send accompanying guests and a digital signature before arrival. Available on Pro and Growth.
 
@@ -4319,7 +4319,7 @@ Q: What types of hotels is Hostlio Pro for?
 A: Independent properties with 1 to 150 rooms, such as boutique hotels, city hotels, guesthouses, aparthotels and hostels.
 
 Q: Is there a mobile app?
-A: Yes. Every plan, including Starter, includes the iOS and Android app. Manage bookings, messages and check-ins away from the hotel.
+A: Yes. Every plan, including Starter, includes the iOS and Android app. Manage bookings, messages and check-ins away from the hotel; analytics, notifications, maintenance reports and document scanning are in the app too.
 
 Q: How does online check-in work?
 A: Guests receive a personal secure link, scan their ID document on their phone (no image is stored) and send accompanying guests and a digital signature before arrival. Available on Pro and Growth.
@@ -4817,7 +4817,7 @@ See pricing
 ## A day at the hostel desk with Hostlio Pro
 
 ## 08:00, the day is laid out
-The Today screen lists arrivals, departures, rooms to clean, messages waiting for a reply and Lio drafts waiting for approval. The mobile app can send the same summary to your phone at 08:00 hotel time (Android today, iOS with the upcoming app update).
+The Today screen lists arrivals, departures, rooms to clean, messages waiting for a reply and Lio drafts waiting for approval. The mobile app can send the same summary to your phone at 08:00 hotel time (Android and iOS).
 
 ## Late morning, turnover
 Housekeeping sees today’s departures first, with rooms that have a same-day arrival marked high priority. When a room is clean, its status changes and reception sees it at once. If a shower breaks, report it with a photo and take the room out of order: it leaves sale on every connected channel until it is fixed.
@@ -7779,7 +7779,7 @@ Q: ¿El huésped tiene que descargar una app?
 A: No. El formulario de check-in se abre en el navegador; no hace falta descargar ninguna app.
 
 Q: ¿Y si un huésped no completa el enlace?
-A: Haz el check-in de la forma habitual. El personal también puede escanear el documento en recepción desde el panel web, con la cámara del ordenador o de la tableta; se lee en el dispositivo y no se guarda ninguna imagen.
+A: Haz el check-in de la forma habitual. El personal también puede escanear el documento en recepción desde el panel web, con la cámara del ordenador o de la tableta, o con la app móvil de Hostlio Pro; se lee en el dispositivo y no se guarda ninguna imagen.
 
 Q: ¿Se guardan fotos de los documentos de identidad?
 A: No. La zona de lectura mecánica (MRZ) del documento se lee en el móvil del huésped, o en recepción, en el dispositivo del hotel, desde el panel web, y solo se guardan los datos extraídos y la firma. Se pueden escanear pasaportes y documentos de identidad con MRZ; los demás se introducen a mano.
@@ -7831,7 +7831,7 @@ Lio sugiere traslados al aeropuerto y excursiones durante la conversación y pas
 Cada mañana Lio prepara sugerencias sobre precios, operaciones (habitaciones pendientes de limpieza, solicitudes sin atender), configuración incompleta y oportunidades de ingresos. Nada cambia sin tu aprobación y las sugerencias de precio respetan los límites que tú fijas. En Pro y Growth también resume las quejas y los elogios que se repiten en reseñas y mensajes.
 
 ## App móvil
-Gestiona reservas, mensajes y check-ins fuera del hotel con la app para iOS y Android.
+Gestiona reservas, mensajes y check-ins fuera del hotel con la app para iOS y Android. También incluye la pantalla Hoy, análisis e informes, el centro de notificaciones, partes de averías con fotos, la gestión del equipo y el escaneo de documentos en recepción; si tienes dos alojamientos, cambias de uno a otro con un toque.
 
 ## Todo el día desde un solo panel
 Además de la mensajería y la distribución, estas son las herramientas que tu equipo usa a diario. Todas están en el panel web e incluidas en todos los planes, salvo que se indique lo contrario.
@@ -7845,7 +7845,7 @@ Averías y habitaciones fuera de servicio Registra una avería con hasta cinco f
 
 Un planning que crece contigo Para alojamientos más grandes: tres niveles de densidad, habitaciones agrupadas por tipo o por planta, número de habitaciones libres por día, búsqueda de habitación libre y vistas de 7, 14 o 30 días. El control de conflictos lista las reservas duplicadas o sin habitación, el planning te sugiere una habitación libre del tipo correcto y las reservas se mueven con el ratón o con el teclado.
 
-Notificaciones y resumen matinal Reservas nuevas, modificadas y canceladas, mensajes sin responder, borradores por aprobar, incidencias de canal y averías llegan a un único centro de notificaciones, que las guarda 90 días. La app móvil también te envía un resumen del día a las 08:00, hora del hotel (hoy en Android; en iOS con la próxima actualización de la app).
+Notificaciones y resumen matinal Reservas nuevas, modificadas y canceladas, mensajes sin responder, borradores por aprobar, incidencias de canal y averías llegan a un único centro de notificaciones, que las guarda 90 días. La app móvil también te envía un resumen del día a las 08:00, hora del hotel (Android e iOS).
 
 Ficha del huésped Guarda una ficha de los huéspedes que quieres recordar: datos de contacto, nacionalidad y tus notas. Marca a los habituales como VIP y filtra la lista por ellos; el número de estancias y la última estancia se calculan a partir de sus reservas.
 
@@ -8044,7 +8044,7 @@ Las preguntas más habituales sobre las funcionalidades, los precios y la config
 
 ¿Para qué tipos de hotel es Hostlio Pro? Para alojamientos independientes de 1 a 150 habitaciones, como hoteles boutique, hoteles urbanos, hostales y pensiones, apartahoteles y hostels.
 
-¿Hay una app móvil? Sí. Todos los planes, también Starter, incluyen la app para iOS y Android. Gestiona reservas, mensajes y check-ins fuera del alojamiento.
+¿Hay una app móvil? Sí. Todos los planes, también Starter, incluyen la app para iOS y Android. Gestiona reservas, mensajes y check-ins fuera del alojamiento; los análisis, las notificaciones, las averías y el escaneo de documentos también están en la app.
 
 ¿Cómo funciona el check-in online? Los huéspedes reciben un enlace personal y seguro, escanean su documento con el móvil (no se guarda ninguna imagen) y, antes de llegar, envían sus acompañantes y una firma digital. Disponible en Pro y Growth.
 
@@ -8083,7 +8083,7 @@ Q: ¿Para qué tipos de hotel es Hostlio Pro?
 A: Para alojamientos independientes de 1 a 150 habitaciones, como hoteles boutique, hoteles urbanos, hostales y pensiones, apartahoteles y hostels.
 
 Q: ¿Hay una app móvil?
-A: Sí. Todos los planes, también Starter, incluyen la app para iOS y Android. Gestiona reservas, mensajes y check-ins fuera del alojamiento.
+A: Sí. Todos los planes, también Starter, incluyen la app para iOS y Android. Gestiona reservas, mensajes y check-ins fuera del alojamiento; los análisis, las notificaciones, las averías y el escaneo de documentos también están en la app.
 
 Q: ¿Cómo funciona el check-in online?
 A: Los huéspedes reciben un enlace personal y seguro, escanean su documento con el móvil (no se guarda ninguna imagen) y, antes de llegar, envían sus acompañantes y una firma digital. Disponible en Pro y Growth.
@@ -10696,7 +10696,7 @@ Q: L'ospite deve scaricare un'app?
 A: No. Il modulo di check-in si apre nel browser; non serve scaricare nessuna app.
 
 Q: E se un ospite non completa il check-in dal link?
-A: Fai il check-in nel modo consueto. Lo staff può anche scansionare il documento al banco dal pannello web, con la fotocamera del computer o del tablet; la lettura avviene sul dispositivo e nessuna immagine viene conservata.
+A: Fai il check-in nel modo consueto. Lo staff può anche scansionare il documento al banco dal pannello web, con la fotocamera del computer o del tablet, oppure con l'app mobile di Hostlio Pro; la lettura avviene sul dispositivo e nessuna immagine viene conservata.
 
 Q: Le foto dei documenti vengono conservate?
 A: No. La zona a lettura ottica (MRZ) del documento viene letta sul telefono dell'ospite, o al banco, sul dispositivo dell'hotel, dal pannello web, e vengono salvati solo i dati estratti e la firma. Si possono scansionare passaporti e carte d'identità con MRZ; gli altri documenti si inseriscono a mano.
@@ -10748,7 +10748,7 @@ Lio propone transfer dall'aeroporto e tour durante la conversazione e inoltra la
 Ogni mattina Lio prepara suggerimenti su prezzi, operatività (camere da pulire, richieste in sospeso), impostazioni mancanti e opportunità di ricavo. Nulla cambia senza la tua approvazione e i suggerimenti sui prezzi restano nei limiti che imposti tu. Con Pro e Growth riassume anche lamentele ed elogi ricorrenti in recensioni e messaggi.
 
 ## App mobile
-Gestisci prenotazioni, messaggi e check-in anche lontano dall'hotel con l'app iOS e Android.
+Gestisci prenotazioni, messaggi e check-in anche lontano dall'hotel con l'app iOS e Android. Nell'app trovi anche la schermata Oggi, analisi e report, il centro notifiche, le segnalazioni di guasti con foto, la gestione del team e la scansione dei documenti al banco; con due strutture passi dall'una all'altra con un tocco.
 
 ## Tutta la giornata da un solo pannello
 Oltre alla messaggistica e alla distribuzione, ecco gli strumenti che il tuo staff usa ogni giorno. Sono tutti nel pannello web e inclusi in ogni piano, salvo diversa indicazione.
@@ -10762,7 +10762,7 @@ Guasti e camere fuori servizio Segnala un guasto con un massimo di cinque foto (
 
 Un planning che cresce con te Per le strutture più grandi: tre livelli di densità, camere raggruppate per tipologia o piano, numero di camere libere per giorno, ricerca di camere libere e viste a 7, 14 o 30 giorni. Il controllo conflitti elenca le prenotazioni doppie o senza camera, il planning suggerisce una camera libera della tipologia giusta e le prenotazioni si spostano con il mouse o con la tastiera.
 
-Notifiche e riepilogo del mattino Prenotazioni nuove, modificate e cancellate, messaggi senza risposta, bozze da approvare, problemi dei canali e guasti arrivano in un unico centro notifiche, conservato per 90 giorni. L’app mobile ti invia anche un riepilogo della giornata alle 08:00, ora dell’hotel (oggi su Android; su iOS con il prossimo aggiornamento dell’app).
+Notifiche e riepilogo del mattino Prenotazioni nuove, modificate e cancellate, messaggi senza risposta, bozze da approvare, problemi dei canali e guasti arrivano in un unico centro notifiche, conservato per 90 giorni. L’app mobile ti invia anche un riepilogo della giornata alle 08:00, ora dell’hotel (Android e iOS).
 
 Scheda ospite Tieni una scheda per gli ospiti che vuoi ricordare: contatti, nazionalità e le tue note. Segna gli abituali come VIP e filtra l'elenco; numero di soggiorni e ultimo soggiorno sono calcolati dalle loro prenotazioni.
 
@@ -10961,7 +10961,7 @@ In quali lingue risponde Lio? Lio risponde in oltre 30 lingue, tra cui inglese, 
 
 Per quali tipi di struttura è pensato Hostlio Pro? Per strutture indipendenti da 1 a 150 camere, come boutique hotel, hotel di città, B&B e affittacamere, residence e aparthotel e ostelli.
 
-Esiste un'app mobile? Sì. Tutti i piani, Starter compreso, includono l'app iOS e Android. Gestisci prenotazioni, messaggi e check-in anche lontano dall'hotel.
+Esiste un'app mobile? Sì. Tutti i piani, Starter compreso, includono l'app iOS e Android. Gestisci prenotazioni, messaggi e check-in anche lontano dall'hotel; analisi, notifiche, guasti e scansione dei documenti sono anche nell'app.
 
 Come funziona il check-in online? Gli ospiti ricevono un link personale e sicuro, scansionano il documento con il telefono (nessuna immagine viene conservata) e, prima dell'arrivo, inviano accompagnatori e firma digitale. Disponibile nei piani Pro e Growth.
 
@@ -11000,7 +11000,7 @@ Q: Per quali tipi di struttura è pensato Hostlio Pro?
 A: Per strutture indipendenti da 1 a 150 camere, come boutique hotel, hotel di città, B&B e affittacamere, residence e aparthotel e ostelli.
 
 Q: Esiste un'app mobile?
-A: Sì. Tutti i piani, Starter compreso, includono l'app iOS e Android. Gestisci prenotazioni, messaggi e check-in anche lontano dall'hotel.
+A: Sì. Tutti i piani, Starter compreso, includono l'app iOS e Android. Gestisci prenotazioni, messaggi e check-in anche lontano dall'hotel; analisi, notifiche, guasti e scansione dei documenti sono anche nell'app.
 
 Q: Come funziona il check-in online?
 A: Gli ospiti ricevono un link personale e sicuro, scansionano il documento con il telefono (nessuna immagine viene conservata) e, prima dell'arrivo, inviano accompagnatori e firma digitale. Disponibile nei piani Pro e Growth.
@@ -13350,7 +13350,7 @@ Q: O hóspede precisa baixar um aplicativo?
 A: Não. O formulário de check-in abre no navegador; não é preciso baixar nenhum aplicativo.
 
 Q: E se o hóspede não preencher o link?
-A: Faça o check-in da forma habitual. A equipe também pode escanear o documento na recepção pelo painel web, com a câmera do computador ou do tablet; a leitura é feita no aparelho e nenhuma imagem é guardada.
+A: Faça o check-in da forma habitual. A equipe também pode escanear o documento na recepção pelo painel web, com a câmera do computador ou do tablet, ou com o app da Hostlio Pro; a leitura é feita no aparelho e nenhuma imagem é guardada.
 
 Q: As fotos dos documentos ficam armazenadas?
 A: Não. A zona de leitura mecânica (MRZ) do documento é lida no celular do hóspede, ou na recepção, no aparelho do hotel, pelo painel web, e só ficam salvos os dados extraídos e a assinatura. Passaportes e documentos de identidade com MRZ podem ser escaneados; os demais são preenchidos à mão.
@@ -13399,7 +13399,7 @@ O Lio sugere transfers do aeroporto e passeios durante a conversa e repassa o pe
 Toda manhã o Lio prepara sugestões sobre preços, operação (quartos aguardando limpeza, pedidos pendentes), configurações que faltam e oportunidades de receita. Nada muda sem sua aprovação, e as sugestões de preço respeitam os limites que você define. Nos planos Pro e Growth, ele também resume as reclamações e os elogios que se repetem em avaliações e mensagens.
 
 ## App para celular
-Gerencie reservas, mensagens e check-ins fora do hotel com o app para iOS e Android.
+Gerencie reservas, mensagens e check-ins fora do hotel com o app para iOS e Android. O app também tem a tela Hoje, análises e relatórios, a central de notificações, registro de avarias com fotos, gestão da equipe e leitura de documentos na recepção; com duas propriedades, você alterna entre elas com um toque.
 
 ## O dia inteiro em um só painel
 Além da mensageria e da distribuição, estas são as ferramentas que sua equipe usa todos os dias. Todas estão no painel web e incluídas em todos os planos, salvo indicação em contrário.
@@ -13413,7 +13413,7 @@ Manutenção e quartos fora de serviço Registre um problema com até cinco foto
 
 Um mapa de quartos que acompanha o crescimento Para propriedades maiores: três níveis de densidade, quartos agrupados por tipo ou andar, número de quartos livres por dia, busca de quarto livre e visões de 7, 14 ou 30 dias. A verificação de conflitos lista reservas duplicadas ou sem quarto, o mapa sugere um quarto livre do tipo certo e as reservas se movem com o mouse ou com o teclado.
 
-Notificações e resumo da manhã Reservas novas, alteradas e canceladas, mensagens sem resposta, rascunhos para aprovar, problemas de canal e registros de manutenção chegam a uma única central de notificações, guardada por 90 dias. O app também envia um resumo do dia às 08:00, horário do hotel (hoje no Android; no iOS com a próxima atualização do app).
+Notificações e resumo da manhã Reservas novas, alteradas e canceladas, mensagens sem resposta, rascunhos para aprovar, problemas de canal e registros de manutenção chegam a uma única central de notificações, guardada por 90 dias. O app também envia um resumo do dia às 08:00, horário do hotel (Android e iOS).
 
 Ficha do hóspede Mantenha uma ficha dos hóspedes que você quer lembrar: contatos, nacionalidade e suas observações. Marque os habituais como VIP e filtre a lista por eles; o número de estadias e a última estadia são calculados a partir das reservas.
 
@@ -13612,7 +13612,7 @@ Em quais idiomas o Lio responde? O Lio responde em mais de 30 idiomas, incluindo
 
 Para que tipos de hotel o Hostlio Pro foi feito? Para propriedades independentes de 1 a 150 quartos, como hotéis boutique, hotéis urbanos, pousadas, apart-hotéis e hostels.
 
-Existe um app para celular? Sim. Todos os planos, inclusive o Starter, incluem o app para iOS e Android. Gerencie reservas, mensagens e check-ins fora do hotel.
+Existe um app para celular? Sim. Todos os planos, inclusive o Starter, incluem o app para iOS e Android. Gerencie reservas, mensagens e check-ins fora do hotel; análises, notificações, avarias e leitura de documentos também estão no app.
 
 Como funciona o check-in online? Os hóspedes recebem um link pessoal e seguro, escaneiam o documento pelo celular (nenhuma imagem é guardada) e enviam, antes da chegada, os acompanhantes e a assinatura digital. Disponível nos planos Pro e Growth.
 
@@ -13651,7 +13651,7 @@ Q: Para que tipos de hotel o Hostlio Pro foi feito?
 A: Para propriedades independentes de 1 a 150 quartos, como hotéis boutique, hotéis urbanos, pousadas, apart-hotéis e hostels.
 
 Q: Existe um app para celular?
-A: Sim. Todos os planos, inclusive o Starter, incluem o app para iOS e Android. Gerencie reservas, mensagens e check-ins fora do hotel.
+A: Sim. Todos os planos, inclusive o Starter, incluem o app para iOS e Android. Gerencie reservas, mensagens e check-ins fora do hotel; análises, notificações, avarias e leitura de documentos também estão no app.
 
 Q: Como funciona o check-in online?
 A: Os hóspedes recebem um link pessoal e seguro, escaneiam o documento pelo celular (nenhuma imagem é guardada) e enviam, antes da chegada, os acompanhantes e a assinatura digital. Disponível nos planos Pro e Growth.
@@ -16113,7 +16113,7 @@ Q: Le client doit-il télécharger une application ?
 A: Non. Le formulaire de check-in s'ouvre dans le navigateur ; aucune application n'est à télécharger.
 
 Q: Et si un client ne remplit pas le formulaire ?
-A: Enregistrez-le de la manière habituelle. Votre équipe peut aussi scanner le document à la réception depuis le panneau web, avec la caméra de l'ordinateur ou de la tablette ; la lecture se fait sur l'appareil et aucune image n'est conservée.
+A: Enregistrez-le de la manière habituelle. Votre équipe peut aussi scanner le document à la réception depuis le panneau web, avec la caméra de l'ordinateur ou de la tablette, ou avec l'application mobile Hostlio Pro ; la lecture se fait sur l'appareil et aucune image n'est conservée.
 
 Q: Les photos des pièces d'identité sont-elles conservées ?
 A: Non. La bande de lecture automatique (MRZ) du document est lue sur le téléphone du client, ou à la réception, sur l'appareil de l'hôtel, depuis le panneau web, et seules les données extraites et la signature sont enregistrées. Les passeports et cartes d'identité dotés d'une MRZ peuvent être scannés ; les autres documents sont saisis à la main.
@@ -16159,7 +16159,7 @@ Lio propose transferts aéroport et excursions pendant la conversation et transm
 Chaque matin, Lio prépare des suggestions sur les prix, l'exploitation (chambres à nettoyer, demandes en attente), les réglages manquants et les opportunités de revenus. Rien ne change sans votre accord, et les suggestions de prix restent dans les limites que vous fixez. Avec Pro et Growth, les plaintes et compliments récurrents dans les avis et les messages sont aussi résumés.
 
 ## Application mobile
-Gérez réservations, messages et check-ins hors de l'hôtel avec l'application iOS et Android.
+Gérez réservations, messages et check-ins hors de l'hôtel avec l'application iOS et Android. Elle propose aussi l'écran Aujourd'hui, les analyses et rapports, le centre de notifications, les signalements de pannes avec photos, la gestion de l'équipe et le scan des documents à la réception ; avec deux établissements, vous passez de l'un à l'autre d'un geste.
 
 ## Toute la journée depuis un seul tableau de bord
 En plus de la messagerie et de la distribution, voici les outils que votre équipe utilise chaque jour. Ils sont tous dans le tableau de bord web et inclus dans chaque forfait, sauf mention contraire.
@@ -16173,7 +16173,7 @@ Pannes et chambres hors service Signalez une panne avec jusqu’à cinq photos (
 
 Un planning qui suit votre croissance Pour les établissements plus grands : trois niveaux de densité, chambres regroupées par type ou par étage, nombre de chambres libres par jour, recherche de chambre libre et vues sur 7, 14 ou 30 jours. Le contrôle des conflits liste les réservations en double ou sans chambre, le planning propose une chambre libre du bon type, et les réservations se déplacent à la souris ou au clavier.
 
-Notifications et résumé du matin Réservations nouvelles, modifiées ou annulées, messages sans réponse, brouillons à valider, incidents de canal et pannes arrivent dans un seul centre de notifications, conservé 90 jours. L’application mobile envoie aussi un résumé de la journée à 08:00, heure de l’hôtel (sur Android aujourd’hui, sur iOS avec la prochaine mise à jour de l’application).
+Notifications et résumé du matin Réservations nouvelles, modifiées ou annulées, messages sans réponse, brouillons à valider, incidents de canal et pannes arrivent dans un seul centre de notifications, conservé 90 jours. L’application mobile envoie aussi un résumé de la journée à 08:00, heure de l’hôtel (Android et iOS).
 
 Fiche client Gardez une fiche pour les clients dont vous voulez vous souvenir : coordonnées, nationalité et vos notes. Marquez les habitués comme VIP et filtrez la liste ; le nombre de séjours et le dernier séjour sont calculés à partir de leurs réservations.
 
@@ -16372,7 +16372,7 @@ Dans quelles langues Lio répond-il ? Lio répond dans plus de 30 langues, dont 
 
 À quels types d'hôtels s'adresse Hostlio Pro ? Aux établissements indépendants de 1 à 150 chambres : hôtels boutique, hôtels urbains, chambres d'hôtes, résidences hôtelières et auberges de jeunesse.
 
-Existe-t-il une application mobile ? Oui. Tous les forfaits, Starter compris, incluent l'application iOS et Android. Gérez réservations, messages et check-ins hors de l'hôtel.
+Existe-t-il une application mobile ? Oui. Tous les forfaits, Starter compris, incluent l'application iOS et Android. Gérez réservations, messages et check-ins hors de l'hôtel ; analyses, notifications, pannes et scan des documents sont aussi dans l'application.
 
 Comment fonctionne le check-in en ligne ? Les clients reçoivent un lien sécurisé personnel, scannent leur pièce d'identité avec leur téléphone (aucune image n'est conservée) et envoient avant leur arrivée leurs accompagnants et leur signature électronique. Disponible avec Pro et Growth.
 
@@ -16411,7 +16411,7 @@ Q: À quels types d'hôtels s'adresse Hostlio Pro ?
 A: Aux établissements indépendants de 1 à 150 chambres : hôtels boutique, hôtels urbains, chambres d'hôtes, résidences hôtelières et auberges de jeunesse.
 
 Q: Existe-t-il une application mobile ?
-A: Oui. Tous les forfaits, Starter compris, incluent l'application iOS et Android. Gérez réservations, messages et check-ins hors de l'hôtel.
+A: Oui. Tous les forfaits, Starter compris, incluent l'application iOS et Android. Gérez réservations, messages et check-ins hors de l'hôtel ; analyses, notifications, pannes et scan des documents sont aussi dans l'application.
 
 Q: Comment fonctionne le check-in en ligne ?
 A: Les clients reçoivent un lien sécurisé personnel, scannent leur pièce d'identité avec leur téléphone (aucune image n'est conservée) et envoient avant leur arrivée leurs accompagnants et leur signature électronique. Disponible avec Pro et Growth.
@@ -16888,7 +16888,7 @@ Voir les tarifs
 ## Une journée à l’accueil d’une auberge avec Hostlio Pro
 
 ## 8 h, la journée est prête
-L’écran Aujourd’hui affiche les arrivées, les départs, les chambres à nettoyer, les messages en attente de réponse et les brouillons de Lio à valider. L’application mobile peut aussi envoyer ce résumé sur votre téléphone à 8 h, heure de l’établissement (sur Android aujourd’hui, sur iOS avec la prochaine mise à jour de l’application).
+L’écran Aujourd’hui affiche les arrivées, les départs, les chambres à nettoyer, les messages en attente de réponse et les brouillons de Lio à valider. L’application mobile peut aussi envoyer ce résumé sur votre téléphone à 8 h, heure de l’établissement (Android et iOS).
 
 ## Fin de matinée, le grand ménage
 L’équipe de ménage voit d’abord les départs du jour, et les chambres où quelqu’un arrive le soir même sont marquées prioritaires. Dès qu’une chambre est propre, son statut change et l’accueil le voit aussitôt. Une douche en panne ? Signalez-la avec une photo et passez la chambre hors service : elle sort de la vente sur tous les canaux connectés jusqu’à la réparation.

@@ -162,7 +162,7 @@ def checkin():
 '''
     faq = [("Online check-in hangi planda var?", "Online check-in ve dijital imza Pro ve Growth planlarına dahildir."),
            ("Misafirin uygulama indirmesi gerekiyor mu?", "Hayır. Check-in formu tarayıcıda açılır; herhangi bir uygulama indirmek gerekmez."),
-           ("Misafir bağlantıyı doldurmazsa ne olur?", "Klasik check-in'e devam edebilirsiniz. Resepsiyonda misafirin belgesini panelden, bilgisayarın ya da tabletin kamerasıyla da tarayabilirsiniz; okuma cihazda yapılır, görüntü saklanmaz."),
+           ("Misafir bağlantıyı doldurmazsa ne olur?", "Klasik check-in'e devam edebilirsiniz. Resepsiyonda misafirin belgesini panelden bilgisayarın ya da tabletin kamerasıyla ya da Hostlio Pro mobil uygulamasıyla da tarayabilirsiniz; okuma cihazda yapılır, görüntü saklanmaz."),
            ("Kimlik fotoğrafı saklanıyor mu?", "Hayır. Belgenin makine okunabilir alanı (MRZ) misafirin telefonunda ya da resepsiyonda panelden otelin cihazında okunur; yalnızca okunan bilgiler ve imza kaydedilir. MRZ'li pasaport ve kimlik kartları taranabilir; diğer belgeler elle girilir.")]
     return {"key":"checkin","title":"Otel Online Check-in ve Dijital İmza Yazılımı | Hostlio Pro",
             "desc":"Hostlio Pro online check-in: misafir kimliğini telefonuyla tarar (görüntü saklanmaz), refakatçilerini ve dijital imzasını varıştan önce gönderir.",
@@ -180,7 +180,7 @@ def features():
 <div class="row"><h3>Misafir belgeleri</h3><div><p>Rezervasyondan, vize ya da davet başvurusunda istenen konaklama onayını veya tarihleri, gecelik fiyatı ve toplamı gösteren konaklama makbuzunu hazırlayın. Türkçe, İngilizce, İspanyolca, İtalyanca, Portekizce ya da Fransızca seçin (misafirin dili önerilir), yazdırın ya da PDF olarak kaydedin. Misafir kayıt formu da PDF olarak indirilebilir.</p></div></div>
 <div class="row"><h3>Transfer ve tur satışı</h3><div><p>Lio mesajlaşma sırasında havalimanı transferi ve tur önerir, talebi ekibinize iletir.</p></div></div>
 <div class="row"><h3>Lio Önerileri ve AI içgörüleri</h3><div><p>Lio her sabah fiyat, operasyon (kirli odalar, bekleyen talepler), kurulum eksikleri ve gelir fırsatları için öneriler hazırlar. Onayınız olmadan hiçbir şey değişmez; fiyat önerileri belirlediğiniz sınırların dışına çıkmaz. Pro ve Growth'ta yorum ve mesajlardaki tekrar eden şikâyet ve övgüler de özetlenir.</p></div></div>
-<div class="row"><h3>Mobil uygulama</h3><div><p>iOS ve Android uygulamasıyla rezervasyonları, mesajları ve check-in'leri otelin dışından yönetin.</p>{store_badges("tr")}</div></div>
+<div class="row"><h3>Mobil uygulama</h3><div><p>iOS ve Android uygulamasıyla rezervasyonları, mesajları ve check-in'leri otelin dışından yönetin. Uygulamada Bugün ekranı, analiz ve raporlar, bildirim merkezi, fotoğraflı arıza kaydı, ekip yönetimi ve resepsiyonda belge tarama da var; iki tesisiniz varsa aralarında tek dokunuşla geçersiniz.</p>{store_badges("tr")}</div></div>
 </div></div></section>
 {FX.features_more(L)}
 <section><div class="wrap"><div class="section-head"><h2>Planlara göre özellikler</h2></div>
@@ -238,7 +238,7 @@ def pricing():
 
 FAQ_ALL = FAQ_CORE + [
  ("Hostlio Pro hangi otel tiplerine uygun?", "Butik oteller, şehir otelleri, pansiyonlar, apart oteller ve hosteller gibi 1 ila 150 odalı bağımsız tesisler için tasarlandı."),
- ("Mobil uygulama var mı?", "Evet. Starter dahil tüm planlarda iOS ve Android uygulaması bulunur. Rezervasyonları, mesajları ve check-in'leri otelin dışından da yönetirsiniz."),
+ ("Mobil uygulama var mı?", "Evet. Starter dahil tüm planlarda iOS ve Android uygulaması bulunur. Rezervasyonları, mesajları ve check-in'leri otelin dışından da yönetirsiniz; analiz, bildirimler, arıza kaydı ve belge tarama da uygulamada."),
  ("Online check-in nasıl çalışıyor?", "Misafire kişiye özel güvenli bir bağlantı gönderilir. Misafir kimliğini telefonuyla tarar (görüntü saklanmaz), refakatçilerini ve dijital imzasını varıştan önce gönderir. Pro ve Growth planlarında vardır."),
  ("Vize için konaklama onayı ne işe yarar?", "Vizeye ihtiyaç duyan misafir için, vize ya da davet başvurusunda kullanılacak konaklama onayını rezervasyon bilgilerinden tek tıkla hazırlar. Belgeyi PDF olarak kaydedebilir ya da yazdırabilirsiniz."),
  ("Verilerim güvende mi?", "Veriler şifreli bağlantı üzerinden iletilir ve her otelin verisi satır düzeyinde erişim kurallarıyla diğer tesislerden ayrılır. Misafir kartını panelden silebilirsiniz; imzalar ve yazışmalar belirlenen süreler sonunda kendiliğinden silinir ya da anonimleştirilir."),
