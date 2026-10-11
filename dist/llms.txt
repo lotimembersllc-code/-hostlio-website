@@ -167,6 +167,7 @@
 - [Calcolo RevPAR, ADR e tasso di occupazione (gratis)](https://hostliopro.com/it/strumenti/calcolo-revpar-adr-occupazione/): Calcola RevPAR, ADR e tasso di occupazione in pochi secondi. Formule, esempio passo passo ed errori comuni. Calcolatore gratuito per hotel, senza registrazione.
 - [Calcolatore commissioni OTA: ricavo netto](https://hostliopro.com/it/strumenti/calcolatore-commissioni-ota/): Calcola quanto ti resta di una prenotazione Booking.com o Expedia dopo commissione e costi di pagamento, e il netto per notte. Gratis, senza registrazione.
 - [Alloggiati Web: guida 2026 per hotel, B&B e affitti brevi](https://hostliopro.com/it/blog/alloggiati-web-guida/): Alloggiati Web nel 2026: chi deve comunicare, entro 24 ore (6 per soggiorni brevi), quali dati, credenziali, self check-in e sanzioni. Fonti ufficiali.
+- [I gestionali per hotel più usati nel 2026: confronto onesto](https://hostliopro.com/it/blog/gestionali-hotel-piu-usati/): Gestionali per hotel e B&B in Italia nel 2026: TeamSystem, Zak, Slope, Octorate, Zucchetti, Passepartout e altri. Prezzi, Alloggiati Web, SDI.
 - [Channel manager cos'è e che differenza c'è con un PMS](https://hostliopro.com/it/blog/channel-manager-cos-e-differenza-pms/): Channel manager e PMS: cosa fa ciascuno, come lavorano insieme, quanto costano e se una piccola struttura ha bisogno di entrambi. Con tabella e FAQ.
 
 ## Páginas em português

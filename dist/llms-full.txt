@@ -11078,6 +11078,12 @@ URL: https://hostliopro.com/it/blog/
 ## Blog per albergatori
 Articoli pratici sulla gestione di un hotel indipendente, sulla distribuzione e sulla comunicazione con gli ospiti.
 
+Scegliere il software
+
+## I gestionali per hotel più usati nel 2026: confronto onesto
+12 ottobre 2026
+Gestionali per hotel e B&B in Italia nel 2026: TeamSystem, Zak, Slope, Octorate, Zucchetti, Passepartout e altri. Prezzi, Alloggiati Web, SDI.
+
 Operatività
 
 ## Alloggiati Web: guida 2026 per hotel, B&B e affitti brevi
@@ -12362,6 +12368,133 @@ A: Il ricavo medio che resta per notte venduta dopo commissioni e costi. Per con
 
 Q: I miei numeri vengono salvati?
 A: No. Il calcolo avviene nel browser e non viene inviato nulla.
+
+---
+# I gestionali per hotel più usati nel 2026: confronto onesto
+URL: https://hostliopro.com/it/blog/gestionali-hotel-piu-usati/
+
+## I gestionali per hotel più usati nel 2026: confronto onesto
+A cura del team di prodotto Hostlio Pro , le persone che sviluppano Hostlio Pro. Pubblicato il 12 ottobre 2026 , aggiornato il 23 settembre 2026
+
+In breve: in Italia i gestionali per hotel più diffusi tra le strutture indipendenti sono soprattutto prodotti italiani: TeamSystem Hospitality (l'ex Hotel in Cloud), Zak di WuBook, Slope, Octorate, le soluzioni del gruppo Zucchetti (Ericsoft, Bedzzle, 5stelle*) e Passepartout Welcome; tra gli esteri RoomRaccoon, Cloudbeds, Mews e Beds24. Non esistono dati pubblici affidabili sulle quote di mercato, quindi questa non è una classifica. Per un piccolo hotel contano soprattutto tre cose: channel manager incluso, gestione di Alloggiati Web e fatturazione, e un prezzo chiaro.
+
+Indice
+
+- Cosa deve fare un gestionale per hotel in Italia
+- Tabella di confronto
+- Quanto costa per 10 e 25 camere
+- I gestionali italiani
+- I gestionali esteri
+- Hostlio Pro: dove si colloca
+- Come scegliere
+- Fonti
+Hostlio Pro è uno dei prodotti confrontati, quindi non siamo neutrali. Abbiamo usato solo informazioni pubblicate sui siti ufficiali dei fornitori, consultati il 12 ottobre 2026; i numeri di clienti sono dichiarazioni dei fornitori. Prezzi e funzioni cambiano: verifica sempre sul sito del fornitore prima di decidere.
+
+## Cosa deve fare un gestionale per hotel in Italia
+
+Oltre al planning delle camere e alle prenotazioni, in Italia un gestionale viene giudicato su obblighi molto concreti: la comunicazione degli ospiti ad Alloggiati Web entro 24 ore, le statistiche ISTAT tramite il sistema regionale, l'imposta di soggiorno del comune e, per chi emette documenti fiscali, fatturazione elettronica (SDI) e registratore telematico. A questo si aggiungono il channel manager per Booking.com, Airbnb ed Expedia e, sempre più spesso, la gestione dei messaggi degli ospiti.
+
+## Tabella di confronto
+
+Gestionale Cos'è Prezzo Alloggiati Web Fiscale (SDI / RT)
+Hostlio Pro PMS in cloud + channel manager + assistente AI Canone fisso pubblicato: 49 $ / 89 $ / 149 $ al mese Non invia (dati raccolti con il check-in online) No
+TeamSystem Hospitality (ex Hotel in Cloud) PMS in cloud, channel manager e booking engine inclusi Pubblicato: da 360 € + IVA l'anno (1–3 camere); oltre 30 camere su richiesta Comunicazioni ISTAT/Alloggiati dichiarate Fatturazione elettronica inclusa; corrispettivi telematici
+Zak (WuBook) Suite in cloud: PMS, channel manager, booking engine Su misura Invio automatico ad Alloggiati e ISTAT dichiarato Fatture elettroniche allo SDI
+Slope PMS in cloud per hotel medi e grandi Su preventivo, canone annuale Invio schedine PS, ISTAT, tassa di soggiorno dichiarato Fatture XML e integrazione con registratori telematici
+Octorate Suite in cloud; il piano Basic è solo channel manager e booking engine Basic da 8 € a camera al mese; Pro e Ultimate su richiesta ISTAT e Alloggiati Web tra le funzioni del PMS Non dichiarato
+Bedzzle (Zucchetti) PMS in cloud con channel manager e booking engine Su misura Invio del tracciato al portale dichiarato Invio allo SDI e stampanti RT
+5stelle* (Zucchetti) PMS in cloud per hotel e gruppi Avviamento + canone annuo per camere, su richiesta Genera il file per Alloggiati Web Ciclo SDI completo e stampante RT
+Ericsoft (Zucchetti) Suite per hotel e catene Non pubblicato Non indicato in pagina Fatturazione elettronica
+Passepartout Welcome Gestionale con versione cloud (Smart Cloud fino a 15 camere) Su preventivo Invio automatizzato a Questura e ISTAT dichiarato XML per SDI (invio a pagamento), registratori telematici
+RoomRaccoon PMS all-in-one con channel manager Da 164 € al mese (Entry) secondo il calcolatore Modulo Alloggiati Web dichiarato SDI e stampanti fiscali Epson
+Cloudbeds Piattaforma in cloud Su preventivo Servizio Alloggiati o esportazione manuale Ricevute fiscali Epson
+Mews Piattaforma in cloud Su preventivo, per camera Non verificato Non verificato
+Beds24 PMS e channel manager a consumo 12,90 € + 2,60 € a camera + 0,55 € per collegamento Non verificato Non verificato
+
+"Dichiarato" significa che il fornitore lo indica sul proprio sito; non abbiamo verificato come avviene l'invio (web service o file).
+
+## Quanto costa per 10 e 25 camere
+
+Canone mensile calcolato dai prezzi pubblicati e dai calcolatori ufficiali. I fornitori che lavorano su preventivo non sono inclusi. I prodotti non includono le stesse funzioni: non decidere solo sul prezzo.
+
+Gestionale 10 camere 25 camere Nota
+Hostlio Pro 49 $ (Starter) 89 $ (Pro) Channel manager e AI inclusi
+TeamSystem Hospitality 72 € + IVA 167,83 € + IVA Canone annuale (864 € e 2.014 €) diviso per 12
+Beds24 42,20 € 84,50 € Con 3 e 4 tipologie su 2 e 3 OTA
+RoomRaccoon Entry 164 € 228 € Secondo il calcolatore; IVA non indicata
+
+## I gestionali italiani
+
+## TeamSystem Hospitality (ex Hotel in Cloud)
+
+Il vecchio Hotel in Cloud oggi è TeamSystem Hospitality. È pensato per ogni tipo di struttura, dall'hotel all'agriturismo fino a B&B e case vacanza. Un unico piano include PMS, channel manager, booking engine e fatturazione elettronica; il prezzo è pubblicato e parte da 360 € + IVA l'anno per 1–3 camere, con 14 giorni di prova gratuita.
+
+## Zak di WuBook
+
+Suite in cloud di Fano per hotel, B&B, ostelli e case vacanza, con PMS, channel manager e booking engine integrati. Dichiara l'invio automatico ad Alloggiati Web e ISTAT, la tassa di soggiorno e le fatture elettroniche allo SDI. Prezzi su misura; WuBook dichiara oltre 22.000 strutture nel mondo.
+
+## Slope
+
+PMS in cloud di Perugia, rivolto soprattutto a hotel medi e grandi, gruppi e hotel con ristorante. Dichiara l'invio di schedine alloggiati, ISTAT e tassa di soggiorno e l'integrazione con i registratori telematici. Prezzo su preventivo con canone annuale; dichiara oltre 1.400 strutture italiane.
+
+## Octorate
+
+Suite in cloud di Roma per hotel, B&B, ostelli e campeggi. Attenzione al piano Basic (da 8 € a camera al mese): comprende channel manager e booking engine ma non il PMS, che è nei piani Pro e Ultimate su richiesta. Ha un agente AI che risponde agli ospiti su WhatsApp, email e canali OTA. 14 giorni di prova.
+
+## Il gruppo Zucchetti: Ericsoft, Bedzzle e 5stelle*
+
+Tre prodotti diversi dello stesso gruppo. Ericsoft si rivolge a hotel e catene e dichiara oltre 4.000 strutture. Bedzzle è un PMS in cloud per hotel, residence, agriturismi e B&B, con invio allo SDI e stampanti RT. 5stelle* è un PMS in cloud per hotel e gruppi con ciclo SDI completo e collegamento alla stampante RT. Nessuno pubblica i prezzi.
+
+## Passepartout Welcome
+
+Gestionale del gruppo sammarinese Passepartout, con una versione Smart Cloud per strutture fino a 15 camere. Channel manager e booking engine integrati, invio automatizzato dei dati a Questura e ISTAT dichiarato. Prezzo su preventivo.
+
+## I gestionali esteri
+
+RoomRaccoon pubblica un calcolatore (da 164 € al mese) e un modulo per Alloggiati Web, SDI e stampanti fiscali. Cloudbeds e Mews lavorano su preventivo; Cloudbeds offre un servizio per Alloggiati e un'integrazione con ROSS1000. Beds24 è economico e flessibile, ma non ha un sito in italiano e non abbiamo trovato informazioni sugli adempimenti italiani.
+
+## Hostlio Pro: dove si colloca
+
+Hostlio Pro è un PMS in cloud per hotel indipendenti, B&B e affittacamere da 1 a 150 camere. Ogni piano include channel manager certificato (oltre 100 OTA), planning delle camere, app mobile e Lio, l'assistente AI che risponde agli ospiti su WhatsApp nella loro lingua con le informazioni del tuo hotel. Il prezzo è pubblicato e fisso, senza commissioni sulle prenotazioni. Per essere chiari su cosa non fa: non invia i dati ad Alloggiati Web (li raccoglie con il check-in online , l'invio resta a te), non gestisce fatturazione elettronica SDI né registratore telematico. Se questi invii automatici sono indispensabili, valuta un gestionale italiano oppure abbina Hostlio Pro al tuo software fiscale.
+
+Prova gratis per 7 giorni Vedi i piani
+
+## Come scegliere
+
+- B&B e piccole strutture: canone fisso, channel manager incluso e app mobile. Controlla come viene gestito Alloggiati Web.
+
+- Hotel indipendenti fino a 150 camere: sincronizzazione affidabile con le OTA, messaggi degli ospiti in un'unica casella, ruoli per lo staff e costo annuo completo, moduli compresi.
+
+- Hotel con ristorante, SPA o più strutture: le suite più ampie, con POS e ciclo fiscale completo, valgono il preventivo.
+Per i criteri nel dettaglio leggi come scegliere un gestionale per piccoli hotel .
+
+## Fonti
+Tutte le fonti sono state consultate il 12 ottobre 2026. I prezzi per numero di camere di TeamSystem Hospitality, RoomRaccoon e Beds24 provengono dal calcolatore o dal listino sulla pagina ufficiale.
+
+- TeamSystem Hospitality: prezzi
+- Zak by WuBook
+- Slope
+- Octorate: prezzi
+- Bedzzle
+- 5stelle*
+- Ericsoft
+- Passepartout: gestionale hotel
+- RoomRaccoon: prezzi
+- Mews: pricing
+- Cloudbeds: Italy compliance
+- Beds24: pricing
+
+Q: Qual è il gestionale per hotel più usato in Italia?
+A: Non esistono dati pubblici affidabili sulle quote di mercato. Tra le strutture indipendenti sono molto diffusi prodotti italiani come TeamSystem Hospitality (ex Hotel in Cloud), Zak di WuBook, Slope, Octorate, le soluzioni Zucchetti (Ericsoft, Bedzzle, 5stelle*) e Passepartout Welcome.
+
+Q: Quanto costa un gestionale per un hotel di 10 camere?
+A: Tra i fornitori che pubblicano i prezzi, circa 40–165 € al mese (12 ottobre 2026), a seconda di cosa è incluso. Molti gestionali italiani lavorano su preventivo.
+
+Q: Il gestionale invia i dati ad Alloggiati Web?
+A: Dipende dal prodotto: alcuni dichiarano l'invio automatico, altri generano un file da caricare sul portale. Chiedilo sempre prima di scegliere. Hostlio Pro non invia i dati: li raccoglie con il check-in online.
+
+Q: Posso provare Hostlio Pro gratis?
+A: Sì, per 7 giorni. La carta viene registrata all'iscrizione ma non viene addebitato nulla fino alla fine della prova. I piani costano 49 $, 89 $ e 149 $ al mese.
 
 ---
 # Alloggiati Web: guida 2026 per hotel, B&B e affitti brevi
