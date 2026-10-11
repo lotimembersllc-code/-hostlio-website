@@ -8,7 +8,7 @@ def U(k): return url(k, L)
 PLAN_TXT = {
  "starter": ("Küçük pansiyon ve butik oteller için", ["1 tesis, 10 odaya kadar, 3 kullanıcı","Aylık ⟦quota:starter⟧ AI mesajı","100+ OTA ile kanal senkronizasyonu","WhatsApp AI mesajlaşma","Lio Önerileri: her sabah öneriler","Oda rafı (rezervasyon takvimi)","Vize için konaklama onayı (PDF)","iOS ve Android uygulaması"]),
  "pro":     ("Tek tesisli, büyüyen oteller için", ["1 tesis, 50 odaya kadar, 8 kullanıcı","Aylık ⟦quota:pro⟧ AI mesajı","Starter'daki her şey","WhatsApp + OTA gelen kutusu mesajlaşması (Booking.com, Airbnb, Expedia)","Lio WhatsApp'ta rezervasyon talebi alır (onayınızla)","AI yorum ve mesaj içgörüleri","Online check-in ve dijital imza","Transfer, tur ve ek hizmet satışı"]),
- "growth":  ("İki tesis işleten ekipler için", ["2 tesise kadar, toplam 150 oda, 20 kullanıcı","Aylık ⟦quota:growth⟧ AI mesajı","Pro'daki her şey","Haftalık AI özeti","Öncelikli kanal senkronizasyonu","Öncelikli destek (ertesi iş günü)","Birebir kurulum görüşmesi","White-label seçenekleri"]),
+ "growth":  ("İki tesis işleten ekipler için", ["2 tesise kadar, toplam 150 oda, 20 kullanıcı","Aylık ⟦quota:growth⟧ AI mesajı","Pro'daki her şey","Haftalık AI özeti","Öncelikli kanal senkronizasyonu","Öncelikli destek (ertesi iş günü)","Birebir kurulum görüşmesi","White-label: logonuz, renkleriniz, asistanın adı"]),
 }
 
 def plans_html():
@@ -58,7 +58,7 @@ def ai():
 <h2 style="margin-top:64px">Lio neler yapar</h2><div class="rows">
 <div class="row"><h3>Tek gelen kutusu</h3><div><p>WhatsApp ve OTA gelen kutusu mesajları (Booking.com, Airbnb, Expedia) tek ekranda toplanır. Hangi misafirin hangi rezervasyona ait olduğunu Lio otomatik eşler.</p></div></div>
 <div class="row"><h3>30+ dil, otomatik çeviri</h3><div><p>Misafir Japonca yazar, Lio Japonca cevaplar; Lio'nun cevabının Türkçe çevirisini panelde görürsünüz. Kendi yazdığınız cevaplar ise yazdığınız gibi gönderilir, otomatik çevrilmez.</p></div></div>
-<div class="row"><h3>Otelinize özel bilgi</h3><div><p>Check-in/check-out saatleri, otopark, evcil hayvan kuralları, kahvaltı saatleri, yakın ulaşım, oda özellikleri. Bu bilgileri bir kez girersiniz, Lio her cevapta tutarlı kullanır.</p></div></div>
+<div class="row"><h3>Otelinize özel bilgi</h3><div><p>Check-in/check-out saatleri, otopark, evcil hayvan kuralları, kahvaltı saatleri, yakın ulaşım, oda özellikleri. Bu bilgileri bir kez girersiniz, Lio her cevapta tutarlı kullanır. Lio bir soruyu cevaplayamazsa hangi bilginin eksik olduğunu kurulum ekranında işaretler; bir kez doldurursunuz, uyarı kendiliğinden kapanır.</p></div></div>
 <div class="row"><h3>Satış yapan asistan</h3><div><p>Lio sadece soru yanıtlamaz: havalimanı transferi, şehir turu ve ek hizmet tekliflerini uygun anda sunar, talebi oluşturup ekibinize iletir.</p></div></div>
 <div class="row"><h3>Rezervasyon talebi alır</h3><div><p>Pro ve Growth planlarında misafir WhatsApp'tan oda sorduğunda Lio tarihleri, kişi sayısını ve oda tercihini toplar, sizin fiyat ve müsaitlik bilgilerinize göre fiyat verir. Talep onayınıza gelir; siz onayladığınızda rezervasyona dönüşür.</p></div></div>
 <div class="row"><h3>Her sabah öneriler</h3><div><p>Lio Önerileri her sabah fiyat, operasyon (kirli odalar, bekleyen talepler), kurulum eksikleri ve gelir fırsatları için öneri getirir. Onayınız olmadan hiçbir şey değişmez; fiyat önerileri belirlediğiniz sınırlar içinde kalır. Tüm planlarda.</p></div></div>
@@ -149,7 +149,7 @@ def checkin():
 <div class="row"><h3>KVKK uyumlu belge tarama</h3><div><p>Pasaportun veya kimlik kartının makine okunabilir alanı misafirin kendi cihazında okunur. Yalnızca ad soyad, belge numarası (T.C. kimlik kartlarında T.C. kimlik no), uyruk, doğum tarihi ve geçerlilik tarihi kaydedilir; kimliğin fotokopisi ya da fotoğrafı saklanmaz. Bu, konaklama işletmelerinin kimlik fotokopisi saklamamasını öngören KVKK İlke Kararı 2025/2120 ile uyumludur. Makine okunabilir alanı olmayan belgeler elle girilir.</p></div></div>
 <div class="row"><h3>Refakatçi misafirler</h3><div><p>Aynı odada kalan tüm misafirler tek formda eklenir. Resepsiyonda tek tek bilgi yazmaya gerek kalmaz.</p></div></div>
 <div class="row"><h3>Dijital imza ve onay</h3><div><p>Misafir otel kurallarını ve kişisel veri onayını ekranda imzalar. İmzalar çıkıştan 30 gün sonra otomatik olarak silinir.</p></div></div>
-<div class="row"><h3>Kişisel verilere saygı</h3><div><p>Misafir verileri talep üzerine silinebilir. Açık rıza metni formun parçasıdır.</p></div></div>
+<div class="row"><h3>Kişisel verilere saygı</h3><div><p>Misafir kartını panelden silebilirsiniz; dijital imzalar çıkıştan 30 gün sonra kendiliğinden silinir, yazışmalar da çıkıştan sonra ayarlarda seçtiğiniz sürede anonimleştirilir. Rezervasyon ve fatura gibi yasal kayıtlar ayrıca saklanır. Açık rıza metni formun parçasıdır.</p></div></div>
 <div class="row"><h3>Resmî bildirim için dışa aktarma</h3><div><p>Toplanan misafir bilgileri, yasal konaklama bildirimlerinizde kullanabileceğiniz formatta dışa aktarılır.</p></div></div>
 </div></div></section>
 <section class="dark on-dark"><div class="wrap"><div class="section-head"><figure class="app-shot"><a href="/assets/img/panel-res-tr.webp"><img src="/assets/img/panel-res-tr.webp" alt="Hostlio Pro rezervasyon listesi ve KBS dışa aktarma düğmesi" loading="lazy" width="1600" height="1176"></a><figcaption>Hostlio Pro panelinden gerçek ekran (demo otel verisi)</figcaption></figure>
@@ -224,7 +224,7 @@ def pricing():
 <div class="rows">
 <div class="row"><h3>Starter</h3><div><p>10 odaya kadar pansiyon ve butik oteller. Mesaj trafiği ayda ⟦quota:starter⟧ yanıtı geçmeyen, kanal senkronizasyonu ve AI yanıtla başlamak isteyen işletmeler.</p></div></div>
 <div class="row"><h3>Pro</h3><div><p>11–50 odalı oteller. OTA mesajlarını da Lio'ya devretmek, online check-in kullanmak ve transfer/tur satmak isteyenler için.</p></div></div>
-<div class="row"><h3>Growth</h3><div><p>İki tesis veya 150 odaya kadar kapasite. Öncelikli destek, birebir kurulum ve kendi markanızla (white-label) kullanım gerektiğinde.</p></div></div>
+<div class="row"><h3>Growth</h3><div><p>İki tesis veya 150 odaya kadar kapasite. Öncelikli destek, birebir kurulum ve kendi markanızla (white-label) kullanım gerektiğinde. White-label'da misafirin gördüğü check-in sayfası ve PDF belgeleri logonuz ve renklerinizle, Hostlio izi olmadan görünür; asistana kendi adınızı verirsiniz ve e-postalar otelinizin adıyla gider.</p></div></div>
 </div></div></section>
 '''
     faq = [FAQ_CORE[2], FAQ_CORE[3],
@@ -241,7 +241,7 @@ FAQ_ALL = FAQ_CORE + [
  ("Mobil uygulama var mı?", "Evet. Starter dahil tüm planlarda iOS ve Android uygulaması bulunur. Rezervasyonları, mesajları ve check-in'leri otelin dışından da yönetirsiniz."),
  ("Online check-in nasıl çalışıyor?", "Misafire kişiye özel güvenli bir bağlantı gönderilir. Misafir kimliğini telefonuyla tarar (görüntü saklanmaz), refakatçilerini ve dijital imzasını varıştan önce gönderir. Pro ve Growth planlarında vardır."),
  ("Vize için konaklama onayı ne işe yarar?", "Vizeye ihtiyaç duyan misafir için, vize ya da davet başvurusunda kullanılacak konaklama onayını rezervasyon bilgilerinden tek tıkla hazırlar. Belgeyi PDF olarak kaydedebilir ya da yazdırabilirsiniz."),
- ("Verilerim güvende mi?", "Veriler şifreli bağlantı üzerinden iletilir ve her otelin verisi satır düzeyinde erişim kurallarıyla diğer tesislerden ayrılır. Misafir verileri talep üzerine silinebilir."),
+ ("Verilerim güvende mi?", "Veriler şifreli bağlantı üzerinden iletilir ve her otelin verisi satır düzeyinde erişim kurallarıyla diğer tesislerden ayrılır. Misafir kartını panelden silebilirsiniz; imzalar ve yazışmalar belirlenen süreler sonunda kendiliğinden silinir ya da anonimleştirilir."),
  ("Kurulum ne kadar sürer?", "Hesabınız dakikalar içinde hazır olur. Çoğu otel kanallarını aynı gün bağlar: oda tiplerini ve odaları girin, her OTA'nın extranet'inde bağlantıyı yetkilendirin ve odaları eşleyin. Growth planında birebir kurulum görüşmesi dahildir."),
  ("Türkçe destek veriyor musunuz?", "Evet. Destek Türkçe ve İngilizce verilir. Panel, mobil uygulama ve misafirin check-in formu 6 dilde kullanılabilir: Türkçe, İngilizce, İspanyolca, Fransızca, İtalyanca ve Portekizce. Bize " + EMAIL + " adresinden ulaşabilirsiniz."),
 ] + FX.faq(L,"faq_import","faq_roles","faq_reports","faq_owner")

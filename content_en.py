@@ -7,7 +7,7 @@ def U(k): return url(k, L)
 PLAN_TXT = {
  "starter": ("For small guesthouses and boutique hotels", ["1 property, up to 10 rooms, 3 users","⟦quota:starter⟧ AI messages / month","Channel sync with 100+ OTAs","WhatsApp AI messaging","Lio Suggestions every morning","Room rack reservation calendar","Accommodation confirmation for visas (PDF)","iOS and Android app"]),
  "pro":     ("For growing single-property hotels", ["1 property, up to 50 rooms, 8 users","⟦quota:pro⟧ AI messages / month","Everything in Starter","WhatsApp + OTA inbox messaging (Booking.com, Airbnb, Expedia)","Lio takes booking requests on WhatsApp (you approve)","AI insights from reviews and messages","Online check-in with digital signature","Transfer, tour and extras sales"]),
- "growth":  ("For teams running two properties", ["Up to 2 properties, 150 rooms in total, 20 users","⟦quota:growth⟧ AI messages / month","Everything in Pro","Weekly AI summary","Priority channel sync","Priority support (next business day)","Custom onboarding call","White-label options"]),
+ "growth":  ("For teams running two properties", ["Up to 2 properties, 150 rooms in total, 20 users","⟦quota:growth⟧ AI messages / month","Everything in Pro","Weekly AI summary","Priority channel sync","Priority support (next business day)","Custom onboarding call","White-label: your logo, colours and assistant name"]),
 }
 
 def plans_html():
@@ -55,7 +55,7 @@ def ai():
 <h2 style="margin-top:64px">What Lio does</h2><div class="rows">
 <div class="row"><h3>One inbox</h3><div><p>WhatsApp and OTA inbox messages (Booking.com, Airbnb, Expedia) land on one screen. Lio automatically matches each guest to their reservation.</p></div></div>
 <div class="row"><h3>30+ languages, auto-translated</h3><div><p>The guest writes in Japanese and Lio replies in Japanese; you see a translation of Lio's reply in your own language. Replies you type yourself are sent exactly as written, without automatic translation.</p></div></div>
-<div class="row"><h3>Knows your hotel</h3><div><p>Check-in and check-out times, parking, pet policy, breakfast hours, transport and room features. Enter them once and Lio uses them consistently in every reply.</p></div></div>
+<div class="row"><h3>Knows your hotel</h3><div><p>Check-in and check-out times, parking, pet policy, breakfast hours, transport and room features. Enter them once and Lio uses them consistently in every reply. If Lio can't answer a question, it flags the missing information in your setup; fill it in once and the alert clears itself.</p></div></div>
 <div class="row"><h3>An assistant that sells</h3><div><p>Lio doesn't just answer questions: it offers airport transfers, city tours and extras at the right moment, then creates the request and passes it to your team.</p></div></div>
 <div class="row"><h3>Takes booking requests</h3><div><p>On the Pro and Growth plans, when a guest asks about a room on WhatsApp, Lio collects the dates, number of guests and room preference and quotes a price from your own rates and availability. The request comes to you, and it becomes a reservation once you approve it.</p></div></div>
 <div class="row"><h3>Suggestions every morning</h3><div><p>Every morning, Lio Suggestions flag pricing, operations (rooms waiting to be cleaned, pending requests), setup gaps and revenue opportunities. Nothing changes without your approval, and rate suggestions stay within the limits you set. Included in every plan.</p></div></div>
@@ -146,7 +146,7 @@ def checkin():
 <div class="row"><h3>Document scan, no images stored</h3><div><p>The machine-readable zone of the passport or ID card is read on the guest's own device. Only the name, document number (the T.C. identity number on Turkish ID cards), nationality, date of birth and expiry date are saved, never a picture of the document. This is in line with KVKK principle decision 2025/2120, under which accommodation businesses in Türkiye must not keep copies of ID documents. Documents without a machine-readable zone are entered by hand.</p></div></div>
 <div class="row"><h3>Accompanying guests</h3><div><p>Everyone staying in the room is added in one form, so nobody has to type details at the desk.</p></div></div>
 <div class="row"><h3>Digital signature and consent</h3><div><p>Guests accept house rules and data consent by signing on screen. Signatures are deleted automatically 30 days after check-out.</p></div></div>
-<div class="row"><h3>Privacy by design</h3><div><p>Guest data can be deleted on request, and the consent text is part of the form.</p></div></div>
+<div class="row"><h3>Privacy by design</h3><div><p>You can delete a guest's profile from the dashboard; digital signatures are deleted automatically 30 days after check-out, and conversations are anonymised after the period you set. Legal records such as reservations and invoices are kept separately. The consent text is part of the form.</p></div></div>
 <div class="row"><h3>Export for official reporting</h3><div><p>Collected guest details can be exported in a format you can use for local guest registration requirements.</p></div></div>
 </div></div></section>
 <section class="dark on-dark"><div class="wrap"><div class="section-head"><figure class="app-shot"><a href="/assets/img/panel-res-en.webp"><img src="/assets/img/panel-res-en.webp" alt="Hostlio Pro reservation list with the KBS export button" loading="lazy" width="1600" height="1176"></a><figcaption>A real screen from the Hostlio Pro dashboard (demo hotel data)</figcaption></figure>
@@ -221,7 +221,7 @@ def pricing():
 <div class="rows">
 <div class="row"><h3>Starter</h3><div><p>Guesthouses and boutique hotels with up to 10 rooms, sending fewer than ⟦quota:starter⟧ replies a month, who want to start with channel sync and AI replies.</p></div></div>
 <div class="row"><h3>Pro</h3><div><p>Hotels with 11–50 rooms that want Lio to handle OTA messages too, use online check-in and sell transfers and tours.</p></div></div>
-<div class="row"><h3>Growth</h3><div><p>Two properties or up to 150 rooms, when you need priority support, a custom onboarding and white-label use.</p></div></div>
+<div class="row"><h3>Growth</h3><div><p>Two properties or up to 150 rooms, when you need priority support, a custom onboarding and white-label use. With white-label, the check-in page and PDF documents your guests see carry your logo and colours with no Hostlio branding, the assistant uses the name you choose and emails go out under your hotel's name.</p></div></div>
 </div></div></section>
 '''
     faq = [FAQ_CORE[1], FAQ_CORE[2],
@@ -238,7 +238,7 @@ FAQ_ALL = FAQ_CORE + [
  ("Is there a mobile app?", "Yes. Every plan, including Starter, includes the iOS and Android app. Manage bookings, messages and check-ins away from the hotel."),
  ("How does online check-in work?", "Guests receive a personal secure link, scan their ID document on their phone (no image is stored) and send accompanying guests and a digital signature before arrival. Available on Pro and Growth."),
  ("What is the accommodation confirmation for visas?", "For guests who need a visa, it creates an accommodation confirmation from the reservation data in one click, to use in a visa or invitation application. You can save it as a PDF or print it."),
- ("Is my data secure?", "Data is transmitted over encrypted connections, and each hotel's data is isolated from other properties with row-level access rules. Guest data can be deleted on request."),
+ ("Is my data secure?", "Data is transmitted over encrypted connections, and each hotel's data is isolated from other properties with row-level access rules. You can delete a guest's profile from the dashboard, and signatures and conversations are deleted or anonymised automatically after set periods."),
  ("How long does setup take?", "Your account is ready in minutes. Most hotels connect their channels the same day: add room types and rooms, authorise the connection in each OTA's extranet and map your rooms. The Growth plan includes a custom onboarding call."),
  ("Which languages is support offered in?", "Support is available in English and Turkish. The dashboard, mobile app and guest check-in form are available in 6 languages: English, Turkish, Spanish, French, Italian and Portuguese. Reach us at " + EMAIL + "."),
 ] + FX.faq(L,"faq_import","faq_roles","faq_reports","faq_owner")

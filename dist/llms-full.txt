@@ -287,7 +287,7 @@ Erken kayıt fiyatı (normali 189 $ )
 - Öncelikli kanal senkronizasyonu
 - Öncelikli destek (ertesi iş günü)
 - Birebir kurulum görüşmesi
-- White-label seçenekleri
+- White-label: logonuz, renkleriniz, asistanın adı
 Growth ile başla
 
 Fiyatlara vergi dahil değildir. Planları detaylı karşılaştırın .
@@ -386,7 +386,7 @@ WhatsApp ve OTA gelen kutusu mesajları (Booking.com, Airbnb, Expedia) tek ekran
 Misafir Japonca yazar, Lio Japonca cevaplar; Lio'nun cevabının Türkçe çevirisini panelde görürsünüz. Kendi yazdığınız cevaplar ise yazdığınız gibi gönderilir, otomatik çevrilmez.
 
 ## Otelinize özel bilgi
-Check-in/check-out saatleri, otopark, evcil hayvan kuralları, kahvaltı saatleri, yakın ulaşım, oda özellikleri. Bu bilgileri bir kez girersiniz, Lio her cevapta tutarlı kullanır.
+Check-in/check-out saatleri, otopark, evcil hayvan kuralları, kahvaltı saatleri, yakın ulaşım, oda özellikleri. Bu bilgileri bir kez girersiniz, Lio her cevapta tutarlı kullanır. Lio bir soruyu cevaplayamazsa hangi bilginin eksik olduğunu kurulum ekranında işaretler; bir kez doldurursunuz, uyarı kendiliğinden kapanır.
 
 ## Satış yapan asistan
 Lio sadece soru yanıtlamaz: havalimanı transferi, şehir turu ve ek hizmet tekliflerini uygun anda sunar, talebi oluşturup ekibinize iletir.
@@ -628,7 +628,7 @@ Aynı odada kalan tüm misafirler tek formda eklenir. Resepsiyonda tek tek bilgi
 Misafir otel kurallarını ve kişisel veri onayını ekranda imzalar. İmzalar çıkıştan 30 gün sonra otomatik olarak silinir.
 
 ## Kişisel verilere saygı
-Misafir verileri talep üzerine silinebilir. Açık rıza metni formun parçasıdır.
+Misafir kartını panelden silebilirsiniz; dijital imzalar çıkıştan 30 gün sonra kendiliğinden silinir, yazışmalar da çıkıştan sonra ayarlarda seçtiğiniz sürede anonimleştirilir. Rezervasyon ve fatura gibi yasal kayıtlar ayrıca saklanır. Açık rıza metni formun parçasıdır.
 
 ## Resmî bildirim için dışa aktarma
 Toplanan misafir bilgileri, yasal konaklama bildirimlerinizde kullanabileceğiniz formatta dışa aktarılır.
@@ -938,7 +938,7 @@ Erken kayıt fiyatı (normali 189 $ )
 - Öncelikli kanal senkronizasyonu
 - Öncelikli destek (ertesi iş günü)
 - Birebir kurulum görüşmesi
-- White-label seçenekleri
+- White-label: logonuz, renkleriniz, asistanın adı
 Growth ile başla
 
 Fiyatlar ABD doları cinsindendir, vergiler hariçtir. Son güncelleme: 21 Eylül 2026 .
@@ -952,7 +952,7 @@ Fiyatlar ABD doları cinsindendir, vergiler hariçtir. Son güncelleme: 21 Eylü
 11–50 odalı oteller. OTA mesajlarını da Lio'ya devretmek, online check-in kullanmak ve transfer/tur satmak isteyenler için.
 
 ## Growth
-İki tesis veya 150 odaya kadar kapasite. Öncelikli destek, birebir kurulum ve kendi markanızla (white-label) kullanım gerektiğinde.
+İki tesis veya 150 odaya kadar kapasite. Öncelikli destek, birebir kurulum ve kendi markanızla (white-label) kullanım gerektiğinde. White-label'da misafirin gördüğü check-in sayfası ve PDF belgeleri logonuz ve renklerinizle, Hostlio izi olmadan görünür; asistana kendi adınızı verirsiniz ve e-postalar otelinizin adıyla gider.
 
 Q: Hostlio Pro'nun fiyatı ne kadar?
 A: Üç plan var: Starter aylık 49 $, Pro aylık 89 $, Growth aylık 149 $. Bu fiyatlar ilk 50 müşteriye özel %17–21 erken kayıt indirimini içerir ve abonelik sürdüğü sürece sabit kalır. Normal fiyatlar sırasıyla 59 $, 109 $ ve 189 $'dır.
@@ -1000,7 +1000,7 @@ Online check-in nasıl çalışıyor? Misafire kişiye özel güvenli bir bağla
 
 Vize için konaklama onayı ne işe yarar? Vizeye ihtiyaç duyan misafir için, vize ya da davet başvurusunda kullanılacak konaklama onayını rezervasyon bilgilerinden tek tıkla hazırlar. Belgeyi PDF olarak kaydedebilir ya da yazdırabilirsiniz.
 
-Verilerim güvende mi? Veriler şifreli bağlantı üzerinden iletilir ve her otelin verisi satır düzeyinde erişim kurallarıyla diğer tesislerden ayrılır. Misafir verileri talep üzerine silinebilir.
+Verilerim güvende mi? Veriler şifreli bağlantı üzerinden iletilir ve her otelin verisi satır düzeyinde erişim kurallarıyla diğer tesislerden ayrılır. Misafir kartını panelden silebilirsiniz; imzalar ve yazışmalar belirlenen süreler sonunda kendiliğinden silinir ya da anonimleştirilir.
 
 Kurulum ne kadar sürer? Hesabınız dakikalar içinde hazır olur. Çoğu otel kanallarını aynı gün bağlar: oda tiplerini ve odaları girin, her OTA'nın extranet'inde bağlantıyı yetkilendirin ve odaları eşleyin. Growth planında birebir kurulum görüşmesi dahildir.
 
@@ -1045,7 +1045,7 @@ Q: Vize için konaklama onayı ne işe yarar?
 A: Vizeye ihtiyaç duyan misafir için, vize ya da davet başvurusunda kullanılacak konaklama onayını rezervasyon bilgilerinden tek tıkla hazırlar. Belgeyi PDF olarak kaydedebilir ya da yazdırabilirsiniz.
 
 Q: Verilerim güvende mi?
-A: Veriler şifreli bağlantı üzerinden iletilir ve her otelin verisi satır düzeyinde erişim kurallarıyla diğer tesislerden ayrılır. Misafir verileri talep üzerine silinebilir.
+A: Veriler şifreli bağlantı üzerinden iletilir ve her otelin verisi satır düzeyinde erişim kurallarıyla diğer tesislerden ayrılır. Misafir kartını panelden silebilirsiniz; imzalar ve yazışmalar belirlenen süreler sonunda kendiliğinden silinir ya da anonimleştirilir.
 
 Q: Kurulum ne kadar sürer?
 A: Hesabınız dakikalar içinde hazır olur. Çoğu otel kanallarını aynı gün bağlar: oda tiplerini ve odaları girin, her OTA'nın extranet'inde bağlantıyı yetkilendirin ve odaları eşleyin. Growth planında birebir kurulum görüşmesi dahildir.
@@ -3600,7 +3600,7 @@ Early-bird price (regularly $189 )
 - Priority channel sync
 - Priority support (next business day)
 - Custom onboarding call
-- White-label options
+- White-label: your logo, colours and assistant name
 Start with Growth
 
 Prices exclude taxes. Compare plans in detail .
@@ -3696,7 +3696,7 @@ WhatsApp and OTA inbox messages (Booking.com, Airbnb, Expedia) land on one scree
 The guest writes in Japanese and Lio replies in Japanese; you see a translation of Lio's reply in your own language. Replies you type yourself are sent exactly as written, without automatic translation.
 
 ## Knows your hotel
-Check-in and check-out times, parking, pet policy, breakfast hours, transport and room features. Enter them once and Lio uses them consistently in every reply.
+Check-in and check-out times, parking, pet policy, breakfast hours, transport and room features. Enter them once and Lio uses them consistently in every reply. If Lio can't answer a question, it flags the missing information in your setup; fill it in once and the alert clears itself.
 
 ## An assistant that sells
 Lio doesn't just answer questions: it offers airport transfers, city tours and extras at the right moment, then creates the request and passes it to your team.
@@ -3924,7 +3924,7 @@ Everyone staying in the room is added in one form, so nobody has to type details
 Guests accept house rules and data consent by signing on screen. Signatures are deleted automatically 30 days after check-out.
 
 ## Privacy by design
-Guest data can be deleted on request, and the consent text is part of the form.
+You can delete a guest's profile from the dashboard; digital signatures are deleted automatically 30 days after check-out, and conversations are anonymised after the period you set. Legal records such as reservations and invoices are kept separately. The consent text is part of the form.
 
 ## Export for official reporting
 Collected guest details can be exported in a format you can use for local guest registration requirements.
@@ -4226,7 +4226,7 @@ Early-bird price (regularly $189 )
 - Priority channel sync
 - Priority support (next business day)
 - Custom onboarding call
-- White-label options
+- White-label: your logo, colours and assistant name
 Start with Growth
 
 Prices in US dollars, excluding taxes. Last updated: September 21, 2026 .
@@ -4240,7 +4240,7 @@ Guesthouses and boutique hotels with up to 10 rooms, sending fewer than 1,000 re
 Hotels with 11–50 rooms that want Lio to handle OTA messages too, use online check-in and sell transfers and tours.
 
 ## Growth
-Two properties or up to 150 rooms, when you need priority support, a custom onboarding and white-label use.
+Two properties or up to 150 rooms, when you need priority support, a custom onboarding and white-label use. With white-label, the check-in page and PDF documents your guests see carry your logo and colours with no Hostlio branding, the assistant uses the name you choose and emails go out under your hotel's name.
 
 Q: How much does Hostlio Pro cost?
 A: There are three plans: Starter at $49/month, Pro at $89/month and Growth at $149/month. These prices include a 17–21% early-bird discount for the first 50 customers, locked in for as long as you stay subscribed. Regular prices are $59, $109 and $189.
@@ -4286,7 +4286,7 @@ How does online check-in work? Guests receive a personal secure link, scan their
 
 What is the accommodation confirmation for visas? For guests who need a visa, it creates an accommodation confirmation from the reservation data in one click, to use in a visa or invitation application. You can save it as a PDF or print it.
 
-Is my data secure? Data is transmitted over encrypted connections, and each hotel's data is isolated from other properties with row-level access rules. Guest data can be deleted on request.
+Is my data secure? Data is transmitted over encrypted connections, and each hotel's data is isolated from other properties with row-level access rules. You can delete a guest's profile from the dashboard, and signatures and conversations are deleted or anonymised automatically after set periods.
 
 How long does setup take? Your account is ready in minutes. Most hotels connect their channels the same day: add room types and rooms, authorise the connection in each OTA's extranet and map your rooms. The Growth plan includes a custom onboarding call.
 
@@ -4328,7 +4328,7 @@ Q: What is the accommodation confirmation for visas?
 A: For guests who need a visa, it creates an accommodation confirmation from the reservation data in one click, to use in a visa or invitation application. You can save it as a PDF or print it.
 
 Q: Is my data secure?
-A: Data is transmitted over encrypted connections, and each hotel's data is isolated from other properties with row-level access rules. Guest data can be deleted on request.
+A: Data is transmitted over encrypted connections, and each hotel's data is isolated from other properties with row-level access rules. You can delete a guest's profile from the dashboard, and signatures and conversations are deleted or anonymised automatically after set periods.
 
 Q: How long does setup take?
 A: Your account is ready in minutes. Most hotels connect their channels the same day: add room types and rooms, authorise the connection in each OTA's extranet and map your rooms. The Growth plan includes a custom onboarding call.
@@ -7364,7 +7364,7 @@ Precio de lanzamiento (normalmente 189 $ )
 - Sincronización de canales prioritaria
 - Soporte prioritario (siguiente día hábil)
 - Llamada de onboarding personalizada
-- Opciones de marca blanca
+- Marca blanca: tu logo, tus colores y el nombre del asistente
 Empieza con Growth
 
 Precios sin impuestos. Compara los planes en detalle .
@@ -7460,7 +7460,7 @@ Los mensajes de WhatsApp y de las bandejas de Booking.com, Airbnb y Expedia lleg
 El huésped escribe en japonés y Lio responde en japonés; tú ves la traducción de la respuesta de Lio en tu idioma. Las respuestas que escribes tú se envían tal cual, sin traducción automática.
 
 ## Conoce tu hotel
-Horarios de check-in y check-out, aparcamiento, política de mascotas, horario del desayuno, transporte y características de las habitaciones. Los introduces una vez y Lio los usa de forma coherente en cada respuesta.
+Horarios de check-in y check-out, aparcamiento, política de mascotas, horario del desayuno, transporte y características de las habitaciones. Los introduces una vez y Lio los usa de forma coherente en cada respuesta. Si Lio no puede responder una pregunta, marca en la configuración qué información falta; la completas una vez y el aviso desaparece solo.
 
 ## Un asistente que vende
 Lio no solo responde preguntas: ofrece traslados al aeropuerto, visitas por la ciudad y extras en el momento adecuado, y pasa la solicitud a tu equipo.
@@ -7684,7 +7684,7 @@ Todas las personas que se alojan en la habitación se añaden en un solo formula
 Los huéspedes aceptan las normas de la casa y el consentimiento de datos firmando en pantalla. Las firmas se eliminan automáticamente 30 días después del check-out.
 
 ## Privacidad desde el diseño
-Los datos de los huéspedes pueden eliminarse a petición, y el texto de consentimiento forma parte del formulario.
+Puedes eliminar la ficha de un huésped desde el panel; las firmas digitales se borran solas 30 días después del check-out y las conversaciones se anonimizan tras el plazo que configures. Los registros legales, como reservas y facturas, se conservan aparte. El texto de consentimiento forma parte del formulario.
 
 ## Exportación para comunicaciones oficiales
 Los datos recogidos de los huéspedes pueden exportarse en un formato útil para cumplir los requisitos locales de registro de viajeros.
@@ -7990,7 +7990,7 @@ Precio de lanzamiento (normalmente 189 $ )
 - Sincronización de canales prioritaria
 - Soporte prioritario (siguiente día hábil)
 - Llamada de onboarding personalizada
-- Opciones de marca blanca
+- Marca blanca: tu logo, tus colores y el nombre del asistente
 Empieza con Growth
 
 Precios en dólares estadounidenses, impuestos no incluidos. Última actualización: 23 de septiembre de 2026 .
@@ -8004,7 +8004,7 @@ Hostales, pensiones y hoteles boutique de hasta 10 habitaciones que envían meno
 Hoteles de 11 a 50 habitaciones que quieren que Lio gestione también los mensajes de las OTAs, usar el check-in online y vender traslados y excursiones.
 
 ## Growth
-Dos alojamientos o hasta 150 habitaciones, cuando necesitas soporte prioritario, un onboarding personalizado y uso en marca blanca.
+Dos alojamientos o hasta 150 habitaciones, cuando necesitas soporte prioritario, un onboarding personalizado y uso en marca blanca. En marca blanca, la página de check-in y los PDF que ve el huésped llevan tu logo y tus colores, sin rastro de Hostlio; el asistente usa el nombre que elijas y los correos salen con el nombre de tu hotel.
 
 Q: ¿Cuánto cuesta Hostlio Pro?
 A: Hay tres planes: Starter a 49 $/mes, Pro a 89 $/mes y Growth a 149 $/mes. Estos precios incluyen un descuento de lanzamiento del 17–21 % para los primeros 50 clientes, que se mantiene mientras sigas suscrito. Los precios normales son 59 $, 109 $ y 189 $.
@@ -8050,7 +8050,7 @@ Las preguntas más habituales sobre las funcionalidades, los precios y la config
 
 ¿Para qué sirve la confirmación de alojamiento para visados? Para los huéspedes que necesitan visado, prepara en un clic una confirmación de alojamiento a partir de los datos de la reserva, para usarla en la solicitud de visado o de invitación. Puedes guardarla en PDF o imprimirla.
 
-¿Están seguros mis datos? Los datos se transmiten mediante conexiones cifradas, y los datos de cada hotel están aislados de los de otros alojamientos con reglas de acceso a nivel de fila. Los datos de los huéspedes pueden eliminarse a petición.
+¿Están seguros mis datos? Los datos se transmiten mediante conexiones cifradas, y los datos de cada hotel están aislados de los de otros alojamientos con reglas de acceso a nivel de fila. Puedes eliminar la ficha de un huésped desde el panel, y las firmas y conversaciones se borran o anonimizan solas tras plazos definidos.
 
 ¿Cuánto tiempo lleva la configuración? Tu cuenta está lista en minutos. La mayoría de los hoteles conectan sus canales el mismo día: añade tipos de habitación y habitaciones, autoriza la conexión en la extranet de cada OTA y asigna las habitaciones. El plan Growth incluye una llamada de onboarding personalizada.
 
@@ -8092,7 +8092,7 @@ Q: ¿Para qué sirve la confirmación de alojamiento para visados?
 A: Para los huéspedes que necesitan visado, prepara en un clic una confirmación de alojamiento a partir de los datos de la reserva, para usarla en la solicitud de visado o de invitación. Puedes guardarla en PDF o imprimirla.
 
 Q: ¿Están seguros mis datos?
-A: Los datos se transmiten mediante conexiones cifradas, y los datos de cada hotel están aislados de los de otros alojamientos con reglas de acceso a nivel de fila. Los datos de los huéspedes pueden eliminarse a petición.
+A: Los datos se transmiten mediante conexiones cifradas, y los datos de cada hotel están aislados de los de otros alojamientos con reglas de acceso a nivel de fila. Puedes eliminar la ficha de un huésped desde el panel, y las firmas y conversaciones se borran o anonimizan solas tras plazos definidos.
 
 Q: ¿Cuánto tiempo lleva la configuración?
 A: Tu cuenta está lista en minutos. La mayoría de los hoteles conectan sus canales el mismo día: añade tipos de habitación y habitaciones, autoriza la conexión en la extranet de cada OTA y asigna las habitaciones. El plan Growth incluye una llamada de onboarding personalizada.
@@ -10281,7 +10281,7 @@ Prezzo di lancio (normalmente 189 $ )
 - Sincronizzazione dei canali prioritaria
 - Supporto prioritario (entro il giorno lavorativo successivo)
 - Chiamata di onboarding personalizzata
-- Opzioni white-label
+- White-label: logo, colori e nome dell'assistente
 Inizia con Growth
 
 I prezzi non includono le imposte. Confronta i piani nel dettaglio .
@@ -10377,7 +10377,7 @@ I messaggi di WhatsApp e delle OTA (Booking.com, Airbnb, Expedia) arrivano in un
 L'ospite scrive in giapponese e Lio risponde in giapponese; tu vedi la traduzione della risposta di Lio nella tua lingua. Le risposte che scrivi tu vengono inviate così come sono, senza traduzione automatica.
 
 ## Conosce il tuo hotel
-Orari di check-in e check-out, parcheggio, animali, orari della colazione, trasporti e caratteristiche delle camere. Li inserisci una volta e Lio li usa in modo coerente in ogni risposta.
+Orari di check-in e check-out, parcheggio, animali, orari della colazione, trasporti e caratteristiche delle camere. Li inserisci una volta e Lio li usa in modo coerente in ogni risposta. Se Lio non sa rispondere a una domanda, segnala nella configurazione quale informazione manca; la inserisci una volta e l'avviso si chiude da solo.
 
 ## Un assistente che vende
 Lio non si limita a rispondere: propone transfer dall'aeroporto, tour della città ed extra al momento giusto e inoltra la richiesta al tuo team.
@@ -10610,7 +10610,7 @@ Tutte le persone che soggiornano in camera vengono aggiunte in un unico modulo, 
 Gli ospiti accettano il regolamento della struttura e il consenso al trattamento dei dati firmando sullo schermo. Le firme vengono cancellate automaticamente 30 giorni dopo il check-out.
 
 ## Privacy by design
-I dati degli ospiti possono essere cancellati su richiesta e il testo del consenso fa parte del modulo.
+Puoi eliminare la scheda di un ospite dal pannello; le firme digitali si cancellano da sole 30 giorni dopo il check-out e le conversazioni vengono anonimizzate dopo il periodo che imposti. I documenti legali, come prenotazioni e fatture, sono conservati a parte. Il testo del consenso fa parte del modulo.
 
 ## Esportazione per le comunicazioni ufficiali
 I dati raccolti possono essere esportati in un formato utilizzabile per gli obblighi locali di registrazione degli ospiti.
@@ -10907,7 +10907,7 @@ Prezzo di lancio (normalmente 189 $ )
 - Sincronizzazione dei canali prioritaria
 - Supporto prioritario (entro il giorno lavorativo successivo)
 - Chiamata di onboarding personalizzata
-- Opzioni white-label
+- White-label: logo, colori e nome dell'assistente
 Inizia con Growth
 
 Prezzi in dollari USA, tasse escluse. Ultimo aggiornamento: 23 settembre 2026 .
@@ -10921,7 +10921,7 @@ B&B e boutique hotel fino a 10 camere, con meno di 1.000 risposte al mese, che v
 Hotel da 11 a 50 camere che vogliono affidare a Lio anche i messaggi delle OTA, usare il check-in online e vendere transfer e tour.
 
 ## Growth
-Due strutture o fino a 150 camere, quando servono supporto prioritario, un onboarding personalizzato e l'uso in white-label.
+Due strutture o fino a 150 camere, quando servono supporto prioritario, un onboarding personalizzato e l'uso in white-label. In white-label, la pagina di check-in e i PDF che vede l'ospite riportano il tuo logo e i tuoi colori, senza il marchio Hostlio; l'assistente usa il nome che scegli e le email partono con il nome del tuo hotel.
 
 Q: Quanto costa Hostlio Pro?
 A: Ci sono tre piani: Starter a 49 $/mese, Pro a 89 $/mese e Growth a 149 $/mese. Questi prezzi includono uno sconto di lancio del 17–21% riservato ai primi 50 clienti, bloccato per tutta la durata dell'abbonamento. I prezzi normali sono 59 $, 109 $ e 189 $.
@@ -10967,7 +10967,7 @@ Come funziona il check-in online? Gli ospiti ricevono un link personale e sicuro
 
 A cosa serve la conferma di alloggio per il visto? Per gli ospiti che hanno bisogno di un visto, prepara con un clic una conferma di alloggio dai dati della prenotazione, da usare nella richiesta di visto o di invito. Puoi salvarla in PDF o stamparla.
 
-I miei dati sono al sicuro? I dati vengono trasmessi tramite connessioni crittografate e i dati di ogni hotel sono isolati da quelli delle altre strutture con regole di accesso a livello di riga. I dati degli ospiti possono essere cancellati su richiesta.
+I miei dati sono al sicuro? I dati vengono trasmessi tramite connessioni crittografate e i dati di ogni hotel sono isolati da quelli delle altre strutture con regole di accesso a livello di riga. Puoi eliminare la scheda di un ospite dal pannello, e firme e conversazioni vengono cancellate o anonimizzate automaticamente dopo periodi definiti.
 
 Quanto tempo richiede la configurazione? Il tuo account è pronto in pochi minuti. La maggior parte degli hotel collega i canali in giornata: aggiungi tipologie di camera e camere, autorizza la connessione nell’extranet di ogni OTA e abbina le camere. Il piano Growth include una chiamata di onboarding personalizzata.
 
@@ -11009,7 +11009,7 @@ Q: A cosa serve la conferma di alloggio per il visto?
 A: Per gli ospiti che hanno bisogno di un visto, prepara con un clic una conferma di alloggio dai dati della prenotazione, da usare nella richiesta di visto o di invito. Puoi salvarla in PDF o stamparla.
 
 Q: I miei dati sono al sicuro?
-A: I dati vengono trasmessi tramite connessioni crittografate e i dati di ogni hotel sono isolati da quelli delle altre strutture con regole di accesso a livello di riga. I dati degli ospiti possono essere cancellati su richiesta.
+A: I dati vengono trasmessi tramite connessioni crittografate e i dati di ogni hotel sono isolati da quelli delle altre strutture con regole di accesso a livello di riga. Puoi eliminare la scheda di un ospite dal pannello, e firme e conversazioni vengono cancellate o anonimizzate automaticamente dopo periodi definiti.
 
 Q: Quanto tempo richiede la configurazione?
 A: Il tuo account è pronto in pochi minuti. La maggior parte degli hotel collega i canali in giornata: aggiungi tipologie di camera e camere, autorizza la connessione nell’extranet di ogni OTA e abbina le camere. Il piano Growth include una chiamata di onboarding personalizzata.
@@ -12938,7 +12938,7 @@ Preço de lançamento (normalmente US$ 189 )
 - Sincronização de canais prioritária
 - Suporte prioritário (próximo dia útil)
 - Chamada de onboarding personalizada
-- Opções white-label
+- White-label: seu logo, suas cores e o nome do assistente
 Começar com o Growth
 
 Preços sem impostos. Compare os planos em detalhes .
@@ -13034,7 +13034,7 @@ Mensagens do WhatsApp e das OTAs (Booking.com, Airbnb, Expedia) chegam em uma ú
 O hóspede escreve em japonês e o Lio responde em japonês; você vê a tradução da resposta do Lio no seu idioma. As respostas que você mesmo escreve são enviadas como estão, sem tradução automática.
 
 ## Conhece o seu hotel
-Horários de check-in e check-out, estacionamento, política para pets, horário do café da manhã, transporte e características dos quartos. Cadastre uma vez e o Lio usa essas informações de forma consistente em todas as respostas.
+Horários de check-in e check-out, estacionamento, política para pets, horário do café da manhã, transporte e características dos quartos. Cadastre uma vez e o Lio usa essas informações de forma consistente em todas as respostas. Se o Lio não souber responder a uma pergunta, ele indica na configuração qual informação está faltando; você preenche uma vez e o aviso some sozinho.
 
 ## Um assistente que vende
 O Lio não só responde perguntas: ele oferece transfers do aeroporto, city tours e serviços extras no momento certo e repassa o pedido para a sua equipe.
@@ -13258,7 +13258,7 @@ Todos que vão ficar no quarto são adicionados em um único formulário, e ning
 Os hóspedes aceitam as regras da casa e o consentimento de dados assinando na tela. As assinaturas são excluídas automaticamente 30 dias após o check-out.
 
 ## Privacidade desde a concepção
-Os dados dos hóspedes podem ser excluídos mediante solicitação, e o texto de consentimento faz parte do formulário.
+Você pode excluir a ficha de um hóspede pelo painel; as assinaturas digitais são apagadas automaticamente 30 dias após o check-out e as conversas são anonimizadas após o prazo que você definir. Registros legais, como reservas e notas fiscais, ficam guardados à parte. O texto de consentimento faz parte do formulário.
 
 ## Exportação para registros oficiais
 Os dados coletados dos hóspedes podem ser exportados em um formato que você pode usar para as exigências locais de registro de hóspedes.
@@ -13558,7 +13558,7 @@ Preço de lançamento (normalmente US$ 189 )
 - Sincronização de canais prioritária
 - Suporte prioritário (próximo dia útil)
 - Chamada de onboarding personalizada
-- Opções white-label
+- White-label: seu logo, suas cores e o nome do assistente
 Começar com o Growth
 
 Preços em dólares americanos, sem impostos. Última atualização: 23 de setembro de 2026 .
@@ -13572,7 +13572,7 @@ Pousadas e hotéis boutique com até 10 quartos, que enviam menos de 1.000 respo
 Hotéis de 11 a 50 quartos que querem que o Lio cuide também das mensagens das OTAs, usar o check-in online e vender transfers e passeios.
 
 ## Growth
-Duas propriedades ou até 150 quartos, quando você precisa de suporte prioritário, onboarding personalizado e uso white-label.
+Duas propriedades ou até 150 quartos, quando você precisa de suporte prioritário, onboarding personalizado e uso white-label. No white-label, a página de check-in e os PDFs que o hóspede vê levam seu logo e suas cores, sem a marca Hostlio; o assistente usa o nome que você escolher e os e-mails saem com o nome do seu hotel.
 
 Q: Quanto custa o Hostlio Pro?
 A: São três planos: Starter por US$ 49/mês, Pro por US$ 89/mês e Growth por US$ 149/mês. Esses preços incluem um desconto de lançamento de 17–21% para os primeiros 50 clientes, garantido enquanto a assinatura estiver ativa. Os preços normais são US$ 59, US$ 109 e US$ 189.
@@ -13618,7 +13618,7 @@ Como funciona o check-in online? Os hóspedes recebem um link pessoal e seguro, 
 
 Para que serve a declaração de hospedagem para visto? Para hóspedes que precisam de visto, ela gera com um clique uma declaração de hospedagem a partir dos dados da reserva, para usar no pedido de visto ou de convite. Você pode salvar em PDF ou imprimir.
 
-Meus dados estão seguros? Os dados são transmitidos por conexões criptografadas, e os dados de cada hotel ficam isolados das outras propriedades com regras de acesso por linha. Os dados dos hóspedes podem ser excluídos mediante solicitação.
+Meus dados estão seguros? Os dados são transmitidos por conexões criptografadas, e os dados de cada hotel ficam isolados das outras propriedades com regras de acesso por linha. Você pode excluir a ficha de um hóspede pelo painel, e assinaturas e conversas são apagadas ou anonimizadas automaticamente após prazos definidos.
 
 Quanto tempo leva a implantação? Sua conta fica pronta em minutos. A maioria dos hotéis conecta os canais no mesmo dia: cadastre os tipos de quarto e os quartos, autorize a conexão na extranet de cada OTA e mapeie os quartos. O plano Growth inclui uma chamada de onboarding personalizada.
 
@@ -13660,7 +13660,7 @@ Q: Para que serve a declaração de hospedagem para visto?
 A: Para hóspedes que precisam de visto, ela gera com um clique uma declaração de hospedagem a partir dos dados da reserva, para usar no pedido de visto ou de convite. Você pode salvar em PDF ou imprimir.
 
 Q: Meus dados estão seguros?
-A: Os dados são transmitidos por conexões criptografadas, e os dados de cada hotel ficam isolados das outras propriedades com regras de acesso por linha. Os dados dos hóspedes podem ser excluídos mediante solicitação.
+A: Os dados são transmitidos por conexões criptografadas, e os dados de cada hotel ficam isolados das outras propriedades com regras de acesso por linha. Você pode excluir a ficha de um hóspede pelo painel, e assinaturas e conversas são apagadas ou anonimizadas automaticamente após prazos definidos.
 
 Q: Quanto tempo leva a implantação?
 A: Sua conta fica pronta em minutos. A maioria dos hotéis conecta os canais no mesmo dia: cadastre os tipos de quarto e os quartos, autorize a conexão na extranet de cada OTA e mapeie os quartos. O plano Growth inclui uma chamada de onboarding personalizada.
@@ -15696,7 +15696,7 @@ Prix de lancement (normalement 189 $ )
 - Synchronisation des canaux prioritaire
 - Support prioritaire (jour ouvré suivant)
 - Appel de prise en main personnalisé
-- Options marque blanche
+- Marque blanche : votre logo, vos couleurs, le nom de l'assistant
 Commencer avec Growth
 
 Prix hors taxes. Comparer les formules en détail .
@@ -15792,7 +15792,7 @@ Les messages WhatsApp et ceux des OTA (Booking.com, Airbnb, Expedia) arrivent su
 Le client écrit en japonais et Lio répond en japonais ; vous voyez la traduction de la réponse de Lio dans votre langue. Les réponses que vous rédigez vous-même partent telles quelles, sans traduction automatique.
 
 ## Il connaît votre hôtel
-Horaires d'arrivée et de départ, parking, animaux acceptés, horaires du petit-déjeuner, transports et équipements des chambres. Saisissez-les une fois, et Lio les utilise de façon cohérente dans chaque réponse.
+Horaires d'arrivée et de départ, parking, animaux acceptés, horaires du petit-déjeuner, transports et équipements des chambres. Saisissez-les une fois, et Lio les utilise de façon cohérente dans chaque réponse. Si Lio ne peut pas répondre à une question, il signale dans la configuration l'information manquante ; vous la complétez une fois et l'alerte disparaît d'elle-même.
 
 ## Un assistant qui vend
 Lio ne se contente pas de répondre : il propose au bon moment transferts aéroport, visites de la ville et prestations supplémentaires, puis transmet la demande à votre équipe.
@@ -16027,7 +16027,7 @@ Toutes les personnes séjournant dans la chambre sont ajoutées dans un seul for
 Les clients acceptent le règlement intérieur et le consentement au traitement des données en signant à l'écran. Les signatures sont supprimées automatiquement 30 jours après le départ.
 
 ## Confidentialité dès la conception
-Les données des clients peuvent être supprimées sur demande, et le texte de consentement fait partie du formulaire.
+Vous pouvez supprimer la fiche d'un client depuis le tableau de bord ; les signatures numériques sont effacées automatiquement 30 jours après le départ et les conversations sont anonymisées après le délai que vous fixez. Les documents légaux, comme les réservations et les factures, sont conservés à part. Le texte de consentement fait partie du formulaire.
 
 ## Export pour les déclarations officielles
 Les données collectées peuvent être exportées dans un format utilisable pour les obligations locales d'enregistrement des clients.
@@ -16318,7 +16318,7 @@ Prix de lancement (normalement 189 $ )
 - Synchronisation des canaux prioritaire
 - Support prioritaire (jour ouvré suivant)
 - Appel de prise en main personnalisé
-- Options marque blanche
+- Marque blanche : votre logo, vos couleurs, le nom de l'assistant
 Commencer avec Growth
 
 Prix en dollars américains, hors taxes. Dernière mise à jour : 23 septembre 2026 .
@@ -16332,7 +16332,7 @@ Chambres d'hôtes et hôtels boutique jusqu'à 10 chambres, qui envoient moins d
 Hôtels de 11 à 50 chambres qui veulent que Lio gère aussi les messages OTA, utiliser le check-in en ligne et vendre transferts et excursions.
 
 ## Growth
-Deux établissements ou jusqu'à 150 chambres, lorsque vous avez besoin d'un support prioritaire, d'une prise en main personnalisée et d'une utilisation en marque blanche.
+Deux établissements ou jusqu'à 150 chambres, lorsque vous avez besoin d'un support prioritaire, d'une prise en main personnalisée et d'une utilisation en marque blanche. En marque blanche, la page d'enregistrement et les PDF que voit le client portent votre logo et vos couleurs, sans la marque Hostlio ; l'assistant porte le nom de votre choix et les e-mails partent au nom de votre hôtel.
 
 Q: Combien coûte Hostlio Pro ?
 A: Il existe trois forfaits : Starter à 49 $/mois, Pro à 89 $/mois et Growth à 149 $/mois. Ces prix incluent une remise de lancement de 17–21 % réservée aux 50 premiers clients, garantie tant que vous restez abonné. Les prix normaux sont de 59 $, 109 $ et 189 $.
@@ -16378,7 +16378,7 @@ Comment fonctionne le check-in en ligne ? Les clients reçoivent un lien sécuri
 
 À quoi sert l'attestation d'hébergement pour visa ? Pour les clients qui ont besoin d'un visa, elle prépare en un clic une attestation d'hébergement à partir des données de réservation, à joindre à une demande de visa ou d'invitation. Vous pouvez l'enregistrer en PDF ou l'imprimer.
 
-Mes données sont-elles sécurisées ? Les données transitent par des connexions chiffrées, et les données de chaque hôtel sont isolées de celles des autres établissements grâce à des règles d'accès au niveau des lignes. Les données des clients peuvent être supprimées sur demande.
+Mes données sont-elles sécurisées ? Les données transitent par des connexions chiffrées, et les données de chaque hôtel sont isolées de celles des autres établissements grâce à des règles d'accès au niveau des lignes. Vous pouvez supprimer la fiche d'un client depuis le tableau de bord, et les signatures et conversations sont effacées ou anonymisées automatiquement après des délais définis.
 
 Combien de temps prend la mise en place ? Votre compte est prêt en quelques minutes. La plupart des hôtels connectent leurs canaux le jour même : ajoutez types de chambres et chambres, autorisez la connexion dans l’extranet de chaque OTA et associez les chambres. Le forfait Growth inclut un appel de prise en main personnalisé.
 
@@ -16420,7 +16420,7 @@ Q: À quoi sert l'attestation d'hébergement pour visa ?
 A: Pour les clients qui ont besoin d'un visa, elle prépare en un clic une attestation d'hébergement à partir des données de réservation, à joindre à une demande de visa ou d'invitation. Vous pouvez l'enregistrer en PDF ou l'imprimer.
 
 Q: Mes données sont-elles sécurisées ?
-A: Les données transitent par des connexions chiffrées, et les données de chaque hôtel sont isolées de celles des autres établissements grâce à des règles d'accès au niveau des lignes. Les données des clients peuvent être supprimées sur demande.
+A: Les données transitent par des connexions chiffrées, et les données de chaque hôtel sont isolées de celles des autres établissements grâce à des règles d'accès au niveau des lignes. Vous pouvez supprimer la fiche d'un client depuis le tableau de bord, et les signatures et conversations sont effacées ou anonymisées automatiquement après des délais définis.
 
 Q: Combien de temps prend la mise en place ?
 A: Votre compte est prêt en quelques minutes. La plupart des hôtels connectent leurs canaux le jour même : ajoutez types de chambres et chambres, autorisez la connexion dans l’extranet de chaque OTA et associez les chambres. Le forfait Growth inclut un appel de prise en main personnalisé.
