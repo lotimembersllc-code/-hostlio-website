@@ -11078,6 +11078,12 @@ URL: https://hostliopro.com/it/blog/
 ## Blog per albergatori
 Articoli pratici sulla gestione di un hotel indipendente, sulla distribuzione e sulla comunicazione con gli ospiti.
 
+Operatività
+
+## Alloggiati Web: guida 2026 per hotel, B&B e affitti brevi
+12 ottobre 2026
+Alloggiati Web nel 2026: chi deve comunicare, entro 24 ore (6 per soggiorni brevi), quali dati, credenziali, self check-in e sanzioni. Fonti ufficiali.
+
 Scegliere il software
 
 ## Channel manager cos'è e che differenza c'è con un PMS
@@ -12356,6 +12362,128 @@ A: Il ricavo medio che resta per notte venduta dopo commissioni e costi. Per con
 
 Q: I miei numeri vengono salvati?
 A: No. Il calcolo avviene nel browser e non viene inviato nulla.
+
+---
+# Alloggiati Web: guida 2026 per hotel, B&B e affitti brevi
+URL: https://hostliopro.com/it/blog/alloggiati-web-guida/
+
+## Alloggiati Web: guida 2026 per hotel, B&B e affitti brevi
+A cura del team di prodotto Hostlio Pro , le persone che sviluppano Hostlio Pro. Pubblicato il 12 ottobre 2026 , aggiornato il 23 settembre 2026
+
+In breve: chi ospita persone a pagamento in Italia (hotel, B&B, affittacamere, case vacanza e anche i privati che affittano per meno di 30 giorni) deve comunicare le generalità di ogni ospite alla Questura tramite il portale Alloggiati Web della Polizia di Stato. Il termine è di 24 ore dall'arrivo , che diventano 6 ore per i soggiorni non superiori alle 24 ore. Le credenziali si chiedono alla Questura della provincia, l'invio è gratuito e la ricevuta va conservata per cinque anni.
+
+Indice
+
+- Chi deve comunicare gli ospiti
+- Entro quando: 24 ore, oppure 6 ore
+- Quali dati inviare
+- Come ottenere le credenziali
+- Tre modi per inviare le schedine
+- La ricevuta: scaricala e conservala 5 anni
+- Self check-in e keybox: cosa dice il Consiglio di Stato
+- Sanzioni
+- Obblighi da non confondere
+- Come ti aiuta Hostlio Pro (e cosa non fa)
+- Fonti
+Questa guida ha scopo informativo e non è una consulenza legale. Le informazioni sono tratte da fonti ufficiali (Normattiva, Gazzetta Ufficiale, portale Alloggiati Web, Consiglio di Stato) consultate il 12 ottobre 2026. Le modalità di richiesta delle credenziali cambiano da Questura a Questura: verifica sempre la pagina della tua.
+
+## Chi deve comunicare gli ospiti
+
+L'obbligo nasce dall'articolo 109 del Testo unico delle leggi di pubblica sicurezza (TULPS, R.D. 773/1931). Riguarda i gestori di alberghi e di altre strutture ricettive, compresi campeggi, case e appartamenti per vacanze, affittacamere e strutture di accoglienza non convenzionali. Dal 2018 vale espressamente anche per chi affitta o subaffitta immobili, o parti di essi, con contratti di durata inferiore a trenta giorni: quindi anche per i privati con affitti brevi. Si possono ospitare solo persone munite di carta d'identità o di altro documento valido; per gli stranieri extra UE va bene il passaporto o un documento equipollente con fotografia.
+
+## Entro quando: 24 ore, oppure 6 ore
+
+- Regola generale: entro le 24 ore successive all'arrivo.
+
+- Soggiorni non superiori alle 24 ore: entro le 6 ore successive all'arrivo. La regola è stata introdotta dal D.L. 53/2019 e resa operativa dal D.M. 16 settembre 2021, in vigore dal 2022.
+
+- Se il portale non funziona: la comunicazione si fa alla Questura via fax o PEC.
+Attenzione: alcune pagine ufficiali, compresa la home del portale, riportano ancora la vecchia dicitura "all'arrivo" per i soggiorni brevi. Il testo vigente del decreto parla di sei ore.
+
+## Quali dati inviare
+
+Per ogni ospite si comunicano data di arrivo, numero di notti, cognome, nome, sesso, data e luogo di nascita (comune e provincia, oppure Stato estero), cittadinanza e i dati del documento: tipo, numero e luogo di rilascio.
+
+- Famiglie: basta il documento di uno dei coniugi, che indica i dati dell'altro coniuge e dei figli minorenni.
+
+- Gruppi guidati: vale lo stesso per il capogruppo.
+
+- Familiari e membri del gruppo: si inviano notti, cognome, nome, sesso, data e luogo di nascita e cittadinanza, senza dati del documento. Nel file vanno subito dopo il capofamiglia o il capogruppo, con la stessa data di arrivo.
+
+## Come ottenere le credenziali
+
+- Richiesta alla Questura della provincia in cui si trova la struttura. Moduli e modalità variano: alcune Questure vogliono la consegna di persona con copia del documento del titolare, altre accettano solo la PEC.
+
+- Accesso al portale con nome utente, password e codice monouso (autenticazione a due fattori).
+
+- Uso personale: le credenziali le usa il gestore, oppure un soggetto identificato e appositamente incaricato della trasmissione.
+L'invio è gratuito.
+
+## Tre modi per inviare le schedine
+
+- Inserimento online, una schedina alla volta: comodo per poche presenze.
+
+- Caricamento di un file di testo con una riga per ospite e campi a lunghezza fissa. Gli hotel usano un tracciato, case vacanza e affittacamere un altro, con il campo dell'appartamento.
+
+- Web service (servizi di cooperazione applicativa) per i software gestionali che inviano direttamente, con una chiave generata nel portale.
+
+## La ricevuta: scaricala e conservala 5 anni
+
+Dopo l'invio il portale genera una ricevuta, che va conservata per cinque anni . Il portale la tiene online solo per gli ultimi 30 giorni, quindi conviene scaricarla subito. Una volta generata la ricevuta, i dati digitali trasmessi e le eventuali copie cartacee di fax o PEC vanno cancellati o distrutti.
+
+## Self check-in e keybox: cosa dice il Consiglio di Stato
+
+Con la circolare del 18 novembre 2024 il Ministero dell'Interno ha chiarito che il check-in totalmente a distanza (invio della copia del documento e codice della porta o keybox) non basta: il gestore deve verificare de visu che l'ospite corrisponda al documento. Il TAR Lazio aveva annullato la circolare, ma il Consiglio di Stato (Sez. III, sentenza n. 9101/2025) ha accolto l'appello del Ministero: la circolare è di nuovo pienamente valida.
+
+Nella stessa sentenza il Consiglio di Stato osserva che la verifica può avvenire anche con dispositivi di videocollegamento all'ingresso della struttura, purché permettano di accertare in quel momento la corrispondenza tra ospite e documento. Sono invece escluse le procedure di check-in remoto più estreme. In pratica: il check-in online va benissimo per raccogliere i dati in anticipo, ma l'identificazione dell'ospite va fatta all'arrivo.
+
+## Sanzioni
+
+La mancata comunicazione non è una semplice sanzione amministrativa: per la violazione dell'art. 109 si applica l'art. 17 del TULPS, che prevede l'arresto fino a tre mesi o l'ammenda. È quindi un reato contravvenzionale. Per l'importo esatto dell'ammenda e per il tuo caso specifico rivolgiti a un professionista.
+
+## Obblighi da non confondere
+
+- CIN: il codice identificativo nazionale si richiede sul portale BDSR del Ministero del Turismo ed è separato da Alloggiati Web.
+
+- Imposta di soggiorno: la stabilisce e la riscuote il comune, con regole proprie.
+
+- Statistiche turistiche (ISTAT): si inviano tramite i sistemi regionali, diversi da regione a regione.
+
+## Come ti aiuta Hostlio Pro (e cosa non fa)
+
+Con il check-in online di Hostlio Pro l'ospite compila i propri dati prima dell'arrivo e può scansionare il documento dal telefono: la lettura avviene sul dispositivo e non viene salvata alcuna immagine. Così, al banco, i dati sono già pronti e ti resta solo l'identificazione di persona. Per essere chiari: Hostlio Pro non invia i dati ad Alloggiati Web . La comunicazione alla Questura resta a tuo carico e va fatta tramite il portale ufficiale.
+
+Prova gratis per 7 giorni Vedi il check-in online
+
+Per scegliere un gestionale che si adatti a questi obblighi leggi anche come scegliere un gestionale per piccoli hotel .
+
+## Fonti
+Tutte le fonti sono state consultate il 12 ottobre 2026.
+
+- Normattiva: TULPS (R.D. 773/1931), art. 109 e art. 17
+- Gazzetta Ufficiale: D.M. Interno 16 settembre 2021 (GU n. 246 del 14 ottobre 2021)
+- Alloggiati Web: D.M. 7 gennaio 2013
+- Alloggiati Web: informazioni generali
+- Alloggiati Web: ricevute digitali
+- Alloggiati Web: manuale web service
+- Consiglio di Stato, Sez. III, sentenza n. 9101/2025
+- Questura di Oristano: comunicazione alloggiati
+- Ministero del Turismo: CIN
+
+Q: Entro quanto tempo bisogna comunicare gli ospiti ad Alloggiati Web?
+A: Entro 24 ore dall'arrivo. Per i soggiorni non superiori alle 24 ore il termine è di 6 ore dall'arrivo (D.M. Interno 16 settembre 2021).
+
+Q: Anche chi fa affitti brevi deve usare Alloggiati Web?
+A: Sì. Dal 2018 l'obbligo dell'art. 109 TULPS vale anche per chi affitta o subaffitta immobili con contratti inferiori a 30 giorni, quindi anche per i privati.
+
+Q: Il self check-in con keybox è vietato?
+A: Il check-in totalmente a distanza non basta: secondo la circolare del 18 novembre 2024, confermata dal Consiglio di Stato con la sentenza n. 9101/2025, il gestore deve verificare de visu l'identità dell'ospite. La sentenza ammette anche sistemi di videocollegamento all'ingresso, se permettono il controllo in quel momento.
+
+Q: Per quanto tempo va conservata la ricevuta di Alloggiati Web?
+A: Cinque anni. Il portale la mantiene online solo 30 giorni, quindi va scaricata subito dopo l'invio.
+
+Q: Hostlio Pro invia i dati ad Alloggiati Web?
+A: No. Il check-in online di Hostlio Pro raccoglie e organizza i dati degli ospiti prima dell'arrivo, ma la comunicazione alla Questura va effettuata tramite il portale Alloggiati Web.
 
 ---
 # Channel manager cos'è e che differenza c'è con un PMS
