@@ -1170,7 +1170,7 @@ Otel misafir mesajlarını yapay zekâ ile yanıtlamanın avantajları, riskleri
 
 Yazılım seçimi
 
-## Küçük otel için otel programı (PMS) nasıl seçilir?
+## Otel programı nasıl seçilir? Küçük oteller için 7 kriter (2026)
 10 Eylül 2026
 Küçük ve butik oteller için PMS seçerken bakılması gereken 7 kriter: kanal yöneticisi, fiyat modeli, misafir iletişimi, mobil erişim ve daha fazlası.
 
@@ -1240,73 +1240,122 @@ Q: Misafirler yapay zekâyla konuştuğunu anlar mı?
 A: Cevaplar otelin adına ve tonunda yazılır. Şeffaflık için otel, asistanın bir AI olduğunu karşılama mesajında belirtebilir.
 
 ---
-# Küçük otel için otel programı (PMS) nasıl seçilir?
+# Otel programı nasıl seçilir? Küçük oteller için 7 kriter (2026)
 URL: https://hostliopro.com/tr/blog/kucuk-otel-icin-otel-yonetim-yazilimi-secimi/
 
-## Küçük otel için otel programı (PMS) nasıl seçilir?
+## Otel programı nasıl seçilir? Küçük oteller için 7 kriter (2026)
 Yazan: Hostlio Pro ürün ekibi , otel yazılımı geliştiren ekip. Yayın: 10 Eylül 2026 , güncelleme: 23 Eylül 2026
 
-Kısa cevap: Küçük bir otel için doğru PMS; entegre kanal yöneticisi olan, sabit ve şeffaf fiyatlı, misafir mesajlarını tek yerde toplayan, mobilden yönetilebilen ve aynı gün kurulabilen yazılımdır. Yüzlerce özelliği olan kurumsal sistemler küçük ekipte kullanılmadan kalır.
+Kısa cevap: Küçük bir otel için doğru otel programı (PMS); kanal yöneticisi dahil, fiyatı açık ve öngörülebilir, misafir mesajlarını tek yerde toplayan, telefondan yönetilebilen, Türkiye'deki yükümlülükleri (KBS, e-Fatura, konaklama vergisi) nasıl çözdüğünü açıkça söyleyen ve aynı gün kullanmaya başlanabilen yazılımdır. Yüzlerce modülü olan kurumsal sistemler 10–30 odalı bir otelde çoğu zaman kullanılmadan kalır ve gereksiz maliyet çıkarır.
 
 İçindekiler
 
+- Otel programı (PMS) ne işe yarar?
 - 1. Entegre kanal yöneticisi
-- 2. Fiyat modeli
+- 2. Fiyat modeli ve yıllık toplam maliyet
 - 3. Misafir iletişimi
-- 4. Oda rafının kullanımı
+- 4. Oda rafı ve günlük ekranlar
 - 5. Mobil erişim
-- 6. Online check-in
-- 7. Kurulum ve destek
+- 6. Türkiye'deki yükümlülükler: KBS, e-Fatura, konaklama vergisi
+- 7. Kurulum, geçiş ve destek
+- Deneme süresinde neyi test etmeli?
 - Kontrol listesi
+- Hostlio Pro bu kriterlerde nerede?
+
+## Otel programı (PMS) ne işe yarar?
+
+PMS (property management system), otelin günlük işini tek ekranda toplar: rezervasyon takvimi ve oda rafı, giriş-çıkış, oda durumu ve temizlik, misafir kayıtları, ek hizmetler, faturalandırma ve raporlar. Küçük otelde asıl fark, bu işlerin Excel, defter, ayrı OTA panelleri ve telefondaki WhatsApp arasında dağılmamasıdır. Bir kanaldan gelen rezervasyonun diğer kanallarda odayı otomatik kapatması, overbooking'in önüne geçer; sabah açtığınız tek ekran, günün yapılacaklarını gösterir.
+
+Türkiye'de en yaygın programların kısa bir dökümü için en çok kullanılan otel programları , fiyat modelleri ve gerçek rakamlar için otel programı fiyatları 2026 yazılarımıza bakabilirsiniz. Aşağıda seçim yaparken bakılacak 7 kriter var.
 
 ## 1. Entegre kanal yöneticisi
 
-Booking.com, Airbnb ve Expedia'da aynı anda satış yapıyorsanız müsaitliğin anında eşitlenmesi şarttır. Ayrı bir kanal yöneticisi ek maliyet ve ek ekran demektir. PMS'in kanal yöneticisini içermesi ve bağlandığı kanal sayısı ilk bakılacak şeydir.
+Booking.com, Airbnb ve Expedia'da aynı anda satış yapıyorsanız müsaitliğin anında eşitlenmesi şarttır. Ayrı bir kanal yöneticisi ek maliyet, ek ekran ve iki sistem arasında eşleme hatası riski demektir. Sorulacaklar: Kanal yöneticisi her planda dahil mi, yoksa üst planda ya da ek ücretle mi? Kaç kanala, sertifikalı ve iki yönlü bağlantıyla bağlanıyor? Fiyat, minimum konaklama ve satışa kapama gibi kuralları tarih aralığına toplu girebiliyor musunuz? Konunun ayrıntısı channel manager nedir rehberinde.
 
-## 2. Fiyat modeli
+## 2. Fiyat modeli ve yıllık toplam maliyet
 
-Bazı yazılımlar aylık ücretin yanında rezervasyon değerinden yüzde alır. Doluluk arttıkça maliyet de artar. Sabit aylık fiyatlı bir model bütçeyi öngörülebilir kılar. Fiyatını web sitesinde yayınlamayan yazılımlarda teklif sürecine hazırlıklı olun.
+Otel programları dört şekilde fiyatlanır: sabit aylık paket, oda sayısına göre ücret, rezervasyon gelirinden yüzde ve tek seferlik lisans. Gelirden yüzde alan modellerde doluluk arttıkça maliyet de artar; tek seferlik lisansta güncelleme, sunucu ve destek ayrıca sorulmalıdır. Fiyatını sitesinde yayınlamayan yazılımlarda teklif süreci uzayabilir. Karar verirken aylık rakama değil, kurulum, ek modüller, KDV ve kur dahil yıllık toplama bakın.
+
+Tesis Hostlio Pro HMS Otel Sirvoy (Pro)
+
+10 oda 49 $ / ay (Starter) 88 € / ay 79 € / ay
+
+25 oda 89 $ / ay (Pro) 112 € / ay 149 € / ay
+
+Rakamlar firmaların resmî fiyat sayfalarından (8 Ekim 2026); kapsamları aynı değildir. Kaynaklar ve diğer yazılımlar fiyat yazısında .
 
 ## 3. Misafir iletişimi
 
-Mesajlar WhatsApp ve farklı OTA gelen kutularına dağılmışsa cevap süresi uzar. Tek gelen kutusu ve otomatik yanıt, küçük ekipte en büyük zaman kazancıdır.
+Küçük otelde en çok zamanı alan iş, aynı soruları farklı kanallarda tekrar tekrar cevaplamaktır: check-in saati, otopark, kahvaltı, transfer. Mesajlar WhatsApp, Booking.com, Airbnb ve e-posta arasında dağılmışsa cevap süresi uzar, misafir puanı düşer. Sorulacaklar: WhatsApp ve OTA mesajları tek gelen kutusunda mı? Otelin kendi bilgileriyle, misafirin dilinde otomatik cevap var mı? Fiyat, indirim ve şikâyet gibi kararlar size bırakılıyor mu? Ayrıntı için misafir mesajlarını yapay zekâ ile yanıtlamak rehberine bakın.
 
-## 4. Oda rafının kullanımı
+## 4. Oda rafı ve günlük ekranlar
 
-Resepsiyonun en çok baktığı ekran rezervasyon takvimidir. Sürükle-bırakla oda değiştirme ve rezervasyonun kanalını bir bakışta görme, günlük işi hızlandırır.
+Resepsiyonun en çok baktığı ekran rezervasyon takvimidir. Sürükle-bırakla oda değiştirme, rezervasyonun hangi kanaldan geldiğini bir bakışta görme ve çakışma uyarısı günlük işi hızlandırır. Sabah "bugün kim geliyor, kim çıkıyor, hangi oda temizlenecek" sorusunun cevabını tek ekranda veren bir yazılım, küçük ekipte bir kişilik iş yükünü azaltır.
 
 ## 5. Mobil erişim
 
-Otel sahibi çoğu zaman otelin dışındadır. Mobil uygulama, özellikle internet kesintisinde çalışabiliyorsa, gerçek bir ihtiyaçtır.
+Küçük otelin sahibi çoğu zaman otelin dışındadır. iOS ve Android uygulaması, bildirimler ve telefondan rezervasyon ile mesaj yönetimi gerçek bir ihtiyaçtır. Sorulacaklar: Uygulama her planda var mı? Hangi işler telefondan yapılabiliyor, hangileri yalnız bilgisayardan?
 
-## 6. Online check-in
+## 6. Türkiye'deki yükümlülükler: KBS, e-Fatura, konaklama vergisi
 
-Misafir bilgilerinin varıştan önce toplanması hem resepsiyonda zaman kazandırır hem de yasal bildirimleri kolaylaştırır.
+Türkiye'de otelin yasal işleri yazılım seçimini doğrudan etkiler. Misafir kimliklerinin KBS'ye bildirimi , e-Fatura/e-Arşiv ve aylık konaklama vergisi beyanı için yazılımın ne yaptığını açıkça sorun: KBS'ye otomatik mi bildiriyor, yoksa dosya mı veriyor? e-Fatura entegrasyonu var mı, yoksa muhasebe programınız mı kesecek? Bu sorulara net cevap vermeyen yazılım, sonradan elle iş çıkarır. Online check-in, misafir bilgilerini varıştan önce toplayarak resepsiyonda zaman kazandırır.
 
-## 7. Kurulum ve destek
+## 7. Kurulum, geçiş ve destek
 
-Küçük bir otel haftalarca süren bir kurulum projesini kaldıramaz. Aynı gün kullanılabilen, kendi dilinizde destek veren bir yazılım seçin ve deneme süresini gerçek rezervasyonlarla test edin.
+Küçük bir otel haftalarca süren bir kurulum projesini kaldıramaz. İyi bir yazılımda hesap aynı gün açılır, odalar ve fiyatlar girilir, kanallar çoğu zaman aynı gün bağlanır. Eski programdan geçerken gelecekteki rezervasyonların Excel ya da CSV ile içeri aktarılabilmesi ve Türkçe destek önemlidir.
+
+## Deneme süresinde neyi test etmeli?
+
+- Kendi odalarınızı, oda tiplerinizi ve fiyat planlarınızı girin.
+
+- Gelecekteki rezervasyonlarınızı içeri aktarın; tarih, oda ve tutarların doğru geldiğini kontrol edin.
+
+- Bir OTA'yı bağlayın ve bir günün fiyatını değiştirip extranet'te göründüğünü doğrulayın.
+
+- Gerçek bir misafir sorusunu (otopark, geç giriş) mesaj kutusunda deneyin.
+
+- Telefondan bir rezervasyonu açıp oda değiştirin.
+
+- Bir ay sonunun raporunu ve kanal bazında net geliri inceleyin.
 
 ## Kontrol listesi
 
 Kriter Sorulacak soru
 
-Kanal yöneticisi Dahil mi, kaç kanala bağlanıyor?
-Fiyat Sabit mi, komisyon var mı, fiyat açık mı?
+Kanal yöneticisi Her planda dahil mi, kaç kanala sertifikalı bağlanıyor?
+Fiyat Sabit mi, gelirden yüzde var mı, fiyat sitede açık mı, yıllık toplam ne?
 
 Mesajlaşma WhatsApp ve OTA mesajları tek yerde mi, otomatik yanıt var mı?
-Mobil Uygulama var mı, çevrimdışı çalışıyor mu?
+Oda rafı Sürükle-bırak, çakışma uyarısı ve günlük özet var mı?
+
+Mobil iOS ve Android uygulaması her planda var mı?
+KBS ve e-Fatura Otomatik mi, dosya mı, muhasebe programına mı kalıyor?
 
 Check-in Online check-in ve dijital imza var mı?
+Geçiş Rezervasyonlar Excel/CSV ile aktarılabiliyor mu?
+
 Deneme Ücretsiz deneme ve taahhütsüz iptal var mı?
 
-Hostlio Pro bu kriterlere göre tasarlandı: özellikleri ve fiyatları inceleyebilirsiniz.
+## Hostlio Pro bu kriterlerde nerede?
+
+Hostlio Pro, 1–150 odalı bağımsız oteller ve pansiyonlar için tasarlandı. Kanal yöneticisi (100'den fazla OTA'ya sertifikalı bağlantı), oda rafı, iOS ve Android uygulaması ve WhatsApp'ta misafirlere cevap veren AI asistan Lio her planda dahildir; Pro ve Growth'ta OTA mesajları ve online check-in de vardır. Fiyat sitede açık ve sabittir: Starter 49 $, Pro 89 $, Growth 149 $ / ay; rezervasyon başına ücret ya da gelir yüzdesi yoktur. Rezervasyonlarınızı Excel ya da CSV ile içeri aktarabilirsiniz. Açık olmak gerekirse: Hostlio Pro KBS'ye otomatik bildirim yapmaz (misafir listesini CSV olarak verir), e-Fatura kesmez, POS ve muhasebe modülü sunmaz. Bu modüller sizin için zorunluysa kapsamlı yerli paketler daha uygun olabilir. Tüm özellikleri inceleyebilirsiniz.
+
+7 gün ücretsiz dene Planları gör
 
 Q: Küçük bir otel için PMS gerekli mi?
 A: Birden fazla OTA'da satış yapıyor ve günde onlarca mesaj alıyorsanız evet. Excel ve ayrı OTA panelleriyle çalışmak overbooking ve geciken cevap riskini artırır.
 
 Q: PMS ile kanal yöneticisi arasındaki fark nedir?
 A: PMS otelin iç operasyonunu (rezervasyon, oda, misafir) yönetir; kanal yöneticisi ise müsaitlik ve fiyatı OTA'lara dağıtır. Hostlio Pro gibi yazılımlar ikisini tek panelde birleştirir.
+
+Q: Küçük otel için otel programı ne kadar?
+A: Fiyatını yayınlayan yazılımlarda küçük bir otel için aylık maliyet yaklaşık 15 € ile 150 € arasında başlıyor (Ekim 2026). Gelirden yüzde alan ve tek seferlik lisanslı modeller de var; yıllık toplam maliyete bakın.
+
+Q: Otel programı KBS bildirimini yapar mı?
+A: Bazı yerli programlar Emniyet ve Jandarma KBS entegrasyonu sunuyor. Hostlio Pro otomatik bildirim yapmaz; misafir listesini CSV olarak dışa aktarır.
+
+Q: Eski programımdan geçiş zor mu?
+A: Gelecekteki rezervasyonlarınızı Excel ya da CSV olarak dışa aktarıp yeni programa aktarırsınız. Kanalları bağlarken müsaitliğin tek sistemden gitmesi için geçiş saatini önceden planlayın.
 
 ---
 # Pansiyon Programı: AI Destekli, Aylık 49 $'dan | Hostlio Pro
