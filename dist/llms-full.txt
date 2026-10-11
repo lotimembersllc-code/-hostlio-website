@@ -1114,6 +1114,12 @@ URL: https://hostliopro.com/tr/blog/
 ## Otelciler için blog
 Bağımsız otel işletmeciliği, dağıtım ve misafir iletişimi üzerine pratik yazılar.
 
+Kanal yönetimi
+
+## Booking.com komisyonu ne kadar, nasıl düşürülür? (2026)
+12 Ekim 2026
+Booking.com komisyonu nasıl hesaplanır, oran neye göre değişir, Preferred ve Genius maliyeti, KDV ve %17 tavan teklifi. Resmî kaynaklı rehber.
+
 Operasyon ve mevzuat
 
 ## Konaklama vergisi 2026: oran, hesaplama ve beyan
@@ -2617,6 +2623,134 @@ A: Hepsinde. Lio, Starter dahil her planda misafirlere WhatsApp'tan otelinizin b
 
 Q: Kurulum ne kadar sürer?
 A: Hesap dakikalar içinde hazır olur; kurulum sihirbazı eksik bilgileri gösterir ve kanallar çoğu zaman aynı gün bağlanır. 7 günlük denemeyle kendi odalarınız ve fiyatlarınızla başlayabilirsiniz.
+
+---
+# Booking.com komisyonu ne kadar, nasıl düşürülür? (2026)
+URL: https://hostliopro.com/tr/blog/booking-com-komisyonu/
+
+## Booking.com komisyonu ne kadar, nasıl düşürülür? (2026)
+Yazan: Hostlio Pro ürün ekibi , otel yazılımı geliştiren ekip. Yayın: 12 Ekim 2026 , güncelleme: 23 Eylül 2026
+
+Kısa cevap: Booking.com komisyonu, misafirin ödediği toplam rezervasyon tutarının (oda ücreti ve sizin eklediğiniz temizlik, iptal gibi ücretler dahil) belirli bir yüzdesidir. Booking.com resmî bir oran yayınlamaz: oran ülkeye, tesis tipine ve sözleşmenize göre değişir ve extranet'te görünür. Sıkça dile getirilen "%15 ortalama" resmî bir rakam değildir. Preferred Partner ve Visibility Booster gibi programlar oranı artırır; komisyonu düşürmenin yolu bu programları bilinçli kullanmak, iptal ve no-show'ları zamanında işaretlemek ve doğrudan rezervasyonu büyütmektir.
+
+İçindekiler
+
+- Booking.com komisyonu nasıl hesaplanır?
+- Örnek hesap
+- Fatura ve ödeme
+- Komisyonu artıran programlar
+- Booking.com komisyonu nasıl düşürülür? 7 yol
+- Fiyat eşitliği (parite) ve Türkiye
+- Türkiye'ye özel durum
+- Hostlio Pro bu işte nasıl yardımcı olur?
+- Kaynaklar
+Bu yazı genel bilgilendirme amaçlıdır. Bilgiler 12 Ekim 2026'da Booking.com'un iş ortağı yardım sayfaları ve resmî kaynaklardan derlendi. Kendi oranınız ve kurallarınız için sözleşmenize (Genel Teslim Koşulları) ve extranet'e bakın; vergi konularında mali müşavirinize danışın.
+
+## Booking.com komisyonu nasıl hesaplanır?
+
+Booking.com'a göre komisyon, toplam rezervasyon tutarının belirli bir yüzdesidir. Bu tutara oda ücreti ve sizin eklediğiniz ücretler (temizlik, hizmet, no-show ya da iptal ücreti) dahildir. Belediyenin aldığı konaklama vergisi gibi yerel vergilerden komisyon alınmaz, ama çoğu ülkede KDV dahil tutar üzerinden komisyon hesaplanır. Komisyon misafir çıkış yaptıktan sonra kesinleşir ve oran rezervasyon anında sabitlenir.
+
+## Hangi durumlarda komisyon ödersiniz?
+
+- Tamamlanan konaklamalar
+- Misafir gelmese bile iade edilmez ve kısmen iade edilir rezervasyonlar
+- Tahsil ettiğiniz no-show ve iptal ücretleri
+- Overbooking (son 12 ayda 5'ten azsa ya da tesis 30 günden yeniyse alınmaz)
+
+## Ne zaman komisyon ödemezsiniz?
+
+- Vazgeçtiğiniz ücretler
+- Çıkıştan sonraki 48 saat içinde işaretlediğiniz no-show'lar
+- Geçersiz olarak işaretlenen kartlar
+48 saat içinde işaretlenmeyen değişiklikler tam komisyonla faturalanır. Bu tek kural bile yılda ciddi tutar demek olabilir.
+
+## Örnek hesap
+
+Kalem Tutar Not
+Konaklama bedeli (oda + temizlik ücreti) 10.000 TL Komisyon toplam rezervasyon tutarı üzerinden
+Komisyon (örnek %15) 1.500 TL Oran sözleşmenize göre değişir; %15 yalnız örnek
+Komisyon faturasındaki KDV Sorumlu sıfatıyla beyan Yurt dışından alınan hizmet; mali müşavirinize danışın
+Size kalan (KDV ve diğer vergiler hariç) 8.500 TL Preferred ya da Visibility Booster açıksa daha az
+
+Kendi rakamlarınızla kanal bazında net geliri görmek için OTA komisyon hesaplayıcısını kullanabilirsiniz.
+
+## Fatura ve ödeme
+
+Booking.com ayda bir fatura keser; fatura bir önceki ay çıkış yapan rezervasyonları kapsar (örneğin 1 Şubat çıkışlı rezervasyon mart faturasına girer). Banka havalesi, bazı ülkelerde kart ya da otomatik ödeme kullanılabilir; "Payments by Booking.com" kullanıyorsanız komisyon size yapılan ödemeden düşülebilir. Ödenmeyen faturalar tesisin geçici olarak satışa kapanmasına yol açabilir. Son 3 ayın rezervasyonları için itiraz edebilirsiniz.
+
+KDV: Komisyon faturası yurt dışından alınan bir hizmettir; Türkiye'deki tesis bu hizmetin KDV'sini sorumlu sıfatıyla 2 No.lu KDV Beyannamesi ile beyan eder. Oran ve uygulama için mali müşavirinizle teyit edin.
+
+## Komisyonu artıran programlar
+
+- Preferred Partner Programı: Booking.com'un ifadesiyle "komisyonda küçük bir artış karşılığında" daha fazla görünürlük. Booking.com ortalamada %65 daha fazla görüntülenme ve %20 daha fazla rezervasyon olduğunu söylüyor. Ek oranı resmî sayfalarda yazmıyor. İstediğiniz zaman çıkabilirsiniz; şartları kaybedip çıkarsanız 180 gün tekrar katılamazsınız.
+
+- Visibility Booster: Seçtiğiniz tarihler ve hedef ülkeler için komisyonu kendiniz yükseltirsiniz. Geçicidir, kapatılabilir.
+
+- Genius: Komisyon değil indirimdir (seviyeye göre %10, %15, %20). Komisyon indirimli fiyat üzerinden hesaplandığı için asıl maliyetiniz indirimin kendisidir. Belirli odalara uygulayabilir, tarihlerde durdurabilirsiniz.
+
+- Payments by Booking.com: Havaleyle ödemede, tesisin konumuna göre değişen bir ödeme hizmeti ücreti alınır; sanal kart kullanımında ise kendi bankanızın işlem ücreti olabilir.
+
+## Booking.com komisyonu nasıl düşürülür? 7 yol
+
+- No-show ve iptalleri 48 saat içinde işaretleyin. Geç kalan her işaret tam komisyon demek.
+
+- Ücretli programları ölçerek kullanın. Preferred ve Visibility Booster'ı yalnız boş kalacak dönemlerde açın, dolu sezonda kapatın.
+
+- Genius'u seçerek uygulayın. Tüm odalara değil, satmakta zorlandığınız oda ve tarihlere.
+
+- İptal politikanızı gözden geçirin. Tahsil ettiğiniz iptal ücretinden de komisyon ödersiniz.
+
+- Doğrudan rezervasyonu büyütün. Web siteniz, telefonunuz ve WhatsApp'tan gelen her rezervasyon komisyonsuzdur. Tekrar gelen misafire doğrudan rezervasyon avantajı sunun.
+
+- Kanal bazında net gelire bakın. Brüt rezervasyon değil, komisyon sonrası kalan tutar önemlidir.
+
+- Booking.com misafirini platform dışına taşımayın. Booking.com iletişimin platformda kalmasını istiyor; onaylı bir rezervasyonu dışarı almak sözleşmenize aykırı olabilir ve hesabınızı riske atar.
+
+## Fiyat eşitliği (parite) ve Türkiye
+
+Booking.com ülkeleri geniş pariteli, dar pariteli ve paritesiz olarak ayırır; tesisinizin durumu sözleşmenizde yazar. Avrupa Birliği'nde Booking.com, Dijital Piyasalar Yasası kapsamında 14 Kasım 2024'ten beri otellerin kendi sitelerinde ve diğer kanallarda daha uygun fiyat vermesini kısıtlayamıyor; bu kural Türkiye'de geçerli değil. Türkiye'de Rekabet Kurulu 2017'de Booking.com'un parite koşullarını rekabete aykırı bularak para cezası vermişti.
+
+## Türkiye'ye özel durum
+
+- Yurt içi satış: 2017'deki mahkeme kararından beri Türkiye'deki kullanıcılar Booking.com'dan Türkiye'deki otellere rezervasyon yapamıyor; yabancı misafirler yapabiliyor. Basında bu durumun Ekim 2026'da da sürdüğü yazılıyor.
+
+- Kanun teklifi: "Yabancı Dijital Konaklama Platformları" kanun teklifi 6 Ekim 2026'da TBMM komisyonunda kabul edildi. Teklif; izin, Türkiye'de temsilci, binde 7,5 turizm payı, komisyona %17 tavan ve tesislerin başka kanallardan farklı fiyatla satış yapmasının engellenmemesi gibi hükümler içeriyor. Henüz yasalaşmadı; Genel Kurul'dan geçerse 1 Ocak 2027'de yürürlüğe girmesi öngörülüyor. Yasalaşırsa bu yazıyı güncelleyeceğiz.
+
+## Hostlio Pro bu işte nasıl yardımcı olur?
+
+Hostlio Pro'nun kanal yöneticisi Booking.com dahil 100'den fazla kanalda fiyat ve müsaitliği tek yerden yönetir; analiz ekranı her kanalın brüt gelirini, komisyonunu ve net gelirini yan yana gösterir. WhatsApp'ta misafirlere cevap veren AI asistan Lio, doğrudan gelen soruları kaçırmamanızı sağlar; Pro ve Growth'ta misafirin rezervasyon talebini toplar, siz onaylayınca rezervasyona dönüşür. Açık olalım: Hostlio Pro'nun kendi rezervasyon motoru ya da online ödeme tahsilatı yoktur.
+
+7 gün ücretsiz dene Komisyon hesaplayıcı
+
+## Kaynaklar
+Tüm kaynaklara 12 Ekim 2026 tarihinde erişildi. "%15 ortalama", "%10–25 aralığı" ve Preferred için dolaşan ek oranlar Booking.com tarafından yayımlanmış rakamlar değildir.
+
+- Booking.com Partner Help: Understanding your commission
+- Booking.com Partner Help: Preferred Partner Programme
+- Booking.com Partner Help: Visibility Booster
+- Booking.com Partner Help: Genius
+- Booking.com Partner Help: Payments by Booking.com
+- Booking.com Partner Help: Misafirle iletişim
+- Rekabet Kurulu kararı 17-01/12-4 (Booking.com)
+- Anadolu Ajansı: Booking.com'un Türkiye'deki faaliyetlerinin durdurulması (2017)
+- AA: Yabancı Dijital Konaklama Platformları Kanun Teklifi komisyonda kabul edildi (6.10.2026)
+- Avrupa Komisyonu: Booking, Dijital Piyasalar Yasası yükümlülükleri (14.11.2024)
+- GİB: Vergi takvimi
+
+Q: Booking.com komisyonu yüzde kaç?
+A: Booking.com resmî bir oran yayınlamaz; oran ülkeye, tesis tipine ve sözleşmenize göre değişir ve extranet'te Finans bölümünde görünür. Sıkça söylenen %15 ortalama resmî bir rakam değildir.
+
+Q: Booking.com komisyonu KDV dahil mi hesaplanır?
+A: Booking.com'a göre çoğu ülkede komisyon KDV dahil tutar üzerinden hesaplanır; belediyenin aldığı konaklama vergisi gibi yerel vergilerden komisyon alınmaz. Tesisinize ne uygulandığı sözleşmenizde yazar.
+
+Q: Preferred Partner komisyonu ne kadar artırır?
+A: Booking.com yalnızca 'komisyonda küçük bir artış' diyor; güncel resmî sayfalarda oran yok. Programdan istediğiniz zaman çıkabilirsiniz.
+
+Q: Türkiye'de Booking.com komisyonuna tavan var mı?
+A: Şu an yok. Yabancı Dijital Konaklama Platformları kanun teklifi %17 tavan öngörüyor; 6 Ekim 2026'da TBMM komisyonunda kabul edildi ama henüz yasalaşmadı.
+
+Q: Türkler Booking.com'dan Türkiye'deki otellere rezervasyon yapabilir mi?
+A: 2017'deki mahkeme kararından beri yapamıyor; yabancı misafirler Türkiye'deki otellere Booking.com üzerinden rezervasyon yapmaya devam ediyor.
 
 ---
 # Konaklama vergisi 2026: oran, hesaplama ve beyan
