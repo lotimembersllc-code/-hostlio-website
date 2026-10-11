@@ -137,6 +137,7 @@ ROUTES.update({
  "post-alloggiati": {"it": "/it/blog/alloggiati-web-guida/"},
  "post-gestionali": {"it": "/it/blog/gestionali-hotel-piu-usati/"},
  "post-bookingkom": {"tr": "/tr/blog/booking-com-komisyonu/"},
+ "post-cmfr":      {"fr": "/fr/blog/meilleurs-channel-managers-petits-hotels/"},
  # Tur 2 (8 Ekim 2026): SEO fikri #20 ve #14 (guides_intl.py)
  "post-pms-vs-cm": {"en": "/en/blog/pms-vs-channel-manager/", "it": "/it/blog/channel-manager-cos-e-differenza-pms/",
                     "pt": "/pt/blog/o-que-e-channel-manager-diferenca-pms/", "fr": "/fr/blog/pms-ou-channel-manager-difference/"},
@@ -391,6 +392,7 @@ GEN_ALT = {
  "brand-phone": {'tr': "Lio'nun cevap ekranını gösteren telefonu tutan el", 'en': "Hand holding a phone showing Lio's reply screen", 'es': 'Mano sosteniendo un móvil con la pantalla de respuesta de Lio', 'it': 'Mano che tiene uno smartphone con la schermata di risposta di Lio', 'pt': 'Mão segurando um celular com a tela de resposta do Lio', 'fr': 'Main tenant un téléphone affichant l’écran de réponse de Lio'},
  "brand-guest-bed": {'tr': 'Otel odasında yatağında telefonundan mesaj yazan misafir', 'en': 'A guest in a hotel bed writing a message on a phone', 'es': 'Un huésped en la cama del hotel escribe un mensaje en el móvil', 'it': 'Un ospite a letto in hotel scrive un messaggio sullo smartphone', 'pt': 'Um hóspede na cama do hotel escrevendo uma mensagem no celular', 'fr': 'Un client allongé dans sa chambre écrit un message sur son téléphone'},
  "guest-bed-morning": {'tr': 'Otel odasında yatağın kenarında oturup telefonundan mesaj yazan misafir', 'en': 'A guest sitting on a hotel bed writing a message on a phone', 'es': 'Un huésped sentado en la cama del hotel escribe un mensaje en el móvil', 'it': 'Un ospite seduto sul letto in hotel scrive un messaggio sullo smartphone', 'pt': 'Um hóspede sentado na cama do hotel escrevendo uma mensagem no celular', 'fr': 'Un client assis sur le lit de sa chambre écrit un message sur son téléphone'},
+ "cover-channel-manager-fr": {'tr': 'İnfografik: channel manager seçerken karşılaştırılacak 4 şey', 'en': 'Infographic: four things to compare in a channel manager', 'es': 'Infografía: cuatro aspectos para comparar un channel manager', 'it': 'Infografica: quattro aspetti da confrontare in un channel manager', 'pt': 'Infográfico: quatro pontos para comparar um channel manager', 'fr': 'Infographie : quatre points pour comparer un channel manager (coût réel, canaux connectés, PMS intégré, essai gratuit)'},
  "cover-booking-komisyon": {'tr': 'İnfografik: Booking.com komisyonu örnek hesap (10.000 TL rezervasyonda örnek %15 oranla 1.500 TL komisyon) ve komisyonu artıran programlar', 'en': 'Infographic: Booking.com commission example', 'es': 'Infografía: ejemplo de comisión de Booking.com', 'it': 'Infografica: esempio di commissione Booking.com', 'pt': 'Infográfico: exemplo de comissão do Booking.com', 'fr': 'Infographie : exemple de commission Booking.com'},
  "cover-gestionali-it": {'tr': 'İnfografik: büyüklüğe göre otel yazılımı seçimi (İtalyanca)', 'en': 'Infographic: choosing hotel software by property size', 'es': 'Infografía: elegir software hotelero según el tamaño', 'it': 'Infografica: quale gestionale per hotel scegliere in base alle dimensioni (B&B e piccoli hotel 1–20 camere, hotel indipendente 20–150, resort e catene 150+)', 'pt': 'Infográfico: escolher o sistema conforme o tamanho', 'fr': 'Infographie : choisir son logiciel selon la taille'},
  "cover-alloggiati-it": {'tr': 'İnfografik: İtalya Alloggiati Web bildirimi 4 adımda', 'en': 'Infographic: Italy Alloggiati Web reporting in four steps', 'es': 'Infografía: Alloggiati Web en cuatro pasos', 'it': 'Infografica: Alloggiati Web in quattro passi (credenziali dalla Questura, identificazione de visu, invio entro 24 ore o 6 ore per soggiorni brevi, ricevuta conservata 5 anni)', 'pt': 'Infográfico: Alloggiati Web em quatro passos', 'fr': 'Infographie : Alloggiati Web en quatre étapes'},
@@ -516,9 +518,10 @@ RELATED_POSTS = {
     "post-noshows": ["post-overbooking", "post-pms", "post-autoreply"],
     "post-chains": ["post-pms", "post-aifrontdesk", "post-overbooking"],
     "post-whatsapp": ["post-ai", "post-autoreply", "post-aifrontdesk", "post-pms"],
-    "post-pms-vs-cm": ["post-overbooking", "post-pms", "post-prices", "post-channel-manager", "post-noshows", "post-autoreply"],
+    "post-pms-vs-cm": ["post-cmfr", "post-overbooking", "post-pms", "post-prices", "post-channel-manager", "post-noshows", "post-autoreply"],
     # S9 TR rehberleri (yalnız TR; diğer dillerde liste o dilde olmayan yazıyı zaten atlar)
     "post-channel-manager": ["post-bookingkom", "post-overbooking", "post-prices", "post-pms"],
+    "post-cmfr": ["post-pms-vs-cm", "post-overbooking", "post-pms", "post-whatsapp"],
     "post-bookingkom": ["post-channel-manager", "post-overbooking", "post-autoreply", "post-prices"],
     "post-gestionali": ["post-pms", "post-alloggiati", "post-pms-vs-cm", "post-whatsapp"],
     "post-alloggiati": ["post-gestionali", "post-pms", "post-whatsapp", "post-overbooking"],
@@ -531,9 +534,9 @@ RELATED_POSTS = {
 }
 RELATED_PRODUCT = {"post-autoreply": "ai", "post-ai": "ai", "post-overbooking": "channel", "post-pms": "pricing",
                    "post-aifrontdesk": "ai", "post-noshows": "channel", "post-chains": "features", "post-whatsapp": "ai",
-                   "post-channel-manager": "channel", "post-kbs": "checkin", "post-prices": "pricing", "post-pms-vs-cm": "channel", "post-programs": "pricing", "post-cost": "pricing", "post-bestpms": "pricing", "post-taxtr": "features", "post-alloggiati": "checkin", "post-gestionali": "pricing", "post-bookingkom": "channel"}
+                   "post-channel-manager": "channel", "post-kbs": "checkin", "post-prices": "pricing", "post-pms-vs-cm": "channel", "post-programs": "pricing", "post-cost": "pricing", "post-bestpms": "pricing", "post-taxtr": "features", "post-alloggiati": "checkin", "post-gestionali": "pricing", "post-bookingkom": "channel", "post-cmfr": "channel"}
 _SEG = ["post-pms", "post-autoreply", "post-overbooking"]
-PAGE_GUIDES = {"channel": ["post-channel-manager", "post-pms-vs-cm", "post-overbooking", "post-pms", "post-noshows"], "ai": ["post-whatsapp", "post-autoreply", "post-ai"],
+PAGE_GUIDES = {"channel": ["post-cmfr", "post-channel-manager", "post-pms-vs-cm", "post-overbooking", "post-pms", "post-noshows"], "ai": ["post-whatsapp", "post-autoreply", "post-ai"],
                "checkin": ["post-alloggiati", "post-kbs", "post-pms", "post-ai", "post-noshows"], "pricing": ["post-prices", "post-pms", "post-overbooking", "post-autoreply"],
                "features": _SEG, "compare": ["post-prices", "post-pms", "post-overbooking", "post-autoreply"],
                "t-guesthouse": _SEG, "t-boutique": _SEG, "t-apart": _SEG, "t-hostel": _SEG,
@@ -976,7 +979,7 @@ def lang_redirects():
 # Tarihler atandıktan sonra uygulanır: şablon değişikliği yazıların "güncelleme" tarihini oynatmaz.
 BLOG_CAT = {"post-channel-manager": "dist", "post-overbooking": "dist", "post-noshows": "dist",
             "post-ai": "msg", "post-autoreply": "msg", "post-whatsapp": "msg", "post-aifrontdesk": "msg",
-            "post-pms": "soft", "post-prices": "soft", "post-programs": "soft", "post-cost": "soft", "post-bestpms": "soft", "post-taxtr": "ops", "post-alloggiati": "ops", "post-gestionali": "soft", "post-bookingkom": "dist", "post-pms-vs-cm": "soft", "post-chains": "soft",
+            "post-pms": "soft", "post-prices": "soft", "post-programs": "soft", "post-cost": "soft", "post-bestpms": "soft", "post-taxtr": "ops", "post-alloggiati": "ops", "post-gestionali": "soft", "post-bookingkom": "dist", "post-cmfr": "dist", "post-pms-vs-cm": "soft", "post-chains": "soft",
             "post-kbs": "ops"}
 BLOG_CAT_NAME = {
     "dist": {"tr": "Kanal yönetimi", "en": "Distribution", "es": "Distribución", "it": "Distribuzione", "pt": "Distribuição", "fr": "Distribution"},
