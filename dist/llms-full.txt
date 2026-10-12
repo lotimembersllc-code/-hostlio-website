@@ -8533,6 +8533,12 @@ URL: https://hostliopro.com/es/blog/
 ## Blog para hoteleros
 Artículos prácticos sobre la gestión de un hotel independiente, la distribución y la comunicación con los huéspedes.
 
+Operaciones
+
+## SES.Hospedajes: guía 2026 para hoteles y viviendas turísticas
+13 de octubre de 2026
+SES.Hospedajes en 2026: quién debe comunicar, plazos de 24 horas, datos del viajero y del pago, cómo darse de alta, Cataluña y País Vasco, y sanciones.
+
 Elegir software
 
 ## ¿Cuánto cuesta un software de gestión hotelera? Precios 2026
@@ -10157,6 +10163,131 @@ A: Hostlio Pro incluye su asistente de IA Lio en WhatsApp en todos los planes y 
 
 Q: ¿Puedo pasarme de Cloudbeds a Hostlio Pro?
 A: Sí. Exporta tus reservas de Cloudbeds e impórtalas en Hostlio Pro en CSV o Excel, con asignación de columnas y control de duplicados; después conecta tus OTAs y planifica el cambio. Hostlio Pro no incluye motor de reservas ni cobro de pagos.
+
+---
+# SES.Hospedajes: guía 2026 para hoteles y viviendas turísticas
+URL: https://hostliopro.com/es/blog/ses-hospedajes-guia/
+
+## SES.Hospedajes: guía 2026 para hoteles y viviendas turísticas
+Por el equipo de producto de Hostlio Pro , las personas que desarrollan Hostlio Pro. Publicado el 13 de octubre de 2026 , actualizado el 23 de septiembre de 2026
+
+Respuesta corta: desde el 2 de diciembre de 2024, quien aloja viajeros en España a cambio de un precio (hoteles, hostales, casas rurales, campings, apartamentos y también particulares con viviendas turísticas) debe comunicar al Ministerio del Interior, a través de SES.Hospedajes , dos cosas: la reserva (o su anulación) y la entrada de los viajeros, en ambos casos de inmediato y como máximo en 24 horas. Los datos incluyen la identidad, el contacto y el medio de pago, y hay que conservarlos tres años. Las multas van de 100 a 30.000 €.
+
+Contenido
+
+- Qué es SES.Hospedajes
+- Quién está obligado
+- Plazos: 24 horas para la reserva y para la entrada
+- Qué datos hay que comunicar
+- Cómo darse de alta y comunicar
+- Cataluña y País Vasco
+- Sanciones
+- Qué no hay que confundir
+- Cómo te ayuda Hostlio Pro (y qué no hace)
+- Fuentes
+Esta guía es informativa y no es asesoramiento jurídico. Se basa en el Real Decreto 933/2021, la Ley Orgánica 4/2015, las preguntas frecuentes del Ministerio del Interior (actualizadas el 10 de agosto de 2026) y otras fuentes oficiales consultadas el 13 de octubre de 2026. Para tu caso concreto, consulta la sede del Ministerio del Interior o a un profesional.
+
+## Qué es SES.Hospedajes
+
+SES.Hospedajes es la plataforma del Ministerio del Interior para el registro documental de las actividades de hospedaje. La obligación nace de la Ley Orgánica 4/2015, que considera el hospedaje una actividad relevante para la seguridad ciudadana, y se desarrolla en el Real Decreto 933/2021. Las obligaciones de comunicación tenían efecto desde 2023, pero tras varias moratorias Interior activó el sistema el 2 de diciembre de 2024. Sustituye al antiguo parte de viajeros, con muchos más datos.
+
+## Quién está obligado
+
+El Real Decreto se aplica a quien ofrece hospedaje a cambio de un precio, sea profesional o no:
+
+- Hoteles, hostales, pensiones, casas de huéspedes y turismo rural
+
+- Campings, zonas de autocaravanas, apartamentos, bungalós y alojamientos similares
+
+- Particulares que alquilan viviendas o habitaciones a viajeros (también las viviendas de uso turístico)
+
+- Operadores turísticos que intermedian y plataformas digitales que ofrecen servicios en España
+Según las preguntas frecuentes de Interior, también cuentan las estancias largas que no son vivienda habitual, y los albergues si los huéspedes pagan. Cuando hay varios intermediarios, el obligado es quien tiene la relación contractual directa y final con el cliente.
+
+## Plazos: 24 horas para la reserva y para la entrada
+
+Qué Cuándo Base
+Alta del establecimiento En 10 días desde completar los trámites administrativos y, en todo caso, antes de empezar la actividad RD 933/2021, art. 6.1–6.2
+Comunicación de la reserva (o su anulación) De inmediato y, como máximo, en 24 horas RD 933/2021, art. 6.3.a
+Parte de entrada (inicio del servicio) De inmediato y, como máximo, en 24 horas desde la llegada RD 933/2021, art. 6.3.b
+Cambios en los datos comunicados Nueva comunicación FAQ de Interior, n.º 26
+Conservación del registro 3 años desde el fin del servicio RD 933/2021, art. 5
+
+El parte de entrada lo firman todos los viajeros mayores de 14 años; los datos de los menores de 14 los aporta el adulto que los acompaña.
+
+## Qué datos hay que comunicar
+
+Además de los datos del antiguo parte, el Real Decreto pide:
+
+- Viajeros: nombre y apellidos, sexo, tipo y número de documento (y número de soporte en los establecimientos profesionales), nacionalidad, fecha de nacimiento, dirección de residencia, teléfono y correo electrónico, número de viajeros y, si hay menores, la relación de parentesco.
+
+- Contrato: referencia, fecha, fechas y horas de entrada y salida, dirección del alojamiento, número de habitaciones y si hay conexión a Internet.
+
+- Pago: tipo de pago, identificación del medio (por ejemplo, tarjeta, IBAN o pago móvil), titular, caducidad de la tarjeta y fecha del pago.
+Las preguntas frecuentes aclaran que basta un móvil si no hay correo, que el sexo solo se indica si consta en el documento o lo facilita el viajero y que, si un menor viaja con un adulto que no es su progenitor, hay que indicar la relación (tutor, profesor, monitor).
+
+## Cómo darse de alta y comunicar
+
+- Alta del establecimiento en la sede electrónica del Ministerio del Interior, con certificado digital o Cl@ve, firmando la solicitud.
+
+- Credenciales: recibes unas para la aplicación web y otras distintas para el envío automático mediante servicio web.
+
+- Comunicaciones: por formulario web, por lotes o mediante el servicio web de tu software, si lo tiene. La documentación técnica del servicio web se descarga dentro de la plataforma.
+
+- Terceros: un tercero, por ejemplo un proveedor de software, puede enviar los datos si lo autorizas.
+
+- Guarda tu propio registro: según las preguntas frecuentes actualizadas, Interior no facilita listados de las comunicaciones enviadas, ni siquiera al propio obligado.
+
+## Cataluña y País Vasco
+
+En Cataluña, los Mossos d'Esquadra tienen su propio Registre de viatgers (alta por establecimiento con el formulario PI-15, comunicación en 24 horas y conservación de 3 años), y en Euskadi la Ertzaintza tiene su servicio de registro hostelero. Si tu alojamiento está en una de estas comunidades, consulta con los Mossos o la Ertzaintza cómo se coordina su sistema con SES.Hospedajes.
+
+## Sanciones
+
+Infracción Ejemplos Multa
+Leve (LO 4/2015, art. 37.9) Errores, datos falsos, omisiones parciales o envío fuera de plazo 100 a 600 €
+Grave (LO 4/2015, art. 36.20) No tener el registro o no hacer las comunicaciones obligatorias 601 a 30.000 €
+
+## Qué no hay que confundir
+
+- Registro único de arrendamientos: es otra norma (RD 1312/2024). Las sentencias del Tribunal Supremo de mayo y junio de 2026 se refieren a ese registro, no a SES.Hospedajes.
+
+- Reglamento europeo 2024/1028: se aplica desde el 20 de mayo de 2026 y trata del número de registro de los anfitriones y del intercambio de datos de las plataformas; no sustituye el registro de viajeros.
+
+## Cómo te ayuda Hostlio Pro (y qué no hace)
+
+Con el check-in online de Hostlio Pro, el huésped rellena sus datos antes de llegar y puede escanear su documento con el móvil: la lectura se hace en el dispositivo y no se guarda ninguna imagen. Así, en recepción ya tienes los datos ordenados. Para ser claros: Hostlio Pro no envía los datos a SES.Hospedajes ni actúa como tercero autorizado; la comunicación sigue siendo tuya, por la sede de Interior o con otra herramienta.
+
+Prueba gratis 7 días Ver el check-in online
+
+Si estás eligiendo programa, mira también cuánto cuesta un software de gestión hotelera y cómo elegir software para hoteles pequeños .
+
+## Fuentes
+Todas las fuentes se consultaron el 13 de octubre de 2026.
+
+- BOE: Real Decreto 933/2021
+- BOE: Ley Orgánica 4/2015 de protección de la seguridad ciudadana
+- Ministerio del Interior: preguntas frecuentes (actualizadas el 10/08/2026)
+- Sede del Ministerio del Interior: información sobre hospedajes
+- Sede del Ministerio del Interior: guía visual de Hospedajes
+- La Moncloa: Interior activa el registro de hospedajes (2/12/2024)
+- Mossos d'Esquadra: Registre de viatgers
+- Euskadi: registro hostelero de la Ertzaintza
+
+Q: ¿Qué plazo hay para comunicar a SES.Hospedajes?
+A: De inmediato y, como máximo, en 24 horas: desde la reserva (o su anulación) para la comunicación de la reserva, y desde la llegada para el parte de entrada (RD 933/2021, art. 6.3).
+
+Q: ¿Los particulares con vivienda turística también deben comunicar?
+A: Sí. El Real Decreto 933/2021 se aplica a quien ofrece hospedaje a cambio de un precio, sea profesional o no; las preguntas frecuentes de Interior lo confirman.
+
+Q: ¿Qué multa hay si no comunico a SES.Hospedajes?
+A: No tener el registro o no hacer las comunicaciones es infracción grave (601 a 30.000 €); los errores, los datos falsos o el envío fuera de plazo son leves (100 a 600 €), según la Ley Orgánica 4/2015.
+
+Q: ¿Cuánto tiempo hay que conservar los datos?
+A: Tres años desde el fin del servicio, en un registro informático (RD 933/2021, art. 5).
+
+Q: ¿Hostlio Pro envía los datos a SES.Hospedajes?
+A: No. El check-in online de Hostlio Pro recoge y ordena los datos del huésped antes de la llegada, pero la comunicación a Interior la haces tú, por la sede electrónica o con otra herramienta.
 
 ---
 # ¿Cuánto cuesta un software de gestión hotelera? Precios 2026
