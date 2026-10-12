@@ -4854,67 +4854,114 @@ URL: https://hostliopro.com/en/blog/choosing-hotel-management-software-small-hot
 ## PMS for small hotels: how to choose (7 criteria, 2026)
 By the Hostlio Pro product team , the people who build Hostlio Pro. Published September 10, 2026 , updated September 23, 2026
 
-Short answer: The right PMS for a small hotel has a built-in channel manager, flat and transparent pricing, one inbox for guest messages, mobile access and same-day setup. Enterprise systems with hundreds of features tend to go unused by small teams.
+Short answer: the right PMS for a small hotel includes a channel manager, has a published and predictable price, brings guest messages into one inbox, works on your phone, tells you clearly how it handles your country's guest registration and invoicing rules, and can be set up the same day. Enterprise systems with hundreds of modules often go unused at a 10–30 room property and cost more than they return.
 
 Contents
 
+- What a PMS actually does
 - 1. A built-in channel manager
-- 2. Pricing model
-- 3. Guest communication
-- 4. A usable room rack
+- 2. Pricing model and full yearly cost
+- 3. Guest messaging
+- 4. A room rack you will actually use
 - 5. Mobile access
-- 6. Online check-in
-- 7. Setup and support
+- 6. Your country's rules: guest registration and invoicing
+- 7. Setup, migration and support
+- What to test during the free trial
 - Checklist
+- Where Hostlio Pro fits
+
+## What a PMS actually does
+
+A property management system (PMS) puts the day-to-day running of the hotel on one screen: the reservation calendar and room rack, check-in and check-out, room status and housekeeping, guest records, extras, invoices and reports. For a small property the real gain is that this work stops being spread across spreadsheets, a notebook, several OTA extranets and the WhatsApp on someone's phone. A booking from one channel closes the room on the others, and the screen you open in the morning shows what needs doing today. How it differs from a channel manager is explained in PMS vs channel manager .
 
 ## 1. A built-in channel manager
 
-If you sell on Booking.com, Airbnb and Expedia at the same time, availability has to sync instantly. A separate channel manager means extra cost and another screen. Whether the PMS includes one, and how many channels it connects to, is the first thing to check.
+If you sell on Booking.com, Airbnb and Expedia at the same time, availability has to sync instantly. A separate channel manager means another bill, another screen and another place where room mappings can go wrong. Ask: is the channel manager included in every plan, or only in a higher plan or as an add-on? How many channels does it connect to, and are the connections two-way? Can you set rates, minimum stay and stop-sell for a date range in one go?
 
-## 2. Pricing model
+## 2. Pricing model and full yearly cost
 
-Some software charges a percentage of booking value on top of the monthly fee, so costs rise with occupancy. A flat monthly price keeps your budget predictable. With vendors who don't publish prices, expect a sales process.
+Hotel software is priced in four ways: a flat monthly fee, a fee per room or room band, a percentage or fee per booking, or a one-off licence. Percentage models get more expensive exactly when you are busiest; licences need updates, hosting and support priced separately. Vendors who don't publish prices usually mean a sales process. Compare the full yearly cost, including setup, add-ons, tax and currency, not just the headline monthly figure.
 
-## 3. Guest communication
+Property Hostlio Pro Sirvoy (Pro) Beds24 eviivo
 
-When messages are scattered across WhatsApp and several OTA inboxes, response times suffer. One inbox plus automatic replies is the biggest time saver for small teams.
+10 rooms $49 a month (Starter) €79 a month €43.85 a month $100 a month
 
-## 4. A usable room rack
+25 rooms $89 a month (Pro) €149 a month €86.15 a month Contact sales
 
-The reservation calendar is the screen your front desk looks at most. Drag-and-drop room moves and seeing each booking's channel at a glance speed up daily work.
+From each vendor's official pricing page or calculator, 10 October 2026. Beds24 assumes 3 and 5 room types on 3 channels. What each plan includes differs; see the sourced comparison in best PMS for small hotels .
+
+## 3. Guest messaging
+
+At a small property the biggest time sink is answering the same questions on different channels: check-in times, parking, breakfast, transfers. When messages are scattered across WhatsApp, Booking.com, Airbnb and email, replies get slower and review scores suffer. Ask: are WhatsApp and OTA messages in one inbox? Is there an automatic reply that uses your own hotel information, in the guest's language? Are prices, discounts and complaints left to you? More in answering guest messages with AI .
+
+## 4. A room rack you will actually use
+
+The reservation calendar is the screen your front desk looks at most. Drag-and-drop room moves, seeing each booking's channel at a glance and a warning when two bookings clash make daily work faster. A morning view of who arrives, who leaves and which rooms to clean saves a small team real time.
 
 ## 5. Mobile access
 
-Owners are often away from the property. A mobile app, especially one that works through internet outages, is a real need.
+Owners of small properties are often away from the desk. An iOS and Android app with notifications, where you can open a booking and reply to a guest, is a real need. Ask: is the app included in every plan, and what can you do on the phone versus only on a computer?
 
-## 6. Online check-in
+## 6. Your country's rules: guest registration and invoicing
 
-Collecting guest details before arrival saves time at reception and simplifies guest registration requirements.
+Most countries require hotels to register guests with the authorities, and many have their own invoicing and tourist-tax rules. Ask plainly what the software does: does it submit guest data to the official system for you, or only export a file? Does it issue invoices in your country's format, or does that stay with your accounting software? Software that can't answer clearly will create manual work later. Online check-in helps either way, because guest details arrive before the guest does.
 
-## 7. Setup and support
+## 7. Setup, migration and support
 
-A small hotel can't absorb a weeks-long implementation project. Choose software you can use the same day, with support in your language, and test the trial with real bookings.
+A small hotel can't absorb a weeks-long implementation. With good software the account is ready the same day, rooms and rates go in, and channels are often connected the same day. When switching, check that future reservations can be imported from Excel or CSV and that support answers in a language your team uses.
+
+## What to test during the free trial
+
+- Enter your own rooms, room types and rate plans.
+
+- Import your future reservations and check dates, rooms and amounts.
+
+- Connect one OTA, change one day's rate and confirm it appears in the extranet.
+
+- Try a real guest question (parking, late arrival) in the inbox.
+
+- Open a booking on your phone and move it to another room.
+
+- Look at a month-end report and the net revenue per channel.
 
 ## Checklist
 
 Criterion Question to ask
 
-Channel manager Is it included, and how many channels does it connect to?
-Pricing Is it flat, is there commission, is the price public?
+Channel manager Included in every plan? How many channels, two-way?
+Pricing Flat or per booking? Published? What is the full yearly cost?
 
-Messaging Are WhatsApp and OTA messages in one place, with automatic replies?
-Mobile Is there an app, and does it work offline?
+Messaging WhatsApp and OTA messages in one place, with automatic replies?
+Room rack Drag and drop, clash warnings, a daily view?
 
-Check-in Is there online check-in with digital signature?
-Trial Is there a free trial and commitment-free cancellation?
+Mobile iOS and Android app in every plan?
+Local rules Guest registration and invoicing: automatic, export or not at all?
 
-Hostlio Pro was built around these criteria: see the features and pricing .
+Check-in Online check-in with digital signature?
+Migration Reservation import from Excel or CSV?
+
+Trial Free trial and cancellation without commitment?
+
+## Where Hostlio Pro fits
+
+Hostlio Pro is built for independent hotels and guesthouses of 1–150 rooms. Every plan includes the channel manager (certified connections to 100+ OTAs), the room rack, the iOS and Android app and Lio, an AI assistant that answers guests on WhatsApp in their language; Pro and Growth add the OTA inboxes and online check-in. The price is published and flat: Starter $49, Pro $89, Growth $149 a month, with no booking fees. Reservations can be imported from Excel or CSV. To be clear about what it doesn't do: it doesn't submit guest data to police registration systems, doesn't issue country-specific invoices, and has no POS, accounting or booking engine. If those are essential for you, a broader suite may fit better. See all features .
+
+Try free for 7 days See plans
 
 Q: Does a small hotel need a PMS?
 A: If you sell on several OTAs and get dozens of messages a day, yes. Working with spreadsheets and separate OTA extranets raises the risk of overbookings and slow replies.
 
 Q: What's the difference between a PMS and a channel manager?
-A: A PMS runs the hotel's internal operations (reservations, rooms, guests); a channel manager distributes availability and rates to OTAs. Software like Hostlio Pro combines both in one platform.
+A: A PMS runs the hotel's internal operations (reservations, rooms, guests); a channel manager distributes availability and rates to OTAs. Software like Hostlio Pro combines both in one place.
+
+Q: How much does a PMS cost for a small hotel?
+A: Among vendors that publish prices, a 10-room property pays roughly 40 to 165 a month in euros or dollars (October 2026). Booking fees, add-ons and setup costs can add to that; compare the full yearly cost.
+
+Q: Does the PMS handle guest registration with the police?
+A: It depends on the software and the country. Some submit data directly, others export a file. Hostlio Pro collects guest details with online check-in but does not submit them to official systems.
+
+Q: Is switching from my current software difficult?
+A: Export your future reservations to Excel or CSV and import them into the new system. Plan the moment you switch channels so availability is sent from one system only.
 
 ---
 # Guesthouse Software with an AI Guest Assistant | Hostlio Pro
@@ -11645,7 +11692,7 @@ Chi può scrivere nella propria lingua fa domande più precise e si fida di più
 
 ## Come funziona in Hostlio Pro
 
-L'assistente di Hostlio Pro, Lio , risponde agli ospiti su WhatsApp in tutti i piani e nelle caselle di Booking.com, Airbnb ed Expedia nei piani Pro e Growth. Usa solo le informazioni della tua struttura e la prenotazione dell'ospite, risponde nella lingua dell'ospite (oltre 30 lingue) e ti mostra la traduzione della sua risposta nella tua; le risposte che scrivi tu vengono inviate esattamente come le hai scritte. Scegli tu quali argomenti chiude da solo e quali passa a te, e nei primi giorni puoi approvare ogni risposta. Se non sa rispondere a una domanda, segnala l'informazione mancante nella configurazione. Durante la configurazione puoi provare Lio con le tue domande prima di andare live. Lio non conferma mai una prenotazione da solo: nei piani Pro e Growth raccoglie le richieste di prenotazione e sei tu ad approvarle. I piani includono da 1.000 a 12.000 messaggi AI al mese; ricevi un avviso all'80% e al 100%, e le risposte automatiche si sospendono intorno al 110%.
+L'assistente di Hostlio Pro, Lio , risponde agli ospiti su WhatsApp in tutti i piani e nelle caselle di Booking.com, Airbnb ed Expedia nei piani Pro e Growth. Usa solo le informazioni della tua struttura e la prenotazione dell'ospite, risponde nella lingua dell'ospite (oltre 30 lingue) e ti mostra la traduzione della sua risposta nella tua; le risposte che scrivi tu vengono inviate esattamente come le hai scritte. Scegli tu quali argomenti chiude da solo e quali passa a te, e nei primi giorni puoi approvare ogni risposta. Se non sa rispondere a una domanda, segnala l'informazione mancante nella configurazione. Durante la configurazione puoi provare Lio con le tue domande prima di attivarlo. Lio non conferma mai una prenotazione da solo: nei piani Pro e Growth raccoglie le richieste di prenotazione e sei tu ad approvarle. I piani includono da 1.000 a 12.000 messaggi AI al mese; ricevi un avviso all'80% e al 100%, e le risposte automatiche si sospendono intorno al 110%.
 
 Q: L'AI può dare informazioni sbagliate agli ospiti?
 A: Il rischio è basso se l'assistente usa solo le informazioni fornite dalla struttura e passa allo staff le domande incerte. Parti con la modalità di approvazione e completa le informazioni che segnala come mancanti.

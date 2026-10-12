@@ -322,30 +322,9 @@ def post_ai():
     return article(next(p for p in POSTS if p["key"]=="post-ai"), c, faq)
 
 def post_pms():
-    c = f'''
-<div class="answer"><p><strong>Short answer:</strong> The right PMS for a small hotel has a built-in channel manager, flat and transparent pricing, one inbox for guest messages, mobile access and same-day setup. Enterprise systems with hundreds of features tend to go unused by small teams.</p></div>
-<h2>1. A built-in channel manager</h2>
-<p>If you sell on Booking.com, Airbnb and Expedia at the same time, availability has to sync instantly. A separate channel manager means extra cost and another screen. Whether the PMS includes one, and how many channels it connects to, is the first thing to check.</p>
-<h2>2. Pricing model</h2>
-<p>Some software charges a percentage of booking value on top of the monthly fee, so costs rise with occupancy. A flat monthly price keeps your budget predictable. With vendors who don't publish prices, expect a sales process.</p>
-<h2>3. Guest communication</h2>
-<p>When messages are scattered across WhatsApp and several OTA inboxes, response times suffer. One inbox plus automatic replies is the biggest time saver for small teams.</p>
-<h2>4. A usable room rack</h2>
-<p>The reservation calendar is the screen your front desk looks at most. Drag-and-drop room moves and seeing each booking's channel at a glance speed up daily work.</p>
-<h2>5. Mobile access</h2>
-<p>Owners are often away from the property. A mobile app, especially one that works through internet outages, is a real need.</p>
-<h2>6. Online check-in</h2>
-<p>Collecting guest details before arrival saves time at reception and simplifies guest registration requirements.</p>
-<h2>7. Setup and support</h2>
-<p>A small hotel can't absorb a weeks-long implementation project. Choose software you can use the same day, with support in your language, and test the trial with real bookings.</p>
-<h2>Checklist</h2>
-<div class="table-wrap"><table><thead><tr><th>Criterion</th><th>Question to ask</th></tr></thead><tbody>
-<tr><td>Channel manager</td><td>Is it included, and how many channels does it connect to?</td></tr><tr><td>Pricing</td><td>Is it flat, is there commission, is the price public?</td></tr>
-<tr><td>Messaging</td><td>Are WhatsApp and OTA messages in one place, with automatic replies?</td></tr><tr><td>Mobile</td><td>Is there an app, and does it work offline?</td></tr>
-<tr><td>Check-in</td><td>Is there online check-in with digital signature?</td></tr><tr><td>Trial</td><td>Is there a free trial and commitment-free cancellation?</td></tr></tbody></table></div>
-<p>Hostlio Pro was built around these criteria: see the <a href="{U("features")}">features</a> and <a href="{U("pricing")}">pricing</a>.</p>'''
-    faq = [("Does a small hotel need a PMS?", "If you sell on several OTAs and get dozens of messages a day, yes. Working with spreadsheets and separate OTA extranets raises the risk of overbookings and slow replies."),
-           ("What's the difference between a PMS and a channel manager?", "A PMS runs the hotel's internal operations (reservations, rooms, guests); a channel manager distributes availability and rates to OTAs. Software like Hostlio Pro combines both in one platform.")]
+    # 12 Ekim 2026: genişletildi (rehber_pms_secim)
+    import rehber_pms_secim
+    c, faq = rehber_pms_secim.get(L, U)
     return article(next(p for p in POSTS if p["key"]=="post-pms"), c, faq)
 
 def pages():
