@@ -14782,67 +14782,114 @@ URL: https://hostliopro.com/pt/blog/como-escolher-sistema-para-hotel-pequeno/
 ## Sistema para hotel pequeno e pousada: como escolher (2026)
 Pela equipe de produto do Hostlio Pro , as pessoas que desenvolvem o Hostlio Pro. Publicado em 10 de setembro de 2026 , atualizado em 23 de setembro de 2026
 
-Resposta curta: O sistema para hotel (PMS) certo para um hotel pequeno tem channel manager integrado, preço fixo e transparente, uma só caixa de entrada para as mensagens dos hóspedes, acesso pelo celular e implantação no mesmo dia. Sistemas corporativos com centenas de funções costumam ficar subutilizados por equipes pequenas.
+Resposta curta: o sistema para hotel (PMS) certo para um hotel pequeno ou pousada tem channel manager integrado, preço publicado e previsível, uma só caixa de entrada para as mensagens dos hóspedes, funciona no celular, explica com clareza como lida com as regras de registro de hóspedes e de faturamento do seu país e pode ser implantado no mesmo dia. Sistemas corporativos com centenas de módulos costumam ficar subutilizados em um hotel de 10 a 30 quartos e custam mais do que retornam.
 
 Índice
 
+- O que um PMS faz, na prática
 - 1. Channel manager integrado
-- 2. Modelo de preços
-- 3. Comunicação com hóspedes
-- 4. Um mapa de reservas prático
+- 2. Modelo de preços e custo anual total
+- 3. Comunicação com os hóspedes
+- 4. Um mapa de reservas que você vai usar de verdade
 - 5. Acesso pelo celular
-- 6. Check-in online
-- 7. Implantação e suporte
+- 6. As regras do seu país: registro de hóspedes e faturamento
+- 7. Implantação, migração e suporte
+- O que testar durante o período grátis
 - Checklist
+- Onde o Hostlio Pro se encaixa
+
+## O que um PMS faz, na prática
+
+Um sistema de gestão hoteleira (PMS) coloca a rotina do hotel em uma só tela: o calendário de reservas e o mapa de quartos, check-in e check-out, status dos quartos e governança, cadastro de hóspedes, extras, faturas e relatórios. Para um hotel pequeno ou pousada, o ganho real é que esse trabalho deixa de ficar espalhado entre planilhas, um caderno, várias extranets de OTAs e o WhatsApp no celular de alguém. Uma reserva que chega por um canal fecha o quarto nos outros, e a tela que você abre de manhã mostra o que precisa ser feito no dia. A diferença em relação a um channel manager está explicada em PMS ou channel manager .
 
 ## 1. Channel manager integrado
 
-Se você vende no Booking.com, Airbnb e Expedia ao mesmo tempo, a disponibilidade precisa ser sincronizada na hora. Um channel manager separado significa custo extra e mais uma tela. Verificar se o PMS inclui um e a quantos canais ele se conecta é a primeira coisa a fazer.
+Se você vende no Booking.com, Airbnb e Expedia ao mesmo tempo, a disponibilidade precisa ser sincronizada na hora. Um channel manager separado significa mais uma conta para pagar, mais uma tela e mais um lugar onde o mapeamento dos quartos pode dar errado. Pergunte: o channel manager está incluído em todos os planos ou só em um plano superior, como adicional? A quantos canais ele se conecta, e as conexões são bidirecionais? Dá para definir tarifas, estadia mínima e fechamento de vendas para um período inteiro de uma só vez?
 
-## 2. Modelo de preços
+## 2. Modelo de preços e custo anual total
 
-Alguns sistemas cobram uma porcentagem do valor das reservas além da mensalidade, e o custo sobe junto com a ocupação. Um preço mensal fixo deixa o seu orçamento previsível. Com fornecedores que não publicam os preços, espere passar por um processo de vendas.
+Software para hotel é cobrado de quatro formas: mensalidade fixa, valor por quarto ou faixa de quartos, porcentagem ou taxa por reserva, ou licença única. Os modelos por porcentagem ficam mais caros justamente quando você está mais cheio; as licenças exigem atualizações, hospedagem e suporte cobrados à parte. Fornecedores que não publicam os preços normalmente significam um processo de vendas pela frente. Compare o custo anual total, incluindo implantação, adicionais, impostos e câmbio, e não apenas o valor mensal em destaque.
 
-## 3. Comunicação com hóspedes
+Hotel Hostlio Pro Sirvoy (Pro) Beds24 eviivo
 
-Quando as mensagens ficam espalhadas entre o WhatsApp e as caixas de entrada das OTAs, o tempo de resposta piora. Uma só caixa de entrada com respostas automáticas é o que mais economiza tempo para equipes pequenas.
+10 quartos US$ 49 por mês (Starter) 79 € por mês 43,85 € por mês US$ 100 por mês
 
-## 4. Um mapa de reservas prático
+25 quartos US$ 89 por mês (Pro) 149 € por mês 86,15 € por mês Fale com vendas
 
-O calendário de reservas é a tela que a recepção mais olha. Trocar quartos arrastando e soltando e ver de relance o canal de cada reserva agilizam o trabalho do dia a dia.
+Dados da página oficial de preços ou da calculadora de cada fornecedor, em 10 de outubro de 2026. Para o Beds24, consideramos 3 e 5 tipos de quarto em 3 canais. O que cada plano inclui varia; veja a comparação de sistemas para hotel .
+
+## 3. Comunicação com os hóspedes
+
+Em um hotel pequeno, o que mais consome tempo é responder às mesmas perguntas em canais diferentes: horário de check-in, estacionamento, café da manhã, traslado. Quando as mensagens ficam espalhadas entre WhatsApp, Booking.com, Airbnb e e-mail, as respostas demoram mais e as notas das avaliações sofrem. Pergunte: as mensagens do WhatsApp e das OTAs ficam em uma só caixa de entrada? Existe resposta automática que usa as informações do seu próprio hotel, no idioma do hóspede? Preços, descontos e reclamações continuam com você? Saiba mais em responder hóspedes com IA .
+
+## 4. Um mapa de reservas que você vai usar de verdade
+
+O calendário de reservas é a tela que a recepção mais olha. Trocar hóspedes de quarto arrastando e soltando, ver de relance o canal de cada reserva e receber um alerta quando duas reservas se sobrepõem agilizam o dia a dia. Uma visão matinal de quem chega, quem sai e quais quartos limpar economiza tempo de verdade para uma equipe pequena.
 
 ## 5. Acesso pelo celular
 
-Muitas vezes o proprietário não está no hotel. Um app para celular, principalmente um que funcione durante quedas de internet, é uma necessidade real.
+Donos de pousadas e hotéis pequenos muitas vezes não estão na recepção. Um app para iOS e Android, com notificações, em que você consiga abrir uma reserva e responder a um hóspede, é uma necessidade real. Pergunte: o app está incluído em todos os planos, e o que dá para fazer pelo celular e o que só funciona no computador?
 
-## 6. Check-in online
+## 6. As regras do seu país: registro de hóspedes e faturamento
 
-Coletar os dados dos hóspedes antes da chegada economiza tempo na recepção e simplifica as exigências de registro de hóspedes.
+A maioria dos países exige que os hotéis façam o registro oficial de hóspedes junto às autoridades, e muitos têm regras próprias de faturamento e de taxa de turismo. Pergunte sem rodeios o que o sistema faz: ele envia os dados dos hóspedes ao sistema oficial por você ou só exporta um arquivo? Emite notas no formato exigido no seu país ou isso continua com o seu sistema contábil? Um software que não responde com clareza vai gerar trabalho manual depois. O check-in online ajuda de qualquer forma, porque os dados do hóspede chegam antes dele.
 
-## 7. Implantação e suporte
+## 7. Implantação, migração e suporte
 
-Um hotel pequeno não aguenta um projeto de implantação de semanas. Escolha um sistema que você possa usar no mesmo dia, com suporte no seu idioma, e faça o teste com reservas reais.
+Um hotel pequeno não aguenta um projeto de implantação de semanas. Com um bom sistema, a conta fica pronta no mesmo dia, os quartos e tarifas são cadastrados e, muitas vezes, os canais são conectados no mesmo dia. Se você está trocando de sistema, confira se as reservas futuras podem ser importadas de Excel ou CSV e se o suporte atende em um idioma que a sua equipe usa.
+
+## O que testar durante o período grátis
+
+- Cadastre seus próprios quartos, tipos de quarto e planos tarifários.
+
+- Importe suas reservas futuras e confira datas, quartos e valores.
+
+- Conecte uma OTA, mude a tarifa de um dia e confirme que ela aparece na extranet.
+
+- Teste uma pergunta real de hóspede (estacionamento, chegada tarde) na caixa de entrada.
+
+- Abra uma reserva no celular e mude o hóspede de quarto.
+
+- Veja um relatório de fechamento do mês e a receita líquida por canal.
 
 ## Checklist
 
 Critério Pergunta a fazer
 
-Channel manager Está incluído e a quantos canais se conecta?
-Preços O preço é fixo, há comissão, o valor é público?
+Channel manager Está incluído em todos os planos? Quantos canais, com conexão bidirecional?
+Preços Fixo ou por reserva? É público? Qual é o custo anual total?
 
-Mensagens As mensagens de WhatsApp e das OTAs ficam em um só lugar, com respostas automáticas?
-Celular Existe um app e ele funciona offline?
+Mensagens WhatsApp e mensagens das OTAs em um só lugar, com respostas automáticas?
+Mapa de reservas Arrastar e soltar, alerta de conflito, visão do dia?
 
-Check-in Há check-in online com assinatura digital?
-Teste Há teste grátis e cancelamento sem fidelidade?
+Celular App para iOS e Android em todos os planos?
+Regras locais Registro de hóspedes e faturamento: automático, por exportação ou não faz?
 
-O Hostlio Pro foi criado com base nesses critérios: veja as funcionalidades e os preços .
+Check-in Check-in online com assinatura digital?
+Migração Importação de reservas de Excel ou CSV?
+
+Teste Teste grátis e cancelamento sem fidelidade?
+
+## Onde o Hostlio Pro se encaixa
+
+O Hostlio Pro foi feito para hotéis independentes e pousadas de 1 a 150 quartos. Todos os planos incluem o channel manager (conexões certificadas com mais de 100 OTAs), o mapa de reservas, o app para iOS e Android e o Lio, um assistente de IA que responde aos hóspedes no WhatsApp no idioma deles; os planos Pro e Growth acrescentam as caixas de entrada das OTAs e o check-in online. O preço é publicado e fixo: Starter US$ 49, Pro US$ 89, Growth US$ 149 por mês, sem taxa por reserva. As reservas podem ser importadas de Excel ou CSV. Para deixar claro o que ele não faz: não envia os dados dos hóspedes aos sistemas oficiais de registro, não emite notas no formato específico de cada país e não tem PDV, contabilidade nem motor de reservas. Se isso for essencial para você, uma suíte mais ampla pode ser mais adequada. Veja todas as funcionalidades .
+
+Teste grátis por 7 dias Ver planos
 
 Q: Um hotel pequeno precisa de um PMS?
 A: Se você vende em várias OTAs e recebe dezenas de mensagens por dia, sim. Trabalhar com planilhas e extranets separadas das OTAs aumenta o risco de overbooking e de respostas lentas.
 
 Q: Qual é a diferença entre um PMS e um channel manager?
-A: Um PMS administra as operações internas do hotel (reservas, quartos, hóspedes); um channel manager distribui disponibilidade e tarifas para as OTAs. Sistemas como o Hostlio Pro reúnem os dois em uma só plataforma.
+A: Um PMS administra as operações internas do hotel (reservas, quartos, hóspedes); um channel manager distribui disponibilidade e tarifas para as OTAs. Sistemas como o Hostlio Pro reúnem os dois em um só lugar.
+
+Q: Quanto custa um PMS para um hotel pequeno?
+A: Entre os fornecedores que publicam preços, um hotel de 10 quartos paga algo entre 40 e 165 por mês, em euros ou dólares (outubro de 2026). Taxas por reserva, adicionais e custos de implantação podem somar a isso; compare o custo anual total.
+
+Q: O PMS faz o registro oficial de hóspedes junto às autoridades?
+A: Depende do sistema e do país. Alguns enviam os dados diretamente, outros exportam um arquivo. O Hostlio Pro coleta os dados dos hóspedes com o check-in online, mas não os envia aos sistemas oficiais.
+
+Q: É difícil trocar o meu sistema atual?
+A: Exporte suas reservas futuras para Excel ou CSV e importe-as no novo sistema. Planeje o momento da troca dos canais para que a disponibilidade seja enviada por um só sistema.
 
 ---
 # Sistema para Pousada com Assistente de IA | Hostlio Pro
@@ -17624,67 +17671,114 @@ URL: https://hostliopro.com/fr/blog/choisir-logiciel-gestion-hoteliere-petit-hot
 ## Logiciel de gestion hôtelière pour petit hôtel : guide 2026
 Par l' équipe produit Hostlio Pro , celle qui conçoit Hostlio Pro. Publié le 10 septembre 2026 , mis à jour le 23 septembre 2026
 
-Réponse courte : le bon logiciel de gestion hôtelière (PMS) pour un petit hôtel intègre un channel manager, propose un prix fixe et transparent, une boîte de réception unique pour les messages clients, un accès mobile et une mise en place le jour même. Les systèmes conçus pour les grands groupes, avec des centaines de fonctionnalités, restent souvent inexploités par les petites équipes.
+Réponse courte : le bon logiciel de gestion hôtelière (PMS) pour un petit hôtel intègre un channel manager, affiche un prix public et prévisible, réunit les messages clients dans une seule boîte de réception, fonctionne sur votre téléphone, vous dit clairement comment il gère les règles locales d'enregistrement des clients et de facturation, et peut être mis en place le jour même. Les systèmes pour grands groupes, avec des centaines de modules, restent souvent inexploités dans un établissement de 10 à 30 chambres et coûtent plus qu'ils ne rapportent.
 
 Sommaire
 
+- À quoi sert vraiment un PMS
 - 1. Un channel manager intégré
-- 2. Le modèle tarifaire
-- 3. La communication client
-- 4. Un planning des chambres pratique
+- 2. Le modèle tarifaire et le coût annuel réel
+- 3. La communication avec les clients
+- 4. Un planning des chambres que vous utiliserez vraiment
 - 5. L'accès mobile
-- 6. Le check-in en ligne
-- 7. Mise en place et support
+- 6. Les règles de votre pays : enregistrement des clients et facturation
+- 7. Mise en place, migration et support
+- Ce qu'il faut tester pendant l'essai gratuit
 - Liste de contrôle
+- La place de Hostlio Pro
+
+## À quoi sert vraiment un PMS
+
+Un logiciel de gestion hôtelière (PMS, pour property management system ) rassemble la gestion quotidienne de l'hôtel sur un seul écran : le calendrier des réservations et le planning des chambres, les arrivées et les départs, l'état des chambres et le ménage, les fiches clients, les prestations annexes, les factures et les rapports. Pour un petit établissement, le vrai gain est que ce travail n'est plus éparpillé entre des tableurs, un cahier, plusieurs extranets OTA et le WhatsApp du téléphone de quelqu'un. Une réservation reçue sur un canal ferme la chambre sur les autres, et l'écran que vous ouvrez le matin vous montre ce qu'il faut faire dans la journée. La différence avec un channel manager est expliquée dans PMS ou channel manager .
 
 ## 1. Un channel manager intégré
 
-Si vous vendez en même temps sur Booking.com, Airbnb et Expedia, les disponibilités doivent se synchroniser instantanément. Un channel manager séparé, c'est un coût supplémentaire et un écran de plus. Vérifiez d'abord si le PMS en inclut un, et à combien de canaux il se connecte.
+Si vous vendez en même temps sur Booking.com, Airbnb et Expedia, les disponibilités doivent se synchroniser instantanément. Un channel manager séparé, c'est une facture de plus, un écran de plus et un endroit de plus où le mappage des chambres peut se tromper. Demandez : le channel manager est-il inclus dans toutes les formules, ou seulement dans une formule supérieure ou en option ? À combien de canaux se connecte-t-il, et les connexions sont-elles bidirectionnelles ? Pouvez-vous modifier en une seule fois les tarifs, la durée minimale de séjour et la fermeture des ventes sur une période ?
 
-## 2. Le modèle tarifaire
+## 2. Le modèle tarifaire et le coût annuel réel
 
-Certains logiciels prélèvent un pourcentage sur le montant des réservations en plus de l'abonnement mensuel : les coûts augmentent alors avec le taux d'occupation. Un prix mensuel fixe rend votre budget prévisible. Avec les éditeurs qui ne publient pas leurs prix, attendez-vous à un processus commercial.
+Un logiciel hôtelier se facture de quatre façons : un abonnement mensuel fixe, un prix par chambre ou par tranche de chambres, un pourcentage ou un montant par réservation, ou une licence unique. Les modèles au pourcentage coûtent plus cher précisément quand vous êtes le plus occupé ; les licences impliquent des mises à jour, un hébergement et un support facturés à part. Un éditeur qui ne publie pas ses prix annonce en général un processus commercial. Comparez le coût annuel complet, frais de mise en place, options, taxes et devise compris, et pas seulement le prix mensuel affiché.
 
-## 3. La communication client
+Établissement Hostlio Pro Sirvoy (Pro) Beds24 eviivo
 
-Lorsque les messages sont dispersés entre WhatsApp et les messageries des OTA, les délais de réponse s'allongent. Une boîte de réception unique avec des réponses automatiques est le plus grand gain de temps pour les petites équipes.
+10 chambres 49 $ par mois (Starter) 79 € par mois 43,85 € par mois 100 $ par mois
 
-## 4. Un planning des chambres pratique
+25 chambres 89 $ par mois (Pro) 149 € par mois 86,15 € par mois Sur demande
 
-Le calendrier des réservations est l'écran que la réception consulte le plus. Déplacer les chambres par glisser-déposer et voir d'un coup d'œil le canal de chaque réservation accélère le travail quotidien.
+D'après la page tarifaire officielle ou le simulateur de chaque éditeur, au 10 octobre 2026. Pour Beds24, hypothèse de 3 et 5 types de chambre sur 3 canaux. Le contenu de chaque formule diffère ; pour une comparaison chiffrée et sourcée côté distribution, voyez aussi notre sélection des meilleurs channel managers pour petits hôtels .
+
+## 3. La communication avec les clients
+
+Dans un petit établissement, ce qui prend le plus de temps, c'est de répondre aux mêmes questions sur des canaux différents : horaires d'arrivée, parking, petit-déjeuner, transferts. Quand les messages sont dispersés entre WhatsApp, Booking.com, Airbnb et l'e-mail, les réponses tardent et les notes des avis en pâtissent. Demandez : les messages WhatsApp et OTA arrivent-ils dans une seule boîte de réception ? Existe-t-il une réponse automatique qui s'appuie sur les informations de votre propre hôtel, dans la langue du client ? Les prix, les remises et les réclamations vous restent-ils réservés ? Pour aller plus loin : répondre aux messages des clients avec l'IA .
+
+## 4. Un planning des chambres que vous utiliserez vraiment
+
+Le calendrier des réservations est l'écran que la réception consulte le plus. Déplacer une réservation d'une chambre à l'autre par glisser-déposer, voir d'un coup d'œil le canal de chaque réservation et être alerté quand deux réservations se chevauchent accélère le travail quotidien. Une vue du matin indiquant qui arrive, qui part et quelles chambres préparer fait gagner un temps précieux à une petite équipe.
 
 ## 5. L'accès mobile
 
-Les propriétaires sont souvent loin de leur établissement. Pouvoir suivre les arrivées, les disponibilités et les messages depuis son téléphone, avec une application mobile ou au moins une interface adaptée au smartphone, est un véritable besoin.
+Les propriétaires de petits hôtels et de chambres d'hôtes sont souvent loin de la réception. Une application iOS et Android avec notifications, qui permet d'ouvrir une réservation et de répondre à un client, est un vrai besoin. Demandez : l'application est-elle incluse dans toutes les formules, et que peut-on faire sur le téléphone plutôt que seulement sur un ordinateur ?
 
-## 6. Le check-in en ligne
+## 6. Les règles de votre pays : enregistrement des clients et facturation
 
-Collecter les informations des clients avant leur arrivée fait gagner du temps à la réception et simplifie les obligations d'enregistrement des clients.
+La plupart des pays imposent aux hôtels de déclarer leurs clients aux autorités, et beaucoup ont leurs propres règles de facturation et de taxe de séjour. En France, pensez par exemple à la fiche de police et à la taxe de séjour. Posez la question franchement : le logiciel transmet-il lui-même les données des clients au système officiel, ou se contente-t-il d'exporter un fichier ? Émet-il des factures au format exigé dans votre pays, ou cela reste-t-il le rôle de votre logiciel de comptabilité ? Un éditeur qui ne sait pas répondre clairement vous créera du travail manuel plus tard. Le check-in en ligne aide dans tous les cas, car les informations du client arrivent avant lui.
 
-## 7. Mise en place et support
+## 7. Mise en place, migration et support
 
-Un petit hôtel ne peut pas se permettre un projet de déploiement de plusieurs semaines. Choisissez un logiciel utilisable le jour même, avec un support dans votre langue, et testez l'essai avec de vraies réservations.
+Un petit hôtel ne peut pas absorber un déploiement de plusieurs semaines. Avec un bon logiciel, le compte est prêt le jour même, les chambres et les tarifs sont saisis, et les canaux sont souvent connectés dans la journée. En cas de changement, vérifiez que vos réservations futures peuvent être importées depuis Excel ou un fichier CSV, et que le support répond dans une langue que votre équipe parle.
+
+## Ce qu'il faut tester pendant l'essai gratuit
+
+- Saisissez vos propres chambres, types de chambre et plans tarifaires.
+
+- Importez vos réservations futures et vérifiez les dates, les chambres et les montants.
+
+- Connectez une OTA, modifiez le tarif d'une journée et vérifiez qu'il apparaît dans l'extranet.
+
+- Testez une vraie question de client (parking, arrivée tardive) dans la boîte de réception.
+
+- Ouvrez une réservation sur votre téléphone et déplacez-la dans une autre chambre.
+
+- Consultez un rapport de fin de mois et le chiffre d'affaires net par canal.
 
 ## Liste de contrôle
 
 Critère Question à poser
 
-Channel manager Est-il inclus, et à combien de canaux se connecte-t-il ?
-Tarifs Le prix est-il fixe, y a-t-il une commission, le prix est-il public ?
+Channel manager Inclus dans toutes les formules ? Combien de canaux, en bidirectionnel ?
+Tarifs Prix fixe ou par réservation ? Public ? Quel est le coût annuel complet ?
 
-Messagerie Les messages WhatsApp et OTA sont-ils réunis au même endroit, avec des réponses automatiques ?
-Mobile Existe-t-il une application mobile ou une interface utilisable sur smartphone ?
+Messagerie Messages WhatsApp et OTA au même endroit, avec réponses automatiques ?
+Planning Glisser-déposer, alerte de chevauchement, vue du jour ?
 
-Check-in Y a-t-il un check-in en ligne avec signature électronique ?
-Essai Y a-t-il un essai gratuit et une résiliation sans engagement ?
+Mobile Application iOS et Android dans toutes les formules ?
+Règles locales Enregistrement des clients et facturation : automatique, export ou rien du tout ?
 
-Hostlio Pro a été conçu autour de ces critères : découvrez les fonctionnalités et les tarifs .
+Check-in Check-in en ligne avec signature électronique ?
+Migration Import des réservations depuis Excel ou CSV ?
+
+Essai Essai gratuit et résiliation sans engagement ?
+
+## La place de Hostlio Pro
+
+Hostlio Pro est un logiciel de gestion hôtelière conçu pour les hôtels indépendants et les chambres d'hôtes de 1 à 150 chambres. Toutes les formules incluent le channel manager (connexions certifiées à plus de 100 OTA), le planning des chambres, l'application iOS et Android et Lio, un assistant IA qui répond aux clients sur WhatsApp dans leur langue ; les formules Pro et Growth ajoutent les boîtes de réception OTA et le check-in en ligne. Le prix est public et fixe : Starter 49 $, Pro 89 $, Growth 149 $ par mois, sans frais par réservation. Les réservations peuvent être importées depuis Excel ou CSV. Soyons clairs sur ce qu'il ne fait pas : il ne transmet pas les données des clients aux systèmes de déclaration de la police, n'émet pas de factures propres à chaque pays, et n'a ni caisse (POS), ni comptabilité, ni moteur de réservation. Si ces fonctions sont indispensables pour vous, une suite plus large conviendra peut-être mieux. Découvrez toutes les fonctionnalités .
+
+Essai gratuit de 7 jours Voir les tarifs
 
 Q: Un petit hôtel a-t-il besoin d'un PMS ?
 A: Si vous vendez sur plusieurs OTA et recevez des dizaines de messages par jour, oui. Travailler avec des tableurs et des extranets OTA séparés augmente le risque de surbooking et de réponses tardives.
 
 Q: Quelle est la différence entre un PMS et un channel manager ?
-A: Un PMS gère les opérations internes de l'hôtel (réservations, chambres, clients) ; un channel manager distribue les disponibilités et les tarifs sur les OTA. Un logiciel comme Hostlio Pro réunit les deux sur une seule plateforme.
+A: Un PMS gère les opérations internes de l'hôtel (réservations, chambres, clients) ; un channel manager distribue les disponibilités et les tarifs sur les OTA. Un logiciel comme Hostlio Pro réunit les deux au même endroit.
+
+Q: Combien coûte un logiciel de gestion hôtelière pour un petit hôtel ?
+A: Parmi les éditeurs qui publient leurs prix, un établissement de 10 chambres paie environ 40 à 165 par mois, en euros ou en dollars (octobre 2026). Les frais par réservation, les options et la mise en place peuvent s'y ajouter : comparez le coût annuel complet.
+
+Q: Le PMS s'occupe-t-il de la déclaration des clients à la police ?
+A: Cela dépend du logiciel et du pays. Certains transmettent les données directement, d'autres exportent un fichier. Hostlio Pro collecte les informations des clients grâce au check-in en ligne, mais ne les transmet pas aux systèmes officiels.
+
+Q: Est-ce difficile de quitter mon logiciel actuel ?
+A: Exportez vos réservations futures vers Excel ou CSV et importez-les dans le nouveau système. Prévoyez le moment du basculement des canaux pour que les disponibilités ne soient envoyées que par un seul système.
 
 ---
 # Logiciel pour chambres d’hôtes avec IA | Hostlio Pro

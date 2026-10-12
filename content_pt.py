@@ -325,30 +325,9 @@ def post_ai():
     return article(next(p for p in POSTS if p["key"]=="post-ai"), c, faq)
 
 def post_pms():
-    c = f'''
-<div class="answer"><p><strong>Resposta curta:</strong> O sistema para hotel (PMS) certo para um hotel pequeno tem channel manager integrado, preço fixo e transparente, uma só caixa de entrada para as mensagens dos hóspedes, acesso pelo celular e implantação no mesmo dia. Sistemas corporativos com centenas de funções costumam ficar subutilizados por equipes pequenas.</p></div>
-<h2>1. Channel manager integrado</h2>
-<p>Se você vende no Booking.com, Airbnb e Expedia ao mesmo tempo, a disponibilidade precisa ser sincronizada na hora. Um channel manager separado significa custo extra e mais uma tela. Verificar se o PMS inclui um e a quantos canais ele se conecta é a primeira coisa a fazer.</p>
-<h2>2. Modelo de preços</h2>
-<p>Alguns sistemas cobram uma porcentagem do valor das reservas além da mensalidade, e o custo sobe junto com a ocupação. Um preço mensal fixo deixa o seu orçamento previsível. Com fornecedores que não publicam os preços, espere passar por um processo de vendas.</p>
-<h2>3. Comunicação com hóspedes</h2>
-<p>Quando as mensagens ficam espalhadas entre o WhatsApp e as caixas de entrada das OTAs, o tempo de resposta piora. Uma só caixa de entrada com respostas automáticas é o que mais economiza tempo para equipes pequenas.</p>
-<h2>4. Um mapa de reservas prático</h2>
-<p>O calendário de reservas é a tela que a recepção mais olha. Trocar quartos arrastando e soltando e ver de relance o canal de cada reserva agilizam o trabalho do dia a dia.</p>
-<h2>5. Acesso pelo celular</h2>
-<p>Muitas vezes o proprietário não está no hotel. Um app para celular, principalmente um que funcione durante quedas de internet, é uma necessidade real.</p>
-<h2>6. Check-in online</h2>
-<p>Coletar os dados dos hóspedes antes da chegada economiza tempo na recepção e simplifica as exigências de registro de hóspedes.</p>
-<h2>7. Implantação e suporte</h2>
-<p>Um hotel pequeno não aguenta um projeto de implantação de semanas. Escolha um sistema que você possa usar no mesmo dia, com suporte no seu idioma, e faça o teste com reservas reais.</p>
-<h2>Checklist</h2>
-<div class="table-wrap"><table><thead><tr><th>Critério</th><th>Pergunta a fazer</th></tr></thead><tbody>
-<tr><td>Channel manager</td><td>Está incluído e a quantos canais se conecta?</td></tr><tr><td>Preços</td><td>O preço é fixo, há comissão, o valor é público?</td></tr>
-<tr><td>Mensagens</td><td>As mensagens de WhatsApp e das OTAs ficam em um só lugar, com respostas automáticas?</td></tr><tr><td>Celular</td><td>Existe um app e ele funciona offline?</td></tr>
-<tr><td>Check-in</td><td>Há check-in online com assinatura digital?</td></tr><tr><td>Teste</td><td>Há teste grátis e cancelamento sem fidelidade?</td></tr></tbody></table></div>
-<p>O Hostlio Pro foi criado com base nesses critérios: veja as <a href="{U("features")}">funcionalidades</a> e os <a href="{U("pricing")}">preços</a>.</p>'''
-    faq = [("Um hotel pequeno precisa de um PMS?", "Se você vende em várias OTAs e recebe dezenas de mensagens por dia, sim. Trabalhar com planilhas e extranets separadas das OTAs aumenta o risco de overbooking e de respostas lentas."),
-           ("Qual é a diferença entre um PMS e um channel manager?", "Um PMS administra as operações internas do hotel (reservas, quartos, hóspedes); um channel manager distribui disponibilidade e tarifas para as OTAs. Sistemas como o Hostlio Pro reúnem os dois em uma só plataforma.")]
+    # 12 Ekim 2026: genişletildi (rehber_pms_secim / pms_secim_<dil>.py)
+    import rehber_pms_secim
+    c, faq = rehber_pms_secim.get(L, U)
     return article(next(p for p in POSTS if p["key"]=="post-pms"), c, faq)
 
 def pages():

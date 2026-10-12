@@ -326,30 +326,9 @@ def post_ai():
     return article(next(p for p in POSTS if p["key"]=="post-ai"), c, faq)
 
 def post_pms():
-    c = f'''
-<div class="answer"><p><strong>Réponse courte :</strong> le bon logiciel de gestion hôtelière (PMS) pour un petit hôtel intègre un channel manager, propose un prix fixe et transparent, une boîte de réception unique pour les messages clients, un accès mobile et une mise en place le jour même. Les systèmes conçus pour les grands groupes, avec des centaines de fonctionnalités, restent souvent inexploités par les petites équipes.</p></div>
-<h2>1. Un channel manager intégré</h2>
-<p>Si vous vendez en même temps sur Booking.com, Airbnb et Expedia, les disponibilités doivent se synchroniser instantanément. Un channel manager séparé, c'est un coût supplémentaire et un écran de plus. Vérifiez d'abord si le PMS en inclut un, et à combien de canaux il se connecte.</p>
-<h2>2. Le modèle tarifaire</h2>
-<p>Certains logiciels prélèvent un pourcentage sur le montant des réservations en plus de l'abonnement mensuel : les coûts augmentent alors avec le taux d'occupation. Un prix mensuel fixe rend votre budget prévisible. Avec les éditeurs qui ne publient pas leurs prix, attendez-vous à un processus commercial.</p>
-<h2>3. La communication client</h2>
-<p>Lorsque les messages sont dispersés entre WhatsApp et les messageries des OTA, les délais de réponse s'allongent. Une boîte de réception unique avec des réponses automatiques est le plus grand gain de temps pour les petites équipes.</p>
-<h2>4. Un planning des chambres pratique</h2>
-<p>Le calendrier des réservations est l'écran que la réception consulte le plus. Déplacer les chambres par glisser-déposer et voir d'un coup d'œil le canal de chaque réservation accélère le travail quotidien.</p>
-<h2>5. L'accès mobile</h2>
-<p>Les propriétaires sont souvent loin de leur établissement. Pouvoir suivre les arrivées, les disponibilités et les messages depuis son téléphone, avec une application mobile ou au moins une interface adaptée au smartphone, est un véritable besoin.</p>
-<h2>6. Le check-in en ligne</h2>
-<p>Collecter les informations des clients avant leur arrivée fait gagner du temps à la réception et simplifie les obligations d'enregistrement des clients.</p>
-<h2>7. Mise en place et support</h2>
-<p>Un petit hôtel ne peut pas se permettre un projet de déploiement de plusieurs semaines. Choisissez un logiciel utilisable le jour même, avec un support dans votre langue, et testez l'essai avec de vraies réservations.</p>
-<h2>Liste de contrôle</h2>
-<div class="table-wrap"><table><thead><tr><th>Critère</th><th>Question à poser</th></tr></thead><tbody>
-<tr><td>Channel manager</td><td>Est-il inclus, et à combien de canaux se connecte-t-il ?</td></tr><tr><td>Tarifs</td><td>Le prix est-il fixe, y a-t-il une commission, le prix est-il public ?</td></tr>
-<tr><td>Messagerie</td><td>Les messages WhatsApp et OTA sont-ils réunis au même endroit, avec des réponses automatiques ?</td></tr><tr><td>Mobile</td><td>Existe-t-il une application mobile ou une interface utilisable sur smartphone ?</td></tr>
-<tr><td>Check-in</td><td>Y a-t-il un check-in en ligne avec signature électronique ?</td></tr><tr><td>Essai</td><td>Y a-t-il un essai gratuit et une résiliation sans engagement ?</td></tr></tbody></table></div>
-<p>Hostlio Pro a été conçu autour de ces critères : découvrez les <a href="{U("features")}">fonctionnalités</a> et les <a href="{U("pricing")}">tarifs</a>.</p>'''
-    faq = [("Un petit hôtel a-t-il besoin d'un PMS ?", "Si vous vendez sur plusieurs OTA et recevez des dizaines de messages par jour, oui. Travailler avec des tableurs et des extranets OTA séparés augmente le risque de surbooking et de réponses tardives."),
-           ("Quelle est la différence entre un PMS et un channel manager ?", "Un PMS gère les opérations internes de l'hôtel (réservations, chambres, clients) ; un channel manager distribue les disponibilités et les tarifs sur les OTA. Un logiciel comme Hostlio Pro réunit les deux sur une seule plateforme.")]
+    # 12 Ekim 2026: genişletildi (rehber_pms_secim / pms_secim_<dil>.py)
+    import rehber_pms_secim
+    c, faq = rehber_pms_secim.get(L, U)
     return article(next(p for p in POSTS if p["key"]=="post-pms"), c, faq)
 
 def pages():
