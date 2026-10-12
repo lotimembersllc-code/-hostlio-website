@@ -319,28 +319,9 @@ def article(meta, content, faq=None):
             "trail":[("Blog",U("blog")),(meta["title"],U(meta["key"]))],"body":body,"schema":[art],"faq":faq or []}
 
 def post_ai():
-    c = f'''
-<div class="answer"><p><strong>Respuesta corta:</strong> La mayoría de los mensajes que recibe un hotel son preguntas repetidas (hora de check-in, aparcamiento, traslados, desayuno). Si se las encargas a un asistente de IA entrenado con la información de tu propio hotel, los huéspedes reciben respuesta en segundos y en su idioma. Los descuentos, las quejas y las solicitudes especiales deben quedarse en manos de tu equipo.</p></div>
-<h2>¿Qué preguntas reciben más los hoteles?</h2>
-<p>En los hoteles independientes, la mayoría de los mensajes giran en torno a unos pocos temas:</p>
-<ul><li>Horarios de check-in y check-out, llegada anticipada o salida tardía</li><li>Traslados al aeropuerto y cómo llegar</li><li>Aparcamiento, desayuno, política de mascotas</li><li>Consigna de equipaje, características de la habitación, el barrio</li><li>Cambios en la reserva y solicitudes de factura</li></ul>
-<p>Las respuestas ya existen en el hotel. El problema es darlas en el idioma adecuado y a la hora adecuada.</p>
-<h2>¿Qué debe automatizar la IA y qué no?</h2>
-<p>En una buena configuración, el asistente resuelve las preguntas informativas y deja las decisiones al personal.</p>
-<div class="table-wrap"><table><thead><tr><th>Que responda la IA</th><th>Que lo gestione el personal</th></tr></thead><tbody>
-<tr><td>Horarios, normas, servicios</td><td>Descuentos y negociación de precios</td></tr><tr><td>Cómo llegar, información de traslados</td><td>Quejas y compensaciones</td></tr><tr><td>Venta de traslados y excursiones</td><td>Situaciones médicas o de seguridad</td></tr><tr><td>Recordar a los huéspedes los datos de su reserva</td><td>Solicitudes de grupos y eventos</td></tr></tbody></table></div>
-<h2>Configuración paso a paso</h2>
-<ol><li><strong>Redacta la base de conocimiento de tu hotel.</strong> Horarios, normas, servicios y preguntas frecuentes. Cuanto más clara sea, más coherentes serán las respuestas.</li>
-<li><strong>Conecta tus canales.</strong> Reúne los mensajes de WhatsApp y de las OTAs en una sola bandeja de entrada.</li>
-<li><strong>Empieza en modo de aprobación.</strong> Durante la primera semana, lee y corrige las respuestas antes de que se envíen.</li>
-<li><strong>Define las reglas de traspaso.</strong> Decide qué temas te llegan a ti.</li>
-<li><strong>Pasa al modo automático.</strong> Cuando las respuestas sean coherentes, deja que el asistente gestione por completo las preguntas informativas.</li></ol>
-<h2>Por qué importan las respuestas en varios idiomas</h2>
-<p>Los huéspedes que escriben en su propio idioma dan más detalles y confían más en la respuesta. Un asistente que responde en más de 30 idiomas genera esa confianza aunque nadie en recepción hable el idioma, y tú sigues leyendo la conversación en el tuyo.</p>
-<h2>Cómo funciona en Hostlio Pro</h2>
-<p>El asistente de IA de Hostlio Pro, <a href="{U("ai")}">Lio</a>, usa la información de tu hotel y los datos de las reservas para responder a mensajes de WhatsApp y de las OTAs (Booking.com, Airbnb, Expedia) en más de 30 idiomas. Los planes incluyen entre ⟦quota:starter⟧ y ⟦quota:growth⟧ mensajes de IA al mes; consulta la <a href="{U("pricing")}">página de precios</a> para más detalles.</p>'''
-    faq = [("¿Puede la IA dar información incorrecta a los huéspedes?", "El riesgo es mínimo cuando el asistente solo trabaja con la información que proporciona el hotel y pasa al personal las preguntas dudosas. Se recomienda empezar en modo de aprobación."),
-           ("¿Sabrán los huéspedes que hablan con una IA?", "Las respuestas se redactan en nombre del hotel y con su tono. Por transparencia, el hotel puede indicar en el mensaje de bienvenida que el asistente es una IA.")]
+    # 12 Ekim 2026: 6 dilde genişletildi (rehber_ai_yanit / ai_yanit_<dil>.py)
+    import rehber_ai_yanit
+    c, faq = rehber_ai_yanit.get(L, U)
     return article(next(p for p in POSTS if p["key"]=="post-ai"), c, faq)
 
 def post_pms():

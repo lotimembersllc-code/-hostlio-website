@@ -317,28 +317,8 @@ def article(meta, content, faq=None):
             "trail":[("Blog",U("blog")),(meta["title"],U(meta["key"]))],"body":body,"schema":[art],"faq":faq or []}
 
 def post_ai():
-    c = f'''
-<div class="answer"><p><strong>Short answer:</strong> Most hotel messages are repeat questions (check-in time, parking, transfers, breakfast). Handing them to an AI assistant trained on your hotel's own information gets guests an answer in seconds, in their language. Discounts, complaints and special requests should stay with your staff.</p></div>
-<h2>Which questions do hotels get most?</h2>
-<p>At independent hotels, most messages cluster around a few topics:</p>
-<ul><li>Check-in and check-out times, early arrival or late departure</li><li>Airport transfers and getting there</li><li>Parking, breakfast, pet policy</li><li>Luggage storage, room features, the neighbourhood</li><li>Booking changes and invoice requests</li></ul>
-<p>The answers already exist at the hotel. The problem is giving them in the right language at the right hour.</p>
-<h2>What should AI automate, and what shouldn't it?</h2>
-<p>In a good setup the assistant closes information questions and hands decisions to staff.</p>
-<div class="table-wrap"><table><thead><tr><th>Let AI answer</th><th>Hand to staff</th></tr></thead><tbody>
-<tr><td>Times, rules, amenities</td><td>Discounts and price negotiation</td></tr><tr><td>Directions, transfer information</td><td>Complaints and compensation</td></tr><tr><td>Transfer and tour sales</td><td>Medical or safety situations</td></tr><tr><td>Reminding guests of booking details</td><td>Group and event requests</td></tr></tbody></table></div>
-<h2>Step-by-step setup</h2>
-<ol><li><strong>Write your hotel knowledge base.</strong> Times, rules, amenities and FAQs. The clearer it is, the more consistent the answers.</li>
-<li><strong>Connect your channels.</strong> Bring WhatsApp and OTA inbox messages into one inbox.</li>
-<li><strong>Start in approval mode.</strong> For the first week, read and correct replies before they go out.</li>
-<li><strong>Set handover rules.</strong> Define which topics come to you.</li>
-<li><strong>Switch to automatic.</strong> Once replies are consistent, let the assistant handle information questions fully.</li></ol>
-<h2>Why multilingual replies matter</h2>
-<p>Guests who write in their own language share more detail and trust the answer more. An assistant that replies in 30+ languages builds that trust even when nobody at reception speaks the language, and you still read the conversation in yours.</p>
-<h2>How it works in Hostlio Pro</h2>
-<p>Hostlio Pro's AI assistant <a href="{U("ai")}">Lio</a> uses your hotel information and reservation data to answer WhatsApp and OTA inbox messages (Booking.com, Airbnb, Expedia) in 30+ languages. Plans include between ⟦quota:starter⟧ and ⟦quota:growth⟧ AI messages a month; see the <a href="{U("pricing")}">pricing page</a> for details.</p>'''
-    faq = [("Can AI give guests wrong information?", "The risk is minimal when the assistant only works from information the hotel provides and hands uncertain questions to staff. Starting in approval mode is recommended."),
-           ("Will guests know they're talking to AI?", "Replies are written in the hotel's name and tone. For transparency, hotels can mention in the welcome message that the assistant is AI.")]
+    import rehber_ai_yanit
+    c, faq = rehber_ai_yanit.get(L, U)
     return article(next(p for p in POSTS if p["key"]=="post-ai"), c, faq)
 
 def post_pms():

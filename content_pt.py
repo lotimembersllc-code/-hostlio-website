@@ -319,28 +319,9 @@ def article(meta, content, faq=None):
             "trail":[("Blog",U("blog")),(meta["title"],U(meta["key"]))],"body":body,"schema":[art],"faq":faq or []}
 
 def post_ai():
-    c = f'''
-<div class="answer"><p><strong>Resposta curta:</strong> A maioria das mensagens que um hotel recebe são perguntas repetidas (horário de check-in, estacionamento, transfers, café da manhã). Ao entregá-las a uma assistente de IA treinada com as informações do próprio hotel, os hóspedes recebem resposta em segundos, no idioma deles. Descontos, reclamações e pedidos especiais devem continuar com a sua equipe.</p></div>
-<h2>Quais são as perguntas mais comuns nos hotéis?</h2>
-<p>Em hotéis independentes, a maioria das mensagens gira em torno de poucos assuntos:</p>
-<ul><li>Horários de check-in e check-out, chegada antecipada ou saída tardia</li><li>Transfers do aeroporto e como chegar</li><li>Estacionamento, café da manhã, política para pets</li><li>Guarda-volumes, características dos quartos, a região</li><li>Alterações de reserva e pedidos de nota fiscal</li></ul>
-<p>As respostas já existem no hotel. O problema é dá-las no idioma certo e na hora certa.</p>
-<h2>O que a IA deve automatizar e o que não deve?</h2>
-<p>Em uma boa configuração, a assistente resolve as perguntas de informação e repassa as decisões para a equipe.</p>
-<div class="table-wrap"><table><thead><tr><th>Deixe a IA responder</th><th>Repasse para a equipe</th></tr></thead><tbody>
-<tr><td>Horários, regras, comodidades</td><td>Descontos e negociação de preço</td></tr><tr><td>Como chegar, informações de transfer</td><td>Reclamações e compensações</td></tr><tr><td>Venda de transfers e passeios</td><td>Situações médicas ou de segurança</td></tr><tr><td>Lembrar os hóspedes dos detalhes da reserva</td><td>Pedidos de grupos e eventos</td></tr></tbody></table></div>
-<h2>Configuração passo a passo</h2>
-<ol><li><strong>Escreva a base de conhecimento do hotel.</strong> Horários, regras, comodidades e perguntas frequentes. Quanto mais clara, mais consistentes as respostas.</li>
-<li><strong>Conecte os seus canais.</strong> Reúna as mensagens do WhatsApp e das OTAs (Booking.com, Airbnb, Expedia) em uma só caixa de entrada.</li>
-<li><strong>Comece no modo de aprovação.</strong> Na primeira semana, leia e corrija as respostas antes do envio.</li>
-<li><strong>Defina regras de repasse.</strong> Determine quais assuntos chegam até você.</li>
-<li><strong>Passe para o modo automático.</strong> Quando as respostas estiverem consistentes, deixe a assistente cuidar totalmente das perguntas de informação.</li></ol>
-<h2>Por que respostas em vários idiomas importam</h2>
-<p>Hóspedes que escrevem no próprio idioma compartilham mais detalhes e confiam mais na resposta. Uma assistente que responde em mais de 30 idiomas cria essa confiança mesmo quando ninguém na recepção fala o idioma, e você continua lendo a conversa no seu.</p>
-<h2>Como funciona no Hostlio Pro</h2>
-<p>O assistente de IA do Hostlio Pro, o <a href="{U("ai")}">Lio</a>, usa as informações do seu hotel e os dados das reservas para responder a mensagens do WhatsApp e das OTAs (Booking.com, Airbnb, Expedia) em mais de 30 idiomas. Os planos incluem de ⟦quota:starter⟧ a ⟦quota:growth⟧ mensagens de IA por mês; veja os detalhes na <a href="{U("pricing")}">página de preços</a>.</p>'''
-    faq = [("A IA pode dar informações erradas aos hóspedes?", "O risco é mínimo quando a assistente trabalha apenas com as informações fornecidas pelo hotel e repassa as perguntas duvidosas para a equipe. Recomenda-se começar no modo de aprovação."),
-           ("Os hóspedes vão saber que estão falando com uma IA?", "As respostas são escritas em nome do hotel e no tom dele. Por transparência, o hotel pode informar na mensagem de boas-vindas que a assistente é uma IA.")]
+    # 12 Ekim 2026: 6 dilde genişletildi (rehber_ai_yanit / ai_yanit_<dil>.py)
+    import rehber_ai_yanit
+    c, faq = rehber_ai_yanit.get(L, U)
     return article(next(p for p in POSTS if p["key"]=="post-ai"), c, faq)
 
 def post_pms():

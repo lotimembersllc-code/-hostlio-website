@@ -1181,63 +1181,133 @@ URL: https://hostliopro.com/tr/blog/otel-misafir-mesajlarini-yapay-zeka-ile-yani
 ## Misafir mesajlarını yapay zekâ ile yanıtlamak: pratik rehber
 Yazan: Hostlio Pro ürün ekibi , otel yazılımı geliştiren ekip. Yayın: 18 Eylül 2026 , güncelleme: 23 Eylül 2026
 
-Kısa cevap: Otel mesajlarının büyük kısmı tekrar eden sorulardır (check-in saati, otopark, transfer, kahvaltı). Bu soruları otelin kendi bilgileriyle eğitilmiş bir yapay zekâ asistanına bırakmak, misafire saniyeler içinde kendi dilinde cevap verir; indirim, şikâyet ve özel talepler ise personelde kalmalıdır.
+Kısa cevap: Bir otele gelen mesajların çoğu aynı on, on iki sorudur: giriş-çıkış saati, otopark, kahvaltı, transfer, bagaj, Wi-Fi. Yalnızca otelin kendi bilgilerini kullanan bir yapay zekâ asistanı bu soruları saniyeler içinde, misafirin dilinde ve gecenin her saatinde cevaplayabilir. Kararlar sizde kalır: indirim, şikâyet, iade, istisnalar ve emin olunmayan her şey. İşe onay moduyla başlayın, asistanın işaretlediği eksik bilgileri tamamlayın, sonra bilgi sorularını kendi başına cevaplamasına izin verin.
 
 İçindekiler
 
-- Otellere en çok hangi sorular geliyor?
-- Yapay zekâ neyi otomatikleştirmeli, neyi otomatikleştirmemeli?
-- Adım adım kurulum
-- Çok dilli iletişim neden önemli?
+- Misafirler gerçekte ne soruyor?
+- 10 tipik mesaj ve yapay zekânın doğru cevabı
+- Asistanın bilmesi gerekenler
+- Beş adımda kurulum
+- WhatsApp ile OTA gelen kutuları aynı değildir
+- Misafirin dilinde cevap
+- İşe yarayıp yaramadığını nasıl anlarsınız?
+- Sık yapılan hatalar
 - Hostlio Pro'da nasıl çalışır?
 
-## Otellere en çok hangi sorular geliyor?
+## Misafirler gerçekte ne soruyor?
 
-Bağımsız otellerde gelen mesajların çoğu birkaç konu etrafında toplanır:
+Bağımsız otellerde ve pansiyonlarda aynı konular her gün WhatsApp'ta ve Booking.com, Airbnb, Expedia gelen kutularında tekrar eder. Varıştan önce ulaşım ve giriş saati, konaklama sırasında kahvaltı, Wi-Fi ve çevre, çıkıştan sonra fatura ve unutulan eşyalar sorulur. Cevaplar otelinizde zaten var. Sorun zamanlama ve dildir: Gece 23:40'ta Almanca gelen bir soru sabaha kalır, misafir de sizin satabileceğiniz transfer yerine kendi taksisini ayarlar.
 
-- Check-in ve check-out saatleri, erken giriş ya da geç çıkış
-- Havalimanı transferi ve ulaşım
-- Otopark, kahvaltı, evcil hayvan kuralları
-- Bagaj bırakma, oda özellikleri, yakın çevre
-- Rezervasyon değişikliği ve fatura talepleri
-Bu soruların cevabı otelde zaten yazılıdır; sorun, cevabın doğru dilde ve doğru saatte verilmesidir.
+## 10 tipik mesaj ve yapay zekânın doğru cevabı
 
-## Yapay zekâ neyi otomatikleştirmeli, neyi otomatikleştirmemeli?
+Misafir mesajı Doğru yaklaşım
 
-İyi bir kurulumda asistan bilgi sorularını kapatır, karar gerektiren konuları personele devreder.
+"Saat 23:00'te iniyoruz, yine de giriş yapabilir miyiz?" Geç giriş kuralınızı ve anahtarın nasıl alınacağını söyler; varsa havalimanı transferini önerir.
 
-AI yanıtlasın Personele devredilsin
+"Otopark var mı?" Ücretli mi ücretsiz mi, otelde mi yakında mı, fiyatı ve yer ayırtmak gerekip gerekmediği.
 
-Saatler, kurallar, olanaklar İndirim ve fiyat pazarlığı
-Yol tarifi, transfer bilgisi Şikâyet ve tazminat talepleri
-Transfer ve tur satışı Tıbbi veya güvenlikle ilgili durumlar
-Rezervasyon detaylarını hatırlatma Grup ve özel etkinlik talepleri
+"Kahvaltı saat kaçta?" Saatler, nerede servis edildiği ve fiyatlarına dahil olup olmadığı.
 
-## Adım adım kurulum
+"Çıkıştan sonra bavullarımızı bırakabilir miyiz?" Evet ya da hayır, saat kaça kadar, ücreti varsa.
 
-- Otel bilgi tabanını yazın. Saatler, kurallar, olanaklar ve sık sorulan sorular. Ne kadar net olursa cevaplar o kadar tutarlı olur.
+"Köpek kabul ediyor musunuz?" Evcil hayvan kuralınız, boyut sınırı ve ek ücret.
 
-- Kanalları bağlayın. WhatsApp ve OTA gelen kutusu mesajlarını tek gelen kutusunda toplayın.
+"Havalimanından nasıl gelebiliriz?" Mesafe, taksi süresi ve yaklaşık ücret, toplu taşıma ve transfer teklifiniz.
 
-- Onay modunda başlayın. İlk hafta asistanın cevaplarını göndermeden önce okuyun ve düzeltin.
+"Erken giriş yapabilir miyiz?" Kuralı anlatır; doluluğa ya da ücrete bağlıysa onay için personele devreder.
 
-- Devir kurallarını belirleyin. Hangi konuların size geleceğini tanımlayın.
+"Bize daha iyi bir fiyat verebilir misiniz?" Personele devreder. İndirim bilgi değil, karardır.
 
-- Otomatik moda geçin. Cevaplar tutarlı hale geldiğinde bilgi sorularını tamamen asistana bırakın.
+"Klima çalışmıyor." Durumu kabul eder, ekibe haber verildiğini söyler ve hemen personele devreder.
 
-## Çok dilli iletişim neden önemli?
+"Faturayı şirketimize kesebilir misiniz?" Süreciniz izin veriyorsa şirket bilgilerini toplar, sonra personele devreder.
 
-Misafir kendi dilinde yazdığında daha fazla detay verir ve cevaba daha çok güvenir. 30+ dilde yanıt veren bir asistan, resepsiyonda o dili bilen biri olmasa da bu güveni sağlar. Yazışmayı siz kendi dilinizde okursunuz.
+Kural basit: Cevap yazılı bir bilgiyse asistan cevaplar; karar, para ya da empati gerektiriyorsa bir insan cevaplar.
+
+## Asistanın bilmesi gerekenler
+
+Bir yapay zekâ asistanı, arkasındaki bilgi kadar iyidir. Açmadan önce şunları yazın:
+
+- Giriş ve çıkış saatleri, erken giriş ve geç çıkış kuralları
+
+- Geç gelen misafirin nasıl gireceği (resepsiyon saatleri, anahtar kutusu, kapı kodu süreci)
+
+- Otopark, kahvaltı, Wi-Fi, evcil hayvan, sigara, çocuklar ve ilave yatak
+
+- Havalimanı ve otogara mesafe, taksi süresi, transfer fiyatlarınız
+
+- Oda tipleri ve her odada neler olduğu
+
+- Koşullarınızda yazdığı şekliyle iptal ve ödeme kuralları
+
+- Yakındaki restoranlar, plajlar, gezilecek yerler ve eczaneler
+
+- Sattığınız ek hizmetler: transfer, tur, geç çıkış
+Bunları yeni başlayan bir resepsiyon görevlisine anlatır gibi yazın. Kısa ve somut cümleler, tanıtım dilinden daha iyi sonuç verir.
+
+## Beş adımda kurulum
+
+- Otel bilgilerinizi doldurun. Yukarıdaki listeyi kullanın; hiçbir şeyi "resepsiyona sorun" diye bırakmayın.
+
+- Kanallarınızı tek gelen kutusunda toplayın. WhatsApp ve kullandığınız OTA gelen kutuları; her konuşma kendi rezervasyonuyla eşleşsin.
+
+- Onay moduyla başlayın. İlk günlerde her cevabı gönderilmeden önce okuyun, gerekirse ifadeyi düzeltin.
+
+- Devretme kurallarını belirleyin. Hangi konuların her zaman size geleceğine karar verin: indirim, şikâyet, iade, grup talepleri, sağlık ve güvenlikle ilgili her şey.
+
+- Kendi başına cevaplamasına izin verin. Cevaplar tutarlı hâle gelince bilgi sorularını otomatik kapatmasına izin verin, seçtiğiniz konularda taslak olarak bekletin.
+
+## WhatsApp ile OTA gelen kutuları aynı değildir
+
+WhatsApp'ta misafirle doğrudan konuşursunuz; bağlantı, telefon numarası ve kendi web sitenizi paylaşabilirsiniz. WhatsApp'ın da kendi kuralları vardır: Bir işletme, misafirin son mesajından sonraki 24 saat içinde serbestçe cevap verebilir; bu sürenin dışında onaylı bir mesaj şablonu gerekir. Booking.com ve Airbnb gibi OTA gelen kutularının neyin paylaşılabileceğine dair kendi kuralları vardır ve rezervasyon platformları genelde rezervasyonla ilgili iletişimin platformda kalmasını bekler. İyi bir asistan cevabını kanala göre uyarlar. WhatsApp tarafı için otel WhatsApp asistanı sayfamıza, hazır şablonlar için Booking.com mesajlarına otomatik cevap rehberine bakabilirsiniz.
+
+## Misafirin dilinde cevap
+
+Kendi dilinde yazabilen misafir daha net sorar ve cevaba daha çok güvenir. 30'dan fazla dilde cevap verebilen bir asistan sayesinde Japon ya da Polonyalı bir misafir de İngiliz misafirle aynı kalitede cevap alır, resepsiyonda o dili konuşan kimse olmasa bile. Siz yine de her konuşmayı kendi dilinizde okuyabilmelisiniz; böylece misafire ne söz verildiğini her zaman bilirsiniz.
+
+## İşe yarayıp yaramadığını nasıl anlarsınız?
+
+- Cevap süresi: Misafirin ilk cevabı ne kadar beklediği, özellikle gece.
+
+- Otomatik kapanan oran: Kaç konuşmanın personele gerek kalmadan kapandığı.
+
+- Devredilenler: Hangi konuların hâlâ size geldiği ve bazılarının daha iyi bilgiyle cevaplanıp cevaplanamayacağı.
+
+- Eksik bilgi: Asistanın cevaplayamadığı sorular, kurulumunuzdaki boşlukları gösterir.
+
+- Satılan ek hizmetler: Doğru anda önerilen transfer ve turlar.
+
+## Sık yapılan hatalar
+
+- Belirsiz otel bilgisi. "Kahvaltı mevcuttur" belirsiz cevap getirir; "07:30–10:30 arası bahçede, tüm fiyatlara dahil" getirmez.
+
+- Pazarlığı yapay zekâya bırakmak. Fiyat, indirim ve tazminat sizin işinizdir.
+
+- Onay modunu atlamak. Birkaç gün taslak okumak, sizin kullanmayacağınız ifadeleri yakalar.
+
+- İki ayrı sistem. WhatsApp bir telefonda, OTA mesajları başka bir sekmedeyse kimse resmin tamamını görmez.
+
+- Hiç gözden geçirmemek. Devredilen konulara haftada bir bakın ve eksik olanı ekleyin.
 
 ## Hostlio Pro'da nasıl çalışır?
 
-Hostlio Pro'nun AI asistanı Lio , otel bilgilerinizi ve rezervasyon verilerini kullanarak WhatsApp ve OTA gelen kutusu mesajlarını (Booking.com, Airbnb, Expedia) 30+ dilde yanıtlar. Planlara göre aylık 1.000 ile 12.000 AI mesajı arasında kota bulunur; detaylar fiyatlandırma sayfasında .
+Hostlio Pro'nun asistanı Lio , misafirlere her planda WhatsApp'tan, Pro ve Growth'ta ayrıca Booking.com, Airbnb ve Expedia gelen kutularından cevap verir. Yalnızca otel bilgilerinizi ve misafirin rezervasyonunu kullanır, misafirin dilinde (30'dan fazla dil) cevaplar ve cevabının çevirisini size kendi dilinizde gösterir; sizin yazdığınız cevaplar ise yazdığınız gibi gönderilir. Hangi konuları kendi başına kapatacağını, hangilerini size devredeceğini siz seçersiniz; ilk günlerde her cevabı onaylayabilirsiniz. Bir soruyu cevaplayamazsa kurulumunuzdaki eksik bilgiyi işaretler. Kurulum sırasında Lio'yu canlıya almadan önce kendi sorularınızla deneyebilirsiniz. Lio bir rezervasyonu asla kendi başına onaylamaz: Pro ve Growth'ta rezervasyon taleplerini toplar, siz onaylarsınız. Planlarda aylık 1.000 ile 12.000 arasında AI mesajı vardır; %80 ve %100'de uyarılırsınız, otomatik cevaplar yaklaşık %110'da durur.
 
 Q: Yapay zekâ misafire yanlış bilgi verebilir mi?
-A: Asistan yalnızca otelin girdiği bilgilerle çalıştığında ve emin olmadığı sorularda personele devrettiğinde bu risk en aza iner. İlk günlerde onay modunda kullanmak önerilir.
+A: Asistan yalnızca otelin verdiği bilgileri kullanır ve emin olmadığı soruları personele devrederse risk düşüktür. Onay moduyla başlayın ve işaretlediği eksikleri tamamlayın.
 
-Q: Misafirler yapay zekâyla konuştuğunu anlar mı?
-A: Cevaplar otelin adına ve tonunda yazılır. Şeffaflık için otel, asistanın bir AI olduğunu karşılama mesajında belirtebilir.
+Q: Hangi mesajlar insanda kalmalı?
+A: İndirim ve fiyat pazarlığı, şikâyet ve tazminat, iadeler, grup ve etkinlik talepleri, sağlık ya da güvenlikle ilgili her şey.
+
+Q: Misafir yapay zekâyla konuştuğunu anlar mı?
+A: Cevaplar otelin adıyla ve üslubuyla yazılır. Şeffaflık için karşılama mesajında, resepsiyon saatleri dışında bir AI asistanın cevap verdiğini belirtebilirsiniz.
+
+Q: Booking.com ve Airbnb mesajlarında da çalışır mı?
+A: Hostlio Pro'da evet, Pro ve Growth planlarında. WhatsApp her planda dahildir.
+
+Q: Ücreti ne kadar?
+A: Lio, Hostlio Pro'nun her planına dahildir: Starter 49 $, Pro 89 $ ve Growth 149 $ / ay; aylık 1.000 ile 12.000 arasında AI mesajı.
 
 ---
 # Otel programı nasıl seçilir? Küçük oteller için 7 kriter (2026)
@@ -4647,63 +4717,135 @@ URL: https://hostliopro.com/en/blog/answering-hotel-guest-messages-with-ai/
 ## Answering hotel guest messages with AI: a practical guide
 By the Hostlio Pro product team , the people who build Hostlio Pro. Published September 18, 2026 , updated September 23, 2026
 
-Short answer: Most hotel messages are repeat questions (check-in time, parking, transfers, breakfast). Handing them to an AI assistant trained on your hotel's own information gets guests an answer in seconds, in their language. Discounts, complaints and special requests should stay with your staff.
+Short answer: most messages a hotel receives are the same dozen questions: check-in times, parking, breakfast, transfers, luggage, Wi-Fi. An AI assistant that only uses your hotel's own information can answer them in seconds, in the guest's language, at any hour. Decisions stay with you: discounts, complaints, refunds, exceptions and anything you are not sure about. Start in approval mode, fill the gaps the assistant flags, then let it answer information questions on its own.
 
 Contents
 
-- Which questions do hotels get most?
-- What should AI automate, and what shouldn't it?
-- Step-by-step setup
-- Why multilingual replies matter
+- What guests actually ask
+- 10 typical messages and how AI should handle them
+- What the assistant needs to know
+- Setting it up in five steps
+- WhatsApp and OTA inboxes are not the same
+- Replying in the guest's language
+- How to tell if it is working
+- Common mistakes
 - How it works in Hostlio Pro
 
-## Which questions do hotels get most?
+## What guests actually ask
 
-At independent hotels, most messages cluster around a few topics:
+At independent hotels and guesthouses the same topics come back every day, on WhatsApp and in the Booking.com, Airbnb and Expedia inboxes. Before arrival guests ask about getting there and arrival times; during the stay about breakfast, Wi-Fi and the area; after check-out about invoices and lost items. The answers already exist at your property. What goes wrong is timing and language: a question sent at 23:40 in German waits until morning, and the guest books a taxi you could have sold them.
 
-- Check-in and check-out times, early arrival or late departure
-- Airport transfers and getting there
-- Parking, breakfast, pet policy
-- Luggage storage, room features, the neighbourhood
-- Booking changes and invoice requests
-The answers already exist at the hotel. The problem is giving them in the right language at the right hour.
+## 10 typical messages and how AI should handle them
 
-## What should AI automate, and what shouldn't it?
+Guest message Good AI handling
 
-In a good setup the assistant closes information questions and hands decisions to staff.
+"We land at 23:00, can we still check in?" Answer with your late check-in rule and how to get the key; offer the airport transfer if you have one.
 
-Let AI answer Hand to staff
+"Is there parking?" Free or paid, on site or nearby, price and whether to reserve.
 
-Times, rules, amenities Discounts and price negotiation
-Directions, transfer information Complaints and compensation
-Transfer and tour sales Medical or safety situations
-Reminding guests of booking details Group and event requests
+"What time is breakfast?" Hours, where it is served, and whether it is included in their rate.
 
-## Step-by-step setup
+"Can we leave our bags after check-out?" Yes or no, until what time, any fee.
 
-- Write your hotel knowledge base. Times, rules, amenities and FAQs. The clearer it is, the more consistent the answers.
+"Do you allow dogs?" Your pet policy, size limits and any extra charge.
 
-- Connect your channels. Bring WhatsApp and OTA inbox messages into one inbox.
+"How do we get from the airport?" Distance, taxi time and price range, public transport, your transfer offer.
 
-- Start in approval mode. For the first week, read and correct replies before they go out.
+"Can we check in early?" Explain the rule; if it depends on availability or a fee, hand it to staff to confirm.
 
-- Set handover rules. Define which topics come to you.
+"Can you give us a better price?" Hand to staff. Discounts are a decision, not information.
 
-- Switch to automatic. Once replies are consistent, let the assistant handle information questions fully.
+"The air conditioning doesn't work." Acknowledge, tell the guest the team has been alerted, and hand it to staff immediately.
 
-## Why multilingual replies matter
+"Please send the invoice to our company." Collect the company details if your process allows, then hand to staff.
 
-Guests who write in their own language share more detail and trust the answer more. An assistant that replies in 30+ languages builds that trust even when nobody at reception speaks the language, and you still read the conversation in yours.
+The pattern is simple: if the answer is a fact you have written down, the assistant replies; if it needs a decision, money or empathy, a person does.
+
+## What the assistant needs to know
+
+An AI assistant is only as good as the information behind it. Before switching it on, write down:
+
+- Check-in and check-out times, early arrival and late departure rules
+
+- How late arrivals get in (reception hours, key box, door code process)
+
+- Parking, breakfast, Wi-Fi, pets, smoking, children and extra beds
+
+- Airport and station distances, taxi times, your transfer prices
+
+- Room types and what is in each room
+
+- Cancellation and payment rules as stated in your terms
+
+- Nearby restaurants, beaches, sights and pharmacies
+
+- Extras you sell: transfers, tours, late check-out
+Write it the way you would explain it to a new receptionist. Short, concrete sentences work better than marketing copy.
+
+## Setting it up in five steps
+
+- Fill in your hotel information. Use the list above; leave nothing as "ask reception".
+
+- Bring your channels into one inbox. WhatsApp plus the OTA inboxes you use, so every conversation is matched to its reservation.
+
+- Start in approval mode. For the first days, read each reply before it is sent and correct the wording where needed.
+
+- Set handover rules. Decide which topics always come to you: discounts, complaints, refunds, group requests, anything medical or about safety.
+
+- Let it answer on its own. Once replies are consistent, let the assistant close information questions automatically and keep the drafts for the topics you chose.
+
+## WhatsApp and OTA inboxes are not the same
+
+On WhatsApp you talk to the guest directly, and you can share links, phone numbers and your own website. WhatsApp also has its own rules: a business can reply freely within 24 hours of the guest's last message, and outside that window it needs an approved message template. OTA inboxes such as Booking.com and Airbnb have their own rules about what you may share, and booking platforms generally expect communication about a booking to stay on the platform. A good assistant adapts its answer to the channel. Our WhatsApp for hotels guide covers the WhatsApp side in detail, and the Booking.com auto-reply guide has ready-made templates.
+
+## Replying in the guest's language
+
+Guests who can write in their own language ask more precisely and trust the answer more. An assistant that replies in 30+ languages means a Japanese or Polish guest gets the same quality of answer as an English one, even when nobody at reception speaks the language. You should still be able to read every conversation in your own language, so you always know what was promised.
+
+## How to tell if it is working
+
+- Response time: how long guests wait for a first answer, especially at night.
+
+- Share answered automatically: how many conversations closed without staff.
+
+- Handovers: which topics still come to you, and whether some could be answered with better information.
+
+- Missing information: questions the assistant could not answer point to gaps in your setup.
+
+- Extras sold: transfers and tours offered at the right moment.
+
+## Common mistakes
+
+- Vague hotel information. "Breakfast is available" leads to vague answers; "07:30–10:30 in the garden, included in all rates" doesn't.
+
+- Letting AI negotiate. Prices, discounts and compensation belong to you.
+
+- Skipping approval mode. A few days of reading drafts catches wording you would not use.
+
+- Two systems. If WhatsApp lives on one phone and OTA messages in another tab, nobody sees the whole picture.
+
+- Never reviewing. Check the handovers once a week and add what was missing.
 
 ## How it works in Hostlio Pro
 
-Hostlio Pro's AI assistant Lio uses your hotel information and reservation data to answer WhatsApp and OTA inbox messages (Booking.com, Airbnb, Expedia) in 30+ languages. Plans include between 1,000 and 12,000 AI messages a month; see the pricing page for details.
+Hostlio Pro's assistant, Lio , replies to guests on WhatsApp in every plan, and in the Booking.com, Airbnb and Expedia inboxes on Pro and Growth. It uses only your hotel information and the guest's reservation, answers in the guest's language (30+ languages) and shows you a translation of its reply in yours; replies you type yourself are sent exactly as written. You choose which topics it closes on its own and which it hands to you, and during the first days you can approve every reply. If it cannot answer a question, it flags the missing information in your setup. During setup you can try Lio with your own questions before going live. Lio never confirms a booking on its own: on Pro and Growth it collects booking requests and you approve them. Plans include 1,000 to 12,000 AI messages a month; you are warned at 80% and 100%, and automatic replies pause at about 110%.
+
+For the bigger picture of what AI can do at the front desk, read the AI front desk guide .
 
 Q: Can AI give guests wrong information?
-A: The risk is minimal when the assistant only works from information the hotel provides and hands uncertain questions to staff. Starting in approval mode is recommended.
+A: The risk is small when the assistant only uses information the hotel provides and hands uncertain questions to staff. Start in approval mode, and fill in the gaps it flags.
+
+Q: Which messages should stay with a person?
+A: Discounts and price negotiation, complaints and compensation, refunds, group and event requests, and anything medical or about safety.
 
 Q: Will guests know they're talking to AI?
-A: Replies are written in the hotel's name and tone. For transparency, hotels can mention in the welcome message that the assistant is AI.
+A: Replies are written in the hotel's name and tone. For transparency, you can mention in your welcome message that an AI assistant answers outside reception hours.
+
+Q: Does it work with Booking.com and Airbnb messages?
+A: In Hostlio Pro, yes, on the Pro and Growth plans. WhatsApp is included in every plan.
+
+Q: How much does it cost?
+A: Lio is included in every Hostlio Pro plan: Starter $49, Pro $89 and Growth $149 a month, with 1,000 to 12,000 AI messages a month.
 
 ---
 # PMS for small hotels: how to choose (7 criteria, 2026)
@@ -8387,63 +8529,133 @@ URL: https://hostliopro.com/es/blog/responder-mensajes-de-huespedes-con-ia/
 ## Responder a los huéspedes del hotel con IA: guía práctica
 Por el equipo de producto de Hostlio Pro , las personas que desarrollan Hostlio Pro. Publicado el 18 de septiembre de 2026 , actualizado el 23 de septiembre de 2026
 
-Respuesta corta: La mayoría de los mensajes que recibe un hotel son preguntas repetidas (hora de check-in, aparcamiento, traslados, desayuno). Si se las encargas a un asistente de IA entrenado con la información de tu propio hotel, los huéspedes reciben respuesta en segundos y en su idioma. Los descuentos, las quejas y las solicitudes especiales deben quedarse en manos de tu equipo.
+Respuesta corta: la mayoría de los mensajes que recibe un hotel son siempre las mismas doce preguntas: horarios de check-in, aparcamiento, desayuno, traslados, equipaje, wifi. Un asistente de IA que solo utiliza la información de tu propio alojamiento puede responderlas en segundos, en el idioma del huésped y a cualquier hora. Las decisiones siguen siendo tuyas: descuentos, quejas, reembolsos, excepciones y todo aquello de lo que no estés seguro. Empieza en modo aprobación, completa los huecos que te señale el asistente y después deja que responda solo a las preguntas informativas.
 
 Contenido
 
-- ¿Qué preguntas reciben más los hoteles?
-- ¿Qué debe automatizar la IA y qué no?
-- Configuración paso a paso
-- Por qué importan las respuestas en varios idiomas
+- Qué preguntan realmente los huéspedes
+- 10 mensajes típicos y cómo debería gestionarlos la IA
+- Qué necesita saber el asistente
+- Cómo ponerlo en marcha en cinco pasos
+- WhatsApp y las bandejas de las OTAs no son lo mismo
+- Responder en el idioma del huésped
+- Cómo saber si está funcionando
+- Errores habituales
 - Cómo funciona en Hostlio Pro
 
-## ¿Qué preguntas reciben más los hoteles?
+## Qué preguntan realmente los huéspedes
 
-En los hoteles independientes, la mayoría de los mensajes giran en torno a unos pocos temas:
+En hoteles independientes y hostales, los mismos temas se repiten cada día, por WhatsApp y en las bandejas de Booking.com, Airbnb y Expedia. Antes de llegar, el huésped pregunta cómo llegar y a qué hora puede entrar; durante la estancia, por el desayuno, el wifi y la zona; después del check-out, por la factura y los objetos olvidados. Las respuestas ya existen en tu alojamiento. Lo que falla es el momento y el idioma: una pregunta enviada a las 23:40 en alemán espera hasta la mañana siguiente, y el huésped acaba reservando un taxi que podrías haberle vendido tú.
 
-- Horarios de check-in y check-out, llegada anticipada o salida tardía
-- Traslados al aeropuerto y cómo llegar
-- Aparcamiento, desayuno, política de mascotas
-- Consigna de equipaje, características de la habitación, el barrio
-- Cambios en la reserva y solicitudes de factura
-Las respuestas ya existen en el hotel. El problema es darlas en el idioma adecuado y a la hora adecuada.
+## 10 mensajes típicos y cómo debería gestionarlos la IA
 
-## ¿Qué debe automatizar la IA y qué no?
+Mensaje del huésped Buena respuesta de la IA
 
-En una buena configuración, el asistente resuelve las preguntas informativas y deja las decisiones al personal.
+"Aterrizamos a las 23:00, ¿todavía podemos hacer el check-in?" Responder con tu norma de llegada tardía y cómo recoger la llave; ofrecer el traslado desde el aeropuerto si lo tienes.
 
-Que responda la IA Que lo gestione el personal
+"¿Tenéis aparcamiento?" Gratuito o de pago, en el propio alojamiento o cerca, precio y si hay que reservarlo.
 
-Horarios, normas, servicios Descuentos y negociación de precios
-Cómo llegar, información de traslados Quejas y compensaciones
-Venta de traslados y excursiones Situaciones médicas o de seguridad
-Recordar a los huéspedes los datos de su reserva Solicitudes de grupos y eventos
+"¿A qué hora es el desayuno?" Horario, dónde se sirve y si está incluido en su tarifa.
 
-## Configuración paso a paso
+"¿Podemos dejar las maletas después del check-out?" Sí o no, hasta qué hora y si tiene algún coste.
 
-- Redacta la base de conocimiento de tu hotel. Horarios, normas, servicios y preguntas frecuentes. Cuanto más clara sea, más coherentes serán las respuestas.
+"¿Se admiten perros?" Tu política de mascotas, límites de tamaño y posibles suplementos.
 
-- Conecta tus canales. Reúne los mensajes de WhatsApp y de las OTAs en una sola bandeja de entrada.
+"¿Cómo llegamos desde el aeropuerto?" Distancia, tiempo y precio aproximado del taxi, transporte público y tu oferta de traslado.
 
-- Empieza en modo de aprobación. Durante la primera semana, lee y corrige las respuestas antes de que se envíen.
+"¿Podemos hacer el check-in antes?" Explicar la norma; si depende de la disponibilidad o de un suplemento, pasarlo al equipo para que lo confirme.
 
-- Define las reglas de traspaso. Decide qué temas te llegan a ti.
+"¿Nos podéis hacer un precio mejor?" Pasarlo al equipo. Un descuento es una decisión, no una información.
 
-- Pasa al modo automático. Cuando las respuestas sean coherentes, deja que el asistente gestione por completo las preguntas informativas.
+"El aire acondicionado no funciona." Reconocer el problema, decir al huésped que el equipo ya está avisado y pasarlo al personal de inmediato.
 
-## Por qué importan las respuestas en varios idiomas
+"Por favor, enviad la factura a nombre de nuestra empresa." Recoger los datos fiscales de la empresa si tu proceso lo permite y luego pasarlo al equipo.
 
-Los huéspedes que escriben en su propio idioma dan más detalles y confían más en la respuesta. Un asistente que responde en más de 30 idiomas genera esa confianza aunque nadie en recepción hable el idioma, y tú sigues leyendo la conversación en el tuyo.
+La regla es sencilla: si la respuesta es un dato que tienes por escrito, responde el asistente; si hace falta una decisión, dinero o empatía, responde una persona.
+
+## Qué necesita saber el asistente
+
+Un asistente de IA es tan bueno como la información que tiene detrás. Antes de activarlo, deja por escrito:
+
+- Horarios de check-in y check-out, y las normas de llegada anticipada y salida tardía
+
+- Cómo entran quienes llegan tarde (horario de recepción, caja de llaves, proceso del código de la puerta)
+
+- Aparcamiento, desayuno, wifi, mascotas, tabaco, niños y camas supletorias
+
+- Distancias al aeropuerto y a la estación, tiempos en taxi y precios de tus traslados
+
+- Tipos de habitación y qué incluye cada una
+
+- Normas de cancelación y pago tal como figuran en tus condiciones
+
+- Restaurantes, playas, lugares de interés y farmacias cercanos
+
+- Los extras que vendes: traslados, excursiones, salida tardía
+Escríbelo como se lo explicarías a un recepcionista nuevo. Las frases cortas y concretas funcionan mejor que los textos de marketing.
+
+## Cómo ponerlo en marcha en cinco pasos
+
+- Completa la información de tu hotel. Usa la lista anterior; no dejes nada como "preguntar en recepción".
+
+- Reúne tus canales en una sola bandeja. WhatsApp y las bandejas de las OTAs que uses, para que cada conversación quede vinculada a su reserva.
+
+- Empieza en modo aprobación. Los primeros días, lee cada respuesta antes de que se envíe y corrige la redacción cuando haga falta.
+
+- Define las reglas de traspaso. Decide qué temas te llegan siempre a ti: descuentos, quejas, reembolsos, solicitudes de grupos y cualquier asunto médico o de seguridad.
+
+- Deja que responda solo. Cuando las respuestas sean coherentes, deja que el asistente cierre automáticamente las preguntas informativas y conserva los borradores para los temas que hayas elegido.
+
+## WhatsApp y las bandejas de las OTAs no son lo mismo
+
+En WhatsApp hablas directamente con el huésped y puedes compartir enlaces, números de teléfono y tu propia web. WhatsApp también tiene sus propias reglas: una empresa puede responder libremente durante las 24 horas siguientes al último mensaje del huésped y, fuera de esa ventana, necesita una plantilla de mensaje aprobada. Las bandejas de las OTAs, como Booking.com y Airbnb, tienen sus propias normas sobre lo que puedes compartir, y las plataformas de reservas suelen esperar que la comunicación sobre una reserva se mantenga dentro de la plataforma. Un buen asistente adapta su respuesta al canal. Nuestra guía de WhatsApp para hoteles trata en detalle la parte de WhatsApp, y la guía de respuestas automáticas en Booking.com incluye plantillas listas para usar.
+
+## Responder en el idioma del huésped
+
+Cuando el huésped puede escribir en su propio idioma, pregunta con más precisión y confía más en la respuesta. Un asistente que responde en más de 30 idiomas hace que un huésped japonés o polaco reciba una respuesta de la misma calidad que uno inglés, aunque nadie en recepción hable su idioma. Aun así, tú deberías poder leer cada conversación en tu idioma, para saber siempre qué se ha prometido.
+
+## Cómo saber si está funcionando
+
+- Tiempo de respuesta: cuánto esperan los huéspedes la primera respuesta, sobre todo por la noche.
+
+- Porcentaje respondido automáticamente: cuántas conversaciones se cerraron sin intervención del equipo.
+
+- Traspasos: qué temas te siguen llegando y si algunos podrían resolverse con mejor información.
+
+- Información que falta: las preguntas que el asistente no ha sabido responder señalan huecos en tu configuración.
+
+- Extras vendidos: traslados y excursiones ofrecidos en el momento oportuno.
+
+## Errores habituales
+
+- Información del hotel imprecisa. "Hay desayuno" da lugar a respuestas vagas; "de 07:30 a 10:30 en el jardín, incluido en todas las tarifas", no.
+
+- Dejar que la IA negocie. Los precios, los descuentos y las compensaciones son cosa tuya.
+
+- Saltarse el modo aprobación. Unos pocos días leyendo borradores bastan para detectar expresiones que tú no usarías.
+
+- Dos sistemas. Si WhatsApp está en un móvil y los mensajes de las OTAs en otra pestaña, nadie tiene la visión completa.
+
+- No revisar nunca. Repasa los traspasos una vez por semana y añade lo que faltaba.
 
 ## Cómo funciona en Hostlio Pro
 
-El asistente de IA de Hostlio Pro, Lio , usa la información de tu hotel y los datos de las reservas para responder a mensajes de WhatsApp y de las OTAs (Booking.com, Airbnb, Expedia) en más de 30 idiomas. Los planes incluyen entre 1.000 y 12.000 mensajes de IA al mes; consulta la página de precios para más detalles.
+El asistente de Hostlio Pro, Lio , responde a los huéspedes por WhatsApp en todos los planes, y en las bandejas de Booking.com, Airbnb y Expedia en los planes Pro y Growth. Solo utiliza la información de tu hotel y la reserva del huésped, responde en el idioma del huésped (más de 30 idiomas) y te muestra una traducción de su respuesta en el tuyo; las respuestas que escribes tú se envían tal cual. Tú eliges qué temas cierra por su cuenta y cuáles te pasa, y durante los primeros días puedes aprobar cada respuesta. Si no puede responder a una pregunta, te señala la información que falta en tu configuración. Durante la configuración puedes probar a Lio con tus propias preguntas antes de activarlo. Lio nunca confirma una reserva por su cuenta: en Pro y Growth recoge las solicitudes de reserva y tú las apruebas. Los planes incluyen de 1.000 a 12.000 mensajes de IA al mes; recibes un aviso al 80 % y al 100 %, y las respuestas automáticas se pausan hacia el 110 %.
 
-Q: ¿Puede la IA dar información incorrecta a los huéspedes?
-A: El riesgo es mínimo cuando el asistente solo trabaja con la información que proporciona el hotel y pasa al personal las preguntas dudosas. Se recomienda empezar en modo de aprobación.
+Q: ¿Puede la IA dar información errónea a los huéspedes?
+A: El riesgo es pequeño cuando el asistente solo utiliza la información que le da el hotel y pasa al equipo las preguntas dudosas. Empieza en modo aprobación y completa los huecos que te señale.
+
+Q: ¿Qué mensajes deberían quedar en manos de una persona?
+A: Descuentos y negociación de precios, quejas y compensaciones, reembolsos, solicitudes de grupos y eventos, y cualquier asunto médico o de seguridad.
 
 Q: ¿Sabrán los huéspedes que hablan con una IA?
-A: Las respuestas se redactan en nombre del hotel y con su tono. Por transparencia, el hotel puede indicar en el mensaje de bienvenida que el asistente es una IA.
+A: Las respuestas se escriben en nombre del hotel y con su tono. Por transparencia, puedes indicar en tu mensaje de bienvenida que un asistente de IA responde fuera del horario de recepción.
+
+Q: ¿Funciona con los mensajes de Booking.com y Airbnb?
+A: En Hostlio Pro, sí, en los planes Pro y Growth. WhatsApp está incluido en todos los planes.
+
+Q: ¿Cuánto cuesta?
+A: Lio está incluido en todos los planes de Hostlio Pro: Starter 49 $, Pro 89 $ y Growth 149 $ al mes, con entre 1.000 y 12.000 mensajes de IA al mes.
 
 ---
 # Software para hoteles pequeños (PMS): cómo elegir y precios 2026
@@ -11322,63 +11534,133 @@ URL: https://hostliopro.com/it/blog/rispondere-ai-messaggi-degli-ospiti-con-ai/
 ## Rispondere ai messaggi degli ospiti con l'AI: guida pratica
 A cura del team di prodotto Hostlio Pro , le persone che sviluppano Hostlio Pro. Pubblicato il 18 settembre 2026 , aggiornato il 23 settembre 2026
 
-In breve: la maggior parte dei messaggi che riceve un hotel sono domande ricorrenti (orario del check-in, parcheggio, transfer, colazione). Affidarle a un assistente AI addestrato sulle informazioni del tuo hotel permette agli ospiti di ricevere una risposta in pochi secondi, nella loro lingua. Sconti, reclami e richieste speciali dovrebbero restare al tuo staff.
+In breve: la maggior parte dei messaggi che arrivano a un hotel sono sempre le stesse domande: orari di check-in, parcheggio, colazione, transfer, bagagli, Wi-Fi. Un assistente AI che usa solo le informazioni della tua struttura può rispondere in pochi secondi, nella lingua dell'ospite, a qualsiasi ora. Le decisioni restano a te: sconti, reclami, rimborsi, eccezioni e tutto ciò su cui non sei sicuro. Parti con la modalità di approvazione, completa le informazioni che l'assistente segnala come mancanti e poi lascia che risponda da solo alle domande informative.
 
 Indice
 
-- Quali domande ricevono più spesso gli hotel?
-- Cosa deve automatizzare l'AI, e cosa no?
-- Configurazione passo dopo passo
-- Perché le risposte multilingue sono importanti
+- Cosa chiedono davvero gli ospiti
+- 10 messaggi tipici e come dovrebbe gestirli l'AI
+- Cosa deve sapere l'assistente
+- La configurazione in cinque passi
+- WhatsApp e le caselle delle OTA non sono la stessa cosa
+- Rispondere nella lingua dell'ospite
+- Come capire se funziona
+- Errori comuni
 - Come funziona in Hostlio Pro
 
-## Quali domande ricevono più spesso gli hotel?
+## Cosa chiedono davvero gli ospiti
 
-Negli hotel indipendenti, la maggior parte dei messaggi riguarda pochi argomenti:
+Negli hotel indipendenti, nei B&B e nelle case vacanza gli stessi argomenti tornano ogni giorno, su WhatsApp e nelle caselle di Booking.com, Airbnb ed Expedia. Prima dell'arrivo gli ospiti chiedono come arrivare e a che ora possono entrare; durante il soggiorno chiedono di colazione, Wi-Fi e dintorni; dopo il check-out di fatture e oggetti dimenticati. Le risposte esistono già nella tua struttura. Il problema sono i tempi e la lingua: una domanda in tedesco inviata alle 23:40 resta senza risposta fino al mattino, e intanto l'ospite prenota un taxi che avresti potuto vendergli tu.
 
-- Orari di check-in e check-out, arrivo anticipato o partenza posticipata
-- Transfer dall'aeroporto e come arrivare
-- Parcheggio, colazione, animali ammessi
-- Deposito bagagli, caratteristiche delle camere, il quartiere
-- Modifiche alla prenotazione e richieste di fattura
-Le risposte esistono già in hotel. Il problema è darle nella lingua giusta e all'ora giusta.
+## 10 messaggi tipici e come dovrebbe gestirli l'AI
 
-## Cosa deve automatizzare l'AI, e cosa no?
+Messaggio dell'ospite Come dovrebbe rispondere l'AI
 
-In una buona configurazione, l'assistente chiude le domande informative e passa le decisioni allo staff.
+"Atterriamo alle 23:00, possiamo fare comunque il check-in?" Risponde con la tua regola per il check-in tardivo e spiega come ritirare le chiavi; propone il transfer dall'aeroporto, se lo offri.
 
-Lascia rispondere l'AI Passa allo staff
+"C'è un parcheggio?" Gratuito o a pagamento, in struttura o nelle vicinanze, prezzo e se va prenotato.
 
-Orari, regole, servizi Sconti e trattative sul prezzo
-Indicazioni stradali, informazioni sui transfer Reclami e rimborsi
-Vendita di transfer e tour Situazioni mediche o di sicurezza
-Promemoria dei dettagli della prenotazione Richieste per gruppi ed eventi
+"A che ora è la colazione?" Orari, dove viene servita e se è inclusa nella loro tariffa.
 
-## Configurazione passo dopo passo
+"Possiamo lasciare le valigie dopo il check-out?" Sì o no, fino a che ora ed eventuale costo.
 
-- Scrivi la knowledge base del tuo hotel. Orari, regole, servizi e domande frequenti. Più è chiara, più le risposte sono coerenti.
+"Accettate cani?" La tua politica sugli animali, limiti di taglia ed eventuale supplemento.
 
-- Collega i tuoi canali. Riunisci i messaggi di WhatsApp e delle OTA in un'unica casella.
+"Come arriviamo dall'aeroporto?" Distanza, tempi e costo indicativo del taxi, mezzi pubblici, la tua offerta di transfer.
 
-- Parti in modalità approvazione. Per la prima settimana leggi e correggi le risposte prima che vengano inviate.
+"Possiamo fare il check-in prima?" Spiega la regola; se dipende dalla disponibilità o da un supplemento, passa la richiesta allo staff per la conferma.
 
-- Definisci le regole di passaggio. Stabilisci quali argomenti devono arrivare a te.
+"Ci fate un prezzo migliore?" Passa allo staff. Uno sconto è una decisione, non un'informazione.
 
-- Passa alla modalità automatica. Quando le risposte sono coerenti, lascia che l'assistente gestisca completamente le domande informative.
+"L'aria condizionata non funziona." Prende atto del problema, comunica all'ospite che il team è stato avvisato e passa subito la conversazione allo staff.
 
-## Perché le risposte multilingue sono importanti
+"Potete intestare la fattura alla nostra azienda?" Raccoglie i dati aziendali, se la tua procedura lo prevede, poi passa allo staff.
 
-Gli ospiti che scrivono nella propria lingua forniscono più dettagli e si fidano di più della risposta. Un assistente che risponde in oltre 30 lingue crea questa fiducia anche quando alla reception nessuno parla quella lingua, e tu continui a leggere la conversazione nella tua.
+La regola è semplice: se la risposta è un dato che hai messo per iscritto, risponde l'assistente; se serve una decisione, si parla di soldi o ci vuole empatia, risponde una persona.
+
+## Cosa deve sapere l'assistente
+
+Un assistente AI è valido quanto le informazioni su cui si basa. Prima di attivarlo, metti per iscritto:
+
+- Orari di check-in e check-out, regole per arrivi anticipati e partenze posticipate
+
+- Come entra chi arriva tardi (orari della reception, cassetta portachiavi, procedura per il codice della porta)
+
+- Parcheggio, colazione, Wi-Fi, animali, fumo, bambini e letti aggiuntivi
+
+- Distanze da aeroporto e stazione, tempi del taxi, prezzi dei tuoi transfer
+
+- Tipologie di camera e cosa c'è in ciascuna
+
+- Regole di cancellazione e pagamento, come indicate nelle tue condizioni
+
+- Ristoranti, spiagge, attrazioni e farmacie nei dintorni
+
+- Servizi extra che vendi: transfer, escursioni, late check-out
+Scrivilo come lo spiegheresti a un nuovo receptionist. Frasi brevi e concrete funzionano meglio dei testi promozionali.
+
+## La configurazione in cinque passi
+
+- Inserisci le informazioni della struttura. Usa l'elenco qui sopra; non lasciare nulla come "chiedere alla reception".
+
+- Porta i canali in un'unica casella. WhatsApp più le caselle delle OTA che usi, così ogni conversazione è abbinata alla sua prenotazione.
+
+- Parti con la modalità di approvazione. Nei primi giorni leggi ogni risposta prima che venga inviata e correggi la formulazione dove serve.
+
+- Stabilisci le regole di passaggio allo staff. Decidi quali argomenti arrivano sempre a te: sconti, reclami, rimborsi, richieste di gruppi, tutto ciò che riguarda salute o sicurezza.
+
+- Lascialo rispondere da solo. Quando le risposte sono coerenti, lascia che l'assistente chiuda in automatico le domande informative e mantieni le bozze per gli argomenti che hai scelto.
+
+## WhatsApp e le caselle delle OTA non sono la stessa cosa
+
+Su WhatsApp parli direttamente con l'ospite e puoi condividere link, numeri di telefono e il tuo sito. WhatsApp ha però le sue regole: un'azienda può rispondere liberamente entro 24 ore dall'ultimo messaggio dell'ospite, mentre fuori da questa finestra serve un modello di messaggio approvato. Le caselle delle OTA come Booking.com e Airbnb hanno regole proprie su cosa puoi condividere, e in genere le piattaforme di prenotazione si aspettano che la comunicazione su una prenotazione resti sulla piattaforma. Un buon assistente adatta la risposta al canale. La nostra guida a WhatsApp per hotel approfondisce il lato WhatsApp, mentre la guida alle risposte automatiche su Booking.com contiene modelli pronti all'uso.
+
+## Rispondere nella lingua dell'ospite
+
+Chi può scrivere nella propria lingua fa domande più precise e si fida di più della risposta. Con un assistente che risponde in oltre 30 lingue, un ospite giapponese o polacco riceve una risposta della stessa qualità di uno inglese, anche se alla reception nessuno parla quella lingua. Tu, però, devi poter leggere ogni conversazione nella tua lingua, così sai sempre cosa è stato promesso.
+
+## Come capire se funziona
+
+- Tempo di risposta: quanto aspettano gli ospiti la prima risposta, soprattutto di notte.
+
+- Quota di risposte automatiche: quante conversazioni si sono chiuse senza intervento dello staff.
+
+- Passaggi allo staff: quali argomenti arrivano ancora a te e se alcuni si potrebbero gestire con informazioni migliori.
+
+- Informazioni mancanti: le domande a cui l'assistente non ha saputo rispondere indicano le lacune della configurazione.
+
+- Extra venduti: transfer ed escursioni proposti al momento giusto.
+
+## Errori comuni
+
+- Informazioni vaghe sulla struttura. "La colazione è disponibile" porta a risposte vaghe; "07:30–10:30 in giardino, inclusa in tutte le tariffe" no.
+
+- Lasciare che l'AI tratti sul prezzo. Prezzi, sconti e risarcimenti spettano a te.
+
+- Saltare la modalità di approvazione. Qualche giorno di lettura delle bozze fa emergere formulazioni che non useresti mai.
+
+- Due sistemi separati. Se WhatsApp sta su un telefono e i messaggi delle OTA in un'altra scheda, nessuno ha il quadro completo.
+
+- Non ricontrollare mai. Una volta a settimana guarda i passaggi allo staff e aggiungi ciò che mancava.
 
 ## Come funziona in Hostlio Pro
 
-Lio , l'assistente AI di Hostlio Pro, usa le informazioni del tuo hotel e i dati delle prenotazioni per rispondere ai messaggi di WhatsApp e delle OTA (Booking.com, Airbnb, Expedia) in oltre 30 lingue. I piani includono da 1.000 a 12.000 messaggi AI al mese; trovi i dettagli nella pagina dei prezzi .
+L'assistente di Hostlio Pro, Lio , risponde agli ospiti su WhatsApp in tutti i piani e nelle caselle di Booking.com, Airbnb ed Expedia nei piani Pro e Growth. Usa solo le informazioni della tua struttura e la prenotazione dell'ospite, risponde nella lingua dell'ospite (oltre 30 lingue) e ti mostra la traduzione della sua risposta nella tua; le risposte che scrivi tu vengono inviate esattamente come le hai scritte. Scegli tu quali argomenti chiude da solo e quali passa a te, e nei primi giorni puoi approvare ogni risposta. Se non sa rispondere a una domanda, segnala l'informazione mancante nella configurazione. Durante la configurazione puoi provare Lio con le tue domande prima di andare live. Lio non conferma mai una prenotazione da solo: nei piani Pro e Growth raccoglie le richieste di prenotazione e sei tu ad approvarle. I piani includono da 1.000 a 12.000 messaggi AI al mese; ricevi un avviso all'80% e al 100%, e le risposte automatiche si sospendono intorno al 110%.
 
 Q: L'AI può dare informazioni sbagliate agli ospiti?
-A: Il rischio è minimo se l'assistente lavora solo con le informazioni fornite dall'hotel e passa allo staff le domande incerte. È consigliabile iniziare in modalità approvazione.
+A: Il rischio è basso se l'assistente usa solo le informazioni fornite dalla struttura e passa allo staff le domande incerte. Parti con la modalità di approvazione e completa le informazioni che segnala come mancanti.
+
+Q: Quali messaggi devono restare a una persona?
+A: Sconti e trattative sul prezzo, reclami e risarcimenti, rimborsi, richieste di gruppi ed eventi, e tutto ciò che riguarda salute o sicurezza.
 
 Q: Gli ospiti sapranno che stanno parlando con un'AI?
-A: Le risposte sono scritte a nome dell'hotel e con il suo tono. Per trasparenza, l'hotel può indicare nel messaggio di benvenuto che l'assistente è un'AI.
+A: Le risposte sono scritte a nome della struttura e con il suo tono. Per trasparenza puoi indicare nel messaggio di benvenuto che fuori dagli orari della reception risponde un assistente AI.
+
+Q: Funziona con i messaggi di Booking.com e Airbnb?
+A: In Hostlio Pro sì, nei piani Pro e Growth. WhatsApp è incluso in tutti i piani.
+
+Q: Quanto costa?
+A: Lio è incluso in tutti i piani di Hostlio Pro: Starter 49 $, Pro 89 $ e Growth 149 $ al mese, con da 1.000 a 12.000 messaggi AI al mese.
 
 ---
 # Gestionale per piccoli hotel (PMS): come sceglierlo, prezzi 2026
@@ -14318,63 +14600,133 @@ URL: https://hostliopro.com/pt/blog/responder-mensagens-de-hospedes-com-ia/
 ## Como responder às mensagens de hóspedes com IA: guia prático
 Pela equipe de produto do Hostlio Pro , as pessoas que desenvolvem o Hostlio Pro. Publicado em 18 de setembro de 2026 , atualizado em 23 de setembro de 2026
 
-Resposta curta: A maioria das mensagens que um hotel recebe são perguntas repetidas (horário de check-in, estacionamento, transfers, café da manhã). Ao entregá-las a uma assistente de IA treinada com as informações do próprio hotel, os hóspedes recebem resposta em segundos, no idioma deles. Descontos, reclamações e pedidos especiais devem continuar com a sua equipe.
+Resposta curta: a maioria das mensagens que um hotel recebe se resume às mesmas doze perguntas: horário de check-in, estacionamento, café da manhã, transfer, bagagem, Wi-Fi. Um assistente de IA que usa apenas as informações do seu próprio hotel consegue respondê-las em segundos, no idioma do hóspede, a qualquer hora. As decisões continuam com você: descontos, reclamações, reembolsos, exceções e tudo aquilo de que você não tem certeza. Comece no modo de aprovação, preencha as lacunas que o assistente apontar e depois deixe que ele responda sozinho às perguntas de informação.
 
 Índice
 
-- Quais são as perguntas mais comuns nos hotéis?
-- O que a IA deve automatizar e o que não deve?
-- Configuração passo a passo
-- Por que respostas em vários idiomas importam
+- O que os hóspedes realmente perguntam
+- 10 mensagens típicas e como a IA deve tratá-las
+- O que o assistente precisa saber
+- Configuração em cinco passos
+- WhatsApp e caixas de entrada das OTAs não são a mesma coisa
+- Respondendo no idioma do hóspede
+- Como saber se está funcionando
+- Erros comuns
 - Como funciona no Hostlio Pro
 
-## Quais são as perguntas mais comuns nos hotéis?
+## O que os hóspedes realmente perguntam
 
-Em hotéis independentes, a maioria das mensagens gira em torno de poucos assuntos:
+Em hotéis independentes e pousadas, os mesmos assuntos voltam todos os dias, no WhatsApp e nas caixas de entrada do Booking.com, do Airbnb e da Expedia. Antes da chegada, o hóspede quer saber como chegar e a que horas pode entrar; durante a estadia, pergunta sobre café da manhã, Wi-Fi e a região; depois do check-out, sobre nota fiscal e objetos esquecidos. As respostas já existem na sua propriedade. O problema é o momento e o idioma: uma pergunta enviada às 23h40, em alemão, fica esperando até de manhã, e o hóspede acaba chamando um táxi que você poderia ter vendido como transfer.
 
-- Horários de check-in e check-out, chegada antecipada ou saída tardia
-- Transfers do aeroporto e como chegar
-- Estacionamento, café da manhã, política para pets
-- Guarda-volumes, características dos quartos, a região
-- Alterações de reserva e pedidos de nota fiscal
-As respostas já existem no hotel. O problema é dá-las no idioma certo e na hora certa.
+## 10 mensagens típicas e como a IA deve tratá-las
 
-## O que a IA deve automatizar e o que não deve?
+Mensagem do hóspede Como a IA deve responder
 
-Em uma boa configuração, a assistente resolve as perguntas de informação e repassa as decisões para a equipe.
+"Nosso voo chega às 23h, ainda dá para fazer o check-in?" Responder com a sua regra de check-in tardio e como pegar a chave; oferecer o transfer do aeroporto, se você tiver.
 
-Deixe a IA responder Repasse para a equipe
+"Tem estacionamento?" Gratuito ou pago, no local ou nas proximidades, o preço e se é preciso reservar.
 
-Horários, regras, comodidades Descontos e negociação de preço
-Como chegar, informações de transfer Reclamações e compensações
-Venda de transfers e passeios Situações médicas ou de segurança
-Lembrar os hóspedes dos detalhes da reserva Pedidos de grupos e eventos
+"Que horas é o café da manhã?" O horário, onde é servido e se está incluído na tarifa do hóspede.
 
-## Configuração passo a passo
+"Podemos deixar as malas depois do check-out?" Sim ou não, até que horas e se há alguma taxa.
 
-- Escreva a base de conhecimento do hotel. Horários, regras, comodidades e perguntas frequentes. Quanto mais clara, mais consistentes as respostas.
+"Vocês aceitam cachorro?" Sua política para pets, limite de porte e eventual taxa extra.
 
-- Conecte os seus canais. Reúna as mensagens do WhatsApp e das OTAs (Booking.com, Airbnb, Expedia) em uma só caixa de entrada.
+"Como chegamos do aeroporto?" Distância, tempo e faixa de preço do táxi, transporte público e a sua oferta de transfer.
 
-- Comece no modo de aprovação. Na primeira semana, leia e corrija as respostas antes do envio.
+"Dá para fazer o check-in mais cedo?" Explicar a regra; se depender de disponibilidade ou de uma taxa, passar para a equipe confirmar.
 
-- Defina regras de repasse. Determine quais assuntos chegam até você.
+"Vocês fazem um preço melhor?" Passar para a equipe. Desconto é uma decisão, não uma informação.
 
-- Passe para o modo automático. Quando as respostas estiverem consistentes, deixe a assistente cuidar totalmente das perguntas de informação.
+"O ar-condicionado não está funcionando." Reconhecer o problema, avisar o hóspede de que a equipe já foi acionada e passar o caso para a equipe imediatamente.
 
-## Por que respostas em vários idiomas importam
+"Por favor, emitam a nota no nome da nossa empresa." Coletar os dados da empresa, se o seu processo permitir, e passar para a equipe.
 
-Hóspedes que escrevem no próprio idioma compartilham mais detalhes e confiam mais na resposta. Uma assistente que responde em mais de 30 idiomas cria essa confiança mesmo quando ninguém na recepção fala o idioma, e você continua lendo a conversa no seu.
+A lógica é simples: se a resposta é um fato que você deixou por escrito, o assistente responde; se exige uma decisão, envolve dinheiro ou pede empatia, quem responde é uma pessoa.
+
+## O que o assistente precisa saber
+
+Um assistente de IA é tão bom quanto as informações por trás dele. Antes de ativá-lo, deixe por escrito:
+
+- Horários de check-in e check-out, regras para chegada antecipada e saída tardia
+
+- Como entra quem chega tarde (horário da recepção, cofre de chaves, procedimento do código da porta)
+
+- Estacionamento, café da manhã, Wi-Fi, pets, fumo, crianças e camas extras
+
+- Distância até o aeroporto e a rodoviária ou estação, tempo de táxi e os preços do seu transfer
+
+- Tipos de quarto e o que tem em cada um
+
+- Regras de cancelamento e pagamento, conforme as suas condições
+
+- Restaurantes, praias, atrações e farmácias próximas
+
+- Extras que você vende: transfers, passeios, late check-out
+Escreva do jeito que você explicaria para um recepcionista novo. Frases curtas e concretas funcionam melhor do que texto de marketing.
+
+## Configuração em cinco passos
+
+- Preencha as informações do hotel. Use a lista acima; não deixe nada como "pergunte na recepção".
+
+- Reúna seus canais em uma só caixa de entrada. O WhatsApp e as caixas de entrada das OTAs que você usa, para que cada conversa fique vinculada à sua reserva.
+
+- Comece no modo de aprovação. Nos primeiros dias, leia cada resposta antes do envio e ajuste o texto quando for preciso.
+
+- Defina as regras de transferência. Decida quais assuntos sempre chegam até você: descontos, reclamações, reembolsos, pedidos de grupo e tudo o que envolva saúde ou segurança.
+
+- Deixe que ele responda sozinho. Quando as respostas estiverem consistentes, deixe o assistente encerrar sozinho as perguntas de informação e mantenha os rascunhos para os assuntos que você escolheu.
+
+## WhatsApp e caixas de entrada das OTAs não são a mesma coisa
+
+No WhatsApp você fala diretamente com o hóspede e pode compartilhar links, telefones e o seu próprio site. O WhatsApp também tem regras próprias: uma empresa pode responder livremente em até 24 horas após a última mensagem do hóspede; fora dessa janela, precisa de um modelo de mensagem aprovado. Já as caixas de entrada das OTAs, como Booking.com e Airbnb, têm suas próprias regras sobre o que você pode compartilhar, e as plataformas de reserva costumam esperar que a comunicação sobre uma reserva aconteça dentro da plataforma. Um bom assistente adapta a resposta ao canal. O guia de resposta automática do Booking.com traz modelos prontos para usar.
+
+## Respondendo no idioma do hóspede
+
+Quem pode escrever no próprio idioma pergunta com mais precisão e confia mais na resposta. Com um assistente que responde em mais de 30 idiomas, um hóspede japonês ou polonês recebe uma resposta tão boa quanto a de um hóspede que fala inglês, mesmo que ninguém na recepção fale a língua dele. Ainda assim, você deve conseguir ler todas as conversas no seu idioma, para saber sempre o que foi prometido.
+
+## Como saber se está funcionando
+
+- Tempo de resposta: quanto o hóspede espera pela primeira resposta, principalmente à noite.
+
+- Percentual respondido automaticamente: quantas conversas foram encerradas sem a equipe.
+
+- Transferências: quais assuntos ainda chegam até você e se alguns poderiam ser respondidos com informações melhores.
+
+- Informações faltantes: as perguntas que o assistente não conseguiu responder mostram as lacunas da sua configuração.
+
+- Extras vendidos: transfers e passeios oferecidos no momento certo.
+
+## Erros comuns
+
+- Informações vagas sobre o hotel. "Temos café da manhã" gera respostas vagas; "das 7h30 às 10h30, no jardim, incluído em todas as tarifas" não.
+
+- Deixar a IA negociar. Preços, descontos e compensações são assunto seu.
+
+- Pular o modo de aprovação. Alguns dias lendo os rascunhos já revelam formulações que você nunca usaria.
+
+- Dois sistemas. Se o WhatsApp fica em um celular e as mensagens das OTAs em outra aba, ninguém tem a visão completa.
+
+- Nunca revisar. Confira as transferências uma vez por semana e acrescente o que estava faltando.
 
 ## Como funciona no Hostlio Pro
 
-O assistente de IA do Hostlio Pro, o Lio , usa as informações do seu hotel e os dados das reservas para responder a mensagens do WhatsApp e das OTAs (Booking.com, Airbnb, Expedia) em mais de 30 idiomas. Os planos incluem de 1.000 a 12.000 mensagens de IA por mês; veja os detalhes na página de preços .
+O assistente do Hostlio Pro, o Lio , responde aos hóspedes no WhatsApp em todos os planos e, nos planos Pro e Growth, também nas caixas de entrada do Booking.com, do Airbnb e da Expedia. Ele usa apenas as informações do seu hotel e a reserva do hóspede, responde no idioma do hóspede (mais de 30 idiomas) e mostra para você a tradução da resposta no seu idioma; as respostas que você mesmo digita são enviadas exatamente como foram escritas. Você escolhe quais assuntos ele encerra sozinho e quais passa para você, e nos primeiros dias pode aprovar cada resposta. Se não conseguir responder a uma pergunta, o Lio aponta a informação que falta na sua configuração. Durante a configuração, você pode testar o Lio com as suas próprias perguntas antes de entrar no ar. O Lio nunca confirma uma reserva por conta própria: nos planos Pro e Growth, ele recebe os pedidos de reserva e você os aprova. Os planos incluem de 1.000 a 12.000 mensagens de IA por mês; você recebe um aviso ao atingir 80% e 100%, e as respostas automáticas são pausadas em cerca de 110%.
 
-Q: A IA pode dar informações erradas aos hóspedes?
-A: O risco é mínimo quando a assistente trabalha apenas com as informações fornecidas pelo hotel e repassa as perguntas duvidosas para a equipe. Recomenda-se começar no modo de aprovação.
+Q: A IA pode passar informações erradas para os hóspedes?
+A: O risco é pequeno quando o assistente usa apenas as informações fornecidas pelo hotel e passa para a equipe as perguntas sobre as quais não tem certeza. Comece no modo de aprovação e preencha as lacunas que ele apontar.
 
-Q: Os hóspedes vão saber que estão falando com uma IA?
-A: As respostas são escritas em nome do hotel e no tom dele. Por transparência, o hotel pode informar na mensagem de boas-vindas que a assistente é uma IA.
+Q: Quais mensagens devem ficar com uma pessoa?
+A: Descontos e negociação de preço, reclamações e compensações, reembolsos, pedidos de grupos e eventos e tudo o que envolva saúde ou segurança.
+
+Q: O hóspede vai saber que está falando com uma IA?
+A: As respostas são escritas em nome do hotel e no tom do hotel. Por transparência, você pode avisar na mensagem de boas-vindas que um assistente de IA responde fora do horário da recepção.
+
+Q: Funciona com as mensagens do Booking.com e do Airbnb?
+A: No Hostlio Pro, sim, nos planos Pro e Growth. O WhatsApp está incluído em todos os planos.
+
+Q: Quanto custa?
+A: O Lio está incluído em todos os planos do Hostlio Pro: Starter US$ 49, Pro US$ 89 e Growth US$ 149 por mês, com 1.000 a 12.000 mensagens de IA por mês.
 
 ---
 # Sistema para hotel pequeno e pousada: como escolher (2026)
@@ -17090,63 +17442,133 @@ URL: https://hostliopro.com/fr/blog/repondre-aux-messages-clients-avec-ia/
 ## Répondre aux clients de l'hôtel avec l'IA : guide pratique
 Par l' équipe produit Hostlio Pro , celle qui conçoit Hostlio Pro. Publié le 18 septembre 2026 , mis à jour le 23 septembre 2026
 
-Réponse courte : la plupart des messages reçus par un hôtel sont des questions récurrentes (heure d'arrivée, parking, transferts, petit-déjeuner). Les confier à un assistant IA formé avec les informations de votre hôtel permet aux clients d'obtenir une réponse en quelques secondes, dans leur langue. Les remises, les réclamations et les demandes particulières doivent rester entre les mains de votre équipe.
+En bref : la plupart des messages qu'un hôtel reçoit tournent autour d'une douzaine de questions toujours identiques : horaires d'arrivée, parking, petit-déjeuner, transferts, bagages, Wi-Fi. Un assistant IA qui s'appuie uniquement sur les informations de votre hôtel peut y répondre en quelques secondes, dans la langue du client, à toute heure. Les décisions restent entre vos mains : remises, réclamations, remboursements, exceptions et tout ce dont vous n'êtes pas sûr. Commencez en mode validation, complétez les informations manquantes que l'assistant vous signale, puis laissez-le répondre seul aux questions pratiques.
 
 Sommaire
 
-- Quelles questions les hôtels reçoivent-ils le plus ?
-- Que doit automatiser l'IA, et que ne doit-elle pas automatiser ?
-- Mise en place étape par étape
-- Pourquoi les réponses multilingues comptent
+- Ce que les clients demandent vraiment
+- 10 messages types et la bonne réponse de l'IA
+- Ce que l'assistant doit savoir
+- La mise en place en cinq étapes
+- WhatsApp et les messageries des OTA, ce n'est pas pareil
+- Répondre dans la langue du client
+- Comment savoir si ça fonctionne
+- Les erreurs fréquentes
 - Comment cela fonctionne dans Hostlio Pro
 
-## Quelles questions les hôtels reçoivent-ils le plus ?
+## Ce que les clients demandent vraiment
 
-Dans les hôtels indépendants, la plupart des messages portent sur quelques sujets :
+Dans les hôtels indépendants et les chambres d'hôtes, les mêmes sujets reviennent chaque jour, sur WhatsApp comme dans les messageries de Booking.com, Airbnb et Expedia. Avant l'arrivée, les clients veulent savoir comment venir et à quelle heure arriver ; pendant le séjour, ils posent des questions sur le petit-déjeuner, le Wi-Fi et les environs ; après le départ, sur les factures et les objets oubliés. Les réponses existent déjà dans votre établissement. Le problème, c'est le moment et la langue : une question envoyée à 23 h 40 en allemand attend le lendemain matin, et le client réserve un taxi alors que vous auriez pu lui vendre votre transfert.
 
-- Horaires d'arrivée et de départ, arrivée anticipée ou départ tardif
-- Transferts aéroport et accès à l'hôtel
-- Parking, petit-déjeuner, animaux acceptés
-- Consigne à bagages, équipements des chambres, le quartier
-- Modifications de réservation et demandes de facture
-Les réponses existent déjà à l'hôtel. Le problème, c'est de les donner dans la bonne langue, au bon moment.
+## 10 messages types et la bonne réponse de l'IA
 
-## Que doit automatiser l'IA, et que ne doit-elle pas automatiser ?
+Message du client Ce que l'IA doit faire
 
-Dans une bonne configuration, l'assistant traite les questions d'information et laisse les décisions à l'équipe.
+« Nous atterrissons à 23 h, pourra-t-on encore faire le check-in ? » Répondre avec votre règle d'arrivée tardive et la façon de récupérer la clé ; proposer le transfert aéroport si vous en avez un.
 
-Laisser l'IA répondre Transmettre à l'équipe
+« Y a-t-il un parking ? » Gratuit ou payant, sur place ou à proximité, le tarif et s'il faut réserver.
 
-Horaires, règles, équipements Remises et négociation de prix
-Itinéraires, informations sur les transferts Réclamations et dédommagements
-Vente de transferts et d'excursions Situations médicales ou de sécurité
-Rappel des détails de la réservation Demandes de groupes et d'événements
+« À quelle heure est servi le petit-déjeuner ? » Les horaires, le lieu du service et s'il est inclus dans leur tarif.
 
-## Mise en place étape par étape
+« Peut-on laisser nos bagages après le départ ? » Oui ou non, jusqu'à quelle heure, avec ou sans frais.
 
-- Rédigez la base de connaissances de votre hôtel. Horaires, règles, équipements et questions fréquentes. Plus elle est claire, plus les réponses sont cohérentes.
+« Acceptez-vous les chiens ? » Votre politique concernant les animaux, les limites de taille et l'éventuel supplément.
 
-- Connectez vos canaux. Réunissez les messages WhatsApp et OTA dans une seule boîte de réception.
+« Comment venir depuis l'aéroport ? » La distance, la durée et le prix approximatif en taxi, les transports en commun, votre offre de transfert.
 
-- Commencez en mode validation. La première semaine, relisez et corrigez les réponses avant leur envoi.
+« Peut-on arriver plus tôt ? » Expliquer la règle ; si cela dépend des disponibilités ou d'un supplément, transmettre à l'équipe pour confirmation.
 
-- Définissez les règles de transfert. Déterminez quels sujets doivent vous revenir.
+« Pouvez-vous nous faire un meilleur prix ? » Transmettre à l'équipe. Une remise est une décision, pas une information.
 
-- Passez en mode automatique. Une fois les réponses cohérentes, laissez l'assistant gérer entièrement les questions d'information.
+« La climatisation ne fonctionne pas. » Prendre acte, indiquer au client que l'équipe a été prévenue et transmettre immédiatement.
 
-## Pourquoi les réponses multilingues comptent
+« Merci d'envoyer la facture à notre société. » Recueillir les coordonnées de la société si votre procédure le permet, puis transmettre à l'équipe.
 
-Les clients qui écrivent dans leur propre langue donnent plus de détails et font davantage confiance à la réponse. Un assistant qui répond dans plus de 30 langues crée cette confiance même quand personne à la réception ne parle la langue, et vous lisez toujours la conversation dans la vôtre.
+La logique est simple : si la réponse est un fait que vous avez noté quelque part, l'assistant répond ; si elle demande une décision, de l'argent ou de l'empathie, c'est une personne qui s'en charge.
+
+## Ce que l'assistant doit savoir
+
+Un assistant IA ne vaut que par les informations qu'on lui donne. Avant de l'activer, notez :
+
+- Les horaires d'arrivée et de départ, les règles d'arrivée anticipée et de départ tardif
+
+- Comment entrent les clients qui arrivent tard (horaires de la réception, boîte à clés, procédure de code d'accès)
+
+- Le parking, le petit-déjeuner, le Wi-Fi, les animaux, le tabac, les enfants et les lits d'appoint
+
+- Les distances jusqu'à l'aéroport et la gare, les temps de trajet en taxi, les prix de vos transferts
+
+- Les types de chambres et leurs équipements
+
+- Les conditions d'annulation et de paiement telles qu'elles figurent dans vos conditions
+
+- Les restaurants, plages, sites à visiter et pharmacies à proximité
+
+- Les extras que vous vendez : transferts, excursions, départ tardif
+Rédigez comme si vous expliquiez les choses à un nouveau réceptionniste. Des phrases courtes et concrètes fonctionnent mieux qu'un texte publicitaire.
+
+## La mise en place en cinq étapes
+
+- Renseignez les informations de votre hôtel. Servez-vous de la liste ci-dessus ; ne laissez aucune rubrique sur « demandez à la réception ».
+
+- Réunissez vos canaux dans une seule boîte de réception. WhatsApp et les messageries des OTA que vous utilisez, pour que chaque conversation soit associée à sa réservation.
+
+- Commencez en mode validation. Les premiers jours, relisez chaque réponse avant son envoi et corrigez la formulation si nécessaire.
+
+- Définissez les règles de transmission. Choisissez les sujets qui vous reviennent toujours : remises, réclamations, remboursements, demandes de groupe, tout ce qui touche à la santé ou à la sécurité.
+
+- Laissez-le répondre seul. Une fois les réponses fiables, laissez l'assistant traiter automatiquement les questions pratiques et gardez la validation des brouillons pour les sujets que vous avez choisis.
+
+## WhatsApp et les messageries des OTA, ce n'est pas pareil
+
+Sur WhatsApp, vous échangez directement avec le client et pouvez partager des liens, des numéros de téléphone et votre propre site. WhatsApp a toutefois ses propres règles : une entreprise peut répondre librement dans les 24 heures qui suivent le dernier message du client ; au-delà, il lui faut un modèle de message approuvé. Les messageries des OTA comme Booking.com et Airbnb ont elles aussi leurs règles sur ce que vous pouvez partager, et les plateformes de réservation attendent en général que les échanges liés à une réservation restent sur la plateforme. Un bon assistant adapte sa réponse au canal. Notre guide WhatsApp pour les hôtels détaille le côté WhatsApp, et le guide des réponses automatiques Booking.com propose des modèles prêts à l'emploi.
+
+## Répondre dans la langue du client
+
+Un client qui peut écrire dans sa langue pose des questions plus précises et fait davantage confiance à la réponse. Avec un assistant qui répond dans plus de 30 langues, un client japonais ou polonais reçoit une réponse de la même qualité qu'un client anglophone, même si personne à la réception ne parle sa langue. Vous devez malgré tout pouvoir lire chaque conversation dans votre propre langue, pour toujours savoir ce qui a été promis.
+
+## Comment savoir si ça fonctionne
+
+- Délai de réponse : combien de temps les clients attendent une première réponse, surtout la nuit.
+
+- Part des réponses automatiques : combien de conversations se sont conclues sans l'équipe.
+
+- Transmissions : quels sujets vous reviennent encore, et si certains pourraient être traités avec de meilleures informations.
+
+- Informations manquantes : les questions restées sans réponse révèlent les lacunes de votre configuration.
+
+- Extras vendus : transferts et excursions proposés au bon moment.
+
+## Les erreurs fréquentes
+
+- Des informations trop vagues. « Petit-déjeuner disponible » donne des réponses vagues ; « de 7 h 30 à 10 h 30 dans le jardin, inclus dans tous les tarifs », non.
+
+- Laisser l'IA négocier. Les prix, les remises et les dédommagements relèvent de vous.
+
+- Sauter le mode validation. Quelques jours de relecture suffisent à repérer des formulations que vous n'utiliseriez pas.
+
+- Deux systèmes séparés. Si WhatsApp est sur un téléphone et les messages des OTA dans un autre onglet, personne n'a la vue d'ensemble.
+
+- Ne jamais faire le point. Passez en revue les transmissions une fois par semaine et ajoutez ce qui manquait.
 
 ## Comment cela fonctionne dans Hostlio Pro
 
-Lio , l'assistant IA de Hostlio Pro, utilise les informations de votre hôtel et les données de réservation pour répondre aux messages WhatsApp et OTA (Booking.com, Airbnb, Expedia) dans plus de 30 langues. Les forfaits incluent entre 1 000 et 12 000 messages IA par mois ; consultez la page Tarifs pour plus de détails.
+L'assistant de Hostlio Pro, Lio , répond aux clients sur WhatsApp avec tous les forfaits, et dans les messageries de Booking.com, Airbnb et Expedia avec les forfaits Pro et Growth. Il s'appuie uniquement sur les informations de votre hôtel et sur la réservation du client, répond dans la langue du client (plus de 30 langues) et vous montre une traduction de sa réponse dans la vôtre ; les réponses que vous rédigez vous-même partent telles quelles. Vous choisissez les sujets qu'il traite seul et ceux qu'il vous transmet, et les premiers jours, vous pouvez valider chaque réponse. S'il ne peut pas répondre à une question, il signale l'information manquante dans votre configuration. Pendant la configuration, vous pouvez tester Lio avec vos propres questions avant la mise en service. Lio ne confirme jamais une réservation seul : avec Pro et Growth, il recueille les demandes de réservation et c'est vous qui les validez. Les forfaits incluent de 1 000 à 12 000 messages IA par mois ; vous êtes prévenu à 80 % et à 100 %, et les réponses automatiques sont suspendues vers 110 %.
 
-Q: L'IA peut-elle donner de fausses informations aux clients ?
-A: Le risque est minime lorsque l'assistant s'appuie uniquement sur les informations fournies par l'hôtel et transmet à l'équipe les questions dont il n'est pas sûr. Il est recommandé de commencer en mode validation.
+Q: L'IA peut-elle donner de mauvaises informations aux clients ?
+A: Le risque est faible lorsque l'assistant n'utilise que les informations fournies par l'hôtel et transmet à l'équipe les questions dont il n'est pas sûr. Commencez en mode validation et complétez les informations manquantes qu'il vous signale.
 
-Q: Les clients sauront-ils qu'ils parlent à une IA ?
-A: Les réponses sont rédigées au nom de l'hôtel et dans son ton. Par souci de transparence, l'hôtel peut indiquer dans le message d'accueil que l'assistant est une IA.
+Q: Quels messages doivent rester entre les mains d'une personne ?
+A: Les remises et les négociations de prix, les réclamations et les dédommagements, les remboursements, les demandes de groupe et d'événement, et tout ce qui touche à la santé ou à la sécurité.
+
+Q: Les clients sauront-ils qu'ils échangent avec une IA ?
+A: Les réponses sont rédigées au nom de l'hôtel et dans son ton. Par souci de transparence, vous pouvez indiquer dans votre message de bienvenue qu'un assistant IA répond en dehors des heures de réception.
+
+Q: Cela fonctionne-t-il avec les messages Booking.com et Airbnb ?
+A: Dans Hostlio Pro, oui, avec les forfaits Pro et Growth. WhatsApp est inclus dans tous les forfaits.
+
+Q: Combien cela coûte-t-il ?
+A: Lio est inclus dans tous les forfaits Hostlio Pro : Starter 49 $, Pro 89 $ et Growth 149 $ par mois, avec de 1 000 à 12 000 messages IA par mois.
 
 ---
 # Logiciel de gestion hôtelière pour petit hôtel : guide 2026

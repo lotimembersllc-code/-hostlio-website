@@ -322,28 +322,9 @@ def article(meta, content, faq=None):
             "trail":[("Blog",U("blog")),(meta["title"],U(meta["key"]))],"body":body,"schema":[art],"faq":faq or []}
 
 def post_ai():
-    c = f'''
-<div class="answer"><p><strong>Kısa cevap:</strong> Otel mesajlarının büyük kısmı tekrar eden sorulardır (check-in saati, otopark, transfer, kahvaltı). Bu soruları otelin kendi bilgileriyle eğitilmiş bir yapay zekâ asistanına bırakmak, misafire saniyeler içinde kendi dilinde cevap verir; indirim, şikâyet ve özel talepler ise personelde kalmalıdır.</p></div>
-<h2>Otellere en çok hangi sorular geliyor?</h2>
-<p>Bağımsız otellerde gelen mesajların çoğu birkaç konu etrafında toplanır:</p>
-<ul><li>Check-in ve check-out saatleri, erken giriş ya da geç çıkış</li><li>Havalimanı transferi ve ulaşım</li><li>Otopark, kahvaltı, evcil hayvan kuralları</li><li>Bagaj bırakma, oda özellikleri, yakın çevre</li><li>Rezervasyon değişikliği ve fatura talepleri</li></ul>
-<p>Bu soruların cevabı otelde zaten yazılıdır; sorun, cevabın doğru dilde ve doğru saatte verilmesidir.</p>
-<h2>Yapay zekâ neyi otomatikleştirmeli, neyi otomatikleştirmemeli?</h2>
-<p>İyi bir kurulumda asistan bilgi sorularını kapatır, karar gerektiren konuları personele devreder.</p>
-<div class="table-wrap"><table><thead><tr><th>AI yanıtlasın</th><th>Personele devredilsin</th></tr></thead><tbody>
-<tr><td>Saatler, kurallar, olanaklar</td><td>İndirim ve fiyat pazarlığı</td></tr><tr><td>Yol tarifi, transfer bilgisi</td><td>Şikâyet ve tazminat talepleri</td></tr><tr><td>Transfer ve tur satışı</td><td>Tıbbi veya güvenlikle ilgili durumlar</td></tr><tr><td>Rezervasyon detaylarını hatırlatma</td><td>Grup ve özel etkinlik talepleri</td></tr></tbody></table></div>
-<h2>Adım adım kurulum</h2>
-<ol><li><strong>Otel bilgi tabanını yazın.</strong> Saatler, kurallar, olanaklar ve sık sorulan sorular. Ne kadar net olursa cevaplar o kadar tutarlı olur.</li>
-<li><strong>Kanalları bağlayın.</strong> WhatsApp ve OTA gelen kutusu mesajlarını tek gelen kutusunda toplayın.</li>
-<li><strong>Onay modunda başlayın.</strong> İlk hafta asistanın cevaplarını göndermeden önce okuyun ve düzeltin.</li>
-<li><strong>Devir kurallarını belirleyin.</strong> Hangi konuların size geleceğini tanımlayın.</li>
-<li><strong>Otomatik moda geçin.</strong> Cevaplar tutarlı hale geldiğinde bilgi sorularını tamamen asistana bırakın.</li></ol>
-<h2>Çok dilli iletişim neden önemli?</h2>
-<p>Misafir kendi dilinde yazdığında daha fazla detay verir ve cevaba daha çok güvenir. 30+ dilde yanıt veren bir asistan, resepsiyonda o dili bilen biri olmasa da bu güveni sağlar. Yazışmayı siz kendi dilinizde okursunuz.</p>
-<h2>Hostlio Pro'da nasıl çalışır?</h2>
-<p>Hostlio Pro'nun AI asistanı <a href="{U("ai")}">Lio</a>, otel bilgilerinizi ve rezervasyon verilerini kullanarak WhatsApp ve OTA gelen kutusu mesajlarını (Booking.com, Airbnb, Expedia) 30+ dilde yanıtlar. Planlara göre aylık ⟦quota:starter⟧ ile ⟦quota:growth⟧ AI mesajı arasında kota bulunur; detaylar <a href="{U("pricing")}">fiyatlandırma sayfasında</a>.</p>'''
-    faq = [("Yapay zekâ misafire yanlış bilgi verebilir mi?", "Asistan yalnızca otelin girdiği bilgilerle çalıştığında ve emin olmadığı sorularda personele devrettiğinde bu risk en aza iner. İlk günlerde onay modunda kullanmak önerilir."),
-           ("Misafirler yapay zekâyla konuştuğunu anlar mı?", "Cevaplar otelin adına ve tonunda yazılır. Şeffaflık için otel, asistanın bir AI olduğunu karşılama mesajında belirtebilir.")]
+    # 12 Ekim 2026: 6 dilde genişletildi (rehber_ai_yanit / ai_yanit_<dil>.py)
+    import rehber_ai_yanit
+    c, faq = rehber_ai_yanit.get(L, U)
     return article(next(p for p in POSTS if p["key"]=="post-ai"), c, faq)
 
 def post_pms():
