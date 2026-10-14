@@ -757,7 +757,8 @@ def layout(page, lang):
 <li><a href="{url("about",lang)}">{u["foot_about"]}</a></li>
 <li><a href="{url("contact",lang)}">{u["foot_contact"]}</a></li>
 <li><a href="{url("security",lang)}">{SEC_LABEL[lang]}</a></li>
-<li><a href="{LOGIN_URL}">{FOOT_LOGIN[lang]}</a></li></ul></div>
+<li><a href="{LOGIN_URL}">{FOOT_LOGIN[lang]}</a></li>
+<li><a href="https://www.instagram.com/hostliopro/" rel="me noopener" target="_blank">Instagram</a></li></ul></div>
 </div>
 <div class="foot-bottom"><span>© {year} Hostlio Pro, Loti Members LLC. {u["rights"]}</span><span class="legal"><a href="{url("privacy",lang)}">{u["privacy"]}</a><a href="{url("terms",lang)}">{u["terms"]}</a><a href="{url("delacc",lang)}">{u["delacc"]}</a><a href="{url("dpa","en")}" hreflang="en">DPA</a>{consent_foot(lang)}</span><span>2108 N ST STE N, Sacramento, CA 95816</span></div>
 </div></footer>
