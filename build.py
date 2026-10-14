@@ -47,6 +47,7 @@ INDEXNOW_KEY = "7f3c9a1e5b2d4c8f9e0a6b1d2c3e4f50"
 SAME_AS = [           # SEO: yalnız gerçekten yayında olan resmî profiller (8 Ekim 2026'da doğrulandı; geliştirici Loti Members LLC)
     "https://apps.apple.com/us/app/hostlio-pro-hotel-management/id6765888744",
     "https://play.google.com/store/apps/details?id=com.hostlio.hostliopro",
+    "https://www.instagram.com/hostliopro/",   # 14 Ekim 2026, kullanıcı verdi
 ]  # official profiles: LinkedIn, Instagram, YouTube, X, Hotel Tech Report, G2, Capterra...
 APP_STORE_URL = ""     # iOS app link
 UPDATED_TXT = {"tr": "23 Eylül 2026", "en": "September 23, 2026"}
@@ -211,8 +212,9 @@ def org_schema():
     }
 
 def website_schema(lang):
+    # 14 Ekim 2026: Google site adı için alternateName (marka çakışması: hostlio.in, hostlio.net)
     return {"@type": "WebSite", "@id": SITE + "/#website", "url": SITE + "/", "name": "Hostlio Pro",
-            "inLanguage": [IN_LANG[l] for l in LANGS], "publisher": {"@id": SITE + "/#org"}}
+            "alternateName": ["Hostlio", "hostliopro.com"], "inLanguage": [IN_LANG[l] for l in LANGS], "publisher": {"@id": SITE + "/#org"}}
 
 # Y2: fiyat/kota/oda limiti TEK KAYNAKTAN (pricing.py). Buradaki liste yalnız eski
 # çağıranlar (content_*.py, roi_page.py) için türetilmiş görünüm; rakam YAZMAYIN.
