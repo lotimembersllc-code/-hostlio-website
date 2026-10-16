@@ -147,6 +147,9 @@ ROUTES.update({
  "post-mejorespms": {"es": "/es/blog/mejores-pms-hoteles-pequenos-espana/"},
  "post-chdhotes":  {"fr": "/fr/blog/logiciel-chambres-d-hotes/"},
  "post-fichepolice": {"fr": "/fr/blog/fiche-de-police-clients-etrangers/"},
+ "post-bedbank":   {"tr": "/tr/blog/bedbank-nedir/"},
+ "post-soggiorno": {"it": "/it/blog/imposta-di-soggiorno/"},
+ "post-selfcheckin": {"en": "/en/blog/aparthotel-self-check-in/"},
  # Tur 2 (8 Ekim 2026): SEO fikri #20 ve #14 (guides_intl.py)
  "post-pms-vs-cm": {"es": "/es/blog/pms-o-channel-manager-diferencia/", "en": "/en/blog/pms-vs-channel-manager/", "it": "/it/blog/channel-manager-cos-e-differenza-pms/",
                     "pt": "/pt/blog/o-que-e-channel-manager-diferenca-pms/", "fr": "/fr/blog/pms-ou-channel-manager-difference/"},
@@ -402,6 +405,9 @@ GEN_ALT = {
  "brand-phone": {'tr': "Lio'nun cevap ekranını gösteren telefonu tutan el", 'en': "Hand holding a phone showing Lio's reply screen", 'es': 'Mano sosteniendo un móvil con la pantalla de respuesta de Lio', 'it': 'Mano che tiene uno smartphone con la schermata di risposta di Lio', 'pt': 'Mão segurando um celular com a tela de resposta do Lio', 'fr': 'Main tenant un téléphone affichant l’écran de réponse de Lio'},
  "brand-guest-bed": {'tr': 'Otel odasında yatağında telefonundan mesaj yazan misafir', 'en': 'A guest in a hotel bed writing a message on a phone', 'es': 'Un huésped en la cama del hotel escribe un mensaje en el móvil', 'it': 'Un ospite a letto in hotel scrive un messaggio sullo smartphone', 'pt': 'Um hóspede na cama do hotel escrevendo uma mensagem no celular', 'fr': 'Un client allongé dans sa chambre écrit un message sur son téléphone'},
  "guest-bed-morning": {'tr': 'Otel odasında yatağın kenarında oturup telefonundan mesaj yazan misafir', 'en': 'A guest sitting on a hotel bed writing a message on a phone', 'es': 'Un huésped sentado en la cama del hotel escribe un mensaje en el móvil', 'it': 'Un ospite seduto sul letto in hotel scrive un messaggio sullo smartphone', 'pt': 'Um hóspede sentado na cama do hotel escrevendo uma mensagem no celular', 'fr': 'Un client assis sur le lit de sa chambre écrit un message sur son téléphone'},
+ "cover-bedbank-tr": {'tr': 'İnfografik: bedbank nasıl çalışır (otel net fiyat verir, bedbank toplar, acenteler satar, misafir konaklar)', 'en': 'Infographic: how a bedbank works', 'es': 'Infografía: cómo funciona un bedbank', 'it': 'Infografica: come funziona una bedbank', 'pt': 'Infográfico: como funciona um bedbank', 'fr': 'Infographie : fonctionnement d’une bedbank'},
+ "cover-soggiorno-it": {'tr': 'İnfografik: İtalya konaklama vergisi 4 adımda', 'en': 'Infographic: Italian tourist tax in four steps', 'es': 'Infografía: tasa turística en Italia', 'it': "Infografica: imposta di soggiorno in quattro punti (tariffa del comune, incasso dall'ospite, versamento al comune, dichiarazione entro il 30 giugno)", 'pt': 'Infográfico: taxa turística na Itália', 'fr': 'Infographie : taxe de séjour en Italie'},
+ "cover-self-checkin-en": {'tr': 'İnfografik: resepsiyonsuz self check-in 4 adımda', 'en': 'Infographic: self check-in without a front desk in four steps (online check-in, arrival instructions, identity check where required, answers at any hour)', 'es': 'Infografía: self check-in sin recepción', 'it': 'Infografica: self check-in senza reception', 'pt': 'Infográfico: self check-in sem recepção', 'fr': 'Infographie : self check-in sans réception'},
  "cover-chambres-hotes-fr": {'tr': 'İnfografik: Fransa chambres d hôtes kuralları ve yazılım', 'en': 'Infographic: French chambres d hôtes rules and software', 'es': 'Infografía: chambres d hôtes en Francia', 'it': 'Infografica: chambres d hôtes in Francia', 'pt': 'Infográfico: chambres d hôtes na França', 'fr': "Infographie : chambres d'hôtes en 2026 (5 chambres et 15 personnes au maximum, déclaration en mairie, taxe de séjour, fiche de police)"},
  "cover-fiche-police-fr": {'tr': 'İnfografik: Fransa fiche de police 4 adımda', 'en': 'Infographic: French police registration form in four steps', 'es': 'Infografía: fiche de police en Francia', 'it': 'Infografica: fiche de police in Francia', 'pt': 'Infográfico: fiche de police na França', 'fr': "Infographie : la fiche de police en quatre points (tous les clients étrangers dont l'UE, données requises, signature à l'arrivée, conservation 6 mois)"},
  "cover-mejores-pms-es": {'tr': 'İnfografik: PMS seçerken karşılaştırılacak 4 şey', 'en': 'Infographic: four things to compare in a PMS', 'es': 'Infografía: cuatro aspectos para comparar un PMS en España (coste anual, channel manager, SES.Hospedajes y prueba gratuita)', 'it': 'Infografica: quattro aspetti da confrontare in un PMS', 'pt': 'Infográfico: quatro pontos para comparar um PMS', 'fr': 'Infographie : quatre points pour comparer un PMS'},
@@ -539,6 +545,9 @@ RELATED_POSTS = {
     "post-pms-vs-cm": ["post-cmfr", "post-cmit", "post-overbooking", "post-pms", "post-prices", "post-channel-manager", "post-noshows", "post-autoreply"],
     # S9 TR rehberleri (yalnız TR; diğer dillerde liste o dilde olmayan yazıyı zaten atlar)
     "post-channel-manager": ["post-bookingkom", "post-overbooking", "post-prices", "post-pms"],
+    "post-bedbank": ["post-channel-manager", "post-bookingkom", "post-overbooking", "post-prices"],
+    "post-soggiorno": ["post-alloggiati", "post-costit", "post-gestionali", "post-cmit"],
+    "post-selfcheckin": ["post-ai", "post-whatsapp", "post-bestpms", "post-noshows"],
     "post-chdhotes": ["post-cmfr", "post-prixfr", "post-fichepolice", "post-ai"],
     "post-fichepolice": ["post-chdhotes", "post-pms", "post-prixfr", "post-ai"],
     "post-mejorespms": ["post-cost", "post-ses", "post-pms", "post-whatsapp"],
@@ -550,7 +559,7 @@ RELATED_POSTS = {
     "post-cmfr": ["post-pms-vs-cm", "post-overbooking", "post-pms", "post-whatsapp"],
     "post-bookingkom": ["post-channel-manager", "post-overbooking", "post-autoreply", "post-prices"],
     "post-gestionali": ["post-pms", "post-alloggiati", "post-pms-vs-cm", "post-whatsapp"],
-    "post-alloggiati": ["post-gestionali", "post-pms", "post-whatsapp", "post-overbooking"],
+    "post-alloggiati": ["post-soggiorno", "post-gestionali", "post-pms", "post-whatsapp", "post-overbooking"],
     "post-taxtr": ["post-kbs", "post-prices", "post-programs"],
     "post-kbs": ["post-taxtr", "post-pms", "post-channel-manager", "post-ai"],
     "post-prices": ["post-programs", "post-pms", "post-channel-manager", "post-overbooking"],
@@ -560,10 +569,10 @@ RELATED_POSTS = {
 }
 RELATED_PRODUCT = {"post-autoreply": "ai", "post-ai": "ai", "post-overbooking": "channel", "post-pms": "pricing",
                    "post-aifrontdesk": "ai", "post-noshows": "channel", "post-chains": "features", "post-whatsapp": "ai",
-                   "post-channel-manager": "channel", "post-kbs": "checkin", "post-prices": "pricing", "post-pms-vs-cm": "channel", "post-programs": "pricing", "post-cost": "pricing", "post-bestpms": "pricing", "post-taxtr": "features", "post-alloggiati": "checkin", "post-gestionali": "pricing", "post-bookingkom": "channel", "post-cmfr": "channel", "post-cmit": "channel", "post-costit": "pricing", "post-costpt": "pricing", "post-prixfr": "pricing", "post-ses": "checkin", "post-mejorespms": "pricing", "post-chdhotes": "pricing", "post-fichepolice": "checkin"}
+                   "post-channel-manager": "channel", "post-kbs": "checkin", "post-prices": "pricing", "post-pms-vs-cm": "channel", "post-programs": "pricing", "post-cost": "pricing", "post-bestpms": "pricing", "post-taxtr": "features", "post-alloggiati": "checkin", "post-gestionali": "pricing", "post-bookingkom": "channel", "post-cmfr": "channel", "post-cmit": "channel", "post-costit": "pricing", "post-costpt": "pricing", "post-prixfr": "pricing", "post-ses": "checkin", "post-mejorespms": "pricing", "post-chdhotes": "pricing", "post-fichepolice": "checkin", "post-bedbank": "channel", "post-soggiorno": "features", "post-selfcheckin": "checkin"}
 _SEG = ["post-pms", "post-autoreply", "post-overbooking"]
 PAGE_GUIDES = {"channel": ["post-cmfr", "post-cmit", "post-channel-manager", "post-pms-vs-cm", "post-overbooking", "post-pms", "post-noshows"], "ai": ["post-whatsapp", "post-autoreply", "post-ai"],
-               "checkin": ["post-alloggiati", "post-ses", "post-fichepolice", "post-kbs", "post-pms", "post-ai", "post-noshows"], "pricing": ["post-prices", "post-cost", "post-costit", "post-costpt", "post-prixfr", "post-pms", "post-overbooking", "post-autoreply"],
+               "checkin": ["post-alloggiati", "post-ses", "post-fichepolice", "post-selfcheckin", "post-kbs", "post-pms", "post-ai", "post-noshows"], "pricing": ["post-prices", "post-cost", "post-costit", "post-costpt", "post-prixfr", "post-pms", "post-overbooking", "post-autoreply"],
                "features": _SEG, "compare": ["post-prices", "post-pms", "post-overbooking", "post-autoreply"],
                "t-guesthouse": _SEG, "t-boutique": _SEG, "t-apart": _SEG, "t-hostel": _SEG,
                "kpi": ["post-pms", "post-overbooking", "post-channel-manager"], "commission": ["post-bookingkom", "post-channel-manager", "post-pms-vs-cm", "post-overbooking", "post-pms"]}
@@ -1006,7 +1015,7 @@ def lang_redirects():
 # Tarihler atandıktan sonra uygulanır: şablon değişikliği yazıların "güncelleme" tarihini oynatmaz.
 BLOG_CAT = {"post-channel-manager": "dist", "post-overbooking": "dist", "post-noshows": "dist",
             "post-ai": "msg", "post-autoreply": "msg", "post-whatsapp": "msg", "post-aifrontdesk": "msg",
-            "post-pms": "soft", "post-prices": "soft", "post-programs": "soft", "post-cost": "soft", "post-bestpms": "soft", "post-taxtr": "ops", "post-alloggiati": "ops", "post-gestionali": "soft", "post-bookingkom": "dist", "post-cmfr": "dist", "post-cmit": "dist", "post-costit": "soft", "post-costpt": "soft", "post-prixfr": "soft", "post-ses": "ops", "post-mejorespms": "soft", "post-chdhotes": "soft", "post-fichepolice": "ops", "post-pms-vs-cm": "soft", "post-chains": "soft",
+            "post-pms": "soft", "post-prices": "soft", "post-programs": "soft", "post-cost": "soft", "post-bestpms": "soft", "post-taxtr": "ops", "post-alloggiati": "ops", "post-gestionali": "soft", "post-bookingkom": "dist", "post-cmfr": "dist", "post-cmit": "dist", "post-costit": "soft", "post-costpt": "soft", "post-prixfr": "soft", "post-ses": "ops", "post-mejorespms": "soft", "post-chdhotes": "soft", "post-fichepolice": "ops", "post-bedbank": "dist", "post-soggiorno": "ops", "post-selfcheckin": "ops", "post-pms-vs-cm": "soft", "post-chains": "soft",
             "post-kbs": "ops"}
 BLOG_CAT_NAME = {
     "dist": {"tr": "Kanal yönetimi", "en": "Distribution", "es": "Distribución", "it": "Distribuzione", "pt": "Distribuição", "fr": "Distribution"},

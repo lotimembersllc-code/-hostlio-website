@@ -63,6 +63,7 @@
 - [Amenitiz Alternative: Hostlio Pro Compared (2026)](https://hostliopro.com/en/compare/amenitiz-alternative/): Looking for an Amenitiz alternative? Hostlio Pro publishes its prices, offers a 7-day trial and includes an AI assistant on WhatsApp in every plan.
 - [HiJiffy Alternative: AI Messaging with PMS Included](https://hostliopro.com/en/compare/hijiffy-alternative/): HiJiffy alternative for small hotels: Hostlio Pro puts the PMS, channel manager and an AI assistant on WhatsApp in one subscription, from the first plan.
 - [Best PMS for small hotels in 2026: an honest comparison](https://hostliopro.com/en/blog/best-pms-for-small-hotels/): 11 PMS for small hotels compared: published prices for 10 and 25 rooms, channel manager, guest messaging, mobile app and trials. Sourced, Oct 2026.
+- [Aparthotel self check-in without a 24/7 front desk (2026)](https://hostliopro.com/en/blog/aparthotel-self-check-in/): Running an aparthotel without a 24/7 front desk: online check-in, access, guest messaging and the guest ID rules in Italy, Spain, France, Portugal, UK, Germany.
 - [PMS vs channel manager: what's the difference?](https://hostliopro.com/en/blog/pms-vs-channel-manager/): PMS vs channel manager: what each one does, how they work together, what they cost and whether a small hotel needs both. With a comparison table and FAQ.
 
 ## Türkçe sayfalar
@@ -104,6 +105,7 @@
 - [En çok kullanılan otel programları: 2026 listesi](https://hostliopro.com/tr/blog/en-cok-kullanilan-otel-programlari/): Türkiye'de otellerin kullandığı otel programları: Elektraweb, HMS, Sistem Otel, WOLVOX, HotelRunner, OPERA ve diğerleri. Kime uygun, fiyat, KBS.
 - [Konaklama vergisi 2026: oran, hesaplama ve beyan](https://hostliopro.com/tr/blog/konaklama-vergisi/): Konaklama vergisi 2026: oran %1 (Mayıs–Aralık 2026), kimler öder, KDV hariç matrah, örnek hesap, istisnalar, beyanname ve son gün. Resmî kaynaklı.
 - [Booking.com komisyonu ne kadar, nasıl düşürülür? (2026)](https://hostliopro.com/tr/blog/booking-com-komisyonu/): Booking.com komisyonu nasıl hesaplanır, oran neye göre değişir, Preferred ve Genius maliyeti, KDV ve %17 tavan teklifi. Resmî kaynaklı rehber.
+- [Bedbank nedir? Oteller için rehber (2026)](https://hostliopro.com/tr/blog/bedbank-nedir/): Bedbank nedir, OTA ve tur operatöründen farkı ne? Hotelbeds, WebBeds, RateHawk ve W2M; net fiyat, kontrat türleri, fiyat bütünlüğü ve kanal yöneticisi.
 
 ## Páginas en español
 - [Hostlio Pro](https://hostliopro.com/es/): Software de gestión hotelera Hostlio Pro: la IA Lio atiende a huéspedes 24/7 en 30+ idiomas y el channel manager sincroniza 100+ OTAs. 7 días gratis.
@@ -175,6 +177,7 @@
 - [I gestionali per hotel più usati nel 2026: confronto onesto](https://hostliopro.com/it/blog/gestionali-hotel-piu-usati/): Gestionali per hotel e B&B in Italia nel 2026: TeamSystem, Zak, Slope, Octorate, Zucchetti, Passepartout e altri. Prezzi, Alloggiati Web, SDI.
 - [Channel manager per piccole strutture: come scegliere (2026)](https://hostliopro.com/it/blog/channel-manager-piccole-strutture/): Channel manager per B&B, affittacamere e piccoli hotel: cosa conta davvero, prezzi pubblicati per 10 e 25 camere, Premier e Preferred+. Fonti ufficiali.
 - [Quanto costa un gestionale per hotel nel 2026: prezzi reali](https://hostliopro.com/it/blog/quanto-costa-gestionale-hotel/): Prezzi 2026 dei gestionali per hotel e B&B: modelli di costo, costo annuo per 10 e 25 camere, IVA, moduli e costi nascosti. Fonti ufficiali.
+- [Imposta di soggiorno 2026: calcolo, versamento e dichiarazione](https://hostliopro.com/it/blog/imposta-di-soggiorno/): Imposta di soggiorno 2026 per hotel e B&B: chi la applica, quanto (fino a 10 € +2 €), il gestore responsabile, dichiarazione entro il 30 giugno, sanzioni 2027.
 - [Channel manager cos'è e che differenza c'è con un PMS](https://hostliopro.com/it/blog/channel-manager-cos-e-differenza-pms/): Channel manager e PMS: cosa fa ciascuno, come lavorano insieme, quanto costano e se una piccola struttura ha bisogno di entrambi. Con tabella e FAQ.
 
 ## Páginas em português

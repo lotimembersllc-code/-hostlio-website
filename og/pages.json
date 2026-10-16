@@ -190,6 +190,13 @@
 },
 {
 "lang": "en",
+"key": "post-selfcheckin",
+"title": "Aparthotel self check-in without a 24/7 front desk (2026)",
+"crumb": "Aparthotel self check-in without a 24/7 front desk (2026)",
+"type": "article"
+},
+{
+"lang": "en",
 "key": "post-whatsapp",
 "title": "WhatsApp for hotels: setup, Meta's rules and AI replies (2026)",
 "crumb": "WhatsApp for hotels: setup, Meta's rules and AI replies (2026)",
@@ -932,6 +939,13 @@
 },
 {
 "lang": "it",
+"key": "post-soggiorno",
+"title": "Imposta di soggiorno 2026: calcolo, versamento e dichiarazione",
+"crumb": "Imposta di soggiorno 2026: calcolo, versamento e dichiarazione",
+"type": "article"
+},
+{
+"lang": "it",
 "key": "post-whatsapp",
 "title": "WhatsApp per hotel: configurazione, regole di Meta e AI (2026)",
 "crumb": "WhatsApp per hotel: configurazione, regole di Meta e AI (2026)",
@@ -1348,6 +1362,13 @@
 "key": "post-autoreply",
 "title": "Booking.com Mesajlarına Otomatik Cevap: 12 Ücretsiz Şablon (2026)",
 "crumb": "Booking.com Mesajlarına Otomatik Cevap: 12 Ücretsiz Şablon (2026)",
+"type": "article"
+},
+{
+"lang": "tr",
+"key": "post-bedbank",
+"title": "Bedbank nedir? Oteller için rehber (2026)",
+"crumb": "Bedbank nedir? Oteller için rehber (2026)",
 "type": "article"
 },
 {

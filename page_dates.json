@@ -16,12 +16,16 @@
 "h": "a9d46b9c8762"
 },
 "/en/blog/": {
-"d": "2026-10-10",
-"h": "284b7bdca4e8"
+"d": "2026-10-16",
+"h": "40b50ac27503"
 },
 "/en/blog/answering-hotel-guest-messages-with-ai/": {
 "d": "2026-10-12",
 "h": "853dcc18d878"
+},
+"/en/blog/aparthotel-self-check-in/": {
+"d": "2026-10-16",
+"h": "72dc9f4a7282"
 },
 "/en/blog/auto-reply-booking-com-messages/": {
 "d": "2026-10-08",
@@ -452,8 +456,8 @@
 "h": "96f3c1058b0d"
 },
 "/it/blog/": {
-"d": "2026-10-12",
-"h": "d95a2a71927e"
+"d": "2026-10-16",
+"h": "2fe27b76b3d7"
 },
 "/it/blog/alloggiati-web-guida/": {
 "d": "2026-10-12",
@@ -478,6 +482,10 @@
 "/it/blog/gestionali-hotel-piu-usati/": {
 "d": "2026-10-12",
 "h": "dd9c31807ef9"
+},
+"/it/blog/imposta-di-soggiorno/": {
+"d": "2026-10-16",
+"h": "bb7346ce9518"
 },
 "/it/blog/quanto-costa-gestionale-hotel/": {
 "d": "2026-10-12",
@@ -733,7 +741,11 @@
 },
 "/tr/blog/": {
 "d": "2026-10-16",
-"h": "82cb1774ec09"
+"h": "71abc7bddc6b"
+},
+"/tr/blog/bedbank-nedir/": {
+"d": "2026-10-16",
+"h": "3ca4eae28aea"
 },
 "/tr/blog/booking-com-komisyonu/": {
 "d": "2026-10-12",

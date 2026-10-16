@@ -1116,6 +1116,12 @@ Bağımsız otel işletmeciliği, dağıtım ve misafir iletişimi üzerine prat
 
 Kanal yönetimi
 
+## Bedbank nedir? Oteller için rehber (2026)
+16 Ekim 2026
+Bedbank nedir, OTA ve tur operatöründen farkı ne? Hotelbeds, WebBeds, RateHawk ve W2M; net fiyat, kontrat türleri, fiyat bütünlüğü ve kanal yöneticisi.
+
+Kanal yönetimi
+
 ## Booking.com komisyonu ne kadar, nasıl düşürülür? (2026)
 12 Ekim 2026
 Booking.com komisyonu nasıl hesaplanır, oran neye göre değişir, Preferred ve Genius maliyeti, KDV ve %17 tavan teklifi. Resmî kaynaklı rehber.
@@ -2748,6 +2754,105 @@ A: Hepsinde. Lio, Starter dahil her planda misafirlere WhatsApp'tan otelinizin b
 
 Q: Kurulum ne kadar sürer?
 A: Hesap dakikalar içinde hazır olur; kurulum sihirbazı eksik bilgileri gösterir ve kanallar çoğu zaman aynı gün bağlanır. 7 günlük denemeyle kendi odalarınız ve fiyatlarınızla başlayabilirsiniz.
+
+---
+# Bedbank nedir? Oteller için rehber (2026)
+URL: https://hostliopro.com/tr/blog/bedbank-nedir/
+
+## Bedbank nedir? Oteller için rehber (2026)
+Yazan: Hostlio Pro ürün ekibi , otel yazılımı geliştiren ekip. Yayın: 16 Ekim 2026 , güncelleme: 23 Eylül 2026
+
+Kısa cevap: Bedbank, otel odalarını otelden net fiyatla alıp seyahat acentelerine, tur operatörlerine ve OTA'lara toptan satan B2B aracıdır. Misafir bedbank'ı hiç görmez; odayı bir acentenin ya da bir paketin içinde satın alır. En büyükleri Hotelbeds, WebBeds, RateHawk ve W2M. Küçük bir otel için bedbank, tek başına ulaşamayacağı uzak pazarlardan ek rezervasyon demektir; karşılığında net fiyat, daha geç ödeme ve fiyatların yanlış kanala sızması riski vardır.
+
+İçindekiler
+
+- Bedbank, OTA ve tur operatörü farkı
+- Büyük bedbank'lar
+- Oteller bedbank'larla nasıl çalışır?
+- Fiyat bütünlüğü: net fiyat neden sızar?
+- Küçük bir otel için artıları ve eksileri
+- Hostlio Pro ile bedbank bağlantısı
+- Kaynaklar
+Firma büyüklükleri firmaların kendi açıklamalarıdır; bilgiler 16 Ekim 2026'da resmî ve kurumsal kaynaklardan derlendi. Komisyon ve ödeme vadeleri sözleşmeye göre değişir; kendi sözleşmenize bakın.
+
+## Bedbank, OTA ve tur operatörü farkı
+
+Bedbank OTA Tur operatörü
+Kime satar Acentelere, tur operatörlerine, OTA'lara (B2B) Doğrudan misafire (B2C) Misafire, paket olarak
+Fiyat Otelden net fiyat alır, üstüne kendi kârını koyar Genelde otelin fiyatından komisyon alır Odayı uçak ve transferle birlikte paketler
+Misafir görür mü Hayır, misafir bedbank'ı görmez Evet Evet
+Örnek Hotelbeds, WebBeds, RateHawk, W2M Booking.com, Expedia Bedbank'ların müşterisi olabilir
+
+Hotelbeds'in ana şirketi HBX Group kendini "bağımsız, küresel bir B2B seyahat teknolojisi pazaryeri" olarak tanımlıyor; WebBeds de kendini oteller ile seyahat alıcıları arasında bağlantı kuran bir B2B pazaryeri olarak anlatıyor.
+
+## Büyük bedbank'lar
+
+Bedbank Kendi açıkladığı büyüklük Not
+Hotelbeds (HBX Group) 2025 mali yılında 8,2 milyar € işlem hacmi; 170'ten fazla ülke, yaklaşık 60.000 seyahat dağıtıcısı Şubat 2025'te İspanya borsasında işlem görmeye başladı
+WebBeds (Web Travel Group) 2026 mali yılında 5,8 milyar AUD işlem hacmi; 50.000'den fazla seyahat alıcısı Avustralya borsasında
+RateHawk (Emerging Travel Group) 110.000'den fazla seyahat acentesi; 250.000'den fazla doğrudan tesis 2024'te doğrudan sözleşmede Türkiye ilk sırada
+W2M (World2Meet) Dünyada 500.000'den fazla otel İspanyol grubu
+
+Türkiye bedbank'lar için önemli bir pazar: RateHawk'ın Mayıs 2024 açıklamasına göre doğrudan sözleşme sayısında Türkiye ilk sırada.
+
+## Oteller bedbank'larla nasıl çalışır?
+
+- Sözleşme: Otel bedbank'la bir kontrat imzalar ve net fiyat verir. Hotelbeds'te kontratlar MaxiRoom ekstranetinden yönetilir.
+
+- Sabit kontrat: Fiyat ve kontenjan sözleşmede sabitlenir. Bu durumda kanal yöneticisinden fiyat gönderilmez; minimum kontenjanlı kontratlarda bazı tarihleri kapatamayabilirsiniz.
+
+- Dinamik kontrat: Fiyat, müsaitlik ve kısıtlamalar kanal yöneticisinden gönderilir; böylece bedbank satışı da tek takvimden yönetilir ve overbooking riski azalır.
+
+- Ödeme: Ödemeyi misafir değil bedbank yapar, genelde konaklamadan sonra. Vade sözleşmeye bağlıdır.
+
+## Fiyat bütünlüğü: net fiyat neden sızar?
+
+Bedbank'a verilen net fiyatlar bazen kamuya açık sitelerde, sizin kendi fiyatınızın altında görünebilir. Hotelbeds 2019'da bu soruna karşı, acentelere yönelik fiyatları OTA'larda satan iş ortaklarını üç uyarıdan sonra bağlantısını kesen bir politika açıkladı ve ihlallerin %90 azaldığını duyurdu. Bu açıklamalar 2019 tarihli; sözleşme yaparken fiyatlarınızın hangi kanallarda satılabileceğini yazılı olarak sorun.
+
+## Küçük bir otel için artıları ve eksileri
+
+- Artı: Tek başına ulaşamayacağınız binlerce acente ve uzak pazar.
+
+- Artı: Kanal yöneticisiyle bağlıysa tek müsaitlik havuzu, az iş yükü.
+
+- Eksi: Net fiyat kamuya açık fiyattan düşüktür, kâr marjı daralır.
+
+- Eksi: Ödeme rezervasyonda değil sonradan gelir.
+
+- Eksi: Sabit ve kontenjanlı kontratlar esnekliği azaltır; birden fazla bedbank idari yük getirir.
+Komisyon ve net gelir hesabı için OTA komisyon hesaplayıcısını , Booking.com tarafı için Booking.com komisyonu yazısını okuyabilirsiniz.
+
+## Hostlio Pro ile bedbank bağlantısı
+
+Hostlio Pro'nun kanal yöneticisi Channex altyapısıyla 100'den fazla kanala bağlanır; Hotelbeds bunlardan biridir. Hotelbeds'in verdiği XML bilgileriyle kontratınızı seçer, odalarınızı eşlersiniz; dinamik kontratlarda fiyat, müsaitlik ve kısıtlamaları ayrı ayrı açıp kapatabilirsiniz. Sabit fiyatlı kontratlarda fiyat gönderilmez. Diğer bedbank'larla bağlantıyı kurmadan önce bize sorun.
+
+7 gün ücretsiz dene Kanal yöneticisi
+
+## Kaynaklar
+Tüm kaynaklara 16 Ekim 2026 tarihinde erişildi.
+
+- HBX Group: 2025 mali yıl sonuçları
+- HBX Group
+- WebBeds: FY26 sonuçları
+- WebBeds: ne yapıyoruz
+- Emerging Travel Group (RateHawk)
+- RateHawk: 100.000'i aşan doğrudan sözleşme (Mayıs 2024)
+- W2M: bedbank
+- Hotelbeds: fiyat bütünlüğü (4 Kasım 2019)
+- Hotelbeds: fiyat ihlalleri %90 azaldı (18 Aralık 2019)
+- Channex: Hotelbeds eşleme kılavuzu
+
+Q: Bedbank nedir?
+A: Otel odalarını otelden net fiyatla alıp seyahat acentelerine, tur operatörlerine ve OTA'lara satan B2B aracıdır. Misafir bedbank'ı görmez.
+
+Q: Bedbank ile OTA arasındaki fark nedir?
+A: OTA (Booking.com, Expedia) odayı doğrudan misafire satar ve genelde komisyon alır; bedbank ise acentelere toptan satar ve otelden net fiyat alır.
+
+Q: En büyük bedbank'lar hangileri?
+A: Hotelbeds (HBX Group), WebBeds, RateHawk (Emerging Travel Group) ve W2M en büyükleri arasında.
+
+Q: Hostlio Pro Hotelbeds'e bağlanır mı?
+A: Evet. Hostlio Pro'nun kanal yöneticisi Channex altyapısıyla Hotelbeds dahil 100'den fazla kanala bağlanır.
 
 ---
 # Booking.com komisyonu ne kadar, nasıl düşürülür? (2026)
@@ -4771,6 +4876,12 @@ URL: https://hostliopro.com/en/blog/
 
 ## Blog for hoteliers
 Practical writing on running an independent hotel, distribution and guest communication.
+
+Operations
+
+## Aparthotel self check-in without a 24/7 front desk (2026)
+October 16, 2026
+Running an aparthotel without a 24/7 front desk: online check-in, access, guest messaging and the guest ID rules in Italy, Spain, France, Portugal, UK, Germany.
 
 Choosing software
 
@@ -7147,6 +7258,97 @@ A: According to HiJiffy's pricing page, WhatsApp is part of the Premium plan; th
 
 Q: Is Hostlio Pro only a chatbot?
 A: No. Hostlio Pro is a PMS and channel manager with an AI assistant built in, so it also handles reservations, availability on 100+ OTAs, online check-in and analytics.
+
+---
+# Aparthotel self check-in without a 24/7 front desk (2026)
+URL: https://hostliopro.com/en/blog/aparthotel-self-check-in/
+
+## Aparthotel self check-in without a 24/7 front desk (2026)
+By the Hostlio Pro product team , the people who build Hostlio Pro. Published October 16, 2026 , updated September 23, 2026
+
+Short answer: an aparthotel can run without a 24/7 front desk if four things work: guests complete online check-in before arrival, they get clear arrival instructions and access, their questions are answered at any hour, and someone can step in when something goes wrong. What you cannot automate away is the local law on identifying foreign guests: Spain explicitly allows remote checks, but Italy requires a live identity check, and France, Portugal and Germany require the guest's own signature or confirmation on arrival.
+
+Contents
+
+- What "self check-in" really involves
+- The ID rules, country by country
+- Designing the arrival without a front desk
+- What to automate, and what to keep human
+- How Hostlio Pro helps (and what it doesn't do)
+- Sources
+This guide is general information, not legal advice. Legal points come from official sources checked on 16 October 2026; rules change and local authorities may interpret them differently. Check with your local police or a lawyer for your property.
+
+## What "self check-in" really involves
+
+- Before arrival: the guest fills in their details, scans their ID and signs the house rules online.
+
+- Arrival instructions: address, parking, entrance, apartment number and how to get in, sent at the right time in the guest's language.
+
+- Access: a key box, a door code or a smart lock, or a staffed check-in point for part of the day.
+
+- Identity check where the law requires it: live, by video at the entrance, or on arrival.
+
+- Support at any hour: answers to "where is the key", "how does the heating work", "can we check out later".
+
+- A fallback: a phone number someone answers for real problems.
+
+## The ID rules, country by country
+
+Country What the rules say about checking in foreign guests Remote check-in?
+Italy Operators must verify in person ( de visu ) that the guest matches the ID; the Consiglio di Stato restored this rule in November 2025. It said a video link at the entrance that checks the guest in real time could work. Collect data online, but check identity live
+Spain The Interior Ministry's FAQ allows collecting and verifying guest data with systems that work without the guest being physically present, if the data can be verified and data-protection rules are met. Data still goes to SES.Hospedajes within 24 hours. Yes, explicitly allowed
+France Foreign guests (EU citizens included) must fill in and sign a fiche individuelle de police on arrival; it is kept 6 months and shown to police on request. Signature on arrival
+Portugal Foreign guests, EU citizens included, must complete and sign a boletim de alojamento in person; the operator sends it via SIBA. Personal signature
+United Kingdom Guests aged 16+ give their name and nationality; non-British guests also give passport number and place of issue. The record is kept for 12 months for inspection. Record only; no in-person rule in the Order
+Germany Since 1 January 2025 only foreign guests fill in a registration form; they sign it by hand on arrival and show a passport. An electronic form is allowed if confirmed on arrival (card payment with strong authentication, eID or reading the eID/residence permit). Electronic, confirmed on arrival
+
+The common thread is a Schengen-wide rule that foreign guests personally complete and sign registration forms. Online check-in helps you collect the data early and accurately, but in most countries it does not replace the identity check or signature on arrival.
+
+## Designing the arrival without a front desk
+
+- Send instructions in two steps: practical details a few days before, access details on the day.
+
+- Write instructions for a tired traveller at night: short sentences, photos of the entrance, the exact apartment number.
+
+- Plan the identity check: a short staffed window, a video call at the entrance, or a member of staff meeting late arrivals, depending on the country.
+
+- Keep messages in one place: WhatsApp and OTA messages in one inbox, so nothing is missed at night. See answering guest messages with AI .
+
+- Prepare for the common questions: Wi-Fi, heating and air conditioning, rubbish, parking, late checkout.
+
+## What to automate, and what to keep human
+
+Automate the predictable: pre-arrival forms, arrival instructions, answers to factual questions, checkout reminders. Keep people for exceptions: lost keys, noise complaints, refunds, guests who cannot get in, and the identity check where your country requires one.
+
+## How Hostlio Pro helps (and what it doesn't do)
+
+With Hostlio Pro's online check-in (Pro and Growth plans), guests enter their details and sign before arrival, and can scan the machine-readable zone of their passport or ID card with their own phone: it is read on the device and no image is stored. The check-in link can be sent automatically by email. Lio, the AI assistant, answers guests on WhatsApp in their language at any hour using your property's information, and hands anything unusual to your team; on Pro and Growth it also covers the Booking.com, Airbnb and Expedia inboxes. To be clear: Hostlio Pro does not integrate with smart locks or key boxes and does not submit guest registrations to the police; those stay with your access system and your local procedure. For aparthotel-specific features, see aparthotel software .
+
+Try free for 7 days See online check-in
+
+## Sources
+All sources accessed 16 October 2026.
+
+- Consiglio di Stato, Sez. III, judgment 9101/2025 (Italy)
+- Spain, Ministry of the Interior: SES.Hospedajes FAQ (updated 10/08/2026)
+- Spain: Real Decreto 933/2021
+- France: CESEDA, articles R814-1 to R814-3
+- Portugal: SIBA privacy notice (Lei 23/2007, art. 15–16)
+- UK: Immigration (Hotel Records) Order 1972, article 4
+- UK: Immigration (Hotel Records) Order 1972, article 5
+- Germany: Bundesmeldegesetz §29
+
+Q: Is self check-in legal for aparthotels?
+A: Collecting guest data online is fine everywhere covered here, but identity rules differ: Spain explicitly allows remote verification, Italy requires a live in-person check (a real-time video check at the entrance may work), and France, Portugal and Germany require the foreign guest's signature or confirmation on arrival.
+
+Q: Do I need a 24/7 front desk?
+A: No, but you need a reliable way to answer guests at any hour and someone who can step in for real problems, plus a plan for the identity check where the law requires it.
+
+Q: Can guests scan their passport before arrival?
+A: Yes, with an online check-in that reads the machine-readable zone. In Hostlio Pro this happens on the guest's phone and no image is stored. It collects the data; it does not replace an in-person check where one is required.
+
+Q: Does Hostlio Pro work with smart locks?
+A: No. Hostlio Pro handles online check-in, guest messaging and operations; access codes and locks stay with your access system.
 
 ---
 # Best PMS for small hotels in 2026: an honest comparison
@@ -12028,6 +12230,12 @@ URL: https://hostliopro.com/it/blog/
 ## Blog per albergatori
 Articoli pratici sulla gestione di un hotel indipendente, sulla distribuzione e sulla comunicazione con gli ospiti.
 
+Operatività
+
+## Imposta di soggiorno 2026: calcolo, versamento e dichiarazione
+16 ottobre 2026
+Imposta di soggiorno 2026 per hotel e B&B: chi la applica, quanto (fino a 10 € +2 €), il gestore responsabile, dichiarazione entro il 30 giugno, sanzioni 2027.
+
 Scegliere il software
 
 ## Quanto costa un gestionale per hotel nel 2026: prezzi reali
@@ -13400,6 +13608,116 @@ A: Il ricavo medio che resta per notte venduta dopo commissioni e costi. Per con
 
 Q: I miei numeri vengono salvati?
 A: No. Il calcolo avviene nel browser e non viene inviato nulla.
+
+---
+# Imposta di soggiorno 2026: calcolo, versamento e dichiarazione
+URL: https://hostliopro.com/it/blog/imposta-di-soggiorno/
+
+## Imposta di soggiorno 2026: calcolo, versamento e dichiarazione
+A cura del team di prodotto Hostlio Pro , le persone che sviluppano Hostlio Pro. Pubblicato il 16 ottobre 2026 , aggiornato il 23 settembre 2026
+
+In breve: l'imposta di soggiorno la decide ogni comune che l'ha istituita, fino a 5 € per persona e per notte (10 € nelle città più turistiche), con un aumento facoltativo fino a 2 € prorogato anche per il 2026. Il gestore della struttura la incassa dall'ospite ed è responsabile del pagamento : la versa al comune nei tempi del regolamento comunale e presenta ogni anno, entro il 30 giugno , la dichiarazione telematica all'Agenzia delle Entrate. Dal 1° gennaio 2027 cambiano le sanzioni per dichiarazione omessa o infedele.
+
+Indice
+
+- Chi può applicarla e quanto
+- Un esempio: le tariffe di Milano nel 2026
+- Il gestore è responsabile del pagamento
+- La dichiarazione annuale entro il 30 giugno
+- Sanzioni: cosa cambia dal 2027
+- Affitti brevi e portali
+- Da non confondere
+- Cosa fa Hostlio Pro (e cosa no)
+- Fonti
+Questa guida è informativa e non è una consulenza fiscale. Si basa su norme e pagine ufficiali (Normattiva, MEF, Agenzia delle Entrate, Comune di Milano, Roma Capitale) consultate il 16 ottobre 2026. Tariffe, esenzioni e scadenze dei versamenti dipendono dal tuo comune: verifica il regolamento comunale.
+
+## Chi può applicarla e quanto
+
+- Chi: comuni capoluogo di provincia, unioni di comuni e comuni inseriti negli elenchi regionali delle località turistiche o città d'arte (D.Lgs. 23/2011, art. 4).
+
+- Quanto: fino a 5 € per notte, graduata in base al prezzo; i capoluoghi con presenze turistiche venti volte superiori ai residenti possono arrivare a 10 €. Roma applica un contributo di soggiorno fino a 10 €.
+
+- Aumento 2026: la maggiorazione fino a 2 € per notte introdotta per il Giubileo è stata prorogata al 2026 dalla legge di bilancio; ogni comune decide se applicarla.
+
+- Esenzioni e riduzioni: le stabilisce ogni comune nel proprio regolamento.
+
+## Un esempio: le tariffe di Milano nel 2026
+
+Struttura (Milano, dal 1° aprile 2026) Per persona e per notte
+Hotel 1 stella 3,00 €
+Hotel 2 stelle 4,00 €
+Hotel 3 stelle 7,00 €
+Hotel 4 stelle 10,00 €
+Hotel 5 stelle 12,00 €
+B&B, affittacamere, case vacanza, locazioni brevi 9,50 €
+Ostelli, strutture all'aria aperta 3,00 €
+
+A Milano il 5 stelle arriva a 12 € sommando il massimo di 10 € e la maggiorazione di 2 €. A Roma, ad esempio, sono esenti i minori fino al compimento dei 10 anni e l'imposta si applica al massimo per 10 notti nell'anno solare.
+
+## Il gestore è responsabile del pagamento
+
+Dal 2020 il gestore della struttura ricettiva è responsabile del pagamento dell'imposta, con diritto di rivalsa sull'ospite. In pratica: la incassi, la versi al comune e ne rispondi tu se non viene versata. Le modalità e le scadenze dei versamenti periodici le fissa il comune: a Roma, per esempio, comunicazione e versamento sono trimestrali, entro il 16 del mese successivo al trimestre.
+
+## La dichiarazione annuale entro il 30 giugno
+
+- Quando: entro il 30 giugno dell'anno successivo (per il 2026, entro il 30 giugno 2027).
+
+- Come: solo per via telematica, con il modello approvato dal DM 29 aprile 2022, tramite i servizi dell'Agenzia delle Entrate (Fisconline/Entratel) o un intermediario abilitato.
+
+- Cosa contiene: una dichiarazione per comune, con i dati per trimestre di ogni struttura: tariffa applicata, presenze ordinarie, esenti e ridotte, e l'importo versato al comune.
+
+## Sanzioni: cosa cambia dal 2027
+
+Violazione Fino al 31 dicembre 2026 Dal 1° gennaio 2027
+Omessa dichiarazione Dal 100% al 200% dell'importo dovuto 100% del tributo non versato, minimo 50 €
+Dichiarazione infedele Dal 100% al 200% dell'importo dovuto 40% del tributo, minimo 50 €
+Omesso o tardivo versamento Art. 13 D.Lgs. 471/1997 e regolamento comunale Art. 13 D.Lgs. 471/1997 e regolamento comunale
+
+Le nuove sanzioni del D.Lgs. 147/2026 si applicano alle violazioni commesse dal 1° gennaio 2027. Il regolamento comunale può prevedere ulteriori sanzioni (Roma, ad esempio, per il versamento omesso o tardivo).
+
+## Affitti brevi e portali
+
+Per le locazioni brevi, chi incassa il canone o interviene nel pagamento, compresi i portali online, è responsabile del pagamento dell'imposta e degli altri obblighi, con le stesse regole del gestore (DL 50/2017, art. 4). Se un portale la incassa per te dipende dagli accordi con il singolo comune: verifica sempre.
+
+## Da non confondere
+
+- Alloggiati Web : la comunicazione degli ospiti alla Questura è un obbligo diverso.
+
+- ISTAT: le statistiche turistiche vanno ai sistemi regionali, separatamente.
+
+## Cosa fa Hostlio Pro (e cosa no)
+
+Per essere chiari: Hostlio Pro non calcola l'imposta di soggiorno, non la versa e non presenta la dichiarazione. Ti aiuta a tenere in ordine prenotazioni, notti e ospiti in un unico pannello e a esportare i report in Excel per il tuo commercialista. Se vuoi un gestionale che gestisca anche l'imposta, chiedilo espressamente ai fornitori: lo trovi nel confronto dei gestionali per hotel più usati .
+
+Prova gratis per 7 giorni Vedi il gestionale
+
+## Fonti
+Tutte le fonti sono state consultate il 16 ottobre 2026.
+
+- Normattiva: D.Lgs. 23/2011, art. 4
+- Normattiva: DL 34/2020, art. 180
+- Normattiva: D.Lgs. 147/2026, art. 12
+- MEF: imposta di soggiorno, disciplina del tributo
+- MEF: dichiarazione telematica dell'imposta di soggiorno
+- Gazzetta Ufficiale: DM 29 aprile 2022 (modello di dichiarazione)
+- Comune di Milano: tariffe 2026
+- Roma Capitale: regolamento (Del. A.C. 34/2024)
+- Normattiva: DL 50/2017, art. 4 (locazioni brevi)
+
+Q: Quanto può essere al massimo l'imposta di soggiorno?
+A: Fino a 5 € per persona e per notte; fino a 10 € nei capoluoghi più turistici e a Roma. Nel 2026 i comuni possono aggiungere fino a 2 € di maggiorazione, prorogata dalla legge di bilancio.
+
+Q: Chi deve versare l'imposta di soggiorno?
+A: La paga l'ospite, ma il gestore della struttura è responsabile del pagamento: la incassa e la versa al comune, con diritto di rivalsa sull'ospite.
+
+Q: Entro quando si presenta la dichiarazione?
+A: Entro il 30 giugno dell'anno successivo, solo per via telematica con il modello del DM 29 aprile 2022.
+
+Q: Quali sanzioni ci sono?
+A: Fino al 31 dicembre 2026, dal 100% al 200% dell'importo per dichiarazione omessa o infedele. Dal 1° gennaio 2027: 100% (minimo 50 €) per omessa e 40% (minimo 50 €) per infedele dichiarazione.
+
+Q: Hostlio Pro calcola l'imposta di soggiorno?
+A: No. Hostlio Pro non calcola, non versa e non dichiara l'imposta; puoi esportare i report delle prenotazioni in Excel per il tuo commercialista.
 
 ---
 # Quanto costa un gestionale per hotel nel 2026: prezzi reali
