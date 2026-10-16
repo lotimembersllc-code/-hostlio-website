@@ -341,4 +341,6 @@ def fr(U):
     return c, faq
 
 
-FN = {"en": en, "es": es, "it": it, "fr": fr}
+import whatsapp_tr
+META["tr"] = whatsapp_tr.META_TR
+FN = {"en": en, "es": es, "it": it, "fr": fr, "tr": whatsapp_tr.tr}

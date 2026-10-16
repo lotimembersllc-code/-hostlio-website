@@ -645,9 +645,23 @@
 },
 {
 "lang": "fr",
+"key": "post-chdhotes",
+"title": "Logiciel chambres d'hôtes : comment choisir (2026)",
+"crumb": "Logiciel chambres d'hôtes : comment choisir (2026)",
+"type": "article"
+},
+{
+"lang": "fr",
 "key": "post-cmfr",
 "title": "Meilleurs channel managers pour petits hôtels en 2026",
 "crumb": "Meilleurs channel managers pour petits hôtels en 2026",
+"type": "article"
+},
+{
+"lang": "fr",
+"key": "post-fichepolice",
+"title": "Fiche de police : la déclaration des clients étrangers (2026)",
+"crumb": "Fiche de police : la déclaration des clients étrangers (2026)",
 "type": "article"
 },
 {
@@ -1383,6 +1397,13 @@
 "key": "post-taxtr",
 "title": "Konaklama vergisi 2026: oran, hesaplama ve beyan",
 "crumb": "Konaklama vergisi 2026: oran, hesaplama ve beyan",
+"type": "article"
+},
+{
+"lang": "tr",
+"key": "post-whatsapp",
+"title": "WhatsApp ile otel rezervasyonu ve misafir iletişimi (2026)",
+"crumb": "WhatsApp ile otel rezervasyonu ve misafir iletişimi (2026)",
 "type": "article"
 },
 {

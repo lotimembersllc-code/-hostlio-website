@@ -1120,6 +1120,12 @@ Kanal yönetimi
 12 Ekim 2026
 Booking.com komisyonu nasıl hesaplanır, oran neye göre değişir, Preferred ve Genius maliyeti, KDV ve %17 tavan teklifi. Resmî kaynaklı rehber.
 
+Misafir iletişimi
+
+## WhatsApp ile otel rezervasyonu ve misafir iletişimi (2026)
+16 Ekim 2026
+Oteller için WhatsApp rehberi: Business uygulaması mı API mi, 24 saat kuralı, 2026 Meta ücretleri, İYS ve KVKK, rezervasyon talebi ve otomatik cevap.
+
 Operasyon ve mevzuat
 
 ## Konaklama vergisi 2026: oran, hesaplama ve beyan
@@ -2870,6 +2876,122 @@ A: Şu an yok. Yabancı Dijital Konaklama Platformları kanun teklifi %17 tavan 
 
 Q: Türkler Booking.com'dan Türkiye'deki otellere rezervasyon yapabilir mi?
 A: 2017'deki mahkeme kararından beri yapamıyor; yabancı misafirler Türkiye'deki otellere Booking.com üzerinden rezervasyon yapmaya devam ediyor.
+
+---
+# WhatsApp ile otel rezervasyonu ve misafir iletişimi (2026)
+URL: https://hostliopro.com/tr/blog/otel-whatsapp-rehberi/
+
+## WhatsApp ile otel rezervasyonu ve misafir iletişimi (2026)
+Yazan: Hostlio Pro ürün ekibi , otel yazılımı geliştiren ekip. Yayın: 16 Ekim 2026 , güncelleme: 23 Eylül 2026
+
+Kısa cevap: Misafirler WhatsApp'ı zaten kullandığı ve hızlı cevap verdiği için oteller için en etkili iletişim kanalıdır. Tek kişilik küçük bir işletme ücretsiz WhatsApp Business uygulamasıyla başlayabilir; ekip, otomatik cevap ya da AI asistan gerekiyorsa WhatsApp Business Platform (API) kullanılır. Misafirin son mesajından sonraki 24 saat içinde serbestçe cevap verebilirsiniz; bu sürenin dışında Meta'nın onayladığı bir şablon gerekir. 1 Ekim 2026'dan beri misafire verilen cevaplar her numara için ayda ilk 1.000 mesajdan sonra ücretli. Kampanya mesajı göndermek için misafirin onayı ve İYS kaydı gerekir; rezervasyonla ilgili bilgilendirmeler için gerekmez.
+
+İçindekiler
+
+- WhatsApp Business uygulaması mı, API mi?
+- 24 saat kuralı
+- 2026'da Meta ücretleri
+- Şablonlar ve onay: neyi gönderebilirsiniz?
+- Türkiye'de ticari ileti kuralları: İYS ve onay
+- KVKK: aydınlatma ve yurt dışına aktarım
+- WhatsApp'tan rezervasyon nasıl alınır?
+- Hostlio Pro'da WhatsApp
+- Kaynaklar
+Bu yazı genel bilgilendirme amaçlıdır, hukuki danışmanlık değildir. Meta'nın kuralları ve ücretleri ile Türk mevzuatı 16 Ekim 2026 tarihinde resmî kaynaklardan derlendi; Meta kurallarını ve ücretlerini sık değiştirir.
+
+## WhatsApp Business uygulaması mı, API mi?
+
+WhatsApp Business uygulaması WhatsApp Business Platform (API)
+Kimin için Mesajlara elle cevap veren tek işletmeci Ekip, otomatik cevap, PMS ve AI asistan bağlantısı
+Cihaz Bir telefon ve en fazla 4 bağlı cihaz Panel üzerinden, birden fazla kullanıcı
+Otomasyon Karşılama ve uzaktayım mesajları Kurallar, şablonlar, AI ile otomatik cevap
+Ücret Uygulama ücretsiz Meta mesaj başına ücretlendirir (aşağıda)
+
+Aynı numarayı hem uygulamada hem Platform'da kullanmak Meta'nın "Coexistence" özelliğiyle mümkün: Mevcut uygulama numarası bir çözüm ortağı üzerinden Platform'a bağlanır ve sohbet geçmişi iki yönde eşitlenir. Bu durumda uygulamadaki grup, kaybolan mesaj ve yayın listesi gibi bazı özellikler kapanır; telefon 14 gün kadar kullanılmazsa bağlantı kopar. Kuracağınız sağlayıcıya bu özelliği destekleyip desteklemediğini sorun.
+
+## 24 saat kuralı
+
+Misafir size yazdığında 24 saatlik bir "müşteri hizmeti penceresi" açılır ve misafirin her yeni mesajı pencereyi yeniler. Pencere açıkken serbest metinle cevap verebilirsiniz. Pencere kapandıktan sonra yalnızca Meta'nın onayladığı mesaj şablonlarını gönderebilirsiniz. Pratikte bu, "geçen hafta yazan misafire bugün serbestçe yazamam" demektir: Rezervasyon onayı, check-in bilgisi ya da hatırlatma için önceden onaylanmış şablonlar hazırlamanız gerekir.
+
+## 2026'da Meta ücretleri
+
+Platform 1 Temmuz 2025'ten beri mesaj başına ücretlendiriliyor; misafirin size yazdığı mesajlar ücretsiz, ücret yalnızca işletmenin teslim edilen mesajlarından alınıyor. 1 Ekim 2026'dan itibaren iki şey değişti: Misafire verilen servis cevapları her işletme numarası için ayda ilk 1.000 mesajdan sonra ücretli, pencere içinde gönderilen hizmet (utility) şablonları da yeniden ücretli.
+
+Mesaj türü Ne zaman Türkiye ücreti (1 Ekim 2026)
+Servis (misafire cevap) Misafirin son mesajından sonraki 24 saat içinde, serbest metin Her numara için ayda ilk 1.000 mesaj ücretsiz; sonrası mesaj başına 0,0009 $
+Hizmet (utility) şablonu Rezervasyon onayı, check-in bilgisi gibi bilgilendirmeler 0,0009 $
+Pazarlama şablonu Kampanya, teklif, tekrar davet 0,0109 $
+Doğrulama şablonu Tek kullanımlık kod 0,0009 $
+
+Ücretler Meta'nın fiyatlandırma sayfasındaki ücret kartından, dolar olarak; Türk lirası ücret listesi yayınlanmıyor. Hizmet ve doğrulama mesajlarında hacim indirimi var.
+
+## Şablonlar ve onay: neyi gönderebilirsiniz?
+
+- Hizmet (utility): Misafirin bir işlemine bağlı, kişiye özel ve tanıtım içermeyen mesajlar: rezervasyon onayı, check-in saati, adres. İçine bir teklif eklerseniz Meta şablonu pazarlama sayar.
+
+- Pazarlama: Kampanya, indirim, "tekrar bekleriz" mesajları.
+
+- Onay (opt-in): Meta, bir kişiye WhatsApp'tan yazabilmeniz için numarasını size vermiş olmasını ve işletmenizin adıyla açıkça onay almış olmanızı ister. Mesaj almak istemeyenlerin talebine uymak zorunludur.
+
+- Hassas bilgi: Meta politikasına göre sohbette misafirden tam kart numarası ya da kimlik numarası istenmemelidir.
+
+## Türkiye'de ticari ileti kuralları: İYS ve onay
+
+6563 sayılı Kanun'a göre mal ya da hizmet tanıtan ticari elektronik iletiler için alıcının önceden onayı gerekir. Ancak misafire, aldığı hizmetle ilgili değişiklik, kullanım ve bakım hakkında gönderilen iletiler için ayrıca onay gerekmez. Yönetmelik de abonelik, ödeme, bilgi güncelleme, satın alma, teslimat ve benzeri durumlara ilişkin bildirimleri onaydan muaf tutar; bu bildirimlerde tanıtım yapılamaz. Ticari ileti göndermek isteyen işletmeler İleti Yönetim Sistemi'ne (İYS) kaydolur ve İYS'ye kaydedilmeyen onaylar geçersiz sayılır. Misafir ret hakkını her zaman ücretsiz kullanabilir; gönderim 3 iş günü içinde durdurulmalıdır.
+
+Pratikte: Rezervasyon onayı, giriş bilgisi ve konaklamayla ilgili hatırlatmalar bilgilendirme sayılır. Kampanya, indirim ve tekrar davet mesajları ise ticari iletidir; onay ve İYS kaydı gerekir. Onay, hizmetin verilmesi için şart koşulamaz.
+
+## KVKK: aydınlatma ve yurt dışına aktarım
+
+Misafirin telefon numarası ve yazışmaları kişisel veridir. KVKK'nın 10. maddesine göre veriyi toplarken misafiri kimin, hangi amaçla, kime aktararak işlediğiniz ve haklarını konusunda bilgilendirmeniz gerekir. WhatsApp Business Platform kullanmak verinin yurt dışındaki sunuculara gitmesi demektir; 1 Haziran 2024'ten beri yürürlükte olan düzenlemeye göre düzenli aktarımlar yeterlilik kararı ya da standart sözleşme gibi güvencelere dayanmalı, açık rıza yalnızca arızi aktarımlarda kullanılabilir. KVK Kurulu 2021'de WhatsApp'a aydınlatma ve yurt dışı aktarım ihlalleri nedeniyle para cezası vermişti. Aydınlatma metninizi mali müşaviriniz ya da hukuk danışmanınızla birlikte güncelleyin.
+
+## WhatsApp'tan rezervasyon nasıl alınır?
+
+- Numarayı görünür yapın: Web sitenizde, Google profilinizde ve onay e-postalarında WhatsApp bağlantısı olsun.
+
+- Hızlı cevap verin: Fiyat soran misafir genelde birkaç oteli aynı anda soruyor; ilk düzgün cevap çoğu zaman kazanır.
+
+- Bilgileri tek seferde toplayın: Tarihler, kişi sayısı, oda tercihi.
+
+- Fiyatı ve koşulları net yazın: Kahvaltı, iptal koşulu, ödeme şekli.
+
+- Onayı yazılı verin: Rezervasyonu sisteminize girin ve misafire bilgilendirme olarak onay gönderin.
+Sık sorulan sorulara otomatik cevap vermek için misafir mesajlarını yapay zekâ ile yanıtlamak , Booking.com mesajları için Booking.com mesajlarına otomatik cevap rehberlerine bakabilirsiniz.
+
+## Hostlio Pro'da WhatsApp
+
+Hostlio Pro'nun AI asistanı Lio, misafirlere WhatsApp'tan her planda, otelinizin bilgileriyle ve misafirin dilinde cevap verir; WhatsApp ve OTA mesajları tek gelen kutusunda toplanır. Pro ve Growth planlarında misafir WhatsApp'tan oda sorduğunda Lio tarihleri, kişi sayısını ve oda tercihini toplar, sizin fiyat ve müsaitliğinizden fiyat verir; talep size gelir ve siz onaylayınca rezervasyona dönüşür. Lio rezervasyonu kendi başına onaylamaz; indirim, şikâyet gibi kararları size bırakır. Ayrıntılar otel WhatsApp asistanı sayfasında.
+
+7 gün ücretsiz dene Otel WhatsApp asistanı
+
+## Kaynaklar
+Tüm kaynaklara 16 Ekim 2026 tarihinde erişildi.
+
+- Meta: WhatsApp Business Platform fiyatlandırması
+- Meta: mesaj gönderme ve 24 saatlik pencere
+- WhatsApp Business Messaging Policy
+- Meta: şablon kategorileri
+- Meta: WhatsApp Business uygulaması kullanıcılarını Platform'a bağlama (Coexistence)
+- 6563 sayılı Elektronik Ticaretin Düzenlenmesi Hakkında Kanun
+- Ticari İletişim ve Ticari Elektronik İletiler Hakkında Yönetmelik (RG 15.07.2015)
+- Yönetmelik değişikliği, İYS (RG 04.01.2020)
+- 6698 sayılı Kişisel Verilerin Korunması Kanunu
+- KVKK: WhatsApp hakkında kamuoyu duyurusu (2021/891)
+
+Q: WhatsApp Business oteller için ücretsiz mi?
+A: WhatsApp Business uygulaması ücretsiz. WhatsApp Business Platform'da (API) Meta mesaj başına ücret alır; 1 Ekim 2026'dan beri misafire verilen cevaplar her numara için ayda ilk 1.000 mesajdan sonra ücretli (Türkiye için mesaj başına 0,0009 $).
+
+Q: Misafire 24 saatten sonra WhatsApp'tan yazabilir miyim?
+A: Yalnızca Meta'nın onayladığı bir mesaj şablonuyla ve misafir sizden mesaj almayı onayladıysa. Serbest metinli cevaplar misafirin son mesajından sonraki 24 saat içinde gönderilebilir.
+
+Q: Rezervasyon onayı göndermek için İYS kaydı gerekir mi?
+A: Rezervasyon onayı ve konaklamayla ilgili bilgilendirmeler, tanıtım içermedikleri sürece onaydan muaftır. Kampanya ve tekrar davet gibi ticari iletiler için misafirin onayı ve İYS kaydı gerekir.
+
+Q: Aynı numarayı hem telefonda hem panelde kullanabilir miyim?
+A: Meta'nın Coexistence özelliğiyle, destekleyen bir sağlayıcı üzerinden mümkün; bu durumda uygulamadaki bazı özellikler (gruplar, yayın listeleri) kapanır.
+
+Q: Hostlio Pro WhatsApp'tan rezervasyon alır mı?
+A: Pro ve Growth planlarında Lio misafirin rezervasyon talebini toplar ve fiyat verir; talep size gelir, siz onaylayınca rezervasyona dönüşür. Lio rezervasyonu kendi başına onaylamaz.
 
 ---
 # Konaklama vergisi 2026: oran, hesaplama ve beyan
@@ -17985,6 +18107,18 @@ URL: https://hostliopro.com/fr/blog/
 ## Le blog des hôteliers
 Des articles pratiques sur la gestion d'un hôtel indépendant, la distribution et la communication avec les clients.
 
+Exploitation
+
+## Fiche de police : la déclaration des clients étrangers (2026)
+16 octobre 2026
+Fiche individuelle de police en 2026 : qui doit la remplir, quels clients (UE compris), quelles données, conservation 6 mois, transmission et RGPD.
+
+Choisir un logiciel
+
+## Logiciel chambres d'hôtes : comment choisir (2026)
+16 octobre 2026
+Quel logiciel pour des chambres d'hôtes en 2026 : planning, channel manager, messages, prix publiés et règles (5 chambres, mairie, taxe de séjour).
+
 Choisir un logiciel
 
 ## Prix d'un logiciel de gestion hôtelière en 2026
@@ -19459,6 +19593,196 @@ A: Tous. Lio répond aux clients sur WhatsApp dès Starter ; Pro et Growth ajout
 
 Q: Hostlio Pro est-il disponible en français ?
 A: Oui : le tableau de bord, l’application mobile et le formulaire de check-in client existent en français (ainsi qu’en anglais, turc, espagnol, italien et portugais). Le support est en anglais et en turc.
+
+---
+# Fiche de police : la déclaration des clients étrangers (2026)
+URL: https://hostliopro.com/fr/blog/fiche-de-police-clients-etrangers/
+
+## Fiche de police : la déclaration des clients étrangers (2026)
+Par l' équipe produit Hostlio Pro , celle qui conçoit Hostlio Pro. Publié le 16 octobre 2026 , mis à jour le 23 septembre 2026
+
+En bref : en France, les hôtels, chambres d'hôtes, meublés de tourisme, campings et résidences de tourisme doivent faire remplir et signer une fiche individuelle de police par chaque client étranger dès son arrivée, y compris les ressortissants de l'Union européenne . La fiche indique notamment l'identité, la nationalité, le domicile, le téléphone, l'e-mail et les dates du séjour. Elle se conserve 6 mois et n'est remise à la police ou à la gendarmerie que sur leur demande, éventuellement sous forme dématérialisée.
+
+Sommaire
+
+- Qui doit la remplir ?
+- Quels clients sont concernés ?
+- Quelles informations ?
+- Conservation et transmission
+- Sanctions
+- À ne pas confondre
+- Comment Hostlio Pro peut vous aider (et ce qu'il ne fait pas)
+- Sources
+Ce guide est informatif et ne constitue pas un conseil juridique. Il s'appuie sur les articles R814-1 à R814-3 du CESEDA, l'arrêté du 1er octobre 2015 et les fiches de service-public.gouv.fr et de la CNIL, consultés le 16 octobre 2026.
+
+## Qui doit la remplir ?
+
+L'article R814-1 du CESEDA vise les hôteliers, les exploitants de villages et maisons familiales de vacances, de résidences et villages résidentiels de tourisme, les loueurs de meublés de tourisme et de chambres d'hôtes et les exploitants de terrains de camping et de caravanage. Ils doivent « remplir, ou faire remplir, et signer par l'étranger, dès son arrivée » la fiche. Les personnes qui louent des locaux nus ne sont pas concernées.
+
+## Quels clients sont concernés ?
+
+Tout client qui n'a pas la nationalité française, y compris les ressortissants européens, selon service-public.gouv.fr. Cela vaut pour les loueurs professionnels comme non professionnels. Un client qui refuse de remplir la fiche peut se voir refuser l'hébergement.
+
+## Quelles informations ?
+
+Le modèle de fiche est fixé par l'arrêté du 1er octobre 2015. L'article R814-2 liste notamment :
+
+Donnée Précision
+Nom et prénoms Du client étranger
+Date et lieu de naissance
+Nationalité
+Domicile habituel L'adresse où le client vit habituellement
+Téléphone mobile et adresse e-mail
+Date d'arrivée et date de départ prévue
+Enfants de moins de 15 ans Peuvent figurer sur la fiche de l'adulte qui les accompagne
+
+## Conservation et transmission
+
+- Durée : les fiches se conservent pendant 6 mois (R814-3).
+
+- Transmission : il n'y a pas d'envoi automatique ; les fiches sont remises aux services de police et unités de gendarmerie sur leur demande .
+
+- Format : la transmission peut se faire sous forme dématérialisée, par exemple par e-mail.
+
+- Données personnelles : la CNIL rappelle que le client doit être informé de son droit d'accès et de rectification, et que les données ne vont qu'aux services de police et de gendarmerie, pour les finalités prévues.
+Les textes parlent de « remplir et signer » sans préciser le support. Un formulaire en ligne peut aider à recueillir les informations à l'avance, mais vérifiez que vous pouvez produire la fiche signée demandée par les autorités.
+
+## Sanctions
+
+Le CESEDA ne prévoit pas de sanction spécifique pour la fiche de police. Ce n'est pas une raison de la négliger : en cas de contrôle, vous devez pouvoir présenter les fiches des 6 derniers mois.
+
+## À ne pas confondre
+
+- Taxe de séjour : elle se collecte et se reverse à la commune ; c'est une obligation fiscale distincte.
+
+- Déclaration des chambres d'hôtes en mairie : une démarche faite une fois, avant de commencer l'activité.
+
+## Comment Hostlio Pro peut vous aider (et ce qu'il ne fait pas)
+
+Avec le check-in en ligne de Hostlio Pro (forfaits Pro et Growth), le client remplit ses informations avant d'arriver et peut scanner son document avec son téléphone : la lecture se fait sur l'appareil et aucune image n'est conservée. Vous avez ainsi une partie des informations à l'avance et le client signe en ligne. Pour être clair : Hostlio Pro ne remplit pas la fiche de police à votre place, ne la conserve pas pour vous et ne la transmet pas . Vérifiez que les informations recueillies couvrent bien celles de la fiche, et gardez la fiche selon les règles ci-dessus.
+
+Essai gratuit de 7 jours Voir le check-in en ligne
+
+## Sources
+Toutes les sources ont été consultées le 16 octobre 2026.
+
+- CESEDA, art. R814-1
+- CESEDA, art. R814-2
+- CESEDA, art. R814-3
+- Arrêté du 1er octobre 2015 relatif au modèle de fiche individuelle de police
+- Service-public : fiche de police dans un hébergement touristique (F33458)
+- Service-public : chambres d'hôtes (F17452)
+- CNIL : la fiche de police dans les établissements
+
+Q: La fiche de police est-elle obligatoire pour les clients européens ?
+A: Oui. Selon service-public.gouv.fr, tout client qui n'a pas la nationalité française doit remplir la fiche, y compris les ressortissants de l'Union européenne.
+
+Q: Combien de temps faut-il conserver les fiches de police ?
+A: Six mois (CESEDA, R814-3). Elles sont remises à la police ou à la gendarmerie uniquement sur leur demande.
+
+Q: Faut-il envoyer les fiches de police à la police ?
+A: Non, pas systématiquement. Il n'y a pas de transmission automatique : vous les remettez sur demande des services de police ou de gendarmerie, éventuellement sous forme dématérialisée.
+
+Q: Les enfants doivent-ils avoir leur propre fiche ?
+A: Les données des enfants de moins de 15 ans peuvent figurer sur la fiche de l'adulte qui les accompagne (CESEDA, R814-2).
+
+Q: Hostlio Pro remplit-il la fiche de police ?
+A: Non. Le check-in en ligne de Hostlio Pro recueille une partie des informations du client avant l'arrivée, mais la fiche, sa conservation et sa remise restent sous votre responsabilité.
+
+---
+# Logiciel chambres d'hôtes : comment choisir (2026)
+URL: https://hostliopro.com/fr/blog/logiciel-chambres-d-hotes/
+
+## Logiciel chambres d'hôtes : comment choisir (2026)
+Par l' équipe produit Hostlio Pro , celle qui conçoit Hostlio Pro. Publié le 16 octobre 2026 , mis à jour le 23 septembre 2026
+
+En bref : pour des chambres d'hôtes (5 chambres au maximum), il n'est pas nécessaire d'avoir un PMS d'hôtel complet. Il vous faut un planning clair, un channel manager pour ne jamais vendre deux fois la même chambre sur Booking.com et Airbnb, une façon simple de répondre aux messages des clients et un prix fixe adapté à quelques chambres. Parmi les prix publiés, comptez d'environ 20 à 80 € par mois. Le logiciel ne remplace pas vos obligations : déclaration en mairie, taxe de séjour et fiche de police pour les clients étrangers restent à votre charge.
+
+Sommaire
+
+- Les règles à connaître en 2026
+- Ce qu'un logiciel doit faire pour des chambres d'hôtes
+- Comparatif des solutions pour quelques chambres
+- Hostlio Pro pour des chambres d'hôtes
+- Comment choisir
+- Sources
+Hostlio Pro figure dans ce comparatif : nous ne sommes pas neutres. Les règles viennent des textes officiels (Code du tourisme, CGCT, CESEDA, service-public.gouv.fr) consultés le 16 octobre 2026 ; les prix des pages officielles des éditeurs, consultées les 12 et 13 octobre 2026. Ce guide n'est pas un conseil juridique ou fiscal.
+
+## Les règles à connaître en 2026
+
+Règle Ce que dit le texte Source
+Taille 5 chambres au maximum, 15 personnes au maximum, nuitée et petit-déjeuner fournis ensemble, accueil par l'habitant Code du tourisme, D324-13
+Équipement Chaque chambre donne accès à une salle d'eau et à un WC ; linge de maison fourni D324-14
+Déclaration Déclaration préalable en mairie (Cerfa 13566, en ligne possible) ; nouvelle déclaration à chaque changement L324-4, D324-15
+Taxe de séjour Collectée par le loueur et reversée à la commune ; barème de 0,20 à 0,80 € par personne et par nuit CGCT L2333-30, L2333-34
+Clients étrangers Fiche individuelle de police, y compris pour les ressortissants européens ; conservation 6 mois CESEDA R814-1 à R814-3
+
+Pour le statut fiscal et social (micro-BIC, immatriculation), la fiche officielle F17452 est à jour : en 2026, le micro-BIC s'applique sous 83 600 € de recettes. La loi Le Meur de 2024 vise surtout les meublés de tourisme ; la déclaration des chambres d'hôtes en mairie n'a pas changé.
+
+## Ce qu'un logiciel doit faire pour des chambres d'hôtes
+
+- Un planning lisible de vos 2 à 5 chambres, avec les réservations directes et celles des plateformes au même endroit.
+
+- Un channel manager qui ferme la chambre partout dès qu'elle est réservée. C'est ce qui évite le surbooking entre Booking.com, Airbnb et vos réservations directes. Voir les meilleurs channel managers pour petits hôtels .
+
+- Les messages des clients au même endroit  : heure d'arrivée, petit-déjeuner, parking, accès. Quand vous êtes seul à gérer, une réponse automatique avec vos propres informations fait gagner beaucoup de temps.
+
+- Une application mobile , parce qu'en chambres d'hôtes on gère souvent depuis la cuisine ou le jardin.
+
+- Un prix fixe adapté à quelques chambres, sans commission ni engagement.
+
+## Comparatif des solutions pour quelques chambres
+
+Solution Type Prix publié Essai
+Hostlio Pro (Starter) PMS + channel manager + assistant IA sur WhatsApp 49 $ par mois (USD), jusqu'à 10 chambres 7 jours
+Elloha Channel manager + moteur de réservation (site web dans l'offre Magic) 49 € (Connect) ou 59 € (Magic) par mois 21 jours, sans carte
+Sirvoy PMS ; channel manager dans l'offre Pro Jusqu'à 10 chambres : Starter 22 €, Pro 79 € par mois 14 jours, sans carte
+Beds24 PMS + channel manager à l'usage 12,90 € + 2,60 € par chambre + 0,55 € par lien Gratuit
+Amenitiz Tout-en-un ; chambres d'hôtes à partir de 3 chambres Sur devis Démo
+
+Elloha est surtout un channel manager avec moteur de réservation ; Sirvoy et Beds24 sont des PMS simples et économiques ; Amenitiz vise les chambres d'hôtes à partir de 3 chambres, sur devis. Pour les prix des logiciels plus complets, voir le prix d'un logiciel de gestion hôtelière en 2026 .
+
+## Hostlio Pro pour des chambres d'hôtes
+
+Le forfait Starter de Hostlio Pro (49 $ par mois, jusqu'à 10 chambres) comprend le planning, le channel manager connecté à plus de 100 OTA, l'application iOS et Android et Lio, l'assistant IA qui répond à vos clients sur WhatsApp dans leur langue avec les informations de votre maison. Le check-in en ligne avec signature est dans les forfaits Pro et Growth. Ce que Hostlio Pro ne fait pas : pas de moteur de réservation ni d'encaissement en ligne, pas de déclaration de taxe de séjour et pas de transmission de fiche de police. Il est facturé en dollars.
+
+Essai gratuit de 7 jours Voir les tarifs
+
+## Comment choisir
+
+- Comptez vos canaux  : si vous vendez sur Booking.com et Airbnb, le channel manager est indispensable.
+
+- Regardez le coût annuel plutôt que le prix d'appel.
+
+- Testez avec vos vraies chambres et une plateforme connectée pendant l'essai gratuit.
+
+- Prévoyez vos obligations  : taxe de séjour et fiche de police se gèrent en dehors du logiciel si celui-ci ne les prend pas en charge.
+
+## Sources
+Textes officiels consultés le 16 octobre 2026 ; pages des éditeurs les 12 et 13 octobre 2026.
+
+- Service-public : chambres d'hôtes (F17452)
+- Code du tourisme, art. L324-3
+- Code du tourisme, art. D324-13
+- Code du tourisme, art. L324-4
+- Service-public : déclaration de chambres d'hôtes (Cerfa 13566)
+- Service-public : fiche de police (F33458)
+- Elloha : channel manager
+- Sirvoy : pricing
+- Amenitiz
+- Beds24 : pricing
+
+Q: Combien de chambres peut-on avoir en chambres d'hôtes ?
+A: Cinq chambres au maximum, pour une capacité de quinze personnes, avec la nuitée et le petit-déjeuner fournis ensemble et un accueil par l'habitant (Code du tourisme, D324-13).
+
+Q: Faut-il déclarer ses chambres d'hôtes ?
+A: Oui, à la mairie avant de commencer, avec le Cerfa 13566 (possible en ligne), puis à chaque changement (L324-4 et D324-15).
+
+Q: Faut-il un channel manager pour des chambres d'hôtes ?
+A: Si vous vendez sur plusieurs plateformes, oui : il ferme la chambre partout dès qu'elle est réservée et évite le surbooking.
+
+Q: Combien coûte un logiciel pour chambres d'hôtes ?
+A: Parmi les prix publiés, environ 20 à 80 € par mois pour quelques chambres (octobre 2026). Hostlio Pro Starter coûte 49 $ par mois, channel manager et assistant IA compris.
 
 ---
 # Prix d'un logiciel de gestion hôtelière en 2026
