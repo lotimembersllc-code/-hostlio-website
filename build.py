@@ -148,7 +148,7 @@ ROUTES.update({
  "post-chdhotes":  {"fr": "/fr/blog/logiciel-chambres-d-hotes/"},
  "post-fichepolice": {"fr": "/fr/blog/fiche-de-police-clients-etrangers/"},
  # Tur 2 (8 Ekim 2026): SEO fikri #20 ve #14 (guides_intl.py)
- "post-pms-vs-cm": {"en": "/en/blog/pms-vs-channel-manager/", "it": "/it/blog/channel-manager-cos-e-differenza-pms/",
+ "post-pms-vs-cm": {"es": "/es/blog/pms-o-channel-manager-diferencia/", "en": "/en/blog/pms-vs-channel-manager/", "it": "/it/blog/channel-manager-cos-e-differenza-pms/",
                     "pt": "/pt/blog/o-que-e-channel-manager-diferenca-pms/", "fr": "/fr/blog/pms-ou-channel-manager-difference/"},
 })
 ROUTES["post-whatsapp"].update({"tr": "/tr/blog/otel-whatsapp-rehberi/", "es": "/es/blog/whatsapp-para-hoteles/", "it": "/it/blog/whatsapp-per-hotel/", "fr": "/fr/blog/whatsapp-pour-hotels/"})

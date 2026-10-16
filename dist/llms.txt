@@ -140,6 +140,7 @@
 - [¿Cuánto cuesta un software de gestión hotelera? Precios 2026](https://hostliopro.com/es/blog/cuanto-cuesta-software-gestion-hotelera/): Precios 2026 de software de gestión hotelera en España: cuotas publicadas, coste para 10 y 25 habitaciones, extras ocultos y SES.Hospedajes.
 - [SES.Hospedajes: guía 2026 para hoteles y viviendas turísticas](https://hostliopro.com/es/blog/ses-hospedajes-guia/): SES.Hospedajes en 2026: quién debe comunicar, plazos de 24 horas, datos del viajero y del pago, cómo darse de alta, Cataluña y País Vasco, y sanciones.
 - [Los mejores PMS para hoteles pequeños en España (2026)](https://hostliopro.com/es/blog/mejores-pms-hoteles-pequenos-espana/): Comparamos 12 PMS para hoteles pequeños, hostales y casas rurales en España: channel manager, SES.Hospedajes, precio y prueba. Fuentes oficiales.
+- [PMS o channel manager: ¿cuál es la diferencia? (2026)](https://hostliopro.com/es/blog/pms-o-channel-manager-diferencia/): PMS o channel manager: qué hace cada uno, cómo trabajan juntos, cuánto cuestan y si un hotel pequeño necesita ambos. Con tabla comparativa y FAQ.
 
 ## Pagine in italiano
 - [Hostlio Pro](https://hostliopro.com/it/): Gestionale per hotel Hostlio Pro: l'assistente AI Lio risponde agli ospiti 24/7 in 30+ lingue e il channel manager sincronizza 100+ OTA. 7 giorni gratis.

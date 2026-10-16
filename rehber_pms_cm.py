@@ -287,3 +287,6 @@ def fr(U):
 
 
 FN = {"en": en, "it": it, "pt": pt, "fr": fr}
+import pms_cm_es
+META["es"] = pms_cm_es.META_ES
+FN["es"] = pms_cm_es.es
