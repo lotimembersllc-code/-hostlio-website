@@ -1146,15 +1146,15 @@ Konaklama vergisi 2026: oran %1 (Mayıs–Aralık 2026), kimler öder, KDV hari�
 
 Yazılım seçimi
 
-## En çok kullanılan otel programları: 2026 listesi
+## En çok kullanılan otel programları (2026): 11 program, fiyat
 9 Ekim 2026
-Türkiye'de otellerin kullandığı otel programları: Elektraweb, HMS, Sistem Otel, WOLVOX, HotelRunner, OPERA ve diğerleri. Kime uygun, fiyat, KBS.
+Türkiye'de en çok kullanılan otel programları: Elektraweb, HMS, Sistem Otel, WOLVOX, HotelRunner, OPERA ve diğerleri. Kime uygun, fiyat modeli, KBS desteği.
 
 Operasyon ve mevzuat
 
-## KBS bildirimi nasıl yapılır? Oteller ve pansiyonlar için rehber
+## KBS bildirimi nasıl yapılır? Emniyet ve Jandarma KBS rehberi
 8 Ekim 2026
-KBS (Kimlik Bildirim Sistemi) bildirimi adım adım: Emniyet ve Jandarma KBS farkı, kayıt, yabancı misafir, süreler ve cezalar. Resmî kaynaklı.
+Emniyet KBS ve Jandarma KBS'ye kayıt ve misafir bildirimi adım adım: kimler için zorunlu, yabancı misafir, bildirim süresi ve cezalar. Resmî kaynaklı.
 
 Yazılım seçimi
 
@@ -3356,10 +3356,10 @@ Q: Kahvaltı konaklama vergisine tabi mi?
 A: Konaklamayla birlikte satılıyorsa evet; faturada ayrı satırda gösterilse bile. Konaklamayan kişiye satılan kahvaltı ise vergiye tabi değildir.
 
 ---
-# En çok kullanılan otel programları: 2026 listesi
+# En çok kullanılan otel programları (2026): 11 program, fiyat
 URL: https://hostliopro.com/tr/blog/en-cok-kullanilan-otel-programlari/
 
-## En çok kullanılan otel programları: 2026 listesi
+## En çok kullanılan otel programları (2026): 11 program, fiyat
 Yazan: Hostlio Pro ürün ekibi , otel yazılımı geliştiren ekip. Yayın: 9 Ekim 2026 , güncelleme: 23 Eylül 2026
 
 Kısa cevap: Türkiye'de otellerde en sık karşılaşılan otel programları yerli tarafta Elektraweb, HMS Otel, Sistem Otel, AKINSOFT WOLVOX Otel, HotelRunner ve Veboni (eski adıyla Sedna); büyük otel ve zincirlerde Oracle OPERA Cloud. Küçük tesislerde Cloudbeds, Sirvoy ve Beds24 gibi yabancı bulut programları da kullanılıyor. Hangisinin "en çok" kullanıldığını gösteren bağımsız bir pazar payı verisi yok; doğru seçim oda sayınıza, satış kanallarınıza ve ihtiyaç duyduğunuz modüllere bağlı.
@@ -3600,10 +3600,10 @@ Q: Booking.com ve Airbnb'yi aynı anda nasıl senkron tutarım?
 A: İki kanalı da aynı kanal yöneticisine bağlarsınız. Müsaitlik tek takvimden yönetilir; bir kanaldan rezervasyon geldiğinde diğer kanaldaki müsaitlik otomatik güncellenir.
 
 ---
-# KBS bildirimi nasıl yapılır? Oteller ve pansiyonlar için rehber
+# KBS bildirimi nasıl yapılır? Emniyet ve Jandarma KBS rehberi
 URL: https://hostliopro.com/tr/blog/kbs-bildirimi-nasil-yapilir/
 
-## KBS bildirimi nasıl yapılır? Oteller ve pansiyonlar için rehber
+## KBS bildirimi nasıl yapılır? Emniyet ve Jandarma KBS rehberi
 Yazan: Hostlio Pro ürün ekibi , otel yazılımı geliştiren ekip. Yayın: 8 Ekim 2026 , güncelleme: 23 Eylül 2026
 
 Kısa cevap: KBS (Kimlik Bildirim Sistemi), konaklama tesislerinin misafirlerinin ve çalışanlarının kimlik bilgilerini kolluğa elektronik ortamda bildirdiği sistemdir. 1774 sayılı Kimlik Bildirme Kanunu'na göre bildirim anlık yapılmalıdır. Tesisiniz polis bölgesindeyse Emniyet'in kbs.egm.gov.tr adresini, jandarma bölgesindeyse e-Devlet üzerinden Jandarma KBS'yi kullanırsınız. Kayıt için bağlı olduğunuz polis birimine ya da jandarma karakoluna başvurursunuz.
@@ -5049,9 +5049,9 @@ Copy-paste replies for Booking.com guest messages: check-in time, parking, late 
 
 Guest messaging
 
-## Answering hotel guest messages with AI: a practical guide
+## AI Replies to Hotel Guest Messages: 10 Examples + Setup (2026)
 September 18, 2026
-The benefits, risks and setup steps of answering hotel guest messages with AI. Which questions to automate and which should stay with your team.
+How hotels answer guest messages with AI: 10 typical questions and how AI should reply, a 5-step setup, WhatsApp vs OTA inboxes and mistakes to avoid.
 
 Choosing software
 
@@ -5061,9 +5061,9 @@ How to choose a PMS for a small or boutique hotel: 7 criteria, what it should co
 
 Guest messaging
 
-## The Complete Guide to AI Front Desk for Independent Hotels
+## AI Front Desk for Small Hotels: What It Does and Doesn't
 May 1, 2026
-AI front-desk tools are no longer science fiction. This guide explains exactly what they do, what they don't, and how to deploy one at your independent hotel.
+What an AI front desk really handles at a small hotel, what it can't do yet, replying in every guest's language and how to set one up step by step.
 
 Distribution
 
@@ -5078,10 +5078,10 @@ May 1, 2026
 Chain hotels have billion-dollar tech budgets. Modern SaaS tools put the same capabilities within reach of a 20-room property. Here's how to compete.
 
 ---
-# Answering hotel guest messages with AI: a practical guide
+# AI Replies to Hotel Guest Messages: 10 Examples + Setup (2026)
 URL: https://hostliopro.com/en/blog/answering-hotel-guest-messages-with-ai/
 
-## Answering hotel guest messages with AI: a practical guide
+## AI Replies to Hotel Guest Messages: 10 Examples + Setup (2026)
 By the Hostlio Pro product team , the people who build Hostlio Pro. Published September 18, 2026 , updated September 23, 2026
 
 Short answer: most messages a hotel receives are the same dozen questions: check-in times, parking, breakfast, transfers, luggage, Wi-Fi. An AI assistant that only uses your hotel's own information can answer them in seconds, in the guest's language, at any hour. Decisions stay with you: discounts, complaints, refunds, exceptions and anything you are not sure about. Start in approval mode, fill the gaps the assistant flags, then let it answer information questions on its own.
@@ -6235,10 +6235,10 @@ Try Hostlio Pro free for 7 days
 Estimates only, based on the numbers you enter and 30 days a month. Your results depend on your guests, your settings and how many topics you let Lio answer automatically. Plan prices are early-bird monthly prices in USD.
 
 ---
-# The Complete Guide to AI Front Desk for Independent Hotels
+# AI Front Desk for Small Hotels: What It Does and Doesn't
 URL: https://hostliopro.com/en/blog/hotel-ai-front-desk-guide/
 
-## The Complete Guide to AI Front Desk for Independent Hotels
+## AI Front Desk for Small Hotels: What It Does and Doesn't
 By the Hostlio Pro product team , the people who build Hostlio Pro. Published May 1, 2026 , updated September 23, 2026
 
 Contents

@@ -418,12 +418,12 @@ def tax(U):
 META = [
  dict(key="post-taxtr", date="2026-10-10", title="Konaklama vergisi 2026: oran, hesaplama ve beyan",
       desc="Konaklama vergisi 2026: oran %1 (Mayıs–Aralık 2026), kimler öder, KDV hariç matrah, örnek hesap, istisnalar, beyanname ve son gün. Resmî kaynaklı."),
- dict(key="post-programs", date="2026-10-09", title="En çok kullanılan otel programları: 2026 listesi",
-      desc="Türkiye'de otellerin kullandığı otel programları: Elektraweb, HMS, Sistem Otel, WOLVOX, HotelRunner, OPERA ve diğerleri. Kime uygun, fiyat, KBS."),
+ dict(key="post-programs", date="2026-10-09", title="En çok kullanılan otel programları (2026): 11 program, fiyat",
+      desc="Türkiye'de en çok kullanılan otel programları: Elektraweb, HMS, Sistem Otel, WOLVOX, HotelRunner, OPERA ve diğerleri. Kime uygun, fiyat modeli, KBS desteği."),
  dict(key="post-channel-manager", date="2026-10-08", title="Channel manager nedir? Otelciler için kanal yöneticisi rehberi",
       desc="Channel manager (kanal yöneticisi) nedir, nasıl çalışır, PMS'ten farkı ne? Fiyat modelleri, seçim için 7 soru ve kurulum adımları. 2026 rehberi."),
- dict(key="post-kbs", date="2026-10-08", title="KBS bildirimi nasıl yapılır? Oteller ve pansiyonlar için rehber",
-      desc="KBS (Kimlik Bildirim Sistemi) bildirimi adım adım: Emniyet ve Jandarma KBS farkı, kayıt, yabancı misafir, süreler ve cezalar. Resmî kaynaklı."),
+ dict(key="post-kbs", date="2026-10-08", title="KBS bildirimi nasıl yapılır? Emniyet ve Jandarma KBS rehberi",
+      desc="Emniyet KBS ve Jandarma KBS'ye kayıt ve misafir bildirimi adım adım: kimler için zorunlu, yabancı misafir, bildirim süresi ve cezalar. Resmî kaynaklı."),
  dict(key="post-prices", date="2026-10-08", title="Otel programı fiyatları 2026: modeller ve gerçek rakamlar",
       desc="2026 otel programı fiyatları: sabit paket, oda başı, komisyon ve lisans modelleri; resmî sayfalardan alınmış rakamlar ve 10, 25, 50 oda için örnek hesap."),
 ]
