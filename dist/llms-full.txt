@@ -1116,6 +1116,12 @@ Bağımsız otel işletmeciliği, dağıtım ve misafir iletişimi üzerine prat
 
 Kanal yönetimi
 
+## Otel doluluk oranı nasıl artırılır? 9 yöntem (2026)
+16 Ekim 2026
+Otel doluluk oranı nasıl hesaplanır, Türkiye ortalaması ne? Bakanlık 2025–2026 verileri, RevPAR ve ADR, Booking.com ve Google ile 9 yöntem.
+
+Kanal yönetimi
+
 ## Bedbank nedir? Oteller için rehber (2026)
 16 Ekim 2026
 Bedbank nedir, OTA ve tur operatöründen farkı ne? Hotelbeds, WebBeds, RateHawk ve W2M; net fiyat, kontrat türleri, fiyat bütünlüğü ve kanal yöneticisi.
@@ -2754,6 +2760,134 @@ A: Hepsinde. Lio, Starter dahil her planda misafirlere WhatsApp'tan otelinizin b
 
 Q: Kurulum ne kadar sürer?
 A: Hesap dakikalar içinde hazır olur; kurulum sihirbazı eksik bilgileri gösterir ve kanallar çoğu zaman aynı gün bağlanır. 7 günlük denemeyle kendi odalarınız ve fiyatlarınızla başlayabilirsiniz.
+
+---
+# Otel doluluk oranı nasıl artırılır? 9 yöntem (2026)
+URL: https://hostliopro.com/tr/blog/otel-doluluk-orani-nasil-artirilir/
+
+## Otel doluluk oranı nasıl artırılır? 9 yöntem (2026)
+Yazan: Hostlio Pro ürün ekibi , otel yazılımı geliştiren ekip. Yayın: 16 Ekim 2026 , güncelleme: 23 Eylül 2026
+
+Kısa cevap: Doluluk oranı, satılan oda sayısının satılabilir oda sayısına oranıdır. Türkiye'de Bakanlık belgeli tesislerde 2025 yatak doluluğu ortalama %49,5; pansiyonlarda %35 civarında, ağustosta %71 ama martta %27. Doluluğu artırmanın en etkili yolları: takvimi tüm kanallarda açık ve güncel tutmak, Booking.com'da yorum puanını ve görünürlüğü yükseltmek, boş dönemlere hedefli indirim ve kısa konaklama kuralı koymak, Google'da ücretsiz rezervasyon bağlantısında görünmek ve mesajlara hızlı cevap vermek. Doluluğu tek başına değil, RevPAR ile birlikte izleyin.
+
+İçindekiler
+
+- Doluluk oranı nasıl hesaplanır?
+- Türkiye'de otel doluluk oranları (2025–2026)
+- Doluluk oranını artırmanın 9 yolu
+- Hostlio Pro ile doluluğu takip etmek
+- Kaynaklar
+Rakamlar Kültür ve Turizm Bakanlığı'nın 2025 yıllık ve 2026 Ocak–Ağustos konaklama bültenlerinden ve Booking.com ile Google'ın resmî iş ortağı sayfalarından 16 Ekim 2026'da derlendi.
+
+## Doluluk oranı nasıl hesaplanır?
+
+Doluluk oranı = satılan oda ÷ satılabilir oda × 100. Satılabilir oda, oda sayınızın dönemdeki gün sayısıyla çarpımıdır; 20 odalı bir otel 30 günde 600 oda satabilir. Yalnız doluluğa bakmak yanıltır: odaları çok ucuza satarak %90 doluluğa ulaşabilirsiniz ama kâr etmeyebilirsiniz. Bu yüzden doluluğu ADR ve RevPAR ile birlikte izleyin.
+
+Gösterge Formül Örnek (20 oda, 30 gün)
+Doluluk oranı Satılan oda ÷ satılabilir oda × 100 360 ÷ 600 = %60
+ADR (ortalama oda fiyatı) Oda geliri ÷ satılan oda 1.080.000 TL ÷ 360 = 3.000 TL
+RevPAR Oda geliri ÷ satılabilir oda = ADR × doluluk 1.080.000 TL ÷ 600 = 1.800 TL
+
+Kendi rakamlarınızı RevPAR, ADR ve doluluk hesaplayıcısıyla hesaplayabilirsiniz.
+
+## Türkiye'de otel doluluk oranları (2025–2026)
+
+Bakanlık istatistikleri yatak doluluğunu ölçer, oda doluluğunu değil; bazı kategorilerde oranın %100'ü geçmesi bu yüzdendir. Yine de sezonun şeklini ve tesis türleri arasındaki farkı iyi gösterir. 2025'te tüm tesislerde ortalama yatak doluluğu %49,5 oldu; 2026'nın ilk sekiz ayında %47,0.
+
+Ay 2025 2026
+Ocak %33,1 %31,2
+Şubat %30,3 %26,0
+Mart %26,8 %26,9
+Nisan %41,1 %35,5
+Mayıs %51,9 %49,0
+Haziran %57,8 %52,2
+Temmuz %66,0 %68,0
+Ağustos %71,2 %72,7
+Eylül %61,1 henüz yayımlanmadı
+Ekim %56,6 –
+Kasım %33,1 –
+Aralık %31,0 –
+
+Tesis türü 2025 yatak doluluğu
+Pansiyon (Bakanlık belgeli) %35,1
+Pansiyon (basit belgeli) %33,5
+Butik otel %42,3
+Apart otel %37,9
+3 yıldızlı otel %42,1
+5 yıldızlı otel %61,0
+Tüm tesisler %49,5
+
+Tablodan iki sonuç çıkıyor. Birincisi, küçük tesislerin yıllık doluluğu büyük otellerin çok altında: pansiyonlarda %35, 5 yıldızlılarda %61. İkincisi, kaybedilen doluluk asıl ara sezonda: nisan, mayıs, ekim ve kasım. Kışın doluluğu ağırlıklı olarak yerli misafir taşıyor; 2025 ocağında 33,1 puanlık doluluğun 20,0 puanı yerli misafirdendi.
+
+## Doluluk oranını artırmanın 9 yolu
+
+## 1. Takviminizi bütün kanallarda açık ve doğru tutun
+
+Satışa kapalı tarih satılmaz. Booking.com, misafirlerin 16 ay öncesinden plan yapabildiğini söylüyor ve takvimi ileriye doğru açık tutmayı öneriyor. Fiyat ve müsaitliği tek tek ekstranetlerde güncellemek yerine bir kanal yöneticisi kullanırsanız hem açık tarih kalmaz hem de overbooking riski düşer.
+
+## 2. Yorum puanınızı yükseltin
+
+Booking.com'a göre puanınız yükseldikçe arama sonuçlarında görünme ihtimaliniz artar ve yorumlar dönüşüm oranını ciddi biçimde etkiler. Puan, son 36 ayın genel puanıdır. Her yoruma, özellikle olumsuzlara kısa ve kişisel cevap verin.
+
+## 3. Genius'a katılın, gerekirse duraklatın
+
+Booking.com'un açıklamasına göre Genius'a katılan tesisler ortalama %30 daha fazla arama görüntülemesi alıyor; indirim maliyeti düşüldükten sonra gelirde ortalama %40 artış görüyor. Şart: en az 3 yorum, en az 7,5 puan ve en az %10 indirim. Yoğun tarihlerde fiyatınızı korumak için Genius'u yılda belli günler duraklatabilirsiniz.
+
+## 4. Preferred Partner programını değerlendirin
+
+Preferred tesisler Booking.com'a göre ortalama %65 daha fazla görüntüleme ve %20 daha fazla rezervasyon alıyor. Programa bölgedeki tesislerin en fazla %30'u girebiliyor ve karşılığında daha yüksek komisyon ödüyorsunuz. Hesabı yapmadan girmeyin: Booking.com komisyonu yazımız bu hesabı anlatıyor.
+
+## 5. Boş dönemlere hedefli promosyon koyun
+
+Booking.com'un temel promosyonu, doluluk boşluklarını hedeflemek için indirimi, tarihleri ve minimum konaklama süresini seçmenize izin veriyor. Erken rezervasyon, son dakika ve mobil fiyatlar da var; en fazla üç indirim birleşebiliyor. Bütün yıla indirim vermek yerine yalnız boş haftalara indirim verin.
+
+## 6. Minimum konaklama kuralını akıllıca kullanın
+
+Kısıtlama koyduğunuz tarihler, o kısıtlamaya uymayan aramalarda hiç görünmeyebilir. Yoğun hafta sonunda 2 gece kuralı mantıklıdır; ara sezonda aynı kural boş gece bırakır. Booking.com satılmayan odalara göre otomatik değişen dinamik kısıtlamaları öneriyor.
+
+## 7. Google'da ücretsiz rezervasyon bağlantısında görünün
+
+Google otel aramalarında "Tüm seçenekler" altında ücretsiz rezervasyon bağlantıları gösteriyor; bu tıklamalar için ücret alınmıyor. Kendi rezervasyon motorunuz ya da bağlantı ortağınız varsa burada otelinizin kendi sitesi de listelenebilir. Bu, komisyonsuz doğrudan rezervasyon demektir.
+
+## 8. Ara sezon için yerli misafiri hedefleyin
+
+Bakanlık verisi kışın ve ara sezonda doluluğu yerli misafirin taşıdığını gösteriyor. Hafta sonu paketleri, uzun konaklama indirimi, iş seyahati ve yakın şehirlere yönelik kampanyalar bu dönemde yabancı pazardan daha hızlı sonuç verir.
+
+## 9. Mesajlara hızlı ve her dilde cevap verin
+
+Booking.com, özenli cevapların iptal ihtimalini azaltıp yorum puanını yükselttiğini söylüyor. Gece gelen bir "müsait misiniz?" sorusu sabaha kalırsa misafir başka otele geçer. Yapay zekâ misafir asistanı gece de dahil her mesaja misafirin dilinde cevap verebilir; Booking.com mesajlarına otomatik cevap yazımız ayrıntıları anlatıyor.
+
+## Hostlio Pro ile doluluğu takip etmek
+
+Hostlio Pro rezervasyon takvimini, 100'den fazla kanala bağlanan kanal yöneticisini ve AI asistan Lio'yu tek panelde toplar. Lio her sabah fiyat ve gelir fırsatları için öneri getirir (onayınız olmadan hiçbir şey değişmez); doluluk, ADR ve RevPAR'ı kendi rakamlarınızla izlemek için ücretsiz hesaplayıcıyı kullanabilirsiniz.
+
+7 gün ücretsiz dene RevPAR hesaplayıcı
+
+## Kaynaklar
+Tüm kaynaklara 16 Ekim 2026 tarihinde erişildi.
+
+- Kültür ve Turizm Bakanlığı: konaklama istatistikleri
+- KTB: 2025 yıllık konaklama bülteni (xlsx)
+- KTB: 2026 Ağustos aylık konaklama bülteni (xlsx, 6 Ekim 2026)
+- KTB: konaklama istatistikleri metaveri
+- Booking.com Partner Hub: Genius programı
+- Booking.com Partner Hub: Preferred Partner programı
+- Booking.com Partner Hub: görünürlük ve sıralama
+- Booking.com Partner Hub: promosyonlarla misafir çekmek
+- Booking.com Partner Hub: misafir yorumları
+- Google: ücretsiz rezervasyon bağlantıları
+
+Q: Otel doluluk oranı nasıl hesaplanır?
+A: Satılan oda sayısı satılabilir oda sayısına bölünür ve 100 ile çarpılır. 20 odalı bir otel 30 günde 360 oda sattıysa doluluk 360 ÷ 600 = %60'tır.
+
+Q: Türkiye'de otel doluluk oranı ortalaması nedir?
+A: Kültür ve Turizm Bakanlığı verilerine göre Bakanlık belgeli tesislerde 2025 yatak doluluğu %49,5, pansiyonlarda yaklaşık %35 oldu. 2026'nın ilk sekiz ayında ortalama %47,0.
+
+Q: Doluluk mu RevPAR mı daha önemli?
+A: RevPAR. Doluluk ucuz satışla da yükselir; RevPAR hem doluluğu hem fiyatı birlikte gösterir (RevPAR = ADR × doluluk).
+
+Q: Booking.com'da görünürlük nasıl artırılır?
+A: Yorum puanını yükseltmek, takvimi açık tutmak, Genius ve hedefli promosyonlar kullanmak Booking.com'un kendi önerileri arasında.
 
 ---
 # Bedbank nedir? Oteller için rehber (2026)
@@ -12232,6 +12366,12 @@ Articoli pratici sulla gestione di un hotel indipendente, sulla distribuzione e 
 
 Operatività
 
+## Rooming list: cos'è e come gestirla in hotel (2026)
+16 ottobre 2026
+Rooming list: significato, cosa contiene, chi la invia e quando, release e allotment, Alloggiati Web per i gruppi (capogruppo) e un modello pronto.
+
+Operatività
+
 ## Imposta di soggiorno 2026: calcolo, versamento e dichiarazione
 16 ottobre 2026
 Imposta di soggiorno 2026 per hotel e B&B: chi la applica, quanto (fino a 10 € +2 €), il gestore responsabile, dichiarazione entro il 30 giugno, sanzioni 2027.
@@ -13608,6 +13748,120 @@ A: Il ricavo medio che resta per notte venduta dopo commissioni e costi. Per con
 
 Q: I miei numeri vengono salvati?
 A: No. Il calcolo avviene nel browser e non viene inviato nulla.
+
+---
+# Rooming list: cos'è e come gestirla in hotel (2026)
+URL: https://hostliopro.com/it/blog/rooming-list-cos-e/
+
+## Rooming list: cos'è e come gestirla in hotel (2026)
+A cura del team di prodotto Hostlio Pro , le persone che sviluppano Hostlio Pro. Pubblicato il 16 ottobre 2026 , aggiornato il 23 settembre 2026
+
+In breve: la rooming list è l'elenco degli ospiti di una prenotazione di gruppo con la camera assegnata a ciascuno. La invia l'agenzia, il tour operator o l'organizzatore dell'evento, di solito entro una data concordata nel contratto (cut-off o release). Contiene nomi, tipologia di camera, chi dorme con chi, date di arrivo e partenza, trattamento, chi paga cosa e richieste speciali. In Italia serve anche per la comunicazione su Alloggiati Web: per i gruppi guidati basta il documento del capogruppo, ma ogni membro va comunque registrato.
+
+Indice
+
+- Rooming list: significato
+- Cosa contiene
+- Un modello di rooming list
+- Chi la invia e quando: allotment, release e cut-off
+- Rooming list e Alloggiati Web
+- Imposta di soggiorno per i gruppi
+- Gli errori più comuni
+- Gestire la rooming list con un gestionale
+- Fonti
+Guida informativa, non consulenza legale. Fonti normative e di settore consultate il 16 ottobre 2026; i termini contrattuali (cut-off, release, penali) dipendono dal tuo contratto.
+
+## Rooming list: significato
+
+Letteralmente "lista delle camere". Nei contratti per gruppi è il documento con cui l'organizzatore comunica all'hotel chi occuperà ciascuna camera del blocco. Finché la rooming list non arriva, l'hotel conosce solo il numero e il tipo di camere opzionate; con la rooming list le camere diventano prenotazioni nominative.
+
+## Cosa contiene
+
+- nome e cognome di ogni ospite e chi divide la camera con chi;
+
+- tipologia di camera (singola, doppia, twin, tripla) ed eventuali camere comunicanti;
+
+- date di arrivo e partenza, anche diverse per alcuni partecipanti;
+
+- trattamento (solo pernottamento, B&B, mezza pensione);
+
+- istruzioni di addebito: cosa paga l'agenzia (conto master) e cosa paga l'ospite (extra);
+
+- richieste speciali: letti, allergie e diete, accessibilità;
+
+- contatti del capogruppo o dell'accompagnatore.
+
+## Un modello di rooming list
+
+Camera Tipologia Ospiti Arrivo Partenza Trattamento Addebito Note
+1 Doppia Rossi Mario, Rossi Anna 12/05 15/05 B&B Agenzia Letto matrimoniale
+2 Twin Bianchi Luca, Verdi Paolo 12/05 15/05 B&B Agenzia Celiaco (Verdi)
+3 Singola Neri Giulia (capogruppo) 12/05 15/05 B&B Extra a carico ospite Piano basso
+4 Singola Autista 12/05 15/05 B&B Agenzia Esente imposta? Verifica regolamento
+
+Conviene mandare all'organizzatore un modello già pronto, con le stesse colonne del tuo gestionale: riduci errori di copiatura e nomi scritti in modo diverso.
+
+## Chi la invia e quando: allotment, release e cut-off
+
+Nei contratti di gruppo l'hotel blocca un certo numero di camere (allotment). Il contratto fissa una data entro cui l'organizzatore deve inviare la rooming list: le camere non nominate entro quella data tornano in vendita. Una clausola tipica dice che tutte le prenotazioni vanno fatte tramite rooming list entro la data di cut-off e che la parte di allotment non coperta viene automaticamente rilasciata all'hotel. I giorni di release, le penali e la percentuale di camere che il gruppo può cancellare senza costi (attrition) variano da contratto a contratto: scrivili sempre in modo esplicito.
+
+## Rooming list e Alloggiati Web
+
+L'articolo 109 del TULPS impone di alloggiare solo ospiti con un documento valido e di comunicarne i dati alla Questura tramite Alloggiati Web . Per i gruppi il D.M. 7 gennaio 2013 prevede una semplificazione: "Per i gruppi guidati è sufficiente la compilazione da parte del capogruppo, che indicherà l'elenco degli altri componenti del gruppo."
+
+Tipo alloggiato Codice Dati richiesti
+Capo gruppo 18 Dati anagrafici completi e documento d'identità (tipo, numero, luogo di rilascio); deve essere maggiorenne
+Membro gruppo 20 Cognome, nome, sesso, data e luogo di nascita, cittadinanza; nessun dato del documento
+Capo famiglia / Familiare 17 / 19 Stessa logica per i nuclei familiari
+Ospite singolo 16 Dati completi e documento
+
+Nel file di invio le righe dei membri devono seguire subito quella del capogruppo, con la stessa data di arrivo. Attenzione: la semplificazione vale per i gruppi guidati . Ogni ospite deve comunque avere un documento valido, che l'hotel è tenuto a verificare. Per questo la rooming list dovrebbe includere data e luogo di nascita e cittadinanza di tutti i partecipanti: senza questi dati non puoi inviare le schedine.
+
+## Imposta di soggiorno per i gruppi
+
+Molti comuni prevedono esenzioni per autisti e accompagnatori. A Roma, per esempio, sono esenti gli autisti di pullman e un accompagnatore turistico ogni 25 partecipanti per i gruppi organizzati da agenzie, previa dichiarazione sostitutiva. Le regole cambiano da comune a comune: controlla il regolamento del tuo. Ne parliamo nella guida all' imposta di soggiorno .
+
+## Gli errori più comuni
+
+- Rooming list in ritardo: fissa il cut-off nel contratto e ricordalo all'organizzatore una settimana prima.
+
+- Cambi di nome dell'ultimo minuto: chiedi che arrivino per iscritto e aggiorna subito le prenotazioni.
+
+- No-show nel gruppo: definisci nel contratto se la prima notte è garantita.
+
+- Doppio inserimento: se una parte del gruppo prenota anche da OTA, rischi l'overbooking. Leggi come evitare l'overbooking .
+
+- Dati mancanti per la Questura: senza data e luogo di nascita dei membri non puoi completare Alloggiati Web in tempo.
+
+## Gestire la rooming list con un gestionale
+
+Con un gestionale ogni camera della rooming list diventa una prenotazione nel calendario: vedi subito quali camere sono bloccate, quali sono ancora libere e quali puoi rimettere in vendita dopo il release. In Hostlio Pro inserisci le camere del gruppo nel calendario prenotazioni e il channel manager aggiorna la disponibilità sulle OTA, così le camere del gruppo non vengono vendute due volte. Hostlio Pro non ha ancora una funzione dedicata per importare la rooming list da Excel: le camere si inseriscono una per una.
+
+Prova gratis per 7 giorni Vedi il calendario prenotazioni
+
+## Fonti
+Fonti consultate il 16 ottobre 2026.
+
+- Gazzetta Ufficiale: D.M. Interno 7 gennaio 2013
+- Alloggiati Web: D.M. 7 gennaio 2013 (PDF)
+- Polizia di Stato: manuale Alloggiati Web per le strutture
+- Normattiva: TULPS (R.D. 773/1931), art. 109
+- Roma Capitale: regolamento sul contributo di soggiorno (Del. A.C. 34/2024)
+- Law Insider: rooming list (clausole contrattuali)
+- Mews: la lista delle camere d'albergo
+- AltexSoft: rooming list (glossario)
+
+Q: Cos'è una rooming list?
+A: È l'elenco degli ospiti di una prenotazione di gruppo con la camera assegnata a ciascuno, inviato all'hotel dall'agenzia, dal tour operator o dall'organizzatore.
+
+Q: Cosa significa release in una rooming list?
+A: È la data, fissata nel contratto, entro cui l'organizzatore deve nominare le camere; quelle non coperte dalla rooming list tornano in vendita.
+
+Q: Per un gruppo bisogna registrare tutti su Alloggiati Web?
+A: Sì. Per i gruppi guidati basta il documento del capogruppo (tipo 18), ma ogni membro va inserito come membro gruppo (tipo 20) con i dati anagrafici.
+
+Q: Hostlio Pro importa la rooming list da Excel?
+A: Non ancora. Le camere del gruppo si inseriscono nel calendario prenotazioni e il channel manager aggiorna la disponibilità sulle OTA.
 
 ---
 # Imposta di soggiorno 2026: calcolo, versamento e dichiarazione
@@ -18568,6 +18822,12 @@ Des articles pratiques sur la gestion d'un hôtel indépendant, la distribution 
 
 Exploitation
 
+## Taxe de séjour 2026 : tarifs, calcul et déclaration
+16 octobre 2026
+Taxe de séjour 2026 : barème par catégorie, taxes additionnelles, exonérations, exemple de calcul pour un hôtel 3 étoiles, déclaration et sanctions.
+
+Exploitation
+
 ## Fiche de police : la déclaration des clients étrangers (2026)
 16 octobre 2026
 Fiche individuelle de police en 2026 : qui doit la remplir, quels clients (UE compris), quelles données, conservation 6 mois, transmission et RGPD.
@@ -20052,6 +20312,153 @@ A: Tous. Lio répond aux clients sur WhatsApp dès Starter ; Pro et Growth ajout
 
 Q: Hostlio Pro est-il disponible en français ?
 A: Oui : le tableau de bord, l’application mobile et le formulaire de check-in client existent en français (ainsi qu’en anglais, turc, espagnol, italien et portugais). Le support est en anglais et en turc.
+
+---
+# Taxe de séjour 2026 : tarifs, calcul et déclaration
+URL: https://hostliopro.com/fr/blog/taxe-de-sejour/
+
+## Taxe de séjour 2026 : tarifs, calcul et déclaration
+Par l' équipe produit Hostlio Pro , celle qui conçoit Hostlio Pro. Publié le 16 octobre 2026 , mis à jour le 23 septembre 2026
+
+En bref : la taxe de séjour est payée par le client qui n'est pas domicilié dans la commune et collectée par l'hébergeur, qui la reverse à la commune ou à l'intercommunalité. Le tarif dépend de la catégorie : en 2026, il va de 0,20 € à 0,80 € par personne et par nuit pour une chambre d'hôtes et de 0,50 € à 1,70 € pour un hôtel 3 étoiles. Pour les hébergements non classés, c'est un pourcentage de 1 % à 5 % du prix de la nuit. S'y ajoutent souvent une taxe départementale de 10 % et, dans certaines régions, d'autres taxes additionnelles. Le barème 2027 publié par l'État est identique.
+
+Sommaire
+
+- Qui paie, qui collecte ?
+- Le barème 2026 par catégorie
+- Hébergements non classés : le calcul en pourcentage
+- Les taxes additionnelles
+- Qui est exonéré ?
+- Exemple de calcul pour un hôtel 3 étoiles
+- Déclaration, reversement et registre
+- Sanctions
+- Ce qui change en 2027
+- Ce que fait Hostlio Pro (et ce qu'il ne fait pas)
+- Sources
+Ce guide est informatif et ne constitue pas un conseil fiscal. Il s'appuie sur le guide pratique des taxes de séjour publié par la DGCL (juin 2026), les barèmes officiels 2026 et 2027 et service-public.gouv.fr, consultés le 16 octobre 2026. Le tarif exact est fixé par votre commune : vérifiez sa délibération.
+
+## Qui paie, qui collecte ?
+
+La taxe de séjour « au réel » est due par les personnes qui séjournent dans la commune sans y être domiciliées. L'hébergeur la facture au client en plus du prix de la chambre, la collecte avant son départ et la reverse à la commune. Le montant applicable est celui en vigueur à la date du séjour, pas à la date de réservation.
+
+Il existe aussi une taxe de séjour « forfaitaire » : c'est alors l'hébergeur qui la doit, calculée sur la capacité d'accueil et le nombre de nuits d'ouverture, qu'il la répercute ou non dans ses prix. Une commune peut combiner les deux régimes selon la nature des hébergements (par exemple hôtels au réel, campings au forfait). Les hébergements non classés sont toujours au réel.
+
+Quand la réservation passe par une plateforme qui encaisse le paiement pour un loueur non professionnel, c'est la plateforme qui collecte la taxe. Pour un hôtel qui vend sur Booking.com ou Expedia, vérifiez dans votre contrat qui collecte : dans le doute, c'est à vous de le faire.
+
+## Le barème 2026 par catégorie
+
+Chaque commune choisit son tarif entre le plancher et le plafond fixés par la loi. Les montants s'entendent par personne et par nuit.
+
+Catégorie d'hébergement Tarif plancher Tarif plafond
+Palaces 0,70 € 4,90 €
+Hôtels, résidences et meublés de tourisme 5 étoiles 0,70 € 3,60 €
+4 étoiles 0,70 € 2,60 €
+3 étoiles 0,50 € 1,70 €
+2 étoiles, villages de vacances 4 et 5 étoiles 0,30 € 1,00 €
+1 étoile, villages de vacances 1 à 3 étoiles, chambres d'hôtes , auberges collectives 0,20 € 0,80 €
+Campings 3 à 5 étoiles, aires de camping-cars (par 24 h) 0,20 € 0,60 €
+Campings 1 et 2 étoiles, ports de plaisance 0,20 € 0,20 €
+Hébergements non classés ou en attente de classement 1 % du prix de la nuitée par personne 5 %, dans la limite du tarif le plus élevé voté par la commune
+
+Les chambres d'hôtes ont un tarif unique (0,20 € à 0,80 €), quels que soient les services proposés. Une simple chambre chez l'habitant, en revanche, relève du régime des hébergements non classés. Pour choisir un outil adapté aux maisons d'hôtes, lisez notre guide logiciel chambres d'hôtes .
+
+## Hébergements non classés : le calcul en pourcentage
+
+La commune vote un taux unique entre 1 % et 5 %. Il s'applique au prix de la nuitée hors taxes divisé par le nombre total d'occupants, y compris ceux qui sont exonérés. Le petit-déjeuner, les frais de réservation et les commissions de plateforme ne font pas partie de la base. Le résultat est plafonné au tarif le plus élevé adopté par la commune, donc au maximum 4,90 €.
+
+## Les taxes additionnelles
+
+Sur le tarif communal s'ajoutent, selon votre localisation, une ou plusieurs taxes additionnelles calculées en pourcentage du tarif communal :
+
+Taxe additionnelle Taux Où
+Départementale 10 % Si le département l'a votée
+Société des grands projets 15 % Île-de-France
+Île-de-France Mobilités 200 % Île-de-France, depuis le 1er janvier 2024
+Régionales (lignes nouvelles) 34 % Bouches-du-Rhône, Var, Alpes-Maritimes ; Sud-Ouest (GPSO) ; Hérault, Aude, Pyrénées-Orientales
+
+En Île-de-France, la majoration de 200 % au profit d'Île-de-France Mobilités s'applique automatiquement depuis 2024. Chaque taxe additionnelle se calcule sur le tarif communal arrondi, avec un arrondi au centime à chaque étape.
+
+## Qui est exonéré ?
+
+- les mineurs ;
+
+- les titulaires d'un contrat de travail saisonnier employés dans la commune ;
+
+- les personnes bénéficiant d'un hébergement d'urgence ou d'un relogement temporaire ;
+
+- les personnes qui occupent des locaux dont le loyer est inférieur à un montant fixé par la commune.
+Les fonctionnaires en mission et les stagiaires ne sont pas exonérés. Au régime forfaitaire, ces exonérations ne s'appliquent pas : la commune peut prévoir un abattement de 10 % à 80 % selon la durée d'ouverture.
+
+## Exemple de calcul pour un hôtel 3 étoiles
+
+Hypothèse : la commune applique 1,50 € par personne et par nuit aux hôtels 3 étoiles, au réel, et le département a voté la taxe additionnelle de 10 %. Deux adultes et un enfant de 12 ans séjournent trois nuits.
+
+Étape Calcul Montant
+Nuitées taxables 2 adultes × 3 nuits (l'enfant est exonéré) 6
+Part communale 6 × 1,50 € 9,00 €
+Taxe départementale 10 % 6 × 0,15 € 0,90 €
+Total à collecter 9,90 €
+
+Le même séjour en Île-de-France coûterait 4,88 € par adulte et par nuit (1,50 € + 0,15 € + 0,23 € + 3,00 €), soit 29,28 € pour les six nuitées. Indiquez la taxe de séjour sur une ligne séparée de la facture.
+
+## Déclaration, reversement et registre
+
+- Dates de reversement : elles sont fixées par la délibération de votre commune. Les plateformes reversent deux fois par an, avant le 30 juin et le 31 décembre.
+
+- État récapitulatif : à chaque reversement, l'hébergeur transmet pour chaque logement la date de perception, la date de début du séjour, l'adresse, le nombre de personnes, le nombre de nuitées, le prix de la nuit pour un hébergement non classé, le montant collecté, les motifs d'exonération et, le cas échéant, le numéro d'enregistrement. La taxe principale et les taxes additionnelles apparaissent séparément.
+
+- Régime forfaitaire : la déclaration se fait au moins un mois avant le début de la période de perception.
+
+- Tarifs de votre commune : ils sont publiés chaque année sur taxesejour.impots.gouv.fr . Les communes doivent délibérer avant le 1er juillet pour l'année suivante.
+Si un client part sans payer, signalez-le au maire dans les 8 jours ; sinon la taxe reste due par l'hébergeur.
+
+## Sanctions
+
+Depuis 2019, le président du tribunal judiciaire peut, à la demande de la commune, prononcer des amendes :
+
+- 150 € par omission ou inexactitude dans la déclaration, jusqu'à 12 500 € par déclaration ;
+
+- 750 € à 12 500 € pour un état récapitulatif absent, incomplet ou en retard, ou pour une taxe non collectée ;
+
+- 750 € à 2 500 € pour une taxe collectée mais non reversée.
+La commune peut aussi procéder à une taxation d'office après une mise en demeure restée sans réponse pendant 30 jours.
+
+## Ce qui change en 2027
+
+Les plafonds sont revalorisés chaque année selon l'inflation. Pour 2027, l'inflation retenue est de 0,9 % et, après arrondi, le barème publié par l'État est identique à celui de 2026. Votre commune peut toutefois modifier son propre tarif : sa délibération pour 2027 devait être prise avant le 1er juillet 2026.
+
+## Ce que fait Hostlio Pro (et ce qu'il ne fait pas)
+
+Hostlio Pro ne calcule pas la taxe de séjour et ne fait ni la déclaration ni le reversement. Il centralise vos réservations, vos nuitées et vos clients dans un seul logiciel de gestion hôtelière et permet d'exporter les réservations en Excel pour préparer votre état récapitulatif. Pour les clients étrangers, pensez aussi à la fiche de police .
+
+Essai gratuit de 7 jours Voir les fonctionnalités
+
+## Sources
+Sources consultées le 16 octobre 2026.
+
+- Collectivites-locales.gouv.fr : la taxe de séjour
+- Guide pratique des taxes de séjour (8e édition, juin 2026)
+- Barème des tarifs 2026
+- Barème des tarifs 2027
+- Guide pratique, fiche 4 : exonérations
+- Guide pratique, fiche 6 : calcul
+- Guide pratique, fiche 9 : déclaration et reversement
+- Guide pratique, fiche 11 : sanctions
+- Entreprendre.service-public : taxe de séjour (F31635)
+- Impots.gouv.fr : taxe de séjour
+- Consultation des tarifs par commune
+
+Q: Quel est le tarif de la taxe de séjour en 2026 ?
+A: Il dépend de la catégorie et de la commune : de 0,20 € à 0,80 € par personne et par nuit pour une chambre d'hôtes, de 0,50 € à 1,70 € pour un hôtel 3 étoiles, jusqu'à 4,90 € pour un palace. Les hébergements non classés paient 1 % à 5 % du prix de la nuit par personne.
+
+Q: Qui doit payer la taxe de séjour ?
+A: Le client qui n'est pas domicilié dans la commune. L'hébergeur la collecte et la reverse à la commune ; au régime forfaitaire, elle est due par l'hébergeur.
+
+Q: Les enfants paient-ils la taxe de séjour ?
+A: Non. Les mineurs sont exonérés au régime réel.
+
+Q: Hostlio Pro calcule-t-il la taxe de séjour ?
+A: Non. Hostlio Pro ne calcule ni ne reverse la taxe de séjour, mais vous pouvez exporter vos réservations en Excel pour préparer la déclaration.
 
 ---
 # Fiche de police : la déclaration des clients étrangers (2026)

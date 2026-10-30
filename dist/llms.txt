@@ -106,6 +106,7 @@
 - [Konaklama vergisi 2026: oran, hesaplama ve beyan](https://hostliopro.com/tr/blog/konaklama-vergisi/): Konaklama vergisi 2026: oran %1 (Mayıs–Aralık 2026), kimler öder, KDV hariç matrah, örnek hesap, istisnalar, beyanname ve son gün. Resmî kaynaklı.
 - [Booking.com komisyonu ne kadar, nasıl düşürülür? (2026)](https://hostliopro.com/tr/blog/booking-com-komisyonu/): Booking.com komisyonu nasıl hesaplanır, oran neye göre değişir, Preferred ve Genius maliyeti, KDV ve %17 tavan teklifi. Resmî kaynaklı rehber.
 - [Bedbank nedir? Oteller için rehber (2026)](https://hostliopro.com/tr/blog/bedbank-nedir/): Bedbank nedir, OTA ve tur operatöründen farkı ne? Hotelbeds, WebBeds, RateHawk ve W2M; net fiyat, kontrat türleri, fiyat bütünlüğü ve kanal yöneticisi.
+- [Otel doluluk oranı nasıl artırılır? 9 yöntem (2026)](https://hostliopro.com/tr/blog/otel-doluluk-orani-nasil-artirilir/): Otel doluluk oranı nasıl hesaplanır, Türkiye ortalaması ne? Bakanlık 2025–2026 verileri, RevPAR ve ADR, Booking.com ve Google ile 9 yöntem.
 
 ## Páginas en español
 - [Hostlio Pro](https://hostliopro.com/es/): Software de gestión hotelera Hostlio Pro: la IA Lio atiende a huéspedes 24/7 en 30+ idiomas y el channel manager sincroniza 100+ OTAs. 7 días gratis.
@@ -178,6 +179,7 @@
 - [Channel manager per piccole strutture: come scegliere (2026)](https://hostliopro.com/it/blog/channel-manager-piccole-strutture/): Channel manager per B&B, affittacamere e piccoli hotel: cosa conta davvero, prezzi pubblicati per 10 e 25 camere, Premier e Preferred+. Fonti ufficiali.
 - [Quanto costa un gestionale per hotel nel 2026: prezzi reali](https://hostliopro.com/it/blog/quanto-costa-gestionale-hotel/): Prezzi 2026 dei gestionali per hotel e B&B: modelli di costo, costo annuo per 10 e 25 camere, IVA, moduli e costi nascosti. Fonti ufficiali.
 - [Imposta di soggiorno 2026: calcolo, versamento e dichiarazione](https://hostliopro.com/it/blog/imposta-di-soggiorno/): Imposta di soggiorno 2026 per hotel e B&B: chi la applica, quanto (fino a 10 € +2 €), il gestore responsabile, dichiarazione entro il 30 giugno, sanzioni 2027.
+- [Rooming list: cos'è e come gestirla in hotel (2026)](https://hostliopro.com/it/blog/rooming-list-cos-e/): Rooming list: significato, cosa contiene, chi la invia e quando, release e allotment, Alloggiati Web per i gruppi (capogruppo) e un modello pronto.
 - [Channel manager cos'è e che differenza c'è con un PMS](https://hostliopro.com/it/blog/channel-manager-cos-e-differenza-pms/): Channel manager e PMS: cosa fa ciascuno, come lavorano insieme, quanto costano e se una piccola struttura ha bisogno di entrambi. Con tabella e FAQ.
 
 ## Páginas em português
@@ -250,4 +252,5 @@
 - [Prix d'un logiciel de gestion hôtelière en 2026](https://hostliopro.com/fr/blog/prix-logiciel-gestion-hoteliere/): Combien coûte un logiciel de gestion hôtelière en 2026 : prix publiés, coût pour 10 et 25 chambres, frais cachés, facturation électronique et caisse.
 - [Logiciel chambres d'hôtes : comment choisir (2026)](https://hostliopro.com/fr/blog/logiciel-chambres-d-hotes/): Quel logiciel pour des chambres d'hôtes en 2026 : planning, channel manager, messages, prix publiés et règles (5 chambres, mairie, taxe de séjour).
 - [Fiche de police : la déclaration des clients étrangers (2026)](https://hostliopro.com/fr/blog/fiche-de-police-clients-etrangers/): Fiche individuelle de police en 2026 : qui doit la remplir, quels clients (UE compris), quelles données, conservation 6 mois, transmission et RGPD.
+- [Taxe de séjour 2026 : tarifs, calcul et déclaration](https://hostliopro.com/fr/blog/taxe-de-sejour/): Taxe de séjour 2026 : barème par catégorie, taxes additionnelles, exonérations, exemple de calcul pour un hôtel 3 étoiles, déclaration et sanctions.
 - [PMS ou channel manager : quelle différence ?](https://hostliopro.com/fr/blog/pms-ou-channel-manager-difference/): PMS et channel manager : rôle de chacun, fonctionnement ensemble, coûts et faut-il les deux pour un petit hôtel ? Tableau comparatif et FAQ.
